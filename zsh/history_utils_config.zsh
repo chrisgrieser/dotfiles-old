@@ -15,16 +15,16 @@ setopt EXTENDED_HISTORY
 
 # --------------------------
 
-export HIST_DATE_FORMAT='%a, %d.%m %H:%M   ' # custom, defined by me
+export HIST_DATE_FORMAT='%a %d.%m %H:%M   ' # custom, defined by me
 
 # SEARCH HISTORY FOR A COMMAND
 # enter ➞ write to buffer
 # alt+enter ➞ copy to clipboard
 
-DATE_CHAR_COUNT=$(echo "$HIST_DATE_FORMAT" | wc -m | tr -d " ")
-TO_CUT=$((DATE_CHAR_COUNT + 15))
+DATE_CHAR_COUNT=$(date "+$HIST_DATE_FORMAT" | wc -m | tr -d " ")
+TO_CUT=$((DATE_CHAR_COUNT + 2))
 function hs {
-	SELECTED=$(history -t "$HIST_DATE_FORMAT" 1 | cut -c8- | sed -e 's/^/[1;33m/' | fzf \
+	SELECTED=$(history -t "$HIST_DATE_FORMAT" 1 | cut -c8- | fzf\
 	           --tac --no-sort \
 	           --layout=reverse \
 	           --info=hidden \
@@ -34,4 +34,6 @@ function hs {
 	          )
 	COMMAND=$(echo "$SELECTED" | cut -c"$TO_CUT"-)
 	print -z "$COMMAND"
+	sleep 0.2
+	osascript -e "tell application \"System Events\" to key code 124"
 }
