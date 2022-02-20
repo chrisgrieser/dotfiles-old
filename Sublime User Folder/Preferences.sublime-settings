@@ -5,7 +5,7 @@
 	"light_color_scheme": "Packages/User/material-light-custom.tmTheme",
 	"dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
-	"themed_title_bar": false, // adaptive theme only
+	"themed_title_bar": true, // adaptive theme only
 
 	// Font & Spacing
 	"ui_scale": 1.5,

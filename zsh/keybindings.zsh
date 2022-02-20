@@ -2,13 +2,16 @@ bindkey "\e\e" quitSession # Double Esc
 bindkey "^L" openCurrentLocation
 bindkey "^P" copyLocation
 bindkey "^B" copybuffer
-bindkey "^O" open-zshrc # triggered via Alfred als cmd+,
+bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
+bindkey "^W" clear-screen #triggered via Sublime/Terminal as "cmd+k"
 
-# `bindkey -M main` to show existing keybinds
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
-bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
+bindkey "^V" yank # = pastes content previously removed with 'kill-buffer'
 
+# `bindkey -M main` to show existing keybinds
+# there `^[` usually means escape
+# some bindings with '^' are reserved (^M=enter, ^I=tab)
 # -----------------------------------
 
 copyLocation () {
