@@ -2,7 +2,7 @@ bindkey "\e\e" quitSession # Double Esc
 bindkey "^L" openCurrentLocation
 bindkey "^P" copyLocation
 bindkey "^B" copybuffer
-bindkey "^I" open-zshrc # triggered via Alfred als cmd+,
+bindkey "^O" open-zshrc # triggered via Alfred als cmd+,
 
 # `bindkey -M main` to show existing keybinds
 bindkey "^Z" undo
@@ -26,7 +26,8 @@ open-zshrc () {
 	else
 		SEARCH_FOR="$BUFFER"
 	fi
-	SELECTED=$( { ls -t "$ZSH_DOTFILE_LOCATION"  | cut -d"." -f1; echo ".zshrc"; } | fzf \
+	# shellcheck disable=SC2012
+	SELECTED=$( ls -t "$ZSH_DOTFILE_LOCATION"  | cut -d"." -f1 | fzf \
 	           --no-sort \
 	           -0 -1 \
 	           --query "$SEARCH_FOR" \

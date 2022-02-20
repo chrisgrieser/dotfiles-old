@@ -30,10 +30,8 @@ function hs {
 	           --info=hidden \
 	           --query "$*" \
 	           --height=50% \
-	           --bind 'alt-enter:execute(echo {} | pbcopy)+abort' \
+	           --bind "alt-enter:execute(echo {} | cut -c\"$TO_CUT\"- | pbcopy)+abort" \
 	          )
 	COMMAND=$(echo "$SELECTED" | cut -c"$TO_CUT"-)
 	print -z "$COMMAND"
-	sleep 0.2
-	osascript -e "tell application \"System Events\" to key code 124"
 }
