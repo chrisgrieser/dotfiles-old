@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.chris-grieser.kill-and-restart</string>
+	<key>category</key>
+	<string>Tweaks</string>
+	<key>connections</key>
+	<dict>
+		<key>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3793E96B-DE64-4F09-ABA2-042BF2D728A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>67DF2055-B645-4552-B37D-1F3A93BF37EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3793E96B-DE64-4F09-ABA2-042BF2D728A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>93E31809-C5C8-4920-BA07-AF39BB5491F8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0B2F3C0-553E-4ED3-9525-8242B10062AC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Chris Grieser</string>
+	<key>description</key>
+	<string>frontmost app</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Kill &amp; Restart</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>kill</string>
+				<key>subtext</key>
+				<string>frontmost app</string>
+				<key>text</key>
+				<string>Restart</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	set _app to the name of every process whose frontmost is true
+end tell
+
+tell application named _app to quit
+
+repeat until application named _app is not running 
+	delay 0.5
+end repeat
+delay 0.5
+
+tell application named _app to activate</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3793E96B-DE64-4F09-ABA2-042BF2D728A1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>restart</string>
+				<key>subtext</key>
+				<string>frontmost app</string>
+				<key>text</key>
+				<string>Restart</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>67DF2055-B645-4552-B37D-1F3A93BF37EC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>kill</string>
+				<key>subtext</key>
+				<string>frontmost app</string>
+				<key>text</key>
+				<string>🛑 Kill &amp; Restart</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"	set _app to the name of every process whose frontmost is trueend telldo shell script "pkill  " &amp; (item 1 of _app)
+
+repeat until application named _app is not running 
+	delay 0.5
+end repeat
+delay 0.5
+tell application named _app to activate</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>restart</string>
+				<key>subtext</key>
+				<string>frontmost app</string>
+				<key>text</key>
+				<string>🛑 Kill &amp; Restart</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>killall "PopClip"
+sleep 1
+open -a "PopClip"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E0B2F3C0-553E-4ED3-9525-8242B10062AC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>kill</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Restart Popclip</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>93E31809-C5C8-4920-BA07-AF39BB5491F8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
+	<key>uidata</key>
+	<dict>
+		<key>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>kill &amp; restart</string>
+			<key>xpos</key>
+			<integer>295</integer>
+			<key>ypos</key>
+			<integer>345</integer>
+		</dict>
+		<key>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>3793E96B-DE64-4F09-ABA2-042BF2D728A1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>quit &amp; restart</string>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
+		<key>67DF2055-B645-4552-B37D-1F3A93BF37EC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>93E31809-C5C8-4920-BA07-AF39BB5491F8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>555</integer>
+		</dict>
+		<key>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
+		<key>E0B2F3C0-553E-4ED3-9525-8242B10062AC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
+		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://chris-grieser.de/</string>
+</dict>
+</plist>

@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.chris-grieser.sublime</string>
+	<key>category</key>
+	<string>Development</string>
+	<key>connections</key>
+	<dict>
+		<key>0F4636D9-C921-44BD-8CF4-199DED9EACC7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>17380EE5-3BB6-4E89-A412-A77E35AB6B73</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28EC2737-FED4-4995-8D29-BCB67641FA77</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>21CB6D87-4AE9-4109-B03F-3310BD156584</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8B62808-E090-4B42-A75E-F690A41E6ED8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>CC24E9B2-FF3E-40C0-A59A-AE0A5AD6E760</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>46BD5B40-E8B3-4CCF-B8B2-1D2E10FC625B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>28EC2737-FED4-4995-8D29-BCB67641FA77</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF560114-2713-44FF-A809-220E320781F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>21CB6D87-4AE9-4109-B03F-3310BD156584</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3AB55595-2BAD-42DF-8A61-73317C35199F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>67F611D4-A5E9-451E-AFEE-59046947524A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6A64ED91-B242-40F9-A1FF-325B90785D5F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D232E539-5F7D-4AE8-835D-D05830D7CF26</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>735D4356-02CF-4542-84F6-63C6764B2784</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6A64ED91-B242-40F9-A1FF-325B90785D5F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</key>
+		<array/>
+		<key>93D77E92-BC96-4F37-9A4F-A167E19BBEC3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CF560114-2713-44FF-A809-220E320781F7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D232E539-5F7D-4AE8-835D-D05830D7CF26</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>93D77E92-BC96-4F37-9A4F-A167E19BBEC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D3E2A726-59B9-4BE2-9CF6-986CE14F324C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F399D3E5-4394-4F99-B2FC-C19B586C0C98</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F8B62808-E090-4B42-A75E-F690A41E6ED8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F518AEC4-9F61-4265-BA90-755FFAE4223A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Chris Grieser</string>
+	<key>description</key>
+	<string>requires full path shown in title &amp; subl CLI installed</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Sublime Text</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D3E2A726-59B9-4BE2-9CF6-986CE14F324C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+
+query="$*"
+
+subl "$query"
+
+# if directory, then show sidebar
+# and hide tabbar
+if [[ -d "$query" ]] ; then
+	osascript -e 'tell application "System Events"
+	tell process "Sublime Text"
+		set frontmost to true
+		click menu item "Show Side Bar" of menu of menu item "Side Bar" of menu "View" of menu bar 1
+				click menu item "Show Side Bar" of menu of menu item "Side Bar" of menu "View" of menu bar 1
+
+	end tell
+end tell' || echo ''
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-in-subl.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.applescript.script</string>
+					<string>com.apple.web-internet-location</string>
+					<string>com.netscape.javascript-source</string>
+					<string>net.daringfireball.markdown</string>
+					<string>public.folder</string>
+					<string>public.plain-text</string>
+					<string>public.shell-script</string>
+				</array>
+				<key>name</key>
+				<string>Open with Sublime Text</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>67F611D4-A5E9-451E-AFEE-59046947524A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>current-or-default-finder-window.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D232E539-5F7D-4AE8-835D-D05830D7CF26</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sub</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string># https://www.alfredapp.com/help/workflows/inputs/script-filter/json/
+cat &lt;&lt; EOB
+{"items": [
+   {
+      "title":"JavaScript",
+      "arg":"js",
+      "uid": "1",
+      "match": "js javascript"
+   },
+   {
+      "title":"XML",
+      "arg":"xml",
+      "uid": "2",
+      "match": "xml"
+   },
+   {
+      "title":"HTML",
+      "arg":"html",
+      "uid": "3"
+   },
+   {
+      "title":"Markdown",
+      "arg":"md",
+      "uid": "4",
+      "match": "markdown md text txt"
+   },
+   {
+      "title":"AppleScript",
+      "arg":"applescript",
+      "uid": "5",
+      "match": "applescript as"
+   },
+   {
+      "title":"AppleScript",
+      "arg":"se-applescript",
+      "uid": "6",
+      "match": "applescript as script editor",
+	  "icon": { "path": "script-editor.png" }
+   },
+   {
+      "title":"Shell Script",
+      "arg":"sh",
+      "uid": "7",
+      "match": "bash zsh shell fish"
+   },
+   {
+      "title":"Python",
+      "arg":"py",
+      "uid": "8"
+   },
+   {
+      "title":"CSS",
+      "arg":"css",
+      "uid": "9"
+   },
+   {
+      "title":"Plain Text",
+      "arg":"txt",
+      "uid": "10",
+      "match": "plain text txt"
+   },
+   {
+      "title":"Rich Text",
+      "arg":"rtf",
+      "uid": "12",
+      "match": "rtf rich text",
+      "icon": { "path": "textedit.png" }
+   },
+   {
+      "title":"BibTeX",
+      "arg":"bib",
+      "uid": "13",
+      "match": "bibtex latex tex bibdesk"
+   },
+    {
+      "title":"JSON",
+      "arg":"json",
+      "uid": "14"
+   },
+   {
+      "title":"Mermaid Markdown",
+      "match":"mermaid markdown mmd gantt chart pie",
+      "arg":"mmd",
+      "uid": "15"
+   },
+   {
+      "title":"CSV",
+      "arg":"csv",
+      "uid": "16"
+   },
+   {
+      "title":"TypeScript",
+      "arg":"ts",
+      "uid": "16",
+      "match": "ts typescript javascript"
+   },
+   {
+      "title":"YAML",
+      "arg":"yml",
+      "uid": "17"
+   },
+   {
+      "title":"plist",
+      "arg":"plist",
+      "uid": "18"
+   }
+]}
+EOB</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>with clipboard content</string>
+				<key>title</key>
+				<string>New File in Sublime Text</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>735D4356-02CF-4542-84F6-63C6764B2784</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set filetype to (system attribute "filetype")
+set content to "{query}"
+
+-- resolve home folder
+set working_folder to do shell script "echo " &amp; quoted form of (system attribute "working_folder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"set AppleScript's text item delimiters to "~/"set theTextItems to every text item of working_folderset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
+
+-- prepend certain shebangs
+if (filetype is "js") then 
+	set content to "#!/usr/bin/env osascript -l JavaScript" &amp;  "\n" &amp; content
+else if (filetype is "applescript")
+	set content to "#!/usr/bin/env osascript" &amp;  "\n" &amp; content
+else if (filetype is "sh")
+	set content to "#!/bin/zsh" &amp;  "\n" &amp; content 
+end if
+
+-- generate random name
+set filename to ((random number from 100000 to 999999) as text)
+
+-- create document
+tell application "BBEdit"
+	activate
+	set newDoc to make new document
+	set contents of newDoc to content
+	set file2save to (resolved_path &amp; "/" &amp; filename &amp; "." &amp; filetype)
+	save newDoc to file2save
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>new-text-document.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:filetype}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>sh|py|js|applescript|se-applescript</string>
+						<key>outputlabel</key>
+						<string>Script</string>
+						<key>uid</key>
+						<string>CC24E9B2-FF3E-40C0-A59A-AE0A5AD6E760</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>--</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>21CB6D87-4AE9-4109-B03F-3310BD156584</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>93D77E92-BC96-4F37-9A4F-A167E19BBEC3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>ext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6A64ED91-B242-40F9-A1FF-325B90785D5F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F8B62808-E090-4B42-A75E-F690A41E6ED8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Execution permission granted</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>46BD5B40-E8B3-4CCF-B8B2-1D2E10FC625B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>file_path="{query}"
+file_path="${file_path/#\~/$HOME}"
+
+chmod +x "$file_path"
+echo -n "$file_path"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.netscape.javascript-source</string>
+					<string>public.python-script</string>
+					<string>public.shell-script</string>
+				</array>
+				<key>name</key>
+				<string>Give Execution Permission (chmod +x)</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>F399D3E5-4394-4F99-B2FC-C19B586C0C98</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>7</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>X</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>17380EE5-3BB6-4E89-A412-A77E35AB6B73</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then	set firstItem to item 1 of sel	return POSIX path of (firstItem as text)else	return POSIX path of (sel as text)end if</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>28EC2737-FED4-4995-8D29-BCB67641FA77</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>CF560114-2713-44FF-A809-220E320781F7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>bkp sublime</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Backup: Sublime Preferences</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>'{query}'</string>
+				<key>title</key>
+				<string>✅ Sublime Preferences Backup finished</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>F518AEC4-9F61-4265-BA90-755FFAE4223A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>timestamp=`date '+%Y-%m-%d_%H-%M'`
+resolved_bkp_dest=~`echo -n $backup_location | sed -e "s/~//"`
+backup="$resolved_bkp_dest""/Alfred-Backup_""$timestamp"".zip"
+vault=~`echo -n $vault_path | sed -e "s/~//"`
+
+# directory change necessary to avoid zipping root folder
+# https://unix.stackexchange.com/questions/245856/zip-a-file-without-including-the-parent-directory
+cd $vault
+zip -r --quiet $backup ./*
+
+# restrict number of backups
+actual_number=$((max_number_of_bkps + 1))
+cd $resolved_bkp_dest
+ls -t | tail -n +$actual_number | tr '\n' '\0' | xargs -0 rm
+
+echo "$backup"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>sublime-backup.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>backup-sublime-prefs</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>3AB55595-2BAD-42DF-8A61-73317C35199F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
+	<key>uidata</key>
+	<dict>
+		<key>0F4636D9-C921-44BD-8CF4-199DED9EACC7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
+		<key>17380EE5-3BB6-4E89-A412-A77E35AB6B73</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>give execution permission</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>545</integer>
+		</dict>
+		<key>21CB6D87-4AE9-4109-B03F-3310BD156584</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>2701D5A3-8DDA-4BF9-974D-8C4AA7432BF3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>635</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>28EC2737-FED4-4995-8D29-BCB67641FA77</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>545</integer>
+		</dict>
+		<key>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>create new file</string>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>3AB55595-2BAD-42DF-8A61-73317C35199F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>845</integer>
+		</dict>
+		<key>46BD5B40-E8B3-4CCF-B8B2-1D2E10FC625B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>790</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
+		<key>67F611D4-A5E9-451E-AFEE-59046947524A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
+		<key>6A64ED91-B242-40F9-A1FF-325B90785D5F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>195</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+		<key>735D4356-02CF-4542-84F6-63C6764B2784</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>new Doc</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>open via subl CLI</string>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>65</integer>
+		</dict>
+		<key>93D77E92-BC96-4F37-9A4F-A167E19BBEC3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>395</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+		<key>CF560114-2713-44FF-A809-220E320781F7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>575</integer>
+		</dict>
+		<key>D232E539-5F7D-4AE8-835D-D05830D7CF26</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>get Finder Window</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>D3E2A726-59B9-4BE2-9CF6-986CE14F324C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>open in Sublime</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>F399D3E5-4394-4F99-B2FC-C19B586C0C98</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
+		<key>F518AEC4-9F61-4265-BA90-755FFAE4223A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>510</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
+		<key>F8B62808-E090-4B42-A75E-F690A41E6ED8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>705</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>backup_destination</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/Sublime Backups/</string>
+		<key>max_number_of_bkps</key>
+		<string>10</string>
+		<key>working_folder</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>max_number_of_bkps</string>
+		<string>backup_destination</string>
+		<string>working_folder</string>
+	</array>
+	<key>version</key>
+	<string></string>
+	<key>webaddress</key>
+	<string>https://chris-grieser.de/</string>
+</dict>
+</plist>

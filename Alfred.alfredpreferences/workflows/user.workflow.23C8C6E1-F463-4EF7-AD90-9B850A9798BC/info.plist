@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.sirshanksalot.dark-mode-toggle</string>
+	<key>category</key>
+	<string>Tweaks</string>
+	<key>connections</key>
+	<dict>
+		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
+		<array/>
+		<key>8EFF69B2-7667-4D78-9116-850445A8091A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A51E5228-CA6D-4170-837E-D944D4837B1D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jason Shanks</string>
+	<key>description</key>
+	<string>Toggles Dark Mode/Light Mode in MacOS 10.10+</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Dark Mode Toggle</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>nightmode</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Dark Mode</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8EFF69B2-7667-4D78-9116-850445A8091A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Google Chrome"
+	
+	--Variables
+	set windowlist to every window
+	set totaltabcount to 0
+	
+	-- Loop through each window to count the number of open tabs
+	repeat with chromewindow in windowlist
+		try
+			set tabcount to number of tabs in chromewindow
+			set totaltabcount to totaltabcount + tabcount
+		on error errmsg
+			-- log "error message: " &amp; errmsg
+		end try
+	end repeat
+	
+	log "There are " &amp; totaltabcount &amp; " Chrome tabs open."
+	
+end tell
+
+
+tell application "Brave Browser"
+	open location "https://obsidian.md/"
+	repeat until (loading of active tab of front window is false)
+		delay 0.1
+	end repeat
+end tell
+
+tell application "System Events"	tell appearance preferences to set dark mode to not dark modeend tell
+
+# close tab again
+delay 1
+tell application "Brave Browser" to close active tab of front window</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>toggle-darkmode.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>toggle-dark-mode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>A51E5228-CA6D-4170-837E-D944D4837B1D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>A simple one-liner terminal script that toggles Dark Mode on/off if you are using MacOS 10.14 (Mojave) and beyond.
+
+Thanks goes out to script wrangler extraordinaire Brett Terpstra for [crafting and condensing the script](brettterpstra.com/2018/09/26/shell-tricks-toggling-dark-mode-from-terminal/)!</string>
+	<key>uidata</key>
+	<dict>
+		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>265</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+		<key>8EFF69B2-7667-4D78-9116-850445A8091A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>95</integer>
+			<key>ypos</key>
+			<integer>255</integer>
+		</dict>
+		<key>A51E5228-CA6D-4170-837E-D944D4837B1D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>95</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/jasonshanks/alfred-darkmode</string>
+</dict>
+</plist>

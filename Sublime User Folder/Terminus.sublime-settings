@@ -1,0 +1,14 @@
+{
+	"theme": "ayu-mirage",
+
+	"view_settings": {
+		"rulers": [],
+		"font_size": 15,
+		"block_caret": true,
+	},
+
+	"256color": true,
+	"unix_term": "xterm-256color",
+	"scrollback_history_size": 1000,
+
+}

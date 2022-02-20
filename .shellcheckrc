@@ -1,0 +1,20 @@
+# https://github.com/koalaman/shellcheck/wiki/Directive
+# https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375#file-_shellcheck-md
+
+# -----------------------------------------------------
+# Disabling rules that are irrelevant to zsh
+# (since shellcheck is mostly for bash)
+# -----------------------------------------------------
+
+# 2236: ZSH *can* use < and > for arithmetic comparisons https://zsh.sourceforge.io/Doc/Release/Arithmetic-Evaluation.html
+# 2071: https://scriptingosx.com/2019/08/shellcheck-and-zsh/
+# 1083: zsh accepts without ; at the end of oneline-functions
+
+disable=SC2236,SC2071,SC1083
+
+# -----------------------------------------------------
+# Enable some Optional Rules
+# -----------------------------------------------------
+
+# `shellcheck --list-optional`
+enable=deprecate-which,quote-safe-variables,require-double-brackets

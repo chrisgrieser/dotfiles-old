@@ -1,0 +1,82 @@
+# https://github.com/toml-lang/toml
+# https://starship.rs/config/
+
+add_newline = false
+format = "[$directory$git_branch$git_status$git_metrics$git_commit$git_state$custom$jobs](bg:#393D4F)$cmd_duration$line_break$time$status$character"
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = " [⟐](bold green)"
+error_symbol = " [◆](bold red)"
+# ❱
+
+[cmd_duration]
+min_time = 3000
+format = " [◴ $duration](bold yellow)"
+# ◴◵◶◷
+
+[directory]
+style = "bold fg:#9AEDFE bg:#393D4F"
+truncation_length = 2
+truncation_symbol = "…/"
+truncate_to_repo = true
+read_only = "◎"
+read_only_style = "bold fg:red bg:#393D4F"
+format = "[$path]($style) ([$read_only]($read_only_style) )"
+
+[directory.substitutions]
+"~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault" = "/◘ Vault"
+"~/Library/Mobile Documents/com~apple~CloudDocs" = "~/iCloud"
+"Dokumente/IT Backups/Alfred.alfredpreferences" = "AlfredPrefs"
+"user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
+"user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
+"user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
+
+[status]
+format = " [$symbol$status]($style)"
+disabled = false
+symbol = "⚡"
+
+[jobs]
+symbol = "+ "
+format = "[$symbol$number]($style) "
+style = "bold fg:#9AEDFE bg:#393D4F"
+number_threshold = 2
+symbol_threshold = 1
+
+# mostly conflicts
+[git_state]
+style = 'fg:#FFBF72 bg:#393D4F'
+
+[git_commit]
+style = "fg:yellow bg:#393D4F"
+
+# branch
+[git_branch]
+only_attached = true
+symbol = ""
+style = "bold fg:purple bg:#393D4F"
+format = "[$symbol $branch]($style) "
+
+# files
+[git_status]
+untracked = '[+$count ](fg:green bg:#393D4F)'
+deleted = '[-$count ](fg:red bg:#393D4F)'
+modified = '[*$count ](fg:yellow bg:#393D4F)'
+renamed = '[✎$count ](fg:yellow bg:#393D4F)'
+staged = '[◼︎$count ](fg:#FFBF72 bg:#393D4F)'
+conflicted = '[⤱$count ](fg:red bg:#393D4F)'
+diverged = '[⇈$count ](fg:#FFBF72 bg:#393D4F)'
+ahead = '[⇡$count ](fg:#FFBF72 bg:#393D4F)'
+behind = '[⇣$count ](fg:yellow bg:#393D4F)'
+format = '[$ahead_behind$conflicted$stashed$deleted$staged$untracked$renamed$modified](bold fg:purple bg:#393D4F)'
+
+# lines
+# conditional display block needed https://github.com/starship/starship/issues/3253
+[git_metrics]
+disabled = false
+added_style = "fg:green bg:#393D4F"
+deleted_style = "fg:red bg:#393D4F"
+format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'

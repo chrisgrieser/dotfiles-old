@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ejectBlacklist</key>
+	<array>
+		<string>*local*</string>
+		<string>*Samsung SSD*</string>
+		<string>BOOTCAMP</string>
+		<string>GoogleDrive</string>
+		<string>MobileBackups</string>
+		<string>Recovery</string>
+	</array>
+	<key>emptytrashConfirm</key>
+	<true/>
+	<key>forcequitKeyword</key>
+	<string>kill</string>
+	<key>quitKeyword</key>
+	<string>q</string>
+	<key>restartConfirm</key>
+	<true/>
+	<key>shutdownConfirm</key>
+	<true/>
+	<key>volumedownKeywordEnabled</key>
+	<false/>
+	<key>volumemuteKeywordEnabled</key>
+	<false/>
+	<key>volumeupKeywordEnabled</key>
+	<false/>
+</dict>
+</plist>

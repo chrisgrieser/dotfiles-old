@@ -1,0 +1,192 @@
+// https://www.sublimetext.com/docs/key_bindings.html
+
+// find menu commands
+// cp "/Applications/Sublime Text.app/Contents/MacOS/Packages/Default.sublime-package" .
+// unzip Default.sublime-package -d ./Default\ Package/
+// cd Default\ Package/
+
+// find plugin command IDs
+// file:///Library/Application Support/Sublime Text/Installed Packages/
+// Plugin Package → unzip → Default.sublime-commands
+
+// toggle multiple commands
+// https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
+
+[
+	// Build System
+	{ "keys": ["super+r"], "command": "build", "context": [
+		{"key": "selector", "operator": "equal", "operand": "source.shell"},
+		{"key": "selection_empty", "operator": "equal", "operand": true},
+	] },
+	{ "keys": ["super+r"], "command": "build", "context": [
+		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
+		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
+	] },
+	{ "keys": ["super+shift+r"], "command": "build", "args": {"select": true} },
+	{ "keys": ["shift+super+alt+ctrl+n"], "command": "build", "args": { "variant": "Lint Autofix" } },
+	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
+
+	// Send Code
+	{ "keys": ["super+r"], "command": "send_code", "context": [
+		{"key": "selection_empty", "operator": "equal", "operand": false},
+		{"key": "selector", "operator": "equal", "operand": "source.shell"},
+	] },
+
+	// open with (using Build System)
+	// TableFlip
+	{ "keys": ["ctrl+t"],
+		"command": "chain",
+		"args": {
+			"commands": [
+				["build", { "variant": "TableFlip" }],
+				["hide_panel"]
+			]
+		}
+	},
+
+	// Color Picker and Close
+	{ "keys": ["shift+super+alt+ctrl+c"],
+		"command": "chain",
+		"args": {
+			"commands": [
+				["build", { "variant": "Color Picker" }],
+				["hide_panel"]
+			]
+		}
+	},
+
+	// Sublime Linter Navigation
+	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true } },
+	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
+
+	// Case Conversion
+	{ "keys": ["ctrl+c"], "command": "convert_to_camel", "context": [ // Case Converter Plugin: Convert to camelCase
+		{ "key": "terminus_view", "operator": "not_equal" }, // context necessary to avoid conflict with Terminus
+	] },
+	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
+		{ "key": "terminus_view", "operator": "not_equal" },
+	] },
+	{ "keys": ["ctrl+l"], "command": "lower_case" },
+
+	// Lines
+	{ "keys": ["super+d"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
+	{ "keys": ["super+2"], "command": "swap_line_up" },
+	{ "keys": ["super+3"], "command": "swap_line_down" },
+	{ "keys": ["super+m"], "command": "join_lines" },
+	// Better Duplicate (Plugin)
+	{ "keys": ["super+shift+d"], "command": "duplicate_lines" },
+	// Smart Duplicate (Plugin)
+	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate"},
+	// Kill Line
+	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+	{ "keys": ["super+shift+l"], "command": "split_line"},
+
+	// Multi Cursor down / up
+	{ "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+	// Comment
+	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
+
+	// Fold
+	{ "keys": ["super+shift+alt+ctrl+1"], "command": "fold_by_level", "args": {"level": 1} },
+	{ "keys": ["super+shift+alt+ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
+	{ "keys": ["super+shift+alt+ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
+	{ "keys": ["super+shift+alt+ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
+	{ "keys": ["super+shift+alt+ctrl+5"], "command": "fold_by_level", "args": {"level": 5} },
+	{ "keys": ["super+shift+alt+ctrl+6"], "command": "fold_by_level", "args": {"level": 6} },
+
+	// Undo/Redo Selection
+	{ "keys": ["super+u"], "command": "jump_back" },
+	{ "keys": ["super+shift+u"], "command": "jump_forward" },
+
+	// Navigate
+	{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": ""} },
+	{ "keys": ["super+k"], "command": "goto_comment"},
+	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
+
+	// Expand Selection
+	{ "keys": ["super+j"], "command": "find_under_expand" },
+	{ "keys": ["super+shift+j"], "command": "find_under_expand_skip" },
+	{ "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
+	{ "keys": ["super+shift+alt+ctrl+a"], "command": "lsp_expand_selection"},
+
+	// Paste and Indent & Convert Indentation
+	{ "keys": ["super+v"], "command": "paste_and_indent",
+		"context": [{"key": "terminus_view", "operator": "not_equal" ,"operand": true}]
+	},
+	{ "keys": ["super+i"], "command": "reindent", "args": {"single_line": false} },
+
+	// Palette & Installation
+	{ "keys": ["super+p"], "command": "show_overlay", "args": { "overlay": "command_palette" } },
+	{ "keys": ["shift+super+alt+ctrl+i"], "command": "install_package" },
+	{ "keys": ["shift+super+alt+ctrl+r"], "command": "remove_package" },
+
+	// Edit Keybindings Settings
+	{  "keys": ["super+shift+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap" } },
+
+	// Toggles
+	// Spellcheck
+	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
+	// Wrap
+	{ "keys": ["shift+alt+super+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
+	// Sidebar/Tab bar
+	{ "keys": ["super+1"],
+		"command": "chain",
+		"args": {
+			"commands": [
+				["toggle_tabs"],
+				["toggle_side_bar"]
+			]
+		}
+	},
+
+	// File Management
+	{ "keys": ["ctrl+d"], "command": "prompt_save_as"},
+	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
+	{ "keys": ["ctrl+r"], "command": "rename_file"},
+	{ "keys": ["ctrl+p"], "command": "copy_path" },
+	{ "keys": ["super+backspace"], "command": "delete_current_file"},
+
+	// TERMINUS
+	// Terminus: Open a terminal panel at current file directory
+	{  "keys": ["shift+alt+super+ctrl+t"],
+		"command": "toggle_terminus_panel",
+		"args": {
+			"cwd": "${file_path:${folder}}",
+		}
+	},
+	// fix entering of pipe character and @
+	{ "keys": ["alt+7"], "command": "terminus_keypress", "args": {"key": "|"}, "context": [{"key": "terminus_view"}] },
+	{ "keys": ["alt+l"], "command": "terminus_keypress", "args": {"key": "@"}, "context": [{"key": "terminus_view"}] },
+
+	// OPEN
+	// GitHubinator
+	{ "keys": ["shift+alt+super+ctrl+g"], "command": "githubinator", "args" : { "permalink": false }},
+	// Documentation
+	{ "keys": ["shift+alt+super+ctrl+h"], "command": "goto_documentation" },
+	// Open URL
+	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
+
+	// MARKDOWN
+	{ "keys": ["super+r"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} , "context": [
+		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+	] },
+	{ "keys": ["shift+alt+super+ctrl+u"], "command": "mde_fold_links", "context": [
+		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+	] },
+	{ "keys": ["super+^"], "command": "mde_reference_new_footnote", "context": [
+		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+		{ "key": "setting.mde.keymap_disable.reference_new_footnote", "operator": "not_equal", "operand": true }
+	] },
+	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+			{ "key": "setting.mde.keymap_disable.reference_new_inline_link", "operator": "not_equal", "operand": true }
+		]
+	},
+
+
+
+]
+

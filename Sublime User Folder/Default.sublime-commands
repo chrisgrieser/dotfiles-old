@@ -1,0 +1,3 @@
+[
+	// { "caption": "EsLint-Formatter Settings", "command": "edit_settings", "args": {"base_file": "${packages}/ESLint-Formatter/ESLint-Formatter.sublime-settings", } },
+]

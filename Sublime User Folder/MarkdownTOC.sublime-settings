@@ -1,0 +1,6 @@
+{
+	"defaults": {
+		"autolink": true,
+		"levels": [2,3],
+	},
+}

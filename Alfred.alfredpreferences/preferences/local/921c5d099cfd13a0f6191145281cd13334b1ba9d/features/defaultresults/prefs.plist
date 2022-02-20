@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>scope</key>
+	<array>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs</string>
+		<string>~/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents</string>
+		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Literature Note Imports</string>
+		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Literature Notes</string>
+		<string>~/Video</string>
+	</array>
+</dict>
+</plist>

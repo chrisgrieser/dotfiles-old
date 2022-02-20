@@ -1,0 +1,13 @@
+# encrypted data
+**/Academia/PhD Data/
+
+# Mac Stuff
+.DS_Store
+.Trash
+
+# https://stackoverflow.com/a/65429032
+Icon?
+![iI]con[_a-zA-Z0-9]
+
+# git
+**/.git/

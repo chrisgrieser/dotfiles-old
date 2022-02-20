@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = main
+[user]
+	name = pseudometa
+	email = 73286100+chrisgrieser@users.noreply.github.com
+[pull]
+	rebase = true
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
