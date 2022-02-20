@@ -26,17 +26,9 @@ mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 # Symlink Dotfiles
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
 mv ~/.zshrc ~/.Trash
-ln -s "$SYMLINK_LOC"/.zshrc ~/.zshrc
-
-ZSH_SYMLINK_LOC=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/zsh/'
-cd "$ZSH_SYMLINK_LOC" || exit
-# shellcheck disable=SC2045
-for dotfile in $(ls -A) ; do
-	mv ~/"$dotfile" ~/.Trash
-	[[ -e "$dotfile" ]] || break  # handle the case of no files
-	ln -s "$ZSH_SYMLINK_LOC""$dotfile" ~/"$dotfile"
-done
-
+ln -s "$SYMLINK_LOC"/zsh/.zshrc ~/.zshrc
+mv ~/.zprofile ~/.Trash
+ln -s "$SYMLINK_LOC"/zsh/.zprofile ~/.zprofile
 
 mv ~/.hyper ~/.Trash
 ln -s "$SYMLINK_LOC"/.hyper.js ~/.hyper.js
