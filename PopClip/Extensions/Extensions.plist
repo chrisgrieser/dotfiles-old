@@ -8,11 +8,11 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
-			<string>com.pilotmoon.popclip.extension.highlight</string>
+			<string>com.pilotmoon.popclip.extension.drafts</string>
 			<key>Extension Name</key>
-			<string>Highlight</string>
+			<string>Drafts</string>
 			<key>Package Name</key>
-			<string>Highlight.popclipext</string>
+			<string>Drafts.popclipext</string>
 		</dict>
 		<dict>
 			<key>Enabled</key>
@@ -78,21 +78,21 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
-			<string>de.chris-grieser.isbn2bibtex</string>
+			<string>com.pilotmoon.popclip.extension.highlight</string>
 			<key>Extension Name</key>
-			<string>ISBN 2 BibTeX</string>
+			<string>Highlight</string>
 			<key>Package Name</key>
-			<string>ISBN 2 BibTeX.popclipext</string>
+			<string>Highlight.popclipext</string>
 		</dict>
 		<dict>
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
-			<string>com.pilotmoon.popclip.extension.drafts</string>
+			<string>de.chris-grieser.isbn2bibtex</string>
 			<key>Extension Name</key>
-			<string>Drafts</string>
+			<string>ISBN 2 BibTeX</string>
 			<key>Package Name</key>
-			<string>Drafts.popclipext</string>
+			<string>ISBN 2 BibTeX.popclipext</string>
 		</dict>
 	</array>
 	<key>Version</key>

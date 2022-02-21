@@ -25,11 +25,7 @@ xargs npm install -g --force < ~'/Desktop/NPMfile'
 npm list -g
 
 # Python
-brew install python3
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
-rm get-pip.py
-pip3 install pdfminer.six
+brew install python3 # already includes pip, as pip3
 pip3 install pdfannots
 
 # -----------
