@@ -155,7 +155,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EA14ACD7-CB2E-48D9-8E7B-05601EEEBD3A</string>
+				<string>6F3C1C68-F012-43DA-97ED-530C7CF22733</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -786,7 +786,7 @@ end if</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Switch to Safari (and back)</string>
+				<string>Switch to Safari</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -805,46 +805,20 @@ end if</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>-- based on https://gist.github.com/dongyuwei/a1c9d67e4af6bbbd999c
--- and on https://ldstephens.medium.com/use-alfred-to-launch-safari-url-in-chrome-b609cdc18f21
+				<string>CURRENT_URL=$(osascript -e "tell application \"Brave Browser\" to return URL of active tab of front window")
 
-tell application "System Events" to set frontApp to name of first process whose frontmost is true
-
-if (frontApp = "Safari") then
-    tell application "Safari"
-        set currentTabUrl to URL of front document
-    end tell
-    tell application "Brave Browser"
-        open location (currentTabUrl)
-        activate
-    end tell
-end if
-
-if (frontApp = "Brave Browser") then
-    tell application "Brave Browser"
-        set currentTabUrl to URL of active tab of front window
-    end tell
-    tell application "Safari"
-        open location (currentTabUrl)
-        activate
-    end tell
-end if
-
-if (frontApp ≠ "Brave Browser") and (frontApp ≠ "Safari") then
-    display notification ("neither Brave nor Safari active") with title ("No Browser Switch")
-    beep
-end if</string>
+open -a Safari "$CURRENT_URL"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>EA14ACD7-CB2E-48D9-8E7B-05601EEEBD3A</string>
+			<string>6F3C1C68-F012-43DA-97ED-530C7CF22733</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1964,6 +1938,15 @@ end tell</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
 		<key>76F8A396-E4CD-4EB0-A75F-DCC06EAD3FEA</key>
 		<dict>
 			<key>colorindex</key>
@@ -2245,15 +2228,6 @@ end tell</string>
 			<integer>355</integer>
 			<key>ypos</key>
 			<integer>630</integer>
-		</dict>
-		<key>EA14ACD7-CB2E-48D9-8E7B-05601EEEBD3A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>155</integer>
 		</dict>
 		<key>F705D097-384F-4D11-B58D-75BF7B3AE75B</key>
 		<dict>

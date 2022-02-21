@@ -28,6 +28,10 @@ module.exports = {
 		{
 			match: /zoom\.us\/j/i,
 			browser: "us.zoom.xos"
+		},
+		{
+			match: ({ url }) => url.host.endsWith("hvgruender.de"),
+			browser: "com.apple.Safari"
 		}
 	]
 }
