@@ -79,10 +79,7 @@
 	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate"},
 	// Kill Line
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
-	{
-		"keys": ["super+shift+l"],
-		"command": "split_line"
-	},
+	{ "keys": ["super+shift+l"], "command": "split_line"},
 
 	// Multi Cursor down / up
 	{ "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
@@ -102,9 +99,11 @@
 	{ "keys": ["super+shift+u"], "command": "jump_forward" },
 
 	// Navigate
-	{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": ""} },
 	{ "keys": ["super+k"], "command": "goto_comment"},
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
+	// { "keys": ["super+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["super+o"], "command": "open_browse" },
+
 
 	// Expand Selection
 	{ "keys": ["super+j"], "command": "find_under_expand" },
@@ -147,8 +146,10 @@
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
-	{ "keys": ["super+backspace"], "command": "delete_current_file"},
-	{ "keys": ["super+o"], "command": "fuzzy_start_from_file" },
+	{ "keys": ["super+backspace"], "command": "delete_current_file" },
+	{ "keys": ["super+backspace"], "command": "fuzzy_delete",
+		"context": [{"key": "fuzzy_delete"}]
+	},
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory

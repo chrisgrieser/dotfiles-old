@@ -38,10 +38,10 @@ function in (){
 	# shellcheck disable=SC2012
 	NEWEST_APP="$(ls -tc /Applications | head -n1)"
 	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
-	read -r -k 1 DECISION
 
 	# guard clause: if decision not yes, stop
-	[[ "$DECISION" == "y" ]] || return 0
+	read -r -k 1 DECISION
+	[[ "$DECISION:l" == "y" ]] || return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
 
 	open -a "$NEWEST_APP"
 }
