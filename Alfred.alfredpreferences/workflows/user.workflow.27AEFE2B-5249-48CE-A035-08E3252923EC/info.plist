@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6F3C1C68-F012-43DA-97ED-530C7CF22733</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<array>
 			<dict>
@@ -125,19 +138,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4CC5D136-D6EC-402E-9CC7-09F0479255AF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6F3C1C68-F012-43DA-97ED-530C7CF22733</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>510E8BB1-CE76-4210-9AD9-A85633C85362</key>
 		<array>
 			<dict>
@@ -177,6 +177,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
+		<array/>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<array>
 			<dict>
@@ -599,20 +601,20 @@ end if</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>keyword</key>
-				<string>switch</string>
+				<string>sw</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
 				<string>Switch to Safari</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>4CC5D136-D6EC-402E-9CC7-09F0479255AF</string>
+			<string>1F170814-90DD-485E-A861-757A4FD92606</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -624,15 +626,14 @@ end if</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>CURRENT_URL=$(osascript -e "tell application \"Brave Browser\" to return URL of active tab of front window")
-
-open -a Safari "$CURRENT_URL"</string>
+				<string>tell application "Brave Browser" to set currentTabUrl to URL of active tab of front window-- has to set the URL instead of "open location" (and its equivalents in Shell/JXA)
+-- to prevent interaction with finickytell application "Safari"	set the URL of the current tab of the front window to currentTabUrl	activateend tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -705,58 +706,6 @@ open -a Safari "$CURRENT_URL"</string>
 			<string>A748B391-CED8-49ED-912B-DE766781906F</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>var query = "{query}";
-query = encodeURIComponent(query);
-query = query.replaceAll ("%2F","/");
-
-var locationhistory = "brave://history/?q=" + query;
-
-Brave = Application("/Applications/Brave Browser.app");
-Brave.includeStandardAdditions = true;
-Brave.openLocation(locationhistory);</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>854A1439-30EA-4457-978F-2665DAAA34A4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>h</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>History: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2C1CDF2B-CEEC-4C36-9D32-BFA8CC04BF88</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -849,46 +798,54 @@ Brave.openLocation(locationhistory);</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>var query = "{query}";
+query = encodeURIComponent(query);
+query = query.replaceAll ("%2F","/");
+
+var locationhistory = "brave://history/?q=" + query;
+
+Brave = Application("/Applications/Brave Browser.app");
+Brave.includeStandardAdditions = true;
+Brave.openLocation(locationhistory);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>854A1439-30EA-4457-978F-2665DAAA34A4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>history</string>
+				<string>h</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>History</string>
+				<string>History: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>1B449CAC-A103-466F-8E55-65D6BF43327F</string>
+			<string>2C1CDF2B-CEEC-4C36-9D32-BFA8CC04BF88</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://history/"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A473011C-C987-4874-9FC4-5ADE9AB02BAA</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -938,6 +895,50 @@ end tell</string>
 			<string>510E8BB1-CE76-4210-9AD9-A85633C85362</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>history</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>History</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1B449CAC-A103-466F-8E55-65D6BF43327F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Brave Browser" to open location "brave://history/"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A473011C-C987-4874-9FC4-5ADE9AB02BAA</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1308,9 +1309,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>525</integer>
 		</dict>
 		<key>1EB2691B-3759-410E-9B85-D10F034277BD</key>
 		<dict>
@@ -1320,6 +1321,15 @@ end tell</string>
 			<integer>875</integer>
 			<key>ypos</key>
 			<integer>350</integer>
+		</dict>
+		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>165</integer>
 		</dict>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<dict>
@@ -1346,9 +1356,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>415</integer>
 		</dict>
 		<key>2F48B786-7E46-4129-8791-ADAB7D9CFEB2</key>
 		<dict>
@@ -1395,17 +1405,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>720</integer>
 		</dict>
-		<key>4CC5D136-D6EC-402E-9CC7-09F0479255AF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>Switch to Safari</string>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>155</integer>
-		</dict>
 		<key>510E8BB1-CE76-4210-9AD9-A85633C85362</key>
 		<dict>
 			<key>colorindex</key>
@@ -1436,11 +1435,11 @@ end tell</string>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>7</integer>
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>165</integer>
 		</dict>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<dict>
@@ -1467,9 +1466,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>415</integer>
 		</dict>
 		<key>869C34F9-4326-4615-AE84-87BE175F0EE2</key>
 		<dict>
@@ -1539,9 +1538,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>525</integer>
 		</dict>
 		<key>A748B391-CED8-49ED-912B-DE766781906F</key>
 		<dict>
