@@ -26,15 +26,12 @@ function in (){
 
 	# guard clause to ensure that the input exists and is a cask, quotes would add empty 2nd arg if empty
 	# shellcheck disable=SC2086
-	INSTALL_INFO=$(HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE) || return
+	brew install --no-quarantine "$TO_INSTALL" $TYPE) || return
 
 	# get attention when there is a caveat, `\033[1;33m` = bold yellow
-	INSTALL_INFO=$(echo $INSTALL_INFO | sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/')
-	if [[ "$INSTALL_INFO" =~ "Caveats" ]] ; then
-		osascript -e "beep"
+	if [[ $(brew info "$TO_INSTALL" $TYPE) =~ "Caveats" ]] ; then
+		echo "\033[1;33m⚠️ Caveats"
 	fi
-	echo ""
-	echo "$INSTALL_INFO"
 
 	# if it is a cask, offer to open it
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
