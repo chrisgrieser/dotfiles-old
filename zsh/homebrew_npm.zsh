@@ -77,8 +77,6 @@ function update (){
 	fig update
 
 	print-section "Pip3"
-	pip3 install --upgrade pip
-	pip3 install --upgrade pdfminer.six
 	pip3 install --upgrade pdfannots
 
 	print-section "Dump Installs"

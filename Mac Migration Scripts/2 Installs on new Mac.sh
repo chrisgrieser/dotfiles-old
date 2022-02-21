@@ -3,7 +3,7 @@ sudo -v
 # Install Homebrew itself
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# needed for php installation
+# needed for php installation, php needed for SPotify workflow
 xcode-select --install
 
 # MAS CLI sign in currently broken due to Apple API change
@@ -17,16 +17,20 @@ open '/System/Applications/App Store.app'
 brew bundle install --verbose --no-lock --file ~'/Desktop/Brewfile'
 
 # Uninstall unneeded Mac Default apps
-open -a "Appcleaner" "/Applications/Numbers.app" "/Applications/Pages.app/" "/Applications/GarageBand.app" "/Applications/Keynote.app" "/Applications/iMovie.app"
+open -a "Appcleaner" \
+    "/Applications/Numbers.app" \
+    "/Applications/Pages.app/" \
+    "/Applications/GarageBand.app" \
+    "/Applications/Keynote.app" \
+    "/Applications/iMovie.app"
 
 # NPM https://stackoverflow.com/a/41199625
-# force to enforce installation when there are already npm installs
-xargs npm install -g --force < ~'/Desktop/NPMfile'
+# add "--force" to enforce installation when there are already npm installs
+cat ~'/Desktop/NPMfile' | xargs npm install -g
 npm list -g
 
 # Python
-brew install python3 # already includes pip, as pip3
-pip3 install pdfannots
+pip3 install pdfannots #requires the python3 version installed by homebrew
 
 # -----------
 # SETTINGS
@@ -60,14 +64,11 @@ print("Result: %d (%s)" % (
 EOF
 
 # Steam UI https://tp69.blog/2020/02/11/how-to-zoom-the-steam-client/
-zoomFactor="1.5"
-skinName="Bigger UI"
-cssContent=":root { zoom: ""$zoomFactor""; }"
-steamDataPath=~"/Library/Application Support/SteamSublimeLinter-shellcheck/Steam.AppBundle/Steam/Contents/MacOS"
-newSkinPath="$steamDataPath"/skins/"$skinName"
+steamDataPath=~"/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
+newSkinPath="$steamDataPath""/skins/Bigger UI"
 mkdir -p "$newSkinPath"/resource/styles/
 cp "$steamDataPath"/resource/styles/steam.styles "$newSkinPath"/resource/styles/
-echo "$cssContent" > "$newSkinPath"/resource/webkit.css
+echo ":root { zoom: \"1.5\"; }" > "$newSkinPath"/resource/webkit.css
 
 # ------------------
 # Potentially needed
