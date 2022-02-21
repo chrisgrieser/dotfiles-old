@@ -29,8 +29,7 @@ function in (){
 	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE | \
 		# get attention when there is a caveat, `\033[1;33m` = bold yellow
 		sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/' \
-		# guard clause: ensure that input exists and is cask
-		|| return
+		|| return # guard clause: ensure that input exists and is cask
 
 	# guard clause: if not cask, stop
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0

@@ -4,6 +4,7 @@ echo -n "" | crontab -
 # prevent mail alerts https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
 # (crontab -l && echo "MAILTO=''") | crontab -
 # if line above is disabled, a log of cronjobs can be accesssed via `mail`
+# mails can be deleted by removing `/private/var/mail/chrisgrieser`
 
 # every half hour
 (crontab -l && echo "*/30 * * * * '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Cron Jobs/30-min.sh'") | crontab -
