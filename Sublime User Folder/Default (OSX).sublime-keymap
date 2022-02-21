@@ -79,7 +79,10 @@
 	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate"},
 	// Kill Line
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
-	{ "keys": ["super+shift+l"], "command": "split_line"},
+	{
+		"keys": ["super+shift+l"],
+		"command": "split_line"
+	},
 
 	// Multi Cursor down / up
 	{ "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
@@ -93,8 +96,6 @@
 	{ "keys": ["super+shift+alt+ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
 	{ "keys": ["super+shift+alt+ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
 	{ "keys": ["super+shift+alt+ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
-	{ "keys": ["super+shift+alt+ctrl+5"], "command": "fold_by_level", "args": {"level": 5} },
-	{ "keys": ["super+shift+alt+ctrl+6"], "command": "fold_by_level", "args": {"level": 6} },
 
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
@@ -147,6 +148,7 @@
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	{ "keys": ["super+backspace"], "command": "delete_current_file"},
+	{ "keys": ["super+o"], "command": "fuzzy_start_from_file" },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
