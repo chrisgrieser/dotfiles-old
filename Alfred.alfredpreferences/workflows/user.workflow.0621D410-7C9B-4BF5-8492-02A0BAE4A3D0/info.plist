@@ -1402,7 +1402,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 		<key>output_format</key>
 		<string>mp4</string>
 		<key>youtube_link_folder</key>
-		<string>~/Video</string>
+		<string>~/Video/Downloaded</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
