@@ -47,37 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0D28042B-7750-4E40-AABE-829A875F47BC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2346B5EE-C73D-420D-A4B5-6A300B4BB443</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1B449CAC-A103-466F-8E55-65D6BF43327F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A473011C-C987-4874-9FC4-5ADE9AB02BAA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2346B5EE-C73D-420D-A4B5-6A300B4BB443</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>76F8A396-E4CD-4EB0-A75F-DCC06EAD3FEA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -203,19 +177,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>76F8A396-E4CD-4EB0-A75F-DCC06EAD3FEA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AEF372DD-5F3B-48E2-B8D7-5D6EDE5977FE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<array>
 			<dict>
@@ -320,83 +281,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>AEF372DD-5F3B-48E2-B8D7-5D6EDE5977FE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E5803857-7760-4CB1-9E8B-8C19AEAB4687</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B234F8CB-7E73-41F2-BD90-1FB7EA061DCF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D9B3C44B-5D76-4F2E-969C-D6227C3F12FA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>AE17ACEB-B363-4F1B-80E3-3F93AE8A6737</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B65417D3-1ACD-4B3F-A784-7DD4CE5FF31A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0D28042B-7750-4E40-AABE-829A875F47BC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>6F517889-BFC7-4B27-9F6E-94E86F60FEF5</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>0D28042B-7750-4E40-AABE-829A875F47BC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>AC9C238D-C48E-4562-B489-FB8D934C94A7</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>F705D097-384F-4D11-B58D-75BF7B3AE75B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>9C1AABF8-38F1-4C5D-82D6-88E20D6C3C22</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>E791B385-0B4D-4D85-A668-8F304FA8A44E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<array>
 			<dict>
@@ -423,76 +307,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C6D8FC19-52EF-4E46-9E7F-3F53432E3095</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B65417D3-1ACD-4B3F-A784-7DD4CE5FF31A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D9B3C44B-5D76-4F2E-969C-D6227C3F12FA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E5C0705C-CB9B-4043-87E2-D3A850DE768D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E5803857-7760-4CB1-9E8B-8C19AEAB4687</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B234F8CB-7E73-41F2-BD90-1FB7EA061DCF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E791B385-0B4D-4D85-A668-8F304FA8A44E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2346B5EE-C73D-420D-A4B5-6A300B4BB443</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F705D097-384F-4D11-B58D-75BF7B3AE75B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2346B5EE-C73D-420D-A4B5-6A300B4BB443</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1123,310 +942,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>markdown</key>
-					<string>yes</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>0D28042B-7750-4E40-AABE-829A875F47BC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to activatetell application "System Events" to keystroke "c" using {command down}delay 0.1-- puts the app back into the foreground where the trigger has been activated-- note: alfreds focused-app-variable passes not an app name, but the app-id, therefore the keyword "id" has to be added here.set focusedapp_id to (system attribute "focusedapp")tell application id focusedapp_id to activate--copies title, URL, and selection based on  https://gist.github.com/dongyuwei/a1c9d67e4af6bbbd999ctell application "Brave Browser"	set currentTabUrl to URL of active tab of front window	set currentTabTitle to title of active tab of front windowend tell--alfred previously stored the selection in Brave to the clipboardset BraveSelection to (the clipboard as text)--defines cases of what to returnset markdown to (system attribute "markdown")if BraveSelection ≠ "" then set selectionExisting to trueif BraveSelection = "" then set selectionExisting to falseif selectionExisting and markdown = "yes" then return "&gt; " &amp; BraveSelection &amp; "  \n" &amp; "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"if selectionExisting and markdown = "no" then return "\"" &amp; BraveSelection &amp; "\"" &amp; "
-" &amp; currentTabTitle &amp; " " &amp; currentTabUrlif selectionExisting and markdown = "slack" then return "&gt;" &amp; BraveSelection &amp; "
-" &amp; currentTabUrlif not selectionExisting and markdown = "yes" then return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"if not selectionExisting and markdown = "no" then return currentTabTitle &amp; " " &amp; currentTabUrlif not selectionExisting and markdown = "slack" then return currentTabTitle &amp; "
-" &amp; currentTabUrl</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>76F8A396-E4CD-4EB0-A75F-DCC06EAD3FEA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>f</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1179648</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>E5C0705C-CB9B-4043-87E2-D3A850DE768D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>E5803857-7760-4CB1-9E8B-8C19AEAB4687</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#  cannot by "Copy to Clipboard" action, since an empty text field would instead replace it with the passed query
-
-echo -n '' | pbcopy</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2346B5EE-C73D-420D-A4B5-6A300B4BB443</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.agiletortoise.Drafts-OSX</string>
-						<key>outputlabel</key>
-						<string>Drafts (MD)</string>
-						<key>uid</key>
-						<string>6F517889-BFC7-4B27-9F6E-94E86F60FEF5</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>md.obsidian</string>
-						<key>outputlabel</key>
-						<string>Obsidian (MD)</string>
-						<key>uid</key>
-						<string>AC9C238D-C48E-4562-B489-FB8D934C94A7</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.tinyspeck.slackmacgap</string>
-						<key>outputlabel</key>
-						<string>Slack</string>
-						<key>uid</key>
-						<string>9C1AABF8-38F1-4C5D-82D6-88E20D6C3C22</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>non-markdown</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>B65417D3-1ACD-4B3F-A784-7DD4CE5FF31A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>C6D8FC19-52EF-4E46-9E7F-3F53432E3095</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:markdown}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>slack</string>
-						<key>outputlabel</key>
-						<string>slack</string>
-						<key>uid</key>
-						<string>AE17ACEB-B363-4F1B-80E3-3F93AE8A6737</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>--</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>B234F8CB-7E73-41F2-BD90-1FB7EA061DCF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>seconds</key>
-				<string>0.5</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
-			<key>uid</key>
-			<string>D9B3C44B-5D76-4F2E-969C-D6227C3F12FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>AEF372DD-5F3B-48E2-B8D7-5D6EDE5977FE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>markdown</key>
-					<string>slack</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>F705D097-384F-4D11-B58D-75BF7B3AE75B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>markdown</key>
-					<string>no</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>E791B385-0B4D-4D85-A668-8F304FA8A44E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -1779,15 +1294,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>120</integer>
 		</dict>
-		<key>0D28042B-7750-4E40-AABE-829A875F47BC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>530</integer>
-		</dict>
 		<key>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</key>
 		<dict>
 			<key>colorindex</key>
@@ -1814,17 +1320,6 @@ end tell</string>
 			<integer>875</integer>
 			<key>ypos</key>
 			<integer>350</integer>
-		</dict>
-		<key>2346B5EE-C73D-420D-A4B5-6A300B4BB443</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>clears clipboard</string>
-			<key>xpos</key>
-			<integer>455</integer>
-			<key>ypos</key>
-			<integer>540</integer>
 		</dict>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<dict>
@@ -1947,15 +1442,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>155</integer>
 		</dict>
-		<key>76F8A396-E4CD-4EB0-A75F-DCC06EAD3FEA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>605</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<dict>
 			<key>colorindex</key>
@@ -2075,35 +1561,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>835</integer>
 		</dict>
-		<key>AEF372DD-5F3B-48E2-B8D7-5D6EDE5977FE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>remove trailing \n</string>
-			<key>xpos</key>
-			<integer>755</integer>
-			<key>ypos</key>
-			<integer>570</integer>
-		</dict>
-		<key>B234F8CB-7E73-41F2-BD90-1FB7EA061DCF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>975</integer>
-			<key>ypos</key>
-			<integer>560</integer>
-		</dict>
-		<key>B65417D3-1ACD-4B3F-A784-7DD4CE5FF31A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>200</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>
 			<key>colorindex</key>
@@ -2133,17 +1590,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>835</integer>
 		</dict>
-		<key>C6D8FC19-52EF-4E46-9E7F-3F53432E3095</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>copy selection from Brave</string>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>550</integer>
-		</dict>
 		<key>CC573DCC-2430-4516-A565-B23465C095EA</key>
 		<dict>
 			<key>colorindex</key>
@@ -2161,15 +1607,6 @@ end tell</string>
 			<integer>875</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>D9B3C44B-5D76-4F2E-969C-D6227C3F12FA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>1040</integer>
-			<key>ypos</key>
-			<integer>565</integer>
 		</dict>
 		<key>E4659DA7-D204-4F46-ADDD-765F8EEB3501</key>
 		<dict>
@@ -2199,44 +1636,6 @@ end tell</string>
 			<integer>555</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>E5803857-7760-4CB1-9E8B-8C19AEAB4687</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>830</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
-		<key>E5C0705C-CB9B-4043-87E2-D3A850DE768D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Slack Hotkey for applying formatting</string>
-			<key>xpos</key>
-			<integer>1095</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
-		<key>E791B385-0B4D-4D85-A668-8F304FA8A44E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>630</integer>
-		</dict>
-		<key>F705D097-384F-4D11-B58D-75BF7B3AE75B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>580</integer>
 		</dict>
 	</dict>
 	<key>version</key>
