@@ -24,20 +24,19 @@ function in (){
 	TO_INSTALL="$1"
 	TYPE="$2" # formula or cask
 
-	# guard clause to ensure that the input exists and is a cask, quotes would add empty 2nd arg if empty
-	# shellcheck disable=SC2086
-	brew install --no-quarantine "$TO_INSTALL" $TYPE || return
-
+	# quotes would add empty 2nd arg if empty
 	# get attention when there is a caveat, `\033[1;33m` = bold yellow
-	if [[ $(brew info "$TO_INSTALL" $TYPE) =~ "Caveats" ]] ; then
-		echo "\033[1;33m⚠️ Caveats"
-	fi
+	# shellcheck disable=SC2086
+	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE | \
+		sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/' \
+		|| return # guard clause to ensure that the input exists and is a cask
 
-	# if it is a cask, offer to open it
+	# guard clause: if not cask, stop
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
+
 	# shellcheck disable=SC2012
 	NEWEST_APP="$(ls -tc /Applications | head -n1)"
-	echo "Open \"$NEWEST_APP\"? (y/n)"
+	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
 	read -r -k 1 DECISION
 	if [[ "$DECISION" == "y" ]] ; then
 		open -a "$NEWEST_APP"
@@ -91,6 +90,8 @@ function report (){
 	brew leaves --installed-on-request
 	echo "Homebrew Leaves (installed as dependency)"
 	brew leaves --installed-as-dependency
+	echo "Homebrew Casks"
+	brew list --casks
 
 	print-section "Mac App Store"
 	mas list
