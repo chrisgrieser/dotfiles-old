@@ -3,15 +3,12 @@
 	"show_in_minimap": true,
 	"search_threshold": 10000,
 
+	// color changed to keep it distinguishable from the
+	// yellow dots from SublimeLinter (warnings)
 	"bracket_styles": {
 		"default": {
 			"icon": "dot",
-				// Support the old convention of `brackethighlighter.default`
-				// for themes that already provide something.
-				// As this has always been the only one we've provided
-				// by default, all the others will use region-ish colors.
 				"color": "region.purpleish brackethighlighter.default",
-				"style": "underline"
 			},
 		}
 	}

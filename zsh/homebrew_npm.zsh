@@ -26,7 +26,7 @@ function in (){
 
 	# guard clause to ensure that the input exists and is a cask, quotes would add empty 2nd arg if empty
 	# shellcheck disable=SC2086
-	brew install --no-quarantine "$TO_INSTALL" $TYPE) || return
+	brew install --no-quarantine "$TO_INSTALL" $TYPE || return
 
 	# get attention when there is a caveat, `\033[1;33m` = bold yellow
 	if [[ $(brew info "$TO_INSTALL" $TYPE) =~ "Caveats" ]] ; then
@@ -36,11 +36,11 @@ function in (){
 	# if it is a cask, offer to open it
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
 	# shellcheck disable=SC2012
-	NEW_APP="$(ls -tc /Applications | head -n1)"
-	echo "Open \"$NEW_APP\"? (y/n)"
+	NEWEST_APP="$(ls -tc /Applications | head -n1)"
+	echo "Open \"$NEWEST_APP\"? (y/n)"
 	read -r -k 1 DECISION
 	if [[ "$DECISION" == "y" ]] ; then
-		open -a "$NEW_APP"
+		open -a "$NEWEST_APP"
 	fi
 }
 
