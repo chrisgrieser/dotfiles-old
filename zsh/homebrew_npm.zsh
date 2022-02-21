@@ -25,11 +25,12 @@ function in (){
 	TYPE="$2" # formula or cask
 
 	# quotes would add empty 2nd arg if empty
-	# get attention when there is a caveat, `\033[1;33m` = bold yellow
 	# shellcheck disable=SC2086
 	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE | \
+		# get attention when there is a caveat, `\033[1;33m` = bold yellow
 		sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/' \
-		|| return # guard clause to ensure that the input exists and is a cask
+		# guard clause: ensure that input exists and is cask
+		|| return
 
 	# guard clause: if not cask, stop
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
@@ -38,9 +39,11 @@ function in (){
 	NEWEST_APP="$(ls -tc /Applications | head -n1)"
 	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
 	read -r -k 1 DECISION
-	if [[ "$DECISION" == "y" ]] ; then
-		open -a "$NEWEST_APP"
-	fi
+
+	# guard clause: if decision not yes, stop
+	[[ "$DECISION" == "y" ]] || return 0
+
+	open -a "$NEWEST_APP"
 }
 
 function print-section () {
@@ -53,7 +56,8 @@ function dump () {
 	device_name=$(scutil --get ComputerName)
 	brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$device_name"
 	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$device_name"
-	echo "Brewfile and NPMfile dumped at \"$BREWDUMP_PATH\""
+	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$device_name"
+	echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 }
 
 function update (){
@@ -69,9 +73,6 @@ function update (){
 	print-section "NPM"
 	npm update -g
 
-	print-section "fig"
-	fig update
-
 	print-section "Pip3"
 	pip3 install --upgrade pdfannots
 
@@ -83,14 +84,15 @@ function update (){
 
 function report (){
 	print-section "Homebrew"
+	echo "Taps"
 	brew tap
-	brew list
+	echo "Doctor"
 	brew doctor
-	echo "Homebrew Leaves (installed on request)"
+	echo "Leaves (installed on request)"
 	brew leaves --installed-on-request
-	echo "Homebrew Leaves (installed as dependency)"
+	echo "Leaves (installed as dependency)"
 	brew leaves --installed-as-dependency
-	echo "Homebrew Casks"
+	echo "Casks"
 	brew list --casks
 
 	print-section "Mac App Store"
