@@ -32,7 +32,7 @@ export FZF_DEFAULT_COMMAND='fd'
 export FZF_DEFAULT_OPTS='-0 -1 --pointer=⟐ --prompt="❱ "'
 
 export MAGIC_ENTER_GIT_COMMAND="git status"
-export MAGIC_ENTER_OTHER_COMMAND="ls -G"
+export MAGIC_ENTER_OTHER_COMMAND="tree -C -L 2"
 
 export EDITOR='nano' # mainly for `crontab -e`
 

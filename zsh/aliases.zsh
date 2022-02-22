@@ -10,7 +10,7 @@ alias rr='exec zsh'
 
 # shortcuts
 alias q='exit'
-alias size='du -h -d 1' # size of files in current directory
+alias size='tree -s -h --du -L2' # size of files in current directory
 alias b='cd - &> /dev/null' # back
 alias .="open ."
 alias wd='cd "$WD"' # working directory

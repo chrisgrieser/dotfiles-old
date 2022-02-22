@@ -6,9 +6,6 @@ export HOMEBREW_CLEANUP_MAX_AGE_DAYS=90
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_INSTALL_BADGE=✅
 
-alias dev='npm run dev'
-alias build='npm run build'
-
 alias re='brew reinstall'
 alias un='brew uninstall --zap'
 

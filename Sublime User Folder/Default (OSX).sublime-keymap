@@ -147,9 +147,6 @@
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	{ "keys": ["super+backspace"], "command": "delete_current_file" },
-	{ "keys": ["super+backspace"], "command": "fuzzy_delete",
-		"context": [{"key": "fuzzy_delete"}]
-	},
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory

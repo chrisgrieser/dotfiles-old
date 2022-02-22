@@ -13,7 +13,8 @@ source "$ZSH_DOTFILE_LOCATION"/docs_man.zsh
 source "$ZSH_DOTFILE_LOCATION"/terminal_utils.zsh
 source "$ZSH_DOTFILE_LOCATION"/fzf_functions.zsh
 source "$ZSH_DOTFILE_LOCATION"/git_github.zsh
-source "$ZSH_DOTFILE_LOCATION"/homebrew_npm.zsh
+source "$ZSH_DOTFILE_LOCATION"/homebrew.zsh
+source "$ZSH_DOTFILE_LOCATION"/npm.zsh
 source "$ZSH_DOTFILE_LOCATION"/magic_enter.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh

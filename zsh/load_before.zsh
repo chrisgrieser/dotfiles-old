@@ -2,13 +2,14 @@
 # shellcheck disable=SC1090,SC1091,SC2292
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 
+# activate completions, also needed for ZSH auto suggestions & completions
+autoload compinit -Uz && compinit
+
+
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source "$(brew --prefix)"/share/zsh-you-should-use/you-should-use.plugin.zsh
-
-# activate completions, also needed for ZSH auto suggestions & completions
-autoload compinit -Uz && compinit
 
 eval "$(fasd --init auto)"
 eval "$(thefuck --alias)"

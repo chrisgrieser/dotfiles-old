@@ -233,7 +233,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</string>
+				<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -415,7 +415,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
+				<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -441,7 +441,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
+				<string>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -489,6 +489,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F40B442E-1E32-439E-BD52-FD4575625796</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E0A3B959-9472-4B43-B469-56E20E333E3B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E26CAF36-595F-4EFB-8476-1E92049B36F2</key>
 		<array>
 			<dict>
@@ -520,6 +546,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -583,25 +622,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -626,27 +646,6 @@ end tell</string>
 			<string>394B346C-D913-44B8-B811-71FFE2F6A2C2</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ path copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -747,27 +746,6 @@ end tell</string>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
 				<string>\/Users\/[^\/]*</string>
 				<key>regexcaseinsensitive</key>
 				<false/>
@@ -780,6 +758,67 @@ end tell</string>
 			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
 			<string>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -843,6 +882,148 @@ end tell</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Finder"	set sel to selection		if ((count sel) &gt; 1) then		set firstItem to item 1 of sel		set _result to POSIX path of (firstItem as text)	else if ((count sel) = 1) then		set _result to POSIX path of (sel as text)	else		set _windows to count windows		if (_windows = 0) then			set _result to ""		else			set _result to POSIX path of (target of window 1 as alias)		end if	end ifend tell_result</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>45</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>N</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E0A3B959-9472-4B43-B469-56E20E333E3B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>.*\/</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F40B442E-1E32-439E-BD52-FD4575625796</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	tell process "Finder"
+		set frontmost to true
+		click menu item "Forward" of menu "Go" of menu bar 1
+	end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>124</integer>
+				<key>hotmod</key>
+				<integer>12058624</integer>
+				<key>hotstring</key>
+				<string>→</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F2E10C42-D506-4F69-9F43-E0A4E2932EE7</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -918,121 +1099,6 @@ open "$default_folder"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "Finder"
-		set frontmost to true
-		click menu item "Forward" of menu "Go" of menu bar 1
-	end tell
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>124</integer>
-				<key>hotmod</key>
-				<integer>12058624</integer>
-				<key>hotstring</key>
-				<string>→</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>F2E10C42-D506-4F69-9F43-E0A4E2932EE7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>jumpto</key>
-				<string>alfred.action.move</string>
-				<key>path</key>
-				<string></string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.actioninalfred</string>
-			<key>uid</key>
-			<string>56CD69F0-DA3F-4EF1-809F-78543F4459A1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>46</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>M</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>993B0563-52D6-4547-B1D7-97E70FF55DB2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1096,54 +1162,54 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>file_path="$*"
-file_name="${file_path##*/}"
-file_without_ext="${file_name%.*}"
-parent_folder="${file_path%/*}"
-
-cd "$parent_folder"
-mkdir "$file_without_ext"
-mv "$file_name" ./"$file_without_ext"/"$file_without_ext".zip
-cd ./"$file_without_ext"
-
-unzip "$file_without_ext".zip
-mv "$file_without_ext".zip ~/.trash
-open .</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>jumpto</key>
+				<string>alfred.action.move</string>
+				<key>path</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.actioninalfred</string>
 			<key>uid</key>
-			<string>95E5B67E-7350-4876-B7DF-90F25BC4A121</string>
+			<string>56CD69F0-DA3F-4EF1-809F-78543F4459A1</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Unzip as if .zip file</string>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>46</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>M</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>C5110F20-5D1C-438B-862D-177C45274CDD</string>
+			<string>993B0563-52D6-4547-B1D7-97E70FF55DB2</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1202,6 +1268,58 @@ open .</string>
 			<string>96400117-9585-4C38-8250-D27376BAED9A</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>file_path="$*"
+file_name="${file_path##*/}"
+file_without_ext="${file_name%.*}"
+parent_folder="${file_path%/*}"
+
+cd "$parent_folder"
+mkdir "$file_without_ext"
+mv "$file_name" ./"$file_without_ext"/"$file_without_ext".zip
+cd ./"$file_without_ext"
+
+unzip "$file_without_ext".zip
+mv "$file_without_ext".zip ~/.trash
+open .</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>95E5B67E-7350-4876-B7DF-90F25BC4A121</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Unzip as if .zip file</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>C5110F20-5D1C-438B-862D-177C45274CDD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1991,18 +2109,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>115</integer>
 		</dict>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>365</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1075</integer>
 		</dict>
 		<key>10E85A5A-FC6B-43F7-AAAA-1304838DCCBC</key>
 		<dict>
@@ -2018,18 +2136,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>965</integer>
 			<key>ypos</key>
-			<integer>1240</integer>
+			<integer>1395</integer>
 		</dict>
 		<key>1C56BE97-8CF8-4915-ABB5-5255F85FFE23</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>775</integer>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -2054,36 +2172,36 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>365</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>1060</integer>
+			<integer>1215</integer>
 		</dict>
 		<key>2F7075B3-2DC7-40B6-B8D7-EC08CC3B3E21</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>745</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1075</integer>
 		</dict>
 		<key>308BE4B1-4E65-442D-91D3-894862123968</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>1185</integer>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>360</integer>
 		</dict>
 		<key>394B346C-D913-44B8-B811-71FFE2F6A2C2</key>
 		<dict>
@@ -2101,36 +2219,36 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>920</integer>
 		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1370</integer>
+			<integer>1525</integer>
 		</dict>
 		<key>4006F56F-BFD4-4270-AF0B-2011B270B472</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>775</integer>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>1045</integer>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2139,9 +2257,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>1045</integer>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2161,9 +2279,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1340</integer>
+			<integer>1495</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2172,108 +2290,110 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>450</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>1340</integer>
+			<integer>1495</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>1370</integer>
+			<integer>1525</integer>
 		</dict>
 		<key>4D0B6E6F-5882-4C5F-8707-3F7FD5295A30</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>705</integer>
+			<integer>715</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>1185</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>365</integer>
+			<integer>510</integer>
 		</dict>
 		<key>6965F454-7232-4E84-81D3-F7A0C5E29484</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
+			<key>note</key>
+			<string>remove trailing \n</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>145</integer>
 		</dict>
 		<key>6AAE0750-5D91-4EBC-A998-7A423F95D7F5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>1060</integer>
+			<integer>1215</integer>
 		</dict>
 		<key>6DA5C8B6-3A2F-4610-BADF-993F2338FB98</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>600</integer>
 			<key>ypos</key>
-			<integer>1200</integer>
+			<integer>1355</integer>
 		</dict>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>1045</integer>
 		</dict>
 		<key>6FE7DC2A-A4FC-40A1-BB35-88F0C8FA7458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>1045</integer>
 		</dict>
 		<key>83D4C732-B92C-4C46-ABA9-CD6ED5C734A0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>775</integer>
 		</dict>
 		<key>854C7C80-AC64-4A5D-938F-4EC378280457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>825</integer>
 			<key>ypos</key>
-			<integer>1240</integer>
+			<integer>1395</integer>
 		</dict>
 		<key>86795082-B09A-40B7-BCBE-FE9270384CB8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>475</integer>
 			<key>ypos</key>
-			<integer>1200</integer>
+			<integer>1355</integer>
 		</dict>
 		<key>893B12C6-8908-49C1-BB29-4D6650519C84</key>
 		<dict>
@@ -2282,18 +2402,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get Brave Tab and Finder Window</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1170</integer>
+			<integer>1325</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>920</integer>
 		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
@@ -2311,9 +2431,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1340</integer>
+			<integer>1495</integer>
 		</dict>
 		<key>959F17A4-7D02-4EEA-8DC4-695E20516CBA</key>
 		<dict>
@@ -2322,18 +2442,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>gets current Finder window</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>1185</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>635</integer>
 		</dict>
 		<key>96400117-9585-4C38-8250-D27376BAED9A</key>
 		<dict>
@@ -2349,9 +2469,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>365</integer>
+			<integer>510</integer>
 		</dict>
 		<key>9FAFB727-AC2B-4739-9071-42D60EBA9ACE</key>
 		<dict>
@@ -2360,16 +2480,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>create blank file</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>1185</integer>
 		</dict>
 		<key>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
+			<key>note</key>
+			<string>unexpand path (~)</string>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>370</integer>
 			<key>ypos</key>
 			<integer>55</integer>
 		</dict>
@@ -2378,27 +2500,27 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>685</integer>
 			<key>ypos</key>
-			<integer>1240</integer>
+			<integer>1395</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>410</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>360</integer>
 		</dict>
 		<key>B608F624-BD49-4530-BB67-00CD6692B0C8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>1485</integer>
+			<integer>1640</integer>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2427,9 +2549,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>635</integer>
 		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
@@ -2447,18 +2569,40 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1485</integer>
+			<integer>1640</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>645</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>115</integer>
+		</dict>
+		<key>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>return either first selected file or return current window when there is no selection</string>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>E0A3B959-9472-4B43-B469-56E20E333E3B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>copy name of selected file or current Finder window</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>195</integer>
 		</dict>
 		<key>E26CAF36-595F-4EFB-8476-1E92049B36F2</key>
 		<dict>
@@ -2467,9 +2611,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>default size, then close all windows</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>1045</integer>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
@@ -2487,9 +2631,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>1370</integer>
+			<integer>1525</integer>
 		</dict>
 		<key>F2E10C42-D506-4F69-9F43-E0A4E2932EE7</key>
 		<dict>
@@ -2500,6 +2644,17 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<integer>305</integer>
 		</dict>
+		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>get only name</string>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
 		<key>F87AADFD-2C80-4344-AF69-0647B7DC0048</key>
 		<dict>
 			<key>colorindex</key>
@@ -2507,18 +2662,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>360</integer>
 		</dict>
 		<key>FA132BBC-E340-413F-A03D-4D57D150C458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>575</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>1185</integer>
 		</dict>
 		<key>FD5D7C5E-7CAB-477F-BD75-3BE39DD7F9B3</key>
 		<dict>
@@ -2527,9 +2682,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>create link file</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1170</integer>
+			<integer>1325</integer>
 		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>
@@ -2538,9 +2693,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>default size &amp; to the left</string>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>920</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
