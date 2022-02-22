@@ -4,5 +4,7 @@
 <dict>
 	<key>foldersattop</key>
 	<true/>
+	<key>sortkey</key>
+	<string>NSURLContentModificationDateKey</string>
 </dict>
 </plist>
