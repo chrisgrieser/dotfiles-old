@@ -5,10 +5,11 @@
 
 	// color changed to keep it distinguishable from the
 	// yellow dots from SublimeLinter (warnings)
-	"bracket_styles": {
-		"default": {
-			"icon": "dot",
-				"color": "region.purpleish brackethighlighter.default",
-			},
-		}
-	}
+	// "bracket_styles": {
+	// 	"default": {
+	// 		"icon": "dot",
+	// 			"color": "region.purpleish brackethighlighter.default",
+	// 		},
+	// 	}
+
+}

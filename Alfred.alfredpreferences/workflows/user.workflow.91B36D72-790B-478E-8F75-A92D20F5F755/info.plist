@@ -1188,11 +1188,11 @@ end tell</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
