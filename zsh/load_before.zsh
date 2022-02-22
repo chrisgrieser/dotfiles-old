@@ -5,11 +5,7 @@
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# first time running zsh-completions, # `chmod -R go-w '/opt/homebrew/share/'`
-# may be needed as explained in https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
-# — *not* with "zsh-completions" as recommended in brew install's caveat msg
-source "$(brew --prefix)"/share/zsh-completions
+source "$(brew --prefix)"/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 # activate completions, also needed for ZSH auto suggestions & completions
 autoload compinit -Uz && compinit
@@ -20,7 +16,7 @@ eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/.starship.toml"
 
-
+# -------------------------------------
 # Shellfirm
 shellfirm --version >/dev/null 2>&1
 # shellcheck disable=SC2181
@@ -40,3 +36,4 @@ function shellfirm-pre-command () {
 
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec shellfirm-pre-command
+# -------------------------------------
