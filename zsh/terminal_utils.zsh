@@ -3,16 +3,16 @@ function del () {
 	FILE_NAME=$(basename "$1")
 	EXT="${FILE_NAME##*.}"
 	FILE_WITHOUT_EXTENSION="${FILE_NAME%.*}"
-	APPEND=$(date '+%Y-%m-%d_%H-%M-%S')
-	mv "$FILE_NAME" ~/.Trash/"$FILE_WITHOUT_EXTENSION""$APPEND""$EXT"
+	APPEND=$(date '+%m-%d_%H-%M-%S')
+	mv "$FILE_NAME" ~/.Trash/"$FILE_WITHOUT_EXTENSION""$APPEND"."$EXT"
 }
 
 # exit
 function qq () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
 		TO_QUIT="Sublime Text"
-	elif [[ "$TERM_PROGRAM" == "Hyper" ]] ; then
-		TO_QUIT="Hyper"
+	else
+		TO_QUIT="$TERM_PROGRAM"
 	fi
 	osascript -e "tell application \"$TO_QUIT\" to quit"
 }

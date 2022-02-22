@@ -48,12 +48,12 @@ module.exports = {
 	},
 
 	plugins: [
-		"hyperalfred",
-		"hyperminimal",
-		"hyper-tabs-enhanced",
-		"verminal",
-		"hyper-quit"
-	],
+        "hyperalfred",
+        "hyperminimal",
+        "hyper-tabs-enhanced",
+        "verminal",
+        "hyper-quit",
+    ],
 
 	localPlugins: ["fig-hyper-integration"],
 };
