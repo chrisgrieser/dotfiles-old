@@ -61,7 +61,7 @@ function update (){
 	brew update
 	brew upgrade
 	brew cleanup
-	brew autoremove
+	brew autoremove # remove unnedded dependencies (brew leaves --installed-as-dependency)
 
 	print-section "Mac App Store"
 	mas upgrade
