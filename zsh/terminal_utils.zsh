@@ -30,6 +30,11 @@ function sw () {
 	fi
 }
 
+# https://unix.stackexchange.com/a/57633
+function rrr () {
+	nohup "$ZSH_DOTFILE_LOCATION"/restart-terminal.zsh >/dev/null &
+}
+
 # get path of file
 function p () {
 	PATH_TO_COPY="$(pwd)/$*"
