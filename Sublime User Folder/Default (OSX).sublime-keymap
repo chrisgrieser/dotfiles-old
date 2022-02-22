@@ -142,11 +142,12 @@
 	},
 
 	// File Management
-	{ "keys": ["ctrl+d"], "command": "prompt_save_as"},
+	{ "keys": ["super+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["ctrl+d"], "command": "advanced_new_file_copy"},
+	{ "keys": ["super+backspace"], "command": "advanced_new_file_delete", "args": {"current": true}},
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
-	{ "keys": ["super+backspace"], "command": "delete_current_file" },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
