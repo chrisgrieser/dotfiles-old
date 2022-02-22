@@ -10,6 +10,7 @@
 	],
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"AppleScript Extensions",
 		"AutoFoldCode",
 		"BracketHighlighter",

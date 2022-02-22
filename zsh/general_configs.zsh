@@ -17,14 +17,17 @@ export C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
 # ----------------------------------
 
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
+export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=ALL
 export YSU_HARDCORE=1
 # disable certain aliases: https://github.com/MichaelAquilina/zsh-you-should-use
+
+# for fzf-tab
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 export BAT_THEME='Sublime Snazzy'
 

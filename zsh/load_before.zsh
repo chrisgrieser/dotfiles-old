@@ -5,6 +5,8 @@
 # activate completions, also needed for ZSH auto suggestions & completions
 autoload compinit -Uz && compinit
 
+# NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting!!
+source "$ZSH_DOTFILE_LOCATION"/fzf-tab/fzf-tab.plugin.zsh
 
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -17,24 +19,12 @@ eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/.starship.toml"
 
-# -------------------------------------
-# Shellfirm
-shellfirm --version >/dev/null 2>&1
-# shellcheck disable=SC2181
-if [ "$?" != 0 ]; then
-    # show this message to the user and don't register to terminal hook
-    # we want to show the user that he not protected with `shellfirm`
-    echo "'shellfirm' binary is missing. see installation guide: https://github.com/kaplanelad/shellfirm#installation."
-    return
-fi
-
+# Shellfirm, https://github.com/kaplanelad/shellfirm/blob/main/shell-plugins/shellfirm.plugin.zsh
 function shellfirm-pre-command () {
     if [[ "${1}" == *"shellfirm pre-command"* ]]; then
         return
     fi
     shellfirm pre-command --command "${1}"
 }
-
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec shellfirm-pre-command
-# -------------------------------------
