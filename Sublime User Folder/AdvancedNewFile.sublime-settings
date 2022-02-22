@@ -6,7 +6,7 @@
 	// new file
 	"file_permissions": "775",
 	"folder_permissions": "775",
-	"empty_filename_action": true, // opened empty window
+	"empty_filename_action": true, // open empty window
 
 	// copy
 	"copy_default": "<filename>",
