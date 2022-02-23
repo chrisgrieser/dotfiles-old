@@ -419,10 +419,7 @@ zsh "$vault_path"/Meta/git\ vault\ backup.sh "$*"</string>
 
 sf_path="${vault_path/#\~/$HOME}""/.obsidian/themes/Shimmering Focus.css"
 lineNo="$*"
-
-subl "$sf_path":$lineNo
-
-osascript -e 'tell application "System Events" to keystroke space using {control down}'</string>
+subl "$sf_path":$lineNo</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -498,7 +495,7 @@ osascript -e 'tell application "System Events" to keystroke space using {control
 			<key>note</key>
 			<string>open at line</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>420</integer>
 		</dict>

@@ -11,11 +11,7 @@
 	"ui_scale": 1.5,
 	"font_size": 15,
 	"font_face": "Input",
-	"font_options": [
-		// "no_italic",
-		// "no_bold",
-		"no_round"
-	],
+	"font_options": ["no_round"],
 
 	// Appearance
 	"fade_fold_buttons": false,
@@ -58,9 +54,9 @@
 	// Startup & Exit
 	"save_on_focus_lost": true,
 	"open_files_in_new_window": "never",
-	"close_windows_when_empty": true,
-	"create_window_at_startup": false,
+	"close_windows_when_empty": false,
 	"hot_exit": "always",
+	"create_window_at_startup": false,
 	"remember_layout": false, // don't start in split view
 
 	// Mini-Linting

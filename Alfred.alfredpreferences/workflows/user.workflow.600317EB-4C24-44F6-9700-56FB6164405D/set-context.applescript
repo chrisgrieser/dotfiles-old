@@ -65,7 +65,7 @@ if (notes contains "obsidian") then
 
 	-- open ExcaliDraw (this way to prevent triggering due to AppleScript Bug)
 	do shell script ("open -a Excalidraw")
-	
+
 	-- Quit apps
 	tell application "Twitterrific" to if it is running then quit
 	tell application "Drafts" to if it is running then quit
@@ -83,10 +83,10 @@ if (notes contains "obsidian") then
 	delay 0.1
 
 	-- wait till Zoom meeting has started
-	set nameList to ""
-	repeat until nameList contains "Zoom Meeting"
+	set meetingWindow to ""
+	repeat until meetingWindow contains "Zoom Meeting"
 		tell application "System Events" to set nameList to name of windows of (processes whose name is "zoom.us")
-		set nameList to item 1 of nameList
+		set meetingWindow to item 1 of nameList
 		delay 0.2
 	end repeat
 	delay 0.5

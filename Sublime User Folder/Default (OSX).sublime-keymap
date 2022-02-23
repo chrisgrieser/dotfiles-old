@@ -13,6 +13,17 @@
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
 [
+	// Window Closing
+	{ "keys": ["super+q"],
+		"command": "chain",
+		"args": {
+			"commands": [
+				["close_all"],
+				["exit"]
+			]
+		}
+	},
+
 	// Build System
 	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.shell"},

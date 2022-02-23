@@ -191,9 +191,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open "$*"
-sleep 0.15
-osascript -e "tell application \"System Events\" to keystroke space using {control down}"</string>
+				<string>open "$*"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -484,9 +482,9 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.sublimetext.4</string>
-					<string>md.obsidian</string>
 					<string>co.zeit.hyper</string>
+					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
