@@ -1,8 +1,9 @@
 # Move to trash via Finder (allows retrievability)
 function del () {
-	FILE="$PWD/$1"
+	# shellcheck disable=SC2164
+	ABSOLUTE_PATH="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
 	osascript -e "
-		set toDelete to \"$FILE\" as POSIX file
+		set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
 		tell application \"Finder\" to delete file toDelete
 	" >/dev/null
 }
@@ -37,9 +38,10 @@ function rrr () {
 
 # get path of file
 function p () {
-	PATH_TO_COPY="$(pwd)/$*"
-	echo "$PATH_TO_COPY" | pbcopy
-	echo "Copied: ""$PATH_TO_COPY"
+	# shellcheck disable=SC2164
+	ABSOLUTE_PATH="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
+	echo "$ABSOLUTE_PATH" | pbcopy
+	echo "Copied: ""$ABSOLUTE_PATH"
 }
 
 # copies last n commands

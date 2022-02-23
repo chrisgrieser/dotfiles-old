@@ -5,8 +5,8 @@
 
 export ZSH_DOTFILE_LOCATION=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/zsh"
 
-source "$ZSH_DOTFILE_LOCATION"/load_before.zsh
 
+source "$ZSH_DOTFILE_LOCATION"/load_plugins.zsh # should be loaded first
 source "$ZSH_DOTFILE_LOCATION"/aliases.zsh
 source "$ZSH_DOTFILE_LOCATION"/history_config.zsh
 source "$ZSH_DOTFILE_LOCATION"/docs_man.zsh
