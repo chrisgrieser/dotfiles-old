@@ -5,10 +5,14 @@
 		"rulers": [],
 		"font_size": 15,
 		"block_caret": true,
+		// needs nerd font for exa icons
+		"font_face": "JetBrainsMono Nerd Font",
+		"font_options": ["no_bold"],
 	},
 
-	"256color": true,
-	"unix_term": "xterm-256color",
 	"scrollback_history_size": 1000,
 
+	// colors
+	"256color": true,
+	"unix_term": "xterm-256color",
 }

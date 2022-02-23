@@ -9,13 +9,6 @@ fi
 
 # ----------------------------------
 
-# Configs for my own custom functions
-export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
-export VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
-export C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
-
-# ----------------------------------
-
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
 export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)

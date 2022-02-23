@@ -5,8 +5,8 @@
 
 # prompt in general
 add_newline = false
-continuation_prompt = "▶▶"
-format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:#393D4F)$cmd_duration$status$character"
+continuation_prompt = "↪"
+format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:60)$cmd_duration$status$character"
 right_format="$package$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -26,7 +26,7 @@ threshold = 70
 format = " [$symbol$ram_pct]($style)"
 
 [directory]
-style = "bold fg:#9AEDFE bg:#393D4F"
+style = "bold fg:81 bg:60"
 truncation_length = 2
 truncation_symbol = "/"
 truncate_to_repo = true
@@ -60,42 +60,41 @@ number_threshold = 1
 
 # mostly conflicts
 [git_state]
-style = 'fg:#FFBF72 bg:#393D4F'
+style = 'fg:208 bg:60'
 
 [git_commit]
-style = "fg:yellow bg:#393D4F"
+style = "fg:yellow bg:60"
 
 # branch
 [git_branch]
 only_attached = true
 symbol = ""
-style = "bold fg:141 bg:#393D4F"
+style = "fg:218 bg:60"
 format = "[$symbol$branch]($style) "
 
 # files
 [git_status]
-untracked = '[+$count ](fg:green bg:#393D4F)'
-deleted = '[-$count ](fg:red bg:#393D4F)'
-modified = '[*$count ](fg:yellow bg:#393D4F)'
-renamed = '[✎$count ](fg:yellow bg:#393D4F)'
-staged = '[◼︎$count ](fg:#FFBF72 bg:#393D4F)'
-conflicted = '[⤱$count ](fg:red bg:#393D4F)'
-diverged = '[⇈$count ](fg:#FFBF72 bg:#393D4F)'
-ahead = '[⇡$count ](fg:#FFBF72 bg:#393D4F)'
-behind = '[⇣$count ](fg:yellow bg:#393D4F)'
-format = '[$ahead_behind$conflicted$stashed$deleted$staged$untracked$renamed$modified](bold fg:purple bg:#393D4F)'
+untracked = '[+$count ](fg:green bg:60)'
+deleted = '[-$count ](fg:red bg:60)'
+modified = '[*$count ](fg:yellow bg:60)'
+renamed = '[✎$count ](fg:yellow bg:60)'
+staged = '[◎$count ](fg:73 bg:60)'
+conflicted = '[⤱$count ](fg:red bg:60)'
+diverged = '[⇈$count ](fg:73 bg:60)'
+ahead = '[⇡$count ](fg:73 bg:60)'
+behind = '[⇣$count ](fg:yellow bg:60)'
+format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted](bold fg:purple bg:60)'
 
 # lines
-# conditional display block needed https://github.com/starship/starship/issues/3253
 [git_metrics]
 disabled = false
-added_style = "fg:green bg:#393D4F"
-deleted_style = "fg:red bg:#393D4F"
+added_style = "fg:green bg:60"
+deleted_style = "fg:red bg:60"
 format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
 
 [package]
 format = "[$symbol$version]($style)"
-version_format = "v${raw}"
+version_format = "v$raw"
 symbol = ""
 style = "dimmed 208"
 
@@ -114,5 +113,5 @@ python_binary = ["python3"]
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
-style = "bold fg:179 bg:#393D4F"
+style = "fg:220 bg:60"
 format = '[⦗$output⦘]($style) '

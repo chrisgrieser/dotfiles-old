@@ -1668,7 +1668,7 @@ end run</string>
 		<key>last_backup</key>
 		<string>2022-02-16 20:53</string>
 		<key>script_location</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Mac Migration Scripts/1 Backup Script.sh</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/run-backup.sh</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>

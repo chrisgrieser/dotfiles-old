@@ -15,6 +15,7 @@ function o (){
 
 # change directory
 function c (){
+	C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
 	INPUT="$*"
 	if [[ -e "$INPUT" ]]; then
 		cd "$INPUT" || return

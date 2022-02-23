@@ -6,6 +6,8 @@ export HOMEBREW_CLEANUP_MAX_AGE_DAYS=90
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_INSTALL_BADGE=✅
 
+export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
+
 alias re='brew reinstall'
 alias un='brew uninstall --zap'
 

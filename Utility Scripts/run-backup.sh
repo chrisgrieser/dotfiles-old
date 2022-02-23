@@ -6,6 +6,16 @@
 BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
 DEVICE_NAME=$(scutil --get ComputerName)
 
+function dump () {
+	device_name=$(scutil --get ComputerName)
+	brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$device_name"
+	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$device_name"
+	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$device_name"
+	echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
+}
+
+# ---------------
+
 brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
 npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
 
