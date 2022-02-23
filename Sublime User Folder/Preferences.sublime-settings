@@ -25,7 +25,6 @@
 	"margin": 0,
 	"rulers": [80],
 
-
 	// Editor Behavior
 	"copy_with_empty_selection": true,
 	"scroll_past_end": 0.3,
@@ -59,11 +58,9 @@
 	// Startup & Exit
 	"save_on_focus_lost": true,
 	"open_files_in_new_window": "never",
-	"close_windows_when_empty": false,
+	"close_windows_when_empty": true,
 	"create_window_at_startup": false,
-	"hot_exit": "disabled",
-	"remember_workspace": false,
-	"remember_full_screen": false,
+	"hot_exit": "always",
 	"remember_layout": false, // don't start in split view
 
 	// Mini-Linting
