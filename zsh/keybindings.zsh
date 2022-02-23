@@ -30,7 +30,8 @@ open-zshrc () {
 		SEARCH_FOR="$BUFFER"
 	fi
 	# shellcheck disable=SC2012
-	SELECTED=$( ls -t "$ZSH_DOTFILE_LOCATION"  | cut -d"." -f1 | fzf \
+	( cd "$ZSH_DOTFILE_LOCATION" || return
+	SELECTED=$( ls -t *.zsh | cut -d"." -f1 | fzf \
 	           --no-sort \
 	           -0 -1 \
 	           --query "$SEARCH_FOR" \
@@ -41,8 +42,8 @@ open-zshrc () {
 	           --info=hidden \
 	           )
 	if [[ $SELECTED != "" ]] ; then
-		open "$ZSH_DOTFILE_LOCATION"/"$SELECTED".zsh
-	fi
+		open "$SELECTED".zsh
+	fi )
 	zle reset-prompt # https://stackoverflow.com/questions/52325626/zsh-refresh-prompt-after-running-zle-widget
 }
 

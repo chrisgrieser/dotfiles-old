@@ -32,6 +32,7 @@ alias diff='diff --color=auto'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias mv='ln -i'
 
 # display all
 alias which='which -a'

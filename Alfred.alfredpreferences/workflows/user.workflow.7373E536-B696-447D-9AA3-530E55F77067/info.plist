@@ -2656,15 +2656,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>variables</key>
 	<dict>
 		<key>backup_destination</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/BibDesk/Library Backups/</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/Library Backups/</string>
 		<key>citation_style</key>
 		<string>apa</string>
 		<key>lang</key>
 		<string>de</string>
 		<key>library_path</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/BibDesk/My Library.bib</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Reference Database.bib</string>
 		<key>max_number_of_bkps</key>
-		<string>30</string>
+		<string>20</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
