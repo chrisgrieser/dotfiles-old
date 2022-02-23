@@ -1,11 +1,10 @@
 # https://github.com/toml-lang/toml
 # https://starship.rs/config/
+# ----------------------------------
 
+# prompt in general
 add_newline = false
-format = "[$directory$git_branch$git_status$git_metrics$git_commit$git_state$custom$jobs](bg:#393D4F)$cmd_duration$line_break$time$status$character"
-
-[line_break]
-disabled = true
+format = "[$directory$git_branch$git_status$git_metrics$git_commit$git_state$custom$jobs](bg:#393D4F)$cmd_duration$status$character"
 
 [character]
 success_symbol = " [⟐](bold green)"
@@ -22,9 +21,8 @@ style = "bold fg:#9AEDFE bg:#393D4F"
 truncation_length = 2
 truncation_symbol = "…/"
 truncate_to_repo = true
-read_only = "◎"
-read_only_style = "bold fg:red bg:#393D4F"
-format = "[$path]($style) ([$read_only]($read_only_style) )"
+read_only = "⛔️"
+format = "[$path ]($style)[$read_only]($style)"
 
 [directory.substitutions]
 "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault" = "/◘ Vault"

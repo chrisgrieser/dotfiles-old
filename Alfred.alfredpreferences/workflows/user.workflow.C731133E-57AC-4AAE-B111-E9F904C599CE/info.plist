@@ -98,6 +98,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9A153BD3-0CC9-427B-9634-C748A6D27069</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>268D8422-42B0-4CA1-954F-7EA2EA05B34B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A1F54134-66A7-458A-AA45-D1D937104642</key>
 		<array>
 			<dict>
@@ -210,7 +223,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Homebrew</string>
+	<string>Homebrew &amp; ZSH &amp; NPM</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -436,6 +449,74 @@
 			<string>A415C6E7-9137-4FFF-AC28-15298CE540D1</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>zsh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>oh-my-zsh-plugin-search.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Oh My ZSH: {query}</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9A153BD3-0CC9-427B-9634-C748A6D27069</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/{query}#readme</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>268D8422-42B0-4CA1-954F-7EA2EA05B34B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -731,7 +812,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>xpos</key>
 			<integer>670</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>170</integer>
 		</dict>
 		<key>0E33E00A-D715-4591-A17E-F6468E7B7336</key>
 		<dict>
@@ -768,6 +849,15 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>268D8422-42B0-4CA1-954F-7EA2EA05B34B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>295</integer>
 		</dict>
 		<key>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</key>
 		<dict>
@@ -806,6 +896,15 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>820</integer>
+		</dict>
+		<key>9A153BD3-0CC9-427B-9634-C748A6D27069</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>295</integer>
 		</dict>
 		<key>A1F54134-66A7-458A-AA45-D1D937104642</key>
 		<dict>
@@ -926,7 +1025,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>170</integer>
 		</dict>
 	</dict>
 	<key>version</key>

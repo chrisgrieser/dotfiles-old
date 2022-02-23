@@ -441,55 +441,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>zsh</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>loading...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>oh-my-zsh-plugin-search.js</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Oh My ZSH: {query}</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>F7108E51-1A7A-42FD-AFA2-1BF1E47CAA80</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1302,13 +1253,6 @@ end if</string>
 			<integer>655</integer>
 			<key>ypos</key>
 			<integer>925</integer>
-		</dict>
-		<key>F7108E51-1A7A-42FD-AFA2-1BF1E47CAA80</key>
-		<dict>
-			<key>xpos</key>
-			<integer>610</integer>
-			<key>ypos</key>
-			<integer>80</integer>
 		</dict>
 		<key>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</key>
 		<dict>

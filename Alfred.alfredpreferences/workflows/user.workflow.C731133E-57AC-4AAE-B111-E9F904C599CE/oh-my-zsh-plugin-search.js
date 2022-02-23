@@ -5,22 +5,20 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
 const onlineJSON = (url) => JSON.parse (app.doShellScript("curl -sL \"" + url + "\""));
-const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
-const pluginList = onlineJSON("https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins")
+const pluginList = onlineJSON("https://api.github.com/repos/ohmyzsh/ohmyzsh/git/trees/master?recursive=1")
 	.tree
 	.map(p => p.path)
-	.filter(p => p.startsWith ("plugins/"))
-	.map (p => p.slice(7));
+	.filter(p => /^plugins\/[^/]+$/.test(p))
+	.map (p => p.slice(8));
 
 
 const jsonArray = [];
 pluginList.forEach(plugin => {
 
 	jsonArray.push({
-		"title": "",
-		"match": alfredMatcher (item),
+		"title": plugin,
 		"subtitle": "",
-		"arg": "",
+		"arg": plugin,
 	});
 });
 
