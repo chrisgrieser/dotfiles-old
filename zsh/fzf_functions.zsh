@@ -15,14 +15,19 @@ function o (){
 
 # change directory
 function c (){
-	cd "$C_TO_SEARCH" || return
-	SELECTED=$(fd --type d | cut -c3- | fzf -0 -1 --query "$*" --preview "tree -L 2 -C {}" --preview-window=right:35%)
-	if [[ $SELECTED == "" ]] ; then
-		echo "Canceled."
-		return
+	INPUT="$*"
+	if [[ -e "$INPUT" ]]; then
+		cd "$INPUT" || return
+	else
+		cd "$C_TO_SEARCH" || return
+		SELECTED=$(fd --type d | cut -c3- | fzf -0 -1 --query "$*" --preview "tree -L 2 -C {}" --preview-window=right:35%)
+		if [[ $SELECTED == "" ]] ; then
+			echo "Canceled."
+			return
+		fi
+		cd "$C_TO_SEARCH""$SELECTED" || return
 	fi
-	cd "$C_TO_SEARCH""$SELECTED" || return
-	exa --icons
+	exa
 }
 
 # open recent directory
@@ -41,4 +46,5 @@ function r (){
 	SELECTED="${SELECTED/#\~/$HOME}"
 	SELECTED="${SELECTED/iCloud/Library/Mobile Documents/com~apple~CloudDocs}"
 	cd "$SELECTED" || return
+	exa
 }

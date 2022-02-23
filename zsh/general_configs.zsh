@@ -24,7 +24,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=ALL
 export YSU_HARDCORE=1
-export YSU_IGNORED_ALIASES=("tree" "ls")
+# export YSU_IGNORED_ALIASES=("tree" "ls")
 
 # for fzf-tab
 # shellcheck disable=SC2086,SC2296
@@ -38,7 +38,7 @@ export FZF_DEFAULT_COMMAND='fd'
 export FZF_DEFAULT_OPTS='-0 -1 --pointer=⟐ --prompt="❱ "'
 
 export MAGIC_ENTER_GIT_COMMAND="git status"
-export MAGIC_ENTER_OTHER_COMMAND="tree -C -L 2"
+export MAGIC_ENTER_OTHER_COMMAND="exa"
 
 export EDITOR='nano' # mainly for `crontab -e`
 
