@@ -21,29 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>25D1A1D5-D73B-4E0A-91BC-47ABE2A4FF61</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B3464F95-B489-4113-82A7-9CCB3300B0E1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9FCAA559-139E-438A-A0BB-0615646DD0E0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</key>
 		<array>
 			<dict>
@@ -96,19 +73,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9FCAA559-139E-438A-A0BB-0615646DD0E0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F8391D20-C957-42E0-A6EF-17AC298FDC3E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<array>
 			<dict>
@@ -153,7 +117,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Shimmering Focus &amp; Vault</string>
+	<string>Shimmering Focus</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -201,44 +165,6 @@ zsh build.sh "$*"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F50EE2DE-822A-4F52-915D-9312B6BD4582</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string></string>
-				<key>replacestring</key>
-				<string>patch</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>8A0EEB06-8063-4533-80E2-DF4C26F6A399</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>⏳ git push</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>B3464F95-B489-4113-82A7-9CCB3300B0E1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -315,48 +241,40 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bkp</string>
-				<key>subtext</key>
-				<string>Commit Message: '{query}'</string>
-				<key>text</key>
-				<string>Main Vault Git Backup</string>
-				<key>withspace</key>
-				<true/>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string></string>
+				<key>replacestring</key>
+				<string>patch</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>25D1A1D5-D73B-4E0A-91BC-47ABE2A4FF61</string>
+			<string>8A0EEB06-8063-4533-80E2-DF4C26F6A399</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>vault_path="${vault_path/#\~/$HOME}"
-
-zsh "$vault_path"/Meta/git\ vault\ backup.sh "$*"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>⏳ git push</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>9FCAA559-139E-438A-A0BB-0615646DD0E0</string>
+			<string>B3464F95-B489-4113-82A7-9CCB3300B0E1</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -444,38 +362,27 @@ subl "$sf_path":$lineNo</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>180</integer>
-		</dict>
-		<key>25D1A1D5-D73B-4E0A-91BC-47ABE2A4FF61</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Main Vault BKP</string>
-			<key>xpos</key>
-			<integer>15</integer>
-			<key>ypos</key>
-			<integer>280</integer>
+			<integer>65</integer>
 		</dict>
 		<key>440612A1-D74A-4799-A0D6-F88760AF14CF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>760</integer>
+			<integer>725</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>35</integer>
 		</dict>
 		<key>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>570</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>35</integer>
 		</dict>
 		<key>681793A7-1E5D-456D-8593-88828D1E5C40</key>
 		<dict>
@@ -486,7 +393,7 @@ subl "$sf_path":$lineNo</string>
 			<key>xpos</key>
 			<integer>15</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>280</integer>
 		</dict>
 		<key>846A75D1-67B5-4DFC-A2B0-8F8276CA4423</key>
 		<dict>
@@ -497,7 +404,7 @@ subl "$sf_path":$lineNo</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>280</integer>
 		</dict>
 		<key>8627A802-741F-4477-A445-AA3EA82ED4C8</key>
 		<dict>
@@ -516,15 +423,6 @@ subl "$sf_path":$lineNo</string>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>135</integer>
-		</dict>
-		<key>9FCAA559-139E-438A-A0BB-0615646DD0E0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>270</integer>
-			<key>ypos</key>
-			<integer>280</integer>
 		</dict>
 		<key>B3464F95-B489-4113-82A7-9CCB3300B0E1</key>
 		<dict>
@@ -551,9 +449,9 @@ subl "$sf_path":$lineNo</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>65</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

@@ -15,6 +15,7 @@ xbar plugins/*vars.json
 pw.*
 .ssh/
 .zsh_history
+backup.log
 
 # too much file size
 # ------------------

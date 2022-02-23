@@ -4,81 +4,68 @@
 source ../zsh/homebrew.zsh
 dump
 
-logLoc="$(dirname "$0")"/backup.log
-backup_dest="$1"
-device_name=$(scutil --get ComputerName)
-cd "$backup_dest" || exit 1
+DEVICE_NAME="$(scutil --get ComputerName)"
+LOG_LOCATION="$(dirname "$0")"/backup.log
+echo "" >> "$LOG_LOCATION"
+echo "Backup: $(date '+%Y-%m-%d %H:%M'), $BACKUP_DEST -- " >> "$LOG_LOCATION"
 
-# -------------------------------------------
+INPUT="$*"
+BACKUP_DEST="${INPUT/#\~/$HOME}"/Backup_"$DEVICE_NAME"
+mkdir -p "$BACKUP_DEST"
+cd "$BACKUP_DEST" || exit 1
 
-
-# Log Backup Start
-echo -n "Backup: $(date '+%Y-%m-%d %H:%M'),to $backup_dest -- " >> "$logLoc"
-
-# Backup Location from Alfred Workflow
-
-# Creates Folder with current date
-mkdir ./Backup\ "$(date '+%Y-%m-%d_%H.%M')"
-
-# goes to the newly created folder
-cd "$(find . -name "Backup*" -maxdepth 1 -mtime -10s)"
+RSYNC_OPTS="-rav --progress --dry-run --delete"
 
 #=========================
 
-# Preferences
-cp -vR ~'/Library/Preferences' .
+# # Fonts
+rsync "$RSYNC_OPTS" ~'/Library/Fonts' ./Fonts
 
-# Containers (Pref Location for Mac App Store Apps)
-cp -vR ~'/Library/Containers/com.busymac.busycal3' ./Containers
-cp -vR ~'/Library/Containers/com.agiletortoise.Drafts-OSX' ./Containers
-cp -vR ~'/Library/Containers/com.pixelmatorteam.pixelmator.x' ./Containers
-cp -vR ~'/Library/Containers/com.iconfactory.Twitterrific5' ./Containers
-cp -vR ~'/Library/Containers/com.mimestream.Mimestream' ./Containers
-cp -vR ~'/Library/Containers/com.sindresorhus.Gifski' ./Containers
-cp -vR ~'/Library/Containers/com.giorgiocalderolla.Catch.CatchFeedHelper' ./Containers
+# # Preferences
+# rsync "$RSYNC_OPTS" ~'/Library/Preferences' .
 
-# Application Support
-cp -vR ~'/Library/Application Support/BibDesk' ./Application-Support
-cp -vR ~'/Library/Application Support/Alfred' ./Application-Support
-cp -vR ~'/Library/Application Support/BraveSoftware' ./Application-Support
+# # Containers (Pref Location for Mac App Store Apps)
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.busymac.busycal3' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.agiletortoise.Drafts-OSX' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.pixelmatorteam.pixelmator.x' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.iconfactory.Twitterrific5' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.mimestream.Mimestream' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.sindresorhus.Gifski' ./Containers
+# rsync "$RSYNC_OPTS" ~'/Library/Containers/com.giorgiocalderolla.Catch.CatchFeedHelper' ./Containers
 
-# Fonts
-cp -vR ~'/Library/Fonts' ./Fonts
+# # Application Support
+# rsync "$RSYNC_OPTS" ~'/Library/Application Support/BibDesk' ./Application-Support
+# rsync "$RSYNC_OPTS" ~'/Library/Application Support/Alfred' ./Application-Support
+# rsync "$RSYNC_OPTS" ~'/Library/Application Support/BraveSoftware' ./Application-Support
 
-# Home Folder
-mkdir -p 'Homefolder/Games'
-sleep 0.5
-cp -vR ~'/Games' ./Homefolder
+# # Home Folder
+# mkdir -p 'Homefolder/Games'
+# sleep 0.5
+# rsync "$RSYNC_OPTS" ~'/Games' ./Homefolder
 
-# iCloud
-cp -vR ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
+# # iCloud
+# rsync "$RSYNC_OPTS" ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
 
-mkdir -p 'Homefolder/Video'
-cp -vR ~'/Video' ./Homefolder
-mkdir -p 'Homefolder/RomComs'
-cp -vR ~'/RomComs' ./Homefolder
+# mkdir -p 'Homefolder/Video'
+# rsync "$RSYNC_OPTS" ~'/Video' ./Homefolder
+# mkdir -p 'Homefolder/RomComs'
+# rsync "$RSYNC_OPTS" ~'/RomComs' ./Homefolder
 
 
 #=========================
 
-# Log Backup completion
-echo "completed: $(date '+%H:%M')\n" >> $logLoc
+# # Log Backup Completion at drive and at this device
+# echo "completed: $(date '+%H:%M')" >> "$LOG_LOCATION"
+# echo "Backup: $(date '+%Y-%m-%d %H:%M')" >> last_backup.log
 
-#eject when its a volume
-if [[ $backup_dest == *"Volumes"* ]]; then
-  diskutil unmount $backup_dest
-  diskutil unmount force $backup_dest
-fi
+# # eject when its a volume
+# if [[ "$BACKUP_DEST" == *"Volumes"* ]]; then
+#   diskutil unmount "$BACKUP_DEST"
+#   diskutil unmount force "$BACKUP_DEST"
+# fi
 
-osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '
+# # Notify
+# osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'
 
-osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'
-
-
-
-
-# ---------------
-
-brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
-npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
-
+# # set last backup date in Alfred
+# osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '

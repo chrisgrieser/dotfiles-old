@@ -8,11 +8,11 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
-		<key>01465F18-7864-474F-848E-F84B68C99192</key>
+		<key>075B91F1-976D-42B4-96E3-293F0517DB7A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A8C10591-72FC-41FD-BFEC-3054A34638E3</string>
+				<string>1E6008CC-A359-4017-8146-31C971DB1042</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -227,21 +227,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A8C10591-72FC-41FD-BFEC-3054A34638E3</key>
-		<array/>
-		<key>AB874481-965C-454A-B703-D5DE1416097B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>01465F18-7864-474F-848E-F84B68C99192</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BC51A3E9-3309-48C6-95AB-FF3BA9BECFB2</key>
 		<array>
 			<dict>
@@ -380,7 +365,18 @@
 			</dict>
 		</array>
 		<key>D059CCB1-3315-45DA-8808-6AB9411CA63C</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>075B91F1-976D-42B4-96E3-293F0517DB7A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E40A4B08-727F-4348-83B7-4DDADF9D0A42</key>
 		<array>
 			<dict>
@@ -421,6 +417,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>"{query}" "{var:backup_destination}"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>1E6008CC-A359-4017-8146-31C971DB1042</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -442,90 +453,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n "${script_location/#\~/$HOME}"</string>
+				<key>scriptargtype</key>
 				<integer>1</integer>
-				<key>keychar</key>
-				<string>↩</string>
-				<key>keycode</key>
-				<integer>36</integer>
-				<key>keymod</key>
-				<integer>0</integer>
-				<key>overridewithargument</key>
-				<false/>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>A8C10591-72FC-41FD-BFEC-3054A34638E3</string>
+			<string>075B91F1-976D-42B4-96E3-293F0517DB7A</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>mkdir ~'/Library/Application Support/Alfred/Workflow Data/de.chris-grieser.backup-utility/'
-logLoc=~'/Library/Application Support/Alfred/Workflow Data/de.chris-grieser.backup-utility/backup.log'
-backup_dest="{var:backup_destination}"
-
-# Log Backup Start
-echo -n "Backup: $(date '+%Y-%m-%d %H:%M'),to $backup_dest -- " &gt;&gt; $logLoc
-
-# Backup Location from Alfred Workflow
-cd $backup_dest
-
-# Creates Folder with current date
-mkdir ./Backup\ "$(date '+%Y-%m-%d_%H.%M')"
-
-# goes to the newly created folder
-cd "$(find . -name "Backup*" -maxdepth 1 -mtime -10s)"
-
-#=========================
-
-{query}
-
-#=========================
-
-# Log Backup completion
-echo "completed: $(date '+%H:%M')\n" &gt;&gt; $logLoc
-
-#eject when its a volume
-if [[ $backup_dest == *"Volumes"* ]]; then
-  diskutil unmount $backup_dest
-  diskutil unmount force $backup_dest
-fi
-
-osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '
-
-osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'
-
-</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>AB874481-965C-454A-B703-D5DE1416097B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>seconds</key>
-				<string>0.5</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
-			<key>uid</key>
-			<string>01465F18-7864-474F-848E-F84B68C99192</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -1283,14 +1229,16 @@ end run</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>01465F18-7864-474F-848E-F84B68C99192</key>
+		<key>075B91F1-976D-42B4-96E3-293F0517DB7A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>5</integer>
+			<key>note</key>
+			<string>resolve script location</string>
 			<key>xpos</key>
-			<integer>940</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>20</integer>
 		</dict>
 		<key>140A99D1-A544-4DF9-B129-AC4820665AFD</key>
 		<dict>
@@ -1318,6 +1266,15 @@ end run</string>
 			<integer>495</integer>
 			<key>ypos</key>
 			<integer>200</integer>
+		</dict>
+		<key>1E6008CC-A359-4017-8146-31C971DB1042</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>665</integer>
+			<key>ypos</key>
+			<integer>20</integer>
 		</dict>
 		<key>21773296-E9A5-45E2-BFAD-B68AA2338E9C</key>
 		<dict>
@@ -1349,7 +1306,7 @@ end run</string>
 		<key>3CC7B19F-6EFB-4FD9-96EC-F3FCF08C6975</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
@@ -1358,7 +1315,7 @@ end run</string>
 		<key>3EA056EC-6E7E-4F3F-ADDE-328221C20F4F</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
@@ -1460,26 +1417,6 @@ end run</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
-		<key>A8C10591-72FC-41FD-BFEC-3054A34638E3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>995</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
-		<key>AB874481-965C-454A-B703-D5DE1416097B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>adds backup utility commands and pastes</string>
-			<key>xpos</key>
-			<integer>795</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
 		<key>BC51A3E9-3309-48C6-95AB-FF3BA9BECFB2</key>
 		<dict>
 			<key>colorindex</key>
@@ -1530,7 +1467,7 @@ end run</string>
 		<key>D059CCB1-3315-45DA-8808-6AB9411CA63C</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>5</integer>
 			<key>xpos</key>
 			<integer>350</integer>
 			<key>ypos</key>
@@ -1548,7 +1485,7 @@ end run</string>
 		<key>ED3C9FD2-44B2-4B74-AA30-21125E2222FF</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>5</integer>
 			<key>xpos</key>
 			<integer>285</integer>
 			<key>ypos</key>
@@ -1558,7 +1495,7 @@ end run</string>
 	<key>variables</key>
 	<dict>
 		<key>backup_destination</key>
-		<string>/Volumes/Externe C</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
 		<key>last_backup</key>
 		<string>2022-02-16 20:53</string>
 		<key>script_location</key>
