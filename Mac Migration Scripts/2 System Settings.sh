@@ -143,6 +143,32 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 killall Finder
 
 # -------------------------------------------
+# spotlight Exclusions
+# -------------------------------------------
+# https://blog.christovic.com/2021/02/programatically-adding-spotlight.html
+# https://github.com/mattprice/dotfiles/blob/master/scripts/spotlight-ignore.rb
+# the "VolumeConfiguration.plist" sometimes needs to be recreated
+
+SPOTLIGHT_CONFIG="/System/Volumes/Data/.Spotlight-V100/VolumeConfiguration.plist"
+
+sudo plutil -insert Exclusions.0 -string '/Applications/Utilities/' "$SPOTLIGHT_CONFIG"
+sudo plutil -insert Exclusions.0 -string '/Applications/Cisco' "$SPOTLIGHT_CONFIG"
+sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/zsh/plugins/fzf-tab' "$SPOTLIGHT_CONFIG"
+sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Alfred.alfredpreferences/workflows/' "$SPOTLIGHT_CONFIG"
+sudo launchctl stop com.apple.metadata.mds
+sudo launchctl start com.apple.metadata.mds
+
+# show current exclusions
+sudo plutil -extract Exclusions xml1 -o - "$SPOTLIGHT_CONFIG"
+
+# remove an exclusion
+# sudo plutil -remove Exclusions.{index} "$SPOTLIGHT_CONFIG"
+
+# restart spotlight indexing
+sudo mdutil -E -i on /
+sudo rm -R "$SPOTLIGHT_CONFIG"
+
+# -------------------------------------------
 
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
