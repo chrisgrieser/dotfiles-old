@@ -23,8 +23,6 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=ALL
-export YSU_HARDCORE=1
-# export YSU_IGNORED_ALIASES=("tree" "ls")
 
 # for fzf-tab
 # shellcheck disable=SC2086,SC2296

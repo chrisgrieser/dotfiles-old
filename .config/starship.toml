@@ -10,7 +10,7 @@ right_format="$package$nodejs$python$jobs"
 
 [character]
 success_symbol = " [◈](bold green)"
-error_symbol = " [◼︎](bold red)"
+error_symbol = " [◈](bold red)"
 # ❱
 
 [cmd_duration]
@@ -21,7 +21,7 @@ format = " [◴ $duration](bold yellow)"
 [directory]
 style = "bold fg:#9AEDFE bg:#393D4F"
 truncation_length = 2
-truncation_symbol = "…/"
+truncation_symbol = "❱"
 truncate_to_repo = true
 read_only = "⛔️"
 format = "[$path $read_only]($style)"
@@ -35,7 +35,7 @@ format = "[$path $read_only]($style)"
 "user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
 
 [status]
-format = " [$symbol$status $common_meaning]($style)"
+format = " [$symbol$status]($style)"
 disabled = false
 symbol = "⚡"
 
@@ -62,8 +62,10 @@ style = "fg:yellow bg:#393D4F"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "bold fg:purple bg:#393D4F"
+style = "bold fg:200 bg:#393D4F"
 format = "[$symbol$branch]($style) "
+
+
 
 # files
 [git_status]
@@ -87,8 +89,15 @@ deleted_style = "fg:red bg:#393D4F"
 format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
 
 [package]
-# format
+format = "[$symbol$version]($style)"
+version_format = "v${raw}"
+symbol = ""
+style = "dimmed 200"
 
 [nodejs]
+format = " [$symbol$version]($style)"
+version_format = "${major}"
+style = "dimmed green"
+detect_extensions = ["ts"]
 
 [python]
