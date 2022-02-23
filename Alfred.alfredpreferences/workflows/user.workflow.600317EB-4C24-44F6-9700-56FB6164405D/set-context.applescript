@@ -91,6 +91,11 @@ if (notes contains "obsidian") then
 	end repeat
 	delay 0.5
 
+	-- minimize the unneeded window
+	tell application "System Events"
+		click (first button of window "Zoom" of process "zoom.us" whose role description is "minimize button")
+	end tell
+
 	-- Moom
 	tell application "Moom" to arrange windows according to snapshot "👨‍🏫 Seminar"
 	display notification "" with title "👨‍🏫 Seminar Mode ready"
