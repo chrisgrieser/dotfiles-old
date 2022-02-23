@@ -1,11 +1,12 @@
 # https://github.com/toml-lang/toml
 # https://starship.rs/config/
+# Ansi colors: https://i.stack.imgur.com/KTSQa.png
 # ----------------------------------
 
 # prompt in general
 add_newline = false
 continuation_prompt = "▶▶"
-format = "[$directory$custom$git_branch$git_status$git_metrics$git_commit$git_state](bg:#393D4F)$cmd_duration$status$character"
+format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:#393D4F)$cmd_duration$status$character"
 right_format="$package$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -112,6 +113,6 @@ python_binary = ["python3"]
 
 [custom.file_number]
 command = "ls | wc -l"
-when = "true" # run always, needs to use the `true` command
-style = "bold fg:blue bg:#393D4F"
-format = "\($output)"
+when = "exit 0" # run always
+style = "bold fg:179 bg:#393D4F"
+format = '[⦗$output⦘]($style) '
