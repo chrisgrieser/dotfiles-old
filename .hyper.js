@@ -38,7 +38,8 @@ module.exports = {
 		copyOnSelect: true,
 		quickEdit: true, // right-click copies selection or pastes
 		webLinksActivationKey: 'meta', // meta = cmd (on Mac)
-		macOptionSelectionMode: 'vertical',
+		// macOptionSelectionMode: 'vertical',
+		macOptionSelectionMode: 'force', // https://github.com/walles/moar/issues/53#issuecomment-1049085201
 		bell: false,
 		scrollback: 2000,
 

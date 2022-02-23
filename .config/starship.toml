@@ -6,7 +6,7 @@
 # prompt in general
 add_newline = false
 continuation_prompt = "↪"
-format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:60)$cmd_duration$status$character"
+format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:16)$cmd_duration$status$character"
 right_format="$package$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -19,14 +19,8 @@ min_time = 3000
 format = " [◷ $duration](bold yellow)"
 # ◴◵◶◷
 
-[memory_usage]
-disabled = false
-symbol = "◕"
-threshold = 70
-format = " [$symbol$ram_pct]($style)"
-
 [directory]
-style = "bold fg:81 bg:60"
+style = "fg:44 bg:16"
 truncation_length = 2
 truncation_symbol = "/"
 truncate_to_repo = true
@@ -41,6 +35,12 @@ format = "[$path $read_only]($style)"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
 "user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
 
+[custom.file_number]
+command = "ls | wc -l"
+when = "exit 0" # run always
+style = "fg:44 bg:16"
+format = '[⦗$output⦘]($style) '
+
 [status]
 format = " [$symbol$status]($style)"
 disabled = false
@@ -51,6 +51,47 @@ format="[sudo $symbol]($style)"
 disabled = false
 symbol = "♠︎"
 
+# -------------
+# git
+# -------------
+
+[git_state] # mostly conflicts
+style = 'fg:blue bg:16'
+
+[git_commit]
+style = "fg:yellow bg:16"
+
+# branch
+[git_branch]
+only_attached = true
+symbol = ""
+style = "fg:105 bg:16"
+format = "[$symbol$branch]($style) "
+
+# files
+[git_status]
+untracked = '[+$count ](fg:green bg:16)'
+deleted = '[-$count ](fg:red bg:16)'
+modified = '[*$count ](fg:yellow bg:16)'
+renamed = '[✎$count ](fg:yellow bg:16)'
+staged = '[◎$count ](fg:73 bg:16)'
+conflicted = '[⤱$count ](fg:red bg:16)'
+diverged = '[⇈$count ](fg:73 bg:16)'
+ahead = '[⇡$count ](fg:73 bg:16)'
+behind = '[⇣$count ](fg:yellow bg:16)'
+format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted](bold fg:purple bg:16)'
+
+# lines
+[git_metrics]
+disabled = false
+added_style = "fg:green bg:16"
+deleted_style = "fg:red bg:16"
+format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\)) '
+
+
+# -------------
+# right side
+# -------------
 [jobs]
 symbol = "Jobs"
 format = "[ +$number $symbol ]($style)"
@@ -58,39 +99,11 @@ style = "fg:white bg:bright-black"
 symbol_threshold = 1
 number_threshold = 1
 
-# mostly conflicts
-[git_state]
-style = 'fg:208 bg:60'
-
-[git_commit]
-style = "fg:yellow bg:60"
-
-# branch
-[git_branch]
-only_attached = true
-symbol = ""
-style = "fg:218 bg:60"
-format = "[$symbol$branch]($style) "
-
-# files
-[git_status]
-untracked = '[+$count ](fg:green bg:60)'
-deleted = '[-$count ](fg:red bg:60)'
-modified = '[*$count ](fg:yellow bg:60)'
-renamed = '[✎$count ](fg:yellow bg:60)'
-staged = '[◎$count ](fg:73 bg:60)'
-conflicted = '[⤱$count ](fg:red bg:60)'
-diverged = '[⇈$count ](fg:73 bg:60)'
-ahead = '[⇡$count ](fg:73 bg:60)'
-behind = '[⇣$count ](fg:yellow bg:60)'
-format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted](bold fg:purple bg:60)'
-
-# lines
-[git_metrics]
+[memory_usage]
 disabled = false
-added_style = "fg:green bg:60"
-deleted_style = "fg:red bg:60"
-format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
+symbol = "◕"
+threshold = 70
+format = " [$symbol$ram_pct]($style)"
 
 [package]
 format = "[$symbol$version]($style)"
@@ -109,9 +122,3 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = "$major.$minor"
 style = "dimmed yellow"
 python_binary = ["python3"]
-
-[custom.file_number]
-command = "ls | wc -l"
-when = "exit 0" # run always
-style = "fg:220 bg:60"
-format = '[⦗$output⦘]($style) '
