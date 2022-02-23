@@ -85,19 +85,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>429454C0-5ED5-436C-99A6-A84EC3A36606</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0C95ABEC-28D1-4028-AB4E-6D151DDE1C27</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</key>
 		<array>
 			<dict>
@@ -174,18 +161,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>B13FDA78-F912-4379-8044-815D8730371F</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>429454C0-5ED5-436C-99A6-A84EC3A36606</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>DFD5D12E-B63F-421E-A927-D95DD8C053A6</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -488,42 +463,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>5E14B5E2-FFB6-4886-AE1D-F0BACE930817</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Basso</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>0C95ABEC-28D1-4028-AB4E-6D151DDE1C27</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>❓ Site Support unclear</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>429454C0-5ED5-436C-99A6-A84EC3A36606</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1085,15 +1024,6 @@ https://github.com/ytdl-org/youtube-dl
 https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 	<key>uidata</key>
 	<dict>
-		<key>0C95ABEC-28D1-4028-AB4E-6D151DDE1C27</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>975</integer>
-			<key>ypos</key>
-			<integer>200</integer>
-		</dict>
 		<key>196AB604-341E-4C1E-982F-8526748087C9</key>
 		<dict>
 			<key>colorindex</key>
@@ -1171,15 +1101,6 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<integer>530</integer>
 			<key>ypos</key>
 			<integer>265</integer>
-		</dict>
-		<key>429454C0-5ED5-436C-99A6-A84EC3A36606</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>835</integer>
-			<key>ypos</key>
-			<integer>200</integer>
 		</dict>
 		<key>4B06046A-148C-4F17-B241-C48299B1D2F1</key>
 		<dict>

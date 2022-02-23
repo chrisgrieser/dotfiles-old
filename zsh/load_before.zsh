@@ -8,6 +8,7 @@ autoload compinit -Uz && compinit
 # NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting!!
 source "$ZSH_DOTFILE_LOCATION"/fzf-tab/fzf-tab.plugin.zsh
 
+
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -17,7 +18,7 @@ eval "$(fasd --init auto)"
 eval "$(thefuck --alias)"
 
 eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/.starship.toml"
+source "$ZSH_DOTFILE_LOCATION"/magic_enter.zsh
 
 # Shellfirm, https://github.com/kaplanelad/shellfirm/blob/main/shell-plugins/shellfirm.plugin.zsh
 function shellfirm-pre-command () {

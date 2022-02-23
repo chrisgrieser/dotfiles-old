@@ -22,7 +22,7 @@ Read this excellent [primer on freecodecamp what dotfiles are](https://www.freec
 ## Special Explanations
 - The `CSS3` Sublime Package has to be symlinked and cannot be installed automatically via listing in Package Control settings, since I modified it manually. (Removing autocompletions to avoid overlap with the `lsp-css` package.)
 - The fig settings are "inactive" since they cannot be properly symlinked [until a bug with Fig is fixed](https://github.com/withfig/fig/issues/693).
-- I don't use a zsh-framework, since most zsh plugins are honestly little more than a few lines to be copypasted, I essentially go [zsh unplugged](https://github.com/mattmc3/zsh_unplugged).
+- I don't use a zsh-framework, since most zsh plugins are honestly little more than a few lines to be copypasted, see [this critique of oh-my-zsh](https://www.youtube.com/watch?v=21_WkzBErQk), which I mostly agree with.
 
 ## How this Repository works
 These files only exist for the purpose of backup:

@@ -7,6 +7,9 @@ function del () {
 	mv "$FILE_NAME" ~/.Trash/"$FILE_WITHOUT_EXTENSION""$APPEND"."$EXT"
 }
 
+set iconFile to POSIX path of (path to home folder) & "Dropbox (Hyperion)/Hyperion Team Folder/Icon"
+do shell script "/bin/rm " & quoted form of iconFile
+
 # exit
 function qq () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then

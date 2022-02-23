@@ -1318,7 +1318,7 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 		<key>backup_destination</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/Alfred Backups/</string>
 		<key>max_number_of_bkps</key>
-		<string>20</string>
+		<string>10</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>

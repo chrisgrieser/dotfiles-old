@@ -8,19 +8,6 @@
 	<string>Development</string>
 	<key>connections</key>
 	<dict>
-		<key>0F4636D9-C921-44BD-8CF4-199DED9EACC7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>17380EE5-3BB6-4E89-A412-A77E35AB6B73</key>
 		<array>
 			<dict>
@@ -80,32 +67,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>21CB6D87-4AE9-4109-B03F-3310BD156584</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3AB55595-2BAD-42DF-8A61-73317C35199F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -233,19 +194,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F518AEC4-9F61-4265-BA90-755FFAE4223A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -356,6 +304,54 @@ fi</string>
 			<string>67F611D4-A5E9-451E-AFEE-59046947524A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set filetype to (system attribute "filetype")
+set content to "{query}"
+
+-- resolve home folder
+set working_folder to do shell script "echo " &amp; quoted form of (system attribute "working_folder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"set AppleScript's text item delimiters to "~/"set theTextItems to every text item of working_folderset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
+
+-- prepend certain shebangs
+if (filetype is "js") then 
+	set content to "#!/usr/bin/env osascript -l JavaScript" &amp;  "\n" &amp; content
+else if (filetype is "applescript")
+	set content to "#!/usr/bin/env osascript" &amp;  "\n" &amp; content
+else if (filetype is "sh")
+	set content to "#!/bin/zsh" &amp;  "\n" &amp; content 
+end if
+
+-- generate random name
+set filename to ((random number from 100000 to 999999) as text)
+
+-- create document
+tell application "BBEdit"
+	activate
+	set newDoc to make new document
+	set contents of newDoc to content
+	set file2save to (resolved_path &amp; "/" &amp; filename &amp; "." &amp; filetype)
+	save newDoc to file2save
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>new-text-document.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -539,54 +535,6 @@ EOB</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set filetype to (system attribute "filetype")
-set content to "{query}"
-
--- resolve home folder
-set working_folder to do shell script "echo " &amp; quoted form of (system attribute "working_folder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"set AppleScript's text item delimiters to "~/"set theTextItems to every text item of working_folderset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
-
--- prepend certain shebangs
-if (filetype is "js") then 
-	set content to "#!/usr/bin/env osascript -l JavaScript" &amp;  "\n" &amp; content
-else if (filetype is "applescript")
-	set content to "#!/usr/bin/env osascript" &amp;  "\n" &amp; content
-else if (filetype is "sh")
-	set content to "#!/bin/zsh" &amp;  "\n" &amp; content 
-end if
-
--- generate random name
-set filename to ((random number from 100000 to 999999) as text)
-
--- create document
-tell application "BBEdit"
-	activate
-	set newDoc to make new document
-	set contents of newDoc to content
-	set file2save to (resolved_path &amp; "/" &amp; filename &amp; "." &amp; filetype)
-	save newDoc to file2save
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>new-text-document.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -748,6 +696,29 @@ echo -n "$file_path"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then	set firstItem to item 1 of sel	return POSIX path of (firstItem as text)else	return POSIX path of (sel as text)end if</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>28EC2737-FED4-4995-8D29-BCB67641FA77</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -783,29 +754,6 @@ echo -n "$file_path"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then	set firstItem to item 1 of sel	return POSIX path of (firstItem as text)else	return POSIX path of (sel as text)end if</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>28EC2737-FED4-4995-8D29-BCB67641FA77</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -824,128 +772,11 @@ echo -n "$file_path"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bkp sublime</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Backup: Sublime Preferences</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>✅ Sublime Preferences Backup finished</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>F518AEC4-9F61-4265-BA90-755FFAE4223A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>timestamp=`date '+%Y-%m-%d_%H-%M'`
-resolved_bkp_dest=~`echo -n $backup_location | sed -e "s/~//"`
-backup="$resolved_bkp_dest""/Alfred-Backup_""$timestamp"".zip"
-vault=~`echo -n $vault_path | sed -e "s/~//"`
-
-# directory change necessary to avoid zipping root folder
-# https://unix.stackexchange.com/questions/245856/zip-a-file-without-including-the-parent-directory
-cd $vault
-zip -r --quiet $backup ./*
-
-# restrict number of backups
-actual_number=$((max_number_of_bkps + 1))
-cd $resolved_bkp_dest
-ls -t | tail -n +$actual_number | tr '\n' '\0' | xargs -0 rm
-
-echo "$backup"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>sublime-backup.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0F4636D9-C921-44BD-8CF4-199DED9EACC7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>backup-sublime-prefs</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>3AB55595-2BAD-42DF-8A61-73317C35199F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>0F4636D9-C921-44BD-8CF4-199DED9EACC7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>215</integer>
-			<key>ypos</key>
-			<integer>720</integer>
-		</dict>
 		<key>17380EE5-3BB6-4E89-A412-A77E35AB6B73</key>
 		<dict>
 			<key>colorindex</key>
@@ -995,15 +826,6 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
-		<key>3AB55595-2BAD-42DF-8A61-73317C35199F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>845</integer>
-		</dict>
 		<key>46BD5B40-E8B3-4CCF-B8B2-1D2E10FC625B</key>
 		<dict>
 			<key>colorindex</key>
@@ -1012,15 +834,6 @@ echo "$backup"</string>
 			<integer>790</integer>
 			<key>ypos</key>
 			<integer>415</integer>
-		</dict>
-		<key>4AF0BC39-D7A9-4E3B-B6E0-4C00E77A29ED</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>720</integer>
 		</dict>
 		<key>67F611D4-A5E9-451E-AFEE-59046947524A</key>
 		<dict>
@@ -1111,15 +924,6 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<integer>420</integer>
 		</dict>
-		<key>F518AEC4-9F61-4265-BA90-755FFAE4223A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>510</integer>
-			<key>ypos</key>
-			<integer>720</integer>
-		</dict>
 		<key>F8B62808-E090-4B42-A75E-F690A41E6ED8</key>
 		<dict>
 			<key>colorindex</key>
@@ -1128,15 +932,6 @@ echo "$backup"</string>
 			<integer>705</integer>
 			<key>ypos</key>
 			<integer>305</integer>
-		</dict>
-		<key>FAE0C4F3-96A3-42FB-826D-CFD3035679D0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>360</integer>
-			<key>ypos</key>
-			<integer>720</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
