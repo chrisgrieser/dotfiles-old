@@ -29,6 +29,8 @@ export YSU_IGNORED_ALIASES=("tree" "ls")
 # for fzf-tab
 # shellcheck disable=SC2086,SC2296
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# shellcheck disable=SC2016
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 
 export BAT_THEME='Sublime Snazzy'
 

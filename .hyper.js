@@ -7,7 +7,7 @@ module.exports = {
 
 		// Typography
 		fontSize: 23,
-		fontFamily: 'JetBrains Mono',
+		fontFamily: 'JetBrainsMono Nerd Font',
 		fontWeight: 'normal',
 		fontWeightBold: 'bold',
 		lineHeight: 1.2,
@@ -30,7 +30,7 @@ module.exports = {
 
 		// Theme Specific
 		verminal: {
-			fontFamily: 'JetBrains Mono',
+			fontFamily: 'JetBrainsMono Nerd Font',
 			fontSize: 23,
 		},
 
@@ -48,12 +48,12 @@ module.exports = {
 	},
 
 	plugins: [
-        "hyperalfred",
-        "hyperminimal",
-        "hyper-tabs-enhanced",
-        "verminal",
-        "hyper-quit",
-    ],
+		"hyperalfred",
+		"hyperminimal",
+		"hyper-tabs-enhanced",
+		"verminal",
+		"hyper-quit",
+	],
 
 	localPlugins: ["fig-hyper-integration"],
 };

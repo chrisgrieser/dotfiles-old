@@ -25,6 +25,7 @@ alias urlencode='node --eval "console.log(encodeURIComponent(process.argv[1]))"'
 # colorize by default
 alias grep='grep --color -i' # and case insensitive
 alias ls='ls -G'
+alias exa='exa --icons --'
 alias tree='tree -C'
 alias diff='diff --color=auto'
 

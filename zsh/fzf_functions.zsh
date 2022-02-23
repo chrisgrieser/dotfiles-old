@@ -22,7 +22,7 @@ function c (){
 		return
 	fi
 	cd "$C_TO_SEARCH""$SELECTED" || return
-	ls -G
+	exa --icons
 }
 
 # open recent directory
@@ -34,7 +34,7 @@ function r (){
 	               --preview "tree -L 2 -C {}" \
 	               --preview-window=right:35% \
 	          )
-	if [[ $SELECTED != 0 ]] ; then
+	if [[ $SELECTED == "" ]] ; then
 		echo "Canceled."
 		return
 	fi
