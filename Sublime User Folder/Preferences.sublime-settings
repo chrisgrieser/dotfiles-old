@@ -29,7 +29,7 @@
 	// Tabs vs. Spaces
 	"tab_size": 3,
 	"shift_tab_unindent": true,
-	"detect_indentation": true, //automatically determine tab or spaces
+	"detect_indentation": false, //automatically determine tab or spaces
 	"translate_tabs_to_spaces": false,
 	"indent_to_bracket": true,
 

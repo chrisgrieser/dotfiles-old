@@ -24,7 +24,7 @@ format = " [◷ $duration](bold yellow)"
 # ◴◵◶◷
 
 [directory]
-style = "fg:44 bg:16 bold" # <<<<< changed
+style = "fg:44 bg:16"
 truncation_length = 2
 truncation_symbol = "/"
 truncate_to_repo = true
@@ -42,7 +42,7 @@ format = "[$path $read_only]($style)"
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
-style = "fg:44 bg:16 bold" # <<<<< changed
+style = "fg:44 bg:16"
 format = '[⦗$output⦘]($style) '
 
 [status]
@@ -69,7 +69,7 @@ style = "fg:yellow bg:16"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:105 bg:16 bold" # <<<<< changed
+style = "fg:105 bg:16"
 format = "[$symbol$branch]($style) "
 
 # files

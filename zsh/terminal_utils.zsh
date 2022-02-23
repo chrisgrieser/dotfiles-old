@@ -33,7 +33,7 @@ function sw () {
 
 # https://unix.stackexchange.com/a/57633
 function rrr () {
-	nohup "$ZSH_DOTFILE_LOCATION"/restart-terminal.zsh >/dev/null &
+	nohup "$ZSH_DOTFILE_LOCATION"/restart_terminal.zsh >/dev/null &
 }
 
 # get path of file

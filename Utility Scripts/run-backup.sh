@@ -1,23 +1,29 @@
-# - working directory set through Alfred Workflow, therefore not done here
-# - if done manually, set working directory to external drive
-# ------------------------------------------------------------------------
+# shellcheck disable=SC1091
 
-# Brewfile & NPM file dump
-BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
-DEVICE_NAME=$(scutil --get ComputerName)
+# Import BREWDUMP_PATH and `dump` function
+source ../zsh/homebrew.zsh
+dump
 
-function dump () {
-	device_name=$(scutil --get ComputerName)
-	brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$device_name"
-	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$device_name"
-	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$device_name"
-	echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
-}
+logLoc="$(dirname "$0")"/backup.log
+backup_dest="$1"
+device_name=$(scutil --get ComputerName)
+cd "$backup_dest" || exit 1
 
-# ---------------
+# -------------------------------------------
 
-brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
-npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
+
+# Log Backup Start
+echo -n "Backup: $(date '+%Y-%m-%d %H:%M'),to $backup_dest -- " >> "$logLoc"
+
+# Backup Location from Alfred Workflow
+
+# Creates Folder with current date
+mkdir ./Backup\ "$(date '+%Y-%m-%d_%H.%M')"
+
+# goes to the newly created folder
+cd "$(find . -name "Backup*" -maxdepth 1 -mtime -10s)"
+
+#=========================
 
 # Preferences
 cp -vR ~'/Library/Preferences' .
@@ -49,5 +55,30 @@ cp -vR ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
 
 mkdir -p 'Homefolder/Video'
 cp -vR ~'/Video' ./Homefolder
-# mkdir -p 'Homefolder/RomComs'
-# cp -vR ~'/RomComs' ./Homefolder
+mkdir -p 'Homefolder/RomComs'
+cp -vR ~'/RomComs' ./Homefolder
+
+
+#=========================
+
+# Log Backup completion
+echo "completed: $(date '+%H:%M')\n" >> $logLoc
+
+#eject when its a volume
+if [[ $backup_dest == *"Volumes"* ]]; then
+  diskutil unmount $backup_dest
+  diskutil unmount force $backup_dest
+fi
+
+osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '
+
+osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'
+
+
+
+
+# ---------------
+
+brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
+npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
+

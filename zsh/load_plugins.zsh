@@ -20,10 +20,19 @@ source "$ZSH_DOTFILE_LOCATION"/plugins/obsidian-vault-navigation.sh
 
 # Shellfirm, https://github.com/kaplanelad/shellfirm/blob/main/shell-plugins/shellfirm.plugin.zsh
 function shellfirm-pre-command () {
-    if [[ "${1}" == *"shellfirm pre-command"* ]]; then
-        return
-    fi
-    shellfirm pre-command --command "${1}"
+	if [[ "${1}" == *"shellfirm pre-command"* ]]; then
+		return
+	fi
+	shellfirm pre-command --command "${1}"
 }
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec shellfirm-pre-command
+
+# -------------------------------------------------
+# fix for Starship-Terminus issue
+# https://github.com/starship/starship/issues/3627
+# https://github.com/randy3k/Terminus/issues/344
+
+if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
+	export STARSHIP_CONFIG=~/.config/starship_terminus.toml
+fi

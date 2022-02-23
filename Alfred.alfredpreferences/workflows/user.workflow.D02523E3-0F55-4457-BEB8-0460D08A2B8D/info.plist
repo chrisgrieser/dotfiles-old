@@ -84,32 +84,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3366EAE7-AC26-48EA-8043-7167F9EE7AC3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>38F31C87-B9C7-429D-9B3B-D0F530820D81</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>38F31C87-B9C7-429D-9B3B-D0F530820D81</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AB874481-965C-454A-B703-D5DE1416097B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3AB5A5A0-4AC0-41EA-BC28-57C32CB52CE0</key>
 		<array>
 			<dict>
@@ -406,18 +380,7 @@
 			</dict>
 		</array>
 		<key>D059CCB1-3315-45DA-8808-6AB9411CA63C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3366EAE7-AC26-48EA-8043-7167F9EE7AC3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>E40A4B08-727F-4348-83B7-4DDADF9D0A42</key>
 		<array>
 			<dict>
@@ -458,30 +421,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>script_location="${script_location/#\~/$HOME}"
-echo | cat "$script_location"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>38F31C87-B9C7-429D-9B3B-D0F530820D81</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -499,29 +438,6 @@ echo | cat "$script_location"</string>
 			<string>D059CCB1-3315-45DA-8808-6AB9411CA63C</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>if application "Hyper" is running then	tell application "Hyper" to activate	delay 0.2	tell application "System Events"		tell process "Hyper"			set frontmost to true			click menu item "New Tab" of menu "Shell" of menu bar 1		end tell	end tell	delay 0.2else	tell application "Hyper" to activate	delay 0.8	-- in case user switches app in the meantime	tell application "Hyper" to activateend ifdelay .5</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3366EAE7-AC26-48EA-8043-7167F9EE7AC3</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1420,28 +1336,6 @@ end run</string>
 			<integer>285</integer>
 			<key>ypos</key>
 			<integer>405</integer>
-		</dict>
-		<key>3366EAE7-AC26-48EA-8043-7167F9EE7AC3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>launch Hyper</string>
-			<key>xpos</key>
-			<integer>495</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
-		<key>38F31C87-B9C7-429D-9B3B-D0F530820D81</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>get content of export script</string>
-			<key>xpos</key>
-			<integer>645</integer>
-			<key>ypos</key>
-			<integer>20</integer>
 		</dict>
 		<key>3AB5A5A0-4AC0-41EA-BC28-57C32CB52CE0</key>
 		<dict>
