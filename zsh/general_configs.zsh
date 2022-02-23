@@ -24,9 +24,10 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=ALL
 export YSU_HARDCORE=1
-# disable certain aliases: https://github.com/MichaelAquilina/zsh-you-should-use
+export YSU_IGNORED_ALIASES=("tree" "ls")
 
 # for fzf-tab
+# shellcheck disable=SC2086,SC2296
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 export BAT_THEME='Sublime Snazzy'

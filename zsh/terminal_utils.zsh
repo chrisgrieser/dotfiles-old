@@ -1,14 +1,11 @@
-# Move to trash
+# Move to trash via Finder (allows retrievability)
 function del () {
-	FILE_NAME=$(basename "$1")
-	EXT="${FILE_NAME##*.}"
-	FILE_WITHOUT_EXTENSION="${FILE_NAME%.*}"
-	APPEND=$(date '+%m-%d_%H-%M-%S')
-	mv "$FILE_NAME" ~/.Trash/"$FILE_WITHOUT_EXTENSION""$APPEND"."$EXT"
+	FILE="$PWD/$1"
+	osascript -e "
+		set toDelete to \"$FILE\" as POSIX file
+		tell application \"Finder\" to delete file toDelete
+	" >/dev/null
 }
-
-set iconFile to POSIX path of (path to home folder) & "Dropbox (Hyperion)/Hyperion Team Folder/Icon"
-do shell script "/bin/rm " & quoted form of iconFile
 
 # exit
 function qq () {
