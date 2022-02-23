@@ -4,7 +4,9 @@
 
 # prompt in general
 add_newline = false
-format = "[$directory$git_branch$git_status$git_metrics$git_commit$git_state$custom$jobs](bg:#393D4F)$cmd_duration$status$character"
+continuation_prompt = "▶▶"
+format = "[$directory$custom$git_branch$git_status$git_metrics$git_commit$git_state](bg:blue)$cmd_duration$status$character"
+right_format="$nodejs$python$jobs"
 
 [character]
 success_symbol = " [⟐](bold green)"
@@ -22,7 +24,7 @@ truncation_length = 2
 truncation_symbol = "…/"
 truncate_to_repo = true
 read_only = "⛔️"
-format = "[$path ]($style)[$read_only]($style)"
+format = "[$path $read_only]($style)"
 
 [directory.substitutions]
 "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault" = "/◘ Vault"
@@ -33,16 +35,21 @@ format = "[$path ]($style)[$read_only]($style)"
 "user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
 
 [status]
-format = " [$symbol$status]($style)"
+format = " [$symbol$status $common_meaning]($style)"
 disabled = false
 symbol = "⚡"
 
+[sudo]
+format="[as $symbol]($style)"
+disabled = false
+symbol = "♠︎"
+
 [jobs]
-symbol = "+ "
-format = "[$symbol$number]($style) "
-style = "bold fg:#9AEDFE bg:#393D4F"
-number_threshold = 2
+symbol = "Jobs"
+format = "[ +$number $symbol ]($style)"
+style = "fg:white bg:bright-black"
 symbol_threshold = 1
+number_threshold = 1
 
 # mostly conflicts
 [git_state]
