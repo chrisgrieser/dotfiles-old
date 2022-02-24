@@ -11,14 +11,6 @@ export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/C
 alias re='brew reinstall'
 alias un='brew uninstall --zap'
 
-function br {
-	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-	SELECTED=$( { brew formulae ; brew casks } | fzf --query "$*" --preview 'HOMEBREW_COLOR=true brew info {}' --bind 'alt-enter:execute(brew home {})+abort' --preview-window=right:65%)
-	if [[ $? == 0 ]]; then
-		in "$SELECTED"
-	fi
-}
-
 function in (){
 	TO_INSTALL="$1"
 	TYPE="$2" # formula or cask
@@ -44,6 +36,14 @@ function in (){
 	open -a "$NEWEST_APP"
 }
 
+function br {
+	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
+	SELECTED=$( { brew formulae ; brew casks } | fzf --query "$*" --preview 'HOMEBREW_COLOR=true brew info {}' --bind 'alt-enter:execute(brew home {})+abort' --preview-window=right:65%)
+	if [[ $? == 0 ]]; then
+		in "$SELECTED"
+	fi
+}
+
 function print-section () {
 	echo ""
 	echo "$*"
@@ -51,10 +51,10 @@ function print-section () {
 }
 
 function dump () {
-	device_name=$(scutil --get ComputerName)
-	brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$device_name"
-	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$device_name"
-	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$device_name"
+	DEVICE_NAME=$(scutil --get ComputerName)
+	brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
+	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
+	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
 	echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 }
 
@@ -63,7 +63,7 @@ function update (){
 	brew update
 	brew upgrade
 	brew cleanup
-	brew autoremove # remove unnedded dependencies (brew leaves --installed-as-dependency)
+	brew autoremove # remove unneeded dependencies (brew leaves --installed-as-dependency)
 
 	print-section "Mac App Store"
 	mas upgrade

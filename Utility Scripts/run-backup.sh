@@ -1,10 +1,7 @@
 # shellcheck disable=SC1091
 
-# Import BREWDUMP_PATH and `dump` function
-source ../zsh/homebrew.zsh
-dump
-
 DEVICE_NAME="$(scutil --get ComputerName)"
+
 LOG_LOCATION="$(dirname "$0")"/backup.log
 echo "" >> "$LOG_LOCATION"
 echo "Backup: $(date '+%Y-%m-%d %H:%M'), $BACKUP_DEST -- " >> "$LOG_LOCATION"
@@ -12,14 +9,23 @@ echo "Backup: $(date '+%Y-%m-%d %H:%M'), $BACKUP_DEST -- " >> "$LOG_LOCATION"
 INPUT="$*"
 BACKUP_DEST="${INPUT/#\~/$HOME}"/Backup_"$DEVICE_NAME"
 mkdir -p "$BACKUP_DEST"
-cd "$BACKUP_DEST" || exit 1
 
+BREWDUMP_PATH="$BACKUP_DEST"/install\ lists
+mkdir "$BREWDUMP_PATH"
+brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
+npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
+pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
+echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
+
+cd "$BACKUP_DEST" || exit 1
 RSYNC_OPTS="-rav --progress --dry-run --delete"
 
 #=========================
 
-# # Fonts
-rsync "$RSYNC_OPTS" ~'/Library/Fonts' ./Fonts
+# Fonts
+mkdir ./Fonts
+# shellcheck disable=SC2086
+rsync $RSYNC_OPTS ~'/Library/Fonts' ./Fonts
 
 # # Preferences
 # rsync "$RSYNC_OPTS" ~'/Library/Preferences' .
