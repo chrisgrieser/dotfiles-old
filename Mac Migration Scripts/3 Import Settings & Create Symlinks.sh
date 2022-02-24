@@ -38,16 +38,23 @@ ln -s "$SYMLINK_LOC"/.gitconfig ~/.gitconfig
 ln -s "$SYMLINK_LOC"/.eslintrc ~/.eslintrc
 ln -s "$SYMLINK_LOC"/.finicky.js ~/.finicky.js
 
+mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
+ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC"/.config/ ~/.config
+
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
 ln -s "$SYMLINK_LOC"/Sublime\ User\ Folder/ ~"/Library/Application Support/Sublime Text/Packages/User"
+
 mv ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC"/Popclip/ ~"/Library/Application Support/PopClip"
+
 mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
 ln -s "$SYMLINK_LOC"/xbar\ plugins/ ~"/Library/Application Support/xbar/plugins"
-mv -f ~/.fig/settings.json ~/.Trash
-ln -s "$SYMLINK_LOC"/fig-settings.json ~/.fig/settings.json
+
+# mv -f ~/.fig/settings.json ~/.Trash
+# ln -s "$SYMLINK_LOC"/fig-settings.json ~/.fig/settings.json
 
 # --------------
 

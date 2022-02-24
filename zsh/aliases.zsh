@@ -13,6 +13,9 @@ alias q='exit'
 alias size='exa --long --no-user --no-permissions --no-time' # size of files in current directory
 alias b='cd - &> /dev/null' # back
 alias .="open ."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias wd='cd "$WD"' # working directory
 
 # utils
