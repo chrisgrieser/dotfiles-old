@@ -1188,11 +1188,11 @@ end tell</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
 					<string>com.sublimetext.4</string>
 					<string>md.obsidian</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>com.agiletortoise.Drafts-OSX</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -3117,7 +3117,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 
 Fenced Code</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>35</integer>
 			<key>ypos</key>
 			<integer>660</integer>
 		</dict>

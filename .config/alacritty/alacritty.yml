@@ -18,9 +18,9 @@ font:
   offset:
     x: 2
     y: 10
+  # to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
   glyph_offset:
-    y: 100
-    x: 0
+    y: 5
 
 window:
   position:
@@ -74,11 +74,25 @@ cursor:
  style:
    shape: Block
    blinking: Always
-   blink_interval: 750
-   # If this is `true`, the cursor will be rendered as a hollow box when the
-   # window is not focused.
-   unfocused_hollow: true
+   blink_interval: 650
 
-   # key_bindings:
-   #   - { key: K,              mods: Command, mode: ~Vi|~Search, action: none                 }
-   #   - { key: K,              mods: Command, action: ClearHistory          }
+
+key_bindings:
+- { key: Back, mods: Super, chars: "\x15" } # delete line
+# open Alacritty config (this file)
+- { key: Semicolon,     mods: Command|Shift,      command:
+      {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
+- { key: K,              mods: Alt, mode: ~Vi|~Search, action: ClearHistory          }
+
+
+
+# fix keys
+# https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
+- { key: 28,      mods: Alt, chars: "{" }
+- { key: 25,      mods: Alt, chars: "}" }
+- { key: 37,      mods: Alt, chars: "@" }
+- { key: 26,      mods: Alt|Shift, chars: "\\" }
+- { key: 26,      mods: Alt, chars: "|" }
+- { key: 45,      mods: Alt, chars: "~" }
+- { key: 23,      mods: Alt, chars: "[" }
+- { key: 22,      mods: Alt, chars: "]" }
