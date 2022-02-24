@@ -1,6 +1,7 @@
 # https://github.com/toml-lang/toml
 # https://starship.rs/config/
 # Ansi colors: https://i.stack.imgur.com/KTSQa.png
+# nerd font icons https://www.nerdfonts.com/cheat-sheet
 
 # --------------------------------------------------
 # Terminus does not properly support bold, therefore
@@ -43,7 +44,7 @@ format = "[$path $read_only]($style)"
 command = "ls | wc -l"
 when = "exit 0" # run always
 style = "fg:208 bg:16 bold" # <<<<< changed
-format = '[⦗$output⦘]($style) '
+format = '[ $output]($style) '
 
 [status]
 format = " [$symbol$status]($style)"
@@ -90,14 +91,13 @@ format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$de
 disabled = false
 added_style = "fg:green bg:16"
 deleted_style = "fg:red bg:16"
-format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\)) '
-
+format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
 
 # -------------
 # right side
 # -------------
 [jobs]
-symbol = "Jobs"
+symbol = ""
 format = "[ +$number $symbol ]($style)"
 style = "fg:white"
 symbol_threshold = 1
@@ -105,13 +105,13 @@ number_threshold = 1
 
 [memory_usage]
 disabled = false
-symbol = "◕"
+symbol = ""
 threshold = 70
 format = " [$symbol$ram_pct]($style)"
 
 [package]
 format = "[$symbol$version]($style)"
-version_format = "v$raw"
+version_format = " $raw"
 symbol = ""
 style = "dimmed 208"
 

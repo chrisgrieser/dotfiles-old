@@ -111,7 +111,7 @@
 		<key>8943DD04-1006-4B0A-8BBB-08E7D79D8E62</key>
 		<dict>
 			<key>enabled</key>
-			<false/>
+			<true/>
 			<key>keyword</key>
 			<string>g</string>
 			<key>text</key>
