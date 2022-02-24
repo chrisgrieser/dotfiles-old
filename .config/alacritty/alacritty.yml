@@ -2,6 +2,8 @@
 # https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 # -------------------------------------------------------------------------------------
 
+working_directory: "/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+
 font:
   normal:
     family: JetBrainsMono Nerd Font

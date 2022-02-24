@@ -1,5 +1,4 @@
-# https://github.com/toml-lang/toml
-# https://starship.rs/config/
+# https://starship.rs/config/ ----> https://github.com/toml-lang/toml
 # Ansi colors: https://i.stack.imgur.com/KTSQa.png
 # nerd font icons https://www.nerdfonts.com/cheat-sheet
 
@@ -15,7 +14,7 @@ format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
-success_symbol = " [](bold green)"
+success_symbol = " [ﰉ](bold green)"
 error_symbol = " [](bold red)"
 
 [cmd_duration]
@@ -23,12 +22,13 @@ min_time = 3000
 format = " [ $duration](bold yellow)"
 
 [directory]
-style = "fg:44 bg:234 bold" # terminus different
-truncation_length = 2
+truncation_length = 3
 truncation_symbol = "/"
 truncate_to_repo = true
-read_only = "ﮖ "
-format = "[$path $read_only]($style)"
+read_only = "ﮖ  "
+read_only_style = "red bg:234"
+style = "fg:44 bg:234 bold" # terminus different
+format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
 "/Library/Mobile Documents/iCloud~md~obsidian/Documents" = "/ "

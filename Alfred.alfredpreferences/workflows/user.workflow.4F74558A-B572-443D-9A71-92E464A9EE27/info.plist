@@ -121,6 +121,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</key>
 		<array>
 			<dict>
@@ -151,6 +164,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>20863B68-4261-4A9A-A565-53664650C527</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B96DFF64-E115-49EF-A0D3-CABFB549CF9D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>811F15A4-7752-4296-98D3-451AED5998FD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -338,6 +364,36 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>&gt; {var:input}
+{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>20863B68-4261-4A9A-A565-53664650C527</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -409,32 +465,15 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
+				<key>path</key>
 				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>&gt; {var:input}
-{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
+			<string>alfred.workflow.action.browseinterminal</string>
 			<key>uid</key>
-			<string>20863B68-4261-4A9A-A565-53664650C527</string>
+			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -444,7 +483,7 @@ eval "$input"</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "Finder"	if (count windows) is 0 then		set pathToOpen to (path to home folder as string)	else		set pathToOpen to target of Finder window 1 as alias	end ifend telldo shell script "open -a Hyper " &amp; "\"" &amp; (POSIX path of pathToOpen) &amp; "\""</string>
+				<string>tell application "Finder"	if (count windows) is 0 then		set pathToOpen to (path to home folder as string)	else		set pathToOpen to target of Finder window 1 as alias	end ifend tellPOSIX path of pathToOpen</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -456,6 +495,27 @@ eval "$input"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>B96DFF64-E115-49EF-A0D3-CABFB549CF9D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>811F15A4-7752-4296-98D3-451AED5998FD</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -482,10 +542,10 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
+					<string>co.zeit.hyper</string>
 					<string>io.alacritty</string>
 					<string>com.sublimetext.4</string>
-					<string>co.zeit.hyper</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -670,7 +730,7 @@ eval "$input"</string>
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>275</integer>
 		</dict>
 		<key>2F2AFE0A-85AB-4923-B5C9-0CCCEF47E5DF</key>
 		<dict>
@@ -707,7 +767,7 @@ eval "$input"</string>
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>160</integer>
 		</dict>
 		<key>5DAB0248-BF51-435C-9708-E554C51B4EAF</key>
 		<dict>
@@ -734,6 +794,13 @@ eval "$input"</string>
 			<key>ypos</key>
 			<integer>460</integer>
 		</dict>
+		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>440</integer>
+		</dict>
 		<key>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</key>
 		<dict>
 			<key>xpos</key>
@@ -751,9 +818,9 @@ eval "$input"</string>
 		<key>A15E878F-A3E0-4C08-9B46-77290F1B153D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>A9E8067E-9512-4152-8D31-91D238D11515</key>
 		<dict>
@@ -761,6 +828,13 @@ eval "$input"</string>
 			<integer>480</integer>
 			<key>ypos</key>
 			<integer>290</integer>
+		</dict>
+		<key>AE906983-CE5F-481C-8C1A-B316AD77DB03</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>410</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
@@ -774,9 +848,9 @@ eval "$input"</string>
 		<key>B96DFF64-E115-49EF-A0D3-CABFB549CF9D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>410</integer>
 		</dict>
 		<key>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</key>
 		<dict>
