@@ -11,4 +11,3 @@
   branch = auto
   interactive = auto
 	ui = true
-  pager = true
