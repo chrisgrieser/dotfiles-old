@@ -42,7 +42,7 @@ format = "[$path $read_only]($style)"
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
-style = "fg:44 bg:16"
+style = "fg:208 bg:16"
 format = '[⦗$output⦘]($style) '
 
 [status]

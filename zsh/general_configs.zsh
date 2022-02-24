@@ -18,8 +18,8 @@ export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=ALL
 
 # for fzf-tab
-# shellcheck disable=SC2086,SC2296
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# shellcheck disable=SC2016
+zstyle ':completion:*:descriptions' format '[%d]'
 # shellcheck disable=SC2016
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 
