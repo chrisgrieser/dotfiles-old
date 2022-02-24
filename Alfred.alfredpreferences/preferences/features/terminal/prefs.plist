@@ -5,31 +5,39 @@
 	<key>application</key>
 	<integer>1</integer>
 	<key>custom</key>
-	<string>-- https://www.npmjs.com/package/hyperalfred
--- old solution: https://www.alfredforum.com/topic/10444-change-default-terminal-to-hyperis/?do=findComment&amp;comment=89195
+	<string>on alacritty_win()
+    set _running to (application "Alacritty" is running)
+    tell application "Alacritty" to activate
+    tell application "System Events"
+        repeat while (name of first application process whose frontmost is true) is not "alacritty"
+            delay 0.05
+        end repeat
+
+        set _alacritty to first application process whose frontmost is true
+        -- If Alacritty was running, create a new window to run command
+        if _running then
+            tell _alacritty to set _target to (count windows) + 1
+            keystroke "n" using {command down}
+        else
+            set _target to 1
+        end if
+
+        -- Wait for wanted window count
+        tell _alacritty
+            repeat while (count windows) &lt; _target
+                delay 0.05
+            end repeat
+        end tell
+    end tell
+end alacritty_win
 
 on alfred_script(q)
-    write_to_file(q, "/Users/chrisgrieser/.hyper_plugins/hyperalfred.txt", false)
-    tell application "Hyper" to activate
-end alfred_script
- 
-on write_to_file(this_data, target_file, append_data)
-    try
-        tell application "System Events" to exists file target_file
-        if not the result then do shell script "&gt; " &amp; quoted form of target_file
-        set the open_target_file to open for access target_file with write permission
-        if append_data is false then set eof of the open_target_file to 0
-        write this_data to the open_target_file starting at eof
-        close access the open_target_file
-        return true
-    on error e
-        try
-            display dialog e
-            close access target_file
-        end try
-        return false
-    end try
-end write_to_file</string>
+    my alacritty_win()
+    tell application "System Events"
+        keystroke q
+        key code 36
+    end tell
+end alfred_script</string>
 	<key>prefix</key>
 	<integer>4</integer>
 </dict>

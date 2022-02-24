@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.chris-grieser.hyper</string>
+	<string>de.chris-grieser.terminal</string>
 	<key>category</key>
 	<string>Development</string>
 	<key>connections</key>
@@ -134,6 +134,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8D068195-142C-45EA-BD71-9634609F08DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55DF2402-13F2-49D8-87CB-3FA4331FE250</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A9E8067E-9512-4152-8D31-91D238D11515</key>
 		<array>
 			<dict>
@@ -180,7 +193,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Hyper</string>
+	<string>Terminal (Alacritty)</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -292,6 +305,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>.</string>
+				<key>subtext</key>
+				<string>{query}</string>
+				<key>text</key>
+				<string>Run in Command in Background</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5DAB0248-BF51-435C-9708-E554C51B4EAF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -313,27 +347,6 @@ eval "$input"</string>
 			<string>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>.</string>
-				<key>subtext</key>
-				<string>{query}</string>
-				<key>text</key>
-				<string>Run in Command in Background</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5DAB0248-BF51-435C-9708-E554C51B4EAF</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -368,6 +381,26 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -385,26 +418,6 @@ eval "$input"</string>
 			<string>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>input</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -482,9 +495,10 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>co.zeit.hyper</string>
 					<string>md.obsidian</string>
+					<string>io.alacritty</string>
 					<string>com.sublimetext.4</string>
+					<string>co.zeit.hyper</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -566,6 +580,7 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>io.alacritty</string>
 					<string>co.zeit.hyper</string>
 				</array>
 				<key>relatedAppsMode</key>
@@ -598,6 +613,21 @@ eval "$input"</string>
 			<string>FEC82210-DDF5-46A7-980E-8A195BD3A586</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/.hyper.js</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>944A857C-B7D0-4649-AFD4-80F529B0A1BD</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -637,15 +667,50 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>,</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>io.alacritty</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8D068195-142C-45EA-BD71-9634609F08DD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>~/.hyper.js</string>
+				<string>~/.config/alacritty/alacritty.yml</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>944A857C-B7D0-4649-AFD4-80F529B0A1BD</string>
+			<string>55DF2402-13F2-49D8-87CB-3FA4331FE250</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -672,8 +737,6 @@ eval "$input"</string>
 		</dict>
 		<key>2F2AFE0A-85AB-4923-B5C9-0CCCEF47E5DF</key>
 		<dict>
-			<key>note</key>
-			<string>defined in Hyper as opening .zshrc</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
@@ -709,6 +772,13 @@ eval "$input"</string>
 			<key>ypos</key>
 			<integer>215</integer>
 		</dict>
+		<key>55DF2402-13F2-49D8-87CB-3FA4331FE250</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>960</integer>
+		</dict>
 		<key>5DAB0248-BF51-435C-9708-E554C51B4EAF</key>
 		<dict>
 			<key>note</key>
@@ -740,6 +810,13 @@ eval "$input"</string>
 			<integer>260</integer>
 			<key>ypos</key>
 			<integer>270</integer>
+		</dict>
+		<key>8D068195-142C-45EA-BD71-9634609F08DD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>960</integer>
 		</dict>
 		<key>944A857C-B7D0-4649-AFD4-80F529B0A1BD</key>
 		<dict>
