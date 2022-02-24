@@ -28,7 +28,7 @@ export BAT_THEME='Sublime Snazzy'
 export FZF_DEFAULT_COMMAND='fd'
 export FZF_DEFAULT_OPTS='-0 -1 --pointer=⟐ --prompt="❱ "'
 
-export MAGIC_ENTER_GIT_COMMAND="exa"
+export MAGIC_ENTER_GIT_COMMAND="exa ; echo ; git status --porcelain"
 export MAGIC_ENTER_OTHER_COMMAND="exa"
 
 export EDITOR='nano' # mainly for `crontab -e`
@@ -39,6 +39,6 @@ export EDITOR='nano' # mainly for `crontab -e`
 setopt AUTO_CD
 setopt INTERACTIVE_COMMENTS
 
-# case insensitive path-completion https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
+# case insensitive path-completion, see https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 
 

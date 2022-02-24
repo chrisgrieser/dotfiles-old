@@ -4,7 +4,11 @@ function o (){
 	if [[ -e "$INPUT" ]]; then
 		open "$INPUT"
 	else
-		SELECTED=$(fd --hidden | fzf -0 -1 --query "$INPUT" --preview "bat --color=always --style=snip --wrap=character --tabs=3 --line-range=:100 --terminal-width=50 {}")
+		SELECTED=$(fd --hidden | fzf \
+		           -0 -1 \
+		           --query "$INPUT" \
+		           --preview "bat --color=always --style=snip --wrap=character --tabs=3 --line-range=:100 --terminal-width=50 {}" \
+		           )
 		if [[ $SELECTED == "" ]] ; then
 			echo "Canceled."
 			return
@@ -21,7 +25,15 @@ function c (){
 		cd "$INPUT" || return
 	else
 		cd "$C_TO_SEARCH" || return
-		SELECTED=$(fd --type d | cut -c3- | fzf -0 -1 --query "$*" --preview "tree -L 2 -C {}" --preview-window=right:35%)
+		SELECTED=$(fd --type d --exclude "*.app" | cut -c3- | fzf \
+		           -0 -1 \
+		           --query "$*" \
+		           --preview "exa -T -L2 {}" \
+		           --preview-window=right:35% \
+		           --height=80% \
+		           --layout=reverse \
+		           --info=inline
+		           )
 		if [[ $SELECTED == "" ]] ; then
 			echo "Canceled."
 			return

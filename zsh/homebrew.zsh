@@ -38,7 +38,12 @@ function in (){
 
 function br {
 	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-	SELECTED=$( { brew formulae ; brew casks } | fzf --query "$*" --preview 'HOMEBREW_COLOR=true brew info {}' --bind 'alt-enter:execute(brew home {})+abort' --preview-window=right:65%)
+	SELECTED=$( { brew formulae ; brew casks } | fzf \
+	           --query "$*" \
+	           --preview 'HOMEBREW_COLOR=true brew info {}' \
+	           --bind 'alt-enter:execute(brew home {})+abort' \
+	           --preview-window=right:65% \
+	           )
 	if [[ $? == 0 ]]; then
 		in "$SELECTED"
 	fi
