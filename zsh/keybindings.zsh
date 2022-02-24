@@ -5,23 +5,45 @@ bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
 
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
+bindkey "^X" kill-buffer
 bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 
 # [alt+arrow] - move word forward or backward
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+bindkey '^W' toggleDoubleString
 
 # `bindkey -M main` to show existing keybinds
 # there `^[` usually means escape
 # some bindings with '^' are reserved (^M=enter, ^I=tab)
 # -----------------------------------
 
+# https://github.com/shibumi/hikari
+toggleDoubleString() {
+  LBUFFER=$(echo "$LBUFFER" | sed -e 's/\(.*\) /\1 "/')
+  LBUFFER=$(echo "$LBUFFER" | sed -e 's/\(.*\) /\1 "/')
+  RBUFFER=$(echo "$RBUFFER" | sed -e 's/ /" /')
+  RBUFFER=$(echo "$RBUFFER" | sed -e 's/\([^"]\)$/"/')
+  zle redisplay
+}
+zle -N toggleDoubleString
+
 copyLocation () {
 	pwd | pbcopy
 }
+zle -N copyLocation
+
 quitSession () {
 	exit
 }
+zle -N quitSession
+
+# https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/copybuffer/copybuffer.plugin.zsh
+copybuffer () {
+	printf "%s" "$BUFFER" | pbcopy
+}
+zle -N copybuffer
+
 open-zshrc () {
 	if [[ $# == 0 ]] ; then
 		SEARCH_FOR="$*"
@@ -46,14 +68,4 @@ open-zshrc () {
 	fi )
 	zle reset-prompt # https://stackoverflow.com/questions/52325626/zsh-refresh-prompt-after-running-zle-widget
 }
-
-# https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/copybuffer/copybuffer.plugin.zsh
-copybuffer () {
-	printf "%s" "$BUFFER" | pbcopy
-}
-
-zle -N copyLocation
-zle -N copybuffer
-zle -N quitSession
-zle -N openCurrentLocation
 zle -N open-zshrc

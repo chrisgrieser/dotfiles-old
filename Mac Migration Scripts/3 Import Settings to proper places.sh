@@ -30,9 +30,6 @@ ln -s "$SYMLINK_LOC"/zsh/.zshrc ~/.zshrc
 mv ~/.zprofile ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zprofile ~/.zprofile
 
-mv ~/.hyper ~/.Trash
-ln -s "$SYMLINK_LOC"/.hyper.js ~/.hyper.js
-
 ln -s "$SYMLINK_LOC"/.searchlink ~/.searchlink
 ln -s "$SYMLINK_LOC"/.shellcheckrc ~/.shellcheckrc
 ln -s "$SYMLINK_LOC"/.markdownlintrc ~/.markdownlintrc

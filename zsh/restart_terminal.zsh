@@ -2,14 +2,18 @@
 # to allow restarting of the whole app
 
 if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
-	echo "Terminal restart not configured for Terminus."
+	echo "Terminal restart not configured yet for Terminus."
 	return 1
 fi
+
+# some Terminals (e.g. alacritty) do not register to TERM_PROGRAM,
+# others like Terminus do not register to TERM properly.
 if [[ "$TERM_PROGRAM" == "" ]]; then
 	TO_RESTART="$TERM"
 else
 	TO_RESTART="$TERM_PROGRAM"
 fi
+
 osascript -e "tell application \"$TO_RESTART\" to quit"
 sleep 1
 open -a "$TO_RESTART"

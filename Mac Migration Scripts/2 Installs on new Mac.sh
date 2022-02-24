@@ -48,9 +48,6 @@ c_css_location=~'/Library/Application Support/name.abuchen.portfolio.product/wor
 mkdir -p "$c_css_location"
 printf "%s" "{\nfont-size: ""$font_size"";\n}" >> "$c_css_location"/custom.css
 
-# Hyper CLI
-sudo ln -sf "/Applications/Hyper.app/Contents/Resources/bin/hyper" "/usr/local/bin/hyper"
-
 # Mimestream as Default Mail Client (nicht updaten auf neuere Python-Versionen)
 # https://apple.stackexchange.com/a/351570
 /usr/bin/python2.7 <<EOF

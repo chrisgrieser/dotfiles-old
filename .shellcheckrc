@@ -10,8 +10,9 @@
 # 2071: https://scriptingosx.com/2019/08/shellcheck-and-zsh/
 # 1083: zsh accepts without ; at the end of oneline-functions
 # 1072: seems to be bug?
+# 2001: No time to learn bash expansion...
 
-disable=SC2236,SC2071,SC1083,SC1072
+disable=SC2236,SC2071,SC1083,SC1072,SC2001
 
 # -----------------------------------------------------
 # Enable some Optional Rules

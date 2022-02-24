@@ -38,6 +38,7 @@ export EDITOR='nano' # mainly for `crontab -e`
 # OPTIONS --- (`man zshoptions` to see all options)
 setopt AUTO_CD
 setopt INTERACTIVE_COMMENTS
+setopt NOTIFY # report the status of backgrounds jobs immediately
 
 # case insensitive path-completion, see https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 
