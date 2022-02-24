@@ -11,7 +11,7 @@
 # prompt in general
 add_newline = false
 continuation_prompt = "↪"
-format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:233)$cmd_duration$status$character"
+format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:234)$cmd_duration$status$character"
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -25,7 +25,7 @@ format = " [ $duration](bold yellow)"
 # ◴◵◶◷
 
 [directory]
-style = "fg:44 bg:233" # terminus different
+style = "fg:44 bg:234" # terminus different
 truncation_length = 2
 truncation_symbol = "/"
 truncate_to_repo = true
@@ -33,8 +33,8 @@ read_only = "ﮖ "
 format = "[$path $read_only]($style)"
 
 [directory.substitutions]
-"~/Library/Mobile Documents/iCloud~md~obsidian/Documents/" = "/iCloud-Obsidian"
-"~/Library/Mobile Documents/com~apple~CloudDocs" = "~/iCloud"
+"/Library/Mobile Documents/iCloud~md~obsidian/Documents" = "/ "
+"/Library/Mobile Documents/com~apple~CloudDocs" = "/ "
 "Dokumente/IT Backups/Alfred.alfredpreferences" = "AlfredPrefs"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
@@ -45,7 +45,7 @@ command = "ls | wc -l"
 when = "exit 0" # run always
 symbol = " "
 format = '[$symbol$output]($style) '
-style = "fg:yellow bg:233" # terminus different
+style = "fg:yellow bg:234" # terminus different
 
 [status]
 format = " [$symbol$status]($style)"
@@ -63,38 +63,38 @@ symbol = " "
 # -------------
 
 [git_state] # mostly conflicts
-style = 'fg:blue bg:233'
+style = 'fg:blue bg:234'
 
 [git_commit]
-style = "fg:yellow bg:233"
+style = "fg:yellow bg:234"
 
 # branch
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:105 bg:233" # terminus different
+style = "fg:105 bg:234" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files
 [git_status]
-untracked = '[+$count ](fg:green bg:233)'
-deleted = '[-$count ](fg:red bg:233)'
-modified = '[*$count ](fg:208 bg:233)'
-renamed = '[✎$count ](fg:208 bg:233)'
-staged = '[◎$count ](fg:73 bg:233)'
-conflicted = '[⤱$count ](fg:red bg:233)'
-diverged = '[⇈$count ](fg:73 bg:233)'
-ahead = '[⇡$count ](fg:73 bg:233)'
-behind = '[⇣$count ](fg:yellow bg:233)'
-style = 'fg:purple bg:233' # terminus different
+untracked = '[+$count ](fg:green bg:234)'
+deleted = '[-$count ](fg:red bg:234)'
+modified = '[*$count ](fg:208 bg:234)'
+renamed = '[✎$count ](fg:208 bg:234)'
+staged = '[◎$count ](fg:73 bg:234)'
+conflicted = '[⤱$count ](fg:red bg:234)'
+diverged = '[⇈$count ](fg:73 bg:234)'
+ahead = '[⇡$count ](fg:73 bg:234)'
+behind = '[⇣$count ](fg:yellow bg:234)'
+style = 'fg:purple bg:234' # terminus different
 format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted]($style)'
 
 # lines
 [git_metrics]
 disabled = false
-added_style = "fg:green bg:233"
-deleted_style = "fg:red bg:233"
-format = '([\(](dimmed bg:233)[+$added]($added_style)[/](dimmed bg:233)[-$deleted]($deleted_style)[\)](dimmed bg:233))'
+added_style = "fg:green bg:234"
+deleted_style = "fg:red bg:234"
+format = '([\(](dimmed bg:234)[+$added]($added_style)[/](dimmed bg:234)[-$deleted]($deleted_style)[\)](dimmed bg:234))'
 
 # -------------
 # right side

@@ -47,8 +47,8 @@ function c (){
 function r (){
 	SELECTED=$(fasd -td | cut -c12- | \
 	           sed "s/\/Users\/.[^/]*/~/" | \
-	           sed "s/Library\/Mobile Documents\/com~apple~CloudDocs/iCloud/" | \
-	           sed "s/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/Obsidian-Vaults/" | \
+	           sed "s/Library\/Mobile Documents\/com~apple~CloudDocs/ /" | \
+	           sed "s/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /" | \
 	           fzf --query "$*" \
 	          )
 	if [[ $SELECTED == "" ]] ; then
@@ -56,8 +56,8 @@ function r (){
 		return
 	fi
 	SELECTED="${SELECTED/#\~/$HOME}"
-	SELECTED="${SELECTED/iCloud/Library/Mobile Documents/com~apple~CloudDocs}"
-	SELECTED="${SELECTED/Obsidian-Vaults/Library/Mobile Documents/iCloud~md~obsidian/Documents}"
+	SELECTED="${SELECTED/ /Library/Mobile Documents/com~apple~CloudDocs}"
+	SELECTED="${SELECTED/ /Library/Mobile Documents/iCloud~md~obsidian/Documents}"
 	cd "$SELECTED" || return
 	exa
 }

@@ -84,11 +84,6 @@ live_config_reload: true
 selection:
  save_to_clipboard: true
 
-bell:
- animation: EaseOutExpo
- duration: 300
- color: '0xffffff'
-
 # https://github.com/alexherbo2/alacritty-extended-keys/blob/master/keys.yml
 key_bindings:
 - { key: Back, mods: Super, chars: "\x15" } # delete line

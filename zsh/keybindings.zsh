@@ -21,9 +21,9 @@ bindkey '^W' toggleDoubleString
 # https://github.com/shibumi/hikari
 toggleDoubleString() {
   LBUFFER=$(echo "$LBUFFER" | sed -e 's/\(.*\) /\1 "/')
-  LBUFFER=$(echo "$LBUFFER" | sed -e 's/\(.*\) /\1 "/')
+  LBUFFER=$(echo "$LBUFFER" | sed -e 's/^\([^"]*\)/"\1/')
   RBUFFER=$(echo "$RBUFFER" | sed -e 's/ /" /')
-  RBUFFER=$(echo "$RBUFFER" | sed -e 's/\([^"]\)$/"/')
+  RBUFFER=$(echo "$RBUFFER" | sed -e 's/\([^"]*\)$/\1"/')
   zle redisplay
 }
 zle -N toggleDoubleString
