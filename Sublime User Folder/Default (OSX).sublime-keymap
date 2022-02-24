@@ -171,7 +171,7 @@
 	// fix entering of pipe character and @
 	{ "keys": ["alt+7"], "command": "terminus_keypress", "args": {"key": "|"}, "context": [{"key": "terminus_view"}] },
 	{ "keys": ["alt+l"], "command": "terminus_keypress", "args": {"key": "@"}, "context": [{"key": "terminus_view"}] },
-	{ "keys": ["super+k"], "command": "terminus_keypress", "args": {"key": "w", "ctrl": true}, "context": [{"key": "terminus_view"}] },
+	{ "keys": ["super+k"], "command": "terminus_keypress", "args": {"key": "l", "ctrl": true}, "context": [{"key": "terminus_view"}] },
 
 	// OPEN
 	// GitHubinator

@@ -1,9 +1,7 @@
 bindkey "\e\e" quitSession # Double Esc
-bindkey "^L" openCurrentLocation
 bindkey "^P" copyLocation
 bindkey "^B" copybuffer
 bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
-bindkey "^W" clear-screen #triggered via Terminus-Sublime as "cmd+k"
 
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
@@ -26,9 +24,6 @@ copyLocation () {
 }
 quitSession () {
 	exit
-}
-openCurrentLocation () {
-	open .
 }
 open-zshrc () {
 	if [[ $# == 0 ]] ; then

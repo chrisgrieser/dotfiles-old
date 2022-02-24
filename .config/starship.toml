@@ -17,12 +17,10 @@ right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 [character]
 success_symbol = " [](bold green)"
 error_symbol = " [](bold red)"
-# ❱
 
 [cmd_duration]
 min_time = 3000
 format = " [ $duration](bold yellow)"
-# ◴◵◶◷
 
 [directory]
 style = "fg:44 bg:233 bold" # terminus different

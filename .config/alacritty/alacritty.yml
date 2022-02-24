@@ -1,5 +1,5 @@
 # color schemes: https://github.com/eendroroy/alacritty-theme#color-schemes
-# docs from latest release: https://github.com/alacritty/alacritty/releases/latest/download/alacritty.yml
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 # -------------------------------------------------------------------------------------
 
 font:
@@ -11,6 +11,7 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold
   draw_bold_text_with_bright_colors: true
+  use_thin_strokes: true
   size: 25
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -89,23 +90,21 @@ bell:
  color: '0xffffff'
 
 key_bindings:
-# delete line
 - { key: Back, mods: Super, chars: "\x15" } # delete line
-# open Alacritty config (this file)
-- { key: Semicolon,     mods: Command|Shift,      command:
-      {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
-# clear screen
-- { key: K,         mods: Command, mode: ~Vi|~Search, chars: "\x0c"          }
+- { key: Semicolon, mods: Command|Shift, command: {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]} }  # open Alacritty config (this file)
+- { key: K, mods: Command, mode: ~Vi|~Search, chars: "\x0c"} # clear screen
+- { key: Left,  mods: Command, chars: "\x1bOH" } # beginning of line
+- { key: Right, mods: Command, chars: "\x1bOF" } # end of line
 
 # fix keys on German Keybaord https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
-- { key: 28,      mods: Alt, chars: "{" }
-- { key: 25,      mods: Alt, chars: "}" }
-- { key: 37,      mods: Alt, chars: "@" }
-- { key: 26,      mods: Alt|Shift, chars: "\\" }
-- { key: 26,      mods: Alt, chars: "|" }
-- { key: 45,      mods: Alt, chars: "~" }
-- { key: 23,      mods: Alt, chars: "[" }
-- { key: 22,      mods: Alt, chars: "]" }
+- { key: 28, mods: Alt, chars: "{" }
+- { key: 25, mods: Alt, chars: "}" }
+- { key: 37, mods: Alt, chars: "@" }
+- { key: 26, mods: Alt|Shift, chars: "\\" }
+- { key: 26, mods: Alt, chars: "|" }
+- { key: 45, mods: Alt, chars: "~" }
+- { key: 23, mods: Alt, chars: "[" }
+- { key: 22, mods: Alt, chars: "]" }
 
-- { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
-- { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+- { key: Up,  mods: Command, action: ScrollPageUp }
+- { key: Down, mods: Command, chars: ScrollPageDown }
