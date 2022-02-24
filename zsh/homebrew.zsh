@@ -10,8 +10,8 @@ export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/C
 
 alias re='brew reinstall'
 
-function un () {
-	brew list "$1" >/dev/null
+function bu () {
+	brew list "$1" &> /dev/null
 	if [[ $? == 0 ]]; then
 		brew uninstall --zap "$SELECTED"
 	else
@@ -23,30 +23,30 @@ function un () {
 		           --bind 'alt-enter:execute(brew home {})+abort' \
 		           --preview-window=right:65% \
 		           )
-		[[ "$SELECTED" == "" ]] || brew uninstall --zap "$SELECTED"
+		[[ "$SELECTED" != "" ]] && brew uninstall --zap "$SELECTED"
 	fi
 }
 
-function in (){
+function bi (){
 	TO_INSTALL="$1"
 	TYPE="$2" # formula or cask
 
-	# quotes would add empty 2nd arg if empty
-		# get attention when there is a caveat, `\033[1;33m` = bold yellow
-	# shellcheck disable=SC2086
-	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE \
-	| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
-
-	brew list "$TO_INSTALL" ||
-		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-		TO_INSTALL=$( { brew formulae ; brew casks } | fzf \
+	brew list $TO_INSTALL &> /dev/null
+	if [[ $? == 1 ]] ; then
+		SELECTED=$( { brew formulae ; brew casks } | fzf \
 		           --query "$*" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
 		           --bind 'alt-enter:execute(brew home {})+abort' \
 		           --preview-window=right:65% \
-		           ) ; \
-		HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" \
-		| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
+		           ) ;
+		[[ $SELECTED == "" ]] && return 130 # no selection = user cancellation
+		TO_INSTALL="$SELECTED"
+	fi
+
+	# quotes would add empty 2nd arg if empty
+	# get attention when there is a caveat, `\033[1;33m` = bold yellow
+	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE \
+	| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
 
 	# guard clause: if not cask, stop
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
@@ -60,19 +60,6 @@ function in (){
 	[[ "$DECISION:l" == "y" ]] || return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
 
 	open -a "$NEWEST_APP"
-}
-
-function br {
-	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-	SELECTED=$( { brew formulae ; brew casks } | fzf \
-	           --query "$*" \
-	           --preview 'HOMEBREW_COLOR=true brew info {}' \
-	           --bind 'alt-enter:execute(brew home {})+abort' \
-	           --preview-window=right:65% \
-	           )
-	if [[ $? == 0 ]]; then
-		in "$SELECTED"
-	fi
 }
 
 function print-section () {
