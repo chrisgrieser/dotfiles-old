@@ -22,6 +22,9 @@ touch '/Applications/Obsidian.app'
 # Sublime
 cp "$ICON_FOLDER"'Sublime Text Alt.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
 touch '/Applications/Sublime Text.app'
+# Alacritty
+cp "$ICON_FOLDER"'Alacritty.icns' '/Applications/Alacritty.app/Contents/Resources/alacritty.icns'
+touch '/Applications/Alacritty.app'
 
 killall Finder
 

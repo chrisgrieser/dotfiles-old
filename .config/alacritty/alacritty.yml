@@ -8,11 +8,38 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold
   size: 26
+  # Offset is the extra space around each character. `offset.y` can be thought
+  # of as modifying the line spacing, and `offset.x` as modifying the letter
+  # spacing.
+  offset:
+   x: 2
+   y: 10
 
 window:
   position:
     x: 0
-    y: 0
+    y: 50
   dimensions:
     columns: 99
     lines: 70
+  decorations: buttonless
+
+scrolling:
+  history: 3000
+  multiplier: 3
+
+colors:
+  primary:
+   background: '#333333'
+
+cursor:
+ style:
+   shape: Block
+   blinking: Always
+   blink_interval: 750
+   # If this is `true`, the cursor will be rendered as a hollow box when the
+   # window is not focused.
+   unfocused_hollow: true
+
+key_bindings:
+  - { key: K, mods: Command, action: ClearHistory   }
