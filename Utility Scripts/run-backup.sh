@@ -4,7 +4,7 @@ DEVICE_NAME="$(scutil --get ComputerName)"
 
 LOG_LOCATION="$(dirname "$0")"/backup.log
 echo "" >> "$LOG_LOCATION"
-echo "Backup: $(date '+%Y-%m-%d %H:%M'), $BACKUP_DEST -- " >> "$LOG_LOCATION"
+echo "Backup: $(date '+%Y-%m-%d %H:%M'), $INPUT -- " >> "$LOG_LOCATION"
 
 INPUT="$*"
 BACKUP_DEST="${INPUT/#\~/$HOME}"/Backup_"$DEVICE_NAME"
