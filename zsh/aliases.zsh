@@ -3,7 +3,6 @@
 # configurations
 alias .star='open ~/.config/starship.toml'
 alias .zsh='open ~/.zshrc'
-alias .hyper='open ~/.hyper.js'
 
 # https://stackoverflow.com/q/2518127
 # alias rr='source ~/.zshrc && echo ".zshrc reloaded"'

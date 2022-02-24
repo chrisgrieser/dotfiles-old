@@ -495,10 +495,10 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
+					<string>co.zeit.hyper</string>
 					<string>io.alacritty</string>
 					<string>com.sublimetext.4</string>
-					<string>co.zeit.hyper</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -545,7 +545,7 @@ eval "$input"</string>
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/System/Volumes/Data/Applications/Hyper.app</string>
+					<string>/System/Volumes/Data/Applications/Alacritty.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>

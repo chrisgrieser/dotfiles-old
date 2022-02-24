@@ -1,11 +1,13 @@
 # Move to trash via Finder (allows retrievability)
 function del () {
 	# shellcheck disable=SC2164
-	ABSOLUTE_PATH="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
-	osascript -e "
-		set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
-		tell application \"Finder\" to delete file toDelete
-	" >/dev/null
+	for ARG in "$@"; do
+	   ABSOLUTE_PATH="$(cd "$(dirname "$ARG")"; pwd -P)/$(basename "$ARG")"
+	   osascript -e "
+	   	set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
+	   	tell application \"Finder\" to delete file toDelete
+	   " >/dev/null
+	done
 }
 
 # exit
