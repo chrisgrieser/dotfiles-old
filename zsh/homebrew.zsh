@@ -16,7 +16,7 @@ function bu () {
 		brew uninstall --zap "$SELECTED"
 	else
 		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-		SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
+		local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
 		           -0 -1 \
 		           --query "$*" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
@@ -28,18 +28,26 @@ function bu () {
 }
 
 function bi (){
-	TO_INSTALL="$1"
-	TYPE="$2" # formula or cask
+	local TO_INSTALL="$1"
+	local TYPE="$2" # formula or cask
 
-	brew list $TO_INSTALL &> /dev/null
+	# abort if already installed
+	brew list "$TO_INSTALL" && echo "Already installed." && return 0
+
+	# if package does not exist, search for it via fzf
+	brew info "$TO_INSTALL" &> /dev/null
 	if [[ $? == 1 ]] ; then
+		local SELECTED=""
 		SELECTED=$( { brew formulae ; brew casks } | fzf \
-		           --query "$*" \
+		           --query "$TO_INSTALL" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
 		           --bind 'alt-enter:execute(brew home {})+abort' \
-		           --preview-window=right:65% \
+		           --preview-window=right:70% \
 		           ) ;
-		[[ $SELECTED == "" ]] && return 130 # no selection = user cancellation
+
+		# abot if no selection made
+		[[ $SELECTED == "" ]] && return 130
+
 		TO_INSTALL="$SELECTED"
 	fi
 
@@ -52,10 +60,10 @@ function bi (){
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
 
 	# shellcheck disable=SC2012
-	NEWEST_APP="$(ls -tc /Applications | head -n1)"
+	local NEWEST_APP="$(ls -tc /Applications | head -n1)"
 	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
 
-	# guard clause: if decision not yes, stop
+	# stop when decision not yes
 	read -r -k 1 DECISION
 	[[ "$DECISION:l" == "y" ]] || return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
 
