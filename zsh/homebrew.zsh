@@ -9,18 +9,44 @@ export HOMEBREW_INSTALL_BADGE=✅
 export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
 
 alias re='brew reinstall'
-alias un='brew uninstall --zap'
+
+function un () {
+	brew list "$1" >/dev/null
+	if [[ $? == 0 ]]; then
+		brew uninstall --zap "$SELECTED"
+	else
+		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
+		SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
+		           -0 -1 \
+		           --query "$*" \
+		           --preview 'HOMEBREW_COLOR=true brew info {}' \
+		           --bind 'alt-enter:execute(brew home {})+abort' \
+		           --preview-window=right:65% \
+		           )
+		[[ "$SELECTED" == "" ]] || brew uninstall --zap "$SELECTED"
+	fi
+}
 
 function in (){
 	TO_INSTALL="$1"
 	TYPE="$2" # formula or cask
 
 	# quotes would add empty 2nd arg if empty
-	# shellcheck disable=SC2086
-	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE | \
 		# get attention when there is a caveat, `\033[1;33m` = bold yellow
-		sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/' \
-		|| return # guard clause: ensure that input exists and is cask
+	# shellcheck disable=SC2086
+	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE \
+	| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
+
+	brew list "$TO_INSTALL" ||
+		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
+		TO_INSTALL=$( { brew formulae ; brew casks } | fzf \
+		           --query "$*" \
+		           --preview 'HOMEBREW_COLOR=true brew info {}' \
+		           --bind 'alt-enter:execute(brew home {})+abort' \
+		           --preview-window=right:65% \
+		           ) ; \
+		HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" \
+		| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
 
 	# guard clause: if not cask, stop
 	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
