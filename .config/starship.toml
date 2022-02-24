@@ -92,7 +92,7 @@ format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$de
 disabled = false
 added_style = "fg:green bg:16"
 deleted_style = "fg:red bg:16"
-format = '[\(](dimmed bg:16)([+$added]($added_style)/[-$deleted]($deleted_style)\))'
+format = '([\(](dimmed bg:16)[+$added]($added_style)[/](dimmed bg:16)[-$deleted]($deleted_style)[\)](dimmed bg:16))'
 
 # -------------
 # right side
