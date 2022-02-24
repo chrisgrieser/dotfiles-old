@@ -31,7 +31,7 @@ export FZF_DEFAULT_OPTS='-0 -1 --pointer=⟐ --prompt="❱ "'
 export MAGIC_ENTER_GIT_COMMAND="exagit"
 export MAGIC_ENTER_OTHER_COMMAND="exa"
 
-export EDITOR='nano' # mainly for `crontab -e`
+export EDITOR=subl # mainly for `crontab -e`
 
 # ----------------------------------
 
