@@ -11,7 +11,7 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold
   draw_bold_text_with_bright_colors: true
-  size: 26
+  size: 25
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
@@ -74,20 +74,30 @@ cursor:
  style:
    shape: Block
    blinking: Always
-   blink_interval: 650
+   blink_interval: 500
+   unfocused_hollow: true
 
+live_config_reload: true
+
+# Quick Copy to clipboard
+selection:
+ save_to_clipboard: true
+
+bell:
+ animation: EaseOutExpo
+ duration: 300
+ color: '0xffffff'
 
 key_bindings:
+# delete line
 - { key: Back, mods: Super, chars: "\x15" } # delete line
 # open Alacritty config (this file)
 - { key: Semicolon,     mods: Command|Shift,      command:
       {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
-- { key: K,              mods: Alt, mode: ~Vi|~Search, action: ClearHistory          }
+# clear screen
+- { key: K,         mods: Command, mode: ~Vi|~Search, chars: "\x0c"          }
 
-
-
-# fix keys
-# https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
+# fix keys on German Keybaord https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
 - { key: 28,      mods: Alt, chars: "{" }
 - { key: 25,      mods: Alt, chars: "}" }
 - { key: 37,      mods: Alt, chars: "@" }
@@ -96,3 +106,6 @@ key_bindings:
 - { key: 45,      mods: Alt, chars: "~" }
 - { key: 23,      mods: Alt, chars: "[" }
 - { key: 22,      mods: Alt, chars: "]" }
+
+- { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+- { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End

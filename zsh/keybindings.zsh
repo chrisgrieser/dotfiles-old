@@ -3,15 +3,18 @@ bindkey "^L" openCurrentLocation
 bindkey "^P" copyLocation
 bindkey "^B" copybuffer
 bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
-bindkey "^W" clear-screen #triggered via Sublime/Terminal as "cmd+k"
+bindkey "^W" clear-screen #triggered via Terminus-Sublime as "cmd+k"
 
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
-bindkey "^V" yank # = pastes content previously removed with 'kill-buffer'
+bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 
 # [alt+arrow] - move word forward or backward
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
 
 # `bindkey -M main` to show existing keybinds
 # there `^[` usually means escape
