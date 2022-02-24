@@ -41,5 +41,6 @@ cursor:
    # window is not focused.
    unfocused_hollow: true
 
-key_bindings:
-  - { key: K, mods: Command, action: ClearHistory   }
+   # key_bindings:
+   #   - { key: K,              mods: Command, mode: ~Vi|~Search, action: none                 }
+   #   - { key: K,              mods: Command, action: ClearHistory          }
