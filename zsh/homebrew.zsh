@@ -17,8 +17,8 @@ function bu () {
 	else
 		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
 		local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
-		           -0 -1 \
-		           --query "$*" \
+		           -0 \
+		           --query "$1" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
 		           --bind 'alt-enter:execute(brew home {})+abort' \
 		           --preview-window=right:65% \
@@ -48,7 +48,7 @@ function bi (){
 		# abot if no selection made
 		[[ $SELECTED == "" ]] && return 130
 
-		TO_INSTALL="$SELECTED"
+		local TO_INSTALL="$SELECTED"
 	fi
 
 	# quotes would add empty 2nd arg if empty
