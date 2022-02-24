@@ -1506,7 +1506,7 @@ open "$(dirname "$script_location")"/backup.log</string>
 	<key>variables</key>
 	<dict>
 		<key>backup_destination</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
+		<string>/Volumes/Externe C</string>
 		<key>last_backup</key>
 		<string>2022-02-16 20:53</string>
 		<key>script_location</key>

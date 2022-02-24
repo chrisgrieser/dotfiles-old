@@ -12,7 +12,7 @@
 add_newline = false
 continuation_prompt = "↪"
 format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:16)$cmd_duration$status$character"
-right_format="$package$nodejs$python$jobs$memory_usage"
+right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
 success_symbol = " [⟐](bold green)"
@@ -43,8 +43,9 @@ format = "[$path $read_only]($style)"
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
+symbol = " "
+format = '[$symbol$output]($style) '
 style = "fg:yellow bg:16" # terminus different
-format = '[ $output]($style) '
 
 [status]
 format = " [$symbol$status]($style)"
@@ -127,3 +128,7 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = "$major.$minor"
 style = "dimmed yellow"
 python_binary = ["python3"]
+
+[custom.alfred]
+files = ["info.plist"]
+format = '[ Alfred](105) '

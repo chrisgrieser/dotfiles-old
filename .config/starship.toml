@@ -131,4 +131,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[ ](105 dimmed) '
+format = '[ Alfred](105) '
