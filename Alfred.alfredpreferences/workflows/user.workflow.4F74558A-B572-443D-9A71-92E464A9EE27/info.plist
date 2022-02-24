@@ -542,10 +542,7 @@ eval "$input"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>co.zeit.hyper</string>
 					<string>io.alacritty</string>
-					<string>com.sublimetext.4</string>
-					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -737,7 +734,7 @@ eval "$input"</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>815</integer>
+			<integer>835</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
@@ -811,9 +808,9 @@ eval "$input"</string>
 		<key>944A857C-B7D0-4649-AFD4-80F529B0A1BD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>815</integer>
+			<integer>835</integer>
 		</dict>
 		<key>A15E878F-A3E0-4C08-9B46-77290F1B153D</key>
 		<dict>

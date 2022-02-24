@@ -38,6 +38,7 @@ alias mkdir='mkdir -p'
 alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
 alias exagit='exa --long --git --git-ignore --no-user --no-permissions --no-filesize --no-time --grid'
 alias exatree='exa --tree -L2'
+alias pip="pip3"
 
 # Global Alias
 alias -g §='| grep --color -i'

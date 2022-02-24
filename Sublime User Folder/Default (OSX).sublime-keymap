@@ -162,7 +162,7 @@
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
-	{  "keys": ["shift+alt+super+ctrl+t"],
+	{  "keys": ["super+t"],
 		"command": "toggle_terminus_panel",
 		"args": {
 			"cwd": "${file_path:${folder}}",

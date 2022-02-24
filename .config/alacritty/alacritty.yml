@@ -2,7 +2,7 @@
 # https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 # -------------------------------------------------------------------------------------
 
-working_directory: "/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+# working_directory: "/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
 
 font:
   normal:
@@ -75,16 +75,16 @@ colors:
 
 cursor:
  style:
-   shape: Block
-   blinking: Always
-   blink_interval: 500
-   unfocused_hollow: true
+    shape: Block
+    blinking: Always
+    blink_interval: 500
+    unfocused_hollow: true
 
 live_config_reload: true
 
 # Quick Copy to clipboard
 selection:
- save_to_clipboard: true
+  save_to_clipboard: true
 
 # https://github.com/alexherbo2/alacritty-extended-keys/blob/master/keys.yml
 key_bindings:
@@ -93,8 +93,11 @@ key_bindings:
 - { key: K, mods: Command, mode: ~Vi|~Search, chars: "\x0c"} # clear screen
 - { key: Left,  mods: Command, chars: "\x1bOH" } # beginning of line
 - { key: Right, mods: Command, chars: "\x1bOF" } # end of line
+- { key: L, mods: Command|Shift|Control|Alt, command: {program: "sh", args: ["-c","open ."]} }  # open Alacritty config (this file)
+- { key: Up,  mods: Command, action: ScrollHalfPageUp }
+- { key: Down, mods: Command, action: ScrollHalfPageDown }
 
-# fix keys on German Keybaord https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
+# fix keys for German Keyboard https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#german-de_de
 - { key: 28, mods: Alt, chars: "{" }
 - { key: 25, mods: Alt, chars: "}" }
 - { key: 37, mods: Alt, chars: "@" }
@@ -104,5 +107,3 @@ key_bindings:
 - { key: 23, mods: Alt, chars: "[" }
 - { key: 22, mods: Alt, chars: "]" }
 
-- { key: Up,  mods: Command, action: ScrollPageUp }
-- { key: Down, mods: Command, chars: ScrollPageDown }

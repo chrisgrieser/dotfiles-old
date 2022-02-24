@@ -1,6 +1,13 @@
 # Working Directory
 export WD=~"/Library/Mobile Documents/com~apple~CloudDocs/File Hub"
 
+# Terminus will open the current file's path
+if [[ "$TERM_PROGRAM" != "Terminus-Sublime" ]] ; then
+	cd "$WD" || return
+fi
+
+# -------------------------------------------------------------
+
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
 export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
