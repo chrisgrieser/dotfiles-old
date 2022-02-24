@@ -5,27 +5,14 @@
 	<key>application</key>
 	<integer>1</integer>
 	<key>custom</key>
-	<string>on hyper_new()
-	set _running to (application "Hyper" is running)
-	tell application "Hyper" to activate
-	tell application "System Events"
-		log (name of first application process whose frontmost is true)
-		repeat while (name of first application process whose frontmost is true) is not "Hyper"
-			delay 0.05
-		end repeat
-
-		set _hyper to first application process whose frontmost is true
-		-- If Hyper was running, create a new tab to run command
-		if _running then keystroke "t" using {command down}
-		delay 0.25
-
-	end tell
-end hyper_new
-
-on alfred_script(q)
-	my hyper_new()
+	<string>on alfred_script(q)
 	set the clipboard to q
+	tell application "Alacritty" to activate
 	tell application "System Events"
+		-- Alacritty's process name is lowercased
+		repeat while (name of first application process whose frontmost is true) is not "alacritty"
+			delay 0.1
+		end repeat
 		keystroke "v" using {command down}
 		delay 0.2
 		key code 36
