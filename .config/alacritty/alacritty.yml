@@ -1,0 +1,18 @@
+# https://wiki.archlinux.org/title/Alacritty#Configuration
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+  size: 26
+
+window:
+  position:
+    x: 0
+    y: 0
+  dimensions:
+    columns: 99
+    lines: 70

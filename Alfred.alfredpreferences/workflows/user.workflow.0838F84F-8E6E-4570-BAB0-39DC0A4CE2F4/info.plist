@@ -8,34 +8,6 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
-		<key>324B3090-9E20-4FFD-84A3-A6C37AAE3AEC</key>
-		<array/>
-		<key>39424555-C8BA-4470-8681-CE24F5E0E04A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>324B3090-9E20-4FFD-84A3-A6C37AAE3AEC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>60C9529B-7682-40F5-8B6E-574889C820CC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>71D32974-5B42-4886-81B4-291C3FB417D4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>8584F801-65FE-4650-9499-27C22D9EE6ED</key>
 		<array>
 			<dict>
@@ -75,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EE74D331-B8D3-45E9-A19C-BC69008364B2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A537988D-4030-4E88-82B4-D20AEE30FA86</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -86,54 +71,6 @@
 	<string>Messenger Apps</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>let discordURI = "{query}".replace(/https?:\/\/discord\.(com\/channels\/\d+\/\d+\/\d+)/g,"discord://discordapp.$1");
-
-Discord = Application("/Applications/Discord.app");
-Discord.includeStandardAdditions = true;
-Discord.openLocation(discordURI);</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>324B3090-9E20-4FFD-84A3-A6C37AAE3AEC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<true/>
-				<key>name</key>
-				<string>Open Discord URL in App</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>39424555-C8BA-4470-8681-CE24F5E0E04A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -257,48 +194,40 @@ Discord.openLocation(discordURI);</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tg</string>
+				<key>subtext</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-				<key>utf8</key>
+				<key>text</key>
+				<string>Oli</string>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>71D32974-5B42-4886-81B4-291C3FB417D4</string>
+			<string>EE74D331-B8D3-45E9-A19C-BC69008364B2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# fg-organisation","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=CV95T641Y","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# tipps-und-tricks","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=CV9EU0FGS","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# smalltalk","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=C01082UMC2U","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# fachliches","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=C012ZN15WMR","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# corona-addon","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=C015KN8FTJL","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# sos-discussion-papers","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=C014LAQ57JQ","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"# vip","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=C02BV2AE1SN","subtitle":""},{"imagefile":"fa890039fe6f74bcbc6b2568b4eaecebc527cf36.png","title":"Markus","arg":"slack:\/\/channel?team=T010A5PEMBQ&amp;id=D0109R1G1C7"},{"imagefile":"3455288dd6b0894e3a6799a3975c03931fe2f6e3.png","title":"Oli","arg":"https:\/\/web.telegram.org\/z\/#351507037"},{"imagefile":"3455288dd6b0894e3a6799a3975c03931fe2f6e3.png","title":"Kati","arg":"https:\/\/web.telegram.org\/z\/#530581482"},{"imagefile":"3455288dd6b0894e3a6799a3975c03931fe2f6e3.png","title":"Matthias","arg":"https:\/\/web.telegram.org\/z\/#1720765113"},{"imagefile":"3455288dd6b0894e3a6799a3975c03931fe2f6e3.png","title":"Kordian","arg":"https:\/\/web.telegram.org\/z\/#58908103"},{"imagefile":"3455288dd6b0894e3a6799a3975c03931fe2f6e3.png","title":"Vivi","arg":"https:\/\/web.telegram.org\/z\/#497416073"},{"imagefile":"c36c7f4e155f4190044fc10f058a45c3ebf4f583.png","title":"Sören &amp; Ola","arg":"https:\/\/www.messenger.com\/t\/1774534355902976"},{"imagefile":"c36c7f4e155f4190044fc10f058a45c3ebf4f583.png","title":"Kevin","arg":"https:\/\/www.messenger.com\/t\/100000235382471"},{"imagefile":"c36c7f4e155f4190044fc10f058a45c3ebf4f583.png","title":"Joseph","arg":"https:\/\/www.messenger.com\/t\/661762054"}]</string>
-				<key>keyword</key>
-				<string>#</string>
-				<key>runningsubtext</key>
+				<key>browser</key>
 				<string></string>
-				<key>subtext</key>
+				<key>spaces</key>
 				<string></string>
-				<key>title</key>
-				<string>Chat with...</string>
-				<key>withspace</key>
-				<false/>
+				<key>url</key>
+				<string>https://web.telegram.org/z/#351507037</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>60C9529B-7682-40F5-8B6E-574889C820CC</string>
+			<string>A537988D-4030-4E88-82B4-D20AEE30FA86</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -309,87 +238,71 @@ Discord.openLocation(discordURI);</string>
 Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>324B3090-9E20-4FFD-84A3-A6C37AAE3AEC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>280</integer>
-			<key>ypos</key>
-			<integer>55</integer>
-		</dict>
-		<key>39424555-C8BA-4470-8681-CE24F5E0E04A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>55</integer>
-		</dict>
-		<key>60C9529B-7682-40F5-8B6E-574889C820CC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>560</integer>
-		</dict>
-		<key>71D32974-5B42-4886-81B4-291C3FB417D4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>280</integer>
-			<key>ypos</key>
-			<integer>560</integer>
-		</dict>
 		<key>75C417EC-0556-4ECE-8F7A-E75ED0EF9A0D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>185</integer>
 		</dict>
 		<key>8584F801-65FE-4650-9499-27C22D9EE6ED</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>100</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>65</integer>
 		</dict>
 		<key>917EE8A1-3149-4826-9460-E61B8FB6860F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>65</integer>
+		</dict>
+		<key>A537988D-4030-4E88-82B4-D20AEE30FA86</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>425</integer>
 		</dict>
 		<key>B846BF08-1061-4FBC-9B81-2747B330E7D2</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>100</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>435</integer>
+			<integer>305</integer>
 		</dict>
 		<key>B9B4B153-24B2-41EE-B9B0-19D0C77FA107</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>100</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>185</integer>
 		</dict>
 		<key>DE8A5135-A58B-4F97-B5C7-3F43349276B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>435</integer>
+			<integer>305</integer>
+		</dict>
+		<key>EE74D331-B8D3-45E9-A19C-BC69008364B2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Oli</string>
+			<key>xpos</key>
+			<integer>65</integer>
+			<key>ypos</key>
+			<integer>425</integer>
 		</dict>
 	</dict>
 	<key>version</key>
