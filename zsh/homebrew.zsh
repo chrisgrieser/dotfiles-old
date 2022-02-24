@@ -45,10 +45,11 @@ function bi (){
 		           --preview-window=right:70% \
 		           ) ;
 
-		# abot if no selection made
+		# abort if no selection made
 		[[ $SELECTED == "" ]] && return 130
 
 		local TO_INSTALL="$SELECTED"
+		echo "installing \"TO_INSTALL\""
 	fi
 
 	# quotes would add empty 2nd arg if empty
