@@ -5,7 +5,7 @@
 
 # --------------------------------------------------
 # Terminus does not properly support bold, therefore
-# separate config file for it!
+# separate config file for it
 # --------------------------------------------------
 
 # prompt in general
@@ -21,15 +21,15 @@ error_symbol = " [◆](bold red)"
 
 [cmd_duration]
 min_time = 3000
-format = " [◷ $duration](bold yellow)"
+format = " [ $duration](bold yellow)"
 # ◴◵◶◷
 
 [directory]
-style = "fg:44 bg:16 bold" # <<<<< changed
+style = "fg:44 bg:16 bold" # terminus different
 truncation_length = 2
 truncation_symbol = "/"
 truncate_to_repo = true
-read_only = "⛔️"
+read_only = "ﮖ "
 format = "[$path $read_only]($style)"
 
 [directory.substitutions]
@@ -43,18 +43,19 @@ format = "[$path $read_only]($style)"
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
-style = "fg:208 bg:16 bold" # <<<<< changed
+style = "fg:yellow bg:16 bold" # terminus different
 format = '[ $output]($style) '
 
 [status]
 format = " [$symbol$status]($style)"
 disabled = false
-symbol = "⚡"
+symbol = " "
+# ⚡
 
 [sudo]
 format="[sudo $symbol]($style)"
 disabled = false
-symbol = "♠︎"
+symbol = " "
 
 # -------------
 # git
@@ -70,28 +71,28 @@ style = "fg:yellow bg:16"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:105 bg:16 bold" # <<<<< changed
+style = "fg:105 bg:16 bold" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files
 [git_status]
 untracked = '[+$count ](fg:green bg:16)'
 deleted = '[-$count ](fg:red bg:16)'
-modified = '[*$count ](fg:yellow bg:16)'
-renamed = '[✎$count ](fg:yellow bg:16)'
+modified = '[*$count ](fg:208 bg:16)'
+renamed = '[✎$count ](fg:208 bg:16)'
 staged = '[◎$count ](fg:73 bg:16)'
 conflicted = '[⤱$count ](fg:red bg:16)'
 diverged = '[⇈$count ](fg:73 bg:16)'
 ahead = '[⇡$count ](fg:73 bg:16)'
 behind = '[⇣$count ](fg:yellow bg:16)'
-format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted](bold fg:purple bg:16)'
+format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted](fg:purple bg:16 bold)'  # terminus different
 
 # lines
 [git_metrics]
 disabled = false
 added_style = "fg:green bg:16"
 deleted_style = "fg:red bg:16"
-format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
+format = '[\(](dimmed bg:16)([+$added]($added_style)/[-$deleted]($deleted_style)\))'
 
 # -------------
 # right side

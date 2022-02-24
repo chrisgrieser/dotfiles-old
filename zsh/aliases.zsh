@@ -25,9 +25,6 @@ alias urlencode='node --eval "console.log(encodeURIComponent(process.argv[1]))"'
 # colorize by default
 alias grep='grep --color -i' # and case insensitive
 alias ls='ls -G'
-alias exa='exa --all --icons --group-directories-first --sort=modified'
-alias exagit='exa --long --git --git-ignore --no-user --no-permissions --no-filesize --no-time --grid'
-alias exatree='exa --tree -L2'
 alias diff='diff --color=auto'
 
 # Safety nets
@@ -36,15 +33,16 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mv='ln -i'
 
-# display all
+# default options
 alias which='which -a'
+alias mkdir='mkdir -p'
+alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
+alias exagit='exa --long --git --git-ignore --no-user --no-permissions --no-filesize --no-time --grid'
+alias exatree='exa --tree -L2'
 
 # Global Alias
 alias -g §='| grep --color -i'
 
 # Suffix Aliases
-alias -s pdf='open -a "PDF Expert"'
 # shellcheck disable=SC2139
-alias -s {css,ts,js,applescript,md,yml,json,plist,xml}=subl
-# shellcheck disable=SC2139
-alias -s {png,jpg,jpeg}='open -a "Preview"'
+alias -s {css,ts,js,applescript,md,yml,json,plist,xml,pdf,png,jpg,jpeg}='open'
