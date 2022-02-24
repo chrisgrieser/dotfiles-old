@@ -11,9 +11,6 @@ bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-bindkey '^[[1~' beginning-of-line
-bindkey '^[[4~' end-of-line
-
 # `bindkey -M main` to show existing keybinds
 # there `^[` usually means escape
 # some bindings with '^' are reserved (^M=enter, ^I=tab)

@@ -28,7 +28,7 @@ window:
     x: 0
     y: 50
   dimensions:
-    columns: 93
+    columns: 96
     lines: 70
   decorations: buttonless
   padding:
@@ -89,6 +89,7 @@ bell:
  duration: 300
  color: '0xffffff'
 
+# https://github.com/alexherbo2/alacritty-extended-keys/blob/master/keys.yml
 key_bindings:
 - { key: Back, mods: Super, chars: "\x15" } # delete line
 - { key: Semicolon, mods: Command|Shift, command: {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]} }  # open Alacritty config (this file)

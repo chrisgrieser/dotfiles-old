@@ -24,9 +24,9 @@ function qq () {
 function sw () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
 		# shellcheck disable=SC2154
-		open -a "Hyper" "$cwd"
+		open -a "Alacritty" "$cwd"
 		exit
-	elif [[ "$TERM_PROGRAM" == "Hyper" ]] ; then
+	else
 		open -a "Sublime Text"
 		sleep 0.1
 		subl --command "toggle_terminus_panel { \"cwd\": \"\${file_path:\${folder}}\"  }"

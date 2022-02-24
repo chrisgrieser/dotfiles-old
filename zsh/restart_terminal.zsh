@@ -5,7 +5,11 @@ if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
 	echo "Terminal restart not configured for Terminus."
 	return 1
 fi
-TO_RESTART="$TERM_PROGRAM"
+if [[ "$TERM_PROGRAM" == "" ]]; then
+	TO_RESTART="$TERM"
+else
+	TO_RESTART="$TERM_PROGRAM"
+fi
 osascript -e "tell application \"$TO_RESTART\" to quit"
 sleep 1
 open -a "$TO_RESTART"
