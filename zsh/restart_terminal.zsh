@@ -15,5 +15,5 @@ else
 fi
 
 osascript -e "tell application \"$TO_RESTART\" to quit"
-sleep 0.6
+sleep 0.4
 open -a "$TO_RESTART"

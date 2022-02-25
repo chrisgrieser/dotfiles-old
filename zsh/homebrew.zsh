@@ -11,20 +11,20 @@ export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/C
 alias re='brew reinstall'
 
 function bu () {
-	brew list "$1" &> /dev/null
-	if [[ $? == 0 ]]; then
-		brew uninstall --zap "$SELECTED"
-	else
-		# shellcheck disable=SC1009,SC1056,SC1072,SC1073
-		local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
-		           -0 \
-		           --query "$1" \
-		           --preview 'HOMEBREW_COLOR=true brew info {}' \
-		           --bind 'alt-enter:execute(brew home {})+abort' \
-		           --preview-window=right:65% \
-		           )
-		[[ "$SELECTED" != "" ]] && brew uninstall --zap "$SELECTED"
-	fi
+	local INPUT="$1"
+	brew list "$INPUT" &> /dev/null && brew uninstall --zap "$INPUT"
+	# workaround, since casks piped to /dev/null exit with 1, even if installed
+	brew list --cask "$INPUT" &> /dev/null && brew uninstall --zap "$INPUT"
+
+	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
+	local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
+	           -0 \
+	           --query "$1" \
+	           --preview 'HOMEBREW_COLOR=true brew info {}' \
+	           --bind 'alt-enter:execute(brew home {})+abort' \
+	           --preview-window=right:65% \
+	           )
+	[[ "$SELECTED" != "" ]] && brew uninstall --zap "$SELECTED"
 }
 
 function bi (){
@@ -52,15 +52,17 @@ function bi (){
 		echo "installing \"TO_INSTALL\""
 	fi
 
+	brew install --no-quarantine "$TO_INSTALL" $TYPE # quotes would add empty 2nd arg if empty
+	BREW_INFO=$(brew info "$TO_INSTALL")
 
-	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE # quotes would add empty 2nd arg if empty
-	local BREW_INFO =$(brew info "$TO_INSTALL")
+	# emphasize caveats
+	if [[ "$BREW_INFO" =~ "Caveats" ]] ; then
+		echo '\033[1;33m⚠️ Caveats'
+		osascript -e "beep"
+	fi
 
 	# if not cask, stop
 	[[ "$BREW_INFO" =~ "cask" ]] || return 0
-
-	# emphasize caveats
-	[[ "$BREW_INFO" =~ "Caveats" ]] && echo "⚠️ \033[1;33mCaveats"
 
 	# shellcheck disable=SC2012
 	local NEWEST_APP="$(ls -tc /Applications | head -n1)"
