@@ -171,7 +171,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>switch-ingonito.applescript</string>
+				<string>switch-ingonito_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -215,7 +215,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>switch-to-safari.applescript</string>
+				<string>switch-to-safari_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -434,7 +434,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<key>argument</key>
 				<integer>0</integer>
 				<key>focusedappvariable</key>
-				<true/>
+				<false/>
 				<key>focusedappvariablename</key>
 				<string>focusedapp</string>
 				<key>hotkey</key>
@@ -595,15 +595,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>10</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>chromium_browser</key>
-		<string>Vivaldi</string>
-	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>chromium_browser</string>
-	</array>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

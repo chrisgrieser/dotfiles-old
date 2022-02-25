@@ -2078,7 +2078,7 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>Save-browser-content.applescript</string>
+				<string>save-browser-content_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -3280,8 +3280,6 @@ Recommended Hotkey: ⇧⌘2</string>
 	<dict>
 		<key>actionOnAlt</key>
 		<string>Open URLs</string>
-		<key>chromium_browser</key>
-		<string>Vivaldi</string>
 		<key>ocr_languages</key>
 		<string>deu+eng</string>
 		<key>tagToExcludeFromSearch</key>
@@ -3289,10 +3287,9 @@ Recommended Hotkey: ⇧⌘2</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>tagToExcludeFromSearch</string>
-		<string>chromium_browser</string>
 		<string>ocr_languages</string>
 		<string>actionOnAlt</string>
+		<string>tagToExcludeFromSearch</string>
 	</array>
 	<key>version</key>
 	<string></string>

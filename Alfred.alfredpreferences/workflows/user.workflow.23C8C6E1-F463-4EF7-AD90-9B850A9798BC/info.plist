@@ -112,7 +112,7 @@ tell application "Brave Browser" to close active tab of front window</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>toggle-darkmode.applescript</string>
+				<string>toggle-darkmode_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -138,9 +138,7 @@ tell application "Brave Browser" to close active tab of front window</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>A simple one-liner terminal script that toggles Dark Mode on/off if you are using MacOS 10.14 (Mojave) and beyond.
-
-Thanks goes out to script wrangler extraordinaire Brett Terpstra for [crafting and condensing the script](brettterpstra.com/2018/09/26/shell-tricks-toggling-dark-mode-from-terminal/)!</string>
+	<string>A simple one-liner terminal script that toggles Dark Mode on/off if you are using MacOS 10.14 (Mojave) and beyond.</string>
 	<key>uidata</key>
 	<dict>
 		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
@@ -165,15 +163,6 @@ Thanks goes out to script wrangler extraordinaire Brett Terpstra for [crafting a
 			<integer>385</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>chromium_browser</key>
-		<string>Vivaldi</string>
-	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>chromium_browser</string>
-	</array>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>

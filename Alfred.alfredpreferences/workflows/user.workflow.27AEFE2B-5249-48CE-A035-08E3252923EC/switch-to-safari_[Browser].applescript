@@ -1,8 +1,6 @@
 #!/usr/bin/env osascript
-tell application (system attribute "chromium_browser")
-	using terms from application "Chromium"
+tell application "Vivaldi"
 		set currentTabUrl to URL of active tab of front window
-	end using terms from
 end tell
 
 

@@ -29,7 +29,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Bookmarklets</string>
 	<key>objects</key>
@@ -49,7 +49,7 @@ end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>run-bookmarklet.applescript</string>
+				<string>run-bookmarklet_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>

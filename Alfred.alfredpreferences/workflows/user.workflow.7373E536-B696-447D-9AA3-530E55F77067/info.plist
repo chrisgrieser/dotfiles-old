@@ -390,8 +390,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>sourceoutputuid</key>
-				<string>2864E97C-DB69-4769-AF99-CF7132AA04EC</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -960,15 +958,15 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>get-browser-url_[Browser].applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -1030,10 +1028,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1172,20 +1171,6 @@ return current_file</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>com.brave.Browser</string>
-						<key>outputlabel</key>
-						<string>Brave</string>
-						<key>uid</key>
-						<string>2864E97C-DB69-4769-AF99-CF7132AA04EC</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
 						<string>com.apple.Preview</string>
 						<key>outputlabel</key>
 						<string>Preview</string>
@@ -1222,7 +1207,7 @@ return current_file</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>--</string>
+				<string>Browser</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -2362,7 +2347,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>285</integer>
 			<key>ypos</key>
 			<integer>420</integer>
 		</dict>
@@ -2425,7 +2410,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>160</integer>
 			<key>ypos</key>
 			<integer>295</integer>
 		</dict>
@@ -2534,7 +2519,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>275</integer>
 		</dict>

@@ -75,19 +75,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>57E14157-4560-43C8-91F1-D57D1600DC6B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>866D366A-C1A0-4554-9462-555033CF2E48</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5B55A700-40A0-41EF-A575-3D9B863A07D4</key>
 		<array>
 			<dict>
@@ -233,18 +220,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>D7B2AB89-055D-4E5D-87E4-4A18CEE33660</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>9B32BBCD-B959-427D-94B6-B949DD9BABDA</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>57E14157-4560-43C8-91F1-D57D1600DC6B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -654,23 +629,9 @@ end if</string>
 						<key>uid</key>
 						<string>37ED500A-8DD1-4147-86CF-430C72ED01D5</string>
 					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.brave.Browser</string>
-						<key>outputlabel</key>
-						<string>Brave</string>
-						<key>uid</key>
-						<string>9B32BBCD-B959-427D-94B6-B949DD9BABDA</string>
-					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Inoreader</string>
+				<string>Browser</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -678,6 +639,45 @@ end if</string>
 			<string>C93F5D57-9C03-4F77-BD1F-DBA31D5F8010</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>27</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>SS</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+					<string>md.obsidian</string>
+					<string>com.mimestream.Mimestream</string>
+					<string>com.vivaldi.Vivaldi</string>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>90A15AA9-897C-4C45-8ED5-90643765F393</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -733,45 +733,6 @@ return tabTitle</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>27</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>SS</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.brave.Browser</string>
-					<string>com.mimestream.Mimestream</string>
-					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>90A15AA9-897C-4C45-8ED5-90643765F393</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -784,11 +745,11 @@ end tell
 
 return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>get-browser-url_[Browser].applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -879,43 +840,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events" to keystroke "v"
-delay 0.3
-tell application "Brave Browser" 
-	repeat until (loading of active tab of front window is false)
-	end repeat
-end tell
-
-tell application "Brave Browser"
-    set currentTabUrl to URL of active tab of front window
-    set currentTabTitle to title of active tab of front window
-	delay 0.2
-	delete tab (active tab index of front window) of front window
-end tell
-
-return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>57E14157-4560-43C8-91F1-D57D1600DC6B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -988,15 +912,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
-		<key>57E14157-4560-43C8-91F1-D57D1600DC6B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>315</integer>
-			<key>ypos</key>
-			<integer>680</integer>
-		</dict>
 		<key>5B55A700-40A0-41EF-A575-3D9B863A07D4</key>
 		<dict>
 			<key>colorindex</key>
@@ -1026,7 +941,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>425</integer>
+			<integer>415</integer>
 		</dict>
 		<key>9117FAAD-B0BC-4174-8F6A-D597CF99B5BF</key>
 		<dict>
@@ -1095,7 +1010,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>160</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>405</integer>
 		</dict>
 		<key>CC210673-CC1B-437B-8A8B-BE2219C2108A</key>
 		<dict>

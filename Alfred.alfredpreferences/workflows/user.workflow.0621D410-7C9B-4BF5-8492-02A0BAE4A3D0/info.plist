@@ -378,6 +378,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>trying Tube Offline</string>
+				<key>title</key>
+				<string>⛔️ Site not supported</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E6A06157-47F3-4C45-B94C-30ACCE2DB626</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>soundname</key>
 				<string>Basso</string>
 				<key>systemsound</key>
@@ -406,27 +427,6 @@
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
 			<string>33CF17A9-1A60-40FB-9D0B-7D9CAB6DDB37</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>trying Tube Offline</string>
-				<key>title</key>
-				<string>⛔️ Site not supported</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E6A06157-47F3-4C45-B94C-30ACCE2DB626</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -472,6 +472,29 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>get-browser-url_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F30AA24D-259D-4D2C-80C9-06B5EA576F7C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
@@ -496,25 +519,23 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:url}</string>
+				<key>title</key>
+				<string>Starting download...</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>F30AA24D-259D-4D2C-80C9-06B5EA576F7C</string>
+			<string>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -534,27 +555,6 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>7EC8C18F-E353-4A93-9F40-FDB4C9531D57</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:url}</string>
-				<key>title</key>
-				<string>Starting download...</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -751,6 +751,27 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ydl</string>
+				<key>subtext</key>
+				<string>Brave tab</string>
+				<key>text</key>
+				<string>Extract Closed Captions</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2222585C-F175-4CBD-BC57-C55F821DE219</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -796,18 +817,18 @@ end tell</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>ydl</string>
+				<string>wl</string>
 				<key>subtext</key>
-				<string>Brave tab</string>
+				<string></string>
 				<key>text</key>
-				<string>Extract Closed Captions</string>
+				<string>Watch Later</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>2222585C-F175-4CBD-BC57-C55F821DE219</string>
+			<string>548C7E00-D279-4BFE-B4CB-4F94C970637F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -839,21 +860,21 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>wl</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Watch Later</string>
-				<key>withspace</key>
+				<key>lastpathcomponent</key>
 				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<true/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>🎞 Youtube Link saved</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>548C7E00-D279-4BFE-B4CB-4F94C970637F</string>
+			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -881,27 +902,6 @@ echo -n "$title"</string>
 			<string>77FF34ED-C1A2-4866-B205-06B792B3975B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<true/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>🎞 Youtube Link saved</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -962,21 +962,6 @@ echo -n "$title"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Basso</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -992,6 +977,21 @@ echo -n "$title"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>E1E42FAB-DEA5-479C-90B3-1B2A03B28BBF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Basso</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1219,7 +1219,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>65</integer>
+			<integer>60</integer>
 			<key>ypos</key>
 			<integer>1160</integer>
 		</dict>
@@ -1300,7 +1300,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>note</key>
-			<string>get current Brave URL</string>
+			<string>get current Browser URL</string>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>

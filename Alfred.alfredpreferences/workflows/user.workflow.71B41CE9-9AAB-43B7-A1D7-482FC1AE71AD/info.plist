@@ -2405,15 +2405,12 @@ echo -n "$title"</string>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>chromium_browser</key>
-		<string>Vivaldi</string>
 		<key>default_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>default_folder</string>
-		<string>chromium_browser</string>
 	</array>
 	<key>version</key>
 	<string></string>

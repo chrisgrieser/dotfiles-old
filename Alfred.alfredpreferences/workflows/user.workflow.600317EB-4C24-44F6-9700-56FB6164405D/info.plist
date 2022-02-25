@@ -492,7 +492,7 @@ end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>work-mode.applescript</string>
+				<string>work-mode_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -512,7 +512,7 @@ end tell</string>
 				<integer>68</integer>
 				<key>script</key>
 				<string>-- open Basic Workspacetell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"repeat until (application "Drafts" is running)	delay 0.2end repeatdelay 0.1
-tell application "Moom" to arrange windows according to snapshot "📝 Brave + Drafts"
+tell application "Moom" to arrange windows according to snapshot "📝 Browser + Drafts"
 display notification "" with title "📝 Note Mode ready"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
