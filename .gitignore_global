@@ -7,3 +7,6 @@ Icon
 
 # Sublime
 *.sublime-workspace
+
+# NPM
+node_modules

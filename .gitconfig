@@ -16,3 +16,5 @@
 	branch = false
 [pull]
 	rebase = false
+[status]
+	showUntrackedFiles = all

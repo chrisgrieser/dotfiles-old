@@ -21,7 +21,7 @@ alias commit="git commit -m"
 alias pull="git pull"
 alias push="git push"
 alias ignored="git status --ignored"
-alias status='git remote -v | head -n1; git status'
+alias status='git status --short'
 alias checkout='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 

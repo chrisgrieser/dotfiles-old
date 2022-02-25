@@ -5,12 +5,11 @@ alias .star='open ~/.config/starship.toml'
 alias .zsh='open ~/.zshrc'
 
 # https://stackoverflow.com/q/2518127
-# alias rr='source ~/.zshrc && echo ".zshrc reloaded"'
-alias rr='exec zsh'
+alias rr='source ~/.zshrc && echo ".zshrc reloaded"'
+# alias rr='exec zsh'
 
 # shortcuts
 alias q='exit'
-alias size='exa --long --no-user --no-permissions --no-time' # size of files in current directory
 alias b='cd - &> /dev/null' # back
 alias .="open ."
 alias ..="cd .."
@@ -38,10 +37,13 @@ alias mv='ln -i'
 # default options
 alias which='which -a'
 alias mkdir='mkdir -p'
+alias pip="pip3"
+
+# exa
 alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
 alias exagit='exa --long --git --git-ignore --no-user --no-permissions --no-filesize --no-time --grid'
 alias exatree='exa --tree -L2'
-alias pip="pip3"
+alias exasize='exa --long --no-user --no-permissions --no-time' # size of files in current directory
 
 # Global Alias
 alias -g §='| grep --color -i'
