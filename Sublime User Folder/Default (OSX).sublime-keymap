@@ -40,16 +40,22 @@
 	// TableFlip (using Build System)
 	{ "keys": ["ctrl+t"], "command": "build", "args": {"variant": "TableFlip"}},
 
-	// Build System Shell: Shell
-	{ "keys": ["super+r"], "command": "send_code", "context": [
-		{"key": "selection_empty", "operator": "equal", "operand": false},
+	// Build System: Shell, no Selection
+	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.shell"},
+		{"key": "selection_empty", "operator": "equal", "operand": true},
 	] },
 	// Build System: Rest
 	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
 		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
 	] },
+	// Build System: Shell, with Selection  ➞ Send Code
+	{ "keys": ["super+r"], "command": "send_code", "context": [
+			{"key": "selector", "operator": "equal", "operand": "source.shell"},
+			{"key": "selection_empty", "operator": "equal", "operand": false},
+	] },
+
 
 	// Sublime Linter Navigation
 	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true } },
@@ -57,12 +63,14 @@
 
 	// Case Conversion
 	{ "keys": ["ctrl+c"], "command": "convert_to_camel", "context": [ // Case Converter Plugin: Convert to camelCase
-		{ "key": "terminus_view", "operator": "not_equal" }, // context necessary to avoid conflict with Terminus
+		{ "key": "terminus_view", "operator": "equal", "operand": false }, // context necessary to avoid conflict with Terminus
 	] },
 	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
-		{ "key": "terminus_view", "operator": "not_equal" },
+		{ "key": "terminus_view", "operator": "equal", "operand": false },
 	] },
-	{ "keys": ["ctrl+l"], "command": "lower_case" },
+	{ "keys": ["ctrl+l"], "command": "lower_case", "context": [
+		{ "key": "terminus_view", "operator": "equal", "operand": false },
+	] },
 
 	// Lines
 	{ "keys": ["super+d"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
@@ -97,8 +105,7 @@
 	// Navigate
 	{ "keys": ["super+k"], "command": "goto_comment"},
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-	// { "keys": ["super+o"], "command": "fuzzy_start_from_file" },
-    { "keys": ["super+o"], "command": "open_browse" },
+   { "keys": ["super+o"], "command": "open_browse" },
 
 
 	// Expand Selection
