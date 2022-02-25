@@ -8,19 +8,6 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
-		<key>0BCA3015-AB2D-4D9D-8DE5-B0C2E8B5B13D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B893D1FC-D8A2-4428-BD45-98BF1B5DEE7A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1A2A5FF6-BADA-4BD7-AE6D-765E6891E0A6</key>
 		<array/>
 		<key>436E6838-C21C-4927-B4B9-D7CCB67587DE</key>
@@ -75,37 +62,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>650384F4-027E-467B-9A93-A0A327A69384</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0BCA3015-AB2D-4D9D-8DE5-B0C2E8B5B13D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>69E45CE7-99B7-48A7-971A-A5DC960D59F1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>4D67ED53-EADE-458A-B761-7F5070BEABA6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>73EA1276-193A-41EA-B2F3-B51924D85F68</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E86AE2B5-1908-43EF-A9FA-653AB569119F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,55 +84,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B893D1FC-D8A2-4428-BD45-98BF1B5DEE7A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DA6F5742-B25C-4044-A613-90AFAA7C559F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>1896B440-0D14-482B-83D8-10DC41315FE7</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>275050BC-C378-4DD3-9EB7-156512D3E00D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>4D67ED53-EADE-458A-B761-7F5070BEABA6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>19D29850-ED9B-4B78-86F5-B6BD87D6F08B</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>1A2A5FF6-BADA-4BD7-AE6D-765E6891E0A6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>83815775-153E-4000-BF7E-E4B856BA8994</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -202,11 +114,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F1646853-4BE7-44BE-985F-9282246BAFCA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>919C67AD-F9F2-4691-A835-0E3807CABF9F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F48BFF3F-8FB4-4AB7-898D-6636EC60112C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>73EA1276-193A-41EA-B2F3-B51924D85F68</string>
+				<string>F1646853-4BE7-44BE-985F-9282246BAFCA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -333,12 +258,8 @@ return tabTitle</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -355,14 +276,14 @@ return tabTitle</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>mailto:{query}</string>
+				<string></string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>E86AE2B5-1908-43EF-A9FA-653AB569119F</string>
+			<string>919C67AD-F9F2-4691-A835-0E3807CABF9F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -378,7 +299,7 @@ return tabTitle</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>send-mail.applescript</string>
+				<string>send-mail_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -406,7 +327,7 @@ return tabTitle</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>73EA1276-193A-41EA-B2F3-B51924D85F68</string>
+			<string>F1646853-4BE7-44BE-985F-9282246BAFCA</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -506,156 +427,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>Newsletter</string>
-						<key>outputlabel</key>
-						<string>Newsletter</string>
-						<key>uid</key>
-						<string>1896B440-0D14-482B-83D8-10DC41315FE7</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>Snoozed</string>
-						<key>outputlabel</key>
-						<string>Snoozed</string>
-						<key>uid</key>
-						<string>19D29850-ED9B-4B78-86F5-B6BD87D6F08B</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>Filter</string>
-						<key>outputlabel</key>
-						<string>Filter</string>
-						<key>uid</key>
-						<string>83815775-153E-4000-BF7E-E4B856BA8994</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>other folders</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>B893D1FC-D8A2-4428-BD45-98BF1B5DEE7A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"📥 Inbox","arg":"Inbox"},{"title":"⭐️ Starred","arg":"Starred"},{"title":"✈️ Sent","arg":"Sent"},{"title":"🗄 All Mail","arg":"All Mail"},{"title":"⛔️ Spam","arg":"Spam"},{"title":"📄 Drafts","arg":"Drafts"},{"title":"🗑 Trash","arg":"Trash"},{"title":"💤 Snoozed","arg":"Snoozed"},{"title":"🗞 Newsletter","arg":"Newsletter"},{"title":"🤖 Filter","arg":"Filter"}]</string>
-				<key>keyword</key>
-				<string>mm</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Go to Mimestream Folder</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>0BCA3015-AB2D-4D9D-8DE5-B0C2E8B5B13D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "Mimestream"
-		set frontmost to true
-		click menu item "{query}" of menu "Go" of menu bar 1
-	end tell
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>275050BC-C378-4DD3-9EB7-156512D3E00D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>5</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>G</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.mimestream.Mimestream</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>650384F4-027E-467B-9A93-A0A327A69384</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -738,32 +509,14 @@ end tell</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0BCA3015-AB2D-4D9D-8DE5-B0C2E8B5B13D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
 		<key>1A2A5FF6-BADA-4BD7-AE6D-765E6891E0A6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>580</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>840</integer>
-		</dict>
-		<key>275050BC-C378-4DD3-9EB7-156512D3E00D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>580</integer>
-			<key>ypos</key>
-			<integer>595</integer>
+			<integer>720</integer>
 		</dict>
 		<key>436E6838-C21C-4927-B4B9-D7CCB67587DE</key>
 		<dict>
@@ -772,16 +525,16 @@ end tell</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>840</integer>
+			<integer>720</integer>
 		</dict>
 		<key>4D67ED53-EADE-458A-B761-7F5070BEABA6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>580</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>595</integer>
 		</dict>
 		<key>50B66C20-4163-4A8A-A8C9-AFC175AEA52D</key>
 		<dict>
@@ -790,7 +543,7 @@ end tell</string>
 			<key>note</key>
 			<string>search query in Mimestream</string>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>300</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -808,7 +561,7 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>note</key>
-			<string>Mail the current Brave Tab</string>
+			<string>Mail the current Browser Tab</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
@@ -825,15 +578,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>650384F4-027E-467B-9A93-A0A327A69384</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
 		<key>69E45CE7-99B7-48A7-971A-A5DC960D59F1</key>
 		<dict>
 			<key>colorindex</key>
@@ -841,16 +585,16 @@ end tell</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>595</integer>
 		</dict>
-		<key>73EA1276-193A-41EA-B2F3-B51924D85F68</key>
+		<key>919C67AD-F9F2-4691-A835-0E3807CABF9F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>315</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>155</integer>
 		</dict>
 		<key>9BF84B32-0217-4A0F-9F75-E541FFDA268D</key>
 		<dict>
@@ -862,15 +606,6 @@ end tell</string>
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>310</integer>
-		</dict>
-		<key>B893D1FC-D8A2-4428-BD45-98BF1B5DEE7A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>345</integer>
-			<key>ypos</key>
-			<integer>585</integer>
 		</dict>
 		<key>C0DA5B2B-624A-4F09-956B-68158231988A</key>
 		<dict>
@@ -901,14 +636,14 @@ end tell</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>E86AE2B5-1908-43EF-A9FA-653AB569119F</key>
+		<key>F1646853-4BE7-44BE-985F-9282246BAFCA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>325</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>185</integer>
 		</dict>
 		<key>F48BFF3F-8FB4-4AB7-898D-6636EC60112C</key>
 		<dict>

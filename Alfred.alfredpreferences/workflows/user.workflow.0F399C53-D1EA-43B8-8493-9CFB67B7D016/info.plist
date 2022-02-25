@@ -160,35 +160,6 @@ return currentTab</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>adduuid</key>
-				<false/>
-				<key>allowemptyfiles</key>
-				<true/>
-				<key>createintermediatefolders</key>
-				<false/>
-				<key>filename</key>
-				<string></string>
-				<key>filetext</key>
-				<string>https://sci-hub.st/
-http://libgen.st/
-http://libgen.is/</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
-			<key>uid</key>
-			<string>892F41B1-D58C-44FA-81E8-F82862E9D26D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -248,17 +219,6 @@ http://libgen.is/</string>
 			<integer>85</integer>
 			<key>ypos</key>
 			<integer>300</integer>
-		</dict>
-		<key>892F41B1-D58C-44FA-81E8-F82862E9D26D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>note</key>
-			<string>alternative mirrors für Sci-hub and Libgen</string>
-			<key>xpos</key>
-			<integer>630</integer>
-			<key>ypos</key>
-			<integer>390</integer>
 		</dict>
 		<key>C3EF1EDB-A839-4877-BFF4-6D2170C4B0F1</key>
 		<dict>

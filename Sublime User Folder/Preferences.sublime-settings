@@ -50,7 +50,7 @@
 	"enable_tab_scrolling": false,
 	"file_tab_style": "square", // does not support inactive pane dimming
 	"highlight_modified_tabs": true,
-	"native_tabs": "preferred",
+	"native_tabs": "system",
 
 	// Startup & Exit
 	"save_on_focus_lost": true,

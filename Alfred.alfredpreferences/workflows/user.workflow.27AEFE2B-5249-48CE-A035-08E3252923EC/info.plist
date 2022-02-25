@@ -576,6 +576,8 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		</dict>
 		<key>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>note</key>
 			<string>this way works independent from browser</string>
 			<key>xpos</key>
