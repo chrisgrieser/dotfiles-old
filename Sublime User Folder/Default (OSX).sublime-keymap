@@ -52,8 +52,8 @@
 	] },
 	// Build System: Shell, with Selection  ➞ Send Code
 	{ "keys": ["super+r"], "command": "send_code", "context": [
-			{"key": "selector", "operator": "equal", "operand": "source.shell"},
-			{"key": "selection_empty", "operator": "equal", "operand": false},
+		{"key": "selector", "operator": "equal", "operand": "source.shell"},
+		{"key": "selection_empty", "operator": "equal", "operand": false},
 	] },
 
 
@@ -105,8 +105,10 @@
 	// Navigate
 	{ "keys": ["super+k"], "command": "goto_comment"},
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-   { "keys": ["super+o"], "command": "open_browse" },
+	{ "keys": ["super+o"], "command": "open_browse" },
 
+   // Disable
+   { "keys": ["super+shift+s"], "command": "noop" },
 
 	// Expand Selection
 	{ "keys": ["super+j"], "command": "find_under_expand" },

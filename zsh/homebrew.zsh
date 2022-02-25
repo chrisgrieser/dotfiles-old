@@ -10,7 +10,7 @@ export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/C
 
 function br () {
 	if brew list "$1" ; then
-		brew reinstall "$INPUT"
+		brew reinstall "$1"
 		return
 	fi
 
@@ -24,11 +24,11 @@ function br () {
 	           --preview-window=right:65% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
-	brew reinstall --zap "$SELECTED"
+	brew reinstall "$SELECTED"
 }
 function bu () {
 	if brew list "$1" ; then
-		brew uninstall --zap "$INPUT"
+		brew uninstall --zap "$1"
 		return
 	fi
 
@@ -111,7 +111,9 @@ function update (){
 	print-section "Homebrew"
 	brew update
 	brew upgrade
+	echo "Cleanup"
 	brew cleanup
+	echo "Autoremove"
 	brew autoremove # remove unneeded dependencies (brew leaves --installed-as-dependency)
 
 	print-section "Mac App Store"
