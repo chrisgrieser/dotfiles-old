@@ -11,11 +11,12 @@ export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/C
 alias re='brew reinstall'
 
 function bu () {
-	local INPUT="$1"
-	brew list "$INPUT" &> /dev/null && brew uninstall --zap "$INPUT"
-	# workaround, since casks piped to /dev/null exit with 1, even if installed
-	brew list --cask "$INPUT" &> /dev/null && brew uninstall --zap "$INPUT"
+	if brew list "$1" ; then
+		brew uninstall --zap "$INPUT"
+		return
+	fi
 
+	local SELECTED=""
 	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
 	local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
 	           -0 \
@@ -24,7 +25,8 @@ function bu () {
 	           --bind 'alt-enter:execute(brew home {})+abort' \
 	           --preview-window=right:65% \
 	           )
-	[[ "$SELECTED" != "" ]] && brew uninstall --zap "$SELECTED"
+	[[ "$SELECTED" == "" ]] && return 130
+	brew uninstall --zap "$SELECTED"
 }
 
 function bi (){

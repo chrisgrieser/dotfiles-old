@@ -18,16 +18,6 @@ eval "$(starship init zsh)"
 source "$ZSH_DOTFILE_LOCATION"/plugins/magic_enter.zsh
 source "$ZSH_DOTFILE_LOCATION"/plugins/obsidian-vault-navigation.sh
 
-# Shellfirm, https://github.com/kaplanelad/shellfirm/blob/main/shell-plugins/shellfirm.plugin.zsh
-function shellfirm-pre-command () {
-	if [[ "${1}" == *"shellfirm pre-command"* ]]; then
-		return
-	fi
-	shellfirm pre-command --command "${1}"
-}
-autoload -Uz add-zsh-hook
-add-zsh-hook preexec shellfirm-pre-command
-
 # -------------------------------------------------
 # fix for Starship-Terminus issue
 # https://github.com/starship/starship/issues/3627
