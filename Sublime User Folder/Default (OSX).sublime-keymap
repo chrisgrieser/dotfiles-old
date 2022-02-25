@@ -13,7 +13,7 @@
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
 [
-	// Window Closing
+	// Window Closing Bugfix, https://github.com/sublimehq/sublime_text/issues/5237#issuecomment-1048857619
 	{ "keys": ["super+q"],
 		"command": "chain",
 		"args": {
@@ -29,10 +29,6 @@
 		{"key": "selector", "operator": "equal", "operand": "source.shell"},
 		{"key": "selection_empty", "operator": "equal", "operand": true},
 	] },
-	{ "keys": ["super+r"], "command": "build", "context": [
-		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
-		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
-	] },
 	// Build Selection
 	{ "keys": ["super+shift+r"], "command": "build", "args": {"select": true} },
 	// Lint (using Build System)
@@ -44,10 +40,15 @@
 	// TableFlip (using Build System)
 	{ "keys": ["ctrl+t"], "command": "build", "args": {"variant": "TableFlip"}},
 
-	// Send Code
+	// Build System Shell: Shell
 	{ "keys": ["super+r"], "command": "send_code", "context": [
 		{"key": "selection_empty", "operator": "equal", "operand": false},
 		{"key": "selector", "operator": "equal", "operand": "source.shell"},
+	] },
+	// Build System: Rest
+	{ "keys": ["super+r"], "command": "build", "context": [
+		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
+		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
 	] },
 
 	// Sublime Linter Navigation
