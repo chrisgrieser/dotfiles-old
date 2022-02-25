@@ -8,8 +8,24 @@ export HOMEBREW_INSTALL_BADGE=✅
 
 export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
 
-alias re='brew reinstall'
+function br () {
+	if brew list "$1" ; then
+		brew reinstall "$INPUT"
+		return
+	fi
 
+	local SELECTED=""
+	# shellcheck disable=SC1009,SC1056,SC1072,SC1073
+	local SELECTED=$( { brew list --casks ; brew leaves --installed-on-request } | fzf \
+	           -0 \
+	           --query "$1" \
+	           --preview 'HOMEBREW_COLOR=true brew info {}' \
+	           --bind 'alt-enter:execute(brew home {})+abort' \
+	           --preview-window=right:65% \
+	           )
+	[[ "$SELECTED" == "" ]] && return 130
+	brew reinstall --zap "$SELECTED"
+}
 function bu () {
 	if brew list "$1" ; then
 		brew uninstall --zap "$INPUT"

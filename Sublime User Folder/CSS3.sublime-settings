@@ -7,8 +7,5 @@
 	"disable_default_completions": true,
 	"auto_complete_use_index": false,
 
-	"extensions":
-	[
-		"css",
-	],
+	"extensions": ["css"],
 }
