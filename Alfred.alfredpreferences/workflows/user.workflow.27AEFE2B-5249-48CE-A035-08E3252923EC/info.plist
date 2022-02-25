@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.chris-grieser.brave-tweaks</string>
+	<string>de.chris-grieser.browser-tweaks</string>
 	<key>category</key>
 	<string>App-Enhance</string>
 	<key>connections</key>
@@ -13,45 +13,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2A800803-89AC-47BC-8C84-A45508977347</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>04A33457-2169-4DAC-BFBE-23AF318C42E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A748B391-CED8-49ED-912B-DE766781906F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>08600662-A631-4DC9-9A74-D57ACAD466EE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8A143B48-6239-4B5E-9738-6EE02254F7A0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1B449CAC-A103-466F-8E55-65D6BF43327F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A473011C-C987-4874-9FC4-5ADE9AB02BAA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -99,63 +60,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2C1CDF2B-CEEC-4C36-9D32-BFA8CC04BF88</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>854A1439-30EA-4457-978F-2665DAAA34A4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>510E8BB1-CE76-4210-9AD9-A85633C85362</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E4659DA7-D204-4F46-ADDD-765F8EEB3501</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>56F35F5B-32E0-4310-A6AF-87E563EF2342</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CC573DCC-2430-4516-A565-B23465C095EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>64072641-C9FE-463E-8291-C433F4BBD5BD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A69A0AC6-3582-4CBF-97B9-6FE61515A0C2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -170,98 +79,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E5505C3D-6521-4520-B4F3-2201A6FAE5C1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>84719646-9038-47DC-8242-BE5D4F7E83FA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1EB2691B-3759-410E-9B85-D10F034277BD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>869C34F9-4326-4615-AE84-87BE175F0EE2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CC573DCC-2430-4516-A565-B23465C095EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>87DB99AF-081B-444C-9B42-1857010E5931</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C3B2F48A-DB86-442F-93D3-47B2FEC319B3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>956C15A9-65C0-4C09-BC32-0D72C6033755</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9A33393E-7106-4858-B64B-B115E6DBF1EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9E99F21F-962C-4D25-9BB4-B20449DA472F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>87DB99AF-081B-444C-9B42-1857010E5931</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A2A8B69C-64E1-4047-8762-2982C2E69F14</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D3E4AFB2-D594-4066-BAD3-C027C44CEB2A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>AB257C30-D6EE-4D86-B1F4-2B4FFED05221</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>87DB99AF-081B-444C-9B42-1857010E5931</string>
+				<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -317,55 +135,9 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Brave Tweaks</string>
+	<string>Browser Tweaks – Vivaldi – Brave</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "chrome-extension://jlgkpaicikihijadgifklkbpdajbkhjo/options.html"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D3E4AFB2-D594-4066-BAD3-C027C44CEB2A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://flags"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9A33393E-7106-4858-B64B-B115E6DBF1EA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -393,217 +165,20 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>if application "Brave Browser" is running then
-	tell application "Brave Browser" 
-        set theURL to URL of active tab of front window
-        make new window with properties {mode:"incognito"}
-        activate
-        set URL of active tab of front window to theURL
-    end tell
-else
-    display notification with title ("Brave not running")
-end if</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>switch-ingonito.applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>mouse gestures</string>
-				<key>subtext</key>
-				<string>CRX</string>
-				<key>text</key>
-				<string>🖱 Mouse Gestures</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A2A8B69C-64E1-4047-8762-2982C2E69F14</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>flags</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🏳 Flags</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>956C15A9-65C0-4C09-BC32-0D72C6033755</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://extensions/"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A69A0AC6-3582-4CBF-97B9-6FE61515A0C2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>extensions</string>
-				<key>subtext</key>
-				<string>Brave</string>
-				<key>text</key>
-				<string>⚙️ Extensions</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>64072641-C9FE-463E-8291-C433F4BBD5BD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://adblock/"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8A143B48-6239-4B5E-9738-6EE02254F7A0</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>adblocker</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⛑ Adblock</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>08600662-A631-4DC9-9A74-D57ACAD466EE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E5505C3D-6521-4520-B4F3-2201A6FAE5C1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>43</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>,</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -634,16 +209,15 @@ end if</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>tell application "Brave Browser" to set currentTabUrl to URL of active tab of front window-- has to set the URL instead of "open location" (and its equivalents in Shell/JXA)
--- to prevent interaction with finickytell application "Safari"	set the URL of the current tab of the front window to currentTabUrl	activateend tell</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>switch-to-safari.applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -655,298 +229,55 @@ end if</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>downloads</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⬇️ Downloads</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>04A33457-2169-4DAC-BFBE-23AF318C42E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://downloads"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A748B391-CED8-49ED-912B-DE766781906F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>extensions keyboard shortcuts</string>
-				<key>subtext</key>
-				<string>Brave</string>
-				<key>text</key>
-				<string>⚙️ Extensions – Keyboard Shortcuts</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>56F35F5B-32E0-4310-A6AF-87E563EF2342</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>bookmarks</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔖 Bookmark Manager</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>84719646-9038-47DC-8242-BE5D4F7E83FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://bookmarks"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1EB2691B-3759-410E-9B85-D10F034277BD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>var query = "{query}";
-query = encodeURIComponent(query);
-query = query.replaceAll ("%2F","/");
-
-var locationhistory = "brave://history/?q=" + query;
-
-Brave = Application("/Applications/Brave Browser.app");
-Brave.includeStandardAdditions = true;
-Brave.openLocation(locationhistory);</string>
-				<key>scriptargtype</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>,</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>854A1439-30EA-4457-978F-2665DAAA34A4</string>
+			<string>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>h</string>
-				<key>subtext</key>
+				<key>browser</key>
+				<string>net.kassett.finicky</string>
+				<key>spaces</key>
 				<string></string>
-				<key>text</key>
-				<string>History: '{query}'</string>
-				<key>withspace</key>
+				<key>url</key>
+				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html</string>
+				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>2C1CDF2B-CEEC-4C36-9D32-BFA8CC04BF88</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://extensions/shortcuts"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CC573DCC-2430-4516-A565-B23465C095EA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>keyboard shortcuts</string>
-				<key>subtext</key>
-				<string>Brave Extensions</string>
-				<key>text</key>
-				<string>Keyboard Shortcuts</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>869C34F9-4326-4615-AE84-87BE175F0EE2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>history</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>History</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1B449CAC-A103-466F-8E55-65D6BF43327F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to open location "brave://history/"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A473011C-C987-4874-9FC4-5ADE9AB02BAA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "Brave Browser"
-		set frontmost to true
-		click menu item "Task Manager" of menu "Window" of menu bar 1
-	end tell
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E4659DA7-D204-4F46-ADDD-765F8EEB3501</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>task manager</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🛠 Task Manager</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>510E8BB1-CE76-4210-9AD9-A85633C85362</string>
+			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1000,18 +331,9 @@ end tell</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string># move bookmarks
-mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-
-# this file is needed as Alfred uses it to verify the existence of Chrome
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-
-# move history (used by Searchlink)
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
-
-# open up Alfred again
-osascript -e "tell application \"Alfred 4\" to search"</string>
+				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
+cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
+cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1025,91 +347,6 @@ osascript -e "tell application \"Alfred 4\" to search"</string>
 			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>🔄 Restarting Brave</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>87DB99AF-081B-444C-9B42-1857010E5931</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>restart brave</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Restart</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>AB257C30-D6EE-4D86-B1F4-2B4FFED05221</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" 
-	quit
-	repeat until (application "Brave Browser" is not running)
-		delay 0.5
-	end repeat
-	delay 1
-	activate
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C3B2F48A-DB86-442F-93D3-47B2FEC319B3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>restart brave</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>9E99F21F-962C-4D25-9BB4-B20449DA472F</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1142,7 +379,7 @@ end tell</string>
 				<key>keyword</key>
 				<string>alltabs</string>
 				<key>subtext</key>
-				<string>Brave Browser</string>
+				<string>{var:chromium_browser}</string>
 				<key>text</key>
 				<string>Copy the Title and URL of *all* tabs</string>
 				<key>withspace</key>
@@ -1230,54 +467,18 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
 			<integer>445</integer>
-			<key>ypos</key>
-			<integer>710</integer>
-		</dict>
-		<key>04A33457-2169-4DAC-BFBE-23AF318C42E4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>720</integer>
-			<key>ypos</key>
-			<integer>235</integer>
-		</dict>
-		<key>08600662-A631-4DC9-9A74-D57ACAD466EE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>720</integer>
-			<key>ypos</key>
-			<integer>120</integer>
 		</dict>
 		<key>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>205</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>1B449CAC-A103-466F-8E55-65D6BF43327F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>525</integer>
-		</dict>
-		<key>1EB2691B-3759-410E-9B85-D10F034277BD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>875</integer>
-			<key>ypos</key>
-			<integer>350</integer>
 		</dict>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<dict>
@@ -1286,7 +487,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>165</integer>
+			<integer>160</integer>
 		</dict>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<dict>
@@ -1295,90 +496,54 @@ end tell</string>
 			<key>note</key>
 			<string>Copy Info an All Tabs</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>1210</integer>
+			<integer>720</integer>
 		</dict>
 		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>710</integer>
-		</dict>
-		<key>2C1CDF2B-CEEC-4C36-9D32-BFA8CC04BF88</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>415</integer>
+			<integer>445</integer>
 		</dict>
 		<key>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>760</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>710</integer>
+			<integer>445</integer>
 		</dict>
 		<key>40631024-7C9F-4784-A3E7-1116BD6C894A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>1085</integer>
+			<integer>595</integer>
 		</dict>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>1085</integer>
-		</dict>
-		<key>510E8BB1-CE76-4210-9AD9-A85633C85362</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>550</integer>
-		</dict>
-		<key>56F35F5B-32E0-4310-A6AF-87E563EF2342</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>325</integer>
-		</dict>
-		<key>64072641-C9FE-463E-8291-C433F4BBD5BD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>10</integer>
+			<integer>595</integer>
 		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>165</integer>
+			<integer>160</integer>
 		</dict>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<dict>
@@ -1387,182 +552,36 @@ end tell</string>
 			<key>note</key>
 			<string>vimium settings</string>
 			<key>xpos</key>
-			<integer>390</integer>
-			<key>ypos</key>
-			<integer>155</integer>
-		</dict>
-		<key>84719646-9038-47DC-8242-BE5D4F7E83FA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>720</integer>
-			<key>ypos</key>
-			<integer>350</integer>
-		</dict>
-		<key>854A1439-30EA-4457-978F-2665DAAA34A4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>415</integer>
-		</dict>
-		<key>869C34F9-4326-4615-AE84-87BE175F0EE2</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>435</integer>
-		</dict>
-		<key>87DB99AF-081B-444C-9B42-1857010E5931</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>835</integer>
-		</dict>
-		<key>8A143B48-6239-4B5E-9738-6EE02254F7A0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>875</integer>
-			<key>ypos</key>
-			<integer>120</integer>
-		</dict>
-		<key>956C15A9-65C0-4C09-BC32-0D72C6033755</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>1015</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>9A33393E-7106-4858-B64B-B115E6DBF1EA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>1170</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>9E99F21F-962C-4D25-9BB4-B20449DA472F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>955</integer>
-		</dict>
-		<key>A2A8B69C-64E1-4047-8762-2982C2E69F14</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>720</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>A473011C-C987-4874-9FC4-5ADE9AB02BAA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>525</integer>
-		</dict>
-		<key>A69A0AC6-3582-4CBF-97B9-6FE61515A0C2</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>560</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>A748B391-CED8-49ED-912B-DE766781906F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>875</integer>
-			<key>ypos</key>
-			<integer>235</integer>
-		</dict>
-		<key>AB257C30-D6EE-4D86-B1F4-2B4FFED05221</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>835</integer>
+			<integer>285</integer>
 		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>1085</integer>
+			<integer>595</integer>
 		</dict>
 		<key>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>340</integer>
 			<key>ypos</key>
-			<integer>1115</integer>
+			<integer>625</integer>
 		</dict>
-		<key>C3B2F48A-DB86-442F-93D3-47B2FEC319B3</key>
+		<key>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</key>
 		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
 			<key>note</key>
-			<string>quit &amp; restart</string>
+			<string>this way works independent from browser</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>835</integer>
-		</dict>
-		<key>CC573DCC-2430-4516-A565-B23465C095EA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>435</integer>
-		</dict>
-		<key>D3E4AFB2-D594-4066-BAD3-C027C44CEB2A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>875</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>E4659DA7-D204-4F46-ADDD-765F8EEB3501</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>550</integer>
+			<integer>285</integer>
 		</dict>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<dict>
@@ -1575,16 +594,16 @@ end tell</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>E5505C3D-6521-4520-B4F3-2201A6FAE5C1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>560</integer>
-			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>chromium_browser</key>
+		<string>Vivaldi</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>chromium_browser</string>
+	</array>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

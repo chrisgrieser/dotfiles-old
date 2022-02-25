@@ -1,7 +1,9 @@
 #!/usr/bin/env osascript
-tell application "Brave Browser"
-	set currentTabUrl to URL of active tab of front window
-	set currentTabTitle to title of active tab of front window
+tell application (system attribute "chromium_browser")
+	using terms from application "Chromium"
+		set currentTabUrl to URL of active tab of front window
+		set currentTabTitle to title of active tab of front window
+	end using terms from
 end tell
 
 set markdownlink to "[" & currentTabTitle & "](" & currentTabUrl & ")"
@@ -15,7 +17,7 @@ if sel is not "" then set markdownlink to ("\"" & sel & "\"" & " " & markdownlin
 
 -- create draft
 tell application "Drafts"
-	make new draft with properties {content:markdownlink, tags:{"URL", "via Brave"}}
+	make new draft with properties {content:markdownlink, tags:{"URL", "via " & (system attribute "chromium_browser")}}
 end tell
 
 -- for notification

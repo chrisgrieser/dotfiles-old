@@ -40,11 +40,15 @@ fi
 # ---------------------------------------------------
 # move bookmarks
 mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-# this file is needed as Alfred uses it to verify the existence of Chrome
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-# move history (used by Searchlink)
-cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
+
+# history used by Searchlink / some plugins,
+# local state needed by Alfred to confirm Chrome's existence
+cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
+cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
+cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
+# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
+# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
+# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
 
 
 # MOVE SCANS INTO FILEHUB
