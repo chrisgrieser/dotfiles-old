@@ -21,13 +21,7 @@ tell application "Twitterrific" to if it is not running then activate
 repeat until application "Twitterrific" is running
 	delay 0.1
 end repeat
-tell application "System Events"
-	tell process "Twitterrific"
-		set frontmost to true
-		click menu item "Mark Timeline as Read" of menu "Timeline" of menu bar 1
-		click menu item "Jump to Unread" of menu "Timeline" of menu bar 1
-	end tell
-end tell
+tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
 
 delay 0.2
 tell application "Moom" to arrange windows according to snapshot "💼 Work"

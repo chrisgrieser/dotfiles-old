@@ -14,9 +14,9 @@ format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
-success_symbol = " [ﰉ](bold green)"
+success_symbol = " [](bold green)"
 error_symbol = " [](bold red)"
-
+# ﰉ
 [cmd_duration]
 min_time = 3000
 format = " [ $duration](bold yellow)"
@@ -33,7 +33,7 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 [directory.substitutions]
 "/Library/Mobile Documents/iCloud~md~obsidian/Documents" = "/ "
 "/Library/Mobile Documents/com~apple~CloudDocs" = "/ "
-"/File Hub" = "/ "
+"/File Hub" = "/ "
 "Dokumente/IT Backups/Alfred.alfredpreferences" = "AlfredPrefs"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"

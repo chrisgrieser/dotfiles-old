@@ -34,13 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1A160E58-AC70-4AF9-9FF5-58CB0ABFD49A</key>
-		<array/>
-		<key>6FA96465-8B67-4871-A510-C2DBB19993F0</key>
+		<key>B5C92BAB-92C8-4786-A984-B46261642E93</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1A160E58-AC70-4AF9-9FF5-58CB0ABFD49A</string>
+				<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -80,6 +78,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B6151B85-7052-4FAE-A01B-8963B1B509D2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -148,7 +159,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>🔎 '{query}'</string>
+				<string>🔎 Search: {query}</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -181,25 +192,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://twitter.com/settings/add_muted_keyword</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -226,14 +218,14 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>twitterrific://current/post?message={query}</string>
+				<string>https://twitter.com/settings/add_muted_keyword</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>A0390445-3124-4179-A03B-217403483ADE</string>
+			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -266,14 +258,14 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://twitter.com/notifications</string>
+				<string>twitterrific://current/post?message={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>B6151B85-7052-4FAE-A01B-8963B1B509D2</string>
+			<string>A0390445-3124-4179-A03B-217403483ADE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -301,10 +293,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://twitter.com/notifications</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B6151B85-7052-4FAE-A01B-8963B1B509D2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>tw notifications</string>
+				<string>tw followers</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -341,25 +352,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>twitterrific://current/profile?screen_name={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -381,53 +373,58 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events" to set frontApp to (name of first process where it is frontmost)
-
-if (frontApp is "Brave Browser") then
-	tell application "Brave Browser" to set tabURL to URL of active tab of front window
-	tell application "Twitterific" to open location 'twitterrific://current/post?message=' &amp; "{query}" &amp; '%0A%0A' &amp; tabURL
-else
-	tell application "Twitterific" to open location 'twitterrific://current/post?message=' &amp; "{query}" &amp; '%0A%0A'
-end if</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>browser</key>
 				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>twitterrific://current/profile?screen_name={query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>1A160E58-AC70-4AF9-9FF5-58CB0ABFD49A</string>
+			<string>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
+				<key>concurrently</key>
 				<false/>
-				<key>acceptsmulti</key>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
+
+headless=$(defaults read com.iconfactory.Twitterrific5 advancedShowDockIcon)
+
+if [[ "$headless" == "0" ]] ; then
+	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool YES
+    echo "Dock Icon re-enabled"
+else
+	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
+    echo "Dock Icon hidden"
+fi
+
+killall "Twitterrific"
+sleep 0.5
+open -a "Twitterrific"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
 				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Tweet</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6FA96465-8B67-4871-A510-C2DBB19993F0</string>
+			<string>E351C4BB-4D9B-40B3-8849-BC10E485473D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -453,39 +450,6 @@ end if</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
-
-headless=$(defaults read com.iconfactory.Twitterrific5 advancedShowDockIcon)
-
-if [[ "$headless" == "0" ]] ; then
-	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool YES
-    echo "Dock Icon re-enabled"
-else
-	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
-    echo "Dock Icon hidden"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E351C4BB-4D9B-40B3-8849-BC10E485473D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -501,6 +465,63 @@ fi</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>twitterrific-scroll-up.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tw up</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🆙 Scroll Up</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B5C92BAB-92C8-4786-A984-B46261642E93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>twitterrific-scroll-up</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -529,16 +550,14 @@ fi</string>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
-		<key>1A160E58-AC70-4AF9-9FF5-58CB0ABFD49A</key>
+		<key>15E86EBB-127D-48A9-8EEC-417367A330D4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>tweet, and if Brave if front, tweet with tab URL</string>
+			<integer>10</integer>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>825</integer>
+			<integer>960</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
@@ -548,15 +567,6 @@ fi</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>6FA96465-8B67-4871-A510-C2DBB19993F0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>825</integer>
 		</dict>
 		<key>A0390445-3124-4179-A03B-217403483ADE</key>
 		<dict>
@@ -575,6 +585,17 @@ fi</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>150</integer>
+		</dict>
+		<key>B5C92BAB-92C8-4786-A984-B46261642E93</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>scroll up</string>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>960</integer>
 		</dict>
 		<key>B6151B85-7052-4FAE-A01B-8963B1B509D2</key>
 		<dict>
@@ -616,12 +637,19 @@ fi</string>
 			<key>ypos</key>
 			<integer>430</integer>
 		</dict>
+		<key>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>1100</integer>
+		</dict>
 		<key>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</key>
 		<dict>
 			<key>xpos</key>
 			<integer>415</integer>
 			<key>ypos</key>
-			<integer>990</integer>
+			<integer>815</integer>
 		</dict>
 		<key>E286DBA7-2559-48DF-800B-A66A6523BB93</key>
 		<dict>
@@ -637,7 +665,7 @@ fi</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>990</integer>
+			<integer>815</integer>
 		</dict>
 		<key>E93C6F35-34EC-4FD7-A64E-8348959F7117</key>
 		<dict>
@@ -657,7 +685,7 @@ fi</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>990</integer>
+			<integer>815</integer>
 		</dict>
 		<key>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</key>
 		<dict>
