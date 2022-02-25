@@ -496,9 +496,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>Copy Info an All Tabs</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>720</integer>
+			<integer>710</integer>
 		</dict>
 		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
 		<dict>
@@ -523,18 +523,18 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>585</integer>
 		</dict>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>585</integer>
 		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
@@ -561,9 +561,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>585</integer>
 		</dict>
 		<key>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</key>
 		<dict>
