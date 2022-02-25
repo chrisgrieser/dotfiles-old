@@ -5,7 +5,7 @@ function del () {
 	   ABSOLUTE_PATH="$(cd "$(dirname "$ARG")"; pwd -P)/$(basename "$ARG")"
 	   osascript -e "
 	   	set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
-	   	tell application \"Finder\" to delete file toDelete
+	   	tell application \"Finder\" to delete toDelete
 	   " >/dev/null
 	done
 }

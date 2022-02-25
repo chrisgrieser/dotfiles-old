@@ -16,8 +16,7 @@ source "$ZSH_DOTFILE_LOCATION"/homebrew.zsh
 source "$ZSH_DOTFILE_LOCATION"/npm.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
-
-bash "$ZSH_DOTFILE_LOCATION"/plugins/colorscript.bash --random
+source "$ZSH_DOTFILE_LOCATION"/run_last_before_login.zsh
 
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
