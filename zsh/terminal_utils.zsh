@@ -10,16 +10,6 @@ function del () {
 	done
 }
 
-# exit
-function qq () {
-	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
-		TO_QUIT="Sublime Text"
-	else
-		TO_QUIT="$TERM_PROGRAM"
-	fi
-	osascript -e "tell application \"$TO_QUIT\" to quit"
-}
-
 # Terminal Switch
 function sw () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then

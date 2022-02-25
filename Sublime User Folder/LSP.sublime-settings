@@ -13,12 +13,12 @@
   // hint: 4
 
   // Panel
-  "show_diagnostics_panel_on_save": 1, // only for errors
+  "show_diagnostics_panel_on_save": 1,
   "diagnostics_panel_include_severity_level": 4,
+  "show_diagnostics_severity_level": 3,
 
   // Gutter
-  "show_diagnostics_severity_level": 3, // info
-  "diagnostics_gutter_marker": "sign",
+  "diagnostics_gutter_marker": "dot",
 
   // Code Action
   "show_code_actions": "annotation",
@@ -27,7 +27,7 @@
   // Autocomplete
   "inhibit_snippet_completions": false,
 
-
+  // hover
   "show_references_in_quick_panel": true,
 
 }
