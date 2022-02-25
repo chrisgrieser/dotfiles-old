@@ -68,6 +68,7 @@
 	// Titlebar
 	"show_full_path": false,
 	"show_project_first": true,
+	"show_rel_path": true,
 
 	// Console
 	"console_max_history_lines": 1000,
@@ -77,7 +78,6 @@
 	"folder_exclude_patterns": [".git", ".Trash", "node_modules", "List Filter Images", "*.pxd"],
 	"bold_folder_labels": true,
 	"show_git_status": true,
-	"show_rel_path": true, // for files in the side bar
 
 	// Indexing
 	"index_exclude_gitignore": true,

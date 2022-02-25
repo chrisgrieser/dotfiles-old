@@ -11,6 +11,7 @@
 	ui = true
 [core]
 	editor = subl
+	excludesfile = /Users/chrisgrieser/.gitignore_global
 [pager]
 	branch = false
 [pull]
