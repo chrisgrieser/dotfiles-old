@@ -4,8 +4,6 @@
 <dict>
 	<key>disabledDefaultActions</key>
 	<dict>
-		<key>alfred.action.browsefolder</key>
-		<true/>
 		<key>alfred.action.copyfile</key>
 		<true/>
 		<key>alfred.action.copyreplace</key>
@@ -33,8 +31,6 @@
 		<key>alfred.action.text.saveassnippet</key>
 		<true/>
 		<key>alfred.action.text.searchwithfinder</key>
-		<true/>
-		<key>alfred.action.text.useinalfred</key>
 		<true/>
 		<key>alfred.action.url.openin</key>
 		<true/>

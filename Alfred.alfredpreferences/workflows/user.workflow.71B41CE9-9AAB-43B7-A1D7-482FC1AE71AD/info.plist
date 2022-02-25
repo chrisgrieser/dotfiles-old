@@ -1910,7 +1910,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>965</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>1C56BE97-8CF8-4915-ABB5-5255F85FFE23</key>
 		<dict>
@@ -2004,7 +2004,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1605</integer>
+			<integer>1655</integer>
 		</dict>
 		<key>4006F56F-BFD4-4270-AF0B-2011B270B472</key>
 		<dict>
@@ -2055,7 +2055,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2066,7 +2066,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>460</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
@@ -2075,7 +2075,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>1605</integer>
+			<integer>1655</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2131,7 +2131,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
@@ -2160,7 +2160,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2207,7 +2207,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>685</integer>
 			<key>ypos</key>
-			<integer>1575</integer>
+			<integer>1625</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
@@ -2349,7 +2349,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>400</integer>
 			<key>ypos</key>
-			<integer>1605</integer>
+			<integer>1655</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
