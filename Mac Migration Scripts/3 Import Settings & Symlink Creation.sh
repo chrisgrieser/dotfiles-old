@@ -25,7 +25,7 @@ mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 
 # Symlink Dotfiles
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
-cd ~
+cd ~ || exit
 mv ~/.zshrc ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zshrc .
 mv ~/.zprofile ~/.Trash
@@ -42,8 +42,11 @@ ln -s "$SYMLINK_LOC"/.eslintrc .
 ln -s "$SYMLINK_LOC"/.finicky.js .
 ln -s "$SYMLINK_LOC"/.gitignore_global .
 
-mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
-ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+# mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
+# ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+
+mv ~"/Applications/Chrome Apps.localized" ~/.Trash
+ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
 
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC"/.config/ ~/.config
