@@ -165,6 +165,15 @@ Thanks goes out to script wrangler extraordinaire Brett Terpstra for [crafting a
 			<integer>385</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>chromium_browser</key>
+		<string>Vivaldi</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>chromium_browser</string>
+	</array>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>

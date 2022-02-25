@@ -1,7 +1,7 @@
 #!/usr/bin/env osascript
 
 # open tab if there is no tab open to ensure Dark Reader switches as well
-set BraveWasntRunning to false
+set BrowserWasntRunning to false
 tell application "Brave Browser"
 	set tabcount to 0
 	set currentTabUrl to ""
@@ -16,7 +16,7 @@ tell application "Brave Browser"
 			delay 0.1
 		end repeat
 		delay 0.2
-		set BraveWasntRunning to true
+		set BrowserWasntRunning to true
 	end if
 	delay 0.1
 end tell
@@ -27,7 +27,7 @@ tell application "System Events"
 end tell
 
 # close tab again
-if (BraveWasntRunning)
+if (BrowserWasntRunning)
 	delay 0.2
 	tell application "Brave Browser" to close active tab of front window
 end if
