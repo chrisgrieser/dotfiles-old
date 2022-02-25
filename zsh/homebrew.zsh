@@ -32,7 +32,7 @@ function bi (){
 	local TYPE="$2" # formula or cask
 
 	# abort if already installed
-	brew list "$TO_INSTALL" && echo "Already installed." && return 0
+	brew list "$TO_INSTALL" 2> /dev/null && echo "Already installed." && return 0
 
 	# if package does not exist, search for it via fzf
 	brew info "$TO_INSTALL" &> /dev/null
@@ -52,13 +52,15 @@ function bi (){
 		echo "installing \"TO_INSTALL\""
 	fi
 
-	# quotes would add empty 2nd arg if empty
-	# get attention when there is a caveat, `\033[1;33m` = bold yellow
-	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE \
-	| sed -e 's/\[1mCaveats/\[1;33m⚠️⚠️ Caveats ⚠️⚠️/'
 
-	# guard clause: if not cask, stop
-	brew info "$TO_INSTALL" --cask &> /dev/null || return 0
+	HOMEBREW_COLOR=true brew install --no-quarantine "$TO_INSTALL" $TYPE # quotes would add empty 2nd arg if empty
+	local BREW_INFO =$(brew info "$TO_INSTALL")
+
+	# if not cask, stop
+	[[ "$BREW_INFO" =~ "cask" ]] || return 0
+
+	# emphasize caveats
+	[[ "$BREW_INFO" =~ "Caveats" ]] && echo "⚠️ \033[1;33mCaveats"
 
 	# shellcheck disable=SC2012
 	local NEWEST_APP="$(ls -tc /Applications | head -n1)"
@@ -66,7 +68,7 @@ function bi (){
 
 	# stop when decision not yes
 	read -r -k 1 DECISION
-	[[ "$DECISION:l" == "y" ]] || return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
+	[[ "$DECISION:l" != "y" ]] && return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
 
 	open -a "$NEWEST_APP"
 }

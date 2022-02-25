@@ -25,7 +25,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 export BAT_THEME='Sublime Snazzy'
 
 export FZF_DEFAULT_COMMAND='fd'
-export FZF_DEFAULT_OPTS='-0 -1 --pointer=⟐ --prompt="❱ "'
+export FZF_DEFAULT_OPTS='-0 --pointer=⟐ --prompt="❱ "'
 
 export MAGIC_ENTER_GIT_COMMAND="status"
 export MAGIC_ENTER_OTHER_COMMAND="exa"

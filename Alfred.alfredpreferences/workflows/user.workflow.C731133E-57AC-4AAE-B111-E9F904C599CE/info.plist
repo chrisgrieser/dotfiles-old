@@ -590,7 +590,7 @@ brew home "$*"</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>in {query}</string>
+				<string>bi {query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
