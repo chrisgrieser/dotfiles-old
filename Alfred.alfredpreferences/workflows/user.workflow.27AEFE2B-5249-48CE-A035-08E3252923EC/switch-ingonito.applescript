@@ -6,7 +6,7 @@ if application browser is running then
 		using terms from application "Chromium"
 			set theURL to URL of active tab of front window
 			make new window with properties {mode:"incognito"}
-			activate
+			delay 0.5
 			set URL of active tab of front window to theURL
 		end using terms from
 	end tell

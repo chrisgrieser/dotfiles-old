@@ -250,6 +250,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 				<key>relatedApps</key>
 				<array>
 					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -348,6 +349,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 				<key>relatedApps</key>
 				<array>
 					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>

@@ -50,6 +50,7 @@
 	"enable_tab_scrolling": false,
 	"file_tab_style": "square", // does not support inactive pane dimming
 	"highlight_modified_tabs": true,
+	"native_tabs": "preferred",
 
 	// Startup & Exit
 	"save_on_focus_lost": true,
@@ -67,8 +68,12 @@
 
 	// Titlebar
 	"show_full_path": false,
-	"show_project_first": true,
 	"show_rel_path": true,
+	"show_project_first": true,
+
+	// Build
+	"show_panel_on_build": false,
+	"show_errors_inline": false,
 
 	// Console
 	"console_max_history_lines": 1000,

@@ -289,7 +289,7 @@
 				<key>keyword</key>
 				<string>sync</string>
 				<key>subtext</key>
-				<string>Brave to Chrome</string>
+				<string>{var:chromium_browser} to Chrome</string>
 				<key>text</key>
 				<string>🔄 Sync Bookmarks</string>
 				<key>withspace</key>
@@ -467,7 +467,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -505,7 +505,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>205</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -514,7 +514,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>355</integer>
+			<integer>360</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -579,7 +579,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>this way works independent from browser</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>205</integer>
 			<key>ypos</key>
 			<integer>285</integer>
 		</dict>

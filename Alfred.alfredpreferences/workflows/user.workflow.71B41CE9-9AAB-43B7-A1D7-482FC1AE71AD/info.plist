@@ -242,19 +242,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6DA5C8B6-3A2F-4610-BADF-993F2338FB98</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<array>
 			<dict>
@@ -286,32 +273,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1B6838B5-A98F-4E36-B645-F289BA31A5F8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>86795082-B09A-40B7-BCBE-FE9270384CB8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6DA5C8B6-3A2F-4610-BADF-993F2338FB98</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>893B12C6-8908-49C1-BB29-4D6650519C84</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>86795082-B09A-40B7-BCBE-FE9270384CB8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -546,19 +507,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FD5D7C5E-7CAB-477F-BD75-3BE39DD7F9B3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>893B12C6-8908-49C1-BB29-4D6650519C84</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1670,100 +1618,66 @@ POSIX path of currentDir</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>B608F624-BD49-4530-BB67-00CD6692B0C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
 				<key>keyword</key>
-				<string>link</string>
+				<string>ff</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>search-current-finder-window.js</string>
 				<key>subtext</key>
 				<string></string>
-				<key>text</key>
-				<string>Save Tab in Finder</string>
+				<key>title</key>
+				<string>Search Finder Window</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>FD5D7C5E-7CAB-477F-BD75-3BE39DD7F9B3</string>
+			<string>D9356F02-69F9-43CF-A2F8-5620849DD6CE</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser"
-	set currentTabUrl to URL of active tab of front window
-	set currentTab to name of active tab of front window
-end tell
-
---remove ":" from tab name
-set AppleScript's text item delimiters to ":"
-set theTextItems to every text item of currentTab
-set AppleScript's text item delimiters to "-"
-set currentTab to theTextItems as string
-
-tell application "Finder"	if (count windows) is 0 then		activate		tell application "System Events" to keystroke "n" using {command down}		delay 0.1	end if	set currentDir to target of Finder window 1 as aliasend tellset finderWindow to (POSIX path of currentDir)
-
-(currentTab &amp; ";;" &amp; currentTabUrl &amp; ";;" &amp; finderWindow)</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>893B12C6-8908-49C1-BB29-4D6650519C84</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>;;</string>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>86795082-B09A-40B7-BCBE-FE9270384CB8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>folder</key>
-					<string>{var:split3}</string>
-					<key>tabName</key>
-					<string>{var:split1}</string>
-					<key>url</key>
-					<string>{var:split2}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>6DA5C8B6-3A2F-4610-BADF-993F2338FB98</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1812,19 +1726,6 @@ IconIndex=0</string>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>854C7C80-AC64-4A5D-938F-4EC378280457</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1900,6 +1801,19 @@ echo -n "$title"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>854C7C80-AC64-4A5D-938F-4EC378280457</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -1956,70 +1870,6 @@ echo -n "$title"</string>
 			<string>EA84A1D9-5B40-48C6-B910-0E4E2E12B31C</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>B608F624-BD49-4530-BB67-00CD6692B0C8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ff</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>loading...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>search-current-finder-window.js</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search Finder Window</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D9356F02-69F9-43CF-A2F8-5620849DD6CE</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -2154,7 +2004,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1705</integer>
+			<integer>1605</integer>
 		</dict>
 		<key>4006F56F-BFD4-4270-AF0B-2011B270B472</key>
 		<dict>
@@ -2205,7 +2055,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1675</integer>
+			<integer>1575</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2216,7 +2066,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>460</integer>
 			<key>ypos</key>
-			<integer>1675</integer>
+			<integer>1575</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
@@ -2225,7 +2075,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>1705</integer>
+			<integer>1605</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2246,15 +2096,6 @@ echo -n "$title"</string>
 			<integer>445</integer>
 			<key>ypos</key>
 			<integer>145</integer>
-		</dict>
-		<key>6DA5C8B6-3A2F-4610-BADF-993F2338FB98</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>1535</integer>
 		</dict>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<dict>
@@ -2292,26 +2133,6 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<integer>1575</integer>
 		</dict>
-		<key>86795082-B09A-40B7-BCBE-FE9270384CB8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>475</integer>
-			<key>ypos</key>
-			<integer>1535</integer>
-		</dict>
-		<key>893B12C6-8908-49C1-BB29-4D6650519C84</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>get Brave Tab and Finder Window</string>
-			<key>xpos</key>
-			<integer>240</integer>
-			<key>ypos</key>
-			<integer>1505</integer>
-		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
 			<key>colorindex</key>
@@ -2339,7 +2160,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1675</integer>
+			<integer>1575</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2402,9 +2223,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1820</integer>
+			<integer>1420</integer>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2455,7 +2276,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1820</integer>
+			<integer>1420</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
@@ -2528,7 +2349,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>400</integer>
 			<key>ypos</key>
-			<integer>1705</integer>
+			<integer>1605</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
@@ -2570,17 +2391,6 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
-		<key>FD5D7C5E-7CAB-477F-BD75-3BE39DD7F9B3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>create link file</string>
-			<key>xpos</key>
-			<integer>50</integer>
-			<key>ypos</key>
-			<integer>1505</integer>
-		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>
 			<key>colorindex</key>
@@ -2595,12 +2405,15 @@ echo -n "$title"</string>
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>chromium_browser</key>
+		<string>Vivaldi</string>
 		<key>default_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>default_folder</string>
+		<string>chromium_browser</string>
 	</array>
 	<key>version</key>
 	<string></string>
