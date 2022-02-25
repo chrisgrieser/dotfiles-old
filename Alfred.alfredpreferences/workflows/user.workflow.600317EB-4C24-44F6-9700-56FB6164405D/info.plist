@@ -710,7 +710,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>355</integer>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
@@ -719,7 +719,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>355</integer>
 			<key>ypos</key>
 			<integer>685</integer>
 		</dict>
@@ -789,7 +789,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>note</key>
 			<string>set context</string>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>355</integer>
 			<key>ypos</key>
 			<integer>315</integer>
 		</dict>
@@ -798,7 +798,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>355</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
@@ -807,7 +807,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>545</integer>
+			<integer>510</integer>
 			<key>ypos</key>
 			<integer>315</integer>
 		</dict>
