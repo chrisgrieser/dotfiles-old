@@ -35,6 +35,7 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 [directory.substitutions]
 "/Library/Mobile Documents/iCloud~md~obsidian/Documents" = "/ "
 "/Library/Mobile Documents/com~apple~CloudDocs" = "/ "
+"/File Hub" = "/ "
 "Dokumente/IT Backups/Alfred.alfredpreferences" = "AlfredPrefs"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"

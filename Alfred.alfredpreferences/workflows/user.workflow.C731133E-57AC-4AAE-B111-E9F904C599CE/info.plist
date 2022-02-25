@@ -12,20 +12,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F3F996A-3FC8-4FBD-990C-9D54C43DD642</string>
+				<string>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>⌘: brew home</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>0E33E00A-D715-4591-A17E-F6468E7B7336</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
+				<string>0F3F996A-3FC8-4FBD-990C-9D54C43DD642</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -39,19 +36,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>A95AE0C7-7A80-4DA9-96C5-4561B4F4E6F2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>20B9438E-0A5B-4A3D-B378-4253B5FC874A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0E33E00A-D715-4591-A17E-F6468E7B7336</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -83,7 +67,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>⌘: brew info</string>
+				<string>⌘: brew home</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -111,11 +95,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A1F54134-66A7-458A-AA45-D1D937104642</key>
+		<key>CE590292-EEA5-4025-A89B-42AE38188503</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A5BFA511-3B4F-4A45-8772-7EFD3A497B32</string>
+				<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,42 +107,13 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>A5BFA511-3B4F-4A45-8772-7EFD3A497B32</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A9713FA3-18FB-44BC-8471-DC64A965D5E8</string>
+				<string>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A9713FA3-18FB-44BC-8471-DC64A965D5E8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0F3F996A-3FC8-4FBD-990C-9D54C43DD642</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D4E2AECB-231B-4D4A-9E81-FA20881AC0C3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C3222BF5-DC72-4163-A2DB-A70F2B60A45D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<string>⌘: brew home</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -190,42 +145,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>brew reinstall {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>br</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>&gt; brew reinstall {query}</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>20B9438E-0A5B-4A3D-B378-4253B5FC874A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -241,6 +160,55 @@
 			<string>A95AE0C7-7A80-4DA9-96C5-4561B4F4E6F2</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>br</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>brew-list-installed.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>&gt; brew reinstall '{query}'</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CE590292-EEA5-4025-A89B-42AE38188503</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -266,19 +234,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
+				<key>escaping</key>
 				<integer>0</integer>
-				<key>matchstring</key>
-				<string> </string>
-				<key>replacestring</key>
-				<string>-</string>
+				<key>script</key>
+				<string>br {query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>0E33E00A-D715-4591-A17E-F6468E7B7336</string>
+			<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -307,6 +273,25 @@ brew home "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>macappstores://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?mt=12&amp;ign-mscache=1&amp;q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -322,25 +307,6 @@ brew home "$*"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F4468F76-B63C-49C9-B546-6F3661587EC3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>macappstores://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?mt=12&amp;ign-mscache=1&amp;q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -378,9 +344,9 @@ brew home "$*"</string>
 				<key>scriptfile</key>
 				<string>build-brew-list.js</string>
 				<key>subtext</key>
-				<string>quick local search only</string>
+				<string></string>
 				<key>title</key>
-				<string>&gt; brew search '{query}'</string>
+				<string>&gt; brew install '{query}'</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -396,15 +362,19 @@ brew home "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>bi {query}</string>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/{query}#readme</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>EDA21286-4E28-4304-A9DB-0BA74AB2C370</string>
+			<string>268D8422-42B0-4CA1-954F-7EA2EA05B34B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -460,72 +430,17 @@ brew home "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/{query}#readme</string>
-				<key>utf8</key>
-				<true/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>bi {query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>268D8422-42B0-4CA1-954F-7EA2EA05B34B</string>
+			<string>EDA21286-4E28-4304-A9DB-0BA74AB2C370</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>bu</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>query=$1
-
-echo -n $query</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>0BAF56E8-B65A-478A-B848-F09FFE73A12B</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -545,154 +460,49 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.apple.application-bundle</string>
-				</array>
-				<key>name</key>
-				<string>Uninstall via Homebrew (with zap)</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>A1F54134-66A7-458A-AA45-D1D937104642</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>.*\/(.*)\.app</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string>$1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>A5BFA511-3B4F-4A45-8772-7EFD3A497B32</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string> </string>
-				<key>replacestring</key>
-				<string>-</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>A9713FA3-18FB-44BC-8471-DC64A965D5E8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>anchorfields</key>
+				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
 				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
-				<false/>
 				<key>keyword</key>
 				<string>bu</string>
-				<key>limit</key>
-				<integer>20</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
 				<string></string>
-				<key>scopes</key>
-				<array>
-					<string>/Applications</string>
-				</array>
-				<key>sortmode</key>
-				<integer>2</integer>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>brew-list-installed.js</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Uninstall...</string>
-				<key>types</key>
-				<array>
-					<string>com.apple.application-bundle</string>
-				</array>
+				<string>&gt; brew uninstall '{query}'</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>D4E2AECB-231B-4D4A-9E81-FA20881AC0C3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/AppCleaner.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>C3222BF5-DC72-4163-A2DB-A70F2B60A45D</string>
+			<string>0BAF56E8-B65A-478A-B848-F09FFE73A12B</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -715,6 +525,21 @@ echo -n $query</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/AppCleaner.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>C3222BF5-DC72-4163-A2DB-A70F2B60A45D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>### Requirements
@@ -729,27 +554,22 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 		<key>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>145</integer>
 		</dict>
 		<key>0BAF56E8-B65A-478A-B848-F09FFE73A12B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>uninstall</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
 			<integer>415</integer>
-		</dict>
-		<key>0E33E00A-D715-4591-A17E-F6468E7B7336</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>175</integer>
-			<key>ypos</key>
-			<integer>40</integer>
 		</dict>
 		<key>0F3F996A-3FC8-4FBD-990C-9D54C43DD642</key>
 		<dict>
@@ -763,29 +583,20 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 		<key>134021C5-60C3-4CE6-BB01-1629F036ED44</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>20B9438E-0A5B-4A3D-B378-4253B5FC874A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 		</dict>
 		<key>268D8422-42B0-4CA1-954F-7EA2EA05B34B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>295</integer>
+			<integer>270</integer>
 		</dict>
 		<key>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</key>
 		<dict>
@@ -794,101 +605,76 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>note</key>
 			<string>brew home</string>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>300</integer>
 			<key>ypos</key>
-			<integer>125</integer>
+			<integer>140</integer>
 		</dict>
 		<key>61EFBB91-1AF5-4144-ADDF-FA42438A893D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>785</integer>
+			<integer>550</integer>
 		</dict>
 		<key>72D18DBC-72FF-40AA-B367-D4C148AEC3A6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
+			<key>note</key>
+			<string>install</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>35</integer>
 			<key>ypos</key>
 			<integer>195</integer>
 		</dict>
 		<key>9A153BD3-0CC9-427B-9634-C748A6D27069</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
-		<key>A1F54134-66A7-458A-AA45-D1D937104642</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
-		<key>A5BFA511-3B4F-4A45-8772-7EFD3A497B32</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>note</key>
-			<string>only name of an app</string>
-			<key>xpos</key>
-			<integer>175</integer>
-			<key>ypos</key>
-			<integer>570</integer>
+			<integer>270</integer>
 		</dict>
 		<key>A95AE0C7-7A80-4DA9-96C5-4561B4F4E6F2</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>A9713FA3-18FB-44BC-8471-DC64A965D5E8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<integer>230</integer>
-			<key>ypos</key>
-			<integer>570</integer>
+			<integer>15</integer>
 		</dict>
 		<key>A98EAA76-0074-4CAD-9A09-48949FC126DB</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>300</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 		</dict>
 		<key>C3222BF5-DC72-4163-A2DB-A70F2B60A45D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>300</integer>
 			<key>ypos</key>
-			<integer>785</integer>
+			<integer>550</integer>
 		</dict>
-		<key>D4E2AECB-231B-4D4A-9E81-FA20881AC0C3</key>
+		<key>CE590292-EEA5-4025-A89B-42AE38188503</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>8</integer>
+			<key>note</key>
+			<string>reinstall</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>665</integer>
+			<integer>15</integer>
 		</dict>
 		<key>EDA21286-4E28-4304-A9DB-0BA74AB2C370</key>
 		<dict>
@@ -897,18 +683,18 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>note</key>
 			<string>brew install</string>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>300</integer>
 			<key>ypos</key>
 			<integer>275</integer>
 		</dict>
 		<key>F4468F76-B63C-49C9-B546-6F3661587EC3</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>145</integer>
 		</dict>
 	</dict>
 	<key>version</key>
