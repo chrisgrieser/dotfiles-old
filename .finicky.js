@@ -2,7 +2,7 @@ module.exports = {
 	defaultBrowser: "Vivaldi",
 	options: {
 		checkForUpdate: true,
-		hideIcon: true,
+		hideIcon: false,
 	},
 
 	rewrite: [
