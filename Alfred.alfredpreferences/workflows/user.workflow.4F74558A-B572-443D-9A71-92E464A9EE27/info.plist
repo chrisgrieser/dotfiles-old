@@ -305,27 +305,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>.</string>
-				<key>subtext</key>
-				<string>{query}</string>
-				<key>text</key>
-				<string>Run in Command in Background</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5DAB0248-BF51-435C-9708-E554C51B4EAF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -347,6 +326,27 @@ eval "$input"</string>
 			<string>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>.</string>
+				<key>subtext</key>
+				<string>{query}</string>
+				<key>text</key>
+				<string>Run in Command in Background</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5DAB0248-BF51-435C-9708-E554C51B4EAF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -411,26 +411,6 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>input</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -452,13 +432,20 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
+				<key>argument</key>
 				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+			<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -484,6 +471,19 @@ eval "$input"</string>
 			<string>B96DFF64-E115-49EF-A0D3-CABFB549CF9D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinterminal</string>
+			<key>uid</key>
+			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -527,12 +527,8 @@ eval "$input"</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>io.alacritty</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>

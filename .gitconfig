@@ -13,3 +13,5 @@
 	editor = subl
 [pager]
 	branch = false
+[pull]
+	rebase = false
