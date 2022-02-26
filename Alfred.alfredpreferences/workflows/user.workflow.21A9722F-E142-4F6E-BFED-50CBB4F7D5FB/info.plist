@@ -422,21 +422,36 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>import text replacements</string>
-				<key>subtext</key>
-				<string>One-Way-Sync</string>
-				<key>text</key>
-				<string>Mac Text Replacements ➞ Alfred Snippets</string>
-				<key>withspace</key>
-				<false/>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
-			<string>87D2259B-68B5-40C8-A569-15A2E37F914B</string>
+			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅ Mac Text Replacement ➞ Alfred Snippets</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -466,36 +481,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>import text replacements</string>
+				<key>subtext</key>
+				<string>One-Way-Sync</string>
 				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ Mac Text Replacement ➞ Alfred Snippets</string>
+				<string>Mac Text Replacements ➞ Alfred Snippets</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
+			<string>87D2259B-68B5-40C8-A569-15A2E37F914B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -542,6 +542,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -559,21 +574,6 @@
 			<string>4A3828AC-7DF5-44AE-84CE-3F1B054C7349</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -636,6 +636,21 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Application Support/Alfred/Workflow Data</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -653,21 +668,6 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 			<string>411F0C67-7E50-4B01-AF68-F2742465259B</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Application Support/Alfred/Workflow Data</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -737,6 +737,59 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>timestamp=`date '+%Y-%m-%d_%H-%M'`
+resolved_bkp_dest=~`echo -n $backup_location | sed -e "s/~//"`
+backup="$resolved_bkp_dest""/Alfred-Backup_""$timestamp"".zip"
+vault=~`echo -n $vault_path | sed -e "s/~//"`
+
+# directory change necessary to avoid zipping root folder
+# https://unix.stackexchange.com/questions/245856/zip-a-file-without-including-the-parent-directory
+cd $vault
+zip -r --quiet $backup ./*
+
+# restrict number of backups
+actual_number=$((max_number_of_bkps + 1))
+cd $resolved_bkp_dest
+ls -t | tail -n +$actual_number | tr '\n' '\0' | xargs -0 rm
+
+echo "$backup"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>alfred-backup.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FBE773BF-5340-43E6-98F8-22E1C4F01CC5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>57787A3F-711D-487E-A402-6DB381439B3A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -775,59 +828,6 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 			<string>DB75DE0D-5D08-4DC0-8F18-35F4D551A52A</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>57787A3F-711D-487E-A402-6DB381439B3A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>timestamp=`date '+%Y-%m-%d_%H-%M'`
-resolved_bkp_dest=~`echo -n $backup_location | sed -e "s/~//"`
-backup="$resolved_bkp_dest""/Alfred-Backup_""$timestamp"".zip"
-vault=~`echo -n $vault_path | sed -e "s/~//"`
-
-# directory change necessary to avoid zipping root folder
-# https://unix.stackexchange.com/questions/245856/zip-a-file-without-including-the-parent-directory
-cd $vault
-zip -r --quiet $backup ./*
-
-# restrict number of backups
-actual_number=$((max_number_of_bkps + 1))
-cd $resolved_bkp_dest
-ls -t | tail -n +$actual_number | tr '\n' '\0' | xargs -0 rm
-
-echo "$backup"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>alfred-backup.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FBE773BF-5340-43E6-98F8-22E1C4F01CC5</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1119,7 +1119,7 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>

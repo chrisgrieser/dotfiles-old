@@ -1,9 +1,16 @@
+#!/bin/zsh
+# shellcheck disable=SC2033
+export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+
+# ---------------------
+# Regular Updating
+# ---------------------
 iconsur set "/Applications/Steam.app"
 iconsur set "/Applications/zoom.us.app"
 iconsur set "/Applications/PDF Expert.app"
 
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
-
+unalias cp # no confirmation needed for this
 # Alfred Prefs
 cp "$ICON_FOLDER"'Alfred Prefs.icns' '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
 touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
@@ -25,20 +32,25 @@ touch '/Applications/Sublime Text.app'
 # Alacritty
 cp "$ICON_FOLDER"'Alacritty.icns' '/Applications/Alacritty.app/Contents/Resources/alacritty.icns'
 touch '/Applications/Alacritty.app'
+# Vivaldi
+cp "$ICON_FOLDER"'Vivaldi_Black.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
+touch '/Applications/Vivaldi.app'
 
 killall Finder
 
-# ---------------------
+#######################
 # stopstring-for-alfred
-# (icon update workflow)
-# ---------------------
+#######################
 
+# ----------------------
 # Progressive Web Apps
+# ----------------------
 ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
 VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Chrome Apps.localized/"
+unalias cp # no confirmation needed for this
 
-cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/YouTube.app/Contents/Resources/applet.icns"
-touch "$VIDEO_FOLDER/YouTube.app/Contents/Resources/applet.icns"
+cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/YouTube.app/Contents/Resources/app.icns"
+touch "$VIDEO_FOLDER/YouTube.app"
 iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/BunnyFap.app"
 iconsur set "$VIDEO_FOLDER/Tagesschau.app"
 iconsur set "$VIDEO_FOLDER/Netflix.app"
@@ -46,10 +58,11 @@ iconsur set "$VIDEO_FOLDER/Twitch.app"
 iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
 # iconsur -l set "$VIDEO_FOLDER/Excalidraw.app"
 
-killall Finder
-killall Dock
+iconsur cache
 
-
+# ----------------------
+# Other
+# --------------------
 sudo -v
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
 
@@ -79,4 +92,6 @@ set the clipboard to POSIX file "'"$ICON_FOLDER"'/Mail_fancy.icns"'
 iconsur -l set "/Applications/The Unarchiver.app"
 iconsur -l set "/Applications/Subtitles.app"
 
+# shellcheck disable=SC2032
+alias cp='cp -i' # restore
 iconsur cache

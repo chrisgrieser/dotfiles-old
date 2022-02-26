@@ -1530,7 +1530,7 @@ brew install folderify</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>210</integer>
 			<key>ypos</key>
 			<integer>970</integer>
 		</dict>
