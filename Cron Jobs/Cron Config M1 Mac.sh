@@ -12,13 +12,11 @@ function add-cronjob () {
 	(crontab -l && echo "$1 \"$CRON_JOB_FOLDER/$2\"") | crontab -
 }
 
-add-cronjob "*/30 * * * *" "30-min.sh"
-
-(crontab -l && echo "*/30 * * * * \"$CRON_JOB_FOLDER/30-min.sh\"") | crontab -
-(crontab -l && echo "0 3 * * * \"$CRON_JOB_FOLDER/sleep-timer.applescript\"") | crontab -
-(crontab -l && echo "5 6 * * * \"$CRON_JOB_FOLDER/daily-morning_[Browser].applescript\"") | crontab -
-(crontab -l && echo "5 6 * * 1,3,6 \"$CRON_JOB_FOLDER/triweekly.applescript\"") | crontab -
-(crontab -l && echo "0 5 * * 3 \"$CRON_JOB_FOLDER/weekly.sh\"") | crontab -
-(crontab -l && echo "0 5 1-7 * * \"$CRON_JOB_FOLDER/first-sunday-of-month.sh\"") | crontab -
+add-cronjob "*/30 * * * *" 30-min.sh
+add-cronjob "0 3 * * *" sleep-timer.applescript
+add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
+add-cronjob "5 6 * * 1,4" biweekly.applescript
+add-cronjob "0 5 * * 3" weekly.sh
+add-cronjob "0 5 1-7 * *" first-sunday-of-month.sh
 
 crontab -l # check the current cronjobs

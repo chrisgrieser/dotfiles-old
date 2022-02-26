@@ -63,13 +63,13 @@
 
 	// Case Conversion
 	{ "keys": ["ctrl+c"], "command": "convert_to_camel", "context": [ // Case Converter Plugin: Convert to camelCase
-		{ "key": "terminus_view", "operator": "equal", "operand": false }, // context necessary to avoid conflict with Terminus
+		{ "key": "terminus_view", "operator": "not_equal" }, // context necessary to avoid conflict with Terminus
 	] },
 	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
-		{ "key": "terminus_view", "operator": "equal", "operand": false },
+		{ "key": "terminus_view", "operator": "not_equal" },
 	] },
 	{ "keys": ["ctrl+l"], "command": "lower_case", "context": [
-		{ "key": "terminus_view", "operator": "equal", "operand": false },
+		{ "key": "terminus_view", "operator": "not_equal" },
 	] },
 
 	// Lines

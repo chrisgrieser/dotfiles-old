@@ -469,6 +469,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8A0CBDDC-74F8-4D7A-A808-894D685000C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF40CDAB-4071-46F7-87E7-096E6D810BA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</key>
 		<array>
 			<dict>
@@ -1028,11 +1041,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1563,6 +1576,29 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>clean-bibtex.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B50D7282-85D5-41BB-A0AB-7197DF9B7C37</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1580,48 +1616,6 @@ delay 0.1</string>
 			<string>9B4FC907-B406-4947-9286-F3D456312C8F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>resolved_path=~`echo -n $library_path | sed -e "s/~//"`
-
-grep -vw "month =" $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-
-grep -vw "issn =" $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-
-grep -vw "file =" $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-
-# fixes publication dates and journal for import of BibLaTeX from Zotero to BibDesk
-sed -E 's/date = {([[:digit:]]{4}).*}/year = {\1}/g' $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-sed -E 's/journaltitle = /journal = /g' $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-sed -E 's/note = /annotate = /g' $resolved_path &gt; ~/temp.bib
-mv ~/temp.bib $resolved_path
-
-echo -n "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B50D7282-85D5-41BB-A0AB-7197DF9B7C37</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1671,35 +1665,6 @@ echo -n "{query}"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>277C91B6-DFC9-419B-87A8-86F067B5A91A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"📚 Open Library","arg":"open","subtitle":"in default text editor"},{"title":"🧼 Clean Library","arg":"clean","subtitle":"creates a backup before doing so"},{"imagefile":"75f622db7da6395893e172b6ebf9c5cce07bc698.png","title":"❇️ Create Library Backup","arg":"backup","subtitle":""}]</string>
-				<key>keyword</key>
-				<string>bd</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>BibDesk...</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>F271D792-19C2-40DF-A80F-824CCA4EA2B0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1758,6 +1723,35 @@ echo -n "{query}"</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>9366FE95-8961-459A-A9F2-FE0AD95F6632</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"📚 Open Library","arg":"open","subtitle":"in default text editor"},{"title":"🧼 Clean Library","arg":"clean","subtitle":"creates a backup before doing so"},{"imagefile":"75f622db7da6395893e172b6ebf9c5cce07bc698.png","title":"❇️ Create Library Backup","arg":"backup","subtitle":""}]</string>
+				<key>keyword</key>
+				<string>bd</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>BibDesk...</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>F271D792-19C2-40DF-A80F-824CCA4EA2B0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1857,8 +1851,23 @@ echo -n $file_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>CF40CDAB-4071-46F7-87E7-096E6D810BA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>bkp bibtex</string>
 				<key>subtext</key>
@@ -1866,7 +1875,7 @@ echo -n $file_name</string>
 				<key>text</key>
 				<string>Backup: BibTeX Library</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
@@ -1878,12 +1887,45 @@ echo -n $file_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:mode}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>no sound</string>
+						<key>outputlabel</key>
+						<string>no</string>
+						<key>uid</key>
+						<string>FEA7E4E2-00DD-487A-B6A4-1A72E14035C4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>yes</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>8A0CBDDC-74F8-4D7A-A808-894D685000C4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>backup</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict/>
+				<dict>
+					<key>mode</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
@@ -2443,6 +2485,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>895</integer>
 		</dict>
+		<key>8A0CBDDC-74F8-4D7A-A808-894D685000C4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>sound</string>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>870</integer>
+		</dict>
 		<key>8FCA9D2D-78BD-459B-B5D6-33F87166677D</key>
 		<dict>
 			<key>colorindex</key>
@@ -2470,9 +2523,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>750</integer>
+			<integer>735</integer>
 		</dict>
 		<key>99155978-C909-463D-97FB-4D5650AA4A7F</key>
 		<dict>
@@ -2499,9 +2552,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>910</integer>
+			<integer>905</integer>
 			<key>ypos</key>
-			<integer>600</integer>
+			<integer>620</integer>
 		</dict>
 		<key>AA39C446-4B29-4745-A7B0-BA46D0FBA3EA</key>
 		<dict>
@@ -2539,9 +2592,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>clean</string>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>630</integer>
+			<integer>620</integer>
 		</dict>
 		<key>BBA01885-E1CF-4207-86A1-F158913256CA</key>
 		<dict>
@@ -2571,6 +2624,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>175</integer>
 			<key>ypos</key>
 			<integer>570</integer>
+		</dict>
+		<key>CF40CDAB-4071-46F7-87E7-096E6D810BA6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>695</integer>
+			<key>ypos</key>
+			<integer>850</integer>
 		</dict>
 		<key>D33D6A21-B364-4C22-89F8-16B5EB237BC2</key>
 		<dict>

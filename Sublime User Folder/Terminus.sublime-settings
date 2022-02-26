@@ -1,12 +1,11 @@
 {
-	"theme": "ayu-mirage",
+	"theme": "cobalt2",
 
 	"view_settings": {
 		"rulers": [],
 		"font_size": 15,
 		"block_caret": true,
-		// needs nerd font for exa icons
-		"font_face": "JetBrainsMono Nerd Font",
+		"font_face": "JetBrainsMono Nerd Font", // needs nerd font for icons
 		"font_options": ["no_bold"],
 	},
 
