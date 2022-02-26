@@ -1,25 +1,21 @@
 # Move to trash via Finder (allows retrievability)
-
-# helper-function for `del`
-function finder-delete () {
-	# shellcheck disable=SC2164
-	ABSOLUTE_PATH="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
-	osascript -e "
-		set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
-		tell application \"Finder\" to delete toDelete
-	" >/dev/null
-}
-
-function del () (
-	# shellcheck disable=SC2164
+# no arg = all files in folder will be deleted
+function del () {
 	if [[ $# == 0 ]]; then
-		find . -not -name ".*" -print0 | xargs -0 finder-delete
+		IFS=$'\n'
+		ALL_FILES=($(find . -not -name ".*"))
+		unset IFS
 	else
-		for ARG in "$@"; do
-			finder-delete "$ARG"
-		done
+		ALL_FILES=( "$@" ) # save as array
 	fi
-)
+	for ARG in "${ALL_FILES[@]}"; do
+		ABSOLUTE_PATH="$(cd "$(dirname "$ARG")" || return 1; pwd -P)/$(basename "$ARG")"
+		osascript -e "
+			set toDelete to \"$ABSOLUTE_PATH\" as POSIX file
+			tell application \"Finder\" to delete toDelete
+		" >/dev/null
+	done
+}
 
 # Terminal Switch
 function sw () {
