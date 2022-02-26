@@ -33,6 +33,9 @@
         "markdownlint": {
             "args": ["--config", "/.markdownlintrc"]
         },
+        "stylelint": {
+            "filter_errors": "warning: ",
+        },
         // https://scriptingosx.com/2019/08/shellcheck-and-zsh/
         "shellcheck": {
             "args": ["--shell=bash"]
