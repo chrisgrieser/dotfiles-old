@@ -9,7 +9,6 @@ source "$ZSH_DOTFILE_LOCATION"/plugins/fzf-tab/fzf-tab.plugin.zsh
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source "$(brew --prefix)"/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 eval "$(fasd --init auto)"
 eval "$(thefuck --alias)"
