@@ -30,7 +30,8 @@ window:
     x: 0
     y: 50
   dimensions:
-    columns: 96
+    # column number for 1920 wide M1 Mac
+    columns: 98
     lines: 70
   decorations: buttonless
   padding:
@@ -43,7 +44,6 @@ scrolling:
 
 # https://github.com/eendroroy/alacritty-theme#color-schemes
 # hex colors with preceding '0x'
-# Colors (Horizon Dark)
 # Colors (Snazzy)
 colors:
   # Default colors
