@@ -6,8 +6,33 @@ export HOMEBREW_CLEANUP_MAX_AGE_DAYS=90
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_INSTALL_BADGE=✅
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_DISPLAY_INSTALL_TIMES=1
 
-export BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
+local BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
+
+# -----------------------------------------------------
+
+# helper function for `br` and `bi`
+function post-install () {
+	local BREW_INFO=$(brew info "$1")
+
+	if [[ "$BREW_INFO" =~ "Caveats" ]] ; then
+		echo '\033[1;33m⚠️ Caveats'
+		osascript -e "beep"
+	fi
+
+	[[ "$BREW_INFO" =~ "cask" ]] || return 0
+
+	# shellcheck disable=SC2012
+	local NEWEST_APP="$(ls -tc /Applications | head -n1)"
+	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
+
+	# stop when decision not yes
+	read -r -k 1 DECISION
+	[[ "$DECISION:l" != "y" ]] && return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
+
+	open -a "$NEWEST_APP"
+}
 
 function br () {
 	if brew list "$1" ; then
@@ -22,10 +47,12 @@ function br () {
 	           --query "$1" \
 	           --preview 'HOMEBREW_COLOR=true brew info {}' \
 	           --bind 'alt-enter:execute(brew home {})+abort' \
-	           --preview-window=right:65% \
+	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
 	brew reinstall "$SELECTED"
+
+	post-install "$SELECTED"
 }
 function bu () {
 	if brew list "$1" ; then
@@ -40,7 +67,7 @@ function bu () {
 	           --query "$1" \
 	           --preview 'HOMEBREW_COLOR=true brew info {}' \
 	           --bind 'alt-enter:execute(brew home {})+abort' \
-	           --preview-window=right:65% \
+	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
 	brew uninstall --zap "$SELECTED"
@@ -72,28 +99,11 @@ function bi (){
 	fi
 
 	brew install "$TO_INSTALL" $TYPE # quotes would add empty 2nd arg if empty
-	BREW_INFO=$(brew info "$TO_INSTALL")
 
-	# emphasize caveats
-	if [[ "$BREW_INFO" =~ "Caveats" ]] ; then
-		echo '\033[1;33m⚠️ Caveats'
-		osascript -e "beep"
-	fi
-
-	# if not cask, stop
-	[[ "$BREW_INFO" =~ "cask" ]] || return 0
-
-	# shellcheck disable=SC2012
-	local NEWEST_APP="$(ls -tc /Applications | head -n1)"
-	echo "Open \"$NEWEST_APP\"? (y/n)" # offer to open
-
-	# stop when decision not yes
-	read -r -k 1 DECISION
-	[[ "$DECISION:l" != "y" ]] && return 0 # ":l" = lowercase https://scriptingosx.com/2019/12/upper-or-lower-casing-strings-in-bash-and-zsh/
-
-	open -a "$NEWEST_APP"
+	post-install "$TO_INSTALL"
 }
 
+# helper function for `update` and `report`
 function print-section () {
 	echo ""
 	echo "$*"
@@ -109,7 +119,7 @@ function dump () {
 }
 
 function update (){
-	print-section "Homebrew"
+	print-section "HOMEBREW"
 	brew update
 	brew upgrade
 	echo "Cleanup"
@@ -117,43 +127,43 @@ function update (){
 	echo "Autoremove"
 	brew autoremove # remove unneeded dependencies (brew leaves --installed-as-dependency)
 
-	print-section "Mac App Store"
+	print-section "MAC APP STORE"
 	mas upgrade
 
 	print-section "NPM"
 	npm update -g
 
-	print-section "Pip3"
+	print-section "PIP3"
 	pip3 install --upgrade pdfannots
 
-	print-section "Dump Installs"
+	print-section "DUMP INSTALLS"
 	dump
 
 	osascript -e 'display notification "" with title "Updates finished."	'
 }
 
 function report (){
-	print-section "Homebrew"
+	print-section "HOMEBREW"
 	echo "Taps"
 	brew tap
 	echo "Doctor"
 	brew doctor
-	echo "Leaves (installed on request)"
+	echo "Formula/Leaves (installed on request)"
 	brew leaves --installed-on-request
-	echo "Leaves (installed as dependency)"
+	echo "Formula/Leaves (installed as dependency)"
 	brew leaves --installed-as-dependency
 	echo "Casks"
 	brew list --casks
 
-	print-section "Mac App Store"
+	print-section "MAC APP STORE"
 	mas list
 
 	print-section "NPM"
 	npm list -g
 
-	print-section "Pip3"
+	print-section "PIP3"
 	pip3 list
 
-	print-section "Dump Installs"
+	print-section "DUMP INSTALLS"
 	dump
 }

@@ -294,6 +294,7 @@ fi</string>
 					<string>public.folder</string>
 					<string>public.plain-text</string>
 					<string>public.shell-script</string>
+					<string>public.unix-executable</string>
 				</array>
 				<key>name</key>
 				<string>Open with Sublime Text</string>
