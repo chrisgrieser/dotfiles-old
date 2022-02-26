@@ -136,6 +136,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C198F176-3358-4EDA-B05D-EF9BC52EDA31</key>
+		<array/>
 		<key>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</key>
 		<array>
 			<dict>
@@ -314,29 +316,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>github-download-file_[Browser].sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -366,6 +345,29 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>8E8A1F51-781C-4593-A5B9-6D1801F945B2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>github-download-file_[Browser].sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>

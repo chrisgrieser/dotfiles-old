@@ -25,7 +25,6 @@ mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 
 # Symlink Dotfiles
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
-cd ~ || exit
 mv ~/.zshrc ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zshrc .
 mv ~/.zprofile ~/.Trash
@@ -33,14 +32,14 @@ ln -s "$SYMLINK_LOC"/zsh/.zprofile .
 # mv -f ~/.fig/settings.json ~/.Trash
 # ln -s "$SYMLINK_LOC"/fig-settings.json ~/.fig/settings.json
 
-ln -s "$SYMLINK_LOC"/.searchlink .
-ln -s "$SYMLINK_LOC"/.shellcheckrc .
-ln -s "$SYMLINK_LOC"/.markdownlintrc .
-ln -s "$SYMLINK_LOC"/.stylelintrc.json .
-ln -s "$SYMLINK_LOC"/.gitconfig .
-ln -s "$SYMLINK_LOC"/.eslintrc .
-ln -s "$SYMLINK_LOC"/.finicky.js .
-ln -s "$SYMLINK_LOC"/.gitignore_global .
+ln -s "$SYMLINK_LOC"/.searchlink ~
+ln -s "$SYMLINK_LOC"/.shellcheckrc ~
+ln -s "$SYMLINK_LOC"/.markdownlintrc ~
+ln -s "$SYMLINK_LOC"/.stylelintrc.json ~
+ln -s "$SYMLINK_LOC"/.gitconfig ~
+ln -s "$SYMLINK_LOC"/.eslintrc ~
+ln -s "$SYMLINK_LOC"/.finicky.js ~
+ln -s "$SYMLINK_LOC"/.gitignore_global ~
 
 # mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
 # ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
@@ -51,20 +50,22 @@ ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.local
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC"/.config/ ~/.config
 
-mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
-ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
-
 mv ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
 
 mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
 ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
 
-mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
-ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
+
+# Sublime
+mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
+ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
 
 mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
-ln -s "$SYMLINK_LOC/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package"
+ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
+
+mv ~"/Library/Application Support/Sublime Text/Packages/copy-file-name" ~/.Trash
+ln -s "$SYMLINK_LOC/Sublime Packages/copy-file-name" ~"/Library/Application Support/Sublime Text/Packages"
 
 # --------------
 

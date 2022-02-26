@@ -9,10 +9,11 @@ finderPath=$(osascript -e 'tell application "Finder"
 	end if
 end tell
 return (POSIX path of pathToOpen)')
-cd "$finderPath"
+cd "$finderPath" || return
 
 # go to to git root https://stackoverflow.com/a/38843585
+# shellcheck disable=SC2164
 r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"
 
 # open at GitHub
-open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//')
+open "$(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//')"
