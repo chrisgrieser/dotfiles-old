@@ -12,8 +12,8 @@
 	"auto_complete_use_history": false,
 
 	//Markdown Editing
-	"mde.italic_marker_asterisk": true, //use * for italics
-	"mde.bold_marker_asterisk": false, // use __ for bold
+	"mde.italic_marker_asterisk": true, // * for italics
+	"mde.bold_marker_asterisk": false, //  __ for bold
 	"mde.list_indent_auto_switch_bullet": false,
 	"mde.list_align_text": false,
 

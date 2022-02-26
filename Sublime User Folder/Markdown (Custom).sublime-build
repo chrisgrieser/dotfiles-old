@@ -6,9 +6,5 @@
 			"name": "Lint Autofix",
 			"cmd": ["markdownlint", "--fix", "$file"]
 		},
-		{
-			"name": "TableFlip",
-			"cmd": ["open", "-a", "Tableflip", "$file"]
-		},
 	]
 }

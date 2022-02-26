@@ -37,8 +37,6 @@
 	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
 	// Color Picker (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+c"], "command": "build", "args": {"variant": "Color Picker"}},
-	// TableFlip (using Build System)
-	{ "keys": ["ctrl+t"], "command": "build", "args": {"variant": "TableFlip"}},
 
 	// Build System: Shell, no Selection
 	{ "keys": ["super+r"], "command": "build", "context": [
