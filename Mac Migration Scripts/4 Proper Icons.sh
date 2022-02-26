@@ -48,8 +48,8 @@ unalias cp # no confirmation needed for this
 
 cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/YouTube.app/Contents/Resources/app.icns"
 touch "$VIDEO_FOLDER/YouTube.app"
-iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/BunnyFap.app"
 iconsur set "$VIDEO_FOLDER/Tagesschau.app"
+iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/BunnyFap.app"
 iconsur set "$VIDEO_FOLDER/Netflix.app"
 iconsur set "$VIDEO_FOLDER/Twitch.app"
 iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
