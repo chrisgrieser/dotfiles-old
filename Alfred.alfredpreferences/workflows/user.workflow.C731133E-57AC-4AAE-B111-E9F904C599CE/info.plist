@@ -448,7 +448,7 @@ brew home "$*"</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>un {query}</string>
+				<string>bu {query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>

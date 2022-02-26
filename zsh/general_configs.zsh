@@ -13,9 +13,6 @@ export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
-export YSU_MESSAGE_POSITION="after"
-export YSU_MODE=ALL
-
 # for fzf-tab
 # shellcheck disable=SC2016
 zstyle ':completion:*:descriptions' format '[%d]'

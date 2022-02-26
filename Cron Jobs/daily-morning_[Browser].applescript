@@ -22,6 +22,5 @@ if isDarkMode then tell application id "com.runningwithcrayons.Alfred" to run tr
 # Scroll up with Twitterific
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
 delay 1
-# ensure Bartender is running
 tell application id "com.surteesstudios.Bartender" to launch
 

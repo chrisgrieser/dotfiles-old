@@ -50,10 +50,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 # cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
 # cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
 
-
 # MOVE SCANS INTO FILEHUB
 # -----------------------
 cd ~"/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents" || exit
 if [[ ! -z "$(ls .)" ]] ; then
 	mv ./* ../../com~apple~CloudDocs/File\ Hub
 fi
+
+# Restart Bartender
+# -----------------------
+tell application id "com.surteesstudios.Bartender" to launch
