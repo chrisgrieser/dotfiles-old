@@ -9,16 +9,16 @@
 
 # prompt in general
 add_newline = false
-continuation_prompt = "↪"
+continuation_prompt = "❯"
 format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:234)$cmd_duration$status$character"
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
-success_symbol = " [](bold green)"
+success_symbol = " [ﰉ](bold green)"
 error_symbol = " [](bold red)"
-# ﰉ
+
 [cmd_duration]
-min_time = 3000
+min_time = 2500
 format = " [ $duration](bold yellow)"
 
 [directory]

@@ -492,7 +492,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>435</integer>
+			<integer>420</integer>
 		</dict>
 		<key>39A74B4A-BAFE-46CF-B1D6-FBEB89F75E62</key>
 		<dict>
@@ -595,7 +595,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>435</integer>
+			<integer>420</integer>
 		</dict>
 		<key>EEA22D95-8B8B-4F4C-B088-A0F77C264BD3</key>
 		<dict>
