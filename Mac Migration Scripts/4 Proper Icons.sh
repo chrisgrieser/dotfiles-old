@@ -33,16 +33,22 @@ killall Finder
 # (icon update workflow)
 # ---------------------
 
-# Video Apps
-ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
-cp "$ICON_FOLDER"'YouTube.icns' ~'/Video/YouTube.app/Contents/Resources/applet.icns'
+# Progressive Web Apps
+ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
+VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Chrome Apps.localized/"
 
-iconsur --input "$ICON_FOLDER"'BunnyFap.png' --scale 1.1 set ~'/Video/BunnyFap.app'
-iconsur set ~'/Video/Tagesschau.app'
-iconsur set ~'/Video/Netflix.app'
-iconsur set ~'/Video/Twitch.app'
+cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/YouTube.app/Contents/Resources/applet.icns"
+touch "$VIDEO_FOLDER/YouTube.app/Contents/Resources/applet.icns"
+iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/BunnyFap.app"
+iconsur set "$VIDEO_FOLDER/Tagesschau.app"
+iconsur set "$VIDEO_FOLDER/Netflix.app"
+iconsur set "$VIDEO_FOLDER/Twitch.app"
+iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
+# iconsur -l set "$VIDEO_FOLDER/Excalidraw.app"
+
 killall Finder
 killall Dock
+
 
 sudo -v
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
@@ -60,7 +66,6 @@ sudo touch '/Applications/Microsoft Word.app'
 cp "$ICON_FOLDER"'AppCleaner.icns' '/Applications/AppCleaner.app/Contents/Resources/AppCleaner.icns'
 touch '/Applications/AppCleaner.app'
 
-
 # Drafts
 osascript -e 'tell application "Finder" to open information window of ("/Applications/Drafts.app" as POSIX file as alias)
 tell application "Finder" to activate
@@ -73,7 +78,5 @@ set the clipboard to POSIX file "'"$ICON_FOLDER"'/Mail_fancy.icns"'
 
 iconsur -l set "/Applications/The Unarchiver.app"
 iconsur -l set "/Applications/Subtitles.app"
-iconsur -k "Unread" set "/Applications/Inoreader.app"
-iconsur -l set "/Applications/Excalidraw.app"
 
 iconsur cache

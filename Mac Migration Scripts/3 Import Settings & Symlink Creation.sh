@@ -60,6 +60,11 @@ ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
 mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
 ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
 
+mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
+ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
+
+mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
+ln -s "$SYMLINK_LOC/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package"
 
 # --------------
 
