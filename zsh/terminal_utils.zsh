@@ -3,6 +3,7 @@
 function del () {
 	if [[ $# == 0 ]]; then
 		IFS=$'\n'
+		# shellcheck disable=SC2207
 		ALL_FILES=($(find . -not -name ".*"))
 		unset IFS
 	else

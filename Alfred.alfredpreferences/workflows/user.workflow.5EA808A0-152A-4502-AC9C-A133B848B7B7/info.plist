@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8E8A1F51-781C-4593-A5B9-6D1801F945B2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A1E4A762-E5EF-4469-A950-75E55BC5B206</key>
 		<array>
 			<dict>
@@ -297,6 +310,64 @@
 			<string>6C697292-73F5-4CC5-BED7-670A56A4E257</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>github-download-file_[Browser].sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>5</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>G</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.vivaldi.Vivaldi</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8E8A1F51-781C-4593-A5B9-6D1801F945B2</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -639,6 +710,17 @@ echo | git pull</string>
 			<key>ypos</key>
 			<integer>650</integer>
 		</dict>
+		<key>8E8A1F51-781C-4593-A5B9-6D1801F945B2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>download github file</string>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>92246A7B-E550-40D1-9840-C2CB0F213DE3</key>
 		<dict>
 			<key>colorindex</key>
@@ -698,6 +780,15 @@ echo | git pull</string>
 			<integer>275</integer>
 			<key>ypos</key>
 			<integer>780</integer>
+		</dict>
+		<key>C198F176-3358-4EDA-B05D-EF9BC52EDA31</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>180</integer>
 		</dict>
 		<key>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</key>
 		<dict>
