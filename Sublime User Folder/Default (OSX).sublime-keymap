@@ -153,6 +153,7 @@
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
+	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Plugin
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
