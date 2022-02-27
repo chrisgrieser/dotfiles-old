@@ -8,8 +8,8 @@
 	"themed_title_bar": true, // adaptive theme only
 
 	// Font & Spacing
-	"ui_scale": 1.5,
-	"font_size": 15,
+	"ui_scale": 1.6,
+	"font_size": 14,
 	"font_face": "Input",
 	"font_options": ["no_round"],
 

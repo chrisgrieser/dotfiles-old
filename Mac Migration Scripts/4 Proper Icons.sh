@@ -30,7 +30,7 @@ touch '/Applications/Obsidian.app'
 cp "$ICON_FOLDER"'Alacritty.icns' '/Applications/Alacritty.app/Contents/Resources/alacritty.icns'
 touch '/Applications/Alacritty.app'
 # Vivaldi
-cp "$ICON_FOLDER"'Vivaldi_Black.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
+cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
 touch '/Applications/Vivaldi.app'
 # Sublime
 cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
