@@ -18,6 +18,12 @@ function del () {
 	done
 }
 
+# Make directory and cd there
+function mkcd () {
+	mkdir -p "$1"
+	cd "$1" || return
+}
+
 # Terminal Switch
 function sw () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
