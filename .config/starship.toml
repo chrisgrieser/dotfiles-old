@@ -27,7 +27,7 @@ truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
 read_only_style = "red bg:234"
-style = "fg:44 bg:234 bold" # terminus different
+style = "fg:cyan bg:234 bold" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -71,7 +71,7 @@ style = "fg:yellow bg:234"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:105 bg:234 bold" # terminus different
+style = "fg:bright-purple bg:234 bold" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files

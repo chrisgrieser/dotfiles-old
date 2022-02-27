@@ -14,7 +14,7 @@ format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
-success_symbol = " [ﰉ ](bold green)"  # terminus needs extra space
+success_symbol = " [ﰉ ](bold green)" # terminus needs extra space
 error_symbol = " [ ](bold red)" # terminus needs extra space
 
 [cmd_duration]
@@ -27,7 +27,7 @@ truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
 read_only_style = "red bg:234"
-style = "fg:44 bg:234" # terminus different
+style = "fg:cyan bg:234" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -38,6 +38,7 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
 "user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
+
 [custom.file_number]
 command = "ls | wc -l"
 when = "exit 0" # run always
@@ -70,7 +71,7 @@ style = "fg:yellow bg:234"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:105 bg:234" # terminus different
+style = "fg:bright-purple bg:234" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files

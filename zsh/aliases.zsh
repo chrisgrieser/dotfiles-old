@@ -16,7 +16,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias wd='cd "$WD"' # working directory
-alias ac='alacritty-colorscheme'
 
 # utils
 alias notify="osascript -e 'display notification \"\" with title \"Terminal Process finished.\" subtitle \"\" sound name \"\"'"
