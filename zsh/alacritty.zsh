@@ -1,5 +1,3 @@
-
-
 # switch to next Alacritty color scheme
 function next () {
 	local COLOR_DIR=~/.config/alacritty/colors

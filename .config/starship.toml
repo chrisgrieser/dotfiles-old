@@ -10,7 +10,7 @@
 # prompt in general
 add_newline = false
 continuation_prompt = "❯"
-format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:bright-black)$cmd_duration$status$character"
+format = "[$directory${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:black)$cmd_duration$status$character"
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -26,8 +26,8 @@ truncation_length = 3
 truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
-read_only_style = "red bg:bright-black"
-style = "fg:bright-cyan bg:bright-black bold" # terminus different
+read_only_style = "red bg:black"
+style = "fg:bright-cyan bg:black bold" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -44,7 +44,7 @@ command = "ls | wc -l"
 when = "exit 0" # run always
 symbol = " "
 format = '[$symbol$output]($style) '
-style = "fg:yellow bg:bright-black bold" # terminus different
+style = "fg:yellow bg:black bold" # terminus different
 
 [status]
 format = " [$symbol$status]($style)"
@@ -62,38 +62,38 @@ symbol = " "
 # -------------
 
 [git_state] # mostly conflicts
-style = 'fg:blue bg:bright-black'
+style = 'fg:blue bg:black'
 
 [git_commit]
-style = "fg:yellow bg:bright-black"
+style = "fg:yellow bg:black"
 
 # branch
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:bright-purple bg:bright-black bold" # terminus different
+style = "fg:bright-purple bg:black bold" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files
 [git_status]
-untracked = '[+$count ](fg:green bg:bright-black)'
-deleted = '[-$count ](fg:red bg:bright-black)'
-modified = '[*$count ](fg:yellow bg:bright-black)'
-renamed = '[✎$count ](fg:208 bg:bright-black)'
-staged = '[◎$count ](fg:73 bg:bright-black)'
-conflicted = '[⤱$count ](fg:red bg:bright-black)'
-diverged = '[⇈$count ](fg:73 bg:bright-black)'
-ahead = '[⇡$count ](fg:73 bg:bright-black)'
-behind = '[⇣$count ](fg:yellow bg:bright-black)'
-style = 'fg:purple bg:bright-black bold' # terminus different
+untracked = '[+$count ](fg:green bg:black)'
+deleted = '[-$count ](fg:red bg:black)'
+modified = '[*$count ](fg:yellow bg:black)'
+renamed = '[✎$count ](fg:208 bg:black)'
+staged = '[◎$count ](fg:cyan bg:black)'
+conflicted = '[⤱$count ](fg:red bg:black)'
+diverged = '[⇈$count ](fg:cyan bg:black)'
+ahead = '[⇡$count ](fg:cyan bg:black)'
+behind = '[⇣$count ](fg:yellow bg:black)'
+style = 'fg:purple bg:black bold' # terminus different
 format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted]($style)'
 
 # lines
 [git_metrics]
 disabled = false
-added_style = "fg:green bg:bright-black"
-deleted_style = "fg:red bg:bright-black"
-format = '([\(](dimmed bg:bright-black)[+$added]($added_style)[/](dimmed bg:bright-black)[-$deleted]($deleted_style)[\)](dimmed bg:bright-black))'
+added_style = "fg:green bg:black"
+deleted_style = "fg:red bg:black"
+format = '([\(](dimmed bg:black)[+$added]($added_style)[/](dimmed bg:black)[-$deleted]($deleted_style)[\)](dimmed bg:black))'
 
 # -------------
 # right side
@@ -120,7 +120,7 @@ style = "dimmed 208"
 [nodejs]
 format = " [$symbol$version]($style)"
 version_format = "$major"
-style = "dimmed 73"
+style = "dimmed cyan"
 detect_extensions = ["ts"]
 
 [python]

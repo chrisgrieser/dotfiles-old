@@ -2,10 +2,9 @@
 # --------------------------------------------------------------------------
 # color schemes: https://github.com/eendroroy/alacritty-theme#color-schemes
 # https://github.com/alacritty/alacritty/wiki/Color-schemes
+# hex colors with preceding '0x'
 # --------------------------------------------------------------------------
 
-# hex colors with preceding '0x'
-# Colors (Snazzy)
 colors:
   # COLORSCHEME: tokyo-night.yaml
   # Default colors
@@ -49,6 +48,8 @@ colors:
     magenta: '0x6e4962'
     cyan: '0x5c8482'
     white: '0x828282'
+
+# ----------------
 font:
   normal:
     family: JetBrainsMono Nerd Font
