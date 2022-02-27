@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6C697292-73F5-4CC5-BED7-670A56A4E257</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>248B3070-6285-4B66-A125-D8A312E9FE61</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>85DD8E18-3F44-4938-8453-979F65ABBF75</key>
 		<array>
 			<dict>
@@ -272,46 +259,6 @@
 			<string>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/notifications</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>248B3070-6285-4B66-A125-D8A312E9FE61</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>gg</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>GitHub Notifications</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6C697292-73F5-4CC5-BED7-670A56A4E257</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -673,24 +620,6 @@ echo | git pull</string>
 			<integer>435</integer>
 			<key>ypos</key>
 			<integer>1040</integer>
-		</dict>
-		<key>248B3070-6285-4B66-A125-D8A312E9FE61</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>275</integer>
-			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
-		<key>6C697292-73F5-4CC5-BED7-670A56A4E257</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>150</integer>
 		</dict>
 		<key>85DD8E18-3F44-4938-8453-979F65ABBF75</key>
 		<dict>

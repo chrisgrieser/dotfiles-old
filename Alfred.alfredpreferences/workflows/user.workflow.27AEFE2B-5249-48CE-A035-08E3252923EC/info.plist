@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>37F90DA4-392F-43A8-B4EB-FA47F72070E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB595107-F0CB-4963-AFAE-941D4C330B1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<array>
 			<dict>
@@ -73,13 +86,104 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4D6AD170-BA7D-4853-8715-687AB886EF68</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>777C0EEE-E209-4EFE-AE94-582D282E47FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>58FFA04D-4D8D-4582-9655-C169A1605A3F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB595107-F0CB-4963-AFAE-941D4C330B1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<array/>
+		<key>777C0EEE-E209-4EFE-AE94-582D282E47FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB595107-F0CB-4963-AFAE-941D4C330B1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>79CC9945-B850-48DD-8A0E-8BD0FAC958AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92FF2724-970C-4210-8635-9D60D4AC7627</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>92FF2724-970C-4210-8635-9D60D4AC7627</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB595107-F0CB-4963-AFAE-941D4C330B1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9C093FF1-7C25-4EE2-8F23-1A961A38898E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>37F90DA4-392F-43A8-B4EB-FA47F72070E4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A1B4EA46-C82B-429C-A306-FCF75EC28051</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>58FFA04D-4D8D-4582-9655-C169A1605A3F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -135,7 +239,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Browser Tweaks – Vivaldi – Brave</string>
+	<string>Browser Tweaks – Vivaldi</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -188,6 +292,65 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
+				<string>tg</string>
+				<key>subtext</key>
+				<string>Web Panel</string>
+				<key>text</key>
+				<string>Telegram</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4D6AD170-BA7D-4853-8715-687AB886EF68</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>2</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>777C0EEE-E209-4EFE-AE94-582D282E47FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>wa</string>
+				<key>subtext</key>
+				<string>Web Panel</string>
+				<key>text</key>
+				<string>WhatsApp</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9C093FF1-7C25-4EE2-8F23-1A961A38898E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
 				<string>sw</string>
 				<key>subtext</key>
 				<string></string>
@@ -229,19 +392,61 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string>net.kassett.finicky</string>
-				<key>spaces</key>
+				<key>argument</key>
+				<string>3</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>37F90DA4-392F-43A8-B4EB-FA47F72070E4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
-				<key>url</key>
-				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html</string>
-				<key>utf8</key>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-as-web-panel_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EB595107-F0CB-4963-AFAE-941D4C330B1A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>fm</string>
+				<key>subtext</key>
+				<string>Web Panel</string>
+				<key>text</key>
+				<string>Facebook Messenger</string>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+			<string>A1B4EA46-C82B-429C-A306-FCF75EC28051</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -284,6 +489,122 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string>net.kassett.finicky</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>4</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>58FFA04D-4D8D-4582-9655-C169A1605A3F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>gg</string>
+				<key>subtext</key>
+				<string>Web Panel</string>
+				<key>text</key>
+				<string>GitHub Notifications</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>79CC9945-B850-48DD-8A0E-8BD0FAC958AD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>5</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>92FF2724-970C-4210-8635-9D60D4AC7627</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>🔄 Sync complete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>sync</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔄 Manual Sync Bookmarks</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0264536B-A11A-4026-8781-77B94F916844</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -309,42 +630,21 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>sync</string>
-				<key>subtext</key>
-				<string>{var:chromium_browser} to Chrome</string>
-				<key>text</key>
-				<string>🔄 Sync Bookmarks</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0264536B-A11A-4026-8781-77B94F916844</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<false/>
+				<true/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string></string>
+				<string>{query} URLs</string>
 				<key>title</key>
-				<string>🔄 Sync complete</string>
+				<string>✅ URLs copied</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
+			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -389,27 +689,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query} URLs</string>
-				<key>title</key>
-				<string>✅ URLs copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -509,6 +788,15 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
+		<key>37F90DA4-392F-43A8-B4EB-FA47F72070E4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</key>
 		<dict>
 			<key>colorindex</key>
@@ -536,6 +824,24 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>575</integer>
 		</dict>
+		<key>4D6AD170-BA7D-4853-8715-687AB886EF68</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>58FFA04D-4D8D-4582-9655-C169A1605A3F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
 			<key>colorindex</key>
@@ -544,6 +850,24 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>205</integer>
 			<key>ypos</key>
 			<integer>160</integer>
+		</dict>
+		<key>777C0EEE-E209-4EFE-AE94-582D282E47FE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>55</integer>
+		</dict>
+		<key>79CC9945-B850-48DD-8A0E-8BD0FAC958AD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>405</integer>
 		</dict>
 		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
 		<dict>
@@ -555,6 +879,33 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>285</integer>
+		</dict>
+		<key>92FF2724-970C-4210-8635-9D60D4AC7627</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>435</integer>
+		</dict>
+		<key>9C093FF1-7C25-4EE2-8F23-1A961A38898E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>A1B4EA46-C82B-429C-A306-FCF75EC28051</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>280</integer>
 		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>
@@ -595,6 +946,15 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>EB595107-F0CB-4963-AFAE-941D4C330B1A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>960</integer>
+			<key>ypos</key>
+			<integer>205</integer>
 		</dict>
 	</dict>
 	<key>version</key>
