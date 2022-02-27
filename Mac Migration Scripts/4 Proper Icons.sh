@@ -1,6 +1,7 @@
 #!/bin/zsh
 # shellcheck disable=SC2033
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+unalias cp # no confirmation needed for this
 
 # ---------------------
 # Regular Updating
@@ -10,7 +11,6 @@ iconsur set "/Applications/zoom.us.app"
 iconsur set "/Applications/PDF Expert.app"
 
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
-unalias cp # no confirmation needed for this
 # Alfred Prefs
 cp "$ICON_FOLDER"'Alfred Prefs.icns' '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
 touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
@@ -37,7 +37,6 @@ cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Conte
 touch '/Applications/Sublime Text.app'
 
 killall Finder
-alias cp='cp -i' # restore
 
 #######################
 # stopstring-for-alfred
