@@ -10,10 +10,6 @@ module.exports = {
 			match: ({ url }) => url.host.endsWith("wikipedia.org"),
 			url: ( { urlString } ) => urlString.replace (/https?:\/\/(\w+)\.wikipedia\.org\/wiki\/(.*)/, "https://www.wikiwand.com/$1/$2"),
 		},
-		{
-			match: ({ url }) => url.host.endsWith("github-wiki-see.page"),
-			url: ( { urlString } ) => urlString.replace (/(.*?)-wiki-see.page\/m(.*)/, "$1.com$2"),
-		},
 	],
 
 	handlers: [
