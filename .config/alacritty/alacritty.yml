@@ -7,43 +7,37 @@
 # hex colors with preceding '0x'
 # Colors (Snazzy)
 colors:
-  # COLORSCHEME: afterglow.yaml
+  # COLORSCHEME: tokyo-night.yaml
   # Default colors
   primary:
-    background: '0x2c2c2c'
-    foreground: '0xd6d6d6'
+    # hard contrast: background = '0x1d2021'
+    background: '0x1a1b26'
+    foreground: '0xa9b1d6'
 
-    dim_foreground: '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background: '0x202020'    # not sure
-    bright_background: '0x3a3a3a' # not sure
-
-  # Cursor colors
+  # Normal colors
   normal:
-    black: '0x1c1c1c'
-    red: '0xbc5653'
-    green: '0x909d63'
-    yellow: '0xebc17a'
-    blue: '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan: '0x86d3ce'
-    white: '0xcacaca'
+    black: '0x32344a'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan: '0x449dab'
+    white: '0x787c99'
 
   # Bright colors
   bright:
-    black: '0x636363'
-    red: '0xbc5653'
-    green: '0x909d63'
-    yellow: '0xebc17a'
-    blue: '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan: '0x86d3ce'
-    white: '0xf7f7f7'
-
-  # Dim colors
+    black: '0x444b6a'
+    red: '0xff7a93'
+    green: '0xb9f27c'
+    yellow: '0xff9e64'
+    blue: '0x7da6ff'
+    magenta: '0xbb9af7'
+    cyan: '0x0db9d7'
+    white: '0xacb0d0'
   cursor:
-    text: '0x2c2c2c'
-    cursor: '0xd9d9d9'
+    text: '0x1f2022'
+    cursor: '0xa3a3a3'
 
   # Normal colors
   dim:

@@ -9,10 +9,8 @@ function o (){
 		           --query "$INPUT" \
 		           --preview "bat --color=always --style=snip --wrap=character --tabs=3 --line-range=:100 --terminal-width=50 {}" \
 		           )
-		if [[ $SELECTED == "" ]] ; then
-			echo "Canceled."
-			return
-		fi
+		[[ "$SELECTED" == "" ]] && return 130
+
 		open "$SELECTED"
 	fi
 }
@@ -34,10 +32,8 @@ function c (){
 		           --layout=reverse \
 		           --info=inline
 		           )
-		if [[ $SELECTED == "" ]] ; then
-			echo "Canceled."
-			return
-		fi
+		[[ "$SELECTED" == "" ]] && return 130
+
 		cd "$C_TO_SEARCH""$SELECTED" || return
 	fi
 	exa
@@ -51,10 +47,8 @@ function r (){
 	           sed "s/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /" | \
 	           fzf --query "$*" \
 	          )
-	if [[ $SELECTED == "" ]] ; then
-		echo "Canceled."
-		return
-	fi
+	[[ "$SELECTED" == "" ]] && return 130
+
 	SELECTED="${SELECTED/#\~/$HOME}"
 	SELECTED="${SELECTED/ /Library/Mobile Documents/com~apple~CloudDocs}"
 	SELECTED="${SELECTED/ /Library/Mobile Documents/iCloud~md~obsidian/Documents}"

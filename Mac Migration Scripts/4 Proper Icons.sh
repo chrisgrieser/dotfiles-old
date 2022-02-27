@@ -32,8 +32,12 @@ touch '/Applications/Alacritty.app'
 # Vivaldi
 cp "$ICON_FOLDER"'Vivaldi_Black.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
 touch '/Applications/Vivaldi.app'
+# Sublime
+cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
+touch '/Applications/Sublime Text.app'
 
 killall Finder
+alias cp='cp -i' # restore
 
 #######################
 # stopstring-for-alfred
@@ -56,11 +60,14 @@ iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
 # iconsur -l set "$VIDEO_FOLDER/Excalidraw.app"
 
 iconsur cache
+alias cp='cp -i' # restore
+
 
 # ----------------------
 # Other
 # --------------------
 sudo -v
+unalias cp # no confirmation needed for this
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
 
 # Excel
