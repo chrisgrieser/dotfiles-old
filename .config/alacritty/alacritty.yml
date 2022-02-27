@@ -49,7 +49,9 @@ colors:
     cyan: '0x5c8482'
     white: '0x828282'
 
+
 # ----------------
+
 font:
   normal:
     family: JetBrainsMono Nerd Font
