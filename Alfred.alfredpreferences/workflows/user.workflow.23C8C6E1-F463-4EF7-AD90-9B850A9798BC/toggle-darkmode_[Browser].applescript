@@ -1,14 +1,14 @@
 #!/usr/bin/env osascript
 
 -- Workaround for Dark Reader not toggling when inactive
-tell application "Chromium"
+tell application "Vivaldi"
 	set currentTabUrl to URL of active tab of front window
 	set currentTabTitle to title of active tab of front window
 end tell
 
 # open tab if there is no tab open to ensure Dark Reader switches as well
 set BrowserWasntRunning to false
-tell application "Chromium"
+tell application "Vivaldi"
 		set tabcount to 0
 		set currentTabUrl to ""
 		try
@@ -35,5 +35,5 @@ end tell
 # close tab again
 if (BrowserWasntRunning)
 	delay 0.2
-	tell application "Chromium" to close active tab of front window
+	tell application "Vivaldi" to close active tab of front window
 end if

@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 --load
-tell application "Chromium"
+tell application "Vivaldi"
 	open location "https://muellmail.com/"
 	delay 0.2
 	repeat until (loading of active tab of front window is false)
@@ -10,7 +10,7 @@ tell application "Chromium"
 end tell
 
 --check whether homepage or old mail
-tell application "Chromium" to set currentTab to URL of active tab of front window
+tell application "Vivaldi" to set currentTab to URL of active tab of front window
 
 --goes to homepage, if needed
 if currentTab contains ("@") then
@@ -30,11 +30,11 @@ end tell
 
 --copy mail adress
 delay 1
-tell application "Chromium" to set mailTab to URL of active tab of front window
+tell application "Vivaldi" to set mailTab to URL of active tab of front window
 
 --go back
 tell application "System Events"
-	tell process "Chromium"
+	tell process "Vivaldi"
 		set frontmost to true
 		click menu item "Select Next Tab" of menu "Tab" of menu bar 1
 	end tell

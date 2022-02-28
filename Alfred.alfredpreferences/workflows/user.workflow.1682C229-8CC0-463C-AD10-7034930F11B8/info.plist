@@ -37,6 +37,32 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	set frontApp to (name of first process where it is frontmost)
+	tell process frontApp to click menu item (system attribute "bookmarklet_name") of menu "Bookmarks" of menu bar 1
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>run-bookmarklet.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9691157E-5342-4816-82E9-C8F7EF7CBDE7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -57,9 +83,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -68,32 +94,6 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>57EDF917-073A-4909-B9C8-FC6A2E92633D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	set frontApp to (name of first process where it is frontmost)
-	tell process frontApp to click menu item (system attribute "bookmarklet_name") of menu "Bookmarks" of menu bar 1
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>run-bookmarklet_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9691157E-5342-4816-82E9-C8F7EF7CBDE7</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>

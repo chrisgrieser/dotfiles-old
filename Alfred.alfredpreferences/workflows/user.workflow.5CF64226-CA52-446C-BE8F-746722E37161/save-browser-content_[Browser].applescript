@@ -1,5 +1,5 @@
 #!/usr/bin/env osascript
-tell application "Chromium"
+tell application "Vivaldi"
 		set currentTabUrl to URL of active tab of front window
 		set currentTabTitle to title of active tab of front window
 end tell

@@ -2,7 +2,7 @@
 
 # sleep timer
 tell application "--YouTube" to if it is running then quit
-tell application "Chromium"
+tell application "Vivaldi"
 	if ((count of window) is not 0)
 		if ((count of tab of front window) is not 0)
 			set currentTabUrl to URL of active tab of front window

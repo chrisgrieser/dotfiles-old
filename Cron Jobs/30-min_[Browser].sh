@@ -43,7 +43,7 @@ mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
 
 # history used by Searchlink / some plugins,
 # local state needed by Alfred to confirm Chrome's existence
-BROWSER="Chromium"
+BROWSER="Vivaldi"
 
 cp ~"/Library/Application Support/$BROWSER/Default/Bookmarks" ~"/Library/Application Support/Google/Chrome/Default/Bookmarks"
 cp ~"/Library/Application Support/$BROWSER/Local State" ~"/Library/Application Support/Google/Chrome/Local State"
