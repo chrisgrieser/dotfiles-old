@@ -664,9 +664,10 @@ end if</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.brave.Browser</string>
-					<string>md.obsidian</string>
-					<string>com.mimestream.Mimestream</string>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.mimestream.Mimestream</string>
+					<string>md.obsidian</string>
+					<string>org.chromium.Chromium</string>
 					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
