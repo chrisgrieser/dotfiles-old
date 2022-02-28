@@ -35,8 +35,8 @@ colors:
     cyan: '0x0db9d7'
     white: '0xacb0d0'
   cursor:
-    text: '0x1f2022'
-    cursor: '0xa3a3a3'
+    text: '0x0e3c46'
+    cursor: '0xc7dbdd'
 
   # Normal colors
   dim:
@@ -52,6 +52,13 @@ colors:
 
 # ----------------
 
+  indexed_colors:
+    - {index: 16, color: '0xfcab74'}
+    - {index: 17, color: '0x9b647b'}
+    - {index: 18, color: '0x1d494e'}
+    - {index: 19, color: '0x2a5054'}
+    - {index: 20, color: '0x9dc8cd'}
+    - {index: 21, color: '0xcbf2f7'}
 font:
   normal:
     family: JetBrainsMono Nerd Font

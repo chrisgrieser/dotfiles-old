@@ -98,8 +98,7 @@
 	{ "keys": ["super+shift+alt+ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
 	{ "keys": ["super+shift+alt+ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
 	{ "keys": ["super+shift+alt+ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
-	{ "keys": ["super+4"], "command": "fold" },
-	{ "keys": ["super+4"], "command": "unfold" },
+	{ "keys": ["super+4"], "command": "fold_unfold" },
 
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
