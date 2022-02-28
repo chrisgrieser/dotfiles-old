@@ -35,7 +35,6 @@ touch '/Applications/Sublime Text.app'
 # Chromium
 cp "$ICON_FOLDER"'Chromium Alt.icns' '/Applications/Chromium.app/Contents/Resources/app.icns'
 touch '/Applications/Chromium.app'
-
 # Vivaldi
 # cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
 # touch '/Applications/Vivaldi.app'

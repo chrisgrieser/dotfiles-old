@@ -135,7 +135,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Browser Tweaks – Vivaldi</string>
+	<string>Browser Tweaks – Vivaldi / Chromium</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -268,9 +268,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>

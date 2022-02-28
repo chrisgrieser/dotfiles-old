@@ -1905,6 +1905,7 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
 					<string>com.readdle.PDFExpert-Mac</string>
+					<string>org.chromium.Chromium</string>
 					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>

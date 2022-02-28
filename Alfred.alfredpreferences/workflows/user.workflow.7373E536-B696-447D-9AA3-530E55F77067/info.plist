@@ -1041,11 +1041,12 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
-					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>

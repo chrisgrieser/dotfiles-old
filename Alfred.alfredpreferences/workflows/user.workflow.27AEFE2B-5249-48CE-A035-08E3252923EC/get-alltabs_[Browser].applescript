@@ -6,8 +6,7 @@
 set i to 0
 # "result" is a reserved keyword
 set _result to ""
-tell application (system attribute "chromium_browser")
-	using terms from application "Chromium"
+tell application "Chromium"
 		set window_list to every window
 		repeat with the_window in window_list
 			set tab_list to every tab in the_window
@@ -18,7 +17,6 @@ tell application (system attribute "chromium_browser")
 				set _result to _result & "- [" & the_title & "](" & the_url & ")\n"
 			end repeat
 		end repeat
-	end using terms from
 end tell
 
 set the clipboard to _result
