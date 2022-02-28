@@ -114,6 +114,7 @@
 	"ignored_packages": [
 		"CSS",
 		"Markdown",
+		"SublimeLinter",
 		"Vintage",
 	],
 
