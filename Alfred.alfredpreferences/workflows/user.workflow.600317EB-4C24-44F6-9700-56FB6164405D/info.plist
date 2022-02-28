@@ -427,7 +427,7 @@ end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>login-automation.applescript</string>
+				<string>login-automation_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
