@@ -18,7 +18,7 @@ success_symbol = " [ﰉ](bold bright-green)"
 error_symbol = " [](bold red)"
 
 [cmd_duration]
-min_time = 2500
+min_time = 2000
 format = " [ $duration](bold yellow)"
 
 [directory]
@@ -71,7 +71,7 @@ style = "fg:yellow bg:black"
 [git_branch]
 only_attached = true
 symbol = ""
-style = "fg:bright-purple bg:black bold" # terminus different
+style = "fg:purple bg:black bold" # terminus different
 format = "[$symbol$branch]($style) "
 
 # files
@@ -79,7 +79,7 @@ format = "[$symbol$branch]($style) "
 untracked = '[+$count ](fg:green bg:black)'
 deleted = '[-$count ](fg:red bg:black)'
 modified = '[*$count ](fg:yellow bg:black)'
-renamed = '[✎$count ](fg:208 bg:black)'
+renamed = '[✎$count ](fg:blue bg:black)'
 staged = '[◎$count ](fg:cyan bg:black)'
 conflicted = '[⤱$count ](fg:red bg:black)'
 diverged = '[⇈$count ](fg:cyan bg:black)'
@@ -131,4 +131,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[ Alfred](105) '
+format = '[ Alfred](purple) '

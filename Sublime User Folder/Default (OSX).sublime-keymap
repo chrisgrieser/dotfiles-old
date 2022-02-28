@@ -77,10 +77,13 @@
 	{ "keys": ["super+m"], "command": "join_lines" },
 	// Better Duplicate (Plugin)
 	{ "keys": ["super+shift+d"], "command": "duplicate_lines" },
-	// Smart Duplicate (Plugin)
-	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate"},
+	// Smart Duplicate (CSS) (Plugin)
+	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate", "context": [
+		{"key": "selector", "operator": "equal", "operand": "source.css"},
+	]},
 	// Kill Line
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+	// Split Line
 	{ "keys": ["super+shift+l"], "command": "split_line"},
 
 	// Multi Cursor down / up
@@ -95,6 +98,8 @@
 	{ "keys": ["super+shift+alt+ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
 	{ "keys": ["super+shift+alt+ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
 	{ "keys": ["super+shift+alt+ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
+	{ "keys": ["super+4"], "command": "fold" },
+	{ "keys": ["super+4"], "command": "unfold" },
 
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
