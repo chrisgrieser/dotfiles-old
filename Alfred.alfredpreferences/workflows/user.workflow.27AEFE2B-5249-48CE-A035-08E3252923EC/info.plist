@@ -229,6 +229,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string>net.kassett.finicky</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html#</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -249,9 +268,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -266,42 +285,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string>net.kassett.finicky</string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html#</string>
-				<key>utf8</key>
-				<true/>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
+cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
+cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>sync-bookmarks_[Browser].sh</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>🔄 Sync complete</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -327,46 +331,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<true/>
+				<false/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>{query} URLs</string>
+				<string></string>
 				<key>title</key>
-				<string>✅ URLs copied</string>
+				<string>🔄 Sync complete</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
+			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -411,6 +390,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query} URLs</string>
+				<key>title</key>
+				<string>✅ URLs copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>

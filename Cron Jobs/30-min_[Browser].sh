@@ -43,12 +43,12 @@ mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
 
 # history used by Searchlink / some plugins,
 # local state needed by Alfred to confirm Chrome's existence
-cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
-# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-# cp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'
+BROWSER="Vivaldi"
+
+cp ~"/Library/Application Support/$BROWSER/Default/Bookmarks" ~"/Library/Application Support/Google/Chrome/Default/Bookmarks"
+cp ~"/Library/Application Support/$BROWSER/Local State" ~"/Library/Application Support/Google/Chrome/Local State"
+cp ~"/Library/Application Support/$BROWSER/Default/History" ~"/Library/Application Support/Google/Chrome/Default/History"
+
 
 # MOVE SCANS INTO FILEHUB
 # -----------------------

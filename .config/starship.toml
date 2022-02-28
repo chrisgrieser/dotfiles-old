@@ -18,7 +18,7 @@ success_symbol = " [ﰉ](bold green)" # terminus needs extra space
 error_symbol = " [](bold red)" # terminus needs extra space
 
 [cmd_duration]
-min_time = 2000
+min_time = 2500
 format = " [ $duration](bold yellow)"
 
 [directory]
