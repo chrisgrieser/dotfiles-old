@@ -1,7 +1,7 @@
 #!/usr/bin/env osascript
 
-if application "Vivaldi" is running then
-	tell application "Vivaldi"
+if application "Chromium" is running then
+	tell application "Chromium"
 			set theURL to URL of active tab of front window
 			make new window with properties {mode:"incognito"}
 			delay 0.5

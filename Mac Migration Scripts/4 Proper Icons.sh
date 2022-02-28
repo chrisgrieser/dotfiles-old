@@ -50,8 +50,7 @@ killall Finder
 # Progressive Web Apps
 # ----------------------
 ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
-VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Chrome Apps.localized/"
-unalias cp # no confirmation needed for this
+VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Chromium Apps.localized/"
 
 cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/YouTube.app/Contents/Resources/app.icns"
 touch "$VIDEO_FOLDER/YouTube.app"
@@ -63,7 +62,6 @@ iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
 # iconsur -l set "$VIDEO_FOLDER/Excalidraw.app"
 
 iconsur cache
-alias cp='cp -i' # restore
 
 
 # ----------------------

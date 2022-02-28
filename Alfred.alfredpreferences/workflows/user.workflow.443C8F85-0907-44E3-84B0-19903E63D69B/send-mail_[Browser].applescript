@@ -7,7 +7,7 @@ delay 0.2
 set tabSelection to the clipboard
 
 
-tell application "Vivaldi"
+tell application "Chromium"
 	set tabUrl to URL of active tab of front window
 	set tabTitle to title of active tab of front window
 end tell

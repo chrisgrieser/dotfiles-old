@@ -41,21 +41,25 @@ ln -s "$SYMLINK_LOC"/.eslintrc ~
 ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
 
-# mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
-# ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
-
+# Vivaldi
 mv ~"/Applications/Chrome Apps.localized" ~/.Trash
 ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
 
+# Chromium
+mv ~"/Applications/Chromium Apps.localized" ~/.Trash
+ln -s "$SYMLINK_LOC/../Chromium Apps.localized/" ~"/Applications/Chromium Apps.localized"
+
+# .config
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC"/.config/ ~/.config
 
+# Popclip
 mv ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
 
+# xbar
 mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
 ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
-
 
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
@@ -82,10 +86,9 @@ for d in */ ; do
 	mv -v "$d" ~/Library/Preferences/
 done
 
-# ------------------------------------------------------------------------------
-# seperate import of Bibdesk and Moom plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53
+# seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53
 # defaults import com.manytricks.Moom com.manytricks.Moom.plist
-# defaults import edu.ucsd.cs.mmccrack.bibdesk edu.ucsd.cs.mmccrack.bibdesk.plist
+# ------------------------------------------------------------------------------
 
 # Symlink Plists
 PLIST_SYMLINK_LOC=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/plist/'

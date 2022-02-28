@@ -6,7 +6,7 @@
 
 set i to 0
 set output to ""
-tell application "Vivaldi"
+tell application "Chromium"
 	set tab_list to every tab in front window
 	repeat with the_tab in tab_list
 		set i to (i+1)
