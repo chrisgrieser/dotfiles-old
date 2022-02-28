@@ -40,14 +40,14 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 "user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
 
 [custom.file_number]
-command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | cut -c3- | wc -l"
+command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | wc -l"
 when = "exit 0" # run always
 symbol = " "
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black bold" # terminus different
 
 [custom.folder_number]
-command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | cut -c3- | wc -l"
+command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
 when = "exit 0" # run always
 symbol = " "
 format = '[$symbol$output]($style) '
