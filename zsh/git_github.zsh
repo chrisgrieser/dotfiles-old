@@ -17,6 +17,7 @@ function acp (){
 	fi
 }
 
+alias amend='git commit --amend'
 alias commit="git commit -m"
 alias pull="git pull"
 alias push="git push"

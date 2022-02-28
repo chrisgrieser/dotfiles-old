@@ -12,7 +12,8 @@
 
 <!-- /MarkdownTOC -->
 ## What are "dotfiles"?
-Read this excellent [primer on freecodecamp what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
+- Read this excellent [primer on freecodecamp what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
+- Here is [an interesting report on common contents of dotfiles](https://github.com/Kharacternyk/dotcommon).
 
 ## Why this repository?
 - These files are symlinked into a cloud drive for synchronization.

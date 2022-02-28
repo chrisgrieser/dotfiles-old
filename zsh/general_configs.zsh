@@ -27,9 +27,15 @@ export FZF_DEFAULT_OPTS='-0 --pointer=⟐ --prompt="❱ "'
 export MAGIC_ENTER_GIT_COMMAND="exagit"
 export MAGIC_ENTER_OTHER_COMMAND="exa"
 
-export EDITOR='nano' # mainly for `crontab -e`
+export EDITOR='nano' # mainly for `crontab -e` and `git commit --amend`
 
 # ----------------------------------
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# in hundred's of seconds (default: 0.4 seconds)
+export KEYTIMEOUT=1
 
 # OPTIONS --- (`man zshoptions` to see all options)
 setopt AUTO_CD
