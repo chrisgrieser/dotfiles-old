@@ -32,9 +32,6 @@ touch '/Applications/Alacritty.app'
 # Sublime
 cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
 touch '/Applications/Sublime Text.app'
-# Chromium
-cp "$ICON_FOLDER"'Chromium Gray.icns' '/Applications/Chromium.app/Contents/Resources/app.icns'
-touch '/Applications/Chromium.app'
 # Vivaldi
 cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
 touch '/Applications/Vivaldi.app'
