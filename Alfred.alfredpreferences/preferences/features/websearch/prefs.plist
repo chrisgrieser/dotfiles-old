@@ -22,11 +22,11 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>we</string>
+			<string>w</string>
 			<key>text</key>
-			<string>Wikipedia (englisch): '{query}'</string>
+			<string>Wikipedia (eng): '{query}'</string>
 			<key>url</key>
-			<string>https://en.wikipedia.org/w/index.php?search={query}</string>
+			<string>https://www.wikiwand.com/en/{query}?fullSearch=true</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -226,5 +226,7 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
 </dict>
 </plist>
