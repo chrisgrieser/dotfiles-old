@@ -90,7 +90,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5D5F7838-7272-47F3-8C81-0D7E4BB0547C</string>
+				<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -155,7 +155,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
+				<string>5D5F7838-7272-47F3-8C81-0D7E4BB0547C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -628,21 +628,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/ScreenTime.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>5D5F7838-7272-47F3-8C81-0D7E4BB0547C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -650,7 +635,7 @@
 				<key>subtext</key>
 				<string>Mac OS System Settings</string>
 				<key>text</key>
-				<string>Accessibility Keyboard</string>
+				<string>⌨️ Accessibility Keyboard</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -708,6 +693,36 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/UniversalAccessPref.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/ScreenTime.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5D5F7838-7272-47F3-8C81-0D7E4BB0547C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -759,21 +774,6 @@
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
 			<string>13E3EAD9-B10B-4042-BAE9-4CE466218B91</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/UniversalAccessPref.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1015,11 +1015,11 @@
 		<key>5D5F7838-7272-47F3-8C81-0D7E4BB0547C</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>600</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>710</integer>
 		</dict>
 		<key>6A8148B6-930D-4213-9DC4-2E33F591F8BD</key>
 		<dict>
@@ -1184,11 +1184,11 @@
 		<key>C9B4E770-DAB1-4E77-96ED-4961E24634C9</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>600</integer>
 			<key>ypos</key>
-			<integer>710</integer>
+			<integer>590</integer>
 		</dict>
 		<key>CA8A2A7F-193A-400B-B0CB-DD420D4E8D75</key>
 		<dict>

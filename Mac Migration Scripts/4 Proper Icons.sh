@@ -36,8 +36,8 @@ touch '/Applications/Sublime Text.app'
 cp "$ICON_FOLDER"'Chromium Gray.icns' '/Applications/Chromium.app/Contents/Resources/app.icns'
 touch '/Applications/Chromium.app'
 # Vivaldi
-# cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
-# touch '/Applications/Vivaldi.app'
+cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
+touch '/Applications/Vivaldi.app'
 
 killall Finder
 
