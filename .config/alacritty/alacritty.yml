@@ -49,9 +49,6 @@ colors:
     cyan: '0x5c8482'
     white: '0x828282'
 
-
-# ----------------
-
   indexed_colors:
     - {index: 16, color: '0xfcab74'}
     - {index: 17, color: '0x9b647b'}
@@ -59,6 +56,9 @@ colors:
     - {index: 19, color: '0x2a5054'}
     - {index: 20, color: '0x9dc8cd'}
     - {index: 21, color: '0xcbf2f7'}
+
+
+# ----------------
 font:
   normal:
     family: JetBrainsMono Nerd Font
@@ -67,30 +67,36 @@ font:
   bold:
     family: JetBrainsMono Nerd Font
     style: Bold
-  draw_bold_text_with_bright_colors: true
-  use_thin_strokes: true
   size: 25
+
+  # for mac retina displays
+  use_thin_strokes: true
+
+  draw_bold_text_with_bright_colors: true
+
+  builtin_box_drawing: true
+
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
-  offset:
-    x: 2
-    y: 10
+  # offset:
+    # x: 2
+    # y: 10
   # to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
-  glyph_offset:
-    y: 5
+  # glyph_offset:
+    # y: 5
 
 window:
   position:
     x: 0
     y: 50
   dimensions:
-    # column number for 1920 wide M1 Mac
+    # column number for 1920px wide M1 Mac
     columns: 98
     lines: 70
   decorations: buttonless
   padding:
-    x: 2
+    x: 3
     y: 2
 
 scrolling:
