@@ -19,7 +19,7 @@ error_symbol = " [](bold red)" # terminus needs extra space
 
 [cmd_duration]
 min_time = 2500
-format = " [ $duration](bold yellow)"
+format = " [ $duration](bold cyan)"
 
 [directory]
 truncation_length = 3
@@ -27,7 +27,7 @@ truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
 read_only_style = "red bg:black"
-style = "fg:bright-cyan bg:black bold" # terminus different
+style = "fg:bright-blue bg:black bold" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -48,7 +48,7 @@ style = "fg:yellow bg:black bold" # terminus different
 
 [custom.folder_number]
 command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
-when = "exit 0" # run always
+when = "exit 0"
 symbol = " "
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black bold" # terminus different
@@ -57,12 +57,10 @@ style = "fg:yellow bg:black bold" # terminus different
 format = " [$symbol$status]($style)"
 disabled = false
 symbol = ""
-# ⚡
 
 [sudo]
 format="[sudo $symbol]($style)"
 disabled = false
-symbol = " "
 
 # -------------
 # git
@@ -128,7 +126,7 @@ style = "dimmed 208"
 format = " [$symbol$version]($style)"
 version_format = "$major"
 style = "dimmed cyan"
-detect_extensions = ["ts"]
+detect_extensions = ["ts"] # dont trigger for JXA
 
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
@@ -138,4 +136,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[ Alfred](purple) '
+format = '[🎩Alfred](black bg:purple)'
