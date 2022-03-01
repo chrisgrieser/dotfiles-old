@@ -14,8 +14,10 @@ end tell
 delay 1
 
 # switch to light mode
-tell application "System Events" to tell appearance preferences to set isDarkMode to dark mode
-if isDarkMode then tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
+# to work without workaround, requires chrome://flag ➞ #extensions-on-chrome-urls
+tell application "System Events"
+	tell appearance preferences to set dark mode to false
+end tell
 
 
 # Reset some Stuff

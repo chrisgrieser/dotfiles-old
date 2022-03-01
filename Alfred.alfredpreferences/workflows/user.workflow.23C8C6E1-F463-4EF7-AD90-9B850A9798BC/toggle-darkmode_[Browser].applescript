@@ -1,8 +1,12 @@
 #!/usr/bin/env osascript
 
-
-
+# to work without workaround requires:
 # chrome://flag ➞ #extensions-on-chrome-urls
+
+tell application "System Events"
+	tell appearance preferences to set dark mode to not dark mode
+end tell
+
 -----------------------------------------------------------------
 
 -- -- Workaround for Dark Reader not toggling when inactive

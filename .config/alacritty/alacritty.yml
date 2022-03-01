@@ -61,12 +61,20 @@ colors:
 # ----------------
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMonoNL Nerd Font
     style: Regular
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMonoNL Nerd Font
     style: Bold
+
+  italic:
+    family: JetBrainsMonoNL Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMonoNL Nerd Font
+    style: Bold Italic
   size: 25
 
   # for mac retina displays
@@ -79,12 +87,12 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
-  # offset:
-    # x: 2
-    # y: 10
-  # to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
-  # glyph_offset:
-    # y: 5
+  offset:
+    x: 3
+    y: 8
+  # used to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
+  glyph_offset:
+    y: 4
 
 window:
   position:
@@ -119,12 +127,11 @@ selection:
 # https://github.com/alexherbo2/alacritty-extended-keys/blob/master/keys.yml
 key_bindings:
   - {key: Back, mods: Super, chars: "\x15"} # delete line
-  - {key: Semicolon, mods: Command|Shift, command: {program: sh, args: [-c, open ~/.config/alacritty/alacritty.yml]}}       # open Alacritty config (this file)
+  - {key: Semicolon, mods: Command|Shift, command: {program: sh, args: [-c, open ~/.config/alacritty/alacritty.yml]}}  # open Alacritty config (this file)
   - {key: K, mods: Command, mode: ~Vi|~Search, chars: "\f"}  # clear screen
   - {key: Left, mods: Command, chars: "\eOH"}    # beginning of line
   - {key: Right, mods: Command, chars: "\eOF"}   # end of line
-  - {key: L, mods: Command|Shift|Control|Alt, command: {program: sh, args: [-c, open
-            .]}}                                                                                # open Alacritty config (this file)
+  - {key: L, mods: Command|Shift|Control|Alt, command: {program: sh, args: [-c, open .]}}  # open Alacritty config (this file)
   - {key: Up, mods: Command, action: ScrollHalfPageUp}
   - {key: Down, mods: Command, action: ScrollHalfPageDown}
 

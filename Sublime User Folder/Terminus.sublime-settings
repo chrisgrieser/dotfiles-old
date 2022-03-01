@@ -5,7 +5,7 @@
 		"rulers": [],
 		"font_size": 15,
 		"block_caret": true,
-		"font_face": "JetBrainsMono Nerd Font", // needs nerd font for icons
+		"font_face": "JetBrainsMonoNL Nerd Font", // needs nerd font for icons
 		"font_options": [
 			"no_bold",
 			"no_round",
