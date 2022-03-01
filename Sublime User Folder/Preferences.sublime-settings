@@ -2,8 +2,8 @@
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
-	"light_color_scheme": "Packages/User/material-light-custom.tmTheme",
-	"dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"light_color_scheme": "Packages/Base16 Color Schemes/Themes/base16-atelier-cave-light.tmTheme",
+	"dark_color_scheme": "Packages/Base16 Color Schemes/Themes/base16-atelier-heath.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only
 
