@@ -98,7 +98,7 @@
 	{ "keys": ["super+shift+alt+ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
 	{ "keys": ["super+shift+alt+ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
 	{ "keys": ["super+shift+alt+ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
-	{ "keys": ["super+4"], "command": "fold_unfold" },
+	{ "keys": ["super+4"], "command": "unfold" },
 
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
@@ -107,7 +107,6 @@
 	// Navigate
 	{ "keys": ["super+k"], "command": "goto_comment"},
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-	{ "keys": ["super+o"], "command": "open_browse" },
 
    // Disable
    { "keys": ["super+shift+s"], "command": "noop" },
@@ -137,6 +136,8 @@
 	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 	// Wrap
 	{ "keys": ["shift+alt+super+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
+	// Switch Color Scheme
+	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
 	// Sidebar/Tab bar
 	{ "keys": ["super+1"],
 		"command": "chain",
@@ -155,7 +156,8 @@
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
-	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Plugin
+	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Custom Plugin
+	{ "keys": ["super+o"], "command": "open_browse" }, // Plugin
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
@@ -173,8 +175,6 @@
 	// OPEN
 	// GitHubinator
 	{ "keys": ["shift+alt+super+ctrl+g"], "command": "githubinator", "args" : { "permalink": false }},
-	// Documentation
-	{ "keys": ["shift+alt+super+ctrl+h"], "command": "goto_documentation" },
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
 

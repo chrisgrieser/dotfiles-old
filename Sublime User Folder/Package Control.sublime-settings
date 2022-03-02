@@ -10,6 +10,8 @@
 	],
 	"installed_packages":
 	[
+		"10% Too Dull for My Tastes Color Scheme",
+		"1337 Color Scheme",
 		"AdvancedNewFile",
 		"AppleScript Extensions",
 		"AutoFoldCode",
@@ -19,6 +21,7 @@
 		"Case Conversion",
 		"Clickable URLs",
 		"CloseMinimapOnMultiView",
+		"Color Scheme - Rainbow",
 		"Comment Marks",
 		"Copy Paste Increment",
 		"CSS3",
@@ -30,7 +33,6 @@
 		"FileIcons",
 		"GithubEmoji",
 		"GitHubinator",
-		"GotoDocumentation",
 		"LSP",
 		"LSP-bash",
 		"LSP-css",
@@ -40,6 +42,7 @@
 		"MarkdownEditing",
 		"MarkdownPreview",
 		"MarkdownTOC",
+		"Oceanic Next Color Scheme",
 		"Open",
 		"Package Control",
 		"SendCode",

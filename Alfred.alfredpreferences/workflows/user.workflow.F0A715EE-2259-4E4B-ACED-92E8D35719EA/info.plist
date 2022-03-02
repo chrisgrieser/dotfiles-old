@@ -62,6 +62,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2D2FF3DD-7D9E-4619-B2F5-CEE2775BC460</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1BFAF32E-D632-4159-9A02-EB21FC2E4E88</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</key>
 		<array>
 			<dict>
@@ -773,6 +786,58 @@ echo -n "$file_path"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>sublime</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⚙️ Sublime Default Package</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2D2FF3DD-7D9E-4619-B2F5-CEE2775BC460</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>working_folder="${working_folder/#\~/$HOME}"
+
+cd "$working_folder" || exit 1
+
+cp "/Applications/Sublime Text.app/Contents/MacOS/Packages/Default.sublime-package" .
+unzip Default.sublime-package -d ./Default\ Package/
+rm Default.sublime-package
+
+open -R ./Default\ Package/Default.sublime-commands</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1BFAF32E-D632-4159-9A02-EB21FC2E4E88</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -788,6 +853,13 @@ echo -n "$file_path"</string>
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>545</integer>
+		</dict>
+		<key>1BFAF32E-D632-4159-9A02-EB21FC2E4E88</key>
+		<dict>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>710</integer>
 		</dict>
 		<key>21CB6D87-4AE9-4109-B03F-3310BD156584</key>
 		<dict>
@@ -815,6 +887,13 @@ echo -n "$file_path"</string>
 			<integer>170</integer>
 			<key>ypos</key>
 			<integer>545</integer>
+		</dict>
+		<key>2D2FF3DD-7D9E-4619-B2F5-CEE2775BC460</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>710</integer>
 		</dict>
 		<key>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</key>
 		<dict>

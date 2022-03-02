@@ -100,7 +100,7 @@ window:
     y: 50
   dimensions:
     # column number for 1920px wide M1 Mac
-    columns: 98
+    columns: 95
     lines: 70
   decorations: buttonless
   padding:
