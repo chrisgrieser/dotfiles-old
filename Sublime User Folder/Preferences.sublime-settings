@@ -2,8 +2,8 @@
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
-	"light_color_scheme": "Packages/Base16 Color Schemes/Themes/base16-atelier-sulphurpool-light.tmTheme",
-	"dark_color_scheme": "Packages/Base16 Color Schemes/Themes/base16-snazzy.tmTheme",
+	"light_color_scheme": "Packages/Color Scheme - Rainbow/Rainbow (Light).tmTheme",
+	"dark_color_scheme": "Packages/10% Too Dull for My Tastes Color Scheme/scotchy.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only
 
