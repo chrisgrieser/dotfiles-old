@@ -59,4 +59,4 @@ fi
 
 # Restart Bartender
 # -----------------------
-tell application id "com.surteesstudios.Bartender" to launch
+open -a "Bartender"
