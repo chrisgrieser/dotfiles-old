@@ -14,13 +14,19 @@ end tell
 delay 1
 
 # switch to light mode
-# to work without workaround, requires chrome://flag ➞ #extensions-on-chrome-urls
+# better without workaround, chrome://flag ➞ #extensions-on-chrome-urls
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
 
 
 # Reset some Stuff
-tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
-delay 1
 tell application "KeeWeb" to if it is running then quit
-
+delay 0.5
+tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
+delay 0.5
+tell application "System Events"
+	tell process "Drafts"
+		set frontmost to true
+		click menu item "Hide Toolbar" of menu "View" of menu bar 1
+	end tell
+end tell

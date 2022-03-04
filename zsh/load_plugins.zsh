@@ -15,10 +15,6 @@ eval "$(starship init zsh)"
 source "$ZSH_DOTFILE_LOCATION"/plugins/magic_enter.zsh
 source "$ZSH_DOTFILE_LOCATION"/plugins/obsidian-vault-navigation.sh
 
-# Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ
-autoload -U +X bashcompinit && bashcompinit
-eval "$(pandoc --bash-completion)"
-
 # -------------------------------------------------
 # fix for Starship-Terminus issue
 # https://github.com/starship/starship/issues/3627

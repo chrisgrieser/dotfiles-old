@@ -12,3 +12,7 @@ function pd () {
 		--output="$OUTPUT_PATH" \
 		--resource-path="$R_PATH"
 }
+
+# Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ
+autoload -U +X bashcompinit && bashcompinit
+eval "$(pandoc --bash-completion)"
