@@ -57,6 +57,6 @@ if [[ ! -z "$(ls .)" ]] ; then
 	mv ./* ../../com~apple~CloudDocs/File\ Hub
 fi
 
-# Restart Bartender
+# RESTART BARTENDER
 # -----------------------
-open -a "Bartender"
+osascript -e 'tell application id "com.surteesstudios.Bartender" to launch'
