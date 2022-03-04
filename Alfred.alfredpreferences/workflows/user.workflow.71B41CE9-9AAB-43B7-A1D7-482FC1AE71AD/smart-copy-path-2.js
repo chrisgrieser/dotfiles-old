@@ -6,7 +6,7 @@ function run (argv) {
 
 	let filePath = argv.join("")
 		.replace (/\n$/, "")
-		.replace (/\/Users\/.*\//, "~/");
+		.replace (/\/Users\/.*?\//, "~/");
 
 	if (filePath === clipboardText) {
 		filePath = "\"" + filePath + "\"";

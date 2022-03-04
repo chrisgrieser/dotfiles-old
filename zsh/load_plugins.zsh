@@ -1,7 +1,7 @@
 # shellcheck disable=SC1090,SC1091,SC2292
 
 # activate completions, also needed for ZSH auto suggestions & completions
-autoload compinit -Uz && compinit
+autoload compinit -Uz +X && compinit
 
 # NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting!!
 source "$ZSH_DOTFILE_LOCATION"/plugins/fzf-tab/fzf-tab.plugin.zsh
@@ -11,11 +11,13 @@ source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.
 source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(fasd --init auto)"
-eval "$(thefuck --alias)"
-
 eval "$(starship init zsh)"
 source "$ZSH_DOTFILE_LOCATION"/plugins/magic_enter.zsh
 source "$ZSH_DOTFILE_LOCATION"/plugins/obsidian-vault-navigation.sh
+
+# Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ
+autoload -U +X bashcompinit && bashcompinit
+eval "$(pandoc --bash-completion)"
 
 # -------------------------------------------------
 # fix for Starship-Terminus issue
