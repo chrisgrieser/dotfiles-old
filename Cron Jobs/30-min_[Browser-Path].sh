@@ -56,7 +56,3 @@ cd ~"/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents" |
 if [[ ! -z "$(ls .)" ]] ; then
 	mv ./* ../../com~apple~CloudDocs/File\ Hub
 fi
-
-# RESTART BARTENDER
-# -----------------------
-osascript -e 'tell application id "com.surteesstudios.Bartender" to launch'

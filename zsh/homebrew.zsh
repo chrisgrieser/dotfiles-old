@@ -10,6 +10,9 @@ export HOMEBREW_DISPLAY_INSTALL_TIMES=1
 
 local BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
 
+
+alias bh='brew home'
+
 # -----------------------------------------------------
 
 # helper function for `br` and `bi`
@@ -36,6 +39,7 @@ function post-install () {
 
 function br () {
 	if brew list "$1" ; then
+		killall "$1"
 		brew reinstall "$1"
 		return
 	fi
@@ -50,12 +54,14 @@ function br () {
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
+	killall "$SELECTED"
 	brew reinstall "$SELECTED"
 
 	post-install "$SELECTED"
 }
 function bu () {
 	if brew list "$1" ; then
+		killall "$1"
 		brew uninstall --zap "$1"
 		return
 	fi
@@ -70,6 +76,7 @@ function bu () {
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
+	killall "$SELECTED"
 	brew uninstall --zap "$SELECTED"
 }
 

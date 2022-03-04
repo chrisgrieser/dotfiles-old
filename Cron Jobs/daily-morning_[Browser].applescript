@@ -22,6 +22,5 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-
 # Reset some Stuff
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
 delay 1
-tell application id "com.surteesstudios.Bartender" to launch
 tell application "KeeWeb" to if it is running then quit
 
