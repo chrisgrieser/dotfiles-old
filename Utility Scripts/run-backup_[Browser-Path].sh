@@ -20,9 +20,11 @@ npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfil
 pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
 echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 
+# rsync function
 bkp () {
-	# ⚠️ `--delete` option will remove backup when source folder is empty
-	rsync --archive --progress --delete --human-readable --exclude=~"/Library/Mobile Documents/com~apple~CloudDocs/.Trash/*" "$1" "$2"
+	# ⚠️ `--delete` option will remove backup when source folder is empty!
+	# `-hhh` highes level of human readable
+	rsync --archive --progress --delete -hhh --exclude="*/.Trash/*" "$1" "$2"
 }
 
 # =========================
@@ -34,6 +36,7 @@ bkp ~'/Games' ./Homefolder
 bkp ~'/Video' ./Homefolder
 bkp ~'/RomComs' ./Homefolder
 bkp ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
+bkp ~'/Library/Application Support/Vivaldi/Default/' ./Vivaldi-Default-Folder
 
 # =========================
 

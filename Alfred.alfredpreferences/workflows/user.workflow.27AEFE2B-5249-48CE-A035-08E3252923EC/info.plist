@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1FA5120B-2F5A-447D-BB0F-841354C8279B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CCF97CA-A130-4EEC-8C6A-2B788AD3C471</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<array>
 			<dict>
@@ -60,11 +73,47 @@
 				<false/>
 			</dict>
 		</array>
+		<key>45E946D8-87CF-464D-B505-CF335476F12D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E05BAA4-F625-4375-A57C-D72E79F323E3</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy URL to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>528AE6EA-5209-45EE-816F-B14350E47D2A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -185,6 +234,80 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>hh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>PROFILE="~/Library/Application Support/Google/Chrome/Default"
+PATH="env/bin:$PATH"
+python chrome.py "${PROFILE}" "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>search_chrome_history_[Browser-Path].sh</string>
+				<key>subtext</key>
+				<string>Search URLs in your profile's history</string>
+				<key>title</key>
+				<string>Browser History</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>45E946D8-87CF-464D-B505-CF335476F12D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -229,21 +352,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string>net.kassett.finicky</string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html#</string>
-				<key>utf8</key>
-				<true/>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
+			<string>3E05BAA4-F625-4375-A57C-D72E79F323E3</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -268,9 +391,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
 					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -285,27 +408,42 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>sync-bookmarks_[Browser].sh</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>browser</key>
+				<string>net.kassett.finicky</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html#</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
+			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>🔄 Sync complete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -331,21 +469,46 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
+cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
+cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>sync-bookmarks_[Browser-Path].sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<false/>
+				<true/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string></string>
+				<string>{query} URLs</string>
 				<key>title</key>
-				<string>🔄 Sync complete</string>
+				<string>✅ URLs copied</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
+			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -390,27 +553,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query} URLs</string>
-				<key>title</key>
-				<string>✅ URLs copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -463,6 +605,86 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-browser-default-folder_[Browser-Path].sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>browser</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Browser Default Folder</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>528AE6EA-5209-45EE-816F-B14350E47D2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>browser</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>browser.html</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1FA5120B-2F5A-447D-BB0F-841354C8279B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/Applications/Vivaldi.app/Contents/Frameworks/Vivaldi Framework.framework/Versions/Current/Resources/vivaldi/browser.html</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>9CCF97CA-A130-4EEC-8C6A-2B788AD3C471</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -495,6 +717,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
+		<key>1FA5120B-2F5A-447D-BB0F-841354C8279B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>975</integer>
+		</dict>
 		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
 		<dict>
 			<key>colorindex</key>
@@ -524,6 +753,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
+		<key>3E05BAA4-F625-4375-A57C-D72E79F323E3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
 		<key>40631024-7C9F-4784-A3E7-1116BD6C894A</key>
 		<dict>
 			<key>colorindex</key>
@@ -533,6 +769,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>575</integer>
 		</dict>
+		<key>45E946D8-87CF-464D-B505-CF335476F12D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>75</integer>
+		</dict>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<dict>
 			<key>colorindex</key>
@@ -541,6 +784,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>205</integer>
 			<key>ypos</key>
 			<integer>575</integer>
+		</dict>
+		<key>528AE6EA-5209-45EE-816F-B14350E47D2A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>845</integer>
 		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
@@ -561,6 +811,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>285</integer>
+		</dict>
+		<key>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>845</integer>
+		</dict>
+		<key>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>75</integer>
+		</dict>
+		<key>9CCF97CA-A130-4EEC-8C6A-2B788AD3C471</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>975</integer>
 		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>

@@ -254,6 +254,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4F27ABD3-B992-48A9-A250-3CDF720213B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>79A323A3-3B3E-40DC-82E7-170E14BB556B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4F5580BB-85A0-416C-9CE0-38308AE55514</key>
 		<array>
 			<dict>
@@ -363,6 +376,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E061C2C7-8263-4964-9AA9-D56F54C5CCD4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>79A323A3-3B3E-40DC-82E7-170E14BB556B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>073BEAF8-647C-4398-803C-13249F35FAE9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1188,11 +1214,11 @@ end tell</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
 					<string>md.obsidian</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.sublimetext.4</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -2460,6 +2486,79 @@ echo -n "[""$title""](""$url"")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4F27ABD3-B992-48A9-A250-3CDF720213B3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>to-indented-codeblock.js</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>79A323A3-3B3E-40DC-82E7-170E14BB556B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>073BEAF8-647C-4398-803C-13249F35FAE9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -2657,6 +2756,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>735</integer>
 			<key>ypos</key>
 			<integer>1185</integer>
+		</dict>
+		<key>073BEAF8-647C-4398-803C-13249F35FAE9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>955</integer>
+			<key>ypos</key>
+			<integer>1880</integer>
 		</dict>
 		<key>0A09B5C8-DF00-434E-B4C7-32CAA17F4C82</key>
 		<dict>
@@ -2873,6 +2979,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
+		<key>4F27ABD3-B992-48A9-A250-3CDF720213B3</key>
+		<dict>
+			<key>note</key>
+			<string>fenced code block to intended code block</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>1880</integer>
+		</dict>
 		<key>4F5580BB-85A0-416C-9CE0-38308AE55514</key>
 		<dict>
 			<key>colorindex</key>
@@ -2975,6 +3090,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>885</integer>
 			<key>ypos</key>
 			<integer>720</integer>
+		</dict>
+		<key>79A323A3-3B3E-40DC-82E7-170E14BB556B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>790</integer>
+			<key>ypos</key>
+			<integer>1880</integer>
 		</dict>
 		<key>7A5A991F-2036-463F-BD8C-02ECEF399D0F</key>
 		<dict>

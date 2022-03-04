@@ -1510,7 +1510,7 @@ open "$(dirname "$script_location")"/backup.log</string>
 		<key>last_backup</key>
 		<string>2022-02-24 16:04</string>
 		<key>script_location</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/run-backup.sh</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/run-backup_[Browser].sh</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>

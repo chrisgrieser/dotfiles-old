@@ -21,6 +21,10 @@ mv -v 'Fonts/'* ~'/Library/Fonts'
 # iCloud
 mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 
+# Vivaldi-Default-Folder
+mv ~"/Library/Application Support/Vivaldi/Default/" ~/.Trash
+mv -vR 'Vivaldi-Default-Folder/'*(D) ~"/Library/Application Support/Vivaldi/Default/"
+
 # -----------
 
 # Symlink Dotfiles

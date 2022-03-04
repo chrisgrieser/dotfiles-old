@@ -46,6 +46,19 @@ function clone(){
 	fi
 }
 
+function sclone(){
+	git clone --depth=1 "$*"
+	# shellcheck disable=SC2012
+	cd "$(ls -1 -t | head -n1)" || return
+
+	# if it's an Obsidian plugin
+	if grep -q "obsidian" package-lock.json ; then
+		npm i
+		open -R "main.ts"
+		npm run dev
+	fi
+}
+
 # runs a release scripts placed at the git root
 function rel(){
 	# shellcheck disable=SC2164

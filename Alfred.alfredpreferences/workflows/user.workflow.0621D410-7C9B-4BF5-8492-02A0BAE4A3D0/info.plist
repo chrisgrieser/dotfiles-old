@@ -201,19 +201,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8AF7275E-51AE-4DA8-B0FF-553D3E4A8FC7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2B34C51A-B434-45D5-9705-2866E79B33BC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>905948C2-F071-4D3E-A1F5-3A0E54BC18F0</key>
 		<array>
 			<dict>
@@ -821,7 +808,7 @@ end tell</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Watch Later</string>
+				<string>🕔 Watch Later</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -992,27 +979,6 @@ echo -n "$title"</string>
 			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
 			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<true/>
-				<key>name</key>
-				<string>Save YouTube Link to watch later</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>8AF7275E-51AE-4DA8-B0FF-553D3E4A8FC7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1213,15 +1179,6 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<integer>395</integer>
 			<key>ypos</key>
 			<integer>765</integer>
-		</dict>
-		<key>8AF7275E-51AE-4DA8-B0FF-553D3E4A8FC7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>1160</integer>
 		</dict>
 		<key>905948C2-F071-4D3E-A1F5-3A0E54BC18F0</key>
 		<dict>

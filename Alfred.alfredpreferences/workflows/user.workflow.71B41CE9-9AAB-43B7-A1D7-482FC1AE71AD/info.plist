@@ -257,6 +257,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7E69DE34-495B-4509-B562-0DC2338A6A8F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>83D4C732-B92C-4C46-ABA9-CD6ED5C734A0</key>
 		<array>
 			<dict>
@@ -335,19 +348,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<array>
 			<dict>
@@ -365,7 +365,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</string>
+				<string>7E69DE34-495B-4509-B562-0DC2338A6A8F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -561,6 +561,27 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -599,15 +620,15 @@ end tell</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>tell application "Finder"	set sel to selection		if ((count sel) &gt; 1) then		set firstItem to item 1 of sel		set _result to POSIX path of (firstItem as text)	else if ((count sel) = 1) then		set _result to POSIX path of (sel as text)	else		set _windows to count windows		if (_windows = 0) then			set _result to ""		else			set _result to POSIX path of (target of window 1 as alias)		end if	end ifend tell_result</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>smart-copy-path.applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -654,82 +675,23 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\/Users\/[^\/]*</string>
-				<key>regexcaseinsensitive</key>
+				<key>concurrently</key>
 				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string>~</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ Copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>smart-copy-path-2.js</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
+			<string>7E69DE34-495B-4509-B562-0DC2338A6A8F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -799,6 +761,25 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -851,6 +832,27 @@ end tell</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>E0A3B959-9472-4B43-B469-56E20E333E3B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>6965F454-7232-4E84-81D3-F7A0C5E29484</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1883,18 +1885,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>505</integer>
+			<integer>510</integer>
 			<key>ypos</key>
-			<integer>115</integer>
+			<integer>205</integer>
 		</dict>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>1065</integer>
 		</dict>
 		<key>10E85A5A-FC6B-43F7-AAAA-1304838DCCBC</key>
 		<dict>
@@ -1910,18 +1912,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>965</integer>
+			<integer>945</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>1C56BE97-8CF8-4915-ABB5-5255F85FFE23</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>775</integer>
+			<integer>785</integer>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -1946,18 +1948,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>370</integer>
 			<key>ypos</key>
-			<integer>1280</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>2F7075B3-2DC7-40B6-B8D7-EC08CC3B3E21</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>735</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>1065</integer>
 		</dict>
 		<key>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</key>
 		<dict>
@@ -1966,18 +1968,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>touch file</string>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1250</integer>
+			<integer>1190</integer>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>380</integer>
 		</dict>
 		<key>394B346C-D913-44B8-B811-71FFE2F6A2C2</key>
 		<dict>
@@ -1995,36 +1997,36 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>910</integer>
 		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>1655</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>4006F56F-BFD4-4270-AF0B-2011B270B472</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>775</integer>
+			<integer>785</integer>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>590</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>1035</integer>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2033,9 +2035,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>1035</integer>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2055,9 +2057,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2066,27 +2068,27 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>165</integer>
 			<key>ypos</key>
-			<integer>1655</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>540</integer>
 		</dict>
 		<key>6965F454-7232-4E84-81D3-F7A0C5E29484</key>
 		<dict>
@@ -2095,54 +2097,65 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>remove trailing \n</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>450</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>235</integer>
 		</dict>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>1035</integer>
 		</dict>
 		<key>6FE7DC2A-A4FC-40A1-BB35-88F0C8FA7458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>1035</integer>
+		</dict>
+		<key>7E69DE34-495B-4509-B562-0DC2338A6A8F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>change if already in clipboard</string>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>25</integer>
 		</dict>
 		<key>83D4C732-B92C-4C46-ABA9-CD6ED5C734A0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>775</integer>
+			<integer>785</integer>
 		</dict>
 		<key>854C7C80-AC64-4A5D-938F-4EC378280457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>805</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>910</integer>
 		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
@@ -2151,7 +2164,7 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>re-open last tab</string>
 			<key>xpos</key>
-			<integer>995</integer>
+			<integer>990</integer>
 			<key>ypos</key>
 			<integer>575</integer>
 		</dict>
@@ -2160,18 +2173,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>665</integer>
 		</dict>
 		<key>96400117-9585-4C38-8250-D27376BAED9A</key>
 		<dict>
@@ -2187,47 +2200,36 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>510</integer>
-		</dict>
-		<key>B14E3B30-C0C1-46E0-8345-6C6EDFFEE435</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>unexpand path (~)</string>
-			<key>xpos</key>
-			<integer>370</integer>
-			<key>ypos</key>
-			<integer>55</integer>
+			<integer>540</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>685</integer>
+			<integer>665</integer>
 			<key>ypos</key>
-			<integer>1625</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>380</integer>
 		</dict>
 		<key>B608F624-BD49-4530-BB67-00CD6692B0C8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>1420</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2247,7 +2249,7 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>return either first selected file or return current window when there is no selection</string>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>205</integer>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
@@ -2256,9 +2258,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>665</integer>
 		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
@@ -2267,7 +2269,7 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>copy path of selected file or current Finder window</string>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
@@ -2276,18 +2278,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1420</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>665</integer>
 			<key>ypos</key>
-			<integer>115</integer>
+			<integer>25</integer>
 		</dict>
 		<key>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</key>
 		<dict>
@@ -2296,9 +2298,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>return either first selected file or return current window when there is no selection</string>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>205</integer>
 		</dict>
 		<key>E0A3B959-9472-4B43-B469-56E20E333E3B</key>
 		<dict>
@@ -2307,9 +2309,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>copy name of selected file or current Finder window</string>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>205</integer>
 		</dict>
 		<key>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</key>
 		<dict>
@@ -2318,9 +2320,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>gets current Finder window</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>1250</integer>
+			<integer>1190</integer>
 		</dict>
 		<key>E26CAF36-595F-4EFB-8476-1E92049B36F2</key>
 		<dict>
@@ -2329,9 +2331,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>default size, then close all windows</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>1035</integer>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
@@ -2349,18 +2351,18 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>1655</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>1250</integer>
+			<integer>1190</integer>
 		</dict>
 		<key>F2E10C42-D506-4F69-9F43-E0A4E2932EE7</key>
 		<dict>
@@ -2378,9 +2380,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get only name</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>235</integer>
 		</dict>
 		<key>F87AADFD-2C80-4344-AF69-0647B7DC0048</key>
 		<dict>
@@ -2389,9 +2391,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>380</integer>
 		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>
@@ -2400,9 +2402,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>default size &amp; to the left</string>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>910</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
