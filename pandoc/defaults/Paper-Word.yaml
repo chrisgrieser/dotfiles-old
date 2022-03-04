@@ -3,6 +3,7 @@
 
 # Word-Writer
 writer: docx
+reference-doc: ${USERDATA}/reference-docs/academic-paper.docx
 
 # General
 verbosity: INFO

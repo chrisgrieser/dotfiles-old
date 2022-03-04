@@ -3,12 +3,12 @@
 function docx () {
 	cd "$(dirname "$*")" || return
 	INPUT_FILE="$(basename "$*")"
-	OUTPUT_FILE="${INPUT_FILE%.*}_CG.docx"
+	OUTPUT_FILE="${INPUT_FILE%.*}_$(date "+%Y-%m-%d").docx"
 
 	pandoc \
 		"$INPUT_FILE" \
 		--output="$OUTPUT_FILE" \
-		--defaults=Word \
+		--defaults=Paper-Word \
 		--metadata=date:"$(date "+%d. %B %Y")"
 
 	open -R "$OUTPUT_FILE"
