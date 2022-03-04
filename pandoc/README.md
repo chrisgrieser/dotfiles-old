@@ -4,10 +4,10 @@
 
 Higher overwrites lower.
 
-1. CLI arguments
+1. Direct CLI arguments
 2. CLI arguments from the defaults-file (`--defaults`)
 3. CLI arguments written to metadata (`--metadata`)
-4. YAML of the Document
+4. YAML of the Document ("Metadata")
 5. `--metadata-file` (default location: `~/.pandoc/metadata`)
 
 > `--metadata=KEY[:VAL]`: […] A value specified on the command line overrides a value specified in the document using YAML metadata blocks. […]
@@ -21,13 +21,4 @@ Higher overwrites lower.
 ```shell
 # Insert today's date
 --metadata=date:"$(date "+%e. %B %Y")"
-```
-
-## Page Breaks
-Will generate [a pagebreak when converting md to docx](https://pandoc.org/MANUAL.html#generic-raw-attribute), can also be done [via LUA filter](https://github.com/pandoc/lua-filters/tree/master/pagebreak).
-
-```xml
-~~~{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-~~~
 ```
