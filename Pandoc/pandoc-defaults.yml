@@ -13,10 +13,9 @@ number-sections: true
 reference-doc: ${.}/academic-writing-template.docx
 citeproc: true
 # resource-path: ['.','foo']
+bibliography: ${.}/reference-database.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-6th-edition.csl
 metadata:
-  csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-6th-edition.csl
-  bibliography: ${.}/reference-database.bib
-  date: '"$(date "+%e. %B %Y")"'
   link-citations: true
 
 # ---------------------------------------------
