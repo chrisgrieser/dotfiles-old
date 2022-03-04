@@ -11,6 +11,9 @@ function pd () {
 		--output="$OUTPUT_PATH" \
 		--resource-path="$R_PATH" \
 		-M date="$(date "+%e. %B %Y")"
+
+	open -R "$OUTPUT_PATH"
+	open "$OUTPUT_PATH"
 }
 
 # Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ

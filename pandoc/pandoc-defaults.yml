@@ -3,8 +3,9 @@
 
 # General
 verbosity: INFO
-reference-links: true
 table-of-contents: true
+
+# Markdown
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
@@ -12,9 +13,9 @@ number-sections: true
 # Academic
 reference-doc: ${.}/academic-writing-template.docx
 citeproc: true
-# resource-path: ['.','foo']
+resource-path: ['attachments']
 bibliography: ${.}/reference-database.bib
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-6th-edition.csl
+csl: ${.}/csl/apa-6th-edition.csl
 metadata:
   link-citations: true
   link-bibliography: true
