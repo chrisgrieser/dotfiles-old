@@ -17,11 +17,12 @@ strip-comments: true
 
 # Academic
 citeproc: true
-bibliography: ${USERDATA}/reference-database.bib
+bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
   link-bibliography: true
 
 # Powerpoint, see https://pandoc.org/MANUAL.html#structuring-the-slide-show
+writer: pptx
 slide-level: 0 # --- as slide seperators
 incremental: true # lsit items display one by one
