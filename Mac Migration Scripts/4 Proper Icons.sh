@@ -1,7 +1,6 @@
 #!/bin/zsh
 # shellcheck disable=SC2033
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-unalias cp # no confirmation needed for this
 
 # ---------------------
 # Regular Updating
@@ -49,10 +48,10 @@ ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Ico
 VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Chrome Apps.localized/"
 
 cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/--YouTube.app/Contents/Resources/app.icns"
-touch "$VIDEO_FOLDER/-YouTube.app"
-iconsur set "$VIDEO_FOLDER/--Tagesschau.app"
+touch "$VIDEO_FOLDER/--YouTube.app"
+iconsur set "$VIDEO_FOLDER/-Tagesschau.app"
 iconsur set "$VIDEO_FOLDER/--Netflix.app"
-iconsur --input "$ICON_FOLDER/-BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/BunnyFap.app"
+iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/-BunnyFap.app"
 iconsur set "$VIDEO_FOLDER/-Twitch.app"
 iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
 # iconsur -l set "$VIDEO_FOLDER/Excalidraw.app"
@@ -64,7 +63,6 @@ iconsur cache
 # Other
 # --------------------
 sudo -v
-unalias cp # no confirmation needed for this
 ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
 
 # Excel
@@ -94,5 +92,4 @@ iconsur -l set "/Applications/The Unarchiver.app"
 iconsur -l set "/Applications/Subtitles.app"
 
 # shellcheck disable=SC2032
-alias cp='cp -i' # restore
 iconsur cache

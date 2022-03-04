@@ -1041,12 +1041,12 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -2188,7 +2188,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>280</integer>
 			<key>ypos</key>
 			<integer>540</integer>
 		</dict>
@@ -2686,7 +2686,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>lang</key>
 		<string>de</string>
 		<key>library_path</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Reference Database.bib</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/pandoc/main-bibliography.bib</string>
 		<key>max_number_of_bkps</key>
 		<string>20</string>
 	</dict>

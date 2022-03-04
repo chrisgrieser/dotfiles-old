@@ -1174,7 +1174,7 @@ CHANGE SCRIPT HERE to a different type of parsing</string>
 		<key>alfred_bar_length</key>
 		<string>65</string>
 		<key>bibtex_library_path</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/BibDesk/My Library.bib</string>
+		<string>~/.pandoc/main-bibliography.bib</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
