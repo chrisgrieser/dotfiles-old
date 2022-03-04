@@ -1,0 +1,20 @@
+# https://pandoc.org/MANUAL.html#defaults-files
+# ---------------------------------------------
+
+# General
+verbosity: INFO
+table-of-contents: false
+toc-depth: 3
+preserve-tabs: true # for code blocks
+resource-path: ['.','attachments']
+
+# Markdown
+reader: markdown+lists_without_preceding_blankline
+strip-comments: true
+number-sections: true
+
+# Academic
+citeproc: true
+metadata:
+  link-citations: true
+  link-bibliography: true

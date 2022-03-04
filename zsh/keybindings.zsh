@@ -59,7 +59,7 @@ open-zshrc () {
 	           --query "$SEARCH_FOR" \
 	           --preview "bat --style=snip --tabs=2 --color=always --terminal-width=70 --line-range=:100 --wrap=never \"$ZSH_DOTFILE_LOCATION\"/{}.zsh" \
 	           --preview-window=right:70% \
-	           --height=50% \
+	           --height=60% \
 	           --layout=reverse \
 	           --info=hidden \
 	           )

@@ -1,0 +1,20 @@
+# https://pandoc.org/MANUAL.html#defaults-files
+# ---------------------------------------------
+
+# General
+verbosity: INFO
+table-of-contents: false
+toc-depth: 1
+preserve-tabs: true # for code blocks
+resource-path: ['.','attachments']
+
+# Markdown
+reader: markdown+lists_without_preceding_blankline
+strip-comments: true
+
+# Academic
+citeproc: true
+
+# Powerpoint, see https://pandoc.org/MANUAL.html#structuring-the-slide-show
+slide-level: 0 # --- as slide seperators
+incremental: true # lsit items display one by one

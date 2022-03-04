@@ -1,3 +1,7 @@
+# This is the gitignore of this dotfile repo only
+# `gitignore_global` is for all of git
+# ------------------------------------------------
+
 # Mac
 .DS_Store
 

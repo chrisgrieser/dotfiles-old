@@ -40,7 +40,7 @@ alias pip="pip3"
 
 # exa
 alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
-alias exagit='exa --long --grid --git --git-ignore --no-user --no-permissions --no-time --no-filesize ; echo "" ; git status'
+alias exagit='exa --long --grid --git --git-ignore --no-user --no-permissions --no-time --no-filesize ; echo "" ; git status --short'
 alias exatree='exa --tree -L2'
 alias exasize='exa --long --no-user --no-permissions --no-time' # size of files in current directory
 

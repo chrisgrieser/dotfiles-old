@@ -2,19 +2,20 @@
 
 function pd () {
 	INPUT_PATH="$*"
-	OUTPUT_PATH="${INPUT_PATH%.*}.docx"
-	R_PATH="$(dirname "$INPUT_PATH")/attachments"
+	OUTPUT_PATH="${INPUT_PATH%.*}_CG.docx"
 
 	pandoc \
 		"$INPUT_PATH" \
-		--defaults="$ZSH_DOTFILE_LOCATION/../pandoc/pandoc-defaults.yml" \
+		--defaults=Word \
 		--output="$OUTPUT_PATH" \
-		--resource-path="$R_PATH" \
 		-M date="$(date "+%e. %B %Y")"
 
 	open -R "$OUTPUT_PATH"
 	open "$OUTPUT_PATH"
 }
+
+
+# ------------------
 
 # Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ
 autoload -U +X bashcompinit && bashcompinit
