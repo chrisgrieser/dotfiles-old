@@ -3,7 +3,7 @@
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
 	"light_color_scheme": "Packages/Color Scheme - Rainbow/Rainbow (Light).tmTheme",
-	"dark_color_scheme": "Packages/10% Too Dull for My Tastes Color Scheme/scotchy.tmTheme",
+	"dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only
 
@@ -11,7 +11,7 @@
 	"ui_scale": 1.6,
 	"font_size": 14,
 	"font_face": "Input",
-	"font_options": ["no_round", "no_liga"],
+	"font_options": ["no_round", "no_liga", "no_italic"],
 
 	// Appearance
 	"fade_fold_buttons": false,

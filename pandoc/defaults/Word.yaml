@@ -3,7 +3,6 @@
 
 # Word-Writer
 writer: docx
-output-file: Manuscript_Grieser.docx
 
 # General
 verbosity: INFO

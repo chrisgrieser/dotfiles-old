@@ -1,16 +1,17 @@
 # shellcheck disable=SC2215
 
-function pd () {
-	INPUT_PATH="$*"
-	OUTPUT_PATH="${INPUT_PATH%.*}_CG.docx"
+function docx () {
+	cd "$(dirname "$*")" || return
+	INPUT_FILE="$(basename "$*")"
+	OUTPUT_FILE="${INPUT_FILE%.*}_CG.docx"
 
 	pandoc \
-		"$INPUT_PATH" \
+		"$INPUT_FILE" \
+		--output="$OUTPUT_FILE" \
 		--defaults=Word \
-		--output="$OUTPUT_PATH" \
-		--metadata date:"$(date "+%e. %B %Y")"
+		--metadata=date:"$(date "+%d. %B %Y")"
 
-	open -R "$OUTPUT_PATH"
+	open -R "$OUTPUT_FILE"
 }
 
 

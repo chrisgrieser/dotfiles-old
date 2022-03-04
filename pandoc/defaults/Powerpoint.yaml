@@ -1,6 +1,12 @@
 # https://pandoc.org/MANUAL.html#defaults-files
 # ---------------------------------------------
 
+# Powerpoint-Writer
+# https://pandoc.org/MANUAL.html#structuring-the-slide-show
+writer: pptx
+slide-level: 0 # --- as slide seperators
+incremental: true # list items display one by one
+
 # General
 verbosity: INFO
 fail-if-warnings: true
@@ -22,10 +28,3 @@ bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
   link-bibliography: true
-
-# Powerpoint-Writer
-# https://pandoc.org/MANUAL.html#structuring-the-slide-show
-writer: pptx
-output-file: Presentation_CG.docx
-slide-level: 0 # --- as slide seperators
-incremental: true # lsit items display one by one
