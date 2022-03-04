@@ -88,7 +88,7 @@ font:
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
-    x: 3
+    x: 2
     y: 8
   # used to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
   glyph_offset:
@@ -100,7 +100,7 @@ window:
     y: 50
   dimensions:
     # column number for 1920px wide M1 Mac
-    columns: 95
+    columns: 98
     lines: 70
   decorations: buttonless
   padding:

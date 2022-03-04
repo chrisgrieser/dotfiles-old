@@ -136,4 +136,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[🎩Alfred](black bg:purple)'
+format = '[ Alfred ](black bg:purple)'
