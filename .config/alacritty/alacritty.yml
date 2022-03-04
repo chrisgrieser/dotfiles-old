@@ -89,10 +89,10 @@ font:
   # spacing.
   offset:
     x: 2
-    y: 8
+    y: 6
   # used to normalize line height, see https://github.com/alacritty/alacritty/issues/3673
   glyph_offset:
-    y: 4
+    y: 3
 
 window:
   position:

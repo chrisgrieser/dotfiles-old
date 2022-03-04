@@ -44,14 +44,11 @@ ln -s "$SYMLINK_LOC"/.gitconfig ~
 ln -s "$SYMLINK_LOC"/.eslintrc ~
 ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
+ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
 
 # Vivaldi
 mv ~"/Applications/Chrome Apps.localized" ~/.Trash
 ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
-
-# Chromium
-mv ~"/Applications/Chromium Apps.localized" ~/.Trash
-ln -s "$SYMLINK_LOC/../Chromium Apps.localized/" ~"/Applications/Chromium Apps.localized"
 
 # .config
 mv ~/.config ~/.Trash
