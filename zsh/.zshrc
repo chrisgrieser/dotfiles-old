@@ -18,6 +18,7 @@ source "$ZSH_DOTFILE_LOCATION"/alacritty_theme_switcher.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
 source "$ZSH_DOTFILE_LOCATION"/run_last_before_login.zsh
+source "$ZSH_DOTFILE_LOCATION"/../pandoc/pandoc.zsh
 
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh

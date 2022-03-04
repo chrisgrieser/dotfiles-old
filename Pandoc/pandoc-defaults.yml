@@ -1,18 +1,28 @@
 # https://pandoc.org/MANUAL.html#defaults-files
+# ---------------------------------------------
+
+# General
 verbosity: INFO
 table-of-contents: true
 reference-links: true
-citeproc: true
-pdf-engine: wkhtmltopdf
+reader: markdown+lists_without_preceding_blankline
+strip-comments: true
+number-sections: true
+
+# Academic
 reference-doc: ${.}/academic-writing-template.docx
+citeproc: true
+# resource-path: ['.','foo']
 metadata:
   csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-6th-edition.csl
-  bibliography: ${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Reference Database.bib
+  bibliography: ${.}/reference-database.bib
   date: '"$(date "+%e. %B %Y")"'
 
+# ---------------------------------------------
 
-# resource-path: ['.','foo']
+# PDF
+pdf-engine: pdflatex
 
-# for presentations
-# slide-level: 0
+# Presentations
+slide-level: 0
 # reference-doc: ${.}/academic-presentation-template.pptx
