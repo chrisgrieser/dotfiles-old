@@ -8,10 +8,9 @@ function pd () {
 		"$INPUT_PATH" \
 		--defaults=Word \
 		--output="$OUTPUT_PATH" \
-		-M date="$(date "+%e. %B %Y")"
+		--metadata date:"$(date "+%e. %B %Y")"
 
 	open -R "$OUTPUT_PATH"
-	open "$OUTPUT_PATH"
 }
 
 

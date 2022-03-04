@@ -1,6 +1,10 @@
 # https://pandoc.org/MANUAL.html#defaults-files
 # ---------------------------------------------
 
+# Word-Writer
+writer: docx
+output-file: Manuscript_Grieser.docx
+
 # General
 verbosity: INFO
 fail-if-warnings: true
@@ -11,13 +15,11 @@ resource-path: ['.' ,'attachments', 'images']
 metadata-files:
   - fallback.yaml
 
-# Markdown
+# Markdown-Reader
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
-
-# Word
-writer: docx
+default-image-extension: '.png'
 
 # Academic
 citeproc: true

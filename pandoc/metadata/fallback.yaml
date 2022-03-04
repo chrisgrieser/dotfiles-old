@@ -7,6 +7,10 @@
 
 csl: apa-6th-edition.csl
 lang: en-US
+
+
+title: Untitled
+subtitle: Some Subtitle
 author:
   - Christopher Grieser
   - Research Group “Social Studies of Science & Technology”

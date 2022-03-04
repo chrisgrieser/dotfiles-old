@@ -1,11 +1,16 @@
 # https://pandoc.org/MANUAL.html#defaults-files
 # ---------------------------------------------
 
+# PDF-Writer
+writer: pdf
+standalone: true
+pdf-engine: pdflatex
+
 # General
 verbosity: INFO
 fail-if-warnings: true
-table-of-contents: true
-toc-depth: 1
+table-of-contents: false
+toc-depth: 3
 preserve-tabs: true # for code blocks
 resource-path: ['.' ,'attachments', 'images']
 metadata-files:
@@ -14,6 +19,7 @@ metadata-files:
 # Markdown-Reader
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
+number-sections: true
 default-image-extension: '.png'
 
 # Academic
@@ -22,10 +28,3 @@ bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
   link-bibliography: true
-
-# Powerpoint-Writer
-# https://pandoc.org/MANUAL.html#structuring-the-slide-show
-writer: pptx
-output-file: Presentation_CG.docx
-slide-level: 0 # --- as slide seperators
-incremental: true # lsit items display one by one
