@@ -3,8 +3,8 @@
 
 # General
 verbosity: INFO
-table-of-contents: true
 reference-links: true
+table-of-contents: true
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
@@ -17,6 +17,7 @@ metadata:
   csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-6th-edition.csl
   bibliography: ${.}/reference-database.bib
   date: '"$(date "+%e. %B %Y")"'
+  link-citations: true
 
 # ---------------------------------------------
 
@@ -24,5 +25,5 @@ metadata:
 pdf-engine: pdflatex
 
 # Presentations
-slide-level: 0
+slide-level: 0 # hr as slide separators
 # reference-doc: ${.}/academic-presentation-template.pptx
