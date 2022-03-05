@@ -47,19 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>46A0180C-0144-4433-8238-86DD95349753</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
 		<array>
 			<dict>
@@ -69,29 +56,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>45E946D8-87CF-464D-B505-CF335476F12D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>3E05BAA4-F625-4375-A57C-D72E79F323E3</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Copy URL to clipboard</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -234,80 +198,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>36</integer>
-				<key>keyword</key>
-				<string>hh</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Searching...</string>
-				<key>script</key>
-				<string>PROFILE="~/Library/Application Support/Google/Chrome/Default"
-PATH="env/bin:$PATH"
-python chrome.py "${PROFILE}" "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>search_chrome_history_[Browser-Path].sh</string>
-				<key>subtext</key>
-				<string>Search URLs in your profile's history</string>
-				<key>title</key>
-				<string>Browser History</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>45E946D8-87CF-464D-B505-CF335476F12D</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -352,25 +242,6 @@ python chrome.py "${PROFILE}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>3E05BAA4-F625-4375-A57C-D72E79F323E3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -391,9 +262,9 @@ python chrome.py "${PROFILE}" "{query}"</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -572,42 +443,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>27</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>SS</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>org.chromium.Chromium</string>
-					<string>com.vivaldi.Vivaldi</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>2513E29E-4FCA-4C35-9995-22D60E1405B7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -724,17 +559,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>975</integer>
 		</dict>
-		<key>2513E29E-4FCA-4C35-9995-22D60E1405B7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>Copy Info an All Tabs</string>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>700</integer>
-		</dict>
 		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
 		<dict>
 			<key>colorindex</key>
@@ -753,13 +577,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
-		<key>3E05BAA4-F625-4375-A57C-D72E79F323E3</key>
-		<dict>
-			<key>xpos</key>
-			<integer>680</integer>
-			<key>ypos</key>
-			<integer>195</integer>
-		</dict>
 		<key>40631024-7C9F-4784-A3E7-1116BD6C894A</key>
 		<dict>
 			<key>colorindex</key>
@@ -768,13 +585,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>420</integer>
 			<key>ypos</key>
 			<integer>575</integer>
-		</dict>
-		<key>45E946D8-87CF-464D-B505-CF335476F12D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>460</integer>
-			<key>ypos</key>
-			<integer>75</integer>
 		</dict>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<dict>
@@ -790,7 +600,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>845</integer>
+			<integer>700</integer>
 		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
@@ -817,14 +627,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>xpos</key>
 			<integer>205</integer>
 			<key>ypos</key>
-			<integer>845</integer>
-		</dict>
-		<key>881C7FD9-3221-4DDD-A9F0-E7FBFBBEFEC6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>680</integer>
-			<key>ypos</key>
-			<integer>75</integer>
+			<integer>700</integer>
 		</dict>
 		<key>9CCF97CA-A130-4EEC-8C6A-2B788AD3C471</key>
 		<dict>

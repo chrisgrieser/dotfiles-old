@@ -23,7 +23,8 @@ number-sections: true
 
 # Academic
 citeproc: true
-metadata-files: academic-metadata.yaml
+metadata-files: # must be array
+  - academic.yaml
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
