@@ -429,6 +429,7 @@
 		"Linters",
 		"shellcheck",
 		"copypasted",
+		"ℹ",
 	],
 
 }

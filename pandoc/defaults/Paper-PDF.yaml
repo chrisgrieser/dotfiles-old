@@ -12,15 +12,17 @@ fail-if-warnings: true
 table-of-contents: false
 toc-depth: 3
 preserve-tabs: true # for code blocks
-resource-path: ['.' ,'attachments', 'images']
-metadata-files:
-  - fallback.yaml
+metadata-files: fallback.yaml
+resource-path:
+  - .
+  - ./attachments
+  - ./images
+  - ${HOME}/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/ # Vault path for images
 
 # Markdown-Reader
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
-default-image-extension: '.png'
 
 # Academic
 citeproc: true

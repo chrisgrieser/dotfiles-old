@@ -10,7 +10,7 @@
 # prompt in general
 add_newline = false
 continuation_prompt = "❯"
-format = "[$directory${custom.folder_number}${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:black)[](black)$cmd_duration$status$character"
+format = "[$directory${custom.folder_number}${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:black)[](black)$cmd_duration$status$character"
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]

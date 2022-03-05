@@ -10,7 +10,7 @@
 # prompt in general
 add_newline = false
 continuation_prompt = "❯"
-format = "[$directory${custom.folder_number}${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:black)[](black)$cmd_duration$status$character"
+format = "[$directory${custom.folder_number}${custom.file_number}$git_branch$git_status$git_metrics$git_commit$git_state](bg:black)[](black)$cmd_duration$status$character"
 right_format="$package${custom.alfred}$nodejs$python$jobs$memory_usage"
 
 [character]
@@ -18,8 +18,8 @@ success_symbol = " [ﰉ ](bold green)" # terminus needs extra space
 error_symbol = " [ ](bold red)" # terminus needs extra space
 
 [cmd_duration]
-min_time = 2000
-format = " [ $duration](bold yellow)"
+min_time = 3000
+format = " [ $duration](bold cyan)"
 
 [directory]
 truncation_length = 3
@@ -27,7 +27,7 @@ truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
 read_only_style = "red bg:black"
-style = "fg:bright-cyan bg:black" # terminus different
+style = "fg:blue bg:black" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -138,4 +138,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[ Alfred](purple) '
+format = '[ Alfred ](bg: purple) '

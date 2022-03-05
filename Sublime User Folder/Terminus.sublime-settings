@@ -1,12 +1,12 @@
 {
-	"theme": "liquid-carbon",
+	"theme": "mariana",
 
 	"view_settings": {
 		"rulers": [],
 		"font_size": 15,
 		"block_caret": true,
 		"font_face": "JetBrainsMonoNL Nerd Font", // needs nerd font for icons
-		"font_options": ["no_bold" ],
+		"font_options": ["no_bold"],
 	},
 
 	"scrollback_history_size": 1000,
