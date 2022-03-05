@@ -1042,11 +1042,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -2148,9 +2148,6 @@ fi</string>
 
 
 - recommended autorenaming pattern for usage with the [PDF Annotation Extractor](https://github.com/chrisgrieser/pdf-annotation-extractor-alfred): `%p11/%p[ ][ et al]2/%p[_][_et al]2_%Y%u0_%t60%s{Pages}[_][]%w{Pages}[--][/][-]2`
-
-- The `second_backup_dest` can be used for shared folder or to save an additional copy in the iCloud for the iOS BibTeX Viewer [References](https://apps.apple.com/de/app/references/id1481843213)
-
 
 ======================================================
 Created by [Chris Grieser](https://chris-grieser.de/).</string>

@@ -6,25 +6,27 @@
 writer: pptx
 reference-doc: ${USERDATA}/reference-docs/academic-presentation.pptx
 slide-level: 0      # --- as slide seperators
-incremental: true   # list items display one by one
+incremental: true   # list items display one by one per default
 
 # General
 verbosity: INFO
 fail-if-warnings: true
-table-of-contents: true
-toc-depth: 1
-preserve-tabs: true # only for code blocks
-resource-path: ['.' ,'attachments', 'images']
-metadata-files:
-  - fallback.yaml
+table-of-contents: false
+toc-depth: 3
+resource-path:
+  - .
+  - ./attachments
+  - ./images
+  - ${HOME}/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/ # Vault path for images
 
 # Markdown-Reader
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
-default-image-extension: '.png'
+number-sections: true
 
 # Academic
 citeproc: true
+metadata-files: academic-metadata.yaml
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true

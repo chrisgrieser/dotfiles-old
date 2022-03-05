@@ -11,8 +11,6 @@ verbosity: INFO
 fail-if-warnings: true
 table-of-contents: false
 toc-depth: 3
-preserve-tabs: true # for code blocks
-metadata-files: fallback.yaml
 resource-path:
   - .
   - ./attachments
@@ -26,6 +24,7 @@ number-sections: true
 
 # Academic
 citeproc: true
+metadata-files: academic-metadata.yaml
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
