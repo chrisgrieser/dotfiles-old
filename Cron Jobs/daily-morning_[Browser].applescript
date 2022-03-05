@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 
-# sleep timer
+# SLEEP TIMER
 tell application "--YouTube" to if it is running then quit
 tell application "Vivaldi"
 	if ((count of window) is not 0)
@@ -13,16 +13,18 @@ end tell
 
 delay 1
 
-# switch to light mode
+# SWITCH TO LIGHT MODE
 # better without workaround, chrome://flag ➞ #extensions-on-chrome-urls
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
 
 
-# Reset some Stuff
+# RESET SOME STUFF
 tell application "KeeWeb" to if it is running then quit
 delay 0.5
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
+delay 0.5
+tell application id "com.surteesstudios.Bartender" to launch
 delay 0.5
 tell application "System Events"
 	tell process "Drafts"
