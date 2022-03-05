@@ -83,7 +83,7 @@ format = "[$symbol$branch]($style) "
 [git_status]
 untracked = '[+$count ](fg:green bg:black)'
 deleted = '[-$count ](fg:red bg:black)'
-modified = '[*$count ](fg:yellow bg:black)'
+modified = '[*$count ](fg:cyan bg:black)'
 renamed = '[✎$count ](fg:blue bg:black)'
 staged = '[◎$count ](fg:cyan bg:black)'
 conflicted = '[⤱$count ](fg:red bg:black)'
