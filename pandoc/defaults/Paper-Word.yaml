@@ -10,10 +10,9 @@ verbosity: INFO
 fail-if-warnings: true
 table-of-contents: false
 toc-depth: 3
-resource-path:
+resource-path: # must be array
   - .
   - ./attachments
-  - ./images
   - ${HOME}/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/ # Vault path for images
 
 # Markdown-Reader
@@ -23,7 +22,8 @@ number-sections: true
 
 # Academic
 citeproc: true
-metadata-files: academic-metadata.yaml
+metadata-files: # must be array
+  - academic.yaml
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
