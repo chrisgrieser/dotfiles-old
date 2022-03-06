@@ -8,6 +8,19 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
+		<key>323C3577-9738-4D2B-B125-162EAF19574C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C54B5FF-8864-41AC-8884-BFF501A9C742</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>432EB74A-9F76-4DD1-A316-CF3041712A9A</key>
 		<array>
 			<dict>
@@ -669,11 +682,77 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+  tell application "Moom" to arrange windows according to snapshot "Two Finder Windows"
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>2C54B5FF-8864-41AC-8884-BFF501A9C742</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>19</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>2</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>323C3577-9738-4D2B-B125-162EAF19574C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>2C54B5FF-8864-41AC-8884-BFF501A9C742</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>795</integer>
+		</dict>
+		<key>323C3577-9738-4D2B-B125-162EAF19574C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>795</integer>
+		</dict>
 		<key>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</key>
 		<dict>
 			<key>colorindex</key>
