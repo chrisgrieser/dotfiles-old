@@ -86,18 +86,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5DF1DAE1-3642-44E7-AA6A-FF3543A0DDC4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>0A20C7CA-25D3-4EBE-81AA-370C03D207CE</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
 		<array>
@@ -531,6 +519,35 @@ display notification "" with title "📝 Note Mode ready"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"cd86f66820a60e7484b233721204cf4e8e5f87e7.png","title":"📝 Browser","arg":"notes browser","subtitle":""},{"imagefile":"490eb8a6470d15043c399ba2752a0f9472ae8f4e.png","title":"📝 Zoom","arg":"notes zoom","subtitle":""},{"imagefile":"5e84251895c9b5b5a2db5a5839fd6a9286a9cab1.png","title":"📝 PDF Expert","arg":"notes pdf","subtitle":""}]</string>
+				<key>keyword</key>
+				<string>moom</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Change Moom Mode to...</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -561,20 +578,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 						<key>uid</key>
 						<string>4E0C9EF6-5169-4834-B6EC-5A60DB6E9AB1</string>
 					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>notes pdf</string>
-						<key>outputlabel</key>
-						<string>notes pdf</string>
-						<key>uid</key>
-						<string>0A20C7CA-25D3-4EBE-81AA-370C03D207CE</string>
-					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>--</string>
@@ -583,35 +586,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>72675B7F-5FD7-4765-BD70-C8D64253C5EA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"cd86f66820a60e7484b233721204cf4e8e5f87e7.png","title":"📝 Browser","arg":"notes browser","subtitle":""},{"imagefile":"490eb8a6470d15043c399ba2752a0f9472ae8f4e.png","title":"📝 Zoom","arg":"notes zoom","subtitle":""},{"imagefile":"5e84251895c9b5b5a2db5a5839fd6a9286a9cab1.png","title":"📝 PDF Expert","arg":"notes pdf","subtitle":""}]</string>
-				<key>keyword</key>
-				<string>moom</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Change Moom Mode to...</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -641,31 +615,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>55C623B9-ACDB-4A89-8AAC-C867C97D4312</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>-- open Basic Workspacetell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"repeat until (application "Drafts" is running)	delay 0.2end repeatdelay 0.1
-tell application "Moom" to arrange windows according to snapshot "📝 Drafts + PDF"
-display notification "PDF Reader" with title "📝 Note Mode ready"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5DF1DAE1-3642-44E7-AA6A-FF3543A0DDC4</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -714,15 +663,6 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
-		<key>5DF1DAE1-3642-44E7-AA6A-FF3543A0DDC4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>685</integer>
-		</dict>
 		<key>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</key>
 		<dict>
 			<key>xpos</key>
@@ -753,7 +693,7 @@ display notification "PDF Reader" with title "📝 Note Mode ready"</string>
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>520</integer>
 		</dict>
 		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
 		<dict>

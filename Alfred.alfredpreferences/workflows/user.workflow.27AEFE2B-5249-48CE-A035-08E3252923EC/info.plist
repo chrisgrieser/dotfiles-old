@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>45F1388B-26A4-4855-8E82-7A1DD422F2EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<array>
 			<dict>
@@ -148,7 +161,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Browser – Vivaldi – Chromium</string>
+	<string>Browser – Vivaldi – Chromium – Brave</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -247,7 +260,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html#</string>
+				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html#</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -282,8 +295,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -487,6 +500,65 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>19</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>2</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>45F1388B-26A4-4855-8E82-7A1DD422F2EE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>window-split_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -586,6 +658,17 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>575</integer>
 		</dict>
+		<key>45F1388B-26A4-4855-8E82-7A1DD422F2EE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Double Browser Windows</string>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>825</integer>
+		</dict>
 		<key>46A0180C-0144-4433-8238-86DD95349753</key>
 		<dict>
 			<key>colorindex</key>
@@ -628,6 +711,13 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>205</integer>
 			<key>ypos</key>
 			<integer>700</integer>
+		</dict>
+		<key>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>825</integer>
 		</dict>
 		<key>9CCF97CA-A130-4EEC-8C6A-2B788AD3C471</key>
 		<dict>
