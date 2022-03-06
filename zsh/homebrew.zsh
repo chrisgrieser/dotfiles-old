@@ -38,7 +38,7 @@ function post-install () {
 }
 
 function br () {
-	if brew list "$1" ; then
+	if [[ $1 != "" ]] && brew list "$1" ; then
 		killall "$1"
 		brew reinstall "$1"
 		return
@@ -51,6 +51,7 @@ function br () {
 	           --query "$1" \
 	           --preview 'HOMEBREW_COLOR=true brew info {}' \
 	           --bind 'alt-enter:execute(brew home {})+abort' \
+	           --height=80% \
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
@@ -60,7 +61,7 @@ function br () {
 	post-install "$SELECTED"
 }
 function bu () {
-	if brew list "$1" ; then
+	if [[ $1 != "" ]] && brew list "$1" ; then
 		killall "$1"
 		brew uninstall --zap "$1"
 		return
@@ -73,6 +74,7 @@ function bu () {
 	           --query "$1" \
 	           --preview 'HOMEBREW_COLOR=true brew info {}' \
 	           --bind 'alt-enter:execute(brew home {})+abort' \
+	           --height=80% \
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130

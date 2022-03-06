@@ -11,22 +11,11 @@ bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 # [alt+arrow] - move word forward or backward
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
-bindkey '^W' toggleDoubleString
 
 # `bindkey -M main` to show existing keybinds
 # there `^[` usually means escape
 # some bindings with '^' are reserved (^M=enter, ^I=tab)
 # -----------------------------------
-
-# https://github.com/shibumi/hikari
-toggleDoubleString() {
-  LBUFFER=$(echo "$LBUFFER" | sed -e 's/\(.*\) /\1 "/')
-  LBUFFER=$(echo "$LBUFFER" | sed -e 's/^\([^"]*\)/"\1/')
-  RBUFFER=$(echo "$RBUFFER" | sed -e 's/ /" /')
-  RBUFFER=$(echo "$RBUFFER" | sed -e 's/\([^"]*\)$/\1"/')
-  zle redisplay
-}
-zle -N toggleDoubleString
 
 copyLocation () {
 	pwd | pbcopy
