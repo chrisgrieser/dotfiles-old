@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-BROWSER=Vivaldi
+BROWSER=Brave Software/Brave Browser
 
 open ~"/Library/Application Support/$BROWSER/Default/"

@@ -6,7 +6,7 @@
 set i to 0
 # "result" is a reserved keyword
 set _result to ""
-tell application "Vivaldi"
+tell application "Brave Browser"
 		set window_list to every window
 		repeat with the_window in window_list
 			set tab_list to every tab in the_window

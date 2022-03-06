@@ -38,7 +38,7 @@ fi
 
 # SYNC BRAVE BOOKMARKS TO CHROME BOOKMARKS FOR ALFRED
 # ---------------------------------------------------
-BROWSER="Vivaldi"
+BROWSER="Brave Software/Brave Browser"
 
 mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
 cp ~"/Library/Application Support/$BROWSER/Default/Bookmarks" ~"/Library/Application Support/Google/Chrome/Default/Bookmarks"

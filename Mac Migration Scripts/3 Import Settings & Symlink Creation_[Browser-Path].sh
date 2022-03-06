@@ -1,29 +1,19 @@
 cd ~/Desktop || return
 
-# remove BusyCal Container first, as the app starts and therefore creates stuff
-mv -v ~'/Library/Containers/com.busymac.busycal3' ~/.trash
-# remove Sublime settings, since Sublime is sometimes used and therefore creates settings
-mv -v ~'Application-Support/Sublime Text' ~/.trash
-
-# -----------
-
 #Application Support
 mv -v 'Application-Support/'* ~'/Library/Application Support'
 
-# Containers
-mkdir -p ~'/Library/Containers/'
-mv -v './Containers/' ~'/Library/Containers/'
-
 # Fonts
-mkdir ~'/Library/Fonts'
+mkdir -p ~'/Library/Fonts'
 mv -v 'Fonts/'* ~'/Library/Fonts'
 
 # iCloud
 mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 
-# Vivaldi-Default-Folder
-mv ~"/Library/Application Support/Vivaldi/Default/" ~/.Trash
-mv -vR 'Vivaldi-Default-Folder/'*(D) ~"/Library/Application Support/Vivaldi/Default/"
+# Browser-Default-Folder
+mkdir -p ~"/Library/Application Support/Brave Software/Brave Browser/Default/"
+mv ~"/Library/Application Support/Brave Software/Brave Browser/Default/" ~/.Trash
+mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/Brave Software/Brave Browser/Default/"
 
 # -----------
 
@@ -46,9 +36,13 @@ ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
 ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
 
-# Vivaldi
-mv ~"/Applications/Chrome Apps.localized" ~/.Trash
-ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
+# Brave Software/Brave Browser
+# mv ~"/Applications/Chrome Apps.localized" ~/.Trash
+# ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
+
+# Brave
+mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
+ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
 
 # .config
 mv ~/.config ~/.Trash

@@ -4,7 +4,7 @@
 
 # open tab if there is no tab open to ensure Dark Reader switches as well
 set BrowserWasntRunning to false
-tell application "Vivaldi"
+tell application "Brave Browser"
 		set tabcount to 0
 		set currentURL to ""
 		try
@@ -31,5 +31,5 @@ end tell
 # close tab again
 if (BrowserWasntRunning)
 	delay 0.2
-	tell application "Vivaldi" to close active tab of front window
+	tell application "Brave Browser" to close active tab of front window
 end if
