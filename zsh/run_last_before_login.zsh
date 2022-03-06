@@ -6,7 +6,7 @@ if [[ "$TERM_PROGRAM" != "Terminus-Sublime" ]] ; then
 	else
 		echo
 		echo "> $(fortune -n300 -s)"
-		echo
 	fi
+	echo
 fi
 
