@@ -22,9 +22,6 @@ touch '/Applications/VLC.app'
 # Cryptomator
 cp "$ICON_FOLDER"'Cryptomator.icns' '/Applications/Cryptomator.app/Contents/Resources/Cryptomator.icns'
 touch '/Applications/Cryptomator.app'
-# Obsidian
-cp "$ICON_FOLDER"'Obsidian_Square.icns' '/Applications/Obsidian.app/Contents/Resources/icon.icns'
-touch '/Applications/Obsidian.app'
 # Alacritty
 cp "$ICON_FOLDER"'Alacritty.icns' '/Applications/Alacritty.app/Contents/Resources/alacritty.icns'
 touch '/Applications/Alacritty.app'
