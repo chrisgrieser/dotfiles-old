@@ -1,8 +1,8 @@
 [init]
 	defaultBranch = main
 [user]
-	name = pseudometa
-	email = 73286100+chrisgrieser@users.noreply.github.com
+	name = test
+	email = test@users.noreply.github.com
 [color]
 	diff = auto
 	status = auto
@@ -18,3 +18,8 @@
 	rebase = false
 [status]
 	showUntrackedFiles = all
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
