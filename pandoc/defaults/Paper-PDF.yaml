@@ -6,6 +6,13 @@ writer: pdf
 standalone: true
 pdf-engine: wkhtmltopdf
 
+# html options
+marginTop: 25
+marginRight: 25
+marginBottom: 25
+marginLeft: 25
+pageSize: A4
+
 # General
 verbosity: INFO
 fail-if-warnings: true

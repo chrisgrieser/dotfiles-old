@@ -1042,11 +1042,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1603,7 +1603,7 @@ delay 0.1</string>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<true/>
+				<false/>
 				<key>removeextension</key>
 				<true/>
 				<key>text</key>
@@ -2683,7 +2683,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>lang</key>
 		<string>de</string>
 		<key>library_path</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/pandoc/main-bibliography.bib</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Academia/Publikationen &amp; Vorträge/2020 - Algorithmen als Rankings plus x mit Simon/Full Paper/Literaturangaben.bib</string>
 		<key>max_number_of_bkps</key>
 		<string>20</string>
 	</dict>
