@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>09D146B3-3879-4CA2-ACB8-3E5FFE015686</key>
+		<key>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9E1FFD20-CE7D-48DD-8357-C177D8AB31EF</string>
+				<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -61,12 +61,10 @@
 			</dict>
 		</array>
 		<key>661DA836-A4F2-4671-80FE-4F378B93EAD0</key>
-		<array/>
-		<key>7BF18DF9-C51A-46AC-AD42-898EFA4C2581</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9E1FFD20-CE7D-48DD-8357-C177D8AB31EF</string>
+				<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -102,7 +100,18 @@
 			</dict>
 		</array>
 		<key>A537988D-4030-4E88-82B4-D20AEE30FA86</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A7B5E97A-3121-4FDF-BA2B-0875A3C3ED65</key>
 		<array>
 			<dict>
@@ -130,7 +139,18 @@
 			</dict>
 		</array>
 		<key>E8CC14AC-2115-4AD9-9732-73890756EFEE</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>EA823F9B-8853-46E8-84DC-6A6EBC039657</key>
 		<array>
 			<dict>
@@ -145,7 +165,18 @@
 			</dict>
 		</array>
 		<key>EB4A0D7B-AA0C-4C05-988E-8C90DFE82599</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ED11D17A-FF62-4970-AA48-CFE0C253BABF</key>
 		<array>
 			<dict>
@@ -164,19 +195,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>A537988D-4030-4E88-82B4-D20AEE30FA86</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FB0FE409-AB79-45C5-9605-37F809F606E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9E1FFD20-CE7D-48DD-8357-C177D8AB31EF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -359,6 +377,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>wait-plus-tab_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>28A37FE2-DC32-454F-9F4A-5EA7B7302518</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -519,46 +560,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>2</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>FB0FE409-AB79-45C5-9605-37F809F606E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>open-as-web-panel_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9E1FFD20-CE7D-48DD-8357-C177D8AB31EF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -593,23 +594,6 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>D1BA652A-A955-45F0-AB2F-71D3EADD5732</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>3</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>09D146B3-3879-4CA2-ACB8-3E5FFE015686</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -653,23 +637,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>4</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7BF18DF9-C51A-46AC-AD42-898EFA4C2581</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>use Telegram Web Z
@@ -688,15 +655,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>195</integer>
 		</dict>
-		<key>09D146B3-3879-4CA2-ACB8-3E5FFE015686</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>630</integer>
-		</dict>
 		<key>2234A5C0-FDE3-435A-83A4-6CC19FA4480C</key>
 		<dict>
 			<key>xpos</key>
@@ -707,9 +665,18 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>640</integer>
+		</dict>
+		<key>28A37FE2-DC32-454F-9F4A-5EA7B7302518</key>
+		<dict>
+			<key>note</key>
+			<string>wait + tab</string>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>235</integer>
 		</dict>
 		<key>37395496-78FC-403F-9082-9A707DCD9ABF</key>
 		<dict>
@@ -740,15 +707,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
-		<key>7BF18DF9-C51A-46AC-AD42-898EFA4C2581</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>760</integer>
-		</dict>
 		<key>91F5DAE9-7EA4-4520-AE5A-A24674BDAAC7</key>
 		<dict>
 			<key>colorindex</key>
@@ -760,23 +718,14 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
-		<key>9E1FFD20-CE7D-48DD-8357-C177D8AB31EF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>980</integer>
-			<key>ypos</key>
-			<integer>615</integer>
-		</dict>
 		<key>A52C24D5-ABE8-4AF0-B903-AA320D8816CD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>640</integer>
 		</dict>
 		<key>A537988D-4030-4E88-82B4-D20AEE30FA86</key>
 		<dict>
@@ -790,9 +739,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>895</integer>
 		</dict>
 		<key>B652A706-A1B3-4356-8EA2-962BC3DDB92D</key>
 		<dict>
@@ -806,9 +755,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>765</integer>
 		</dict>
 		<key>CDB7E2DC-E7D2-4059-B903-A348C134C523</key>
 		<dict>
@@ -820,16 +769,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>D0C8639A-9F8A-444E-B14E-52EF5ACC9C19</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>895</integer>
 		</dict>
 		<key>D1BA652A-A955-45F0-AB2F-71D3EADD5732</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>765</integer>
 		</dict>
 		<key>E8CC14AC-2115-4AD9-9732-73890756EFEE</key>
 		<dict>
@@ -877,15 +826,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>30</integer>
-		</dict>
-		<key>FB0FE409-AB79-45C5-9605-37F809F606E4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>505</integer>
 		</dict>
 	</dict>
 	<key>version</key>
