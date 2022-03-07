@@ -4,7 +4,7 @@
 # PDF-Writer
 writer: pdf
 standalone: true
-pdf-engine: pdflatex
+pdf-engine: wkhtmltopdf
 
 # General
 verbosity: INFO
