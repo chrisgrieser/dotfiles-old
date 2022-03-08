@@ -24,9 +24,10 @@ function docx2md () {
 		--output="$OUTPUT_FILE" \
 		--defaults=docx2md
 
-	mv ./attachments/*/* ./attachments/
-	rmdir ./attachments/*/
-	sed -i '' -E 's/.\/media/.\/attachments/g' "$OUTPUT_FILE"
+	mv ./attachments/media/* ./attachments/
+	rmdir ./attachments/media/
+	sed -i '' 's/\/media\//\//g' "$OUTPUT_FILE"
+	sed -i '' 's/„/"/' "$OUTPUT_FILE"
 
 	open -R "$OUTPUT_FILE"
 }

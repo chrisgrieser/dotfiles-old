@@ -2,7 +2,7 @@
 # ---------------------------------------------
 
 # Word-Writer
-writer: docx+native_numbering+empty_paragraphs
+writer: docx+native_numbering
 reference-doc: ${USERDATA}/reference-docs/academic-paper.docx
 
 # General
@@ -13,7 +13,6 @@ toc-depth: 3
 resource-path: # must be array
   - .
   - ./attachments
-  - ./media
   - ${HOME}/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/ # Vault path for images
 
 # Markdown-Reader
