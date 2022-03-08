@@ -107,7 +107,7 @@
 	// Navigate
 	{ "keys": ["super+k"], "command": "goto_comment"},
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-	{ "keys": ["super+shift+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ""} },
+	{ "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ""} },
 
 
    // Disable

@@ -1,8 +1,8 @@
 [init]
 	defaultBranch = main
 [user]
-	name = test
-	email = test@users.noreply.github.com
+	name = pseudometa
+	email = 73286100+chrisgrieser@users.noreply.github.com
 [color]
 	diff = auto
 	status = auto
