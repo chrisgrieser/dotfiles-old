@@ -73,6 +73,7 @@ sudo touch '/Applications/Microsoft Word.app'
 # AppCleaner
 cp "$ICON_FOLDER"'AppCleaner.icns' '/Applications/AppCleaner.app/Contents/Resources/AppCleaner.icns'
 touch '/Applications/AppCleaner.app'
+iconsur -l set "/Applications/Subtitles.app"
 
 # Drafts
 osascript -e 'tell application "Finder" to open information window of ("/Applications/Drafts.app" as POSIX file as alias)
@@ -83,9 +84,6 @@ set the clipboard to POSIX file "'"$ICON_FOLDER"'/Drafts_Green.icns"'
 osascript -e 'tell application "Finder" to open information window of ("/Applications/Mimestream.app" as POSIX file as alias)
 tell application "Finder" to activate
 set the clipboard to POSIX file "'"$ICON_FOLDER"'/Mail_fancy.icns"'
-
-iconsur -l set "/Applications/The Unarchiver.app"
-iconsur -l set "/Applications/Subtitles.app"
 
 # shellcheck disable=SC2032
 iconsur cache

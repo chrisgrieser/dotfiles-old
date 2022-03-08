@@ -24,6 +24,9 @@ open -a "Appcleaner" \
     "/Applications/Keynote.app" \
     "/Applications/iMovie.app"
 
+# change setting of archive utility
+open "/System/Library/CoreServices/Applications/Archive Utility.app"
+
 # NPM https://stackoverflow.com/a/41199625
 # add "--force" to enforce installation when there are already npm installs
 cat ~'/Desktop/NPMfile' | xargs npm install -g

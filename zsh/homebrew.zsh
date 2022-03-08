@@ -10,7 +10,6 @@ export HOMEBREW_DISPLAY_INSTALL_TIMES=1
 
 local BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
 
-
 alias bh='brew home'
 
 # -----------------------------------------------------
