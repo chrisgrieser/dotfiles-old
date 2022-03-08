@@ -1,0 +1,58 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2022-02-27T12:51:34.485Z",
+    "redirects": [
+        {
+            "description": "Wikiwand",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Natural_science",
+            "exampleResult": "https://www.wikiwand.com/en/Natural_science",
+            "error": null,
+            "includePattern": "https?:\\/\\/(\\w+)\\.wikipedia\\.org\\/wiki\\/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.wikiwand.com/$1/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "GitHub Wikis",
+            "exampleUrl": "https://github-wiki-see.page/m/koalaman/shellcheck/wiki/SC3020",
+            "exampleResult": "https://github.com/koalaman/shellcheck/wiki/SC3020",
+            "error": null,
+            "includePattern": "(.*?)-wiki-see.page\\/m(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1.com$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        }
+    ]
+}
