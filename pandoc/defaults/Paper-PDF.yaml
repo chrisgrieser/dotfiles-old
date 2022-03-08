@@ -21,6 +21,7 @@ toc-depth: 3
 resource-path:
   - .
   - ./attachments
+  - ./media
   - ${HOME}/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/ # Vault path for images
 
 # Markdown-Reader

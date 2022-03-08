@@ -9,20 +9,26 @@ function docx () {
 		"$INPUT_FILE" \
 		--output="$OUTPUT_FILE" \
 		--defaults=Paper-Word \
-		--metadata=date:"$(date "+%d. %B %Y")" \
-	&& open -R "$OUTPUT_FILE"
+		--metadata=date:"$(date "+%d. %B %Y")"
+
+	open -R "$OUTPUT_FILE"
 }
 
 function docx2md () {
-	cd "$(dirname "$*")" || retur
+	cd "$(dirname "$*")" || return
 	INPUT_FILE="$(basename "$*")"
 	OUTPUT_FILE="$WD/${INPUT_FILE%.*}_imported.md"
 
 	pandoc \
 		"$INPUT_FILE" \
 		--output="$OUTPUT_FILE" \
-		--defaults=docx2md \
-	&& open -R "$OUTPUT_FILE"
+		--defaults=docx2md
+
+	mv ./attachments/*/* ./attachments/
+	rmdir ./attachments/*/
+	sed -i '' -E 's/.\/media/.\/attachments/g' "$OUTPUT_FILE"
+
+	open -R "$OUTPUT_FILE"
 }
 
 

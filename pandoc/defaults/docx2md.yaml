@@ -2,13 +2,13 @@
 # ---------------------------------------------
 
 # Markdown Writer
-writer: markdown+lists_without_preceding_blankline
-extract-media: .
+writer: markdown+lists_without_preceding_blankline+hard_line_breaks-smart
+extract-media: attachments
 track-changes: all
 shift-heading-level-by: 1
 
 # Word-Reader
-reader: docx+empty_paragraphs-auto_identifiers
+reader: docx+empty_paragraphs
 
 # General
 verbosity: INFO
