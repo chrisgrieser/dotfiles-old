@@ -13,6 +13,18 @@ function docx () {
 	&& open -R "$OUTPUT_FILE"
 }
 
+function docx2md () {
+	cd "$(dirname "$*")" || retur
+	INPUT_FILE="$(basename "$*")"
+	OUTPUT_FILE="$WD/${INPUT_FILE%.*}_imported.md"
+
+	pandoc \
+		"$INPUT_FILE" \
+		--output="$OUTPUT_FILE" \
+		--defaults=docx2md \
+	&& open -R "$OUTPUT_FILE"
+}
+
 
 # ------------------
 

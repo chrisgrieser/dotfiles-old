@@ -2,7 +2,7 @@
 # ---------------------------------------------
 
 # Word-Writer
-writer: docx
+writer: docx+native_numbering+empty_paragraphs
 reference-doc: ${USERDATA}/reference-docs/academic-paper.docx
 
 # General
@@ -19,6 +19,7 @@ resource-path: # must be array
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
+default-image-extension: '.png'
 
 # Academic
 citeproc: true

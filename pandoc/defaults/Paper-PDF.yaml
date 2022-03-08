@@ -27,6 +27,7 @@ resource-path:
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
+default-image-extension: '.png'
 
 # Academic
 citeproc: true
