@@ -14,7 +14,6 @@ end tell
 delay 1
 
 # SWITCH TO LIGHT MODE
-# better without workaround, chrome://flag ➞ #extensions-on-chrome-urls
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
 
@@ -31,4 +30,10 @@ tell application "System Events"
 		set frontmost to true
 		click menu item "Hide Toolbar" of menu "View" of menu bar 1
 	end tell
+end tell
+delay 1
+tell application "xbar"
+	quit
+	delay 0.5
+	launch
 end tell
