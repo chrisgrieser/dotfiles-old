@@ -7,7 +7,7 @@
     },
     {
       "pattern": "https?://www.inoreader.com/*",
-      "passKeys": "jk"
+      "passKeys": "jkbvo"
     },
     {
       "pattern": "https?://excalidraw.com/*",
@@ -19,7 +19,7 @@
     },
     {
       "pattern": "https?://www.google.*/search*",
-      "passKeys": "/jk"
+      "passKeys": "/jkbv"
     }
   ],
   "filterLinkHints": false,
