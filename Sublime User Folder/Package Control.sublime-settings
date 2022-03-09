@@ -7,7 +7,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"LSP-yaml",
 	],
 	"installed_packages":
 	[

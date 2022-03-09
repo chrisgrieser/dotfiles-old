@@ -113,7 +113,6 @@
 	//Plugins
 	"ignored_packages": [
 		"CSS",
-		"LSP-yaml",
 		"Markdown",
 		"Vintage",
 	],
