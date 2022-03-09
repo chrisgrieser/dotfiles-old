@@ -480,6 +480,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://web.telegram.org/z/#58908103</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E8CC14AC-2115-4AD9-9732-73890756EFEE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -495,25 +514,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>ED11D17A-FF62-4970-AA48-CFE0C253BABF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://web.telegram.org/z/#58908103</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>E8CC14AC-2115-4AD9-9732-73890756EFEE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -600,6 +600,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.messenger.com/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D0C8639A-9F8A-444E-B14E-52EF5ACC9C19</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -615,25 +634,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>A7B5E97A-3121-4FDF-BA2B-0875A3C3ED65</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.messenger.com/</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D0C8639A-9F8A-444E-B14E-52EF5ACC9C19</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -665,9 +665,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</key>
 		<dict>
 			<key>xpos</key>
-			<integer>560</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>640</integer>
+			<integer>590</integer>
 		</dict>
 		<key>28A37FE2-DC32-454F-9F4A-5EA7B7302518</key>
 		<dict>
@@ -723,9 +723,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>640</integer>
+			<integer>590</integer>
 		</dict>
 		<key>A537988D-4030-4E88-82B4-D20AEE30FA86</key>
 		<dict>
@@ -739,9 +739,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>845</integer>
 		</dict>
 		<key>B652A706-A1B3-4356-8EA2-962BC3DDB92D</key>
 		<dict>
@@ -755,9 +755,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>715</integer>
 		</dict>
 		<key>CDB7E2DC-E7D2-4059-B903-A348C134C523</key>
 		<dict>
@@ -769,16 +769,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>D0C8639A-9F8A-444E-B14E-52EF5ACC9C19</key>
 		<dict>
 			<key>xpos</key>
-			<integer>560</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>845</integer>
 		</dict>
 		<key>D1BA652A-A955-45F0-AB2F-71D3EADD5732</key>
 		<dict>
 			<key>xpos</key>
-			<integer>560</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>715</integer>
 		</dict>
 		<key>E8CC14AC-2115-4AD9-9732-73890756EFEE</key>
 		<dict>

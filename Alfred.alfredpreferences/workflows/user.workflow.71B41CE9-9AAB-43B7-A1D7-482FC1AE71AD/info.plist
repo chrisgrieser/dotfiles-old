@@ -1587,9 +1587,7 @@ end alfred_script</string>
 				<key>script</key>
 				<string>TO_TOUCH="$*"/Untitled
 touch "$TO_TOUCH"
-open -R "$TO_TOUCH"
-sleep 0.5
-osascript -e 'tell application "System Events" to keystroke return'</string>
+open -R "$TO_TOUCH"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

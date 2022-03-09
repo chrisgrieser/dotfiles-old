@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0B9FF52B-07EB-4F07-B74A-35A6EBB8607B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3BA48FBB-0D42-4A1B-A400-C158DB17B1DB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>14AFBDBB-80C6-4254-A9F8-23CE1593EA46</key>
 		<array>
 			<dict>
@@ -62,19 +49,6 @@
 		</array>
 		<key>37498F17-9307-4129-8202-494A66EC4B25</key>
 		<array/>
-		<key>54EEDF0F-38D4-4CBC-B76F-002C04DC62D0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D99851E3-9E5D-4CA2-93F4-37B629B31588</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5B55A700-40A0-41EF-A575-3D9B863A07D4</key>
 		<array>
 			<dict>
@@ -166,19 +140,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C7904AB9-8ECC-4CAD-91C7-F8A22100A271</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>54EEDF0F-38D4-4CBC-B76F-002C04DC62D0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C93F5D57-9C03-4F77-BD1F-DBA31D5F8010</key>
 		<array>
 			<dict>
@@ -190,30 +151,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>EF8204A3-AA7E-412A-8157-EF3DD9F66B52</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>C7904AB9-8ECC-4CAD-91C7-F8A22100A271</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>511A85AF-DEBE-478B-9048-2262908F9B36</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>CF0D9785-518B-429C-8B36-21780A056B07</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>37ED500A-8DD1-4147-86CF-430C72ED01D5</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -241,37 +178,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CF0D9785-518B-429C-8B36-21780A056B07</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C248FDE2-0041-4599-B7A8-DE8E7454779F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D7B2AB89-055D-4E5D-87E4-4A18CEE33660</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>866D366A-C1A0-4554-9462-555033CF2E48</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D99851E3-9E5D-4CA2-93F4-37B629B31588</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0B9FF52B-07EB-4F07-B74A-35A6EBB8607B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -494,97 +405,6 @@ end if</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>obsidian://hook-get-address</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>C7904AB9-8ECC-4CAD-91C7-F8A22100A271</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>🪝 Obsidian Hook copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>3BA48FBB-0D42-4A1B-A400-C158DB17B1DB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{clipboard}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D99851E3-9E5D-4CA2-93F4-37B629B31588</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\[(.*)\].*</string>
-				<key>regexcaseinsensitive</key>
-				<true/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string>$1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>0B9FF52B-07EB-4F07-B74A-35A6EBB8607B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>seconds</key>
-				<string>0.2</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
-			<key>uid</key>
-			<string>54EEDF0F-38D4-4CBC-B76F-002C04DC62D0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -600,34 +420,6 @@ end if</string>
 						<string>Finder</string>
 						<key>uid</key>
 						<string>EF8204A3-AA7E-412A-8157-EF3DD9F66B52</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>md.obsidian</string>
-						<key>outputlabel</key>
-						<string>Obsidian</string>
-						<key>uid</key>
-						<string>511A85AF-DEBE-478B-9048-2262908F9B36</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.mimestream.Mimestream</string>
-						<key>outputlabel</key>
-						<string>Mimestream</string>
-						<key>uid</key>
-						<string>37ED500A-8DD1-4147-86CF-430C72ED01D5</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -665,8 +457,6 @@ end if</string>
 				<array>
 					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.mimestream.Mimestream</string>
-					<string>md.obsidian</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.apple.finder</string>
 				</array>
@@ -679,57 +469,6 @@ end if</string>
 			<string>90A15AA9-897C-4C45-8ED5-90643765F393</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"	tell process "Mimestream"		set frontmost to true		click menu item "Open in Gmail" of menu "Message" of menu bar 1	end tellend telldelay 0.1tell application "Brave Browser"	repeat until (loading of active tab of front window is false)
-		delay 0.2	end repeat
-	delay 1.8	set tabUrl to URL of active tab of front window	set tabTitle to title of active tab of front window
-	close active tab of front windowend tell
-set markdownurl to "[" &amp; tabTitle &amp; "](" &amp; tabUrl &amp; ")"
-set the clipboard to markdownurl
-
-return tabTitle</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CF0D9785-518B-429C-8B36-21780A056B07</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>✅ Webhook copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C248FDE2-0041-4599-B7A8-DE8E7454779F</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -855,17 +594,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>45</integer>
 		</dict>
-		<key>0B9FF52B-07EB-4F07-B74A-35A6EBB8607B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>Strip Markdown</string>
-			<key>xpos</key>
-			<integer>805</integer>
-			<key>ypos</key>
-			<integer>335</integer>
-		</dict>
 		<key>14AFBDBB-80C6-4254-A9F8-23CE1593EA46</key>
 		<dict>
 			<key>colorindex</key>
@@ -894,24 +622,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<integer>880</integer>
 			<key>ypos</key>
 			<integer>550</integer>
-		</dict>
-		<key>3BA48FBB-0D42-4A1B-A400-C158DB17B1DB</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>880</integer>
-			<key>ypos</key>
-			<integer>305</integer>
-		</dict>
-		<key>54EEDF0F-38D4-4CBC-B76F-002C04DC62D0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>480</integer>
-			<key>ypos</key>
-			<integer>335</integer>
 		</dict>
 		<key>5B55A700-40A0-41EF-A575-3D9B863A07D4</key>
 		<dict>
@@ -986,24 +696,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
-		<key>C248FDE2-0041-4599-B7A8-DE8E7454779F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>885</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
-		<key>C7904AB9-8ECC-4CAD-91C7-F8A22100A271</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>315</integer>
-			<key>ypos</key>
-			<integer>305</integer>
-		</dict>
 		<key>C93F5D57-9C03-4F77-BD1F-DBA31D5F8010</key>
 		<dict>
 			<key>colorindex</key>
@@ -1022,15 +714,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>45</integer>
 		</dict>
-		<key>CF0D9785-518B-429C-8B36-21780A056B07</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>315</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
 		<key>D7B2AB89-055D-4E5D-87E4-4A18CEE33660</key>
 		<dict>
 			<key>colorindex</key>
@@ -1039,17 +722,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<integer>315</integer>
 			<key>ypos</key>
 			<integer>550</integer>
-		</dict>
-		<key>D99851E3-9E5D-4CA2-93F4-37B629B31588</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>get clipboard</string>
-			<key>xpos</key>
-			<integer>560</integer>
-			<key>ypos</key>
-			<integer>335</integer>
 		</dict>
 		<key>E70145CA-6597-4FA2-8283-F8E3762244FC</key>
 		<dict>

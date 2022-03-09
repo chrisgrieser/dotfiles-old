@@ -64,6 +64,14 @@
         "action": "G_closerighttabs",
         "direct": "UR",
         "whitelist": []
+      },
+      {
+        "direct": "DU",
+        "action": "G_reload"
+      },
+      {
+        "direct": "UD",
+        "action": "G_closeothers"
       }
     ],
     "gestureui": true,
@@ -72,16 +80,16 @@
     "gholdkeytype": "true",
     "stenable": false,
     "stroke": true,
-    "strokecolor": "4bcf63",
+    "strokecolor": "792ECF",
     "strokeopa": "0.7",
     "strokewidth": "6",
     "tooltip": false,
     "tooltipcolor": "120310",
     "tooltipopa": 0.9,
-    "tooltipwidth": 18
+    "tooltipwidth": "23"
   },
   "drag": {
-    "ddirect": true,
+    "ddirect": false,
     "ddirectcolor": "778899",
     "ddirectopa": 0.9,
     "dholdkey": "alt",
@@ -97,7 +105,7 @@
     "dtooltip": true,
     "dtooltipcolor": "120310",
     "dtooltipopa": 0.9,
-    "dtooltipwidth": 18,
+    "dtooltipwidth": "21",
     "image": [
       {
         "action": "I_save",
