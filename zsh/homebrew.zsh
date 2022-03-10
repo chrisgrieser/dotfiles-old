@@ -38,7 +38,7 @@ function post-install () {
 
 function br () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
-		killall "$1"
+		killall "$1" &> /dev/null
 		brew reinstall "$1"
 		return
 	fi
@@ -61,7 +61,7 @@ function br () {
 }
 function bu () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
-		killall "$1"
+		killall "$1" &> /dev/null
 		brew uninstall --zap "$1"
 		return
 	fi
@@ -93,6 +93,7 @@ function bi (){
 	if [[ $? == 1 ]] ; then
 		local SELECTED=""
 		SELECTED=$( { brew formulae ; brew casks } | fzf \
+		           -0 -1 \
 		           --query "$TO_INSTALL" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
 		           --bind 'alt-enter:execute(brew home {})+abort' \

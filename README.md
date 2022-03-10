@@ -5,10 +5,11 @@
 
 - [What are "dotfiles"?](#what-are-dotfiles)
 - [Why this repository?](#why-this-repository)
-- [Special Explanations](#special-explanations)
 - [How this Repository works](#how-this-repository-works)
 - [Got an idea for an improvement?](#got-an-idea-for-an-improvement)
-- [Contact](#contact)
+- [About Me](#about-me)
+	- [Profiles](#profiles)
+	- [Donate](#donate)
 
 <!-- /MarkdownTOC -->
 ## What are "dotfiles"?
@@ -20,11 +21,6 @@
 - They uploaded to git for backups and version history.
 - A public GitHub repository also enables easier sharing of individual configuration with others
 
-## Special Explanations
-- The `CSS3` Sublime Package has to be symlinked and cannot be installed automatically via listing in Package Control settings, since I modified it manually. (Removing autocompletions to avoid overlap with the `lsp-css` package.)
-- The fig settings are "inactive" since they cannot be properly symlinked [until a bug with Fig is fixed](https://github.com/withfig/fig/issues/693).
-- I don't use a zsh-framework, since most zsh plugins are honestly little more than a few lines to be copypasted, see [this critique of oh-my-zsh](https://www.youtube.com/watch?v=21_WkzBErQk), which I mostly agree with.
-
 ## How this Repository works
 These files only exist for the purpose of backup:
 - `crontab` on my main machine [is configured](Cron%20Jobs/30-min.sh) to run the script [30-min.sh](Cron%20Jobs/30-min.sh) every 30 minutes.
@@ -35,10 +31,17 @@ These files only exist for the purpose of backup:
 ## Got an idea for an improvement?
 Feel free to [open an issue](https://github.com/chrisgrieser/dotfiles/issues) to suggest an improvement to my settings! :blush:
 
-## Contact
+## About Me
+In my day job, I am a sociologist studying the social mechanisms underlying the digital economy. For my PhD project, I investigate the governance of the app economy and how software ecosystems manage the tension between innovation and compatibility. If you are interested in this subject, feel free to get in touch!
+
+### Profiles
+- [Discord](https://discordapp.com/users/462774483044794368/)
 - [Academic Website](https://chris-grieser.de/)
 - [GitHub](https://github.com/chrisgrieser/)
 - [Twitter](https://twitter.com/pseudo_meta)
-- Discord: `@pseudometa#9546`
 - [ResearchGate](https://www.researchgate.net/profile/Christopher-Grieser)
-- [LinkedIn](https://www.linkedin.com/in/christopher-grieser-ba693b17a/)
+- [LinkedIn](https://www.linkedin.com/in/christopher-grieser-ba693b17a/) <!-- markdown-link-check-disable-line -->
+
+### Donate
+- [PayPal](https://www.paypal.com/PayPalme/ChrisGrieser)
+- [Ko-Fi](https://ko-fi.com/pseudometa) <!-- markdown-link-check-disable-line -->
