@@ -1,5 +1,4 @@
 #!/bin/zsh
-export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
 # Re-occuring task to Drafts
 osascript -e 'tell application "Drafts" to make new draft with properties {content: "# RSS\n", tags: {"to do"}}'

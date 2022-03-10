@@ -20,3 +20,9 @@ disable=SC2236,SC2071,SC1083,SC1072,SC2001
 
 # `shellcheck --list-optional`
 enable=deprecate-which,quote-safe-variables,require-double-brackets
+
+# -----------------------------------------------------
+# Enable some Optional Rules
+# -----------------------------------------------------
+# always follow `source`
+external-sources=true
