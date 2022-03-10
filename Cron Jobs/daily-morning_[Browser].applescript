@@ -1,7 +1,7 @@
 #!/usr/bin/env osascript
 
 # SLEEP TIMER
-tell application "--YouTube" to if it is running then quit
+tell application "-YouTube" to if it is running then quit
 tell application "Brave Browser"
 	if ((count of window) is not 0)
 		if ((count of tab of front window) is not 0)
@@ -34,6 +34,6 @@ end tell
 delay 1
 tell application "xbar"
 	quit
-	delay 0.5
+	delay 1
 	launch
 end tell
