@@ -3,7 +3,7 @@
 function docx () {
 	cd "$(dirname "$*")" || return
 	INPUT_FILE="$(basename "$*")"
-	OUTPUT_FILE="$WD/${INPUT_FILE%.*}_CG.docx"
+	OUTPUT_FILE="${INPUT_FILE%.*}_CG.docx"
 
 	pandoc \
 		"$INPUT_FILE" \
@@ -17,7 +17,7 @@ function docx () {
 function docx2md () {
 	cd "$(dirname "$*")" || return
 	INPUT_FILE="$(basename "$*")"
-	OUTPUT_FILE="$WD/${INPUT_FILE%.*}_imported.md"
+	OUTPUT_FILE="${INPUT_FILE%.*}_imported.md"
 
 	pandoc \
 		"$INPUT_FILE" \

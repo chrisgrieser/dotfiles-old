@@ -42,18 +42,19 @@ killall Finder
 # Progressive Web Apps
 # ----------------------
 ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
-VIDEO_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
+PWA_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
 
-cp "$ICON_FOLDER/YouTube.icns" "$VIDEO_FOLDER/-YouTube.app/Contents/Resources/app.icns"
-touch "$VIDEO_FOLDER/-YouTube.app"
-iconsur set "$VIDEO_FOLDER/-Tagesschau.app"
-iconsur set "$VIDEO_FOLDER/-Netflix.app"
-iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$VIDEO_FOLDER/-BunnyFap.app"
-iconsur set "$VIDEO_FOLDER/-Twitch.app"
+cp "$ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
+touch "$PWA_FOLDER/-YouTube.app"
+iconsur set "$PWA_FOLDER/-Tagesschau.app"
+iconsur set "$PWA_FOLDER/-Netflix.app"
+iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app"
+iconsur set "$PWA_FOLDER/-Twitch.app"
 
-iconsur cache
+iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app"
 
-iconsur -k "Unread" set "$VIDEO_FOLDER/Inoreader.app"
+cp "$ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
+touch "$PWA_FOLDER/Google Docs.app"
 
 # ----------------------
 # Other
