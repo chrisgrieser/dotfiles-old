@@ -773,30 +773,6 @@ curl --silent -LH "Accept: application/x-bibtex" {query}</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo "{query}" | grep -vw "month =" | grep -vw "issn =" | pbcopy
-sleep 0.1</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>58A96A70-EE77-4BE2-8113-835C86F99F3B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>tell application "BibDesk" to activate
@@ -817,6 +793,30 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>AA39C446-4B29-4745-A7B0-BA46D0FBA3EA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo "{query}" | grep -vw "month =" | grep -vw "issn =" | pbcopy
+sleep 0.1</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>58A96A70-EE77-4BE2-8113-835C86F99F3B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -939,11 +939,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1010,6 +1010,19 @@ the clipboard</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>46DA2A56-6DB7-4A29-AAC9-3FF9F0ACA314</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -1027,19 +1040,6 @@ the clipboard</string>
 			<string>204A5449-B11D-4CDE-8CAF-4F0E505EAF65</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>46DA2A56-6DB7-4A29-AAC9-3FF9F0ACA314</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1392,6 +1392,25 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>x-bdsk://{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0D6CABA9-380E-4CD1-BA98-3DD89B8ECA22</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -1407,25 +1426,6 @@ delay 0.1</string>
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>21A1CCBA-5753-48DF-8ED8-47BBC6D27669</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>x-bdsk://{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0D6CABA9-380E-4CD1-BA98-3DD89B8ECA22</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1474,23 +1474,8 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Sublime Text.app</string>
-				<key>sourcefile</key>
-				<string>{var:library_path}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>572E0814-28FB-45AB-833C-0895619573BF</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>bibdesk</string>
 				<key>subtext</key>
@@ -1510,59 +1495,17 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/Sublime Text.app</string>
+				<key>sourcefile</key>
+				<string>{var:library_path}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>3BA9920F-C286-42D9-B725-416018DB6B32</string>
+			<string>572E0814-28FB-45AB-833C-0895619573BF</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>bkp bibtex</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Backup: BibTeX Library</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>00CC532E-500A-43AF-B54C-7C5B36946BFF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<true/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>✅ Backup finished</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>277C91B6-DFC9-419B-87A8-86F067B5A91A</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1606,6 +1549,63 @@ echo -n $file_name</string>
 			<string>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>3BA9920F-C286-42D9-B725-416018DB6B32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<true/>
+				<key>text</key>
+				<string>'{query}'</string>
+				<key>title</key>
+				<string>✅ Backup finished</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>277C91B6-DFC9-419B-87A8-86F067B5A91A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>bkp bibtex</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Backup: BibTeX Library</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>00CC532E-500A-43AF-B54C-7C5B36946BFF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1713,27 +1713,6 @@ echo -n $file_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>⚠️ No DOI found</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>6D02DD95-422B-4A31-A4FB-C9F91FF3FD02</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>soundname</key>
 				<string>Basso</string>
 				<key>systemsound</key>
@@ -1762,6 +1741,27 @@ echo -n $file_name</string>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>83BE9500-7741-438B-9769-DC529DAFAA57</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>⚠️ No DOI found</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6D02DD95-422B-4A31-A4FB-C9F91FF3FD02</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1842,6 +1842,24 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>FC54FDB5-FB2C-4110-9B3B-4EFB9BE391D1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1858,24 +1876,6 @@ fi</string>
 			<string>2A9D4779-367A-4530-9722-5A429959EAAC</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>
-</string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>FC54FDB5-FB2C-4110-9B3B-4EFB9BE391D1</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -2330,7 +2330,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>15</integer>
+			<integer>10</integer>
 			<key>ypos</key>
 			<integer>695</integer>
 		</dict>
