@@ -13,10 +13,12 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "pause" in wo
 
 -- open Drafts for note-taking
 if (notes is "drafts") then
+	-- open Drafts
 	tell application "Drafts" to open location "drafts://x-callback-url/runaction?&action=Workspace-Basic%20(note-taking)"
 	repeat until (application "Drafts" is running)
 		delay 0.2
 	end repeat
+
 	-- wait till Zoom meeting has started
 	set nameList to ""
 	repeat until nameList contains "Zoom Meeting"
@@ -25,6 +27,11 @@ if (notes is "drafts") then
 		delay 0.2
 	end repeat
 	delay 0.5
+
+	-- minimize the unneeded window
+	tell application "System Events"
+		click (first button of window "Zoom" of process "zoom.us" whose role description is "minimize button")
+	end tell
 
 	tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Zoom"
 	display notification "" with title "📝 Note Mode ready"
