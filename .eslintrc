@@ -66,7 +66,7 @@
 		"comma-dangle": ["error", {"arrays": "never", "objects": "only-multiline" }],
 
 		// Strings & Numbers
-		"quotes": ["warn", "double"],
+		"quotes": ["warn", "double", {"avoidEscape": true}],
 		"no-useless-concat": "warn",
 		"no-multi-str": "error",
 		"no-magic-numbers": ["error", { "ignore": [-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 1000, 10000], "ignoreArrayIndexes": true }],
