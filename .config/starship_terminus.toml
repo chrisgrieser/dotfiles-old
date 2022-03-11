@@ -18,7 +18,7 @@ success_symbol = " [ﰉ ](bold green)" # terminus needs extra space
 error_symbol = " [ ](bold red)" # terminus needs extra space
 
 [cmd_duration]
-min_time = 3000
+min_time = 2500
 format = " [ $duration](bold cyan)"
 
 [directory]
@@ -27,7 +27,7 @@ truncation_symbol = "/"
 truncate_to_repo = true
 read_only = "ﮖ  "
 read_only_style = "red bg:black"
-style = "fg:blue bg:black" # terminus different
+style = "fg:bright-blue bg:black" # terminus different
 format = "[$path]($style) [$read_only]($read_only_style)"
 
 [directory.substitutions]
@@ -37,18 +37,18 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 "Configs/Alfred.alfredpreferences/workflows" = "AlfredPrefs"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
-"user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Pandoc-Suite"
+"user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Citation Picker"
 
 [custom.file_number]
-command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | cut -c3- | wc -l"
+command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | wc -l"
 when = "exit 0" # run always
 symbol = " "
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black" # terminus different
 
 [custom.folder_number]
-command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | cut -c3- | wc -l"
-when = "exit 0" # run always
+command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
+when = "exit 0"
 symbol = " "
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black" # terminus different
@@ -57,12 +57,10 @@ style = "fg:yellow bg:black" # terminus different
 format = " [$symbol$status]($style)"
 disabled = false
 symbol = ""
-# ⚡
 
 [sudo]
 format="[sudo $symbol]($style)"
 disabled = false
-symbol = " "
 
 # -------------
 # git
@@ -85,14 +83,14 @@ format = "[$symbol$branch]($style) "
 [git_status]
 untracked = '[+$count ](fg:green bg:black)'
 deleted = '[-$count ](fg:red bg:black)'
-modified = '[*$count ](fg:yellow bg:black)'
+modified = '[*$count ](fg:cyan bg:black)'
 renamed = '[✎$count ](fg:blue bg:black)'
 staged = '[◎$count ](fg:cyan bg:black)'
 conflicted = '[⤱$count ](fg:red bg:black)'
 diverged = '[⇈$count ](fg:cyan bg:black)'
 ahead = '[⇡$count ](fg:cyan bg:black)'
 behind = '[⇣$count ](fg:yellow bg:black)'
-style = 'fg:purple bg:black bold' # terminus different
+style = 'fg:purple bg:black' # terminus different
 format = '[$ahead_behind$conflicted$stashed$staged$untracked$renamed$modified$deleted]($style)'
 
 # lines
@@ -128,7 +126,7 @@ style = "dimmed 208"
 format = " [$symbol$version]($style)"
 version_format = "$major"
 style = "dimmed cyan"
-detect_extensions = ["ts"]
+detect_extensions = ["ts"] # dont trigger for JXA
 
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
@@ -138,4 +136,4 @@ python_binary = ["python3"]
 
 [custom.alfred]
 files = ["info.plist"]
-format = '[ Alfred ](bg: purple) '
+format = '[ Alfred ](black bg:purple)'
