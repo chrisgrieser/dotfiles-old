@@ -54,6 +54,23 @@
 		{"key": "selection_empty", "operator": "equal", "operand": false},
 	] },
 
+	// cmd + k: Inter-File Navigation via goto or table of comments
+	{ "keys": ["super+k"], "command": "show_overlay",
+		"args": {"overlay": "goto", "text": "@"},
+		"context": [
+			{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
+			{"key": "selector", "operator": "not_equal", "operand": "source.css"},
+	] },
+	{ "keys": ["super+k"], "command": "goto_comment", "context": [
+		{"key": "selector", "operator": "equal", "operand": "source.css"},
+	] },
+	// cmd + k: Markdown link
+	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
+		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
+	] },
+	// Navigate
+	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
+
 
 	// Sublime Linter Navigation
 	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true } },
@@ -104,13 +121,7 @@
 	{ "keys": ["super+u"], "command": "jump_back" },
 	{ "keys": ["super+shift+u"], "command": "jump_forward" },
 
-	// Navigate
-	{ "keys": ["super+k"], "command": "goto_comment"},
-	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-	{ "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ""} },
-
-
-   // Disable
+   // Disable Saving
    { "keys": ["super+shift+s"], "command": "noop" },
 
 	// Expand Selection
@@ -191,14 +202,6 @@
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
 		{ "key": "setting.mde.keymap_disable.reference_new_footnote", "operator": "not_equal", "operand": true }
 	] },
-	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
-			{ "key": "setting.mde.keymap_disable.reference_new_inline_link", "operator": "not_equal", "operand": true }
-		]
-	},
-
-
 
 ]
 
