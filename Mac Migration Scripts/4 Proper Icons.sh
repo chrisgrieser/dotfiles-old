@@ -28,9 +28,9 @@ touch '/Applications/Alacritty.app'
 # Sublime
 cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
 touch '/Applications/Sublime Text.app'
-# Vivaldi
-cp "$ICON_FOLDER"'Vivaldi Red.icns' '/Applications/Vivaldi.app/Contents/Resources/app.icns'
-touch '/Applications/Vivaldi.app'
+# Brave
+cp "$ICON_FOLDER"'Brave Browser.icns' '/Applications/Brave Browser.app/Contents/Resources/app.icns'
+touch '/Applications/Brave Browser.app'
 
 killall Finder
 
