@@ -17,7 +17,6 @@ delay 1
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
 
-
 # RESET SOME STUFF
 tell application "KeeWeb" to if it is running then quit
 delay 0.5
@@ -31,7 +30,7 @@ tell application "System Events"
 end tell
 delay 0.5
 tell application id "com.surteesstudios.Bartender" to launch
-delay 10
+delay 30
 tell application "xbar"
 	quit
 	delay 1

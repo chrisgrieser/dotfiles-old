@@ -18,6 +18,7 @@
 		"command": "chain",
 		"args": {
 			"commands": [
+				["save_all"],
 				["close_all"],
 				["exit"]
 			]

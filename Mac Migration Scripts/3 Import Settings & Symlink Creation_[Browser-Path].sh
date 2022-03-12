@@ -23,8 +23,6 @@ mv ~/.zshrc ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zshrc .
 mv ~/.zprofile ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zprofile .
-# mv -f ~/.fig/settings.json ~/.Trash
-# ln -s "$SYMLINK_LOC"/fig-settings.json ~/.fig/settings.json
 
 ln -s "$SYMLINK_LOC"/.searchlink ~
 ln -s "$SYMLINK_LOC"/.shellcheckrc ~
@@ -35,10 +33,6 @@ ln -s "$SYMLINK_LOC"/.eslintrc ~
 ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
 ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
-
-# Brave Software/Brave Browser
-# mv ~"/Applications/Chrome Apps.localized" ~/.Trash
-# ln -s "$SYMLINK_LOC/../Chrome Apps.localized/" ~"/Applications/Chrome Apps.localized"
 
 # Brave
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
@@ -56,17 +50,22 @@ ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
 mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
 ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
 
+# VLC
+mv ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
+mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
+ln -s "$SYMLINK_LOC/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
+
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
-
 mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
-
 mv ~"/Library/Application Support/Sublime Text/Packages/copy-file-name" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/copy-file-name" ~"/Library/Application Support/Sublime Text/Packages"
 
 # --------------
+# seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53
+# defaults import com.manytricks.Moom com.manytricks.Moom.plist
 
 # import preferences
 # untested yet, should work though: https://github.com/koalaman/shellcheck/wiki/Sc2045#correct-code
@@ -81,19 +80,7 @@ for d in */ ; do
 	mv -v "$d" ~/Library/Preferences/
 done
 
-# seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53
-# defaults import com.manytricks.Moom com.manytricks.Moom.plist
-# ------------------------------------------------------------------------------
 
-# Symlink Plists
-PLIST_SYMLINK_LOC=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/plist/'
-cd "$PLIST_SYMLINK_LOC" || exit
-for p in *.plist ; do
-	mv ~/Library/Preferences/"$p" ~/.Trash
-	[[ -e "$p" ]] || break  # handle the case of no *.plist files
-	ln -s "$PLIST_SYMLINK_LOC""$p" ~/Library/Preferences/"$f"
-done
-mv ~/Library/Preferences/org.videolan.vlc/ ~/.Trash
-ln -s "$PLIST_SYMLINK_LOC"/org.videolan.vlc/ ~/Library/Preferences/org.videolan.vlc
+
 
 

@@ -21,6 +21,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1A99D29A-BD9A-4B10-9E09-751F71529447</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4694D7EB-2482-44FA-881E-2597A9A90F9C</key>
 		<array>
 			<dict>
@@ -44,24 +70,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</key>
+		<key>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5DAB0248-BF51-435C-9708-E554C51B4EAF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
+				<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -99,6 +112,30 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>D71CA07B-538E-41DC-9B8E-EB23A95AB12F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>A15E878F-A3E0-4C08-9B46-77290F1B153D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -121,62 +158,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A9E8067E-9512-4152-8D31-91D238D11515</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>52203898-87CD-4F01-999A-693B8FD57FE8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>EE95D3C7-00C0-4F2F-8B74-F518E9BBEC6A</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>20863B68-4261-4A9A-A565-53664650C527</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B96DFF64-E115-49EF-A0D3-CABFB549CF9D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>811F15A4-7752-4296-98D3-451AED5998FD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A9E8067E-9512-4152-8D31-91D238D11515</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -284,174 +270,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>&gt; {var:input}</string>
-				<key>title</key>
-				<string>✅ Command finished</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>52203898-87CD-4F01-999A-693B8FD57FE8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-
-eval "$input"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>.</string>
-				<key>subtext</key>
-				<string>{query}</string>
-				<key>text</key>
-				<string>Run in Command in Background</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5DAB0248-BF51-435C-9708-E554C51B4EAF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>&gt; {var:input}
-{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>20863B68-4261-4A9A-A565-53664650C527</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>empty</string>
-						<key>uid</key>
-						<string>EE95D3C7-00C0-4F2F-8B74-F518E9BBEC6A</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>content</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>A9E8067E-9512-4152-8D31-91D238D11515</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>input</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -475,19 +293,6 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
-			<key>uid</key>
-			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -505,6 +310,102 @@ eval "$input"</string>
 			<string>811F15A4-7752-4296-98D3-451AED5998FD</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinterminal</string>
+			<key>uid</key>
+			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+subl --command copy_path
+sleep 0.1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:focusedapp}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>com.apple.finder</string>
+						<key>outputlabel</key>
+						<string>Finder</string>
+						<key>uid</key>
+						<string>259F6D3A-8CDA-43C2-BCEA-C3A789EE2F48</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:focusedapp}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>com.sublimetext.4</string>
+						<key>outputlabel</key>
+						<string>Sublime</string>
+						<key>uid</key>
+						<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:focusedapp}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>md.obsidian</string>
+						<key>outputlabel</key>
+						<string>Obsidian</string>
+						<key>uid</key>
+						<string>D71CA07B-538E-41DC-9B8E-EB23A95AB12F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>--</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>60574399-8C54-4BDA-BC69-20A2ABA15DB8</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -540,32 +441,43 @@ eval "$input"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.apple.finder</string>
-						<key>outputlabel</key>
-						<string>Finder</string>
-						<key>uid</key>
-						<string>259F6D3A-8CDA-43C2-BCEA-C3A789EE2F48</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
+				<key>argument</key>
+				<string>{var:vault_path}/{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>60574399-8C54-4BDA-BC69-20A2ABA15DB8</string>
+			<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "obsidian://advanced-uri?commandid=workspace%253Acopy-path"
+sleep 0.1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -651,23 +563,30 @@ eval "$input"</string>
 			<key>note</key>
 			<string>open current Finder Window in Hyper</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>440</integer>
 		</dict>
-		<key>20863B68-4261-4A9A-A565-53664650C527</key>
+		<key>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</key>
 		<dict>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>275</integer>
+			<integer>385</integer>
+		</dict>
+		<key>1A99D29A-BD9A-4B10-9E09-751F71529447</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>470</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>155</integer>
 		</dict>
 		<key>4694D7EB-2482-44FA-881E-2597A9A90F9C</key>
 		<dict>
@@ -676,88 +595,58 @@ eval "$input"</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>70</integer>
 		</dict>
-		<key>4A3E521A-7CEE-42CA-8FBF-375F6A0DDA7A</key>
+		<key>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>300</integer>
-		</dict>
-		<key>52203898-87CD-4F01-999A-693B8FD57FE8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>160</integer>
-		</dict>
-		<key>5DAB0248-BF51-435C-9708-E554C51B4EAF</key>
-		<dict>
-			<key>note</key>
-			<string>run in background</string>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>270</integer>
+			<integer>495</integer>
 		</dict>
 		<key>5DBE1E1A-ADCD-4ED4-8FC6-D302D5A6C77C</key>
 		<dict>
 			<key>note</key>
 			<string>defined in Hyper .zshrc as searching zsh files</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>665</integer>
+			<integer>745</integer>
 		</dict>
 		<key>60574399-8C54-4BDA-BC69-20A2ABA15DB8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>165</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>430</integer>
 		</dict>
 		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>470</integer>
 			<key>ypos</key>
-			<integer>440</integer>
-		</dict>
-		<key>87BAC349-E0E3-4207-BE6C-E54F86F99B2D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>260</integer>
-			<key>ypos</key>
-			<integer>270</integer>
+			<integer>305</integer>
 		</dict>
 		<key>A15E878F-A3E0-4C08-9B46-77290F1B153D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>530</integer>
-		</dict>
-		<key>A9E8067E-9512-4152-8D31-91D238D11515</key>
-		<dict>
-			<key>xpos</key>
-			<integer>480</integer>
-			<key>ypos</key>
-			<integer>290</integer>
+			<integer>605</integer>
 		</dict>
 		<key>AE906983-CE5F-481C-8C1A-B316AD77DB03</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>380</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
 			<key>note</key>
 			<string>open and enlarge in Moom</string>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>290</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
@@ -766,30 +655,26 @@ eval "$input"</string>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>410</integer>
-		</dict>
-		<key>BE76FA62-32CE-4B3E-ADDD-4FBF73C1B3FF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>405</integer>
-			<key>ypos</key>
-			<integer>300</integer>
+			<integer>275</integer>
 		</dict>
 		<key>FEC82210-DDF5-46A7-980E-8A195BD3A586</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>665</integer>
+			<integer>745</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>dotfile_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/</string>
+		<key>vault_path</key>
+		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
+		<string>vault_path</string>
 		<string>dotfile_folder</string>
 	</array>
 	<key>version</key>

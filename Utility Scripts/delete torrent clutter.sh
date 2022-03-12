@@ -1,5 +1,5 @@
 #!/bin/zsh
-export PATH=/usr/local/lib:/usr/local/bin:$PATH
+export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
 find ~'/Video/Downloaded' -name '*.txt' -delete -or -name '*.nfo' -delete -or -name '*.exe' -delete -name '*.md' -delete -or -name '*.jpg' -delete
 find ~'/Video' -name '*.txt' -delete -or -name '*.nfo' -delete -or -name '*.exe' -delete -name '*.md' -delete -or -name '*.jpg' -delete
