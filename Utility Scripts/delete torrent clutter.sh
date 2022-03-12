@@ -11,11 +11,7 @@ find "$VIDEO_DIR" \
 
 # shellcheck disable=SC2012
 cd "$VIDEO_DIR/$(ls -tc "$VIDEO_DIR" | head -n1)" || exit 1
+subliminal download --language en .
 
-
-
-MOVIE=$(find ~'/Video/Downloaded' -name '*.mp4' -mtime -1m -or -name '*.mkv' -mtime -1m)
-subliminal download -l en "$MOVIE"
-
-sleep 2
+sleep 1
 osascript -e 'tell application "Transmission" to quit'
