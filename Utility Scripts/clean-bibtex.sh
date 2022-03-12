@@ -15,6 +15,8 @@ grep -vw "month =" "$LIBRARY_PATH" \
 	| grep -vw "urlyear =" \
 	| grep -vw "abstract =" \
 	| grep -vw "shorttitle =" \
+	| grep -vw "eprint =" \
+	| grep -vw "eprinttype =" \
 	| grep -vw "shortjournal =" \
 	> ./temp.bib
 mv ./temp.bib "$LIBRARY_PATH"
