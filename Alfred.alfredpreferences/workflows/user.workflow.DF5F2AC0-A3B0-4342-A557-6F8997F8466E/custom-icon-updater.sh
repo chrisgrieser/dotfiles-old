@@ -2,7 +2,7 @@
 # shellcheck disable=SC2154
 # requires "iconsur" CLI
 
-ICON_FOLDER="${icon_folder/#\~/$HOME}"
+CUSTOM_ICON_FOLDER="${custom_icon_folder/#\~/$HOME}"
 PWA_FOLDER="${pwa_folder/#\~/$HOME}"
 
 # ----------------------
@@ -26,25 +26,25 @@ case $APP_TO_UPDATE in
 		iconsur -l set "Subtitles.app" ;;
 
    "Transmission")
-		cp "$ICON_FOLDER/Transmission 2.icns" '/Transmission.app/Contents/Resources/Transmission.icns'
+		cp "$CUSTOM_ICON_FOLDER/Transmission 2.icns" '/Transmission.app/Contents/Resources/Transmission.icns'
 		touch "Transmission.app" ;;
 	"VLC")
-		cp "$ICON_FOLDER/VLC.icns" 'VLC.app/Contents/Resources/VLC.icns'
+		cp "$CUSTOM_ICON_FOLDER/VLC.icns" 'VLC.app/Contents/Resources/VLC.icns'
 		touch "VLC.app" ;;
 	"Cryptomator")
-		cp "$ICON_FOLDER/Cryptomator.icns" 'Cryptomator.app/Contents/Resources/Cryptomator.icns'
+		cp "$CUSTOM_ICON_FOLDER/Cryptomator.icns" 'Cryptomator.app/Contents/Resources/Cryptomator.icns'
 		touch "Cryptomator.app" ;;
 	"Alacritty")
-		cp "$ICON_FOLDER/Alacritty.icns" 'Alacritty.app/Contents/Resources/alacritty.icns'
+		cp "$CUSTOM_ICON_FOLDER/Alacritty.icns" 'Alacritty.app/Contents/Resources/alacritty.icns'
 		touch "Alacritty.app" ;;
 	"Sublime")
-		cp "$ICON_FOLDER/Sublime Text Brown.icns" 'Sublime Text.app/Contents/Resources/Sublime Text.icns'
+		cp "$CUSTOM_ICON_FOLDER/Sublime Text Brown.icns" 'Sublime Text.app/Contents/Resources/Sublime Text.icns'
 		touch "Sublime Text.app" ;;
 	"AppCleaner")
-		cp "$ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
+		cp "$CUSTOM_ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
 		touch "AppCleaner.app" ;;
    "Alfred Prefs")
-		cp "$ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
+		cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
 		touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app' ;;
 
    "Drafts")
@@ -52,21 +52,21 @@ case $APP_TO_UPDATE in
 			open information window of (\"/Applications/Drafts.app\" as POSIX file as alias)
 			activate
 		end tell
-		set the clipboard to POSIX file \"$ICON_FOLDER/Drafts_Green.icns\"" ;;
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Drafts_Green.icns\"" ;;
 	"Mimestream")
 		osascript -e "tell application \"Finder\"
 			open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
 			activate
 		end tell
-		set the clipboard to POSIX file \"$ICON_FOLDER/Mail_fancy.icns\"" ;;
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\"" ;;
 	"Google Docs")
-		cp "$ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
+		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
 	"Inoreader")
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app" ;;
 
 	"-YouTube")
-		cp "$ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
+		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/-YouTube.app" ;;
 	"-Tagesschau")
 		iconsur set "$PWA_FOLDER/-Tagesschau.app" ;;
@@ -75,7 +75,7 @@ case $APP_TO_UPDATE in
 	"-Twitch")
 		iconsur set "$PWA_FOLDER/-Twitch.app" ;;
 	"-BunnyFap")
-		iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
+		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
 
    *)
 		NONE_FOUND=1 ;;

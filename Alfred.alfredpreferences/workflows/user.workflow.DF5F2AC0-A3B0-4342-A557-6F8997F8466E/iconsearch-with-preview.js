@@ -11,19 +11,18 @@ const workArray1 = app.doShellScript("find \"" + iconFolder + "\" -name \"*.icns
 	.split("\r");
 const workArray2 = app.doShellScript("find \"" + customIconFolder + "\" -name \"*.icns\" -or -name \"*.png\" ")
 	.split("\r");
-
-const jsonArray = [];
-[...workArray1, ...workArray2].forEach(iconPath => {
-	const filename = iconPath.replace (/.*\//, "");
-	const shortenedPath = iconPath.replace (/\/Users\/.*?\//g, "~/");
-	jsonArray.push({
-		"title": filename,
-		"subtitle": shortenedPath,
-		"arg": iconPath,
-		"icon": { "path": iconPath },
-		"type": "file:skipcheck",
-		"uid": iconPath,
+const bothArrays = [...workArray1, ...workArray2]
+	.map(iconPath => {
+		const filename = iconPath.replace (/.*\//, "");
+		const shortenedPath = iconPath.replace (/\/Users\/.*?\//g, "~/");
+		return {
+			"title": filename,
+			"subtitle": shortenedPath,
+			"arg": iconPath,
+			"icon": { "path": iconPath },
+			"type": "file:skipcheck",
+			"uid": iconPath,
+		};
 	});
-});
 
-JSON.stringify({ items: jsonArray });
+JSON.stringify({ items: bothArrays });
