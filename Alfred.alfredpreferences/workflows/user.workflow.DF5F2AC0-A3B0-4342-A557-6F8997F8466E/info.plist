@@ -8,6 +8,19 @@
 	<string>Searches</string>
 	<key>connections</key>
 	<dict>
+		<key>05B2913E-95E3-4E72-A4C1-93E1A7A0C889</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D6F7AD54-C4BD-4B8F-8D32-D5680EECB192</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</key>
 		<array>
 			<dict>
@@ -67,6 +80,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>ADC0722C-95D6-4BDE-B235-615784A424DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B2FE0349-860A-44F0-B49D-20C8F895F9C0</key>
 		<array>
 			<dict>
@@ -84,6 +110,19 @@
 				<string>15FF9B9D-0AF2-48F4-84C0-9781E0F3766B</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BAA2ADF7-2FEB-4F9A-AE98-17378171B5CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05B2913E-95E3-4E72-A4C1-93E1A7A0C889</string>
+				<key>modifiers</key>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -148,45 +187,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>787AA6A6-CD07-447C-8D73-F4FCD1FEC10D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>EF20070F-431D-4E04-A5F2-A72619D41C47</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FE9C32E6-34B3-47B4-A605-2D9DAD169319</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FE9C32E6-34B3-47B4-A605-2D9DAD169319</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>07A59D6C-8B47-4DC2-90A6-50AF8A1CE925</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -474,6 +474,69 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>Use Custom Icon</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>BAA2ADF7-2FEB-4F9A-AE98-17378171B5CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Icon copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D6F7AD54-C4BD-4B8F-8D32-D5680EECB192</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>custom-icon-updater.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>05B2913E-95E3-4E72-A4C1-93E1A7A0C889</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -508,6 +571,42 @@ return "{query}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>custom-icon-updater.sh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>custom icon</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Edit Custom Icon Script</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>ADC0722C-95D6-4BDE-B235-615784A424DA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -589,100 +688,20 @@ return "{query}"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>update icons</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Update Icons to Big Sur Style</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EF20070F-431D-4E04-A5F2-A72619D41C47</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ Icon Update finished</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>FE9C32E6-34B3-47B4-A605-2D9DAD169319</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>icon-updater.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>07A59D6C-8B47-4DC2-90A6-50AF8A1CE925</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>brew install iconsur
 brew install folderify</string>
 	<key>uidata</key>
 	<dict>
-		<key>07A59D6C-8B47-4DC2-90A6-50AF8A1CE925</key>
+		<key>05B2913E-95E3-4E72-A4C1-93E1A7A0C889</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>9</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>505</integer>
+			<integer>665</integer>
 			<key>ypos</key>
-			<integer>1090</integer>
+			<integer>415</integer>
 		</dict>
 		<key>0951FDD8-D9E2-4DC3-8844-58CF1AABE48C</key>
 		<dict>
@@ -740,6 +759,15 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>700</integer>
 		</dict>
+		<key>5E00EB78-1FAB-400E-B437-E867401108F0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>665</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
 		<key>669EC31A-C9B1-4515-85BA-4809329A85F8</key>
 		<dict>
 			<key>colorindex</key>
@@ -794,6 +822,15 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
+		<key>ADC0722C-95D6-4BDE-B235-615784A424DA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
 		<key>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</key>
 		<dict>
 			<key>colorindex</key>
@@ -821,6 +858,15 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>BAA2ADF7-2FEB-4F9A-AE98-17378171B5CA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
 		<key>BCDE5A63-BF29-4CD2-B482-D2A56CD510A1</key>
 		<dict>
 			<key>colorindex</key>
@@ -839,6 +885,15 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
+		<key>D6F7AD54-C4BD-4B8F-8D32-D5680EECB192</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
 		<key>DF4BD673-F9B0-471E-9562-239EA93A628A</key>
 		<dict>
 			<key>colorindex</key>
@@ -848,41 +903,17 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
-		<key>EF20070F-431D-4E04-A5F2-A72619D41C47</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>1090</integer>
-		</dict>
-		<key>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>1090</integer>
-		</dict>
-		<key>FE9C32E6-34B3-47B4-A605-2D9DAD169319</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>360</integer>
-			<key>ypos</key>
-			<integer>1090</integer>
-		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>icon_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Icons</string>
+		<key>pwa_folder</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
+		<string>pwa_folder</string>
 		<string>icon_folder</string>
 	</array>
 	<key>version</key>

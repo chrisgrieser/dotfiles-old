@@ -77,8 +77,3 @@ function lr (){
 	echo -n "$(eval "$last_command")" | pbcopy
 	echo "Copied."
 }
-
-# peek into zip file
-function peek () {
-	unzip -l "$*" | tail -n+4 | cut -c31-
-}

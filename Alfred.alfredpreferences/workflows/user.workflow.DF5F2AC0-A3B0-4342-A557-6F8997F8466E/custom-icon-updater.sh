@@ -1,18 +1,18 @@
 #!/bin/zsh
+# shellcheck disable=SC2154
 # requires "iconsur" CLI
 
-ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons"
-PWA_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
+ICON_FOLDER="${icon_folder/#\~/$HOME}"
+PWA_FOLDER="${pwa_folder/#\~/$HOME}"
 
 # ----------------------
 
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-cd /Applications/ || exit 1
+cd "/Applications/" || exit 1
 
-APP_TO_UPDATE="$*"
+# only app name
+APP_TO_UPDATE=$(basename "$*")
 APP_TO_UPDATE="${APP_TO_UPDATE%.*}" # no extension
-
-# ---------------------
 
 case $APP_TO_UPDATE in
 	"Steam")
@@ -74,10 +74,15 @@ case $APP_TO_UPDATE in
 		iconsur --input "$ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
 
    *)
-		echo "No custom icon defined for $APP_TO_UPDATE." ;;
+		NONE_FOUND=1 ;;
 esac
 
-iconsur cache
+if [[ $NONE_FOUND == 1 ]]; then
+	echo "No custom icon defined for $APP_TO_UPDATE."
+else
+	iconsur cache
+	echo "$APP_TO_UPDATE" # pass for notication
+fi
 
 
 
