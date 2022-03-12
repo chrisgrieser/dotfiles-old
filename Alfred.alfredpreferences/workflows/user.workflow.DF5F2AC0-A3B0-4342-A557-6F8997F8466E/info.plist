@@ -8,19 +8,6 @@
 	<string>Searches</string>
 	<key>connections</key>
 	<dict>
-		<key>17330511-8DA4-4E18-A863-3E19A7445D79</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>83640916-972F-4E7A-ACAC-5A0AFF28717C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</key>
 		<array>
 			<dict>
@@ -34,100 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>32E539FC-B3B0-4A8C-B12F-3C42ED5EBEA5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D43DB389-50AE-401E-AF9C-A6E7A23CD5D7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3911AEA8-B4EE-4AE9-840F-B3044B36E1AC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7067A0A4-D9DA-4775-BECD-24C3249B29E2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>39E00A0B-5B90-4050-A38C-13F13A8714B1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F182E1C8-BA0F-445D-9B03-6BEF4A76CBB0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>77FAF2D5-A86F-4151-AAC5-A3FDF4452FE8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>83640916-972F-4E7A-ACAC-5A0AFF28717C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF4E1BE-35D1-4061-A6A1-B567B848330E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>8F01E2F2-C210-4CE9-B183-47102EB1A321</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>EC2AE1BF-E5C2-4577-AAF2-18E6B3ED1E50</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>621E34A9-8D8D-4E03-BBFD-4C8C246B41ED</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>77FAF2D5-A86F-4151-AAC5-A3FDF4452FE8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8DF4E1BE-35D1-4061-A6A1-B567B848330E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -169,19 +67,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9E544F07-2F37-4589-B45C-E20BD55AE1ED</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>17330511-8DA4-4E18-A863-3E19A7445D79</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B2FE0349-860A-44F0-B49D-20C8F895F9C0</key>
 		<array>
 			<dict>
@@ -199,21 +84,6 @@
 				<string>15FF9B9D-0AF2-48F4-84C0-9781E0F3766B</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</key>
-		<array/>
-		<key>B593279F-8739-4702-B38C-1F78AE6EE32F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>704F6A3F-7442-492E-B973-EA67D23455B1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -263,19 +133,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CE9F2F1F-E6DA-4331-901C-9306F5464A8A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AE51B4F9-9B21-4B65-8DA5-937545310523</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>DF4BD673-F9B0-471E-9562-239EA93A628A</key>
 		<array>
 			<dict>
@@ -299,37 +156,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EC2AE1BF-E5C2-4577-AAF2-18E6B3ED1E50</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>EF20070F-431D-4E04-A5F2-A72619D41C47</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F118DFAB-D27F-4436-8E7E-DD3E7CDC6D68</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9E544F07-2F37-4589-B45C-E20BD55AE1ED</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -603,32 +434,6 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-
-iconsur set $location
-killall Finder</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8DF4E1BE-35D1-4061-A6A1-B567B848330E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -669,175 +474,6 @@ killall Finder</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string>{var:location}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-
-iconsur set -l $location
-killall Finder</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>EC2AE1BF-E5C2-4577-AAF2-18E6B3ED1E50</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>manual</string>
-						<key>outputlabel</key>
-						<string>manual</string>
-						<key>uid</key>
-						<string>0247C619-E8B1-49BF-B77C-94AFFE278068</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>online</string>
-						<key>outputlabel</key>
-						<string>online</string>
-						<key>uid</key>
-						<string>8F01E2F2-C210-4CE9-B183-47102EB1A321</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>local</string>
-						<key>outputlabel</key>
-						<string>local</string>
-						<key>uid</key>
-						<string>621E34A9-8D8D-4E03-BBFD-4C8C246B41ED</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>reset</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>83640916-972F-4E7A-ACAC-5A0AFF28717C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.apple.application-bundle</string>
-				</array>
-				<key>name</key>
-				<string>iconsur</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>F118DFAB-D27F-4436-8E7E-DD3E7CDC6D68</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"72d592cd026ef8e1990d0d7f09a5322c8f590cca.png","title":"Fetch iOS Icon","arg":"online"},{"imagefile":"7effa565b5afc62ba4be55c2e9c427b65a1b0955.png","title":"Icon from Local Image","arg":"local","subtitle":""},{"imagefile":"b62e4deadcbbd5794aed53bfe4f5836a5b8eef96.png","title":"Reset Original","arg":"reset"}]</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Choose Icon Operation</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>17330511-8DA4-4E18-A863-3E19A7445D79</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-
-iconsur unset $location
-killall Finder</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>77FAF2D5-A86F-4151-AAC5-A3FDF4452FE8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -851,26 +487,6 @@ killall Finder</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>669EC31A-C9B1-4515-85BA-4809329A85F8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>location</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>9E544F07-2F37-4589-B45C-E20BD55AE1ED</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -892,46 +508,6 @@ killall Finder</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://fonts.google.com/icons?icon.query={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>704F6A3F-7442-492E-B973-EA67D23455B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>icon</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Google Material Icons: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B593279F-8739-4702-B38C-1F78AE6EE32F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -983,25 +559,6 @@ killall Finder</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://graphemica.com/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
 				<string>http://www.amp-what.com/unicode/search/{query}</string>
 				<key>utf8</key>
 				<true/>
@@ -1016,40 +573,19 @@ killall Finder</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>icon</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Iconfy Sets: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>32E539FC-B3B0-4A8C-B12F-3C42ED5EBEA5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://icon-sets.iconify.design/?query={query}</string>
+				<string>https://graphemica.com/search?q={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>D43DB389-50AE-401E-AF9C-A6E7A23CD5D7</string>
+			<string>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1133,116 +669,6 @@ killall Finder</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>update icons</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Update MimeStream Icon</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>39E00A0B-5B90-4050-A38C-13F13A8714B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Mimestream" to if it is running then quit
-
-tell application "Finder" 
-	open information window of ("/Applications/Mimestream.app" as POSIX file as alias)
-	activate
-end tell
-
-
-set unresolved_path to (system attribute "custom_icon_folder")set AppleScript's text item delimiters to "~/"set theTextItems to every text item of unresolved_pathset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
-set icon_path to resolved_path &amp; "/Mail_fancy.icns"
-
-set the clipboard to POSIX file icon_path</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F182E1C8-BA0F-445D-9B03-6BEF4A76CBB0</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>update icons</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Update Drafts Icon</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>CE9F2F1F-E6DA-4331-901C-9306F5464A8A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Drafts" to if it is running then quit
-
-tell application "Finder" 
-	open information window of ("/Applications/Drafts.app" as POSIX file as alias)
-	activate
-end tell
-
-set unresolved_path to (system attribute "custom_icon_folder")set AppleScript's text item delimiters to "~/"set theTextItems to every text item of unresolved_pathset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
-
-set icon_path to resolved_path &amp; "/Drafts_Green.icns"
-
-set the clipboard to POSIX file icon_path</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>AE51B4F9-9B21-4B65-8DA5-937545310523</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>brew install iconsur
@@ -1265,7 +691,7 @@ brew install folderify</string>
 			<key>xpos</key>
 			<integer>210</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>585</integer>
 		</dict>
 		<key>15FF9B9D-0AF2-48F4-84C0-9781E0F3766B</key>
 		<dict>
@@ -1276,15 +702,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>140</integer>
 		</dict>
-		<key>17330511-8DA4-4E18-A863-3E19A7445D79</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>570</integer>
-			<key>ypos</key>
-			<integer>435</integer>
-		</dict>
 		<key>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</key>
 		<dict>
 			<key>colorindex</key>
@@ -1293,15 +710,6 @@ brew install folderify</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>465</integer>
-		</dict>
-		<key>32E539FC-B3B0-4A8C-B12F-3C42ED5EBEA5</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>970</integer>
 		</dict>
 		<key>3911AEA8-B4EE-4AE9-840F-B3044B36E1AC</key>
 		<dict>
@@ -1313,17 +721,6 @@ brew install folderify</string>
 			<integer>690</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>39E00A0B-5B90-4050-A38C-13F13A8714B1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>MimeStream</string>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>1215</integer>
 		</dict>
 		<key>4CA334D9-5DCD-4CEF-986C-3ED4283F6C55</key>
 		<dict>
@@ -1341,7 +738,7 @@ brew install folderify</string>
 			<key>xpos</key>
 			<integer>210</integer>
 			<key>ypos</key>
-			<integer>820</integer>
+			<integer>700</integer>
 		</dict>
 		<key>669EC31A-C9B1-4515-85BA-4809329A85F8</key>
 		<dict>
@@ -1352,15 +749,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>465</integer>
 		</dict>
-		<key>704F6A3F-7442-492E-B973-EA67D23455B1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>580</integer>
-		</dict>
 		<key>7067A0A4-D9DA-4775-BECD-24C3249B29E2</key>
 		<dict>
 			<key>colorindex</key>
@@ -1369,15 +757,6 @@ brew install folderify</string>
 			<integer>840</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>77FAF2D5-A86F-4151-AAC5-A3FDF4452FE8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>840</integer>
-			<key>ypos</key>
-			<integer>460</integer>
 		</dict>
 		<key>787AA6A6-CD07-447C-8D73-F4FCD1FEC10D</key>
 		<dict>
@@ -1397,24 +776,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>83640916-972F-4E7A-ACAC-5A0AFF28717C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>730</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
-		<key>8DF4E1BE-35D1-4061-A6A1-B567B848330E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>840</integer>
-			<key>ypos</key>
-			<integer>240</integer>
-		</dict>
 		<key>9B285645-6D02-442F-8EAC-6DB1EBBF0AD0</key>
 		<dict>
 			<key>colorindex</key>
@@ -1422,16 +783,7 @@ brew install folderify</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>755</integer>
-		</dict>
-		<key>9E544F07-2F37-4589-B45C-E20BD55AE1ED</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>505</integer>
-			<key>ypos</key>
-			<integer>465</integer>
+			<integer>700</integer>
 		</dict>
 		<key>A069BE51-DA62-4835-8048-AF3A608C97D0</key>
 		<dict>
@@ -1442,21 +794,12 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
-		<key>AE51B4F9-9B21-4B65-8DA5-937545310523</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>1340</integer>
-		</dict>
 		<key>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>210</integer>
 			<key>ypos</key>
 			<integer>820</integer>
 		</dict>
@@ -1478,24 +821,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>B51F3D0A-A5AC-4DE6-859D-BDCF4C480825</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>1005</integer>
-			<key>ypos</key>
-			<integer>350</integer>
-		</dict>
-		<key>B593279F-8739-4702-B38C-1F78AE6EE32F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>580</integer>
-		</dict>
 		<key>BCDE5A63-BF29-4CD2-B482-D2A56CD510A1</key>
 		<dict>
 			<key>colorindex</key>
@@ -1514,26 +839,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
-		<key>CE9F2F1F-E6DA-4331-901C-9306F5464A8A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>Drafts</string>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>1340</integer>
-		</dict>
-		<key>D43DB389-50AE-401E-AF9C-A6E7A23CD5D7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>970</integer>
-		</dict>
 		<key>DF4BD673-F9B0-471E-9562-239EA93A628A</key>
 		<dict>
 			<key>colorindex</key>
@@ -1543,15 +848,6 @@ brew install folderify</string>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
-		<key>EC2AE1BF-E5C2-4577-AAF2-18E6B3ED1E50</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>840</integer>
-			<key>ypos</key>
-			<integer>350</integer>
-		</dict>
 		<key>EF20070F-431D-4E04-A5F2-A72619D41C47</key>
 		<dict>
 			<key>colorindex</key>
@@ -1560,24 +856,6 @@ brew install folderify</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
-		</dict>
-		<key>F118DFAB-D27F-4436-8E7E-DD3E7CDC6D68</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>435</integer>
-		</dict>
-		<key>F182E1C8-BA0F-445D-9B03-6BEF4A76CBB0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>1215</integer>
 		</dict>
 		<key>FB1E664D-8BAA-485B-A89E-A9EC1579EB00</key>
 		<dict>
@@ -1600,17 +878,11 @@ brew install folderify</string>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>custom_icon_folder</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons</string>
 		<key>icon_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Icons</string>
-		<key>icon_update_script</key>
-		<string>/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Mac Installation Scripts/4 Proper Icons.sh</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>icon_update_script</string>
-		<string>custom_icon_folder</string>
 		<string>icon_folder</string>
 	</array>
 	<key>version</key>
