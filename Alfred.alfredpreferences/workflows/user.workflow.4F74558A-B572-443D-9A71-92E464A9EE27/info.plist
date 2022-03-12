@@ -25,19 +25,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1A99D29A-BD9A-4B10-9E09-751F71529447</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
 				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -74,7 +61,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
+				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -334,7 +321,8 @@
 				<key>script</key>
 				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 subl --command copy_path
-sleep 0.1</string>
+sleep 0.1
+pbpaste</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -441,30 +429,16 @@ sleep 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{var:vault_path}/{clipboard}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>1A99D29A-BD9A-4B10-9E09-751F71529447</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open "obsidian://advanced-uri?commandid=workspace%253Acopy-path"
-sleep 0.1</string>
+				<string>vault_path="${vault_path/#\~/$HOME}"
+
+open "obsidian://advanced-uri?commandid=workspace%253Acopy-path"
+sleep 0.1
+echo -n "$vault_path/$(pbpaste)"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -574,13 +548,6 @@ sleep 0.1</string>
 			<key>ypos</key>
 			<integer>385</integer>
 		</dict>
-		<key>1A99D29A-BD9A-4B10-9E09-751F71529447</key>
-		<dict>
-			<key>xpos</key>
-			<integer>470</integer>
-			<key>ypos</key>
-			<integer>470</integer>
-		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
 			<key>xpos</key>
@@ -637,9 +604,9 @@ sleep 0.1</string>
 		<key>AE906983-CE5F-481C-8C1A-B316AD77DB03</key>
 		<dict>
 			<key>xpos</key>
-			<integer>620</integer>
+			<integer>570</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>385</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>

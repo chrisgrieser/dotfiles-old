@@ -1,10 +1,19 @@
 #!/bin/zsh
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+VIDEO_DIR=~'/Video/Downloaded'
 
-find ~'/Video/Downloaded' -name '*.txt' -delete -or -name '*.nfo' -delete -or -name '*.exe' -delete -name '*.md' -delete -or -name '*.jpg' -delete
-find ~'/Video' -name '*.txt' -delete -or -name '*.nfo' -delete -or -name '*.exe' -delete -name '*.md' -delete -or -name '*.jpg' -delete
+find "$VIDEO_DIR" \
+	-name '*.txt' \
+	-or -name '*.nfo' \
+	-or -name '*.exe' \
+	-or -name '*.md' \
+	-or -name '*.jpg'
 
-#searches for all movies in the folder downloaded in the last minute
+# shellcheck disable=SC2012
+cd "$VIDEO_DIR/$(ls -tc "$VIDEO_DIR" | head -n1)" || exit 1
+
+
+
 MOVIE=$(find ~'/Video/Downloaded' -name '*.mp4' -mtime -1m -or -name '*.mkv' -mtime -1m)
 subliminal download -l en "$MOVIE"
 
