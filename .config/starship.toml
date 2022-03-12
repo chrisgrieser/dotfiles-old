@@ -37,12 +37,13 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 "Configs/Alfred.alfredpreferences/workflows" = "AlfredPrefs"
 "user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8" = "PDF Annotation Extractor"
 "user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C" = "Shimmering Obsidian"
-"user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Citation Picker"
+"user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0" = "Supercharged Citation Picker"
 
 [custom.file_number]
 command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | wc -l"
 when = "exit 0" # run always
 symbol = " "
+description = "Number of files in the current working directory"
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black bold" # terminus different
 
@@ -50,6 +51,7 @@ style = "fg:yellow bg:black bold" # terminus different
 command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
 when = "exit 0"
 symbol = " "
+description = "Number of folders in the current working directory"
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black bold" # terminus different
 
@@ -118,9 +120,18 @@ format = " [$symbol$ram_pct]($style)"
 
 [package]
 format = "[$symbol$version]($style)"
-version_format = " $raw"
-symbol = ""
+version_format = "$raw"
+symbol = " "
 style = "dimmed 208"
+
+[custom.alfred]
+command = "plutil -extract version xml1 -o - info.plist | sed -n 4p | cut -d'>' -f2 | cut -d'<' -f1"
+files = ["info.plist"]
+symbol = " "
+os = "macos"
+description = "Version number of Alfred Workflow"
+style = "dimmed 208"
+format = '[Alfred](purple) [$symbol$output]($style)'
 
 [nodejs]
 format = " [$symbol$version]($style)"
@@ -134,6 +145,3 @@ version_format = "$major.$minor"
 style = "dimmed yellow"
 python_binary = ["python3"]
 
-[custom.alfred]
-files = ["info.plist"]
-format = '[ Alfred ](black bg:purple)'

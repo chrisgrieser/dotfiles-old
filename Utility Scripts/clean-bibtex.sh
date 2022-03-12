@@ -29,4 +29,4 @@ sed -E -i '' 's/date = {([[:digit:]]{4}).*}/year = {\1}/g' "$LIBRARY_PATH"
 sed -i '' 's/journaltitle = /journal = /g' "$LIBRARY_PATH"
 sed -i '' 's/note = /annotate = /g' "$LIBRARY_PATH"
 
-# in some cases, the last entry must be fixed manually
+# INFO: in some cases, the last entry must be fixed manually
