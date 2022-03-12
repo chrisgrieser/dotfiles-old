@@ -18,7 +18,7 @@
 		"prefer-const": "warn",
 		"vars-on-top": "warn",
 		"sort-vars": "warn",
-		"no-use-before-define": "warn",
+		"no-use-before-define": "error",
 		"no-multi-assign": "error",
 		"no-sequences": "error",
 		"no-undefined": "error",
