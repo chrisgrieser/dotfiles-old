@@ -1,0 +1,5 @@
+# Autofile
+%p11/%p[ ][ et al]2/%f{Cite Key}_%u0%t60%e
+
+# Citekey Autogeneration
+%p[][EtAl]2%Y%u0
