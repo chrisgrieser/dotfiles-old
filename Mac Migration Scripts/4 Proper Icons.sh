@@ -1,15 +1,31 @@
 #!/bin/zsh
-# shellcheck disable=SC2033
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
-# ---------------------
-# Regular Updating
-# ---------------------
-iconsur set "/Applications/Steam.app"
-iconsur set "/Applications/zoom.us.app"
-iconsur set "/Applications/PDF Expert.app"
+ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
+PWA_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
+cd /Applications/ || exit 1
 
-ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
+APP_TO_UPDATE="$*"
+APP_TO_UPDATE="${APP_TO_UPDATE%.*}" # no extension
+
+# ---------------------
+
+case "$APP_TO_UPDATE" in
+	"Steam") iconsur set "Steam.app" ;;
+   "zoom.us") iconsur set "zoom.us.app" ;;
+   "PDF Expert") iconsur set "PDF Expert.app" ;;
+   "Alfred Prefs")
+		iconsur set "PDF Expert.app"
+		;;
+   *) echo "No custom icon defined for $APP_TO_UPDATE" ;;
+esac
+
+touch "$APP_TO_UPDATE"
+iconsur cache
+
+
+# ---------------------
+
 # Alfred Prefs
 cp "$ICON_FOLDER"'Alfred Prefs.icns' '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
 touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
@@ -29,17 +45,10 @@ touch '/Applications/Alacritty.app'
 cp "$ICON_FOLDER"'Sublime Text Brown.icns' '/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns'
 touch '/Applications/Sublime Text.app'
 
-killall Finder
-
-#######################
-# stopstring-for-alfred
-#######################
 
 # ----------------------
 # Progressive Web Apps
 # ----------------------
-ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
-PWA_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
 
 cp "$ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
 touch "$PWA_FOLDER/-YouTube.app"
@@ -53,21 +62,6 @@ iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app"
 cp "$ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 touch "$PWA_FOLDER/Google Docs.app"
 
-# ----------------------
-# Other
-# --------------------
-sudo -v
-ICON_FOLDER=~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/'
-
-# Excel
-sudo cp "$ICON_FOLDER"'Excel.icns' '/Applications/Microsoft Excel.app/Contents/Resources/XCEL.icns'
-sudo touch '/Applications/Microsoft Excel.app'
-# Powerpoint
-sudo cp "$ICON_FOLDER"'Powerpoint.icns' '/Applications/Microsoft Powerpoint.app/Contents/Resources/PPT3.icns'
-sudo touch '/Applications/Microsoft Powerpoint.app'
-# Word
-sudo cp "$ICON_FOLDER"'Word.icns' '/Applications/Microsoft Word.app/Contents/Resources/MSWD.icns'
-sudo touch '/Applications/Microsoft Word.app'
 # AppCleaner
 cp "$ICON_FOLDER"'AppCleaner.icns' '/Applications/AppCleaner.app/Contents/Resources/AppCleaner.icns'
 touch '/Applications/AppCleaner.app'
@@ -83,5 +77,3 @@ osascript -e 'tell application "Finder" to open information window of ("/Applica
 tell application "Finder" to activate
 set the clipboard to POSIX file "'"$ICON_FOLDER"'/Mail_fancy.icns"'
 
-# shellcheck disable=SC2032
-iconsur cache
