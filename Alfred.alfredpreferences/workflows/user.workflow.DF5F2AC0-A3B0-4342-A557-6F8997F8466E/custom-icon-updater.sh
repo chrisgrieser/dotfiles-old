@@ -13,6 +13,7 @@ cd "/Applications/" || exit 1
 # only app name
 APP_TO_UPDATE=$(basename "$*")
 APP_TO_UPDATE="${APP_TO_UPDATE%.*}" # no extension
+NONE_FOUND=0
 
 case $APP_TO_UPDATE in
 	"Steam")
@@ -31,7 +32,7 @@ case $APP_TO_UPDATE in
 		cp "$ICON_FOLDER/VLC.icns" 'VLC.app/Contents/Resources/VLC.icns'
 		touch "VLC.app" ;;
 	"Cryptomator")
-		cp "$ICON_FOLDER/Cryptomator.icns" '/Cryptomator.app/Contents/Resources/Cryptomator.icns'
+		cp "$ICON_FOLDER/Cryptomator.icns" 'Cryptomator.app/Contents/Resources/Cryptomator.icns'
 		touch "Cryptomator.app" ;;
 	"Alacritty")
 		cp "$ICON_FOLDER/Alacritty.icns" 'Alacritty.app/Contents/Resources/alacritty.icns'
@@ -47,14 +48,17 @@ case $APP_TO_UPDATE in
 		touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app' ;;
 
    "Drafts")
-		osascript -e 'tell application "Finder" open information window of ("/Applications/Drafts.app" as POSIX file as alias)
-		tell application "Finder" to activate
-		set the clipboard to POSIX file "'"$ICON_FOLDER"'/Drafts_Green.icns"' ;;
+		osascript -e "tell application \"Finder\"
+			open information window of (\"/Applications/Drafts.app\" as POSIX file as alias)
+			activate
+		end tell
+		set the clipboard to POSIX file \"$ICON_FOLDER/Drafts_Green.icns\"" ;;
 	"Mimestream")
-		osascript -e 'tell application "Finder" to open information window of ("/Applications/Mimestream.app" as POSIX file as alias)
-		tell application "Finder" to activate
-		set the clipboard to POSIX file "'"$ICON_FOLDER"'/Mail_fancy.icns"' ;;
-
+		osascript -e "tell application \"Finder\"
+			open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
+			activate
+		end tell
+		set the clipboard to POSIX file \"$ICON_FOLDER/Mail_fancy.icns\"" ;;
 	"Google Docs")
 		cp "$ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
@@ -77,11 +81,10 @@ case $APP_TO_UPDATE in
 		NONE_FOUND=1 ;;
 esac
 
-if [[ $NONE_FOUND == 1 ]]; then
-	echo "No custom icon defined for $APP_TO_UPDATE."
-else
+if [[ $NONE_FOUND == 0 ]]; then
+	killall "$APP_TO_UPDATE"
 	iconsur cache
-	echo "$APP_TO_UPDATE" # pass for notication
+	echo -n "$APP_TO_UPDATE" # pass for notication
 fi
 
 
