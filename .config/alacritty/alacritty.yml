@@ -105,7 +105,7 @@ window:
   decorations: buttonless
   padding:
     x: 3
-    y: 2
+    y: 6
 
 scrolling:
   history: 3000
