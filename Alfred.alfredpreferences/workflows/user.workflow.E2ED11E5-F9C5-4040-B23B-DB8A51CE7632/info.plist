@@ -250,7 +250,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>System Settings Additions</string>
+	<string>System Preference Additions</string>
 	<key>objects</key>
 	<array>
 		<dict>

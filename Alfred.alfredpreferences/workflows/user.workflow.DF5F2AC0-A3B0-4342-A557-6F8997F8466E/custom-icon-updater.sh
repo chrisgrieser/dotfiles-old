@@ -83,7 +83,8 @@ esac
 
 if [[ $NONE_FOUND == 0 ]]; then
 	killall "$APP_TO_UPDATE"
-	iconsur cache
+	killall "Finder"
+	killall "Dock"
 	echo -n "$APP_TO_UPDATE" # pass for notication
 fi
 
