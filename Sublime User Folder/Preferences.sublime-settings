@@ -124,6 +124,7 @@
 
 	"ignored_words":
 	[
+		"200ms",
 		"Baumann",
 		"Chetachi",
 		"Cloudflare",

@@ -185,6 +185,7 @@
 	{ "keys": ["alt+l"], "command": "terminus_keypress", "args": {"key": "@"}, "context": [{"key": "terminus_view"}] },
 	{ "keys": ["super+k"], "command": "terminus_keypress", "args": {"key": "l", "ctrl": true}, "context": [{"key": "terminus_view"}] },
 
+
 	// OPEN
 	// GitHubinator
 	{ "keys": ["shift+alt+super+ctrl+g"], "command": "githubinator", "args" : { "permalink": false }},
@@ -202,6 +203,8 @@
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
 		{ "key": "setting.mde.keymap_disable.reference_new_footnote", "operator": "not_equal", "operand": true }
 	] },
-
+	{ "keys": ["super+e"], "command": "insert", "args": {"characters": "``"}, "context": [
+			{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+	] },
 ]
 
