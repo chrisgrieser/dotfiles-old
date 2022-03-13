@@ -61,6 +61,16 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>88BE14E8-8C6C-40C6-9497-48E193416293</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -299,6 +309,42 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅ Mac Text Replacement ➞ Alfred Snippets</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -348,116 +394,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/search?q=alfred-workflow+{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>pa</string>
-				<key>subtext</key>
-				<string>at Packal, PacMax, and GitHub</string>
-				<key>text</key>
-				<string>Search Alfred Workflows for '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://pacmax.org/?s={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ Mac Text Replacement ➞ Alfred Snippets</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -502,6 +438,80 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/search?q=alfred-workflow+{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://npms.io/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>88BE14E8-8C6C-40C6-9497-48E193416293</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>pa</string>
+				<key>subtext</key>
+				<string>at Packal, PacMax, and GitHub</string>
+				<key>text</key>
+				<string>Search Alfred Workflows for '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -515,6 +525,25 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>424FC24A-8D2D-4BE5-A394-E934EF993E6F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://pacmax.org/?s={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -902,9 +931,9 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>905</integer>
+			<integer>1005</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>30</integer>
 		</dict>
 		<key>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</key>
 		<dict>
@@ -929,9 +958,9 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>470</integer>
 		</dict>
 		<key>48898411-6F12-4ADD-830B-88FED0F66BB0</key>
 		<dict>
@@ -990,18 +1019,27 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>760</integer>
+			<integer>860</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>30</integer>
 		</dict>
 		<key>87D2259B-68B5-40C8-A569-15A2E37F914B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>450</integer>
+			<integer>550</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>30</integer>
+		</dict>
+		<key>88BE14E8-8C6C-40C6-9497-48E193416293</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>315</integer>
 		</dict>
 		<key>8C4DE1F4-CC9B-41F7-A3B6-122F5485EA84</key>
 		<dict>
@@ -1062,9 +1100,9 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>470</integer>
 		</dict>
 		<key>CF914E27-A341-4A6B-A7FF-20CBE3711527</key>
 		<dict>
@@ -1074,9 +1112,9 @@ echo "$backup"</string>
 			<string>script by deanishe
 https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>710</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>30</integer>
 		</dict>
 		<key>D3101C8E-86A8-40F1-8C6A-70B2A6C75FD2</key>
 		<dict>
@@ -1137,9 +1175,9 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>315</integer>
 		</dict>
 		<key>FBE773BF-5340-43E6-98F8-22E1C4F01CC5</key>
 		<dict>
