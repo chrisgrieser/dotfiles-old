@@ -41,7 +41,7 @@ format = "[$path]($style) [$read_only]($read_only_style)"
 
 [custom.file_number]
 command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | wc -l"
-when = "exit 0" # run always
+when = "true" # run always
 symbol = " "
 description = "Number of files in the current working directory"
 format = '[$symbol$output]($style) '
@@ -49,7 +49,7 @@ style = "fg:yellow bg:black bold" # terminus different
 
 [custom.folder_number]
 command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
-when = "exit 0"
+when = "true"
 symbol = " "
 description = "Number of folders in the current working directory"
 format = '[$symbol$output]($style) '

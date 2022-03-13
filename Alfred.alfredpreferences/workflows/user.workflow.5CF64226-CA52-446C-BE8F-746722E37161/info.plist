@@ -1899,7 +1899,7 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>com.brave.Browser</string>
@@ -2154,7 +2154,7 @@ end alfred_script</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>com.agiletortoise.Drafts-OSX</string>
@@ -2342,7 +2342,7 @@ return "{query}"</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -2576,9 +2576,9 @@ draft search and draft script reference search are based on the fantastic [Docto
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>2150</integer>
+			<integer>1935</integer>
 		</dict>
 		<key>0960D3F6-3365-4B40-8172-D6B20975167D</key>
 		<dict>
