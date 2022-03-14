@@ -30,8 +30,9 @@
 
     "linters": {
         // this ensures that markdownlint's rc is found. also no ~ is needed
+        // trailing spaces disabled as Sublime already does take care of that.
         "markdownlint": {
-            "args": ["--config", "/.markdownlintrc"]
+            "args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces"]
         },
         "stylelint": {
             "filter_errors": "warning: ",
@@ -39,9 +40,6 @@
         // https://scriptingosx.com/2019/08/shellcheck-and-zsh/
         "shellcheck": {
             "args": ["--shell=bash"]
-        },
-        "eslint": {
-            // "filter_errors": "warning: ",
         },
         "annotations": {
             "infos": ["TODO", "INFO"],
