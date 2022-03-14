@@ -188,6 +188,7 @@
 		"dl",
 		"ecent",
 		"env",
+		"ew",
 		"fontformat",
 		"getenv",
 		"github",
@@ -199,6 +200,7 @@
 		"h4",
 		"h5",
 		"h6",
+		"hauselin",
 		"heatsheets",
 		"html",
 		"http",
@@ -256,6 +258,7 @@
 	"added_words":
 	[
 		"frontmatter",
+		"ℹ️",
 		"Longform",
 		"Pandoc",
 		"monospace",
