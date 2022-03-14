@@ -19,7 +19,6 @@ resource-path: # must be array
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
-default-image-extension: '.png'
 
 # Academic
 citeproc: true
@@ -29,3 +28,7 @@ bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: true
   link-bibliography: true
+
+# INFO: needs to be installed!
+# filters: # must be array
+#   - pandoc-crossref

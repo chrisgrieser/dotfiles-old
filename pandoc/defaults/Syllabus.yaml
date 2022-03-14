@@ -1,6 +1,25 @@
 # https://pandoc.org/MANUAL.html#defaults-files
 # ---------------------------------------------
 
+filters: # must be array
+# needs extension to be recognized as lua filter instead of normal filter
+# must come after citeproc
+  - cite-full-source.lua
+
+# Academic
+citeproc: true
+csl: apa-6th-edition # does not need extension
+lang: de-DE
+bibliography: ${USERDATA}/main-bibliography.bib
+metadata:
+  link-citations: true
+  link-bibliography: true
+
+table-of-contents: true
+toc-depth: 2
+
+# ----------------------------------------
+
 # PDF-Writer
 writer: pdf
 standalone: true
@@ -22,8 +41,6 @@ fontsize: 16px
 # General
 verbosity: INFO
 fail-if-warnings: true
-table-of-contents: false
-toc-depth: 3
 resource-path:
   - .
   - ./attachments
@@ -33,12 +50,3 @@ resource-path:
 reader: markdown+lists_without_preceding_blankline
 strip-comments: true
 number-sections: true
-
-# Academic
-citeproc: true
-metadata-files: # must be array
-  - academic.yaml
-bibliography: ${USERDATA}/main-bibliography.bib
-metadata:
-  link-citations: true
-  link-bibliography: true

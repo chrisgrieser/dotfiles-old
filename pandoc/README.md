@@ -18,6 +18,10 @@ Higher overwrites lower.
 > `--metadata-file=FILE`: […] Generally, the input will be handled the same as in YAML metadata blocks. This option can be used repeatedly to include multiple metadata files; values in files specified later on the command line will be preferred over those specified in earlier files. Metadata values specified inside the document, or by using -M, overwrite values specified with this option.  
 > – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--metadata)
 
+## Priority of Filters
+> Filters, Lua-filters, and citeproc processing are applied in the order specified on the command line.
+> – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--filter)
+
 ## Automatically Insert Date
 
 ```shell
