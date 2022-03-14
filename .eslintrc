@@ -48,10 +48,10 @@
 		"no-multiple-empty-lines": ["warn", { "max": 2 } ],
 
 		// Brackets
-		"no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false }, { "returnAssign": false }]
+		"no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false, "returnAssign": false }],
 
 		// Arrays
-		"array-callback-return": ["error", { checkForEach: true }, { "allowImplicit": true }]
+		"array-callback-return": ["error", { "checkForEach": true, "allowImplicit": true }],
 
 		// Loops
 		"no-unmodified-loop-condition": "error",
@@ -62,7 +62,6 @@
 		"require-atomic-updates": "error",
 
 		// return
-		"array-callback-return": "error",
 		"no-useless-return": "error",
 
 		// Semicolon & Comma

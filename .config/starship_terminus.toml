@@ -112,7 +112,7 @@ number_threshold = 1
 
 [memory_usage]
 disabled = false
-symbol = ""
+symbol = " "
 threshold = 70
 format = " [$symbol$ram_pct]($style)"
 
