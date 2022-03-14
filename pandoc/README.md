@@ -24,3 +24,11 @@ Higher overwrites lower.
 # Insert today's date
 --metadata=date:"$(date "+%e. %B %Y")"
 ```
+
+## Batch Conversion
+
+```shell
+for f in *.html ; do 
+	pandoc ${f} -f html -t markdown -s -o ${f}.md
+done
+```
