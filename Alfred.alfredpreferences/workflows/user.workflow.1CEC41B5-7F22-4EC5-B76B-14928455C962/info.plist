@@ -494,6 +494,27 @@ echo | last reboot | head -n 10 | cut -c 37-</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>disk space</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>📊 Disk Space</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C581B232-CDA3-4651-BAB4-32144FECFB52</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -550,27 +571,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<string>FDF63B46-8376-4578-B3D1-6AF2ECC6ABFE</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>disk space</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>📊 Disk Space</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C581B232-CDA3-4651-BAB4-32144FECFB52</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -655,23 +655,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>!resolution</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -692,6 +675,23 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>!resolution</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>dependency https://github.com/toy/blueutil</string>
@@ -704,7 +704,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>480</integer>
 		</dict>
 		<key>172354C0-9BDC-4A0D-AE04-3D3521239176</key>
 		<dict>
@@ -720,18 +720,18 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>715</integer>
 		</dict>
 		<key>2BE3594A-C02A-4206-A7F1-5EA3A471E49C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>595</integer>
 		</dict>
 		<key>34CBBA27-C9AC-410E-9B2F-575821B4B1B0</key>
 		<dict>
@@ -758,7 +758,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>365</integer>
 		</dict>
 		<key>98BB46BE-52EE-46AA-AC87-9ED091180E9E</key>
 		<dict>
@@ -776,7 +776,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>365</integer>
 		</dict>
 		<key>A4A97FBA-5CBA-4449-9044-CFD69762CA19</key>
 		<dict>
@@ -785,7 +785,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>250</integer>
 		</dict>
 		<key>AD2F61A3-2897-4864-8EE1-1B8E85514D66</key>
 		<dict>
@@ -794,7 +794,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>595</integer>
 		</dict>
 		<key>C129402F-060A-4E14-A919-D21FCE15A4A4</key>
 		<dict>
@@ -803,7 +803,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>365</integer>
 		</dict>
 		<key>C24E758D-BDCC-43AC-A131-DD6811A5BF05</key>
 		<dict>
@@ -821,7 +821,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>480</integer>
 		</dict>
 		<key>CC185D43-6436-4E8B-A0BB-20C128E75323</key>
 		<dict>
@@ -830,7 +830,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>720</integer>
+			<integer>680</integer>
 		</dict>
 		<key>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</key>
 		<dict>
@@ -839,7 +839,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>690</integer>
+			<integer>650</integer>
 		</dict>
 		<key>D6190251-1CA6-4563-B6A9-600A8F0DD885</key>
 		<dict>
@@ -848,7 +848,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>250</integer>
 		</dict>
 		<key>DC36339D-C2F0-48F0-86ED-287A3E935843</key>
 		<dict>
@@ -866,7 +866,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>715</integer>
 		</dict>
 		<key>F237B22E-6247-4FA6-899C-A9CA938AFED5</key>
 		<dict>
@@ -875,7 +875,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>250</integer>
 		</dict>
 		<key>FDF63B46-8376-4578-B3D1-6AF2ECC6ABFE</key>
 		<dict>
@@ -884,7 +884,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>480</integer>
 		</dict>
 	</dict>
 	<key>version</key>
