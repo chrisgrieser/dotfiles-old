@@ -1,4 +1,7 @@
 #!/usr/bin/env osascript -l JavaScript
+// requires 'fd' cli
+
+// -----------------------
 ObjC.import("stdlib");
 ObjC.import("Foundation");
 const app = Application.currentApplication();
@@ -37,7 +40,8 @@ function readFile (path, encoding) {
 const jsonArray = [];
 let pathString = "";
 pathsToSearch.forEach(path => pathString += "\"" + path + "\" ");
-const workArray = app.doShellScript("find " + pathString + " -d -name '.git'").split("\r");
+const workArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; fd '\\.git$' --no-ignore --hidden " + pathString)
+	.split("\r");
 
 workArray.forEach(item => {
 	const repoPath = item.slice(0, -5);

@@ -628,19 +628,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C80F12BA-FBAF-4A06-B583-C00EBD413E1F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>338DDC3F-FE93-4D5F-A239-AE19EBE593CB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<array>
 			<dict>
@@ -1096,85 +1083,13 @@
 				<false/>
 				<key>modsmode</key>
 				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>de.christiantietze.TableFlip</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>C7B2820D-59AD-4472-8462-D58732668477</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	key code 124 using {command down}
-	key code 123 using {command down, shift down}
-	key code 51
-	key code 124 using {command down}
-	key code 51
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>338DDC3F-FE93-4D5F-A239-AE19EBE593CB</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>2</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>D</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
-					<string>md.obsidian</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
-					<string>com.agiletortoise.Drafts-OSX</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>C80F12BA-FBAF-4A06-B583-C00EBD413E1F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2690,15 +2605,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>835</integer>
 		</dict>
-		<key>338DDC3F-FE93-4D5F-A239-AE19EBE593CB</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>420</integer>
-			<key>ypos</key>
-			<integer>310</integer>
-		</dict>
 		<key>33A1940F-5154-49FA-9255-24CB657D147D</key>
 		<dict>
 			<key>colorindex</key>
@@ -3087,17 +2993,6 @@ Fenced Code</string>
 			<string>Append to Clipboard</string>
 			<key>xpos</key>
 			<integer>30</integer>
-			<key>ypos</key>
-			<integer>310</integer>
-		</dict>
-		<key>C80F12BA-FBAF-4A06-B583-C00EBD413E1F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>delete line</string>
-			<key>xpos</key>
-			<integer>200</integer>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
