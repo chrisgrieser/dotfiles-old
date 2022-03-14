@@ -491,7 +491,7 @@ end tell</string>
 				<key>keyword</key>
 				<string>sublime</string>
 				<key>subtext</key>
-				<string></string>
+				<string>copy to working directory</string>
 				<key>text</key>
 				<string>⚙️ Sublime Default Package</string>
 				<key>withspace</key>
@@ -543,14 +543,14 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 		<key>1BFAF32E-D632-4159-9A02-EB21FC2E4E88</key>
 		<dict>
 			<key>xpos</key>
-			<integer>170</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>415</integer>
 		</dict>
 		<key>2D2FF3DD-7D9E-4619-B2F5-CEE2775BC460</key>
 		<dict>
 			<key>note</key>
-			<string>open defualt package folder</string>
+			<string>Default package folder</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
