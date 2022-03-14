@@ -27,7 +27,7 @@ alias checkout='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # go to git root https://stackoverflow.com/a/38843585
-alias .g='r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"'
+alias root='r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"'
 
 # open GitHub repo
 alias gh="open \$(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//' );"
@@ -64,7 +64,7 @@ function rel(){
 	# shellcheck disable=SC2164
 	r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"
 	if [[ -f .release.sh ]] ; then
-		zsh .release.sh
+		zsh .release.sh "$*"
 	else
 		echo "No '.release.sh' found."
 	fi
