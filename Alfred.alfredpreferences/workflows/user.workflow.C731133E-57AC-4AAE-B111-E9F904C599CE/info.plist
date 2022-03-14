@@ -118,6 +118,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E30671DD-C795-4F57-9BD3-9FC4C20DCFDA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>361B7617-AA0E-4A82-A7BA-824D533D233D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F4468F76-B63C-49C9-B546-6F3661587EC3</key>
 		<array>
 			<dict>
@@ -445,6 +458,46 @@ brew home "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://pypi.org/search/?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>361B7617-AA0E-4A82-A7BA-824D533D233D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>pip</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>PyPI: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E30671DD-C795-4F57-9BD3-9FC4C20DCFDA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
@@ -598,6 +651,15 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
+		<key>361B7617-AA0E-4A82-A7BA-824D533D233D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>395</integer>
+		</dict>
 		<key>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</key>
 		<dict>
 			<key>colorindex</key>
@@ -675,6 +737,15 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>E30671DD-C795-4F57-9BD3-9FC4C20DCFDA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>510</integer>
+			<key>ypos</key>
+			<integer>395</integer>
 		</dict>
 		<key>EDA21286-4E28-4304-A9DB-0BA74AB2C370</key>
 		<dict>
