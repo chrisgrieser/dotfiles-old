@@ -14,6 +14,7 @@ cd "/Applications/" || exit 1
 APP_TO_UPDATE=$(basename "$*")
 APP_TO_UPDATE="${APP_TO_UPDATE%.*}" # no extension
 NONE_FOUND=0
+INFO_WINDOW=0
 
 case $APP_TO_UPDATE in
 	"Steam")
@@ -52,13 +53,15 @@ case $APP_TO_UPDATE in
 			open information window of (\"/Applications/Drafts.app\" as POSIX file as alias)
 			activate
 		end tell
-		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Drafts_Green.icns\"" ;;
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Drafts_Green.icns\""
+		INFO_WINDOW=1 ;;
 	"Mimestream")
 		osascript -e "tell application \"Finder\"
 			open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
 			activate
 		end tell
-		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\"" ;;
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\""
+		INFO_WINDOW=1 ;;
 	"Google Docs")
 		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
@@ -83,8 +86,10 @@ esac
 
 if [[ $NONE_FOUND == 0 ]]; then
 	killall "$APP_TO_UPDATE"
-	killall "Finder"
-	killall "Dock"
+	if [[ $INFO_WINDOW == 0 ]]; then
+		killall "Finder"
+		killall "Dock"
+	fi
 	echo -n "$APP_TO_UPDATE" # pass for notication
 fi
 
