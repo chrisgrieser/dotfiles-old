@@ -19,7 +19,6 @@
 		"camelcase": ["error", {"properties": "always", "ignoreImports": true}],
 		"no-var": "error",
 		"prefer-const": "warn",
-		"vars-on-top": "warn",
 		"sort-vars": "warn",
 		"no-use-before-define": "error",
 		"no-multi-assign": "error",
@@ -47,6 +46,9 @@
 		"object-curly-newline": ["warn", { "multiline": true }],
 		"curly": ["warn", "multi-or-nest"],
 		"no-multiple-empty-lines": ["warn", { "max": 2 } ],
+
+		// Brackets
+		"no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false }]
 
 		// Loops
 		"no-unmodified-loop-condition": "error",
