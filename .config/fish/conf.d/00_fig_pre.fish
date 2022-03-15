@@ -1,1 +1,0 @@
-/Users/chrisgrieser/.fig/shell/pre.fish
