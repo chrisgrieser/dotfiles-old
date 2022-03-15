@@ -68,7 +68,7 @@
 	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
 	] },
-	// Navigate
+	// Navigate to Brackets
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
 
 
@@ -101,11 +101,16 @@
 	// Kill Line
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
 	// Split Line
-	{ "keys": ["super+shift+l"], "command": "split_line"},
+	{ "keys": ["super+shift+l"], "command": "split_selection_into_lines"},
 
 	// Multi Cursor down / up
 	{ "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+	// Scrolling
+	{ "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 15.0} },
+	{ "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -15.0} },
+
 
 	// Comment
 	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
