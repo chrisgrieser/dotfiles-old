@@ -14,7 +14,7 @@ module.exports = {
 
 	handlers: [
 		{
-			match: /discord(app)?\.com\//i,
+			match: /discord(app)?\.com\/channel/i,
 			url: ({ url }) => ({
 				...url,
 				protocol: "discord"
