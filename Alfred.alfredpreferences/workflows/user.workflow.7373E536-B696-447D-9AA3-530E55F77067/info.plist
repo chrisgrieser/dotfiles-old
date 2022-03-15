@@ -481,19 +481,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F271D792-19C2-40DF-A80F-824CCA4EA2B0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>572E0814-28FB-45AB-833C-0895619573BF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F5827E01-38F2-4EB4-BABE-CB157BCB5F22</key>
 		<array>
 			<dict>
@@ -644,6 +631,30 @@ curl --silent -LH "Accept: application/x-bibtex" {query}</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo "{query}" | grep -vw "month =" | grep -vw "issn =" | pbcopy
+sleep 0.1</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>58A96A70-EE77-4BE2-8113-835C86F99F3B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>tell application "BibDesk" to activate
@@ -664,30 +675,6 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>AA39C446-4B29-4745-A7B0-BA46D0FBA3EA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo "{query}" | grep -vw "month =" | grep -vw "issn =" | pbcopy
-sleep 0.1</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>58A96A70-EE77-4BE2-8113-835C86F99F3B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -809,12 +796,12 @@ sleep 0.1</string>
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1263,63 +1250,6 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>⚠️ File is not a PDF</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>38351D8A-50D6-43DF-9B73-87ED65AA012C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bibdesk</string>
-				<key>subtext</key>
-				<string>in Code Editor</string>
-				<key>text</key>
-				<string>Open Library</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F271D792-19C2-40DF-A80F-824CCA4EA2B0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Sublime Text.app</string>
-				<key>sourcefile</key>
-				<string>{var:library_path}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>572E0814-28FB-45AB-833C-0895619573BF</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1450,6 +1380,27 @@ echo -n $file_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>⚠️ File is not a PDF</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>38351D8A-50D6-43DF-9B73-87ED65AA012C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>backup</string>
 				<key>passthroughargument</key>
@@ -1498,9 +1449,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>550</integer>
 		</dict>
 		<key>0A47F1BC-132C-4D97-AFBC-523593DDC65D</key>
 		<dict>
@@ -1534,9 +1485,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>425</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>550</integer>
 		</dict>
 		<key>2A3C2E16-E479-4B91-9CD3-798B58D6288E</key>
 		<dict>
@@ -1572,9 +1523,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>700</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>550</integer>
 		</dict>
 		<key>44D16E56-EB87-402B-8D0E-A79465EFB772</key>
 		<dict>
@@ -1606,15 +1557,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>330</integer>
 			<key>ypos</key>
 			<integer>20</integer>
-		</dict>
-		<key>572E0814-28FB-45AB-833C-0895619573BF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>260</integer>
-			<key>ypos</key>
-			<integer>595</integer>
 		</dict>
 		<key>58A96A70-EE77-4BE2-8113-835C86F99F3B</key>
 		<dict>
@@ -1661,9 +1603,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>779D2E59-3CC7-48D7-9B3D-DA0CF4D70F0D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>845</integer>
+			<integer>665</integer>
 		</dict>
 		<key>7A5A235B-6843-43A6-B29B-4BFFBD98156D</key>
 		<dict>
@@ -1717,9 +1659,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>580</integer>
 		</dict>
 		<key>8A0CBDDC-74F8-4D7A-A808-894D685000C4</key>
 		<dict>
@@ -1728,9 +1670,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>sound</string>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>600</integer>
 			<key>ypos</key>
-			<integer>750</integer>
+			<integer>570</integer>
 		</dict>
 		<key>8FCA9D2D-78BD-459B-B5D6-33F87166677D</key>
 		<dict>
@@ -1750,9 +1692,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>backup</string>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>550</integer>
 		</dict>
 		<key>99155978-C909-463D-97FB-4D5650AA4A7F</key>
 		<dict>
@@ -1820,15 +1762,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>730</integer>
 			<key>ypos</key>
 			<integer>450</integer>
-		</dict>
-		<key>F271D792-19C2-40DF-A80F-824CCA4EA2B0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>595</integer>
 		</dict>
 		<key>F5827E01-38F2-4EB4-BABE-CB157BCB5F22</key>
 		<dict>
