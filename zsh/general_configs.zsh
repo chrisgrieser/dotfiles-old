@@ -1,3 +1,4 @@
+# shellcheck disable=SC2190
 # Working Directory
 export WD=~"/Library/Mobile Documents/com~apple~CloudDocs/File Hub"
 
@@ -11,7 +12,15 @@ fi
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
 export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+
+
+# zsh syntax highlighting,
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+
+typeset -A ZSH_HIGHLIGHT_PATTERNS # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/pattern.md
+ZSH_HIGHLIGHT_PATTERNS+=('rm -*f*' 'fg=white,bold,bg=red') # `rm -f` in red
+ZSH_HIGHLIGHT_PATTERNS+=('git reset' 'fg=white,bold,bg=red') # `git reset` in red
+ZSH_HIGHLIGHT_PATTERNS+=('§' 'fg=magenta,bold') # § = global alias for grepping
 
 # for fzf-tab
 # shellcheck disable=SC2016

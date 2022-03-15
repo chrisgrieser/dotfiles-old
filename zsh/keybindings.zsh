@@ -1,11 +1,10 @@
 bindkey "\e\e" quitSession # Double Esc
 bindkey "^P" copyLocation
-bindkey "^B" copybuffer
+bindkey "^B" copyBuffer
 bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
 
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
-bindkey "^X" kill-buffer
 bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 
 # [alt+arrow] - move word forward or backward
@@ -28,7 +27,7 @@ quitSession () {
 zle -N quitSession
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/copybuffer/copybuffer.plugin.zsh
-copybuffer () {
+copyBuffer () {
 	printf "%s" "$BUFFER" | pbcopy
 }
 zle -N copybuffer
