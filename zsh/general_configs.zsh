@@ -39,7 +39,8 @@ export KEYTIMEOUT=1
 
 # OPTIONS --- (`man zshoptions` to see all options)
 setopt AUTO_CD
-setopt INTERACTIVE_COMMENTS
+
+setopt INTERACTIVE_COMMENTS # comments in interactive mode (useful für copypasting)
 setopt NOTIFY # report the status of backgrounds jobs immediately
 
 # case insensitive path-completion, see https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/

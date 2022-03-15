@@ -15,8 +15,6 @@ eval "$(starship init zsh)"
 source "$ZSH_DOTFILE_LOCATION"/plugins/magic_enter.zsh
 source "$ZSH_DOTFILE_LOCATION"/plugins/obsidian-vault-navigation.sh
 
-
-
 if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
 	# fix for Starship-Terminus issue, https://github.com/starship/starship/issues/3627
 	export STARSHIP_CONFIG=~/.config/starship/starship_terminus.toml
