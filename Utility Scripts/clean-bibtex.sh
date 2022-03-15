@@ -1,6 +1,8 @@
 #!/bin/zsh
 # shellcheck disable=SC2002
 
+# alternatively use the CLI `bibtex-tidy`
+
 LIBRARY_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/pandoc/main-bibliography.bib"
 
 # move curly braces down a line for better editing
