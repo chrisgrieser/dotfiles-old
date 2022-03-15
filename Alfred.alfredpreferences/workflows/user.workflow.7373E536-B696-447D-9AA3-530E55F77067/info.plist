@@ -1476,21 +1476,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>backup_destination</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/Library Backups/</string>
 		<key>citation_style</key>
 		<string>apa</string>
 		<key>lang</key>
 		<string>de</string>
 		<key>library_path</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/pandoc/main-bibliography.bib</string>
-		<key>max_number_of_bkps</key>
-		<string>20</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>library_path</string>
-		<string>backup_destination</string>
 	</array>
 	<key>version</key>
 	<string>0.9</string>
