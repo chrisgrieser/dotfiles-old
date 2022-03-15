@@ -54,7 +54,8 @@ function r (){
 		SELECTED=$(dirs -p | fzf \
 		           -0 -1 \
 		           --query "$INPUT" \
-		           --preview 'exa -T -L2 "${{}}/#\~/$HOME}"' \
+		           --no-sort \
+		           --preview 'TEMP={} ; exa --tree -L2 --icons --group-directories-first "${TEMP/#\~/$HOME}"' \
 		           --preview-window=right:35% \
 		           --height=80% \
 		           --layout=reverse \

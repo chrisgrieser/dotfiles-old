@@ -8,19 +8,6 @@
 	<string>Academic</string>
 	<key>connections</key>
 	<dict>
-		<key>00CC532E-500A-43AF-B54C-7C5B36946BFF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>89228D64-6D7F-405F-B797-49A7E48FBA86</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>0A47F1BC-132C-4D97-AFBC-523593DDC65D</key>
 		<array>
 			<dict>
@@ -72,19 +59,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>277C91B6-DFC9-419B-87A8-86F067B5A91A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8A0CBDDC-74F8-4D7A-A808-894D685000C4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2A3C2E16-E479-4B91-9CD3-798B58D6288E</key>
 		<array>
 			<dict>
@@ -124,8 +98,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3BA9920F-C286-42D9-B725-416018DB6B32</key>
-		<array/>
 		<key>44D16E56-EB87-402B-8D0E-A79465EFB772</key>
 		<array>
 			<dict>
@@ -219,19 +191,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0B7B537F-7CE7-4173-A87A-0A36F21BED67</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>779D2E59-3CC7-48D7-9B3D-DA0CF4D70F0D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>89228D64-6D7F-405F-B797-49A7E48FBA86</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -345,45 +304,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2A3C2E16-E479-4B91-9CD3-798B58D6288E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>89228D64-6D7F-405F-B797-49A7E48FBA86</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8A0CBDDC-74F8-4D7A-A808-894D685000C4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3BA9920F-C286-42D9-B725-416018DB6B32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>277C91B6-DFC9-419B-87A8-86F067B5A91A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -797,11 +717,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1250,136 +1170,6 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># resolve "~"
-library_path="~/Google Drive/BibDesk/My Library.bib"
-
-# determine locations
-resolved_library_path=~`echo -n $library_path | sed -e "s/~//"`
-file_name="${resolved_library_path##*/}"
-parent_folder="${resolved_library_path%/*.*}"
-timestamp=`date '+%Y-%m-%d_%H.%M'`
-bkp_file="$parent_folder/Library Backups/${timestamp}_$file_name"
-
-# create backups
-mkdir $parent_folder"/Library Backups/"
-cp $resolved_library_path $bkp_file
-
-# delete when there are too many backups
-actual_number=$((number_of_bkps_to_save + 1))
-cd $parent_folder"/Library Backups/"
-ls -t | tail -n +$actual_number | tr '\n' '\0' | xargs -0 rm
-
-# echos for the notification
-echo -n $file_name</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>library-backup.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>3BA9920F-C286-42D9-B725-416018DB6B32</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<true/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>✅ Backup finished</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>277C91B6-DFC9-419B-87A8-86F067B5A91A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>bkp bibtex</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Backup: BibTeX Library</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>00CC532E-500A-43AF-B54C-7C5B36946BFF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:mode}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>no sound</string>
-						<key>outputlabel</key>
-						<string>no</string>
-						<key>uid</key>
-						<string>FEA7E4E2-00DD-487A-B6A4-1A72E14035C4</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>yes</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>8A0CBDDC-74F8-4D7A-A808-894D685000C4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1398,39 +1188,6 @@ echo -n $file_name</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>backup</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>mode</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>89228D64-6D7F-405F-B797-49A7E48FBA86</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>BibTeX Library Backup</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>779D2E59-3CC7-48D7-9B3D-DA0CF4D70F0D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Requirements
@@ -1444,15 +1201,6 @@ echo -n $file_name</string>
 Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>00CC532E-500A-43AF-B54C-7C5B36946BFF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>550</integer>
-		</dict>
 		<key>0A47F1BC-132C-4D97-AFBC-523593DDC65D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1479,15 +1227,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>900</integer>
 			<key>ypos</key>
 			<integer>265</integer>
-		</dict>
-		<key>277C91B6-DFC9-419B-87A8-86F067B5A91A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>425</integer>
-			<key>ypos</key>
-			<integer>550</integer>
 		</dict>
 		<key>2A3C2E16-E479-4B91-9CD3-798B58D6288E</key>
 		<dict>
@@ -1517,15 +1256,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>1205</integer>
 			<key>ypos</key>
 			<integer>580</integer>
-		</dict>
-		<key>3BA9920F-C286-42D9-B725-416018DB6B32</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>700</integer>
-			<key>ypos</key>
-			<integer>550</integer>
 		</dict>
 		<key>44D16E56-EB87-402B-8D0E-A79465EFB772</key>
 		<dict>
@@ -1600,13 +1330,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
-		<key>779D2E59-3CC7-48D7-9B3D-DA0CF4D70F0D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>665</integer>
-		</dict>
 		<key>7A5A235B-6843-43A6-B29B-4BFFBD98156D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1654,26 +1377,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
-		<key>89228D64-6D7F-405F-B797-49A7E48FBA86</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>580</integer>
-		</dict>
-		<key>8A0CBDDC-74F8-4D7A-A808-894D685000C4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>sound</string>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>570</integer>
-		</dict>
 		<key>8FCA9D2D-78BD-459B-B5D6-33F87166677D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1684,17 +1387,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>1395</integer>
 			<key>ypos</key>
 			<integer>390</integer>
-		</dict>
-		<key>92F7D6E7-10CF-468B-BE45-3B1AB8566F61</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>backup</string>
-			<key>xpos</key>
-			<integer>270</integer>
-			<key>ypos</key>
-			<integer>550</integer>
 		</dict>
 		<key>99155978-C909-463D-97FB-4D5650AA4A7F</key>
 		<dict>
