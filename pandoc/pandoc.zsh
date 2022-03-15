@@ -9,9 +9,8 @@ function docx () {
 		"$INPUT_FILE" \
 		--output="$OUTPUT_FILE" \
 		--defaults=Paper-Word \
-		--metadata=date:"$(date "+%d. %B %Y")"
-
-	open -R "$OUTPUT_FILE"
+		--metadata=date:"$(date "+%d. %B %Y")" \
+	&& open -R "$OUTPUT_FILE"
 }
 
 function docx2md () {
