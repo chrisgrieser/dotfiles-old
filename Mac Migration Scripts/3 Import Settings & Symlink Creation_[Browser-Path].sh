@@ -29,7 +29,7 @@ ln -s "$SYMLINK_LOC"/.shellcheckrc ~
 ln -s "$SYMLINK_LOC"/.markdownlintrc ~
 ln -s "$SYMLINK_LOC"/.stylelintrc.json ~
 ln -s "$SYMLINK_LOC"/.gitconfig ~
-ln -s "$SYMLINK_LOC"/.eslintrc ~
+ln -s "$SYMLINK_LOC"/.eslintrc.json ~
 ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
 ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc

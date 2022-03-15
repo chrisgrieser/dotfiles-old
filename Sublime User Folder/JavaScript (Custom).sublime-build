@@ -4,7 +4,8 @@
 	"variants": [
 		{
 			"name": "Lint Autofix",
-			"cmd": ["eslint", "--fix", "$file"]
+			// needs explicite reference to config file: https://eslint.org/docs/user-guide/migrating-to-7.0.0#-runtime-deprecation-warnings-for-eslintrc-config-files
+			"cmd": ["eslint", "--config", "~/.eslintrc.json", "--fix", "$file"]
 		},
 		{
 			"name": "Make Executable",
