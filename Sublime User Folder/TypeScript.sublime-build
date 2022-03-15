@@ -4,7 +4,7 @@
 	"cmd": ["npm", "run", "build"],
 	"variants": [
 		{
-			"name": "Lint Autofix",
+			"name": "Eslint Autofix",
 			"cmd": ["eslint", "--fix", "$file"]
 		},
 	]
