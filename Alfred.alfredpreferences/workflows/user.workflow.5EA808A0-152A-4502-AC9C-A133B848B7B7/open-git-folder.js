@@ -11,7 +11,6 @@ const finderApp = Application("Finder");
 // ---------------------------------------------
 
 const pathsToSearch = [
-	$.getenv("alfred_preferences"),
 	$.getenv("working_folder").replace("~", home),
 	home + "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Development",
 	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code",
