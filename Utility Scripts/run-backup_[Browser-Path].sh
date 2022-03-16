@@ -45,11 +45,5 @@ echo "completed: $(date '+%H:%M')" >> "$LOG_LOCATION"
 echo "Backup: $(date '+%Y-%m-%d %H:%M')" >> last_backup.log
 osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '
 
-# eject when volume
-if [[ "$BACKUP_DEST" == *"Volumes"* ]] ; then
-  diskutil unmount "$BACKUP_DEST"
-  diskutil unmount force "$BACKUP_DEST"
-fi
-
 # Notify Completion
 osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'

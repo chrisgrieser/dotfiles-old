@@ -28,9 +28,9 @@ tell application "System Events"
 		click menu item "Hide Toolbar" of menu "View" of menu bar 1
 	end tell
 end tell
-delay 0.5
+delay 5
 tell application id "com.surteesstudios.Bartender" to launch
-delay 1
+delay 5
 tell application "xbar"
 	quit
 	delay 1
