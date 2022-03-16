@@ -138,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FB479BF0-8B6C-4195-ACEA-EEF9C2BA8752</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -471,6 +484,27 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tw up</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🆙 Scroll Up</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B5C92BAB-92C8-4786-A984-B46261642E93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -494,27 +528,6 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tw up</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🆙 Scroll Up</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B5C92BAB-92C8-4786-A984-B46261642E93</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>triggerid</key>
 				<string>twitterrific-scroll-up</string>
 			</dict>
@@ -524,6 +537,37 @@ open -a "Twitterrific"</string>
 			<string>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>48</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>⇥</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FB479BF0-8B6C-4195-ACEA-EEF9C2BA8752</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -555,9 +599,9 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>260</integer>
 			<key>ypos</key>
-			<integer>960</integer>
+			<integer>1100</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
@@ -639,6 +683,8 @@ open -a "Twitterrific"</string>
 		</dict>
 		<key>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
@@ -686,6 +732,15 @@ open -a "Twitterrific"</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>815</integer>
+		</dict>
+		<key>FB479BF0-8B6C-4195-ACEA-EEF9C2BA8752</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>1225</integer>
 		</dict>
 		<key>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</key>
 		<dict>
