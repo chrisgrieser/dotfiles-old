@@ -10,7 +10,8 @@ function docx () {
 		--output="$OUTPUT_FILE" \
 		--defaults=Paper-Word \
 		--metadata=date:"$(date "+%d. %B %Y")" \
-	&& open -R "$OUTPUT_FILE"
+	&& open -R "$OUTPUT_FILE" \
+	&& open "$OUTPUT_FILE"
 }
 
 function docx2md () {

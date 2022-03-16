@@ -220,7 +220,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CD906553-7363-4F4C-931E-C38914B94D56</string>
+				<string>A5580EC0-985B-4874-9043-F104CC610338</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1152,6 +1152,33 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+
+eval "$(cat ~/.pandoc/pandoc.zsh)"
+
+docx "$*"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A5580EC0-985B-4874-9043-F104CC610338</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1183,21 +1210,6 @@ end tell</string>
 			<string>F0667AF1-2A62-49D0-B7D5-E22D50EA9684</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>docx {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>CD906553-7363-4F4C-931E-C38914B94D56</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1423,6 +1435,13 @@ end tell</string>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
+		<key>A5580EC0-985B-4874-9043-F104CC610338</key>
+		<dict>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>1000</integer>
+		</dict>
 		<key>AB678698-386C-4C3D-98A2-115203D69318</key>
 		<dict>
 			<key>colorindex</key>
@@ -1491,15 +1510,6 @@ end tell</string>
 			<integer>85</integer>
 			<key>ypos</key>
 			<integer>775</integer>
-		</dict>
-		<key>CD906553-7363-4F4C-931E-C38914B94D56</key>
-		<dict>
-			<key>note</key>
-			<string>run "docx" alias</string>
-			<key>xpos</key>
-			<integer>630</integer>
-			<key>ypos</key>
-			<integer>1000</integer>
 		</dict>
 		<key>CFE58ECE-263C-48B3-ABB2-BC5C0203D1F4</key>
 		<dict>
