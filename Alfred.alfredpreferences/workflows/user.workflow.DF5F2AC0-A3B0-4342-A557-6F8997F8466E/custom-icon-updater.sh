@@ -1,6 +1,6 @@
 #!/bin/zsh
 # shellcheck disable=SC2154
-# requires "iconsur" CLI
+# requires "iconsur"
 
 CUSTOM_ICON_FOLDER="${custom_icon_folder/#\~/$HOME}"
 PWA_FOLDER="${pwa_folder/#\~/$HOME}"
@@ -90,6 +90,8 @@ if [[ $NONE_FOUND == 0 ]]; then
 		killall "Finder"
 		killall "Dock"
 	fi
+	sleep 1
+	open -a "$APP_TO_UPDATE"
 	echo -n "$APP_TO_UPDATE" # pass for notication
 fi
 

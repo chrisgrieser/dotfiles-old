@@ -477,7 +477,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://npms.io/search?q={query}</string>
+				<string>https://npms.io/search?q=alfred+workflow+{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
