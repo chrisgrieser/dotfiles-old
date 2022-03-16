@@ -31,7 +31,7 @@ module.exports = {
 			match: ({ url, opener }) =>
 				url.host.endsWith("github.com") && opener.bundleId === "com.mimestream.Mimestream",
 			browser: {
-				name: "Brave Browser",
+				name: "Safari",
 				openInBackground: true // Force opening the link in the background
 			}
 		},
