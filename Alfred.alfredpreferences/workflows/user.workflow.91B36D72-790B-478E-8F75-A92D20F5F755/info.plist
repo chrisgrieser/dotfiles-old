@@ -125,6 +125,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>25A411B2-E80F-403A-B5FD-3687171168EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>367EF5DF-53C7-4731-A1DC-185C54069491</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>282E06F3-BEAC-4C29-9BAA-962FE0AD494F</key>
 		<array>
 			<dict>
@@ -169,6 +182,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>CFCCD6D4-5C3D-46AC-8EBF-DDD96AA8EE12</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BCAE773E-2CD3-4CBF-B877-3F90B0534A11</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -562,7 +588,18 @@
 			</dict>
 		</array>
 		<key>D08CA8F9-2C11-41A6-BDFA-428DB06F4222</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E061C2C7-8263-4964-9AA9-D56F54C5CCD4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D16469EA-A333-45BF-BFFD-DCE5DD9846DF</key>
 		<array>
 			<dict>
@@ -892,7 +929,7 @@
 				<key>keyword</key>
 				<string>k</string>
 				<key>subtext</key>
-				<string></string>
+				<string>only URL</string>
 				<key>text</key>
 				<string>SearchLink: '{query}'</string>
 				<key>withspace</key>
@@ -901,28 +938,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>22CE272A-A695-4C98-8ADF-E1B98667D3B6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>query: '{query}'</string>
-				<key>title</key>
-				<string>⏳ SearchLink running...</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>AB99E030-DB45-4C5F-A64F-4234C0998270</string>
+			<string>25A411B2-E80F-403A-B5FD-3687171168EC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -956,6 +972,65 @@
 			<string>C7B2820D-59AD-4472-8462-D58732668477</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}!!</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>367EF5DF-53C7-4731-A1DC-185C54069491</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>k</string>
+				<key>subtext</key>
+				<string>Markdown Link</string>
+				<key>text</key>
+				<string>SearchLink: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>22CE272A-A695-4C98-8ADF-E1B98667D3B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>query: '{query}'</string>
+				<key>title</key>
+				<string>⏳ SearchLink running...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>AB99E030-DB45-4C5F-A64F-4234C0998270</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -994,17 +1069,13 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>return do shell script "automator -r -i " &amp; quoted form of "{query}" &amp; " ~/Library/Services/SearchLink.workflow|awk '/http/{gsub(/^[ 	]*\"|\"[	 ]*$/,\"\"); print}'"
-
--- Original for NSApplescript
--- Based on Brett's original LaunchBar script
-(* on alfred_script(q)	return do shell script "automator -r -i " &amp; quoted form of q &amp; " ~/Library/Services/SearchLink.workflow|awk '/http/{gsub(/^[ 	]*\"|\"[	 ]*$/,\"\"); print}'"end alfred_script *)</string>
+				<string>automator -r -i "$*" ~/Library/Services/SearchLink.workflow | sed -n 2p | cut -d\" -f2</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -2187,10 +2258,12 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
+			<key>note</key>
+			<string>Markdown Link</string>
 			<key>xpos</key>
 			<integer>735</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>360</integer>
 		</dict>
 		<key>23FC8720-8693-4949-B7F9-8AB0A8FACF1B</key>
 		<dict>
@@ -2200,6 +2273,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>735</integer>
 			<key>ypos</key>
 			<integer>950</integer>
+		</dict>
+		<key>25A411B2-E80F-403A-B5FD-3687171168EC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>only URL</string>
+			<key>xpos</key>
+			<integer>735</integer>
+			<key>ypos</key>
+			<integer>225</integer>
 		</dict>
 		<key>282E06F3-BEAC-4C29-9BAA-962FE0AD494F</key>
 		<dict>
@@ -2239,6 +2323,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>835</integer>
 		</dict>
+		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>900</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<dict>
 			<key>colorindex</key>
@@ -2246,7 +2339,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>xpos</key>
 			<integer>735</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>605</integer>
 		</dict>
 		<key>3BB6C5DA-8578-4EF5-9D31-9CBB69C31277</key>
 		<dict>
@@ -2465,7 +2558,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>xpos</key>
 			<integer>985</integer>
 			<key>ypos</key>
-			<integer>295</integer>
+			<integer>415</integer>
 		</dict>
 		<key>B0FB256B-B979-44C2-A7AE-6EAEB648134E</key>
 		<dict>
@@ -2516,7 +2609,7 @@ Fenced Code</string>
 			<key>xpos</key>
 			<integer>905</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>520</integer>
 		</dict>
 		<key>C28FEE8D-73E3-4727-B012-EC7EDD48E5A1</key>
 		<dict>
@@ -2534,7 +2627,7 @@ Fenced Code</string>
 			<key>xpos</key>
 			<integer>735</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>490</integer>
 		</dict>
 		<key>C4CED4ED-95CD-4CE8-B72A-548CD1FC1FE0</key>
 		<dict>
@@ -2590,7 +2683,7 @@ Fenced Code</string>
 			<key>xpos</key>
 			<integer>985</integer>
 			<key>ypos</key>
-			<integer>440</integer>
+			<integer>560</integer>
 		</dict>
 		<key>D16469EA-A333-45BF-BFFD-DCE5DD9846DF</key>
 		<dict>

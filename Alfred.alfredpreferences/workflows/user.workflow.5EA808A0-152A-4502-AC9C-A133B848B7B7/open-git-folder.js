@@ -14,7 +14,8 @@ const pathsToSearch = [
 	$.getenv("alfred_preferences"),
 	$.getenv("working_folder").replace("~", home),
 	home + "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Development",
-	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code"
+	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code",
+	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs"
 ];
 
 // ---------------------------------------------
@@ -39,7 +40,7 @@ function readFile (path, encoding) {
 
 const jsonArray = [];
 let pathString = "";
-pathsToSearch.forEach(path => pathString += "\"" + path + "\" ");
+pathsToSearch.forEach(path => { pathString += "\"" + path + "\" " });
 const workArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; fd '\\.git$' --no-ignore --hidden " + pathString)
 	.split("\r");
 
@@ -50,14 +51,19 @@ workArray.forEach(item => {
 	const isAlfredWorkflow = finderApp.exists(Path(repoPath + "/info.plist"));
 	const isObsiPlugin = finderApp.exists(Path(repoPath + "/manifest.json"));
 
+	// Alfred Workflow Repos
 	if (isAlfredWorkflow) {
 		repoName = readPlist("name", repoPath + "/info.plist");
 		iconpath = "alfred.png";
+
+	// Obsidian Plugin Repos
 	} else if (isObsiPlugin) {
 		const manifest = readFile(repoPath + "/manifest.json");
 		repoName = JSON.parse(manifest).name;
 		iconpath = "obsidian.png";
 	}
+
+	// Other Repos
 	else {
 		const readme = readFile(repoPath + "/README.md");
 		if (readme) {

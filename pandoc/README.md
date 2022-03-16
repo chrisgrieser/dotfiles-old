@@ -19,7 +19,7 @@ Higher overwrites lower.
 > – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--metadata)
 
 ## Priority of Filters
-> Filters, Lua-filters, and citeproc processing are applied in the order specified on the command line.
+> Filters, Lua-filters, and citeproc processing are applied in the order specified on the command line.  
 > – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--filter)
 
 ## Automatically Insert Date
