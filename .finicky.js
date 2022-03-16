@@ -1,3 +1,5 @@
+// https://github.com/johnste/finicky/wiki/Configuration
+
 module.exports = {
 	defaultBrowser: "Brave Browser",
 	options: {
@@ -14,7 +16,7 @@ module.exports = {
 
 	handlers: [
 		{
-			match: /discord(app)?\.com\/channel/i,
+			match: /discord(app)?\.com\/channel/,
 			url: ({ url }) => ({
 				...url,
 				protocol: "discord"
@@ -22,8 +24,16 @@ module.exports = {
 			browser: "com.hnc.Discord"
 		},
 		{
-			match: /zoom\.us\/j/i,
+			match: /zoom\.us\/j/,
 			browser: "us.zoom.xos"
+		},
+		{
+			match: ({ url, opener }) =>
+				url.host.endsWith("github.com") && opener.bundleId === "com.mimestream.Mimestream",
+			browser: {
+				name: "Brave Browser",
+				openInBackground: true // Force opening the link in the background
+			}
 		},
 		{
 			match: ({ url }) => url.host.endsWith("hvgruender.de"),
