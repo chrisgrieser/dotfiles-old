@@ -27,11 +27,12 @@ module.exports = {
 			match: /zoom\.us\/j/,
 			browser: "us.zoom.xos"
 		},
+		// not workign yet: https://github.com/johnste/finicky/issues/252
 		{
 			match: ({ url, opener }) =>
 				url.host.endsWith("github.com") && opener.bundleId === "com.mimestream.Mimestream",
 			browser: {
-				name: "Safari",
+				name: "Brave Browser",
 				openInBackground: true // Force opening the link in the background
 			}
 		},
