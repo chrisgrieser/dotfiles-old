@@ -99,6 +99,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A250954B-4A68-48E7-AC91-704EF7BD0790</key>
 		<array>
 			<dict>
@@ -250,7 +263,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Custom Hotkeys</string>
+	<string>Hotkey Remapping</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -1286,6 +1299,62 @@ docx "$*"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>10</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>f</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -1416,6 +1485,13 @@ docx "$*"</string>
 			<key>ypos</key>
 			<integer>385</integer>
 		</dict>
+		<key>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>1525</integer>
+		</dict>
 		<key>8021D07C-8E94-489A-B77D-6603F1AFF4AF</key>
 		<dict>
 			<key>colorindex</key>
@@ -1436,12 +1512,21 @@ docx "$*"</string>
 		</dict>
 		<key>8DE469BA-9D08-4B1C-8240-0CD643A40397</key>
 		<dict>
-			<key>note</key>
-			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>260</integer>
 			<key>ypos</key>
-			<integer>1335</integer>
+			<integer>1375</integer>
+		</dict>
+		<key>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Footnote</string>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>1525</integer>
 		</dict>
 		<key>A250954B-4A68-48E7-AC91-704EF7BD0790</key>
 		<dict>
@@ -1512,7 +1597,7 @@ docx "$*"</string>
 			<key>xpos</key>
 			<integer>90</integer>
 			<key>ypos</key>
-			<integer>1335</integer>
+			<integer>1375</integer>
 		</dict>
 		<key>C3679F9E-C3B6-402E-A45D-DB1BFC5717A7</key>
 		<dict>
