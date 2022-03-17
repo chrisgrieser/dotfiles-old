@@ -91,7 +91,12 @@
 	{ "keys": ["super+d"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
 	{ "keys": ["super+2"], "command": "swap_line_up" },
 	{ "keys": ["super+3"], "command": "swap_line_down" },
+
+	// Merge Line up
 	{ "keys": ["super+m"], "command": "join_lines" },
+	// Merge Line down
+	{ "keys": ["super+shift+m"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Merge Line Down.sublime-macro"} },
+
 	// Better Duplicate (Plugin)
 	{ "keys": ["super+shift+d"], "command": "duplicate_lines" },
 	// Smart Duplicate (CSS) (Plugin)
@@ -110,7 +115,6 @@
 	// Scrolling
 	{ "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 15.0} },
 	{ "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -15.0} },
-
 
 	// Comment
 	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },

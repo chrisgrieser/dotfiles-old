@@ -1,3 +1,4 @@
+// these commands will be added to the Command Palette
 [
-	// { "caption": "EsLint-Formatter Settings", "command": "edit_settings", "args": {"base_file": "${packages}/ESLint-Formatter/ESLint-Formatter.sublime-settings", } },
+	{ "caption": "Toggle Record Macro", "command": "toggle_record_macro" },
 ]
