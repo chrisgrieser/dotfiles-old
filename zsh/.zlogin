@@ -7,13 +7,13 @@ setopt PUSHD_IGNORE_DUPS
 
 # cd to recent directory
 function r (){
-	local STACK
-	STACK=$(dirs -p | sed 's/~\/Library\/Mobile Documents\/com~apple~CloudDocs/ /'\
-	        | sed 's/~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /')
 	local INPUT="$*"
 	if [[ -d "$INPUT" ]]; then
 		cd "$INPUT" || return
 	else
+	local STACK
+	STACK=$(dirs -p | sed 's/~\/Library\/Mobile Documents\/com~apple~CloudDocs/ /'\
+	        | sed 's/~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /')
 		local SELECTED
 		SELECTED=$(echo "$STACK" | fzf \
 		           -0 \
