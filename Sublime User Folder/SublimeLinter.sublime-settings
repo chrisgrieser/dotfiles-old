@@ -34,9 +34,6 @@
         "markdownlint": {
             "args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces"]
         },
-        "eslint": {
-            "args": ["--config", "/.eslintrc.json"]
-        },
         "stylelint": {
             "filter_errors": "warning: ",
         },
