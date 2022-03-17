@@ -8,19 +8,6 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
-		<key>1456C068-4412-4DC7-8B15-F4FBCC6E95A6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2D724179-5C6D-4C66-9E05-36042405FCA9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>432EB74A-9F76-4DD1-A316-CF3041712A9A</key>
 		<array>
 			<dict>
@@ -178,19 +165,6 @@
 		<array/>
 		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
 		<array/>
-		<key>E7995595-AF3E-4C53-B02E-7AFA61C254FC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1456C068-4412-4DC7-8B15-F4FBCC6E95A6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -644,94 +618,11 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>2D724179-5C6D-4C66-9E05-36042405FCA9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>toggle-autoraise.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1456C068-4412-4DC7-8B15-F4FBCC6E95A6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>autoraise</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Autoraise</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E7995595-AF3E-4C53-B02E-7AFA61C254FC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>1456C068-4412-4DC7-8B15-F4FBCC6E95A6</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>710</integer>
-		</dict>
-		<key>2D724179-5C6D-4C66-9E05-36042405FCA9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>370</integer>
-			<key>ypos</key>
-			<integer>710</integer>
-		</dict>
 		<key>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</key>
 		<dict>
 			<key>colorindex</key>
@@ -874,15 +765,6 @@ zoomURL;notesURI</string>
 			<integer>655</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>E7995595-AF3E-4C53-B02E-7AFA61C254FC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>710</integer>
 		</dict>
 	</dict>
 	<key>version</key>
