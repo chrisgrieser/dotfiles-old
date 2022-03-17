@@ -9,7 +9,6 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in wor
 -- Start apps
 tell application "Mimestream" to if it is not running then activate
 tell application "Brave Browser" to if it is not running then activate
-tell application "BusyCal" to if it is not running then activate
 tell application "Slack" to if it is not running then activate
 tell application "Discord" to if it is not running then activate
 
