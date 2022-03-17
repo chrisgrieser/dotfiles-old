@@ -36,10 +36,10 @@ function r (){
 # -------------------------------
 # push common directories to directory stack
 # has to be done in .zlogin, the directory stack gets reset on login
+local temp="$PWD"
 pushd -q ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/"
 pushd -q ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
+pushd -q "$WD"
 
-# Terminus will open the current file's path
-if [[ "$TERM_PROGRAM" != "Terminus-Sublime" ]] ; then
-	pushd -q "$WD"
-fi
+# Terminus will open the current file's path before .zlogin
+[[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] && pushd -q "$temp"

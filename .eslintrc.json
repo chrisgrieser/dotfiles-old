@@ -1,5 +1,6 @@
 {
 	"extends": ["eslint:recommended"],
+	"root": true, // stop that annoying deprecation warning >.>
 	"parserOptions": {
 		"ecmaVersion": 2020,
 		"sourceType": "module"
