@@ -39,37 +39,3 @@ function c (){
 	exa
 }
 
-# cd to recent directory
-
-# requires these settings to work, since using built-in zsh
-# stack directory (`man zshoptions` for explanations)
-setopt AUTO_PUSHD
-setopt PUSHD_IGNORE_DUPS
-
-function r (){
-	INPUT="$*"
-	if [[ -d "$INPUT" ]]; then
-		cd "$INPUT" || return
-	else
-		SELECTED=$(dirs -p | fzf \
-		           -0 -1 \
-		           --query "$INPUT" \
-		           --no-sort \
-		           --preview 'TEMP={} ; exa --tree -L2 --icons --group-directories-first "${TEMP/#\~/$HOME}"' \
-		           --preview-window=right:35% \
-		           --height=80% \
-		           --layout=reverse \
-		           --info=inline
-		           )
-		[[ -z "$SELECTED" ]] && return 130
-
-		RESOLVED_PATH="${SELECTED/#\~/$HOME}"
-		cd "$RESOLVED_PATH" || return
-	fi
-	exa
-}
-
-# push common directories to directory stack
-pushd -n ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/"
-pushd -n ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
-

@@ -24,6 +24,8 @@ ln -s "$SYMLINK_LOC"/zsh/.zshrc .
 mv ~/.zprofile ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zprofile .
 
+ln -s "$SYMLINK_LOC"/zsh/.zlogin ~
+
 ln -s "$SYMLINK_LOC"/.searchlink ~
 ln -s "$SYMLINK_LOC"/.shellcheckrc ~
 ln -s "$SYMLINK_LOC"/.markdownlintrc ~

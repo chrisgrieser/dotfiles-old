@@ -2,11 +2,6 @@
 # Working Directory
 export WD=~"/Library/Mobile Documents/com~apple~CloudDocs/File Hub"
 
-# Terminus will open the current file's path
-if [[ "$TERM_PROGRAM" != "Terminus-Sublime" ]] ; then
-	cd "$WD" || return
-fi
-
 # -------------------------------------------------------------
 
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
