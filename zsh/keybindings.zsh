@@ -40,19 +40,19 @@ open-zshrc () {
 	fi
 	# shellcheck disable=SC2012
 	( cd "$ZSH_DOTFILE_LOCATION" || return
-	# shellcheck disable=SC2035
-	SELECTED=$( ls -t *.zsh | cut -d"." -f1 | fzf \
-	           --no-sort \
+	# shellcheck disable=SC1009,SC1056,SC1073,SC2035
+	SELECTED=$( { ls *.zsh | cut -d. -f1 ; ls .z* } | fzf \
 	           -0 -1 \
 	           --query "$SEARCH_FOR" \
 	           --preview "bat --style=snip --tabs=2 --color=always --terminal-width=70 --line-range=:100 --wrap=never \"$ZSH_DOTFILE_LOCATION\"/{}.zsh" \
 	           --preview-window=right:70% \
-	           --height=60% \
+	           --height=75% \
 	           --layout=reverse \
 	           --info=hidden \
 	           )
 	if [[ $SELECTED != "" ]] ; then
-		open "$SELECTED".zsh
+		[[ $SELECTED != .z* ]] && SELECTED="$SELECTED.zsh"
+		open "$SELECTED"
 	fi )
 	zle reset-prompt # https://stackoverflow.com/questions/52325626/zsh-refresh-prompt-after-running-zle-widget
 }

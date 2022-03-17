@@ -1,9 +1,10 @@
 # Quick Open File
 function o (){
-	INPUT="$*"
+	local INPUT="$*"
 	if [[ -e "$INPUT" ]]; then
 		open "$INPUT"
 	else
+		local SELECTED
 		SELECTED=$(fd --hidden | fzf \
 		           -0 -1 \
 		           --query "$INPUT" \
@@ -17,12 +18,13 @@ function o (){
 
 # cd to directory
 function c (){
-	C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
-	INPUT="$*"
+	local C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
+	local INPUT="$*"
 	if [[ -d "$INPUT" ]]; then
 		cd "$INPUT" || return
 	else
 		cd "$C_TO_SEARCH" || return
+		local SELECTED
 		SELECTED=$(fd --type d --exclude "*.app" | cut -c3- | fzf \
 		           -0 -1 \
 		           --query "$INPUT" \
