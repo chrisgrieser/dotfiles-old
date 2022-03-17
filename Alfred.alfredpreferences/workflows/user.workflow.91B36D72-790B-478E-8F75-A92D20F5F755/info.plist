@@ -385,6 +385,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9DCD7FD1-1579-478A-A393-219BC30CC5A1</key>
 		<array>
 			<dict>
@@ -652,6 +665,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</key>
+		<array/>
 		<key>DF6282C1-2621-4557-92C8-E6F2C9D50242</key>
 		<array>
 			<dict>
@@ -868,11 +883,45 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
 				<key>clipboardtext</key>
-				<string>{clipboard}
-{query}</string>
+				<string>{clipboard}</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -881,45 +930,9 @@
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>2E351332-4032-4BC1-9675-824CD36EDE1D</string>
+			<string>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Purr</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>186B57A9-8760-49C8-B62B-A4006551A19D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Append to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -941,37 +954,6 @@
 			<string>25A411B2-E80F-403A-B5FD-3687171168EC</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>8</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>C</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>C7B2820D-59AD-4472-8462-D58732668477</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1008,6 +990,62 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>22CE272A-A695-4C98-8ADF-E1B98667D3B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Append to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{clipboard}
+{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>2E351332-4032-4BC1-9675-824CD36EDE1D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Purr</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>186B57A9-8760-49C8-B62B-A4006551A19D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1052,6 +1090,37 @@
 			<string>C4AE5520-0B4C-4A0D-A353-59BBFB979FA2</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>C7B2820D-59AD-4472-8462-D58732668477</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -1837,27 +1906,6 @@ echo -n "[""$title""](""$url"")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Title Case</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1877,6 +1925,27 @@ echo -n "[""$title""](""$url"")"</string>
 			<string>E9B18C6D-C266-45FC-BB77-057AA35103DE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Title Case</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2232,18 +2301,18 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>365</integer>
 		</dict>
 		<key>186B57A9-8760-49C8-B62B-A4006551A19D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>425</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>365</integer>
 		</dict>
 		<key>20E6F3D1-C6BB-4AEF-9D27-F953D7D97367</key>
 		<dict>
@@ -2301,9 +2370,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>365</integer>
 		</dict>
 		<key>32D31191-CCFB-40E2-8C28-2CD2BCC59AA0</key>
 		<dict>
@@ -2515,6 +2584,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
+		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>paste as plain text</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
 		<key>9DCD7FD1-1579-478A-A393-219BC30CC5A1</key>
 		<dict>
 			<key>colorindex</key>
@@ -2654,9 +2734,9 @@ Fenced Code</string>
 			<key>note</key>
 			<string>Append to Clipboard</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>310</integer>
+			<integer>495</integer>
 		</dict>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<dict>
@@ -2729,6 +2809,15 @@ Fenced Code</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1720</integer>
+		</dict>
+		<key>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>DF6282C1-2621-4557-92C8-E6F2C9D50242</key>
 		<dict>
