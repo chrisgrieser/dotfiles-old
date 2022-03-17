@@ -1,13 +1,13 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-02-27T12:51:34.485Z",
+    "createdAt": "2022-03-17T00:06:44.254Z",
     "redirects": [
         {
             "description": "Wikiwand",
             "exampleUrl": "https://en.wikipedia.org/wiki/Natural_science",
             "exampleResult": "https://www.wikiwand.com/en/Natural_science",
             "error": null,
-            "includePattern": "https?:\\/\\/(\\w+)\\.wikipedia\\.org\\/wiki\\/(.*)",
+            "includePattern": "https?:\\/\\/(\\w+?)(?:\\.m)?\\.wikipedia\\.org\\/wiki\\/(.*)",
             "excludePattern": "",
             "patternDesc": "",
             "redirectUrl": "https://www.wikiwand.com/$1/$2",

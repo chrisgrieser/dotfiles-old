@@ -10,7 +10,7 @@ module.exports = {
 	rewrite: [
 		{
 			match: ({ url }) => url.host.endsWith("wikipedia.org"),
-			url: ( { urlString } ) => urlString.replace (/https?:\/\/(\w+)\.wikipedia\.org\/wiki\/(.*)/, "https://www.wikiwand.com/$1/$2"),
+			url: ( { urlString } ) => urlString.replace (/https?:\/\/(\w+?)(?:\.m)?\.wikipedia\.org\/wiki\/(.*)/, "https://www.wikiwand.com/$1/$2"),
 		},
 	],
 
@@ -27,7 +27,8 @@ module.exports = {
 			match: /zoom\.us\/j/,
 			browser: "us.zoom.xos"
 		},
-		// not workign yet: https://github.com/johnste/finicky/issues/252
+
+		// not working yet: https://github.com/johnste/finicky/issues/252
 		{
 			match: ({ url, opener }) =>
 				url.host.endsWith("github.com") && opener.bundleId === "com.mimestream.Mimestream",
