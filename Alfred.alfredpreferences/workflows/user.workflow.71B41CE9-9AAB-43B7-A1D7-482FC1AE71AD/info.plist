@@ -1786,7 +1786,7 @@ POSIX path of currentDir</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string> </string>
+				<string></string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>

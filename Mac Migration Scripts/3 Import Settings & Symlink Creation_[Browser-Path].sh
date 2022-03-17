@@ -11,9 +11,9 @@ mv -v 'Fonts/'* ~'/Library/Fonts'
 mv -vR 'iCloud-Folder/'*(D) ~"/Library/Mobile Documents/com~apple~CloudDocs"
 
 # Browser-Default-Folder
-mkdir -p ~"/Library/Application Support/Brave Software/Brave Browser/Default/"
-mv ~"/Library/Application Support/Brave Software/Brave Browser/Default/" ~/.Trash
-mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/Brave Software/Brave Browser/Default/"
+mkdir -p ~"/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
+mv ~"/Library/Application Support/BraveSoftware/Brave-Browser/Default/" ~/.Trash
+mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
 
 # -----------
 

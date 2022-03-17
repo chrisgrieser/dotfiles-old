@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-BROWSER=Brave Software/Brave Browser
+BROWSER="BraveSoftware/Brave-Browser"
 
 open ~"/Library/Application Support/$BROWSER/Default/"

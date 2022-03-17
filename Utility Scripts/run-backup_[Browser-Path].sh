@@ -36,7 +36,7 @@ bkp ~'/Games' ./Homefolder
 bkp ~'/Video' ./Homefolder
 bkp ~'/RomComs' ./Homefolder
 bkp ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
-bkp ~'/Library/Application Support/Brave Software/Brave Browser/Default/' ./Browser-Default-Folder
+bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 
 # =========================
 
