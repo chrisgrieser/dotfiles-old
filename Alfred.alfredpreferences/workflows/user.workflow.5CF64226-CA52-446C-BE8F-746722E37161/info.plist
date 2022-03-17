@@ -1902,11 +1902,11 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -3263,7 +3263,7 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>625</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
 		</dict>

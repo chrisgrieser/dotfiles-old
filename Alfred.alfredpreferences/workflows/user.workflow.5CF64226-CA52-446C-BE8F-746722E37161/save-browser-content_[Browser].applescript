@@ -15,7 +15,7 @@ if sel is not "" then set markdownlink to ("\"" & sel & "\"" & " " & markdownlin
 
 -- create draft
 tell application "Drafts"
-	make new draft with properties {content:markdownlink, tags:{"URL", "via " & (system attribute "chromium_browser")}}
+	make new draft with properties {content:markdownlink, tags:{"URL", "via Browser"}}
 end tell
 
 -- for notification

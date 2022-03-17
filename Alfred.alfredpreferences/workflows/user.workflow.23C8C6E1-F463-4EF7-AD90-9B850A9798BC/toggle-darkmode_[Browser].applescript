@@ -33,3 +33,13 @@ if (BrowserWasntRunning)
 	delay 0.2
 	tell application "Brave Browser" to close active tab of front window
 end if
+
+# fix menu bar
+delay 5
+tell application id "com.surteesstudios.Bartender" to launch
+delay 5
+tell application "xbar"
+	quit
+	delay 1
+	launch
+end tell

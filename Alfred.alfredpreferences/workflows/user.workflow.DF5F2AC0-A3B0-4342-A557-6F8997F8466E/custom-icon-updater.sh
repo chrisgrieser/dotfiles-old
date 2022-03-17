@@ -89,9 +89,9 @@ if [[ $NONE_FOUND == 0 ]]; then
 	if [[ $INFO_WINDOW == 0 ]]; then
 		killall "Finder"
 		killall "Dock"
+		sleep 1
+		open -a "$APP_TO_UPDATE"
 	fi
-	sleep 1
-	open -a "$APP_TO_UPDATE"
 	echo -n "$APP_TO_UPDATE" # pass for notication
 fi
 
