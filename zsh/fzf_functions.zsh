@@ -69,5 +69,7 @@ function r (){
 	exa
 }
 
-
+# push common directories to directory stack
+pushd -n ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/"
+pushd -n ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
 
