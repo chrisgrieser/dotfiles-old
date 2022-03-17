@@ -48,7 +48,7 @@
 		"no-multiple-empty-lines": ["warn", { "max": 2 } ],
 
 		// Brackets
-		"no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false, "returnAssign": false }],
+		"no-extra-parens": ["warn", "all", { "returnAssign": false }],
 
 		// Arrays
 		"array-callback-return": ["error", { "checkForEach": true, "allowImplicit": true }],

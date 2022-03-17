@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B5C92BAB-92C8-4786-A984-B46261642E93</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BB7458E2-0227-454E-AC96-A82B1BED8CB4</key>
 		<array>
 			<dict>
@@ -430,7 +417,7 @@ open -a "Twitterrific"</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
@@ -465,27 +452,6 @@ open -a "Twitterrific"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tw up</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🆙 Scroll Up</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B5C92BAB-92C8-4786-A984-B46261642E93</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -554,10 +520,12 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
+			<key>note</key>
+			<string>scroll up</string>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1100</integer>
+			<integer>960</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
@@ -585,17 +553,6 @@ open -a "Twitterrific"</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>150</integer>
-		</dict>
-		<key>B5C92BAB-92C8-4786-A984-B46261642E93</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>scroll up</string>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>960</integer>
 		</dict>
 		<key>B6151B85-7052-4FAE-A01B-8963B1B509D2</key>
 		<dict>
@@ -642,9 +599,9 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1100</integer>
+			<integer>960</integer>
 		</dict>
 		<key>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</key>
 		<dict>
