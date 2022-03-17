@@ -6,6 +6,7 @@
 - [What are "dotfiles"?](#what-are-dotfiles)
 - [Why this repository?](#why-this-repository)
 - [How this Repository works](#how-this-repository-works)
+- [Amethyst](#amethyst)
 - [Got an idea for an improvement?](#got-an-idea-for-an-improvement)
 - [About Me](#about-me)
 	- [Profiles](#profiles)
@@ -27,6 +28,9 @@ These files only exist for the purpose of backup:
 - [30-min.sh](Cron%20Jobs/30-min.sh) runs various tasks that should run regularly, one of them is to trigger the shell script [git-dotfile-backup.sh](git-dotfile-backup.sh).
 - [git-dotfile-backup.sh](git-dotfile-backup.sh) checks whether there have been any changes in dot files. If there are, it creates somewhat useful commit messages and runs the `git add commit pull push` sequence.
 - [.gitignore](.gitignore) contains a list of files not to backups for various reasons, e.g. redundancy, privacy, or simply because they are too big for a git repo.
+
+## Amethyst
+`.amethyst` is used simply [for the focus-follow-mouse features](https://stackoverflow.com/a/29159270).
 
 ## Got an idea for an improvement?
 Feel free to [open an issue](https://github.com/chrisgrieser/dotfiles/issues) to suggest an improvement to my settings! :blush:

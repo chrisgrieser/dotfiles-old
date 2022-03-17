@@ -173,7 +173,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Moom &amp; Zoom &amp; AutoRaise</string>
+	<string>Moom &amp; Zoom</string>
 	<key>objects</key>
 	<array>
 		<dict>
