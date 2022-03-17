@@ -22,6 +22,11 @@ Higher overwrites lower.
 > Filters, Lua-filters, and citeproc processing are applied in the order specified on the command line.  
 > – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--filter)
 
+## Template Requirements
+- output format is `docx` or `pptx`, you need a reference-document in those formats, where you have pre-applied all your styling. Those mostly concern the templating of the look, the templating of content is limited.
+- output format is `html`, the look of the output is determined by an `html` template (content) and a `css` file (looks)
+- output format is `pdf`, you either need a `latex` template (which determines looks & content) or you need the `html-css`-combination from above. (Different PDF engines use different forms of templates.) 
+
 ## Automatically Insert Date
 
 ```shell

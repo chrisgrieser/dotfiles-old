@@ -138,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9356F02-69F9-43CF-A2F8-5620849DD6CE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<array>
 			<dict>
@@ -496,6 +509,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1746,6 +1772,39 @@ POSIX path of currentDir</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>ff-search</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>E2CB7938-3449-4EED-B355-AB542CF379C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string> </string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>folder_to_search</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -2169,9 +2228,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>945</integer>
+			<integer>950</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -2258,14 +2317,23 @@ end if</string>
 			<key>ypos</key>
 			<integer>795</integer>
 		</dict>
+		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>265</integer>
+			<key>ypos</key>
+			<integer>1365</integer>
+		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>600</integer>
 			<key>ypos</key>
-			<integer>1360</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
@@ -2305,9 +2373,9 @@ end if</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2316,18 +2384,18 @@ end if</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>1360</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2383,9 +2451,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>805</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>8CF248CE-8B57-459A-8035-1B229F950E2C</key>
 		<dict>
@@ -2394,9 +2462,9 @@ end if</string>
 			<key>note</key>
 			<string>HOOK: Copy Markdown Link of Current Obsidian File</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<integer>1585</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
@@ -2423,9 +2491,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2461,18 +2529,18 @@ end if</string>
 			<key>note</key>
 			<string>get Finder selection</string>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<integer>1585</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>665</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>1330</integer>
+			<integer>1445</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
@@ -2519,9 +2587,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<integer>1585</integer>
 		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
@@ -2550,9 +2618,9 @@ end if</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1500</integer>
+			<integer>1615</integer>
 		</dict>
 		<key>D7FB212A-AF94-422F-9FD6-308DB317F36B</key>
 		<dict>
@@ -2561,9 +2629,9 @@ end if</string>
 			<key>note</key>
 			<string>Strip Markdown</string>
 			<key>xpos</key>
-			<integer>805</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>1500</integer>
+			<integer>1615</integer>
 		</dict>
 		<key>D9356F02-69F9-43CF-A2F8-5620849DD6CE</key>
 		<dict>
@@ -2627,6 +2695,15 @@ end if</string>
 			<key>ypos</key>
 			<integer>920</integer>
 		</dict>
+		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>110</integer>
+			<key>ypos</key>
+			<integer>1335</integer>
+		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
 			<key>colorindex</key>
@@ -2643,9 +2720,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>1360</integer>
+			<integer>1475</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
@@ -2681,9 +2758,9 @@ end if</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>365</integer>
+			<integer>370</integer>
 			<key>ypos</key>
-			<integer>1500</integer>
+			<integer>1615</integer>
 		</dict>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<dict>
@@ -2712,18 +2789,18 @@ end if</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>875</integer>
+			<integer>880</integer>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<integer>1585</integer>
 		</dict>
 		<key>FDDB18DD-3B35-4E2E-919B-51648FD77135</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>665</integer>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<integer>1585</integer>
 		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>

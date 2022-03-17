@@ -78,11 +78,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>B5F16391-8CE4-42E4-8C75-47BD6AD4BFCD</string>
+				<string>ECE501C0-A31C-4E6F-8447-F1D074D6077F</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>⇧: Open GitHub issues</string>
+				<string>⇧: Search in this Repo</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -285,9 +285,9 @@ fi</string>
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -461,27 +461,21 @@ echo "$url"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$*"
-
-open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//' )/issues</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
+				<key>externaltriggerid</key>
+				<string>ff-search</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>de.chris-grieser.finder-tweaks</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>B5F16391-8CE4-42E4-8C75-47BD6AD4BFCD</string>
+			<string>ECE501C0-A31C-4E6F-8447-F1D074D6077F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -596,17 +590,6 @@ subl --command toggle_side_bar</string>
 			<key>ypos</key>
 			<integer>790</integer>
 		</dict>
-		<key>B5F16391-8CE4-42E4-8C75-47BD6AD4BFCD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>Open GitHub issues</string>
-			<key>xpos</key>
-			<integer>275</integer>
-			<key>ypos</key>
-			<integer>655</integer>
-		</dict>
 		<key>C198F176-3358-4EDA-B05D-EF9BC52EDA31</key>
 		<dict>
 			<key>colorindex</key>
@@ -657,6 +640,15 @@ subl --command toggle_side_bar</string>
 			<integer>275</integer>
 			<key>ypos</key>
 			<integer>140</integer>
+		</dict>
+		<key>ECE501C0-A31C-4E6F-8447-F1D074D6077F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>275</integer>
+			<key>ypos</key>
+			<integer>665</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

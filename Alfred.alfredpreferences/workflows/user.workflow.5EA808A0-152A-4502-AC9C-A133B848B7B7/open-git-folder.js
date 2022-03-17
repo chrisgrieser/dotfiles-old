@@ -44,42 +44,42 @@ const workArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/b
 	.split("\r");
 
 workArray.forEach(item => {
-	const repoPath = item.slice(0, -5);
+	const localRepoFilePath = item.slice(0, -5);
 	let repoName;
 	let iconpath;
-	const isAlfredWorkflow = finderApp.exists(Path(repoPath + "/info.plist"));
-	const isObsiPlugin = finderApp.exists(Path(repoPath + "/manifest.json"));
+	const isAlfredWorkflow = finderApp.exists(Path(localRepoFilePath + "/info.plist"));
+	const isObsiPlugin = finderApp.exists(Path(localRepoFilePath + "/manifest.json"));
 
 	// Alfred Workflow Repos
 	if (isAlfredWorkflow) {
-		repoName = readPlist("name", repoPath + "/info.plist");
+		repoName = readPlist("name", localRepoFilePath + "/info.plist");
 		iconpath = "alfred.png";
 
 	// Obsidian Plugin Repos
 	} else if (isObsiPlugin) {
-		const manifest = readFile(repoPath + "/manifest.json");
+		const manifest = readFile(localRepoFilePath + "/manifest.json");
 		repoName = JSON.parse(manifest).name;
 		iconpath = "obsidian.png";
 	}
 
 	// Other Repos
 	else {
-		const readme = readFile(repoPath + "/README.md");
+		const readme = readFile(localRepoFilePath + "/README.md");
 		if (readme) {
 			repoName = readme
 				.split("\n")
 				.filter(line => line.startsWith("# "))[0]
 				.slice(2);
 		}
-		else repoName = repoPath;
+		else repoName = localRepoFilePath;
 	}
 
 	jsonArray.push({
 		"title": repoName,
 		"match": alfredMatcher (repoName),
 		"icon": { "path": iconpath },
-		"arg": repoPath,
-		"uid": repoPath,
+		"arg": localRepoFilePath,
+		"uid": localRepoFilePath,
 	});
 });
 
