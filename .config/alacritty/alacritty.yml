@@ -6,37 +6,43 @@
 # --------------------------------------------------------------------------
 
 colors:
-  # COLORSCHEME: material_theme_mod.yaml
+  # COLORSCHEME: remedy_dark.yaml
   # Default colors
   primary:
     # hard contrast: background = '0x1d2021'
-    background: '0x1e282d'
-    foreground: '0xc4c7d1'
+    background: '0x2c2b2a'
+    foreground: '0xf9e7c4'
 
-  # Normal colors
+    dim_foreground: '0x685E4A'
+    bright_foreground: '0x1C1508'
+    dim_background: '0x202322'
+    bright_background: '0x353433'
+
+  # Cursor colors
   normal:
-    black: '0x666666'
-    red: '0xeb606b'
-    green: '0xc3e88d'
-    yellow: '0xf7eb95'
-    blue: '0x80cbc4'
-    magenta: '0xff2f90'
-    cyan: '0xaeddff'
-    white: '0xffffff'
+    black: '0x282a2e'
+    blue: '0x5f819d'
+    cyan: '0x5e8d87'
+    green: '0x8c9440'
+    magenta: '0x85678f'
+    orange: '0xcc6953'
+    red: '0xa54242'
+    white: '0x707880'
+    yellow: '0xde935f'
 
   # Bright colors
   bright:
-    black: '0xa1a1a1'
-    red: '0xeb606b'
-    green: '0xc3e88d'
-    yellow: '0xf7eb95'
-    blue: '0x7dc6bf'
-    magenta: '0x6c71c4'
-    cyan: '0x35434d'
-    white: '0xffffff'
+    black: '0x373b41'
+    blue: '0x81a2be'
+    cyan: '0x8abeb7'
+    green: '0xb5bd68'
+    magenta: '0xb294bb'
+    red: '0xcc6666'
+    white: '0xc5c8c6'
+    yellow: '0xf0c674'
   cursor:
-    text: '0x0e3c46'
-    cursor: '0xc7dbdd'
+    text: '0xf9e7c4'
+    cursor: '0xf9e7c4'
 
   # Normal colors
   dim:
@@ -50,15 +56,12 @@ colors:
     white: '0x828282'
 
   indexed_colors:
-    - {index: 16, color: '0xfcab74'}
-    - {index: 17, color: '0x9b647b'}
-    - {index: 18, color: '0x1d494e'}
-    - {index: 19, color: '0x2a5054'}
-    - {index: 20, color: '0x9dc8cd'}
-    - {index: 21, color: '0xcbf2f7'}
-
-
-# ----------------
+    - {index: 16, color: '0xd75f00'}
+    - {index: 17, color: '0x986801'}
+    - {index: 18, color: '0xf0f0f1'}
+    - {index: 19, color: '0xe5e5e6'}
+    - {index: 20, color: '0x696c77'}
+    - {index: 21, color: '0x202227'}
 font:
   normal:
     family: JetBrainsMonoNL Nerd Font
@@ -140,10 +143,10 @@ key_bindings:
   - {key: 28, mods: Alt, chars: '{'}
   - {key: 25, mods: Alt, chars: '}'}
   - {key: 37, mods: Alt, chars: '@'}
-  - {key: 26, mods: Alt|Shift, chars: "\\"}
+  - {key: 26, mods: Alt|Shift, chars: \}
   - {key: 26, mods: Alt, chars: '|'}
   - {key: 45, mods: Alt, chars: '~'}
   - {key: 23, mods: Alt, chars: '['}
   - {key: 22, mods: Alt, chars: ']'}
-  - {key: 20, mods: Shift, chars: '§'}
+  - {key: 20, mods: Shift, chars: §}
 
