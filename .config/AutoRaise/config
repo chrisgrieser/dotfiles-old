@@ -1,11 +1,14 @@
-#
-The delay is specified in units of 20ms and the warp parameters are factors between 0 and 1.
-
 # https://github.com/sbmpost/AutoRaise
-
-# AutoRaise config file
+# https://github.com/Dimentium/homebrew-autoraise
+# The delay is specified in units of 20ms and the warp parameters are factors between 0 and 1.
+# ----------
+# Alternatives: https://stackoverflow.com/questions/98310/focus-follows-mouse-plus-auto-raise-on-mac-os-x
+# ----------
 
 delay=1
+
+# Warp = move move to center when alt-tabbing
+# Scale = temporary enlarging when warping
 warpX=0.5
-warpY=0.1
+warpY=0.5
 scale=2.5

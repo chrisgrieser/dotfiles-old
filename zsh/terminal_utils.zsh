@@ -27,8 +27,7 @@ function mkcd () {
 # Terminal Switch
 function sw () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
-		# shellcheck disable=SC2154
-		open -a "Alacritty" "$cwd"
+		open -a "Alacritty"
 		exit
 	else
 		open -a "Sublime Text"
