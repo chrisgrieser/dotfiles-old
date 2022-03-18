@@ -38,7 +38,6 @@ function post-install () {
 
 function br () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
-		killall "$1" &> /dev/null
 		brew reinstall "$1"
 		return
 	fi
@@ -61,7 +60,6 @@ function br () {
 }
 function bu () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
-		killall "$1" &> /dev/null
 		brew uninstall --zap "$1"
 		return
 	fi
@@ -131,10 +129,10 @@ function update (){
 	print-section "HOMEBREW"
 	brew update
 	brew upgrade
-	echo "Cleanup"
+	print-section "Cleanup"
 	brew cleanup
-	echo "Autoremove"
-	brew autoremove # remove unneeded dependencies (brew leaves --installed-as-dependency)
+	print-section "Autoremove"
+	brew autoremove # remove unneeded dependencies (`brew leaves --installed-as-dependency``)
 
 	print-section "MAC APP STORE"
 	mas upgrade

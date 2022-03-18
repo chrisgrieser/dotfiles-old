@@ -54,6 +54,7 @@ function run () {
 			"type": "file",
 			"icon": fIcon,
 			"arg": fpath,
+			"uid": fpath,
 		});
 	});
 

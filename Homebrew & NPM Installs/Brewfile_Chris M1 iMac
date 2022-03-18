@@ -6,7 +6,6 @@ brew "bat"
 brew "blueutil"
 brew "python@3.9"
 brew "exa"
-brew "fasd"
 brew "fd"
 brew "tesseract"
 brew "fileicon"
@@ -36,12 +35,13 @@ brew "zsh-syntax-highlighting"
 cask "alacritty"
 cask "alfred"
 cask "appcleaner"
-cask "bartender"
 cask "bibdesk"
+cask "brave-browser"
 cask "busycal"
 cask "catch"
 cask "cryptomator"
 cask "discord"
+cask "dozer"
 cask "fig"
 cask "finicky"
 cask "flameshot"
@@ -63,11 +63,8 @@ cask "steam"
 cask "sublime-text"
 cask "subtitles"
 cask "terminology"
-cask "the-unarchiver"
 cask "transmission"
-cask "vivaldi"
 cask "vlc"
-cask "xbar"
 cask "zoom"
 mas "Color Picker", id: 1545870783
 mas "Drafts", id: 1435957248
@@ -76,4 +73,6 @@ mas "Moom", id: 419330170
 mas "Peek", id: 1554235898
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
+mas "rcmd", id: 1596283165
+mas "Tiny Temp", id: 1291787042
 mas "Twitterrific", id: 1289378661

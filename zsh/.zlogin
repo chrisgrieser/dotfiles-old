@@ -42,4 +42,23 @@ pushd -q ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
 pushd -q "$WD"
 
 # Terminus will open the current file's path before .zlogin
-[[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] && pushd -q "$temp"
+if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
+	pushd -q "$temp"
+fi
+
+
+# -------------------------------
+# fortune / color art
+
+if [[ "$TERM_PROGRAM" != "Terminus-Sublime" ]] ; then
+	clear
+	# 33% art, 66% fortune
+	if [[ $((RANDOM%3)) == 1 ]] ; then
+		bash "$ZSH_DOTFILE_LOCATION"/plugins/colorscript.bash --random
+	else
+		echo
+		echo "> $(fortune -n270 -s)"
+	fi
+	echo
+fi
+

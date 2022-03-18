@@ -16,4 +16,3 @@ source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
 source "$ZSH_DOTFILE_LOCATION"/../pandoc/pandoc.zsh
 
-source "$ZSH_DOTFILE_LOCATION"/run_last_before_login.zsh
