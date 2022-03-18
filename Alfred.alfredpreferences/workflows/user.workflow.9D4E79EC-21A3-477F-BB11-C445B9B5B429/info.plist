@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-duden</string>
+	<string>com.wirecurl.openthesaurus</string>
 	<key>category</key>
 	<string>Language</string>
 	<key>connections</key>
 	<dict>
-		<key>A3FB11F6-18D1-46A2-9F50-F69A77A027D7</key>
+		<key>A94981D1-F800-4F3B-987E-88E43006A497</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2C84750B-843A-433B-BEAD-CAD603A274AA</string>
+				<string>BBA531D9-6E32-4CE6-85E9-EF806C738808</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,13 +23,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Andreas Widmer</string>
 	<key>description</key>
-	<string>Search Duden.de German Dictionary</string>
+	<string>Search for synonyms on openthesaurus.de</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Duden.de</string>
+	<string>openthesaurus</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -46,7 +46,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>36</integer>
 				<key>keyword</key>
 				<string>d</string>
 				<key>queuedelaycustom</key>
@@ -54,78 +54,74 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Searching…</string>
+				<string>loading ...</string>
 				<key>script</key>
-				<string>/usr/bin/python duden.py "{query}"</string>
+				<string>require_once 'openthesaurus.php';
+ot('{query}');</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search Duden.de German Dictionary</string>
+				<string>for german synonymic words</string>
 				<key>title</key>
-				<string>Search Duden</string>
+				<string>Search on openthesaurus.de ...</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>A3FB11F6-18D1-46A2-9F50-F69A77A027D7</string>
+			<string>A94981D1-F800-4F3B-987E-88E43006A497</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>autopaste</key>
 				<true/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>2C84750B-843A-433B-BEAD-CAD603A274AA</string>
+			<string>BBA531D9-6E32-4CE6-85E9-EF806C738808</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Alfred-Duden
-============
-
-Search the Duden German dictionary at duden.de.</string>
+	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>2C84750B-843A-433B-BEAD-CAD603A274AA</key>
+		<key>A94981D1-F800-4F3B-987E-88E43006A497</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>80</integer>
 		</dict>
-		<key>A3FB11F6-18D1-46A2-9F50-F69A77A027D7</key>
+		<key>BBA531D9-6E32-4CE6-85E9-EF806C738808</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>285</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>80</integer>
 		</dict>
 	</dict>
-	<key>version</key>
-	<string>1.5.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>www.wirecurl.com</string>
 </dict>
 </plist>

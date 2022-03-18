@@ -114,6 +114,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<array>
 			<dict>
@@ -131,7 +144,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7B43FD68-D463-4626-BE13-7D1C65B12ECF</string>
+				<string>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -472,6 +485,31 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B608F624-BD49-4530-BB67-00CD6692B0C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7B43FD68-D463-4626-BE13-7D1C65B12ECF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A08176B6-C054-434D-855E-4DF2F119FF6F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C9992321-E495-42F5-8309-4206EE81A1F6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1356,6 +1394,44 @@ open .</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>use framework "AppKit" (* this line has to appear before the "on run" line of Alfred (or other functions) *)set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as listset X to item 1 of item 2 of item 1 of allFrames (* main screen *)set Y to item 2 of item 2 of item 1 of allFrames-- resize: left half screenset topLeftX to 0 (* replace with "(x/2)" for right half of screen *)set topLeftY to 0set width2 to (X * 0.4) (* replace with "X" for right half of screen *)set height to Ytell application "Finder" to set bounds of Finder window 1 to {topLeftX, topLeftY, width2, height}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FF95422E-52C2-4234-88AE-C47E26C72CDF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Library/CoreServices/Finder.app</string>
+				<key>sourcefile</key>
+				<string>{var:default_folder}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>8FB840C3-FF34-4E96-8499-B0567F30D650</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1404,75 +1480,6 @@ end alfred_script</string>
 			<string>2F5374A2-FC86-470A-99DD-7948240BF23E</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>use framework "AppKit" (* this line has to appear before the "on run" line of Alfred (or other functions) *)set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as listset X to item 1 of item 2 of item 1 of allFrames (* main screen *)set Y to item 2 of item 2 of item 1 of allFrames-- resize: left half screenset topLeftX to 0 (* replace with "(x/2)" for right half of screen *)set topLeftY to 0set width2 to (X * 0.4) (* replace with "X" for right half of screen *)set height to Ytell application "Finder" to set bounds of Finder window 1 to {topLeftX, topLeftY, width2, height}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FF95422E-52C2-4234-88AE-C47E26C72CDF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/System/Library/CoreServices/Finder.app</string>
-				<key>sourcefile</key>
-				<string>{var:default_folder}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>8FB840C3-FF34-4E96-8499-B0567F30D650</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>-1</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>double tap</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3AA97555-4630-4AB5-A2F3-900B154E50A7</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1566,6 +1573,113 @@ end alfred_script</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>7B43FD68-D463-4626-BE13-7D1C65B12ECF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>-1</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>double tap</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3AA97555-4630-4AB5-A2F3-900B154E50A7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "${default_folder/#\~/$HOME}" || exit 1
+
+echo -n $(ls | wc -l | tr -d " ")</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string>&gt; 1</string>
+						<key>uid</key>
+						<string>A08176B6-C054-434D-855E-4DF2F119FF6F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>= 0</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>ℹ️ No Files</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C9992321-E495-42F5-8309-4206EE81A1F6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2320,9 +2434,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>940</integer>
+			<integer>840</integer>
 		</dict>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<dict>
@@ -2407,6 +2521,15 @@ end if</string>
 			<key>ypos</key>
 			<integer>1280</integer>
 		</dict>
+		<key>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>885</integer>
+		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
 			<key>colorindex</key>
@@ -2432,9 +2555,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>795</integer>
+			<integer>885</integer>
 		</dict>
 		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
 		<dict>
@@ -2559,9 +2682,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>160</integer>
+			<integer>425</integer>
 			<key>ypos</key>
-			<integer>970</integer>
+			<integer>870</integer>
 		</dict>
 		<key>7E69DE34-495B-4509-B562-0DC2338A6A8F</key>
 		<dict>
@@ -2599,9 +2722,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>795</integer>
+			<integer>680</integer>
 		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
@@ -2728,6 +2851,15 @@ end if</string>
 			<key>ypos</key>
 			<integer>665</integer>
 		</dict>
+		<key>C9992321-E495-42F5-8309-4206EE81A1F6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>960</integer>
+		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
 			<key>colorindex</key>
@@ -2769,6 +2901,15 @@ end if</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>1410</integer>
+		</dict>
+		<key>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>905</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
@@ -2937,9 +3078,9 @@ end if</string>
 			<key>note</key>
 			<string>default size &amp; to the left</string>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>595</integer>
 			<key>ypos</key>
-			<integer>795</integer>
+			<integer>680</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

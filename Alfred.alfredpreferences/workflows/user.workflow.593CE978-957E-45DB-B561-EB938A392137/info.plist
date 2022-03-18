@@ -66,6 +66,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>43880D3B-C354-4AC9-BFB5-C7A430DAC0DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -199,6 +209,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://corpora.uni-leipzig.de/de/res?corpusId=deu_news_2021&amp;word={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>8AA5AD09-3EF5-4C93-8DF9-6690A90B221D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -214,25 +243,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>A744F634-72A4-4373-86F2-EBC783690DB8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://corpora.uni-leipzig.de/de/res?corpusId=deu_news_2021&amp;word={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>8AA5AD09-3EF5-4C93-8DF9-6690A90B221D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -321,7 +331,7 @@
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>595</integer>
 		</dict>
 		<key>C250E316-8E97-429F-A193-1ED46722A912</key>
 		<dict>
