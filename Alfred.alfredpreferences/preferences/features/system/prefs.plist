@@ -19,12 +19,10 @@
 	<string>kill</string>
 	<key>forcequitKeywordEnabled</key>
 	<false/>
-	<key>hideKeywordEnabled</key>
-	<false/>
+	<key>hideKeyword</key>
+	<string>h</string>
 	<key>quitKeyword</key>
 	<string>q</string>
-	<key>quitKeywordEnabled</key>
-	<false/>
 	<key>quitallConfirm</key>
 	<true/>
 	<key>restartConfirm</key>
