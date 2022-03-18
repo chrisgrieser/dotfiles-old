@@ -21,6 +21,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</key>
+		<array/>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<array>
 			<dict>
@@ -129,7 +131,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8FB840C3-FF34-4E96-8499-B0567F30D650</string>
+				<string>7B43FD68-D463-4626-BE13-7D1C65B12ECF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -249,6 +251,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4256AED4-8786-426C-BBAA-BD79229EE458</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7B43FD68-D463-4626-BE13-7D1C65B12ECF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1434,7 +1449,7 @@ end alfred_script</string>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>0</integer>
+				<integer>3</integer>
 				<key>focusedappvariable</key>
 				<true/>
 				<key>focusedappvariablename</key>
@@ -1458,6 +1473,101 @@ end alfred_script</string>
 			<string>3AA97555-4630-4AB5-A2F3-900B154E50A7</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array>
+					<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
+				</array>
+				<key>sortmode</key>
+				<integer>2</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>File Hub</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string> </string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7B43FD68-D463-4626-BE13-7D1C65B12ECF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2193,7 +2303,7 @@ end if</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>- blank/link file creation: the default folder will be used when no Finder window is open</string>
+	<string></string>
 	<key>uidata</key>
 	<dict>
 		<key>0323386B-1C83-483E-9C13-88DAD0F48CE9</key>
@@ -2205,14 +2315,23 @@ end if</string>
 			<key>ypos</key>
 			<integer>205</integer>
 		</dict>
+		<key>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>940</integer>
+		</dict>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>355</integer>
+			<integer>360</integer>
 			<key>ypos</key>
-			<integer>950</integer>
+			<integer>1155</integer>
 		</dict>
 		<key>10E85A5A-FC6B-43F7-AAAA-1304838DCCBC</key>
 		<dict>
@@ -2228,9 +2347,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>955</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -2255,9 +2374,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>365</integer>
 			<key>ypos</key>
-			<integer>1105</integer>
+			<integer>1310</integer>
 		</dict>
 		<key>2F5374A2-FC86-470A-99DD-7948240BF23E</key>
 		<dict>
@@ -2273,9 +2392,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>735</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>950</integer>
+			<integer>1155</integer>
 		</dict>
 		<key>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</key>
 		<dict>
@@ -2284,9 +2403,9 @@ end if</string>
 			<key>note</key>
 			<string>touch file</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>1280</integer>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
@@ -2322,27 +2441,27 @@ end if</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>265</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1365</integer>
+			<integer>1570</integer>
 		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1475</integer>
+			<integer>1680</integer>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>595</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1125</integer>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2351,9 +2470,9 @@ end if</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1125</integer>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2373,9 +2492,9 @@ end if</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2384,18 +2503,18 @@ end if</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>450</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>1475</integer>
+			<integer>1680</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2422,18 +2541,27 @@ end if</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1125</integer>
 		</dict>
 		<key>6FE7DC2A-A4FC-40A1-BB35-88F0C8FA7458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1125</integer>
+		</dict>
+		<key>7B43FD68-D463-4626-BE13-7D1C65B12ECF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>970</integer>
 		</dict>
 		<key>7E69DE34-495B-4509-B562-0DC2338A6A8F</key>
 		<dict>
@@ -2451,9 +2579,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>8CF248CE-8B57-459A-8035-1B229F950E2C</key>
 		<dict>
@@ -2462,9 +2590,9 @@ end if</string>
 			<key>note</key>
 			<string>HOOK: Copy Markdown Link of Current Obsidian File</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>1585</integer>
+			<integer>1790</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
@@ -2491,9 +2619,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2529,18 +2657,18 @@ end if</string>
 			<key>note</key>
 			<string>get Finder selection</string>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>1585</integer>
+			<integer>1790</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>675</integer>
 			<key>ypos</key>
-			<integer>1445</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
@@ -2556,9 +2684,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1205</integer>
+			<integer>1410</integer>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2587,9 +2715,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>450</integer>
 			<key>ypos</key>
-			<integer>1585</integer>
+			<integer>1790</integer>
 		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
@@ -2618,9 +2746,9 @@ end if</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>1615</integer>
+			<integer>1820</integer>
 		</dict>
 		<key>D7FB212A-AF94-422F-9FD6-308DB317F36B</key>
 		<dict>
@@ -2629,18 +2757,18 @@ end if</string>
 			<key>note</key>
 			<string>Strip Markdown</string>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>1615</integer>
+			<integer>1820</integer>
 		</dict>
 		<key>D9356F02-69F9-43CF-A2F8-5620849DD6CE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1205</integer>
+			<integer>1410</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
@@ -2680,9 +2808,9 @@ end if</string>
 			<key>note</key>
 			<string>gets current Finder window</string>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>1280</integer>
 		</dict>
 		<key>E26CAF36-595F-4EFB-8476-1E92049B36F2</key>
 		<dict>
@@ -2691,18 +2819,18 @@ end if</string>
 			<key>note</key>
 			<string>default size, then close all windows</string>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>1125</integer>
 		</dict>
 		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>115</integer>
 			<key>ypos</key>
-			<integer>1335</integer>
+			<integer>1540</integer>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
@@ -2720,18 +2848,18 @@ end if</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>1475</integer>
+			<integer>1680</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>425</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>1280</integer>
 		</dict>
 		<key>F07D2BDA-5358-4B99-9F8C-27361AFE3FF1</key>
 		<dict>
@@ -2758,9 +2886,9 @@ end if</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>1615</integer>
+			<integer>1820</integer>
 		</dict>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<dict>
@@ -2789,18 +2917,18 @@ end if</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>880</integer>
+			<integer>885</integer>
 			<key>ypos</key>
-			<integer>1585</integer>
+			<integer>1790</integer>
 		</dict>
 		<key>FDDB18DD-3B35-4E2E-919B-51648FD77135</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>665</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>1585</integer>
+			<integer>1790</integer>
 		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>

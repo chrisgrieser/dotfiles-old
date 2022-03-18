@@ -14,7 +14,6 @@ end tell
 delay 1
 
 # SWITCH TO LIGHT MODE
-tell application id "com.surteesstudios.Bartender" to launch
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
 
@@ -29,14 +28,7 @@ tell application "System Events"
 		click menu item "Hide Toolbar" of menu "View" of menu bar 1
 	end tell
 end tell
-delay 10
-tell application id "com.surteesstudios.Bartender" to launch
-delay 10
-tell application "xbar"
-	quit
-	delay 1
-	launch
-end tell
+
 
 # log
-do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
+# do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
