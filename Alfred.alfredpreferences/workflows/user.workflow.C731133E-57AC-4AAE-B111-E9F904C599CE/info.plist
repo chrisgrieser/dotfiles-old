@@ -139,7 +139,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Homebrew &amp; ZSH &amp; NPM</string>
+	<string>Homebrew &amp; other Package Managers</string>
 	<key>objects</key>
 	<array>
 		<dict>

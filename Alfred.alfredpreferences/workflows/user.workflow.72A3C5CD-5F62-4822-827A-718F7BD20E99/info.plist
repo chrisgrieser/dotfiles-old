@@ -112,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B9F13E48-781C-4C15-8389-D491B6D876B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7B86C0A4-662A-4EAE-B839-C6CBBC224147</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CD3DCD06-0285-4282-BA32-689DC26CE0A9</key>
 		<array>
 			<dict>
@@ -484,6 +497,46 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>shuffle</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>com.vdesabou.spotify.mini.player</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>7B86C0A4-662A-4EAE-B839-C6CBBC224147</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>shuffle</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Shuffle</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B9F13E48-781C-4C15-8389-D491B6D876B7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -563,6 +616,15 @@
 			<key>ypos</key>
 			<integer>295</integer>
 		</dict>
+		<key>7B86C0A4-662A-4EAE-B839-C6CBBC224147</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>545</integer>
+		</dict>
 		<key>86E09A50-EBF6-4941-A0FA-85796C77228C</key>
 		<dict>
 			<key>colorindex</key>
@@ -607,6 +669,15 @@
 			<integer>225</integer>
 			<key>ypos</key>
 			<integer>135</integer>
+		</dict>
+		<key>B9F13E48-781C-4C15-8389-D491B6D876B7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>545</integer>
 		</dict>
 		<key>CD3DCD06-0285-4282-BA32-689DC26CE0A9</key>
 		<dict>
