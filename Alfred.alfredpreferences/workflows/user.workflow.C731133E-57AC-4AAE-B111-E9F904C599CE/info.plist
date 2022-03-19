@@ -131,19 +131,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F4468F76-B63C-49C9-B546-6F3661587EC3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -282,46 +269,6 @@ brew home "$*"</string>
 			<string>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>macappstores://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?mt=12&amp;ign-mscache=1&amp;q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>mas</string>
-				<key>subtext</key>
-				<string>in the App</string>
-				<key>text</key>
-				<string>Mac App Store: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F4468F76-B63C-49C9-B546-6F3661587EC3</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -604,15 +551,6 @@ brew home "$*"</string>
 created by [Chris Grieser](https://chris-grieser.de/)</string>
 	<key>uidata</key>
 	<dict>
-		<key>010DB1C1-A57B-4AD1-A6D6-2800C0B34B4A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>655</integer>
-			<key>ypos</key>
-			<integer>145</integer>
-		</dict>
 		<key>0BAF56E8-B65A-478A-B848-F09FFE73A12B</key>
 		<dict>
 			<key>colorindex</key>
@@ -705,7 +643,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>660</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
@@ -743,7 +681,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>505</integer>
 			<key>ypos</key>
 			<integer>395</integer>
 		</dict>
@@ -757,15 +695,6 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<integer>300</integer>
 			<key>ypos</key>
 			<integer>275</integer>
-		</dict>
-		<key>F4468F76-B63C-49C9-B546-6F3661587EC3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>505</integer>
-			<key>ypos</key>
-			<integer>145</integer>
 		</dict>
 	</dict>
 	<key>version</key>
