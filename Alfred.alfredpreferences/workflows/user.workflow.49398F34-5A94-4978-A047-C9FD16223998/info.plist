@@ -179,6 +179,85 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
+
+headless=$(defaults read com.iconfactory.Twitterrific5 advancedShowDockIcon)
+
+if [[ "$headless" == "0" ]] ; then
+	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool YES
+    echo "Dock Icon re-enabled"
+else
+	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
+    echo "Dock Icon hidden"
+fi
+
+killall "Twitterrific"
+sleep 0.5
+open -a "Twitterrific"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E351C4BB-4D9B-40B3-8849-BC10E485473D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Headless Mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅ {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -213,6 +292,42 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>twitterrific-scroll-up.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>twitterrific-scroll-up</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -376,121 +491,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
-
-headless=$(defaults read com.iconfactory.Twitterrific5 advancedShowDockIcon)
-
-if [[ "$headless" == "0" ]] ; then
-	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool YES
-    echo "Dock Icon re-enabled"
-else
-	defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
-    echo "Dock Icon hidden"
-fi
-
-killall "Twitterrific"
-sleep 0.5
-open -a "Twitterrific"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E351C4BB-4D9B-40B3-8849-BC10E485473D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tw</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Headless Mode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>twitterrific-scroll-up.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>15E86EBB-127D-48A9-8EEC-417367A330D4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>twitterrific-scroll-up</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -499,159 +499,165 @@ open -a "Twitterrific"</string>
 		<key>0EF4F09D-7C6A-41AA-9CC1-2736C6FBD823</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Twitter Search (Web)</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
 		<key>13CC1BC1-8472-4BBE-BE5F-D2B8A13443D4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
 		<key>15E86EBB-127D-48A9-8EEC-417367A330D4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>scroll up</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>960</integer>
+			<integer>170</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
 		<key>A0390445-3124-4179-A03B-217403483ADE</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
 		<key>A07F7BC9-932C-4F62-9B33-A34781D66171</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
 		<key>B6151B85-7052-4FAE-A01B-8963B1B509D2</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>430</integer>
 		</dict>
 		<key>BB7458E2-0227-454E-AC96-A82B1BED8CB4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>12</integer>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Twitter user</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>670</integer>
 		</dict>
 		<key>C0261997-8C06-4E90-974E-92FBB6D6CA2D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Twitter Search (Web)</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
 		<key>D24BD568-15C4-4DDD-99AE-F3DFFDD3E0A2</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>430</integer>
 		</dict>
 		<key>DA2225A9-6DAB-4D81-9FB4-E31D6A2B898D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>960</integer>
+			<integer>170</integer>
 		</dict>
 		<key>DD86BC3E-FF13-4A44-85E1-6D70B5341C53</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>815</integer>
+			<integer>25</integer>
 		</dict>
 		<key>E286DBA7-2559-48DF-800B-A66A6523BB93</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
 		<key>E351C4BB-4D9B-40B3-8849-BC10E485473D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>815</integer>
+			<integer>25</integer>
 		</dict>
 		<key>E93C6F35-34EC-4FD7-A64E-8348959F7117</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Tweet at Twitterrific</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
 		<key>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>note</key>
 			<string>toggle headless mode</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>815</integer>
+			<integer>25</integer>
 		</dict>
 		<key>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>12</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>670</integer>
 		</dict>
