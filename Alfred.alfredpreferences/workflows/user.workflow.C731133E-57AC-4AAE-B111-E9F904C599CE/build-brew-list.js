@@ -9,8 +9,7 @@ const casks = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:
 const formulae = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; brew formulae")
 	.split("\r")
 	.map (line => line + " --formula");
-
-const searchResults = [...casks, ...formulae, ...masApps].map(brew => {
+const searchResults = [...casks, ...formulae].map(brew => {
 	const resultName = brew.split(" --")[0];
 	const resultType = brew.split(" --")[1];
 	const betterMatching = resultName.replaceAll ("-", " ") + " " + resultName;

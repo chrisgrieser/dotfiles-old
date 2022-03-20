@@ -31,4 +31,24 @@ app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH; brew l
 		});
 	});
 
+// MAS apps
+app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; mas list")
+	.split("\r")
+	.forEach(item => {
+		item = item.replace (/\d+ +([\w ]+) +\(.*/, "$1");
+		jsonArray.push({
+			"title": item,
+			"match": item,
+			"subtitle": "Mac App Store",
+			"arg": "/Applications/ + " + item + ".app",
+			"mods": {
+				"cmd": {
+					"arg": false,
+					"subtitle": "⛔️ Invalid for MAS app."
+				}
+			},
+		});
+	});
+
+// direct return
 JSON.stringify({ items: jsonArray });
