@@ -1707,7 +1707,7 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 				<integer>68</integer>
 				<key>script</key>
 				<string>on run argv
-	set doDelete to item 1 of argv as POSIX file
+	set toDelete to (item 1 of argv) as POSIX file
 	tell application "Finder" to delete toDelete
 end run</string>
 				<key>scriptargtype</key>
@@ -2686,7 +2686,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>note</key>
-			<string>default size &amp; to the left</string>
+			<string>delete file</string>
 			<key>xpos</key>
 			<integer>660</integer>
 			<key>ypos</key>
