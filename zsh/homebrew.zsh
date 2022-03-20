@@ -53,7 +53,6 @@ function br () {
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
-	killall "$SELECTED"
 	brew reinstall "$SELECTED"
 
 	post-install "$SELECTED"
@@ -75,7 +74,6 @@ function bu () {
 	           --preview-window=right:70% \
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
-	killall "$SELECTED"
 	brew uninstall --zap "$SELECTED"
 }
 

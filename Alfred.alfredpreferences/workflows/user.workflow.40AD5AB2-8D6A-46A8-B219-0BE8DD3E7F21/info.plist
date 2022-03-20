@@ -31,32 +31,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>45DFC250-9FFB-4B5C-8D4C-5DD41F64E172</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2C399287-EF02-4BD6-9D60-BAAAFCE0BFC1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6EFD875E-019E-4F6F-8F94-8DD5E186F806</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E48CA308-E85F-44D7-A228-5091F2598DD7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F8A7E0F1-2DF1-46A9-938D-4404E866BAE9</key>
 		<array>
 			<dict>
@@ -101,35 +75,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>32715625-6073-4C95-B221-28AD342856F5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>45DFC250-9FFB-4B5C-8D4C-5DD41F64E172</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -277,46 +222,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>macappstores://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?mt=12&amp;ign-mscache=1&amp;q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>E48CA308-E85F-44D7-A228-5091F2598DD7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>mas</string>
-				<key>subtext</key>
-				<string>in the App</string>
-				<key>text</key>
-				<string>Mac App Store: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6EFD875E-019E-4F6F-8F94-8DD5E186F806</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>RELEASE NOTES:
@@ -331,64 +236,37 @@ The workflow now uses Alfred’s environment variables to get the correct paths 
 		<key>2C399287-EF02-4BD6-9D60-BAAAFCE0BFC1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>15</integer>
 		</dict>
 		<key>32715625-6073-4C95-B221-28AD342856F5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<real>10</real>
-		</dict>
-		<key>45DFC250-9FFB-4B5C-8D4C-5DD41F64E172</key>
-		<dict>
-			<key>note</key>
-			<string>Default hotkey: ⌃⌘M</string>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<real>10</real>
-		</dict>
-		<key>6EFD875E-019E-4F6F-8F94-8DD5E186F806</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>300</integer>
-			<key>ypos</key>
-			<integer>435</integer>
+			<integer>15</integer>
 		</dict>
 		<key>B006C7A4-F892-4A87-ACE7-40E351351DAB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>135</integer>
 		</dict>
 		<key>D2860D99-CACD-440D-A62D-F0C9E4524214</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>305</integer>
-		</dict>
-		<key>E48CA308-E85F-44D7-A228-5091F2598DD7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>435</integer>
+			<integer>260</integer>
 		</dict>
 		<key>F8A7E0F1-2DF1-46A9-938D-4404E866BAE9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>305</integer>
+			<integer>260</integer>
 		</dict>
 	</dict>
 	<key>version</key>
