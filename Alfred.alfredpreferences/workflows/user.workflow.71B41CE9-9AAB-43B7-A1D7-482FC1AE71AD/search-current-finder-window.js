@@ -29,35 +29,35 @@ function run () {
 	/* eslint-disable no-multi-str */
 	const repoArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \
 		cd \"" + folderToSearch + "\" ; \
-		fd --absolute-path --hidden --exclude \"/.git/*\""
-	).split("\r");
+		fd --absolute-path --hidden --exclude \"/.git/*\"")
+		.split("\r")
+		.map(fpath => {
+			const name = fpath.split("/").pop();
+			const relativeParentFolder = fpath.slice(folderToSearch.length, -(name.length + 1));
+
+			const fIcon = {
+				"type": "fileicon",
+				"path": fpath
+			};
+			// if image, use image content, not file icon
+			if (fpath.endsWith(".png")) delete fIcon.type;
+
+			return {
+				"title": name,
+				"match": alfredMatcher (name),
+				"subtitle": relativeParentFolder,
+				"type": "file",
+				"icon": fIcon,
+				"arg": fpath,
+				"uid": fpath,
+			};
+		});
 
 	if (!repoArray.length) {
 		jsonArray.push({ "title": "No file in the current Folder found." });
 		return JSON.stringify({ items: jsonArray });
 	}
 
-	repoArray.forEach(fpath => {
-		const name = fpath.split("/").pop();
-		const relativeParentFolder = fpath.slice(folderToSearch.length, -(name.length + 1));
-
-		const fIcon = {
-			"type": "fileicon",
-			"path": fpath
-		};
-		if (fpath.endsWith(".png")) delete fIcon.type;
-
-		jsonArray.push({
-			"title": name,
-			"match": alfredMatcher (name),
-			"subtitle": relativeParentFolder,
-			"type": "file",
-			"icon": fIcon,
-			"arg": fpath,
-			"uid": fpath,
-		});
-	});
-
-	return JSON.stringify({ items: jsonArray });
+	return JSON.stringify({ items: repoArray });
 }
 

@@ -22,7 +22,28 @@
 			</dict>
 		</array>
 		<key>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DC23B294-25E4-4CEA-841A-71546D15BD89</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
+				<key>modifiers</key>
+				<integer>8388608</integer>
+				<key>modifiersubtext</key>
+				<string>fn: delete</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<array>
 			<dict>
@@ -1484,6 +1505,21 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>DC23B294-25E4-4CEA-841A-71546D15BD89</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -1661,6 +1697,32 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 			<string>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	set doDelete to item 1 of argv as POSIX file
+	tell application "Finder" to delete toDelete
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2619,6 +2681,17 @@ end if</string>
 			<key>ypos</key>
 			<integer>1650</integer>
 		</dict>
+		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>default size &amp; to the left</string>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>955</integer>
+		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
 			<key>colorindex</key>
@@ -2856,7 +2929,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>405</integer>
 			<key>ypos</key>
 			<integer>960</integer>
 		</dict>
@@ -2910,6 +2983,15 @@ end if</string>
 			<integer>350</integer>
 			<key>ypos</key>
 			<integer>905</integer>
+		</dict>
+		<key>DC23B294-25E4-4CEA-841A-71546D15BD89</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>840</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>

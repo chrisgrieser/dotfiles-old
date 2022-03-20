@@ -996,27 +996,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Append to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -1046,6 +1025,27 @@
 			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
 			<string>186B57A9-8760-49C8-B62B-A4006551A19D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Append to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1906,6 +1906,27 @@ echo -n "[""$title""](""$url"")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Title Case</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1925,27 +1946,6 @@ echo -n "[""$title""](""$url"")"</string>
 			<string>E9B18C6D-C266-45FC-BB77-057AA35103DE</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Title Case</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2580,7 +2580,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste previous clipboard text</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
@@ -2591,7 +2591,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste as plain text</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>35</integer>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
