@@ -1,4 +1,13 @@
-# Pandoc Notes
+---
+aliases: 
+tags: pandoc, citation, css, coding
+obsidianUIMode: preview
+---
+
+> [!INFO]
+> This note is a symlink to `pandoc/README.md` in [my dotfile directory](https://github.com/chrisgrieser/dotfiles)
+
+# Pandoc
 
 ## Priority of Options
 
@@ -27,17 +36,53 @@ Higher overwrites lower.
 - output format is `html`, the look of the output is determined by an `html` template (content) and a `css` file (looks)
 - output format is `pdf`, you either need a `latex` template (which determines looks & content) or you need the `html-css`-combination from above. (Different PDF engines use different forms of templates.) 
 
-## Automatically Insert Date
+## Useful Snippets
+
+```xml
+<!-- will generate a pagebreak when converting md to docx
+https://pandoc.org/MANUAL.html#generic-raw-attribute
+or via LUA filter https://github.com/pandoc/lua-filters/tree/master/pagebreak -->
+~~~{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+~~~
+```
 
 ```shell
 # Insert today's date
 --metadata=date:"$(date "+%e. %B %Y")"
 ```
 
-## Batch Conversion
+```shell
+# Convert Bibliography files
+# https://tex.stackexchange.com/a/268305
+pandoc "My Library.bib" -t csljson -o "bibtexjson.json"
+```
 
 ```shell
+# Batch Conversion
+cd "/folder/with/your/html/files/"
 for f in *.html ; do 
 	pandoc ${f} -f html -t markdown -s -o ${f}.md
 done
 ```
+
+
+```shell
+# read tracked changes from word
+pandoc "Korrekturen KaKo.docx" --track-changes=all -t markdown | grep -C3 "{\."
+```
+
+## Templates
+
+```yaml
+---
+geometry: "margin=2cm"
+---
+```
+
+## Filters
+- [raghur/mermaid-filter: Pandoc filter for creating diagrams in mermaid syntax blocks in markdown docs](https://github.com/raghur/mermaid-filter)
+-Tools for Automatic References
+	- [url2cite: Effortlessly and transparently add correctly styled citations to your markdown paper given only a URL](https://github.com/phiresky/pandoc-url2cite/)
+		- [usage with normal citekeys](https://github.com/phiresky/pandoc-url2cite/issues/10#issuecomment-899101361)
+	- [manubot](https://github.com/manubot)
