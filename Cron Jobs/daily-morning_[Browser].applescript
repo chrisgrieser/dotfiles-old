@@ -11,7 +11,7 @@ tell application "Brave Browser"
 	end if
 end tell
 
-delay 1
+delay 2
 
 # SWITCH TO LIGHT MODE
 tell application "System Events" to tell appearance preferences to set dark mode to true
@@ -19,7 +19,7 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-
 
 # RESET SOME STUFF
 tell application "KeeWeb" to if it is running then quit
-delay 0.5
+delay 3
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
 delay 3
 tell application "System Events"
