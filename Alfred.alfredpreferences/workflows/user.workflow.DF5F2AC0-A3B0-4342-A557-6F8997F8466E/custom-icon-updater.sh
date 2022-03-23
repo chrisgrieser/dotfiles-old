@@ -5,10 +5,22 @@
 CUSTOM_ICON_FOLDER="${custom_icon_folder/#\~/$HOME}"
 PWA_FOLDER="${pwa_folder/#\~/$HOME}"
 
+cd "/Applications/" || exit 1
+export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+
 # ----------------------
 
-export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-cd "/Applications/" || exit 1
+if [[ "$*" == "Alfred Prefs" ]]; then
+	cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
+	touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
+	killall "Alfred Preferences"
+	open -a "Alfred Preferences"
+	echo -n "Alfred Preferences" # pass for notication
+	exit 0
+fi
+
+# ----------------------
+
 
 # only app name
 APP_TO_UPDATE=$(basename "$*")
@@ -44,9 +56,6 @@ case $APP_TO_UPDATE in
 	"AppCleaner")
 		cp "$CUSTOM_ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
 		touch "AppCleaner.app" ;;
-   "Alfred Prefs")
-		cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
-		touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app' ;;
 
    "Drafts")
 		osascript -e "tell application \"Finder\"

@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0895E51B-B906-48E7-892B-A69AB5A2FCFF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE7CBB30-7BC8-43D4-BCF5-95B417974633</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</key>
 		<array>
 			<dict>
@@ -189,6 +202,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C35BAC57-E3D9-4FCA-8B09-2C81C2D8D7B9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CE7CBB30-7BC8-43D4-BCF5-95B417974633</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05B2913E-95E3-4E72-A4C1-93E1A7A0C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -653,21 +679,6 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>custom-icon-updater.sh</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -675,14 +686,31 @@ return "{query}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Edit Custom Icon Script</string>
+				<string>Update Alfred Prefs Icon</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>ADC0722C-95D6-4BDE-B235-615784A424DA</string>
+			<string>0895E51B-B906-48E7-892B-A69AB5A2FCFF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Alfred Prefs</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>CE7CBB30-7BC8-43D4-BCF5-95B417974633</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -748,6 +776,42 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>custom-icon-updater.sh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>custom icon</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Edit Custom Icon Script</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>ADC0722C-95D6-4BDE-B235-615784A424DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -778,6 +842,17 @@ brew install folderify</string>
 			<integer>665</integer>
 			<key>ypos</key>
 			<integer>415</integer>
+		</dict>
+		<key>0895E51B-B906-48E7-892B-A69AB5A2FCFF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Alfred Prefs</string>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>545</integer>
 		</dict>
 		<key>0951FDD8-D9E2-4DC3-8844-58CF1AABE48C</key>
 		<dict>
@@ -860,7 +935,7 @@ brew install folderify</string>
 			<key>xpos</key>
 			<integer>665</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>705</integer>
 		</dict>
 		<key>669EC31A-C9B1-4515-85BA-4809329A85F8</key>
 		<dict>
@@ -920,10 +995,12 @@ brew install folderify</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
+			<key>note</key>
+			<string>edit preferences file</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>705</integer>
 		</dict>
 		<key>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</key>
 		<dict>
@@ -978,6 +1055,15 @@ brew install folderify</string>
 			<integer>210</integer>
 			<key>ypos</key>
 			<integer>130</integer>
+		</dict>
+		<key>CE7CBB30-7BC8-43D4-BCF5-95B417974633</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>635</integer>
+			<key>ypos</key>
+			<integer>575</integer>
 		</dict>
 		<key>D6F7AD54-C4BD-4B8F-8D32-D5680EECB192</key>
 		<dict>
