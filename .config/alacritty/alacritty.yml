@@ -6,37 +6,37 @@
 # --------------------------------------------------------------------------
 
 colors:
-  # COLORSCHEME: argonaut.yaml
+  # COLORSCHEME: iterm.yaml
   # Default colors
   primary:
     # hard contrast: background = '0x1d2021'
-    background: '0x292C3E'
-    foreground: '0xEBEBEB'
+    background: '0x101421'
+    foreground: '0xfffbf6'
 
-  # Cursor colors
+  # Normal colors
   normal:
-    black: '0x0d0d0d'
-    red: '0xFF301B'
-    green: '0xA0E521'
-    yellow: '0xFFC620'
-    blue: '0x1BA6FA'
-    magenta: '0x8763B8'
-    cyan: '0x21DEEF'
-    white: '0xEBEBEB'
+    black: '0x2e2e2e'
+    red: '0xeb4129'
+    green: '0xabe047'
+    yellow: '0xf6c744'
+    blue: '0x47a0f3'
+    magenta: '0x7b5cb0'
+    cyan: '0x64dbed'
+    white: '0xe5e9f0'
 
   # Bright colors
   bright:
-    black: '0x6D7070'
-    red: '0xFF4352'
-    green: '0xB8E466'
-    yellow: '0xFFD750'
-    blue: '0x1BA6FA'
-    magenta: '0xA578EA'
-    cyan: '0x73FBF1'
-    white: '0xFEFEF8'
+    black: '0x565656'
+    red: '0xec5357'
+    green: '0xc0e17d'
+    yellow: '0xf9da6a'
+    blue: '0x49a4f8'
+    magenta: '0xa47de9'
+    cyan: '0x99faf2'
+    white: '0xffffff'
   cursor:
-    text: '0xFF261E'
-    # cursor: '0xFF261E'
+    background: '0xf0f0f0'
+    foreground: '0x26282a'
 
   # Normal colors
   dim:
