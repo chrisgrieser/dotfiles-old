@@ -8,31 +8,6 @@
 	<string>Searches</string>
 	<key>connections</key>
 	<dict>
-		<key>193FE270-1D3E-4BD8-83AF-B2F2D3023109</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>984D436A-D141-41C0-A2D2-2D427990EEF8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>F4CD9546-EB10-4B00-82EF-BBD8D7F2C31A</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>32147E5D-EC1B-4EC8-A9F2-CF5217B879EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>39DA22C5-BB99-4861-8057-B531567002B4</key>
 		<array>
 			<dict>
@@ -118,19 +93,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0BB90476-EDA6-43B4-88D8-CDF14CDB1680</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>AFE0799B-7D51-44B3-A978-6C3C6AA58D64</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>193FE270-1D3E-4BD8-83AF-B2F2D3023109</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -455,23 +417,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>::</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>AFE0799B-7D51-44B3-A978-6C3C6AA58D64</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -503,6 +448,8 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
+				<key>keyword</key>
+				<string>:</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -557,36 +504,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string>com.sublimetext.4</string>
-						<key>outputlabel</key>
-						<string>Other</string>
-						<key>uid</key>
-						<string>F4CD9546-EB10-4B00-82EF-BBD8D7F2C31A</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Sublime</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>193FE270-1D3E-4BD8-83AF-B2F2D3023109</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>seconds</key>
 				<string>.2</string>
 			</dict>
@@ -596,25 +513,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 			<string>3C276583-38BE-49F8-8473-E72C18AE4DD3</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>::</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>32147E5D-EC1B-4EC8-A9F2-CF5217B879EA</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -670,25 +568,7 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>1000</integer>
-		</dict>
-		<key>193FE270-1D3E-4BD8-83AF-B2F2D3023109</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>235</integer>
-			<key>ypos</key>
-			<integer>775</integer>
-		</dict>
-		<key>32147E5D-EC1B-4EC8-A9F2-CF5217B879EA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>345</integer>
-			<key>ypos</key>
-			<integer>880</integer>
+			<integer>910</integer>
 		</dict>
 		<key>39DA22C5-BB99-4861-8057-B531567002B4</key>
 		<dict>
@@ -702,9 +582,9 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>665</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>785</integer>
+			<integer>790</integer>
 		</dict>
 		<key>41224B23-17CB-46F5-BF68-CA0A7E93A849</key>
 		<dict>
@@ -767,9 +647,9 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>345</integer>
+			<integer>60</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>760</integer>
 		</dict>
 		<key>AFB25478-F21E-4921-BAE4-5007E354CB41</key>
 		<dict>
@@ -778,16 +658,7 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>1000</integer>
-		</dict>
-		<key>AFE0799B-7D51-44B3-A978-6C3C6AA58D64</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>65</integer>
-			<key>ypos</key>
-			<integer>755</integer>
+			<integer>910</integer>
 		</dict>
 		<key>B667429E-AB0D-420B-A48D-0FB0E288A3FD</key>
 		<dict>
@@ -821,9 +692,9 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>515</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>760</integer>
 		</dict>
 		<key>D2E73399-01D7-49EB-B091-F4A4DEDBC507</key>
 		<dict>
@@ -832,9 +703,9 @@ see also: https://eric.blog/2019/01/12/how-to-download-a-gif-from-giphy/</string
 			<key>note</key>
 			<string>preserve order of the clipboard</string>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>470</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>760</integer>
 		</dict>
 		<key>DBA1CC38-9090-47DF-90DD-CB67EC63BF98</key>
 		<dict>
