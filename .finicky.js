@@ -4,7 +4,7 @@ module.exports = {
 	defaultBrowser: "Brave Browser",
 	options: {
 		checkForUpdate: true,
-		hideIcon: false,
+		hideIcon: true,
 	},
 
 	rewrite: [
