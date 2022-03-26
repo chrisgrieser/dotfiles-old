@@ -49,7 +49,7 @@
   "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
   "regexFindMode": false,
   "ignoreKeyboardLayout": false,
-  "scrollStepSize": 170,
+  "scrollStepSize": 200,
   "smoothScroll": true,
   "grabBackFocus": true,
   "searchEngines": "",
