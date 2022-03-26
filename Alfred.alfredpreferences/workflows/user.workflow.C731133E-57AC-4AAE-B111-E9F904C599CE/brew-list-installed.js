@@ -35,12 +35,12 @@ app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH; brew l
 app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; mas list")
 	.split("\r")
 	.forEach(item => {
-		item = item.replace (/\d+ +([\w ]+) +\(.*/, "$1");
+		item = item.replace (/\d+ +([\w ]+?) +\(.*/, "$1").trim();
 		jsonArray.push({
 			"title": item,
 			"match": item,
 			"subtitle": "Mac App Store",
-			"arg": "/Applications/ + " + item + ".app",
+			"arg": "/Applications/" + item + ".app",
 			"mods": {
 				"cmd": {
 					"arg": false,
