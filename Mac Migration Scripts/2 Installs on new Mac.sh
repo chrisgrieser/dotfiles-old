@@ -3,7 +3,7 @@ sudo -v
 # Install Homebrew itself
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# needed for php installation, php needed for SPotify workflow
+# needed for php installation, php needed for Spotify workflow
 xcode-select --install
 
 # MAS CLI sign in currently broken due to Apple API change
@@ -42,16 +42,13 @@ pip3 install pdfannots #requires the python3 version installed by homebrew
 # Twitterific: run headless http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
 defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
 
-# restrict KeeWeb access only to Admins
-sudo chown -R root /Applications/KeeWeb.app
-
 # change font size of Portfolio Performance
 font_size=19
 c_css_location=~'/Library/Application Support/name.abuchen.portfolio.product/workspace/.metadata/.plugins/name.abuchen.portfolio.ui/'
 mkdir -p "$c_css_location"
 printf "%s" "{\nfont-size: ""$font_size"";\n}" >> "$c_css_location"/custom.css
 
-# Mimestream as Default Mail Client (nicht updaten auf neuere Python-Versionen)
+# Mimestream as Default Mail Client (don't use newer python versions in this script)
 # https://apple.stackexchange.com/a/351570
 /usr/bin/python2.7 <<EOF
 import LaunchServices;
@@ -70,20 +67,9 @@ mkdir -p "$newSkinPath"/resource/styles/
 cp "$steamDataPath"/resource/styles/steam.styles "$newSkinPath"/resource/styles/
 echo ":root { zoom: \"1.5\"; }" > "$newSkinPath"/resource/webkit.css
 
-# ------------------
-# Potentially needed
-# ------------------
-
 # Fix Permission issue with Drafts, https://forums.getdrafts.com/t/open-file-links-with-app-openurl/11513/6
-# mkdir ~"/Library/Application Scripts/com.agiletortoise.Drafts-OSX"
+mkdir ~"/Library/Application Scripts/com.agiletortoise.Drafts-OSX"
 
-# Sublime:
-# - Install Package Control https://packagecontrol.io/installation
-# curl -sL "https://packagecontrol.io/Package%20Control.sublime-package" > ~"/Library/Application Support/Sublime Text/Packages/"
-# - link `subl` CLI
-# echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+# Sublime: Install Package Control https://packagecontrol.io/installation
+curl -sL "https://packagecontrol.io/Package%20Control.sublime-package" > ~"/Library/Application Support/Sublime Text/Packages/"
 
-# Homebrew: add to PATH
-# shellcheck disable=SC2016,SC2086
-# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-# eval "$(/opt/homebrew/bin/brew shellenv)"
