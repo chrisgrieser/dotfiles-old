@@ -239,6 +239,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>11D8554B-846B-40DD-9CA0-C73F5736472F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<array>
 			<dict>
@@ -428,6 +441,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7E69DE34-495B-4509-B562-0DC2338A6A8F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1505,6 +1531,19 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>file-hub-cycle</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -1695,6 +1734,25 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>file-hub-cycle</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>11D8554B-846B-40DD-9CA0-C73F5736472F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2498,7 +2556,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>490</integer>
 			<key>ypos</key>
-			<integer>840</integer>
+			<integer>900</integer>
 		</dict>
 		<key>0E080774-7164-46BC-99E0-0EDE2F1AB3A8</key>
 		<dict>
@@ -2507,7 +2565,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>360</integer>
 			<key>ypos</key>
-			<integer>1155</integer>
+			<integer>1250</integer>
 		</dict>
 		<key>10E85A5A-FC6B-43F7-AAAA-1304838DCCBC</key>
 		<dict>
@@ -2518,6 +2576,13 @@ end if</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
+		<key>11D8554B-846B-40DD-9CA0-C73F5736472F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>1015</integer>
+		</dict>
 		<key>1B6838B5-A98F-4E36-B645-F289BA31A5F8</key>
 		<dict>
 			<key>colorindex</key>
@@ -2525,7 +2590,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>955</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -2552,7 +2617,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>365</integer>
 			<key>ypos</key>
-			<integer>1310</integer>
+			<integer>1405</integer>
 		</dict>
 		<key>2F5374A2-FC86-470A-99DD-7948240BF23E</key>
 		<dict>
@@ -2570,7 +2635,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>740</integer>
 			<key>ypos</key>
-			<integer>1155</integer>
+			<integer>1250</integer>
 		</dict>
 		<key>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</key>
 		<dict>
@@ -2581,16 +2646,16 @@ end if</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1280</integer>
+			<integer>1375</integer>
 		</dict>
 		<key>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>885</integer>
+			<integer>945</integer>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
@@ -2617,9 +2682,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>885</integer>
+			<integer>945</integer>
 		</dict>
 		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
 		<dict>
@@ -2628,7 +2693,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1570</integer>
+			<integer>1665</integer>
 		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
@@ -2637,7 +2702,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>605</integer>
 			<key>ypos</key>
-			<integer>1680</integer>
+			<integer>1775</integer>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
@@ -2646,7 +2711,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>595</integer>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2657,7 +2722,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2679,7 +2744,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
 		<dict>
@@ -2690,7 +2755,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>660</integer>
 			<key>ypos</key>
-			<integer>955</integer>
+			<integer>1015</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2701,7 +2766,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
@@ -2710,7 +2775,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>175</integer>
 			<key>ypos</key>
-			<integer>1680</integer>
+			<integer>1775</integer>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2739,7 +2804,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>420</integer>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>6FE7DC2A-A4FC-40A1-BB35-88F0C8FA7458</key>
 		<dict>
@@ -2748,7 +2813,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>7B43FD68-D463-4626-BE13-7D1C65B12ECF</key>
 		<dict>
@@ -2757,7 +2822,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>425</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>930</integer>
 		</dict>
 		<key>7E69DE34-495B-4509-B562-0DC2338A6A8F</key>
 		<dict>
@@ -2777,7 +2842,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>8CF248CE-8B57-459A-8035-1B229F950E2C</key>
 		<dict>
@@ -2788,7 +2853,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>1790</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>8FB840C3-FF34-4E96-8499-B0567F30D650</key>
 		<dict>
@@ -2817,7 +2882,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2855,7 +2920,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>
-			<integer>1790</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
@@ -2864,7 +2929,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>675</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1745</integer>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
@@ -2882,7 +2947,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1410</integer>
+			<integer>1505</integer>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2906,6 +2971,13 @@ end if</string>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
+		<key>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>820</integer>
+		</dict>
 		<key>C2867105-E752-4EB1-838C-85DBF3BFFBC9</key>
 		<dict>
 			<key>colorindex</key>
@@ -2913,7 +2985,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>1790</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
@@ -2929,9 +3001,9 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>960</integer>
+			<integer>1035</integer>
 		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
@@ -2953,7 +3025,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>610</integer>
 			<key>ypos</key>
-			<integer>1820</integer>
+			<integer>1915</integer>
 		</dict>
 		<key>D7FB212A-AF94-422F-9FD6-308DB317F36B</key>
 		<dict>
@@ -2964,7 +3036,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>1820</integer>
+			<integer>1915</integer>
 		</dict>
 		<key>D9356F02-69F9-43CF-A2F8-5620849DD6CE</key>
 		<dict>
@@ -2973,7 +3045,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1410</integer>
+			<integer>1505</integer>
 		</dict>
 		<key>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</key>
 		<dict>
@@ -2982,7 +3054,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>350</integer>
 			<key>ypos</key>
-			<integer>905</integer>
+			<integer>965</integer>
 		</dict>
 		<key>DC23B294-25E4-4CEA-841A-71546D15BD89</key>
 		<dict>
@@ -2991,7 +3063,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>660</integer>
 			<key>ypos</key>
-			<integer>840</integer>
+			<integer>900</integer>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
@@ -3033,7 +3105,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1280</integer>
+			<integer>1375</integer>
 		</dict>
 		<key>E26CAF36-595F-4EFB-8476-1E92049B36F2</key>
 		<dict>
@@ -3044,7 +3116,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>225</integer>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
 		<dict>
@@ -3053,7 +3125,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>115</integer>
 			<key>ypos</key>
-			<integer>1540</integer>
+			<integer>1635</integer>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
@@ -3073,7 +3145,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>1680</integer>
+			<integer>1775</integer>
 		</dict>
 		<key>EAFEA966-0BF1-46B2-B9AE-56808D09F466</key>
 		<dict>
@@ -3082,7 +3154,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>425</integer>
 			<key>ypos</key>
-			<integer>1280</integer>
+			<integer>1375</integer>
 		</dict>
 		<key>F07D2BDA-5358-4B99-9F8C-27361AFE3FF1</key>
 		<dict>
@@ -3111,7 +3183,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>375</integer>
 			<key>ypos</key>
-			<integer>1820</integer>
+			<integer>1915</integer>
 		</dict>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<dict>
@@ -3142,7 +3214,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>885</integer>
 			<key>ypos</key>
-			<integer>1790</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>FDDB18DD-3B35-4E2E-919B-51648FD77135</key>
 		<dict>
@@ -3151,7 +3223,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>670</integer>
 			<key>ypos</key>
-			<integer>1790</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>FF95422E-52C2-4234-88AE-C47E26C72CDF</key>
 		<dict>

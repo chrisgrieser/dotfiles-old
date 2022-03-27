@@ -288,13 +288,13 @@ You can change the workflow environment variables to fine tune menu listings
 	<key>variables</key>
 	<dict>
 		<key>-max-children</key>
-		<string></string>
+		<string>30</string>
 		<key>-max-depth</key>
-		<string></string>
+		<string>3</string>
 		<key>-show-apple-menu</key>
-		<string></string>
+		<string>false</string>
 		<key>-show-disabled</key>
-		<string></string>
+		<string>false</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
