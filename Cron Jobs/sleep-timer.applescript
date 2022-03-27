@@ -1,6 +1,5 @@
 #!/usr/bin/env osascript
 
-tell application "YouTube" to if it is running then quit
 tell application "-YouTube" to if it is running then quit
 
 tell application "Brave Browser"
