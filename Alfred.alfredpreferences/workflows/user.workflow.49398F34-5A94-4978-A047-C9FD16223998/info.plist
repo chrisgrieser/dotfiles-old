@@ -503,7 +503,7 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>Twitter Search (Web)</string>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>165</integer>
 		</dict>
@@ -512,7 +512,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
@@ -532,7 +532,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
@@ -541,7 +541,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>305</integer>
 		</dict>
@@ -550,7 +550,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>165</integer>
 		</dict>
@@ -559,7 +559,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -570,7 +570,7 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>Twitter user</string>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>685</integer>
 		</dict>
@@ -581,7 +581,7 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>Twitter Search (Web)</string>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
@@ -590,7 +590,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
@@ -617,7 +617,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
@@ -637,7 +637,7 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>Tweet at Twitterrific</string>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>305</integer>
 		</dict>
@@ -657,7 +657,7 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 			<key>ypos</key>
 			<integer>685</integer>
 		</dict>

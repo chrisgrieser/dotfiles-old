@@ -114,8 +114,8 @@
 	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
 	// Scrolling
-	{ "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 15.0} },
-	{ "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -15.0} },
+	{ "keys": ["alt+up"], "command": "scroll_lines", "args": {"amount": 15.0} },
+	{ "keys": ["alt+down"], "command": "scroll_lines", "args": {"amount": -15.0} },
 
 	// Comment
 	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },

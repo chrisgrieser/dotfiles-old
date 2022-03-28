@@ -11,15 +11,19 @@ tell application "Brave Browser"
 	end if
 end tell
 
-delay 2
+delay 1
 
 # SWITCH TO LIGHT MODE
 tell application "System Events" to tell appearance preferences to set dark mode to true
-tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle" with argument ""
+tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
 
 # RESET SOME STUFF
-tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
-delay 3
+tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
+delay 1
+tell application "Drafts" to launch
+repeat until application "Drafts" is running
+	delay 0.5
+end repeat
 tell application "System Events"
 	tell process "Drafts"
 		set frontmost to true
