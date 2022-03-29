@@ -357,27 +357,6 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:url}</string>
-				<key>title</key>
-				<string>Starting download...</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -393,6 +372,27 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>7EC8C18F-E353-4A93-9F40-FDB4C9531D57</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:url}</string>
+				<key>title</key>
+				<string>Starting download...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -903,7 +903,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>615</integer>
+			<integer>610</integer>
 		</dict>
 		<key>C7716DBE-2C15-46FC-A1E7-1A722EA60267</key>
 		<dict>
