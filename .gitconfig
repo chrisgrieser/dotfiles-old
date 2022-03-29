@@ -10,12 +10,12 @@
 	interactive = auto
 	ui = true
 [core]
-	editor = subl
+	editor = nano
 	excludesfile = /Users/chrisgrieser/.gitignore_global
 [pager]
 	branch = false
 [pull]
-	rebase = false
+	rebase = true
 [status]
 	showUntrackedFiles = all
 [filter "lfs"]
