@@ -16,7 +16,8 @@ PopClip/_*
 # (potentially) sensitive data
 Alfred.alfredpreferences/snippets/
 xbar plugins/*vars.json
-pw.*
+pw.md
+pw.txt
 .ssh/
 .zsh_history
 backup.log
