@@ -17,9 +17,11 @@ delay 1
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
 
-# RESET SOME STUFF
+# TWITTERIFIC SCROLL UP
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
 delay 1
+
+# DRAFTS HIDE TOOLBAR
 tell application "Drafts" to launch
 repeat until application "Drafts" is running
 	delay 0.5
@@ -32,4 +34,4 @@ tell application "System Events"
 end tell
 
 # log
-# do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
+do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
