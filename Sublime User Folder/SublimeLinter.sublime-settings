@@ -40,7 +40,7 @@
 		},
 		"annotations": {
 			"infos": ["TODO", "INFO"],
-			// "errors": ["WHAT?", "OMG!"]
+			"errors": ["WARNING"]
 		}
 	}
 }

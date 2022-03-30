@@ -3505,6 +3505,17 @@
 	volume = 367,
 	year = 2020
 }
+@article{BerkNewton1985,
+	author = {Berk, Richard A. and Newton, Phyllis J.},
+	doi = {10.2307/2095413},
+	journal = {American Sociological Review},
+	keywords = {Propensity Scores},
+	number = 2,
+	pages = {253--262},
+	title = {Does {{Arrest Really Deter Wife Battery}}? {{An Effort}} to {{Replicate}} the {{Findings}} of the {{Minneapolis Spouse Abuse Experiment}}},
+	volume = 50,
+	year = 1985
+}
 @book{Berkun2010,
 	author = {Berkun, Scott},
 	isbn = {978-1-4493-8962-8 1-4493-8962-7},
