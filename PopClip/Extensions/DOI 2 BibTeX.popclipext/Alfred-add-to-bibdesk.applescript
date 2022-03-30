@@ -1,1 +1,1 @@
-tell application id "com.runningwithcrayons.Alfred" to run trigger "add-doi-to-bibdesk" in workflow "de.chris-grieser.bibdesk" with argument "{popclip text}"
+tell application id "com.runningwithcrayons.Alfred" to run trigger "add-doi-to-library" in workflow "de.chris-grieser.alfred-bibtex-citation-picker" with argument "{popclip text}"

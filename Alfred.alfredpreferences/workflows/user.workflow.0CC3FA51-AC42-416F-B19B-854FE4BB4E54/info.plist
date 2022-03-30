@@ -272,6 +272,8 @@ You can change the workflow environment variables to fine tune menu listings
 		</dict>
 		<key>CD061C82-1321-458D-B46E-3603B3DB27E0</key>
 		<dict>
+			<key>note</key>
+			<string>config</string>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
