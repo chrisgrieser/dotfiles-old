@@ -1,13 +1,14 @@
 #!/bin/zsh
-export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+# using full path makes this work even if `subl` hasn't been added to PATH
+sublcli="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
 query="$*"
 
-subl "$query"
+"$sublcli" "$query"
 
 # if directory, then show sidebar
 # and hide tabbar
 if [[ -d "$query" ]] ; then
-	subl --command toggle_tabs
-	subl --command toggle_side_bar
+	"$sublcli" --command toggle_tabs
+	"$sublcli" --command toggle_side_bar
 fi

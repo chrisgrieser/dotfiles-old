@@ -23,8 +23,6 @@ backup.log
 
 # too much file size
 # ------------------
-# Images in Alfred folders
-Alfred.alfredpreferences/**/*.png
 # Spotify workflow & sensitive data
 user.workflow.DB6F724C-BEEA-413D-83F1-BB782F5801E5
 # Sublime Search Workflow

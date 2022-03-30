@@ -107,7 +107,7 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>subl CLI installed</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -581,7 +581,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>300</integer>
 		</dict>
@@ -623,7 +623,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
