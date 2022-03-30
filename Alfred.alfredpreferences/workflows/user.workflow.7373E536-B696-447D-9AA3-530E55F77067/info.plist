@@ -454,39 +454,9 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function run() {
-
-input = "{query}";
-properDOI = input.replace (/(doi: *|^)(?=10.*\/)/gi,"https://doi.org/");
-return properDOI;
-
-}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>54C2095D-6CF3-4AEC-B860-0C8A6BD657B1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string># https://citation.crosscite.org/docs.html
-# grep-pipe removes annoying month and issn field data
 curl --silent -LH "Accept: application/x-bibtex" {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -514,6 +484,35 @@ curl --silent -LH "Accept: application/x-bibtex" {query}</string>
 			<string>5A6C252F-5B54-4237-BFE8-1D9BB0AE5B28</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run() {
+
+input = "{query}";
+properDOI = input.replace (/(doi: *|^)(?=10.*\/)/gi,"https://doi.org/");
+return properDOI;
+
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>54C2095D-6CF3-4AEC-B860-0C8A6BD657B1</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -717,11 +716,11 @@ tell application "System Events"	tell process "BibDesk"		set frontmost to true
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>com.apple.Preview</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
