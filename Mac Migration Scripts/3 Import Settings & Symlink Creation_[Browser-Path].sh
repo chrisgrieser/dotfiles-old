@@ -49,10 +49,6 @@ ln -s "$SYMLINK_LOC"/.config/ ~/.config
 mv ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
 
-# xbar
-mv ~"/Library/Application Support/xbar/plugins" ~/.Trash
-ln -s "$SYMLINK_LOC/xbar plugins/" ~"/Library/Application Support/xbar/plugins"
-
 # VLC
 mv ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
 mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
