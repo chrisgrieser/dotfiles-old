@@ -19,19 +19,6 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-
 
 # TWITTERIFIC SCROLL UP
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
-delay 1
-
-# DRAFTS HIDE TOOLBAR
-tell application "Drafts" to launch
-repeat until application "Drafts" is running
-	delay 0.5
-end repeat
-tell application "System Events"
-	tell process "Drafts"
-		set frontmost to true
-		click menu item "Hide Toolbar" of menu "View" of menu bar 1
-	end tell
-end tell
 
 # log
 do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
