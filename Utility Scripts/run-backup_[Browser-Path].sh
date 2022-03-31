@@ -22,7 +22,7 @@ echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 
 # rsync function
 bkp () {
-	# ⚠️ `--delete` option will remove backup when source folder is empty!
+	# ⚠️ `--delete` option will remove backup when source folder is empty
 	# `-hhh` highes level of human readable
 	rsync --archive --progress --delete -hhh --exclude="*/.Trash/*" "$1" "$2"
 }
