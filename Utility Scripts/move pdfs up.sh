@@ -7,17 +7,14 @@ for folder in */*/; do
 	cd "$folder"
 	echo "$PWD"
 	fd . --min-depth=2 | xargs -I {} mv {} . # move up when in author-folder
-	cd ../..
-done
-
-for folder in */*/; do
-	cd "$folder"
 	rmdir ./*/ # remove all directories that are now empty
 	cd ../..
 done
 
+# some directories contain hidden .DS_Store files, so have to be removed with this.
+# glob "????" as a fail safe to only remove years
 for folder in */*/; do
 	cd "$folder"
-	rm -rf ./????/ # remove all directories with year numbers
+	rm -rf ./????/
 	cd ../..
 done

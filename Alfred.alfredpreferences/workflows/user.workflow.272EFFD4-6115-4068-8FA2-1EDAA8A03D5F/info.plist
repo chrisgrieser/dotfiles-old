@@ -213,27 +213,6 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>😎 Meme copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>80BB2BB2-77DC-4813-9809-2C0EEDE3C640</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -283,6 +262,27 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>😎 Meme copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>80BB2BB2-77DC-4813-9809-2C0EEDE3C640</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -323,26 +323,17 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>-- this line has to appear before the "on run" line of Alfred (or other functions)
-use framework "AppKit" set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as listset X to item 1 of item 2 of item 1 of allFrames (* main screen *)set Y to item 2 of item 2 of item 1 of allFramesset topLeftX to ((X / 6) * 5)set topLeftY to 0set Width2 to ((X / 6) * 1)set Height to Y-- "Width" is keyword, therefore "Width2"tell application "Finder" to set bounds of Finder window 1 to {topLeftX, topLeftY, Width2, Height}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>openwith</key>
 				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>sourcefile</key>
+				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Photos/Memes</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>CB8F99B8-A846-4C00-A07B-CBA436A31FD4</string>
+			<string>54F630D1-B707-4087-B7AE-11FA091BE0C5</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -366,17 +357,26 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>-- this line has to appear before the "on run" line of Alfred (or other functions)
+use framework "AppKit" set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as listset X to item 1 of item 2 of item 1 of allFrames (* main screen *)set Y to item 2 of item 2 of item 1 of allFramesset topLeftX to ((X / 6) * 5)set topLeftY to 0set Width2 to ((X / 6) * 1)set Height to Y-- "Width" is keyword, therefore "Width2"tell application "Finder" to set bounds of Finder window 1 to {topLeftX, topLeftY, Width2, Height}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Photos/Memes</string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>54F630D1-B707-4087-B7AE-11FA091BE0C5</string>
+			<string>CB8F99B8-A846-4C00-A07B-CBA436A31FD4</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -413,25 +413,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 			<string>39DA22C5-BB99-4861-8057-B531567002B4</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query} </string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>CF9ABE74-C444-4237-9E7E-3E0F88A5F4D4</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -473,7 +454,7 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -504,6 +485,25 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query} </string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>CF9ABE74-C444-4237-9E7E-3E0F88A5F4D4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>seconds</key>
 				<string>.2</string>
 			</dict>
@@ -511,6 +511,25 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
 			<string>3C276583-38BE-49F8-8473-E72C18AE4DD3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://emojipedia.org/search/?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0BB90476-EDA6-43B4-88D8-CDF14CDB1680</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -532,25 +551,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>AFB25478-F21E-4921-BAE4-5007E354CB41</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://emojipedia.org/search/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0BB90476-EDA6-43B4-88D8-CDF14CDB1680</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
