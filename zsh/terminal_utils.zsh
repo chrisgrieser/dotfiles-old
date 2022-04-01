@@ -28,6 +28,7 @@ function mkcd () {
 function sw () {
 	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
 		open -a "Alacritty"
+		cd "$WD" || exit
 		exit
 	else
 		open -a "Sublime Text"
