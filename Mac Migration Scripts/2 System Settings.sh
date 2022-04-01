@@ -123,9 +123,9 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Views
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 defaults write com.apple.finder ShowStatusBar -bool false
-defaults write com.apple.finder ShowPathbar -bool false
+defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Show the ~/Library folder
@@ -143,7 +143,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 killall Finder
 
 # -------------------------------------------
-# spotlight Exclusions
+# Spotlight Exclusions
 # -------------------------------------------
 # https://blog.christovic.com/2021/02/programatically-adding-spotlight.html
 # https://github.com/mattprice/dotfiles/blob/master/scripts/spotlight-ignore.rb
