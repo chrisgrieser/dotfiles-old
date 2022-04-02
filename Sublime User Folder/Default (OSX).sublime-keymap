@@ -72,7 +72,6 @@
 	// Navigate to Brackets
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
 
-
 	// Sublime Linter Navigation
 	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true } },
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
@@ -149,21 +148,25 @@
 	},
 	{ "keys": ["super+i"], "command": "reindent", "args": {"single_line": false} },
 
-	// Palette & Installation
+
+	// SETTINGS & INSTALLATION
+	// Keybindings Settings
+	{  "keys": ["super+shift+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap" } },
+	// Syntax-Specific Settings
+	{ "keys": ["super+alt+,"], "command": "edit_syntax_settings" },
+	// Change Color Scheme
+	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
+	// Palette
 	{ "keys": ["super+p"], "command": "show_overlay", "args": { "overlay": "command_palette" } },
+	// Installation / Uninstallation
 	{ "keys": ["shift+super+alt+ctrl+i"], "command": "install_package" },
 	{ "keys": ["shift+super+alt+ctrl+r"], "command": "remove_package" },
 
-	// Edit Keybindings Settings
-	{  "keys": ["super+shift+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap" } },
-
-	// Toggles
+	// TOGGLES
 	// Spellcheck
 	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 	// Wrap
 	{ "keys": ["shift+alt+super+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-	// Switch Color Scheme
-	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
 	// Sidebar/Tab bar
 	{ "keys": ["super+1"],
 		"command": "chain",
@@ -175,8 +178,9 @@
 		}
 	},
 
-	// File Management
+	// FILE MANAGEMENT
 	{ "keys": ["super+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["super+shift+n"], "command": "new_file" },
 	{ "keys": ["ctrl+d"], "command": "advanced_new_file_copy"},
 	{ "keys": ["super+backspace"], "command": "delete_current_file" },
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
