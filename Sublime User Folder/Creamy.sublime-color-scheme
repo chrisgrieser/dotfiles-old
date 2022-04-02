@@ -5,7 +5,7 @@
 	},
 	"globals":
 	{
-		"background": "var(white4)",
+		"background": "hsl(0, 0%, 95%)",
 	},
 	"rules":
 	[
