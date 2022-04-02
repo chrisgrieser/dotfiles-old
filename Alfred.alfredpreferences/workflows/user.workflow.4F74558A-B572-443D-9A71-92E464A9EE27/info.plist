@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4694D7EB-2482-44FA-881E-2597A9A90F9C</key>
 		<array>
 			<dict>
@@ -99,18 +86,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -128,6 +103,18 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A15E878F-A3E0-4C08-9B46-77290F1B153D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -314,15 +301,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinterminal</string>
+			<key>uid</key>
+			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-subl --command copy_path
+				<string>vault_path="${vault_path/#\~/$HOME}"
+
+open "obsidian://advanced-uri?commandid=workspace%253Acopy-path"
 sleep 0.1
-pbpaste</string>
+echo -n "$vault_path/$(pbpaste)"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -333,22 +334,9 @@ pbpaste</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</string>
+			<string>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
-			<key>uid</key>
-			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -377,11 +365,11 @@ pbpaste</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>com.sublimetext.4</string>
+						<string>md.obsidian</string>
 						<key>outputlabel</key>
-						<string>Sublime</string>
+						<string>Obsidian</string>
 						<key>uid</key>
-						<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
+						<string>D71CA07B-538E-41DC-9B8E-EB23A95AB12F</string>
 					</dict>
 					<dict>
 						<key>inputstring</key>
@@ -391,11 +379,11 @@ pbpaste</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>md.obsidian</string>
+						<string>com.sublimetext.4</string>
 						<key>outputlabel</key>
-						<string>Obsidian</string>
+						<string>Sublime</string>
 						<key>uid</key>
-						<string>D71CA07B-538E-41DC-9B8E-EB23A95AB12F</string>
+						<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -436,33 +424,6 @@ pbpaste</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>01443011-3B15-41D0-8772-EFD75B0FE5B8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>vault_path="${vault_path/#\~/$HOME}"
-
-open "obsidian://advanced-uri?commandid=workspace%253Acopy-path"
-sleep 0.1
-echo -n "$vault_path/$(pbpaste)"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>55FD81E8-D1D7-4ADE-81D6-1C3E3AA3231F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -622,13 +583,6 @@ echo -n "$vault_path/$(pbpaste)"</string>
 			<key>ypos</key>
 			<integer>440</integer>
 		</dict>
-		<key>13706F92-B5C1-4F30-93F7-D6F10BB6FB68</key>
-		<dict>
-			<key>xpos</key>
-			<integer>290</integer>
-			<key>ypos</key>
-			<integer>385</integer>
-		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
 			<key>xpos</key>
@@ -650,25 +604,25 @@ echo -n "$vault_path/$(pbpaste)"</string>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>495</integer>
+			<integer>395</integer>
 		</dict>
 		<key>56D27D24-5D05-4FED-BFD6-DA1AD15A8801</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>900</integer>
+			<integer>795</integer>
 		</dict>
 		<key>5DBE1E1A-ADCD-4ED4-8FC6-D302D5A6C77C</key>
 		<dict>
 			<key>note</key>
 			<string>defined in Hyper .zshrc as searching zsh files</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>640</integer>
 		</dict>
 		<key>60574399-8C54-4BDA-BC69-20A2ABA15DB8</key>
 		<dict>
@@ -680,7 +634,7 @@ echo -n "$vault_path/$(pbpaste)"</string>
 		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>435</integer>
 			<key>ypos</key>
 			<integer>305</integer>
 		</dict>
@@ -689,23 +643,23 @@ echo -n "$vault_path/$(pbpaste)"</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>900</integer>
+			<integer>795</integer>
 		</dict>
 		<key>A15E878F-A3E0-4C08-9B46-77290F1B153D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>605</integer>
+			<integer>520</integer>
 		</dict>
 		<key>AE906983-CE5F-481C-8C1A-B316AD77DB03</key>
 		<dict>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>525</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>395</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
@@ -726,9 +680,9 @@ echo -n "$vault_path/$(pbpaste)"</string>
 		<key>FEC82210-DDF5-46A7-980E-8A195BD3A586</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>640</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
