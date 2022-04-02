@@ -56,6 +56,9 @@ case $APP_TO_UPDATE in
 	"AppCleaner")
 		cp "$CUSTOM_ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
 		touch "AppCleaner.app" ;;
+	"Obsidian")
+		cp "$CUSTOM_ICON_FOLDER/Obsidian_Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
+		touch "Obsidian.app" ;;
 
    "Drafts")
 		osascript -e "tell application \"Finder\"
@@ -71,12 +74,12 @@ case $APP_TO_UPDATE in
 		end tell
 		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\""
 		INFO_WINDOW=1 ;;
-	"Google Docs")
+
+	"Google Docs"|"Docs")
 		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
 	"Inoreader")
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app" ;;
-
 	"-YouTube")
 		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/-YouTube.app" ;;
