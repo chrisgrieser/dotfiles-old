@@ -75,10 +75,10 @@
       }
     ],
     "gestureui": true,
-    "gholdkey": "alt",
+    "gholdkey": "shift",
     "gholdkeydisable": "alt",
     "gholdkeytype": "true",
-    "stenable": false,
+    "stenable": true,
     "stroke": true,
     "strokecolor": "792ECF",
     "strokeopa": "0.7",
