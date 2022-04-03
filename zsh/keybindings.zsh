@@ -44,8 +44,6 @@ open-zshrc () {
 	SELECTED=$( { ls *.zsh | cut -d. -f1 ; ls .z* } | fzf \
 	           -0 -1 \
 	           --query "$SEARCH_FOR" \
-	           --preview "bat --style=snip --tabs=2 --color=always --terminal-width=70 --line-range=:100 --wrap=never \"$ZSH_DOTFILE_LOCATION\"/{}.zsh" \
-	           --preview-window=right:70% \
 	           --height=75% \
 	           --layout=reverse \
 	           --info=hidden \

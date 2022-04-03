@@ -60,8 +60,8 @@ case $APP_TO_UPDATE in
 		cp "$CUSTOM_ICON_FOLDER/Obsidian_Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
 		touch "Obsidian.app" ;;
 	"Discord")
-		# cp "$CUSTOM_ICON_FOLDER/Discord Black.icns" 'Discord.app/Contents/Resources/electron.icns'
-		cp "$CUSTOM_ICON_FOLDER/Discord Alt.icns" 'Discord.app/Contents/Resources/electron.icns'
+		cp "$CUSTOM_ICON_FOLDER/Discord Black.icns" 'Discord.app/Contents/Resources/electron.icns'
+		# cp "$CUSTOM_ICON_FOLDER/Discord Alt.icns" 'Discord.app/Contents/Resources/electron.icns'
 		touch "Discord.app" ;;
 
    "Drafts")

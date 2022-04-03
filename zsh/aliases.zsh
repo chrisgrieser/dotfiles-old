@@ -1,7 +1,7 @@
 # https://www.thorsten-hans.com/5-types-of-zsh-aliases
 
 # configurations
-alias .star='open ~/.config/starship.toml'
+alias .star="open $STARSHIP_CONFIG"
 alias .zsh='open ~/.zshrc'
 
 alias rr='source ~/.zshrc'
@@ -32,6 +32,7 @@ alias diff='diff --color=auto'
 alias rm='rm -i'
 alias mv='mv -i'
 alias ln='ln -i'
+alias cp='cp -i'
 
 # defaults
 alias which='which -a'
@@ -42,7 +43,6 @@ alias pip="pip3"
 alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
 alias exagit='git status --short ; exa --long --grid --git --git-ignore --no-user --no-permissions --no-time --no-filesize --ignore-glob=.git'
 alias tree='exa --tree -L2'
-alias tree2='exa --tree -L2'
 alias tree3='exa --tree -L3'
 alias tree4='exa --tree -L4'
 alias size='exa --long --no-user --no-permissions --no-time' # size of files in current directory
