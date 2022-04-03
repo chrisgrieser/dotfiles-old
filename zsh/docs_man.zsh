@@ -1,5 +1,5 @@
 function ch () {
-	curl "https://cht.sh/""$*"
+	curl "https://cht.sh/$1"
 }
 
 export HOWDOI_COLORIZE=1
@@ -10,6 +10,7 @@ function h () {
 # open man page in new window
 if [[ "$TERM" == "alacritty" ]]; then
 	function man () {
+		which "$1" &> /dev/null || return 1
 		alacritty \
 			--option=window.position.x=400 \
 			--option=window.decorations=full \
