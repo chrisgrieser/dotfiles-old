@@ -26,7 +26,7 @@
     "directcolor": "778899",
     "directopa": 0.9,
     "gesPos": "cc",
-    "geskey": "right",
+    "geskey": "left",
     "gesture": [
       {
         "action": "G_back",

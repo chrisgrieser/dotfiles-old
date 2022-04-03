@@ -55,20 +55,12 @@
 		{"key": "selection_empty", "operator": "equal", "operand": false},
 	] },
 
-	// cmd + k: Inter-File Navigation via goto or table of comments
-	{ "keys": ["super+k"], "command": "show_overlay",
-		"args": {"overlay": "goto", "text": "@"},
-		"context": [
-			{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
-			{"key": "selector", "operator": "not_equal", "operand": "source.css"},
-	] },
+	// Inter-File Navigation via goto or table of comments
+	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 	{ "keys": ["super+k"], "command": "goto_comment", "context": [
-		{"key": "selector", "operator": "equal", "operand": "source.css"},
+		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
 	] },
-	// cmd + k: Markdown link
-	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
-		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
-	] },
+
 	// Navigate to Brackets
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
 
@@ -191,7 +183,7 @@
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
-	{  "keys": ["super+t"],
+	{  "keys": ["super+shift+t"],
 		"command": "toggle_terminus_panel",
 		"args": {
 			"cwd": "${file_path:${folder}}",
@@ -222,6 +214,10 @@
 	] },
 	{ "keys": ["super+e"], "command": "insert", "args": {"characters": "``"}, "context": [
 			{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+	] },
+	// cmd + k: Markdown link
+	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
+		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
 	] },
 ]
 
