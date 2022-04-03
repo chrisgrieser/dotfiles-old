@@ -30,7 +30,7 @@ zle -N quitSession
 copyBuffer () {
 	printf "%s" "$BUFFER" | pbcopy
 }
-zle -N copybuffer
+zle -N copyBuffer
 
 open-zshrc () {
 	if [[ $# == 0 ]] ; then
