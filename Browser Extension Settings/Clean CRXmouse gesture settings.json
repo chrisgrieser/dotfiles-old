@@ -26,7 +26,7 @@
     "directcolor": "778899",
     "directopa": 0.9,
     "gesPos": "cc",
-    "geskey": "left",
+    "geskey": "right",
     "gesture": [
       {
         "action": "G_back",
@@ -75,10 +75,10 @@
       }
     ],
     "gestureui": true,
-    "gholdkey": "shift",
+    "gholdkey": "none",
     "gholdkeydisable": "alt",
     "gholdkeytype": "true",
-    "stenable": true,
+    "stenable": false,
     "stroke": true,
     "strokecolor": "792ECF",
     "strokeopa": "0.7",
