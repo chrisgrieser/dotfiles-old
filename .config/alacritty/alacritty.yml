@@ -83,14 +83,12 @@ font:
     y: 3
 
 window:
-  position:
-    x: 0
-    y: 50
-  dimensions:
-    # column number for 1920px wide M1 Mac
-    columns: 97
-    lines: 70
   decorations: buttonless
+  position:
+    x: 0 # open to the left
+  dimensions:
+    columns: 97 # column number for 1920px wide M1 Mac
+    lines: 70
   padding:
     x: 6
     y: 6
