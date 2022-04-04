@@ -68,6 +68,16 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.call</string>
+			<key>Extension Name</key>
+			<string>Call</string>
+			<key>Package Name</key>
+			<string>Call.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
 			<string>de.chris-grieser.custom-busycal</string>
 			<key>Extension Name</key>
 			<string>BusyCal</string>
