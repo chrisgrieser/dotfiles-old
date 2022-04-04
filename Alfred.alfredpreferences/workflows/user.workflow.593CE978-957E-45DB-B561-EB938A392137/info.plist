@@ -233,7 +233,7 @@
 				<key>keyword</key>
 				<string>d</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Woxion &amp; Wortschatz Leipzig</string>
 				<key>text</key>
 				<string>Synonyme: '{query}'</string>
 				<key>withspace</key>
@@ -331,7 +331,7 @@
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>605</integer>
 		</dict>
 		<key>C250E316-8E97-429F-A193-1ED46722A912</key>
 		<dict>
