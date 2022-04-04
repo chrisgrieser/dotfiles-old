@@ -374,6 +374,35 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F2C81BD8-9FE7-49F6-AA8B-7E40D29343C0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -651,6 +680,13 @@ open -a "Twitterrific"</string>
 			<integer>40</integer>
 			<key>ypos</key>
 			<integer>25</integer>
+		</dict>
+		<key>F2C81BD8-9FE7-49F6-AA8B-7E40D29343C0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>435</integer>
 		</dict>
 		<key>FFC5ED8D-4E22-43EE-8C41-538C88A3C22F</key>
 		<dict>
