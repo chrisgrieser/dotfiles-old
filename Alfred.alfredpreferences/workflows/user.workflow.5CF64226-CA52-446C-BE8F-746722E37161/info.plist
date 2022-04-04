@@ -516,6 +516,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>93AB86ED-8EA8-4D49-A0B2-EFBA77062096</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4290352B-2477-4963-A2D3-AAAAA8ECDD02</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>95FD5E6A-0228-4FDF-9FC2-5E256C07468D</key>
 		<array>
 			<dict>
@@ -1903,10 +1916,10 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -2166,6 +2179,66 @@ end alfred_script</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>57006451-3AF6-4958-9CA3-F886E221F890</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>31</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>O</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.agiletortoise.Drafts-OSX</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>93AB86ED-8EA8-4D49-A0B2-EFBA77062096</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	tell process "Drafts" to	click menu item "Quick Search" of menu of menu item "Find" of menu "Edit" of menu bar 1
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4290352B-2477-4963-A2D3-AAAAA8ECDD02</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2750,6 +2823,13 @@ draft search and draft script reference search are based on the fantastic [Docto
 			<key>ypos</key>
 			<integer>505</integer>
 		</dict>
+		<key>4290352B-2477-4963-A2D3-AAAAA8ECDD02</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>1265</integer>
+		</dict>
 		<key>4388EBD9-6E14-49F0-AA5B-19CBBFFABFD5</key>
 		<dict>
 			<key>colorindex</key>
@@ -3022,6 +3102,15 @@ draft search and draft script reference search are based on the fantastic [Docto
 			<integer>710</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>93AB86ED-8EA8-4D49-A0B2-EFBA77062096</key>
+		<dict>
+			<key>note</key>
+			<string>Quick Switcher</string>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>1265</integer>
 		</dict>
 		<key>95FD5E6A-0228-4FDF-9FC2-5E256C07468D</key>
 		<dict>
