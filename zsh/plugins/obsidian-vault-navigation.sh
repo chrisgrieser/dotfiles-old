@@ -5,6 +5,9 @@
 # - node
 # - fzf
 # - bat
+# --------------------------------------
+# demo: https://raw.githubusercontent.com/chrisgrieser/shimmering-obsidian/main/docs/images/terminal-vault-navigation.png
+# --------------------------------------
 
 VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
 

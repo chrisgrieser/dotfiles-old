@@ -1,7 +1,7 @@
 # https://www.thorsten-hans.com/5-types-of-zsh-aliases
 
 # configurations
-alias .star="open $STARSHIP_CONFIG"
+alias .star='open $STARSHIP_CONFIG'
 alias .zsh='open ~/.zshrc'
 
 alias rr='source ~/.zshrc'
@@ -40,7 +40,7 @@ alias mkdir='mkdir -p'
 alias pip="pip3"
 
 # exa
-alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
+alias exa='exa --all --icons --group-directories-first --sort=modified'
 alias exagit='git status --short ; exa --long --grid --git --git-ignore --no-user --no-permissions --no-time --no-filesize --ignore-glob=.git'
 alias tree='exa --tree -L2'
 alias tree3='exa --tree -L3'
