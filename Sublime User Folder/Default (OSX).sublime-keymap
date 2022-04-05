@@ -183,7 +183,7 @@
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
-	{  "keys": ["super+."],
+	{  "keys": ["super+8"],
 		"command": "toggle_terminus_panel",
 		"args": {
 			"cwd": "${file_path:${folder}}",
