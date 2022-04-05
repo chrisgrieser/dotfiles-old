@@ -65,7 +65,9 @@
 	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
 
 	// Sublime Linter Navigation
-	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true } },
+	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true }, "context": [
+		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
+	] },
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
 
 	// Case Conversion
