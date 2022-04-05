@@ -59,6 +59,9 @@ case $APP_TO_UPDATE in
 	"Obsidian")
 		cp "$CUSTOM_ICON_FOLDER/Obsidian_Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
 		touch "Obsidian.app" ;;
+	"MacPass")
+		cp "$CUSTOM_ICON_FOLDER/MacPass.icns" 'MacPass.app/Contents/Resources/MacPassAppIcon.icns'
+		touch "MacPass.app" ;;
 	"Discord")
 		cp "$CUSTOM_ICON_FOLDER/Discord Black.icns" 'Discord.app/Contents/Resources/electron.icns'
 		# cp "$CUSTOM_ICON_FOLDER/Discord Alt.icns" 'Discord.app/Contents/Resources/electron.icns'

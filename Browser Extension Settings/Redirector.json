@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-03-17T00:06:44.254Z",
+    "createdAt": "2022-04-05T21:16:50.733Z",
     "redirects": [
         {
             "description": "Wikiwand",
@@ -52,6 +52,23 @@
                 "xmlhttprequest",
                 "history",
                 "other"
+            ]
+        },
+        {
+            "description": "Discord App",
+            "exampleUrl": "https://discord.com/channels/686053708261228577/840286264964022302/960973322668109844\t",
+            "exampleResult": "discord://discord.com/channels/686053708261228577/840286264964022302/960973322668109844\t",
+            "error": null,
+            "includePattern": "https?(:\\/\\/discord(app)?\\.com\\/channels\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "discord$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
             ]
         }
     ]
