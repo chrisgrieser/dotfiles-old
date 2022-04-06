@@ -53,7 +53,7 @@ workArray.forEach(item => {
 	// Alfred Workflow Repos
 	if (isAlfredWorkflow) {
 		repoName = readPlist("name", localRepoFilePath + "/info.plist");
-		iconpath = "alfred.png";
+		iconpath = localRepoFilePath + "/icon.png";
 
 	// Obsidian Plugin Repos
 	} else if (isObsiPlugin) {
