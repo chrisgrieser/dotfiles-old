@@ -356,6 +356,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>browser</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Browser Default Folder</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>528AE6EA-5209-45EE-816F-B14350E47D2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -375,27 +396,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>browser</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Browser Default Folder</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>528AE6EA-5209-45EE-816F-B14350E47D2A</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -464,9 +464,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -599,6 +599,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>alltabs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Copy the Title and URL of *all* tabs</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -639,27 +660,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>46A0180C-0144-4433-8238-86DD95349753</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>alltabs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Copy the Title and URL of *all* tabs</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -765,9 +765,9 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1112,7 +1112,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>note</key>
-			<string>HOOK: Copy Markdown Link of Current Obsidian File</string>
+			<string>Copy Markdown Link of Current Tab</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>

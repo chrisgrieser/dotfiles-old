@@ -5,7 +5,7 @@ end tell
 
 
 -- has to set the URL instead of "open location" (and its equivalents in Shell/JXA)
--- to prevent interaction with finicky
+-- to prevent `finicky` stepping in
 tell application "Safari"
 	set the URL of the current tab of the front window to currentTabUrl
 	activate
