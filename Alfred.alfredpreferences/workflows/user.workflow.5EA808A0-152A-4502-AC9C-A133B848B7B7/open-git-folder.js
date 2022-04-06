@@ -39,6 +39,7 @@ function readFile (path, encoding) {
 
 const jsonArray = [];
 let pathString = "";
+
 pathsToSearch.forEach(path => { pathString += "\"" + path + "\" " });
 const workArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; fd '\\.git$' --no-ignore --hidden " + pathString)
 	.split("\r");
