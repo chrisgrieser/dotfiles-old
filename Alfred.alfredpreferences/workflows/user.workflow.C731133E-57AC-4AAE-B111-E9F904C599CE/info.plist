@@ -107,6 +107,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>89F35AB8-AC54-4BB2-B884-9B206671D5AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>802369B2-358A-46C9-9516-940B8E3E7940</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8E20F8A9-6C70-4ADF-81BA-8BE2BEF4241E</key>
 		<array>
 			<dict>
@@ -590,6 +603,25 @@ brew home "$*"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>Uninstall with AppCleaner</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>89F35AB8-AC54-4BB2-B884-9B206671D5AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>### Requirements
@@ -673,7 +705,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>225</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -690,10 +722,21 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 		</dict>
 		<key>802369B2-358A-46C9-9516-940B8E3E7940</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>xpos</key>
 			<integer>435</integer>
 			<key>ypos</key>
 			<integer>455</integer>
+		</dict>
+		<key>89F35AB8-AC54-4BB2-B884-9B206671D5AE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>600</integer>
 		</dict>
 		<key>8E20F8A9-6C70-4ADF-81BA-8BE2BEF4241E</key>
 		<dict>
