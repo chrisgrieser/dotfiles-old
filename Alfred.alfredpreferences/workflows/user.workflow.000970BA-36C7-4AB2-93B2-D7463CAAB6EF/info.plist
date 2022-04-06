@@ -47,7 +47,7 @@
 				<key>destinationuid</key>
 				<string>6F7CBD9B-C876-48E2-B00E-92F71C1609A5</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string>Copy URL to Clipboard</string>
 				<key>vitoclose</key>
