@@ -2662,7 +2662,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>215</integer>
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
@@ -2782,7 +2782,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>215</integer>
 			<key>ypos</key>
 			<integer>540</integer>
 		</dict>
@@ -2889,7 +2889,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>215</integer>
 			<key>ypos</key>
 			<integer>665</integer>
 		</dict>
@@ -2936,7 +2936,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>395</integer>
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
@@ -3001,7 +3001,7 @@ end if</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>495</integer>
 			<key>ypos</key>
 			<integer>1035</integer>
 		</dict>
