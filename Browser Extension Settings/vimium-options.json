@@ -23,10 +23,10 @@
     },
     {
       "pattern": "https?://www.youtube.com/*",
-      "passKeys": "citmf"
+      "passKeys": "cmf"
     },
     {
-      "pattern": "https?://github.com/*/issues/?",
+      "pattern": "https?://github.com/*/issues(\\?q=*)?",
       "passKeys": "jk"
     },
     {
@@ -36,12 +36,16 @@
     {
       "pattern": "https?://www.reddit.com/*",
       "passKeys": "jk"
+    },
+    {
+      "pattern": "https?://github.com/*/issues/q=*",
+      "passKeys": "jk"
     }
   ],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "# Closing Tabs\nmap ww closeOtherTabs\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap u removeTab\n\n# Scroll/Next/Prev\nmap H goPrevious\nmap L goNext\nmap h goBack\nmap l goForward\n\n# unmap unneeded\nunmap d\nunmap B\n\n# Reload\nmap R reload hard\n\n# Omnibar\nunmap O\nmap o Vomnibar.activateInNewTab\n\n# tabs\nunmap T\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nmap g0 lastTab\nmap g1 firstTab\nunmap g$\n\n# Links\nmap yn LinkHints.activateMode action=copy-text",
+  "keyMappings": "# Closing Tabs\nmap ww removeTab count=10\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap u removeTab\n\n# Scroll/Next/Prev\nmap H goPrevious\nmap L goNext\nmap h goBack\nmap l goForward\n\n# unmap unneeded\nunmap d\nunmap B\n\n# Reload\nmap R reload hard\n\n# Omnibar\nunmap O\nmap o Vomnibar.activateInNewTab\n\n# tabs\nunmap T\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nmap g0 lastTab\nmap g1 firstTab\nunmap g$\n\n# Links\nmap yn LinkHints.activateMode action=copy-text\n\n# mimic American keyboard layout\nmap - enterFindMode",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
