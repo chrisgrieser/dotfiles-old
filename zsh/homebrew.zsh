@@ -82,7 +82,7 @@ function bi (){
 	local TYPE="$2" # formula or cask
 
 	# abort if already installed
-	brew list "$TO_INSTALL" 2> /dev/null && echo "Already installed." && return 0
+	brew list "$TO_INSTALL" &> /dev/null && echo "Already installed." && return 0
 
 	# if package does not exist, search for it via fzf
 	brew info "$TO_INSTALL" &> /dev/null

@@ -44,12 +44,15 @@
 		"arrow-spacing": "warn",
 		"keyword-spacing": "warn",
 		"spaced-comment": ["warn", "always", { "exceptions": ["-", "_"] }],
+
+		// Line Breaks
 		"object-curly-newline": ["warn", { "multiline": true }],
-		"curly": ["warn", "multi-or-nest"],
+		"newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
 		"no-multiple-empty-lines": ["warn", { "max": 2 } ],
 
 		// Brackets
 		"no-extra-parens": ["warn", "all", { "returnAssign": false }],
+		"curly": ["warn", "multi-or-nest"],
 
 		// Arrays
 		"array-callback-return": ["error", { "checkForEach": false, "allowImplicit": true }],

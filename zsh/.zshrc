@@ -14,7 +14,3 @@ source "$ZSH_DOTFILE_LOCATION"/alacritty_theme_switcher.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
 source "$ZSH_DOTFILE_LOCATION"/../pandoc/pandoc.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
