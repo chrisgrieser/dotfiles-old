@@ -9,12 +9,17 @@ function acp (){
 	git commit -m "$commitMsg"
 	git pull
 	git push
+}
 
-	if [[ "$commitMsg" =~ "#" ]] ; then
-		issueNo=$(echo "$commitMsg" | grep -Eo "#\d+" |cut -c 2-)
-		repoURL=$(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//' )
-		open -g "$repoURL"/issues/"$issueNo"
+# git add & commit
+function ac (){
+	commitMsg="$*"
+	if [[ "$commitMsg" == "" ]] ; then
+		commitMsg="patch"
 	fi
+
+	git add -A
+	git commit -m "$commitMsg"
 }
 
 alias amend='git commit --amend'
@@ -39,7 +44,7 @@ function clone(){
 	cd "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
-	if grep -q "obsidian" package-lock.json ; then
+	if grep -q "obsidian" package.json ; then
 		npm i
 		open -R "main.ts"
 		npm run dev
@@ -52,7 +57,7 @@ function sclone(){
 	cd "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
-	if grep -q "obsidian" package-lock.json ; then
+	if grep -q "obsidian" package.json ; then
 		npm i
 		open -R "main.ts"
 		npm run dev
