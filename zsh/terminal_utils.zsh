@@ -78,6 +78,9 @@ function lr (){
 	echo "Copied."
 }
 
+function view () {
+	qlmanage -p "$*" &> /dev/null
+}
 
 # extract function
 extract () {
