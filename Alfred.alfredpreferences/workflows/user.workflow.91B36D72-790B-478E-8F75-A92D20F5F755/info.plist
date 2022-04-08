@@ -551,19 +551,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C7B2820D-59AD-4472-8462-D58732668477</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2E351332-4032-4BC1-9675-824CD36EDE1D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<array>
 			<dict>
@@ -657,6 +644,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F878BAF3-EF54-40D5-A836-87FAA35D7A60</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DAEC82DD-3E99-490E-BACC-76A7516518CE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2E351332-4032-4BC1-9675-824CD36EDE1D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1111,14 +1111,14 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>C7B2820D-59AD-4472-8462-D58732668477</string>
+			<string>DAEC82DD-3E99-490E-BACC-76A7516518CE</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2669,7 +2669,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 
 Fenced Code</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>660</integer>
 		</dict>
@@ -2726,17 +2726,6 @@ Fenced Code</string>
 			<integer>305</integer>
 			<key>ypos</key>
 			<integer>1750</integer>
-		</dict>
-		<key>C7B2820D-59AD-4472-8462-D58732668477</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>Append to Clipboard</string>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>495</integer>
 		</dict>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<dict>
@@ -2809,6 +2798,15 @@ Fenced Code</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1720</integer>
+		</dict>
+		<key>DAEC82DD-3E99-490E-BACC-76A7516518CE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>500</integer>
 		</dict>
 		<key>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</key>
 		<dict>
