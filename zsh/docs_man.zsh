@@ -7,17 +7,15 @@ function h () {
 	howdoi "$*" -c -n 3
 }
 
-# open man page in new window
-if [[ "$TERM" == "alacritty" ]]; then
-	function man () {
-		which "$1" &> /dev/null || return 1
-		alacritty \
-			--option=window.position.x=400 \
-			--option=window.decorations=full \
-			--title="man $1" \
-			--command man "$1" &
-	}
-fi
+# if alacritty installed open man page in new alacritty window
+which alacritty &> /dev/null && function man () {
+	which "$1" &> /dev/null || return 1
+	alacritty \
+		--option=window.position.x=400 \
+		--option=window.decorations=full \
+		--title="man $1" \
+		--command man "$1" &
+}
 
 # man pages for zsh-builtins https://stackoverflow.com/a/35456287
 unalias run-help 2>/dev/null
