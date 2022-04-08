@@ -21,4 +21,4 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-
 tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
 
 # log
-do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') > '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
+do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
