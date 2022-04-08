@@ -228,6 +228,7 @@
 		"nldates",
 		"ol",
 		"oo",
+		"outdention",
 		"param",
 		"pdflatex",
 		"qlmarkdown",
@@ -446,6 +447,8 @@
 		"callout",
 		"templating",
 		"Callouts",
+		"Sidenote",
+		"sidenote",
 	],
 
 }
