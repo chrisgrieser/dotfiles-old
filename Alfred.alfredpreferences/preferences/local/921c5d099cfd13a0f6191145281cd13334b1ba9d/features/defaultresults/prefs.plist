@@ -5,6 +5,7 @@
 	<key>scope</key>
 	<array>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs</string>
+		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/Scripts</string>
 		<string>~/Video</string>
 	</array>
 </dict>
