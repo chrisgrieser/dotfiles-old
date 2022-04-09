@@ -4,6 +4,8 @@
 # (or change directory if a folder is selected)
 function o (){
 	local INPUT="$*"
+
+	# skip `fzf` if file is fully named (e.g. through tab-completion)
 	[[ -f "$INPUT" ]] && { open "$INPUT" ; return }
 	[[ -d "$INPUT" ]] && { cd "$INPUT" ; return }
 
@@ -13,7 +15,8 @@ function o (){
 	           --query "$INPUT" \
 	           --preview "bat --color=always --style=snip --wrap=character --tabs=3 --line-range=:100 --terminal-width=50 {}" \
 	           )
-	[[ -z "$SELECTED" ]] && return 130
+	[[ -z "$SELECTED" ]] && return 130 # abort if no selection
+
 	if [[ -d "$SELECTED" ]] ; then
 		cd "$SELECTED" || return 1
 	else
