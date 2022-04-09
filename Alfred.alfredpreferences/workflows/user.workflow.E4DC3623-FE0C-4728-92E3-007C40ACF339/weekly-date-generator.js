@@ -3,10 +3,10 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 const dateFormatOption = { year: 'numeric', month: 'short', day: '2-digit' };
 
-function run (argv){
+function run (argv) {
 
 	ObjC.import('stdlib');
-	app = Application.currentApplication();
+	const app = Application.currentApplication();
 	app.includeStandardAdditions = true;
 
 	function onlineJSON (url){
@@ -26,7 +26,7 @@ function run (argv){
 				exportable: false
 			});
 		week_counter = 0;
-	} 
+	}
 
 	//calculate new date
 	let firstDate = new Date($.getenv('startdate'));

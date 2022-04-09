@@ -8,11 +8,11 @@
 	<string>Academic</string>
 	<key>connections</key>
 	<dict>
-		<key>1EC08C1B-C915-47E2-8216-C7E5FC563E70</key>
+		<key>12847B13-277D-4EF2-B65C-2F594D522510</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9781A4AD-6D8E-49A5-B943-4C2F73C60485</string>
+				<string>A0AD41AF-569F-405D-BB88-29B96C8DF007</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1EC08C1B-C915-47E2-8216-C7E5FC563E70</string>
+				<string>12847B13-277D-4EF2-B65C-2F594D522510</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -52,19 +52,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F00C2986-4FD7-478F-B72E-810CA90E50D0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9781A4AD-6D8E-49A5-B943-4C2F73C60485</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A0AD41AF-569F-405D-BB88-29B96C8DF007</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -207,30 +194,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>let today = new Date();
-today.toISOString().slice(0,10);</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1EC08C1B-C915-47E2-8216-C7E5FC563E70</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>subtext</key>
@@ -271,23 +234,19 @@ today.toISOString().slice(0,10);</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
+				<key>argument</key>
+				<string>{date:yyyy-MM-dd}</string>
+				<key>passthroughargument</key>
 				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>9781A4AD-6D8E-49A5-B943-4C2F73C60485</string>
+			<string>12847B13-277D-4EF2-B65C-2F594D522510</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -310,17 +269,17 @@ https://github.com/chrisgrieser/Alfred-weekly-date-generator
 Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>1EC08C1B-C915-47E2-8216-C7E5FC563E70</key>
+		<key>12847B13-277D-4EF2-B65C-2F594D522510</key>
 		<dict>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>385</integer>
 		</dict>
 		<key>54362C42-D049-45E7-B8AD-9F82A154B1BA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
@@ -334,28 +293,21 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>931A201F-67BF-4D23-845D-15074A56A83D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>735</integer>
+			<integer>605</integer>
 			<key>ypos</key>
 			<integer>250</integer>
-		</dict>
-		<key>9781A4AD-6D8E-49A5-B943-4C2F73C60485</key>
-		<dict>
-			<key>xpos</key>
-			<integer>380</integer>
-			<key>ypos</key>
-			<integer>385</integer>
 		</dict>
 		<key>A0AD41AF-569F-405D-BB88-29B96C8DF007</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>320</integer>
 			<key>ypos</key>
 			<integer>355</integer>
 		</dict>
 		<key>F00C2986-4FD7-478F-B72E-810CA90E50D0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>680</integer>
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
@@ -376,9 +328,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>lang</key>
 		<string>de-DE</string>
 		<key>startdate</key>
-		<string>2021-12-01</string>
+		<string>2022-04-18</string>
 		<key>week_counter</key>
-		<string>14</string>
+		<string>1</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
