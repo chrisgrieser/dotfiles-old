@@ -197,7 +197,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>subtext</key>
-				<string>ISO Date</string>
+				<string>Format: YYYY-MM-DD</string>
 				<key>text</key>
 				<string>New Start Date: '{query}'</string>
 				<key>withspace</key>
@@ -218,9 +218,9 @@
 				<key>keyword</key>
 				<string>weekly</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Set new Start Date</string>
 				<key>text</key>
-				<string>Set new Start Date for Weekly Date</string>
+				<string>Weekly Date Generator</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -328,9 +328,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>lang</key>
 		<string>de-DE</string>
 		<key>startdate</key>
-		<string>2022-04-18</string>
+		<string>2022-04-20</string>
 		<key>week_counter</key>
-		<string>0</string>
+		<string>2</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>

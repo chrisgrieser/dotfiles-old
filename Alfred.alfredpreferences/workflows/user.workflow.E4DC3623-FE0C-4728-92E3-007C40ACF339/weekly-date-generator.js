@@ -4,6 +4,7 @@
 
 function run (argv) {
 	ObjC.import("stdlib");
+
 	const app = Application.currentApplication();
 	app.includeStandardAdditions = true;
 
@@ -25,9 +26,8 @@ function run (argv) {
 	const resultInBrackets = $.getenv("in_brackets") === "true";
 
 	const dateInput = argv.join("");
-	const nextWeek = new Date();
 	let weekCounter;
-	let startDateISO;
+	let startDate;
 
 	// MAIN
 	// ------------------------
@@ -36,20 +36,23 @@ function run (argv) {
 	if (dateInput) {
 		setAlfredEnv ("startdate", dateInput);
 		weekCounter = 0;
-		startDateISO = dateInput;
+		startDate = new Date(dateInput);
 	}
 
 	else {
 		weekCounter = parseInt($.getenv("week_counter"));
 		weekCounter++; // count one more week
-		startDateISO = $.getenv("startdate");
+		startDate = new Date($.getenv("startdate"));
 	}
 	setAlfredEnv ("week_counter", weekCounter.toString()); // set week counter for next run
 
 	// calculate new date
-	const startDate = new Date(startDateISO); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse
-	nextWeek.setDate = startDate.getDate() + (7*weekCounter);
-	let output = nextWeek.toLocaleDateString(language, dateFormatOption);
+	const dayOne = startDate.getDate(); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse
+	const nextweekDay = dayOne + 7*weekCounter; // the next weeks date as days from from the StartDate's day
+
+	const nextWeek = startDate; // counts from startdate
+	nextWeek.setDate(nextweekDay); // counting from the startDate, update to the new day
+	let output = nextWeek.toLocaleDateString(language, dateFormatOption); // format
 
 	// consider state-specific German holidays
 	const bundesland = $.getenv("bundesland_feiertage");
