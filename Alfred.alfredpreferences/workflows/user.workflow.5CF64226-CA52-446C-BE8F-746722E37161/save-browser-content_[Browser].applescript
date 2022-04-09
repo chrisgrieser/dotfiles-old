@@ -8,7 +8,9 @@ set markdownlink to "[" & currentTabTitle & "](" & currentTabUrl & ")"
 
 --copy selection
 set the clipboard to ""
-tell application "System Events" to keystroke "c" using {command down}
+try
+	tell application "System Events" to keystroke "c" using {command down}
+end try
 delay 0.1
 set sel to (the clipboard as text)
 if sel is not "" then set markdownlink to ("\"" & sel & "\"" & " " & markdownlink)

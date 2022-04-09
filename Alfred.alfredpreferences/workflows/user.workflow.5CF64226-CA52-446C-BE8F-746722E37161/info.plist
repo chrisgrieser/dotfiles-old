@@ -1083,7 +1083,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ddd</string>
+				<string>dd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1916,10 +1916,10 @@ tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
