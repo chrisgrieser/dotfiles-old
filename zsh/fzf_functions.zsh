@@ -4,7 +4,8 @@
 # (or change directory if a folder is selected)
 function o (){
 	local INPUT="$*"
-	[[ -e "$INPUT" ]] && { open "$INPUT" ; return }
+	[[ -f "$INPUT" ]] && { open "$INPUT" ; return }
+	[[ -d "$INPUT" ]] && { cd "$INPUT" ; return }
 
 	local SELECTED
 	SELECTED=$(fd --hidden | fzf \
