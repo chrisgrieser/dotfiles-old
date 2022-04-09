@@ -22,7 +22,7 @@ const sfPath = getEnv("vault_path") + "/.obsidian/themes/Shimmering Focus.css";
 const navigationMarkers = readFile(sfPath)
 	.split("\n")
 	.map(nm => { i++; return [nm, i] } )
-	.filter(nm => nm[0].startsWith ("/* <"));
+	.filter(nm => nm[0].startsWith("/* <") || nm[0].startsWith("# <<") );
 
 navigationMarkers.forEach(item => {
 	const name = item[0]
