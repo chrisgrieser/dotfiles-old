@@ -26,10 +26,10 @@ const navigationMarkers = readFile(sfPath)
 
 navigationMarkers.forEach(item => {
 	const name = item[0]
-		.slice(5)
-		.replace(/ \*\/$/, "")
-		.replace(/^ /, "— ")
-		.replace(/^< /, "—— ");
+		.replace(/ \*\/$/, "") // comment-ending syntax
+		.replace(/^\/\* *<+ ?/, "") // comment-beginning syntax
+		.replace(/^# ?<+ ?/, ""); // YAML-comment syntax
+
 	const line = item[1];
 
 	jsonArray.push({
