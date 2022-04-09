@@ -1,6 +1,7 @@
 # shellcheck disable=SC2164,SC1009,SC1073,SC1056
 
 # Quick Open File
+# (or change directory if a folder is selected)
 function o (){
 	local INPUT="$*"
 	[[ -e "$INPUT" ]] && { open "$INPUT" ; return }
@@ -12,8 +13,11 @@ function o (){
 	           --preview "bat --color=always --style=snip --wrap=character --tabs=3 --line-range=:100 --terminal-width=50 {}" \
 	           )
 	[[ -z "$SELECTED" ]] && return 130
-
-	open "$SELECTED"
+	if [[ -d "$SELECTED" ]] ; then
+		cd "$SELECTED" || return 1
+	else
+		open "$SELECTED"
+	fi
 }
 
 # cd to directory
