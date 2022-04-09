@@ -91,9 +91,20 @@
 		"no-unneeded-ternary": "error",
 		"no-nested-ternary": "error",
 		"yoda": "warn",
-		"no-mixed-operators": "error",
 		"no-else-return": ["error", { "allowElseIf": false} ],
 		"no-lonely-if": "error",
+		"no-mixed-operators": [
+			"error",
+			{
+				"groups": [
+					["%", "**"],
+					["&", "|", "^", "~", "<<", ">>", ">>>"],
+					["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+					["&&", "||"],
+					["in", "instanceof"]
+				]
+			}
+		],
 
 		// Imports
 		"no-duplicate-imports": "warn",
