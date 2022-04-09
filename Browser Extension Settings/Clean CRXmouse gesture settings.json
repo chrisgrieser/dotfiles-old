@@ -18,7 +18,7 @@
     "scroll": false,
     "scrolleffects": true,
     "scrollgesture": false,
-    "strokegesture": false,
+    "strokegesture": true,
     "backgroundtab": false
   },
   "gesture": {
@@ -184,7 +184,7 @@
       }
     ],
     "strmiddleenable": false,
-    "strpress": "up",
+    "strpress": "down",
     "strright": [
       {
         "action": "G_lefttab"
