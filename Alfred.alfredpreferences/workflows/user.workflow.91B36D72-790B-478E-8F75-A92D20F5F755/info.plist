@@ -229,6 +229,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92F03F17-1D04-4164-AEF4-02F8DBEB8C78</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>486FF03E-2E20-4E44-AD29-57A806D12B25</key>
 		<array>
 			<dict>
@@ -525,19 +538,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C4AE5520-0B4C-4A0D-A353-59BBFB979FA2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BCAE773E-2CD3-4CBF-B877-3F90B0534A11</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C4CED4ED-95CD-4CE8-B72A-548CD1FC1FE0</key>
 		<array>
 			<dict>
@@ -798,31 +798,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtextrtf</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c84706\cname controlTextColor;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs26 \cf2 \{clipboard:1\}}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -855,6 +830,31 @@
 			<string>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtextrtf</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c84706\cname controlTextColor;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \{clipboard:1\}}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -961,6 +961,67 @@ end alfred_script</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+					<string>md.obsidian</string>
+					<string>com.brave.Browser</string>
+					<string>com.sublimetext.4</string>
+					<string>com.agiletortoise.Drafts-OSX</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events" 
+		key code 123 using {command down}
+		key code 124 using {command down, shift down}
+		key code 51
+		key code 51
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>92F03F17-1D04-4164-AEF4-02F8DBEB8C78</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
 				<integer>9</integer>
 				<key>hotmod</key>
 				<integer>1835008</integer>
@@ -1021,44 +1082,6 @@ end alfred_script</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>25A411B2-E80F-403A-B5FD-3687171168EC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}!!</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>367EF5DF-53C7-4731-A1DC-185C54069491</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>k</string>
-				<key>subtext</key>
-				<string>Markdown Link</string>
-				<key>text</key>
-				<string>SearchLink: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>22CE272A-A695-4C98-8ADF-E1B98667D3B6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1142,21 +1165,38 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
+				<key>argument</key>
+				<string>{query}!!</string>
+				<key>passthroughargument</key>
 				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>SearchLink</string>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C4AE5520-0B4C-4A0D-A353-59BBFB979FA2</string>
+			<string>367EF5DF-53C7-4731-A1DC-185C54069491</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>k</string>
+				<key>subtext</key>
+				<string>Markdown Link</string>
+				<key>text</key>
+				<string>SearchLink: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>22CE272A-A695-4C98-8ADF-E1B98667D3B6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2408,9 +2448,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Markdown Link</string>
 			<key>xpos</key>
-			<integer>735</integer>
+			<integer>730</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>480</integer>
 		</dict>
 		<key>23FC8720-8693-4949-B7F9-8AB0A8FACF1B</key>
 		<dict>
@@ -2428,9 +2468,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>only URL</string>
 			<key>xpos</key>
-			<integer>735</integer>
+			<integer>730</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>355</integer>
 		</dict>
 		<key>282E06F3-BEAC-4C29-9BAA-962FE0AD494F</key>
 		<dict>
@@ -2486,9 +2526,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>900</integer>
+			<integer>885</integer>
 			<key>ypos</key>
-			<integer>350</integer>
+			<integer>440</integer>
 		</dict>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<dict>
@@ -2531,6 +2571,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>570</integer>
 			<key>ypos</key>
 			<integer>770</integer>
+		</dict>
+		<key>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Delete Line</string>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 		<key>486FF03E-2E20-4E44-AD29-57A806D12B25</key>
 		<dict>
@@ -2684,6 +2735,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
+		<key>92F03F17-1D04-4164-AEF4-02F8DBEB8C78</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>775</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
 		<key>9DCD7FD1-1579-478A-A393-219BC30CC5A1</key>
 		<dict>
 			<key>colorindex</key>
@@ -2788,15 +2848,6 @@ Fenced Code</string>
 			<integer>345</integer>
 			<key>ypos</key>
 			<integer>50</integer>
-		</dict>
-		<key>C4AE5520-0B4C-4A0D-A353-59BBFB979FA2</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>735</integer>
-			<key>ypos</key>
-			<integer>490</integer>
 		</dict>
 		<key>C4CED4ED-95CD-4CE8-B72A-548CD1FC1FE0</key>
 		<dict>
