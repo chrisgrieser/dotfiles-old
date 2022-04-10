@@ -190,6 +190,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
 		<array>
 			<dict>
@@ -806,6 +819,62 @@
 			<string>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>38</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>J</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events" 
+		key code 123 using {option down}
+		key code 124 using {option down, shift down}
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2251,6 +2320,15 @@ echo -n "[""$title""](""$url"")"</string>
 Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>05714A54-FE1E-4037-95AE-84703B8C0A4B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>775</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
 		<key>06C2FE7A-3927-456E-910F-A076B3B93DD5</key>
 		<dict>
 			<key>colorindex</key>
@@ -2391,6 +2469,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>735</integer>
 			<key>ypos</key>
 			<integer>835</integer>
+		</dict>
+		<key>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>expand to word</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>20</integer>
 		</dict>
 		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
 		<dict>
@@ -2876,7 +2965,7 @@ Fenced Code</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1870</integer>
 		</dict>
