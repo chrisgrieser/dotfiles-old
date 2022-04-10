@@ -154,9 +154,9 @@
 				<key>boot</key>
 				<true/>
 				<key>key</key>
-				<string>D5FA581F-BDA2-45D7-AB33-7D00B23297FD</string>
+				<string>F54B72EB-D1BB-4767-AC88-95A147BB0F06</string>
 				<key>name</key>
-				<string>Samsung SSD 1TB</string>
+				<string>Data</string>
 			</dict>
 		</array>
 		<key>Disks_MenubarMode</key>
@@ -259,7 +259,7 @@
 		<key>Memory_AppFormat</key>
 		<integer>2</integer>
 		<key>Memory_DisplayFormat</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>Memory_DropdownOrderDisabled</key>
 		<string></string>
 		<key>Memory_IgnoreInactive</key>
@@ -286,7 +286,7 @@
 		<key>Memory_ProcessCount</key>
 		<integer>15</integer>
 		<key>Menubar-DetectedColor</key>
-		<string>0.00 0.00 0.00 0.85</string>
+		<string>1.00 1.00 1.00 0.90</string>
 		<key>MenubarGraphOpacity</key>
 		<real>0.0</real>
 		<key>MenubarGraphOpacity-Dark</key>
@@ -328,15 +328,15 @@
 		<key>Network_DropdownOrderDisabled</key>
 		<string></string>
 		<key>Network_GraphDownload</key>
-		<string>0.57 0.57 0.57 1.00</string>
+		<string>0.66 0.66 0.66 1.00</string>
 		<key>Network_GraphMode</key>
 		<integer>1</integer>
 		<key>Network_GraphShowBackground</key>
 		<integer>1</integer>
 		<key>Network_GraphUpload</key>
-		<string>0.57 0.57 0.57 1.00</string>
+		<string>0.37 0.37 0.37 1.00</string>
 		<key>Network_GraphWidth</key>
-		<real>60</real>
+		<real>70</real>
 		<key>Network_MenubarFontStyle</key>
 		<integer>0</integer>
 		<key>Network_MenubarMode</key>
@@ -345,15 +345,21 @@
 				<key>key</key>
 				<string>101</string>
 				<key>uuid</key>
-				<string>79C1D888-8E8B-4A79-A62E-62DF07421015</string>
+				<string>64B1057A-98BC-4B32-B8EF-D821FC36BC64</string>
 				<key>width</key>
 				<integer>4</integer>
 			</dict>
 			<dict>
 				<key>key</key>
+				<string>1</string>
+				<key>uuid</key>
+				<string>60DAF7C6-18AA-41C9-A4E8-FCFAC3379637</string>
+			</dict>
+			<dict>
+				<key>key</key>
 				<string>0</string>
 				<key>uuid</key>
-				<string>A4278BDA-C353-4A56-BCB1-2AE952F5CDB4</string>
+				<string>217F2EF4-1B37-4EB2-B78B-08DBC3689EF2</string>
 			</dict>
 		</array>
 		<key>Network_MenubarUnitLevel</key>
@@ -365,36 +371,7 @@
 		<key>Network_StatusCheckFlatten</key>
 		<integer>0</integer>
 		<key>Notifications-Items</key>
-		<array>
-			<dict>
-				<key>duration</key>
-				<string>20.00</string>
-				<key>enabled</key>
-				<true/>
-				<key>notification-type</key>
-				<string>1</string>
-				<key>rule-type</key>
-				<string>4</string>
-				<key>uuid</key>
-				<string>5AF80858-620A-466D-9E7B-CFA0AC8371B4</string>
-				<key>value</key>
-				<string>3000.00</string>
-			</dict>
-			<dict>
-				<key>duration</key>
-				<string>20.00</string>
-				<key>enabled</key>
-				<true/>
-				<key>notification-type</key>
-				<string>1</string>
-				<key>rule-type</key>
-				<string>0</string>
-				<key>uuid</key>
-				<string>B2D17D06-3A63-4B17-A8C9-CCB658307081</string>
-				<key>value</key>
-				<string>80.00</string>
-			</dict>
-		</array>
+		<array/>
 		<key>Sensors-Limits-Updated</key>
 		<true/>
 		<key>Sensors_DropdownOrderDisabled</key>
