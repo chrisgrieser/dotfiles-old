@@ -884,7 +884,7 @@ end if</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>or not a first-party app</string>
+				<string>(or a first-party app)</string>
 				<key>title</key>
 				<string>🛑 No AppleScript Dictionary</string>
 			</dict>
