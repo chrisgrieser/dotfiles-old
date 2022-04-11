@@ -1,8 +1,12 @@
 #!/usr/bin/env osascript
 set AppleScript's text item delimiters to ""
 
+# empty the clipboard
 do shell script ("pbcopy < /dev/null")
-tell application "System Events" to keystroke "c" using {command down}
+
+try
+	tell application "System Events" to keystroke "c" using {command down}
+end try
 delay 0.2
 set tabSelection to the clipboard
 

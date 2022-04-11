@@ -36,6 +36,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5F4417F9-1E15-4514-8C37-FEBEE68D292A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>95028977-E511-4F96-8A31-8A1EA3939515</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>69E45CE7-99B7-48A7-971A-A5DC960D59F1</key>
 		<array>
 			<dict>
@@ -146,7 +159,7 @@
 				<key>argument</key>
 				<integer>1</integer>
 				<key>focusedappvariable</key>
-				<true/>
+				<false/>
 				<key>focusedappvariablename</key>
 				<string>focusedapp</string>
 				<key>hotkey</key>
@@ -161,10 +174,10 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -235,6 +248,64 @@
 			<string>F1646853-4BE7-44BE-985F-9282246BAFCA</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>39</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>Ä</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.brave.Browser</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>5F4417F9-1E15-4514-8C37-FEBEE68D292A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>mailto:?body=
+
+Viele Grüße
+Chris</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>95028977-E511-4F96-8A31-8A1EA3939515</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -412,6 +483,34 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	tell process "Mimestream"
+		set frontmost to true
+		click menu item "Open in Gmail" of menu "Message" of menu bar 1
+	end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>send-mail_[Browser].applescript</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8A5B08EE-864A-4668-98C6-D4F8E9A56580</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -444,34 +543,6 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "Mimestream"
-		set frontmost to true
-		click menu item "Open in Gmail" of menu "Message" of menu bar 1
-	end tell
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>send-mail_[Browser].applescript</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8A5B08EE-864A-4668-98C6-D4F8E9A56580</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -482,27 +553,27 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>580</integer>
+			<integer>725</integer>
 		</dict>
 		<key>436E6838-C21C-4927-B4B9-D7CCB67587DE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>580</integer>
+			<integer>725</integer>
 		</dict>
 		<key>4D67ED53-EADE-458A-B761-7F5070BEABA6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>600</integer>
 		</dict>
 		<key>50B66C20-4163-4A8A-A8C9-AFC175AEA52D</key>
 		<dict>
@@ -511,9 +582,9 @@ end tell</string>
 			<key>note</key>
 			<string>search query in Mimestream</string>
 			<key>xpos</key>
-			<integer>305</integer>
+			<integer>300</integer>
 			<key>ypos</key>
-			<integer>305</integer>
+			<integer>450</integer>
 		</dict>
 		<key>5BD7290A-4D3C-4A41-A4D4-668385E514AB</key>
 		<dict>
@@ -526,23 +597,34 @@ end tell</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>5F4417F9-1E15-4514-8C37-FEBEE68D292A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Mail the current Browser Tab</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>165</integer>
+		</dict>
 		<key>69E45CE7-99B7-48A7-971A-A5DC960D59F1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>600</integer>
 		</dict>
 		<key>8A5B08EE-864A-4668-98C6-D4F8E9A56580</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>850</integer>
 		</dict>
 		<key>919C67AD-F9F2-4691-A835-0E3807CABF9F</key>
 		<dict>
@@ -553,6 +635,17 @@ end tell</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>95028977-E511-4F96-8A31-8A1EA3939515</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>haus extra rows below (arrow down to scroll down)</string>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>165</integer>
+		</dict>
 		<key>9BF84B32-0217-4A0F-9F75-E541FFDA268D</key>
 		<dict>
 			<key>colorindex</key>
@@ -560,9 +653,9 @@ end tell</string>
 			<key>note</key>
 			<string>Search Mail</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>315</integer>
 		</dict>
 		<key>C0DA5B2B-624A-4F09-956B-68158231988A</key>
 		<dict>
@@ -571,9 +664,9 @@ end tell</string>
 			<key>note</key>
 			<string>Newsletter with attachments</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>305</integer>
+			<integer>450</integer>
 		</dict>
 		<key>CE7614ED-D40C-491F-9512-567F3BDB68C0</key>
 		<dict>
@@ -582,18 +675,18 @@ end tell</string>
 			<key>note</key>
 			<string>open in Gmail</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>850</integer>
 		</dict>
 		<key>DA6F5742-B25C-4044-A613-90AFAA7C559F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>480</integer>
 		</dict>
 		<key>F1646853-4BE7-44BE-985F-9282246BAFCA</key>
 		<dict>
