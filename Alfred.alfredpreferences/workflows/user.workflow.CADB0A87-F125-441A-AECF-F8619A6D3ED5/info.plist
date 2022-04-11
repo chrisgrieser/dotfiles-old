@@ -34,11 +34,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4D326BA4-F75C-4A58-97D6-ACECF55E1892</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D8FE612-017D-463D-B8AC-64B620098F44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5D57E096-989E-472D-97A9-4C0D0058DCB3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>78342F5B-52F8-45DA-B45D-C779FEEDAC48</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6059A2C7-C34E-4649-851C-B7FE1C68172E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>411CD946-A5F5-4E43-B66A-D5BE1FF9C1F0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,11 +90,11 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>requires Mouse 4/5 set to F13/14 via Karabiner Elements</string>
+	<string>requires Mouse 4/5 set to F13/14 via Karabiner Elements. Sublime Mousekeys set in Sublime configs</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Mousekey Remapping. Sublime Mousekeys set in Sublime configs</string>
+	<string>Mousekey Remapping</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -131,28 +157,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-	tell process "Mimestream"
-		set frontmost to true
-		click menu item "Move to Trash" of menu "Message" of menu bar 1
-	end tell
-end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>58765C6A-C493-4DD3-8F56-0AB9EA7E61ED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -188,6 +192,49 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+	tell process "Mimestream"
+		set frontmost to true
+		click menu item "Move to Trash" of menu "Message" of menu bar 1
+	end tell
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>58765C6A-C493-4DD3-8F56-0AB9EA7E61ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>w</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E966B629-BB66-42E4-AE18-46000673B520</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -219,27 +266,6 @@ end alfred_script</string>
 			<string>38A19081-00A4-48B7-A648-4DFF5E9726A9</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>w</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1048576</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>E966B629-BB66-42E4-AE18-46000673B520</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -299,6 +325,118 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>107</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F14</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4D326BA4-F75C-4A58-97D6-ACECF55E1892</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↑</string>
+				<key>keycode</key>
+				<integer>126</integer>
+				<key>keymod</key>
+				<integer>11010048</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7D8FE612-017D-463D-B8AC-64B620098F44</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>105</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F13</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>6059A2C7-C34E-4649-851C-B7FE1C68172E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↓</string>
+				<key>keycode</key>
+				<integer>125</integer>
+				<key>keymod</key>
+				<integer>11010048</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>411CD946-A5F5-4E43-B66A-D5BE1FF9C1F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -307,7 +445,7 @@ end alfred_script</string>
 		<key>38A19081-00A4-48B7-A648-4DFF5E9726A9</key>
 		<dict>
 			<key>note</key>
-			<string>Mouse 4</string>
+			<string>Mouse 4 (top)</string>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
@@ -321,6 +459,24 @@ end alfred_script</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>475</integer>
+		</dict>
+		<key>411CD946-A5F5-4E43-B66A-D5BE1FF9C1F0</key>
+		<dict>
+			<key>note</key>
+			<string>forward</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
+		<key>4D326BA4-F75C-4A58-97D6-ACECF55E1892</key>
+		<dict>
+			<key>note</key>
+			<string>Mouse 4</string>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>620</integer>
 		</dict>
 		<key>58765C6A-C493-4DD3-8F56-0AB9EA7E61ED</key>
 		<dict>
@@ -339,6 +495,15 @@ end alfred_script</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>6059A2C7-C34E-4649-851C-B7FE1C68172E</key>
+		<dict>
+			<key>note</key>
+			<string>Mouse 5</string>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>765</integer>
 		</dict>
 		<key>691D9072-2B5B-4AC3-9794-324C7242858F</key>
 		<dict>
@@ -366,6 +531,15 @@ end alfred_script</string>
 			<integer>250</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>7D8FE612-017D-463D-B8AC-64B620098F44</key>
+		<dict>
+			<key>note</key>
+			<string>back</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>620</integer>
 		</dict>
 		<key>E966B629-BB66-42E4-AE18-46000673B520</key>
 		<dict>
