@@ -42,7 +42,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Mousekey Remapping</string>
+	<string>Mousekey Remapping. Sublime Mousekeys set in Sublime configs</string>
 	<key>objects</key>
 	<array>
 		<dict>

@@ -110,7 +110,7 @@ symbol = ""
 format = "[ +$number $symbol ]($style)"
 style = "fg:white"
 symbol_threshold = 1
-number_threshold = 1
+number_threshold = 2
 
 [memory_usage]
 disabled = false
