@@ -19,6 +19,8 @@
 	},
 
 	// Undo/Redo Selection
-	{ "button": "button4", "modifiers": [], "command": "jump_back" },
-	{ "button": "button5", "modifiers": [], "command": "jump_forward" },
+	// basically this is active, but Mosue 4 and Mouse 5 have been remapped to
+	// F13 and F14, so the following are set in the keyboard mappings
+	// { "button": "button4", "modifiers": [], "command": "jump_back" },
+	// { "button": "button5", "modifiers": [], "command": "jump_forward" },
 ]

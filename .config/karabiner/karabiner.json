@@ -62,7 +62,17 @@
                             },
                             "to": [
                                 {
-                                    "pointing_button": "button4"
+                                    "key_code": "f13"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "pointing_button": "button5"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f14"
                                 }
                             ]
                         }

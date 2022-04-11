@@ -132,6 +132,8 @@
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
 	{ "keys": ["super+shift+u"], "command": "jump_forward" },
+	{ "keys": ["f14"], "command": "jump_back" },
+	{ "keys": ["f13"], "command": "jump_forward" },
 
    // Disable Saving
    { "keys": ["super+shift+s"], "command": "noop" },

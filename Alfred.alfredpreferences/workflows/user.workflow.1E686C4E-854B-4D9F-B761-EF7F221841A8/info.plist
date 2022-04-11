@@ -745,12 +745,18 @@ end tell</string>
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -849,6 +855,41 @@ end tell</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F0EDCFAD-8C4F-4301-B039-8F83D6A297F8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2184,7 +2225,7 @@ docx "$*"</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>655</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
@@ -2276,6 +2317,8 @@ docx "$*"</string>
 		</dict>
 		<key>7809C569-E0A6-4B9F-98C7-F8B42BA3FA0D</key>
 		<dict>
+			<key>note</key>
+			<string>Mouse 4</string>
 			<key>xpos</key>
 			<integer>835</integer>
 			<key>ypos</key>
@@ -2286,7 +2329,7 @@ docx "$*"</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>655</integer>
 			<key>ypos</key>
 			<integer>425</integer>
 		</dict>
@@ -2506,7 +2549,7 @@ docx "$*"</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>655</integer>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
@@ -2546,12 +2589,21 @@ docx "$*"</string>
 			<key>ypos</key>
 			<integer>1895</integer>
 		</dict>
+		<key>F0EDCFAD-8C4F-4301-B039-8F83D6A297F8</key>
+		<dict>
+			<key>note</key>
+			<string>Mouse 5</string>
+			<key>xpos</key>
+			<integer>835</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
 		<key>F2CACFF9-2F72-4328-8CF1-86E74570803E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>655</integer>
 			<key>ypos</key>
 			<integer>155</integer>
 		</dict>
