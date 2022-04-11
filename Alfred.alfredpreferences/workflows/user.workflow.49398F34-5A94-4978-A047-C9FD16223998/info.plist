@@ -523,7 +523,7 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>scroll up</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>235</integer>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
