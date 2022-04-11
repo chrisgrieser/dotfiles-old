@@ -489,7 +489,7 @@ end tell</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>sublime</string>
+				<string>default</string>
 				<key>subtext</key>
 				<string>copy to working directory</string>
 				<key>text</key>

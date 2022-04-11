@@ -1,11 +1,24 @@
 [
+	// Multi-cursor
 	{
 		"button": "button1", "count": 1, "modifiers": ["alt"],
 		"press_command": "drag_select",
 		"press_args": {"additive": true}
 	},
+	// Double CLick + Multi-select
+	{
+		"button": "button1", "count": 2, "modifiers": ["alt"],
+		"press_command": "drag_select",
+		"press_args": {"by": "words", "additive": true}
+	},
+
+	// Open URL under Cursor
 	{
 		"button": "button1", "count": 1, "modifiers": ["super"],
 		"press_command": "open_url_under_cursor"
-	}
+	},
+
+	// Undo/Redo Selection
+	{ "button": "button4", "modifiers": [], "command": "jump_back" },
+	{ "button": "button5", "modifiers": [], "command": "jump_forward" },
 ]

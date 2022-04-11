@@ -742,6 +742,35 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>7809C569-E0A6-4B9F-98C7-F8B42BA3FA0D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
 				<integer>118</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
@@ -2244,6 +2273,13 @@ docx "$*"</string>
 			<integer>70</integer>
 			<key>ypos</key>
 			<integer>1260</integer>
+		</dict>
+		<key>7809C569-E0A6-4B9F-98C7-F8B42BA3FA0D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>835</integer>
+			<key>ypos</key>
+			<integer>290</integer>
 		</dict>
 		<key>7A877877-7D5C-4D24-B15B-1627A751BFF1</key>
 		<dict>

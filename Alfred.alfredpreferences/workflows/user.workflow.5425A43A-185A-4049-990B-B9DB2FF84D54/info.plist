@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98A67FD3-419D-4728-9259-553832590541</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<array>
 			<dict>
@@ -123,27 +136,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>sf</string>
-				<key>subtext</key>
-				<string>Commit Message: '{query}'</string>
-				<key>text</key>
-				<string>⬆️ Git Push Shimmering Focus</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F50EE2DE-822A-4F52-915D-9312B6BD4582</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -171,6 +163,42 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>sf</string>
+				<key>subtext</key>
+				<string>Commit Message: '{query}'</string>
+				<key>text</key>
+				<string>⬆️ Git Push Shimmering Focus</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F50EE2DE-822A-4F52-915D-9312B6BD4582</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>440612A1-D74A-4799-A0D6-F88760AF14CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -192,15 +220,13 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
+			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>440612A1-D74A-4799-A0D6-F88760AF14CF</string>
+			<string>F8391D20-C957-42E0-A6EF-17AC298FDC3E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -224,19 +250,6 @@ zsh build.sh "$*"</string>
 			<string>1315ADE8-8316-4E94-B43C-9318E8B9351A</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>F8391D20-C957-42E0-A6EF-17AC298FDC3E</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -352,6 +365,62 @@ lineNo="$*"
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>i</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>98A67FD3-419D-4728-9259-553832590541</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -424,6 +493,13 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
+		<key>98A67FD3-419D-4728-9259-553832590541</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
 		<key>B3464F95-B489-4113-82A7-9CCB3300B0E1</key>
 		<dict>
 			<key>colorindex</key>
@@ -432,6 +508,15 @@ lineNo="$*"
 			<integer>270</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</key>
+		<dict>
+			<key>note</key>
+			<string>open Console</string>
+			<key>xpos</key>
+			<integer>15</integer>
+			<key>ypos</key>
+			<integer>450</integer>
 		</dict>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<dict>

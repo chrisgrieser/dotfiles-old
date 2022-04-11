@@ -55,6 +55,13 @@
 		{"key": "selection_empty", "operator": "equal", "operand": false},
 	] },
 
+	// Build System: Console
+	{
+		"keys": ["ctrl+escape"], "command": "show_panel",
+		"args": {"panel": "output.exec"},
+		"context": [ { "key": "panel_visible", "operand": false } ]
+	},
+
 	// Inter-File Navigation via goto or table of comments
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 	{ "keys": ["super+k"], "command": "goto_comment", "context": [
