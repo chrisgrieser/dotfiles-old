@@ -117,21 +117,21 @@
 		<array>
 			<dict>
 				<key>key</key>
+				<string>4</string>
+				<key>uuid</key>
+				<string>DD89581F-654A-4E0E-B722-2339B51D6860</string>
+			</dict>
+			<dict>
+				<key>key</key>
 				<string>1</string>
 				<key>uuid</key>
-				<string>52056EC8-89B1-48F1-A066-9A2759E6C34B</string>
+				<string>F3E62A44-667E-44B4-B918-5BA6B9648081</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>2</string>
 				<key>uuid</key>
-				<string>28AD6C54-D2A4-4457-A1CD-7F5A1168AEEB</string>
-			</dict>
-			<dict>
-				<key>key</key>
-				<string>4</string>
-				<key>uuid</key>
-				<string>E20BB1E5-2146-4AEB-8CC4-E8483A760331</string>
+				<string>1175B9B2-C450-4DAF-B6B1-EAA7A5D36900</string>
 			</dict>
 		</array>
 		<key>Disks_ActivityGraphMode</key>
@@ -272,21 +272,13 @@
 				<key>key</key>
 				<string>6</string>
 				<key>uuid</key>
-				<string>430AE4B7-EAA4-4159-87DF-A1F0807369BF</string>
-			</dict>
-			<dict>
-				<key>key</key>
-				<string>101</string>
-				<key>uuid</key>
-				<string>214A6E5A-D3D2-4B85-B7D0-AF3F97C2CA2E</string>
-				<key>width</key>
-				<integer>4</integer>
+				<string>B3C0CDFF-58EB-4932-A2E2-247351DCA8E6</string>
 			</dict>
 		</array>
 		<key>Memory_ProcessCount</key>
 		<integer>15</integer>
 		<key>Menubar-DetectedColor</key>
-		<string>1.00 1.00 1.00 0.90</string>
+		<string>0.00 0.00 0.00 0.85</string>
 		<key>MenubarGraphOpacity</key>
 		<real>0.0</real>
 		<key>MenubarGraphOpacity-Dark</key>
@@ -336,30 +328,24 @@
 		<key>Network_GraphUpload</key>
 		<string>0.37 0.37 0.37 1.00</string>
 		<key>Network_GraphWidth</key>
-		<real>70</real>
+		<real>60</real>
 		<key>Network_MenubarFontStyle</key>
 		<integer>0</integer>
 		<key>Network_MenubarMode</key>
 		<array>
 			<dict>
 				<key>key</key>
-				<string>101</string>
-				<key>uuid</key>
-				<string>64B1057A-98BC-4B32-B8EF-D821FC36BC64</string>
-				<key>width</key>
-				<integer>4</integer>
-			</dict>
-			<dict>
-				<key>key</key>
 				<string>1</string>
 				<key>uuid</key>
-				<string>60DAF7C6-18AA-41C9-A4E8-FCFAC3379637</string>
+				<string>D71C07FC-17FF-406F-B10A-44A20437B476</string>
 			</dict>
 			<dict>
 				<key>key</key>
-				<string>0</string>
+				<string>101</string>
 				<key>uuid</key>
-				<string>217F2EF4-1B37-4EB2-B78B-08DBC3689EF2</string>
+				<string>A0E587FC-4029-47F5-ADBC-13084FFD6147</string>
+				<key>width</key>
+				<integer>4</integer>
 			</dict>
 		</array>
 		<key>Network_MenubarUnitLevel</key>
