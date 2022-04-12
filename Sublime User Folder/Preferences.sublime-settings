@@ -48,7 +48,7 @@
 	"auto_hide_tabs": false,
 	"hide_tab_scrolling_buttons": true,
 	"enable_tab_scrolling": false,
-	"file_tab_style": "square", // does not support inactive pane dimming
+	"file_tab_style": "angled", // "angled" does not support inactive pane dimming
 	"highlight_modified_tabs": true,
 	"native_tabs": "system",
 
