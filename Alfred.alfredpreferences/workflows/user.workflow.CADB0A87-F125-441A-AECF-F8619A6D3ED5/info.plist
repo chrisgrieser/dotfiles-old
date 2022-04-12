@@ -254,25 +254,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Finder" to click menu item "New Finder Window" of menu "File" of menu bar 1
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>6470D811-3FCF-4D13-BD4C-5B12BF61CE9B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -308,6 +289,47 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+		tell process "Finder" to click menu item "New Finder Window" of menu "File" of menu bar 1
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>6470D811-3FCF-4D13-BD4C-5B12BF61CE9B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+	tell process "Mimestream"
+		set frontmost to true
+		click menu item "Move to Trash" of menu "Message" of menu bar 1
+	end tell
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -339,28 +361,6 @@ end alfred_script</string>
 			<string>CD2B80E8-95B4-44F0-AA98-22F2527E6329</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-	tell process "Mimestream"
-		set frontmost to true
-		click menu item "Move to Trash" of menu "Message" of menu bar 1
-	end tell
-end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -707,7 +707,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>note</key>
-			<string>forward</string>
+			<string>channel down</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
@@ -765,7 +765,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>note</key>
-			<string>close all tabs</string>
+			<string>close all tabs &amp; lose focus</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
@@ -798,7 +798,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>note</key>
-			<string>back</string>
+			<string>channel up</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
