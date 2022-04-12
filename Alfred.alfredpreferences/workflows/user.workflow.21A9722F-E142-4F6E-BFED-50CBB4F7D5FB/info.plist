@@ -90,6 +90,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5D0024E-316C-4A4C-BEA4-7366C58BF580</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>72429B6F-6A52-4E6C-93A4-FD88489A22F2</key>
 		<array>
 			<dict>
@@ -296,19 +309,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
-			<key>uid</key>
-			<string>D3101C8E-86A8-40F1-8C6A-70B2A6C75FD2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>soundname</key>
 				<string>Blow</string>
 				<key>systemsound</key>
@@ -318,6 +318,19 @@
 			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
 			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinterminal</string>
+			<key>uid</key>
+			<string>D3101C8E-86A8-40F1-8C6A-70B2A6C75FD2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -341,6 +354,29 @@
 			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>shortcuts2alfred.py</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF914E27-A341-4A6B-A7FF-20CBE3711527</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -390,29 +426,6 @@
 			<string>EA308BDF-BCED-4117-9030-4669B0788A69</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>shortcuts2alfred.py</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CF914E27-A341-4A6B-A7FF-20CBE3711527</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -544,6 +557,42 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/Applications/Alfred 4.app/Contents/Preferences</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D5D0024E-316C-4A4C-BEA4-7366C58BF580</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>alfred preference file</string>
+				<key>subtext</key>
+				<string>Reveal in Finder</string>
+				<key>text</key>
+				<string>⚙️📄 Alfred Preference File</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1007,6 +1056,15 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
+		<key>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>525</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
 		<key>72429B6F-6A52-4E6C-93A4-FD88489A22F2</key>
 		<dict>
 			<key>xpos</key>
@@ -1124,6 +1182,15 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>30</integer>
+		</dict>
+		<key>D5D0024E-316C-4A4C-BEA4-7366C58BF580</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>510</integer>
 		</dict>
 		<key>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</key>
 		<dict>

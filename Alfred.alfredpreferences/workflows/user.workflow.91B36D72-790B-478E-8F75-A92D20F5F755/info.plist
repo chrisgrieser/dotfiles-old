@@ -973,8 +973,9 @@ end alfred_script</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.apple.finder</string>
-					<string>md.obsidian</string>
 					<string>com.brave.Browser</string>
+					<string>md.obsidian</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
 				</array>
