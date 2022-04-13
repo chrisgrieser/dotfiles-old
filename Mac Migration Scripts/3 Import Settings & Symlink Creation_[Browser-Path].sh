@@ -41,6 +41,9 @@ ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
 ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
 
+# Folder Actions
+ln -s ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Folder Actions/" ~"/Library/Workflows/Applications"
+
 # .config
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC"/.config/ ~/.config

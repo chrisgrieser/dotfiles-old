@@ -356,7 +356,7 @@
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>iCloud</string>
+				<string>⚙️ iCloud</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -364,27 +364,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>8F0B3994-FF74-4C0E-98E6-6525CD5854F1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>permission</string>
-				<key>subtext</key>
-				<string>System Preferences.app</string>
-				<key>text</key>
-				<string>🍏 Grant App Permissions</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7F84BB82-B76D-434A-B196-47FB5A533FAB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -410,6 +389,27 @@
 			<string>518CF55B-069A-4D0E-8098-584ADCFD84CD</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>permission</string>
+				<key>subtext</key>
+				<string>System Preferences.app</string>
+				<key>text</key>
+				<string>🍏 Grant App Permissions</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7F84BB82-B76D-434A-B196-47FB5A533FAB</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -555,27 +555,6 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>services</string>
-				<key>subtext</key>
-				<string>Mac OS System Settings</string>
-				<key>text</key>
-				<string>Services</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
 				<string>hot corners</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
@@ -637,6 +616,27 @@
 			<string>7F0B2953-8162-4E8B-9916-BE313A221630</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>services</string>
+				<key>subtext</key>
+				<string>Mac OS System Settings</string>
+				<key>text</key>
+				<string>Services</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -837,21 +837,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -869,6 +854,21 @@
 			<string>B5CCCF47-D817-4059-95F2-496EA3C510C2</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -945,6 +945,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>7C5F88D1-CFBF-4DFE-AC23-CB563E9E8A96</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -962,21 +977,6 @@
 			<string>F62D5407-A26D-4775-8F1A-36A43B196C04</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>7C5F88D1-CFBF-4DFE-AC23-CB563E9E8A96</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
