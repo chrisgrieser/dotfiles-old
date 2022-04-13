@@ -386,7 +386,7 @@
 				<key>keyword</key>
 				<string>r</string>
 				<key>subtext</key>
-				<string>tomorrow</string>
+				<string>1️⃣ tomorrow</string>
 				<key>text</key>
 				<string>Add Task: '{query}'</string>
 				<key>withspace</key>
@@ -443,7 +443,7 @@
 				<key>keyword</key>
 				<string>r</string>
 				<key>subtext</key>
-				<string>next Monday</string>
+				<string>next Ⓜ️</string>
 				<key>text</key>
 				<string>Add Task: '{query}'</string>
 				<key>withspace</key>
@@ -494,7 +494,7 @@
 				<key>keyword</key>
 				<string>r</string>
 				<key>subtext</key>
-				<string>next Sunday</string>
+				<string>next 🔆</string>
 				<key>text</key>
 				<string>Add Task: '{query}'</string>
 				<key>withspace</key>
@@ -532,7 +532,7 @@
 				<key>keyword</key>
 				<string>r</string>
 				<key>subtext</key>
-				<string>in two days</string>
+				<string>2️⃣ days</string>
 				<key>text</key>
 				<string>Add Task: '{query}'</string>
 				<key>withspace</key>
@@ -570,7 +570,7 @@
 				<key>keyword</key>
 				<string>r</string>
 				<key>subtext</key>
-				<string>in three days</string>
+				<string>3️⃣ days</string>
 				<key>text</key>
 				<string>Add Task: '{query}'</string>
 				<key>withspace</key>
