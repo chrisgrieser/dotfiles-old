@@ -10,7 +10,7 @@ export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
 # ----------------------
 
-if [[ "$*" == "Alfred Prefs" ]]; then
+if [[ "$*" == "Alfred Preferences" ]]; then
 	cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
 	touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
 	killall "Alfred Preferences"
@@ -64,16 +64,8 @@ case $APP_TO_UPDATE in
 		touch "MacPass.app" ;;
 	"Discord")
 		cp "$CUSTOM_ICON_FOLDER/Discord Black.icns" 'Discord.app/Contents/Resources/electron.icns'
-		# cp "$CUSTOM_ICON_FOLDER/Discord Alt.icns" 'Discord.app/Contents/Resources/electron.icns'
 		touch "Discord.app" ;;
 
-   "Drafts")
-		osascript -e "tell application \"Finder\"
-			open information window of (\"/Applications/Drafts.app\" as POSIX file as alias)
-			activate
-		end tell
-		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Drafts_Green.icns\""
-		INFO_WINDOW=1 ;;
 	"Mimestream")
 		osascript -e "tell application \"Finder\"
 			open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
