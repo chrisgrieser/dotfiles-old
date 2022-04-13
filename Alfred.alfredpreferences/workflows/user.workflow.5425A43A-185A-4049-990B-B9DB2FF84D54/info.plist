@@ -8,11 +8,11 @@
 	<string>Development</string>
 	<key>connections</key>
 	<dict>
-		<key>1315ADE8-8316-4E94-B43C-9318E8B9351A</key>
+		<key>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
+				<string>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -26,6 +26,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>440612A1-D74A-4799-A0D6-F88760AF14CF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5E6686A0-B634-4A23-A4FA-7DAF29604957</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDC3D252-6578-4A57-A511-7C45C64C2CA1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -51,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F8391D20-C957-42E0-A6EF-17AC298FDC3E</string>
+				<string>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -73,11 +86,62 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5E6686A0-B634-4A23-A4FA-7DAF29604957</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>47159875-021C-4638-8CD3-E8E18E0A85DD</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>98A67FD3-419D-4728-9259-553832590541</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DDC3D252-6578-4A57-A511-7C45C64C2CA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26D32329-094D-4EE5-98BE-7D4B1C5BFA95</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -109,19 +173,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F8391D20-C957-42E0-A6EF-17AC298FDC3E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1315ADE8-8316-4E94-B43C-9318E8B9351A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -133,6 +184,42 @@
 	<string>Shimmering Focus</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>⚠️ YAML Error</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DDC3D252-6578-4A57-A511-7C45C64C2CA1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>26D32329-094D-4EE5-98BE-7D4B1C5BFA95</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -184,36 +271,51 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>YAML ERROR\n</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string> </string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>440612A1-D74A-4799-A0D6-F88760AF14CF</string>
+			<string>5E6686A0-B634-4A23-A4FA-7DAF29604957</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ git push</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>YAML ERROR</string>
+						<key>outputlabel</key>
+						<string>error</string>
+						<key>uid</key>
+						<string>47159875-021C-4638-8CD3-E8E18E0A85DD</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>pass</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
+			<string>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -226,7 +328,7 @@ zsh build.sh "$*"</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>F8391D20-C957-42E0-A6EF-17AC298FDC3E</string>
+			<string>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -247,7 +349,7 @@ zsh build.sh "$*"</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>1315ADE8-8316-4E94-B43C-9318E8B9351A</string>
+			<string>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -280,12 +382,48 @@ zsh build.sh "$*"</string>
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>⏳ git push</string>
+				<string>⏳ building...</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>B3464F95-B489-4113-82A7-9CCB3300B0E1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>440612A1-D74A-4799-A0D6-F88760AF14CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ git push</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -426,32 +564,50 @@ lineNo="$*"
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>1315ADE8-8316-4E94-B43C-9318E8B9351A</key>
+		<key>26D32329-094D-4EE5-98BE-7D4B1C5BFA95</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>1</integer>
 			<key>xpos</key>
-			<integer>495</integer>
+			<integer>825</integer>
 			<key>ypos</key>
-			<integer>65</integer>
+			<integer>15</integer>
 		</dict>
 		<key>440612A1-D74A-4799-A0D6-F88760AF14CF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>725</integer>
+			<integer>820</integer>
 			<key>ypos</key>
-			<integer>35</integer>
+			<integer>145</integer>
+		</dict>
+		<key>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>60</integer>
 		</dict>
 		<key>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>685</integer>
 			<key>ypos</key>
-			<integer>35</integer>
+			<integer>145</integer>
+		</dict>
+		<key>5E6686A0-B634-4A23-A4FA-7DAF29604957</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>45</integer>
 		</dict>
 		<key>681793A7-1E5D-456D-8593-88828D1E5C40</key>
 		<dict>
@@ -509,6 +665,15 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>145</integer>
 		</dict>
+		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>535</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
 		<key>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</key>
 		<dict>
 			<key>note</key>
@@ -517,6 +682,24 @@ lineNo="$*"
 			<integer>15</integer>
 			<key>ypos</key>
 			<integer>450</integer>
+		</dict>
+		<key>DDC3D252-6578-4A57-A511-7C45C64C2CA1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>60</integer>
 		</dict>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<dict>
@@ -528,15 +711,6 @@ lineNo="$*"
 			<integer>15</integer>
 			<key>ypos</key>
 			<integer>30</integer>
-		</dict>
-		<key>F8391D20-C957-42E0-A6EF-17AC298FDC3E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>435</integer>
-			<key>ypos</key>
-			<integer>65</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
