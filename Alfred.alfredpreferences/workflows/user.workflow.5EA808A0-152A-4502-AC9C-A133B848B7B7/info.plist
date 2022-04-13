@@ -290,6 +290,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>INPUT="$*"
+if [[ -e "$INPUT"/main.ts ]] ; then
+	open -R "$INPUT"/main.ts
+else
+	open "$INPUT"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-and-reveal.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -310,9 +338,9 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -344,34 +372,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>INPUT="$*"
-if [[ -e "$INPUT"/main.ts ]] ; then
-	open -R "$INPUT"/main.ts
-else
-	open "$INPUT"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>open-and-reveal.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -623,7 +623,7 @@ subl --command toggle_side_bar</string>
 			<key>xpos</key>
 			<integer>445</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>270</integer>
 		</dict>
 		<key>92246A7B-E550-40D1-9840-C2CB0F213DE3</key>
 		<dict>
@@ -670,7 +670,7 @@ subl --command toggle_side_bar</string>
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>270</integer>
 		</dict>
 		<key>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</key>
 		<dict>
