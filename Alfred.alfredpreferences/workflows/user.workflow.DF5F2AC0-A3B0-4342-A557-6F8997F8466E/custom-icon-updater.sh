@@ -57,7 +57,8 @@ case $APP_TO_UPDATE in
 		cp "$CUSTOM_ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
 		touch "AppCleaner.app" ;;
 	"Obsidian")
-		cp "$CUSTOM_ICON_FOLDER/Obsidian_Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
+		# cp "$CUSTOM_ICON_FOLDER/Obsidian Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
+		cp "$CUSTOM_ICON_FOLDER/Obsidian Alt 2.icns" 'Obsidian.app/Contents/Resources/icon.icns'
 		touch "Obsidian.app" ;;
 	"MacPass")
 		cp "$CUSTOM_ICON_FOLDER/MacPass.icns" 'MacPass.app/Contents/Resources/MacPassAppIcon.icns'
@@ -66,29 +67,46 @@ case $APP_TO_UPDATE in
 		cp "$CUSTOM_ICON_FOLDER/Discord Black.icns" 'Discord.app/Contents/Resources/electron.icns'
 		touch "Discord.app" ;;
 
-	"Mimestream")
+	"Microsoft Word")
 		osascript -e "tell application \"Finder\"
-			open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
+			open information window of (\"/Applications/Microsoft Word.app\" as POSIX file as alias)
 			activate
 		end tell
-		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\""
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Word.icns\""
 		INFO_WINDOW=1 ;;
+	"Microsoft Excel")
+		osascript -e "tell application \"Finder\"
+			open information window of (\"/Applications/Microsoft Excel.app\" as POSIX file as alias)
+			activate
+		end tell
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Excel.icns\""
+		INFO_WINDOW=1 ;;
+	"Mimestream")
+		# osascript -e "tell application \"Finder\"
+		# 	open information window of (\"/Applications/Mimestream.app\" as POSIX file as alias)
+		# 	activate
+		# end tell
+		# set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Mail_fancy.icns\""
+		# INFO_WINDOW=1 ;;
+		cp "$CUSTOM_ICON_FOLDER/Mail_fancy.icns" 'Mimestream.app/Contents/Resources/AppIcon.icns'
+		touch "Mimestream.app" ;;
+
 
 	"Google Docs"|"Docs")
 		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
 	"Inoreader")
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app" ;;
-	"-YouTube")
+	"-YouTube"|"YouTube")
 		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/-YouTube.app" ;;
-	"-Tagesschau")
+	"-Tagesschau"|"Tagesschau")
 		iconsur set "$PWA_FOLDER/-Tagesschau.app" ;;
-	"-Netflix")
+	"-Netflix"|"Netflix")
 		iconsur set "$PWA_FOLDER/-Netflix.app" ;;
-	"-Twitch")
+	"-Twitch"|"Twitch")
 		iconsur set "$PWA_FOLDER/-Twitch.app" ;;
-	"-BunnyFap")
+	"-BunnyFap"|"BunnyFap")
 		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
 
    *)

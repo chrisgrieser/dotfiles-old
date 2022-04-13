@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3B16CE1F-74C7-4448-890B-8FA9AC3389E4</string>
+				<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -56,55 +56,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3B16CE1F-74C7-4448-890B-8FA9AC3389E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D174C422-A9C6-46B3-802F-403DD216D6B7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>ADA6A816-66A2-4890-BCCA-337DC4C420F5</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>0350802D-1F38-47D7-8F77-44807E67ECAF</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>1E91B812-5EDC-49B4-A732-27ADEFAE215D</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -210,6 +161,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>ADE6D1C2-89C6-43CA-AA36-42EB503F1AAC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5703A3BA-05AA-455F-97B7-AFB9E13E85A4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<array>
 			<dict>
@@ -288,79 +252,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>D174C422-A9C6-46B3-802F-403DD216D6B7</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>pdf$</string>
-						<key>outputlabel</key>
-						<string>PDF</string>
-						<key>uid</key>
-						<string>1E91B812-5EDC-49B4-A732-27ADEFAE215D</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>txt$</string>
-						<key>outputlabel</key>
-						<string>plain text</string>
-						<key>uid</key>
-						<string>ADA6A816-66A2-4890-BCCA-337DC4C420F5</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>html$</string>
-						<key>outputlabel</key>
-						<string>HTML</string>
-						<key>uid</key>
-						<string>0350802D-1F38-47D7-8F77-44807E67ECAF</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>other</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>3B16CE1F-74C7-4448-890B-8FA9AC3389E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -411,7 +302,7 @@
 				<key>includesystem</key>
 				<false/>
 				<key>keyword</key>
-				<string>cc</string>
+				<string>ch</string>
 				<key>limit</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -460,6 +351,54 @@
 			<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"8ec9f70d07579ca93fdab83adc75f6377224d806.png","title":"Alfred JSON Script Filter","arg":"https:\/\/www.alfredapp.com\/help\/workflows\/inputs\/script-filter\/json\/","subtitle":"Docs"},{"imagefile":"f875c4308081a9dd601c8c8708f7d4499883b9a2.png","title":"Breadcrumbs","arg":"https:\/\/breadcrumbs-wiki.onrender.com\/docs\/Home","subtitle":"Docs"},{"imagefile":"4efc0212b48a12af0cc2a20455738bacb2e7a89c.png","title":"Dataview","arg":"https:\/\/blacksmithgu.github.io\/obsidian-dataview\/api\/code-reference\/","subtitle":"docs"},{"imagefile":"67a7f709405cb8e441a3cd44a8b9e47488fb4f00.png","title":"Templater","arg":"https:\/\/silentvoid13.github.io\/Templater\/","subtitle":"Docs"},{"imagefile":"a6a46410cb2a94f3ffee4593d5a08233648740a3.png","title":"PopClip Extensions","arg":"https:\/\/github.com\/pilotmoon\/PopClip-Extensions#table-of-contents","subtitle":"Docs"},{"imagefile":"21718b65fb54efa28b78cd54f94d210ef4cbd7ad.png","title":"Obsidian API","arg":"https:\/\/github.com\/obsidianmd\/obsidian-api\/blob\/master\/obsidian.d.ts"}]</string>
+				<key>keyword</key>
+				<string>ch</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Reference Sheets</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>ADE6D1C2-89C6-43CA-AA36-42EB503F1AAC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5703A3BA-05AA-455F-97B7-AFB9E13E85A4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1071,7 +1010,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>75</integer>
+			<integer>20</integer>
 		</dict>
 		<key>2700161D-CDE3-43DA-A39B-F25D6134C16F</key>
 		<dict>
@@ -1099,13 +1038,6 @@ end if</string>
 			<integer>490</integer>
 			<key>ypos</key>
 			<integer>675</integer>
-		</dict>
-		<key>3B16CE1F-74C7-4448-890B-8FA9AC3389E4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>65</integer>
 		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>
@@ -1142,6 +1074,13 @@ end if</string>
 			<integer>485</integer>
 			<key>ypos</key>
 			<integer>1040</integer>
+		</dict>
+		<key>5703A3BA-05AA-455F-97B7-AFB9E13E85A4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>155</integer>
 		</dict>
 		<key>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</key>
 		<dict>
@@ -1191,6 +1130,13 @@ end if</string>
 			<key>ypos</key>
 			<integer>285</integer>
 		</dict>
+		<key>ADE6D1C2-89C6-43CA-AA36-42EB503F1AAC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
 			<key>colorindex</key>
@@ -1208,13 +1154,6 @@ end if</string>
 			<integer>490</integer>
 			<key>ypos</key>
 			<integer>790</integer>
-		</dict>
-		<key>D174C422-A9C6-46B3-802F-403DD216D6B7</key>
-		<dict>
-			<key>xpos</key>
-			<integer>335</integer>
-			<key>ypos</key>
-			<integer>10</integer>
 		</dict>
 		<key>D582977E-DA6A-46AD-93B6-3FF01EBA96BE</key>
 		<dict>
@@ -1259,9 +1198,9 @@ end if</string>
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<integer>260</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
