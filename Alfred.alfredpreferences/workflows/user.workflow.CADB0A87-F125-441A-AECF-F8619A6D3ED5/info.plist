@@ -87,7 +87,18 @@
 			</dict>
 		</array>
 		<key>7F51C241-12E9-4B6F-9F15-D98D5182490D</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>286991CD-89D3-44B5-A3BA-28687E688970</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>852ED9ED-B3B3-40E6-8E57-3ED802DEA11C</key>
 		<array>
 			<dict>
@@ -141,29 +152,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>close-one-finder-window.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CA121D42-D933-4021-AAED-1EB9705B224D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -193,6 +181,29 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>5D57E096-989E-472D-97A9-4C0D0058DCB3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>close-one-finder-window.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CA121D42-D933-4021-AAED-1EB9705B224D</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -256,6 +267,25 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+		tell process "Finder" to click menu item "New Finder Window" of menu "File" of menu bar 1
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>6470D811-3FCF-4D13-BD4C-5B12BF61CE9B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -291,47 +321,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Finder" to click menu item "New Finder Window" of menu "File" of menu bar 1
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>6470D811-3FCF-4D13-BD4C-5B12BF61CE9B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-	tell process "Mimestream"
-		set frontmost to true
-		click menu item "Move to Trash" of menu "Message" of menu bar 1
-	end tell
-end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -363,6 +352,28 @@ end alfred_script</string>
 			<string>CD2B80E8-95B4-44F0-AA98-22F2527E6329</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+	tell process "Mimestream"
+		set frontmost to true
+		click menu item "Move to Trash" of menu "Message" of menu bar 1
+	end tell
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -445,7 +456,6 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.busymac.busycal3</string>
 				</array>
 				<key>relatedAppsMode</key>
@@ -549,18 +559,18 @@ end alfred_script</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>105</integer>
+				<integer>107</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F13</string>
+				<string>F14</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.busymac.busycal3</string>
+					<string>com.iconfactory.Twitterrific5</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -571,6 +581,25 @@ end alfred_script</string>
 			<string>7F51C241-12E9-4B6F-9F15-D98D5182490D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>twitterrific-scroll-up</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>de.chris-grieser.twitter-tweaks</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>286991CD-89D3-44B5-A3BA-28687E688970</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -700,6 +729,13 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
+		<key>286991CD-89D3-44B5-A3BA-28687E688970</key>
+		<dict>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
 		<key>38A19081-00A4-48B7-A648-4DFF5E9726A9</key>
 		<dict>
 			<key>colorindex</key>
@@ -736,7 +772,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<integer>645</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>320</integer>
 		</dict>
 		<key>4D326BA4-F75C-4A58-97D6-ACECF55E1892</key>
 		<dict>
@@ -858,7 +894,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>320</integer>
 		</dict>
 		<key>CA121D42-D933-4021-AAED-1EB9705B224D</key>
 		<dict>
