@@ -58,10 +58,6 @@
         "whitelist": []
       },
       {
-        "direct": "DU",
-        "action": "G_reload"
-      },
-      {
         "direct": "UD",
         "action": "G_closeothers"
       },
