@@ -78,9 +78,6 @@
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
 
 	// Case Conversion
-	{ "keys": ["ctrl+c"], "command": "convert_to_camel", "context": [ // Case Converter Plugin: Convert to camelCase
-		{ "key": "terminus_view", "operator": "not_equal" }, // context necessary to avoid conflict with Terminus
-	] },
 	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
 		{ "key": "terminus_view", "operator": "not_equal" },
 	] },
