@@ -88,19 +88,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>98A67FD3-419D-4728-9259-553832590541</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5A42BD83-D65E-4BDA-8B9E-8DDE47903E26</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
 		<array>
 			<dict>
@@ -130,7 +117,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>98A67FD3-419D-4728-9259-553832590541</string>
+				<string>C110404F-E8B9-4847-8F59-5586F146BC2A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -521,21 +508,21 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>c</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1179648</integer>
-				<key>overridewithargument</key>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events" 
+		keystroke "i" using {command down, option down}
+		delay 0.1
+		keystroke "c" using {command down, shift down}
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
-			<string>5A42BD83-D65E-4BDA-8B9E-8DDE47903E26</string>
+			<string>C110404F-E8B9-4847-8F59-5586F146BC2A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -573,27 +560,6 @@ lineNo="$*"
 			<string>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>i</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>98A67FD3-419D-4728-9259-553832590541</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -635,15 +601,6 @@ lineNo="$*"
 			<integer>685</integer>
 			<key>ypos</key>
 			<integer>145</integer>
-		</dict>
-		<key>5A42BD83-D65E-4BDA-8B9E-8DDE47903E26</key>
-		<dict>
-			<key>note</key>
-			<string>Inspector</string>
-			<key>xpos</key>
-			<integer>430</integer>
-			<key>ypos</key>
-			<integer>450</integer>
 		</dict>
 		<key>5E6686A0-B634-4A23-A4FA-7DAF29604957</key>
 		<dict>
@@ -694,15 +651,6 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
-		<key>98A67FD3-419D-4728-9259-553832590541</key>
-		<dict>
-			<key>note</key>
-			<string>Console</string>
-			<key>xpos</key>
-			<integer>270</integer>
-			<key>ypos</key>
-			<integer>450</integer>
-		</dict>
 		<key>B3464F95-B489-4113-82A7-9CCB3300B0E1</key>
 		<dict>
 			<key>colorindex</key>
@@ -711,6 +659,13 @@ lineNo="$*"
 			<integer>270</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>C110404F-E8B9-4847-8F59-5586F146BC2A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>450</integer>
 		</dict>
 		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
 		<dict>
