@@ -17,7 +17,7 @@
     "newtabposition": "chrome",
     "scroll": false,
     "scrolleffects": true,
-    "scrollgesture": false,
+    "scrollgesture": true,
     "strokegesture": true,
     "backgroundtab": false
   },
@@ -36,14 +36,6 @@
       {
         "action": "G_go",
         "direct": "R",
-        "whitelist": []
-      },
-      {
-        "action": "G_close",
-        "direct": "U",
-        "moreCloseopts": "close",
-        "moreClosesel": "chrome",
-        "moreCloseurl": "chrome://newtab/",
         "whitelist": []
       },
       {
@@ -72,6 +64,10 @@
       {
         "direct": "UD",
         "action": "G_closeothers"
+      },
+      {
+        "direct": "U",
+        "action": "G_goparent"
       }
     ],
     "gestureui": true,
@@ -83,7 +79,7 @@
     "strokecolor": "792ECF",
     "strokeopa": "0.7",
     "strokewidth": "6",
-    "tooltip": false,
+    "tooltip": true,
     "tooltipcolor": "120310",
     "tooltipopa": 0.9,
     "tooltipwidth": "23"
@@ -151,7 +147,7 @@
         "action": "G_bottom"
       }
     ],
-    "sgsleftenable": true,
+    "sgsleftenable": false,
     "sgsright": [
       {
         "action": "G_top"
@@ -161,9 +157,9 @@
       }
     ],
     "sgsrightenable": true,
-    "tablist": false,
+    "tablist": true,
     "tablistVisual": true,
-    "tablistkey": "left"
+    "tablistkey": "right"
   },
   "strokegesture": {
     "strleft": [
