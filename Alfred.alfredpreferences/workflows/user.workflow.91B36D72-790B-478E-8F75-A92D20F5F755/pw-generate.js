@@ -1,13 +1,22 @@
 #!/usr/bin/env osascript -l JavaScript
 
 function run(argv) {
-	const pwlength = parseInt(argv.join(""));
-   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-   const charactersLength = characters.length;
+	const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	const defaultLength = 32;
 
-   var result = '';
-   for ( var i = 0; i < pwlength; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-   }
-   return result;
+	// ---
+	let pwlength;
+
+	const input = argv.join("");
+	if (input) pwlength = parseInt(input);
+	else pwlength = defaultLength;
+
+	let result = "";
+	// eslint-disable-next-line curly
+	for (let i = 0; i < pwlength; i++ ) {
+		result += characters.charAt(Math.floor(Math.random() * characters.length));
+	}
+	const app = Application.currentApplication();
+	app.includeStandardAdditions = true;
+	app.setTheClipboardTo(result);
 }

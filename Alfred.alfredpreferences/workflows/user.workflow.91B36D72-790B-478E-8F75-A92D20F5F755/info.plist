@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0A09B5C8-DF00-434E-B4C7-32CAA17F4C82</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>0CE4A3B5-1B41-455F-9BAE-0B4E9B00F589</key>
 		<array>
 			<dict>
@@ -285,7 +272,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0A09B5C8-DF00-434E-B4C7-32CAA17F4C82</string>
+				<string>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -308,19 +295,6 @@
 			</dict>
 		</array>
 		<key>5F64E28B-8267-4C4F-9950-87FC7B88E356</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>65F77883-8801-4F5F-9541-DD61FAEDA59C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>65F77883-8801-4F5F-9541-DD61FAEDA59C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -972,12 +946,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
-					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>com.brave.Browser</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -1775,33 +1749,14 @@ echo -n "[""$title""](""$url"")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>0A09B5C8-DF00-434E-B4C7-32CAA17F4C82</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
 				<string>pw</string>
 				<key>subtext</key>
-				<string>Default value: {var:default_pw_length}</string>
+				<string>with length: '{query}' (default: 32)</string>
 				<key>text</key>
-				<string>Random password with length: '{query}'</string>
+				<string>Random password</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1852,11 +1807,11 @@ echo -n "[""$title""](""$url"")"</string>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<true/>
+				<false/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>to clipboard</string>
+				<string></string>
 				<key>title</key>
 				<string>✅ Password copied</string>
 			</dict>
@@ -1866,23 +1821,6 @@ echo -n "[""$title""](""$url"")"</string>
 			<string>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string></string>
-				<key>replacestring</key>
-				<string>{var:default_pw_length}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>65F77883-8801-4F5F-9541-DD61FAEDA59C</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2383,15 +2321,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1185</integer>
 		</dict>
-		<key>0A09B5C8-DF00-434E-B4C7-32CAA17F4C82</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>395</integer>
-			<key>ypos</key>
-			<integer>1110</integer>
-		</dict>
 		<key>0CE4A3B5-1B41-455F-9BAE-0B4E9B00F589</key>
 		<dict>
 			<key>colorindex</key>
@@ -2620,7 +2549,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>1110</integer>
 		</dict>
@@ -2653,15 +2582,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1110</integer>
 		</dict>
-		<key>65F77883-8801-4F5F-9541-DD61FAEDA59C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>1140</integer>
-		</dict>
 		<key>6A3635AF-A186-4AD7-8B01-5E4ED0AF55C0</key>
 		<dict>
 			<key>colorindex</key>
@@ -2676,7 +2596,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>335</integer>
 			<key>ypos</key>
 			<integer>1110</integer>
 		</dict>
