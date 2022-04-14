@@ -8,6 +8,19 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
+		<key>3D26FE0D-9464-426E-8EAA-03376F20B9CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A579C792-2660-4509-8C4E-E76865D1927E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7B86D057-DA8E-4302-AF17-83B889B48EE2</key>
 		<array>
 			<dict>
@@ -55,6 +68,27 @@
 	<string>iMessage 2FA</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↩</string>
+				<key>keycode</key>
+				<integer>36</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>A579C792-2660-4509-8C4E-E76865D1927E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -242,6 +276,13 @@ Select a 2FA code and do one of the following:
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>220</integer>
+		</dict>
+		<key>A579C792-2660-4509-8C4E-E76865D1927E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>F66B4E67-AAD4-4597-9902-E084CCFAE32F</key>
 		<dict>

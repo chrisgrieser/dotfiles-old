@@ -57,8 +57,7 @@ case $APP_TO_UPDATE in
 		cp "$CUSTOM_ICON_FOLDER/AppCleaner.icns" 'AppCleaner.app/Contents/Resources/AppCleaner.icns'
 		touch "AppCleaner.app" ;;
 	"Obsidian")
-		# cp "$CUSTOM_ICON_FOLDER/Obsidian Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
-		cp "$CUSTOM_ICON_FOLDER/Obsidian Alt 2.icns" 'Obsidian.app/Contents/Resources/icon.icns'
+		cp "$CUSTOM_ICON_FOLDER/Obsidian Square.icns" 'Obsidian.app/Contents/Resources/icon.icns'
 		touch "Obsidian.app" ;;
 	"MacPass")
 		cp "$CUSTOM_ICON_FOLDER/MacPass.icns" 'MacPass.app/Contents/Resources/MacPassAppIcon.icns'
