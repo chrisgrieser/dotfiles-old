@@ -10,6 +10,19 @@
 	<dict>
 		<key>26D32329-094D-4EE5-98BE-7D4B1C5BFA95</key>
 		<array/>
+		<key>3A8836DB-3455-405F-9E15-B2876FC9967D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E3E53E94-0FC1-4954-B5F8-257313FB7EA7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</key>
 		<array>
 			<dict>
@@ -512,7 +525,7 @@ lineNo="$*"
 				<string>on alfred_script(q)
 	tell application "System Events" 
 		keystroke "i" using {command down, option down}
-		delay 0.1
+		delay 0.2
 		keystroke "c" using {command down, shift down}
 	end tell
 end alfred_script</string>
@@ -561,6 +574,60 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>,</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3A8836DB-3455-405F-9E15-B2876FC9967D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>obsidian://advanced-uri?settingid=obsidian-style-settings</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E3E53E94-0FC1-4954-B5F8-257313FB7EA7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -574,6 +641,15 @@ end alfred_script</string>
 			<integer>825</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>3A8836DB-3455-405F-9E15-B2876FC9967D</key>
+		<dict>
+			<key>note</key>
+			<string>Open Style Settings</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>600</integer>
 		</dict>
 		<key>440612A1-D74A-4799-A0D6-F88760AF14CF</key>
 		<dict>
@@ -589,7 +665,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
@@ -629,7 +705,7 @@ end alfred_script</string>
 			<key>note</key>
 			<string>open at line</string>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>280</integer>
 		</dict>
@@ -638,7 +714,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
@@ -647,7 +723,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>160</integer>
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
@@ -656,14 +732,14 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>145</integer>
 		</dict>
 		<key>C110404F-E8B9-4847-8F59-5586F146BC2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
@@ -699,9 +775,16 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>395</integer>
 			<key>ypos</key>
 			<integer>60</integer>
+		</dict>
+		<key>E3E53E94-0FC1-4954-B5F8-257313FB7EA7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>600</integer>
 		</dict>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<dict>
