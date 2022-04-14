@@ -121,6 +121,8 @@ if [[ $NONE_FOUND == 0 ]]; then
 		open -a "$APP_TO_UPDATE"
 	fi
 	echo -n "$APP_TO_UPDATE" # pass for notication
+else
+	echo -n "No icon set up for $APP_TO_UPDATE."
 fi
 
 
