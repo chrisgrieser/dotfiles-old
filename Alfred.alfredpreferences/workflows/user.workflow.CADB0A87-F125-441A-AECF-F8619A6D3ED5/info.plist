@@ -8,6 +8,19 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
+		<key>0FCAB866-B4C8-464B-863F-A299A91B25D1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>24A0018C-3BEE-405A-80F8-2A7F174E7FA4</key>
 		<array>
 			<dict>
@@ -130,6 +143,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7FC42DC1-ECBF-410B-9AB3-C24256DB501F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>74A9911A-4FE6-473D-9417-ED21FA082A5F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -851,11 +877,132 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>←</string>
+				<key>keycode</key>
+				<integer>123</integer>
+				<key>keymod</key>
+				<integer>12058624</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>107</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F14</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0FCAB866-B4C8-464B-863F-A299A91B25D1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>→</string>
+				<key>keycode</key>
+				<integer>124</integer>
+				<key>keymod</key>
+				<integer>12058624</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>74A9911A-4FE6-473D-9417-ED21FA082A5F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>105</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F13</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>0FCAB866-B4C8-464B-863F-A299A91B25D1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>895</integer>
+		</dict>
 		<key>165F125E-400E-41C8-B4A2-92551CBF6F58</key>
 		<dict>
 			<key>colorindex</key>
@@ -882,6 +1029,17 @@ end alfred_script</string>
 			<integer>640</integer>
 			<key>ypos</key>
 			<integer>750</integer>
+		</dict>
+		<key>2CE9281F-6438-45A9-8539-37892BA383DF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Back</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>895</integer>
 		</dict>
 		<key>38A19081-00A4-48B7-A648-4DFF5E9726A9</key>
 		<dict>
@@ -1001,6 +1159,17 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
+		<key>74A9911A-4FE6-473D-9417-ED21FA082A5F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Forward</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>1040</integer>
+		</dict>
 		<key>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</key>
 		<dict>
 			<key>colorindex</key>
@@ -1060,6 +1229,15 @@ end alfred_script</string>
 			<integer>645</integer>
 			<key>ypos</key>
 			<integer>330</integer>
+		</dict>
+		<key>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>1040</integer>
 		</dict>
 		<key>9E20EC52-6674-4D94-BB19-B7A0160A1FF0</key>
 		<dict>
