@@ -946,12 +946,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
+					<string>com.agiletortoise.Drafts-OSX</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -1198,6 +1198,7 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>io.alacritty</string>
 					<string>com.sublimetext.4</string>
 				</array>
 				<key>relatedAppsMode</key>
