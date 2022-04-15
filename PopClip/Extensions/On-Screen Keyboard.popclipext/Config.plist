@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Shell Script</key>
+			<string>shortcut-run.sh</string>
+			<key>Image File</key>
+			<string>keyboard.png</string>
+			<key>Title</key>
+			<string>On-Screen Keyboard</string>
+			<key>Required Apps</key>
+				<array>
+					<string>com.brave.Browser</string>
+				</array>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Open the Accessibility Keyboard.</string>
+	<key>Extension Identifier</key>
+	<string>de.chris-grieser.on-screen-keyboard</string>
+	<key>Extension Name</key>
+	<string>On-Screen Keyboard</string>
+</dict>
+</plist>

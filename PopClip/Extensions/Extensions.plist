@@ -68,11 +68,11 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
-			<string>com.pilotmoon.popclip.extension.call</string>
+			<string>de.chris-grieser.on-screen-keyboard</string>
 			<key>Extension Name</key>
-			<string>Call</string>
+			<string>On-Screen Keyboard</string>
 			<key>Package Name</key>
-			<string>Call.popclipext</string>
+			<string>On-Screen Keyboard.popclipext</string>
 		</dict>
 		<dict>
 			<key>Enabled</key>

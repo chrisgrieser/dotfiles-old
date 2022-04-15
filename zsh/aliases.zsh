@@ -53,4 +53,4 @@ alias -g §='| grep --color -i'
 
 # Suffix Aliases
 # shellcheck disable=SC2139
-alias -s {css,ts,js,applescript,md,yml,json,plist,xml,pdf,png,jpg,jpeg}='open'
+alias -s {css,ts,js,md,yml,json,plist,xml,pdf,png,jpg,jpeg}='open'
