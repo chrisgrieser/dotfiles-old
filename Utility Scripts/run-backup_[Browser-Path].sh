@@ -1,22 +1,22 @@
 #!/bin/zsh
 DEVICE_NAME="$(scutil --get ComputerName)"
 
-# Log
-LOG_LOCATION="$(dirname "$0")"/backup.log
-echo "" >> "$LOG_LOCATION"
-echo "Backup: $(date '+%Y-%m-%d %H:%M'), $INPUT -- " >> "$LOG_LOCATION"
-
 # Backup location
-INPUT="$*"
+INPUT="$*" # volume name
 BACKUP_DEST="${INPUT/#\~/$HOME}"/Backup_"$DEVICE_NAME"
 mkdir -p "$BACKUP_DEST"
 cd "$BACKUP_DEST" || exit 1
 
+# Log (on Device)
+LOG_LOCATION="$(dirname "$0")"/backup.log
+echo "" >> "$LOG_LOCATION"
+echo -n "Backup: $(date '+%Y-%m-%d %H:%M'), $INPUT -- " >> "$LOG_LOCATION"
+
 # Brew Dumps
-BREWDUMP_PATH="$BACKUP_DEST"/install\ lists
+BREWDUMP_PATH="$BACKUP_DEST/install lists"
 mkdir "$BREWDUMP_PATH"
 brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
-npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH"/NPMfile_"$DEVICE_NAME"
+npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
 pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
 echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 
@@ -24,27 +24,29 @@ echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 function bkp () {
 	# ⚠️ `--delete` option will remove backup when source folder is empty
 	# `-hhh` highes level of human readable
-	rsync --archive --progress --delete -hhh --exclude="*/.Trash/*" "$1" "$2"
+	rsync --archive --progress --delete -h --exclude="*/.Trash/*" "$1" "$2"
 }
 
 # =========================
 # Content to Backup
 
-bkp ~'/Library/Preferences' ./Preferences
-bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' .Spotify-Mini-Player
+bkp ~'/Library/Preferences/' ./Preferences
+bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' ./Spotify-Mini-Player
 bkp ~'/Library/Fonts/' ./Fonts
-bkp ~'/Games' ./Homefolder/Games
-bkp ~'/Video' ./Homefolder/Video
-bkp ~'/RomComs' ./Homefolder/RomComs
+bkp ~'/Games/' ./Homefolder/Games
+bkp ~'/Video/' ./Homefolder/Video
+bkp ~'/RomComs/' ./Homefolder/RomComs
 bkp ~'/Library/Mobile Documents/com~apple~CloudDocs/' ./iCloud-Folder
 bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 
 # =========================
 
-# Log
+# Log (on Device)
 echo "completed: $(date '+%H:%M')" >> "$LOG_LOCATION"
-echo "Backup: $(date '+%Y-%m-%d %H:%M')" >> last_backup.log
 osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d %H:%M')"'" in workflow "de.chris-grieser.backup-utility" '
+
+# Log (on Backup Destination)
+echo "Backup: $(date '+%Y-%m-%d %H:%M')" >> last_backup.log
 
 # Notify Completion
 osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'

@@ -1,7 +1,8 @@
 cd ~/Desktop || return
 
 #Application Support
-mv -v 'Application-Support/'* ~'/Library/Application Support'
+mkdir -p ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/'
+mv -v 'Spotify-Mini-Player/' ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/'
 
 # Fonts
 mkdir -p ~'/Library/Fonts'
