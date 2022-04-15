@@ -24,19 +24,6 @@ function mkcd () {
 	cd "$1" || return
 }
 
-# Terminal Switch
-function sw () {
-	if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
-		open -a "Alacritty"
-		cd "$WD" || exit
-		exit
-	else
-		open -a "Sublime Text"
-		sleep 0.1
-		subl --command "toggle_terminus_panel { \"cwd\": \"\${file_path:\${folder}}\"  }"
-	fi
-}
-
 # restart terminal
 function rrr () {
 	nohup "$ZSH_DOTFILE_LOCATION"/restart_terminal.zsh >/dev/null &
