@@ -417,21 +417,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>"{query}" "{var:backup_destination}"</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>1E6008CC-A359-4017-8146-31C971DB1042</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -472,6 +457,21 @@
 			<string>075B91F1-976D-42B4-96E3-293F0517DB7A</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>"{query}" "{var:backup_destination}"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>1E6008CC-A359-4017-8146-31C971DB1042</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -1040,6 +1040,50 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application id "com.runningwithcrayons.Alfred" to set configuration "script_location" to value "{query}" in workflow (system attribute "alfred_workflow_bundleid") with exportable</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BFBB8395-D000-444C-BC6A-B50B390B15AD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>'{var:script_location}'</string>
+				<key>title</key>
+				<string>✅ Scripts Selected</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>799CE1E5-8C21-4CB5-BFBF-ABBCCA293FF2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -1112,50 +1156,6 @@ end run</string>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
 			<string>CC0D60EA-68F4-41E1-BB41-416CFFB90AC0</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>'{var:script_location}'</string>
-				<key>title</key>
-				<string>✅ Scripts Selected</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>799CE1E5-8C21-4CB5-BFBF-ABBCCA293FF2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application id "com.runningwithcrayons.Alfred" to set configuration "script_location" to value "{query}" in workflow (system attribute "alfred_workflow_bundleid") with exportable</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BFBB8395-D000-444C-BC6A-B50B390B15AD</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1506,7 +1506,7 @@ open "$(dirname "$script_location")"/backup.log</string>
 	<key>variables</key>
 	<dict>
 		<key>backup_destination</key>
-		<string>/Volumes/Externe C</string>
+		<string>/Volumes/Externe A</string>
 		<key>last_backup</key>
 		<string>2022-02-24 16:04</string>
 		<key>script_location</key>
