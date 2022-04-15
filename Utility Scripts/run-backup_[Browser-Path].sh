@@ -30,6 +30,8 @@ function bkp () {
 # =========================
 # Content to Backup
 
+# ⚠️ each command has to sync to individual folders, since otherwise the --delete
+# option will override the previous contents
 bkp ~'/Library/Preferences/' ./Preferences
 bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' ./Spotify-Mini-Player
 bkp ~'/Library/Fonts/' ./Fonts
