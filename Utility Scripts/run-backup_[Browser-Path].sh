@@ -21,21 +21,22 @@ pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
 echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
 
 # rsync function
-bkp () {
+function bkp () {
 	# ⚠️ `--delete` option will remove backup when source folder is empty
 	# `-hhh` highes level of human readable
 	rsync --archive --progress --delete -hhh --exclude="*/.Trash/*" "$1" "$2"
 }
 
 # =========================
+# Content to Backup
 
-bkp ~'/Library/Preferences' .
-bkp ~'/Library/Application Support/Alfred' ./Application-Support
+bkp ~'/Library/Preferences' ./Preferences
+bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' .Spotify-Mini-Player
 bkp ~'/Library/Fonts/' ./Fonts
-bkp ~'/Games' ./Homefolder
-bkp ~'/Video' ./Homefolder
-bkp ~'/RomComs' ./Homefolder
-bkp ~'/Library/Mobile Documents/com~apple~CloudDocs' ./iCloud-Folder
+bkp ~'/Games' ./Homefolder/Games
+bkp ~'/Video' ./Homefolder/Video
+bkp ~'/RomComs' ./Homefolder/RomComs
+bkp ~'/Library/Mobile Documents/com~apple~CloudDocs/' ./iCloud-Folder
 bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 
 # =========================

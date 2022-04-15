@@ -5,8 +5,10 @@
 	<key>Actions</key>
 	<array>
 		<dict>
-			<key>Shell Script</key>
+			<key>Shell Script File</key>
 			<string>shortcut-run.sh</string>
+			<key>Stoppable</key>
+			<true/>
 			<key>Image File</key>
 			<string>keyboard.png</string>
 			<key>Title</key>
@@ -17,11 +19,5 @@
 				</array>
 		</dict>
 	</array>
-	<key>Extension Description</key>
-	<string>Open the Accessibility Keyboard.</string>
-	<key>Extension Identifier</key>
-	<string>de.chris-grieser.on-screen-keyboard</string>
-	<key>Extension Name</key>
-	<string>On-Screen Keyboard</string>
 </dict>
 </plist>
