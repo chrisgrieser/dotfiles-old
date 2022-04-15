@@ -14,7 +14,7 @@ echo -n "Backup: $(date '+%Y-%m-%d %H:%M'), $INPUT -- " >> "$LOG_LOCATION"
 
 # Brew Dumps
 BREWDUMP_PATH="$BACKUP_DEST/install lists"
-mkdir "$BREWDUMP_PATH"
+mkdir -p "$BREWDUMP_PATH"
 brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
 npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
 pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
@@ -48,5 +48,5 @@ osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configu
 # Log (on Backup Destination)
 echo "Backup: $(date '+%Y-%m-%d %H:%M')" >> last_backup.log
 
-# Notify Completion
+# Notify on Completion
 osascript -e 'display notification "" with title "Backup finished." subtitle "" sound name ""'

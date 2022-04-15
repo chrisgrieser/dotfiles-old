@@ -1,54 +1,56 @@
 #!/usr/bin/env osascript -l JavaScript
 
-app = Application.currentApplication();
+const app = Application.currentApplication();
 app.includeStandardAdditions = true;
-var single_volumes = app.doShellScript("ls /Volumes").split("\r");
 
-//function to remove elements from Array
-function arrayRemove(arr, value) {
-    return arr.filter(function(elem){
-        return !elem.includes(value);
-    });
-}
+const notToDisplay = [
+	"Macintosh",
+	"Macintosh HD",
+	"HDD",
+	"SSD",
+	"GoogleDrive",
+	"Recovery"
+];
 
-var single_volumes = arrayRemove(single_volumes, "Macintosh");
-var single_volumes = arrayRemove(single_volumes, "HDD");
-var single_volumes = arrayRemove(single_volumes, "SSD");
-var single_volumes = arrayRemove(single_volumes, "GoogleDrive");
-var single_volumes = arrayRemove(single_volumes, "Recovery");
+const singleVolumes = app.doShellScript("ls /Volumes")
+	.split("\r")
+	.filter(v => !notToDisplay.includes(v));
 
-let volume_array = [];
-if (single_volumes.length == 0) {
-    volume_array.push ({
-        'title': "No mounted volume recognized.",
-        'subtitle': "Press [Esc] to abort.",
-        'arg': "no volume"
-    });
+const volumeArray = [];
+if (singleVolumes.length) {
+	singleVolumes.forEach(element => {
+		const diskSpace = app.doShellScript('df -h | grep "' + element + '" | tr -s " " | cut -d " " -f 2-5 | tr "i." "b," ').split(" ");
+		const spaceInfo =
+		"Total: " + diskSpace[0]
+		+ "   Available: " + diskSpace[2]
+		+ "   Used: " + diskSpace[1]
+		+ " (" + diskSpace[3] + ")";
+
+		volumeArray.push ({
+			"title": element,
+			"subtitle": spaceInfo,
+			"arg": "/Volumes/"+ element
+		});
+	});
 } else {
-   single_volumes.forEach(element => {
-      let disk_space = app.doShellScript('df -h | grep "' + element + '" | tr -s " " | cut -d " " -f 2-5 | tr "i." "b," ').split(" ");
-      let space_info =
-         "Total: " + disk_space[0]
-         + "   Available: " + disk_space[2]
-         + "   Used: " + disk_space[1]
-         + " (" + disk_space[3] + ")";
-      volume_array.push ({
-         'title': element,
-         'subtitle': space_info,
-         'arg': "/Volumes/"+ element
-      });
-   });
+	volumeArray.push ({
+		"title": "No mounted volume recognized.",
+		"subtitle": "Press [Esc] to abort.",
+		"arg": "no volume"
+	});
 }
 
-volume_array.push ({
-   'title': "Disk Utility",
-   'subtitle': "",
-   'arg': "disk_utility",
-   'icon': {'path' : "disk_utility.png"},
-   'mods': {'cmd' : {
-   	'valid': false,
-   	'subtitle': ""
-   } }
+volumeArray.push ({
+	"title": "Disk Utility",
+	"subtitle": "",
+	"arg": "disk_utility",
+	"icon": { "path" : "disk_utility.png" },
+	"mods": {
+		"cmd" : {
+			"valid": false,
+			"subtitle": ""
+		}
+	}
 });
 
-JSON.stringify({ 'items': volume_array });
+JSON.stringify({ "items": volumeArray });

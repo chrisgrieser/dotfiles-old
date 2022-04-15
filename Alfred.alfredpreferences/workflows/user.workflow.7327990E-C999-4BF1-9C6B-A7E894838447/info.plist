@@ -30,6 +30,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2CFE15BC-B802-49B9-86EE-234FB30174C2</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>⌥: Browse in Terminal</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>C18146DE-959B-4A0E-AC09-BED0D28AD242</key>
 		<array>
@@ -276,6 +286,19 @@ echo -n $vol</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinterminal</string>
+			<key>uid</key>
+			<string>2CFE15BC-B802-49B9-86EE-234FB30174C2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -287,6 +310,13 @@ echo -n $vol</string>
 			<integer>620</integer>
 			<key>ypos</key>
 			<integer>310</integer>
+		</dict>
+		<key>2CFE15BC-B802-49B9-86EE-234FB30174C2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>440</integer>
 		</dict>
 		<key>6AFDF8FB-7B99-46E6-ABBB-772B0525181A</key>
 		<dict>
