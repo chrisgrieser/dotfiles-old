@@ -7,8 +7,3 @@ tell application "System Events"
 	end tell
 end tell
 
--- tell application "System Events"
--- 	-- workaround, as Obsidian does not react otherwise
--- 	key code 123 using {shift down}
--- 	key code 124
--- end tell
