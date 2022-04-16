@@ -792,8 +792,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.iconfactory.Twitterrific5</string>
 					<string>md.obsidian</string>
+					<string>com.apple.finder</string>
+					<string>com.iconfactory.Twitterrific5</string>
 					<string>com.sublimetext.4</string>
 				</array>
 				<key>relatedAppsMode</key>
@@ -947,12 +948,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
