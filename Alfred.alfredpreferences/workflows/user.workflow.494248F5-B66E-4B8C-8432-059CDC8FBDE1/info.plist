@@ -247,8 +247,12 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 				<false/>
 				<key>modsmode</key>
 				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -341,8 +345,12 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 				<false/>
 				<key>modsmode</key>
 				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
