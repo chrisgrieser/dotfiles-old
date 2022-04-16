@@ -70,15 +70,10 @@ if (notes contains "obsidian") then
 		delay 0.1
 	end tell
 
-	-- open ExcaliDraw (this way to prevent triggering due to AppleScript Bug)
-	do shell script ("open -a Excalidraw")
-
 	-- Quit apps
 	tell application "Twitterrific" to if it is running then quit
 	tell application "Drafts" to if it is running then quit
 	tell application "BusyCal" to if it is running then quit
-	tell application "BibDesk" to if it is running then quit
-	tell application "Keeweb" to if it is running then quit
 	tell application "Discord" to if it is running then quit
 	tell application "Slack" to if it is running then quit
 	tell application "Mimestream" to if it is running then quit
