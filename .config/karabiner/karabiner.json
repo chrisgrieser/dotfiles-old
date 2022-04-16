@@ -58,6 +58,16 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "pointing_button": "button3"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f19"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
                                 "pointing_button": "button4"
                             },
                             "to": [
