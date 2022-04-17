@@ -6,30 +6,40 @@
 # --------------------------------------------------------------------------
 
 colors:
-  # COLORSCHEME: primary_dark.yml
+  # COLORSCHEME: catppuccin.yml
+  # Default colors
   primary:
     # hard contrast: background = '0x1d2021'
-    background: '#231E1A'
-    foreground: '#E5CFB3'
+    background: '0x1E1D2F'
+    foreground: '0xD9E0EE'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
   normal:
-    black: '#000000'
-    red: '#F54E42'
-    green: '#38B27D'
-    yellow: '#EBC400'
-    blue: '#4DADD5'
-    magenta: '#9F78DD'
-    cyan: '#3399C1'
-    white: '#F6E7D5'
+    black: '0x6E6C7E'
+    red: '0xF28FAD'
+    green: '0xABE9B3'
+    yellow: '0xFAE3B0'
+    blue: '0x96CDFB'
+    magenta: '0xF5C2E7'
+    cyan: '0x89DCEB'
+    white: '0xD9E0EE'
+
+  # Bright colors
   bright:
-    black: '#2C2621'
-    yellow: '#F8D668'
-    red: '#FF675C'
-    green: '#38D687'
-    magenta: '#A993E6'
-    white: '#F6E7D5'
+    black: '0x988BA2'
+    red: '0xF28FAD'
+    green: '0xABE9B3'
+    yellow: '0xFAE3B0'
+    blue: '0x96CDFB'
+    magenta: '0xF5C2E7'
+    cyan: '0x89DCEB'
+    white: '0xD9E0EE'
+
   cursor:
-    text: '0x262626'
-    cursor: '0xbab5b7'
+    text: '0x1E1D2F'
+    cursor: '0xF5E0DC'
+
+  # Normal colors
   dim:
     black: '0x232323'
     red: '0x74423f'
@@ -41,12 +51,8 @@ colors:
     white: '0x828282'
 
   indexed_colors:
-    - {index: 16, color: '0xb4637a'}
-    - {index: 17, color: '0xc5c3ce'}
-    - {index: 18, color: '0xfffaf3'}
-    - {index: 19, color: '0xf2e9de'}
-    - {index: 20, color: '0x6e6a86'}
-    - {index: 21, color: '0x555169'}
+    - {index: 16, color: '0xF8BD96'}
+    - {index: 17, color: '0xF5E0DC'}
 font:
   normal:
     family: JetBrainsMonoNL Nerd Font

@@ -32,8 +32,8 @@ open "/System/Library/CoreServices/Applications/Archive Utility.app"
 cat ~'/Desktop/NPMfile' | xargs npm install -g
 npm list -g
 
-# Python
-pip3 install pdfannots #requires the python3 version installed by homebrew
+# Python / Pip installs
+pip3 install alacritty-colorscheme #requires the python3 version installed by homebrew
 
 # -----------
 # SETTINGS
