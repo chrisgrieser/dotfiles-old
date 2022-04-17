@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>85DD8E18-3F44-4938-8453-979F65ABBF75</key>
+		<key>4C4CA3DF-BB26-4393-84E2-27190A118611</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>964AC6FF-37AE-4D4F-8822-1199C7222B1C</string>
+				<string>92246A7B-E550-40D1-9840-C2CB0F213DE3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -152,46 +152,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/{query}/</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>964AC6FF-37AE-4D4F-8822-1199C7222B1C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>@</string>
-				<key>subtext</key>
-				<string>'{query}'</string>
-				<key>text</key>
-				<string>GitHub Profile</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>85DD8E18-3F44-4938-8453-979F65ABBF75</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -250,74 +210,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/notifications</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>gg</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>GitHub Notifications</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>INPUT="$*"
-if [[ -e "$INPUT"/main.ts ]] ; then
-	open -R "$INPUT"/main.ts
-else
-	open "$INPUT"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>open-and-reveal.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -338,9 +230,9 @@ fi</string>
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -372,6 +264,91 @@ fi</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>C198F176-3358-4EDA-B05D-EF9BC52EDA31</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>gg</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>GitHub Notifications</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Show File in GitHub</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>4C4CA3DF-BB26-4393-84E2-27190A118611</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/notifications</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>INPUT="$*"
+if [[ -e "$INPUT"/main.ts ]] ; then
+	open -R "$INPUT"/main.ts
+else
+	open "$INPUT"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-and-reveal.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -566,22 +543,22 @@ subl --command toggle_side_bar</string>
 		<key>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>550</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>170</integer>
 		</dict>
 		<key>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>GitHub Notifications</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>165</integer>
 		</dict>
 		<key>0E26657D-87C2-4501-A282-F674945D73C9</key>
 		<dict>
@@ -590,67 +567,56 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open GitHub</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>545</integer>
 		</dict>
-		<key>85DD8E18-3F44-4938-8453-979F65ABBF75</key>
+		<key>4C4CA3DF-BB26-4393-84E2-27190A118611</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>GitHub Profile</string>
+			<integer>6</integer>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>165</integer>
 		</dict>
 		<key>8D2069C6-2EDB-40CD-854E-38574F301A4B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>680</integer>
 		</dict>
 		<key>8E8A1F51-781C-4593-A5B9-6D1801F945B2</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>download github file in Browser</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>15</integer>
 		</dict>
 		<key>92246A7B-E550-40D1-9840-C2CB0F213DE3</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>6</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>180</integer>
 			<key>ypos</key>
-			<integer>25</integer>
-		</dict>
-		<key>964AC6FF-37AE-4D4F-8822-1199C7222B1C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>275</integer>
-			<key>ypos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>AC483565-D8EB-4AAD-99AA-229D0C632CE8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>15</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>545</integer>
 		</dict>
 		<key>AD4F6532-1C9C-4A7D-894C-6243DB064568</key>
 		<dict>
@@ -659,29 +625,29 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>open in Sublime</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>885</integer>
+			<integer>945</integer>
 		</dict>
 		<key>C198F176-3358-4EDA-B05D-EF9BC52EDA31</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>545</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>15</integer>
 		</dict>
 		<key>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>6</integer>
 			<key>note</key>
 			<string>Open Remote Repo in GitHub</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>10</integer>
 		</dict>
 		<key>C742BD02-85C0-47F8-9A2A-7DF4DC657EE1</key>
 		<dict>
@@ -690,18 +656,18 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Copy GitHub URL</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>680</integer>
 		</dict>
 		<key>CC7C190D-D205-4F5B-A0DC-2A6D64736EC7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>430</integer>
 		</dict>
 		<key>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</key>
 		<dict>
@@ -710,18 +676,18 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open File</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>305</integer>
 		</dict>
 		<key>ECE501C0-A31C-4E6F-8447-F1D074D6077F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>820</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

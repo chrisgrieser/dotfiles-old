@@ -1,14 +1,18 @@
 #!/bin/zsh
 
 # get path of current Finder Selection/Window
-FINDER_SEL=$(osascript -e 'tell application "Finder"
-	if ((count windows) is 0) then return "no window"
+if [[ -z "$*" ]] ; then
+	FINDER_SEL=$(osascript -e 'tell application "Finder"
+		if ((count windows) is 0) then return "no window"
 
-	set sel to selection
-	if ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)
-	if ((count sel) = 1) then return POSIX path of (sel as text)
-	if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
-end tell')
+		set sel to selection
+		if ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)
+		if ((count sel) = 1) then return POSIX path of (sel as text)
+		if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
+	end tell')
+else
+	FINDER_SEL="$*"
+fi
 
 [[ "$FINDER_SEL" == "no window" ]] && exit 1 # no finder window
 [[ $(git rev-parse --git-dir) ]] || exit 1 # not a git directory
@@ -39,7 +43,7 @@ if [[ "$ROOTF" == "$FOLDER" ]] ; then
 	fi
 else
 	ROOTF_LEN=$((${#ROOTF} + 2))
-	# shellcheck disable=SC2086
+	# shellcheck disable=SC2086,SC2248
 	SUBFOLDER=$(echo "$FOLDER" | cut -c $ROOTF_LEN-)
 	if [[ -z "$FILE" ]] ; then
 		URL="$REMOTE_URL/tree/$BRANCH/$SUBFOLDER"
