@@ -1,7 +1,7 @@
 {
 
 	// "light_color_scheme": "Celeste.sublime-color-scheme",
-	"dark_color_scheme": "Dark Knight.sublime-color-scheme",
+	// "dark_color_scheme": "Dark Knight.sublime-color-scheme",
 
 	"auto_complete_delay": 50,
 	"auto_complete_use_history": false,
