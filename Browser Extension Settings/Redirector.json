@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-04-05T21:16:50.733Z",
+    "createdAt": "2022-04-17T23:12:37.429Z",
     "redirects": [
         {
             "description": "Wikiwand",
@@ -8,7 +8,7 @@
             "exampleResult": "https://www.wikiwand.com/en/Natural_science",
             "error": null,
             "includePattern": "https?:\\/\\/(\\w+?)(?:\\.m)?\\.wikipedia\\.org\\/wiki\\/(.*)",
-            "excludePattern": "",
+            "excludePattern": "\\?oldformat=true$",
             "patternDesc": "",
             "redirectUrl": "https://www.wikiwand.com/$1/$2",
             "patternType": "R",
