@@ -18,7 +18,11 @@ tell application "System Events" to tell appearance preferences to set dark mode
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
 
 # TWITTERIFIC SCROLL UP
-tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
+# wrapped in try due to Twitterific bug sometime snot responding
+# to hotkeys when not clicking into the window once
+try
+	tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks"
+end try
 
 # log
 do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
