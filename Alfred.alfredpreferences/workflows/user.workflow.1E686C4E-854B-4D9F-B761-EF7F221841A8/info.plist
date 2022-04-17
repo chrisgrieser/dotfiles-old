@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4DC16D6F-F8D8-428F-94CE-3453B04F03FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8E47E0A-579F-4C60-A12E-C1EF3C3A7465</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</key>
 		<array>
 			<dict>
@@ -491,15 +504,15 @@ end tell</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>focusedappvariable</key>
-				<false/>
+				<true/>
 				<key>focusedappvariablename</key>
-				<string></string>
+				<string>focusedapp</string>
 				<key>hotkey</key>
-				<integer>2</integer>
+				<integer>41</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>1966080</integer>
 				<key>hotstring</key>
-				<string>D</string>
+				<string>Ö</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -507,7 +520,6 @@ end tell</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.readdle.PDFExpert-Mac</string>
-					<string>net.highlightsapp.universal</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -515,7 +527,7 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>F7D19659-2CEC-41FB-9187-419A65F372B9</string>
+			<string>5A646863-6219-4F8A-AB10-4199E1D2E532</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -525,26 +537,25 @@ end tell</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "System Events" to set frontApp to (name of first process where it is frontmost)
-
-if (frontApp = "PDF Expert) then
-tell application "System Events"
-	tell process "PDF Expert" to click menu item "Day" of menu of menu item "Theme" of menu "View" of menu bar 1
-end tell
-end if</string>
+				<string>tell application "System Events"
+	tell process "PDF Expert"
+		set frontmost to true
+		click menu item "Remove All Annotations" of menu "Edit" of menu bar 1
+	end tell
+end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>pdf-day-view.applescript</string>
+				<string></string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>4953E577-516F-483A-B972-3C77178DBC60</string>
+			<string>860B603B-8FF4-4D43-9C63-2485FBEB5422</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -610,18 +621,18 @@ end if</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>45</integer>
+				<integer>40</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>1048576</integer>
 				<key>hotstring</key>
-				<string>N</string>
+				<string>K</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>net.highlightsapp.universal</string>
+					<string>com.readdle.PDFExpert-Mac</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -629,7 +640,7 @@ end if</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>47DA95F3-5AD7-4985-80DB-1A126CD2871F</string>
+			<string>D7FF201E-D235-4F77-BD39-DF911FFB0FC1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -639,25 +650,25 @@ end if</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>68</integer>
 				<key>script</key>
 				<string>tell application "System Events"
-	tell process "Highlights"
+	tell process "PDF Expert"
 		set frontmost to true
-		click menu item "Night" of menu of menu item "PDF Appearance" of menu "View" of menu bar 1
+		click menu item "Note" of menu "Annotate" of menu bar 1
 	end tell
 end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>pdf-day-view.applescript</string>
+				<string></string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C2A6FDB1-B6C2-40F9-ADF6-03B5E8F84CFA</string>
+			<string>3A4DA7B0-540F-4152-BAD1-C4AD83E3D6FB</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -769,15 +780,15 @@ end tell</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>focusedappvariable</key>
-				<true/>
+				<false/>
 				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
+				<string></string>
 				<key>hotkey</key>
-				<integer>41</integer>
+				<integer>2</integer>
 				<key>hotmod</key>
-				<integer>1966080</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string>Ö</string>
+				<string>D</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -785,6 +796,7 @@ end tell</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.readdle.PDFExpert-Mac</string>
+					<string>net.highlightsapp.universal</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -792,7 +804,7 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>5A646863-6219-4F8A-AB10-4199E1D2E532</string>
+			<string>F7D19659-2CEC-41FB-9187-419A65F372B9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -802,25 +814,26 @@ end tell</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>tell application "System Events"
-	tell process "PDF Expert"
-		set frontmost to true
-		click menu item "Remove All Annotations" of menu "Edit" of menu bar 1
-	end tell
-end tell</string>
+				<string>tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+
+if (frontApp = "PDF Expert) then
+tell application "System Events"
+	tell process "PDF Expert" to click menu item "Day" of menu of menu item "Theme" of menu "View" of menu bar 1
+end tell
+end if</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>pdf-day-view.applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>860B603B-8FF4-4D43-9C63-2485FBEB5422</string>
+			<string>4953E577-516F-483A-B972-3C77178DBC60</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -886,18 +899,18 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>40</integer>
+				<integer>45</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string>K</string>
+				<string>N</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.readdle.PDFExpert-Mac</string>
+					<string>net.highlightsapp.universal</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -905,7 +918,7 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>D7FF201E-D235-4F77-BD39-DF911FFB0FC1</string>
+			<string>47DA95F3-5AD7-4985-80DB-1A126CD2871F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -915,25 +928,25 @@ end tell</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
 				<string>tell application "System Events"
-	tell process "PDF Expert"
+	tell process "Highlights"
 		set frontmost to true
-		click menu item "Note" of menu "Annotate" of menu bar 1
+		click menu item "Night" of menu of menu item "PDF Appearance" of menu "View" of menu bar 1
 	end tell
 end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>pdf-day-view.applescript</string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>3A4DA7B0-540F-4152-BAD1-C4AD83E3D6FB</string>
+			<string>C2A6FDB1-B6C2-40F9-ADF6-03B5E8F84CFA</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1159,36 +1172,58 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>18</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>1</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
 				<array>
-					<string>com.adobe.pdf</string>
+					<string>net.highlightsapp.universal</string>
 				</array>
-				<key>name</key>
-				<string>Open with PDF Expert</string>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>B60B36B8-F57A-41E5-A0D8-CF853413558F</string>
+			<string>4DC16D6F-F8D8-428F-94CE-3453B04F03FE</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/PDF Expert.app</string>
-				<key>sourcefile</key>
-				<string></string>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>i</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1310720</integer>
+				<key>overridewithargument</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
 			<key>uid</key>
-			<string>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</string>
+			<string>B8E47E0A-579F-4C60-A12E-C1EF3C3A7465</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1293,21 +1328,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Highlights.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ED89C8C7-286F-497A-A968-210F19BA0548</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsmulti</key>
 				<integer>1</integer>
 				<key>filetypes</key>
@@ -1315,14 +1335,29 @@ end tell</string>
 					<string>com.adobe.pdf</string>
 				</array>
 				<key>name</key>
-				<string>Open with Highlights</string>
+				<string>Open with PDF Expert</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>70E50297-8CD5-45F1-8CA3-1A3620674706</string>
+			<string>B60B36B8-F57A-41E5-A0D8-CF853413558F</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/PDF Expert.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1444,6 +1479,40 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/Highlights.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ED89C8C7-286F-497A-A968-210F19BA0548</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.adobe.pdf</string>
+				</array>
+				<key>name</key>
+				<string>Open with Highlights</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>70E50297-8CD5-45F1-8CA3-1A3620674706</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>1</integer>
 				<key>filetypes</key>
@@ -1474,6 +1543,27 @@ end tell</string>
 			<string>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>m</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>8DE469BA-9D08-4B1C-8240-0CD643A40397</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1535,6 +1625,41 @@ end tell</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>386C2DBE-AFC9-4D13-9F57-05C5E20812D5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>40</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>K</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>BE31D431-F8F7-4D1F-A636-B7E8F4036182</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1603,6 +1728,62 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>f</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>10</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1660,118 +1841,6 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>m</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>8DE469BA-9D08-4B1C-8240-0CD643A40397</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>40</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>K</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>BE31D431-F8F7-4D1F-A636-B7E8F4036182</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>f</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>10</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -1779,6 +1848,8 @@ end tell</string>
 	<dict>
 		<key>2B2416EF-1700-4D0F-9C9D-8137B49866C9</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
@@ -1806,20 +1877,26 @@ end tell</string>
 		</dict>
 		<key>367104A9-BA8E-4991-A511-2860DDC66CC4</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
-			<integer>245</integer>
+			<integer>240</integer>
 			<key>ypos</key>
 			<integer>850</integer>
 		</dict>
 		<key>386C2DBE-AFC9-4D13-9F57-05C5E20812D5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>485</integer>
+			<integer>70</integer>
 			<key>ypos</key>
-			<integer>1395</integer>
+			<integer>1450</integer>
 		</dict>
 		<key>388E830E-3DD5-457F-BC4E-8FA5B10067E5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>xpos</key>
 			<integer>1005</integer>
 			<key>ypos</key>
@@ -1827,12 +1904,14 @@ end tell</string>
 		</dict>
 		<key>3A4DA7B0-540F-4152-BAD1-C4AD83E3D6FB</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>note</key>
 			<string>Free Comment</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>585</integer>
+			<integer>285</integer>
 		</dict>
 		<key>445E302D-E4C9-4FF3-8165-B5ABE18DEA72</key>
 		<dict>
@@ -1858,10 +1937,12 @@ end tell</string>
 		</dict>
 		<key>47DA95F3-5AD7-4985-80DB-1A126CD2871F</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>600</integer>
 		</dict>
 		<key>493E2D88-EB1B-43CF-97E3-5EFEE5AFE709</key>
 		<dict>
@@ -1874,10 +1955,12 @@ end tell</string>
 		</dict>
 		<key>4953E577-516F-483A-B972-3C77178DBC60</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>475</integer>
 		</dict>
 		<key>49ADD9B0-6E18-4805-B414-EF7863AFD888</key>
 		<dict>
@@ -1888,29 +1971,46 @@ end tell</string>
 			<key>ypos</key>
 			<integer>840</integer>
 		</dict>
-		<key>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</key>
+		<key>4DC16D6F-F8D8-428F-94CE-3453B04F03FE</key>
 		<dict>
-			<key>xpos</key>
-			<integer>485</integer>
-			<key>ypos</key>
-			<integer>1505</integer>
-		</dict>
-		<key>55945439-DD06-42EE-8ACA-6343CD88A62C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>485</integer>
-			<key>ypos</key>
-			<integer>1620</integer>
-		</dict>
-		<key>5A646863-6219-4F8A-AB10-4199E1D2E532</key>
-		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>445</integer>
+			<integer>970</integer>
+		</dict>
+		<key>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>1560</integer>
+		</dict>
+		<key>55945439-DD06-42EE-8ACA-6343CD88A62C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>1675</integer>
+		</dict>
+		<key>5A646863-6219-4F8A-AB10-4199E1D2E532</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>145</integer>
 		</dict>
 		<key>5E29849B-8514-4ACF-8D3A-8D63DE6EE138</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>note</key>
 			<string>Rename</string>
 			<key>xpos</key>
@@ -1929,6 +2029,8 @@ end tell</string>
 		</dict>
 		<key>635EFCB3-F72B-4751-B065-67DA63456A08</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>note</key>
 			<string>fn + f11
 (due to karabienr elements binding)</string>
@@ -1939,6 +2041,8 @@ end tell</string>
 		</dict>
 		<key>6BA6FC31-E4F0-42B7-8B89-148621F260EE</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>xpos</key>
 			<integer>1010</integer>
 			<key>ypos</key>
@@ -1946,6 +2050,8 @@ end tell</string>
 		</dict>
 		<key>6FE4D93B-7291-4855-8BFE-C2D04A5961FA</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
@@ -1953,10 +2059,12 @@ end tell</string>
 		</dict>
 		<key>70E50297-8CD5-45F1-8CA3-1A3620674706</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>1080</integer>
+			<integer>1220</integer>
 		</dict>
 		<key>7A877877-7D5C-4D24-B15B-1627A751BFF1</key>
 		<dict>
@@ -1969,10 +2077,12 @@ end tell</string>
 		</dict>
 		<key>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1900</integer>
+			<integer>1600</integer>
 		</dict>
 		<key>8021D07C-8E94-489A-B77D-6603F1AFF4AF</key>
 		<dict>
@@ -1985,36 +2095,46 @@ end tell</string>
 		</dict>
 		<key>860B603B-8FF4-4D43-9C63-2485FBEB5422</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>note</key>
 			<string>Remove all Annotations</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>445</integer>
+			<integer>145</integer>
 		</dict>
 		<key>8DE469BA-9D08-4B1C-8240-0CD643A40397</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1750</integer>
+			<integer>1450</integer>
 		</dict>
 		<key>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>1190</integer>
+			<integer>1330</integer>
 		</dict>
 		<key>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1505</integer>
+			<integer>1560</integer>
 		</dict>
 		<key>9F731DE2-DD47-49B5-A7F1-DE118A4F38AD</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>note</key>
 			<string>fn + f12
 (due to karabienr elements binding)</string>
@@ -2026,13 +2146,13 @@ end tell</string>
 		<key>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>3</integer>
 			<key>note</key>
 			<string>Footnote</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1900</integer>
+			<integer>1600</integer>
 		</dict>
 		<key>A250954B-4A68-48E7-AC91-704EF7BD0790</key>
 		<dict>
@@ -2058,6 +2178,8 @@ end tell</string>
 		</dict>
 		<key>B059B765-47E2-4209-A7AF-949F9D6D0D15</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>note</key>
 			<string>Play Playlist</string>
 			<key>xpos</key>
@@ -2078,10 +2200,12 @@ end tell</string>
 		</dict>
 		<key>B60B36B8-F57A-41E5-A0D8-CF853413558F</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>965</integer>
+			<integer>1105</integer>
 		</dict>
 		<key>B8DEFF35-37E6-413C-97FE-7E3C08641946</key>
 		<dict>
@@ -2094,23 +2218,34 @@ end tell</string>
 			<key>ypos</key>
 			<integer>980</integer>
 		</dict>
-		<key>BE31D431-F8F7-4D1F-A636-B7E8F4036182</key>
+		<key>B8E47E0A-579F-4C60-A12E-C1EF3C3A7465</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>Comment</string>
-			<key>xpos</key>
-			<integer>485</integer>
-			<key>ypos</key>
-			<integer>1750</integer>
-		</dict>
-		<key>C2A6FDB1-B6C2-40F9-ADF6-03B5E8F84CFA</key>
-		<dict>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>970</integer>
+		</dict>
+		<key>BE31D431-F8F7-4D1F-A636-B7E8F4036182</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Comment</string>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>1450</integer>
+		</dict>
+		<key>C2A6FDB1-B6C2-40F9-ADF6-03B5E8F84CFA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>600</integer>
 		</dict>
 		<key>CFE58ECE-263C-48B3-ABB2-BC5C0203D1F4</key>
 		<dict>
@@ -2124,7 +2259,7 @@ end tell</string>
 		<key>D29C853D-1216-493F-A33E-63CE67A7CCCF</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>🔀</string>
 			<key>xpos</key>
@@ -2134,13 +2269,17 @@ end tell</string>
 		</dict>
 		<key>D7FF201E-D235-4F77-BD39-DF911FFB0FC1</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>585</integer>
+			<integer>285</integer>
 		</dict>
 		<key>D8C7E6C7-E01B-4C47-9696-7EAEE86CB013</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
@@ -2157,17 +2296,21 @@ end tell</string>
 		</dict>
 		<key>E769C7EB-F8E5-463E-97E2-C9C0B06944AB</key>
 		<dict>
-			<key>xpos</key>
-			<integer>655</integer>
-			<key>ypos</key>
-			<integer>1620</integer>
-		</dict>
-		<key>ED89C8C7-286F-497A-A968-210F19BA0548</key>
-		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1080</integer>
+			<integer>1675</integer>
+		</dict>
+		<key>ED89C8C7-286F-497A-A968-210F19BA0548</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>1220</integer>
 		</dict>
 		<key>F2CACFF9-2F72-4328-8CF1-86E74570803E</key>
 		<dict>
@@ -2180,24 +2323,30 @@ end tell</string>
 		</dict>
 		<key>F46E0CC9-AC60-45EB-93F6-946657894200</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1395</integer>
+			<integer>1450</integer>
 		</dict>
 		<key>F68640F7-9218-47FF-B3DF-FA25D84E566D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>1190</integer>
+			<integer>1330</integer>
 		</dict>
 		<key>F7D19659-2CEC-41FB-9187-419A65F372B9</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>475</integer>
 		</dict>
 		<key>FBD552D2-860E-4EFF-A945-DACDC9308F76</key>
 		<dict>
@@ -2210,6 +2359,8 @@ end tell</string>
 		</dict>
 		<key>FC549E6C-FDC3-4CD7-B97C-F586BE4AC399</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
@@ -2217,10 +2368,12 @@ end tell</string>
 		</dict>
 		<key>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>965</integer>
+			<integer>1105</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
