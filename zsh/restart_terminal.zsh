@@ -2,7 +2,7 @@
 # to allow restarting of the whole app
 
 if [[ "$TERM_PROGRAM" == "Terminus-Sublime" ]] ; then
-	echo "Terminal restart not configured yet for Terminus."
+	echo "Terminal restart not configured for Terminus."
 	return 1
 fi
 

@@ -8,14 +8,17 @@ function h () {
 }
 
 # if alacritty installed open man page in new alacritty window
-which alacritty &> /dev/null && function man () {
-	which "$1" &> /dev/null || return 1
-	alacritty \
-		--option=window.position.x=400 \
-		--option=window.decorations=full \
-		--title="man $1" \
-		--command man "$1" &
-}
+if which alacritty &> /dev/null ; then
+	function man () {
+		which "$1" &> /dev/null || return 1
+		# run in subshell to surpress output
+		(alacritty \
+			--option=window.position.x=400 \
+			--option=window.decorations=full \
+			--title="man $1" \
+			--command man "$1" &)
+	}
+fi
 
 # man pages for zsh-builtins https://stackoverflow.com/a/35456287
 unalias run-help 2>/dev/null

@@ -26,7 +26,8 @@ function mkcd () {
 
 # restart terminal
 function rrr () {
-	nohup "$ZSH_DOTFILE_LOCATION"/restart_terminal.zsh >/dev/null &
+	# run in subshell to surpress output
+	(nohup "$ZSH_DOTFILE_LOCATION"/restart_terminal.zsh >/dev/null &)
 }
 
 # get path of file
