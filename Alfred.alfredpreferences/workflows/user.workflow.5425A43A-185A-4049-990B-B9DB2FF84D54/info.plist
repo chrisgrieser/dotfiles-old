@@ -757,7 +757,7 @@ end alfred_script</string>
 			<key>note</key>
 			<string>open Console</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
