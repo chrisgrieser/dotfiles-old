@@ -930,7 +930,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 		<key>153A6FAA-CE96-41B5-B007-9425C1E6FCA6</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>8</integer>
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
@@ -1012,7 +1012,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>560</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>775</integer>
 		</dict>
 		<key>66A7250D-09E1-4356-BD13-D58D96F72559</key>
 		<dict>
@@ -1023,7 +1023,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>775</integer>
 		</dict>
 		<key>6B0C6024-DB7D-489C-84CA-118D4AD29879</key>
 		<dict>
@@ -1063,7 +1063,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>405</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>745</integer>
 		</dict>
 		<key>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</key>
 		<dict>
@@ -1101,7 +1101,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>620</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>745</integer>
 		</dict>
 		<key>BA1DA0FB-67A1-40D3-A2DA-80A252863361</key>
 		<dict>
@@ -1110,7 +1110,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>745</integer>
 		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>
@@ -1159,7 +1159,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>745</integer>
 		</dict>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<dict>
