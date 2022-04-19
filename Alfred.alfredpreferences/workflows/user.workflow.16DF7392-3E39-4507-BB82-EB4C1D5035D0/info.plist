@@ -185,13 +185,12 @@
 	<key>readme</key>
 	<string>Dependency: Tesseract
 
-Take a snapshot and call Tesserect OCR API to recognize.
-
-info on use
-https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0
-
 language codes
-https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21</string>
+https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21
+
+---
+
+IMAGE_BASE_NAME needs to be `Pasted image ` for the paste image renamer Obsidian plugin</string>
 	<key>uidata</key>
 	<dict>
 		<key>010166A2-5769-42B4-8975-19AB9F0B46A1</key>
@@ -238,6 +237,8 @@ https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>IMAGE_BASE_NAME</key>
+		<string>Pasted image </string>
 		<key>ocr_languages</key>
 		<string>eng+deu</string>
 	</dict>

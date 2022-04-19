@@ -1,9 +1,6 @@
 #!/bin/zsh
 # shellcheck disable=SC2154
 
-# required base name for the image renamer plugin to work with it
-IMAGE_BASE_NAME="Pasted Image"
-
 TEMP_IMAGE="$alfred_workflow_cache/$IMAGE_BASE_NAME $(date '+%Y-%m-%d %H.%M.%S').png"
 mkdir -p "$alfred_workflow_cache"
 
