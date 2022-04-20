@@ -61,7 +61,7 @@ end if
 -- Seminar Preparation
 if (notes contains "obsidian") then
 
-	-- open Obsidian notes & Excalidraw
+	-- open Obsidian notes
 	tell application "Obsidian"
 		open location notes
 		repeat until application "Obsidian" is running
@@ -95,7 +95,11 @@ if (notes contains "obsidian") then
 
 	-- minimize the unneeded window
 	tell application "System Events"
-		click (first button of window "Zoom" of process "zoom.us" whose role description is "minimize button")
+		tell process "zoom.us"
+			set frontmost to true
+			perform action "AXRaise" of (first window whose name is "Zoom")
+			click menu item "Minimize" of menu "Window" of menu bar 1
+		end tell
 	end tell
 
 	-- Moom
