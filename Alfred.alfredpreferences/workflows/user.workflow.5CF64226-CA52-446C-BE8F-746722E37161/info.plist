@@ -796,10 +796,10 @@ return "{query}"</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1006,8 +1006,7 @@ return "{query}"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Credits:
-draft search and draft script reference search are based on the fantastic [Doctor Drafts](https://doctordrafts.thoughtasylum.com/).</string>
+	<string></string>
 	<key>uidata</key>
 	<dict>
 		<key>095DAABB-7146-49D6-9576-FBFD99A8284C</key>
@@ -1275,21 +1274,6 @@ draft search and draft script reference search are based on the fantastic [Docto
 			<integer>575</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>actionOnAlt</key>
-		<string>Open URLs</string>
-		<key>ocr_languages</key>
-		<string>deu+eng</string>
-		<key>tagToExcludeFromSearch</key>
-		<string>tasklist</string>
-	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>ocr_languages</string>
-		<string>actionOnAlt</string>
-		<string>tagToExcludeFromSearch</string>
-	</array>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

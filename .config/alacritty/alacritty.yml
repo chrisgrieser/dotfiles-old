@@ -6,50 +6,48 @@
 # --------------------------------------------------------------------------
 
 colors:
-  # COLORSCHEME: catppuccin.yml
+  # COLORSCHEME: nord.yaml
   # Default colors
   primary:
     # hard contrast: background = '0x1d2021'
-    background: '0x1E1D2F'
-    foreground: '0xD9E0EE'
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
+  # Normal colors
   normal:
-    black: '0x6E6C7E'
-    red: '0xF28FAD'
-    green: '0xABE9B3'
-    yellow: '0xFAE3B0'
-    blue: '0x96CDFB'
-    magenta: '0xF5C2E7'
-    cyan: '0x89DCEB'
-    white: '0xD9E0EE'
+    black: '0x3B4252'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x88C0D0'
+    white: '0xE5E9F0'
 
   # Bright colors
   bright:
-    black: '0x988BA2'
-    red: '0xF28FAD'
-    green: '0xABE9B3'
-    yellow: '0xFAE3B0'
-    blue: '0x96CDFB'
-    magenta: '0xF5C2E7'
-    cyan: '0x89DCEB'
-    white: '0xD9E0EE'
-
+    black: '0x4C566A'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x8FBCBB'
+    white: '0xECEFF4'
   cursor:
     text: '0x1E1D2F'
     cursor: '0xF5E0DC'
 
   # Normal colors
   dim:
-    black: '0x232323'
-    red: '0x74423f'
-    green: '0x5e6547'
-    yellow: '0x8b7653'
-    blue: '0x556b79'
-    magenta: '0x6e4962'
-    cyan: '0x5c8482'
-    white: '0x828282'
-
+    black: '0x31363b'
+    red: '0x783228'
+    green: '0x17a262'
+    yellow: '0xb65619'
+    blue: '0x1b668f'
+    magenta: '0x614a73'
+    cyan: '0x186c60'
+    white: '0x63686d'
   indexed_colors:
     - {index: 16, color: '0xF8BD96'}
     - {index: 17, color: '0xF5E0DC'}

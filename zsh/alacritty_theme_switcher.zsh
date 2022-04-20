@@ -1,6 +1,6 @@
 # switch to next Alacritty color scheme
 # shellcheck disable=SC2016
-FIND_LS='find "$COLOR_DIR" -not -name ".*" -print0 | xargs -0 basename'
+FIND_LS='find "$COLOR_DIR" -not -name "colors" -print0 | xargs -0 basename'
 COLOR_DIR=~/.config/alacritty/colors
 function next () {
 	local CURRENT NEXT
