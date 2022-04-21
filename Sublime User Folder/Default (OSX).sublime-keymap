@@ -183,7 +183,7 @@
 	{ "keys": ["ctrl+d"], "command": "advanced_new_file_copy"},
 	{ "keys": ["super+backspace"], "command": "delete_current_file" },
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
-	{ "keys": ["ctrl+r"], "command": "rename_file"},
+	{ "keys": ["ctrl+e"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Custom Plugin
 	{ "keys": ["super+o"], "command": "open_browse" }, // Plugin
