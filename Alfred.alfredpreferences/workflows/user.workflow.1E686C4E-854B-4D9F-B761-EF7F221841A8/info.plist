@@ -1842,7 +1842,7 @@ end tell</string>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/.obsidian.vimrc</string>
+				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/obsidian.vimrc</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
@@ -2152,6 +2152,8 @@ end tell</string>
 		</dict>
 		<key>5FA2BDE3-A607-437A-A01A-EF48AB252A16</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
 			<key>xpos</key>
 			<integer>615</integer>
 			<key>ypos</key>
@@ -2349,7 +2351,7 @@ end tell</string>
 		<key>B0AF80D9-0718-4943-B13F-1048C98A6CFE</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>9</integer>
 			<key>note</key>
 			<string>Footnote</string>
 			<key>xpos</key>
