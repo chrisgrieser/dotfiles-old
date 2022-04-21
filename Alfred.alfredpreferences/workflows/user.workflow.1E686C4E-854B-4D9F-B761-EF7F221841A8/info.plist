@@ -255,6 +255,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B0AF80D9-0718-4943-B13F-1048C98A6CFE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B4EFFBDF-5AAE-4CD2-BE28-A5A5F0A2A04F</key>
 		<array>
 			<dict>
@@ -1548,40 +1561,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Highlights.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ED89C8C7-286F-497A-A968-210F19BA0548</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>name</key>
-				<string>Open with Highlights</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>70E50297-8CD5-45F1-8CA3-1A3620674706</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
@@ -1638,6 +1617,96 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/Highlights.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ED89C8C7-286F-497A-A968-210F19BA0548</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.adobe.pdf</string>
+				</array>
+				<key>name</key>
+				<string>Open with Highlights</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>70E50297-8CD5-45F1-8CA3-1A3620674706</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>f</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>10</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>1</integer>
 				<key>filetypes</key>
@@ -1668,27 +1737,6 @@ end tell</string>
 			<string>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>f</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1765,18 +1813,18 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>10</integer>
+				<integer>43</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>,</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1784,9 +1832,24 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</string>
+			<string>B0AF80D9-0718-4943-B13F-1048C98A6CFE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/.obsidian.vimrc</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2087,6 +2150,13 @@ end tell</string>
 			<key>ypos</key>
 			<integer>720</integer>
 		</dict>
+		<key>5FA2BDE3-A607-437A-A01A-EF48AB252A16</key>
+		<dict>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>1605</integer>
+		</dict>
 		<key>60E121CE-8FD5-4A18-9C36-D03D5013C723</key>
 		<dict>
 			<key>colorindex</key>
@@ -2160,7 +2230,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1600</integer>
+			<integer>1455</integer>
 		</dict>
 		<key>8021D07C-8E94-489A-B77D-6603F1AFF4AF</key>
 		<dict>
@@ -2189,7 +2259,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1450</integer>
+			<integer>1305</integer>
 		</dict>
 		<key>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</key>
 		<dict>
@@ -2241,7 +2311,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1600</integer>
+			<integer>1455</integer>
 		</dict>
 		<key>A250954B-4A68-48E7-AC91-704EF7BD0790</key>
 		<dict>
@@ -2275,6 +2345,17 @@ end tell</string>
 			<integer>445</integer>
 			<key>ypos</key>
 			<integer>1140</integer>
+		</dict>
+		<key>B0AF80D9-0718-4943-B13F-1048C98A6CFE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Footnote</string>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>1605</integer>
 		</dict>
 		<key>B4EFFBDF-5AAE-4CD2-BE28-A5A5F0A2A04F</key>
 		<dict>
@@ -2325,7 +2406,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1450</integer>
+			<integer>1305</integer>
 		</dict>
 		<key>C2A6FDB1-B6C2-40F9-ADF6-03B5E8F84CFA</key>
 		<dict>
