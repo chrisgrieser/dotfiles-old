@@ -28,7 +28,7 @@ ln -s "$SYMLINK_LOC"/zsh/.zprofile .
 ln -s "$SYMLINK_LOC"/zsh/.zlogin ~
 
 ln -s "$SYMLINK_LOC"/.searchlink ~
-ln -s "$SYMLINK_LOC"/.amethyst ~
+ln -s "$SYMLINK_LOC"/.vimrc ~
 ln -s "$SYMLINK_LOC"/.shellcheckrc ~
 ln -s "$SYMLINK_LOC"/.markdownlintrc ~
 ln -s "$SYMLINK_LOC"/.stylelintrc.json ~
