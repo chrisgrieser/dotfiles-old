@@ -8,7 +8,7 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
-		<key>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</key>
+		<key>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -47,19 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
 		<array>
 			<dict>
@@ -87,10 +74,41 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>10</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>°</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>kill</string>
+				<string>restart</string>
 				<key>subtext</key>
 				<string>frontmost app</string>
 				<key>text</key>
@@ -101,7 +119,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</string>
+			<string>67DF2055-B645-4552-B37D-1F3A93BF37EC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -138,27 +156,6 @@ tell application named _app to activate</string>
 			<string>3793E96B-DE64-4F09-ABA2-042BF2D728A1</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>restart</string>
-				<key>subtext</key>
-				<string>frontmost app</string>
-				<key>text</key>
-				<string>Restart</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>67DF2055-B645-4552-B37D-1F3A93BF37EC</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -214,27 +211,6 @@ delay 0.5
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>restart</string>
-				<key>subtext</key>
-				<string>frontmost app</string>
-				<key>text</key>
-				<string>🛑 Kill &amp; Restart</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>kill</string>
@@ -282,6 +258,13 @@ open -a "PopClip"</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>105</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
 		<key>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</key>
 		<dict>
 			<key>colorindex</key>
@@ -293,15 +276,6 @@ open -a "PopClip"</string>
 			<key>ypos</key>
 			<integer>345</integer>
 		</dict>
-		<key>1EB7BFDC-90D5-49E8-805A-88ED2EF6348E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>85</integer>
-			<key>ypos</key>
-			<integer>50</integer>
-		</dict>
 		<key>3793E96B-DE64-4F09-ABA2-042BF2D728A1</key>
 		<dict>
 			<key>colorindex</key>
@@ -309,54 +283,45 @@ open -a "PopClip"</string>
 			<key>note</key>
 			<string>quit &amp; restart</string>
 			<key>xpos</key>
-			<integer>295</integer>
+			<integer>300</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>195</integer>
 		</dict>
 		<key>67DF2055-B645-4552-B37D-1F3A93BF37EC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>85</integer>
+			<integer>100</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>195</integer>
 		</dict>
 		<key>93E31809-C5C8-4920-BA07-AF39BB5491F8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>90</integer>
+			<integer>95</integer>
 			<key>ypos</key>
-			<integer>535</integer>
-		</dict>
-		<key>A4F1A313-3120-4358-9E5D-1DB3D453D7F4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<integer>85</integer>
-			<key>ypos</key>
-			<integer>410</integer>
+			<integer>480</integer>
 		</dict>
 		<key>E0B2F3C0-553E-4ED3-9525-8242B10062AC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>295</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>480</integer>
 		</dict>
 		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>85</integer>
+			<integer>100</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>345</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
