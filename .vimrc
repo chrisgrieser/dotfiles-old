@@ -1,7 +1,13 @@
 " https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
 
+" disable vi compatibility
+set nocompatible
+
 " Turn syntax highlighting on.
 syntax on
+
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+set nowrap
 
 " Add numbers to each line on the left-hand side.
 set number
