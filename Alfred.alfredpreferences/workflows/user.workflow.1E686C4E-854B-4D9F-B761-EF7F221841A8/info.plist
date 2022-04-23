@@ -177,19 +177,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>9D6EE2D5-BBDF-426C-B74D-64369E11DAFE</key>
 		<array>
 			<dict>
@@ -260,19 +247,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FBD552D2-860E-4EFF-A945-DACDC9308F76</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B0AF80D9-0718-4943-B13F-1048C98A6CFE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1817,56 +1791,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>43</integer>
-				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>,</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>B0AF80D9-0718-4943-B13F-1048C98A6CFE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/obsidian.vimrc</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1925,27 +1849,6 @@ end tell</string>
 			<string>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vimrc</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Open obsidian .vimrc</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2184,15 +2087,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>720</integer>
 		</dict>
-		<key>5FA2BDE3-A607-437A-A01A-EF48AB252A16</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>625</integer>
-			<key>ypos</key>
-			<integer>1705</integer>
-		</dict>
 		<key>60E121CE-8FD5-4A18-9C36-D03D5013C723</key>
 		<dict>
 			<key>colorindex</key>
@@ -2306,13 +2200,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
-		<key>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</key>
-		<dict>
-			<key>xpos</key>
-			<integer>445</integer>
-			<key>ypos</key>
-			<integer>1785</integer>
-		</dict>
 		<key>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</key>
 		<dict>
 			<key>colorindex</key>
@@ -2388,17 +2275,6 @@ end tell</string>
 			<integer>445</integer>
 			<key>ypos</key>
 			<integer>1140</integer>
-		</dict>
-		<key>B0AF80D9-0718-4943-B13F-1048C98A6CFE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>vimrc</string>
-			<key>xpos</key>
-			<integer>445</integer>
-			<key>ypos</key>
-			<integer>1640</integer>
 		</dict>
 		<key>B4EFFBDF-5AAE-4CD2-BE28-A5A5F0A2A04F</key>
 		<dict>

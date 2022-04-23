@@ -47,19 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>153A6FAA-CE96-41B5-B007-9425C1E6FCA6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<array>
 			<dict>
@@ -166,19 +153,6 @@
 		</array>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<array/>
-		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7E6E43ED-4A91-4C8E-8F79-476E9C7B5CD4</key>
 		<array>
 			<dict>
@@ -483,27 +457,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>vimium</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Open Vimium Settings</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>153A6FAA-CE96-41B5-B007-9425C1E6FCA6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -557,62 +510,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string>net.kassett.finicky</string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html#</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>43</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>,</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -757,9 +654,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -906,9 +803,9 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1054,15 +951,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>590</integer>
 		</dict>
-		<key>153A6FAA-CE96-41B5-B007-9425C1E6FCA6</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>225</integer>
-		</dict>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<dict>
 			<key>colorindex</key>
@@ -1181,17 +1069,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
-		<key>7B56F420-3B8B-41EE-AC41-F63DEFF1D7D1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>vimium settings</string>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>335</integer>
-		</dict>
 		<key>7E6E43ED-4A91-4C8E-8F79-476E9C7B5CD4</key>
 		<dict>
 			<key>colorindex</key>
@@ -1265,17 +1142,6 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<integer>325</integer>
 			<key>ypos</key>
 			<integer>490</integer>
-		</dict>
-		<key>D45E592D-0EFD-4B5C-AC13-1C321E5AC745</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>this way works independent from browser, following finicky settings</string>
-			<key>xpos</key>
-			<integer>775</integer>
-			<key>ypos</key>
-			<integer>305</integer>
 		</dict>
 		<key>D683D2B7-DA7C-47C6-B84C-F872F0BEFC89</key>
 		<dict>

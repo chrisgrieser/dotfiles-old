@@ -7,9 +7,6 @@ vmap k gk
 " backspace works in normal mode
 nmap <BS> hx
 
-" shorter delete line
-nmap X dd
-
 " enter works in normal mode
 exmap indentedNewline jscommand { editor.exec("newlineAndIndent"); }
 nmap ö :indentedNewline
@@ -20,8 +17,8 @@ nmap H ^
 nmap L $
 
 " faster scrolling (best used with scroll offset plugin)
-nmap J 5j
-nmap K 5k
+nmap J 6j
+nmap K 6k
 
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian default hotkeys (not here, so they also work in preview mode)
 
