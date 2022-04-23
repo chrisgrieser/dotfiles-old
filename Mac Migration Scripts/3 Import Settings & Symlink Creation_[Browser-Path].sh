@@ -20,15 +20,14 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 
 # Symlink Dotfiles
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
+
 mv ~/.zshrc ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zshrc .
 mv ~/.zprofile ~/.Trash
 ln -s "$SYMLINK_LOC"/zsh/.zprofile .
-
 ln -s "$SYMLINK_LOC"/zsh/.zlogin ~
 
 ln -s "$SYMLINK_LOC"/.searchlink ~
-ln -s "$SYMLINK_LOC"/.vimrc ~
 ln -s "$SYMLINK_LOC"/.shellcheckrc ~
 ln -s "$SYMLINK_LOC"/.markdownlintrc ~
 ln -s "$SYMLINK_LOC"/.stylelintrc.json ~
@@ -37,6 +36,9 @@ ln -s "$SYMLINK_LOC"/.eslintrc.json ~
 ln -s "$SYMLINK_LOC"/.finicky.js ~
 ln -s "$SYMLINK_LOC"/.gitignore_global ~
 ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
+
+ln -s "$SYMLINK_LOC"/.vimrc ~
+ln -s "$SYMLINK_LOC"/obsidian.vimrc ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/"
 
 # Brave
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
