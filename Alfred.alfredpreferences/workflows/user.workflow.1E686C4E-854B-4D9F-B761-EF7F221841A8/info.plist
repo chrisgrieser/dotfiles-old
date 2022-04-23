@@ -177,6 +177,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5FA2BDE3-A607-437A-A01A-EF48AB252A16</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9D6EE2D5-BBDF-426C-B74D-64369E11DAFE</key>
 		<array>
 			<dict>
@@ -1916,6 +1929,27 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vimrc</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open obsidian .vimrc</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -2155,9 +2189,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>625</integer>
 			<key>ypos</key>
-			<integer>1605</integer>
+			<integer>1705</integer>
 		</dict>
 		<key>60E121CE-8FD5-4A18-9C36-D03D5013C723</key>
 		<dict>
@@ -2272,6 +2306,13 @@ end tell</string>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
+		<key>9829F9D6-D7F6-4B85-9D0B-0D66952F8CC2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>1785</integer>
+		</dict>
 		<key>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</key>
 		<dict>
 			<key>colorindex</key>
@@ -2353,11 +2394,11 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>note</key>
-			<string>Footnote</string>
+			<string>vimrc</string>
 			<key>xpos</key>
 			<integer>445</integer>
 			<key>ypos</key>
-			<integer>1605</integer>
+			<integer>1640</integer>
 		</dict>
 		<key>B4EFFBDF-5AAE-4CD2-BE28-A5A5F0A2A04F</key>
 		<dict>
