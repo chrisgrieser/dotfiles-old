@@ -92,7 +92,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://vimhelp.org/motion.txt.html#{query}</string>
+				<string>https://vimhelp.org/quickref.txt.html</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -113,7 +113,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Vim Help: '{query}'</string>
+				<string>Vim Quick Reference</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -258,9 +258,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>

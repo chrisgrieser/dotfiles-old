@@ -8,28 +8,23 @@ nmap <BS> X
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" more logical
-" nmap U CTRL-R
+" more logical to have U redo
 nmap U <C-r>
 
-" s for [s]ubstract
-nmap <C-s> <C-d>
-
 " quicker way to change word
-nmap <space> ciw
+nmap <Space> ciw
 
-" H and L for moving quicker
+" HJKL like hjkl, bu bigger distance  (best used with scroll offset plugin)
 nmap H b
 nmap L w
-
-" faster scrolling (best used with scroll offset plugin)
 nmap J 6j
 nmap K 6k
+
+" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
 
 " Y consistent with D and C to the end of line
 nmap Y y$
 
-" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
 
 " yank to system clipboard
 set clipboard=unnamed
@@ -45,7 +40,7 @@ nmap f :openlink
 exmap closetab obcommand workspace:close
 nmap q :closetab
 
-" quickly escape insert/replace mode
+" quickly escape insert mode (and replace mode)
 imap jj <Esc>
 rmap jj <Esc>
 
