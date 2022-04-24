@@ -43,6 +43,7 @@ nmap q :closetab
 " quickly escape insert mode (and replace mode)
 imap jj <Esc>
 rmap jj <Esc>
+rmap ii <Esc>i
 
 " quicker find mode (mirroring American keyboard layout on German keyboard)
 nmap - /
