@@ -8,9 +8,9 @@ nmap <BS> hx
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" H and L for beginning/end of line
-nmap H ^
-nmap L $
+" H and L for moving quicker
+nmap H b
+nmap L w
 
 " faster scrolling (best used with scroll offset plugin)
 nmap J 6j
