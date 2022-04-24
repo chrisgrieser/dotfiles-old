@@ -8,6 +8,13 @@ nmap <BS> X
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
+" more logical
+" nmap U CTRL-R
+nmap U <C-r>
+
+" s for [s]ubstract
+nmap <C-s> <C-d>
+
 " quicker way to change word
 nmap <space> ciw
 
