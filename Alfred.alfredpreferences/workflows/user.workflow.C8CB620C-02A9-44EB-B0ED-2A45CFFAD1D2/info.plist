@@ -184,7 +184,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Open obsidian .vimrc</string>
+				<string>🟪 Open obsidian .vimrc</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -258,9 +258,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>

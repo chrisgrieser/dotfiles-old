@@ -1,10 +1,8 @@
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
-vmap j gj
-vmap k gk
 
-" backspace works in normal mode
+" backspace works in normal mode like in insert mode
 nmap <BS> hx
 
 " allows Double Enter to add new line and indent
@@ -23,7 +21,7 @@ nmap K 6k
 " yank to system clipboard
 set clipboard=unnamed
 
-" link mode (f) as in Vimium
+" link mode (f) like in Vimium
 exmap openlink obcommand mrj-jump-to-link:activate-jump-to-link
 nmap f :openlink
 
@@ -31,8 +29,9 @@ nmap f :openlink
 exmap closetab obcommand workspace:close
 nmap q :closetab
 
-" quickly escape insert mode
+" quickly escape insert/replace mode
 imap jj <Esc>
+rmap jj <Esc>
 
 " quicker find mode (mirroring American keyboard layout on German keyboard)
 nmap - /
