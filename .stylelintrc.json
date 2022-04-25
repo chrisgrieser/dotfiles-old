@@ -91,10 +91,13 @@
 						"background",
 						"background-color",
 						"background-image",
+						"background-repeat",
+						"image-rendering",
 						"backdrop-filter",
 						"backdrop-repeat",
 						"box-shadow",
-						"opacity"
+						"opacity",
+						"filter"
 					]
 				},
 				{
