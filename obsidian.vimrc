@@ -14,6 +14,9 @@ nmap U <C-r>
 " quicker way to change word
 nmap <Space> ciw
 
+" no modifier key for jumping to next word
+nmap + *
+
 " HJKL like hjkl, bu bigger distance  (best used with scroll offset plugin)
 nmap H b
 nmap L w
@@ -25,12 +28,11 @@ nmap K 6k
 " Y consistent with D and C to the end of line
 nmap Y y$
 
-
 " yank to system clipboard
 set clipboard=unnamed
 
 " Quickly remove search highlights
-nmap <C-l> :nohl
+nmap ? :nohl
 
 " link mode (f) like in Vimium
 exmap openlink obcommand mrj-jump-to-link:activate-jump-to-link
