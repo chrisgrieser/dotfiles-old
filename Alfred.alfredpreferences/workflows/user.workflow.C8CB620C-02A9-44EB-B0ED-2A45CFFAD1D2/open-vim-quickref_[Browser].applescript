@@ -17,7 +17,7 @@ on run argv
 		keystroke tab
 		keystroke tab
 		keystroke tab
-		delay 0.3
+		delay 0.4
 		keystroke tab
 		delay 0.1
 		keystroke space

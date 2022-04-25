@@ -17,7 +17,7 @@ nmap <Space> ciw
 " no modifier key for jumping to next word
 nmap + *
 
-" HJKL like hjkl, bu bigger distance  (best used with scroll offset plugin)
+" HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H b
 nmap L w
 nmap J 6j

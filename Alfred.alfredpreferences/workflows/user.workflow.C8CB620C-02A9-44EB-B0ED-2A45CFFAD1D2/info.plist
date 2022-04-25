@@ -262,9 +262,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -299,9 +299,9 @@
 			<key>note</key>
 			<string>this way works independent from browser, following finicky settings</string>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>525</integer>
 		</dict>
 		<key>4CB01888-1BBF-43A3-B369-5C65420EA7C4</key>
 		<dict>
@@ -337,7 +337,7 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>235</integer>
 		</dict>
 		<key>D3317886-6B6B-4FAB-8FF0-7AAB24B3390D</key>
 		<dict>
@@ -352,8 +352,10 @@
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
+			<key>note</key>
+			<string>vim quick reference</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>40</integer>
 			<key>ypos</key>
 			<integer>35</integer>
 		</dict>
