@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2C3AD0F5-2D56-474A-B922-8340DD8E20DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03A61E61-611A-4555-B4F6-30ED79850890</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4CB01888-1BBF-43A3-B369-5C65420EA7C4</key>
 		<array>
 			<dict>
@@ -34,11 +47,49 @@
 				<false/>
 			</dict>
 		</array>
+		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6893CDFD-0423-4258-A2EC-B278E825E37C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C3AD0F5-2D56-474A-B922-8340DD8E20DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E245279C-76D4-43D7-8F57-E295472BB4F5</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7497EF13-1EBB-4720-8F82-83144C19C542</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +115,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7497EF13-1EBB-4720-8F82-83144C19C542</string>
+				<string>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -84,6 +135,89 @@
 	<string>Vim</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>vim</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Vim Quick Reference</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E56FB083-4DE7-4650-A497-30E811525588</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635215215</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>03A61E61-611A-4555-B4F6-30ED79850890</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string> </string>
+						<key>outputlabel</key>
+						<string>google</string>
+						<key>uid</key>
+						<string>E245279C-76D4-43D7-8F57-E295472BB4F5</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>vim keyword</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>vim {query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2C3AD0F5-2D56-474A-B922-8340DD8E20DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -110,21 +244,44 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>qlmanage -p ~"/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code/Cheatsheets/Vim Cheat Sheet.png"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>vim</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Vim Quick Reference</string>
+				<string>⌨️ Vim Cheat Sheet</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E56FB083-4DE7-4650-A497-30E811525588</string>
+			<string>59880808-66A8-4459-B33C-A5FE98786D2F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -263,8 +420,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -281,6 +438,13 @@
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>03A61E61-611A-4555-B4F6-30ED79850890</key>
+		<dict>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
 		<key>27B379BB-1B88-4D59-9ECE-96DFFF88322F</key>
 		<dict>
 			<key>colorindex</key>
@@ -290,7 +454,14 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>325</integer>
+		</dict>
+		<key>2C3AD0F5-2D56-474A-B922-8340DD8E20DF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>60</integer>
 		</dict>
 		<key>4BC4FFB2-E0CE-41FF-B371-FE451B884431</key>
 		<dict>
@@ -301,7 +472,7 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>670</integer>
 		</dict>
 		<key>4CB01888-1BBF-43A3-B369-5C65420EA7C4</key>
 		<dict>
@@ -312,7 +483,18 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>580</integer>
+			<integer>725</integer>
+		</dict>
+		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>vim quick reference</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>185</integer>
 		</dict>
 		<key>6893CDFD-0423-4258-A2EC-B278E825E37C</key>
 		<dict>
@@ -321,14 +503,14 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>615</integer>
 		</dict>
 		<key>7497EF13-1EBB-4720-8F82-83144C19C542</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>35</integer>
+			<integer>160</integer>
 		</dict>
 		<key>87FAFB82-BA4C-4B86-BFB7-42F829F37218</key>
 		<dict>
@@ -337,7 +519,23 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>235</integer>
+			<integer>380</integer>
+		</dict>
+		<key>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</key>
+		<dict>
+			<key>note</key>
+			<string>Quicklook</string>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>55</integer>
 		</dict>
 		<key>D3317886-6B6B-4FAB-8FF0-7AAB24B3390D</key>
 		<dict>
@@ -346,7 +544,7 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>470</integer>
 		</dict>
 		<key>E56FB083-4DE7-4650-A497-30E811525588</key>
 		<dict>

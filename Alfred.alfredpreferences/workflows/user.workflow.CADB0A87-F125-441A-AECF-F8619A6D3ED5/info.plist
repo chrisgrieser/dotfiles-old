@@ -953,7 +953,7 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>count</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keychar</key>
 				<string>h</string>
 				<key>keycode</key>
@@ -1121,7 +1121,7 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>count</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keychar</key>
 				<string>l</string>
 				<key>keycode</key>
