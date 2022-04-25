@@ -28,7 +28,7 @@ end try
 # to ensure menubar icon is there
 tell application "Busycal"
 	activate
-	delay 0.5
+	delay 5
 	quit
 end tell
 
