@@ -1,3 +1,9 @@
+" yank to system clipboard
+set clipboard=unnamed
+
+" search w/o having to press enter
+set incsearch
+
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
@@ -27,9 +33,6 @@ nmap K 6k
 
 " Y consistent with D and C to the end of line
 nmap Y y$
-
-" yank to system clipboard
-set clipboard=unnamed
 
 " Quickly remove search highlights
 nmap ? :nohl
