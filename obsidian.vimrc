@@ -30,6 +30,7 @@ nmap J 6j
 nmap K 6k
 
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
+" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
 
 " Y consistent with D and C to the end of line
 nmap Y y$
