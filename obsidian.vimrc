@@ -45,10 +45,6 @@ nmap Y y$
 " Quickly remove search highlights
 nmap ? :nohl
 
-" link mode (f) like in Vimium
-exmap openlink obcommand mrj-jump-to-link:activate-jump-to-link
-nmap f :openlink
-
 " close tab
 exmap closetab obcommand workspace:close
 nmap q :closetab
@@ -56,7 +52,6 @@ nmap q :closetab
 " quickly escape insert mode (and replace mode)
 imap jj <Esc>
 rmap jj <Esc>
-rmap ii <Esc>i
 
 " enter insert mode
 vmap i x<Esc>i
