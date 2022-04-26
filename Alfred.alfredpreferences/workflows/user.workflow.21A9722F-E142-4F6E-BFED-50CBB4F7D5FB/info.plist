@@ -155,19 +155,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>96DBD188-219D-40A7-9143-CD101DFAAF4E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E911ECC8-329F-46A9-BBF6-F63F1920E632</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A77F6073-1BB7-43C2-949B-216A52B8B0CF</key>
 		<array>
 			<dict>
@@ -259,19 +246,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E8FB4B48-0EA4-40C3-AC48-A489747BB1B4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6304EDAE-7FE4-4A1D-ABE2-454316BB2B63</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>EA308BDF-BCED-4117-9030-4669B0788A69</key>
 		<array>
 			<dict>
@@ -325,58 +299,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>n</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>262144</integer>
-				<key>overridewithargument</key>
-				<false/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/search?q=alfred-workflow+{query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>E911ECC8-329F-46A9-BBF6-F63F1920E632</string>
+			<string>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
+				<key>browser</key>
 				<string></string>
-				<key>hotkey</key>
-				<integer>38</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>J</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.runningwithcrayons.Alfred</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://npms.io/search?q=alfred+workflow+{query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>96DBD188-219D-40A7-9143-CD101DFAAF4E</string>
+			<string>88BE14E8-8C6C-40C6-9497-48E193416293</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -461,58 +417,212 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>40</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>K</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.runningwithcrayons.Alfred</string>
-				</array>
-				<key>relatedAppsMode</key>
+				<key>argumenttype</key>
 				<integer>1</integer>
+				<key>keyword</key>
+				<string>pa</string>
+				<key>subtext</key>
+				<string>at Packal, PacMax, and GitHub</string>
+				<key>text</key>
+				<string>Search Alfred Workflows for '{query}'</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E8FB4B48-0EA4-40C3-AC48-A489747BB1B4</string>
+			<string>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>http://www.packal.org/workflow-search?query={query}&amp;osx-version=All&amp;items_per_page=50</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>424FC24A-8D2D-4BE5-A394-E934EF993E6F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://pacmax.org/?s={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>kill alfred</string>
+				<key>subtext</key>
+				<string>and reveal it in Finder</string>
+				<key>text</key>
+				<string>Force Quit Alfred</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>display notification "" with title "🛑 Force Quitting Alfred"
+tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alfred"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>p</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>262144</integer>
-				<key>overridewithargument</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>alfred workflow cache</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>📂 Alfred Workflow Cache</string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>6304EDAE-7FE4-4A1D-ABE2-454316BB2B63</string>
+			<string>4A3828AC-7DF5-44AE-84CE-3F1B054C7349</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>/Applications/Alfred 4.app</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>restart alfred</string>
+				<key>subtext</key>
+				<string>and reveal it in Finder</string>
+				<key>text</key>
+				<string>Force Quit Alfred</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B018B47C-9CD6-45B3-B5D8-DD61F004909D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>alfred workflow data</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>📂 Alfred Workflow Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>411F0C67-7E50-4B01-AF68-F2742465259B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Application Support/Alfred/Workflow Data</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -581,290 +691,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/search?q=alfred-workflow+{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://npms.io/search?q=alfred+workflow+{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>88BE14E8-8C6C-40C6-9497-48E193416293</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/Applications/Alfred 4.app/Contents/Preferences</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>D5D0024E-316C-4A4C-BEA4-7366C58BF580</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>alfred preference app</string>
-				<key>subtext</key>
-				<string>Reveal in Finder</string>
-				<key>text</key>
-				<string>⚙️ Alfred Preference.app</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>pa</string>
-				<key>subtext</key>
-				<string>at Packal, PacMax, and GitHub</string>
-				<key>text</key>
-				<string>Search Alfred Workflows for '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://www.packal.org/workflow-search?query={query}&amp;osx-version=All&amp;items_per_page=50</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>424FC24A-8D2D-4BE5-A394-E934EF993E6F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://pacmax.org/?s={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>BF89C364-F5A2-446D-A3F4-F0EAF2212146</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>alfred workflow cache</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>📂 Alfred Workflow Cache</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4A3828AC-7DF5-44AE-84CE-3F1B054C7349</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>kill alfred</string>
-				<key>subtext</key>
-				<string>and reveal it in Finder</string>
-				<key>text</key>
-				<string>Force Quit Alfred</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>display notification "" with title "🛑 Force Quitting Alfred"
-tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alfred"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>/Applications/Alfred 4.app</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>alfred workflow data</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>📂 Alfred Workflow Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>411F0C67-7E50-4B01-AF68-F2742465259B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Application Support/Alfred/Workflow Data</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>restart alfred</string>
-				<key>subtext</key>
-				<string>and reveal it in Finder</string>
-				<key>text</key>
-				<string>Force Quit Alfred</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B018B47C-9CD6-45B3-B5D8-DD61F004909D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -905,6 +731,42 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 			<string>4A6AD1C0-ABCF-4C85-8E12-C4170B8982C5</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/Applications/Alfred 4.app/Contents/Preferences</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D5D0024E-316C-4A4C-BEA4-7366C58BF580</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>alfred preference app</string>
+				<key>subtext</key>
+				<string>Reveal in Finder</string>
+				<key>text</key>
+				<string>⚙️ Alfred Preference.app</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1106,7 +968,7 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>675</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>435</integer>
 		</dict>
 		<key>411F0C67-7E50-4B01-AF68-F2742465259B</key>
 		<dict>
@@ -1115,25 +977,25 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>525</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>435</integer>
 		</dict>
 		<key>424FC24A-8D2D-4BE5-A394-E934EF993E6F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>365</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>180</integer>
 		</dict>
 		<key>48898411-6F12-4ADD-830B-88FED0F66BB0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>245</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>770</integer>
 		</dict>
 		<key>4A3828AC-7DF5-44AE-84CE-3F1B054C7349</key>
 		<dict>
@@ -1142,7 +1004,7 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>525</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>310</integer>
 		</dict>
 		<key>4A6AD1C0-ABCF-4C85-8E12-C4170B8982C5</key>
 		<dict>
@@ -1151,50 +1013,41 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>675</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>565</integer>
 		</dict>
 		<key>57787A3F-711D-487E-A402-6DB381439B3A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>760</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>770</integer>
 		</dict>
 		<key>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>100</integer>
 		</dict>
 		<key>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>525</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>510</integer>
-		</dict>
-		<key>6304EDAE-7FE4-4A1D-ABE2-454316BB2B63</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>145</integer>
+			<integer>630</integer>
 		</dict>
 		<key>72429B6F-6A52-4E6C-93A4-FD88489A22F2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>1145</integer>
+			<integer>890</integer>
 		</dict>
 		<key>85821837-B8CC-4E2F-8D92-FB37B1751D4A</key>
 		<dict>
@@ -1219,36 +1072,25 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>365</integer>
 			<key>ypos</key>
-			<integer>465</integer>
+			<integer>25</integer>
 		</dict>
 		<key>8C4DE1F4-CC9B-41F7-A3B6-122F5485EA84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>1175</integer>
-		</dict>
-		<key>96DBD188-219D-40A7-9143-CD101DFAAF4E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>vim-like keybinds</string>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>15</integer>
+			<integer>920</integer>
 		</dict>
 		<key>A77F6073-1BB7-43C2-949B-216A52B8B0CF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>310</integer>
 		</dict>
 		<key>AB2FC894-EB25-4C16-B958-43863871807B</key>
 		<dict>
@@ -1257,9 +1099,9 @@ echo "$backup"</string>
 			<key>note</key>
 			<string>sound</string>
 			<key>xpos</key>
-			<integer>685</integer>
+			<integer>680</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>790</integer>
 		</dict>
 		<key>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</key>
 		<dict>
@@ -1268,34 +1110,34 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>675</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>310</integer>
 		</dict>
 		<key>B018B47C-9CD6-45B3-B5D8-DD61F004909D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>820</integer>
+			<integer>385</integer>
 		</dict>
 		<key>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>700</integer>
+			<integer>265</integer>
 		</dict>
 		<key>BF89C364-F5A2-446D-A3F4-F0EAF2212146</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>180</integer>
 		</dict>
 		<key>CF914E27-A341-4A6B-A7FF-20CBE3711527</key>
 		<dict>
@@ -1314,27 +1156,27 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>630</integer>
 		</dict>
 		<key>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>325</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>310</integer>
 		</dict>
 		<key>DB75DE0D-5D08-4DC0-8F18-35F4D551A52A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>525</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>770</integer>
 		</dict>
 		<key>DCD9C133-BB06-4C67-9775-B4814A38FF71</key>
 		<dict>
@@ -1343,70 +1185,52 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>xpos</key>
 			<integer>525</integer>
 			<key>ypos</key>
-			<integer>890</integer>
-		</dict>
-		<key>E8FB4B48-0EA4-40C3-AC48-A489747BB1B4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>145</integer>
-		</dict>
-		<key>E911ECC8-329F-46A9-BBF6-F63F1920E632</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>15</integer>
+			<integer>565</integer>
 		</dict>
 		<key>EA308BDF-BCED-4117-9030-4669B0788A69</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>505</integer>
 		</dict>
 		<key>F335D8C8-905A-4192-90B9-033173FEB8AF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>770</integer>
 		</dict>
 		<key>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>465</integer>
+			<integer>25</integer>
 		</dict>
 		<key>FBE773BF-5340-43E6-98F8-22E1C4F01CC5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>770</integer>
 		</dict>
 		<key>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>505</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

@@ -303,25 +303,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://explainshell.com/explain?cmd={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>2700161D-CDE3-43DA-A39B-F25D6134C16F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -348,14 +329,14 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://grep.app/search?q={query}</string>
+				<string>https://explainshell.com/explain?cmd={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</string>
+			<string>2700161D-CDE3-43DA-A39B-F25D6134C16F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -377,6 +358,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>728D99C6-9125-4C59-8310-24D5CACED677</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://grep.app/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
