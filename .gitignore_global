@@ -10,3 +10,9 @@ Icon
 
 # NPM
 node_modules
+
+# safety net to prevent sensitive data being accidentally moved
+*.kdb
+*.kdbx
+*.pfx
+*.key
