@@ -31,6 +31,10 @@ nmap H b
 nmap L w
 nmap J 6j
 nmap K 6k
+vmap H b
+vmap L w
+vmap J 6j
+vmap K 6k
 
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
@@ -53,6 +57,9 @@ nmap q :closetab
 imap jj <Esc>
 rmap jj <Esc>
 rmap ii <Esc>i
+
+" enter insert mode
+vmap i x<Esc>i
 
 " quicker find mode (mirroring American keyboard layout on German keyboard)
 nmap - /
