@@ -9,9 +9,8 @@
 
 	// Font & Spacing
 	"ui_scale": 1.6,
-	"font_size": 15.5,
-	// "font_face": "Input",
-	"font_face": "Comic Mono",
+	"font_size": 14,
+	"font_face": "Input",
 	"font_options": ["no_round", "no_liga", "no_italic"],
 
 	// Appearance
