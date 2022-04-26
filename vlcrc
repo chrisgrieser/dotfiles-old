@@ -4,49 +4,34 @@
 
 [macosx]
 macosx-interfacestyle=1 # Run VLC with dark interface style (boolean)
-#macosx-nativefullscreenmode=0
+macosx-nativefullscreenmode=1
 macosx-statusicon=0 # menu bar
 macosx-icon-change=0 #automatic icon change
 macosx-show-playback-buttons=1 # next / prev
 macosx-show-playmode-buttons=1 # shuffle / repeat
-#macosx-show-effects-button=0
-#macosx-max-volume=125
+macosx-max-volume=200
 macosx-large-text=1 # Use large text for list views (boolean)
-#macosx-autoplay=1
+macosx-autoplay=1
 macosx-recentitems=5
-#macosx-fspanel=1 # Show Fullscreen controller (boolean)
-#macosx-video-autoresize=1 # Resize interface to the native video size (boolean)
-#macosx-pause-minimized=0
-#macosx-lock-aspect-ratio=1
+macosx-fspanel=1 # Show Fullscreen controller (boolean)
 macosx-dim-keyboard=1 # Dim keyboard backlight during fullscreen playback (boolean)
 macosx-control-itunes=2 # Control external music players (integer)
 macosx-continue-playback=1 # Continue playback where you left off (integer)
 macosx-mediakeys=0 # Control playback with media keys (boolean)
-#macosx-vdev=0 # Video device (integer)
 #macosx-black=0 # Black screens in fullscreen (boolean)
 
 [core] # core program
-#audio=1 # Enable audio (boolean)
-#gain=1.000000 # Audio gain (float)
-#volume-step=12.800000 # Audio output volume step (float)
 volume-save=0 # Remember the audio volume (boolean)
-#video=1 # Enable video (boolean)
-#grayscale=0 # Grayscale video output (boolean)
 fullscreen=1 # Fullscreen video output (boolean)
-#embedded-video=1 # Embedded video (boolean)
-#video-on-top=0 # Always on top (boolean)
-#video-wallpaper=0 # Enable wallpaper mode (boolean)
 #disable-screensaver=1 # Disable screensaver (boolean)
 video-title-show=0 # Show media title on video (boolean)
-#video-title-timeout=5000 # Show video title for x milliseconds (integer)
-#video-title-position=8 # Position of video title (integer)
-#mouse-hide-timeout=1000 # Hide cursor and fullscreen controller after x milliseconds (integer)
-#video-deco=1 # Window decorations (boolean)
-#zoom=1.000000 # Zoom video (float)
+mouse-hide-timeout=500 # Hide cursor and fullscreen controller after x milliseconds (integer)
+video-deco=1 # Window decorations (boolean)
+
 #sub-file= # Use subtitle file (string)
 #sub-autodetect-file=1 # Autodetect subtitle files (boolean)
 sub-autodetect-fuzzy=1 # Subtitle autodetection fuzziness (integer)
-#sub-autodetect-path=./Subtitles, ./subtitles, ./Subs, ./subs # Subtitle autodetection paths (string)
+sub-autodetect-path=./Subtitles, ./subtitles, ./Subs, ./subs # Subtitle autodetection paths (string)
 sub-margin=0 # Force subtitle position (integer)
 #audio-track=-1 # Audio track (integer)
 #sub-track=-1 # Subtitle track (integer)
@@ -55,27 +40,22 @@ sub-language=English # Subtitle language (string)
 #menu-language= # Menu language (string)
 #audio-track-id=-1 # Audio track ID (integer)
 #sub-track-id=-1 # Subtitle track ID (integer)
-#input-fast-seek=0 # Fast seek (boolean)
-#rate=1.000000 # Playback speed (float)
+
 #random=0 # Play files randomly forever (boolean)
 #loop=0 # Repeat all (boolean)
 #repeat=0 # Repeat current item (boolean)
 play-and-exit=1 # Play and exit (boolean)
-#play-and-stop=0 # Play and stop (boolean)
-#play-and-pause=0 # Play and pause (boolean)
 #start-paused=0 # Start paused (boolean)
 #playlist-autostart=1 # Auto start (boolean)
-#playlist-cork=1 # Pause on audio communication (boolean)
-#media-library=0 # Use media library (boolean)
+media-library=0 # Use media library (boolean)
 #playlist-tree=0 # Display playlist tree (boolean)
-#recursive=collapse # Subdirectory behavior (string)
 #ignore-filetypes=m3u,db,nfo,ini,jpg,jpeg,ljpg,gif,png,pgm,pgmyuv,pbm,pam,tga,bmp,pnm,xpm,xcf,pcx,tif,tiff,lbm,sfv,txt,sub,idx,srt,cue,ssa
-#show-hiddenfiles=0
+show-hiddenfiles=0
 
-#extrashort-jump-size=3
+extrashort-jump-size=3
 short-jump-size=30
-#medium-jump-size=60
-#long-jump-size=300
+medium-jump-size=60
+long-jump-size=300
 
 #hotkeys-y-wheel-mode=0 # Mouse wheel vertical axis control (integer)
 #hotkeys-x-wheel-mode=2 # Mouse wheel horizontal axis control (integer)
@@ -97,7 +77,7 @@ short-jump-size=30
 
 #key-vol-up=Command+Up
 #key-vol-down=Command+Down
-#key-vol-mute=Command+Alt+Down
+key-vol-mute=m
 
 #key-subdelay-up=j
 #key-subdelay-down=h
@@ -151,3 +131,14 @@ short-jump-size=30
 #key-subtitle-text-scale-normal=Command+0
 #key-subtitle-text-scale-up=Command+Mouse Wheel Up
 #key-subtitle-text-scale-down=Command+Mouse Wheel Down
+
+# Control interfaces (string) (active mosue gestures)
+control=gestures
+
+[gestures] # Mouse gestures control interface
+
+# integer (Motion threshold (10-100))
+gestures-threshold=30
+
+# string (Trigger button)
+gestures-button=left
