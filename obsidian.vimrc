@@ -14,9 +14,8 @@ nmap <BS> X
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" Undo & Redo
-nmap z u
-nmap Z <C-r>
+" More logical undo
+nmap U <C-r>
 
 " quicker way to change word
 nmap <Space> ciw
