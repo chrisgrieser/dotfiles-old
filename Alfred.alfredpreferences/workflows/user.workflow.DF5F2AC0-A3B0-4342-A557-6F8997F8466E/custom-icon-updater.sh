@@ -10,16 +10,6 @@ export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
 # ----------------------
 
-if [[ "$*" == "Alfred Preferences" ]]; then
-	cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
-	touch '/Applications/Alfred 4.app/Contents/Preferences/Alfred Preferences.app'
-	killall "Alfred Preferences"
-	open -a "Alfred Preferences"
-	echo -n "Alfred Preferences" # pass for notication
-	exit 0
-fi
-
-# ----------------------
 
 
 # only app name
@@ -41,6 +31,9 @@ case $APP_TO_UPDATE in
    "Transmission")
 		cp "$CUSTOM_ICON_FOLDER/Transmission 2.icns" '/Transmission.app/Contents/Resources/Transmission.icns'
 		touch "Transmission.app" ;;
+   "Alfred Preferences")
+		cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
+		touch 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns' ;;
 	"VLC")
 		cp "$CUSTOM_ICON_FOLDER/VLC.icns" 'VLC.app/Contents/Resources/VLC.icns'
 		touch "VLC.app" ;;

@@ -792,10 +792,11 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
-					<string>com.apple.finder</string>
-					<string>com.iconfactory.Twitterrific5</string>
 					<string>com.sublimetext.4</string>
+					<string>md.obsidian</string>
+					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.iconfactory.Twitterrific5</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -948,12 +949,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
 					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -2454,7 +2455,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>expand to word</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>615</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>

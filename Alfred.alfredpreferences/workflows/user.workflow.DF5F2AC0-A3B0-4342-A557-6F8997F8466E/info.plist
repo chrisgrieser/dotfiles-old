@@ -260,6 +260,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Icon copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7067A0A4-D9DA-4775-BECD-24C3249B29E2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -280,27 +301,6 @@ return "{query}"</string>
 			<string>3911AEA8-B4EE-4AE9-840F-B3044B36E1AC</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ Icon copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>7067A0A4-D9DA-4775-BECD-24C3249B29E2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -337,27 +337,6 @@ return "{query}"</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>B4664219-4A3F-40BE-952B-7F4EA7FE6329</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>icon</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Several Icon Sites: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BCDE5A63-BF29-4CD2-B482-D2A56CD510A1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -409,6 +388,27 @@ return "{query}"</string>
 			<string>B2FE0349-860A-44F0-B49D-20C8F895F9C0</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>icon</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Several Icon Sites: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BCDE5A63-BF29-4CD2-B482-D2A56CD510A1</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -506,6 +506,25 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://icon-sets.iconify.design/?query={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>787AA6A6-CD07-447C-8D73-F4FCD1FEC10D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -521,25 +540,6 @@ return "{query}"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>4610619C-F64A-42DF-B3B5-F2E14447FA42</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://icon-sets.iconify.design/?query={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>787AA6A6-CD07-447C-8D73-F4FCD1FEC10D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -618,25 +618,6 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://macosicons.com/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>669EC31A-C9B1-4515-85BA-4809329A85F8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -652,6 +633,25 @@ return "{query}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>1DEB7DC6-BC1F-4E24-8930-2D157EF66CE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://macosicons.com/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>669EC31A-C9B1-4515-85BA-4809329A85F8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -679,21 +679,6 @@ return "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>custom-icon-updater.sh</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -709,6 +694,40 @@ return "{query}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>ADC0722C-95D6-4BDE-B235-615784A424DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>custom-icon-updater.sh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5E00EB78-1FAB-400E-B437-E867401108F0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://fonts.google.com/icons?icon.query={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E8277AD7-938D-47A3-8C3E-CA4929723C43</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -741,14 +760,14 @@ return "{query}"</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://fonts.google.com/icons?icon.query={query}</string>
+				<string>https://lucide.dev/?search={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>E8277AD7-938D-47A3-8C3E-CA4929723C43</string>
+			<string>DF55CB29-2AC2-4527-BCDC-A622FBD4BAE1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -770,25 +789,6 @@ return "{query}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>B5FEA91E-E371-4D98-863B-604F2D5DCADA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://lucide.dev/?search={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>DF55CB29-2AC2-4527-BCDC-A622FBD4BAE1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -964,9 +964,9 @@ brew install folderify</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>575</integer>
 		</dict>
 		<key>669EC31A-C9B1-4515-85BA-4809329A85F8</key>
 		<dict>
@@ -1038,9 +1038,9 @@ brew install folderify</string>
 			<key>note</key>
 			<string>edit preferences file</string>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>570</integer>
 		</dict>
 		<key>AF9EC7AB-2DA7-4A8E-86CC-D63DF4929210</key>
 		<dict>
