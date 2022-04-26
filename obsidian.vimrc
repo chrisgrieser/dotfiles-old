@@ -14,14 +14,18 @@ nmap <BS> X
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" more logical to have U redo
-nmap U <C-r>
+" Undo & Redo
+nmap z u
+nmap Z <C-r>
 
 " quicker way to change word
 nmap <Space> ciw
 
 " no modifier key for jumping to next word
 nmap + *
+
+" switch case
+nmap ü ~
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H b
