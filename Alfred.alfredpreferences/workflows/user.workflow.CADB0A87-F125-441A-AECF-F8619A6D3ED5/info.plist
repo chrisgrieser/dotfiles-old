@@ -1046,11 +1046,11 @@ end alfred_script</string>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
-				<string>→</string>
+				<string>r</string>
 				<key>keycode</key>
-				<integer>124</integer>
+				<integer>-1</integer>
 				<key>keymod</key>
-				<integer>12058624</integer>
+				<integer>1048576</integer>
 				<key>overridewithargument</key>
 				<false/>
 			</dict>
@@ -1630,7 +1630,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>note</key>
-			<string>Forward</string>
+			<string>Preview Mode</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
