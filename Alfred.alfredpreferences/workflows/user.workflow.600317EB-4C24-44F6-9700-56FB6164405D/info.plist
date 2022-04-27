@@ -274,7 +274,7 @@ end if-- Seminar Preparationif (slack_url is not "") then
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>set-context.applescript</string>
+				<string>set-context_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>

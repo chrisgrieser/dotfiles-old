@@ -11,7 +11,7 @@ tell application "zoom.us" to open location "zoom_url"
 set volume output volume 70
 tell application id "com.runningwithcrayons.Alfred" to run trigger "pause" in workflow "com.vdesabou.spotify.mini.player" with argument ""
 
--- open Drafts for note-taking
+-- OPEN DRAFTS FOR NOTE-TAKING
 if (notes is "drafts") then
 	-- open Drafts
 	tell application "Drafts" to open location "drafts://x-callback-url/runaction?&action=Workspace-Basic%20(note-taking)"
@@ -28,16 +28,19 @@ if (notes is "drafts") then
 	end repeat
 	delay 0.5
 
-	-- minimize the unneeded window
+	-- put the unneeded window into the background
 	tell application "System Events"
-		click (first button of window "Zoom" of process "zoom.us" whose role description is "minimize button")
+		tell process "zoom.us"
+			set frontmost to true
+			perform action "AXRaise" of (first window whose name is "Zoom")
+		end tell
 	end tell
 
 	tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Zoom"
 	display notification "" with title "📝 Note Mode ready"
 end if
 
--- maximize Zoom when not a special context
+-- MAXIMIZE ZOOM WHEN NOT A SPECIAL CONTEXT
 if (notes is "none") then
 
 	-- wait till Zoom meeting has started
@@ -58,7 +61,7 @@ if (notes is "none") then
 	end tell
 end if
 
--- Seminar Preparation
+-- SEMINAR PREPARATION
 if (notes contains "obsidian") then
 
 	-- open Obsidian notes
@@ -76,6 +79,7 @@ if (notes contains "obsidian") then
 	tell application "BusyCal" to if it is running then quit
 	tell application "Discord" to if it is running then quit
 	tell application "Slack" to if it is running then quit
+	tell application "Brave Browser" to if it is running then quit
 	tell application "Mimestream" to if it is running then quit
 
 	-- Pause
@@ -93,12 +97,11 @@ if (notes contains "obsidian") then
 	end repeat
 	delay 0.5
 
-	-- minimize the unneeded window
+	-- put the unneeded window into the background
 	tell application "System Events"
 		tell process "zoom.us"
 			set frontmost to true
 			perform action "AXRaise" of (first window whose name is "Zoom")
-			click menu item "Minimize" of menu "Window" of menu bar 1
 		end tell
 	end tell
 

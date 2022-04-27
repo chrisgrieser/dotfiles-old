@@ -1293,7 +1293,7 @@ Recommended Hotkey: ⇧⌘2</string>
 		<key>ocr_languages</key>
 		<string>eng+deu</string>
 		<key>tagToExcludeFromSearch</key>
-		<string>tasklists</string>
+		<string>tasklist</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
