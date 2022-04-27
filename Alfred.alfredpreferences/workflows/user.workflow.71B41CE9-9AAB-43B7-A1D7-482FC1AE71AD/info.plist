@@ -35,16 +35,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>11D8554B-846B-40DD-9CA0-C73F5736472F</string>
-				<key>modifiers</key>
-				<integer>8388608</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
 				<key>modifiers</key>
 				<integer>8388608</integer>
@@ -237,7 +227,18 @@
 			</dict>
 		</array>
 		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>11D8554B-846B-40DD-9CA0-C73F5736472F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<array>
 			<dict>
@@ -1661,6 +1662,32 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	set toDelete to (item 1 of argv) as POSIX file
+	tell application "Finder" to delete toDelete
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1820,32 +1847,6 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 			<string>C9992321-E495-42F5-8309-4206EE81A1F6</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-	set toDelete to (item 1 of argv) as POSIX file
-	tell application "Finder" to delete toDelete
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2637,9 +2638,9 @@ end if</string>
 		<key>11D8554B-846B-40DD-9CA0-C73F5736472F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>935</integer>
+			<integer>930</integer>
 		</dict>
 		<key>1B6838B5-A98F-4E36-B645-F289BA31A5F8</key>
 		<dict>
@@ -2802,9 +2803,9 @@ end if</string>
 			<key>note</key>
 			<string>delete file</string>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>665</integer>
 			<key>ypos</key>
-			<integer>1060</integer>
+			<integer>930</integer>
 		</dict>
 		<key>4A2BBCFD-F977-4747-A19C-0CA5ABFC48D0</key>
 		<dict>

@@ -7,7 +7,7 @@
     },
     {
       "pattern": "https?://www.inoreader.com/*",
-      "passKeys": "bvo?pa1"
+      "passKeys": "bvo?pa1nd"
     },
     {
       "pattern": "https?://excalidraw.com/*",
@@ -23,15 +23,11 @@
     },
     {
       "pattern": "https?://www.youtube.com/*",
-      "passKeys": "cmf"
+      "passKeys": "cm"
     },
     {
       "pattern": "https?://github.com/*/issues(\\?q=*)?",
       "passKeys": "jk"
-    },
-    {
-      "pattern": "https?://github.com/search*",
-      "passKeys": "jk/"
     },
     {
       "pattern": "https?://www.reddit.com/*",
@@ -49,7 +45,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "# Closing Tabs\nmap ww removeTab count=15\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap W closeOtherTabs\nmap u removeTab\nmap U restoreTab\n\n# Scrolling Fast\nmap J scrollDown count=3\nmap K scrollUp count=3\n\n# History\nmap h goBack\nmap l goForward\n\n# unmap unneeded\nunmap d\nunmap B\nunmap gt\nunmap gT\n\n# Reload\nmap R reload hard\n\n# pages\nmap gh goPrevious\nmap gl goNext\n\n# Omnibar\nunmap O\nmap o Vomnibar.activateInNewTab\n\n# tabs\nunmap T\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nunmap g0\nmap H previousTab\nmap L nextTab\nunmap g$\n\n# Links\nmap yn LinkHints.activateMode action=copy-text\n\n# mimic American keyboard layout\nmap - enterFindMode",
+  "keyMappings": "# Closing Tabs\nmap ww removeTab count=15\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap W closeOtherTabs\nmap u removeTab\nmap U restoreTab\n\n# Scrolling Fast\nmap J scrollDown count=3\nmap K scrollUp count=3\n\n# History\nmap h goBack\nmap l goForward\n\n# unmap unneeded\nunmap d\nunmap B\nunmap gt\nunmap gT\n\n# Reload\nmap R reload hard\n\n# pages\nmap gh goPrevious\nmap gl goNext\n\n# Omnibar\nunmap O\nmap o Vomnibar.activateInNewTab\n\n# tabs\nunmap T\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nunmap g0\nmap H previousTab\nmap L nextTab\nunmap g$\n\n# Links\nmap yn LinkHints.activateMode action=copy-text\nmap <s-Space> LinkHints.activateMode\n\n# mimic American keyboard layout\nmap - enterFindMode",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
@@ -57,7 +53,7 @@
   "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
   "regexFindMode": false,
   "ignoreKeyboardLayout": false,
-  "scrollStepSize": 300,
+  "scrollStepSize": 330,
   "smoothScroll": true,
   "grabBackFocus": true,
   "searchEngines": "",

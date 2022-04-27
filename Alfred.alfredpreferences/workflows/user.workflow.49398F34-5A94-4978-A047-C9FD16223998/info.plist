@@ -238,7 +238,7 @@ open -a "Twitterrific"</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
@@ -246,7 +246,7 @@ open -a "Twitterrific"</string>
 				<key>text</key>
 				<string>Toggle Headless Mode</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
