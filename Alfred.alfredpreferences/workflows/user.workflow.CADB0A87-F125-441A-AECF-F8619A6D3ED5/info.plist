@@ -1182,6 +1182,7 @@ end alfred_script</string>
 	tell process "Drafts"
 		set frontmost to true
 		click menu item "Move to Archive" of menu "File" of menu bar 1
+		click menu item "New" of menu "File" of menu bar 1
 	end tell
 end tell
 end alfred_script</string>
@@ -1421,7 +1422,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<integer>640</integer>
 			<key>ypos</key>
-			<integer>610</integer>
+			<integer>605</integer>
 		</dict>
 		<key>0FCAB866-B4C8-464B-863F-A299A91B25D1</key>
 		<dict>
@@ -1705,7 +1706,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>610</integer>
+			<integer>605</integer>
 		</dict>
 		<key>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</key>
 		<dict>
