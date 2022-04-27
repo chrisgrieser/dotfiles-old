@@ -589,7 +589,8 @@ open -a "Twitterrific"</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>note</key>
-			<string>toggle headless mode</string>
+			<string>Cheatsheet of Shortcuts
+(useful, since shortcuts cannot be inspected in the menubar in headless mode)</string>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
@@ -655,6 +656,8 @@ open -a "Twitterrific"</string>
 		</dict>
 		<key>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
