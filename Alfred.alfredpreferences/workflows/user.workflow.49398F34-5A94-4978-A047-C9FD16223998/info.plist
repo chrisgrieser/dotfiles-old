@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>512210D7-D938-4575-B2B9-3A29F768866D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>BB7458E2-0227-454E-AC96-A82B1BED8CB4</key>
 		<array>
 			<dict>
@@ -375,6 +388,50 @@ open -a "Twitterrific"</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>tw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>❓Shortcuts</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>512210D7-D938-4575-B2B9-3A29F768866D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>qlmanage -p "twitterific-shortcuts-cheatsheet.png"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
 				<string>tw notifications</string>
@@ -527,6 +584,17 @@ open -a "Twitterrific"</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
+		<key>512210D7-D938-4575-B2B9-3A29F768866D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>toggle headless mode</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
 			<key>colorindex</key>
@@ -584,6 +652,15 @@ open -a "Twitterrific"</string>
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>25</integer>
+		</dict>
+		<key>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</key>
+		<dict>
+			<key>note</key>
+			<string>Quicklook</string>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>340</integer>
 		</dict>
 		<key>D24BD568-15C4-4DDD-99AE-F3DFFDD3E0A2</key>
 		<dict>

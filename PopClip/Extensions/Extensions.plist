@@ -8,11 +8,11 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
-			<string>com.popclip.extension.instant-translate</string>
+			<string>com.pilotmoon.popclip.extension.drafts</string>
 			<key>Extension Name</key>
-			<string>Instant Translate</string>
+			<string>Drafts</string>
 			<key>Package Name</key>
-			<string>InstantTranslate.popclipext</string>
+			<string>Drafts.popclipext</string>
 		</dict>
 		<dict>
 			<key>Enabled</key>
@@ -78,6 +78,16 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
+			<string>com.popclip.extension.instant-translate</string>
+			<key>Extension Name</key>
+			<string>Instant Translate</string>
+			<key>Package Name</key>
+			<string>InstantTranslate.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
 			<string>de.chris-grieser.custom-busycal</string>
 			<key>Extension Name</key>
 			<string>BusyCal</string>
@@ -93,16 +103,6 @@
 			<string>Highlight</string>
 			<key>Package Name</key>
 			<string>Highlight.popclipext</string>
-		</dict>
-		<dict>
-			<key>Enabled</key>
-			<true/>
-			<key>Extension Identifier</key>
-			<string>com.pilotmoon.popclip.extension.drafts</string>
-			<key>Extension Name</key>
-			<string>Drafts</string>
-			<key>Package Name</key>
-			<string>Drafts.popclipext</string>
 		</dict>
 	</array>
 	<key>Version</key>
