@@ -21,24 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>14BEDD0A-0F64-4D06-90C2-D8B2FB9852AB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD5AE814-346D-42A1-802D-B4359B140681</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>18FFA997-787D-46F4-89C2-25C74CB7E743</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>14BEDD0A-0F64-4D06-90C2-D8B2FB9852AB</string>
+				<string>BD5AE814-346D-42A1-802D-B4359B140681</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
+				<string>3FBB08F9-CA91-4905-9ED4-9EBFC8FD49DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -103,7 +90,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>14BEDD0A-0F64-4D06-90C2-D8B2FB9852AB</string>
+				<string>BD5AE814-346D-42A1-802D-B4359B140681</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -116,7 +103,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
+				<string>3FBB08F9-CA91-4905-9ED4-9EBFC8FD49DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -139,19 +126,6 @@
 			</dict>
 		</array>
 		<key>B224DA29-7E6C-4916-AA1E-F8F3EDF2AD38</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -181,7 +155,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
+				<string>3FBB08F9-CA91-4905-9ED4-9EBFC8FD49DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -194,7 +168,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
+				<string>3FBB08F9-CA91-4905-9ED4-9EBFC8FD49DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -207,7 +181,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
+				<string>3FBB08F9-CA91-4905-9ED4-9EBFC8FD49DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -245,6 +219,46 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>18FFA997-787D-46F4-89C2-25C74CB7E743</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>busycalevent://new/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>BD5AE814-346D-42A1-802D-B4359B140681</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Add as Event to BusyCal</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>5A120862-2045-4E00-819B-B9B68562B55D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -303,59 +317,6 @@
 			<string>4807A1A0-6691-4686-8ACA-C507FDA668EE</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>busycalevent://new/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>BD5AE814-346D-42A1-802D-B4359B140681</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>14BEDD0A-0F64-4D06-90C2-D8B2FB9852AB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Add as Event to BusyCal</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>5A120862-2045-4E00-819B-B9B68562B55D</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -453,19 +414,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>12707C5A-EABC-4604-A5BE-7FA3A8C58633</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -610,9 +558,9 @@
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>255</integer>
 		</dict>
 		<key>12707C5A-EABC-4604-A5BE-7FA3A8C58633</key>
 		<dict>
@@ -622,15 +570,6 @@
 			<integer>40</integer>
 			<key>ypos</key>
 			<integer>520</integer>
-		</dict>
-		<key>14BEDD0A-0F64-4D06-90C2-D8B2FB9852AB</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>140</integer>
 		</dict>
 		<key>18FFA997-787D-46F4-89C2-25C74CB7E743</key>
 		<dict>
@@ -664,7 +603,7 @@
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>440</integer>
 			<key>ypos</key>
 			<integer>515</integer>
 		</dict>
@@ -680,9 +619,9 @@
 		<key>4807A1A0-6691-4686-8ACA-C507FDA668EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>255</integer>
 		</dict>
 		<key>5A120862-2045-4E00-819B-B9B68562B55D</key>
 		<dict>
@@ -691,7 +630,7 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>165</integer>
 		</dict>
 		<key>78C98287-DBDB-4D90-B438-BC63165D56B5</key>
 		<dict>
@@ -728,15 +667,6 @@
 			<integer>285</integer>
 			<key>ypos</key>
 			<integer>110</integer>
-		</dict>
-		<key>CEA105BA-09C5-4A22-AB3A-7509105CEBB9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>400</integer>
-			<key>ypos</key>
-			<integer>545</integer>
 		</dict>
 		<key>DFC2FD2A-982E-447C-AA7C-F5026DF72C9D</key>
 		<dict>
