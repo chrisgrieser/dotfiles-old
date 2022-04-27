@@ -8,6 +8,16 @@
 			<key>Enabled</key>
 			<true/>
 			<key>Extension Identifier</key>
+			<string>com.popclip.extension.instant-translate</string>
+			<key>Extension Name</key>
+			<string>Instant Translate</string>
+			<key>Package Name</key>
+			<string>InstantTranslate.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
 			<string>de.chris-grieser.popclip.extension.strikethrough</string>
 			<key>Extension Name</key>
 			<string>PDF Strikethrough</string>
