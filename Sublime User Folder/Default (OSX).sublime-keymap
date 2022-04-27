@@ -111,8 +111,8 @@
 	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
 	// Scrolling
-	{ "keys": ["alt+up"], "command": "scroll_lines", "args": {"amount": 15.0} },
-	{ "keys": ["alt+down"], "command": "scroll_lines", "args": {"amount": -15.0} },
+	{ "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 20.0} },
+	{ "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -20.0} },
 
 	// Comment
 	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
@@ -129,8 +129,7 @@
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
 	{ "keys": ["super+shift+u"], "command": "jump_forward" },
-	{ "keys": ["f14"], "command": "jump_back" },
-	{ "keys": ["f13"], "command": "jump_forward" },
+	{ "keys": ["f14"], "command": "close" },
 
    // Disable Saving
    { "keys": ["super+shift+s"], "command": "noop" },
