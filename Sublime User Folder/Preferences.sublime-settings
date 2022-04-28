@@ -23,8 +23,12 @@
 
 	// Editor Behavior
 	"copy_with_empty_selection": true,
-	"scroll_past_end": 0.3,
 	"move_to_limit_on_up_down": false,
+
+	// Scrolling
+	"scroll_past_end": 0.3,
+	"scroll_context_lines": 6, // this is essentially scroll ofset
+	"scroll_speed": 2,
 
 	// Tabs vs. Spaces
 	"tab_size": 3,
@@ -43,6 +47,7 @@
 	"auto_find_in_selection": false,
 	"close_find_after_replace_all": false,
 	"close_find_after_find_all": true,
+	"find_selected_text": true,
 
 	// Tab Bar
 	"auto_hide_tabs": false,
@@ -106,14 +111,19 @@
 	"caret_extra_top": 6,
 	"caret_extra_bottom": 6,
 
-	//Minimap
+	// Minimap
 	"always_show_minimap_viewport": true,
 	"draw_minimap_border": true,
+
+	// Vim Mode
+	"line_numbers": false,
+	"relative_line_numbers": true,
+	"vintage_use_clipboard": true,
+	"vintage_start_in_command_mode": true, // equivalent for `set clipboard=unnamed`
 
 	//Plugins
 	"ignored_packages": [
 		"ActionScript",
-		"AdvancedNewFile",
 		"ASP",
 		"Batch File",
 		"C#",

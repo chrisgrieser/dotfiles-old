@@ -1,6 +1,9 @@
 " yank to system clipboard
 set clipboard=unnamed
 
+" register ~= clipboard history
+nmap <C-y> :reg
+
 " search w/o having to press enter
 set incsearch
 
