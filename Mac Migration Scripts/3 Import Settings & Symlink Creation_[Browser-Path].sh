@@ -22,38 +22,44 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
 
 mv ~/.zshrc ~/.Trash
-ln -s "$SYMLINK_LOC"/zsh/.zshrc .
+ln -s "$SYMLINK_LOC/zsh/.zshrc" .
 mv ~/.zprofile ~/.Trash
-ln -s "$SYMLINK_LOC"/zsh/.zprofile .
-ln -s "$SYMLINK_LOC"/zsh/.zlogin ~
+ln -s "$SYMLINK_LOC/zsh/.zprofile" .
+ln -s "$SYMLINK_LOC/zsh/.zlogin" ~
 
-ln -s "$SYMLINK_LOC"/.searchlink ~
-ln -s "$SYMLINK_LOC"/.shellcheckrc ~
-ln -s "$SYMLINK_LOC"/.markdownlintrc ~
-ln -s "$SYMLINK_LOC"/.stylelintrc.json ~
-ln -s "$SYMLINK_LOC"/.gitconfig ~
-ln -s "$SYMLINK_LOC"/.eslintrc.json ~
-ln -s "$SYMLINK_LOC"/.finicky.js ~
-ln -s "$SYMLINK_LOC"/.gitignore_global ~
-ln -s "$SYMLINK_LOC"/pandoc ~/.pandoc
+ln -s "$SYMLINK_LOC/.searchlink" ~
+ln -s "$SYMLINK_LOC/.shellcheckrc" ~
+ln -s "$SYMLINK_LOC/.markdownlintrc" ~
+ln -s "$SYMLINK_LOC/.stylelintrc.json" ~
+ln -s "$SYMLINK_LOC/.gitconfig" ~
+ln -s "$SYMLINK_LOC/.eslintrc.json" ~
+ln -s "$SYMLINK_LOC/.finicky.js" ~
+ln -s "$SYMLINK_LOC/.gitignore_global" ~
+ln -s "$SYMLINK_LOC/pandoc" ~/.pandoc
 
 ln -s "$SYMLINK_LOC"/.vimrc ~
 ln -s "$SYMLINK_LOC"/obsidian.vimrc ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/"
+
+# .config
+mv ~/.config ~/.Trash
+ln -s "$SYMLINK_LOC"/.config/ ~/.config
 
 # Brave
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
 ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
 
 # Folder Actions
-ln -s ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Folder Actions/" ~"/Library/Workflows/Applications"
+mv ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
+ln -s "$SYMLINK_LOC/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
 
-# .config
-mv ~/.config ~/.Trash
-ln -s "$SYMLINK_LOC"/.config/ ~/.config
+# Dock and Launchpad
+mv ~"/Library/Application Support/Dock" ~/.Trash
+ln -s "$SYMLINK_LOC/Dock and Launchpad" ~"/Library/Application Support/Dock"
+
 
 # Popclip
 mv ~"/Library/Application Support/PopClip" ~/.Trash
-ln -s "$SYMLINK_LOC/Popclip/" ~"/Library/Application Support/PopClip"
+ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
 
 # VLC
 mv ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
