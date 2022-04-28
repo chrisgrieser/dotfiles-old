@@ -26,33 +26,23 @@
 	},
 
 	// Build System
-	{ "keys": ["super+r"], "command": "build", "context": [
-		{"key": "selector", "operator": "equal", "operand": "source.shell"},
-		{"key": "selection_empty", "operator": "equal", "operand": true},
-	] },
 	// Build Selection
 	{ "keys": ["super+shift+r"], "command": "build", "args": {"select": true} },
 	// Lint (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+n"], "command": "build", "args": { "variant": "Lint Autofix" } },
-	// Executionable (using Build System)
+	// Executable (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
 	// Color Picker (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+c"], "command": "build", "args": {"variant": "Color Picker"}},
 
-	// Build System: Shell, no Selection
+	// Build System: Shell
 	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.shell"},
-		{"key": "selection_empty", "operator": "equal", "operand": true},
 	] },
 	// Build System: Rest
 	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
 		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
-	] },
-	// Build System: Shell, with Selection  ➞ Send Code
-	{ "keys": ["super+r"], "command": "send_code", "context": [
-		{"key": "selector", "operator": "equal", "operand": "source.shell"},
-		{"key": "selection_empty", "operator": "equal", "operand": false},
 	] },
 
 	// Build System: Console
@@ -77,7 +67,7 @@
 	] },
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
 
-	// Case Conversion
+	// Case CONVERSION
 	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
 		{ "key": "terminus_view", "operator": "not_equal" },
 	] },
@@ -148,8 +138,11 @@
 
 
 	// SETTINGS & INSTALLATION
+	// Open preferences without the annoying split
+	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/Default/Preferences.sublime-settings"} },
 	// Keybindings Settings
-	{  "keys": ["super+shift+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap" } },
+	{ "keys": ["super+shift+,"], "command": "open_file", "args": { "file": "${packages}/Default/Default ($platform).sublime-keymap"} },
+
 	// Syntax-Specific Settings
 	{ "keys": ["super+alt+,"], "command": "edit_syntax_settings" },
 	// Change Color Scheme
