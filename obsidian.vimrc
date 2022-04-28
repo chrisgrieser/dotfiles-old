@@ -46,6 +46,10 @@ vmap J 5j
 nmap K 5k
 vmap K 5k
 
+" ß is right to `0`
+nmap ß $
+vmap ß $
+
 " back/forth
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
 " (not here, so they also work in preview mode)
