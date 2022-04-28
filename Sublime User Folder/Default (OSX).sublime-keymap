@@ -139,9 +139,9 @@
 
 	// SETTINGS & INSTALLATION
 	// Open preferences without the annoying split
-	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/Default/Preferences.sublime-settings"} },
+	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/User/Preferences.sublime-settings"} },
 	// Keybindings Settings
-	{ "keys": ["super+shift+,"], "command": "open_file", "args": { "file": "${packages}/Default/Default ($platform).sublime-keymap"} },
+	{ "keys": ["super+shift+,"], "command": "open_file", "args": { "file": "${packages}/User/Default ($platform).sublime-keymap"} },
 
 	// Syntax-Specific Settings
 	{ "keys": ["super+alt+,"], "command": "edit_syntax_settings" },

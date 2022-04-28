@@ -1,3 +1,4 @@
 {
-    "units": "metric",
+	"units": "metric",
+	"estimate_file_size": false,
 }
