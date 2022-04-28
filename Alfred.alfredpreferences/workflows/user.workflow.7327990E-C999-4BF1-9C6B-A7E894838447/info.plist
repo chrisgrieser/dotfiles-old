@@ -22,21 +22,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>F6F95122-509A-48CF-9F28-DCE9AC8F2834</string>
+				<string>2CFE15BC-B802-49B9-86EE-234FB30174C2</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>⌘: Eject</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>2CFE15BC-B802-49B9-86EE-234FB30174C2</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>⌥: Browse in Terminal</string>
+				<string>⌘: Browse in Terminal</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -58,19 +48,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6EE6E827-27D1-4C3C-BE0D-1361E16F0F32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F6F95122-509A-48CF-9F28-DCE9AC8F2834</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0911B4BC-632A-45A5-9DC7-580846DCF736</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -240,55 +217,6 @@ JSON.stringify({ 'items': volume_array });
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>vol="{query}"
-
-diskutil unmount $vol
-diskutil unmount force $vol
-
-echo -n $vol</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F6F95122-509A-48CF-9F28-DCE9AC8F2834</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>⏏️ Volume Ejected</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>0911B4BC-632A-45A5-9DC7-580846DCF736</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>path</key>
 				<string></string>
 			</dict>
@@ -304,19 +232,12 @@ echo -n $vol</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>0911B4BC-632A-45A5-9DC7-580846DCF736</key>
-		<dict>
-			<key>xpos</key>
-			<integer>620</integer>
-			<key>ypos</key>
-			<integer>310</integer>
-		</dict>
 		<key>2CFE15BC-B802-49B9-86EE-234FB30174C2</key>
 		<dict>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>440</integer>
+			<integer>315</integer>
 		</dict>
 		<key>6AFDF8FB-7B99-46E6-ABBB-772B0525181A</key>
 		<dict>
@@ -345,13 +266,6 @@ echo -n $vol</string>
 			<integer>330</integer>
 			<key>ypos</key>
 			<integer>140</integer>
-		</dict>
-		<key>F6F95122-509A-48CF-9F28-DCE9AC8F2834</key>
-		<dict>
-			<key>xpos</key>
-			<integer>455</integer>
-			<key>ypos</key>
-			<integer>310</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

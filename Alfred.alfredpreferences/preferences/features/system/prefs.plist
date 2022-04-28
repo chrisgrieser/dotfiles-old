@@ -12,7 +12,7 @@
 		<string>Recovery</string>
 	</array>
 	<key>ejectKeyword</key>
-	<string>ee</string>
+	<string>vv</string>
 	<key>ejectKeywordEnabled</key>
 	<true/>
 	<key>emptytrashConfirm</key>

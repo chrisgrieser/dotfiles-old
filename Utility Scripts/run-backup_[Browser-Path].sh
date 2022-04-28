@@ -30,16 +30,16 @@ function bkp () {
 # =========================
 # Content to Backup
 
-# ⚠️ each command has to sync to individual folders, since otherwise the --delete
-# option will override the previous contents
+# ⚠️ each command has to sync to individual folders, since otherwise
+# the --delete option will override the previous contents
 bkp ~'/Library/Preferences/' ./Preferences
 bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' ./Spotify-Mini-Player
+bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 bkp ~'/Library/Fonts/' ./Fonts
 bkp ~'/Games/' ./Homefolder/Games
 bkp ~'/Video/' ./Homefolder/Video
 bkp ~'/RomComs/' ./Homefolder/RomComs
 bkp ~'/Library/Mobile Documents/com~apple~CloudDocs/' ./iCloud-Folder
-bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 
 # =========================
 
