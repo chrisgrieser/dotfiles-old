@@ -77,6 +77,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9B4CA975-804B-4188-B9E6-71572AB94B68</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8E258BEA-2CAC-460B-8345-A1499C2F8ED1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D232E539-5F7D-4AE8-835D-D05830D7CF26</key>
 		<array>
 			<dict>
@@ -214,6 +227,77 @@ fi</string>
 			<string>67F611D4-A5E9-451E-AFEE-59046947524A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>current-or-default-finder-window.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D232E539-5F7D-4AE8-835D-D05830D7CF26</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set filetype to (system attribute "filetype")
+set content to "{query}"
+
+-- resolve home folder
+set working_folder to do shell script "echo " &amp; quoted form of (system attribute "working_folder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"set AppleScript's text item delimiters to "~/"set theTextItems to every text item of working_folderset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
+
+-- prepend certain shebangs
+if (filetype is "js") then 
+	set content to "#!/usr/bin/env osascript -l JavaScript" &amp;  "\n" &amp; content
+else if (filetype is "applescript")
+	set content to "#!/usr/bin/env osascript" &amp;  "\n" &amp; content
+else if (filetype is "sh")
+	set content to "#!/bin/zsh" &amp;  "\n" &amp; content 
+end if
+
+-- generate random name
+set filename to ((random number from 100000 to 999999) as text)
+
+-- create document
+tell application "BBEdit"
+	activate
+	set newDoc to make new document
+	set contents of newDoc to content
+	set file2save to (resolved_path &amp; "/" &amp; filename &amp; "." &amp; filetype)
+	save newDoc to file2save
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>new-text-document.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -374,77 +458,6 @@ EOB</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>current-or-default-finder-window.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D232E539-5F7D-4AE8-835D-D05830D7CF26</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set filetype to (system attribute "filetype")
-set content to "{query}"
-
--- resolve home folder
-set working_folder to do shell script "echo " &amp; quoted form of (system attribute "working_folder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"set AppleScript's text item delimiters to "~/"set theTextItems to every text item of working_folderset AppleScript's text item delimiters to (POSIX path of (path to home folder as string))set resolved_path to theTextItems as string
-
--- prepend certain shebangs
-if (filetype is "js") then 
-	set content to "#!/usr/bin/env osascript -l JavaScript" &amp;  "\n" &amp; content
-else if (filetype is "applescript")
-	set content to "#!/usr/bin/env osascript" &amp;  "\n" &amp; content
-else if (filetype is "sh")
-	set content to "#!/bin/zsh" &amp;  "\n" &amp; content 
-end if
-
--- generate random name
-set filename to ((random number from 100000 to 999999) as text)
-
--- create document
-tell application "BBEdit"
-	activate
-	set newDoc to make new document
-	set contents of newDoc to content
-	set file2save to (resolved_path &amp; "/" &amp; filename &amp; "." &amp; filetype)
-	save newDoc to file2save
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>new-text-document.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -535,6 +548,50 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>safe mode</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⚙️ Sublime in Safe Mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9B4CA975-804B-4188-B9E6-71572AB94B68</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" --safe-mode</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8E258BEA-2CAC-460B-8345-A1499C2F8ED1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -596,6 +653,15 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
+		<key>8E258BEA-2CAC-460B-8345-A1499C2F8ED1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>565</integer>
+		</dict>
 		<key>929B6B55-BD09-43B3-AFC4-C5B0ED80906C</key>
 		<dict>
 			<key>colorindex</key>
@@ -615,6 +681,15 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<integer>395</integer>
 			<key>ypos</key>
 			<integer>300</integer>
+		</dict>
+		<key>9B4CA975-804B-4188-B9E6-71572AB94B68</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>565</integer>
 		</dict>
 		<key>D232E539-5F7D-4AE8-835D-D05830D7CF26</key>
 		<dict>
