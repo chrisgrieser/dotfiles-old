@@ -37,14 +37,14 @@ nmap j gj
 nmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nmap H 0
-vmap H 0
-nmap L $
-vmap L $
-nmap J 6j
-vmap J 6j
-nmap K 6k
-vmap K 6k
+nmap H (
+vmap H (
+nmap L )
+vmap L )
+nmap J 5j
+vmap J 5j
+nmap K 5k
+vmap K 5k
 
 " back/forth
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
