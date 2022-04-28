@@ -4,6 +4,9 @@ set clipboard=unnamed
 " register ~= clipboard history
 nmap <C-y> :reg
 
+" always paste what was yanked, not what was deleted
+nmap P "0p
+
 " search w/o having to press enter
 set incsearch
 
