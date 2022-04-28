@@ -1,18 +1,58 @@
+""""""""""""""""""""""
+" Clipboard
+""""""""""""""""""""""
 " yank to system clipboard
 set clipboard=unnamed
 
-" register ~= clipboard history
+" show register ~= clipboard history
 nmap <C-y> :reg
 
+" Y consistent with D and C to the end of line
+nmap Y y$
+
 " always paste what was yanked, not what was deleted
+" gets syntax highlighting of comments, but does work though
 nmap P "0p
 
+""""""""""""""""""""""
+" Search
+""""""""""""""""""""""
 " search w/o having to press enter
 set incsearch
 
+" no modifier key for jumping to next word
+nmap + *
+
+" quicker find mode (mirroring American keyboard layout on German keyboard)
+nmap - /
+
+" Quickly remove search highlights
+nmap _ :nohl
+
+""""""""""""""""""""""
+" Nagivation
+""""""""""""""""""""""
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
+
+" HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
+nmap H 0
+vmap H 0
+nmap L $
+vmap L $
+nmap J 6j
+vmap J 6j
+nmap K 6k
+vmap K 6k
+
+" back/forth
+" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
+" (not here, so they also work in preview mode)
+
+""""""""""""""""""""""
+" Editing
+""""""""""""""""""""""
 
 " backspace works in normal mode like in insert mode, consistent with <del>
 nmap <BS> X
@@ -26,34 +66,12 @@ nmap U <C-r>
 " quicker way to change word
 nmap <Space> ciw
 
-" no modifier key for jumping to next word
-nmap + *
-
-" switch case
+" switch case (~ not directly available on German keyboards)
 nmap ü ~
 
-" HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nmap H b
-nmap L w
-nmap J 6j
-nmap K 6k
-vmap H b
-vmap L w
-vmap J 6j
-vmap K 6k
-
-" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
-" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings (not here, so they also work in preview mode)
-
-" Y consistent with D and C to the end of line
-nmap Y y$
-
-" Quickly remove search highlights
-nmap ? :nohl
-
-" close tab
-exmap closetab obcommand workspace:close
-nmap q :closetab
+""""""""""""""""""""""
+" Switch Modes
+""""""""""""""""""""""
 
 " quickly escape insert mode (and replace mode)
 imap jj <Esc>
@@ -61,6 +79,3 @@ rmap jj <Esc>
 
 " enter insert mode
 vmap i x<Esc>i
-
-" quicker find mode (mirroring American keyboard layout on German keyboard)
-nmap - /
