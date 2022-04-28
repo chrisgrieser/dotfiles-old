@@ -202,6 +202,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E008FEE4-80B7-44B0-8357-2EFAE8FAF71A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -577,9 +590,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -614,8 +627,8 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -804,6 +817,63 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>22F72159-1810-4F97-B35E-1BADE014EC65</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↩</string>
+				<key>keycode</key>
+				<integer>36</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E008FEE4-80B7-44B0-8357-2EFAE8FAF71A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>31</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>O</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
 					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.hnc.Discord</string>
 				</array>
@@ -813,7 +883,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>22F72159-1810-4F97-B35E-1BADE014EC65</string>
+			<string>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1026,6 +1096,15 @@
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
+		<key>E008FEE4-80B7-44B0-8357-2EFAE8FAF71A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>1150</integer>
+		</dict>
 		<key>E56FB083-4DE7-4650-A497-30E811525588</key>
 		<dict>
 			<key>colorindex</key>
@@ -1052,6 +1131,15 @@
 			<integer>635</integer>
 			<key>ypos</key>
 			<integer>490</integer>
+		</dict>
+		<key>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>1150</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
