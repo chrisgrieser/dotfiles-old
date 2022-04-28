@@ -15,6 +15,5 @@ add-cronjob "*/30 * * * *" '30-min_[Browser-Path].sh'
 add-cronjob "0 3 * * *" sleep-timer.applescript
 add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
 add-cronjob "5 6 * * 1,4" biweekly.applescript
-add-cronjob "1 0 * * *" auto-create-daily-note.sh
 echo ""
 crontab -l # check the current cronjobs
