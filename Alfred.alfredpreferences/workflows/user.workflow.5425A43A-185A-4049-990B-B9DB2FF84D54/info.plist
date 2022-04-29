@@ -130,7 +130,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C110404F-E8B9-4847-8F59-5586F146BC2A</string>
+				<string>3207C2A9-F28C-4B7F-89E9-525F8011B3AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -521,23 +521,25 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events" 
-		keystroke "i" using {command down, option down}
-		delay 0.2
-		keystroke "c" using {command down, shift down}
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"	keystroke "i" using {command down, option down}	delay 0.2	keystroke "c" using {command down, shift down}end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C110404F-E8B9-4847-8F59-5586F146BC2A</string>
+			<string>3207C2A9-F28C-4B7F-89E9-525F8011B3AF</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -642,6 +644,13 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>3207C2A9-F28C-4B7F-89E9-525F8011B3AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
 		<key>3A8836DB-3455-405F-9E15-B2876FC9967D</key>
 		<dict>
 			<key>note</key>
@@ -735,13 +744,6 @@ end alfred_script</string>
 			<integer>245</integer>
 			<key>ypos</key>
 			<integer>145</integer>
-		</dict>
-		<key>C110404F-E8B9-4847-8F59-5586F146BC2A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>245</integer>
-			<key>ypos</key>
-			<integer>450</integer>
 		</dict>
 		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
 		<dict>
