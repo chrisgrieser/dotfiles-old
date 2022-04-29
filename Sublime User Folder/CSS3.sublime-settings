@@ -1,6 +1,6 @@
 {
 
-	"light_color_scheme": "Celeste.sublime-color-scheme",
+	"light_color_scheme": "Packages/User/material-light-custom.tmTheme",
 	"dark_color_scheme": "Dark Knight.sublime-color-scheme",
 
 	"disable_default_completions": true, // for lsp
