@@ -130,6 +130,7 @@
 		"context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": false } ]
 	},
 	{ "keys": ["super+shift+j"], "command": "find_under_expand_skip" },
+	{ "keys": ["alt+shift+j"], "command": "find_under" },
 	{ "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
 	{ "keys": ["super+shift+alt+ctrl+a"], "command": "lsp_expand_selection"},
 
