@@ -3,11 +3,11 @@
 	"light_color_scheme": "Celeste.sublime-color-scheme",
 	"dark_color_scheme": "Dark Knight.sublime-color-scheme",
 
-	"auto_complete_delay": 50,
+	"disable_default_completions": true, // for lsp
+	"auto_complete_delay": 0,
 	"auto_complete_use_history": false,
-	"disable_default_completions": true,
 	"auto_complete_use_index": false,
 
-	"extensions": ["css"],
+	"extensions": ["css", "scss"],
 	"draw_white_space": ["selection", "isolated_mixed"],
 }

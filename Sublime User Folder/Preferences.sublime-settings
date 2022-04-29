@@ -38,7 +38,7 @@
 	"indent_to_bracket": true,
 
 	// Autocomplete
-	"auto_complete_delay": 150,
+	"auto_complete_delay": 100,
 	"auto_complete_use_history": true,
 	"auto_complete_trailing_symbols": true,
 
