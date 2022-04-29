@@ -197,13 +197,11 @@
 	{ "keys": ["super+k"], "command": "terminus_keypress", "args": {"key": "l", "ctrl": true}, "context": [
 		{ "key": "terminus_view" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
-
 	] },
 
+	// Split View
+	{ "keys": ["ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
 
-	// OPEN
-	// GitHubinator
-	{ "keys": ["shift+alt+super+ctrl+g"], "command": "githubinator", "args" : { "permalink": false }},
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
 

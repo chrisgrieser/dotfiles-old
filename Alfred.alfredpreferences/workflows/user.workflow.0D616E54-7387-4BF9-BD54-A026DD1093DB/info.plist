@@ -1020,9 +1020,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>855</integer>
 		</dict>
 		<key>10BEA201-3D46-4F89-ADB1-10704261A8C7</key>
 		<dict>
@@ -1031,9 +1031,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Search Action Directory</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>890</integer>
+			<integer>855</integer>
 		</dict>
 		<key>22EE3D97-E411-483F-A1E1-4CF4765B46F0</key>
 		<dict>
@@ -1060,9 +1060,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>995</integer>
 		</dict>
 		<key>439E285A-5910-4060-8D7A-1470424F6D2F</key>
 		<dict>
@@ -1078,18 +1078,18 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>995</integer>
 		</dict>
 		<key>4E5B84C8-6F38-4660-BF59-079EE3D12150</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>515</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>790</integer>
+			<integer>755</integer>
 		</dict>
 		<key>4FDFE4FA-1CAE-492D-8B90-963E3A9E09F2</key>
 		<dict>
@@ -1105,9 +1105,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>860</integer>
 		</dict>
 		<key>6BE83D79-01AE-4F6B-98CE-C100A926316F</key>
 		<dict>
@@ -1125,9 +1125,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Search Script Reference</string>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>725</integer>
 		</dict>
 		<key>77E992B5-E489-4B56-A178-7C1CB761F733</key>
 		<dict>
@@ -1136,7 +1136,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>open Draft</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>440</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
@@ -1147,9 +1147,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Cheat Sheet Placeholders</string>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>995</integer>
 		</dict>
 		<key>7F193D53-A438-48E3-AA84-18737E10DC34</key>
 		<dict>
@@ -1176,9 +1176,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>725</integer>
 		</dict>
 		<key>A2BDE635-2747-44A5-A4B5-4E7551E8E371</key>
 		<dict>
@@ -1196,9 +1196,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Search Documentation</string>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>860</integer>
 		</dict>
 		<key>B54825E1-4FFA-41D2-9B3E-D83891E612C4</key>
 		<dict>
@@ -1218,27 +1218,27 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>note</key>
 			<string>Search Forum</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>1030</integer>
+			<integer>995</integer>
 		</dict>
 		<key>BAD44650-CAFD-4C9E-84D9-6710E38A751C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>515</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>925</integer>
+			<integer>890</integer>
 		</dict>
 		<key>C046315C-70E4-48A1-A057-62723A1FA39D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>725</integer>
 		</dict>
 		<key>C5CA7702-7CF9-432F-B3C8-69234F93B021</key>
 		<dict>
@@ -1272,9 +1272,9 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>note</key>
 			<string>Search Installed Actions</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>725</integer>
 		</dict>
 		<key>FDA1F410-54D5-4017-B8AC-9FCF2D0ED98B</key>
 		<dict>
