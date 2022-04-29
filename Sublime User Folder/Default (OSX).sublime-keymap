@@ -120,9 +120,12 @@
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
 	{ "keys": ["super+shift+u"], "command": "jump_forward" },
-	{ "keys": ["f14"], "command": "close" },
 
-   // Disable Saving
+	// Mouse Keys
+	{ "keys": ["f14"], "command": "close" },
+	{ "keys": ["f13"], "command": "next_view_in_stack" },
+
+   // Disable Accidental Triggering of Saving Modal
    { "keys": ["super+shift+s"], "command": "noop" },
 
 	// Expand Selection
