@@ -263,7 +263,7 @@
 	{"keys": ["super+k"], "command": "move", "args": {"by": "lines", "forward": false }, "context": [
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
 	] },
-	{ "keys": ["super+o"], "command": "commit_completion", "context":[
+	{ "keys": ["super+h"], "command": "commit_completion", "context":[
 		{ "key": "auto_complete_visible" },
 	] },
 
