@@ -185,7 +185,10 @@
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Custom Plugin
-	{ "keys": ["super+o"], "command": "open_browse" }, // Plugin
+	// Open Plugin
+	{ "keys": ["super+o"], "command": "open_browse", "context": [
+		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
+	] },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
@@ -237,7 +240,7 @@
 	// Goto Definition
 	{
 		"command": "lsp_symbol_definition",
-		"args": { "side_by_side": true },
+		"args": { "side_by_side": false },
 		"keys": ["shift+alt+super+ctrl+g"],
 		"context": [
 			{
