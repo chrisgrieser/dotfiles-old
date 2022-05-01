@@ -4,7 +4,7 @@ module.exports = {
 	defaultBrowser: "Brave Browser",
 	options: {
 		checkForUpdate: true,
-		hideIcon: true,
+		hideIcon: false,
 	},
 
 	rewrite: [
@@ -26,20 +26,6 @@ module.exports = {
 		{
 			match: /zoom\.us\/j/,
 			browser: "us.zoom.xos"
-		},
-
-		// not working yet: https://github.com/johnste/finicky/issues/252
-		{
-			match: ({ url, opener }) =>
-				url.host.endsWith("github.com") && opener.bundleId === "com.mimestream.Mimestream",
-			browser: {
-				name: "Brave Browser",
-				openInBackground: true // Force opening the link in the background
-			}
-		},
-		{
-			match: ({ url }) => url.host.endsWith("hvgruender.de"),
-			browser: "com.apple.Safari"
 		}
 	]
 }

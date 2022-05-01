@@ -4,14 +4,14 @@
 " yank to system clipboard
 set clipboard=unnamed
 
-" show register ~= clipboard history
+" show register (i.e., clipboard history)
 nmap <C-y> :reg
 
 " Y consistent with D and C to the end of line
 nmap Y y$
 
-" always paste what was yanked, not what was deleted
-" gets syntax highlighting of comments, but does work though
+" always paste what was yanked (y), not what was deleted (d or c)
+" (gets syntax highlighting of comments, but does work though)
 nmap P "0p
 
 """"""""""""""""""""""
@@ -29,9 +29,11 @@ nmap - /
 " Quickly remove search highlights
 nmap _ :nohl
 
+
 """"""""""""""""""""""
 " Nagivation
 """"""""""""""""""""""
+
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
@@ -52,7 +54,10 @@ vmap ß $
 
 " back/forth
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
-" (not here, so they also work in preview mode)
+" (not mapped here, so they also work in preview mode)
+
+" next heading/previous heading
+" ctrl+j and ctrl+k are mapped to next/previous heading in Obsidian's hotkeys settings
 
 """"""""""""""""""""""
 " Editing
@@ -69,6 +74,7 @@ nmap U <C-r>
 
 " quicker way to change word
 nmap <Space> ciw
+vmap <Space> c
 
 " switch case (~ not directly available on German keyboards)
 nmap ü ~
@@ -77,9 +83,6 @@ nmap ü ~
 " Switch Modes
 """"""""""""""""""""""
 
-" quickly escape insert mode (and replace mode)
+" quickly escape insert mode (or replace mode)
 imap jj <Esc>
 rmap jj <Esc>
-
-" enter insert mode
-vmap i x<Esc>i

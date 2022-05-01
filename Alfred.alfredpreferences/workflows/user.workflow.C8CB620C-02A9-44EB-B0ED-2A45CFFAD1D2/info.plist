@@ -320,8 +320,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -406,6 +406,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↑</string>
+				<key>keycode</key>
+				<integer>126</integer>
+				<key>keymod</key>
+				<integer>10485760</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>674E7C5B-DE2E-493D-93FF-AD545DD70562</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -450,8 +471,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -483,62 +504,6 @@
 			<string>59880808-66A8-4459-B33C-A5FE98786D2F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>↑</string>
-				<key>keycode</key>
-				<integer>126</integer>
-				<key>keymod</key>
-				<integer>10485760</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>674E7C5B-DE2E-493D-93FF-AD545DD70562</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>43</integer>
-				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>,</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>27B379BB-1B88-4D59-9ECE-96DFFF88322F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -585,8 +550,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -595,6 +560,41 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>,</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>27B379BB-1B88-4D59-9ECE-96DFFF88322F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -636,9 +636,9 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.tinyspeck.slackmacgap</string>
 					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -846,9 +846,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -970,9 +970,9 @@
 			<key>note</key>
 			<string>vim-like keybinds for Alfred</string>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>575</integer>
+			<integer>560</integer>
 		</dict>
 		<key>22F72159-1810-4F97-B35E-1BADE014EC65</key>
 		<dict>
@@ -1006,9 +1006,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>835</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>575</integer>
+			<integer>560</integer>
 		</dict>
 		<key>4BC4FFB2-E0CE-41FF-B371-FE451B884431</key>
 		<dict>
@@ -1048,7 +1048,7 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>820</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
@@ -1066,9 +1066,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>700</integer>
 		</dict>
 		<key>7497EF13-1EBB-4720-8F82-83144C19C542</key>
 		<dict>
@@ -1100,9 +1100,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>835</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>700</integer>
 		</dict>
 		<key>C18F258A-2134-476B-9B2B-3EAB189C3037</key>
 		<dict>
@@ -1129,9 +1129,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>435</integer>
 		</dict>
 		<key>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</key>
 		<dict>
@@ -1161,9 +1161,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>820</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>310</integer>
 		</dict>
 		<key>E56FB083-4DE7-4650-A497-30E811525588</key>
 		<dict>
@@ -1181,7 +1181,7 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>820</integer>
 			<key>ypos</key>
 			<integer>45</integer>
 		</dict>
@@ -1197,9 +1197,9 @@
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>310</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

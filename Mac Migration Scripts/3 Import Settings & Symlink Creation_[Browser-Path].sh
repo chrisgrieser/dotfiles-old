@@ -22,9 +22,9 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
 
 mv ~/.zshrc ~/.Trash
-ln -s "$SYMLINK_LOC/zsh/.zshrc" .
+ln -s "$SYMLINK_LOC/zsh/.zshrc" ~
 mv ~/.zprofile ~/.Trash
-ln -s "$SYMLINK_LOC/zsh/.zprofile" .
+ln -s "$SYMLINK_LOC/zsh/.zprofile" ~
 ln -s "$SYMLINK_LOC/zsh/.zlogin" ~
 
 ln -s "$SYMLINK_LOC/.searchlink" ~
@@ -37,32 +37,27 @@ ln -s "$SYMLINK_LOC/.finicky.js" ~
 ln -s "$SYMLINK_LOC/.gitignore_global" ~
 ln -s "$SYMLINK_LOC/pandoc" ~/.pandoc
 
-ln -s "$SYMLINK_LOC"/.vimrc ~
-ln -s "$SYMLINK_LOC"/obsidian.vimrc ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/"
+ln -s "$SYMLINK_LOC/.vimrc" ~
 
 # .config
 mv ~/.config ~/.Trash
-ln -s "$SYMLINK_LOC"/.config/ ~/.config
+ln -s "$SYMLINK_LOC/.config/" ~/.config
 
 # Brave
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
 ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
 
 # Folder Actions
-mv ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
+mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
 ln -s "$SYMLINK_LOC/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
 
-# Dock and Launchpad
-mv ~"/Library/Application Support/Dock" ~/.Trash
-ln -s "$SYMLINK_LOC/Dock and Launchpad" ~"/Library/Application Support/Dock"
-
-
 # Popclip
-mv ~"/Library/Application Support/PopClip" ~/.Trash
+# requires the Preference plist? 🤔
+mv -f ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
 
 # VLC
-mv ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
+mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
 mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
 ln -s "$SYMLINK_LOC/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
 
@@ -73,6 +68,10 @@ mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-p
 ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
 mv ~"/Library/Application Support/Sublime Text/Packages/copy-file-name" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/copy-file-name" ~"/Library/Application Support/Sublime Text/Packages"
+
+# Dock and Launchpad
+mv ~"/Library/Application Support/Dock" ~/.Trash
+ln -s "$SYMLINK_LOC/Dock and Launchpad" ~"/Library/Application Support/Dock"
 
 # --------------
 # seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53

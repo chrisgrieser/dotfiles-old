@@ -4,10 +4,8 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
 const notToDisplay = [
-	"Macintosh",
 	"Macintosh HD",
-	"HDD",
-	"SSD",
+	"Samsung SSD 1TB",
 	"GoogleDrive",
 	"Recovery"
 ];

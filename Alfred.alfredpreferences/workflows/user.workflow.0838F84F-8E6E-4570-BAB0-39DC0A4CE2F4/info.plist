@@ -533,46 +533,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tg</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Telegram</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A52C24D5-ABE8-4AF0-B903-AA320D8816CD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://web.telegram.org/z/</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -623,6 +583,46 @@
 			<string>3B387ED5-43C9-401C-84B7-FCC3FFCA4DB5</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tg</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Telegram</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A52C24D5-ABE8-4AF0-B903-AA320D8816CD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://web.telegram.org/z/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -718,16 +718,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Kevin</string>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>190</integer>
 		</dict>
 		<key>2234A5C0-FDE3-435A-83A4-6CC19FA4480C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>935</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>190</integer>
 		</dict>
 		<key>2462ABA2-CA42-4010-BD87-E0B4F6ACFC09</key>
 		<dict>
@@ -763,9 +763,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Inline Code</string>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>630</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 		</dict>
 		<key>4D704BE9-61E0-4285-9B8B-7C5AF433BD23</key>
 		<dict>
@@ -774,16 +774,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Sören &amp; Ola</string>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>50</integer>
 		</dict>
 		<key>541951C1-0910-4D5E-AA68-54B819DE0940</key>
 		<dict>
 			<key>xpos</key>
-			<integer>980</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 		</dict>
 		<key>661DA836-A4F2-4671-80FE-4F378B93EAD0</key>
 		<dict>
@@ -799,9 +799,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Joseph</string>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>330</integer>
 		</dict>
 		<key>A52C24D5-ABE8-4AF0-B903-AA320D8816CD</key>
 		<dict>
@@ -831,9 +831,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>B652A706-A1B3-4356-8EA2-962BC3DDB92D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>935</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>330</integer>
 		</dict>
 		<key>BECF02B0-2BD7-406C-AA20-3048BD449818</key>
 		<dict>
@@ -847,9 +847,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>CDB7E2DC-E7D2-4059-B903-A348C134C523</key>
 		<dict>
 			<key>xpos</key>
-			<integer>935</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>50</integer>
 		</dict>
 		<key>D0C8639A-9F8A-444E-B14E-52EF5ACC9C19</key>
 		<dict>

@@ -44,7 +44,7 @@ function clone(){
 	cd "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
-	if grep -q "obsidian" package.json ; then
+	if grep -q "obsidian" package.json &> /dev/null ; then
 		npm i
 		open -R "main.ts"
 		npm run dev
@@ -57,11 +57,26 @@ function sclone(){
 	cd "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
-	if grep -q "obsidian" package.json ; then
+	if grep -q "obsidian" package.json &> /dev/null ; then
 		npm i
 		open -R "main.ts"
 		npm run dev
 	fi
+}
+
+function nuke {
+	SSH_REMOTE=$(git remote -v | head -n1 | cut -d" " -f1 | cut -d$'	' -f2)
+
+	# go to git repo root
+	r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"
+	LOCAL_REPO=$(pwd)
+	cd ..
+
+	rm -rf "$LOCAL_REPO"
+	echo "Local repo removed."
+
+	git clone "$SSH_REMOTE"
+	cd "$LOCAL_REPO" || return 1
 }
 
 # runs a release scripts placed at the git root
