@@ -99,3 +99,4 @@ imap vv <Esc>v
 """"""""""""""""""""""
 " quicker access to Obsidian command ids
 nmap ? :obcommand
+
