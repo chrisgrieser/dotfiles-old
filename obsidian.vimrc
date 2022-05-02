@@ -64,6 +64,12 @@ exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
 nmap <C-k> :prevHeading
 
 """"""""""""""""""""""
+" Marks
+""""""""""""""""""""""
+" remapping, since backtick isn't properly supported
+nmap , `
+
+""""""""""""""""""""""
 " Editing
 """"""""""""""""""""""
 
@@ -97,6 +103,6 @@ imap vv <Esc>v
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
-" quicker access to Obsidian command ids
+" quicker access to Obsidian command-ids
 nmap ? :obcommand
 

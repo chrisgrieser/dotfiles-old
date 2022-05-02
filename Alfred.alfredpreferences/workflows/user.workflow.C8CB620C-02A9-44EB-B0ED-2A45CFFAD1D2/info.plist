@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>46C449F4-C8D3-488A-B15F-D53153D7FC29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4CB01888-1BBF-43A3-B369-5C65420EA7C4</key>
 		<array>
 			<dict>
@@ -320,8 +333,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -471,8 +484,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -550,8 +563,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.hnc.Discord</string>
+					<string>com.runningwithcrayons.Alfred</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -637,8 +650,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -733,18 +746,18 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>vimium</string>
+				<string>vim</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Open Vimium Settings</string>
+				<string>🟪 CodeMirror vim.js</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>6893CDFD-0423-4258-A2EC-B278E825E37C</string>
+			<string>46C449F4-C8D3-488A-B15F-D53153D7FC29</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -752,18 +765,18 @@
 			<key>config</key>
 			<dict>
 				<key>browser</key>
-				<string>net.kassett.finicky</string>
+				<string></string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html#</string>
+				<string>https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+			<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -826,6 +839,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vimium</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open Vimium Settings</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6893CDFD-0423-4258-A2EC-B278E825E37C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>net.kassett.finicky</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html#</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -846,9 +899,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -954,7 +1007,7 @@
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>1160</integer>
 		</dict>
 		<key>03A61E61-611A-4555-B4F6-30ED79850890</key>
 		<dict>
@@ -1010,6 +1063,24 @@
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
+		<key>3CED399E-5B73-47CD-AC97-99B0CCD321F0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>600</integer>
+		</dict>
+		<key>46C449F4-C8D3-488A-B15F-D53153D7FC29</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>cheat sheet</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>600</integer>
+		</dict>
 		<key>4BC4FFB2-E0CE-41FF-B371-FE451B884431</key>
 		<dict>
 			<key>colorindex</key>
@@ -1019,7 +1090,7 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>805</integer>
 		</dict>
 		<key>4CB01888-1BBF-43A3-B369-5C65420EA7C4</key>
 		<dict>
@@ -1030,7 +1101,7 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>860</integer>
 		</dict>
 		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
 		<dict>
@@ -1059,7 +1130,7 @@
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>615</integer>
+			<integer>750</integer>
 		</dict>
 		<key>6FA28B63-C0A5-4A7F-B7DF-7A5D8D46D7CA</key>
 		<dict>
@@ -1113,7 +1184,7 @@
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1005</integer>
 		</dict>
 		<key>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</key>
 		<dict>
@@ -1154,7 +1225,7 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1005</integer>
 		</dict>
 		<key>E008FEE4-80B7-44B0-8357-2EFAE8FAF71A</key>
 		<dict>
@@ -1190,7 +1261,7 @@
 			<key>xpos</key>
 			<integer>220</integer>
 			<key>ypos</key>
-			<integer>1025</integer>
+			<integer>1160</integer>
 		</dict>
 		<key>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</key>
 		<dict>
