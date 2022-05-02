@@ -48,7 +48,7 @@ vmap J 5j
 nmap K 5k
 vmap K 5k
 
-" ß is right to `0`
+" ß is on the right of `0` in German keyboards
 nmap ß $
 vmap ß $
 
@@ -57,13 +57,17 @@ vmap ß $
 " (not mapped here, so they also work in preview mode)
 
 " next heading/previous heading
-" ctrl+j and ctrl+k are mapped to next/previous heading in Obsidian's hotkeys settings
+" (not mapped in Obsidian hotkeys, so ctrl + k is left as kill line in insert mode)
+exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
+nmap <C-j> :nextHeading
+exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
+nmap <C-k> :prevHeading
 
 """"""""""""""""""""""
 " Editing
 """"""""""""""""""""""
 
-" backspace works in normal mode like in insert mode, consistent with <del>
+" backspace works in normal mode like in insert mode & consistent with <del>
 nmap <BS> X
 
 " allows Double Enter to add new line and indent
@@ -86,3 +90,9 @@ nmap ü ~
 " quickly escape insert mode (or replace mode)
 imap jj <Esc>
 rmap jj <Esc>
+
+""""""""""""""""""""""
+" Misc
+""""""""""""""""""""""
+" quicker access to Obsidian command ids
+nmap ? :obcommand
