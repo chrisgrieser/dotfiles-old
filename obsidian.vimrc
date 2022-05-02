@@ -91,6 +91,9 @@ nmap ü ~
 imap jj <Esc>
 rmap jj <Esc>
 
+" quickly switch to visual mode
+imap vv <Esc>v
+
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
