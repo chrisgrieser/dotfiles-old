@@ -60,7 +60,7 @@ font:
   bold_italic:
     family: JetBrainsMonoNL Nerd Font
     style: Bold Italic
-  size: 24
+  size: 25
 
   # for mac retina displays
   use_thin_strokes: true
@@ -84,7 +84,7 @@ window:
   position:
     x: 0 # open to the left
   dimensions:
-    columns: 97 # column number for 1920px wide M1 Mac
+    columns: 97 # column number for 1920px wide M1 Mac with 25 font size
     lines: 70
   padding:
     x: 6
