@@ -2053,6 +2053,35 @@ docx "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -2878,6 +2907,13 @@ end if</string>
 			<integer>815</integer>
 			<key>ypos</key>
 			<integer>1220</integer>
+		</dict>
+		<key>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>1370</integer>
 		</dict>
 		<key>776880C9-1368-4168-9F97-07307B938A3B</key>
 		<dict>

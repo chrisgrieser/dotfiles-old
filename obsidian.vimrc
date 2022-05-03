@@ -67,14 +67,14 @@ nmap <C-k> :prevHeading
 " Marks
 """"""""""""""""""""""
 " remapping, since backtick isn't properly supported
-nmap M `
+nmap ö `
 
 """"""""""""""""""""""
 " Editing
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nmap <BS> X
+nmap <BS> hx
 
 " allows Double Enter to add new line and indent
 nmap <CR> A
@@ -85,9 +85,16 @@ nmap U <C-r>
 " quicker way to change word
 nmap <Space> ciw
 vmap <Space> c
+nmap X diw
 
 " switch case (~ not directly available on German keyboards)
 nmap ü ~
+
+" fix text object `is` not working
+" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
+nmap ä (y)
+nmap s (c)
+nmap S (d)
 
 """"""""""""""""""""""
 " Switch Modes
@@ -106,17 +113,10 @@ imap vv <Esc>v
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
 
-
 """"""""""""""""""""""
 " Obsidian limiations
 """"""""""""""""""""""
-" text object `is` and `as` does not work
+" text object `is` / `as` does not work
 " https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " noremap not supported
-
-" fix text object `is` not working
-" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap ä (y)
-nmap s (c)
-nmap S (d)
