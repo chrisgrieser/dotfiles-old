@@ -39,10 +39,10 @@ nmap j gj
 nmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nmap H (
-vmap H (
-nmap L )
-vmap L )
+nmap H 0
+vmap H 0
+nmap L $
+vmap L $
 nmap J 5j
 vmap J 5j
 nmap K 5k
@@ -106,6 +106,9 @@ rmap jj <Esc>
 
 " quickly switch to visual mode
 imap vv <Esc>v
+
+" quickly switch to insert mode
+vmap ii <Esc>i
 
 """"""""""""""""""""""
 " Misc
