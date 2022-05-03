@@ -67,7 +67,7 @@ nmap <C-k> :prevHeading
 " Marks
 """"""""""""""""""""""
 " remapping, since backtick isn't properly supported
-nmap , `
+nmap M `
 
 """"""""""""""""""""""
 " Editing
@@ -106,5 +106,17 @@ imap vv <Esc>v
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
 
-" fix text object is/as not working
-nmap yis (y)
+
+""""""""""""""""""""""
+" Obsidian limiations
+""""""""""""""""""""""
+" text object `is` and `as` does not work
+" https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
+" g0 and g$ do no work (even though listed in CodeMirror's vim.js)
+" noremap not supported
+
+" fix text object `is` not working
+" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
+nmap ä (y)
+nmap s (c)
+nmap S (d)
