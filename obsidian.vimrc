@@ -106,3 +106,5 @@ imap vv <Esc>v
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
 
+" fix text object is/as not working
+nmap yis (y)
