@@ -112,7 +112,7 @@
 				<key>runningsubtext</key>
 				<string>Searching synonyms for '{query}'...</string>
 				<key>script</key>
-				<string>/usr/bin/python powerthesaurus.py "synonym {query}"</string>
+				<string>/usr/bin/python3 powerthesaurus.py "synonym {query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -161,7 +161,7 @@
 				<key>runningsubtext</key>
 				<string>Searching antonyms for '{query}'...</string>
 				<key>script</key>
-				<string>/usr/bin/python powerthesaurus.py "antonym {query}"</string>
+				<string>/usr/bin/python3 powerthesaurus.py "antonym {query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
