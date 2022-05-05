@@ -83,6 +83,7 @@ nmap U <C-r>
 
 " quicker way to change word
 nmap <Space> ciw
+nmap <S-Space> caw
 vmap <Space> c
 
 " makes X an amplified x
@@ -94,7 +95,6 @@ nmap ü ~
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
 nmap s (c)
-nmap S (d)
 
 """"""""""""""""""""""
 " Switch Modes
