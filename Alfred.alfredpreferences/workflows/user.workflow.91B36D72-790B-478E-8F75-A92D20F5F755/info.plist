@@ -792,12 +792,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.apple.finder</string>
 					<string>com.sublimetext.4</string>
 					<string>md.obsidian</string>
-					<string>dexterleng.vimac</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>dexterleng.vimac</string>
 					<string>com.iconfactory.Twitterrific5</string>
-					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -950,12 +950,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
-					<string>com.brave.Browser</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -1193,20 +1193,15 @@ end alfred_script</string>
 				<key>hotkey</key>
 				<integer>8</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>1179648</integer>
 				<key>hotstring</key>
 				<string>C</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>io.alacritty</string>
-					<string>com.sublimetext.4</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -2536,7 +2531,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>200</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
