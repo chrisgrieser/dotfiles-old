@@ -28,19 +28,12 @@ open -a "Appcleaner" \
 open "/System/Library/CoreServices/Applications/Archive Utility.app"
 
 # NPM https://stackoverflow.com/a/41199625
-# add "--force" to enforce installation when there are already npm installs
-cat ~'/Desktop/NPMfile' | xargs npm install -g
+# shellcheck disable=SC2002
+cat ~'/Desktop/NPMfile' | xargs npm install -g --force
 npm list -g
 
 # Python / Pip installs
 pip3 install alacritty-colorscheme #requires the python3 version installed by homebrew
-
-# required for some Alfred workflows
-# https://www.alfredapp.com/help/kb/python-2-monterey/
-# https://github.com/alfredapp/updated-third-party-python2-workflows#workflows
-brew install pyenv
-pyenv install 2.7.18
-ln -s "${HOME}/.pyenv/versions/2.7.18/bin/python2.7" "${HOMEBREW_PREFIX}/bin/python"
 
 # -----------
 # SETTINGS

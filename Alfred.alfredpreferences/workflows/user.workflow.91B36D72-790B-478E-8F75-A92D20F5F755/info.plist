@@ -242,19 +242,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>49893E37-3798-4D15-A7F9-315BCA44460E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C28FEE8D-73E3-4727-B012-EC7EDD48E5A1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4F5580BB-85A0-416C-9CE0-38308AE55514</key>
 		<array>
 			<dict>
@@ -372,19 +359,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8FE1D242-C947-434A-A88B-8D0DCFADC8E2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>49893E37-3798-4D15-A7F9-315BCA44460E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
 		<array>
 			<dict>
@@ -491,19 +465,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>D08CA8F9-2C11-41A6-BDFA-428DB06F4222</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C28FEE8D-73E3-4727-B012-EC7EDD48E5A1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -792,12 +753,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.iconfactory.Twitterrific5</string>
-					<string>com.sublimetext.4</string>
 					<string>com.apple.finder</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>dexterleng.vimac</string>
 					<string>md.obsidian</string>
+					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.iconfactory.Twitterrific5</string>
+					<string>com.sublimetext.4</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -808,124 +769,6 @@
 			<string>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtextrtf</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c84706\cname controlTextColor;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs26 \cf2 \{clipboard:1\}}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events" 
-		key code 123 using {option down}
-		key code 124 using {option down, shift down}
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtextrtf</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c84706\cname controlTextColor;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs26 \cf2 \{clipboard:1\}}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>49893E37-3798-4D15-A7F9-315BCA44460E</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>8FE1D242-C947-434A-A88B-8D0DCFADC8E2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>seconds</key>
-				<string>.2</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
-			<key>uid</key>
-			<string>C28FEE8D-73E3-4727-B012-EC7EDD48E5A1</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -950,12 +793,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
 					<string>com.brave.Browser</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>md.obsidian</string>
 					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -966,6 +809,26 @@ end alfred_script</string>
 			<string>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events" 
+		key code 123 using {option down}
+		key code 124 using {option down, shift down}
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2312,9 +2175,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>550</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>40</integer>
 		</dict>
 		<key>06C2FE7A-3927-456E-910F-A076B3B93DD5</key>
 		<dict>
@@ -2455,9 +2318,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>expand to word</string>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>40</integer>
 		</dict>
 		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
 		<dict>
@@ -2488,17 +2351,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
-		<key>3D9DC2FD-267E-49D6-90CE-4D77C1AEBB60</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>added to preserve the original order of the clipboard content</string>
-			<key>xpos</key>
-			<integer>420</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
 		<key>3F6B7542-110C-48E1-82C4-F4FB4238D561</key>
 		<dict>
 			<key>colorindex</key>
@@ -2517,9 +2369,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Delete Line</string>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>40</integer>
 		</dict>
 		<key>486FF03E-2E20-4E44-AD29-57A806D12B25</key>
 		<dict>
@@ -2529,15 +2381,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>990</integer>
 			<key>ypos</key>
 			<integer>980</integer>
-		</dict>
-		<key>49893E37-3798-4D15-A7F9-315BCA44460E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>200</integer>
-			<key>ypos</key>
-			<integer>20</integer>
 		</dict>
 		<key>4F5580BB-85A0-416C-9CE0-38308AE55514</key>
 		<dict>
@@ -2642,17 +2485,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1510</integer>
 		</dict>
-		<key>8FE1D242-C947-434A-A88B-8D0DCFADC8E2</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>paste previous clipboard text</string>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
 		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
 		<dict>
 			<key>colorindex</key>
@@ -2669,9 +2501,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>40</integer>
 		</dict>
 		<key>9DCD7FD1-1579-478A-A393-219BC30CC5A1</key>
 		<dict>
@@ -2768,15 +2600,6 @@ Fenced Code</string>
 			<integer>905</integer>
 			<key>ypos</key>
 			<integer>520</integer>
-		</dict>
-		<key>C28FEE8D-73E3-4727-B012-EC7EDD48E5A1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>345</integer>
-			<key>ypos</key>
-			<integer>50</integer>
 		</dict>
 		<key>C4CED4ED-95CD-4CE8-B72A-548CD1FC1FE0</key>
 		<dict>
