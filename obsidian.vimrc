@@ -128,7 +128,6 @@ nmap f9 f)
 nmap t8 t(
 nmap t9 t)
 
-
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
@@ -152,6 +151,6 @@ nmap ö `
 " g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " noremap not supported
 
-" LIMITATIONS DUE TO GERMAN MAC KEYBOARD
+" LIMITATIONS DUE TO GERMAN KEYBOARD / MAC
 " all keys that require pressing alt/opt to be created (e.g. [ or @) and
 " all keys requiring a follow-up key (^`´) are also not working
