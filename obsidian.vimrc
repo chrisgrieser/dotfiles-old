@@ -94,14 +94,16 @@ nmap s (c)
 " Switch Modes
 """"""""""""""""""""""
 
-" quickly escape insert mode (or replace mode)
+" quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
+"same as :nohl
+vmap _ <Esc>
 
-" quickly switch to visual mode
+" quick switch to visual mode
 imap vv <Esc>v
 
-" quickly switch to insert mode
+" quick switch to insert mode
 vmap ii <Esc>i
 
 """"""""""""""""""""""
