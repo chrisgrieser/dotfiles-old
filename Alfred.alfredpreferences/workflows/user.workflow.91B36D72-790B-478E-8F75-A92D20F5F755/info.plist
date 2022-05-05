@@ -792,12 +792,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
+					<string>com.iconfactory.Twitterrific5</string>
 					<string>com.sublimetext.4</string>
-					<string>md.obsidian</string>
+					<string>com.apple.finder</string>
 					<string>com.runningwithcrayons.Alfred</string>
 					<string>dexterleng.vimac</string>
-					<string>com.iconfactory.Twitterrific5</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -950,12 +950,12 @@ end alfred_script</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
-					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
+					<string>com.agiletortoise.Drafts-OSX</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -1200,8 +1200,12 @@ end alfred_script</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
