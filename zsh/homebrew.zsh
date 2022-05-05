@@ -139,7 +139,7 @@ function update (){
 	npm update -g
 
 	print-section "PIP3"
-	pip3 install --upgrade pdfannots
+	pip3 list
 
 	print-section "DUMP INSTALLS"
 	dump
