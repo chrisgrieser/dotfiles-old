@@ -38,8 +38,8 @@ nmap j gj
 nmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nmap H 0
-vmap H 0
+nmap H ^
+vmap H ^
 nmap L $
 vmap L $
 nmap J 5j
@@ -124,3 +124,6 @@ nmap ? :obcommand
 " https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " noremap not supported
+
+nmap 0 [
+nmap ß ]
