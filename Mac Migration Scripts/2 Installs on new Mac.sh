@@ -35,6 +35,13 @@ npm list -g
 # Python / Pip installs
 pip3 install alacritty-colorscheme #requires the python3 version installed by homebrew
 
+# required for some Alfred workflows
+# https://www.alfredapp.com/help/kb/python-2-monterey/
+# https://github.com/alfredapp/updated-third-party-python2-workflows#workflows
+brew install pyenv
+pyenv install 2.7.18
+ln -s "${HOME}/.pyenv/versions/2.7.18/bin/python2.7" "${HOMEBREW_PREFIX}/bin/python"
+
 # -----------
 # SETTINGS
 # -----------

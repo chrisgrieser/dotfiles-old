@@ -112,7 +112,8 @@
 				<key>runningsubtext</key>
 				<string>Searching synonyms for '{query}'...</string>
 				<key>script</key>
-				<string>/usr/bin/python powerthesaurus.py "synonym {query}"</string>
+				<string>export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
+python powerthesaurus.py "synonym {query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -161,7 +162,8 @@
 				<key>runningsubtext</key>
 				<string>Searching antonyms for '{query}'...</string>
 				<key>script</key>
-				<string>/usr/bin/python powerthesaurus.py "antonym {query}"</string>
+				<string>export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
+python powerthesaurus.py "antonym {query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -209,7 +211,7 @@
 		<key>3BDFA2EA-F8AA-4E1D-BACD-9578AA20FCF0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>105</integer>
+			<integer>110</integer>
 			<key>ypos</key>
 			<integer>355</integer>
 		</dict>
