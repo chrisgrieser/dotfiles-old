@@ -118,3 +118,12 @@ geometry: "margin=2cm"
 __Priority of Filters__
 > Filters, Lua-filters, and citeproc processing are applied in the order specified on the command line.
 > – [Pandoc Docs](https://pandoc.org/MANUAL.html#option--filter)
+
+## References without Citations
+Add this to your yaml to add references without citing them in text.
+
+```yaml
+---
+nocite: @one, @two
+---
+```
