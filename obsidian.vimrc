@@ -29,7 +29,6 @@ nmap - /
 " Quickly remove search highlights
 nmap _ :nohl
 
-
 """"""""""""""""""""""
 " Nagivation
 """"""""""""""""""""""
@@ -94,7 +93,6 @@ nmap ü ~
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap ä (y)
 nmap s (c)
 nmap S (d)
 
@@ -122,6 +120,7 @@ nmap ? :obcommand
 " Obsidian limiations
 """"""""""""""""""""""
 " text object `is` / `as` does not work
+" U (as in changes in a line) does not work
 " https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " noremap not supported
