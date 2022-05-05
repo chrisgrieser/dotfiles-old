@@ -167,8 +167,6 @@ tell application "PopClip" to appear</string>
 		</dict>
 		<key>A6B082C6-7940-4780-8291-D71366F261C5</key>
 		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
 			<key>note</key>
 			<string>activate popclip</string>
 			<key>xpos</key>
@@ -179,7 +177,7 @@ tell application "PopClip" to appear</string>
 		<key>C978EC88-11EF-4DE7-9261-65FFEF7E3C25</key>
 		<dict>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>290</integer>
 			<key>ypos</key>
 			<integer>205</integer>
 		</dict>
