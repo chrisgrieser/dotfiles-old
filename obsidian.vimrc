@@ -63,12 +63,6 @@ exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
 nmap <C-k> :prevHeading
 
 """"""""""""""""""""""
-" Marks
-""""""""""""""""""""""
-" remapping, since backtick isn't properly supported
-nmap ö `
-
-""""""""""""""""""""""
 " Editing
 """"""""""""""""""""""
 
@@ -111,19 +105,53 @@ imap vv <Esc>v
 vmap ii <Esc>i
 
 """"""""""""""""""""""
+" Text Objects
+""""""""""""""""""""""
+
+"pseudo-map 0ß to [] ( [] not working + no more modifier key)
+nmap i0 i[
+nmap iß i]
+nmap a0 a[
+nmap aß a]
+nmap f0 f[
+nmap fß f]
+nmap t0 t[
+nmap tß t]
+
+"pseudo-map 89 to () (= no modifier key needed anymore)
+nmap i8 i(
+nmap i9 i)
+nmap a8 a(
+nmap a9 a)
+nmap f8 f(
+nmap f9 f)
+nmap t8 t(
+nmap t9 t)
+
+
+""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
 
+" Play Macro: more consistent mapping (and @ not working)
+nmap Q @
+
+" Goto Marks: remapping sinc ` not working
+nmap ö `
+
 """"""""""""""""""""""
-" Obsidian limiations
+" Limiations
 """"""""""""""""""""""
+
+" OBSIDIAN LIMITATIONS
 " text object `is` / `as` does not work
 " U (as in changes in a line) does not work
 " https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " noremap not supported
 
-nmap 0 [
-nmap ß ]
+" LIMITATIONS DUE TO GERMAN MAC KEYBOARD
+" all keys that require pressing alt/opt to be created (e.g. [ or @) and
+" all keys requiring a follow-up key (^`´) are also not working

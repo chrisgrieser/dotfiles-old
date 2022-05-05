@@ -250,7 +250,7 @@
 				<key>includesystem</key>
 				<false/>
 				<key>keyword</key>
-				<string>ch</string>
+				<string>cc</string>
 				<key>limit</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -369,7 +369,7 @@
 				<key>subtext</key>
 				<string>Search Code</string>
 				<key>text</key>
-				<string>grep.app</string>
+				<string>grep.app: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
