@@ -1483,62 +1483,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>18</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>1</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>589D0BC3-B2D3-4FB3-909C-249C10B2E2DD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>s</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>E31A91CD-6729-4B81-B897-92A757CEE724</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1740,6 +1684,150 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>ℹ️ No Files</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C9992321-E495-42F5-8309-4206EE81A1F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>🔄 Restarting Finder...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>4256AED4-8786-426C-BBAA-BD79229EE458</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>18</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>1</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>589D0BC3-B2D3-4FB3-909C-249C10B2E2DD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>s</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E31A91CD-6729-4B81-B897-92A757CEE724</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>restart finder</string>
+				<key>subtext</key>
+				<string>and reset default window size</string>
+				<key>text</key>
+				<string>Restart Finder</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>427496A9-50D6-475D-8DB2-E213C9B9B622</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>killall -KILL Finder
+sleep 1
+open -a "Finder"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6F942ED8-6136-458F-872F-59F76FFFC41D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
@@ -1796,44 +1884,60 @@ echo -n $(ls | wc -l | tr -d " ")</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
-				<key>title</key>
-				<string>ℹ️ No Files</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>touch.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C9992321-E495-42F5-8309-4206EE81A1F6</string>
+			<string>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
 				<string></string>
-				<key>title</key>
-				<string>🔄 Restarting Finder...</string>
+				<key>hotkey</key>
+				<integer>45</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>N</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>4256AED4-8786-426C-BBAA-BD79229EE458</string>
+			<string>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1900,168 +2004,6 @@ docx "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>killall -KILL Finder
-sleep 1
-open -a "Finder"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6F942ED8-6136-458F-872F-59F76FFFC41D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>restart finder</string>
-				<key>subtext</key>
-				<string>and reset default window size</string>
-				<key>text</key>
-				<string>Restart Finder</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>427496A9-50D6-475D-8DB2-E213C9B9B622</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>touch.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>45</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>N</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>resize.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B1270767-40DA-4713-9875-7FA8B3FDFAE5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>49</integer>
-				<key>hotmod</key>
-				<integer>524288</integer>
-				<key>hotstring</key>
-				<string>Space</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -2122,6 +2064,64 @@ open -a "Finder"</string>
 			<string>D9356F02-69F9-43CF-A2F8-5620849DD6CE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>resize.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B1270767-40DA-4713-9875-7FA8B3FDFAE5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>49</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>Space</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2694,7 +2694,7 @@ end if</string>
 			<key>xpos</key>
 			<integer>235</integer>
 			<key>ypos</key>
-			<integer>1100</integer>
+			<integer>1140</integer>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2703,9 +2703,9 @@ end if</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>1220</integer>
+			<integer>1240</integer>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2742,10 +2742,12 @@ end if</string>
 		</dict>
 		<key>4A2BBCFD-F977-4747-A19C-0CA5ABFC48D0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>xpos</key>
-			<integer>1170</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>1145</integer>
+			<integer>1435</integer>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2778,10 +2780,12 @@ end if</string>
 		</dict>
 		<key>589D0BC3-B2D3-4FB3-909C-249C10B2E2DD</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>xpos</key>
-			<integer>1000</integer>
+			<integer>465</integer>
 			<key>ypos</key>
-			<integer>875</integer>
+			<integer>1165</integer>
 		</dict>
 		<key>6965F454-7232-4E84-81D3-F7A0C5E29484</key>
 		<dict>
@@ -2801,27 +2805,29 @@ end if</string>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>
-			<integer>1220</integer>
+			<integer>1260</integer>
 		</dict>
 		<key>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>note</key>
 			<string>resize window &amp; hide sidebar</string>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>465</integer>
 			<key>ypos</key>
-			<integer>1380</integer>
+			<integer>1570</integer>
 		</dict>
 		<key>776880C9-1368-4168-9F97-07307B938A3B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>note</key>
 			<string>Pandoc Conversion</string>
 			<key>xpos</key>
-			<integer>1000</integer>
+			<integer>465</integer>
 			<key>ypos</key>
-			<integer>1145</integer>
+			<integer>1435</integer>
 		</dict>
 		<key>7B43FD68-D463-4626-BE13-7D1C65B12ECF</key>
 		<dict>
@@ -2923,10 +2929,12 @@ end if</string>
 		</dict>
 		<key>B1270767-40DA-4713-9875-7FA8B3FDFAE5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>1380</integer>
+			<integer>1570</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
@@ -3104,12 +3112,14 @@ end if</string>
 		</dict>
 		<key>E0B90868-E486-4C4C-B666-8E436F46E856</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>1170</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>1005</integer>
+			<integer>1295</integer>
 		</dict>
 		<key>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</key>
 		<dict>
@@ -3131,19 +3141,23 @@ end if</string>
 		</dict>
 		<key>E31A91CD-6729-4B81-B897-92A757CEE724</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>1170</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>875</integer>
+			<integer>1165</integer>
 		</dict>
 		<key>E4E3E773-9062-4B65-9CC9-ED1AB35D0170</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
 			<key>xpos</key>
-			<integer>1000</integer>
+			<integer>465</integer>
 			<key>ypos</key>
-			<integer>1005</integer>
+			<integer>1295</integer>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>

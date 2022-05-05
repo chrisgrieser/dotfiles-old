@@ -137,7 +137,7 @@ nmap ? :obcommand
 " Play Macro: more consistent mapping (and @ not working)
 nmap Q @
 
-" Goto Marks: remapping sinc ` not working
+" Goto Mark: remapping since ` not working
 nmap ö `
 
 """"""""""""""""""""""

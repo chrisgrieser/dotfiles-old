@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>93E31809-C5C8-4920-BA07-AF39BB5491F8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E0B2F3C0-553E-4ED3-9525-8242B10062AC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
 		<array>
 			<dict>
@@ -207,52 +194,6 @@ delay 0.5
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>kill</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Restart Popclip</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>93E31809-C5C8-4920-BA07-AF39BB5491F8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>killall "PopClip"
-sleep 1
-open -a "PopClip"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E0B2F3C0-553E-4ED3-9525-8242B10062AC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -295,24 +236,6 @@ open -a "PopClip"</string>
 			<integer>100</integer>
 			<key>ypos</key>
 			<integer>195</integer>
-		</dict>
-		<key>93E31809-C5C8-4920-BA07-AF39BB5491F8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>95</integer>
-			<key>ypos</key>
-			<integer>480</integer>
-		</dict>
-		<key>E0B2F3C0-553E-4ED3-9525-8242B10062AC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>295</integer>
-			<key>ypos</key>
-			<integer>480</integer>
 		</dict>
 		<key>E5BC3FC8-B63C-42D5-BDEF-004A14C8AD46</key>
 		<dict>
