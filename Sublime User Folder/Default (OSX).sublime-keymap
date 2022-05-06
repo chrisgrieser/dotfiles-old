@@ -46,11 +46,9 @@
 	] },
 
 	// Build System: Console
-	{
-		"keys": ["ctrl+escape"], "command": "show_panel",
-		"args": {"panel": "output.exec"},
-		"context": [ { "key": "panel_visible", "operand": false } ]
-	},
+	{"keys": ["ctrl+escape"], "command": "show_panel", "args": {"panel": "output.exec"}, "context": [
+		{ "key": "panel_visible", "operand": false }
+	] },
 
 	// Inter-File Navigation via goto or table of comments
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
@@ -100,10 +98,6 @@
 	// Multi Cursor down / up
 	{ "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
-
-	// Scrolling
-	// { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 20.0} },
-	{ "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -20.0} },
 
 	// Comment
 	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
