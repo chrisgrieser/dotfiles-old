@@ -101,9 +101,7 @@ nmap <C-t> xph
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
-
-"same as :nohl, essentially
-vmap _ <Esc>
+" already built in: presss v in visual mode to go back
 
 " quick switch to visual mode
 imap vv <Esc>v
