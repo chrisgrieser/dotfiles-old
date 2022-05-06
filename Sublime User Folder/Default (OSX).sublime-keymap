@@ -102,7 +102,7 @@
 	{ "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
 	// Scrolling
-	{ "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 20.0} },
+	// { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 20.0} },
 	{ "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -20.0} },
 
 	// Comment

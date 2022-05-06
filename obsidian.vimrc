@@ -131,6 +131,10 @@ nmap f0 f[
 nmap fß f]
 nmap t0 t[
 nmap tß t]
+nmap F0 F[
+nmap Fß F]
+nmap T0 T[
+nmap Tß T]
 
 "pseudo-map 89 to () (= no modifier key needed anymore)
 nmap i8 i(
@@ -141,12 +145,18 @@ nmap f8 f(
 nmap f9 f)
 nmap t8 t(
 nmap t9 t)
+nmap F8 F(
+nmap F9 F)
+nmap T8 T(
+nmap T9 T)
 
 "pseudo-map 2 to " (= no modifier key needed anymore)
 nmap i2 i"
 nmap a2 a"
 nmap f2 f"
 nmap t2 t"
+nmap F2 F"
+nmap T2 T"
 
 """"""""""""""""""""""
 " Misc
