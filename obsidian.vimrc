@@ -97,7 +97,8 @@ nmap s (c)
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
-"same as :nohl
+
+"same as :nohl, essentially
 vmap _ <Esc>
 
 " quick switch to visual mode
@@ -105,6 +106,15 @@ imap vv <Esc>v
 
 " quick switch to insert mode
 vmap ii <Esc>i
+
+""""""""""""""""""""""
+" Insert Mode
+""""""""""""""""""""""
+
+" mirroring HL in Normal Mode
+imap LL <Esc>A
+imap HH <Esc>I
+
 
 """"""""""""""""""""""
 " Text Objects
