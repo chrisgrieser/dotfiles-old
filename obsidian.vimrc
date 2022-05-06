@@ -90,6 +90,10 @@ nmap ü ~
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
 nmap s (c)
 
+" transpose characters, consistent with Emacs/Mac
+imap <C-t> <Esc>xpi
+nmap <C-t> xph
+
 """"""""""""""""""""""
 " Switch Modes
 """"""""""""""""""""""
