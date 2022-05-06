@@ -522,6 +522,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CC18D270-2F05-4E5F-9699-E89E3F5E4915</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3A22411-521B-4DD6-8241-F49796592618</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CFCCD6D4-5C3D-46AC-8EBF-DDD96AA8EE12</key>
 		<array>
 			<dict>
@@ -750,15 +763,15 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
 					<string>dexterleng.vimac</string>
 					<string>md.obsidian</string>
 					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.iconfactory.Twitterrific5</string>
-					<string>com.sublimetext.4</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -793,12 +806,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -849,6 +862,42 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>92F03F17-1D04-4164-AEF4-02F8DBEB8C78</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635216737</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>D3A22411-521B-4DD6-8241-F49796592618</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Open Adress in Maps</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>CC18D270-2F05-4E5F-9699-E89E3F5E4915</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -930,6 +979,27 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Append to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -959,27 +1029,6 @@ end alfred_script</string>
 			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
 			<string>186B57A9-8760-49C8-B62B-A4006551A19D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Append to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>17BC93E0-05EE-4AE3-99BB-08D9F3E380D2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1062,7 +1111,7 @@ end alfred_script</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>md.obsidian</string>
@@ -1825,27 +1874,6 @@ echo -n "[""$title""](""$url"")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Title Case</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1865,6 +1893,27 @@ echo -n "[""$title""](""$url"")"</string>
 			<string>E9B18C6D-C266-45FC-BB77-057AA35103DE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Title Case</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>B0FB256B-B979-44C2-A7AE-6EAEB648134E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2369,7 +2418,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Delete Line</string>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>40</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -2628,6 +2677,15 @@ Fenced Code</string>
 			<key>ypos</key>
 			<integer>1870</integer>
 		</dict>
+		<key>CC18D270-2F05-4E5F-9699-E89E3F5E4915</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
 		<key>CFCCD6D4-5C3D-46AC-8EBF-DDD96AA8EE12</key>
 		<dict>
 			<key>colorindex</key>
@@ -2663,6 +2721,15 @@ Fenced Code</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1590</integer>
+		</dict>
+		<key>D3A22411-521B-4DD6-8241-F49796592618</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>D45F6964-14F7-4A9F-843C-EED8A6C009F9</key>
 		<dict>

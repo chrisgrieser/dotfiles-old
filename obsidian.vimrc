@@ -130,6 +130,12 @@ nmap f9 f)
 nmap t8 t(
 nmap t9 t)
 
+"pseudo-map 2 to " (= no modifier key needed anymore)
+nmap i2 i"
+nmap a2 a"
+nmap f2 f"
+nmap t2 t"
+
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""

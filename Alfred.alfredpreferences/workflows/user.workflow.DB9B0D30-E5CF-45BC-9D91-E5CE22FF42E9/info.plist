@@ -130,8 +130,10 @@ open -a "PopClip"</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>-- https://docs.pilotmoon.com/article/36-controlling-popclip-using-applescript
-tell application "PopClip" to appear</string>
+				<string>on alfred_script(q)
+  -- https://docs.pilotmoon.com/article/36-controlling-popclip-using-applescript
+	tell application "PopClip" to appear
+end alfred_script</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
