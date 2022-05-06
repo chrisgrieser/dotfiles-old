@@ -71,6 +71,7 @@ nmap <BS> hx
 
 " allows Double Enter to add new line and indent
 nmap <CR> A
+imap <S-CR> <Esc>A
 
 " More logical undo
 nmap U <C-r>
