@@ -221,7 +221,7 @@ IMAGE_BASE_NAME needs to be `Pasted image ` for the paste image renamer Obsidian
 		<key>8B5E6418-AE7E-4E95-B133-CC53C1208C8B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>195</integer>
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
@@ -238,7 +238,7 @@ IMAGE_BASE_NAME needs to be `Pasted image ` for the paste image renamer Obsidian
 	<key>variables</key>
 	<dict>
 		<key>IMAGE_BASE_NAME</key>
-		<string>Pasted image </string>
+		<string>Pasted image</string>
 		<key>ocr_languages</key>
 		<string>eng+deu</string>
 	</dict>

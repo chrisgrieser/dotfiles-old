@@ -255,6 +255,16 @@
             "simple_modifications": [
                 {
                     "from": {
+                        "pointing_button": "button3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f19"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "pointing_button": "button4"
                     },
                     "to": [
@@ -270,26 +280,6 @@
                     "to": [
                         {
                             "key_code": "f14"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "pointing_button": "button3"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f19"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "escape"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f20"
                         }
                     ]
                 }
