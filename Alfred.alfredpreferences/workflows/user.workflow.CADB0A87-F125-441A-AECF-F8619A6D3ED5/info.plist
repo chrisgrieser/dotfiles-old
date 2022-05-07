@@ -256,6 +256,60 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+		tell process "Highlights" to click menu item "Highlight" of menu "Tools" of menu bar 1
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>4E37798A-A4CB-4CC4-96E1-5105A6752402</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>107</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F14</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>net.highlightsapp.universal</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>659A665B-9A38-4DD8-8576-D00876A011B9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -314,25 +368,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Highlights" to click menu item "Highlight" of menu "Tools" of menu bar 1
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>4E37798A-A4CB-4CC4-96E1-5105A6752402</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -342,11 +377,11 @@ end alfred_script</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>107</integer>
+				<integer>105</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F14</string>
+				<string>F13</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -361,9 +396,28 @@ end alfred_script</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>659A665B-9A38-4DD8-8576-D00876A011B9</string>
+			<string>A1A0723A-6480-4AB7-AD76-15C5622B3A03</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "System Events"
+		tell process "Highlights" to click menu item "Note" of menu "Tools" of menu bar 1
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>45BF28B8-2A74-4CFE-A6A6-818F5D4C959B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -418,60 +472,6 @@ end alfred_script</string>
 			<string>6E8E47D8-2337-4759-8F7E-8F4799E7DF2F</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>105</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F13</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>net.highlightsapp.universal</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A1A0723A-6480-4AB7-AD76-15C5622B3A03</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Highlights" to click menu item "Note" of menu "Tools" of menu bar 1
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>45BF28B8-2A74-4CFE-A6A6-818F5D4C959B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1382,9 +1382,9 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Note</string>
 			<key>xpos</key>
-			<integer>975</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>160</integer>
 		</dict>
 		<key>48A4FB2F-DCC1-449B-87D5-20797674A752</key>
 		<dict>
@@ -1402,9 +1402,9 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Highlight</string>
 			<key>xpos</key>
-			<integer>975</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>56A115F7-7CA4-4703-A7F5-6B14AED94F32</key>
 		<dict>
@@ -1442,9 +1442,9 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>66585F3C-A6C1-4916-A2A0-47008F240406</key>
 		<dict>
@@ -1582,9 +1582,9 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>445</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>160</integer>
 		</dict>
 		<key>AC1E0647-EA57-496D-99FA-448B46FEAA8C</key>
 		<dict>

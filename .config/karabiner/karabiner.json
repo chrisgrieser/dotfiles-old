@@ -109,38 +109,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "pointing_button": "button3"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f19"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "pointing_button": "button4"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f13"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "pointing_button": "button5"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f14"
-                                }
-                            ]
-                        }
-                    ]
+                    "simple_modifications": []
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
@@ -283,7 +252,48 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f13"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "pointing_button": "button5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f14"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "pointing_button": "button3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f19"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "escape"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f20"
+                        }
+                    ]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,
