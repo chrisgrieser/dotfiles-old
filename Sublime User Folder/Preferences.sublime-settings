@@ -1,8 +1,9 @@
+
 {
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
-	"light_color_scheme": "Packages/Color Scheme - Rainbow/Rainbow (Light).tmTheme",
+	"light_color_scheme": "Packages/Poppins - Color Scheme/Poppins.tmTheme",
 	"dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only
@@ -18,7 +19,7 @@
 	"highlight_line": true,
 	"match_selection": true,
 	"indent_guide_options": ["draw_normal", "solid"],
-	"margin": 0,
+	"margin": 5,
 	"rulers": [80],
 
 	// Editor Behavior
@@ -26,8 +27,8 @@
 	"move_to_limit_on_up_down": false,
 
 	// Scrolling
-	"scroll_past_end": 0.3,
-	"scroll_context_lines": 6, // this is essentially scroll ofset
+	"scroll_past_end": 0.3, // = overscroll
+	"scroll_context_lines": 7, // this is essentially scroll ofset
 	"scroll_speed": 2,
 
 	// Tabs vs. Spaces
@@ -123,33 +124,25 @@
 
 	//Plugins
 	"ignored_packages": [
-		"A File Icon",
 		"ActionScript",
 		"ASP",
-		"AutoFoldCode",
 		"Batch File",
 		"C#",
 		"C++",
-		"Case Conversion",
 		"Clojure",
 		"CSS",
 		"D",
 		"Erlang",
-		"ESLint-Formatter",
-		"File History",
-		"FileManager",
 		"Go",
 		"Graphviz",
 		"Groovy",
 		"Haskell",
-		"Hex to HSL Color Converter",
 		"Java",
 		"Lisp",
 		"Lua",
 		"Makefile",
 		"Markdown",
 		"Matlab",
-		"Night Owl",
 		"Objective-C",
 		"OCaml",
 		"Pascal",
@@ -163,10 +156,8 @@
 		"Scala",
 		"Split Line",
 		"SQL",
-		"Status Bar File Size",
 		"TCL",
 		"Textile",
-		"Theme - Spacegray",
 		"Vintage",
 	],
 
