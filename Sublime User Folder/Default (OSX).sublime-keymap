@@ -206,9 +206,6 @@
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
 
-	// GitHubinator
-	{ "keys": ["shift+alt+super+ctrl+g"], "command": "githubinator", "args" : { "permalink": false }},
-
 	// MARKDOWN
 	{ "keys": ["super+r"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} , "context": [
 		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
@@ -235,7 +232,7 @@
 
 	// LSP
 	// Goto Definition
-	{ "keys": ["ctrl+g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
+	{ "keys": ["shift+alt+super+ctrl+g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
 			{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
 			{"key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
