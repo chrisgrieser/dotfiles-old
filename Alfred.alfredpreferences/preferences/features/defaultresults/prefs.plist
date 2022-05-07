@@ -7,8 +7,6 @@
 		<string>features.websearch.custom.8943DD04-1006-4B0A-8BBB-08E7D79D8E62.fallback</string>
 		<string>features.websearch.custom.DF4242CE-C78F-4451-BE7C-B3F80DE78749.fallback</string>
 	</array>
-	<key>fallbacksMode</key>
-	<integer>1</integer>
 	<key>showDocuments</key>
 	<true/>
 	<key>showFolders</key>
