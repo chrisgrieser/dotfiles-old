@@ -1,6 +1,6 @@
 {
   "title": "CapsLock Plus",
-  "maintainers": ["BryanHoo"],
+  "maintainers": ["BryanHu"],
   "homepage": "https://github.com/BryanHoo/Capslock-Plus",
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/BryanHoo/Capslock-Plus/master/capslock-plus.json",
   "rules": [
@@ -18,57 +18,44 @@
           "to": [
             {
               "key_code": "right_shift",
-              "modifiers": ["right_command", "right_control", "right_option"]
+              "modifiers": ["right_command", "right_control", "right_option"],
+              "lazy": true
             }
           ],
           "to_if_alone": [
             {
               "key_code": "escape"
             }
-          ]
-        },
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 500
+          }
+        }
+      ]
+    },
+    {
+      "description": "left shift to switch language",
+      "manipulators": [
         {
-          "description": "ESC equal to CapsLock",
-          "type": "basic",
           "from": {
-            "key_code": "escape",
+            "key_code": "left_shift",
             "modifiers": {
-              "optional": ["caps_lock"],
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
             {
-              "key_code": "caps_lock",
-              "modifiers": ["left_control"]
+              "key_code": "left_shift",
+              "lazy": true
             }
-          ]
-        },
-        {
-          "description": "Language switch",
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
+          ],
+          "to_if_alone": [
             {
               "key_code": "spacebar",
               "modifiers": ["left_control"]
             }
-          ]
+          ],
+          "type": "basic"
         }
       ]
     },
@@ -503,6 +490,46 @@
         },
         {
           "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
             "key_code": "t",
             "modifiers": {
               "mandatory": [
@@ -537,6 +564,30 @@
               "shell_command": "open -a 'finder'"
             }
           ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 500
+          },
           "type": "basic"
         }
       ]

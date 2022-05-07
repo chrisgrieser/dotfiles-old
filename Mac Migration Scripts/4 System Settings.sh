@@ -15,8 +15,8 @@ sudo -v
 # mouse speed: 3 = max speed from System Preferences
 # https://mac-os-key-repeat.vercel.app/
 defaults write -g com.apple.mouse.scaling  4.0
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g InitialKeyRepeat -int 13 # normal minimum: 15 (225ms)
+defaults write -g KeyRepeat -int 2 # normal minimum: 2 (30ms)
 
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # when to show scrollbars
