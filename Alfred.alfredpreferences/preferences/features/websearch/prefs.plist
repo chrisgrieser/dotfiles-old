@@ -134,19 +134,6 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
-		<key>951488A5-13D2-4B0D-98BF-42DA4EE893CB</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>fac</string>
-			<key>text</key>
-			<string>Factoria Wiki: '{query}'</string>
-			<key>url</key>
-			<string>https://wiki.factorio.com/index.php?search={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
 		<key>9672465E-E164-4221-9824-0E164A40E39B</key>
 		<dict>
 			<key>enabled</key>

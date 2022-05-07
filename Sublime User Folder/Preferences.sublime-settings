@@ -19,7 +19,7 @@
 	"highlight_line": true,
 	"match_selection": true,
 	"indent_guide_options": ["draw_normal", "solid"],
-	"margin": 5,
+	"margin": 0,
 	"rulers": [80],
 
 	// Editor Behavior
@@ -51,12 +51,14 @@
 	"find_selected_text": true,
 
 	// Tab Bar
-	"auto_hide_tabs": false,
+	"auto_hide_tabs": true,
+	"reveal_tabs_with_timeout": true,
 	"hide_tab_scrolling_buttons": true,
 	"enable_tab_scrolling": false,
 	"file_tab_style": "rounded", // "angled" does not support inactive pane dimming
 	"highlight_modified_tabs": true,
-	"native_tabs": "system",
+	"native_tabs": "disabled",
+	"hide_new_tab_button": true,
 
 	// Startup & Exit
 	"save_on_focus_lost": true,
@@ -154,7 +156,6 @@
 		"Ruby",
 		"Rust",
 		"Scala",
-		"Split Line",
 		"SQL",
 		"TCL",
 		"Textile",

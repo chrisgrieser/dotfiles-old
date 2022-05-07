@@ -6,8 +6,9 @@
 	<array>
 		<string>features.websearch.custom.8943DD04-1006-4B0A-8BBB-08E7D79D8E62.fallback</string>
 		<string>features.websearch.custom.DF4242CE-C78F-4451-BE7C-B3F80DE78749.fallback</string>
-		<string>user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C.341089EA-5936-4C81-ADE8-ECF290EA808D</string>
 	</array>
+	<key>fallbacksMode</key>
+	<integer>1</integer>
 	<key>showDocuments</key>
 	<true/>
 	<key>showFolders</key>
