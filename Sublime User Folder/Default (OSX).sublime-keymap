@@ -111,9 +111,9 @@
 	{ "keys": ["super+shift+alt+ctrl+5"], "command": "fold_by_level", "args": {"level": 5} },
 	{ "keys": ["super+4"], "command": "unfold" },
 
-	// Undo/Redo Selection (remapped escape button)
-	{ "keys": ["f20"], "command": "jump_back" },
-	{ "keys": ["shift+f20"], "command": "jump_forward" },
+	// Undo/Redo Selection
+	{ "keys": ["shift+escape"], "command": "jump_back" },
+	{ "keys": ["alt+escape"], "command": "jump_forward" },
 
 	// Mouse Keys
 	{ "keys": ["f14"], "command": "close" },
