@@ -23,7 +23,7 @@ set incsearch
 " no modifier key for jumping to next word
 nmap + *
 
-" quicker find mode (mirroring American keyboard layout on German keyboard)
+" quicker find mode (by mirroring American keyboard layout on German keyboard layout)
 nmap - /
 
 " Quickly remove search highlights
@@ -47,16 +47,12 @@ vmap J 6j
 nmap K 6k
 vmap K 6k
 
-" ß is on the right of `0` in German keyboards
-nmap ß $
-vmap ß $
-
 " back/forth
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
 " (not mapped here, so they also work in preview mode)
 
 " next heading/previous heading
-" (not mapped in Obsidian hotkeys, so ctrl + k is left as kill line in insert mode)
+" (not mapped in Obsidian hotkeys, so they can be mapped differently in Insert Mode)
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 nmap <C-j> :nextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
@@ -116,6 +112,12 @@ vmap ii <Esc>i
 " mirroring HL in Normal Mode
 imap LL <Esc>A
 imap HH <Esc>I
+
+" Kill line
+imap <C-k> <Esc>Di
+
+" Kill line backwards
+imap <C-j> <Esc>d^i
 
 
 """"""""""""""""""""""
