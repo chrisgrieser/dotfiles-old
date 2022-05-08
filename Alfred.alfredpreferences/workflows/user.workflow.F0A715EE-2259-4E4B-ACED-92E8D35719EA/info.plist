@@ -147,7 +147,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>com.apple.finder</string>
@@ -669,7 +669,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>note</key>
 			<string>open via subl CLI</string>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>240</integer>
 			<key>ypos</key>
 			<integer>65</integer>
 		</dict>
