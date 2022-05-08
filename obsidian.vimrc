@@ -42,10 +42,10 @@ nmap H ^
 vmap H ^
 nmap L $
 vmap L $
-nmap J 5j
-vmap J 5j
-nmap K 5k
-vmap K 5k
+nmap J 6j
+vmap J 6j
+nmap K 6k
+vmap K 6k
 
 " ß is on the right of `0` in German keyboards
 nmap ß $
