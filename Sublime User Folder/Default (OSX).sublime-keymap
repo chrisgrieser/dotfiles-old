@@ -50,7 +50,7 @@
 		{ "key": "panel_visible", "operand": false }
 	] },
 
-	// Inter-File Navigation via goto or table of comments
+	// Intra-File Navigation via goto or table of comments
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 	{ "keys": ["super+k"], "command": "goto_comment", "context": [
 		{ "key": "selector", "operator": "not_equal", "operand": "text.html.markdown" },

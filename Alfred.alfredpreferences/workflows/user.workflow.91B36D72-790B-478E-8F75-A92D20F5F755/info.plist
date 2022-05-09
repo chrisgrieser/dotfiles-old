@@ -806,12 +806,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
+					<string>com.agiletortoise.Drafts-OSX</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -826,22 +826,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events" 
-		key code 123 using {option down}
-		key code 124 using {option down, shift down}
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events" 
+	key code 123 using {option down}
+	delay 0.02
+	key code 124 using {option down, shift down}
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
