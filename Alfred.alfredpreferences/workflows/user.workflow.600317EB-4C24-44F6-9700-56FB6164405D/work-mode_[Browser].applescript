@@ -13,9 +13,9 @@ tell application "Slack" to if it is not running then activate
 tell application "Discord" to if it is not running then activate
 
 -- reset Drafts (Actions contains focus mode off already)
-tell application "Drafts" to open location "drafts://x-callback-url/runaction?&action=Workspace-Basic"
+tell application "Drafts" to open location "drafts://x-callback-url/runaction?&action=Workspace-Home"
 
---jump to top in Twitterific
+-- jump to top in Twitterific
 tell application "Twitterrific" to if it is not running then activate
 repeat until application "Twitterrific" is running
 	delay 0.1
