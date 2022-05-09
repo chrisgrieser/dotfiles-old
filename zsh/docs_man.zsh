@@ -10,10 +10,10 @@ function h () {
 # if alacritty installed open man page in new alacritty window
 if which alacritty &> /dev/null ; then
 	function man () {
+		which moar &> /dev/null || return 1
 		which "$1" &> /dev/null || return 1
 		# run in subshell to surpress output
 		(alacritty \
-			--option=window.position.x=400 \
 			--option=window.decorations=full \
 			--title="man $1" \
 			--command man "$1" &)

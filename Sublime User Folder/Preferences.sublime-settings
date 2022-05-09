@@ -119,10 +119,10 @@
 	"draw_minimap_border": true,
 
 	// Vim Mode
-	"line_numbers": false,
+	"line_numbers": false, // set to true when using vim
 	"relative_line_numbers": true,
-	"vintage_use_clipboard": true,
-	"vintage_start_in_command_mode": true, // equivalent for `set clipboard=unnamed`
+	"vintage_use_clipboard": true,  // equivalent for `set clipboard=unnamed`, I guess?
+	"vintage_start_in_command_mode": true,
 
 	//Plugins
 	"ignored_packages": [
