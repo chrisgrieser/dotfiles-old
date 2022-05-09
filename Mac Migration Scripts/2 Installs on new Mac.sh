@@ -67,9 +67,3 @@ mkdir -p "$newSkinPath"/resource/styles/
 cp "$steamDataPath"/resource/styles/steam.styles "$newSkinPath"/resource/styles/
 echo ":root { zoom: \"1.5\"; }" > "$newSkinPath"/resource/webkit.css
 
-# Fix Permission issue with Drafts, https://forums.getdrafts.com/t/open-file-links-with-app-openurl/11513/6
-mkdir ~"/Library/Application Scripts/com.agiletortoise.Drafts-OSX"
-
-# Sublime: Install Package Control https://packagecontrol.io/installation
-curl -sL "https://packagecontrol.io/Package%20Control.sublime-package" > ~"/Library/Application Support/Sublime Text/Packages/"
-

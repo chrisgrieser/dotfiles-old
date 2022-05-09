@@ -10,7 +10,7 @@
 
 	// Font & Spacing
 	"ui_scale": 1.7,
-	"font_size": 21,
+	"font_size": 14,
 	"font_face": "Input",
 	"font_options": ["no_liga", "no_italic", "no_bold"],
 
@@ -129,6 +129,7 @@
 		"ActionScript",
 		"ASP",
 		"Batch File",
+		"Brackets Color Scheme",
 		"C#",
 		"C++",
 		"Clojure",

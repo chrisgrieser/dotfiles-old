@@ -22,6 +22,7 @@ alias notify="osascript -e 'display notification \"\" with title \"Terminal Proc
 alias version='echo "macOS "`sw_vers -productVersion`'
 alias resolution="osascript -e 'tell application \"Finder\" to get bounds of window of desktop' | cut -d ' ' -f 3,4"
 alias urlencode='node --eval "console.log(encodeURIComponent(process.argv[1]))"'
+alias theme="alacritty-theme-switch"
 
 # colorize by default
 alias grep='grep --color -i' # and case insensitive

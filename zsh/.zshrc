@@ -13,6 +13,3 @@ source "$ZSH_DOTFILE_LOCATION"/npm.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
 source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
 source "$ZSH_DOTFILE_LOCATION"/../pandoc/pandoc.zsh
-if [[ $(uname -p) == "arm" ]]; then
-	source "$ZSH_DOTFILE_LOCATION"/alacritty_theme_switcher.zsh
-fi

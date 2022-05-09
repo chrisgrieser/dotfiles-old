@@ -119,8 +119,7 @@ function dump () {
 	DEVICE_NAME=$(scutil --get ComputerName)
 	brew bundle dump --force --file "$BREWDUMP_PATH/Brewfile_$DEVICE_NAME"
 	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
-	pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH/Pip3File_$DEVICE_NAME"
-	echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
+	echo "Brewfile and NPM-File dumped at \"$BREWDUMP_PATH\""
 }
 
 function update (){
@@ -137,9 +136,6 @@ function update (){
 
 	print-section "NPM"
 	npm update -g
-
-	print-section "PIP3"
-	pip3 list
 
 	print-section "DUMP INSTALLS"
 	dump
@@ -165,9 +161,6 @@ function report (){
 
 	print-section "NPM"
 	npm list -g
-
-	print-section "PIP3"
-	pip3 list
 
 	print-section "DUMP INSTALLS"
 	dump

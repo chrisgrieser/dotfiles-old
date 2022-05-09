@@ -17,8 +17,7 @@ BREWDUMP_PATH="$BACKUP_DEST/install lists"
 mkdir -p "$BREWDUMP_PATH"
 brew bundle dump --force --file "$BREWDUMP_PATH"/Brewfile_"$DEVICE_NAME"
 npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
-pip3 freeze | cut -d"=" -f1 > "$BREWDUMP_PATH"/Pip3File_"$DEVICE_NAME"
-echo "Brewfile, NPM-File, and Pip3File dumped at \"$BREWDUMP_PATH\""
+echo "Brewfile and NPM-File dumped at \"$BREWDUMP_PATH\""
 
 # rsync function
 function bkp () {
