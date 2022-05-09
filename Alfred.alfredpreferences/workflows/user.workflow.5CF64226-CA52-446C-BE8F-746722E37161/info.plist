@@ -796,10 +796,10 @@ return "{query}"</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1079,7 +1079,7 @@ return "{query}"</string>
 		<key>4290352B-2477-4963-A2D3-AAAAA8ECDD02</key>
 		<dict>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>210</integer>
 			<key>ypos</key>
 			<integer>285</integer>
 		</dict>
