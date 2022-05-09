@@ -1,0 +1,56 @@
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "blueutil"
+brew "python@3.9"
+brew "exa"
+brew "fd"
+brew "tesseract"
+brew "fortune"
+brew "fzf"
+brew "node"
+brew "iconsur"
+brew "markdownlint-cli"
+brew "mas"
+brew "ocrmypdf"
+brew "pandoc"
+brew "pdfgrep"
+brew "shellcheck"
+brew "starship"
+brew "tesseract-lang"
+brew "yamllint"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+cask "alacritty"
+cask "alfred"
+cask "appcleaner"
+cask "brave-browser"
+cask "busycal"
+cask "cryptomator"
+cask "discord"
+cask "dozer"
+cask "finicky"
+cask "istat-menus"
+cask "karabiner-elements"
+cask "macpass"
+cask "microsoft-auto-update"
+cask "microsoft-excel"
+cask "microsoft-word"
+cask "mimestream"
+cask "monitorcontrol"
+cask "obsidian"
+cask "rocket"
+cask "slack"
+cask "sublime-text"
+mas "Color Picker", id: 1545870783
+mas "Drafts", id: 1435957248
+mas "Gifski", id: 1351639930
+mas "Highlights", id: 1498912833
+mas "Keymou", id: 449863619
+mas "Moom", id: 419330170
+mas "Peek", id: 1554235898
+mas "PopClip", id: 445189367
+mas "rcmd", id: 1596283165
+mas "Tiny Temp", id: 1291787042
+mas "Twitterrific", id: 1289378661

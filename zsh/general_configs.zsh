@@ -1,13 +1,8 @@
 # shellcheck disable=SC2190
-# Working Directory
-export WD=~"/Library/Mobile Documents/com~apple~CloudDocs/File Hub"
-
-# -------------------------------------------------------------
 
 # ENVIRONMENT --- (use `printenv` to see all environment variables)
 export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
 
 # zsh syntax highlighting,
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)

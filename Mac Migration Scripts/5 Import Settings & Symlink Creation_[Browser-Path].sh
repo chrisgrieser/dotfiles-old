@@ -45,8 +45,10 @@ ln -s "$SYMLINK_LOC/.config/" ~/.config
 
 # Popclip
 # requires the Preference plist? 🤔
+killall Popclip
 mv -f ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
+open -a "Popclip"
 
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
