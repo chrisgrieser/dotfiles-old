@@ -43,23 +43,10 @@ ln -s "$SYMLINK_LOC/.vimrc" ~
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC/.config/" ~/.config
 
-# Brave
-mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
-ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
-
-# Folder Actions
-mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
-ln -s "$SYMLINK_LOC/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
-
 # Popclip
 # requires the Preference plist? 🤔
 mv -f ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
-
-# VLC
-mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
-mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
-ln -s "$SYMLINK_LOC/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
 
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
@@ -69,9 +56,24 @@ ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Applicatio
 mv ~"/Library/Application Support/Sublime Text/Packages/copy-file-name" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/copy-file-name" ~"/Library/Application Support/Sublime Text/Packages"
 
+# only on main device
+
 # Dock and Launchpad
 mv ~"/Library/Application Support/Dock" ~/.Trash
 ln -s "$SYMLINK_LOC/Dock and Launchpad" ~"/Library/Application Support/Dock"
+
+# Brave
+mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
+ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+
+# Folder Actions
+mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
+ln -s "$SYMLINK_LOC/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
+
+# VLC
+mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
+mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
+ln -s "$SYMLINK_LOC/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
 
 # --------------
 # seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53

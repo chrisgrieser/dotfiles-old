@@ -31,7 +31,7 @@
       "paddingHorizontal" : 8,
       "spacing" : 7,
       "text" : {
-        "size" : 47,
+        "size" : 51,
         "colorSelected" : "#000000FF",
         "font" : "Recursive",
         "color" : "#FDFDFDFF"
