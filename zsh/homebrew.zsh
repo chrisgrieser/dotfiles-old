@@ -60,6 +60,7 @@ function br () {
 function bu () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
 		brew uninstall --zap "$1"
+		killall "$1"
 		return
 	fi
 
@@ -75,6 +76,7 @@ function bu () {
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
 	brew uninstall --zap "$SELECTED"
+	killall "$SELECTED"
 }
 
 function bi (){
