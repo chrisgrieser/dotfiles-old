@@ -3,7 +3,7 @@
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
-	"light_color_scheme": "Packages/User/material-light-custom.tmTheme",
+	"light_color_scheme": "Packages/Color Scheme - Rainbow/Rainbow (Light).tmTheme",
 	"dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only
@@ -157,7 +157,6 @@
 		"Ruby",
 		"Rust",
 		"Scala",
-		"SQL",
 		"TCL",
 		"Textile",
 		"Vintage",
