@@ -53,4 +53,4 @@ else
 fi
 
 # open pseudo-encoded url (to require no dependency)
-open "$(echo "$URL" | sed -e "s/ /%20/")"
+open "$(echo "$URL" | sed -e "s/ /%20/g")"

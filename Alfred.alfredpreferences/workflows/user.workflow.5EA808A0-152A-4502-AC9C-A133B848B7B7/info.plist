@@ -507,7 +507,7 @@ subl --command toggle_side_bar</string>
 			<key>xpos</key>
 			<integer>535</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 		</dict>
 		<key>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</key>
 		<dict>

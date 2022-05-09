@@ -10,8 +10,6 @@ export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
 # ----------------------
 
-
-
 # only app name
 APP_TO_UPDATE=$(basename "$*")
 APP_TO_UPDATE="${APP_TO_UPDATE%.*}" # no extension
