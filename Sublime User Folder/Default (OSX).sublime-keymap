@@ -67,6 +67,7 @@
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
 
 	// Case CONVERSION
+	{ "keys": ["super+u"], "command": "upper_case" },
 	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
 		{ "key": "terminus_view", "operator": "not_equal" },
 	] },

@@ -1,6 +1,8 @@
 {
 	"title": "CapsLock to Hyper-Esc",
+	"version": "0.1",
 	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/BryanHoo/Capslock-X/main/capslock-x.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles",
 	"rules": [
 		{
