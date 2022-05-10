@@ -10,7 +10,7 @@ set Y to item 2 of item 2 of item 1 of allFrames
 
 set topLeftX to (X * 0.15)
 set topLeftY to (Y * 0.05)
-set _width to (X * 0.85)
+set _width to (X * 0.80)
 set height to (Y * 0.95)
 
 -- resize front window
