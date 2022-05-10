@@ -51,13 +51,6 @@ vmap K 6k
 " ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
 " (not mapped here, so they also work in preview mode)
 
-" next heading/previous heading
-" (not mapped in Obsidian hotkeys, so they can be mapped differently in Insert Mode)
-exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
-nmap <C-j> :nextHeading
-exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
-nmap <C-k> :prevHeading
-
 """"""""""""""""""""""
 " Editing
 """"""""""""""""""""""
