@@ -44,7 +44,6 @@ mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC/.config/" ~/.config
 
 # Popclip
-# requires the Preference plist? 🤔
 killall Popclip
 mv -f ~"/Library/Application Support/PopClip" ~/.Trash
 ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
@@ -55,8 +54,6 @@ mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
 mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
-mv ~"/Library/Application Support/Sublime Text/Packages/copy-file-name" ~/.Trash
-ln -s "$SYMLINK_LOC/Sublime Packages/copy-file-name" ~"/Library/Application Support/Sublime Text/Packages"
 
 # only on main device
 

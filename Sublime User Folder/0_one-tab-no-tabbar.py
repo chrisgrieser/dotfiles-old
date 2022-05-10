@@ -5,9 +5,6 @@ import sublime_plugin
 # https://www.sublimetext.com/docs/api_reference.html#sublime_plugin.EventListener
 class RemoveTabBarListener(sublime_plugin.EventListener):
 
-	def on_init(self, views):
-		self.close_tab_bar(views[0], len(views[0].window().views()))
-
 	def on_load_async(self, view):
 		self.close_tab_bar(view, len(view.window().views()))
 	on_new_async = on_load_async
@@ -17,7 +14,7 @@ class RemoveTabBarListener(sublime_plugin.EventListener):
 
 	@staticmethod
 	def close_tab_bar(view, num_views):
-		if num_views == 1:
+		if num_views < 2:
 			view.window().set_tabs_visible(False)
 		else:
 			view.window().set_tabs_visible(True)
