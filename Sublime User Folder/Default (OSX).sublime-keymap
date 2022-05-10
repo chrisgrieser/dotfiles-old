@@ -159,16 +159,8 @@
 	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 	// Wrap
 	{ "keys": ["shift+alt+super+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-	// Sidebar/Tab bar
-	{ "keys": ["super+1"],
-		"command": "chain",
-		"args": {
-			"commands": [
-				["toggle_tabs"],
-				["toggle_side_bar"]
-			]
-		}
-	},
+	// Sidebar
+	{ "keys": ["super+1"], "command": "toggle_side_bar" },
 
 	// FILE MANAGEMENT
 	{ "keys": ["super+n"], "command": "advanced_new_file_new"},

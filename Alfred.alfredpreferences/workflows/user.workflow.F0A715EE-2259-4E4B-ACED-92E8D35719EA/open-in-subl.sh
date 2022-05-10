@@ -9,8 +9,4 @@ query="$*"
 "$sublcli" "$query"
 
 # if directory, then show sidebar
-# and hide tabbar
-if [[ -d "$query" ]] ; then
-	"$sublcli" --command toggle_tabs
-	"$sublcli" --command toggle_side_bar
-fi
+[[ -d "$query" ]] &&	"$sublcli" --command toggle_side_bar
