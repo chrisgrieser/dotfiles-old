@@ -430,7 +430,7 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>:</string>
+				<string>em</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -517,25 +517,6 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://emojipedia.org/search/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0BB90476-EDA6-43B4-88D8-CDF14CDB1680</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -551,6 +532,25 @@ use framework "AppKit" set allFrames to (current application's NSScreen's scree
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>AFB25478-F21E-4921-BAE4-5007E354CB41</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://emojipedia.org/search/?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0BB90476-EDA6-43B4-88D8-CDF14CDB1680</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>

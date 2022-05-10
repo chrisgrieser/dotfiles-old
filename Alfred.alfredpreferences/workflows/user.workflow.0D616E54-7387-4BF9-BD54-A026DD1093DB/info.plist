@@ -547,7 +547,7 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>drafts://open?uuid={query}&amp;showDraftList=true&amp;showActionList=false&amp;loadWorkspace=Basic&amp;loadActionGroup=Basic&amp;loadActionBarGroup=Basic</string>
+				<string>drafts://open?uuid={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>

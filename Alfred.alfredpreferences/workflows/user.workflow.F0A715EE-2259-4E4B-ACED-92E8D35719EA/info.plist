@@ -502,7 +502,7 @@ EOB</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>default</string>
+				<string>:default</string>
 				<key>subtext</key>
 				<string>copy to working directory</string>
 				<key>text</key>
@@ -554,7 +554,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>safe mode</string>
+				<string>:safe mode</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
