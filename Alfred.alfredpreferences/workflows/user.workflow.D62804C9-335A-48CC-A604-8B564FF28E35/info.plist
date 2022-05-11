@@ -112,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>802D2A2A-82EF-4E66-9FA0-82934BAB9D4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD994AC1-2439-41B0-8DE7-BAF7C465B3DE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>85FB48E5-3F6B-4F8A-85F1-DA287613CFCE</key>
 		<array>
 			<dict>
@@ -342,6 +355,62 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>t</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>DD994AC1-2439-41B0-8DE7-BAF7C465B3DE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>29</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>0</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.busymac.busycal3</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>802D2A2A-82EF-4E66-9FA0-82934BAB9D4E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -558,9 +627,9 @@
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>605</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>235</integer>
 		</dict>
 		<key>12707C5A-EABC-4604-A5BE-7FA3A8C58633</key>
 		<dict>
@@ -619,9 +688,9 @@
 		<key>4807A1A0-6691-4686-8ACA-C507FDA668EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>235</integer>
 		</dict>
 		<key>5A120862-2045-4E00-819B-B9B68562B55D</key>
 		<dict>
@@ -640,6 +709,13 @@
 			<integer>200</integer>
 			<key>ypos</key>
 			<integer>660</integer>
+		</dict>
+		<key>802D2A2A-82EF-4E66-9FA0-82934BAB9D4E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>435</integer>
+			<key>ypos</key>
+			<integer>375</integer>
 		</dict>
 		<key>85FB48E5-3F6B-4F8A-85F1-DA287613CFCE</key>
 		<dict>
@@ -667,6 +743,15 @@
 			<integer>285</integer>
 			<key>ypos</key>
 			<integer>110</integer>
+		</dict>
+		<key>DD994AC1-2439-41B0-8DE7-BAF7C465B3DE</key>
+		<dict>
+			<key>note</key>
+			<string>toggle sidebar</string>
+			<key>xpos</key>
+			<integer>605</integer>
+			<key>ypos</key>
+			<integer>375</integer>
 		</dict>
 		<key>DFC2FD2A-982E-447C-AA7C-F5026DF72C9D</key>
 		<dict>
