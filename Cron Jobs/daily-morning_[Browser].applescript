@@ -17,6 +17,9 @@ delay 1
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
 
+# Reminders to Drafts (redundancy with iOS for safety)
+tell application "Shortcuts" to run shortcut "Send Reminders due today to Drafts"
+
 # TWITTERIFIC SCROLL UP
 # wrapped in try due to Twitterific bug sometimes not
 # responding to hotkeys when not clicking into the window once
