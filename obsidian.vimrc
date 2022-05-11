@@ -66,11 +66,8 @@ nmap U <C-r>
 
 " quicker way to change word
 nmap <Space> ciw
-nmap <S-Space> caw
+nmap <S-Space> daw
 vmap <Space> c
-
-" makes X an amplified x
-nmap X daw
 
 " switch case (~ not directly available on German keyboards)
 nmap ü ~
