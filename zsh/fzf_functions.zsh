@@ -47,3 +47,34 @@ function c (){
 	exa
 }
 
+# requires these settings to work, since using built-in zsh
+# stack directory (`man zshoptions` for explanations)
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+
+# cd to recent directory
+function r (){
+	local INPUT="$*"
+	[[ -d "$INPUT" ]] && { cd "$INPUT" ; return }
+	local STACK
+	STACK=$(dirs -p | sed 's/~\/Library\/Mobile Documents\/com~apple~CloudDocs/ /'\
+	        | sed 's/~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /')
+	local SELECTED
+	SELECTED=$(echo "$STACK" | fzf \
+	           -0 \
+	           --query "$INPUT" \
+	           --no-sort \
+	           --height=60% \
+	           --layout=reverse \
+	           --info=inline
+	           )
+	[[ -z "$SELECTED" ]] && return 130
+
+	local RESOLVED
+	RESOLVED=$(echo "$SELECTED" \
+	           | sed 's/ /~\/Library\/Mobile Documents\/com~apple~CloudDocs/'\
+	           | sed 's/ /~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/')
+	RESOLVED="${RESOLVED/#\~/$HOME}"
+	cd "$RESOLVED" || return
+	exa
+}
