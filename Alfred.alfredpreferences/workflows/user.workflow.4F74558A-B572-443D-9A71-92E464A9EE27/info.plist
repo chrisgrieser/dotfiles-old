@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
+				<string>C8135108-B86E-49C6-81FB-5601CFB5BF9A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -49,6 +49,44 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FEC82210-DDF5-46A7-980E-8A195BD3A586</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BD16A75F-DC81-47C0-99A3-8A4360CCEA08</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>36AE7CE2-D6D2-4287-A06D-A57442C43FF4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C8135108-B86E-49C6-81FB-5601CFB5BF9A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD16A75F-DC81-47C0-99A3-8A4360CCEA08</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -143,6 +181,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>path</key>
 				<string></string>
 			</dict>
@@ -152,6 +205,31 @@
 			<string>3ADE22C7-10D2-4528-9298-22A616F276B1</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>if frontmost of application "Alacritty" then
+	return "is running"
+end if</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C8135108-B86E-49C6-81FB-5601CFB5BF9A</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -206,6 +284,36 @@
 			<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>is running\n</string>
+						<key>outputlabel</key>
+						<string>is running</string>
+						<key>uid</key>
+						<string>36AE7CE2-D6D2-4287-A06D-A57442C43FF4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>not running</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>BD16A75F-DC81-47C0-99A3-8A4360CCEA08</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -274,9 +382,9 @@
 			<key>note</key>
 			<string>Quake Mode</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
@@ -299,18 +407,18 @@
 			<key>note</key>
 			<string>defined in Hyper .zshrc as searching zsh files</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>570</integer>
 		</dict>
 		<key>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</key>
 		<dict>
 			<key>note</key>
 			<string>open Alacritty with config</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
@@ -321,12 +429,33 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>BD16A75F-DC81-47C0-99A3-8A4360CCEA08</key>
+		<dict>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+		<key>C8135108-B86E-49C6-81FB-5601CFB5BF9A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
 		<key>FEC82210-DDF5-46A7-980E-8A195BD3A586</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>570</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
