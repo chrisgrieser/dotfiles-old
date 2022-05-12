@@ -198,7 +198,7 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>More convenient brewing with Alfred -- search works only on M1 Macs</string>
+	<string>More convenient brewing with Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>

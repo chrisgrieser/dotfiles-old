@@ -61,23 +61,13 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</string>
+				<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>36AE7CE2-D6D2-4287-A06D-A57442C43FF4</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -181,21 +171,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Hero</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>path</key>
 				<string></string>
 			</dict>
@@ -214,8 +189,10 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>if frontmost of application "Alacritty" then
-	return "is running"
+				<string>if application "Alacritty" is not running 
+	return "is not running"
+else
+	tell application "Alacritty" to activate
 end if</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -296,17 +273,17 @@ end if</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>4</integer>
 						<key>matchstring</key>
-						<string>is running\n</string>
+						<string>is not running\n</string>
 						<key>outputlabel</key>
-						<string>is running</string>
+						<string>not running</string>
 						<key>uid</key>
 						<string>36AE7CE2-D6D2-4287-A06D-A57442C43FF4</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>not running</string>
+				<string>--</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -407,9 +384,9 @@ end if</string>
 			<key>note</key>
 			<string>defined in Hyper .zshrc as searching zsh files</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>455</integer>
 		</dict>
 		<key>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</key>
 		<dict>
@@ -443,19 +420,12 @@ end if</string>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
-		<key>E46CA87F-3A31-4EE9-9AAC-93F0429EB44B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>490</integer>
-			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
 		<key>FEC82210-DDF5-46A7-980E-8A195BD3A586</key>
 		<dict>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>205</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>455</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

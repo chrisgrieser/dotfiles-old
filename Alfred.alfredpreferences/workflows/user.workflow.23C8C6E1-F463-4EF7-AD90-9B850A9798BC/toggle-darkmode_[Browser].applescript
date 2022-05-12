@@ -35,4 +35,5 @@ if (BrowserWasntRunning)
 end if
 
 # Bartender Fix
+delay 2
 tell application "Bartender" to activate
