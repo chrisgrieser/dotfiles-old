@@ -57,34 +57,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>60574399-8C54-4BDA-BC69-20A2ABA15DB8</key>
-		<array/>
-		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>89246971-CBAA-4D54-8359-76376A7F7B66</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>56D27D24-5D05-4FED-BFD6-DA1AD15A8801</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -184,65 +156,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Finder"	if (count windows) is 0 then		set pathToOpen to (path to home folder as string)	else		set pathToOpen to target of Finder window 1 as alias	end ifend tellPOSIX path of pathToOpen</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>26BFC524-8765-4489-93C5-85C64149412F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>launch-alacritty.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
-			<key>uid</key>
-			<string>AE906983-CE5F-481C-8C1A-B316AD77DB03</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -274,67 +187,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
+				<key>concurrently</key>
 				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>launch-alacritty.sh</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>811F15A4-7752-4296-98D3-451AED5998FD</string>
+			<string>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.apple.finder</string>
-						<key>outputlabel</key>
-						<string>Finder</string>
-						<key>uid</key>
-						<string>259F6D3A-8CDA-43C2-BCEA-C3A789EE2F48</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.sublimetext.4</string>
-						<key>outputlabel</key>
-						<string>Sublime</string>
-						<key>uid</key>
-						<string>8452AFF2-72D9-4F70-8338-04EDA0E256F4</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>--</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>60574399-8C54-4BDA-BC69-20A2ABA15DB8</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -393,74 +264,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>zsh</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>loading...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>oh-my-zsh-plugin-search.js</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Oh My ZSH: {query}</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>89246971-CBAA-4D54-8359-76376A7F7B66</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/{query}#readme</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>56D27D24-5D05-4FED-BFD6-DA1AD15A8801</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -469,18 +272,11 @@
 		<key>01443011-3B15-41D0-8772-EFD75B0FE5B8</key>
 		<dict>
 			<key>note</key>
-			<string>open current Finder Window in Hyper</string>
+			<string>Quake Mode</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
-		<key>26BFC524-8765-4489-93C5-85C64149412F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>585</integer>
-			<key>ypos</key>
-			<integer>215</integer>
+			<integer>265</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
@@ -498,15 +294,6 @@
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
-		<key>56D27D24-5D05-4FED-BFD6-DA1AD15A8801</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>795</integer>
-		</dict>
 		<key>5DBE1E1A-ADCD-4ED4-8FC6-D302D5A6C77C</key>
 		<dict>
 			<key>note</key>
@@ -514,44 +301,16 @@
 			<key>xpos</key>
 			<integer>15</integer>
 			<key>ypos</key>
-			<integer>640</integer>
-		</dict>
-		<key>60574399-8C54-4BDA-BC69-20A2ABA15DB8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>310</integer>
-			<key>ypos</key>
-			<integer>515</integer>
-		</dict>
-		<key>811F15A4-7752-4296-98D3-451AED5998FD</key>
-		<dict>
-			<key>xpos</key>
-			<integer>435</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
-		<key>89246971-CBAA-4D54-8359-76376A7F7B66</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>795</integer>
+			<integer>410</integer>
 		</dict>
 		<key>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</key>
 		<dict>
+			<key>note</key>
+			<string>open Alacritty with config</string>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>315</integer>
-		</dict>
-		<key>AE906983-CE5F-481C-8C1A-B316AD77DB03</key>
-		<dict>
-			<key>xpos</key>
-			<integer>505</integer>
-			<key>ypos</key>
-			<integer>395</integer>
+			<integer>265</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
@@ -567,7 +326,7 @@
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>640</integer>
+			<integer>410</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -576,10 +335,13 @@
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/</string>
 		<key>vault_path</key>
 		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/</string>
+		<key>working_directory</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub/</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>vault_path</string>
+		<string>working_directory</string>
 		<string>dotfile_folder</string>
 	</array>
 	<key>version</key>

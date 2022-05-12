@@ -44,6 +44,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>27B242B6-18EC-4406-AF3F-BEEFC41EE4C2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E016D711-BC20-4751-AD2A-FEDDD4949D27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</key>
 		<array/>
 		<key>6DB061FF-1A40-4EE0-BEAA-52ADCC3DB108</key>
@@ -497,6 +510,74 @@ brew home "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/{query}#readme</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E016D711-BC20-4751-AD2A-FEDDD4949D27</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>zsh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>oh-my-zsh-plugin-search.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Oh My ZSH: {query}</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>27B242B6-18EC-4406-AF3F-BEEFC41EE4C2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string>/System/Volumes/Data/Applications/AppCleaner.app</string>
 				<key>sourcefile</key>
@@ -671,6 +752,17 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>ypos</key>
 			<integer>260</integer>
 		</dict>
+		<key>27B242B6-18EC-4406-AF3F-BEEFC41EE4C2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>search for packages</string>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>395</integer>
+		</dict>
 		<key>361B7617-AA0E-4A82-A7BA-824D533D233D</key>
 		<dict>
 			<key>colorindex</key>
@@ -775,6 +867,15 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<integer>25</integer>
 			<key>ypos</key>
 			<integer>335</integer>
+		</dict>
+		<key>E016D711-BC20-4751-AD2A-FEDDD4949D27</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>395</integer>
 		</dict>
 		<key>E30671DD-C795-4F57-9BD3-9FC4C20DCFDA</key>
 		<dict>
