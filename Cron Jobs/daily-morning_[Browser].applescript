@@ -22,6 +22,16 @@ tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-
 # with shell script as opposed to Applescript, Shortcuts.app isn't activated
 do shell script "shortcuts run \"Send Reminders due today to Drafts\""
 
+-- HIDE DRAFTS TOOLBAR
+try
+	tell application "System Events"
+		tell process "Drafts"
+			set frontmost to true
+			click menu item "Hide Toolbar" of menu "View" of menu bar 1
+		end tell
+	end tell
+end try
+
 # TWITTERIFIC SCROLL UP
 # wrapped in try due to Twitterific bug sometimes not
 # responding to hotkeys when not clicking into the window once

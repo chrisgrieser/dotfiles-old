@@ -23,13 +23,17 @@ else
 	set workspace to "Office"
 end if
 tell application "Drafts" to open location ("drafts://x-callback-url/runaction?&action=Workspace-" & workspace)
-tell application "System Events"
-	tell process "Drafts"
-		set frontmost to true
-		click menu item "" of menu "View" of menu bar 1
+
+-- Hide damn toolbar
+try
+	tell application "System Events"
+		tell process "Drafts"
+			set frontmost to true
+			click menu item "Hide Toolbar" of menu "View" of menu bar 1
+		end tell
 	end tell
-end tell
+end try
 
 -- arrange windows
-delay 0.1
+delay 0.15
 tell application "Moom" to arrange windows according to snapshot "💼 Work"

@@ -210,6 +210,16 @@
             "simple_modifications": [
                 {
                     "from": {
+                        "consumer_key_code": "eject"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f18"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "pointing_button": "button3"
                     },
                     "to": [
@@ -234,17 +244,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "f14"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "consumer_key_code": "eject"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f18"
+                            "key_code": "f15"
                         }
                     ]
                 }

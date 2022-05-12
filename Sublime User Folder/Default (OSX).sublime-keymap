@@ -117,7 +117,7 @@
 	{ "keys": ["alt+escape"], "command": "jump_forward" },
 
 	// Mouse Keys
-	{ "keys": ["f14"], "command": "close" },
+	{ "keys": ["f16"], "command": "close" },
 	{ "keys": ["f13"], "command": "next_view_in_stack" },
 
    // Disable Accidental Triggering of Saving Modal
