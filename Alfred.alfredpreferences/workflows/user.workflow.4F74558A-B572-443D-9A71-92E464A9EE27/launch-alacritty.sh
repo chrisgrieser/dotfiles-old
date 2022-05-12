@@ -22,3 +22,4 @@ elif [[ "$DEVICE_NAME" =~ "iMac" ]] ; then
 else
 	nohup alacritty &
 fi
+

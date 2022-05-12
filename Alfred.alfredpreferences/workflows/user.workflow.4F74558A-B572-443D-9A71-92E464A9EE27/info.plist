@@ -274,16 +274,16 @@
 			<key>note</key>
 			<string>Quake Mode</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>285</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>150</integer>
 		</dict>
 		<key>4694D7EB-2482-44FA-881E-2597A9A90F9C</key>
 		<dict>
@@ -299,34 +299,34 @@
 			<key>note</key>
 			<string>defined in Hyper .zshrc as searching zsh files</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>430</integer>
 		</dict>
 		<key>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</key>
 		<dict>
 			<key>note</key>
 			<string>open Alacritty with config</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>285</integer>
 		</dict>
 		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
 		<dict>
 			<key>note</key>
 			<string>open and enlarge in Moom</string>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>15</integer>
+			<integer>10</integer>
 		</dict>
 		<key>FEC82210-DDF5-46A7-980E-8A195BD3A586</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>430</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
