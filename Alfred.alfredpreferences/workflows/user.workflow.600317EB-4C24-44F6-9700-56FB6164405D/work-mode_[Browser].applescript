@@ -14,6 +14,7 @@ tell application "Mimestream" to if it is not running then activate
 tell application "Brave Browser" to if it is not running then activate
 tell application "Slack" to if it is not running then activate
 tell application "Discord" to if it is not running then activate
+tell application "Tweetdeck" to if it is not running then activate
 
 -- Reset to workspace depending on location
 if (isOffice is false) then
@@ -22,31 +23,13 @@ else
 	set workspace to "Office"
 end if
 tell application "Drafts" to open location ("drafts://x-callback-url/runaction?&action=Workspace-" & workspace)
-
--- Twitterific: no more headless
-if (isOffice is true) then
-	do shell script "defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool YES"
-	tell application "Twitterrific"
-		quit
-		delay 0.1
-		activate
+tell application "System Events"
+	tell process "Drafts"
+		set frontmost to true
+		click menu item "" of menu "View" of menu bar 1
 	end tell
-end if
-
--- Twitterific: scroll up
-tell application id "com.runningwithcrayons.Alfred" to run trigger "twitterrific-scroll-up" in workflow "de.chris-grieser.twitter-tweaks" with argument ""
+end tell
 
 -- arrange windows
 delay 0.1
 tell application "Moom" to arrange windows according to snapshot "💼 Work"
-
--- headless again
-if (isOffice is true) then
-	delay 0.1
-	do shell script "defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO"
-	tell application "Twitterrific"
-		quit
-		delay 0.1
-		activate
-	end tell
-end if
