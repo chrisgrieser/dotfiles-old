@@ -17,8 +17,10 @@ delay 1
 tell application "System Events" to tell appearance preferences to set dark mode to true
 tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
 
-# Reminders to Drafts (redundancy with iOS for safety)
-tell application "Shortcuts" to run shortcut "Send Reminders due today to Drafts"
+# REMINDERS TO DRAFTS
+# (redundancy with iOS for safety)
+# with shell script as opposed to Applescript, Shortcuts.app isn't activated
+do shell script "shortcuts run \"Send Reminders due today to Drafts\""
 
 # TWITTERIFIC SCROLL UP
 # wrapped in try due to Twitterific bug sometimes not
@@ -35,5 +37,8 @@ tell application "Busycal"
 	quit
 end tell
 
-# log
+# BARTENDER ACTIVATING
+tell application "Bartender" to activate
+
+# LOG
 do shell script "echo $(date '+%Y-%m-%d %H:%M:%S') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Utility Scripts/morning-log.log'"
