@@ -40,6 +40,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-markdownlint",
 		"SublimeLinter-eslint",
+		"SublimeLinter-flake8",
 		"SublimeLinter-shellcheck",
 		"SublimeLinter-stylelint",
 		"Terminus",
