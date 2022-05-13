@@ -1,3 +1,5 @@
+; https://www.flake8rules.com/
+
 [flake8]
 ignore = W191
 max-line-length = 120

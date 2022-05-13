@@ -38,6 +38,8 @@ ln -s "$SYMLINK_LOC/.gitignore_global" ~
 ln -s "$SYMLINK_LOC/pandoc" ~/.pandoc
 
 ln -s "$SYMLINK_LOC/.vimrc" ~
+ln -s "$SYMLINK_LOC/.pylintrc" ~
+ln -s "$SYMLINK_LOC/.flake8" ~
 
 # .config
 mv ~/.config ~/.Trash
