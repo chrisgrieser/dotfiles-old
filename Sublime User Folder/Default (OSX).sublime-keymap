@@ -13,7 +13,6 @@
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
 [
-	{ "keys": ["super+i"], "command": "important_switcher" },
 
 	// Window Closing Bugfix, https://github.com/sublimehq/sublime_text/issues/5237#issuecomment-1048857619
 	// fixed with Build 4130
@@ -173,11 +172,14 @@
 	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
-	{ "keys": ["ctrl+n"], "command": "copy_filename" }, // Custom Plugin
 	// Open Plugin
 	{ "keys": ["super+o"], "command": "open_browse", "context": [
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
+
+	// CUSTOM PLUGINS
+	{ "keys": ["ctrl+n"], "command": "copy_filename" },
+	{ "keys": ["super+i"], "command": "important_switcher" },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
