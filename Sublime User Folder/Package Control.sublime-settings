@@ -28,7 +28,7 @@
 		"LSP-bash",
 		"LSP-css",
 		"LSP-json",
-		"LSP-pylsp",
+		"LSP-pyright",
 		"LSP-typescript",
 		"LSP-yaml",
 		"MarkdownEditing",
