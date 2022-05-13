@@ -13,6 +13,8 @@
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
 [
+	{ "keys": ["super+i"], "command": "important_switcher" },
+
 	// Window Closing Bugfix, https://github.com/sublimehq/sublime_text/issues/5237#issuecomment-1048857619
 	// fixed with Build 4130
 	{ "keys": ["super+q"],
@@ -136,7 +138,7 @@
 	{ "keys": ["super+v"], "command": "paste_and_indent",
 		"context": [{"key": "terminus_view", "operator": "not_equal" ,"operand": true}]
 	},
-	{ "keys": ["super+i"], "command": "reindent", "args": {"single_line": false} },
+	{ "keys": ["super+shift+i"], "command": "reindent", "args": {"single_line": false} },
 
 
 	// SETTINGS & INSTALLATION
