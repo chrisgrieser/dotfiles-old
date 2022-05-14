@@ -4,7 +4,7 @@
 	"relative_line_numbers": true,
 	"vintage_use_clipboard": false,  // i.e. set clipboard=unnamed
 	"vintage_start_in_command_mode": true,
-	"scroll_context_lines": 7, // this is essentially scroll ofset
+	"scroll_context_lines": 9, // this is essentially scroll ofset
 
 	//Theme
 	"theme": "Adaptive.sublime-theme",

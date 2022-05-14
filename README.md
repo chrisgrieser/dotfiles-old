@@ -3,24 +3,34 @@
 ## Table of Contents
 <!-- MarkdownTOC -->
 
-- [What are "dotfiles"?](#what-are-dotfiles)
-- [Why this repository?](#why-this-repository)
-- [How this repository works](#how-this-repository-works)
+- [Configurations of Interest](#configurations-of-interest)
+- [This repository](#this-repository)
+	- [What are "dotfiles"?](#what-are-dotfiles)
+	- [Why this repository?](#why-this-repository)
+	- [How this repository works](#how-this-repository-works)
 - [Got an idea for an improvement?](#got-an-idea-for-an-improvement)
 - [About Me](#about-me)
 	- [Profiles](#profiles)
-	- [Donate](#donate)
 
 <!-- /MarkdownTOC -->
-## What are "dotfiles"?
+## Configurations of Interest
+Most people tell me they find the following four configurations most useful:
+- Sublime Configs (custom plugins, vintage mode keybindings, etc.)
+- .zshrc
+- Pandoc configs & explanations on how to use [pandoc](/pandoc/)
+- [My Karabiner Elements complex modifications](/.config/karabiner)
+
+## This repository
+
+### What are "dotfiles"?
 - Read this excellent [primer on freecodecamp what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
 - Here is an interesting [report on common contents of dotfiles](https://github.com/Kharacternyk/dotcommon).
 
-## Why this repository?
+### Why this repository?
 - These files are symlinked into iCloud for synchronization and uploaded to git for backup and version history.
 - A public GitHub repository also enables easy sharing of individual configuration with others.
 
-## How this repository works
+### How this repository works
 - `crontab` on my main machine [is configured](Cron%20Jobs/30-min.sh) to run the script [30-min.sh](Cron%20Jobs/30-min.sh) every 30 minutes.
 - [30-min.sh](Cron%20Jobs/30-min.sh) runs various tasks that should run regularly, one of them is to trigger the shell script [git-dotfile-backup.sh](git-dotfile-backup.sh).
 - [git-dotfile-backup.sh](git-dotfile-backup.sh) checks whether there have been any changes in dot files. If there are, it creates somewhat useful commit messages and runs the `git add commit pull push` sequence.
@@ -41,6 +51,3 @@ In my day job, I am a sociologist studying the social mechanisms underlying the 
 - [Twitter](https://twitter.com/pseudo_meta)
 - [ResearchGate](https://www.researchgate.net/profile/Christopher-Grieser)
 - [LinkedIn](https://www.linkedin.com/in/christopher-grieser-ba693b17a/)
-
-### Donate
-<a href='https://ko-fi.com/Y8Y86SQ91' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>

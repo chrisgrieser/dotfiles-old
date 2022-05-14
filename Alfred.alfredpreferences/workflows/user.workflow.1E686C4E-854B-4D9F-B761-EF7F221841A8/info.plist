@@ -151,6 +151,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>635EFCB3-F72B-4751-B065-67DA63456A08</key>
 		<array>
 			<dict>
@@ -438,25 +451,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string></string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -566,6 +560,50 @@ end tell</string>
 			<string>D8C7E6C7-E01B-4C47-9696-7EAEE86CB013</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>toggle-karabiner.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>:karabiner-toggle</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Karabiner Elements on/off</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2330,9 +2368,9 @@ end tell</string>
 		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
 		<dict>
 			<key>xpos</key>
-			<integer>780</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>25</integer>
 		</dict>
 		<key>5E29849B-8514-4ACF-8D3A-8D63DE6EE138</key>
 		<dict>
@@ -2694,6 +2732,13 @@ end tell</string>
 			<integer>250</integer>
 			<key>ypos</key>
 			<integer>1610</integer>
+		</dict>
+		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>990</integer>
+			<key>ypos</key>
+			<integer>25</integer>
 		</dict>
 		<key>F2CACFF9-2F72-4328-8CF1-86E74570803E</key>
 		<dict>
