@@ -2,7 +2,7 @@
 	"title": "Middle-Click Quit",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
-	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/middle-click-quit.json",
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{

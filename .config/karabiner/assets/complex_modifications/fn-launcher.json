@@ -12,197 +12,121 @@
 					"type": "basic",
 					"from": {
 						"key_code": "c",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'BusyCal'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'BusyCal'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "o",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Obsidian'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Obsidian'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "d",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Discord'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Discord'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "y",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'YouTube'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'YouTube'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "e",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Sublime Text'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Sublime Text'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "r",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Drafts'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Drafts'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "s",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Slack'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Slack'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "m",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Mimestream'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Mimestream'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "b",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Brave Browser'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Brave Browser'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "f",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open \"$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/\""
-						}
-					]
+					"to": [{"shell_command": "open \"$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/\""} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "k",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Karabiner-Elements'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Karabiner-Elements'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "k",
-						"modifiers": {
-							"mandatory": ["fn", "shift"]
-						}
+						"modifiers": {"mandatory": ["fn", "shift"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Karabiner-EventViewer'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Karabiner-EventViewer'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
-						"key_code": "y",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"key_code": "z",
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'YouTube'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'YouTube'"} ]
 				},
 				{
 					"type": "basic",
 					"from": {
 						"key_code": "a",
-						"modifiers": {
-							"mandatory": ["fn"]
-						}
+						"modifiers": {"mandatory": ["fn"] }
 					},
-					"to": [
-						{
-							"shell_command": "open -a 'Alfred Preferences'"
-						}
-					]
+					"to": [{"shell_command": "open -a 'Alfred Preferences'"} ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "y",
+						"modifiers": {"mandatory": ["fn"] }
+					},
+					"to": [{"shell_command": "open -a 'zoom.us'"} ]
 				}
 			]
 		},

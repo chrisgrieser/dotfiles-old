@@ -1,4 +1,11 @@
 // https://github.com/johnste/finicky/wiki/Configuration
+// -----------------------------------------------------
+// finicky can be fully replaced a Redirector browser
+// extensions, e.g. https://chrome.google.com/webstore/search/redirector
+// such an extension has the advantage of less overhead and
+// of also working when links are clicked inside the browser
+// (where finicky does not work)
+// -----------------------------------------------------
 
 module.exports = {
 	defaultBrowser: "Brave Browser",

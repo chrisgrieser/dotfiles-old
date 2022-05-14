@@ -1,4 +1,4 @@
-# Karabiner: Complex Modification Descriptions
+# Karabiner: Complex Modifications
 
 To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply open respective following URL in your browser.
 
@@ -32,12 +32,12 @@ This is useful to send character events like `[]{}^` for vim emulators (which of
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-move-per-word.json
 ```
 
-## Middle Click to Quit App
+## Mouse Click Improvements
 - Middle click to close an app (`cmd + q`).
-- Use [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) to open links in a new tab in Browsers.
+- Tapping Right Mouse Button in Safari/Brave to open link in background. Press with any modifier key for a normal right click. Is triggered only when briefly tapping so that mouse gesture extensions aren't affected. (This rule essentially emulates the [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) extension.)
 
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/middle-click-quit.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json
 ```
 
 ## fn Launcher
@@ -52,12 +52,16 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + r` → D`r`afts
 - `fn + e` → `E`ditor → Sublime Text
 - `fn + y` → `Y`ouTube
+- `fn + z`\*→ `Z`oom
 - `fn + k` → `K`arabiner Elements
 - `fn + a` → `A`lfred Preferences
 - `fn + shift + k` → `K`arabiner Event Viewer
 
-Since pressing `fn` interferes with the built-in macOS emoji insertion key, you will have to disable it (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . If you still want to use the `fn` key 
-- `fn` pressed alone opens the emoji insertion modal (optional)
+Since pressing `fn` interferes with the built-in macOS emoji insertion key, you will have to disable it (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . If you still want to use the `fn` key.
+
+\* on non-German keyboards, `y` and `z` are switched.
+
+`fn` pressed alone opens the emoji insertion modal (optional)
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/fn-launcher.json

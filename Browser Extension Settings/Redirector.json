@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-04-17T23:12:37.429Z",
+    "createdAt": "2022-05-14T19:50:49.267Z",
     "redirects": [
         {
             "description": "Wikiwand",
@@ -63,6 +63,23 @@
             "excludePattern": "",
             "patternDesc": "",
             "redirectUrl": "discord$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Zoom without Tab",
+            "exampleUrl": "https://tu-berlin.zoom.us/j/65255824131?pwd=xxxxxxxxx",
+            "exampleResult": "zoommtg://zoom.us/join?confno=65255824131&pwd=xxxxxxxxx",
+            "error": null,
+            "includePattern": "https?:\\/\\/.*\\.zoom\\.us\\/j\\/(\\w+)\\?pwd=(\\w+)$",
+            "excludePattern": "",
+            "patternDesc": "opens Zoom Directly in the desktop client",
+            "redirectUrl": "zoommtg://zoom.us/join?confno=$1&pwd=$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
