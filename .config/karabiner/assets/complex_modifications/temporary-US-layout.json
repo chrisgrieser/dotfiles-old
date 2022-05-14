@@ -1,0 +1,33 @@
+{
+	"title": "Temporary US Layout",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/temporary-US-layout.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "US layout while right-option is held down",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": { "key_code": "right_option" },
+					"to": [
+						{
+							"select_input_source": {
+								"input_source_id": "^com\\.apple\\.keylayout\\.US$"
+							}
+						}
+					],
+					"to_after_key_up": [
+						{
+							"select_input_source": {
+								"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

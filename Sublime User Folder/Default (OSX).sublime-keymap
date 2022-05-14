@@ -355,17 +355,17 @@
 		"motion_args": {"character": "(", "outer": true}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
 	},
-	{ "keys": ["i", "ß"], "command": "set_motion", "args": {
+	{ "keys": ["i", "5"], "command": "set_motion", "args": {
 		"motion": "vi_expand_to_brackets",
 		"motion_args": {"character": "["}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
 	},
-	{ "keys": ["a", "ß"], "command": "set_motion", "args": {
+	{ "keys": ["a", "5"], "command": "set_motion", "args": {
 		"motion": "vi_expand_to_brackets",
 		"motion_args": {"character": "[", "outer": true}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
 	},
-	{ "keys": ["i", "0"], "command": "set_motion", "args": {
+	{ "keys": ["i", "6"], "command": "set_motion", "args": {
 		"motion": "vi_expand_to_brackets",
 		"motion_args": {"character": "["}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
@@ -401,3 +401,4 @@
 	},
 ]
 
+[]

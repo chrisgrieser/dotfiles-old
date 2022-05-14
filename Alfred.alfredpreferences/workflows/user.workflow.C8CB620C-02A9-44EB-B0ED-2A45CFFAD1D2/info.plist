@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.chris-grieser.</string>
+	<string>de.chris-grieser.vim-helper</string>
 	<key>category</key>
 	<string>Tweaks</string>
 	<key>connections</key>
@@ -333,8 +333,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -419,25 +419,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↑</string>
+				<key>keycode</key>
+				<integer>126</integer>
+				<key>keymod</key>
+				<integer>10485760</integer>
+				<key>overridewithargument</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>qlmanage -p ~"/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code/Cheatsheets/Vim Cheat Sheet.png"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
 			<key>uid</key>
-			<string>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</string>
+			<string>674E7C5B-DE2E-493D-93FF-AD545DD70562</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -463,8 +461,8 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.hnc.Discord</string>
 					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -473,6 +471,29 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>22F72159-1810-4F97-B35E-1BADE014EC65</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>qlmanage -p ~"/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code/Cheatsheets/Vim Cheat Sheet.png"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -500,23 +521,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>↑</string>
-				<key>keycode</key>
-				<integer>126</integer>
-				<key>keymod</key>
-				<integer>10485760</integer>
-				<key>overridewithargument</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>4</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>H</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+					<string>com.tinyspeck.slackmacgap</string>
+					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>674E7C5B-DE2E-493D-93FF-AD545DD70562</string>
+			<string>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -538,44 +576,6 @@
 			<string>E008FEE4-80B7-44B0-8357-2EFAE8FAF71A</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>4</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>H</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.hnc.Discord</string>
-					<string>com.tinyspeck.slackmacgap</string>
-					<string>com.runningwithcrayons.Alfred</string>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>FC7EFAA0-87A0-4612-8CD8-CD7AE10A83C1</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -763,6 +763,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Alfred.alfredpreferences/workflows/user.workflow.C8CB620C-02A9-44EB-B0ED-2A45CFFAD1D2/Sublime Vim Bindings.json</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>2FFD13E1-74D7-441C-8D92-52C637DD85D7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -784,17 +799,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
+				<key>browser</key>
 				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Alfred.alfredpreferences/workflows/user.workflow.C8CB620C-02A9-44EB-B0ED-2A45CFFAD1D2/Sublime Vim Bindings.json</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>2FFD13E1-74D7-441C-8D92-52C637DD85D7</string>
+			<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -814,25 +833,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>46C449F4-C8D3-488A-B15F-D53153D7FC29</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -914,27 +914,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vim</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Vimac Manual</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C18F258A-2134-476B-9B2B-3EAB189C3037</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -961,14 +940,14 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Vimium Wiki</string>
+				<string>Vimac Manual</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
+			<string>C18F258A-2134-476B-9B2B-3EAB189C3037</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -988,6 +967,27 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vim</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Vimium Wiki</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>

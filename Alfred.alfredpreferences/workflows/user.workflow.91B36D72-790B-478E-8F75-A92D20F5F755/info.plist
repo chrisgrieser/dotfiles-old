@@ -372,6 +372,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B37A976-C58C-4AE7-8073-DD35726B087D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AA69A170-62D3-47D1-8E55-57A7B80E2B38</key>
 		<array>
 			<dict>
@@ -728,11 +741,11 @@
 				<key>relatedApps</key>
 				<array>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
+					<string>dexterleng.vimac</string>
 					<string>com.apple.finder</string>
 					<string>com.runningwithcrayons.Alfred</string>
-					<string>dexterleng.vimac</string>
 					<string>com.iconfactory.Twitterrific5</string>
+					<string>com.sublimetext.4</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -767,12 +780,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
-					<string>com.agiletortoise.Drafts-OSX</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -794,7 +807,7 @@
 				<key>script</key>
 				<string>tell application "System Events" 
 	key code 123 using {option down}
-	delay 0.08
+	delay 0.1
 	key code 124 using {option down, shift down}
 end tell</string>
 				<key>scriptargtype</key>
@@ -836,38 +849,33 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events" 
+	key code 124 using {shift down}
+	delay 0.03
+	keystroke "x" using {command down}
+	delay 0.03
+	key code 123
+	delay 0.03
+	keystroke "v" using {command down}
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>searcher</key>
-				<integer>1635216737</integer>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>D3A22411-521B-4DD6-8241-F49796592618</string>
+			<string>6B37A976-C58C-4AE7-8073-DD35726B087D</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Open Adress in Maps</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>CC18D270-2F05-4E5F-9699-E89E3F5E4915</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -907,6 +915,42 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -922,6 +966,42 @@ end alfred_script</string>
 			<string>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635216737</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>D3A22411-521B-4DD6-8241-F49796592618</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Open Adress in Maps</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>CC18D270-2F05-4E5F-9699-E89E3F5E4915</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2337,6 +2417,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>865</integer>
 		</dict>
+		<key>6B37A976-C58C-4AE7-8073-DD35726B087D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
 		<key>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</key>
 		<dict>
 			<key>colorindex</key>
@@ -2430,6 +2519,17 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>1590</integer>
+		</dict>
+		<key>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>transpose</string>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>AA69A170-62D3-47D1-8E55-57A7B80E2B38</key>
 		<dict>
@@ -2532,9 +2632,9 @@ Fenced Code</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>345</integer>
 		</dict>
 		<key>CFCCD6D4-5C3D-46AC-8EBF-DDD96AA8EE12</key>
 		<dict>
@@ -2577,9 +2677,9 @@ Fenced Code</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>550</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>345</integer>
 		</dict>
 		<key>D45F6964-14F7-4A9F-843C-EED8A6C009F9</key>
 		<dict>

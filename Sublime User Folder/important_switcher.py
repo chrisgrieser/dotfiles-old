@@ -13,8 +13,8 @@ class ImportantSwitcher(sublime_plugin.TextCommand):  # pylint: disable=too-few-
 				line_content = re.sub(r"\s?!important", "", line_content, 0)
 
 			# add importants to blocks or to single-line declarations
+			# https://regex101.com/r/BIB6cU/1
 			else:
-				line_content = re.sub(";$", " !important;", line_content, 0, re.MULTILINE)
-				line_content = re.sub(r"\s?}$", " !important }", line_content, 0, re.MULTILINE)
+				line_content = re.sub(r"(;|(?!^) ?})$", " !important\\1", line_content, 0, re.MULTILINE)
 
 			self.view.replace(edit, line, line_content)
