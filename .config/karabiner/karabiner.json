@@ -559,6 +559,50 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "US layout while right-option is held down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_option"
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Middle-Click quits application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "right_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -718,26 +762,6 @@
             },
             "selected": true,
             "simple_modifications": [
-                {
-                    "from": {
-                        "consumer_key_code": "eject"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f18"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "pointing_button": "button3"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f19"
-                        }
-                    ]
-                },
                 {
                     "from": {
                         "pointing_button": "button4"

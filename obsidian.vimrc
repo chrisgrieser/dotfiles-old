@@ -2,7 +2,7 @@
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 nmap <C-y> :reg
@@ -123,12 +123,13 @@ nmap gT :tabprev
 " Folding
 """"""""""""""""""""""
 
-" Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
-exmap tabnext obcommand cycle-through-panes:cycle-through-panes
-nmap zo :unfold
-exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
+" Rebuild zo, zc, zn from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap fold obcommand editor:toggle-fold
+nmap zo :fold
 nmap zc :fold
 
+exmap unfoldall obcommand editor:unfold-all
+nmap zn :unfoldall
 
 """"""""""""""""""""""
 " Text Objects

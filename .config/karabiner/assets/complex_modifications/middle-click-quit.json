@@ -1,0 +1,24 @@
+{
+	"title": "Middle-Click Quit",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/middle-click-quit.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "Middle-Click quits application",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"pointing_button": "button3"},
+					"to": [
+						{
+							"key_code": "q",
+							"modifiers": ["right_command"]
+						}
+					]
+				}
+			]
+		}
+	]
+}

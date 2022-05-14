@@ -1,5 +1,11 @@
-
 {
+	// Vim Mode
+	"line_numbers": true, // set to true when using vim
+	"relative_line_numbers": true,
+	"vintage_use_clipboard": false,  // i.e. set clipboard=unnamed
+	"vintage_start_in_command_mode": true,
+	"scroll_context_lines": 7, // this is essentially scroll ofset
+
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
@@ -114,13 +120,6 @@
 	"always_show_minimap_viewport": true,
 	"draw_minimap_border": true,
 
-	// Vim Mode
-	"line_numbers": true, // set to true when using vim
-	"relative_line_numbers": true,
-	"vintage_use_clipboard": true,  // equivalent for `set clipboard=unnamed`, I guess?
-	"vintage_start_in_command_mode": true,
-	"scroll_context_lines": 7, // this is essentially scroll ofset
-
 	//Plugins
 	"ignored_packages": [
 		"ActionScript",
@@ -155,7 +154,6 @@
 		"Scala",
 		"TCL",
 		"Textile",
-		"Vintage-Mode"
 	],
 
 	//Spellcheck
