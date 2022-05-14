@@ -14,11 +14,12 @@
 
 <!-- /MarkdownTOC -->
 ## Configurations of Interest
-Most people tell me they find the following four configurations most useful:
-- Sublime Configs (custom plugins, vintage mode keybindings, etc.)
-- .zshrc
-- Pandoc configs & explanations on how to use [pandoc](/pandoc/)
-- [My Karabiner Elements complex modifications](/.config/karabiner)
+Most people tell me they find the following four areas most useful:
+- [Sublime keybindings](/Sublime%20User%20Folder/Default%20(OSX).sublime-keymap), e.g. for Vintage Mode (Sublime's Vim Emulator)
+- [my .zshrc setup](/zsh/)
+- Pandoc configs & some pointers on how to use [pandoc](/pandoc/)
+- [my Karabiner Elements complex modifications](/.config/karabiner)
+- [my starship prompt](/.config/starship/starship.toml)
 
 ## This repository
 
