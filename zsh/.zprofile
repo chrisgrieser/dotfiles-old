@@ -10,3 +10,6 @@ fi
 
 # Sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# karabiner-cli
+export PATH="/Library/Application Support/org.pqrs/Karabiner-Elements/bin:$PATH"

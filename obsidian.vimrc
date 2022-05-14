@@ -104,29 +104,29 @@ imap LL <Esc>A
 imap HH <Esc>I
 
 " Kill line
-imap <C-k> <Esc>Di
+imap <C-k> <Esc>C
 
 " Kill line backwards
-imap <C-j> <Esc>d^i
+imap <C-j> <Esc>c^
 
 
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
 
-"pseudo-map 0ß to [] ( [] not working + no more modifier key)
-nmap i0 i[
-nmap iß i]
-nmap a0 a[
-nmap aß a]
-nmap f0 f[
-nmap fß f]
-nmap t0 t[
-nmap tß t]
-nmap F0 F[
-nmap Fß F]
-nmap T0 T[
-nmap Tß T]
+"pseudo-map 56 to [] ( [] not working + no more modifier key)
+nmap i5 i[
+nmap i6 i]
+nmap a5 a[
+nmap a6 a]
+nmap f5 f[
+nmap f6 f]
+nmap t5 t[
+nmap t6 t]
+nmap F5 F[
+nmap F6 F]
+nmap T5 T[
+nmap T6 T]
 
 "pseudo-map 89 to () (= no modifier key needed anymore)
 nmap i8 i(

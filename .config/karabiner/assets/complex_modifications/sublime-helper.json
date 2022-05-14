@@ -1,0 +1,32 @@
+{
+	"title": "Sublime Helper",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/sublime-helper.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "öä to []",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "semicolon"},
+					"to": [
+						{
+							"key_code": "spacebar",
+							"modifiers": ["left_option", "left_control"]
+						},
+						{
+							"key_code": "open_bracket"
+						},
+						{
+							"key_code": "spacebar",
+							"modifiers": ["left_option", "left_control"]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,55 @@
+{
+	"title": "Modifier Key Navigation",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/modifier-key-navigation.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "Shift Moves per Word (if pressed alone)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "right_shift"},
+					"to": [{"key_code": "right_shift"} ],
+					"to_if_alone": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["right_option"],
+							"lazy": true
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "left_shift"},
+					"to": [{"key_code": "left_shift"} ],
+					"to_if_alone": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["right_option"],
+							"lazy": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Command Moves per Character (if pressed alone)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "right_command"},
+					"to": [ {"key_code": "right_command"} ],
+					"to_if_alone": [ {"key_code": "right_arrow"} ]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "left_command"},
+					"to": [ {"key_code": "left_command"} ],
+					"to_if_alone": [ {"key_code": "left_arrow"} ]
+				}
+			]
+		}
+	]
+}

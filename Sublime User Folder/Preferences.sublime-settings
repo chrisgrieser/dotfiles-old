@@ -28,7 +28,6 @@
 
 	// Scrolling
 	"scroll_past_end": 0.3, // = overscroll
-	"scroll_context_lines": 7, // this is essentially scroll ofset
 	"scroll_speed": 2,
 
 	// Tabs vs. Spaces
@@ -116,17 +115,17 @@
 	"draw_minimap_border": true,
 
 	// Vim Mode
-	"line_numbers": false, // set to true when using vim
+	"line_numbers": true, // set to true when using vim
 	"relative_line_numbers": true,
 	"vintage_use_clipboard": true,  // equivalent for `set clipboard=unnamed`, I guess?
 	"vintage_start_in_command_mode": true,
+	"scroll_context_lines": 7, // this is essentially scroll ofset
 
 	//Plugins
 	"ignored_packages": [
 		"ActionScript",
 		"ASP",
 		"Batch File",
-		"Brackets Color Scheme",
 		"C#",
 		"C++",
 		"Clojure",
@@ -156,7 +155,6 @@
 		"Scala",
 		"TCL",
 		"Textile",
-		"Vintage",
 	],
 
 	//Spellcheck

@@ -12,9 +12,9 @@ function add-cronjob () {
 }
 
 add-cronjob "*/30 * * * *" '30-min_[Browser-Path].sh'
-add-cronjob "0 3 * * *" sleep-timer.applescript
-add-cronjob "0 6 * * *" 'daily-morning_[Browser].applescript'
-add-cronjob "0 21 * * *" daily-evening.applescript
+add-cronjob "5 3 * * *" sleep-timer.applescript
+add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
+add-cronjob "5 21 * * *" daily-evening.applescript
 add-cronjob "5 6 * * 1,4" biweekly.applescript
 
 echo ""

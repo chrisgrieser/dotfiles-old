@@ -8,9 +8,13 @@ class ImportantSwitcher(sublime_plugin.TextCommand):  # pylint: disable=too-few-
 			line = self.view.line(region)  # extend to beginning/end of line
 			line_content = self.view.substr(line)
 
+			# remove !importants
 			if "!important" in line_content:
 				line_content = re.sub(r"\s?!important", "", line_content, 0)
+
+			# add importants to blocks or to single-line declarations
 			else:
 				line_content = re.sub(";$", " !important;", line_content, 0, re.MULTILINE)
+				line_content = re.sub(r"\s?}$", " !important }", line_content, 0, re.MULTILINE)
 
 			self.view.replace(edit, line, line_content)
