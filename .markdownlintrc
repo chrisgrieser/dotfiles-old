@@ -8,5 +8,6 @@
   "no-multiple-blanks": 1,
   "ul-indent": false,
   "no-blanks-blockquote": false,
+  "no-emphasis-as-heading": false,
   "no-alt-text": false
 }
