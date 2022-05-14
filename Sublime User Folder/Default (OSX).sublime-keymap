@@ -174,7 +174,7 @@
 		"motion_inclusive": true },
 		"context": [{"key": "setting.command_mode"}]
 	},
-	// " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+	// Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
 	{
 		"keys": ["g", "t"], "command": "next_view", "context": [
 			{"key": "setting.command_mode"}
@@ -184,6 +184,15 @@
 			{"key": "setting.command_mode"}
 	] },
 
+	// always paste what was yanked (y), not what was deleted (d or c)
+	// nmap P "0p
+	{ "keys": ["P"], "command": "vi_paste_right", "args": { "register": "0" }, "context": [
+		{"key": "setting.command_mode"},
+	] },
+
+	//---------------------------------------------------------------------------
+	//---------------------------------------------------------------------------
+	//---------------------------------------------------------------------------
 	//---------------------------------------------------------------------------
 
 	// Build System
