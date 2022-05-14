@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C978EC88-11EF-4DE7-9261-65FFEF7E3C25</string>
+				<string>A5A11308-097F-435F-AA7A-B36C97701A0D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -129,20 +129,32 @@ open -a "PopClip"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-  -- https://docs.pilotmoon.com/article/36-controlling-popclip-using-applescript
-	tell application "PopClip" to appear
-end alfred_script</string>
-				<key>cachescript</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	key code 123 using {option down}
+	delay 0.18
+	key code 124 using {option down, shift down}
+end tell
+delay 0.05
+-- https://docs.pilotmoon.com/article/36-controlling-popclip-using-applescript
+tell application "PopClip" to appear</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C978EC88-11EF-4DE7-9261-65FFEF7E3C25</string>
+			<string>A5A11308-097F-435F-AA7A-B36C97701A0D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -167,19 +179,19 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
+		<key>A5A11308-097F-435F-AA7A-B36C97701A0D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
 		<key>A6B082C6-7940-4780-8291-D71366F261C5</key>
 		<dict>
 			<key>note</key>
 			<string>activate popclip</string>
 			<key>xpos</key>
 			<integer>90</integer>
-			<key>ypos</key>
-			<integer>205</integer>
-		</dict>
-		<key>C978EC88-11EF-4DE7-9261-65FFEF7E3C25</key>
-		<dict>
-			<key>xpos</key>
-			<integer>290</integer>
 			<key>ypos</key>
 			<integer>205</integer>
 		</dict>

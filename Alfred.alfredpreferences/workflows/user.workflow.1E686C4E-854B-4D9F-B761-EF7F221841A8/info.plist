@@ -539,6 +539,29 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>toggle-karabiner.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string>tell application "System Events"
@@ -558,29 +581,6 @@ end tell</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>D8C7E6C7-E01B-4C47-9696-7EAEE86CB013</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>toggle-karabiner.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2370,7 +2370,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>810</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 		</dict>
 		<key>5E29849B-8514-4ACF-8D3A-8D63DE6EE138</key>
 		<dict>
@@ -2738,7 +2738,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>990</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 		</dict>
 		<key>F2CACFF9-2F72-4328-8CF1-86E74570803E</key>
 		<dict>

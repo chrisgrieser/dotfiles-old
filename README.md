@@ -21,7 +21,7 @@ Most people tell me they find the following configurations most useful:
 Essentially, it's all of my dotfiles, that I put online for backup, version history, and easy sharing with others.
 
 __What are "dotfiles"?__
-- Read this excellent [primer on freecodecamp what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
+- Read this excellent [primer what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
 - Here is an interesting [report on common contents of dotfiles](https://github.com/Kharacternyk/dotcommon).
 
 __How this repository works__
