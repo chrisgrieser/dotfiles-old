@@ -1,3 +1,6 @@
+
+ffff
+
 # Rule Descriptions
 
 To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply open respective following URL in your browser.
