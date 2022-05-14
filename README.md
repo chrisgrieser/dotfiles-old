@@ -18,14 +18,14 @@ Most people tell me they find the following configurations most useful:
 - [starship prompt](/.config/starship/starship.toml)
 
 ## What is this repository?
-Essentially, it's all of my dotfiles, that I put online for 
+Essentially, it's all of my dotfiles, that I put online for backup, version history, and easy sharing with others.
 
 __What are "dotfiles"?__
 - Read this excellent [primer on freecodecamp what dotfiles are](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/).
 - Here is an interesting [report on common contents of dotfiles](https://github.com/Kharacternyk/dotcommon).
 
 __How this repository works__
-- These files are symlinked into iCloud for synchronization and uploaded to git for backup and version history.
+- These files are symlinked into iCloud for synchronization.
 - `crontab` on my main machine [is configured](Cron%20Jobs/30-min.sh) to run the script [30-min.sh](Cron%20Jobs/30-min.sh) every 30 minutes.
 - [30-min.sh](Cron%20Jobs/30-min_%5BBrowser-Path%5D.sh) runs various tasks that should run regularly, one of them is to trigger the shell script [git-dotfile-backup.sh](git-dotfile-backup.sh).
 - [git-dotfile-backup.sh](git-dotfile-backup.sh) checks whether there have been any changes in dot files. If there are, it creates somewhat useful commit messages and runs the `git add commit pull push` sequence.
