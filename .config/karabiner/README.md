@@ -1,4 +1,4 @@
-# Rule Descriptions
+# Karabiner: Complex Modification Descriptions
 
 To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply open respective following URL in your browser.
 
@@ -30,6 +30,14 @@ This is useful to send character events like `[]{}^` for vim emulators (which of
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-move-per-word.json
+```
+
+## Middle Click to Quit App
+- Middle click to close an app (`cmd + q`).
+- Use [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) to open links in a new tab in Browsers.
+
+```text
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/middle-click-quit.json
 ```
 
 ## fn Launcher

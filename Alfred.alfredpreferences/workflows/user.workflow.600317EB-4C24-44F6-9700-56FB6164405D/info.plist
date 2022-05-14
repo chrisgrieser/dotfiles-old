@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4BC1B5A3-0315-4285-9D92-111345A7BC3A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9CFB564E-29F8-46F8-A835-38C23F81A679</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</key>
 		<array>
 			<dict>
@@ -190,6 +177,19 @@
 		<array/>
 		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
 		<array/>
+		<key>E04D89E0-9379-4FE4-AB20-4B8F298763A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CFB564E-29F8-46F8-A835-38C23F81A679</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -519,33 +519,15 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>79</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F18</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<key>triggerid</key>
+				<string>eject-to-work-mode</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>4BC1B5A3-0315-4285-9D92-111345A7BC3A</string>
+			<string>E04D89E0-9379-4FE4-AB20-4B8F298763A6</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -759,15 +741,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<key>ypos</key>
 			<integer>685</integer>
 		</dict>
-		<key>4BC1B5A3-0315-4285-9D92-111345A7BC3A</key>
-		<dict>
-			<key>note</key>
-			<string>eject key</string>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>375</integer>
-		</dict>
 		<key>55C623B9-ACDB-4A89-8AAC-C867C97D4312</key>
 		<dict>
 			<key>colorindex</key>
@@ -875,6 +848,13 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<integer>655</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>E04D89E0-9379-4FE4-AB20-4B8F298763A6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>375</integer>
 		</dict>
 	</dict>
 	<key>version</key>

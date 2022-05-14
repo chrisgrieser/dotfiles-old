@@ -438,6 +438,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -2307,6 +2326,13 @@ end tell</string>
 			<integer>70</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
+		<dict>
+			<key>xpos</key>
+			<integer>780</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>5E29849B-8514-4ACF-8D3A-8D63DE6EE138</key>
 		<dict>
