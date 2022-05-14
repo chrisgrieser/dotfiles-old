@@ -2,6 +2,7 @@
 
 To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply open respective following URL in your browser.
 
+
 ## Capslock to Hyper / Esc
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
