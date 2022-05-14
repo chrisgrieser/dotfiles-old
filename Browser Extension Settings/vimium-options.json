@@ -30,10 +30,6 @@
       "passKeys": "jk"
     },
     {
-      "pattern": "https?://www.reddit.com/*",
-      "passKeys": "jk"
-    },
-    {
       "pattern": "https?://www.tldraw.com/*",
       "passKeys": "1234567890"
     },
@@ -42,10 +38,10 @@
       "passKeys": "jk"
     }
   ],
-  "filterLinkHints": true,
+  "filterLinkHints": false,
   "waitForEnterForFilteredHints": false,
   "hideHud": false,
-  "keyMappings": "\" Closing Tabs\nmap ww removeTab count=15\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap W closeOtherTabs\nmap u removeTab\nmap U restoreTab\n\n\" Scrolling Fast\nmap J scrollDown count=4\nmap K scrollUp count=4\n\n\" History\nmap h goBack\nmap l goForward\n\n\" Reload\nmap R reload hard\n\n\" Pages\nmap gh goPrevious\nmap gl goNext\n \n\" Tabs\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nunmap g0\nmap H previousTab\nmap L nextTab\nunmap g$\nmap < moveTabLeft\nmap > moveTabRight\n\n\" mimic American keyboard layout\nmap - enterFindMode\n\n\" Marks\n\" remapping, since backtick isn't properly supported\nmap ö Marks.activateGotoMode\n\n\" unmap unneeded stuff\nunmap d\nunmap B\nunmap gt\nunmap gT\nunmap T\nunmap o\nunmap O\nunmap `\nunmap <c-e>\nunmap <c-y>\nunmap /\nunmap ^\nunmap >>\nunmap <<\nunmap [[\nunmap ]]",
+  "keyMappings": "\" Closing Tabs\nmap ww removeTab count=15\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap W closeOtherTabs\nmap u removeTab\nmap U restoreTab\n\n\" Scrolling Fast\n\" map J scrollDown count=4\n\" map K scrollUp count=4\nmap J scrollPageDown\nmap K scrollPageUp\n\n\" History\nmap h goBack\nmap l goForward\n\n\" Reload\nmap R reload hard\n\n\" Pages\nmap gh goPrevious\nmap gl goNext\n \n\" Tabs\nmap t Vomnibar.activateTabSelection\nmap b visitPreviousTab\nunmap g0\nmap H previousTab\nmap L nextTab\nunmap g$\nmap < moveTabLeft\nmap > moveTabRight\n\n\" mimic American keyboard layout\nmap - enterFindMode\n\n\" Marks\n\" remapping, since backtick isn't properly supported\nmap ö Marks.activateGotoMode\n\n\" Mute Tab\nmap M toggleMuteTab\n\n\" unmap unneeded stuff\nunmap d\nunmap B\nunmap T\nunmap o\nunmap O\nunmap `\nunmap <c-e>\nunmap <c-y>\nunmap /\nunmap ^\nunmap >>\nunmap <<\nunmap [[\nunmap ]]\nunmap <a-m>\nunmap <a-p>",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",

@@ -109,6 +109,26 @@ imap <C-k> <Esc>C
 " Kill line backwards
 imap <C-j> <Esc>c^
 
+""""""""""""""""""""""
+" Tab Switching
+""""""""""""""""""""""
+
+" Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap tabnext obcommand cycle-through-panes:cycle-through-panes
+nmap gt :tabnext
+exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
+nmap gT :tabprev
+
+""""""""""""""""""""""
+" Folding
+""""""""""""""""""""""
+
+" Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap tabnext obcommand cycle-through-panes:cycle-through-panes
+nmap zo :unfold
+exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
+nmap zc :fold
+
 
 """"""""""""""""""""""
 " Text Objects

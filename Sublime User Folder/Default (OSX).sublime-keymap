@@ -94,6 +94,8 @@
 	]},
 	// Kill Line
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+	// Kill line backwards
+	{ "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
 	// Split Line
 	{ "keys": ["super+shift+l"], "command": "split_selection_into_lines"},
 
@@ -247,7 +249,9 @@
 		{ "key": "auto_complete_visible" },
 	] },
 
-	// Vim rebindings
+	// VIM REBINDINGS
+
+	// imap jj <Esc>
 	{
 	    "keys": ["j", "j"],
 	    "command": "exit_insert_mode",
@@ -393,5 +397,14 @@
 		"motion_inclusive": true },
 		"context": [{"key": "setting.command_mode"}]
 	},
+	// " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+	{
+		"keys": ["g", "t"], "command": "next_view", "context": [
+			{"key": "setting.command_mode"}
+	] },
+	{
+		"keys": ["g", "T"], "command": "prev_view", "context": [
+			{"key": "setting.command_mode"}
+	] },
 ]
 
