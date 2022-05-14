@@ -372,25 +372,6 @@
                         ]
                     },
                     {
-                        "description": "Middle-Click quits application",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "right_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Eject Work Mode",
                         "manipulators": [
                             {
@@ -630,6 +611,83 @@
                                 "to": [
                                     {
                                         "shell_command": "open -a 'Alfred Preferences'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "US layout while right-option is held down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_option"
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Middle-Click quits application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "right_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Tapping Right Mouse Button in Browser to open link in background (Safari / Brave)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 75
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button3"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "pointing_button": "button2"
                                     }
                                 ],
                                 "type": "basic"

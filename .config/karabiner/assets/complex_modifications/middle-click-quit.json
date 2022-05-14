@@ -19,6 +19,29 @@
 					]
 				}
 			]
+		},
+		{
+			"description": "Tapping Right Mouse Button in Browser to open link in background (Safari / Brave)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"pointing_button": "button2"},
+					"to_if_held_down": [{"pointing_button": "button2"} ],
+					"to": [{"pointing_button": "button3" } ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.brave\\.Browser$",
+								"^com\\.apple\\.Safari$"
+							]
+						}
+					],
+					"parameters": {
+						"basic.to_if_held_down_threshold_milliseconds": 75
+					}
+				}
+			]
 		}
 	]
 }

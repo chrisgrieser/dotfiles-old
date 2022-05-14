@@ -1,0 +1,12 @@
+{
+
+	"draw_white_space": ["selection", "isolated"],
+
+	"extensions":
+	[
+		"sublime-settings",
+		"json",
+		"sublime-keymap",
+		"sublime-build",
+	]
+}
