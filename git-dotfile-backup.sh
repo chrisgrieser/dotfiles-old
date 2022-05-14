@@ -3,7 +3,7 @@
 # go to script location (the script should be located in the git repository)
 cd "$(dirname "$0")" || exit
 
-device_name=$(hostname | cut -d "." -f1 | sed -e "s/Chris-//" | tr "-" " ")
+device_name=$(scutil --get ComputerName | cut -d" " -f2-)
 details="$(git status --porcelain)"
 filesChanged="$(echo "$details" | wc -l | tr -d ' ')"
 
