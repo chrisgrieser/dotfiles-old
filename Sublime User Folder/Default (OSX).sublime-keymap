@@ -370,24 +370,18 @@
 		"motion_args": {"character": "["}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
 	},
-	{ "keys": ["a", "0"], "command": "set_motion", "args": {
+	{ "keys": ["a", "6"], "command": "set_motion", "args": {
 		"motion": "vi_expand_to_brackets",
 		"motion_args": {"character": "[", "outer": true}},
 		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
 	},
-	{ "keys": ["i", "b"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "{"}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "b"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "{", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
 
-	// nmap <space> ciw
+	// nmap <Space> ciw (for whatever reason needs just " " and not "space")
 	{ "keys": [" "], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim ciw.sublime-macro" }, "context": [
+		{"key": "setting.command_mode"},
+	] },
+	// nmap <S-Space> daw
+	{ "keys": ["shift+space"], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim daw.sublime-macro" }, "context": [
 		{"key": "setting.command_mode"},
 	] },
 
@@ -401,4 +395,3 @@
 	},
 ]
 
-[]

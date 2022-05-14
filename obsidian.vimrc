@@ -119,36 +119,16 @@ nmap i5 i[
 nmap i6 i]
 nmap a5 a[
 nmap a6 a]
-nmap f5 f[
-nmap f6 f]
-nmap t5 t[
-nmap t6 t]
-nmap F5 F[
-nmap F6 F]
-nmap T5 T[
-nmap T6 T]
 
 "pseudo-map 89 to () (= no modifier key needed anymore)
 nmap i8 i(
 nmap i9 i)
 nmap a8 a(
 nmap a9 a)
-nmap f8 f(
-nmap f9 f)
-nmap t8 t(
-nmap t9 t)
-nmap F8 F(
-nmap F9 F)
-nmap T8 T(
-nmap T9 T)
 
 "pseudo-map 2 to " (= no modifier key needed anymore)
 nmap i2 i"
 nmap a2 a"
-nmap f2 f"
-nmap t2 t"
-nmap F2 F"
-nmap T2 T"
 
 """"""""""""""""""""""
 " Misc
