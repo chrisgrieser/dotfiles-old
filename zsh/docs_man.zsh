@@ -27,7 +27,8 @@ alias help='run-help'
 export HELPDIR=/usr/share/zsh/5.8/help
 
 # use moar instead of less (moar also uses color options forn LESS below)
-export PAGER=moar
+export PAGER=less
+# export PAGER=moar
 export MOAR="--no-linenumbers --render-unprintable=whitespace"
 
 # colorize less https://wiki.archlinux.org/index.php/Color_output_in_console#less .

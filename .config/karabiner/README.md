@@ -13,8 +13,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ## Vim Utilities
 - Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
-- Left-click by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window. 
-- Hide the Cursor by tapping `alt-right`.[^2] Useful for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Focus window & hide cursor[^2] by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 - Scroll up/down globally via `alt+j/k`.
 - Press `j` and `f` "simultaneously" to send an enter.
 
@@ -55,12 +54,12 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + p` → `P`DF Reader → Highlights
 - `fn + i` → `I`noreader
 - `fn + m` → `M`ail → Mimestream
-- `fn + w` → `G`oogle Docs
+- `fn + g` → `G`oogle Docs
 - `fn + w` → Microsoft `W`ord
 - `fn + a` → `A`lfred Preferences
 - `fn + t` → Better`T`ouchTool
 - `fn + k` → `K`arabiner Elements
-- `fn + shift + k` → `K`arabiner Event Viewer
+- `fn + shift + k` → `K`arabiner EventViewer
 
 Since pressing `fn` interferes with the built-in macOS emoji insertion key, it needs to be disabled (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . 
 
@@ -70,8 +69,7 @@ If you still want to use the `fn` key to open the emoji insertion modal, you can
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/fn-launcher.json
 ```
 
-Edit the keys and apps in the JSON to your liking.
+The keys and apps in the JSON can be edited however wanted.
 
-[^1]: On non-German keyboards, `y` and `z` are switched.
-
-[^2]: Technically speaking, moves it slightly above to the bottom right
+[^1]: On non-German keyboards, `y` and `z` are switched, so the key codes are the other way round.
+[^2]: Technically speaking, moves it slightly above to the bottom right (not complete bottom right to avoid triggering the Dock). 

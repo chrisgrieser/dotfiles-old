@@ -87,9 +87,6 @@ live_config_reload: true
 selection:
   save_to_clipboard: true
 key_bindings:
-  - key: Back
-    mods: Super
-    chars: "\x15"
   - key: Semicolon
     mods: Command|Shift
     command:
@@ -114,12 +111,6 @@ key_bindings:
       args:
         - '-c'
         - open .
-  - key: Up
-    mods: Command
-    action: ScrollHalfPageUp
-  - key: Down
-    mods: Command
-    action: ScrollHalfPageDown
   - key: 28
     mods: Alt
     chars: '{'
