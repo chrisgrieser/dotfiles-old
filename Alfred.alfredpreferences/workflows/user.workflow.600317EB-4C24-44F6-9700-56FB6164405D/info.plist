@@ -34,71 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>72675B7F-5FD7-4765-BD70-C8D64253C5EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6F5C9C5F-2194-49CD-89B9-E3148F411AD0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9CFB564E-29F8-46F8-A835-38C23F81A679</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>72675B7F-5FD7-4765-BD70-C8D64253C5EA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A6E42833-9A0B-4449-8834-2015ACCAB503</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>F940D8A0-FB80-44E5-B37B-D3504817FDD3</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>55C623B9-ACDB-4A89-8AAC-C867C97D4312</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>4E0C9EF6-5169-4834-B6EC-5A60DB6E9AB1</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>48E2F7D9-2D13-44FB-B518-D7085477A42F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>50808C48-F039-49CD-8AED-28EA957DAAD8</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
 		<array>
 			<dict>
@@ -160,36 +95,8 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9CFB564E-29F8-46F8-A835-38C23F81A679</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AE3ED85E-DA38-4798-9036-557C6E01BAE1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A6E42833-9A0B-4449-8834-2015ACCAB503</key>
-		<array/>
 		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
 		<array/>
-		<key>E04D89E0-9379-4FE4-AB20-4B8F298763A6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9CFB564E-29F8-46F8-A835-38C23F81A679</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -198,7 +105,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Moom &amp; Zoom</string>
+	<string>Zoom</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -451,250 +358,6 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>work</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>💼 Work Mode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6F5C9C5F-2194-49CD-89B9-E3148F411AD0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>💼 Work Mode ready</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>AE3ED85E-DA38-4798-9036-557C6E01BAE1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>work-mode_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9CFB564E-29F8-46F8-A835-38C23F81A679</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>eject-to-work-mode</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>E04D89E0-9379-4FE4-AB20-4B8F298763A6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>-- open Basic Workspacetell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"repeat until (application "Drafts" is running)	delay 0.2end repeatdelay 0.1
-tell application "Moom" to arrange windows according to snapshot "📝 Browser + Drafts"
-display notification "" with title "📝 Note Mode ready"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A6E42833-9A0B-4449-8834-2015ACCAB503</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>notes browser</string>
-						<key>outputlabel</key>
-						<string>notes browser</string>
-						<key>uid</key>
-						<string>F940D8A0-FB80-44E5-B37B-D3504817FDD3</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>notes zoom</string>
-						<key>outputlabel</key>
-						<string>notes zoom</string>
-						<key>uid</key>
-						<string>4E0C9EF6-5169-4834-B6EC-5A60DB6E9AB1</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>notes pdf</string>
-						<key>outputlabel</key>
-						<string>notes pdf</string>
-						<key>uid</key>
-						<string>50808C48-F039-49CD-8AED-28EA957DAAD8</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>--</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>72675B7F-5FD7-4765-BD70-C8D64253C5EA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"cd86f66820a60e7484b233721204cf4e8e5f87e7.png","title":"📝 Browser","arg":"notes browser","subtitle":""},{"imagefile":"490eb8a6470d15043c399ba2752a0f9472ae8f4e.png","title":"📝 Zoom","arg":"notes zoom","subtitle":""},{"imagefile":"bf197147d6b20efd820cd3dc43fc8bedd16d58cd.png","title":"📝 Highlights","arg":"notes pdf","subtitle":""}]</string>
-				<key>keyword</key>
-				<string>moom</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Change Moom Mode to...</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>-- wait till Zoom meeting has started
-set nameList to ""repeat until nameList contains "Zoom Meeting"	tell application "System Events" to set nameList to name of windows of (processes whose name is "zoom.us")	set nameList to item 1 of nameList	delay 0.2end repeat
-delay 0.5
-
--- open Basic Workspacetell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"repeat until (application "Drafts" is running)	delay 0.2end repeatdelay 0.1
-tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Zoom"
-display notification "" with title "📝 Note Mode ready"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>55C623B9-ACDB-4A89-8AAC-C867C97D4312</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>-- open Basic Workspacetell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"repeat until (application "Drafts" is running)	delay 0.2end repeatdelay 0.1
-tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Highlights"
-display notification "" with title "📝 Note Mode ready"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>48E2F7D9-2D13-44FB-B518-D7085477A42F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -732,31 +395,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>48E2F7D9-2D13-44FB-B518-D7085477A42F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>685</integer>
-		</dict>
-		<key>55C623B9-ACDB-4A89-8AAC-C867C97D4312</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>565</integer>
-		</dict>
-		<key>5E8F04DB-49EB-45A1-B1AC-FD3FBC0397C4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>530</integer>
-		</dict>
 		<key>69321844-5FD6-49B4-904B-EA6C9F22AA56</key>
 		<dict>
 			<key>colorindex</key>
@@ -767,20 +405,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<integer>310</integer>
 			<key>ypos</key>
 			<integer>145</integer>
-		</dict>
-		<key>6F5C9C5F-2194-49CD-89B9-E3148F411AD0</key>
-		<dict>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>245</integer>
-		</dict>
-		<key>72675B7F-5FD7-4765-BD70-C8D64253C5EA</key>
-		<dict>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>520</integer>
 		</dict>
 		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
 		<dict>
@@ -809,35 +433,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<key>ypos</key>
 			<integer>35</integer>
 		</dict>
-		<key>9CFB564E-29F8-46F8-A835-38C23F81A679</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>set context</string>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>315</integer>
-		</dict>
-		<key>A6E42833-9A0B-4449-8834-2015ACCAB503</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>355</integer>
-			<key>ypos</key>
-			<integer>450</integer>
-		</dict>
-		<key>AE3ED85E-DA38-4798-9036-557C6E01BAE1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>510</integer>
-			<key>ypos</key>
-			<integer>315</integer>
-		</dict>
 		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
 		<dict>
 			<key>colorindex</key>
@@ -848,13 +443,6 @@ display notification "" with title "📝 Note Mode ready"</string>
 			<integer>655</integer>
 			<key>ypos</key>
 			<integer>10</integer>
-		</dict>
-		<key>E04D89E0-9379-4FE4-AB20-4B8F298763A6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>375</integer>
 		</dict>
 	</dict>
 	<key>version</key>

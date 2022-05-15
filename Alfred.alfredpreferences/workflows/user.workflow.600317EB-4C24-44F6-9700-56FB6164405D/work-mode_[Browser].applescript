@@ -14,7 +14,11 @@ tell application "Mimestream" to if it is not running then activate
 tell application "Brave Browser" to if it is not running then activate
 tell application "Slack" to if it is not running then activate
 tell application "Discord" to if it is not running then activate
-tell application "Tweetdeck" to if it is not running then activate
+if (isOffice is false) then
+	tell application "Twitterrific" to if it is not running then activate
+else
+	tell application "Tweetdeck" to if it is not running then activate
+end
 
 -- Reset to workspace depending on location
 if (isOffice is false) then
@@ -34,6 +38,3 @@ try
 	end tell
 end try
 
--- arrange windows
-delay 0.15
-tell application "Moom" to arrange windows according to snapshot "💼 Work"

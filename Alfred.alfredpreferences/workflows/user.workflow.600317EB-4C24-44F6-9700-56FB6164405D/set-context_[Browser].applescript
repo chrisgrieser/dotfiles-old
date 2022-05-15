@@ -36,7 +36,6 @@ if (notes is "drafts") then
 		end tell
 	end tell
 
-	tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Zoom"
 	display notification "" with title "📝 Note Mode ready"
 end if
 
@@ -105,8 +104,6 @@ if (notes contains "obsidian") then
 		end tell
 	end tell
 
-	-- Moom
-	tell application "Moom" to arrange windows according to snapshot "👨‍🏫 Seminar"
 	display notification "" with title "👨‍🏫 Seminar Mode ready"
 	delay 0.2
 
