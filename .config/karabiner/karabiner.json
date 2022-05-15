@@ -10,7 +10,7 @@
                 "parameters": {
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
-                    "basic.to_if_alone_timeout_milliseconds": 400,
+                    "basic.to_if_alone_timeout_milliseconds": 500,
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
@@ -757,40 +757,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Holding Right Mouse Button searches Google for selected text",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 1000
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 100,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -949,28 +915,7 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "pointing_button": "button4"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f13"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "pointing_button": "button5"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f16"
-                        }
-                    ]
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,

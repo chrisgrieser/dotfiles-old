@@ -44,22 +44,24 @@
 			]
 		},
 		{
-			"description": "Holding Right Mouse Button searches Google for selected text",
+			"description": "Mouse button5 to F16, when held searches selected text instead",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"pointing_button": "button2"},
+					"from": {"pointing_button": "button5"},
+					"to_after_key_up": [{"key_code": "f16" } ],
 					"to_if_held_down": [
 						{
 							"key_code": "c",
-							"modifiers": ["command"]
+							"modifiers": ["command"],
+							"halt": true
 						},
-						{ "key_code": "vk_none", "hold_down_milliseconds": 100 },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
 						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
 					],
-					"to": [{"pointing_button": "button2" } ],
 					"parameters": {
-						"basic.to_if_held_down_threshold_milliseconds": 1000
+						"basic.to_if_alone_timeout_milliseconds": 200,
+						"basic.to_if_held_down_threshold_milliseconds": 400
 					}
 				}
 			]
