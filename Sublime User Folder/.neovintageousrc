@@ -30,7 +30,7 @@ nnoremap + *
 nnoremap - /
 
 " Quickly remove search highlights
-nnoremap _ ::nohlsearch<CR>
+nnoremap _ :nohlsearch<CR>
 
 """"""""""""""""""""""
 " Nagivation
@@ -83,23 +83,11 @@ nnoremap ü ~
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
-" (actually works with nmap instead of onoremap here)
+" (actually works with nmap of onoremap here)
+onoremap pp i(
+onoremap ss i[
+onoremap cc i{
 
-"pseudo-map 56 to []
-onoremap i5 i[
-onoremap i6 i]
-onoremap a5 a[
-onoremap a6 a]
-
-"pseudo-map 89 to ()
-onoremap i8 i(
-onoremap i9 i)
-onoremap a8 a(
-onoremap a9 a)
-
-"pseudo-map 2 to "
-onoremap i2 i"
-onoremap a2 a"
 
 """"""""""""""""""""""
 " Insert Mode

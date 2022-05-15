@@ -16,6 +16,11 @@ Most people tell me they find the following configurations most useful:
 - Pandoc configs & my pointers on [how to use pandoc](/pandoc/#Pandoc)
 - [complex modifications for Karabiner Elements](/.config/karabiner)
 - [starship prompt](/.config/starship/starship.toml)
+- Various Vim Emulation Configs
+	- System wide: [Vim Utilities via Karabiner Elements](/.config/karabiner#vim-utilities)
+	- Browser: [Vimium configs](/Browser%20Extension%20Settings/vimium-options.json) via [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+	- Obsidian: [.obsidian.vimrc](obsidian.vimrc) via [Vimrc Support Plugin](https://obsidian.md/plugins?id=obsidian-vimrc-support) 
+	- Sublime: [.neovintageousrc](Sublime%20User%20Folder/.neovintageousrc) via [Neovintageous](https://github.com/NeoVintageous/NeoVintageous)
 
 ## What is this repository?
 Essentially, it's all of my dotfiles, that I put online for backup, version history, and easy sharing with others.

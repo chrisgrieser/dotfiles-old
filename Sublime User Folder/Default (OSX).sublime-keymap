@@ -79,15 +79,6 @@
 	] },
 	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
 
-	// Case CONVERSION
-	{ "keys": ["super+u"], "command": "upper_case" },
-	{ "keys": ["ctrl+u"], "command": "upper_case", "context": [
-		{ "key": "terminus_view", "operator": "not_equal" },
-	] },
-	{ "keys": ["ctrl+l"], "command": "lower_case", "context": [
-		{ "key": "terminus_view", "operator": "not_equal" },
-	] },
-
 	// Lines
 	{ "keys": ["super+d"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
 	{ "keys": ["super+2"], "command": "swap_line_up" },
@@ -147,7 +138,6 @@
 		"context": [{"key": "terminus_view", "operator": "not_equal" ,"operand": true}]
 	},
 	{ "keys": ["super+shift+i"], "command": "reindent", "args": {"single_line": false} },
-
 
 	// SETTINGS & INSTALLATION
 	// Open preferences without the annoying split

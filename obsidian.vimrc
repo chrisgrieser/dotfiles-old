@@ -27,7 +27,7 @@ nmap + *
 nmap - /
 
 " Quickly remove search highlights
-nmap _ :nohl
+nmap _ :nohlsearch
 
 """"""""""""""""""""""
 " Nagivation

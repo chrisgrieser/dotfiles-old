@@ -3,7 +3,6 @@
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": false, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
-	"vintageous_use_super_keys": true, // enables <D-...> for cmd bindings
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
 	    "<C-p>": false, // copy file path
@@ -12,10 +11,6 @@
 	    "<C-k>": false, // kill line backwards
 	    "<C-r>": false, // rename file
 	    "<C-t>": false, // transpose → Sublime built-in command
-	    "<D-z>": false,
-	    "<D-f>": false,
-	    "<D-w>": false,
-	    "<D-s>": false,
 	},
 
 	// Vim Mode
@@ -521,6 +516,10 @@
 		"capslock",
 		"zshrc",
 		"Vimium",
+		"Vimrc",
+		"vimrc",
+		"Neovintageous",
+		"neovintageousrc",
 	],
 
 	"neovintageous_build_version": 11100,
