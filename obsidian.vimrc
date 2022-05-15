@@ -161,5 +161,3 @@ nmap ö `
 " - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " - only `map`s supported, no support for nnoremap, inoremap, etc.
 " - `nnoremap` officially supported, but in practice buggy
-
-
