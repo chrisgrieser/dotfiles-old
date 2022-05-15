@@ -54,6 +54,7 @@ nnoremap K 6k
 
 " backspace works in normal mode like in insert mode & consistent with <del>
 nnoremap <BS> hx
+vnoremap <BS> xh
 
 " allows Double Enter to add new line and indent
 nnoremap <CR> A

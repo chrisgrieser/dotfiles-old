@@ -31,14 +31,16 @@
 			]
 		},
 		{
-			"description": "Hide Cursor by tapping right-option",
+			"description": "Focus Window & Hide Cursor by tapping left-option",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {
-						"key_code": "right_option"
+						"key_code": "left_option"
 					},
 					"to_if_alone": [
+						{ "pointing_button": "button1"},
+						{ "key_code": "vk_none", "hold_down_milliseconds": 10 },
 						{
 							"software_function": {
 								"set_mouse_cursor_position": {
@@ -50,19 +52,8 @@
 						}
 					],
 					"to": [
-						{ "key_code": "right_option" }
+						{ "key_code": "left_option" }
 					]
-				}
-			]
-		},
-		{
-			"description": "Left-Click by tapping left-option",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": { "key_code": "left_option" },
-					"to_if_alone": [{ "pointing_button": "button1"} ],
-					"to": [{ "key_code": "left_option" } ]
 				}
 			]
 		},

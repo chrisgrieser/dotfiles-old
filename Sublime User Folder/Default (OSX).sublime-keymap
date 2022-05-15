@@ -148,9 +148,11 @@
 	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/User/Preferences.sublime-settings"} },
 	// Keybindings Settings
 	{ "keys": ["super+shift+,"], "command": "open_file", "args": { "file": "${packages}/User/Default ($platform).sublime-keymap"} },
-
 	// Syntax-Specific Settings
 	{ "keys": ["super+alt+,"], "command": "edit_syntax_settings" },
+	// .neovintageousrc
+	{ "keys": ["shift+alt+,"], "command": "open_file", "args": { "file": "${packages}/User/.neovintageousrc"} },
+
 	// Change Color Scheme
 	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
 	// Palette

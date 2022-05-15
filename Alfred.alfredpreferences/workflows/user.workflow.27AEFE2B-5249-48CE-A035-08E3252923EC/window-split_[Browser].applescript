@@ -6,5 +6,4 @@ tell application "System Events"
 		click menu item "Move Tab to New Window" of menu "Tab" of menu bar 1
 	end tell
 end tell
-delay 0.1
-tell application "Moom" to arrange windows according to snapshot "Two Browser Windows"
+

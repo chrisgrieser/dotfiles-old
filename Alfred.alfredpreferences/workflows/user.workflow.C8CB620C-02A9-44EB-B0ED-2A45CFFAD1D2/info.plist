@@ -64,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+				<string>49BF37B2-3037-4978-954E-E89973D38B6D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +90,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+				<string>49BF37B2-3037-4978-954E-E89973D38B6D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -294,21 +294,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string>com.brave.Browser</string>
-				<key>spaces</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
-				<key>url</key>
-				<string>chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html#</string>
-				<key>utf8</key>
-				<true/>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-chrome-url_[Browser].sh</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>4BC4FFB2-E0CE-41FF-B371-FE451B884431</string>
+			<string>49BF37B2-3037-4978-954E-E89973D38B6D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -707,14 +711,12 @@
 			<key>ypos</key>
 			<integer>725</integer>
 		</dict>
-		<key>4BC4FFB2-E0CE-41FF-B371-FE451B884431</key>
+		<key>49BF37B2-3037-4978-954E-E89973D38B6D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>this way works independent from browser, following finicky settings</string>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>810</integer>
 			<key>ypos</key>
 			<integer>95</integer>
 		</dict>
@@ -772,7 +774,7 @@
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>230</integer>
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
@@ -792,14 +794,14 @@
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>225</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
 		<key>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>235</integer>
 			<key>ypos</key>
 			<integer>55</integer>
 		</dict>
