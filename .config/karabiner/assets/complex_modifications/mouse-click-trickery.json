@@ -2,11 +2,11 @@
 	"title": "Mouse Click Trickery",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
-	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json",
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Middle-Click quits application",
+			"description": "Middle-Click to quit application",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"description": "Tapping Right Mouse Button in Browser to open link in background (Safari / Brave)",
+			"description": "Tap Right Mouse Button to open link in background (Safari / Brave)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -38,18 +38,18 @@
 						}
 					],
 					"parameters": {
-						"basic.to_if_held_down_threshold_milliseconds": 75
+						"basic.to_if_held_down_threshold_milliseconds": 30
 					}
 				}
 			]
 		},
 		{
-			"description": "Mouse button5 to F16, when held searches selected text instead",
+			"description": "Hold Mouse button4 to search selected text, tap to send F13",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"pointing_button": "button5"},
-					"to_after_key_up": [{"key_code": "f16" } ],
+					"from": {"pointing_button": "button4"},
+					"to_if_alone": [{"key_code": "f13" } ],
 					"to_if_held_down": [
 						{
 							"key_code": "c",
@@ -60,8 +60,8 @@
 						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
 					],
 					"parameters": {
-						"basic.to_if_alone_timeout_milliseconds": 200,
-						"basic.to_if_held_down_threshold_milliseconds": 400
+						"basic.to_if_alone_timeout_milliseconds": 300,
+						"basic.to_if_held_down_threshold_milliseconds": 300
 					}
 				}
 			]
