@@ -132,7 +132,11 @@ nnoremap ö `
 nnoremap ? :help nv<CR>
 
 """"""""""""""""""""""
-" Vim Plugin
+" Vim Plugins
 """"""""""""""""""""""
-" Abolish
-coerce
+
+" Abolish: Titlecase
+" (mirroring Obsidian)
+" <D-...> = super key, REQUIRES
+noremap <D-u> crt
+
