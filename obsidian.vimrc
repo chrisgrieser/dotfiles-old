@@ -43,13 +43,7 @@ vmap H ^
 nmap L $
 vmap L $
 nmap J 6j
-vmap J 6j
 nmap K 6k
-vmap K 6k
-
-" back/forth
-" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
-" (not mapped here, so they also work in preview mode)
 
 """"""""""""""""""""""
 " Editing
@@ -72,9 +66,9 @@ vmap <Space> c
 " switch case (~ not directly available on German keyboards)
 nmap ü ~
 
-" fix text object `is` not working
-" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap X (c)
+" Imitating Abolish's Titlecase (crt)
+exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
+nmap ä :smartcaseswitch
 
 " transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>xpi
@@ -83,23 +77,15 @@ nmap <C-t> xph
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
+
 " (actually works with nmap instead of onoremap here)
+nmap pp i(
+nmap ss i[
+nmap cc i{
 
-"pseudo-map 56 to [] ( [] not working + no more modifier key)
-nmap i5 i[
-nmap i6 i]
-nmap a5 a[
-nmap a6 a]
-
-"pseudo-map 89 to () (= no modifier key needed anymore)
-nmap i8 i(
-nmap i9 i)
-nmap a8 a(
-nmap a9 a)
-
-"pseudo-map 2 to " (= no modifier key needed anymore)
-nmap i2 i"
-nmap a2 a"
+" fix text object `is` not working
+" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
+nmap X (c)
 
 """"""""""""""""""""""
 " Switch Modes

@@ -115,8 +115,8 @@
 	{ "keys": ["super+4"], "command": "unfold" },
 
 	// Undo/Redo Selection
-	{ "keys": ["shift+escape"], "command": "jump_back" },
-	{ "keys": ["alt+escape"], "command": "jump_forward" },
+	{ "keys": ["super+u"], "command": "jump_back" },
+	{ "keys": ["super+shift+u"], "command": "jump_forward" },
 
 	// Mouse Keys
 	{ "keys": ["f16"], "command": "close" },

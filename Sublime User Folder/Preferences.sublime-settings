@@ -1,8 +1,9 @@
 {
-	// neovintageous
+	// Neovintageous
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": false, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
+
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
 	    "<C-p>": false, // copy file path
@@ -136,13 +137,13 @@
 
 	//Plugins
 	"ignored_packages": [
-		"ASP",
 		"ActionScript",
+		"ASP",
 		"Batch File",
 		"C#",
 		"C++",
-		"CSS",
 		"Clojure",
+		"CSS",
 		"D",
 		"Erlang",
 		"Go",
@@ -155,11 +156,11 @@
 		"Makefile",
 		"Markdown",
 		"Matlab",
-		"OCaml",
 		"Objective-C",
-		"PHP",
+		"OCaml",
 		"Pascal",
 		"Perl",
+		"PHP",
 		"R",
 		"Rails",
 		"RestructuredText",

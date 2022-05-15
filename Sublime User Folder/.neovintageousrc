@@ -47,13 +47,7 @@ vnoremap H ^
 nnoremap L $
 vnoremap L $
 nnoremap J 6j
-vnoremap J 6j
 nnoremap K 6k
-vnoremap K 6k
-
-" back/forth
-" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
-" (not mapped here, so they also work in preview mode)
 
 """"""""""""""""""""""
 " Editing
@@ -73,8 +67,11 @@ nnoremap <Space> ciw
 nnoremap <S-Space> daw
 vnoremap <Space> c
 
-" switch case (~ not directly available on German keyboards)
+" switch case for a character (~ not directly available on German keyboards)
 nnoremap ü ~
+
+" Abolish: Titlecase
+noremap ä crt
 
 " transpose characters, consistent with Emacs/Mac
 " done via Sublime
@@ -83,11 +80,15 @@ nnoremap ü ~
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
-" (actually works with nmap of onoremap here)
+" double letters for symmetry with Obsidian's Vim Emulation
+" which requires nmap and therefore cannot use psc 🙈
 onoremap pp i(
 onoremap ss i[
 onoremap cc i{
 
+" for symmetry with Obsidian's vim, where the `is`
+" text object does not work (and is imitated via `(c)` )
+nnoremap X das
 
 """"""""""""""""""""""
 " Insert Mode
@@ -99,7 +100,7 @@ onoremap cc i{
 """"""""""""""""""""""
 " Switch Modes
 """"""""""""""""""""""
-" implemented via preferenc 'vintageous_i_escape_jj'
+" implemented via preference 'vintageous_i_escape_jj'
 " inoremap jj <Esc>
 " rnoremap jj <Esc>
 
@@ -118,13 +119,3 @@ nnoremap ö `
 
 " quicker access to help docs command-ids
 nnoremap ? :help nv<CR>
-
-""""""""""""""""""""""
-" Vim Plugins
-""""""""""""""""""""""
-
-" Abolish: Titlecase
-" (mirroring Obsidian)
-" <D-...> = super key, REQUIRES
-noremap <D-u> crt
-
