@@ -81,6 +81,7 @@ nmap <C-t> xph
 " (actually works with nmap instead of onoremap here)
 nmap pp i(
 nmap ss i[
+nmap qq i"
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work

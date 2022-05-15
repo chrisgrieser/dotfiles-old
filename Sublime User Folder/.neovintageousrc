@@ -74,7 +74,7 @@ nnoremap ü ~
 noremap ä crt
 
 " transpose characters, consistent with Emacs/Mac
-" done via Sublime
+" already done built-in in Sublime
 " nnoremap <C-t> xph
 
 """"""""""""""""""""""
@@ -85,6 +85,7 @@ noremap ä crt
 " which requires nmap and therefore cannot use psc 🙈
 onoremap pp i(
 onoremap ss i[
+onoremap qq i"
 
 " for symmetry with Obsidian's vim, where the `is`
 " text object does not work (and is imitated via `(c)` )
