@@ -29,7 +29,7 @@
 		// this ensures that markdownlint's rc is found. also no ~ is needed
 		// trailing spaces disabled as Sublime already does take care of that
 		"markdownlint": {
-			"args": ["--config", "/.markdownlint.jsonc", "--disable=no-trailing-spaces"]
+			"args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces"]
 		},
 		"stylelint": {
 			// "filter_errors": "warning: ",

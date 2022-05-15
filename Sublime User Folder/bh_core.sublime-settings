@@ -3,4 +3,8 @@
 	"show_in_minimap": true,
 	"search_threshold": 10000,
 
-}
+	"default": {
+        "style": "outline",
+        "icon": "tag"
+     }
+  }

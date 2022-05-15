@@ -301,7 +301,6 @@
 	},
 	{ "keys": ["super+shift+j"], "command": "find_under_expand_skip" },
 	{ "keys": ["alt+shift+j"], "command": "find_under" },
-	{ "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
 	{ "keys": ["super+shift+alt+ctrl+a"], "command": "lsp_expand_selection"},
 
 	// Paste and Indent & Convert Indentation
@@ -340,7 +339,7 @@
 	{ "keys": ["super+shift+n"], "command": "new_file" },
 	{ "keys": ["ctrl+d"], "command": "advanced_new_file_copy"},
 	{ "keys": ["super+backspace"], "command": "delete_current_file" },
-	{ "keys": ["shift+alt+super+ctrl+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
+	{ "keys": ["super+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
 	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	// Open Plugin

@@ -10,76 +10,62 @@
 			"manipulators": [
 				{
 					"type": "basic",
-					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 20 },
 					"from": {
 						"key_code": "5",
 						"modifiers": {"mandatory": ["option"] }
 					},
 					"to": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
-					],
-					"to_if_held_down": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 10 },
 						{ "key_code": "open_bracket" }
 					],
 					"to_after_key_up": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
 				},
 				{
 					"type": "basic",
-					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 20 },
 					"from": {
 						"key_code": "6",
 						"modifiers": {"mandatory": ["option"] }
 					},
 					"to": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
-					],
-					"to_if_held_down": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 10 },
 						{ "key_code": "close_bracket" }
 					],
 					"to_after_key_up": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
 				},
 				{
 					"type": "basic",
-					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 20 },
 					"from": {
 						"key_code": "8",
 						"modifiers": {"mandatory": ["option"] }
 					},
 					"to": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
-					],
-					"to_if_held_down": [
-						{
-							"key_code": "open_bracket",
-							"modifiers": ["shift"]
-						}
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 10 },
+						{ "key_code": "open_bracket", "modifiers": ["shift"] }
 					],
 					"to_after_key_up": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
 				},
 				{
 					"type": "basic",
-					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 20 },
 					"from": {
 						"key_code": "9",
 						"modifiers": {"mandatory": ["option"] }
 					},
 					"to": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
-					],
-					"to_if_held_down": [
-						{
-							"key_code": "close_bracket",
-							"modifiers": ["shift"]
-						}
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 10 },
+						{ "key_code": "close_bracket", "modifiers": ["shift"] }
 					],
 					"to_after_key_up": [
-						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
 				}
 			]
