@@ -29,166 +29,166 @@
 	// VIM REBINDINGS
 
 	// imap jj <Esc>
-	{
-	    "keys": ["j", "j"],
-	    "command": "exit_insert_mode",
-	    "context":
-	    [
-	        { "key": "setting.command_mode", "operand": false },
-	        { "key": "setting.is_widget", "operand": false }
-	    ]
-	},
-	{ "keys": ["-"], "command": "show_panel", "args":
-		{
-			"panel": "incremental_find",
-			"select_text": false,
-			"reverse": false
-		},
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["+"], "command": "find_under",
-		"args": {"select_text": false},
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["ü"], "command": "set_action_motion", "args": {
-		"action": "swap_case",
-		"motion": "vi_move_by_characters_in_line",
-		"motion_args": {"forward": true, "extend": true, "visual": false } },
-		"context":
-		[
-			{"key": "selection_empty", "operator": "equal", "operand": true},
-			{"key": "setting.command_mode"}
-		]
-	},
-	{ "keys": ["enter"], "command": "enter_insert_mode", "args":
-		{"insert_command": "move_to", "insert_args": {"to": "hardeol"} },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["backspace"], "command": "set_action_motion", "args": {
-		"action": "vi_left_delete",
-		"motion": null },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["ö", "<character>"], "command": "vi_select_bookmark",
-		"args": {"select_bol": true},
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["Q", "<character>"], "command": "vi_replay_macro",
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["K"], "command": "set_motion", "args": {
-		"motion": "move_caret_to_screen_top",
-		"motion_args": {"repeat": 1},
-		"linewise": true },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["J"], "command": "set_motion", "args": {
-		"motion": "move_caret_to_screen_bottom",
-		"motion_args": {"repeat": 1},
-		"linewise": true },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["L"], "command": "set_motion", "args": {
-		"motion": "vi_move_to_hard_eol",
-		"motion_args": {"repeat": 1, "extend": true},
-		"inclusive": true,
-		"clip_to_line": true },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{ "keys": ["H"], "command": "set_motion", "args": {
-		"motion": "vi_move_to_first_non_white_space_character",
-		"motion_args": {"extend": true },
-		"clip_to_line": true },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	{"keys": ["U"], "command": "redo", "context": [
-		{"key": "setting.command_mode"}
-	] },
+	// {
+	//     "keys": ["j", "j"],
+	//     "command": "exit_insert_mode",
+	//     "context":
+	//     [
+	//         { "key": "setting.command_mode", "operand": false },
+	//         { "key": "setting.is_widget", "operand": false }
+	//     ]
+	// },
+	// { "keys": ["-"], "command": "show_panel", "args":
+	// 	{
+	// 		"panel": "incremental_find",
+	// 		"select_text": false,
+	// 		"reverse": false
+	// 	},
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["+"], "command": "find_under",
+	// 	"args": {"select_text": false},
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["ü"], "command": "set_action_motion", "args": {
+	// 	"action": "swap_case",
+	// 	"motion": "vi_move_by_characters_in_line",
+	// 	"motion_args": {"forward": true, "extend": true, "visual": false } },
+	// 	"context":
+	// 	[
+	// 		{"key": "selection_empty", "operator": "equal", "operand": true},
+	// 		{"key": "setting.command_mode"}
+	// 	]
+	// },
+	// { "keys": ["enter"], "command": "enter_insert_mode", "args":
+	// 	{"insert_command": "move_to", "insert_args": {"to": "hardeol"} },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["backspace"], "command": "set_action_motion", "args": {
+	// 	"action": "vi_left_delete",
+	// 	"motion": null },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["ö", "<character>"], "command": "vi_select_bookmark",
+	// 	"args": {"select_bol": true},
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["Q", "<character>"], "command": "vi_replay_macro",
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["K"], "command": "set_motion", "args": {
+	// 	"motion": "move_caret_to_screen_top",
+	// 	"motion_args": {"repeat": 1},
+	// 	"linewise": true },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["J"], "command": "set_motion", "args": {
+	// 	"motion": "move_caret_to_screen_bottom",
+	// 	"motion_args": {"repeat": 1},
+	// 	"linewise": true },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["L"], "command": "set_motion", "args": {
+	// 	"motion": "vi_move_to_hard_eol",
+	// 	"motion_args": {"repeat": 1, "extend": true},
+	// 	"inclusive": true,
+	// 	"clip_to_line": true },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// { "keys": ["H"], "command": "set_motion", "args": {
+	// 	"motion": "vi_move_to_first_non_white_space_character",
+	// 	"motion_args": {"extend": true },
+	// 	"clip_to_line": true },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// {"keys": ["U"], "command": "redo", "context": [
+	// 	{"key": "setting.command_mode"}
+	// ] },
 
-	// Text Objects
-	{ "keys": ["i", "2"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_quotes",
-		"motion_args": {"character": "\""}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "2"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_quotes",
-		"motion_args": {"character": "\"", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["i", "8"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "("}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "8"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "(", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["i", "9"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "("}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "9"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "(", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["i", "5"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "["}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "5"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "[", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["i", "6"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "["}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
-	{ "keys": ["a", "6"], "command": "set_motion", "args": {
-		"motion": "vi_expand_to_brackets",
-		"motion_args": {"character": "[", "outer": true}},
-		"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
-	},
+	// // Text Objects
+	// { "keys": ["i", "2"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_quotes",
+	// 	"motion_args": {"character": "\""}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["a", "2"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_quotes",
+	// 	"motion_args": {"character": "\"", "outer": true}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["i", "8"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "("}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["a", "8"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "(", "outer": true}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["i", "9"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "("}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["a", "9"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "(", "outer": true}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["i", "5"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "["}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["a", "5"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "[", "outer": true}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["i", "6"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "["}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
+	// { "keys": ["a", "6"], "command": "set_motion", "args": {
+	// 	"motion": "vi_expand_to_brackets",
+	// 	"motion_args": {"character": "[", "outer": true}},
+	// 	"context": [{"key": "setting.command_mode"}, {"key": "vi_can_enter_text_object"}]
+	// },
 
-	// nmap <Space> ciw (for whatever reason needs just " " and not "space")
-	{ "keys": [" "], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim ciw.sublime-macro" }, "context": [
-		{"key": "setting.command_mode"},
-	] },
-	// nmap <S-Space> daw
-	{ "keys": ["shift+space"], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim daw.sublime-macro" }, "context": [
-		{"key": "setting.command_mode"},
-	] },
+	// // nmap <Space> ciw (for whatever reason needs just " " and not "space")
+	// { "keys": [" "], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim ciw.sublime-macro" }, "context": [
+	// 	{"key": "setting.command_mode"},
+	// ] },
+	// // nmap <S-Space> daw
+	// { "keys": ["shift+space"], "command": "run_macro_file", "args": { "file": "res://Packages/User/vim daw.sublime-macro" }, "context": [
+	// 	{"key": "setting.command_mode"},
+	// ] },
 
-	// nmap Y y$
-	{ "keys": ["Y"], "command": "set_action_motion", "args": {
-		"action": "vi_copy",
-		"motion": "vi_move_to_hard_eol",
-		"motion_args": {"repeat": 1, "extend": true},
-		"motion_inclusive": true },
-		"context": [{"key": "setting.command_mode"}]
-	},
-	// Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
-	{
-		"keys": ["g", "t"], "command": "next_view", "context": [
-			{"key": "setting.command_mode"}
-	] },
-	{
-		"keys": ["g", "T"], "command": "prev_view", "context": [
-			{"key": "setting.command_mode"}
-	] },
+	// // nmap Y y$
+	// { "keys": ["Y"], "command": "set_action_motion", "args": {
+	// 	"action": "vi_copy",
+	// 	"motion": "vi_move_to_hard_eol",
+	// 	"motion_args": {"repeat": 1, "extend": true},
+	// 	"motion_inclusive": true },
+	// 	"context": [{"key": "setting.command_mode"}]
+	// },
+	// // Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+	// {
+	// 	"keys": ["g", "t"], "command": "next_view", "context": [
+	// 		{"key": "setting.command_mode"}
+	// ] },
+	// {
+	// 	"keys": ["g", "T"], "command": "prev_view", "context": [
+	// 		{"key": "setting.command_mode"}
+	// ] },
 
-	// always paste what was yanked (y), not what was deleted (d or c)
-	// nmap P "0p
-	{ "keys": ["P"], "command": "vi_paste_right", "args": { "register": "0" }, "context": [
-		{"key": "setting.command_mode"},
-	] },
+	// // always paste what was yanked (y), not what was deleted (d or c)
+	// // nmap P "0p
+	// { "keys": ["P"], "command": "vi_paste_right", "args": { "register": "0" }, "context": [
+	// 	{"key": "setting.command_mode"},
+	// ] },
 
 	//---------------------------------------------------------------------------
 	//---------------------------------------------------------------------------

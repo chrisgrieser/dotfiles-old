@@ -505,6 +505,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/philc/vimium/wiki/Tips-and-Tricks</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -520,25 +539,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/philc/vimium/wiki/Tips-and-Tricks</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -569,7 +569,7 @@
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Alfred.alfredpreferences/workflows/user.workflow.C8CB620C-02A9-44EB-B0ED-2A45CFFAD1D2/Sublime Vim Bindings.json</string>
+				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Sublime User Folder/.neovintageousrc</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
@@ -586,9 +586,9 @@
 				<key>keyword</key>
 				<string>vim</string>
 				<key>subtext</key>
-				<string>for Vintage Mode</string>
+				<string></string>
 				<key>text</key>
-				<string>Sublime Bindings Reference</string>
+				<string>.neovintageousrc</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -761,7 +761,7 @@
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>note</key>
-			<string>cheat sheet</string>
+			<string>neovintageousrc</string>
 			<key>xpos</key>
 			<integer>45</integer>
 			<key>ypos</key>

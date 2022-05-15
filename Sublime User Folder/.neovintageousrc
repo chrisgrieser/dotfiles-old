@@ -1,0 +1,167 @@
+" Type :help nv for help.
+
+""""""""""""""""""""""
+" Clipboard
+""""""""""""""""""""""
+" yank to system clipboard
+" set clipboard=unnamed
+
+" show register (i.e., clipboard history)
+nnoremap <C-y> :reg
+
+" Y consistent with D and C to the end of line
+nnoremap Y y$
+
+" always paste what was yanked (y), not what was deleted (d or c)
+" (gets syntax highlighting of comments, but does work though)
+nnoremap P "0p
+
+""""""""""""""""""""""
+" Search
+""""""""""""""""""""""
+" search w/o having to press enter
+set incsearch
+
+" no modifier key for jumping to next word
+nnoremap + *
+
+" quicker find mode (by mirroring American keyboard layout on German keyboard layout)
+nnoremap - /
+
+" Quickly remove search highlights
+nnoremap _ :nohl
+
+""""""""""""""""""""""
+" Nagivation
+""""""""""""""""""""""
+
+" Have j and k navigate visual lines rather than logical ones
+nnoremap j gj
+nnoremap k gk
+
+" HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
+nnoremap H ^
+vnoremap H ^
+nnoremap L $
+vnoremap L $
+nnoremap J 6j
+vnoremap J 6j
+nnoremap K 6k
+vnoremap K 6k
+
+" back/forth
+" ctrl+h and ctrl+l are mapped as back/forth in Obsidian's hotkeys settings
+" (not mapped here, so they also work in preview mode)
+
+""""""""""""""""""""""
+" Editing
+""""""""""""""""""""""
+
+" backspace works in normal mode like in insert mode & consistent with <del>
+nnoremap <BS> hx
+
+" allows Double Enter to add new line and indent
+nnoremap <CR> A
+
+" More logical undo
+nnoremap U <C-r>
+
+" quicker way to change word
+nnoremap <Space> ciw
+nnoremap <S-Space> daw
+vnoremap <Space> c
+
+" switch case (~ not directly available on German keyboards)
+nnoremap ü ~
+
+" fix text object `is` not working
+" since noremap is not supported in Obsidian, 'nnoremap cis (c)' to avoid recursion does not work
+nnoremap s (c)
+
+" transpose characters, consistent with Emacs/Mac
+imap <C-t> <Esc>xpi
+nnoremap <C-t> xph
+
+""""""""""""""""""""""
+" Switch Modes
+""""""""""""""""""""""
+
+" quick switch to insert mode
+imap jj <Esc>
+rmap jj <Esc>
+" already built in: presss v in visual mode to go back
+
+" quick switch to visual mode
+imap vv <Esc>v
+
+" quick switch to insert mode
+vnoremap ii <Esc>i
+
+""""""""""""""""""""""
+" Insert Mode
+""""""""""""""""""""""
+
+" mirroring HL in Normal Mode
+imap LL <Esc>A
+imap HH <Esc>I
+
+" Kill line
+imap <C-k> <Esc>C
+
+" Kill line backwards
+imap <C-j> <Esc>c^
+
+""""""""""""""""""""""
+" Tab Switching
+""""""""""""""""""""""
+
+" Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap tabnext obcommand cycle-through-panes:cycle-through-panes
+nnoremap gt :tabnext
+exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
+nnoremap gT :tabprev
+
+""""""""""""""""""""""
+" Folding
+""""""""""""""""""""""
+
+" Rebuild zo, zc, zn from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap fold obcommand editor:toggle-fold
+nnoremap zo :fold
+nnoremap zc :fold
+
+exmap unfoldall obcommand editor:unfold-all
+nnoremap zn :unfoldall
+
+""""""""""""""""""""""
+" Text Objects
+""""""""""""""""""""""
+
+"pseudo-map 56 to [] ( [] not working + no more modifier key)
+nnoremap i5 i[
+nnoremap i6 i]
+nnoremap a5 a[
+nnoremap a6 a]
+
+"pseudo-map 89 to () (= no modifier key needed anymore)
+nnoremap i8 i(
+nnoremap i9 i)
+nnoremap a8 a(
+nnoremap a9 a)
+
+"pseudo-map 2 to " (= no modifier key needed anymore)
+nnoremap i2 i"
+nnoremap a2 a"
+
+""""""""""""""""""""""
+" Misc
+""""""""""""""""""""""
+" quicker access to Obsidian command-ids
+nnoremap ? :obcommand
+
+" Play Macro: more consistent mapping (and @ not working)
+nnoremap Q @
+
+" Goto Mark: remapping since ` not working
+nnoremap ö `
+

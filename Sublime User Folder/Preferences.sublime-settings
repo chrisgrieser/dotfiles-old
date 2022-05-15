@@ -122,13 +122,13 @@
 
 	//Plugins
 	"ignored_packages": [
-		"ActionScript",
 		"ASP",
+		"ActionScript",
 		"Batch File",
 		"C#",
 		"C++",
-		"Clojure",
 		"CSS",
+		"Clojure",
 		"D",
 		"Erlang",
 		"Go",
@@ -141,19 +141,22 @@
 		"Makefile",
 		"Markdown",
 		"Matlab",
-		"Objective-C",
 		"OCaml",
+		"Objective-C",
+		"PHP",
 		"Pascal",
 		"Perl",
-		"PHP",
 		"R",
 		"Rails",
 		"RestructuredText",
 		"Ruby",
 		"Rust",
 		"Scala",
+		"Six",
 		"TCL",
 		"Textile",
+		"Vintage",
+		"Vintageous",
 	],
 
 	//Spellcheck
@@ -501,4 +504,5 @@
 		"Vimium",
 	],
 
+	"neovintageous_build_version": 11100,
 }
