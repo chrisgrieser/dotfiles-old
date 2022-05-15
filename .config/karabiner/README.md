@@ -48,9 +48,12 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + e` → `E`ditor → Sublime Text
 - `fn + y`[^1] → `Y`ouTube
 - `fn + z`[^1] → `Z`oom
-- `fn + k` → `K`arabiner Elements
 - `fn + a` → `A`lfred Preferences
 - `fn + i` → `I`noreader
+- `fn + m` → `M`ail → Mimestream
+- `fn + t` → Better`T`ouchTool
+- `fn + w` → Microsoft `W`ord
+- `fn + k` → `K`arabiner Elements
 - `fn + shift + k` → `K`arabiner Event Viewer
 
 Since pressing `fn` interferes with the built-in macOS emoji insertion key, it needs to be disabled (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . 

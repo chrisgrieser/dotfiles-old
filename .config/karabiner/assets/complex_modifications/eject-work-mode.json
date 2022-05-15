@@ -6,14 +6,14 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Eject Work Mode",
+			"description": "Eject Work Mode (triggering BBT's 'Work Mode' Trigger)",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {"key_code": "eject"},
 					"to": [
 						{
-							"shell_command": "osascript -e \"tell application id \\\"com.runningwithcrayons.Alfred\\\" to run trigger \\\"eject-to-work-mode\\\" in workflow \\\"de.chris-grieser.moom-zoom\\\"\""
+							"shell_command": "osascript -e \"tell application \\\"BetterTouchTool\\\" to trigger_named \\\"Work Mode\\\"\""
 						}
 					]
 				}
