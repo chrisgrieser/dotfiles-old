@@ -60,7 +60,6 @@ function br () {
 function bu () {
 	if [[ $1 != "" ]] && brew list "$1" ; then
 		brew uninstall --zap "$1"
-		killall "$1" || true
 		return
 	fi
 

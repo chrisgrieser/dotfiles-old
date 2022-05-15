@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>172354C0-9BDC-4A0D-AE04-3D3521239176</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C24E758D-BDCC-43AC-A131-DD6811A5BF05</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</key>
 		<array>
 			<dict>
@@ -64,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DC36339D-C2F0-48F0-86ED-287A3E935843</string>
+				<string>A9BC46C8-7E66-4A96-9BAB-8A7568787068</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -112,19 +99,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C24E758D-BDCC-43AC-A131-DD6811A5BF05</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>34CBBA27-C9AC-410E-9B2F-575821B4B1B0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C581B232-CDA3-4651-BAB4-32144FECFB52</key>
 		<array>
 			<dict>
@@ -156,19 +130,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>A4A97FBA-5CBA-4449-9044-CFD69762CA19</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>DC36339D-C2F0-48F0-86ED-287A3E935843</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>34ECB604-CF38-4447-820E-A095ED50FCBA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -217,51 +178,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-blueutil -p 0 &amp;&amp; sleep 1 &amp;&amp; blueutil -p 1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>34ECB604-CF38-4447-820E-A095ED50FCBA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>🔵 Reseting Bluetooth Module...</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>DC36339D-C2F0-48F0-86ED-287A3E935843</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -283,67 +199,23 @@ blueutil -p 0 &amp;&amp; sleep 1 &amp;&amp; blueutil -p 1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>blue strength</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>📶 Signal Strength</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>172354C0-9BDC-4A0D-AE04-3D3521239176</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>📶 Signal Strength</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>34CBBA27-C9AC-410E-9B2F-575821B4B1B0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-
-echo | blueutil --connected | cut -d "," -f 3,6 | sed -e 's/ \(-*[[:digit:]]* dBm\)[^"]*"\([^"]*\)"/\2 (RSSI: \1)/'</string>
+				<string>tell application "Shortcuts" to run shortcut "Reset Bluetooth"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C24E758D-BDCC-43AC-A131-DD6811A5BF05</string>
+			<string>A9BC46C8-7E66-4A96-9BAB-8A7568787068</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -494,27 +366,6 @@ echo | last reboot | head -n 10 | cut -c 37-</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>disk space</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>📊 Disk Space</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C581B232-CDA3-4651-BAB4-32144FECFB52</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -571,6 +422,27 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<string>FDF63B46-8376-4578-B3D1-6AF2ECC6ABFE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>disk space</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>📊 Disk Space</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C581B232-CDA3-4651-BAB4-32144FECFB52</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -655,6 +527,23 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>!resolution</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -675,23 +564,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>!resolution</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>dependency https://github.com/toy/blueutil</string>
@@ -704,16 +576,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>480</integer>
-		</dict>
-		<key>172354C0-9BDC-4A0D-AE04-3D3521239176</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>135</integer>
+			<integer>375</integer>
 		</dict>
 		<key>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</key>
 		<dict>
@@ -722,7 +585,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>610</integer>
 		</dict>
 		<key>2BE3594A-C02A-4206-A7F1-5EA3A471E49C</key>
 		<dict>
@@ -731,25 +594,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
-		<key>34CBBA27-C9AC-410E-9B2F-575821B4B1B0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>330</integer>
-			<key>ypos</key>
-			<integer>135</integer>
-		</dict>
-		<key>34ECB604-CF38-4447-820E-A095ED50FCBA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>330</integer>
-			<key>ypos</key>
-			<integer>15</integer>
+			<integer>490</integer>
 		</dict>
 		<key>8B8645C1-776A-41E4-B093-DF59FEF6D696</key>
 		<dict>
@@ -758,7 +603,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>365</integer>
+			<integer>260</integer>
 		</dict>
 		<key>98BB46BE-52EE-46AA-AC87-9ED091180E9E</key>
 		<dict>
@@ -776,7 +621,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>365</integer>
+			<integer>260</integer>
 		</dict>
 		<key>A4A97FBA-5CBA-4449-9044-CFD69762CA19</key>
 		<dict>
@@ -785,72 +630,9 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>250</integer>
+			<integer>145</integer>
 		</dict>
-		<key>AD2F61A3-2897-4864-8EE1-1B8E85514D66</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
-		<key>C129402F-060A-4E14-A919-D21FCE15A4A4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>365</integer>
-		</dict>
-		<key>C24E758D-BDCC-43AC-A131-DD6811A5BF05</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>135</integer>
-		</dict>
-		<key>C581B232-CDA3-4651-BAB4-32144FECFB52</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>480</integer>
-		</dict>
-		<key>CC185D43-6436-4E8B-A0BB-20C128E75323</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>380</integer>
-			<key>ypos</key>
-			<integer>680</integer>
-		</dict>
-		<key>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>650</integer>
-		</dict>
-		<key>D6190251-1CA6-4563-B6A9-600A8F0DD885</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>185</integer>
-			<key>ypos</key>
-			<integer>250</integer>
-		</dict>
-		<key>DC36339D-C2F0-48F0-86ED-287A3E935843</key>
+		<key>A9BC46C8-7E66-4A96-9BAB-8A7568787068</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
@@ -859,6 +641,60 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>AD2F61A3-2897-4864-8EE1-1B8E85514D66</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>490</integer>
+		</dict>
+		<key>C129402F-060A-4E14-A919-D21FCE15A4A4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>C581B232-CDA3-4651-BAB4-32144FECFB52</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>375</integer>
+		</dict>
+		<key>CC185D43-6436-4E8B-A0BB-20C128E75323</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>575</integer>
+		</dict>
+		<key>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>450</integer>
+			<key>ypos</key>
+			<integer>545</integer>
+		</dict>
+		<key>D6190251-1CA6-4563-B6A9-600A8F0DD885</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
 		<key>E952E5B7-24DF-45B3-B342-09CE0A06830D</key>
 		<dict>
 			<key>colorindex</key>
@@ -866,7 +702,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>190</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>610</integer>
 		</dict>
 		<key>F237B22E-6247-4FA6-899C-A9CA938AFED5</key>
 		<dict>
@@ -875,7 +711,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>250</integer>
+			<integer>145</integer>
 		</dict>
 		<key>FDF63B46-8376-4578-B3D1-6AF2ECC6ABFE</key>
 		<dict>
@@ -884,7 +720,7 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>480</integer>
+			<integer>375</integer>
 		</dict>
 	</dict>
 	<key>version</key>

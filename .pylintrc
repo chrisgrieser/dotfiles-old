@@ -87,6 +87,7 @@ disable=missing-function-docstring,
         missing-module-docstring,
         missing-class-docstring,
         bad-indentation,
+        line-too-long,
         import-error
 
 # Enable the message, report, category or checker with the given id(s). You can
