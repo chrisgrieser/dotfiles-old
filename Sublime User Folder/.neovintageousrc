@@ -81,10 +81,10 @@ noremap ä crt
 " Text Objects
 """"""""""""""""""""""
 
-" double letters for symmetry with Obsidian's Vim Emulation
-" which requires nmap and therefore cannot use psc 🙈
+" double [] for symmetry with Obsidian's Vim Emulation
+" which requires nmap and therefore cannot use prc as single letters 🙈
 onoremap pp i(
-" onoremap ss i[
+onoremap rr i[
 onoremap qq i"
 
 " for symmetry with Obsidian's vim, where the `is`
@@ -119,9 +119,20 @@ nnoremap Q @
 nnoremap ö `
 
 " quicker access to neovintageoues help docs
-nnoremap ? :help nv<CR>
+noremap ? :help nv<CR>
 
+""""""""""""""""""""""
+" Surround
+""""""""""""""""""""""
+" emulate some smarter punctuation bindings from Smarter MD Hotkeys
+nnoremap <C-5> ysiw]
+nnoremap <C-8> ysiw)
+nnoremap <C-2> ysiw"
+
+
+"""""""""""""""""""""""""""
 " NEOVINTAGEOUS LIMITATIONS
+"""""""""""""""""""""""""""
 " - normal `map` (as opposed to noremap) is not supported
 " - onoremap seems a little buggy, `onoremap i2 i"` blocks
 "   any i command 🙈

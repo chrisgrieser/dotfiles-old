@@ -81,7 +81,7 @@ nmap <C-t> xph
 
 " (actually works with nmap instead of onoremap here)
 nmap pp i(
-nmap ss i[
+nmap rr i[
 nmap qq i"
 
 " fix text object `is` not working
@@ -152,10 +152,8 @@ nmap Q @
 nmap ö `
 
 """"""""""""""""""""""
-" Limiations
-""""""""""""""""""""""
-
 " OBSIDIAN LIMITATIONS
+""""""""""""""""""""""
 " - text object `is` / `as` does not work
 " - U (as in changes in a line) does not work
 " - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js

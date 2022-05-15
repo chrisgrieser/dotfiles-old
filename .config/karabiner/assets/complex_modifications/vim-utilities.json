@@ -31,14 +31,14 @@
 			]
 		},
 		{
-			"description": "Press jf simultaneously to enter",
+			"description": "Press kl simultaneously to enter",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {
 						"simultaneous": [
-						    {"key_code": "j"},
-						    {"key_code": "f"}
+						    {"key_code": "k"},
+						    {"key_code": "l"}
 						]
 					},
 					"to": [
@@ -48,12 +48,12 @@
 			]
 		},
 		{
-			"description": "Focus Window & Hide Cursor by tapping left-cmd",
+			"description": "Focus Window & Hide Cursor by tapping left-option",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "left_command"},
-					"to": [{ "key_code": "left_command" } ],
+					"from": {"key_code": "left_option"},
+					"to": [{ "key_code": "left_option" } ],
 					"parameters": {
 					    "basic.to_if_alone_timeout_milliseconds": 250
 					},

@@ -124,7 +124,7 @@
 
 	// Mouse Keys
 	{ "keys": ["f16"], "command": "close" },
-	{ "keys": ["f13"], "command": "next_view_in_stack" },
+	{ "keys": ["f13"], "command": "next_view" },
 
    // Disable Accidental Triggering of Saving Modal
    { "keys": ["super+shift+s"], "command": "noop" },
