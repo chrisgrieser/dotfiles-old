@@ -106,8 +106,8 @@ vmap ii <Esc>i
 """"""""""""""""""""""
 
 " mirroring HL in Normal Mode
-imap LL <Esc>A
-imap HH <Esc>I
+imap <C-l> <Esc>A
+imap <C-h> <Esc>I
 
 " Kill line
 imap <C-k> <Esc>C
@@ -158,6 +158,7 @@ nmap ö `
 " - U (as in changes in a line) does not work
 " - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
-" - noremap not supported
+" - only `map`s supported, no support for nnoremap, inoremap, etc.
+" - `nnoremap` officially supported, but in practice buggy
 
-" however, using workaround via Karabiner elements:
+

@@ -12,6 +12,8 @@
 	    "<C-k>": false, // kill line backwards
 	    "<C-r>": false, // rename file
 	    "<C-t>": false, // transpose → Sublime built-in command
+	    "<C-h>": false, // go to BOL
+	    "<C-l>": false, // go to EOL
 	},
 
 	// Vim Mode

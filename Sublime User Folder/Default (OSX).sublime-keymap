@@ -26,9 +26,9 @@
 	},
 
 	// Vim Insert Mode Bindings
-	// imap LL <Esc>A & imap HH <Esc>I
-	// {"keys": ["H", "H"], "args": {"to": "bol"}, "command": "move_to"},
-	// {"keys": ["L", "L"], "args": {"to": "eol"}, "command": "move_to"},
+	// imap <C-l> <Esc>A & imap <C-h> <Esc>I
+	{"keys": ["ctrl+h"], "args": {"to": "bol"}, "command": "move_to"},
+	{"keys": ["ctrl+l"], "args": {"to": "eol"}, "command": "move_to"},
 
 	// Kill line, imap <C-k> <Esc>C
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
