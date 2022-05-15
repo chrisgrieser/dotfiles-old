@@ -2,11 +2,6 @@
 
 # configurations
 alias .star='open $STARSHIP_CONFIG'
-alias .zsh='open ~/.zshrc'
-
-alias rr='source ~/.zshrc'
-# https://stackoverflow.com/q/2518127
-# alias rr='exec zsh'
 
 # shortcuts
 alias q='exit'

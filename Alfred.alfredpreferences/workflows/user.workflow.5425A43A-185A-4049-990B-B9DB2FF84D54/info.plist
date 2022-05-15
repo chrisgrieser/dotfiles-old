@@ -139,6 +139,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D96BC2AD-EC81-4B13-B499-1B0FFC9EB952</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F3EA6027-C734-4625-9ECD-2FE2DA83829F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>DDC3D252-6578-4A57-A511-7C45C64C2CA1</key>
 		<array>
 			<dict>
@@ -157,6 +170,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4DD2CA0C-DA1D-4C4C-B207-AC70E83B3C4F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F3EA6027-C734-4625-9ECD-2FE2DA83829F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E30D1B8-EBD0-418C-B6A3-6E326DAA6032</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -238,6 +264,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>sf</string>
+				<key>subtext</key>
+				<string>Commit Message: '{query}'</string>
+				<key>text</key>
+				<string>⬆️ Git Push Shimmering Focus</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F50EE2DE-822A-4F52-915D-9312B6BD4582</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -261,27 +308,6 @@ zsh build.sh "$*"</string>
 			<string>8627A802-741F-4477-A445-AA3EA82ED4C8</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>sf</string>
-				<key>subtext</key>
-				<string>Commit Message: '{query}'</string>
-				<key>text</key>
-				<string>⬆️ Git Push Shimmering Focus</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F50EE2DE-822A-4F52-915D-9312B6BD4582</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -337,19 +363,6 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
@@ -371,6 +384,19 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>E28945AC-6D2E-4DD0-A8CD-A3BA57E7C0DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
@@ -384,6 +410,27 @@ zsh build.sh "$*"</string>
 			<string>8A0EEB06-8063-4533-80E2-DF4C26F6A399</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ git push</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -418,27 +465,6 @@ zsh build.sh "$*"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>B3464F95-B489-4113-82A7-9CCB3300B0E1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ git push</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>532ED943-AA0D-43A0-BBCF-3EBEA97FFD31</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -521,29 +547,6 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"	keystroke "i" using {command down, option down}	delay 0.4	keystroke "c" using {command down, shift down}end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3207C2A9-F28C-4B7F-89E9-525F8011B3AF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -575,6 +578,48 @@ lineNo="$*"
 			<string>CF0FFFAF-3C89-45A9-8EEA-244171D413FE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"	keystroke "i" using {command down, option down}	delay 0.4	keystroke "c" using {command down, shift down}end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3207C2A9-F28C-4B7F-89E9-525F8011B3AF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>obsidian://advanced-uri?settingid=obsidian-style-settings</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E3E53E94-0FC1-4954-B5F8-257313FB7EA7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -614,21 +659,67 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>svg</string>
+				<key>subtext</key>
 				<string></string>
-				<key>spaces</key>
+				<key>text</key>
 				<string></string>
-				<key>url</key>
-				<string>obsidian://advanced-uri?settingid=obsidian-style-settings</string>
-				<key>utf8</key>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E3E53E94-0FC1-4954-B5F8-257313FB7EA7</string>
+			<string>D96BC2AD-EC81-4B13-B499-1B0FFC9EB952</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>copied to the clipboard</string>
+				<key>title</key>
+				<string>✅ SVG converted to Data URI</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9E30D1B8-EBD0-418C-B6A3-6E326DAA6032</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>svg-to-data-uri.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F3EA6027-C734-4625-9ECD-2FE2DA83829F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -736,6 +827,15 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
+		<key>9E30D1B8-EBD0-418C-B6A3-6E326DAA6032</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>760</integer>
+		</dict>
 		<key>B3464F95-B489-4113-82A7-9CCB3300B0E1</key>
 		<dict>
 			<key>colorindex</key>
@@ -763,6 +863,13 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
+		<key>D96BC2AD-EC81-4B13-B499-1B0FFC9EB952</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>760</integer>
+		</dict>
 		<key>DDC3D252-6578-4A57-A511-7C45C64C2CA1</key>
 		<dict>
 			<key>colorindex</key>
@@ -787,6 +894,17 @@ lineNo="$*"
 			<integer>245</integer>
 			<key>ypos</key>
 			<integer>600</integer>
+		</dict>
+		<key>F3EA6027-C734-4625-9ECD-2FE2DA83829F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>svg converting</string>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>760</integer>
 		</dict>
 		<key>F50EE2DE-822A-4F52-915D-9312B6BD4582</key>
 		<dict>

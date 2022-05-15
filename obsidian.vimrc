@@ -50,7 +50,7 @@ nmap K 6k
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nmap <BS> hx
+nmap <BS> X
 vmap <BS> xh
 
 " allows Double Enter to add new line and indent

@@ -1,3 +1,27 @@
+# settings (zshrc)
+function settings () {
+	if [[ $# == 0 ]] ; then
+		SEARCH_FOR="$*"
+	else
+		SEARCH_FOR="$BUFFER"
+	fi
+	# shellcheck disable=SC2012
+	( cd "$ZSH_DOTFILE_LOCATION" || return
+	# shellcheck disable=SC1009,SC1056,SC1073,SC2035
+	SELECTED=$( { ls *.zsh | cut -d. -f1 ; ls .z* } | fzf \
+	           -0 -1 \
+	           --query "$SEARCH_FOR" \
+	           --height=75% \
+	           --layout=reverse \
+	           --info=hidden \
+	           )
+	if [[ $SELECTED != "" ]] ; then
+		[[ $SELECTED != .z* ]] && SELECTED="$SELECTED.zsh"
+		open "$SELECTED"
+	fi )
+}
+alias ,="settings"
+
 # Move to trash via Finder (allows retrievability)
 # no arg = all files in folder will be deleted
 function del () {
@@ -25,7 +49,7 @@ function mkcd () {
 }
 
 # restart terminal
-function rrr () {
+function rr () {
 	# run in subshell to surpress output
 	(nohup "$ZSH_DOTFILE_LOCATION"/restart_terminal.zsh >/dev/null &)
 }

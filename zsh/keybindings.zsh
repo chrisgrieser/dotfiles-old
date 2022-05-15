@@ -1,7 +1,6 @@
 bindkey "\e\e" quitSession # Double Esc
 bindkey "^P" copyLocation
 bindkey "^B" copyBuffer
-bindkey "^O" open-zshrc # triggered via Alfred als "cmd+,"
 
 bindkey "^Z" undo
 bindkey "^U" kill-buffer
@@ -32,26 +31,4 @@ copyBuffer () {
 }
 zle -N copyBuffer
 
-open-zshrc () {
-	if [[ $# == 0 ]] ; then
-		SEARCH_FOR="$*"
-	else
-		SEARCH_FOR="$BUFFER"
-	fi
-	# shellcheck disable=SC2012
-	( cd "$ZSH_DOTFILE_LOCATION" || return
-	# shellcheck disable=SC1009,SC1056,SC1073,SC2035
-	SELECTED=$( { ls *.zsh | cut -d. -f1 ; ls .z* } | fzf \
-	           -0 -1 \
-	           --query "$SEARCH_FOR" \
-	           --height=75% \
-	           --layout=reverse \
-	           --info=hidden \
-	           )
-	if [[ $SELECTED != "" ]] ; then
-		[[ $SELECTED != .z* ]] && SELECTED="$SELECTED.zsh"
-		open "$SELECTED"
-	fi )
-	zle reset-prompt # https://stackoverflow.com/questions/52325626/zsh-refresh-prompt-after-running-zle-widget
-}
-zle -N open-zshrc
+
