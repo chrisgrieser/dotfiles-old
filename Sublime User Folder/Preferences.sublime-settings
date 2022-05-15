@@ -3,6 +3,7 @@
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": false, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
+	"vintageous_enable_surround": true,
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {

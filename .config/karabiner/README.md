@@ -16,6 +16,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - Left-click by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window. 
 - Hide the Cursor by tapping `alt-right`.[^2] Useful for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 - Scroll up/down globally via `alt+j/k`.
+- Press `j` and `f` "simultaneously" to send an enter.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json

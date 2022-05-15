@@ -25,8 +25,8 @@
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"pointing_button": "button4"},
-					"to_after_key_up": [{"key_code": "f13" } ],
+					"from": {"key_code": "right_shift"},
+					"to": [{"key_code": "right_shift" } ],
 					"to_if_alone": [
 						{
 							"key_code": "c",
@@ -35,10 +35,7 @@
 						},
 						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
 						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
-					],
-					"parameters": {
-						"basic.to_if_held_down_threshold_milliseconds": 300
-					}
+					]
 				}
 			]
 		}

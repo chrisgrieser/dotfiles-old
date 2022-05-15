@@ -84,7 +84,7 @@ noremap ä crt
 " double letters for symmetry with Obsidian's Vim Emulation
 " which requires nmap and therefore cannot use psc 🙈
 onoremap pp i(
-onoremap ss i[
+" onoremap ss i[
 onoremap qq i"
 
 " for symmetry with Obsidian's vim, where the `is`
