@@ -1,39 +1,22 @@
 {
-	"title": "CapsLock to Hyper-Esc",
+	"title": "Shift-Backspace to Forward Delete",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
-	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json",
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/shift-backspace.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "CapsLock to Hyper/Escape",
+			"description": "Shift-Backspace to Forward Delete",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "caps_lock"},
-					"to_if_alone": [{"key_code": "escape"} ],
-					"to": [
-						{
-							"key_code": "right_shift",
-							"modifiers": ["right_command", "right_control", "right_option"]
-						}
-					]
-				},
-				{
-					"description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
 					"from": {
-						"key_code": "comma",
-						"modifiers": {
-							"mandatory": [
-								"command",
-								"shift",
-								"option",
-								"control"
-							]
-						}
+						"key_code": "delete_or_backspace",
+						"modifiers": {"mandatory": ["shift"] }
 					},
-					"to": [],
-					"type": "basic"
+					"to": {
+						"key_code": "delete_forward"
+					}
 				}
 			]
 		}

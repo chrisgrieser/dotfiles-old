@@ -28,8 +28,15 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json
 ```
 
+## Shift Backspace
+- `shift-backspace` to delete forwards. That's it.
+
+```text
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-backspace.json
+```
+
 ## fn Launcher
-`fn + {letter}` launches/switches to a pre-defined App
+`fn + {letter}` launches/switches to a pre-defined app
 - `fn + c` → `C`alendar → BusyCal
 - `fn + b` → `B`rowser → Brave Browser
 - `fn + o` → `O`bsidian
@@ -43,11 +50,12 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + z`[^1] → `Z`oom
 - `fn + k` → `K`arabiner Elements
 - `fn + a` → `A`lfred Preferences
+- `fn + i` → `I`noreader
 - `fn + shift + k` → `K`arabiner Event Viewer
 
-Since pressing `fn` interferes with the built-in macOS emoji insertion key, you will have to disable it (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . If you still want to use the `fn` key.
+Since pressing `fn` interferes with the built-in macOS emoji insertion key, it needs to be disabled (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . 
 
-`fn` pressed alone opens the emoji insertion modal (optional)
+If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/fn-launcher.json
