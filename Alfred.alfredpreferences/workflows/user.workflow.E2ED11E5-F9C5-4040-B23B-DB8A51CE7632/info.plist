@@ -276,7 +276,7 @@
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>👨‍💻Grant a script Permission</string>
+				<string>👨‍💻Grant Script Permission</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -531,27 +531,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>services</string>
-				<key>subtext</key>
-				<string>Mac OS System Settings</string>
-				<key>text</key>
-				<string>Services</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -572,6 +551,27 @@
 			<string>C83E96A2-2B6B-4B7F-9978-E373B263ADC0</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>services</string>
+				<key>subtext</key>
+				<string>Mac OS System Settings</string>
+				<key>text</key>
+				<string>Services</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -860,21 +860,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -892,6 +877,21 @@
 			<string>B5CCCF47-D817-4059-95F2-496EA3C510C2</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>

@@ -740,12 +740,12 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.sublimetext.4</string>
-					<string>dexterleng.vimac</string>
 					<string>md.obsidian</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.iconfactory.Twitterrific5</string>
 					<string>com.apple.finder</string>
+					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.sublimetext.4</string>
+					<string>dexterleng.vimac</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -780,12 +780,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.brave.Browser</string>
 					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
 					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
+					<string>com.sublimetext.4</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -807,7 +807,7 @@
 				<key>script</key>
 				<string>tell application "System Events" 
 	key code 123 using {option down}
-	delay 0.15
+	delay 0.18
 	key code 124 using {option down, shift down}
 end tell</string>
 				<key>scriptargtype</key>
