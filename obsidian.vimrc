@@ -64,9 +64,6 @@ nmap <Space> ciw
 nmap <S-Space> daw
 vmap <Space> c
 
-" switch case (~ not directly available on German keyboards)
-nmap ü ~
-
 " Imitating Abolish's Titlecase (crt)
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap ä :smartcaseswitch
@@ -81,7 +78,7 @@ nmap <C-t> xph
 
 " (actually works with nmap instead of onoremap here)
 nmap pp i(
-nmap rr i[
+nmap vv i[
 nmap qq i"
 
 " fix text object `is` not working
@@ -96,12 +93,6 @@ nmap X (c)
 imap jj <Esc>
 rmap jj <Esc>
 " already built in: presss v in visual mode to go back
-
-" quick switch to visual mode
-imap vv <Esc>v
-
-" quick switch to insert mode
-vmap ii <Esc>i
 
 """"""""""""""""""""""
 " Insert Mode

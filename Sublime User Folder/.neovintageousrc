@@ -67,16 +67,12 @@ nnoremap <Space> ciw
 nnoremap <S-Space> daw
 vnoremap <Space> c
 
-" switch case for a character (~ not directly available on German keyboards)
-nnoremap ü ~
-
 " Abolish: Titlecase
-noremap ä crt
+nnoremap ä crt
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime
 " nnoremap <C-t> xph
-
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
@@ -84,7 +80,7 @@ noremap ä crt
 " double [] for symmetry with Obsidian's Vim Emulation
 " which requires nmap and therefore cannot use prc as single letters 🙈
 onoremap pp i(
-onoremap rr i[
+onoremap vv i[
 onoremap qq i"
 
 " for symmetry with Obsidian's vim, where the `is`
@@ -105,8 +101,7 @@ nnoremap X das
 " inoremap jj <Esc>
 " rnoremap jj <Esc>
 
-" quick switch to insert mode
-vnoremap ii <Esc>i
+vnoremap J <Esc>
 
 """"""""""""""""""""""
 " Misc
