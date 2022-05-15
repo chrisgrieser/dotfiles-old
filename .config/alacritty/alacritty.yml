@@ -108,7 +108,7 @@ key_bindings:
     mods: Command
     chars: "\eOF"
   - key: L
-    mods: Command|Shift|Control|Alt
+    mods: Command
     command:
       program: sh
       args:

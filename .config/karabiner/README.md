@@ -5,16 +5,10 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 ## Capslock to Hyper / Esc
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
+- `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json
-```
-
-## `Hyper + hjkl` to Arrow Keys
-
-
-```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-move-per-word.json
 ```
 
 ## Brackets sent in US layout

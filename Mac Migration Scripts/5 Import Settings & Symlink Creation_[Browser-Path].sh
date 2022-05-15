@@ -29,17 +29,16 @@ ln -s "$SYMLINK_LOC/zsh/.zlogin" ~
 
 ln -s "$SYMLINK_LOC/.searchlink" ~
 ln -s "$SYMLINK_LOC/.shellcheckrc" ~
-ln -s "$SYMLINK_LOC/.markdownlintrc" ~
 ln -s "$SYMLINK_LOC/.stylelintrc.json" ~
 ln -s "$SYMLINK_LOC/.gitconfig" ~
 ln -s "$SYMLINK_LOC/.eslintrc.json" ~
-ln -s "$SYMLINK_LOC/.finicky.js" ~
 ln -s "$SYMLINK_LOC/.gitignore_global" ~
 ln -s "$SYMLINK_LOC/pandoc" ~/.pandoc
-
 ln -s "$SYMLINK_LOC/.vimrc" ~
+
 ln -s "$SYMLINK_LOC/.pylintrc" ~
 ln -s "$SYMLINK_LOC/.flake8" ~
+ln -s "$SYMLINK_LOC/.markdownlint.yaml" ~
 
 # .config
 mv ~/.config ~/.Trash
