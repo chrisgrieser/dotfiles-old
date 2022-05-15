@@ -80,11 +80,11 @@ noremap ä crt
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
+
 " double letters for symmetry with Obsidian's Vim Emulation
 " which requires nmap and therefore cannot use psc 🙈
 onoremap pp i(
 onoremap ss i[
-onoremap cc i{
 
 " for symmetry with Obsidian's vim, where the `is`
 " text object does not work (and is imitated via `(c)` )
@@ -117,5 +117,16 @@ nnoremap Q @
 " Goto Mark: remapping since ` not working
 nnoremap ö `
 
-" quicker access to help docs command-ids
+" quicker access to neovintageoues help docs
 nnoremap ? :help nv<CR>
+
+" NEOVINTAGEOUS LIMITATIONS
+" - normal `map` (as opposed to noremap) is not supported
+" - onoremap seems a little buggy, `onoremap i2 i"` blocks
+"   any i command 🙈
+" - as opposed to Obsdian, excommands (:help) need to be
+"   confirmed with an <CR>
+" - Neovintageous does not allow for any insert mode
+"   motifications, these need to be done in Sublime
+"   (but without modifier keys (e.g. "HH"), they tend
+"   to conflict with Neovintageous bindings

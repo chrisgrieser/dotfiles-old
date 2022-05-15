@@ -81,7 +81,6 @@ nmap <C-t> xph
 " (actually works with nmap instead of onoremap here)
 nmap pp i(
 nmap ss i[
-nmap cc i{
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
@@ -155,13 +154,10 @@ nmap ö `
 """"""""""""""""""""""
 
 " OBSIDIAN LIMITATIONS
-" text object `is` / `as` does not work
-" U (as in changes in a line) does not work
-" https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
-" g0 and g$ do no work (even though listed in CodeMirror's vim.js)
-" noremap not supported
+" - text object `is` / `as` does not work
+" - U (as in changes in a line) does not work
+" - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
+" - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
+" - noremap not supported
 
-" LIMITATIONS DUE TO GERMAN KEYBOARD / MAC
-" all keys that require pressing alt/opt to be created (e.g. [ or @) and
-" all keys requiring a follow-up key (^`´) are also not working
 " however, using workaround via Karabiner elements:
