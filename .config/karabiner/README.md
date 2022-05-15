@@ -13,7 +13,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ## Vim Utilities
 - Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
-- Hide the Cursor by tapping `alt-right`[^2] Useful for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Left-click by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window. 
+- Hide the Cursor by tapping `alt-right`.[^2] Useful for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 - Scroll up/down globally via `alt+j/k`.
 
 ```text
@@ -48,11 +49,13 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + e` → `E`ditor → Sublime Text
 - `fn + y`[^1] → `Y`ouTube
 - `fn + z`[^1] → `Z`oom
-- `fn + a` → `A`lfred Preferences
+- `fn + p` → `P`DF Reader → Highlights
 - `fn + i` → `I`noreader
 - `fn + m` → `M`ail → Mimestream
-- `fn + t` → Better`T`ouchTool
+- `fn + w` → `G`oogle Docs
 - `fn + w` → Microsoft `W`ord
+- `fn + a` → `A`lfred Preferences
+- `fn + t` → Better`T`ouchTool
 - `fn + k` → `K`arabiner Elements
 - `fn + shift + k` → `K`arabiner Event Viewer
 

@@ -1,5 +1,5 @@
 {
-	"title": "Middle-Click Quit",
+	"title": "Middle-Click Improvements",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json",

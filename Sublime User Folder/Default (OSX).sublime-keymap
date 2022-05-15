@@ -250,5 +250,12 @@
 		{ "key": "auto_complete_visible" },
 	] },
 
+	// to avoid `Esc` leaving insert mode and autocomplete
+	{ "keys": ["tab"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
 ]
 

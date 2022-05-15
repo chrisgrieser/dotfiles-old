@@ -58,9 +58,9 @@
 		<key>key</key>
 		<integer>-1</integer>
 		<key>mod</key>
-		<integer>524288</integer>
+		<integer>-1</integer>
 		<key>string</key>
-		<string>double tap</string>
+		<string></string>
 	</dict>
 	<key>showWithCtrl</key>
 	<false/>
