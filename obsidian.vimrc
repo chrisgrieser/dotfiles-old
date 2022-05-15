@@ -132,26 +132,6 @@ exmap unfoldall obcommand editor:unfold-all
 nmap zn :unfoldall
 
 """"""""""""""""""""""
-" Text Objects
-""""""""""""""""""""""
-
-"pseudo-map 56 to [] ( [] not working + no more modifier key)
-nmap i5 i[
-nmap i6 i]
-nmap a5 a[
-nmap a6 a]
-
-"pseudo-map 89 to () (= no modifier key needed anymore)
-nmap i8 i(
-nmap i9 i)
-nmap a8 a(
-nmap a9 a)
-
-"pseudo-map 2 to " (= no modifier key needed anymore)
-nmap i2 i"
-nmap a2 a"
-
-""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""
 " quicker access to Obsidian command-ids

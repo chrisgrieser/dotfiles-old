@@ -1,4 +1,16 @@
 {
+	// neovintageous
+	"vintageous_i_escape_jj": true, // = imap jj <Esc>
+	"vintageous_use_sys_clipboard": false, // = set clipboard=unnamed
+	"highlightedyank_duration": 10000,
+	"vintageous_handle_keys": {
+	    "<C-n>": false,
+	    "<C-j>": false,
+	    "<C-k>": false,
+	    "<C-p>": false,
+	    "<C-R>": false,
+	},
+
 	// Vim Mode
 	"line_numbers": true, // set to true when using vim
 	"relative_line_numbers": true,
