@@ -119,39 +119,6 @@
                         ]
                     },
                     {
-                        "description": "Tapping Right Mouse Button in Browser to open link in background (Safari / Brave)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 75
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Scroll via alt+j/k",
                         "manipulators": [
                             {
@@ -405,33 +372,6 @@
                                     {
                                         "select_input_source": {
                                             "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hide Cursor by tapping right-opt",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_option"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_option"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "90%"
-                                            }
                                         }
                                     }
                                 ],
@@ -785,7 +725,7 @@
                         ]
                     },
                     {
-                        "description": "Left-Click by tapping left-option",
+                        "description": "Focus Window & Hide Cursor by tapping left-option",
                         "manipulators": [
                             {
                                 "from": {
@@ -799,6 +739,53 @@
                                 "to_if_alone": [
                                     {
                                         "pointing_button": "button1"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "90%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Holding Right Mouse Button searches Google for selected text",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 1000
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button2"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 100,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""
                                     }
                                 ],
                                 "type": "basic"

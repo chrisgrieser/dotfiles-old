@@ -1,5 +1,5 @@
 {
-	"title": "Middle-Click Improvements",
+	"title": "Mouse Click Trickery",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-improvements.json",
@@ -14,7 +14,7 @@
 					"to": [
 						{
 							"key_code": "q",
-							"modifiers": ["right_command"]
+							"modifiers": ["command"]
 						}
 					]
 				}
@@ -39,6 +39,27 @@
 					],
 					"parameters": {
 						"basic.to_if_held_down_threshold_milliseconds": 75
+					}
+				}
+			]
+		},
+		{
+			"description": "Holding Right Mouse Button searches Google for selected text",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"pointing_button": "button2"},
+					"to_if_held_down": [
+						{
+							"key_code": "c",
+							"modifiers": ["command"]
+						},
+						{ "key_code": "vk_none", "hold_down_milliseconds": 100 },
+						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
+					],
+					"to": [{"pointing_button": "button2" } ],
+					"parameters": {
+						"basic.to_if_held_down_threshold_milliseconds": 1000
 					}
 				}
 			]

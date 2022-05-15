@@ -63,7 +63,10 @@
       },
       {
         "direct": "U",
-        "action": "G_goparent"
+        "action": "G_close",
+        "moreCloseurl": "chrome://newtab/",
+        "moreClosesel": "chrome",
+        "moreCloseopts": "close"
       }
     ],
     "gestureui": true,
@@ -75,7 +78,7 @@
     "strokecolor": "792ECF",
     "strokeopa": "0.7",
     "strokewidth": "6",
-    "tooltip": true,
+    "tooltip": false,
     "tooltipcolor": "120310",
     "tooltipopa": 0.9,
     "tooltipwidth": "23"
@@ -86,7 +89,7 @@
     "ddirectopa": 0.9,
     "dholdkey": "alt",
     "dragimage": true,
-    "draginput": true,
+    "draginput": false,
     "draglink": true,
     "dragtext": true,
     "dragui": true,
@@ -125,12 +128,26 @@
       }
     ],
     "setdragurl": true,
-    "text": []
+    "text": [
+      {
+        "direct": "D",
+        "action": "T_copytext"
+      },
+      {
+        "direct": "R",
+        "action": "T_search",
+        "moreDes": "Use %name to search \"%s\"",
+        "moreTsearch": "sgoogle",
+        "moreTarget": "newfront",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
+      }
+    ]
   },
   "scroll": {
     "scrollaccele": 1,
     "scrollspeed": 3,
-    "smooth": true
+    "smooth": false
   },
   "scrollgesture": {
     "fastSwitch": false,
