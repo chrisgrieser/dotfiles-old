@@ -74,11 +74,32 @@ nmap ü ~
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap s (c)
+nmap X (c)
 
 " transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>xpi
 nmap <C-t> xph
+
+""""""""""""""""""""""
+" Text Objects
+""""""""""""""""""""""
+" (actually works with nmap instead of onoremap here)
+
+"pseudo-map 56 to [] ( [] not working + no more modifier key)
+nmap i5 i[
+nmap i6 i]
+nmap a5 a[
+nmap a6 a]
+
+"pseudo-map 89 to () (= no modifier key needed anymore)
+nmap i8 i(
+nmap i9 i)
+nmap a8 a(
+nmap a9 a)
+
+"pseudo-map 2 to " (= no modifier key needed anymore)
+nmap i2 i"
+nmap a2 a"
 
 """"""""""""""""""""""
 " Switch Modes
@@ -157,3 +178,4 @@ nmap ö `
 " LIMITATIONS DUE TO GERMAN KEYBOARD / MAC
 " all keys that require pressing alt/opt to be created (e.g. [ or @) and
 " all keys requiring a follow-up key (^`´) are also not working
+" however, using workaround via Karabiner elements:

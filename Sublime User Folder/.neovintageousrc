@@ -30,15 +30,16 @@ nnoremap + *
 nnoremap - /
 
 " Quickly remove search highlights
-nnoremap _ :nohl<CR>
+nnoremap _ ::nohlsearch<CR>
 
 """"""""""""""""""""""
 " Nagivation
 """"""""""""""""""""""
 
 " Have j and k navigate visual lines rather than logical ones
-nnoremap j gj
-nnoremap k gk
+" (not useful for code editor, probably?
+" nnoremap j gj
+" nnoremap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nnoremap H ^
@@ -75,24 +76,44 @@ vnoremap <Space> c
 " switch case (~ not directly available on German keyboards)
 nnoremap ü ~
 
-" fix text object `is` not working
-" since noremap is not supported in Obsidian, 'nnoremap cis (c)' to avoid recursion does not work
-nnoremap s (c)
-
 " transpose characters, consistent with Emacs/Mac
-nnoremap <C-t> xph
+" done via Sublime
+" nnoremap <C-t> xph
+
+""""""""""""""""""""""
+" Text Objects
+""""""""""""""""""""""
+" (actually works with nmap instead of onoremap here)
+
+"pseudo-map 56 to []
+onoremap i5 i[
+onoremap i6 i]
+onoremap a5 a[
+onoremap a6 a]
+
+"pseudo-map 89 to ()
+onoremap i8 i(
+onoremap i9 i)
+onoremap a8 a(
+onoremap a9 a)
+
+"pseudo-map 2 to "
+onoremap i2 i"
+onoremap a2 a"
 
 """"""""""""""""""""""
 " Insert Mode
 """"""""""""""""""""""
 
-
+" implemented via in "Default (OSX).sublime-keymap"
+" since neovintageousrc cannot do that on
 
 """"""""""""""""""""""
 " Switch Modes
 """"""""""""""""""""""
 " implemented via preferenc 'vintageous_i_escape_jj'
 " inoremap jj <Esc>
+" rnoremap jj <Esc>
 
 " quick switch to insert mode
 vnoremap ii <Esc>i
@@ -109,3 +130,9 @@ nnoremap ö `
 
 " quicker access to help docs command-ids
 nnoremap ? :help nv<CR>
+
+""""""""""""""""""""""
+" Vim Plugin
+""""""""""""""""""""""
+" Abolish
+coerce
