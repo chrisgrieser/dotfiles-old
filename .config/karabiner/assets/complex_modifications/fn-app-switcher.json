@@ -180,14 +180,21 @@
 					},
 					"to": [
 						{
-							"key_code": "fn",
-							"lazy": true
+							"key_code": "fn"
 						}
 					],
 					"to_if_alone": [
 						{
 							"key_code": "spacebar",
 							"modifiers": ["right_command", "right_control"]
+						}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^com\\.runningwithcrayons\\.Alfred$"
+							]
 						}
 					]
 				}

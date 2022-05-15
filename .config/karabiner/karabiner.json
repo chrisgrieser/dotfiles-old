@@ -58,48 +58,6 @@
                         ]
                     },
                     {
-                        "description": "use fn alone to trigger emoji inserter",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "fn"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "fn",
-                                        "lazy": true
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": [
-                                            "right_command",
-                                            "right_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Eject Work Mode",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "eject"
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "osascript -e \"tell application id \\\"com.runningwithcrayons.Alfred\\\" to run trigger \\\"eject-to-work-mode\\\" in workflow \\\"de.chris-grieser.moom-zoom\\\"\""
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Middle-Click quits application",
                         "manipulators": [
                             {
@@ -849,49 +807,32 @@
                         ]
                     },
                     {
-                        "description": "Focus Window & Hide Cursor by tapping left-option",
+                        "description": "use fn alone to trigger emoji inserter",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.runningwithcrayons\\.Alfred$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "left_option"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_option"
+                                        "key_code": "fn"
                                     }
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "50%",
-                                                "y": "50%"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "90%"
-                                            }
-                                        }
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "right_command",
+                                            "right_control"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"

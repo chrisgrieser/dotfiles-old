@@ -48,12 +48,12 @@
 			]
 		},
 		{
-			"description": "Focus Window & Hide Cursor by tapping left-option",
+			"description": "Focus Window & Hide Cursor by tapping right-option",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "left_option"},
-					"to": [{ "key_code": "left_option" } ],
+					"from": {"key_code": "right_option"},
+					"to": [{ "key_code": "right_option" } ],
 					"parameters": {
 					    "basic.to_if_alone_timeout_milliseconds": 250
 					},
