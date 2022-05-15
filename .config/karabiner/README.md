@@ -5,17 +5,19 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 ## Capslock to Hyper / Esc
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
-- `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json
 ```
 
-## Brackets sent in US layout
-Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
+## Vim Utilities
+- Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
+- `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
+- Hide the Cursor by tapping `alt-right`[^2] Useful for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Scroll up/down globally via `alt+j/k`.
 
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/brackets-sent-in-us-layout.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
 ```
 
 ## Mouse Click Improvements
@@ -54,3 +56,5 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 Edit the keys and apps in the JSON to your liking.
 
 [^1]: On non-German keyboards, `y` and `z` are switched.
+
+[^2]: Technically speaking, moves it slightly above to the bottom right

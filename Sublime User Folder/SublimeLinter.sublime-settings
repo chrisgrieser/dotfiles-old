@@ -27,9 +27,9 @@
 
 	"linters": {
 		// this ensures that markdownlint's rc is found. also no ~ is needed
-		// trailing spaces disabled as Sublime already does take care of that
+		// trailing spaces and single trailing new line disabled as Sublime already does take care of that
 		"markdownlint": {
-			"args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces"]
+			"args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces", "--disable=single-trailing-newline"]
 		},
 		"stylelint": {
 			// "filter_errors": "warning: ",

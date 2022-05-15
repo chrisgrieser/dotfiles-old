@@ -398,7 +398,48 @@
                         ]
                     },
                     {
-                        "description": "Hyper + hjkl to Arrow Keys",
+                        "description": "Scroll via alt+j/k",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "mouse_key": {
+                                            "vertical_wheel": 200
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "mouse_key": {
+                                            "vertical_wheel": -200
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + hjkl to Arrow Keys (requires Capslock to Hyper Key)",
                         "manipulators": [
                             {
                                 "from": {
@@ -479,7 +520,7 @@
                         ]
                     },
                     {
-                        "description": "[], {} sent as US layout for vim",
+                        "description": "[], {} from German layouts sent as US layout",
                         "manipulators": [
                             {
                                 "from": {
@@ -497,7 +538,7 @@
                                         }
                                     },
                                     {
-                                        "hold_down_milliseconds": 10,
+                                        "hold_down_milliseconds": 20,
                                         "key_code": "vk_none"
                                     },
                                     {
@@ -529,7 +570,7 @@
                                         }
                                     },
                                     {
-                                        "hold_down_milliseconds": 10,
+                                        "hold_down_milliseconds": 20,
                                         "key_code": "vk_none"
                                     },
                                     {
@@ -561,7 +602,7 @@
                                         }
                                     },
                                     {
-                                        "hold_down_milliseconds": 10,
+                                        "hold_down_milliseconds": 20,
                                         "key_code": "vk_none"
                                     },
                                     {
@@ -596,7 +637,7 @@
                                         }
                                     },
                                     {
-                                        "hold_down_milliseconds": 10,
+                                        "hold_down_milliseconds": 20,
                                         "key_code": "vk_none"
                                     },
                                     {
@@ -610,6 +651,33 @@
                                     {
                                         "select_input_source": {
                                             "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hide Cursor by tapping right-opt",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_option"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "90%"
+                                            }
                                         }
                                     }
                                 ],
