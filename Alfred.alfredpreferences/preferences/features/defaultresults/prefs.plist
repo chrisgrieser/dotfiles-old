@@ -11,6 +11,8 @@
 	<true/>
 	<key>showFolders</key>
 	<true/>
+	<key>showPreferences</key>
+	<false/>
 	<key>showTextFiles</key>
 	<true/>
 	<key>showUserDefined</key>

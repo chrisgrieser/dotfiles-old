@@ -12,19 +12,33 @@
 					"type": "basic",
 					"from": { "key_code": "right_option" },
 					"to": [
-						{
-							"select_input_source": {
-								"input_source_id": "^com\\.apple\\.keylayout\\.US$"
-							}
-						}
+						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
 					],
 					"to_after_key_up": [
-						{
-							"select_input_source": {
-								"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-							}
-						}
+						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
+				}
+			]
+		},
+		{
+			"description": "one button switch",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": { "key_code": "semicolon" },
+					"to": [
+						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} }
+					],
+					"to_if_held_down": [
+						{ "key_code": "semicolon" }
+					],
+					"to_after_key_up": [
+						{"select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+					],
+
+					"parameters": {
+					    "basic.to_if_held_down_threshold_milliseconds": 20
+					}
 				}
 			]
 		}

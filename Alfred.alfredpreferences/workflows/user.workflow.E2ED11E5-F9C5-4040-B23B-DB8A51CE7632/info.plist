@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>30E018C2-606F-4133-A2FD-6CFE36EF700D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64807789-BCE9-4593-91B6-270CFEF00D5B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>378FF7C8-8F26-4E09-9BE0-060F90F8A05C</key>
 		<array>
 			<dict>
@@ -195,19 +208,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5C9481C7-1845-409F-8701-5F57D97C931B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C28B2325-B889-4E3E-850D-4823E11A9FBD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>82CAA0B6-576C-4648-953F-A0A3E49502AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -534,39 +534,18 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>custom keyboard</string>
+				<string>services</string>
 				<key>subtext</key>
 				<string>Mac OS System Settings</string>
 				<key>text</key>
-				<string>Custom Keyboard Shortcuts</string>
+				<string>Services</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>C28B2325-B889-4E3E-850D-4823E11A9FBD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hot corners</string>
-				<key>subtext</key>
-				<string>System Preferences.app</string>
-				<key>text</key>
-				<string>Hot Corners</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>8ED576C2-82CE-41ED-A2BF-643C27F7E8C9</string>
+			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -597,6 +576,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hot corners</string>
+				<key>subtext</key>
+				<string>System Preferences.app</string>
+				<key>text</key>
+				<string>Hot Corners</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8ED576C2-82CE-41ED-A2BF-643C27F7E8C9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -616,27 +616,6 @@
 			<string>7F0B2953-8162-4E8B-9916-BE313A221630</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>services</string>
-				<key>subtext</key>
-				<string>Mac OS System Settings</string>
-				<key>text</key>
-				<string>Services</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6C3D67FF-3F64-41B4-A2E2-095301BD8267</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -688,42 +667,6 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>accessibility</string>
-				<key>subtext</key>
-				<string>System Preferences.app</string>
-				<key>text</key>
-				<string>Accessibility</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>72BE8298-0231-4293-BE78-E6E6085F8BC5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/UniversalAccessPref.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
 				<string>accessibility keyboard</string>
 				<key>subtext</key>
 				<string>Mac OS System Settings</string>
@@ -736,6 +679,27 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>CA8A2A7F-193A-400B-B0CB-DD420D4E8D75</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>accessibility</string>
+				<key>subtext</key>
+				<string>System Preferences.app</string>
+				<key>text</key>
+				<string>Accessibility</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>72BE8298-0231-4293-BE78-E6E6085F8BC5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -759,6 +723,65 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>DFCEAF51-C114-4F04-9A73-39E563A7808E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/UniversalAccessPref.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>C9B4E770-DAB1-4E77-96ED-4961E24634C9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>accessibility display</string>
+				<key>subtext</key>
+				<string>Mac OS System Settings</string>
+				<key>text</key>
+				<string>🖥 Accessibility Display</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>30E018C2-606F-4133-A2FD-6CFE36EF700D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Preferences"	activate	reveal anchor "Display" of pane id "com.apple.preference.universalaccess"end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64807789-BCE9-4593-91B6-270CFEF00D5B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -837,6 +860,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -854,21 +892,6 @@
 			<string>B5CCCF47-D817-4059-95F2-496EA3C510C2</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1006,7 +1029,7 @@
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>585</integer>
+			<integer>475</integer>
 		</dict>
 		<key>13E3EAD9-B10B-4042-BAE9-4CE466218B91</key>
 		<dict>
@@ -1016,6 +1039,15 @@
 			<integer>235</integer>
 			<key>ypos</key>
 			<integer>825</integer>
+		</dict>
+		<key>30E018C2-606F-4133-A2FD-6CFE36EF700D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>705</integer>
 		</dict>
 		<key>34899617-63CA-4A4C-9FF7-D1457B153E35</key>
 		<dict>
@@ -1087,6 +1119,15 @@
 			<key>ypos</key>
 			<integer>710</integer>
 		</dict>
+		<key>64807789-BCE9-4593-91B6-270CFEF00D5B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>705</integer>
+		</dict>
 		<key>6A8148B6-930D-4213-9DC4-2E33F591F8BD</key>
 		<dict>
 			<key>colorindex</key>
@@ -1103,7 +1144,7 @@
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>360</integer>
 		</dict>
 		<key>72BE8298-0231-4293-BE78-E6E6085F8BC5</key>
 		<dict>
@@ -1209,7 +1250,7 @@
 			<key>xpos</key>
 			<integer>235</integer>
 			<key>ypos</key>
-			<integer>585</integer>
+			<integer>475</integer>
 		</dict>
 		<key>B2C13A68-FC87-4C88-A98E-CB1989CE5DBE</key>
 		<dict>
@@ -1238,15 +1279,6 @@
 			<key>ypos</key>
 			<integer>350</integer>
 		</dict>
-		<key>C28B2325-B889-4E3E-850D-4823E11A9FBD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>355</integer>
-		</dict>
 		<key>C83E96A2-2B6B-4B7F-9978-E373B263ADC0</key>
 		<dict>
 			<key>colorindex</key>
@@ -1254,7 +1286,7 @@
 			<key>xpos</key>
 			<integer>235</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>360</integer>
 		</dict>
 		<key>C9B4E770-DAB1-4E77-96ED-4961E24634C9</key>
 		<dict>
@@ -1272,7 +1304,7 @@
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>590</integer>
 		</dict>
 		<key>DFCEAF51-C114-4F04-9A73-39E563A7808E</key>
 		<dict>
@@ -1281,7 +1313,7 @@
 			<key>xpos</key>
 			<integer>235</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>590</integer>
 		</dict>
 		<key>F62D5407-A26D-4775-8F1A-36A43B196C04</key>
 		<dict>

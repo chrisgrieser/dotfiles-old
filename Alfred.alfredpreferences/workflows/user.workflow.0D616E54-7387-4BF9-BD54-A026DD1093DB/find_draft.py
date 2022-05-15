@@ -58,24 +58,23 @@ for x in draftMatch:
 
 	# subtitle construction
 	# use "%e. %b %Y %H:%M" for date and time
-	json_item['subtitle'] = time.strftime('%e. %b %Y', time.localtime(x[3] + INT_SQLLITE_EPOCH))
+	json_item['subtitle'] = time.strftime('%e %b', time.localtime(x[3] + INT_SQLLITE_EPOCH))
 	if len(draft_tags) != 0:
-		json_item['subtitle'] += " ◼︎ #" + " #".join(tags_arr)
+		json_item['subtitle'] += " ◼︎ #" + "  #".join(tags_arr)
 
 	# UUID
 	json_item['arg'] = x[0]
 	json_item['uid'] = x[0]
-	json_item['match'] = draftTitle + " " + "#" + " #".join(tags_arr)
 	arr_items.append(json_item)
 
 # new draft option
 newdraft = {}
 newdraft['title'] = "new Draft with title: '" + STR_ARG + "'"
 newdraft['arg'] = STR_ARG
-newdraft['arg'] = STR_ARG
 newdraft['icon'] = {"path": "new draft.png"}
 newdraft['uid'] = 'newdraft'
 arr_items.append(newdraft)
 
+# jsonfy
 obj_output = {"items": arr_items}
 sys.stdout.write(json.dumps(obj_output))
