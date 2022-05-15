@@ -10,44 +10,11 @@
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "right_shift"},
-					"to": [{"key_code": "right_shift"} ],
-					"to_if_alone": [
-						{
-							"key_code": "right_arrow",
-							"modifiers": ["right_option"],
-							"lazy": true
-						}
-					]
-				},
-				{
-					"type": "basic",
-					"from": {"key_code": "left_shift"},
-					"to": [{"key_code": "left_shift"} ],
-					"to_if_alone": [
-						{
-							"key_code": "left_arrow",
-							"modifiers": ["right_option"],
-							"lazy": true
-						}
-					]
-				}
-			]
-		},
-		{
-			"description": "Command Moves per Character (if pressed alone)",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {"key_code": "right_command"},
-					"to": [ {"key_code": "right_command"} ],
-					"to_if_alone": [ {"key_code": "right_arrow"} ]
-				},
-				{
-					"type": "basic",
-					"from": {"key_code": "left_command"},
-					"to": [ {"key_code": "left_command"} ],
-					"to_if_alone": [ {"key_code": "left_arrow"} ]
+					"from": {
+						"key_code": "h",
+						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
+					},
+					"to": [ {"key_code": "h" } ]
 				}
 			]
 		}

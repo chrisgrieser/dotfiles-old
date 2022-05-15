@@ -10,26 +10,18 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json
 ```
 
-## Modifier Key Navigation
-When pressed alone:
-- `right-shift` moves a word to the right
-- `left-shift` moves a word to the left
-- `right-command` moves a character to the left (i.e., `right-arrow`)
-- `left-command` moves a character to the left (i.e., `left-arrow`)
+## `Hyper + hjkl` to Arrow Keys
 
-When not pressed alone, the keys work as usual modifier keys. To avoid accidental triggering, you should probably set `to_if_alone_timeout_milliseconds` (Complex Modifications → Parameters) to a lower value like 400 ms.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-move-per-word.json
 ```
 
-## Temporary US Layout
-As long as `right-option` is held down, the keyboard switches to the US layout. As soon as the key is released, the layout is switched back (in my case to the standard German Layout). 
-
-This is useful to send character events like `[]{}^` for vim emulators (which often have limited remapping capabilities).
+## Brackets sent in US layout
+Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
 
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-move-per-word.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/brackets-sent-in-us-layout.json
 ```
 
 ## Mouse Click Improvements

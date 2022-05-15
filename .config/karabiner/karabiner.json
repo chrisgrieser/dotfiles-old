@@ -16,88 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "Shift Moves per Word (if pressed alone)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "lazy": true,
-                                        "modifiers": [
-                                            "right_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "lazy": true,
-                                        "modifiers": [
-                                            "right_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Command Moves per Character (if pressed alone)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_command"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "left_command"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_command"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "CapsLock to Hyper/Escape",
                         "manipulators": [
                             {
@@ -480,39 +398,19 @@
                         ]
                     },
                     {
-                        "description": "US layout while right-option is held down",
+                        "description": "[], {} sent as US layout for vim",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_option"
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
+                                    "key_code": "5",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
                                     }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "one button switch",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "semicolon"
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 8
+                                    "basic.to_if_held_down_threshold_milliseconds": 20
                                 },
                                 "to": [
                                     {
@@ -530,7 +428,112 @@
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "key_code": "semicolon"
+                                        "key_code": "open_bracket"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "6",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 20
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "close_bracket"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "8",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 20
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "9",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 20
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
