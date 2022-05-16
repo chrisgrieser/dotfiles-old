@@ -9,7 +9,7 @@
 # demo: https://raw.githubusercontent.com/chrisgrieser/shimmering-obsidian/main/docs/images/terminal-vault-navigation.png
 # --------------------------------------
 
-VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
+export VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
 
 function ob (){
 	VAULT_NAME=$(basename "$VAULT_PATH")
@@ -21,5 +21,5 @@ function ob (){
 	fi
 	URL_ENCODED_PATH=$(node --eval "console.log(encodeURIComponent(process.argv[1]))" "$SELECTED")
 	URL_ENCODED_VNAME=$(node --eval "console.log(encodeURIComponent(process.argv[1]))" "$VAULT_NAME")
-	open 'obsidian://open?vault='"$URL_ENCODED_VNAME"'&file='"$URL_ENCODED_PATH"
+	open "obsidian://open?vault=$URL_ENCODED_VNAME&file=$URL_ENCODED_PATH"
 }

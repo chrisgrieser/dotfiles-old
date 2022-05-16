@@ -17,7 +17,7 @@ map l goForward
 " Reload
 map R reload hard
 
-" Pages
+" Pages (not history)
 map H goPrevious
 map L goNext
 
@@ -56,7 +56,6 @@ unmap >>
 unmap <<
 unmap <a-m>
 unmap <a-p>
-unmap x
 unmap X
 unmap g0
 unmap g$

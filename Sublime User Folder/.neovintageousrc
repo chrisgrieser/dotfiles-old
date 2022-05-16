@@ -130,7 +130,6 @@ nnoremap <C-5> ysiw]
 nnoremap <C-8> ysiw)
 nnoremap <C-2> ysiw"
 
-
 """""""""""""""""""""""""""
 " NEOVINTAGEOUS LIMITATIONS
 """""""""""""""""""""""""""
@@ -143,5 +142,5 @@ nnoremap <C-2> ysiw"
 "   motifications, these need to be done in Sublime
 "   (but without modifier keys (e.g. "HH"), they tend
 "   to conflict with Neovintageous bindings
-" - "ü" isn't read as character in normal mode >.>
-" - gi does not work
+" - "ü" isn't read as character in normal mode https://github.com/NeoVintageous/NeoVintageous/issues/821
+" - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810

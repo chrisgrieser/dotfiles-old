@@ -3,7 +3,7 @@
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": false, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
-	"vintageous_enable_surround": true,
+	"vintageous_enable_sneak": true,
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
@@ -15,7 +15,7 @@
 	    "<C-t>": false, // transpose → Sublime built-in command
 	    "<C-h>": false, // go to BOL
 	    "<C-l>": false, // go to EOL
-	    // "<C-u>": false, // uppercase
+	    "<C-u>": false, // uppercase
 	},
 
 	// Vim Mode
