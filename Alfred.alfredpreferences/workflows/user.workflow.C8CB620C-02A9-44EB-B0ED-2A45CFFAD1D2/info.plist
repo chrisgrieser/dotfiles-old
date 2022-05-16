@@ -762,10 +762,12 @@
 		</dict>
 		<key>344CD4D7-7498-430B-BE0F-5122D38B377B</key>
 		<dict>
+			<key>note</key>
+			<string>open neovintageous and obsidian vimrc</string>
 			<key>xpos</key>
 			<integer>630</integer>
 			<key>ypos</key>
-			<integer>605</integer>
+			<integer>595</integer>
 		</dict>
 		<key>3CED399E-5B73-47CD-AC97-99B0CCD321F0</key>
 		<dict>
@@ -810,7 +812,7 @@
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>605</integer>
+			<integer>595</integer>
 		</dict>
 		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
 		<dict>

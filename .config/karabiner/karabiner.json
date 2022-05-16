@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": false,
+        "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -414,58 +414,6 @@
                                             "right_command",
                                             "right_control"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "M-Click: Quit app",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "R-click (tap): Open link (Safari/Brave)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 30
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "pointing_button": "button2"
                                     }
                                 ],
                                 "type": "basic"
@@ -924,6 +872,69 @@
                                         "select_input_source": {
                                             "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
                                         }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "M-Click: Quit app",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-click (tap): Open link (when in Browser)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 30
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button3"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "pointing_button": "button2"
                                     }
                                 ],
                                 "type": "basic"
