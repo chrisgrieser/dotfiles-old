@@ -36,6 +36,9 @@ nmap _ :nohlsearch
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
+" These seem to be a bit buggy, therefore disabled
+" vmap j gj
+" vmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H ^
@@ -93,8 +96,8 @@ nmap X (c)
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
-" already built in: presss v in visual mode to go back
 
+" already built in: presss v in visual mode to go back
 vmap J <Esc>
 
 """"""""""""""""""""""

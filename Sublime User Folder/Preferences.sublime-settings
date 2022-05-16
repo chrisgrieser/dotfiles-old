@@ -141,6 +141,7 @@
 
 	//Plugins
 	"ignored_packages": [
+		"Applescript",
 		"ActionScript",
 		"ASP",
 		"Batch File",
@@ -165,7 +166,6 @@
 		"Pascal",
 		"Perl",
 		"PHP",
-		"R",
 		"Rails",
 		"RestructuredText",
 		"Ruby",
@@ -175,7 +175,6 @@
 		"TCL",
 		"Textile",
 		"Vintage",
-		"Vintageous",
 	],
 
 	//Spellcheck

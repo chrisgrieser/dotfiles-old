@@ -147,14 +147,19 @@ function update (){
 function report (){
 	print-section "HOMEBREW"
 	echo "Taps"
+	echo ""
 	brew tap
 	echo "Doctor"
+	echo ""
 	brew doctor
 	echo "Formula/Leaves (installed on request)"
+	echo ""
 	brew leaves --installed-on-request
 	echo "Formula/Leaves (installed as dependency)"
+	echo ""
 	brew leaves --installed-as-dependency
 	echo "Casks"
+	echo ""
 	brew list --casks
 
 	print-section "MAC APP STORE"

@@ -120,8 +120,8 @@ nnoremap X das
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
-" already built in: presss v in visual mode to go back
 
+" already built in: presss v in visual mode to go back
 vmap J <Esc>
 
 """"""""""""""""""""""
@@ -141,7 +141,7 @@ imap <C-j> <Esc>c^
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
-" quicker access to Obsidian command-ids
+" quicker access to help command-ids
 nmap ? :help
 
 " Play Macro: more consistent mapping (and @ not working)
