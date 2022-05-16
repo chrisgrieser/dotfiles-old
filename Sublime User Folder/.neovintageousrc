@@ -69,6 +69,7 @@ vnoremap <Space> c
 
 " Abolish: Titlecase
 nnoremap ä crt
+nnoremap Ä ~
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime
@@ -102,6 +103,7 @@ nnoremap X das
 " rnoremap jj <Esc>
 
 vnoremap J <Esc>
+" already built in: presss v in visual mode to go back
 
 """"""""""""""""""""""
 " Misc
@@ -137,3 +139,4 @@ nnoremap <C-2> ysiw"
 "   motifications, these need to be done in Sublime
 "   (but without modifier keys (e.g. "HH"), they tend
 "   to conflict with Neovintageous bindings
+" - "ü" isn't read as character in normal mode >.>
