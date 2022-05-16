@@ -69,6 +69,7 @@ nnoremap <S-Tab> <C-i>
 " backspace works in normal mode like in insert mode & consistent with <del>
 nnoremap <BS> h"_x
 vnoremap <BS> "_xh
+nnoremap <S-BS> <Del>
 
 " don't save small deletion in the register
 nnoremap x "_x
@@ -141,9 +142,17 @@ nnoremap <C-2> ysiw"
 "   any i command 🙈
 " - as opposed to Obsdian, excommands (:help) need to be
 "   confirmed with an <CR>
-" - Neovintageous does not allow for any insert mode
-"   motifications, these need to be done in Sublime
-"   (but without modifier keys (e.g. "HH"), they tend
-"   to conflict with Neovintageous bindings
 " - "ü" isn't read as character in normal mode https://github.com/NeoVintageous/NeoVintageous/issues/821
 " - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810
+
+" - Neovintageous does not allow for any insert mode  motifications, these need
+"   to be done in Sublime (but without modifier keys (e.g. "HH"), they tend
+"   to conflict with Neovintageous bindings
+
+" If you need a custom insert mode key binding you can use the
+" "vi_insert_mode_aware" context in your key binding: >
+"     {
+"         "keys": [...],
+"         "command": "...",
+"         "context": [{"key": "vi_insert_mode_aware"}]
+"     }

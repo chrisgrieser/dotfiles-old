@@ -1,0 +1,82 @@
+{
+	"title": "One Stroke ^~`´ (German Layout)",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "One Stroke ^~`´ (German Layout)",
+			"conditions": [
+				{
+					"type": "input_source_if",
+					"input_sources": [{ "input_source_id": "^de$" } ]
+				}
+			],
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "non_us_backlash"},
+					"to": [
+						{ "key_code": "non_us_backlash" },
+						{ "key_code": "right_arrow" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "input_source_id": "^de$" } ]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "equal_sign"},
+					"to": [
+						{ "key_code": "equal_sign" },
+						{ "key_code": "right_arrow" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "input_source_id": "^de$" } ]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "equal_sign",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{ "key_code": "equal_sign", "modifiers": ["option"] },
+						{ "key_code": "right_arrow" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "input_source_id": "^de$" } ]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "n",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{ "key_code": "n", "modifiers": ["option"] },
+						{ "key_code": "right_arrow" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "input_source_id": "^de$" } ]
+						}
+					]
+				}
+			]
+		}
+	]
+}

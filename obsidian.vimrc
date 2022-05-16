@@ -62,6 +62,7 @@ nmap <S-Tab> <C-i>
 " backspace works in normal mode like in insert mode & consistent with <del>
 nmap <BS> h"_x
 vmap <BS> "_xh
+nmap <S-BS> <Del>
 
 " don't save small deletion in the register
 " can't use "_x, cause Obsidian doesn't support noremap
