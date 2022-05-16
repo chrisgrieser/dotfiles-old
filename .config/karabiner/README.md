@@ -11,20 +11,20 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ```
 
 ## Vim Utilities
-- Modifies `alt + 5/6/8/9` from the German so that it sends `[]{}`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]`, without ever switching keyboard layout.
+- Modifies `alt + 5/6/8/9/l` from the German so that it sends `[]{}@`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]` or `@`, without ever switching keyboard layout.
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 - Focus window & hide cursor[^2] by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 - Scroll up/down globally via `alt+j/k`.
-- Press `j` and `f` "simultaneously" to send an enter.
+- Press `k` and `l` "simultaneously" to send an `enter`.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
 ```
 
 ## Mouse Click Trickery
-- Middle click to close an app (`cmd + q`).
-- Tapping Right Mouse Button in Safari/Brave to open link in background. Press with any modifier key for a normal right click. Is triggered only when briefly tapping so that mouse gesture extensions aren't affected. (This rule essentially emulates the [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) extension.)
-- Briefly Holding Mouse Button 4 will search for the selected text, tapping will send `F13` (for app-specific automations).
+- Middle click to close an app (`cmd + q`) (except for Finder).
+- Tapping the Right Mouse Button in a browser[^3] to open link in background. Press with any modifier key for a normal right click. Is triggered only when briefly tapping so that mouse gestures aren't affected. (This rule essentially emulates the [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) extension.)
+- Briefly Holding Mouse Button 4 will search for the selected text (or open the url, if a link is selected), tapping will send `F13` (for app-specific automations).
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json
@@ -73,3 +73,4 @@ The keys and apps in the JSON can be edited however wanted.
 
 [^1]: On non-German keyboards, `y` and `z` are switched, so the key codes are the other way round.
 [^2]: Technically speaking, moves it slightly above to the bottom right (not complete bottom right to avoid triggering the Dock). 
+[^3]: Currently supported: Safari, Brave, Chromium, Vivaldi, and Chrome
