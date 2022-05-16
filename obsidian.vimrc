@@ -117,7 +117,6 @@ imap <C-j> <Esc>c^
 """"""""""""""""""""""
 " Tab Switching
 """"""""""""""""""""""
-
 " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
 exmap tabnext obcommand cycle-through-panes:cycle-through-panes
 nmap gt :tabnext
@@ -125,9 +124,15 @@ exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
 """"""""""""""""""""""
+" Sneak / Lightspeed
+""""""""""""""""""""""
+" emulate vim-sneak
+exmap sneak obcommand activate-jump-to-anywhere
+nmap s :sneak
+
+""""""""""""""""""""""
 " Folding
 """"""""""""""""""""""
-
 " Rebuild some folding from vim, https://vimhelp.org/tabpage.txt.html#gt
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
