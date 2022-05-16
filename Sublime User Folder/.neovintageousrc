@@ -23,6 +23,8 @@ nnoremap P "0p
 " search w/o having to press enter
 set incsearch
 
+set ignorecase
+
 " no modifier key for jumping to next word
 nnoremap + *
 
@@ -39,6 +41,8 @@ nnoremap _ :nohlsearch<CR>
 " Have j and k navigate visual lines rather than logical ones
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nnoremap H ^
@@ -130,7 +134,7 @@ nnoremap <C-2> ysiw"
 """""""""""""""""""""""""""
 " NEOVINTAGEOUS LIMITATIONS
 """""""""""""""""""""""""""
-" - normal `map` (as opposed to noremap) is not supported
+" - Normal `map` (as opposed to noremap) is not supported
 " - onoremap seems a little buggy, `onoremap i2 i"` blocks
 "   any i command 🙈
 " - as opposed to Obsdian, excommands (:help) need to be
@@ -140,3 +144,4 @@ nnoremap <C-2> ysiw"
 "   (but without modifier keys (e.g. "HH"), they tend
 "   to conflict with Neovintageous bindings
 " - "ü" isn't read as character in normal mode >.>
+" - gi does not work

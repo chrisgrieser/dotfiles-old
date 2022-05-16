@@ -156,6 +156,8 @@
 	{ "keys": ["super+alt+,"], "command": "edit_syntax_settings" },
 	// .neovintageousrc
 	{ "keys": ["shift+alt+,"], "command": "open_file", "args": { "file": "${packages}/User/.neovintageousrc"} },
+	// Console
+	{ "keys": ["ctrl+escape"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// Change Color Scheme
 	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
