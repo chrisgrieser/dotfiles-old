@@ -144,7 +144,6 @@
 	// Casing
 	{ "keys": ["ctrl+u"], "command": "upper_case" },
 
-
 	// SETTINGS & INSTALLATION
 	// Open preferences without the annoying split
 	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/User/Preferences.sublime-settings"} },
@@ -209,7 +208,7 @@
 	] },
 
 	// Split View
-	{ "keys": ["ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
+	{ "keys": ["shift+alt+super+ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
 
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },

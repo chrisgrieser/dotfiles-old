@@ -121,10 +121,6 @@ vnoremap J <Esc>
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
-
-" Play Macro: more consistent mapping (and @ not working)
-nnoremap Q @
-
 " Goto Mark: remapping since ` not working
 nnoremap ö `
 

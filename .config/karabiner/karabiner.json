@@ -757,7 +757,7 @@
                         ]
                     },
                     {
-                        "description": "[], {}: German layout as US layout",
+                        "description": "[]{}@: German layout as US layout",
                         "manipulators": [
                             {
                                 "from": {
@@ -879,6 +879,41 @@
                                     },
                                     {
                                         "key_code": "close_bracket",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "2",
                                         "modifiers": [
                                             "shift"
                                         ]
