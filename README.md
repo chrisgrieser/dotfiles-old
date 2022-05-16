@@ -18,7 +18,7 @@ Most people tell me they find the following configurations most useful:
 - [starship prompt](/.config/starship/starship.toml)
 - Various Vim Emulation Configs
 	- System wide: [Vim Utilities via Karabiner Elements](/.config/karabiner#vim-utilities)
-	- Browser: [Vimium configs](/Browser%20Extension%20Settings/vimium-options.json) via [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+	- Browser: [Vimium configs](/Browser%20Extension%20Settings/vimium.vimrc) via [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
 	- Obsidian: [.obsidian.vimrc](obsidian.vimrc) via [Vimrc Support Plugin](https://obsidian.md/plugins?id=obsidian-vimrc-support) 
 	- Sublime: [.neovintageousrc](Sublime%20User%20Folder/.neovintageousrc) via [Neovintageous](https://github.com/NeoVintageous/NeoVintageous)
 
@@ -43,7 +43,6 @@ Feel free to [open an issue](https://github.com/chrisgrieser/dotfiles/issues) to
 In my day job, I am a sociologist studying the social mechanisms underlying the digital economy. For my PhD project, I investigate the governance of the app economy and how software ecosystems manage the tension between innovation and compatibility. If you are interested in this subject, feel free to get in touch!
 
 <!-- markdown-link-check-disable -->
-
 __Profiles__
 - [Discord](https://discordapp.com/users/462774483044794368/)
 - [Academic Website](https://chris-grieser.de/)

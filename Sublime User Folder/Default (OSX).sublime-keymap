@@ -158,7 +158,7 @@
 	{ "keys": ["ctrl+escape"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// Change Color Scheme
-	{ "keys": ["shift+alt+super+ctrl+h"], "command": "select_color_scheme" },
+	{ "keys": ["shift+alt+super+ctrl+z"], "command": "select_color_scheme" },
 	// Palette
 	{ "keys": ["super+p"], "command": "show_overlay", "args": { "overlay": "command_palette" } },
 	// Installation / Uninstallation
