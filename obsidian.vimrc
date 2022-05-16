@@ -11,17 +11,13 @@ nmap <C-y> :reg
 nmap Y y$
 
 " paste what was deleted/changed, not what was yanked(gets syntax highlighting of comments, but does work though)
-nmap P "1p
-
-" always paste what was yanked (y), not what was deleted (d or c)
-nmap p "0p
+nmap P "0p
 
 """"""""""""""""""""""
 " Search
 """"""""""""""""""""""
 " search w/o having to press enter
 set incsearch
-
 " no modifier key for jumping to next word
 nmap + *
 
@@ -64,11 +60,12 @@ nmap <S-Tab> <C-i>
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nmap <BS> hx
-vmap <BS> xh
+nmap <BS> h"_x
+vmap <BS> "_xh
 
 " don't save small deletion in the register
-nmap x "_x
+" can't use "_x, cause Obsidian doesn't support noremap
+nmap x "_dl
 
 " allows Double Enter to add new line and indent
 nmap <CR> A
@@ -77,8 +74,8 @@ nmap <CR> A
 nmap U <C-r>
 
 " quicker way to change word
-nmap <Space> ciw
-nmap <S-Space> daw
+nmap <Space> "_ciw
+nmap <S-Space> "_daw
 vmap <Space> c
 
 " Imitating Abolish's Titlecase (crt)
@@ -87,8 +84,8 @@ nmap ä :smartcaseswitch
 nmap Ä ~
 
 " transpose characters, consistent with Emacs/Mac
-imap <C-t> <Esc>xpi
-nmap <C-t> xph
+imap <C-t> <Esc>"_xpi
+nmap <C-t> "_xph
 
 """"""""""""""""""""""
 " Text Objects

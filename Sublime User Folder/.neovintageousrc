@@ -14,8 +14,9 @@ nnoremap <C-y> :reg<CR>
 nnoremap Y y$
 
 " always paste what was yanked (y), not what was deleted (d or c)
-" (gets syntax highlighting of comments, but does work though)
 nnoremap P "0p
+
+
 
 """"""""""""""""""""""
 " Search
@@ -66,8 +67,8 @@ nnoremap <S-Tab> <C-i>
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nnoremap <BS> hx
-vnoremap <BS> xh
+nnoremap <BS> h"_x
+vnoremap <BS> "_xh
 
 " don't save small deletion in the register
 nnoremap x "_x
@@ -79,8 +80,8 @@ nnoremap <CR> A
 nnoremap U <C-r>
 
 " quicker way to change word
-nnoremap <Space> ciw
-nnoremap <S-Space> daw
+nnoremap <Space> "_ciw
+nnoremap <S-Space> "_daw
 vnoremap <Space> c
 
 " Abolish: Titlecase
