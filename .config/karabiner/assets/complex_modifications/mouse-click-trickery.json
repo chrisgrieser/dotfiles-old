@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"description": "R-click (tap): Open link (Safari/Brave)",
+			"description": "R-click (tap): Open link (Safari/Brave/Chromium/Vivaldi)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -32,6 +32,8 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
+								"^com\\.vivaldi\\.Vivaldi$",
+								"^org\\.chromium\\.Chromium$",
 								"^com\\.brave\\.Browser$",
 								"^com\\.apple\\.Safari$"
 							]

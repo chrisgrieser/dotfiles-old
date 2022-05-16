@@ -66,8 +66,11 @@ nnoremap <S-Tab> <C-i>
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nnoremap <BS> X
+nnoremap <BS> hx
 vnoremap <BS> xh
+
+" don't save small deletion in the register
+nnoremap x "_x
 
 " allows Double Enter to add new line and indent
 nnoremap <CR> A
@@ -90,12 +93,6 @@ nnoremap Ä ~
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
-
-" double [] for symmetry with Obsidian's Vim Emulation
-" which requires nmap and therefore cannot use prc as single letters 🙈
-onoremap pp i(
-onoremap vv i[
-onoremap qq i"
 
 " for symmetry with Obsidian's vim, where the sentence
 " text object does not work (and is imitated via `(c)` )

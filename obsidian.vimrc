@@ -10,9 +10,11 @@ nmap <C-y> :reg
 " Y consistent with D and C to the end of line
 nmap Y y$
 
+" paste what was deleted/changed, not what was yanked(gets syntax highlighting of comments, but does work though)
+nmap P "1p
+
 " always paste what was yanked (y), not what was deleted (d or c)
-" (gets syntax highlighting of comments, but does work though)
-nmap P "0p
+nmap p "0p
 
 """"""""""""""""""""""
 " Search
@@ -65,6 +67,9 @@ nmap <S-Tab> <C-i>
 nmap <BS> hx
 vmap <BS> xh
 
+" don't save small deletion in the register
+nmap x "_x
+
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
@@ -88,11 +93,6 @@ nmap <C-t> xph
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
-
-" (actually works with nmap instead of onoremap here)
-nmap pp i(
-nmap vv i[
-nmap qq i"
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
@@ -159,9 +159,6 @@ nmap zM :foldall
 """"""""""""""""""""""
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
-
-" Play Macro: more consistent mapping (and @ not working)
-nmap Q @
 
 " Goto Mark: remapping since ` not working
 nmap ö `
