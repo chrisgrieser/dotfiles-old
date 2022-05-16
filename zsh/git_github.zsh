@@ -89,3 +89,26 @@ function rel(){
 		echo "No '.release.sh' found."
 	fi
 }
+
+# view older versions
+# https://stackoverflow.com/questions/1964142/how-can-i-list-all-the-different-versions-of-a-file-and-diff-them-also/32849134#32849134
+function all-versions () {
+	for commit in $(git log --pretty=format:%h "$1")
+	do
+		file_path="$1"
+		path_no_ext="${file_path%.*}"
+		ext="${file_path##*.}"
+
+		padindex=$(printf %03d "$index")
+		out="$path_no_ext.$padindex.$commit.$ext"
+		log="$out.logmsg"
+
+		echo "saving version $index to file $out for commit $commit"
+		echo "*******************************************************" > "$log"
+		git log -1 --pretty=format:"%s%nAuthored by %an at %ai%n%n%b%n" "$commit" >> "$log"
+		echo "*******************************************************" >> "$log"
+		git show "$commit:./$file_path" > "$out"
+		(( index++ )) || true
+	done
+}
+

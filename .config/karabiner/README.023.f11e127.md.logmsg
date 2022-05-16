@@ -1,0 +1,119 @@
+*******************************************************
+Sun, 18:00, 113 files,
+Authored by pseudometa at 2022-05-15 18:00:05 +0200
+
+ M .config/karabiner/README.md
+ M .config/karabiner/assets/complex_modifications/fn-app-switcher.json
+ M .config/karabiner/assets/complex_modifications/mouse-click-improvements.json
+ M .config/karabiner/assets/complex_modifications/vim-utilities.json
+ M .config/karabiner/karabiner.json
+ M Alfred.alfredpreferences/preferences/features/filesearch/actions/prefs.plist
+ D PopClip/Extensions/BusyCal.popclipext/Config.plist
+ D PopClip/Extensions/BusyCal.popclipext/busycal.png
+ D "PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/Alfred-add-to-bibtex.applescript"
+ D "PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/Config.plist"
+ D "PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/book.png"
+ D "PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/doi.png"
+ D PopClip/Extensions/Drafts.popclipext/Config.plist
+ D PopClip/Extensions/Drafts.popclipext/Drafts.png
+ D PopClip/Extensions/Drafts.popclipext/_Signature.plist
+ D PopClip/Extensions/Email.popclipext/Config.js
+ D PopClip/Extensions/Email.popclipext/Config.json
+ D PopClip/Extensions/Email.popclipext/Config.plist
+ D PopClip/Extensions/Email.popclipext/Config.ts
+ D PopClip/Extensions/Email.popclipext/README.md
+ D PopClip/Extensions/Email.popclipext/_Signature.plist
+ D PopClip/Extensions/Email.popclipext/at.png
+ D PopClip/Extensions/Email.popclipext/envelope.png
+ D PopClip/Extensions/Extensions.plist
+ D PopClip/Extensions/GoogleMaps.popclipext/Config.plist
+ D PopClip/Extensions/GoogleMaps.popclipext/_Signature.plist
+ D PopClip/Extensions/GoogleMaps.popclipext/domains.txt
+ D PopClip/Extensions/GoogleMaps.popclipext/pin.png
+ D PopClip/Extensions/GoogleMaps.popclipext/process.php
+ D PopClip/Extensions/Highlight.popclipext/Config.plist
+ D PopClip/Extensions/Highlight.popclipext/Highlight-demo.mp4
+ D PopClip/Extensions/Highlight.popclipext/README.md
+ D PopClip/Extensions/Highlight.popclipext/_Signature.plist
+ D PopClip/Extensions/Highlight.popclipext/hlite.png
+ D PopClip/Extensions/InstantTranslate.popclipext/Config.json
+ D PopClip/Extensions/InstantTranslate.popclipext/Config.plist
+ D PopClip/Extensions/InstantTranslate.popclipext/README.md
+ D PopClip/Extensions/InstantTranslate.popclipext/_Signature.plist
+ D PopClip/Extensions/InstantTranslate.popclipext/access.json
+ D PopClip/Extensions/InstantTranslate.popclipext/itrans.js
+ D PopClip/Extensions/InstantTranslate.popclipext/itrans.png
+ D PopClip/Extensions/InstantTranslate.popclipext/langs.json
+ D PopClip/Extensions/InstantTranslate.popclipext/list.js
+ D "PopClip/Extensions/On-Screen Keyboard.popclipext/Config.plist"
+ D "PopClip/Extensions/On-Screen Keyboard.popclipext/keyboard.png"
+ D "PopClip/Extensions/On-Screen Keyboard.popclipext/shortcut-run.sh"
+ D PopClip/Extensions/OnlineDictionary.popclipext/Config.js
+ D PopClip/Extensions/OnlineDictionary.popclipext/Config.plist
+ D PopClip/Extensions/OnlineDictionary.popclipext/README
+ D PopClip/Extensions/OnlineDictionary.popclipext/_Signature.plist
+ D PopClip/Extensions/OnlineDictionary.popclipext/dictionary.svg
+ D "PopClip/Extensions/PDF Strikethrough.popclipext/Config.plist"
+ D "PopClip/Extensions/PDF Strikethrough.popclipext/strikethrough.png"
+ D "PopClip/Extensions/PDF Underline.popclipext/Config.plist"
+ D "PopClip/Extensions/PDF Underline.popclipext/underline.png"
+ D "PopClip/Extensions/Word Comment.popclipext/Config.plist"
+ D "PopClip/Extensions/Word Comment.popclipext/comment.png"
+ D "PopClip/Extensions/Word Comment.popclipext/word_comment.applescript"
+ D PopClip/Popclip
+ M "Sublime User Folder/.neovintageousrc"
+ M "Sublime User Folder/Default (OSX).sublime-keymap"
+?? unused/PopClip/Extensions/BusyCal.popclipext/Config.plist
+?? unused/PopClip/Extensions/BusyCal.popclipext/busycal.png
+?? "unused/PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/Alfred-add-to-bibtex.applescript"
+?? "unused/PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/Config.plist"
+?? "unused/PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/book.png"
+?? "unused/PopClip/Extensions/DOI-or-ISBN 2 BibTeX.popclipext/doi.png"
+?? unused/PopClip/Extensions/Drafts.popclipext/Config.plist
+?? unused/PopClip/Extensions/Drafts.popclipext/Drafts.png
+?? unused/PopClip/Extensions/Drafts.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/Email.popclipext/Config.js
+?? unused/PopClip/Extensions/Email.popclipext/Config.json
+?? unused/PopClip/Extensions/Email.popclipext/Config.plist
+?? unused/PopClip/Extensions/Email.popclipext/Config.ts
+?? unused/PopClip/Extensions/Email.popclipext/README.md
+?? unused/PopClip/Extensions/Email.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/Email.popclipext/at.png
+?? unused/PopClip/Extensions/Email.popclipext/envelope.png
+?? unused/PopClip/Extensions/Extensions.plist
+?? unused/PopClip/Extensions/GoogleMaps.popclipext/Config.plist
+?? unused/PopClip/Extensions/GoogleMaps.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/GoogleMaps.popclipext/domains.txt
+?? unused/PopClip/Extensions/GoogleMaps.popclipext/pin.png
+?? unused/PopClip/Extensions/GoogleMaps.popclipext/process.php
+?? unused/PopClip/Extensions/Highlight.popclipext/Config.plist
+?? unused/PopClip/Extensions/Highlight.popclipext/Highlight-demo.mp4
+?? unused/PopClip/Extensions/Highlight.popclipext/README.md
+?? unused/PopClip/Extensions/Highlight.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/Highlight.popclipext/hlite.png
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/Config.json
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/Config.plist
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/README.md
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/access.json
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/itrans.js
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/itrans.png
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/langs.json
+?? unused/PopClip/Extensions/InstantTranslate.popclipext/list.js
+?? "unused/PopClip/Extensions/On-Screen Keyboard.popclipext/Config.plist"
+?? "unused/PopClip/Extensions/On-Screen Keyboard.popclipext/keyboard.png"
+?? "unused/PopClip/Extensions/On-Screen Keyboard.popclipext/shortcut-run.sh"
+?? unused/PopClip/Extensions/OnlineDictionary.popclipext/Config.js
+?? unused/PopClip/Extensions/OnlineDictionary.popclipext/Config.plist
+?? unused/PopClip/Extensions/OnlineDictionary.popclipext/README
+?? unused/PopClip/Extensions/OnlineDictionary.popclipext/_Signature.plist
+?? unused/PopClip/Extensions/OnlineDictionary.popclipext/dictionary.svg
+?? "unused/PopClip/Extensions/PDF Strikethrough.popclipext/Config.plist"
+?? "unused/PopClip/Extensions/PDF Strikethrough.popclipext/strikethrough.png"
+?? "unused/PopClip/Extensions/PDF Underline.popclipext/Config.plist"
+?? "unused/PopClip/Extensions/PDF Underline.popclipext/underline.png"
+?? "unused/PopClip/Extensions/Word Comment.popclipext/Config.plist"
+?? "unused/PopClip/Extensions/Word Comment.popclipext/comment.png"
+?? "unused/PopClip/Extensions/Word Comment.popclipext/word_comment.applescript"
+
+*******************************************************

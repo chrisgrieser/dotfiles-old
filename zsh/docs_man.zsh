@@ -11,8 +11,16 @@ function h () {
 if which alacritty &> /dev/null ; then
 	function man () {
 		# abort if pager or command uninstalled
-		which "$1" &> /dev/null || (echo "Command '$1' not installed." ; return 1)
-		which "$PAGER" &> /dev/null || (echo "Pager '$PAGER' not installed." ; return 1)
+		which "$1" &> /dev/null
+		if [[ $? == 1 ]] ; then
+			echo "Command '$1' not installed."
+			return 1
+		fi
+		which "$PAGER" &> /dev/null
+		if [[ $? == 1 ]] ; then
+	 		echo "Pager '$PAGER' not installed."
+	 		return 1
+	 	fi
 
 		# run in subshell to surpress output
 		(alacritty \
