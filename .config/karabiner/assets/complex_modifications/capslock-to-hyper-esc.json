@@ -32,7 +32,7 @@
 							]
 						}
 					},
-					"to": [],
+					"to": [ { "key_code": "vk_none" } ],
 					"type": "basic"
 				}
 			]

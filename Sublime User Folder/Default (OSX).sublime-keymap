@@ -245,17 +245,6 @@
 			{"key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
 
-	// Autocomplete
-	{"keys": ["super+j"], "command": "move", "args": {"by": "lines", "forward": true }, "context": [
-		{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
-	] },
-	{"keys": ["super+k"], "command": "move", "args": {"by": "lines", "forward": false }, "context": [
-		{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
-	] },
-	{ "keys": ["super+h"], "command": "commit_completion", "context":[
-		{ "key": "auto_complete_visible" },
-	] },
-
 	// to avoid `Esc` leaving insert mode and autocomplete
 	{ "keys": ["tab"], "command": "hide_auto_complete", "context":
 		[

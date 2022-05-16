@@ -35,7 +35,10 @@
 						},
 						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
 						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
-					]
+					],
+					"parameters": {
+					    "basic.to_if_alone_timeout_milliseconds": 250
+					}
 				}
 			]
 		}
