@@ -97,9 +97,9 @@ onoremap pp i(
 onoremap vv i[
 onoremap qq i"
 
-" for symmetry with Obsidian's vim, where the `is`
+" for symmetry with Obsidian's vim, where the sentence
 " text object does not work (and is imitated via `(c)` )
-nnoremap X das
+nnoremap X cis
 
 """"""""""""""""""""""
 " Insert Mode

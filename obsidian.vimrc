@@ -62,7 +62,7 @@ nmap <S-Tab> <C-i>
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <del>
-nmap <BS> X
+nmap <BS> hx
 vmap <BS> xh
 
 " allows Double Enter to add new line and indent
