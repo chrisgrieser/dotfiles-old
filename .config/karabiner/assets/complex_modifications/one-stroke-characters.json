@@ -10,7 +10,7 @@
 			"conditions": [
 				{
 					"type": "input_source_if",
-					"input_sources": [{ "input_source_id": "^de$" } ]
+					"input_sources": [{ "language": "^de$" } ]
 				}
 			],
 			"manipulators": [
@@ -24,7 +24,7 @@
 					"conditions": [
 						{
 							"type": "input_source_if",
-							"input_sources": [{ "input_source_id": "^de$" } ]
+							"input_sources": [{ "language": "^de$" } ]
 						}
 					]
 				},
@@ -38,7 +38,7 @@
 					"conditions": [
 						{
 							"type": "input_source_if",
-							"input_sources": [{ "input_source_id": "^de$" } ]
+							"input_sources": [{ "language": "^de$" } ]
 						}
 					]
 				},
@@ -55,7 +55,7 @@
 					"conditions": [
 						{
 							"type": "input_source_if",
-							"input_sources": [{ "input_source_id": "^de$" } ]
+							"input_sources": [{ "language": "^de$" } ]
 						}
 					]
 				},
@@ -72,7 +72,7 @@
 					"conditions": [
 						{
 							"type": "input_source_if",
-							"input_sources": [{ "input_source_id": "^de$" } ]
+							"input_sources": [{ "language": "^de$" } ]
 						}
 					]
 				}
@@ -80,3 +80,5 @@
 		}
 	]
 }
+
+~a

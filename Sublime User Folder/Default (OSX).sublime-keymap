@@ -251,11 +251,24 @@
 	] },
 
 	// to avoid `Esc` leaving insert mode and autocomplete
-	{ "keys": ["tab"], "command": "hide_auto_complete", "context":
+	// (weirdly enough, copying this from the default sublime-keymap
+	// is required to fix it oO)
+	// https://github.com/NeoVintageous/NeoVintageous/issues/822
+	{ "keys": ["escape"], "command": "hide_auto_complete", "context":
 		[
 			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
 		]
 	},
+	{
+		"keys": ["escape"],
+		"command": "nv_feed_key",
+		"args": {"key": "<esc>"},
+		"context": [
+			{"key": "nv_command_or_insert"},
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
+		]
+	},
+
 
 ]
 
