@@ -46,6 +46,14 @@ vmap L $
 nmap J 6j
 nmap K 6k
 
+" Hard Mode: Turn off arrow keys for learning
+" needs a remap, since unmap does not work on
+" builtin keys
+nmap <Right> zz
+nmap <Left> zz
+nmap <Up> zz
+nmap <Down> zz
+
 """"""""""""""""""""""
 " Jumps
 """"""""""""""""""""""

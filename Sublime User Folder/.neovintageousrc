@@ -16,8 +16,6 @@ nnoremap Y y$
 " always paste what was yanked (y), not what was deleted (d or c)
 nnoremap P "0p
 
-
-
 """"""""""""""""""""""
 " Search
 """"""""""""""""""""""
@@ -52,6 +50,14 @@ nnoremap L $
 vnoremap L $
 nnoremap J 6j
 nnoremap K 6k
+
+" Hard Mode: Turn off arrow keys for learning
+" needs a remap, since unmap does not work on
+" builtin keys, "noop" being non-existent command
+nnoremap <Right> :noop<CR>
+nnoremap <Left> :noop<CR>
+nnoremap <Up> :noop<CR>
+nnoremap <Down> :noop<CR>
 
 """"""""""""""""""""""
 " Jumps

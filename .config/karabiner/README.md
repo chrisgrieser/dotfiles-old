@@ -38,7 +38,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-utilities.json
 ```
 
-## fn Launcher
+## Fn Launcher
 `fn + {letter}` launches/switches to a pre-defined app
 - `fn + c` → `C`alendar → BusyCal
 - `fn + b` → `B`rowser → Brave Browser
@@ -65,8 +65,11 @@ Since pressing `fn` interferes with the built-in macOS emoji insertion key, it n
 
 If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
 
+## One Stroke ^~\`´ (German Layout)
+Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àáâã`. (Note that the way this is done, they aren't received properly by vim anymore.)
+
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/fn-launcher.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json
 ```
 
 The keys and apps in the JSON can be edited however wanted.

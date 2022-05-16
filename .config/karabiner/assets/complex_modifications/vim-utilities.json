@@ -129,6 +129,12 @@
 						"key_code": "5",
 						"modifiers": {"mandatory": ["option"] }
 					},
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$" } ]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },

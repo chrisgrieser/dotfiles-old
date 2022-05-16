@@ -16,10 +16,10 @@
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "non_us_backlash"},
+					"from": {"key_code": "non_us_backslash"},
 					"to": [
-						{ "key_code": "non_us_backlash" },
-						{ "key_code": "right_arrow" }
+						{ "key_code": "non_us_backslash" },
+						{ "key_code": "spacebar" }
 					],
 					"conditions": [
 						{
@@ -33,7 +33,7 @@
 					"from": {"key_code": "equal_sign"},
 					"to": [
 						{ "key_code": "equal_sign" },
-						{ "key_code": "right_arrow" }
+						{ "key_code": "spacebar" }
 					],
 					"conditions": [
 						{
@@ -46,11 +46,11 @@
 					"type": "basic",
 					"from": {
 						"key_code": "equal_sign",
-						"modifiers": {"mandatory": ["option"] }
+						"modifiers": {"mandatory": ["shift"] }
 					},
 					"to": [
-						{ "key_code": "equal_sign", "modifiers": ["option"] },
-						{ "key_code": "right_arrow" }
+						{ "key_code": "equal_sign", "modifiers": ["shift"] },
+						{ "key_code": "spacebar" }
 					],
 					"conditions": [
 						{
@@ -67,7 +67,7 @@
 					},
 					"to": [
 						{ "key_code": "n", "modifiers": ["option"] },
-						{ "key_code": "right_arrow" }
+						{ "key_code": "spacebar" }
 					],
 					"conditions": [
 						{
@@ -80,5 +80,3 @@
 		}
 	]
 }
-
-~a
