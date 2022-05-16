@@ -1,12 +1,12 @@
 {
-	"title": "CapsLock to Hyper-Esc",
+	"title": "Capslock to Hyper/Esc",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "CapsLock to Hyper/Escape",
+			"description": "Capslock: Hyper/Esc",
 			"manipulators": [
 				{
 					"type": "basic",

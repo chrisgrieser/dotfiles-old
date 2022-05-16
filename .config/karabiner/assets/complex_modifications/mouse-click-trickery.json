@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Middle-Click to quit application",
+			"description": "M-Click: Quit app",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"description": "Tap Right Mouse Button to open link in background (Safari / Brave)",
+			"description": "R-click (tap): Open link (Safari/Brave)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -44,7 +44,7 @@
 			]
 		},
 		{
-			"description": "Hold Mouse button4 to search selected text, tap to send F13",
+			"description": "Mouse-4 (hold): search selected text, (tap): send F13",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -57,7 +57,7 @@
 							"halt": true
 						},
 						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
-						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
+						{ "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"}
 					],
 					"parameters": {
 						"basic.to_if_alone_timeout_milliseconds": 300,

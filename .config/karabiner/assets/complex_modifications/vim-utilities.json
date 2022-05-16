@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Scroll via alt+j/k",
+			"description": "⌥+j, ⌥+k: Scroll ↓↑",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -31,7 +31,7 @@
 			]
 		},
 		{
-			"description": "Press kl simultaneously to enter",
+			"description": "k+l (simultaneously): ↵",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -48,7 +48,7 @@
 			]
 		},
 		{
-			"description": "Focus Window & Hide Cursor by tapping right-option",
+			"description": "R-⌥ (tap): Focus Window & Hide Cursor",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -84,7 +84,7 @@
 			]
 		},
 		{
-			"description": "Hyper + hjkl to Arrow Keys (requires Capslock to Hyper Key)",
+			"description": "Hyper + hjkl: ←↓↑→ (requires Hyper Key)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -121,7 +121,7 @@
 			]
 		},
 		{
-			"description": "[], {} from German layouts sent as US layout",
+			"description": "[], {}: German layout as US layout",
 			"manipulators": [
 				{
 					"type": "basic",

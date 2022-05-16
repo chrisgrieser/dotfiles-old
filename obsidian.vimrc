@@ -128,13 +128,17 @@ nmap gT :tabprev
 " Folding
 """"""""""""""""""""""
 
-" Rebuild zo, zc, zn from vim, https://vimhelp.org/tabpage.txt.html#gt
-exmap fold obcommand editor:toggle-fold
-nmap zo :fold
-nmap zc :fold
+" Rebuild some folding from vim, https://vimhelp.org/tabpage.txt.html#gt
+exmap togglefold obcommand editor:toggle-fold
+nmap zo :togglefold
+nmap zc :togglefold
+nmap za :togglefold
 
 exmap unfoldall obcommand editor:unfold-all
-nmap zn :unfoldall
+nmap zR :unfoldall
+
+exmap foldall obcommand editor:fold-all
+nmap zM :foldall
 
 """"""""""""""""""""""
 " Misc

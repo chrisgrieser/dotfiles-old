@@ -16,140 +16,45 @@
                 },
                 "rules": [
                     {
-                        "description": "Middle-Click quits application",
+                        "description": "Capslock: Hyper/Esc",
                         "manipulators": [
                             {
                                 "from": {
-                                    "pointing_button": "button3"
+                                    "key_code": "caps_lock"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "q",
+                                        "key_code": "right_shift",
                                         "modifiers": [
-                                            "right_command"
+                                            "right_command",
+                                            "right_control",
+                                            "right_option"
                                         ]
                                     }
                                 ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Scroll via alt+j/k",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
+                                "to_if_alone": [
                                     {
-                                        "mouse_key": {
-                                            "vertical_wheel": 200
-                                        }
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
+                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": -200
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hyper + hjkl to Arrow Keys (requires Capslock to Hyper Key)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
                                             "command",
+                                            "shift",
+                                            "option",
                                             "control"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
+                                        "key_code": "vk_none"
                                     }
                                 ],
                                 "type": "basic"
@@ -157,165 +62,7 @@
                         ]
                     },
                     {
-                        "description": "[], {} from German layouts sent as US layout",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "5",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "open_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "6",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "close_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "open_bracket",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "9",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift-Backspace to Forward Delete",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "delete_forward"
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Use fn + {letter} to switch to (or launch) various apps",
+                        "description": "fn + {char}: switch/launch various apps",
                         "manipulators": [
                             {
                                 "from": {
@@ -641,99 +388,7 @@
                         ]
                     },
                     {
-                        "description": "Tap Right Mouse Button to open link in background (Safari / Brave)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 30
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hold Mouse button4 to search selected text, tap to send F13",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f13"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Press kl simultaneously to enter",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "k"
-                                        },
-                                        {
-                                            "key_code": "l"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "use fn alone to trigger emoji inserter",
+                        "description": "fn (alone): Emoji inserter",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -766,49 +421,51 @@
                         ]
                     },
                     {
-                        "description": "Focus Window & Hide Cursor by tapping right-option",
+                        "description": "M-Click: Quit app",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_option"
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-click (tap): Open link (Safari/Brave)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
                                 },
                                 "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                    "basic.to_if_held_down_threshold_milliseconds": 30
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_option"
+                                        "pointing_button": "button3"
                                     }
                                 ],
-                                "to_if_alone": [
+                                "to_if_held_down": [
                                     {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "50%",
-                                                "y": "50%"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "90%"
-                                            }
-                                        }
+                                        "pointing_button": "button2"
                                     }
                                 ],
                                 "type": "basic"
@@ -816,45 +473,35 @@
                         ]
                     },
                     {
-                        "description": "CapsLock to Hyper/Escape",
+                        "description": "Mouse-4 (hold): search selected text, (tap): send F13",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "caps_lock"
+                                    "pointing_button": "button4"
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift",
-                                        "modifiers": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_option"
-                                        ]
-                                    }
-                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
                                 "to_if_alone": [
                                     {
-                                        "key_code": "escape"
+                                        "key_code": "f13"
                                     }
                                 ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
+                                "to_if_held_down": [
                                     {
+                                        "halt": true,
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
                                         "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"
                                     }
                                 ],
                                 "type": "basic"
@@ -862,7 +509,26 @@
                         ]
                     },
                     {
-                        "description": "Tap Right-Shift to search selected text",
+                        "description": "⇧+⌫: ⌦",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_forward"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-⇧: search selected text / open URL",
                         "manipulators": [
                             {
                                 "from": {
@@ -878,7 +544,6 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "halt": true,
                                         "key_code": "c",
                                         "modifiers": [
                                             "command"
@@ -889,7 +554,7 @@
                                         "key_code": "vk_none"
                                     },
                                     {
-                                        "shell_command": "SEL=$(pbpaste) ; URL_REGEX=\\\"^[[:space:]]*http.*\\\" ; if [[ \\\"$SEL\\\" =~ $URL_REGEX ]]; then open \\\"$SEL\\\" ; else open \\\"https://www.google.de/search?q=$SEL\\\" ; fi"
+                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"
                                     }
                                 ],
                                 "type": "basic"

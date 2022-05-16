@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Use fn + {letter} to switch to (or launch) various apps",
+			"description": "fn + {char}: switch/launch various apps",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -171,7 +171,7 @@
 			]
 		},
 		{
-			"description": "use fn alone to trigger emoji inserter",
+			"description": "fn (alone): Emoji inserter",
 			"manipulators": [
 				{
 					"type": "basic",
