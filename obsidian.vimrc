@@ -2,7 +2,7 @@
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-" set clipboard=unnamed
+set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 nmap <C-y> :reg
@@ -47,6 +47,15 @@ nmap L $
 vmap L $
 nmap J 6j
 nmap K 6k
+
+""""""""""""""""""""""
+" Jumps
+""""""""""""""""""""""
+" older
+nmap <Tab> <C-o>
+
+" newer
+nmap <S-Tab> <C-i>
 
 """"""""""""""""""""""
 " Editing
@@ -166,3 +175,4 @@ nmap ö `
 " - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
 " - only `map`s supported, no support for nnoremap, inoremap, etc.
 " - `nnoremap` officially supported, but in practice buggy
+" - gp not implemented

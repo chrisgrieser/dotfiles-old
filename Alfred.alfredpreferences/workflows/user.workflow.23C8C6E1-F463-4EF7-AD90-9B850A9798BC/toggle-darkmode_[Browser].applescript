@@ -33,7 +33,3 @@ if (BrowserWasntRunning)
 	delay 0.2
 	tell application "Brave Browser" to close active tab of front window
 end if
-
-# Bartender Fix
-delay 2
-tell application "Bartender" to activate

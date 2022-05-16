@@ -53,6 +53,15 @@ nnoremap J 6j
 nnoremap K 6k
 
 """"""""""""""""""""""
+" Jumps
+""""""""""""""""""""""
+" older
+nnoremap <Tab> <C-o>
+
+" newer
+nnoremap <S-Tab> <C-i>
+
+""""""""""""""""""""""
 " Editing
 """"""""""""""""""""""
 

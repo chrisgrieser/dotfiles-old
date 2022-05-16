@@ -13,7 +13,7 @@ function readFile (path, encoding) {
 	return ObjC.unwrap(str);
 }
 
-const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
+const alfredMatcher = (str) => str.replace (/[-()_:.]/g, " ") + " " + str + " ";
 const getEnv = (path) => $.getenv(path).replace(/^~/, app.pathTo("home folder"));
 
 const jsonArray = [];

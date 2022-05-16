@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>15777E56-7AC1-41E6-99AA-BB38854CDB0A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<array>
 			<dict>
@@ -271,6 +284,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>sw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Switch to Private Window</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E51DFA56-3523-4840-8EF6-40FC832EE3BB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -357,27 +391,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>sw</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Switch to Private Window</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E51DFA56-3523-4840-8EF6-40FC832EE3BB</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -470,6 +483,64 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>j</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>15777E56-7AC1-41E6-99AA-BB38854CDB0A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -529,27 +600,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>alltabs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Copy the Title and URL of ALL tabs</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -590,6 +640,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>46A0180C-0144-4433-8238-86DD95349753</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>alltabs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Copy the Title and URL of ALL tabs</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -688,9 +759,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -791,9 +862,9 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -929,6 +1000,17 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>570</integer>
+		</dict>
+		<key>15777E56-7AC1-41E6-99AA-BB38854CDB0A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Open Console</string>
+			<key>xpos</key>
+			<integer>605</integer>
+			<key>ypos</key>
+			<integer>270</integer>
 		</dict>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<dict>
@@ -1141,6 +1223,13 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>745</integer>
+		</dict>
+		<key>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>785</integer>
+			<key>ypos</key>
+			<integer>270</integer>
 		</dict>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<dict>
