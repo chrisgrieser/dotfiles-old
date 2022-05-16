@@ -141,8 +141,8 @@
 
 	//Plugins
 	"ignored_packages": [
-		"Applescript",
 		"ActionScript",
+		"Applescript",
 		"ASP",
 		"Batch File",
 		"C#",
@@ -175,6 +175,7 @@
 		"TCL",
 		"Textile",
 		"Vintage",
+		"Vintageous",
 	],
 
 	//Spellcheck

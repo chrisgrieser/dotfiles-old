@@ -45,8 +45,6 @@
 	{ "keys": ["shift+super+alt+ctrl+n"], "command": "build", "args": { "variant": "Lint Autofix" } },
 	// Executable (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
-	// Color Picker (using Build System)
-	{ "keys": ["shift+super+alt+ctrl+c"], "command": "build", "args": {"variant": "Color Picker"}},
 
 	// Build System: Shell
 	{ "keys": ["super+r"], "command": "build", "context": [

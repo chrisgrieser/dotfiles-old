@@ -101,6 +101,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B3225659-1DC7-4F11-99F7-9FABD83B0D49</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CA1C5A5D-DABD-4A14-81C4-0B1A389E71F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
 		<array>
 			<dict>
@@ -471,6 +484,23 @@ zsh build.sh "$*"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/Color Picker.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>CA1C5A5D-DABD-4A14-81C4-0B1A389E71F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -516,6 +546,42 @@ zsh build.sh "$*"</string>
 			<string>681793A7-1E5D-456D-8593-88828D1E5C40</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sindresorhus.Color-Picker</string>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B3225659-1DC7-4F11-99F7-9FABD83B0D49</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -659,27 +725,6 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>svg</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string></string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D96BC2AD-EC81-4B13-B499-1B0FFC9EB952</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -720,6 +765,27 @@ lineNo="$*"
 			<string>F3EA6027-C734-4625-9ECD-2FE2DA83829F</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>svg</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D96BC2AD-EC81-4B13-B499-1B0FFC9EB952</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -836,6 +902,13 @@ lineNo="$*"
 			<key>ypos</key>
 			<integer>760</integer>
 		</dict>
+		<key>B3225659-1DC7-4F11-99F7-9FABD83B0D49</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
 		<key>B3464F95-B489-4113-82A7-9CCB3300B0E1</key>
 		<dict>
 			<key>colorindex</key>
@@ -844,6 +917,13 @@ lineNo="$*"
 			<integer>245</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>CA1C5A5D-DABD-4A14-81C4-0B1A389E71F0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>280</integer>
 		</dict>
 		<key>CE15BDDF-BE0F-4506-9F3F-EE61551C52FA</key>
 		<dict>
