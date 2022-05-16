@@ -125,19 +125,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C18F258A-2134-476B-9B2B-3EAB189C3037</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DB00F183-AB13-4DF2-AE14-4A98EA8AD9CB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CDDD44C0-E8E4-4F89-8ED9-3DB266215A4B</key>
 		<array>
 			<dict>
@@ -432,6 +419,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/philc/vimium/wiki/Tips-and-Tricks</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -439,33 +445,14 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Vimac Manual</string>
+				<string>Vimium Wiki</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>C18F258A-2134-476B-9B2B-3EAB189C3037</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/dexterleng/vimac/blob/master/docs/manual.md</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>DB00F183-AB13-4DF2-AE14-4A98EA8AD9CB</string>
+			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -518,103 +505,6 @@
 			<string>87FAFB82-BA4C-4B86-BFB7-42F829F37218</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/philc/vimium/wiki/Tips-and-Tricks</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vim</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Vimium Wiki</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vimrc</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🟪 Open obsidian .vimrc</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D3317886-6B6B-4FAB-8FF0-7AAB24B3390D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Sublime User Folder/.neovintageousrc</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>2FFD13E1-74D7-441C-8D92-52C637DD85D7</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vim</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>.neovintageousrc</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>85ED60B5-47C7-4A5C-8E14-F838BDEFFE0B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -676,11 +566,68 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>vim</string>
+				<string>vimrc</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>🟪 CodeMirror vim.js</string>
+				<string>obsidian.vimrc</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D3317886-6B6B-4FAB-8FF0-7AAB24B3390D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Sublime User Folder/.neovintageousrc</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>2FFD13E1-74D7-441C-8D92-52C637DD85D7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vimrc</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>.neovintageousrc</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>85ED60B5-47C7-4A5C-8E14-F838BDEFFE0B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vim</string>
+				<key>subtext</key>
+				<string>vim.js</string>
+				<key>text</key>
+				<string>CodeMirror</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -724,7 +671,7 @@
 			<key>xpos</key>
 			<integer>630</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>295</integer>
 		</dict>
 		<key>03A61E61-611A-4555-B4F6-30ED79850890</key>
 		<dict>
@@ -767,7 +714,7 @@
 			<key>xpos</key>
 			<integer>630</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>440</integer>
 		</dict>
 		<key>3CED399E-5B73-47CD-AC97-99B0CCD321F0</key>
 		<dict>
@@ -812,7 +759,7 @@
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>440</integer>
 		</dict>
 		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
 		<dict>
@@ -861,17 +808,6 @@
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
-		<key>C18F258A-2134-476B-9B2B-3EAB189C3037</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>vimac docs</string>
-			<key>xpos</key>
-			<integer>630</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
 		<key>C6A9FE99-C9C0-4439-98AD-85E5A8105B6F</key>
 		<dict>
 			<key>note</key>
@@ -897,13 +833,6 @@
 			<key>ypos</key>
 			<integer>470</integer>
 		</dict>
-		<key>DB00F183-AB13-4DF2-AE14-4A98EA8AD9CB</key>
-		<dict>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
 		<key>E56FB083-4DE7-4650-A497-30E811525588</key>
 		<dict>
 			<key>colorindex</key>
@@ -920,7 +849,7 @@
 			<key>xpos</key>
 			<integer>815</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>295</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

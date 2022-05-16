@@ -124,6 +124,7 @@ imap <C-j> <Esc>c^
 " Tab Switching
 """"""""""""""""""""""
 " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
+" requires Cycle Through Panes Plugins https://obsidian.md/plugins?id=cycle-through-panes
 exmap tabnext obcommand cycle-through-panes:cycle-through-panes
 nmap gt :tabnext
 exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse

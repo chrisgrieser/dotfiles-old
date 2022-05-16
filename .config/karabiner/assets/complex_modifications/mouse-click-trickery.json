@@ -21,7 +21,27 @@
 						{
 							"type": "frontmost_application_unless",
 							"bundle_identifiers": [
-								"^com\\.apple\\.finder$"
+								"^com\\.apple\\.finder$",
+								"^com\\.hegenberg\\.BetterTouchTool$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"pointing_button": "button3"},
+					"to": [
+						{
+							"key_code": "w",
+							"modifiers": ["command"]
+						}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.apple\\.finder$",
+								"^com\\.hegenberg\\.BetterTouchTool$"
 							]
 						}
 					]
