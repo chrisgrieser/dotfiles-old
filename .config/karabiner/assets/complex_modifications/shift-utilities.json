@@ -34,7 +34,7 @@
 							"halt": true
 						},
 						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
-						{ "shell_command": "open \"https://www.google.de/search?q=$(pbpaste)\""}
+						{ "shell_command": "SEL=$(pbpaste) ; URL_REGEX=\\\"^[[:space:]]*http.*\\\" ; if [[ \\\"$SEL\\\" =~ $URL_REGEX ]]; then open \\\"$SEL\\\" ; else open \\\"https://www.google.de/search?q=$SEL\\\" ; fi"}
 					],
 					"parameters": {
 					    "basic.to_if_alone_timeout_milliseconds": 250
