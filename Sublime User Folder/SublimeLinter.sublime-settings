@@ -32,7 +32,7 @@
 			"args": ["--config", "/.markdownlintrc", "--disable=no-trailing-spaces", "--disable=single-trailing-newline"]
 		},
 		"stylelint": {
-			// "filter_errors": "warning: ",
+			"filter_errors": "warning: ",
 		},
 		"eslint": {
 			// "filter_errors": "warning: ",
