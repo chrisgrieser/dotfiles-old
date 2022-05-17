@@ -195,26 +195,10 @@
 							"bundle_identifiers": [
 								"^com\\.runningwithcrayons\\.Alfred$"
 							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"description": "Turn off cmd+tab (to force using Fn App-Switching)",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "tab",
-						"modifiers": {"mandatory": ["command"] }
-					},
-					"to": [ { "key_code": "vk_none"} ],
-					"conditions": [
+						},
 						{
-							"type": "device_if",
-							"identifiers": [ { "is_pointing_device": false } ],
-							"description": "Don't deactivate hardcoded cmd+tab on Mouses"
+							"type": "device_unless",
+							"identifiers": [ {"is_pointing_device": false} ]
 						}
 					]
 				}

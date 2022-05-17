@@ -92,8 +92,9 @@ nnoremap x "_x
 " allows Double Enter to add new line and indent
 nnoremap <CR> A
 
-" More logical undo
-nnoremap U <C-r>
+" Undo consistent with cmd+z / cmd+shift+z
+nnoremap Z <C-r>
+nnoremap z u
 
 " quicker way to change word
 nnoremap <Space> "_ciw
@@ -146,14 +147,6 @@ vnoremap J <Esc>
 nnoremap <C-5> ysiw]
 nnoremap <C-8> ysiw)
 nnoremap <C-2> ysiw"
-
-""""""""""""""""""""""
-" < Footpedal
-""""""""""""""""""""""
-" Karabiner maps pedal to <Del>
-nnoremap <Del> i
-vnoremap <Del> <Esc>
-" switches from insert to normal mode via binding in "Default (OSX).sublime-keymap"
 
 """"""""""""""""""""""
 " < Sorting

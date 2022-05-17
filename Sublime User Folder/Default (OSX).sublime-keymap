@@ -17,6 +17,8 @@
 	{"keys": ["ü"], "command": "nv_feed_key", "args": {"key": "ü"}, "context": [{"key": "vi_command_mode_aware"}]},
 	{"keys": ["Ü"], "command": "nv_feed_key", "args": {"key": "Ü"}, "context": [{"key": "vi_command_mode_aware"}]},
 	{"keys": ["ß"], "command": "nv_feed_key", "args": {"key": "ß"}, "context": [{"key": "vi_command_mode_aware"}]},
+	{"keys": ["°"], "command": "nv_feed_key", "args": {"key": "°"}, "context": [{"key": "vi_command_mode_aware"}]},
+	{"keys": ["§"], "command": "nv_feed_key", "args": {"key": "§"}, "context": [{"key": "vi_command_mode_aware"}]},
 
 	// to avoid `Esc` leaving insert mode and autocomplete
 	// (weirdly enough, copying this from the default sublime-keymap
@@ -65,17 +67,6 @@
 
 	// Reload vimrc
 	{ "keys": ["super+alt+control+r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
-
-	// Footpedal
-	{
-		"keys": ["delete"],
-		"command": "nv_feed_key",
-		"args": {"key": "<esc>"},
-		"context": [
-			{"key": "vi_insert_mode_aware"},
-			{ "key": "auto_complete_visible", "operator": "not_equal", "operand":  true }
-		]
-	},
 
 	//---------------------------------------------------------------------------
 

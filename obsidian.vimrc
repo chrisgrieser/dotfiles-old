@@ -91,8 +91,9 @@ nmap x "_dl
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" More logical undo
-nmap U <C-r>
+" Undo consistent with cmd+z / cmd+shift+z
+nmap Z <C-r>
+nmap z u
 
 " quicker way to change word
 nmap <Space> "_ciw
@@ -179,19 +180,9 @@ nmap zM :foldall
 " < Sneak / Lightspeed
 """"""""""""""""""""""
 " emulate vim-sneak
-exmap sneak obcommand activate-jump-to-anywhere
+exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
 nmap s :sneak
 nmap S :sneak
-
-
-""""""""""""""""""""""
-" < Footpedal
-""""""""""""""""""""""
-" Karabiner maps pedal to <Del>
-nmap <Del> i
-vmap <Del> <Esc>
-imap <Del> <Esc>
-rmap <Del> <Esc>
 
 """"""""""""""""""""""
 " < Sorting
