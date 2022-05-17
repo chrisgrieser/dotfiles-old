@@ -3,8 +3,9 @@
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": true, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
-	"vintageous_enable_sneak": true,
+	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
 	"vintageous_bell": "views",
+	"vintageous_exit_when_quiting_last_window": true,
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
