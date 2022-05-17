@@ -2,6 +2,18 @@
 
 To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply open respective following URL in your browser.
 
+## Table of Contents
+<!-- MarkdownTOC -->
+
+- [Capslock to Hyper / Esc](#capslock-to-hyper--esc)
+- [Vim Utilities](#vim-utilities)
+- [Mouse Click Trickery](#mouse-click-trickery)
+- [Shift Utilities](#shift-utilities)
+- [Fn App-Switcher](#fn-app-switcher)
+- [One Stroke \`´ \(German Layout\)](#one-stroke-%C2%B4-german-layout)
+
+<!-- /MarkdownTOC -->
+
 ## Capslock to Hyper / Esc
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
@@ -11,11 +23,13 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ```
 
 ## Vim Utilities
-- Modifies `alt + 5/6/8/9/l` from the German so that it sends `[]{}@`, but from the US layout. then, immediately switches back to German layout. This enables the use of those keys for vim, e.g. for `dt]` or `@`, without ever switching keyboard layout.
+- Modifies `alt + 5/6/8/9/l/n or ^` from the German layout so that it sends `[]{}@~^` the US layout. 
+	- This enables the use of those keys for vim, e.g. for `dt]` or `@`, without ever switching keyboard layout. 
+	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#one-stroke-%C2%B4-german-layout).
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
-- Focus window & hide cursor[^2] by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 - Scroll up/down globally via `alt+j/k`.
 - Press `k` and `l` "simultaneously" to send an `enter`.
+- Focus window & hide cursor[^2] by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
@@ -32,13 +46,13 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 ## Shift Utilities
 - `shift-backspace` to delete forwards. 
-- Tap `right-shift` alone to search the selected text.
+- Tap `right-shift` alone to search the selected text / open the selected URL.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-utilities.json
 ```
 
-## Fn Launcher
+## Fn App-Switcher
 `fn + {letter}` launches/switches to a pre-defined app
 - `fn + c` → `C`alendar → BusyCal
 - `fn + b` → `B`rowser → Brave Browser
@@ -65,8 +79,9 @@ Since pressing `fn` interferes with the built-in macOS emoji insertion key, it n
 
 If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
 
-## One Stroke ^~\`´ (German Layout)
-Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àáâã`. (Note that the way this is done, they aren't received properly by vim anymore.)
+## One Stroke \`´ (German Layout)
+- Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
+- Although the same also applies for `^~`, they are not implemented here, since they are solved by the respective [Vim Utilities Mod](#vim-utilities).
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json

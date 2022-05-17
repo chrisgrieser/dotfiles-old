@@ -6,7 +6,7 @@
 	"highlightedyank_duration": 10000,
 	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
 	"vintageous_exit_when_quiting_last_window": false,
-	"vintageous_reset_mode_when_switching_tabs": true,
+	"vintageous_reset_mode_when_switching_tabs": false,
 
 	"neovintageous_search_cur_style": "stippled_underline",
 	"neovintageous_search_occ_style": "fill",
