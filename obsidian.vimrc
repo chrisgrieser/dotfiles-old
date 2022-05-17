@@ -191,16 +191,12 @@ rmap <Del> <Esc>
 " Sorting
 """"""""""""""""""""""
 " sort selection
-vnoremap ß :'<,'>sort<CR>
-
-" sort Multi-Line-Array (and remove duplicates)
-nnoremap ßa vi]:sort u<CR>
+vmap ß :'<,'>sort
 
 " sort globally
-nnoremap ßg :sort<CR>
+nmap ßg :sort
 
-"sort paragraph
-nnoremap ßp vip:sort<CR>
+" paragraph-wise sorting unfortunately does not work :(
 
 """"""""""""""""""""""
 " Misc

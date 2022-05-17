@@ -65,6 +65,9 @@ vnoremap <Left> :noop<CR>
 vnoremap <Up> :noop<CR>
 vnoremap <Down> :noop<CR>
 
+" Goto Mark: remapping since ` not working
+nnoremap ö `
+
 """"""""""""""""""""""
 " Jumps
 """"""""""""""""""""""
@@ -164,13 +167,9 @@ nnoremap ßg :sort<CR>
 "sort paragraph
 nnoremap ßp vip:sort<CR>
 
-
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
-" Goto Mark: remapping since ` not working
-nnoremap ö `
-
 " quicker access to neovintageoues help docs
 noremap ? :help nv<CR>
 
