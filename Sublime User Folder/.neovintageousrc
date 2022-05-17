@@ -93,9 +93,9 @@ nnoremap <CR> A
 nnoremap U <C-r>
 
 " quicker way to change word
-nnoremap <Space> "wciw
-nnoremap <S-Space> "wdaw
-vnoremap <Space> "vc
+nnoremap <Space> "_ciw
+nnoremap <S-Space> "_daw
+vnoremap <Space> "_c
 
 " opt + space = <PageUp> via Karabiner elements
 nnoremap <PageUp> yiw

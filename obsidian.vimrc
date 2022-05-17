@@ -18,6 +18,7 @@ nmap P "0p
 """"""""""""""""""""""
 " search w/o having to press enter
 set incsearch
+
 " no modifier key for jumping to next word
 nmap + *
 
@@ -89,9 +90,9 @@ nmap <CR> A
 nmap U <C-r>
 
 " quicker way to change word
-nmap <Space> "wciw
-nmap <S-Space> "wdaw
-vmap <Space> "vc
+nmap <Space> "_ciw
+nmap <S-Space> "_daw
+vmap <Space> "_c
 " opt + space = <PageUp> via Karabiner elements
 nmap <PageUp> yiw
 " fn + space = <PageDown> via Karabiner elements
