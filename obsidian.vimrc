@@ -53,6 +53,10 @@ nmap <Right> :noop
 nmap <Left> :noop
 nmap <Up> :noop
 nmap <Down> :noop
+vmap <Right> :noop
+vmap <Left> :noop
+vmap <Up> :noop
+vmap <Down> :noop
 
 """"""""""""""""""""""
 " Jumps
@@ -67,10 +71,9 @@ nmap <S-Tab> <C-i>
 " Editing
 """"""""""""""""""""""
 
-" backspace works in normal mode like in insert mode & consistent with <del>
+" backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
-vmap <BS> "_xh
-nmap <S-BS> <Del>
+nmap <S-BS> "_x
 
 " don't save small deletion in the register
 " can't use "_x, cause Obsidian doesn't support noremap
@@ -86,6 +89,11 @@ nmap U <C-r>
 nmap <Space> "_ciw
 nmap <S-Space> "_daw
 vmap <Space> c
+" opt + space = <Del> via Karabiner elements
+nmap <Del> yiw
+" fn + space = <Ins>via Karabiner elements
+nmap <Ins> viwp
+
 
 " Imitating Abolish's Titlecase (crt)
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower

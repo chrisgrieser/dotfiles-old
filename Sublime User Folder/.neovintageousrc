@@ -58,6 +58,10 @@ nnoremap <Right> :noop<CR>
 nnoremap <Left> :noop<CR>
 nnoremap <Up> :noop<CR>
 nnoremap <Down> :noop<CR>
+vnoremap <Right> :noop<CR>
+vnoremap <Left> :noop<CR>
+vnoremap <Up> :noop<CR>
+vnoremap <Down> :noop<CR>
 
 """"""""""""""""""""""
 " Jumps
@@ -72,10 +76,9 @@ nnoremap <S-Tab> <C-i>
 " Editing
 """"""""""""""""""""""
 
-" backspace works in normal mode like in insert mode & consistent with <del>
+" backspace works in normal mode like in insert mode & consistent with <Del>
 nnoremap <BS> h"_x
-vnoremap <BS> "_xh
-nnoremap <S-BS> <Del>
+nnoremap <S-BS> "_x
 
 " don't save small deletion in the register
 nnoremap x "_x

@@ -252,10 +252,6 @@
 		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
 		{"key": "selection_empty", "operator": "equal", "operand": true},
 	] },
-	{ "keys": ["super+e"], "command": "run_macro_file", "args": { "file": "res://Packages/User/Markdown Inline Code (with selection).sublime-macro" }, "context": [
-		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
-		{"key": "selection_empty", "operator": "equal", "operand": false},
-	] },
 	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }

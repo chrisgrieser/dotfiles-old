@@ -1,0 +1,86 @@
+{
+	"title": "Misc",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/misc.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "One Stroke `´ (German Layout)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "equal_sign"},
+					"to": [
+						{ "key_code": "equal_sign" },
+						{ "key_code": "spacebar" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" } ]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "equal_sign",
+						"modifiers": {"mandatory": ["shift"] }
+					},
+					"to": [
+						{ "key_code": "equal_sign", "modifiers": ["shift"] },
+						{ "key_code": "spacebar" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" } ]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Spacebar Hack (Obsidian/Sublime)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "spacebar",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [{ "key_code": "delete_forward" } ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.sublimetext\\.4$",
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "spacebar",
+						"modifiers": {"mandatory": ["fn"] }
+					},
+					"to": [{ "key_code": "insert" } ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.sublimetext\\.4$",
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

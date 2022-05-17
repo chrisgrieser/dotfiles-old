@@ -10,7 +10,7 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Shift Utilities](#shift-utilities)
 - [Fn App-Switcher](#fn-app-switcher)
-- [One Stroke \`´ \(German Layout\)](#one-stroke-%C2%B4-german-layout)
+- [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
 
@@ -25,7 +25,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ## Vim Utilities
 - Modifies `alt + 5/6/8/9/l/n or ^` from the German layout so that it sends `[]{}@~^` the US layout. 
 	- This enables the use of those keys for vim, e.g. for `dt]` or `@`, without ever switching keyboard layout. 
-	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#one-stroke-%C2%B4-german-layout).
+	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#miscellaneous).
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 - Scroll up/down globally via `alt+j/k`.
 - Press `k` and `l` "simultaneously" to send an `enter`.
@@ -79,9 +79,10 @@ Since pressing `fn` interferes with the built-in macOS emoji insertion key, it n
 
 If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
 
-## One Stroke \`´ (German Layout)
-- Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
-- Although the same also applies for `^~`, they are not implemented here, since they are solved by the respective [Vim Utilities Mod](#vim-utilities).
+## Miscellaneous
+- **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
+	- Although the same also applies for `^~`, they are not implemented here, since they are solved by the respective [Vim Utilities Mod](#vim-utilities).
+- Spacebar Hack (Obsidian/Sublime) transforms `fn + space` to `f19` and `opt + space` to `f18`, to be able to assign them as bindings in a .vimrc.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json
