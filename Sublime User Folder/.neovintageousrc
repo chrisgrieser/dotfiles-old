@@ -84,6 +84,7 @@ nnoremap <S-Tab> <C-i>
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nnoremap <BS> h"_x
 nnoremap <S-BS> "_x
+vnoremap <BS> d
 
 " don't save small deletion in the register
 nnoremap x "_x

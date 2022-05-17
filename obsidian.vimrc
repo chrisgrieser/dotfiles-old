@@ -81,6 +81,7 @@ nmap <S-Tab> <C-i>
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
+vmap <BS> d
 nmap <S-BS> "_x
 
 " don't save small deletion in the register

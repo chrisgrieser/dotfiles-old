@@ -421,76 +421,6 @@
                         ]
                     },
                     {
-                        "description": "Mouse-4 (hold): search selected text, (tap): send F13",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f13"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "R-⇧: search selected text / open URL",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "⌥+j, ⌥+k: Scroll ↓↑",
                         "manipulators": [
                             {
@@ -1306,6 +1236,7 @@
                         "description": "⇧+⌫: ⌦",
                         "manipulators": [
                             {
+                                "description": "forward-delete needed for footpadel in vim emulators, so this workaround 🙈",
                                 "from": {
                                     "key_code": "delete_or_backspace",
                                     "modifiers": {
@@ -1314,9 +1245,84 @@
                                         ]
                                     }
                                 },
-                                "to": {
-                                    "key_code": "delete_forward"
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse-4 (hold): search selected text / open URL, (tap): send F13",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button4"
                                 },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f13"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]* ]]; then open \"$(echo \"$SEL\" | sed 's/ *$//')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-⇧: search selected text / open URL",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_shift"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]* ]]; then open \"$(echo \"$SEL\" | sed 's/ *$//')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]

@@ -76,7 +76,6 @@
 			{ "key": "auto_complete_visible", "operator": "not_equal", "operand":  true }
 		]
 	},
-	{ "keys": ["shift+backspace"], "command": "right_delete"},
 
 	//---------------------------------------------------------------------------
 
