@@ -55,8 +55,8 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^com\\.sublimetext\\.4$",
 								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^com\\.sublimetext\\.4$",
 								"^md\\.obsidian$"
 							]
 						}
@@ -73,8 +73,8 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^com\\.sublimetext\\.4$",
 								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^com\\.sublimetext\\.4$",
 								"^md\\.obsidian$"
 							]
 						}

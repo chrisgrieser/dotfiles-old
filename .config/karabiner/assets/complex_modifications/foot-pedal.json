@@ -1,0 +1,25 @@
+{
+	"title": "Foot Pedal",
+	"version": "0.1",
+	"maintainers": ["pseudometa"],
+	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/foot-pedal.json",
+	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
+	"rules": [
+		{
+			"description": "Foot Pedal to F17",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "b"},
+					"to": [{ "key_code": "f17" } ],
+					"conditions": [
+						{
+							"type": "device_if",
+							"identifiers": [{ "product_id": 57382 } ]
+						}
+					]
+				}
+			]
+		}
+	]
+}

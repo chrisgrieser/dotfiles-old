@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>73FB998B-A01C-4934-961B-430CAA7F9D84</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0911C39-BD31-4E5A-813F-15611D205CB6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8B5E6418-AE7E-4E95-B133-CC53C1208C8B</key>
 		<array>
 			<dict>
@@ -47,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D33641C6-9931-4B9A-8E22-E49496723AFD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>73FB998B-A01C-4934-961B-430CAA7F9D84</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -58,6 +84,27 @@
 	<string>Screenshot Utility</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>📸 Screenshot copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6683D7DE-D787-45CD-9433-8941FCB0F178</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -115,27 +162,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>📸 Screenshot copied to clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>6683D7DE-D787-45CD-9433-8941FCB0F178</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>paths</key>
 				<array>
 					<string>/System/Applications/Utilities/Screenshot.app</string>
@@ -181,6 +207,91 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>📸 OCR Text copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E0911C39-BD31-4E5A-813F-15611D205CB6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+
+temp_image="$alfred_workflow_cache""/temp_ocr_snapshot.png"
+mkdir -p "$alfred_workflow_cache"
+screencapture -i "$temp_image"
+
+tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>clipboard_ocr.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>73FB998B-A01C-4934-961B-430CAA7F9D84</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>18</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>1</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>net.highlightsapp.universal</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D33641C6-9931-4B9A-8E22-E49496723AFD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Dependency: Tesseract
@@ -218,6 +329,15 @@ IMAGE_BASE_NAME needs to be `Pasted image ` for the paste image renamer Obsidian
 			<key>ypos</key>
 			<integer>245</integer>
 		</dict>
+		<key>73FB998B-A01C-4934-961B-430CAA7F9D84</key>
+		<dict>
+			<key>note</key>
+			<string>needs tesseract &amp; tesseract-lang</string>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
 		<key>8B5E6418-AE7E-4E95-B133-CC53C1208C8B</key>
 		<dict>
 			<key>xpos</key>
@@ -233,6 +353,22 @@ IMAGE_BASE_NAME needs to be `Pasted image ` for the paste image renamer Obsidian
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>60</integer>
+		</dict>
+		<key>D33641C6-9931-4B9A-8E22-E49496723AFD</key>
+		<dict>
+			<key>note</key>
+			<string>Screenshot to OCR to Clipboard</string>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
+		<key>E0911C39-BD31-4E5A-813F-15611D205CB6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>400</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

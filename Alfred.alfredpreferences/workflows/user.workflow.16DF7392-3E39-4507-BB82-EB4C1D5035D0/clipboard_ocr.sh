@@ -8,6 +8,7 @@ screencapture -i "$temp_image"
 
 tesseract "$temp_image" stdout -l "$ocr_languages" 2>&1 \
 	| grep -Ev "Warning: Invalid resolution 0 dpi." \
-	| grep -Ev "Estimating resolution as"
+	| grep -Ev "Estimating resolution as" \
+	| pbcopy
 
 

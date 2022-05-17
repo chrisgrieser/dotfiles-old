@@ -69,16 +69,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>590B226F-A8EC-45DA-BD7B-188E44039DB9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>4E5B84C8-6F38-4660-BF59-079EE3D12150</key>
 		<array>
@@ -98,19 +88,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FDA1F410-54D5-4017-B8AC-9FCF2D0ED98B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>590B226F-A8EC-45DA-BD7B-188E44039DB9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C5CA7702-7CF9-432F-B3C8-69234F93B021</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -248,13 +225,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C5CA7702-7CF9-432F-B3C8-69234F93B021</key>
-		<array/>
 		<key>DD67A894-ED1C-4DAA-84B7-113B91E18326</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6BE83D79-01AE-4F6B-98CE-C100A926316F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E65BE4E1-C446-4840-A1D2-0033CA73F1EB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E3D6E3BB-81DF-431C-A6F1-175075F74679</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -386,25 +374,6 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>590B226F-A8EC-45DA-BD7B-188E44039DB9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -414,12 +383,12 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>📸 OCR Text copied</string>
+				<string>📸 OCR Text saved in Drafts</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>C5CA7702-7CF9-432F-B3C8-69234F93B021</string>
+			<string>E3D6E3BB-81DF-431C-A6F1-175075F74679</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1132,13 +1101,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
-		<key>590B226F-A8EC-45DA-BD7B-188E44039DB9</key>
-		<dict>
-			<key>xpos</key>
-			<integer>400</integer>
-			<key>ypos</key>
-			<integer>140</integer>
-		</dict>
 		<key>65FBA979-932F-4451-886B-E14284E89A1E</key>
 		<dict>
 			<key>colorindex</key>
@@ -1279,13 +1241,6 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>ypos</key>
 			<integer>655</integer>
 		</dict>
-		<key>C5CA7702-7CF9-432F-B3C8-69234F93B021</key>
-		<dict>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>140</integer>
-		</dict>
 		<key>DD67A894-ED1C-4DAA-84B7-113B91E18326</key>
 		<dict>
 			<key>colorindex</key>
@@ -1295,14 +1250,21 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
+		<key>E3D6E3BB-81DF-431C-A6F1-175075F74679</key>
+		<dict>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
 		<key>E65BE4E1-C446-4840-A1D2-0033CA73F1EB</key>
 		<dict>
 			<key>note</key>
 			<string>Create Draft</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>60</integer>
 		</dict>
 		<key>F5CD04E3-5A08-4191-9DAA-FB7C95953587</key>
 		<dict>
