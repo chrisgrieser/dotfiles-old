@@ -89,8 +89,8 @@ nmap <CR> A
 nmap U <C-r>
 
 " quicker way to change word
-nmap <Space> "_ciw
-nmap <S-Space> "_daw
+nmap <Space> "wciw
+nmap <S-Space> "wdaw
 vmap <Space> "vc
 " opt + space = <PageUp> via Karabiner elements
 nmap <PageUp> yiw
@@ -150,16 +150,9 @@ exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
 """"""""""""""""""""""
-" Sneak / Lightspeed
-""""""""""""""""""""""
-" emulate vim-sneak
-exmap sneak obcommand activate-jump-to-anywhere
-nmap s :sneak
-
-""""""""""""""""""""""
 " Folding
 """"""""""""""""""""""
-" Rebuild some folding from vim, https://vimhelp.org/tabpage.txt.html#gt
+" Rebuild some folding from vim, https://vimhelp.org/fold.txt.html#fold-commands
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
 nmap zc :togglefold
@@ -170,6 +163,14 @@ nmap zR :unfoldall
 
 exmap foldall obcommand editor:fold-all
 nmap zM :foldall
+
+""""""""""""""""""""""
+" Sneak / Lightspeed
+""""""""""""""""""""""
+" emulate vim-sneak
+exmap sneak obcommand activate-jump-to-anywhere
+nmap s :sneak
+nmap S :sneak
 
 """"""""""""""""""""""
 " Misc

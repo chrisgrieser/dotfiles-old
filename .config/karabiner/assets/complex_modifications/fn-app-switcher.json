@@ -214,7 +214,7 @@
 						{
 							"type": "device_if",
 							"identifiers": [ { "is_pointing_device": false } ],
-							"description": "Don't deactivate hardcoded cmd+tab on Mouses."
+							"description": "Don't deactivate hardcoded cmd+tab on Mouses"
 						}
 					]
 				}

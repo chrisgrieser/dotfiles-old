@@ -640,7 +640,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Available Vim Bindings</string>
+				<string>⌨️ Available Vim Bindings</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
