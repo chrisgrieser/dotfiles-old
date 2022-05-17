@@ -18,6 +18,7 @@ nmap P "0p
 """"""""""""""""""""""
 " search w/o having to press enter
 set incsearch
+set ignorecase
 
 " no modifier key for jumping to next word
 nmap + *
@@ -192,3 +193,8 @@ nmap ö `
 " - only `map`s supported, no support for nnoremap, inoremap, etc.
 " - `nnoremap` officially supported, but in practice buggy
 " - gp not implemented
+
+""""""""""""""""""""""
+" UNUSED KEYS
+""""""""""""""""""""""
+" ß ä Ä Ö Q = § ! & M °
