@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4E967DB3-9E1C-4C81-84DA-35D48D49EFA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D1D75BEE-9CE2-40EA-B015-0C476B038816</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
 		<array>
 			<dict>
@@ -623,6 +636,63 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
+				<string>vim empty</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Available Vim Bindings</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4E967DB3-9E1C-4C81-84DA-35D48D49EFA1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>- ß
+- äÄ
+- Ö
+- Q
+- =
+- §
+- !
+- &amp;</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>D1D75BEE-9CE2-40EA-B015-0C476B038816</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
 				<string>vim</string>
 				<key>subtext</key>
 				<string>vim.js</string>
@@ -754,6 +824,13 @@
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
+		<key>4E967DB3-9E1C-4C81-84DA-35D48D49EFA1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>630</integer>
+			<key>ypos</key>
+			<integer>625</integer>
+		</dict>
 		<key>52E4440D-A985-49F4-913B-DB43D6AED740</key>
 		<dict>
 			<key>xpos</key>
@@ -823,6 +900,13 @@
 			<integer>235</integer>
 			<key>ypos</key>
 			<integer>55</integer>
+		</dict>
+		<key>D1D75BEE-9CE2-40EA-B015-0C476B038816</key>
+		<dict>
+			<key>xpos</key>
+			<integer>815</integer>
+			<key>ypos</key>
+			<integer>625</integer>
 		</dict>
 		<key>D3317886-6B6B-4FAB-8FF0-7AAB24B3390D</key>
 		<dict>

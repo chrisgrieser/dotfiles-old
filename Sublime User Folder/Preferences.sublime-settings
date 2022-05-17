@@ -1,11 +1,17 @@
 {
 	// Neovintageous
+	// https://github.com/NeoVintageous/NeoVintageous/blob/master/Preferences.sublime-settings
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"vintageous_use_sys_clipboard": true, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
 	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
-	"vintageous_bell": "views",
-	"vintageous_exit_when_quiting_last_window": true,
+	"vintageous_exit_when_quiting_last_window": false,
+	"vintageous_reset_mode_when_switching_tabs": true,
+
+	"neovintageous_search_cur_style": "stippled_underline",
+	"neovintageous_search_occ_style": "fill",
+	"neovintageous_search_inc_style": "outine",
+	"highlightedyank_style": "fill",
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {

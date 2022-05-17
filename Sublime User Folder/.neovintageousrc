@@ -90,10 +90,11 @@ nnoremap U <C-r>
 nnoremap <Space> "_ciw
 nnoremap <S-Space> "_daw
 vnoremap <Space> c
+nnoremap <M-Space> viwp
 
 " Abolish: Titlecase
-nnoremap ä crt
-nnoremap Ä ~
+nnoremap ü crt
+nnoremap Ü ~
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime

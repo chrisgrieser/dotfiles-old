@@ -121,7 +121,7 @@
 			]
 		},
 		{
-			"description": "[]{}@: German layout as US layout",
+			"description": "[]{}@^~~: German layout as US layout",
 			"manipulators": [
 				{
 					"type": "basic",

@@ -13,6 +13,30 @@
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
 [
+	// Bugfix for Neovintageous, can be deleted with their next release
+	{"keys": ["ü"], "command": "nv_feed_key", "args": {"key": "ü"}, "context": [{"key": "vi_command_mode_aware"}]},
+	{"keys": ["Ü"], "command": "nv_feed_key", "args": {"key": "Ü"}, "context": [{"key": "vi_command_mode_aware"}]},
+	{"keys": ["ß"], "command": "nv_feed_key", "args": {"key": "ß"}, "context": [{"key": "vi_command_mode_aware"}]},
+
+	// to avoid `Esc` leaving insert mode and autocomplete
+	// (weirdly enough, copying this from the default sublime-keymap
+	// is required to fix it oO)
+	// https://github.com/NeoVintageous/NeoVintageous/issues/822
+	{ "keys": ["escape"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{
+		"keys": ["escape"],
+		"command": "nv_feed_key",
+		"args": {"key": "<esc>"},
+		"context": [
+			{"key": "vi_insert_mode_aware"},
+			{ "key": "auto_complete_visible", "operator": "not_equal", "operand":  true }
+		]
+	},
+
 	// Window Closing Bugfix, https://github.com/sublimehq/sublime_text/issues/5237#issuecomment-1048857619
 	// fixed with Build 4130
 	{ "keys": ["super+q"],
@@ -20,16 +44,13 @@
 		"args": {
 			"commands": [
 				["close_all"],
-				["set_layout", {
-						"cols": [0.0, 1.0],
-						"rows": [0.0, 1.0],
-						"cells": [[0, 0, 1, 1]]
-					}
-				],
+				["set_layout", {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } ],
 				["exit"]
 			]
 		}
 	},
+
+	//---------------------------------------------------------------------------
 
 	// Vim Insert Mode Bindings
 	// imap <C-l> <Esc>A & imap <C-h> <Esc>I
@@ -246,26 +267,6 @@
 			{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
 			{"key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
-
-	// to avoid `Esc` leaving insert mode and autocomplete
-	// (weirdly enough, copying this from the default sublime-keymap
-	// is required to fix it oO)
-	// https://github.com/NeoVintageous/NeoVintageous/issues/822
-	{ "keys": ["escape"], "command": "hide_auto_complete", "context":
-		[
-			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
-		]
-	},
-	{
-		"keys": ["escape"],
-		"command": "nv_feed_key",
-		"args": {"key": "<esc>"},
-		"context": [
-			{"key": "nv_command_or_insert"},
-			{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
-		]
-	},
-
 
 ]
 

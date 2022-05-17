@@ -89,8 +89,8 @@ vmap <Space> c
 
 " Imitating Abolish's Titlecase (crt)
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
-nmap ä :smartcaseswitch
-nmap Ä ~
+nmap ü :smartcaseswitch
+nmap Ü ~
 
 " transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
