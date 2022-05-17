@@ -1299,7 +1299,7 @@
                             },
                             "to": [
                                 {
-                                    "key_code": "f17"
+                                    "key_code": "delete_forward"
                                 }
                             ]
                         }

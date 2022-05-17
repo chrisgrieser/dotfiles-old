@@ -134,15 +134,6 @@ vnoremap J <Esc>
 " already built in: presss v in visual mode to go back
 
 """"""""""""""""""""""
-" Misc
-""""""""""""""""""""""
-" Goto Mark: remapping since ` not working
-nnoremap ö `
-
-" quicker access to neovintageoues help docs
-noremap ? :help nv<CR>
-
-""""""""""""""""""""""
 " Surround
 """"""""""""""""""""""
 " emulate some smarter punctuation bindings from Smarter MD Hotkeys
@@ -153,8 +144,35 @@ nnoremap <C-2> ysiw"
 """"""""""""""""""""""
 " Footpedal
 """"""""""""""""""""""
-nnoremap <Home> i
+" Karabiner maps pedal to <Del>
+nnoremap <Del> i
+vnoremap <Del> <Esc>
+" switches from insert to normal mode via binding in "Default (OSX).sublime-keymap"
 
+""""""""""""""""""""""
+" Sorting
+""""""""""""""""""""""
+" sort selection
+vnoremap ß :'<,'>sort<CR>
+
+" sort Multi-Line-Array (and remove duplicates)
+nnoremap ßa vi]:sort u<CR>
+
+" sort globally
+nnoremap ßg :sort<CR>
+
+"sort paragraph
+nnoremap ßp vip:sort<CR>
+
+
+""""""""""""""""""""""
+" Misc
+""""""""""""""""""""""
+" Goto Mark: remapping since ` not working
+nnoremap ö `
+
+" quicker access to neovintageoues help docs
+noremap ? :help nv<CR>
 
 """""""""""""""""""""""""""
 " NEOVINTAGEOUS LIMITATIONS
@@ -182,4 +200,4 @@ nnoremap <Home> i
 """"""""""""""""""""""
 " UNUSED KEYS
 """"""""""""""""""""""
-" ß ä Ä Ö Q = § ! & M °
+" ä Ä Ö Q = § ! & M °

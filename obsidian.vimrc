@@ -63,6 +63,9 @@ vmap <Left> :noop
 vmap <Up> :noop
 vmap <Down> :noop
 
+" Goto Mark: remapping since ` not working
+nmap ö `
+
 """"""""""""""""""""""
 " Jumps
 """"""""""""""""""""""
@@ -174,14 +177,36 @@ exmap sneak obcommand activate-jump-to-anywhere
 nmap s :sneak
 nmap S :sneak
 
+
+""""""""""""""""""""""
+" Footpedal
+""""""""""""""""""""""
+" Karabiner maps pedal to <Del>
+nmap <Del> i
+vmap <Del> <Esc>
+imap <Del> <Esc>
+rmap <Del> <Esc>
+
+""""""""""""""""""""""
+" Sorting
+""""""""""""""""""""""
+" sort selection
+vnoremap ß :'<,'>sort<CR>
+
+" sort Multi-Line-Array (and remove duplicates)
+nnoremap ßa vi]:sort u<CR>
+
+" sort globally
+nnoremap ßg :sort<CR>
+
+"sort paragraph
+nnoremap ßp vip:sort<CR>
+
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
-
-" Goto Mark: remapping since ` not working
-nmap ö `
 
 """"""""""""""""""""""
 " OBSIDIAN LIMITATIONS

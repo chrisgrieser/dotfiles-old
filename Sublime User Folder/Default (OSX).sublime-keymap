@@ -66,6 +66,18 @@
 	// Reload vimrc
 	{ "keys": ["super+alt+control+r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
 
+	// Footpedal
+	{
+		"keys": ["delete"],
+		"command": "nv_feed_key",
+		"args": {"key": "<esc>"},
+		"context": [
+			{"key": "vi_insert_mode_aware"},
+			{ "key": "auto_complete_visible", "operator": "not_equal", "operand":  true }
+		]
+	},
+
+
 	//---------------------------------------------------------------------------
 
 	// Build System

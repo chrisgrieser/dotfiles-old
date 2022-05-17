@@ -11,7 +11,7 @@
 				{
 					"type": "basic",
 					"from": {"key_code": "b"},
-					"to": [{ "key_code": "home" } ],
+					"to": [{ "key_code": "f17" } ],
 					"conditions": [
 						{
 							"type": "device_if",
