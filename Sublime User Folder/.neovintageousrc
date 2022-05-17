@@ -93,26 +93,27 @@ nnoremap x "_x
 nnoremap <CR> A
 
 " Undo consistent with cmd+z / cmd+shift+z
-nnoremap Z <C-r>
-nnoremap z u
+noremap Z <C-r>
+noremap z u
 
 " quicker way to change word
 nnoremap <Space> "_ciw
 nnoremap <S-Space> "_daw
 vnoremap <Space> "_c
 
-" opt + space = <PageUp> via Karabiner elements
+" <M-Space> = <PageUp> via Karabiner elements
 nnoremap <PageUp> yiw
-" fn + space = <PageDown> via Karabiner elements
+" <Fn-Space> = <PageDown> via Karabiner elements
 nnoremap <PageDown> viwp
 
 " Abolish: Titlecase
-nnoremap ü crt
-nnoremap Ü ~
+nnoremap u crt
+nnoremap ü ~
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime
 " nnoremap <C-t> xph
+
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
@@ -154,13 +155,13 @@ nnoremap <C-2> ysiw"
 " sort selection
 vnoremap ß :'<,'>sort<CR>
 
-" sort Multi-Line-Array (and remove duplicates)
+" sort [a]rray, if multi-line (+ remove duplicates)
 nnoremap ßa vi]:sort u<CR>
 
-" sort globally
+" sort [g]lobally
 nnoremap ßg :sort<CR>
 
-"sort paragraph
+"sort [p]aragraph
 nnoremap ßp vip:sort<CR>
 
 """"""""""""""""""""""
@@ -177,22 +178,15 @@ noremap ? :help nv<CR>
 "   any i command 🙈
 " - as opposed to Obsdian, excommands (:help) need to be
 "   confirmed with an <CR>
-" - "ü" isn't read as character in normal mode https://github.com/NeoVintageous/NeoVintageous/issues/821
 " - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810
 
-" - Neovintageous does not allow for any insert mode  motifications, these need
-"   to be done in Sublime (but without modifier keys (e.g. "HH"), they tend
-"   to conflict with Neovintageous bindings
-
-" If you need a custom insert mode key binding you can use the
-" "vi_insert_mode_aware" context in your key binding: >
-"     {
-"         "keys": [...],
-"         "command": "...",
-"         "context": [{"key": "vi_insert_mode_aware"}]
-"     }
+" - Neovintageous does not allow for any insert mode  modifications, these need
+"   to be done in Sublime, with
+"   "context": [{"key": "vi_insert_mode_aware"}]
 
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" ä Ä Ö Q = § ! & M °
+" ä Ä
+" Ö Q M U Ü
+" = § ! & °

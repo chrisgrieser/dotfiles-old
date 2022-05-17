@@ -10,7 +10,6 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Shift Utilities](#shift-utilities)
 - [Fn App-Switcher](#fn-app-switcher)
-- [Foot Pedal](#foot-pedal)
 - [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
@@ -82,13 +81,10 @@ Since pressing `fn` interferes with the built-in macOS emoji insertion key, it n
 
 If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
 
-## Foot Pedal
-- Pedal-Click to `F17` (WIP).
-
 ## Miscellaneous
 - **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
 	- Although the same also applies for `^~`, they are not implemented here, since they are solved by the respective [Vim Utilities Mod](#vim-utilities).
-- Spacebar Hack (Obsidian/Sublime) transforms `fn + space` to `f19` and `opt + space` to `f18`, to be able to assign them as bindings in a .vimrc.
+- Spacebar Hack (Obsidian/Sublime) transforms `fn + space` to `<PageUp>` and `opt + space` to `<PageDown>`, to be able to assign them as bindings in a .vimrc.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json

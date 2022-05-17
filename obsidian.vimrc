@@ -81,8 +81,8 @@ nmap <S-Tab> <C-i>
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
-vmap <BS> d
 nmap <S-BS> "_x
+vmap <BS> d
 
 " don't save small deletion in the register
 " can't use "_x, cause Obsidian doesn't support noremap
@@ -92,22 +92,24 @@ nmap x "_dl
 nmap <CR> A
 
 " Undo consistent with cmd+z / cmd+shift+z
-nmap Z <C-r>
-nmap z u
+" mapping to :undo to keep u free for other mappings
+map Z <C-r>
+map z :undo
 
 " quicker way to change word
 nmap <Space> "_ciw
 nmap <S-Space> "_daw
 vmap <Space> "_c
-" opt + space = <PageUp> via Karabiner elements
+" <M-Space> = <PageUp> via Karabiner elements
 nmap <PageUp> yiw
-" fn + space = <PageDown> via Karabiner elements
+" <Fn-Space> = <PageDown> via Karabiner elements
 nmap <PageDown> viwp
 
 " Imitating Abolish's Titlecase (crt)
+" also, using u here is more consistent with visual mode
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
-nmap ü :smartcaseswitch
-nmap Ü ~
+nmap u :smartcaseswitch
+nmap ü ~
 
 " transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
@@ -124,7 +126,6 @@ nmap X (c)
 " mnemonic: [p]andoc citation syntax
 " strangely, nmap works as a substitute for onoremap
 nmap pp i]
-
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -162,21 +163,6 @@ exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
 """"""""""""""""""""""
-" < Folding
-""""""""""""""""""""""
-" Rebuild some folding from vim, https://vimhelp.org/fold.txt.html#fold-commands
-exmap togglefold obcommand editor:toggle-fold
-nmap zo :togglefold
-nmap zc :togglefold
-nmap za :togglefold
-
-exmap unfoldall obcommand editor:unfold-all
-nmap zR :unfoldall
-
-exmap foldall obcommand editor:fold-all
-nmap zM :foldall
-
-""""""""""""""""""""""
 " < Sneak / Lightspeed
 """"""""""""""""""""""
 " emulate vim-sneak
@@ -190,10 +176,11 @@ nmap S :sneak
 " sort selection
 vmap ß :'<,'>sort
 
-" sort globally
+" sort [g]lobally
 nmap ßg :sort
 
-" paragraph-wise sorting unfortunately does not work :(
+" sort [p]aragraph
+nmap ßp vipß
 
 """"""""""""""""""""""
 " < Misc
@@ -204,7 +191,7 @@ nmap ? :obcommand
 """"""""""""""""""""""""
 " < OBSIDIAN LIMITATIONS
 """"""""""""""""""""""""
-" - text object `is` / `as` does not work
+" - text object `is` / `as` does not work https://github.com/codemirror/CodeMirror/issues/5454
 " - U (as in changes in a line) does not work
 " - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
@@ -215,4 +202,6 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" ä Ä Ö Q = § ! & M °
+" ä Ä
+" Ö Q M U Ü
+" = § ! & °
