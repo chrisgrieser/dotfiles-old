@@ -1179,6 +1179,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.sublimetext\\.4$",
+                                            "^org\\.pqrs\\.Karabiner-EventViewer$",
                                             "^md\\.obsidian$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -1194,7 +1195,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "delete_forward"
+                                        "key_code": "page_up"
                                     }
                                 ],
                                 "type": "basic"
@@ -1204,6 +1205,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.sublimetext\\.4$",
+                                            "^org\\.pqrs\\.Karabiner-EventViewer$",
                                             "^md\\.obsidian$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -1219,7 +1221,28 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "insert"
+                                        "key_code": "page_down"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Turn off cmd+tab (to force using Fn App-Switching)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "vk_none"
                                     }
                                 ],
                                 "type": "basic"

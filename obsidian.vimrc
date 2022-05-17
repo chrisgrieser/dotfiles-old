@@ -89,10 +89,10 @@ nmap U <C-r>
 nmap <Space> "_ciw
 nmap <S-Space> "_daw
 vmap <Space> c
-" opt + space = <Del> via Karabiner elements
-nmap <Del> yiw
-" fn + space = <Ins>via Karabiner elements
-nmap <Ins> viwp
+" opt + space = <PageUp> via Karabiner elements
+nmap <PageUp> yiw
+" fn + space = <PageDown> via Karabiner elements
+nmap <PageDown> viwp
 
 
 " Imitating Abolish's Titlecase (crt)

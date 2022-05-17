@@ -8,19 +8,6 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
-		<key>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3793E96B-DE64-4F09-ABA2-042BF2D728A1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>67DF2055-B645-4552-B37D-1F3A93BF37EC</key>
 		<array>
 			<dict>
@@ -58,37 +45,6 @@
 	<string>Kill &amp; Restart</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>10</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>°</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -199,13 +155,6 @@ delay 0.5
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>0C3A32D8-69C8-45C9-A53E-6A4D492BD1AF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>105</integer>
-			<key>ypos</key>
-			<integer>70</integer>
-		</dict>
 		<key>0CA4897B-8B47-4E56-877A-29AD1D2A2B8C</key>
 		<dict>
 			<key>colorindex</key>
@@ -224,7 +173,7 @@ delay 0.5
 			<key>note</key>
 			<string>quit &amp; restart</string>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>295</integer>
 			<key>ypos</key>
 			<integer>195</integer>
 		</dict>

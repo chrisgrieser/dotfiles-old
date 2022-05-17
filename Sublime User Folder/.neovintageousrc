@@ -93,7 +93,11 @@ nnoremap U <C-r>
 nnoremap <Space> "_ciw
 nnoremap <S-Space> "_daw
 vnoremap <Space> c
-nnoremap <M-Space> viwp
+
+" opt + space = <PageUp> via Karabiner elements
+nnoremap <PageUp> yiw
+" fn + space = <PageDown> via Karabiner elements
+nnoremap <PageDown> viwp
 
 " Abolish: Titlecase
 nnoremap ü crt

@@ -199,6 +199,19 @@
 					]
 				}
 			]
+		},
+		{
+			"description": "Turn off cmd+tab (to force using Fn App-Switching)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "tab",
+						"modifiers": {"mandatory": ["command"] }
+					},
+					"to": [ { "key_code": "vk_none"} ]
+				}
+			]
 		}
 	]
 }
