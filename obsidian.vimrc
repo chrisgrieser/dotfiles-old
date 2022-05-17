@@ -46,6 +46,9 @@ vmap L $
 nmap J 6j
 nmap K 6k
 
+" no modifier key on German keyboard
+nmap , ;
+
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys
@@ -88,12 +91,11 @@ nmap U <C-r>
 " quicker way to change word
 nmap <Space> "_ciw
 nmap <S-Space> "_daw
-vmap <Space> c
+vmap <Space> "vc
 " opt + space = <PageUp> via Karabiner elements
 nmap <PageUp> yiw
 " fn + space = <PageDown> via Karabiner elements
 nmap <PageDown> viwp
-
 
 " Imitating Abolish's Titlecase (crt)
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower

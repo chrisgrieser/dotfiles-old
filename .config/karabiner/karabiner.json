@@ -1232,6 +1232,17 @@
                         "description": "Turn off cmd+tab (to force using Fn App-Switching)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "description": "Don't deactivate hardcoded cmd+tab on Mouses.",
+                                        "identifiers": [
+                                            {
+                                                "is_pointing_device": false
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "tab",
                                     "modifiers": {

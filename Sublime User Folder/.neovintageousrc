@@ -51,6 +51,9 @@ vnoremap L $
 nnoremap J 6j
 nnoremap K 6k
 
+" no modifier key on German keyboard
+nnoremap , ;
+
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys, "noop" being non-existent command
@@ -92,7 +95,7 @@ nnoremap U <C-r>
 " quicker way to change word
 nnoremap <Space> "_ciw
 nnoremap <S-Space> "_daw
-vnoremap <Space> c
+vnoremap <Space> "vc
 
 " opt + space = <PageUp> via Karabiner elements
 nnoremap <PageUp> yiw

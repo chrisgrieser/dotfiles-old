@@ -617,7 +617,7 @@ end alfred_script</string>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
-				<string>w</string>
+				<string>r</string>
 				<key>keycode</key>
 				<integer>-1</integer>
 				<key>keymod</key>
@@ -638,11 +638,11 @@ end alfred_script</string>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
-				<string>r</string>
+				<string>←</string>
 				<key>keycode</key>
-				<integer>-1</integer>
+				<integer>123</integer>
 				<key>keymod</key>
-				<integer>1048576</integer>
+				<integer>12058624</integer>
 				<key>overridewithargument</key>
 				<false/>
 			</dict>

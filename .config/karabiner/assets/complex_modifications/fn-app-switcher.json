@@ -209,7 +209,14 @@
 						"key_code": "tab",
 						"modifiers": {"mandatory": ["command"] }
 					},
-					"to": [ { "key_code": "vk_none"} ]
+					"to": [ { "key_code": "vk_none"} ],
+					"conditions": [
+						{
+							"type": "device_if",
+							"identifiers": [ { "is_pointing_device": false } ],
+							"description": "Don't deactivate hardcoded cmd+tab on Mouses."
+						}
+					]
 				}
 			]
 		}
