@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Foot Pedal to F17/Forward-Delete (for Vim)",
+			"description": "Foot Pedal (Sublime/Obsidian): Forward-Delete, Rest: F17",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -15,6 +15,32 @@
 					"conditions": [
 						{
 							"type": "device_if",
+							"identifiers": [{ "product_id": 57382 } ]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"description": "so keyboard fn+backspace does not trigger insert mode change",
+					"from": {
+						"key_code": "delete_or_backspace",
+						"modifiers": {"mandatory": ["fn"] }
+					},
+					"to": [
+						{ "key_code": "right_arrow"},
+						{ "key_code": "delete_or_backspace"}
+					],
+					"conditions": [
+						{
+							"type": "device_unless",
 							"identifiers": [{ "product_id": 57382 } ]
 						},
 						{
