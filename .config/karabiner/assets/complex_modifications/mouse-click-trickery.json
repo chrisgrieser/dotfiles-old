@@ -96,6 +96,27 @@
 					}
 				}
 			]
+		},
+		{
+			"description": "Mouse-5 (hold): Look up word under Cursor in Dictionary, (tap): send F16",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"pointing_button": "button5"},
+					"to_if_alone": [{"key_code": "f16" } ],
+					"to_if_held_down": [
+						{
+							"key_code": "d",
+							"modifiers": ["command", "control"],
+							"halt": true
+						}
+					],
+					"parameters": {
+						"basic.to_if_alone_timeout_milliseconds": 300,
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					}
+				}
+			]
 		}
 	]
 }

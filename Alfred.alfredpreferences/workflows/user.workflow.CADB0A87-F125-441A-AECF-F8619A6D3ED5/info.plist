@@ -72,6 +72,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>6E8E47D8-2337-4759-8F7E-8F4799E7DF2F</key>
 		<array>
@@ -143,6 +153,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>45BF28B8-2A74-4CFE-A6A6-818F5D4C959B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -850,6 +870,48 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>🖊 Highlights</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>📒 Free Comments</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -983,6 +1045,24 @@ end alfred_script</string>
 			<integer>250</integer>
 			<key>ypos</key>
 			<integer>555</integer>
+		</dict>
+		<key>76C990C7-4659-4A82-B7ED-BD56E990D605</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>940</integer>
+		</dict>
+		<key>7716F21D-3E2C-47B8-A227-B515E15D2F06</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>690</integer>
+			<key>ypos</key>
+			<integer>950</integer>
 		</dict>
 		<key>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</key>
 		<dict>
