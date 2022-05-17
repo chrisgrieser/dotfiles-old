@@ -197,7 +197,8 @@
 							]
 						},
 						{
-							"type": "device_unless",
+							"type": "device_if",
+							"description": "So fn from foot-pedal doesn't trigger emojis",
 							"identifiers": [ {"is_pointing_device": false} ]
 						}
 					]

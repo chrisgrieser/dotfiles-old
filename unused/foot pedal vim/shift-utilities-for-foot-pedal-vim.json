@@ -9,12 +9,44 @@
 			"description": "⇧+⌫: ⌦",
 			"manipulators": [
 				{
+					"description": "forward-delete needed for footpadel in vim emulators, so this workaround 🙈",
 					"type": "basic",
 					"from": {
 						"key_code": "delete_or_backspace",
 						"modifiers": {"mandatory": ["shift"] }
 					},
-					"to": [{ "key_code": "delete_forward"} ]
+					"to": [
+						{ "key_code": "right_arrow"},
+						{ "key_code": "delete_or_backspace"}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "delete_or_backspace",
+						"modifiers": {"mandatory": ["shift"] }
+					},
+					"to": [{ "key_code": "delete_forward"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					]
 				}
 			]
 		},
