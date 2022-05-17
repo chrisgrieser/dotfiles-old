@@ -49,7 +49,7 @@
 			]
 		},
 		{
-			"description": "R-click (tap): Open link (when in Browser)",
+			"description": "R-Click (tap): Open link (when in Browser)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -98,7 +98,7 @@
 			]
 		},
 		{
-			"description": "Mouse-5 (hold): Look up word under Cursor in Dictionary, (tap): send F16",
+			"description": "Mouse-5 (hold): Look up word under cursor in Dictionary, (tap): send F16",
 			"manipulators": [
 				{
 					"type": "basic",

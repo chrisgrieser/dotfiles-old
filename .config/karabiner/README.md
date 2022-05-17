@@ -40,7 +40,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - Tapping the Right Mouse Button in a browser[^3] to open link in background. Press with any modifier key for a normal right click. Is triggered only when briefly tapping so that mouse gestures aren't affected. (This rule essentially emulates the [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) extension.)
 - Briefly Holding Mouse Button 4 will search for the selected text (or open the url, if a link is selected), tapping will send `F13` (for app-specific automations).
 - Briefly Holding Mouse Button 5 will look up the word under the cursor in the macOS dictionary, tapping will send `F16` (for app-specific automations).
-	- useful to use with this:  
+	- useful to use with this: [Terminology](https://agiletortoise.com/terminology/) 
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json

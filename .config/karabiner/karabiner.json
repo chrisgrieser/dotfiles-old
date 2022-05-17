@@ -1259,6 +1259,36 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Mouse-5 (hold): Look up word under cursor in Dictionary, (tap): send F16",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button5"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f16"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1430,18 +1460,7 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "pointing_button": "button5"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f16"
-                        }
-                    ]
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,

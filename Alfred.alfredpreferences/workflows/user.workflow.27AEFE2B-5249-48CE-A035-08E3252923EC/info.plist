@@ -524,9 +524,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -759,9 +759,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -862,9 +862,9 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.vivaldi.Vivaldi</string>
 					<string>com.brave.Browser</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.vivaldi.Vivaldi</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -997,7 +997,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>note</key>
 			<string>Copy Markdown Link of Current Tab</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>570</integer>
 		</dict>
@@ -1075,7 +1075,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>190</integer>
 			<key>ypos</key>
 			<integer>460</integer>
 		</dict>
@@ -1200,7 +1200,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>460</integer>
 		</dict>
@@ -1220,7 +1220,7 @@ return "[" &amp; currentTabTitle &amp; "](" &amp; currentTabUrl &amp; ")"</strin
 			<key>note</key>
 			<string>Copy Markdown Link of Current Tab</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>30</integer>
 			<key>ypos</key>
 			<integer>745</integer>
 		</dict>

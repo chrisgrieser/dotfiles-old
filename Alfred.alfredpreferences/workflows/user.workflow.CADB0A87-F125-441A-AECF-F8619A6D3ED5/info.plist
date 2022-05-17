@@ -122,6 +122,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E27C16A0-4853-4EFD-8BE3-6071AD862B4F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</key>
 		<array>
 			<dict>
@@ -312,63 +325,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>105</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F13</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>9F7321C0-2B4E-45C7-BAC6-FA78E1345869</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>⇥</string>
-				<key>keycode</key>
-				<integer>48</integer>
-				<key>keymod</key>
-				<integer>262144</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>B4FBB3B0-29EA-40FE-AEA3-514A657232AD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -436,6 +392,62 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
+				<integer>105</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F13</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>→</string>
+				<key>keycode</key>
+				<integer>124</integer>
+				<key>keymod</key>
+				<integer>12058624</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E27C16A0-4853-4EFD-8BE3-6071AD862B4F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
 				<integer>106</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
@@ -462,6 +474,41 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>105</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F13</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.agiletortoise.Drafts-OSX</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9F7321C0-2B4E-45C7-BAC6-FA78E1345869</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
   tell application "System Events"
@@ -479,6 +526,27 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>1C3D78DC-489D-4E04-B780-4B301F7BF529</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⇥</string>
+				<key>keycode</key>
+				<integer>48</integer>
+				<key>keymod</key>
+				<integer>262144</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>B4FBB3B0-29EA-40FE-AEA3-514A657232AD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -922,7 +990,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>505</integer>
 			<key>ypos</key>
 			<integer>555</integer>
 		</dict>
@@ -944,18 +1012,18 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Archive</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>1E26E0EC-403C-4C10-80A4-BAE73726E9C7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>60</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>286991CD-89D3-44B5-A3BA-28687E688970</key>
 		<dict>
@@ -970,6 +1038,8 @@ end alfred_script</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
+			<key>note</key>
+			<string>Back</string>
 			<key>xpos</key>
 			<integer>690</integer>
 			<key>ypos</key>
@@ -1115,6 +1185,15 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>425</integer>
 		</dict>
+		<key>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
 		<key>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</key>
 		<dict>
 			<key>colorindex</key>
@@ -1129,9 +1208,9 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>290</integer>
 		</dict>
 		<key>A1A0723A-6480-4AB7-AD76-15C5622B3A03</key>
 		<dict>
@@ -1149,9 +1228,9 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Cycle through</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>695</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>290</integer>
 		</dict>
 		<key>CA121D42-D933-4021-AAED-1EB9705B224D</key>
 		<dict>
@@ -1172,6 +1251,17 @@ end alfred_script</string>
 			<integer>505</integer>
 			<key>ypos</key>
 			<integer>420</integer>
+		</dict>
+		<key>E27C16A0-4853-4EFD-8BE3-6071AD862B4F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Cycle through</string>
+			<key>xpos</key>
+			<integer>695</integer>
+			<key>ypos</key>
+			<integer>160</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
