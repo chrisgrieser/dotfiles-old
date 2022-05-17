@@ -2,7 +2,7 @@
     "global": {
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": true,
-        "show_profile_name_in_menu_bar": false
+        "show_profile_name_in_menu_bar": true
     },
     "profiles": [
         {
@@ -452,25 +452,6 @@
                                         "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.* ]]; then open \"$SEL\" ; else open \"https://www.google.de/search?q=$SEL\" ; fi"
                                     }
                                 ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "⇧+⌫: ⌦",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "delete_forward"
-                                },
                                 "type": "basic"
                             }
                         ]
@@ -1257,32 +1238,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Foot Pedal to F17",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": "57382"
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "a"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f17"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -1325,6 +1280,30 @@
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 57382,
+                        "vendor_id": 6790
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "b"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f17"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
@@ -1449,7 +1428,7 @@
                     ]
                 }
             ],
-            "name": "Default profile",
+            "name": "on",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
@@ -1622,7 +1601,7 @@
                     ]
                 }
             ],
-            "name": "turned off",
+            "name": "off",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },

@@ -150,6 +150,12 @@ nnoremap <C-5> ysiw]
 nnoremap <C-8> ysiw)
 nnoremap <C-2> ysiw"
 
+""""""""""""""""""""""
+" Footpedal
+""""""""""""""""""""""
+nnoremap <Home> i
+
+
 """""""""""""""""""""""""""
 " NEOVINTAGEOUS LIMITATIONS
 """""""""""""""""""""""""""
