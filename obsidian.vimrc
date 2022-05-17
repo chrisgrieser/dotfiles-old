@@ -14,7 +14,7 @@ nmap Y y$
 nmap P "0p
 
 """"""""""""""""""""""
-" Search
+" < Search
 """"""""""""""""""""""
 " search w/o having to press enter
 set incsearch
@@ -30,7 +30,7 @@ nmap - /
 nmap _ :nohlsearch
 
 """"""""""""""""""""""
-" Nagivation
+" < Nagivation
 """"""""""""""""""""""
 
 " Have j and k navigate visual lines rather than logical ones
@@ -67,7 +67,7 @@ vmap <Down> :noop
 nmap ö `
 
 """"""""""""""""""""""
-" Jumps
+" < Jumps
 """"""""""""""""""""""
 " older
 nmap <Tab> <C-o>
@@ -76,7 +76,7 @@ nmap <Tab> <C-o>
 nmap <S-Tab> <C-i>
 
 """"""""""""""""""""""
-" Editing
+" < Editing
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
@@ -122,7 +122,7 @@ nmap X (c)
 nmap X (c)
 
 """"""""""""""""""""""
-" Switch Modes
+" < Switch Modes
 """"""""""""""""""""""
 
 " quick switch to insert mode
@@ -133,7 +133,7 @@ rmap jj <Esc>
 vmap J <Esc>
 
 """"""""""""""""""""""
-" Insert Mode
+" < Insert Mode
 """"""""""""""""""""""
 
 " mirroring HL in Normal Mode
@@ -147,7 +147,7 @@ imap <C-k> <Esc>C
 imap <C-j> <Esc>c^
 
 """"""""""""""""""""""
-" Tab Switching
+" < Tab Switching
 """"""""""""""""""""""
 " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
 " requires Cycle Through Panes Plugins https://obsidian.md/plugins?id=cycle-through-panes
@@ -157,7 +157,7 @@ exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
 """"""""""""""""""""""
-" Folding
+" < Folding
 """"""""""""""""""""""
 " Rebuild some folding from vim, https://vimhelp.org/fold.txt.html#fold-commands
 exmap togglefold obcommand editor:toggle-fold
@@ -172,7 +172,7 @@ exmap foldall obcommand editor:fold-all
 nmap zM :foldall
 
 """"""""""""""""""""""
-" Sneak / Lightspeed
+" < Sneak / Lightspeed
 """"""""""""""""""""""
 " emulate vim-sneak
 exmap sneak obcommand activate-jump-to-anywhere
@@ -181,7 +181,7 @@ nmap S :sneak
 
 
 """"""""""""""""""""""
-" Footpedal
+" < Footpedal
 """"""""""""""""""""""
 " Karabiner maps pedal to <Del>
 nmap <Del> i
@@ -190,7 +190,7 @@ imap <Del> <Esc>
 rmap <Del> <Esc>
 
 """"""""""""""""""""""
-" Sorting
+" < Sorting
 """"""""""""""""""""""
 " sort selection
 vmap ß :'<,'>sort
@@ -201,14 +201,14 @@ nmap ßg :sort
 " paragraph-wise sorting unfortunately does not work :(
 
 """"""""""""""""""""""
-" Misc
+" < Misc
 """"""""""""""""""""""
 " quicker access to Obsidian command-ids
 nmap ? :obcommand
 
-""""""""""""""""""""""
-" OBSIDIAN LIMITATIONS
-""""""""""""""""""""""
+""""""""""""""""""""""""
+" < OBSIDIAN LIMITATIONS
+""""""""""""""""""""""""
 " - text object `is` / `as` does not work
 " - U (as in changes in a line) does not work
 " - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
@@ -218,6 +218,6 @@ nmap ? :obcommand
 " - gp not implemented
 
 """"""""""""""""""""""
-" UNUSED KEYS
+" < UNUSED KEYS
 """"""""""""""""""""""
 " ß ä Ä Ö Q = § ! & M °

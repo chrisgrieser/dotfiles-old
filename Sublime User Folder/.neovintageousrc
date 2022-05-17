@@ -1,7 +1,7 @@
 " Type :help nv for help.
 
 """"""""""""""""""""""
-" Clipboard
+" < Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
 " set via setting: "vintageous_use_sys_clipboard": false,
@@ -17,7 +17,7 @@ nnoremap Y y$
 nnoremap P "0p
 
 """"""""""""""""""""""
-" Search
+" < Search
 """"""""""""""""""""""
 " search w/o having to press enter
 set incsearch
@@ -33,7 +33,7 @@ nnoremap - /
 nnoremap _ :nohlsearch<CR>
 
 """"""""""""""""""""""
-" Nagivation
+" < Nagivation
 """"""""""""""""""""""
 
 " Have j and k navigate visual lines rather than logical ones
@@ -69,7 +69,7 @@ vnoremap <Down> :noop<CR>
 nnoremap ö `
 
 """"""""""""""""""""""
-" Jumps
+" < Jumps
 """"""""""""""""""""""
 " older
 nnoremap <Tab> <C-o>
@@ -78,7 +78,7 @@ nnoremap <Tab> <C-o>
 nnoremap <S-Tab> <C-i>
 
 """"""""""""""""""""""
-" Editing
+" < Editing
 """"""""""""""""""""""
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
@@ -121,14 +121,14 @@ nnoremap Ü ~
 nnoremap X cis
 
 """"""""""""""""""""""
-" Insert Mode
+" < Insert Mode
 """"""""""""""""""""""
 
 " implemented via in "Default (OSX).sublime-keymap"
 " since neovintageousrc cannot do that on
 
 """"""""""""""""""""""
-" Switch Modes
+" < Switch Modes
 """"""""""""""""""""""
 " implemented via preference 'vintageous_i_escape_jj'
 " inoremap jj <Esc>
@@ -138,7 +138,7 @@ vnoremap J <Esc>
 " already built in: presss v in visual mode to go back
 
 """"""""""""""""""""""
-" Surround
+" < Surround
 """"""""""""""""""""""
 " emulate some smarter punctuation bindings from Smarter MD Hotkeys
 nnoremap <C-5> ysiw]
@@ -146,7 +146,7 @@ nnoremap <C-8> ysiw)
 nnoremap <C-2> ysiw"
 
 """"""""""""""""""""""
-" Footpedal
+" < Footpedal
 """"""""""""""""""""""
 " Karabiner maps pedal to <Del>
 nnoremap <Del> i
@@ -154,7 +154,7 @@ vnoremap <Del> <Esc>
 " switches from insert to normal mode via binding in "Default (OSX).sublime-keymap"
 
 """"""""""""""""""""""
-" Sorting
+" < Sorting
 """"""""""""""""""""""
 " sort selection
 vnoremap ß :'<,'>sort<CR>
@@ -169,14 +169,14 @@ nnoremap ßg :sort<CR>
 nnoremap ßp vip:sort<CR>
 
 """"""""""""""""""""""
-" Misc
+" < Misc
 """"""""""""""""""""""
 " quicker access to neovintageoues help docs
 noremap ? :help nv<CR>
 
-"""""""""""""""""""""""""""
-" NEOVINTAGEOUS LIMITATIONS
-"""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""
+" < NEOVINTAGEOUS LIMITATIONS
+"""""""""""""""""""""""""""""
 " - Normal `map` (as opposed to noremap) is not supported
 " - onoremap seems a little buggy, `onoremap i2 i"` blocks
 "   any i command 🙈
@@ -198,6 +198,6 @@ noremap ? :help nv<CR>
 "     }
 
 """"""""""""""""""""""
-" UNUSED KEYS
+" < UNUSED KEYS
 """"""""""""""""""""""
 " ä Ä Ö Q = § ! & M °
