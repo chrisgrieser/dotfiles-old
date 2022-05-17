@@ -113,11 +113,12 @@ imap <C-t> <Esc>"_xpi
 nmap <C-t> "_xph
 
 """"""""""""""""""""""
-" Text Objects
+" < Text Objects
 """"""""""""""""""""""
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
+nmap X (c)
 nmap X (c)
 
 """"""""""""""""""""""
