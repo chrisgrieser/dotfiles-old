@@ -147,9 +147,6 @@
 	},
 	{ "keys": ["super+shift+i"], "command": "reindent", "args": {"single_line": false} },
 
-	// Casing
-	{ "keys": ["ctrl+u"], "command": "upper_case" },
-
 	// SETTINGS & INSTALLATION
 	// Open preferences without the annoying split
 	{ "keys": ["super+,"], "command": "open_file", "args": { "file": "${packages}/User/Preferences.sublime-settings"} },

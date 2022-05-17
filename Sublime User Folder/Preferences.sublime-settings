@@ -4,6 +4,7 @@
 	"vintageous_use_sys_clipboard": true, // = set clipboard=unnamed
 	"highlightedyank_duration": 10000,
 	"vintageous_enable_sneak": true,
+	"vintageous_bell": "views",
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
@@ -15,7 +16,6 @@
 	    "<C-t>": false, // transpose → Sublime built-in command
 	    "<C-h>": false, // go to BOL
 	    "<C-l>": false, // go to EOL
-	    "<C-u>": false, // uppercase
 	},
 
 	// Vim Mode
