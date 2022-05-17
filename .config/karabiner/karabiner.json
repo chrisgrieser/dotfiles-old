@@ -1238,6 +1238,88 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Foot Pedal to F17",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 57382
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.pqrs\\.Karabiner-EventViewer$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_forward"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 57382
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.pqrs\\.Karabiner-EventViewer$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f17"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "⇧+⌫: ⌦",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_forward"
+                                },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1292,18 +1374,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "b"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "delete_forward"
-                                }
-                            ]
-                        }
-                    ]
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [

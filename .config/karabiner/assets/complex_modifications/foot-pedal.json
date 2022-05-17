@@ -6,8 +6,27 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Foot Pedal to F17",
+			"description": "Foot Pedal to F17/Forward-Delete (for Vim)",
 			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "b"},
+					"to": [{ "key_code": "delete_forward" } ],
+					"conditions": [
+						{
+							"type": "device_if",
+							"identifiers": [{ "product_id": 57382 } ]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					]
+				},
 				{
 					"type": "basic",
 					"from": {"key_code": "b"},
@@ -16,6 +35,14 @@
 						{
 							"type": "device_if",
 							"identifiers": [{ "product_id": 57382 } ]
+						},
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^org\\.pqrs\\.Karabiner-EventViewer$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
 						}
 					]
 				}

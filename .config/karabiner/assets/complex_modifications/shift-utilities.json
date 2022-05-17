@@ -16,7 +16,13 @@
 					},
 					"to": {
 						"key_code": "delete_forward"
-					}
+					},
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [ "^com\\.sublimetext\\.4$" ]
+						}
+					],
 				}
 			]
 		},
