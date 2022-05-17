@@ -796,10 +796,10 @@ return "{query}"</string>
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser</string>
+					<string>com.apple.finder</string>
 					<string>com.readdle.PDFExpert-Mac</string>
 					<string>org.chromium.Chromium</string>
-					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1097,7 +1097,7 @@ return "{query}"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>note</key>
-			<string>get Finder selection</string>
+			<string>get selection</string>
 			<key>xpos</key>
 			<integer>405</integer>
 			<key>ypos</key>
@@ -1128,7 +1128,7 @@ return "{query}"</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>note</key>
-			<string>open "manage actions"</string>
+			<string>archive</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
