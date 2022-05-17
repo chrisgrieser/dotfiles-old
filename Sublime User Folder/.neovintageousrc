@@ -120,12 +120,14 @@ nnoremap Ü ~
 " text object does not work (and is imitated via `(c)` )
 nnoremap X cis
 
+" mnemonic: [P]andoc citation syntax
+onoremap pp i]
+
 """"""""""""""""""""""
 " < Insert Mode
 """"""""""""""""""""""
-
 " implemented via in "Default (OSX).sublime-keymap"
-" since neovintageousrc cannot do that on
+" since neovintageousrc cannot do that in its rc file
 
 """"""""""""""""""""""
 " < Switch Modes

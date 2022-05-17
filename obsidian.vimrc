@@ -119,7 +119,11 @@ nmap <C-t> "_xph
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
 nmap X (c)
-nmap X (c)
+
+" mnemonic: [p]andoc citation syntax
+" strangely, nmap works as a substitute for onoremap
+nmap pp i]
+
 
 """"""""""""""""""""""
 " < Switch Modes
