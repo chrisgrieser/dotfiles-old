@@ -24,11 +24,13 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 ## Vim Utilities
 - Modifies `alt + 5/6/8/9/l/n or ^` from the German layout so that it sends `[]{}@~^` the US layout. 
-	- This enables the use of those keys for vim, e.g. for `dt]` or `@`, without ever switching keyboard layout. 
+	- This enables the use of those keys for vim, e.g. for `dt]` or `@`, without needing to switching keyboard layout. 
 	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#miscellaneous).
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 - Scroll up/down globally via `alt+j/k`.
 - Tap `right-cmd` to send an `enter`.
+- Press `kl` simultaneously to send an `enter`.
+- Pressing `j` in the Browser[^3] hides the cursor. This is useful for vim emulators for browsers, which cannot hide the cursor by themselves.
 - Focus window & hide cursor[^2] by tapping `right-alt`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 
 ```text
