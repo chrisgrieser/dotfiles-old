@@ -21,6 +21,7 @@ pw.txt
 .ssh/
 .zsh_history
 backup.log
+Home.bttpreset
 
 # too much file size
 # ------------------

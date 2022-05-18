@@ -43,7 +43,6 @@
 		"command": "chain",
 		"args": {
 			"commands": [
-				["close_workspace"],
 				["close_all"],
 				["exit"]
 			]
@@ -255,12 +254,8 @@
 	{ "keys": ["shift+alt+super+ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
 	// Focus Neighboring group
 	{ "keys": ["shift+alt+super+ctrl+tab"], "command": "focus_neighboring_group", "args": {"forward": false} },
-	// Close Split View
-	{
-		"keys": ["super+shift+w"],
-		"command": "set_layout",
-		"args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] }
-	},
+	// Close Workspace
+	{"keys": ["super+shift+w"], "command": "close_workspace"	},
 
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
