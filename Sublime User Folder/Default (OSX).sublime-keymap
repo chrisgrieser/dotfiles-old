@@ -241,6 +241,8 @@
 
 	// Clone View
 	{ "keys": ["shift+alt+super+ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
+	// Focus Neighboring group
+	{ "keys": ["shift+alt+super+ctrl+tab"], "command": "focus_neighboring_group", "args": {"forward": false} },
 	// Close Split View
 	{
 		"keys": ["super+shift+w"],

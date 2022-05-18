@@ -4,7 +4,7 @@
 " < Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-" set via setting: "vintageous_use_sys_clipboard": false,
+" set via setting: "vintageous_use_sys_clipboard": true,
 " set clipboard=unnamed
 
 " show register (i.e., clipboard history)
@@ -102,13 +102,12 @@ nnoremap x "_x
 " allows Double Enter to add new line and indent
 nnoremap <CR> A
 
-" Undo consistent with cmd+z / cmd+shift+z
-noremap Z <C-r>
-noremap z u
+" Undo/Redo consistently on one key
+noremap U <C-r>
 
 " Change Word/Selection
-nnoremap <Space> "_ciw
-vnoremap <Space> "_c
+" nnoremap <Space> "_ciw
+" vnoremap <Space> "vc
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
 vnoremap <S-Space> "vdv
@@ -119,8 +118,8 @@ nnoremap <PageUp> yiw
 nnoremap <PageDown> viwp
 
 " Abolish: Titlecase
-nnoremap u crt
-nnoremap ü ~h
+nnoremap ü crt
+nnoremap Ü ~h
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime
@@ -133,15 +132,11 @@ nnoremap _ mzo<Esc>`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" for symmetry with Obsidian's vim, where the sentence
-" text object does not work (and is imitated via `(c)` )
-nnoremap X "scis
-
 " mnemonic: [p]andoc citation syntax
 onoremap pp i]
 
-" mnemonic: [Q]uotation marks  (don't use qq, since reserved for Macros)
-onoremap Q i"
+" mnemonic: [Z]iting someone
+onoremap zz i"
 
 """"""""""""""""""""""
 " < Insert Mode
@@ -185,8 +180,10 @@ nnoremap ßp vip:sort<CR>
 """"""""""""""""""""""
 " < Misc
 """"""""""""""""""""""
-" quicker access to neovintageoues help docs
+" help
 noremap ? :help nv<CR>
+
+set relativenumber
 
 """""""""""""""""""""""""""""
 " < NEOVINTAGEOUS LIMITATIONS
@@ -205,5 +202,5 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö U Ü
-" § ! & °
+" Ö X Q Z 0
+" § ! & ° ´

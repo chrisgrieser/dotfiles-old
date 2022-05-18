@@ -2,7 +2,7 @@
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 nmap <C-y> :reg
@@ -97,14 +97,12 @@ nmap x "_dl
 " allows Double Enter to add new line and indent
 nmap <CR> A
 
-" Undo consistent with cmd+z / cmd+shift+z
-" mapping to :undo to keep u free for other mappings
-map Z <C-r>
-map z :undo
+" Undo/Redo consistently on one key
+map U <C-r>
 
 " Change Word/Selection
 nmap <Space> "_ciw
-vmap <Space> "_c
+vmap <Space> "vc
 " Delete Word/Selection
 nmap <S-Space> "_daw
 vmap <S-Space> "vdv
@@ -117,8 +115,8 @@ nmap <PageDown> viwp
 " Imitating Abolish's Titlecase (crt)
 " also, using u here is more consistent with visual mode
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
-nmap u :smartcaseswitch
-nmap ü ~h
+nmap ü :smartcaseswitch
+nmap Ü ~h
 
 " Transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
@@ -131,15 +129,21 @@ nmap _ mzo<Esc>`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" fix text object `is` not working
-" since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap X ("sc)
-
 " strangely, nmap works as a substitute for onoremap
 " mnemonic: [p]andoc citation syntax
 nmap pp i]
-" mnemonic: [Q]uotation marks (don't use qq, since reserved for Macros)
-nmap Q i"
+" mnemonic: [Z]iting someone
+nmap zz i"
+
+""""""""""""""""""""""
+" < Comments
+""""""""""""""""""""""
+" emulate Commentary Plugin
+
+nmap gcc
+vmap gc
+exmap togglefold obcommand editor:toggle-fold
+nmap zo :togglefold
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -179,6 +183,20 @@ exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
 """"""""""""""""""""""
+" < Tab Folding
+""""""""""""""""""""""
+" Emulate Folding https://vimhelp.org/fold.txt.html#fold-commands
+exmap togglefold obcommand editor:toggle-fold
+nmap zo :togglefold
+nmap zc :togglefold
+nmap za :togglefold
+
+exmap unfoldall obcommand editor:unfold-all
+nmap zR :unfoldall
+exmap foldall obcommand editor:fold-all
+nmap zM :foldall
+
+""""""""""""""""""""""
 " < Sneak / Lightspeed
 """"""""""""""""""""""
 " emulate vim-sneak
@@ -201,8 +219,11 @@ nmap ßp vipß
 """"""""""""""""""""""
 " < Misc
 """"""""""""""""""""""
-" quicker access to Obsidian command-ids
+" help
 nmap ? :obcommand
+
+" not available via vim in Obsidian
+"set relativenumber
 
 """"""""""""""""""""""""
 " < OBSIDIAN LIMITATIONS
@@ -218,5 +239,5 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö U Ü
-" § ! & °
+" Ö X Q Z 0
+" § ! & ° ´

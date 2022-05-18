@@ -13,6 +13,8 @@
 	"neovintageous_search_inc_style": "outine",
 	"highlightedyank_style": "fill",
 
+	"scroll_context_lines": 9, // this is essentially scroll ofset
+
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
 	    "<C-p>": false, // copy file path
@@ -26,12 +28,8 @@
 	    "<C-s>": false, // Spellcheck toggle
 	},
 
-	// Vim Mode
-	"line_numbers": true, // set to true when using vim
-	"relative_line_numbers": true,
-	"vintage_use_clipboard": false,  // i.e. set clipboard=unnamed
-	"vintage_start_in_command_mode": true,
-	"scroll_context_lines": 9, // this is essentially scroll ofset
+	//-------------------------------------------------
+	//-------------------------------------------------
 
 	//Theme
 	"theme": "Adaptive.sublime-theme",
