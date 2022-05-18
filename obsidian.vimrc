@@ -36,9 +36,8 @@ nmap M :nohlsearch
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
-" These seem to be a bit buggy, therefore disabled
-" vmap j gj
-" vmap k gk
+vmap j gj
+vmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H ^
@@ -134,14 +133,6 @@ nmap _ mzo<Esc>`z
 nmap pp i]
 " mnemonic: [Z]iting someone
 nmap zz i"
-
-""""""""""""""""""""""
-" < Comments
-""""""""""""""""""""""
-" emulate Commentary Plugin
-exmap comment obcommand obsidian-smarter-md-hotkeys:smarter-comments
-nmap gcc :comment
-vmap gc :comment
 
 """"""""""""""""""""""
 " < Switch Modes

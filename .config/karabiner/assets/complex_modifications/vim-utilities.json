@@ -31,6 +31,39 @@
 			]
 		},
 		{
+			"description": "j (Browser): also hides cursor",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": { "key_code": "j" },
+					"to": [
+						{ "key_code": "j" },
+						{
+							"software_function": {
+								"set_mouse_cursor_position": {
+									"x": "100%",
+									"y": "90%",
+									"screen": 0
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.vivaldi\\.Vivaldi$",
+								"^org\\.chromium\\.Chromium$",
+								"^com\\.google\\.Chrome$",
+								"^com\\.brave\\.Browser$",
+								"^com\\.apple\\.Safari$"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"description": "R-⌘ (tap): ↵",
 			"manipulators": [
 				{
@@ -41,6 +74,23 @@
 						"basic.to_if_alone_timeout_milliseconds": 250
 					},
 					"to_if_alone": [
+						{"key_code": "return_or_enter" }
+					]
+				}
+			]
+		},
+		{
+			"description": "k+l (simultaneously): ↵",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+						    {"key_code": "k"},
+						    {"key_code": "l"}
+						]
+					},
+					"to": [
 						{"key_code": "return_or_enter" }
 					]
 				}
