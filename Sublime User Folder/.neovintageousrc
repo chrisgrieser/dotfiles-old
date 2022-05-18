@@ -96,10 +96,12 @@ nnoremap <CR> A
 noremap Z <C-r>
 noremap z u
 
-" quicker way to change word
+" Change Word/Selection
 nnoremap <Space> "_ciw
-nnoremap <S-Space> "_daw
 vnoremap <Space> "_c
+" Delete Word/Selection
+nnoremap <S-Space> "_daw
+vnoremap <S-Space> "vdv
 
 " Karabiner: <M-Space> = <PageUp>
 nnoremap <PageUp> yiw
@@ -108,22 +110,29 @@ nnoremap <PageDown> viwp
 
 " Abolish: Titlecase
 nnoremap u crt
-nnoremap ü ~
+nnoremap ü ~h
 
 " transpose characters, consistent with Emacs/Mac
 " already done built-in in Sublime
 " nnoremap <C-t> xph
 
+" Adding Blank Lines above/below
+nnoremap = mzO<Esc>`z
+nnoremap _ mzo<Esc>`z
+
 """"""""""""""""""""""
-" Text Objects
+" < Text Objects
 """"""""""""""""""""""
 
 " for symmetry with Obsidian's vim, where the sentence
 " text object does not work (and is imitated via `(c)` )
-nnoremap X cis
+nnoremap X "scis
 
-" mnemonic: [P]andoc citation syntax
+" mnemonic: [p]andoc citation syntax
 onoremap pp i]
+
+" mnemonic: [Q]uotation marks
+onoremap Q i"
 
 """"""""""""""""""""""
 " < Insert Mode
@@ -188,5 +197,5 @@ noremap ? :help nv<CR>
 " < UNUSED KEYS
 """"""""""""""""""""""
 " ä Ä
-" Ö Q M U Ü
-" = § ! & °
+" Ö U Ü
+" § ! & °

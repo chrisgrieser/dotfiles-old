@@ -28,8 +28,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#miscellaneous).
 - `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
 - Scroll up/down globally via `alt+j/k`.
-- Press `k` and `l` "simultaneously" to send an `enter`.
-- Focus window & hide cursor[^2] by tapping `alt-left`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Tap `right-cmd` to send an `enter`.
+- Focus window & hide cursor[^2] by tapping `right-alt`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json

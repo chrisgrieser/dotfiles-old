@@ -96,10 +96,13 @@ nmap <CR> A
 map Z <C-r>
 map z :undo
 
-" quicker way to change word
+" Change Word/Selection
 nmap <Space> "_ciw
-nmap <S-Space> "_daw
 vmap <Space> "_c
+" Delete Word/Selection
+nmap <S-Space> "_daw
+vmap <S-Space> "vdv
+
 " Karabiner: <Fn-Space> = <PageDown>
 nmap <PageUp> yiw
 " Karabiner: <Fn-Space> = <PageDown>
@@ -109,20 +112,15 @@ nmap <PageDown> viwp
 " also, using u here is more consistent with visual mode
 exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap u :smartcaseswitch
-nmap ü ~
+nmap ü ~h
 
-" transpose characters, consistent with Emacs/Mac
+" Transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
 nmap <C-t> "_xph
 
-" Adding New Lines
-Another useful pair: using  -  and  =  for “add an empty line above [below] this one”:
-
-nnoremap - mzO<Esc>`z
-nnoremap = mzo<Esc>`z
-
-Maybe use _ and =?
-
+" Adding Blank Lines above/below
+nmap = mzO<Esc>`z
+nmap _ mzo<Esc>`z
 
 """"""""""""""""""""""
 " < Text Objects
@@ -130,11 +128,13 @@ Maybe use _ and =?
 
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
-nmap X (c)
+nmap X ("sc)
 
-" mnemonic: [p]andoc citation syntax
 " strangely, nmap works as a substitute for onoremap
+" mnemonic: [p]andoc citation syntax
 nmap pp i]
+" mnemonic: [Q]uotation marks
+nmap Q i"
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -212,5 +212,5 @@ nmap ? :obcommand
 " < UNUSED KEYS
 """"""""""""""""""""""
 " ä Ä
-" Ö Q M U Ü
-" = § ! & °
+" Ö U Ü
+" § ! & °

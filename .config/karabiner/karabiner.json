@@ -103,29 +103,6 @@
                         ]
                     },
                     {
-                        "description": "k+l (simultaneously): ↵",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "k"
-                                        },
-                                        {
-                                            "key_code": "l"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "R-⌥ (tap): Focus Window & Hide Cursor",
                         "manipulators": [
                             {
@@ -1262,6 +1239,30 @@
                                 "to": [
                                     {
                                         "key_code": "delete_forward"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-⌘ (tap): ↵",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_command"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
