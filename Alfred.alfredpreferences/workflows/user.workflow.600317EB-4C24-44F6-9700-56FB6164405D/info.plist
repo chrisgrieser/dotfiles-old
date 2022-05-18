@@ -118,9 +118,36 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Zoom</string>
+	<string>Zoom &amp; BTT Modes</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>var input = "{query}";
+var zoomURL = input.replace (/https?:\/\/.*\.zoom\.us\/j\/(\w+)\?pwd=(\w+)$/,"zoommtg://zoom.us/join?confno=$1&amp;amp;pwd=$2");
+Zoom = Application("/Applications/zoom.us.app");
+Zoom.includeStandardAdditions = true;
+Zoom.openLocation(zoomURL);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -194,33 +221,6 @@ end if-- Seminar Preparationif (slack_url is not "") then
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>var input = "{query}";
-var zoomURL = input.replace (/https?:\/\/.*\.zoom\.us\/j\/(\w+)\?pwd=(\w+)$/,"zoommtg://zoom.us/join?confno=$1&amp;amp;pwd=$2");
-Zoom = Application("/Applications/zoom.us.app");
-Zoom.includeStandardAdditions = true;
-Zoom.openLocation(zoomURL);</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -280,6 +280,23 @@ Zoom.openLocation(zoomURL);</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>delimiter</key>
+				<string>;</string>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{var:split1}</string>
 				<key>passthroughargument</key>
@@ -296,23 +313,6 @@ Zoom.openLocation(zoomURL);</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>7D70D13D-24D9-4581-B67C-635A6479FF76</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>;</string>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -374,33 +374,12 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>work</string>
-				<key>subtext</key>
-				<string>BTT</string>
-				<key>text</key>
-				<string>💼 Work Mode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E5EE4E15-A7B0-443D-9619-DA51E35492E6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "BetterTouchTool" to trigger_named "Work Mode"</string>
+				<string>tell application "BetterTouchTool" to trigger_named "Home Mode"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -414,6 +393,27 @@ end tell</string>
 			<string>C0303517-B939-4E4D-B44F-FE170767DBB0</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>home</string>
+				<key>subtext</key>
+				<string>BTT</string>
+				<key>text</key>
+				<string>🏠 Home Mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E5EE4E15-A7B0-443D-9619-DA51E35492E6</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
