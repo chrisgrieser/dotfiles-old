@@ -385,6 +385,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CB82E0C1-FB6C-4BE5-9676-6791D731F3EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD6929CA-26E0-4810-9DDC-5109B990A8EC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E2790676-1476-465F-9775-2030CCF0788E</key>
 		<array>
 			<dict>
@@ -437,6 +450,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FD0018BF-877B-44BC-8869-23CC3FF21278</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8DC78E24-A4CD-49D8-A3A5-003F8404EA75</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>FE470339-53A0-4B38-BAA7-719737CD43D4</key>
 		<array>
 			<dict>
@@ -458,7 +484,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>System Preference</string>
+	<string>System Preferences</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -1240,6 +1266,42 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
+				<string>notifications</string>
+				<key>subtext</key>
+				<string>System Preferences.app</string>
+				<key>text</key>
+				<string>Notifications</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FD0018BF-877B-44BC-8869-23CC3FF21278</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/Notifications.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>8DC78E24-A4CD-49D8-A3A5-003F8404EA75</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
 				<string>accessibility keyboard</string>
 				<key>subtext</key>
 				<string>Mac OS System Settings</string>
@@ -1281,38 +1343,38 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/Network.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>BD6929CA-26E0-4810-9DDC-5109B990A8EC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>appearance</string>
+				<string>network</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>Appearance</string>
+				<string>Network</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>12C4CE7A-CA37-4B51-B199-E3070DEFDDEF</string>
+			<string>CB82E0C1-FB6C-4BE5-9676-6791D731F3EA</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/Appearance.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>BDB8CF5D-7EE6-4A11-98FB-72010DC1479E</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1364,18 +1426,18 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>displays</string>
+				<string>appearance</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>Displays</string>
+				<string>Appearance</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>63B180B4-6E8C-4C55-AB4B-7CEE3D1D91F7</string>
+			<string>12C4CE7A-CA37-4B51-B199-E3070DEFDDEF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1385,12 +1447,12 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/Displays.prefPane</string>
+				<string>/System/Library/PreferencePanes/Appearance.prefPane</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>969DAF4D-7ABD-4021-96C5-DC37C9EE1C3E</string>
+			<string>BDB8CF5D-7EE6-4A11-98FB-72010DC1479E</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1436,18 +1498,18 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>dock</string>
+				<string>displays</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>Dock &amp; Menu bar</string>
+				<string>Displays</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>820435AC-7A43-49C1-9D56-243015F2F4BC</string>
+			<string>63B180B4-6E8C-4C55-AB4B-7CEE3D1D91F7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1457,12 +1519,12 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/Dock.prefPane</string>
+				<string>/System/Library/PreferencePanes/Displays.prefPane</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>DB57B313-4F15-4909-A6AD-3A402160E24A</string>
+			<string>969DAF4D-7ABD-4021-96C5-DC37C9EE1C3E</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1508,7 +1570,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>menubar</string>
+				<string>dock</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
@@ -1519,9 +1581,24 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>EC27AB7E-AFD2-4C8C-BF78-3E6284F59FD2</string>
+			<string>820435AC-7A43-49C1-9D56-243015F2F4BC</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/Dock.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>DB57B313-4F15-4909-A6AD-3A402160E24A</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1562,36 +1639,21 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/DesktopScreenEffectsPref.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>E8028C2C-4991-40FB-BDB1-77F13666355A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>desktop</string>
+				<string>menubar</string>
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>Desktop &amp; Screensaver</string>
+				<string>Dock &amp; Menu bar</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>ED536250-64F7-459C-8EED-F56853E43B73</string>
+			<string>EC27AB7E-AFD2-4C8C-BF78-3E6284F59FD2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1630,6 +1692,42 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<string>00D4E9D2-D08B-4F2B-B8AF-0766FAAE8B63</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/DesktopScreenEffectsPref.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>E8028C2C-4991-40FB-BDB1-77F13666355A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>desktop</string>
+				<key>subtext</key>
+				<string>System Preferences.app</string>
+				<key>text</key>
+				<string>Desktop &amp; Screensaver</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>ED536250-64F7-459C-8EED-F56853E43B73</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1755,7 +1853,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>850</integer>
+			<integer>965</integer>
 		</dict>
 		<key>13E3EAD9-B10B-4042-BAE9-4CE466218B91</key>
 		<dict>
@@ -1890,7 +1988,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1435</integer>
+			<integer>1550</integer>
 		</dict>
 		<key>57747060-A0CD-4B39-B9C1-2075DD770F5B</key>
 		<dict>
@@ -1942,7 +2040,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>970</integer>
+			<integer>1085</integer>
 		</dict>
 		<key>64807789-BCE9-4593-91B6-270CFEF00D5B</key>
 		<dict>
@@ -2032,7 +2130,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1080</integer>
+			<integer>1195</integer>
 		</dict>
 		<key>82CAA0B6-576C-4648-953F-A0A3E49502AF</key>
 		<dict>
@@ -2061,6 +2159,15 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>ypos</key>
 			<integer>1060</integer>
 		</dict>
+		<key>8DC78E24-A4CD-49D8-A3A5-003F8404EA75</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>965</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
 		<key>8ED576C2-82CE-41ED-A2BF-643C27F7E8C9</key>
 		<dict>
 			<key>colorindex</key>
@@ -2084,7 +2191,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>970</integer>
+			<integer>1085</integer>
 		</dict>
 		<key>9F38CA08-5A82-48A8-B719-5FA9C7BA5CBF</key>
 		<dict>
@@ -2149,6 +2256,15 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>ypos</key>
 			<integer>1180</integer>
 		</dict>
+		<key>BD6929CA-26E0-4810-9DDC-5109B990A8EC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
 		<key>BDB8CF5D-7EE6-4A11-98FB-72010DC1479E</key>
 		<dict>
 			<key>colorindex</key>
@@ -2156,7 +2272,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>850</integer>
+			<integer>965</integer>
 		</dict>
 		<key>C2321556-1227-4A82-B547-03F772C61E61</key>
 		<dict>
@@ -2194,6 +2310,15 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
+		<key>CB82E0C1-FB6C-4BE5-9676-6791D731F3EA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
 		<key>DB57B313-4F15-4909-A6AD-3A402160E24A</key>
 		<dict>
 			<key>colorindex</key>
@@ -2201,7 +2326,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>1080</integer>
+			<integer>1195</integer>
 		</dict>
 		<key>DFCEAF51-C114-4F04-9A73-39E563A7808E</key>
 		<dict>
@@ -2237,7 +2362,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>585</integer>
 			<key>ypos</key>
-			<integer>1315</integer>
+			<integer>1430</integer>
 		</dict>
 		<key>EC27AB7E-AFD2-4C8C-BF78-3E6284F59FD2</key>
 		<dict>
@@ -2246,7 +2371,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1195</integer>
+			<integer>1310</integer>
 		</dict>
 		<key>ED536250-64F7-459C-8EED-F56853E43B73</key>
 		<dict>
@@ -2255,7 +2380,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1315</integer>
+			<integer>1430</integer>
 		</dict>
 		<key>F62D5407-A26D-4775-8F1A-36A43B196C04</key>
 		<dict>
@@ -2265,6 +2390,15 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1550</integer>
+		</dict>
+		<key>FD0018BF-877B-44BC-8869-23CC3FF21278</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>760</integer>
+			<key>ypos</key>
+			<integer>720</integer>
 		</dict>
 		<key>FE470339-53A0-4B38-BAA7-719737CD43D4</key>
 		<dict>
