@@ -8,16 +8,13 @@
 " set clipboard=unnamed
 
 " show register (i.e., clipboard history)
-nnoremap <C-y> :reg<CR>
+noremap <C-y> :reg<CR>
 
 " Y consistent with D and C to the end of line
 nnoremap Y y$
 
 " always paste what was yanked (y), not what was deleted (d or c)
 nnoremap P "0p
-
-" stop polluting the register
-nnoremap dd "_dd
 
 """"""""""""""""""""""
 " < Search
@@ -59,14 +56,14 @@ nnoremap , ;
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys, "noop" being non-existent command
-nnoremap <Right> :noop<CR>
-nnoremap <Left> :noop<CR>
-nnoremap <Up> :noop<CR>
-nnoremap <Down> :noop<CR>
-vnoremap <Right> :noop<CR>
-vnoremap <Left> :noop<CR>
-vnoremap <Up> :noop<CR>
-vnoremap <Down> :noop<CR>
+nnoremap <Right> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+vnoremap <Right> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Down> <Nop>
 
 " Goto Mark: remapping since ` not working
 nnoremap ö `
@@ -207,3 +204,5 @@ set relativenumber
 """"""""""""""""""""""
 " Ö X Q Z 0
 " § ! & ° ´
+" Esc-key zu F17
+" <BS> & arrow-keys

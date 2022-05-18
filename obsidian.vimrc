@@ -5,18 +5,13 @@
 " set clipboard=unnamed
 
 " show register (i.e., clipboard history)
-nmap <C-y> :reg
+map <C-y> :reg
 
 " Y consistent with D and C to the end of line
 nmap Y y$
 
 " paste what was deleted/changed, not what was yanked(gets syntax highlighting of comments, but does work though)
 nmap P "0p
-
-" stop polluting the register
-" equivalent to nnoremap dd "_dd
-exmap deleteline obcommand editor:delete-paragraph
-nmap dd :deleteline
 
 """"""""""""""""""""""
 " < Search
@@ -59,14 +54,14 @@ nmap , ;
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys
-nmap <Right> :noop
-nmap <Left> :noop
-nmap <Up> :noop
-nmap <Down> :noop
-vmap <Right> :noop
-vmap <Left> :noop
-vmap <Up> :noop
-vmap <Down> :noop
+nmap <Right> <Nop>
+nmap <Left> <Nop>
+nmap <Up> <Nop>
+nmap <Down> <Nop>
+vmap <Right> <Nop>
+vmap <Left> <Nop>
+vmap <Up> <Nop>
+vmap <Down> <Nop>
 
 " Goto Mark: remapping since ` not working
 nmap ö `
@@ -244,3 +239,5 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " Ö X Q Z 0
 " § ! & ° ´
+" Esc-key zu F17
+" <BS> & arrow-keys
