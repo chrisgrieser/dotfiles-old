@@ -73,6 +73,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `fn + g` → `G`oogle Docs
 - `fn + w` → Microsoft `W`ord
 - `fn + a` → `A`lfred Preferences
+- `fn + v` → `V`ideo → `V`LC Player
 - `fn + t` → Better`T`ouchTool
 - `fn + k` → `K`arabiner Elements
 - `fn + shift + k` → `K`arabiner EventViewer
