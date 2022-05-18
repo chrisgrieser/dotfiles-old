@@ -67,13 +67,19 @@ vmap <Down> :noop
 nmap ö `
 
 """"""""""""""""""""""
+" < Indentation
+""""""""""""""""""""""
+" <Tab> as indentation is already implemented
+" in Obsidian
+
+""""""""""""""""""""""
 " < Jumps
 """"""""""""""""""""""
 " older
-nmap <Tab> <C-o>
+nmap ä <C-o>
 
 " newer
-nmap <S-Tab> <C-i>
+nmap Ä <C-i>
 
 """"""""""""""""""""""
 " < Editing
@@ -211,6 +217,5 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" ä Ä
 " Ö U Ü
 " § ! & °

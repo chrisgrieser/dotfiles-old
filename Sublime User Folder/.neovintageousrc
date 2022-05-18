@@ -69,13 +69,23 @@ vnoremap <Down> :noop<CR>
 nnoremap ö `
 
 """"""""""""""""""""""
+" < Indentation
+""""""""""""""""""""""
+
+" Make indention work like in other editors
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+""""""""""""""""""""""
 " < Jumps
 """"""""""""""""""""""
 " older
-nnoremap <Tab> <C-o>
+nnoremap ä <C-o>
 
 " newer
-nnoremap <S-Tab> <C-i>
+nnoremap Ä <C-i>
 
 """"""""""""""""""""""
 " < Editing
@@ -196,6 +206,5 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" ä Ä
 " Ö U Ü
 " § ! & °
