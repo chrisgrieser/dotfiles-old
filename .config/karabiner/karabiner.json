@@ -1321,6 +1321,29 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "k+l (simultaneously): ↵",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "k"
+                                        },
+                                        {
+                                            "key_code": "l"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
