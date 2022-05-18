@@ -29,8 +29,8 @@ nnoremap + *
 " quicker find mode (by mirroring American keyboard layout on German keyboard layout)
 nnoremap - /
 
-" Quickly remove search highlights
-nnoremap _ :nohlsearch<CR>
+" [M]ute search highlights
+nnoremap M :nohlsearch<CR>
 
 """"""""""""""""""""""
 " < Nagivation
@@ -101,9 +101,9 @@ nnoremap <Space> "_ciw
 nnoremap <S-Space> "_daw
 vnoremap <Space> "_c
 
-" <M-Space> = <PageUp> via Karabiner elements
+" Karabiner: <M-Space> = <PageUp>
 nnoremap <PageUp> yiw
-" <Fn-Space> = <PageDown> via Karabiner elements
+" Karabiner: <Fn-Space> = <PageDown>
 nnoremap <PageDown> viwp
 
 " Abolish: Titlecase

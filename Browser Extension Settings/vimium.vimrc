@@ -1,10 +1,11 @@
 " Closing Tabs
-map ww removeTab count=15
+map ww removeTab count=19
 map wq closeTabsOnLeft
 map we closeTabsOnRight
+map w2 moveTabToNewWindow
 map W closeOtherTabs
 map u removeTab
-map U restoreTab
+map z restoreTab
 
 " Scrolling Fast
 map J scrollDown count=3
@@ -29,17 +30,20 @@ map < moveTabLeft
 map > moveTabRight
 map 0 firstTab
 map $ lastTab
-map <C-2> moveTabToNewWindow
+
+" Link Mode
+map <c-f> LinkHints.activateModeWithQueue
 
 " mimic American keyboard layout
 map - enterFindMode
 
-" Marks
-" remapping, since backtick isn't properly supported
-map ö Marks.activateGotoMode
+" Global Marks
+" https://github.com/philc/vimium/wiki/Tips-and-Tricks#swapping-global-and-local-marks
+map ö Marks.activateGotoMode swap
+map m Marks.activateCreateMode swap
 
 " Mute Tab
-map M toggleMuteTab
+map M toggleMuteTab other
 
 " unmap unneeded stuff
 unmap d
@@ -59,3 +63,7 @@ unmap <a-p>
 unmap X
 unmap g0
 unmap g$
+unmap gE
+unmap [[
+unmap ]]
+unmap <a-f>

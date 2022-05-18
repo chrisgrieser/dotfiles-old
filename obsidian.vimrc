@@ -26,8 +26,8 @@ nmap + *
 " quicker find mode (by mirroring American keyboard layout on German keyboard layout)
 nmap - /
 
-" Quickly remove search highlights
-nmap _ :nohlsearch
+" [M]ute search highlights
+nmap M :nohlsearch
 
 """"""""""""""""""""""
 " < Nagivation
@@ -100,9 +100,9 @@ map z :undo
 nmap <Space> "_ciw
 nmap <S-Space> "_daw
 vmap <Space> "_c
-" <M-Space> = <PageUp> via Karabiner elements
+" Karabiner: <Fn-Space> = <PageDown>
 nmap <PageUp> yiw
-" <Fn-Space> = <PageDown> via Karabiner elements
+" Karabiner: <Fn-Space> = <PageDown>
 nmap <PageDown> viwp
 
 " Imitating Abolish's Titlecase (crt)
@@ -114,6 +114,15 @@ nmap ü ~
 " transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
 nmap <C-t> "_xph
+
+" Adding New Lines
+Another useful pair: using  -  and  =  for “add an empty line above [below] this one”:
+
+nnoremap - mzO<Esc>`z
+nnoremap = mzo<Esc>`z
+
+Maybe use _ and =?
+
 
 """"""""""""""""""""""
 " < Text Objects

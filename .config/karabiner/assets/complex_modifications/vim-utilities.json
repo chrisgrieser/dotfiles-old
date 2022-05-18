@@ -48,6 +48,23 @@
 			]
 		},
 		{
+			"description": "",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+						    {"key_code": "k"},
+						    {"key_code": "l"}
+						]
+					},
+					"to": [
+						{"key_code": "return_or_enter" }
+					]
+				}
+			]
+		},
+		{
 			"description": "R-⌥ (tap): Focus Window & Hide Cursor",
 			"manipulators": [
 				{

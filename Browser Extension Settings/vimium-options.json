@@ -15,7 +15,7 @@
     },
     {
       "pattern": "https?://www.google.*/search*",
-      "passKeys": "/jk"
+      "passKeys": "jkHL-"
     },
     {
       "pattern": "https?://github.com/*",
@@ -41,7 +41,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": false,
   "hideHud": false,
-  "keyMappings": "\" Closing Tabs\nmap ww removeTab count=15\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap W closeOtherTabs\nmap u removeTab\nmap U restoreTab\n\n\" Scrolling Fast\nmap J scrollDown count=3\nmap K scrollUp count=3\n\n\" History\nmap h goBack\nmap l goForward\n\n\" Reload\nmap R reload hard\n\n\" Pages (not history)\nmap H goPrevious\nmap L goNext\n \n\" Tabs\nmap t Vomnibar.activateTabSelection\nmap b previousTab\nmap e nextTab\nmap < moveTabLeft\nmap > moveTabRight\nmap 0 firstTab\nmap $ lastTab\nmap <C-2> moveTabToNewWindow\n\n\" mimic American keyboard layout\nmap - enterFindMode\n\n\" Marks\n\" remapping, since backtick isn't properly supported\nmap ö Marks.activateGotoMode\n\n\" Mute Tab\nmap M toggleMuteTab\n\n\" unmap unneeded stuff\nunmap d\nunmap B\nunmap T\nunmap o\nunmap O\nunmap `\nunmap <c-e>\nunmap <c-y>\nunmap /\nunmap ^\nunmap >>\nunmap <<\nunmap <a-m>\nunmap <a-p>\nunmap X\nunmap g0\nunmap g$",
+  "keyMappings": "\" Closing Tabs\nmap ww removeTab count=19\nmap wq closeTabsOnLeft\nmap we closeTabsOnRight\nmap w2 moveTabToNewWindow\nmap W closeOtherTabs\nmap u removeTab\nmap z restoreTab\n\n\" Scrolling Fast\nmap J scrollDown count=3\nmap K scrollUp count=3\n\n\" History\nmap h goBack\nmap l goForward\n\n\" Reload\nmap R reload hard\n\n\" Pages (not history)\nmap H goPrevious\nmap L goNext\n \n\" Tabs\nmap t Vomnibar.activateTabSelection\nmap b previousTab\nmap e nextTab\nmap < moveTabLeft\nmap > moveTabRight\nmap 0 firstTab\nmap $ lastTab\n\n\" Link Mode\nmap <c-f> LinkHints.activateModeWithQueue\n\n\" mimic American keyboard layout\nmap - enterFindMode\n\n\" Global Marks\n\" https://github.com/philc/vimium/wiki/Tips-and-Tricks#swapping-global-and-local-marks\nmap ö Marks.activateGotoMode swap\nmap m Marks.activateCreateMode swap\n\n\" Mute Tab\nmap M toggleMuteTab other\n\n\" unmap unneeded stuff\nunmap d\nunmap B\nunmap T\nunmap o\nunmap O\nunmap `\nunmap <c-e>\nunmap <c-y>\nunmap /\nunmap ^\nunmap >>\nunmap <<\nunmap <a-m>\nunmap <a-p>\nunmap X\nunmap g0\nunmap g$\nunmap gE\nunmap [[\nunmap ]]\nunmap <a-f>",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
