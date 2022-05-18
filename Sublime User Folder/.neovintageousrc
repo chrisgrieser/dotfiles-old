@@ -126,14 +126,13 @@ nnoremap ü ~h
 " already done built-in in Sublime
 " nnoremap <C-t> xph
 
-" Adding Blank Lines above/below
+" Adding Blank Line above/below
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-
 " for symmetry with Obsidian's vim, where the sentence
 " text object does not work (and is imitated via `(c)` )
 nnoremap X "scis
@@ -141,7 +140,7 @@ nnoremap X "scis
 " mnemonic: [p]andoc citation syntax
 onoremap pp i]
 
-" mnemonic: [Q]uotation marks
+" mnemonic: [Q]uotation marks  (don't use qq, since reserved for Macros)
 onoremap Q i"
 
 """"""""""""""""""""""
@@ -158,7 +157,8 @@ onoremap Q i"
 " rnoremap jj <Esc>
 
 vnoremap J <Esc>
-" already built in: presss v in visual mode to go back
+" already built in: press v in visual mode to go back
+
 
 """"""""""""""""""""""
 " < Surround

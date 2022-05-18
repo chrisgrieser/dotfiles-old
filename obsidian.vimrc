@@ -124,14 +124,13 @@ nmap ü ~h
 imap <C-t> <Esc>"_xpi
 nmap <C-t> "_xph
 
-" Adding Blank Lines above/below
+" Adding Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-
 " fix text object `is` not working
 " since noremap is not supported in Obsidian, 'nmap cis (c)' to avoid recursion does not work
 nmap X ("sc)
@@ -139,18 +138,20 @@ nmap X ("sc)
 " strangely, nmap works as a substitute for onoremap
 " mnemonic: [p]andoc citation syntax
 nmap pp i]
-" mnemonic: [Q]uotation marks
+" mnemonic: [Q]uotation marks (don't use qq, since reserved for Macros)
 nmap Q i"
 
 """"""""""""""""""""""
 " < Switch Modes
 """"""""""""""""""""""
+" Enter Visual from Insert Mode
+imap vv <Esc>v
 
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
 
-" already built in: presss v in visual mode to go back
+" already built in: press v in visual mode to go back
 vmap J <Esc>
 
 """"""""""""""""""""""
@@ -158,8 +159,8 @@ vmap J <Esc>
 """"""""""""""""""""""
 
 " mirroring HL in Normal Mode
-imap <C-l> <Esc>A
-imap <C-h> <Esc>I
+imap LL <Esc>A
+imap HH <Esc>I
 
 " Kill line
 imap <C-k> <Esc>C
