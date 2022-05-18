@@ -16,6 +16,9 @@ nnoremap Y y$
 " always paste what was yanked (y), not what was deleted (d or c)
 nnoremap P "0p
 
+" stop polluting the register
+nnoremap dd "_dd
+
 """"""""""""""""""""""
 " < Search
 """"""""""""""""""""""
@@ -106,8 +109,8 @@ nnoremap <CR> A
 noremap U <C-r>
 
 " Change Word/Selection
-" nnoremap <Space> "_ciw
-" vnoremap <Space> "vc
+nnoremap <Space> "_ciw
+vnoremap <Space> "vc
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
 vnoremap <S-Space> "vdv

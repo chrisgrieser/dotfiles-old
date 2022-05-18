@@ -32,7 +32,7 @@
 		"command": "nv_feed_key",
 		"args": {"key": "<esc>"},
 		"context": [
-			{"key": "vi_insert_mode_aware"},
+			{ "key": "vi_insert_mode_aware"},
 			{ "key": "auto_complete_visible", "operator": "not_equal", "operand":  true }
 		]
 	},
@@ -45,7 +45,6 @@
 			"commands": [
 				["close_workspace"],
 				["close_all"],
-				// ["set_layout", {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } ],
 				["exit"]
 			]
 		}
@@ -61,6 +60,19 @@
 	{"keys": ["L", "L"], "args": {"to": "eol"}, "command": "move_to", "context": [
 		{ "key": "vi_insert_mode_aware" }
 	] },
+
+	// imap vv <Esc>v (quick visual mode)
+	{"keys": ["v", "v"], "command": "chain",
+		"args": {
+			"commands": [
+				["nv_enter_normal_mode"],
+				["nv_feed_key", {"key": "v"}],
+			]
+		},
+		"context": [
+			{ "key": "vi_insert_mode_aware" }
+		]
+	},
 
 	// Kill line, imap <C-k> <Esc>C
 	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },

@@ -13,6 +13,11 @@ nmap Y y$
 " paste what was deleted/changed, not what was yanked(gets syntax highlighting of comments, but does work though)
 nmap P "0p
 
+" stop polluting the register
+" equivalent to nnoremap dd "_dd
+exmap deleteline obcommand editor:delete-paragraph
+nmap dd :deleteline
+
 """"""""""""""""""""""
 " < Search
 """"""""""""""""""""""
@@ -139,11 +144,9 @@ nmap zz i"
 " < Comments
 """"""""""""""""""""""
 " emulate Commentary Plugin
-
-nmap gcc
-vmap gc
-exmap togglefold obcommand editor:toggle-fold
-nmap zo :togglefold
+exmap comment obcommand obsidian-smarter-md-hotkeys:smarter-comments
+nmap gcc :comment
+vmap gc :comment
 
 """"""""""""""""""""""
 " < Switch Modes
