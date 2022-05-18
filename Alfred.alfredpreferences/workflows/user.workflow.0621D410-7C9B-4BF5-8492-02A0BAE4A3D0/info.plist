@@ -8,19 +8,6 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
-		<key>2222585C-F175-4CBD-BC57-C55F821DE219</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3082A01E-D70F-4A61-BCD6-279BA44898EF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2856DA0F-7623-47F9-9E7C-DA4CC8F0B448</key>
 		<array/>
 		<key>2B34C51A-B434-45D5-9705-2866E79B33BC</key>
@@ -28,19 +15,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C0034F9D-C3AB-45C4-B7FD-F2DF921E9D5C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3082A01E-D70F-4A61-BCD6-279BA44898EF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8196B3A3-C2F5-4671-9DF6-45B68DD7C2A3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -492,40 +466,21 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ydl</string>
-				<key>subtext</key>
-				<string>Brave tab</string>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<true/>
 				<key>text</key>
-				<string>Extract Closed Captions</string>
-				<key>withspace</key>
-				<true/>
+				<string>{query}</string>
+				<key>title</key>
+				<string>🎞 Youtube Link saved</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>2222585C-F175-4CBD-BC57-C55F821DE219</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://subtitle.to/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>8196B3A3-C2F5-4671-9DF6-45B68DD7C2A3</string>
+			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -535,20 +490,22 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
+				<string>title=`curl -s "{query}" | grep -o "&lt;title&gt;[^&lt;]*" | cut -d'&gt;' -f2- | sed -E 's/\:/-/g' `
+
+echo -n "$title"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>get-browser-url_[Browser].applescript</string>
+				<string>watch-later.sh</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>3082A01E-D70F-4A61-BCD6-279BA44898EF</string>
+			<string>77FF34ED-C1A2-4866-B205-06B792B3975B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -597,65 +554,6 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 			<string>5B268CB5-D72B-4280-8EC7-820859701FDE</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<true/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>🎞 Youtube Link saved</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>title=`curl -s "{query}" | grep -o "&lt;title&gt;[^&lt;]*" | cut -d'&gt;' -f2- | sed -E 's/\:/-/g' `
-
-echo -n "$title"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>watch-later.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>77FF34ED-C1A2-4866-B205-06B792B3975B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>youtube-video-save</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>905948C2-F071-4D3E-A1F5-3A0E54BC18F0</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -736,6 +634,19 @@ echo -n "$title"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>youtube-video-save</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>905948C2-F071-4D3E-A1F5-3A0E54BC18F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).
@@ -744,15 +655,6 @@ https://github.com/ytdl-org/youtube-dl
 https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 	<key>uidata</key>
 	<dict>
-		<key>2222585C-F175-4CBD-BC57-C55F821DE219</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>320</integer>
-		</dict>
 		<key>2856DA0F-7623-47F9-9E7C-DA4CC8F0B448</key>
 		<dict>
 			<key>colorindex</key>
@@ -767,20 +669,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>385</integer>
 			<key>ypos</key>
-			<integer>620</integer>
-		</dict>
-		<key>3082A01E-D70F-4A61-BCD6-279BA44898EF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>get current Browser URL</string>
-			<key>xpos</key>
-			<integer>230</integer>
-			<key>ypos</key>
-			<integer>320</integer>
+			<integer>425</integer>
 		</dict>
 		<key>414582E5-0391-48AC-B78B-79F0B0E179EF</key>
 		<dict>
@@ -798,9 +689,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>760</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>330</integer>
 		</dict>
 		<key>5043B89E-B8D1-4515-ACDA-70F5B4D009FA</key>
 		<dict>
@@ -816,9 +707,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>475</integer>
+			<integer>395</integer>
 		</dict>
 		<key>5B268CB5-D72B-4280-8EC7-820859701FDE</key>
 		<dict>
@@ -827,9 +718,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>note</key>
 			<string>get Browser URL</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>235</integer>
 			<key>ypos</key>
-			<integer>475</integer>
+			<integer>395</integer>
 		</dict>
 		<key>66AE3F35-B1A8-4065-90F8-C963E53500E3</key>
 		<dict>
@@ -847,9 +738,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>note</key>
 			<string>save bookmark with image</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>330</integer>
 		</dict>
 		<key>7EC8C18F-E353-4A93-9F40-FDB4C9531D57</key>
 		<dict>
@@ -865,27 +756,18 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>750</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>670</integer>
-		</dict>
-		<key>8196B3A3-C2F5-4671-9DF6-45B68DD7C2A3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>395</integer>
-			<key>ypos</key>
-			<integer>320</integer>
+			<integer>475</integer>
 		</dict>
 		<key>905948C2-F071-4D3E-A1F5-3A0E54BC18F0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>600</integer>
+			<integer>520</integer>
 		</dict>
 		<key>AD6B3B47-0FED-4C6D-BAD5-3D5E62636CB8</key>
 		<dict>
@@ -901,9 +783,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>610</integer>
+			<integer>415</integer>
 		</dict>
 		<key>C7716DBE-2C15-46FC-A1E7-1A722EA60267</key>
 		<dict>
@@ -919,9 +801,9 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>475</integer>
 		</dict>
 		<key>E6A06157-47F3-4C45-B94C-30ACCE2DB626</key>
 		<dict>

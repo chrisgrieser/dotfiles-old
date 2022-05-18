@@ -6,6 +6,33 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
+			"description": "jj (in Browser): Esc",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{"mouse_key": {"vertical_wheel": 200 } }
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.vivaldi\\.Vivaldi$",
+								"^org\\.chromium\\.Chromium$",
+								"^com\\.google\\.Chrome$",
+								"^com\\.brave\\.Browser$",
+								"^com\\.apple\\.Safari$"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"description": "⌥+j, ⌥+k: Scroll ↓↑",
 			"manipulators": [
 				{
