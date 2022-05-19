@@ -12,7 +12,35 @@
 // toggle multiple commands
 // https://stackoverflow.com/questions/23312111/multiple-commands-with-args-under-1-hotkey-in-sublime-text-3
 
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 [
+	// implicit leader
+	// cmd+ß (needs to be set as "key": ["super+forward_slash"])
+
+	// Wrap
+	{ "keys": ["super+forward_slash", "w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
+
+	// LSP
+	// Goto Definition
+	{ "keys": ["super+forward_slash", "g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
+		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
+		{"key": "auto_complete_visible", "operator": "equal", "operand": false }
+	] },
+	{ "keys": ["super+forward_slash", "u"], "command": "mde_fold_links", "context": [
+		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+	] },
+
+	// Clone View
+	{ "keys": ["shift+alt+super+ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
+	// Change Color Scheme
+	{ "keys": ["super+forward_slash", "t"], "command": "select_color_scheme" },
+	// Installation / Uninstallation
+	{ "keys": ["super+forward_slash", "i"], "command": "install_package" },
+	{ "keys": ["super+forward_slash", "r"], "command": "remove_package" },
+
+	// ------------------------------------
+
 	// Bugfix for Neovintageous, can be deleted with their next release
 	{"keys": ["ü"], "command": "nv_feed_key", "args": {"key": "ü"}, "context": [{"key": "vi_command_mode_aware"}]},
 	{"keys": ["Ü"], "command": "nv_feed_key", "args": {"key": "Ü"}, "context": [{"key": "vi_command_mode_aware"}]},
@@ -114,9 +142,6 @@
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
 
-	// Navigate to Brackets
-	{ "keys": ["super+b"], "command": "move_to", "args": {"to": "brackets"} },
-
 	// Sublime Linter Navigation
 	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true }, "context": [
 		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
@@ -151,16 +176,17 @@
 	{ "keys": ["super+shift+7"], "command": "toggle_comment", "args": { "block": true } },
 
 	// Fold
-	{ "keys": ["super+shift+alt+ctrl+f", "1"], "command": "fold_by_level", "args": {"level": 1} },
-	{ "keys": ["super+shift+alt+ctrl+f", "2"], "command": "fold_by_level", "args": {"level": 2} },
-	{ "keys": ["super+shift+alt+ctrl+f", "3"], "command": "fold_by_level", "args": {"level": 3} },
-	{ "keys": ["super+shift+alt+ctrl+f", "4"], "command": "fold_by_level", "args": {"level": 4} },
-	{ "keys": ["super+shift+alt+ctrl+f", "5"], "command": "fold_by_level", "args": {"level": 5} },
-	{ "keys": ["super+shift+alt+ctrl+f", "6"], "command": "fold_by_level", "args": {"level": 6} },
-	{ "keys": ["super+shift+alt+ctrl+f", "7"], "command": "fold_by_level", "args": {"level": 7} },
-	{ "keys": ["super+shift+alt+ctrl+f", "8"], "command": "fold_by_level", "args": {"level": 8} },
-	{ "keys": ["super+shift+alt+ctrl+f", "9"], "command": "fold_by_level", "args": {"level": 9} },
+	{ "keys": ["super+forward_slash", "1"], "command": "fold_by_level", "args": {"level": 1} },
+	{ "keys": ["super+forward_slash", "2"], "command": "fold_by_level", "args": {"level": 2} },
+	{ "keys": ["super+forward_slash", "3"], "command": "fold_by_level", "args": {"level": 3} },
+	{ "keys": ["super+forward_slash", "4"], "command": "fold_by_level", "args": {"level": 4} },
+	{ "keys": ["super+forward_slash", "5"], "command": "fold_by_level", "args": {"level": 5} },
+	{ "keys": ["super+forward_slash", "6"], "command": "fold_by_level", "args": {"level": 6} },
+	{ "keys": ["super+forward_slash", "7"], "command": "fold_by_level", "args": {"level": 7} },
+	{ "keys": ["super+forward_slash", "8"], "command": "fold_by_level", "args": {"level": 8} },
+	{ "keys": ["super+forward_slash", "9"], "command": "fold_by_level", "args": {"level": 9} },
 	{ "keys": ["super+4"], "command": "unfold" },
+	{ "keys": ["super+6"], "command": "unfold_all" },
 
 	// Undo/Redo Selection
 	{ "keys": ["super+u"], "command": "jump_back" },
@@ -199,19 +225,11 @@
 	// Console
 	{ "keys": ["ctrl+escape"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
-	// Change Color Scheme
-	{ "keys": ["shift+alt+super+ctrl+z"], "command": "select_color_scheme" },
 	// Palette
 	{ "keys": ["super+p"], "command": "show_overlay", "args": { "overlay": "command_palette" } },
-	// Installation / Uninstallation
-	{ "keys": ["shift+super+alt+ctrl+i"], "command": "install_package" },
-	{ "keys": ["shift+super+alt+ctrl+r"], "command": "remove_package" },
 
-	// TOGGLES
 	// Spellcheck
 	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
-	// Wrap
-	{ "keys": ["shift+alt+super+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
 	// Sidebar
 	{ "keys": ["super+1"], "command": "toggle_side_bar" },
 
@@ -250,8 +268,6 @@
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
 
-	// Clone View
-	{ "keys": ["shift+alt+super+ctrl+2"], "command": "clone_file", "args": {"add_to_selection": true} },
 	// Focus Neighboring group
 	{ "keys": ["shift+alt+super+ctrl+tab"], "command": "focus_neighboring_group", "args": {"forward": false} },
 	// Close Workspace
@@ -264,28 +280,26 @@
 	{ "keys": ["super+r"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} , "context": [
 		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
 	] },
-	{ "keys": ["shift+alt+super+ctrl+u"], "command": "mde_fold_links", "context": [
-		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
-	] },
 	{ "keys": ["super+^"], "command": "mde_reference_new_footnote", "context": [
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
 		{ "key": "setting.mde.keymap_disable.reference_new_footnote", "operator": "not_equal", "operand": true }
 	] },
-	{ "keys": ["super+e"], "command": "run_macro_file", "args": { "file": "res://Packages/User/Markdown Inline Code.sublime-macro" }, "context": [
-		{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
-		{"key": "selection_empty", "operator": "equal", "operand": true},
-	] },
+	{ "keys": ["super+e"], "command": "chain",
+		"args": {
+			"commands": [
+				["insert", {"characters": "``"}],
+				["move", {"by": "characters", "forward": false}]
+			]
+		},
+		"context": [
+			{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+			{"key": "selection_empty", "operator": "equal", "operand": true},
+		]
+	},
+
 	{ "keys": ["super+k"], "command": "mde_reference_new_inline_link", "context": [
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
-
-	// LSP
-	// Goto Definition
-	{ "keys": ["shift+alt+super+ctrl+g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
-		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
-		{"key": "auto_complete_visible", "operator": "equal", "operand": false }
-	] },
-
 ]
 
