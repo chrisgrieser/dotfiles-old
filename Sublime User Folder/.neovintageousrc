@@ -161,6 +161,15 @@ vnoremap J <Esc>
 nnoremap <C-5> ysiw]
 nnoremap <C-8> ysiw)
 nnoremap <C-2> ysiw"
+vnoremap <C-5> S]
+vnoremap <C-8> S)
+vnoremap <C-2> S"
+nnoremap <C-5> ysiw]
+nnoremap <C-9> ysiw)
+nnoremap <C-2> ysiw"
+vnoremap <C-6> S]
+vnoremap <C-9> S)
+vnoremap <C-2> S"
 
 """"""""""""""""""""""
 " < Sorting

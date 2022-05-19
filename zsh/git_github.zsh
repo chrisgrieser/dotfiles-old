@@ -92,7 +92,7 @@ function rel(){
 
 # view older versions
 # https://stackoverflow.com/questions/1964142/how-can-i-list-all-the-different-versions-of-a-file-and-diff-them-also/32849134#32849134
-function all-versions () {
+function allversions () {
 	for commit in $(git log --pretty=format:%h "$1")
 	do
 		file_path="$1"
