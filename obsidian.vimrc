@@ -112,7 +112,7 @@ nmap <Space> "_ciw
 vmap <Space> "vc
 " Delete Word/Selection
 nmap <S-Space> "_daw
-vmap <S-Space> "vdv
+vmap <S-Space> "vd
 
 " Karabiner: <M-Space> = <PageUp>
 nmap <PageUp> yiw

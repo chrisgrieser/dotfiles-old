@@ -29,7 +29,7 @@
 	] },
 
 	// Clone View
-	{ "keys": ["super+forward_slash", "c"], "command": "clone_file", "args": {"add_to_selection": true} },
+	{ "keys": ["super+forward_slash", "s", "p"], "command": "clone_file", "args": {"add_to_selection": true} },
 	// Change Color Scheme
 	{ "keys": ["super+forward_slash", "t"], "command": "select_color_scheme" },
 	// Installation / Uninstallation
@@ -38,7 +38,6 @@
 
 	// Reload vimrc
 	{ "keys": ["super+forward_slash", "r", "r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
-
 
 	// Fold
 	{ "keys": ["super+forward_slash", "1"], "command": "fold_by_level", "args": {"level": 1} },

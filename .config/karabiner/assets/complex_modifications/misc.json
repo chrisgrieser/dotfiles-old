@@ -6,11 +6,14 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "One Stroke `´ (German Layout)",
+			"description": "One Stroke Backtick (German Layout)",
 			"manipulators": [
 				{
+					"description": "forward-tick",
 					"type": "basic",
-					"from": {"key_code": "equal_sign"},
+					"from": {
+						"key_code": "equal_sign"
+					},
 					"to": [
 						{ "key_code": "equal_sign" },
 						{ "key_code": "spacebar" }
@@ -23,6 +26,7 @@
 					]
 				},
 				{
+					"description": "backtick",
 					"type": "basic",
 					"from": {
 						"key_code": "equal_sign",

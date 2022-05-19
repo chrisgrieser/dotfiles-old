@@ -82,15 +82,6 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 """"""""""""""""""""""
-" < Jumps
-""""""""""""""""""""""
-" older
-nnoremap ä <C-o>
-
-" newer
-nnoremap Ä <C-i>
-
-""""""""""""""""""""""
 " < Editing
 """"""""""""""""""""""
 
@@ -138,7 +129,7 @@ nnoremap <leader>. mzA.<Esc>`z
 " < Text Objects
 """"""""""""""""""""""
 " mnemonic: [p]andoc citation [p]arenthesis
-onoremap pp i]
+onoremap ´´ i]
 
 " mnemonic: [z]iting [z]omeone
 onoremap zz i"
