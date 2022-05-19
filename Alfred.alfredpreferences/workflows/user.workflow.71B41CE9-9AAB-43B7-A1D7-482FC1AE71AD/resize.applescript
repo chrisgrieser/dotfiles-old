@@ -22,6 +22,7 @@ try
 		tell process "Finder"
 			set frontmost to true
 			click menu item "Hide Sidebar" of menu "View" of menu bar 1
+			click menu item "as List" of menu "View" of menu bar 1
 		end tell
 	end tell
 end try
