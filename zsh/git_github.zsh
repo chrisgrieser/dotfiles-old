@@ -47,7 +47,6 @@ function clone(){
 	if grep -q "obsidian" package.json &> /dev/null ; then
 		npm i
 		open -R "main.ts"
-		npm run dev
 	fi
 }
 
