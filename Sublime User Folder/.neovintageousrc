@@ -158,18 +158,18 @@ vnoremap J <Esc>
 " < Surround
 """"""""""""""""""""""
 " emulate some smarter punctuation bindings from Smarter MD Hotkeys
+nnoremap <C-2> ysiw"
+vnoremap <C-2> S"
+
 nnoremap <C-5> ysiw]
+vnoremap <C-5> iwoiwS]
+nnoremap <C-6> ysiw]
+vnoremap <C-6> iwoiwS]
+
 nnoremap <C-8> ysiw)
-nnoremap <C-2> ysiw"
-vnoremap <C-5> S]
-vnoremap <C-8> S)
-vnoremap <C-2> S"
-nnoremap <C-5> ysiw]
+vnoremap <C-8> iwoiwS)
 nnoremap <C-9> ysiw)
-nnoremap <C-2> ysiw"
-vnoremap <C-6> S]
-vnoremap <C-9> S)
-vnoremap <C-2> S"
+vnoremap <C-9> iwoiwS)
 
 """"""""""""""""""""""
 " < Sorting
