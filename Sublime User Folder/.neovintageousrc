@@ -102,9 +102,6 @@ vnoremap <BS> "_d
 " don't save small deletion in the register
 nnoremap x "_x
 
-" allows Double Enter to add new line and indent
-nnoremap <CR> A
-
 " Undo/Redo consistently on one key
 noremap U <C-r>
 
@@ -131,6 +128,7 @@ nnoremap Ü ~h
 " Adding Blank Line above/below
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
+nnoremap <CR> o<Esc>
 
 " Add ,;. to last line,
 nnoremap <leader>, mzA,<Esc>`z
