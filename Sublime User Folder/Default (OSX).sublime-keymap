@@ -28,15 +28,15 @@
 	] },
 
 	// Clone View
-	{ "keys": ["super+forward_slash", "super+c"], "command": "clone_file", "args": {"add_to_selection": true} },
+	{ "keys": ["super+forward_slash", "c"], "command": "clone_file", "args": {"add_to_selection": true} },
 	// Change Color Scheme
-	{ "keys": ["super+forward_slash", "super+t"], "command": "select_color_scheme" },
+	{ "keys": ["super+forward_slash", "t"], "command": "select_color_scheme" },
 	// Installation / Uninstallation
-	{ "keys": ["super+forward_slash", "super+i"], "command": "install_package" },
-	{ "keys": ["super+forward_slash", "super+u"], "command": "remove_package" },
+	{ "keys": ["super+forward_slash", "i"], "command": "install_package" },
+	{ "keys": ["super+forward_slash", "u"], "command": "remove_package" },
 
 	// Reload vimrc
-	{ "keys": ["super+forward_slash", "super+r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
+	{ "keys": ["super+forward_slash", "r", "r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
 
 	// ------------------------------------
 
