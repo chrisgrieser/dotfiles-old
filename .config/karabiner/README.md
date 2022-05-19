@@ -30,7 +30,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - Scroll up/down globally via `alt+j/k`.
 - Tap `right-cmd` to send an `enter`.
 - Press `kl` simultaneously to send an `enter`.
-- Pressing `j` in the Browser[^3] hides the cursor. This is useful for vim emulators for browsers, which cannot hide the cursor by themselves.
+- Pressing `j` in the Browser[^3] hides the cursor. This is useful for vim emulators for browsers, [which cannot hide the cursor by themselves](https://github.com/philc/vimium/issues/3273).
 - Focus window & hide cursor[^2] by tapping `right-alt`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
 
 ```text
