@@ -129,9 +129,9 @@ nmap _ mzo<Esc>`z
 " < Text Objects
 """"""""""""""""""""""
 " strangely, nmap works as a substitute for onoremap
-" mnemonic: [p]andoc citation syntax
+" mnemonic: [p]andoc citation [p]arenthesis
 nmap pp i]
-" mnemonic: [Z]iting someone
+" mnemonic: [z]iting [z]omeone
 nmap zz i"
 
 """"""""""""""""""""""

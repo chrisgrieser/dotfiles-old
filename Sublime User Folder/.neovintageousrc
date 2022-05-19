@@ -132,10 +132,10 @@ nnoremap _ mzo<Esc>`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [p]andoc citation syntax
+" mnemonic: [p]andoc citation [p]arenthesis
 onoremap pp i]
 
-" mnemonic: [Z]iting someone
+" mnemonic: [z]iting [z]omeone
 onoremap zz i"
 
 """"""""""""""""""""""
