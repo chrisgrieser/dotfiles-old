@@ -14,7 +14,8 @@
 	"neovintageous_search_inc_style": "outine",
 	"highlightedyank_style": "fill",
 
-	"scroll_context_lines": 9, // this is essentially scroll ofset
+	"relative_line_numbers": true, // = set relativenumber
+	"scroll_context_lines": 9, // = scroll offset
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {

@@ -1,4 +1,11 @@
 """"""""""""""""""""""
+" < Leader
+""""""""""""""""""""""
+" let mapleader=ß
+" can't set leaders in Obsidian vim, so the
+" leaderkey is simply used consistently here
+
+""""""""""""""""""""""
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
@@ -127,7 +134,9 @@ nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
 " Add , to last line,
-nmap , :.s/$/,/
+nmap ß, :.s/$/,/
+nmap ß; :.s/$/;/
+nmap ß. :.s/$/./
 
 """"""""""""""""""""""
 " < Text Objects
@@ -200,14 +209,17 @@ nmap S :sneak
 """"""""""""""""""""""
 " < Sorting
 """"""""""""""""""""""
-" sort selection
-vmap ß :'<,'>sort
+""""""""""""""""""""""
+" < Sorting
+""""""""""""""""""""""
+" [s]ort [s]election
+vmap ßss :'<,'>sort
 
-" sort [g]lobally
-nmap ßg :sort
+" [s]ort [g]lobally
+nmap ßsg :sort
 
-" sort [p]aragraph
-nmap ßp vipß
+" [s]ort [p]aragraph
+nmap ßsp vipß
 
 """"""""""""""""""""""
 " < Misc

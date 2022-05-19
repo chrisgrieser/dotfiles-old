@@ -182,25 +182,23 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < Sorting
 """"""""""""""""""""""
-" sort selection
-vnoremap <leader>ß :'<,'>sort<CR>
+" [s]ort [s]election
+vnoremap <leader>ss :'<,'>sort<CR>
 
-" sort [a]rray, if multi-line (+ remove duplicates)
-nnoremap <leader>a vi]:sort u<CR>
+" [s]ort [a]rray, if multi-line (+ remove duplicates)
+nnoremap <leader>sa vi]:sort u<CR>
 
-" sort [g]lobally
-nnoremap <leader>g :sort<CR>
+" [s]ort [g]lobally
+nnoremap <leader>sg :sort<CR>
 
-"sort [p]aragraph
-nnoremap <leader>p vip:sort<CR>
+" [s]ort [p]aragraph
+nnoremap <leader>sp vip:sort<CR>
 
 """"""""""""""""""""""
 " < Misc
 """"""""""""""""""""""
 " help
 noremap ? :help nv<CR>
-
-set relativenumber
 
 """""""""""""""""""""""""""""
 " < NEOVINTAGEOUS LIMITATIONS

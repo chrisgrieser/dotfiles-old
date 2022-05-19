@@ -27,6 +27,9 @@ set ignorecase
 " Show the mode you are on the last line.
 set showmode
 
+" show partial chord in the last line
+set showcmd
+
 " Show matching words during a search.
 set showmatch
 
