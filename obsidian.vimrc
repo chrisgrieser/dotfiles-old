@@ -114,16 +114,13 @@ vmap <Space> "vc
 nmap <S-Space> "_daw
 vmap <S-Space> "vdv
 
-" Karabiner: <Fn-Space> = <PageDown>
+" Karabiner: <M-Space> = <PageUp>
 nmap <PageUp> yiw
 " Karabiner: <Fn-Space> = <PageDown>
 nmap <PageDown> viwp
 
-" Imitating Abolish's Titlecase (crt)
-" also, using u here is more consistent with visual mode
-exmap smartcaseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
-nmap ü :smartcaseswitch
-nmap Ü ~h
+" Case Switchs
+nmap ü ~h
 
 " Transpose characters, consistent with Emacs/Mac
 imap <C-t> <Esc>"_xpi
@@ -152,6 +149,7 @@ nmap zz i"
 """"""""""""""""""""""
 " Enter Visual from Insert Mode
 imap vv <Esc>v
+imap VV <Esc>V
 
 " quick switch to insert mode
 imap jj <Esc>
