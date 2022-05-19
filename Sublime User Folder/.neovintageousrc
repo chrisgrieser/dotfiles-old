@@ -128,17 +128,8 @@ nnoremap <leader>. mzA.<Esc>`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [p]andoc citation [p]arenthesis
-onoremap ´´ i]
-
-" mnemonic: [z]iting [z]omeone
-onoremap zz i"
-
-""""""""""""""""""""""
-" < Insert Mode
-""""""""""""""""""""""
-" implemented via in "Default (OSX).sublime-keymap"
-" since neovintageousrc cannot do that in its rc file
+" mnemonic: [z]itation [z]yntax
+onoremap zz i]
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -147,8 +138,11 @@ onoremap zz i"
 " inoremap jj <Esc>
 " rnoremap jj <Esc>
 
-vnoremap J <Esc>
-" already built in: press v in visual mode to go back
+""""""""""""""""""""""
+" < Insert Mode
+""""""""""""""""""""""
+" implemented via in "Default (OSX).sublime-keymap"
+" since neovintageousrc cannot do that in its rc file
 
 """"""""""""""""""""""
 " < Surround

@@ -138,11 +138,8 @@ nmap ß. :.s/$/./
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" strangely, nmap works as a substitute for onoremap
-" mnemonic: [p]andoc citation [p]arenthesis
-nmap pp i]
-" mnemonic: [z]iting [z]omeone
-nmap zz i"
+" mnemonic: [z]itation [z]yntax
+nmap zz i]
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -154,9 +151,6 @@ imap VV <Esc>V
 " quick switch to insert mode
 imap jj <Esc>
 rmap jj <Esc>
-
-" already built in: press v in visual mode to go back
-vmap J <Esc>
 
 """"""""""""""""""""""
 " < Insert Mode
