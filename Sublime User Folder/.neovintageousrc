@@ -1,4 +1,7 @@
-" Type :help nv for help.
+""""""""""""""""""""""
+" < Leader
+""""""""""""""""""""""
+let mapleader=ß
 
 """"""""""""""""""""""
 " < Clipboard
@@ -23,7 +26,7 @@ nnoremap P "0p
 set incsearch
 set ignorecase
 
-" no modifier key for jumping to next word
+" no modfier key for jumping to next word
 nnoremap + *
 
 " quicker find mode (by mirroring American keyboard layout on German keyboard layout)
@@ -129,6 +132,11 @@ nnoremap Ü ~h
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
+" Add ,;. to last line,
+nnoremap <leader>, mzA,<Esc>`z
+nnoremap <leader>; mzA;<Esc>`z
+nnoremap <leader>. mzA.<Esc>`z
+
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
@@ -175,16 +183,16 @@ vnoremap <C-9> iwoiwS)
 " < Sorting
 """"""""""""""""""""""
 " sort selection
-vnoremap ß :'<,'>sort<CR>
+vnoremap <leader>ß :'<,'>sort<CR>
 
 " sort [a]rray, if multi-line (+ remove duplicates)
-nnoremap ßa vi]:sort u<CR>
+nnoremap <leader>a vi]:sort u<CR>
 
 " sort [g]lobally
-nnoremap ßg :sort<CR>
+nnoremap <leader>g :sort<CR>
 
 "sort [p]aragraph
-nnoremap ßp vip:sort<CR>
+nnoremap <leader>p vip:sort<CR>
 
 """"""""""""""""""""""
 " < Misc
@@ -202,9 +210,11 @@ set relativenumber
 "   any i command 🙈
 " - as opposed to Obsdian, excommands (:help) need to be
 "   confirmed with an <CR>
+" - % does not work https://github.com/NeoVintageous/NeoVintageous/issues/825
+" - macros are not saved to a register
 " - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810
 
-" - Neovintageous does not allow for any insert mode  modifications, these need
+" - Neovintageous does not allow for any insert mode modifications, these need
 "   to be done in Sublime, with
 "   "context": [{"key": "vi_insert_mode_aware"}]
 
@@ -215,3 +225,4 @@ set relativenumber
 " § ! & ° ´
 " Esc-key zu F17
 " <BS> & arrow-keys
+

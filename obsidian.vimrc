@@ -6,6 +6,7 @@
 
 " show register (i.e., clipboard history)
 map <C-y> :reg
+imap <C-y> :reg
 
 " Y consistent with D and C to the end of line
 nmap Y y$
@@ -124,6 +125,9 @@ nmap <C-t> "_xph
 " Adding Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
+
+" Add , to last line,
+nmap , :.s/$/,/
 
 """"""""""""""""""""""
 " < Text Objects
