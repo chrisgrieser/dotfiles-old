@@ -96,6 +96,9 @@ nnoremap x "_x
 " Undo/Redo consistently on one key
 noremap U <C-r>
 
+" allows Double Enter to add new line and indent
+nnoremap <CR> A
+
 " Change Word/Selection
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
@@ -118,7 +121,6 @@ nnoremap ü ~h
 " Adding Blank Line above/below
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
-nnoremap <CR> o<Esc>
 
 " Add ,;. to last line,
 nnoremap <leader>, mzA,<Esc>`z
