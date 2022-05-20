@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "⌥+j, ⌥+k: PageUp/PageDown",
+			"description": "⌥+j, ⌥+k: PageDown/PageUp",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -31,7 +31,7 @@
 						"key_code": "k",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": [{"key_code": "page_down" } ],
+					"to": [{"key_code": "page_up" } ],
 					"conditions": [
 						{
 							"type": "frontmost_application_unless",

@@ -7,6 +7,7 @@ tell application "System Events"
 	keystroke "k" using {command down} -- mark as read
 	keystroke "j" using {command down} -- jump to unread
 	keystroke "1" using {command down} -- scroll up
+	key code 126 -- select first entry for j/k scrolling
 end tell
 delay 0.05
 tell application frontApp to activate
