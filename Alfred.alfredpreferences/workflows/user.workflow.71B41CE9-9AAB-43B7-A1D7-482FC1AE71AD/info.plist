@@ -333,19 +333,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8CF248CE-8B57-459A-8035-1B229F950E2C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A8EADF29-6F04-4FFA-85FB-7DF2463D311C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>9536809F-DBBD-4982-90BC-427C6D115A14</key>
 		<array>
 			<dict>
@@ -377,19 +364,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>56CD69F0-DA3F-4EF1-809F-78543F4459A1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A8EADF29-6F04-4FFA-85FB-7DF2463D311C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F32D1155-DBAE-48D2-AAA2-D220C6A4CB3D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -437,19 +411,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C2867105-E752-4EB1-838C-85DBF3BFFBC9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D42420E8-AB3B-4E52-853F-8132B45077A3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<array>
 			<dict>
@@ -468,32 +429,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>BBEB4750-0817-42C1-BA51-23E6E7A48C0D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D42420E8-AB3B-4E52-853F-8132B45077A3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FDDB18DD-3B35-4E2E-919B-51648FD77135</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D7FB212A-AF94-422F-9FD6-308DB317F36B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F8B343EB-9DEF-49DB-8BD2-BBDFF5E6ABE6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -633,19 +568,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F32D1155-DBAE-48D2-AAA2-D220C6A4CB3D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C2867105-E752-4EB1-838C-85DBF3BFFBC9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<array>
 			<dict>
@@ -664,19 +586,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FDDB18DD-3B35-4E2E-919B-51648FD77135</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D7FB212A-AF94-422F-9FD6-308DB317F36B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2344,203 +2253,6 @@ echo -n "$title"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>'{query}'</string>
-				<key>title</key>
-				<string>🪝 File Hook copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F8B343EB-9DEF-49DB-8BD2-BBDFF5E6ABE6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function run() {
-	path = "{query}";
-
-	encoded_path = encodeURIComponent(path);
-	encoded_path = encoded_path.replaceAll ("%2F","/"); //file hooks cant be read without "/"
-
-	var name = path.replace (/(.*)\/$/,"$1"); 
-	var name = name.replace (/.*\/(.*?)$/,"$1"); 
-
-	var hook = "[" + name + "](file://" + encoded_path + ")";
-
-	return hook;
-}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C2867105-E752-4EB1-838C-85DBF3BFFBC9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Finder" to set sel to selectionif ((count sel) &gt; 1) then	set firstItem to item 1 of sel	return POSIX path of (firstItem as text)else 	return POSIX path of (sel as text)
-end if</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A8EADF29-6F04-4FFA-85FB-7DF2463D311C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>FDDB18DD-3B35-4E2E-919B-51648FD77135</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>27</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>SS</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>8CF248CE-8B57-459A-8035-1B229F950E2C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>D42420E8-AB3B-4E52-853F-8132B45077A3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\[(.*)\].*</string>
-				<key>regexcaseinsensitive</key>
-				<true/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string>$1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>D7FB212A-AF94-422F-9FD6-308DB317F36B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>F32D1155-DBAE-48D2-AAA2-D220C6A4CB3D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -2854,17 +2566,6 @@ end if</string>
 			<key>ypos</key>
 			<integer>1745</integer>
 		</dict>
-		<key>8CF248CE-8B57-459A-8035-1B229F950E2C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>HOOK: Copy Markdown Link of Current Obsidian File</string>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>1885</integer>
-		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
 			<key>colorindex</key>
@@ -2911,17 +2612,6 @@ end if</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>540</integer>
-		</dict>
-		<key>A8EADF29-6F04-4FFA-85FB-7DF2463D311C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>get Finder selection</string>
-			<key>xpos</key>
-			<integer>230</integer>
-			<key>ypos</key>
-			<integer>1885</integer>
 		</dict>
 		<key>B1270767-40DA-4713-9875-7FA8B3FDFAE5</key>
 		<dict>
@@ -2988,15 +2678,6 @@ end if</string>
 			<key>ypos</key>
 			<integer>820</integer>
 		</dict>
-		<key>C2867105-E752-4EB1-838C-85DBF3BFFBC9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>1885</integer>
-		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
 			<key>colorindex</key>
@@ -3025,28 +2706,6 @@ end if</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>25</integer>
-		</dict>
-		<key>D42420E8-AB3B-4E52-853F-8132B45077A3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>remove \n</string>
-			<key>xpos</key>
-			<integer>610</integer>
-			<key>ypos</key>
-			<integer>1915</integer>
-		</dict>
-		<key>D7FB212A-AF94-422F-9FD6-308DB317F36B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Strip Markdown</string>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>1915</integer>
 		</dict>
 		<key>D9356F02-69F9-43CF-A2F8-5620849DD6CE</key>
 		<dict>
@@ -3193,17 +2852,6 @@ end if</string>
 			<key>ypos</key>
 			<integer>305</integer>
 		</dict>
-		<key>F32D1155-DBAE-48D2-AAA2-D220C6A4CB3D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>remove \n</string>
-			<key>xpos</key>
-			<integer>375</integer>
-			<key>ypos</key>
-			<integer>1915</integer>
-		</dict>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<dict>
 			<key>colorindex</key>
@@ -3225,24 +2873,6 @@ end if</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>380</integer>
-		</dict>
-		<key>F8B343EB-9DEF-49DB-8BD2-BBDFF5E6ABE6</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>885</integer>
-			<key>ypos</key>
-			<integer>1885</integer>
-		</dict>
-		<key>FDDB18DD-3B35-4E2E-919B-51648FD77135</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>670</integer>
-			<key>ypos</key>
-			<integer>1885</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

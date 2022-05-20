@@ -9,7 +9,7 @@
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-" set clipboard=unnamed
+set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 map <C-y> :reg
@@ -114,8 +114,8 @@ nmap <PageDown> viwp
 nmap ü ~h
 
 " Transpose characters, consistent with Emacs/Mac
-imap <C-t> <Esc>"_xpi
-nmap <C-t> "_xph
+imap <C-t> <Esc>xpi
+nmap <C-t> xph
 
 " Adding Blank Line above/below
 nmap = mzO<Esc>`z
