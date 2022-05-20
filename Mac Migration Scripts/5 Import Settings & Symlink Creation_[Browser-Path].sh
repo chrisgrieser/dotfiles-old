@@ -19,7 +19,7 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 # -----------
 
 # Symlink Dotfiles
-SYMLINK_LOC=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/"
+SYMLINK_LOC="$DOTFILE_FOLDER"
 
 mv ~/.zshrc ~/.Trash
 ln -s "$SYMLINK_LOC/zsh/.zshrc" ~

@@ -10,6 +10,5 @@ on run argv
 			delay 0.05
 		end repeat
 		delay 0.05
-		keystroke "r"
 	end tell
 end run

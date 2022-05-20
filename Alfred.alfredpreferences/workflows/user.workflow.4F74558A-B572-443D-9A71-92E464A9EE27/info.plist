@@ -345,7 +345,7 @@ end if</string>
 	<key>variables</key>
 	<dict>
 		<key>dotfile_folder</key>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/</string>
 		<key>vault_path</key>
 		<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/</string>
 		<key>working_directory</key>

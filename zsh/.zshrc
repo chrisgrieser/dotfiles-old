@@ -1,5 +1,5 @@
 # shellcheck disable=SC1094
-export ZSH_DOTFILE_LOCATION=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/zsh"
+export ZSH_DOTFILE_LOCATION=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/zsh"
 
 source "$ZSH_DOTFILE_LOCATION"/load_plugins.zsh # should be loaded first
 source "$ZSH_DOTFILE_LOCATION"/aliases.zsh

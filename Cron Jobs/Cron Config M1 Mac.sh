@@ -1,5 +1,5 @@
 #!/bin/zsh
-CRON_JOB_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Cron Jobs"
+CRON_JOB_FOLDER="$DOTFILE_FOLDER/Cron Jobs"
 
 echo -n "" | crontab - # to reset
 function add-cronjob () {
