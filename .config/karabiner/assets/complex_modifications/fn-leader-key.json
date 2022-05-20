@@ -6,12 +6,16 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Fn Leader: switch/launch app",
+			"description": "Fn Leader",
 			"manipulators": [
 				{
 					"type": "basic",
 					"description": "Fn Leader Main",
 					"from": {"key_code": "fn" },
+					"parameters": {
+						"description": "timeout prevent a foot left on the pedal from unintentionally triggering fn all the time.",
+						"basic.to_if_alone_timeout_milliseconds": 250
+					},
 					"conditions": [
 						{
 							"type": "variable_unless",
@@ -19,7 +23,7 @@
 							"value": 1
 						}
 					],
-					"to": [
+					"to_if_alone": [
 						{"key_code": "fn" },
 						{
 							"set_variable": {
