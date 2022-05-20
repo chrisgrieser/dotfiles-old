@@ -1656,7 +1656,13 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'BetterTouchTool'"
+                                        "shell_command": "open -a 'Twitterrific'"
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     },
                                     {
                                         "set_variable": {
@@ -1665,10 +1671,11 @@
                                         }
                                     },
                                     {
-                                        "set_notification_message": {
-                                            "id": "fn-leader-notice",
-                                            "text": ""
-                                        }
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
                                     }
                                 ],
                                 "type": "basic"

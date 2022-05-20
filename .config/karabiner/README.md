@@ -76,10 +76,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `w` → Microsoft `W`ord
 - `a` → `A`lfred Preferences
 - `v` → `V`ideo → `V`LC Player
-- `t` → Better`T`ouchTool
+- `t` → `T`witter → `T`witterific
 - `k` → `K`arabiner Elements
 - `shift + k` → `K`arabiner EventViewer
-- `fn` (= 2x `fn`) → Emoji Insertion Mosal
+- `fn` (= 2x `fn`) → Emoji Insertion Modal
 
 ## Miscellaneous
 - **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)

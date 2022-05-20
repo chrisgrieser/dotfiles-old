@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4EB7DAC1-525A-4DFD-B7F1-243DD0595731</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE785AFF-D7E9-4195-95A2-D5161812F5D2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>512210D7-D938-4575-B2B9-3A29F768866D</key>
 		<array>
 			<dict>
@@ -99,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DE785AFF-D7E9-4195-95A2-D5161812F5D2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49F2F7BC-12DD-44EC-AB5F-B314AFBDBB5E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E351C4BB-4D9B-40B3-8849-BC10E485473D</key>
 		<array>
 			<dict>
@@ -153,39 +179,20 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>🔎 Search: {query}</string>
+				<string>👤 Toggle Headless Mode</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>C0261997-8C06-4E90-974E-92FBB6D6CA2D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://twitter.com/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>5FD4196A-573D-43DB-A151-FB1463C91336</string>
+			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -229,6 +236,46 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔎 Search: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C0261997-8C06-4E90-974E-92FBB6D6CA2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://twitter.com/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5FD4196A-573D-43DB-A151-FB1463C91336</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -250,21 +297,19 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>tw</string>
-				<key>subtext</key>
+				<key>browser</key>
 				<string></string>
-				<key>text</key>
-				<string>👤 Toggle Headless Mode</string>
-				<key>withspace</key>
-				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://twitter.com/settings/muted_keywords</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
+			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -286,25 +331,6 @@ open -a "Twitterrific"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>0EF4F09D-7C6A-41AA-9CC1-2736C6FBD823</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://twitter.com/settings/muted_keywords</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -347,6 +373,25 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>twitterrific://current/post?message={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A0390445-3124-4179-A03B-217403483ADE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -368,65 +413,71 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>twitterrific://current/post?message={query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/Twitterrific.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>A0390445-3124-4179-A03B-217403483ADE</string>
+			<string>DE785AFF-D7E9-4195-95A2-D5161812F5D2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>tw</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>❓Shortcuts</string>
-				<key>withspace</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>41</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>Ö</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>512210D7-D938-4575-B2B9-3A29F768866D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>qlmanage -p "twitterific-shortcuts-cheatsheet.png"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</string>
+			<string>4EB7DAC1-525A-4DFD-B7F1-243DD0595731</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↓</string>
+				<key>keycode</key>
+				<integer>125</integer>
+				<key>keymod</key>
+				<integer>10485760</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>49F2F7BC-12DD-44EC-AB5F-B314AFBDBB5E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -465,6 +516,50 @@ open -a "Twitterrific"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>D24BD568-15C4-4DDD-99AE-F3DFFDD3E0A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>qlmanage -p "twitterific-shortcuts-cheatsheet.png"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D1C9406F-A7CC-4DDD-80FC-2B48DF71094A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>tw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>❓Shortcuts</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>512210D7-D938-4575-B2B9-3A29F768866D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -584,6 +679,24 @@ open -a "Twitterrific"</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
+		<key>49F2F7BC-12DD-44EC-AB5F-B314AFBDBB5E</key>
+		<dict>
+			<key>note</key>
+			<string>to make it scrollable via j/k</string>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+		<key>4EB7DAC1-525A-4DFD-B7F1-243DD0595731</key>
+		<dict>
+			<key>note</key>
+			<string>activate</string>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
 		<key>512210D7-D938-4575-B2B9-3A29F768866D</key>
 		<dict>
 			<key>colorindex</key>
@@ -592,9 +705,9 @@ open -a "Twitterrific"</string>
 			<string>Cheatsheet of Shortcuts
 (useful, since shortcuts cannot be inspected in the menubar in headless mode)</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>450</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
@@ -661,9 +774,9 @@ open -a "Twitterrific"</string>
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>450</integer>
 		</dict>
 		<key>D24BD568-15C4-4DDD-99AE-F3DFFDD3E0A2</key>
 		<dict>
@@ -691,6 +804,13 @@ open -a "Twitterrific"</string>
 			<integer>335</integer>
 			<key>ypos</key>
 			<integer>25</integer>
+		</dict>
+		<key>DE785AFF-D7E9-4195-95A2-D5161812F5D2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>195</integer>
+			<key>ypos</key>
+			<integer>310</integer>
 		</dict>
 		<key>E286DBA7-2559-48DF-800B-A66A6523BB93</key>
 		<dict>
