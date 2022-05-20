@@ -1,11 +1,12 @@
 " Closing Tabs
-map ww removeTab count=19
 map wq closeTabsOnLeft
 map we closeTabsOnRight
 map w2 moveTabToNewWindow
-map W closeOtherTabs
+map ww closeOtherTabs
 map u removeTab
 map z restoreTab
+" W = close window
+map W removeTab count=19
 
 " Scrolling Fast
 map J scrollDown count=3

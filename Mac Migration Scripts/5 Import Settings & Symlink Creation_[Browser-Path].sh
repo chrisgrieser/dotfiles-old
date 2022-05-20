@@ -44,19 +44,15 @@ ln -s "$SYMLINK_LOC/.flake8" ~
 mv ~/.config ~/.Trash
 ln -s "$SYMLINK_LOC/.config/" ~/.config
 
-# Popclip
-killall Popclip
-mv -f ~"/Library/Application Support/PopClip" ~/.Trash
-ln -s "$SYMLINK_LOC/Popclip" ~"/Library/Application Support/PopClip"
-open -a "Popclip"
-
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
 mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
 ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
 
+# -------------------
 # only on main device
+# -------------------
 
 # Dock and Launchpad
 mv ~"/Library/Application Support/Dock" ~/.Trash
