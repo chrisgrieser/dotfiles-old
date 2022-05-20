@@ -31,7 +31,7 @@
 			]
 		},
 		{
-			"description": "j (Browser): also hides cursor",
+			"description": "j/k (Browser): also hides cursor",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -42,7 +42,35 @@
 							"software_function": {
 								"set_mouse_cursor_position": {
 									"x": "100%",
-									"y": "85%",
+									"y": "80%",
+									"screen": 0
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^com\\.vivaldi\\.Vivaldi$",
+								"^org\\.chromium\\.Chromium$",
+								"^com\\.google\\.Chrome$",
+								"^com\\.brave\\.Browser$",
+								"^com\\.apple\\.Safari$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": { "key_code": "k" },
+					"to": [
+						{ "key_code": "k" },
+						{
+							"software_function": {
+								"set_mouse_cursor_position": {
+									"x": "100%",
+									"y": "80%",
 									"screen": 0
 								}
 							}
@@ -123,7 +151,7 @@
 							"software_function": {
 								"set_mouse_cursor_position": {
 									"x": "100%",
-									"y": "85%",
+									"y": "80%",
 									"screen": 0
 								}
 							}
