@@ -46,8 +46,6 @@ export LESS_TERMCAP_md=$'\E[1;33m'     # begin blink
 export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
 export LESS_TERMCAP_us=$'\E[1;34m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
-# protect special characters
-export LC_CTYPE="en_US.UTF-8"
 
 # Pager-specific settings
 export LESS='--use-color -M -R --tabs=3 --window=-5 --quit-at-eof -g -i --incsearch --quit-if-one-screen --no-init'

@@ -32,6 +32,8 @@ copyBuffer () {
 }
 zle -N copyBuffer
 
-# '^ [[Z' = Shift-Tab
+
+# https://github.com/zsh-users/zsh-autosuggestions/issues/532#issuecomment-907361899
 # https://github.com/zsh-users/zsh-autosuggestions#key-bindings
-bindkey '^ [[Z' autosuggest-accept
+bindkey '^I' autosuggest-accept # tab: auto-completion from zsh-autosuggest
+bindkey '^[[Z' complete-word   # shift+tab  completion suggestion
