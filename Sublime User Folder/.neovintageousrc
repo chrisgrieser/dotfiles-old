@@ -109,10 +109,9 @@ vnoremap <Space> "vc
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
 vnoremap <S-Space> "vd
-
-" Karabiner: <M-Space> = <PageUp>
-nnoremap <PageUp> yiw
-vnoremap <PageUp> "vy
+" Yank Word/Selection
+nnoremap <M-Space> yiw
+vnoremap <M-Space> "vy
 
 " Case Switch
 nnoremap ü ~h

@@ -154,10 +154,10 @@
     "reverseFS": false,
     "sgsleft": [
       {
-        "action": "G_up"
+        "action": "G_lefttab"
       },
       {
-        "action": "G_bottom"
+        "action": "G_righttab"
       }
     ],
     "sgsleftenable": false,
@@ -169,10 +169,10 @@
         "action": "G_bottom"
       }
     ],
-    "sgsrightenable": true,
-    "tablist": true,
+    "sgsrightenable": false,
+    "tablist": false,
     "tablistVisual": true,
-    "tablistkey": "right"
+    "tablistkey": "left"
   },
   "strokegesture": {
     "strleft": [

@@ -1793,6 +1793,23 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Fix Alt-Space (Obsidian): Shift-F12",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar"
+                                },
+                                "to": {
+                                    "key_code": "F12",
+                                    "modifiers": [
+                                        "shift"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1905,7 +1922,7 @@
                         },
                         {
                             "from": {
-                                "key_code": "up_arrow"
+                                "key_code": "end"
                             },
                             "to": [
                                 {
@@ -1920,6 +1937,16 @@
                             "to": [
                                 {
                                     "key_code": "non_us_backslash"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "home"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f5"
                                 }
                             ]
                         },

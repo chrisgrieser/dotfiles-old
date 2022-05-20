@@ -177,19 +177,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>635EFCB3-F72B-4751-B065-67DA63456A08</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>388E830E-3DD5-457F-BC4E-8FA5B10067E5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>6F97841B-DC61-4E61-B905-8FC2F1D83280</key>
 		<array>
 			<dict>
@@ -247,19 +234,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6453CDF8-6E9F-4989-9B35-36FDB6377A20</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9F731DE2-DD47-49B5-A7F1-DE118A4F38AD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6BA6FC31-E4F0-42B7-8B89-148621F260EE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1497,37 +1471,6 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>103</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F11</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>635EFCB3-F72B-4751-B065-67DA63456A08</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>101</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
@@ -1563,25 +1506,6 @@ end tell</string>
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
 			<string>8021D07C-8E94-489A-B77D-6603F1AFF4AF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>volume_down</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>com.vdesabou.spotify.mini.player</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>388E830E-3DD5-457F-BC4E-8FA5B10067E5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1653,37 +1577,6 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>111</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F12</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>9F731DE2-DD47-49B5-A7F1-DE118A4F38AD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>100</integer>
 				<key>hotmod</key>
 				<integer>8519680</integer>
@@ -1719,25 +1612,6 @@ end tell</string>
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
 			<string>35EADBBC-DF66-4746-8C7B-094AD0FB0930</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>volume_up</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>com.vdesabou.spotify.mini.player</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>6BA6FC31-E4F0-42B7-8B89-148621F260EE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2417,15 +2291,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>1720</integer>
 		</dict>
-		<key>388E830E-3DD5-457F-BC4E-8FA5B10067E5</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>1005</integer>
-			<key>ypos</key>
-			<integer>980</integer>
-		</dict>
 		<key>38BF85B6-AAF8-4485-8BA4-7F37F7D20F0B</key>
 		<dict>
 			<key>colorindex</key>
@@ -2578,18 +2443,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>705</integer>
 		</dict>
-		<key>635EFCB3-F72B-4751-B065-67DA63456A08</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>fn + f11
-(due to karabienr elements binding)</string>
-			<key>xpos</key>
-			<integer>830</integer>
-			<key>ypos</key>
-			<integer>980</integer>
-		</dict>
 		<key>6453CDF8-6E9F-4989-9B35-36FDB6377A20</key>
 		<dict>
 			<key>colorindex</key>
@@ -2605,15 +2458,6 @@ end tell</string>
 			<integer>1105</integer>
 			<key>ypos</key>
 			<integer>20</integer>
-		</dict>
-		<key>6BA6FC31-E4F0-42B7-8B89-148621F260EE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>1010</integer>
-			<key>ypos</key>
-			<integer>1140</integer>
 		</dict>
 		<key>6F97841B-DC61-4E61-B905-8FC2F1D83280</key>
 		<dict>
@@ -2724,18 +2568,6 @@ end tell</string>
 			<integer>80</integer>
 			<key>ypos</key>
 			<integer>1215</integer>
-		</dict>
-		<key>9F731DE2-DD47-49B5-A7F1-DE118A4F38AD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>fn + f12
-(due to karabienr elements binding)</string>
-			<key>xpos</key>
-			<integer>830</integer>
-			<key>ypos</key>
-			<integer>1140</integer>
 		</dict>
 		<key>A1AACF44-CC25-4C56-A892-5ED0A3D590D7</key>
 		<dict>
