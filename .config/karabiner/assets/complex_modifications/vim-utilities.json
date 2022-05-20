@@ -161,7 +161,7 @@
 			]
 		},
 		{
-			"description": "Hyper + hjkl: ←↓↑→ (requires Hyper Key)",
+			"description": "Hyper + hjklm: ←↓↑→↵ (requires Hyper Key)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -194,6 +194,14 @@
 						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
 					},
 					"to": [ {"key_code": "right_arrow" } ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "m",
+						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
+					},
+					"to": [ {"key_code": "return_or_enter" } ]
 				}
 			]
 		},

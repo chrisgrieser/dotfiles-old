@@ -3,7 +3,7 @@ bindkey "^P" copyLocation
 bindkey "^B" copyBuffer
 
 bindkey "^Z" undo
-bindkey "^U" kill-buffer
+bindkey "^K" kill-buffer
 bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
 
 # [alt+arrow] - move word forward or backward
@@ -31,4 +31,6 @@ copyBuffer () {
 }
 zle -N copyBuffer
 
-
+# '^ [[Z' = Shift-Tab
+# https://github.com/zsh-users/zsh-autosuggestions#key-bindings
+bindkey '^ [[Z' autosuggest-accept
