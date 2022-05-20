@@ -966,6 +966,13 @@
                         "description": "Fn Leader: switch/launch app",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_FN_TRIGGERED",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Fn Leader Main",
                                 "from": {
                                     "key_code": "fn"
@@ -984,7 +991,49 @@
                                         }
                                     }
                                 ],
-                                "to_after_key_up": [
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_FN_TRIGGERED",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.runningwithcrayons\\.Alfred$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    },
+                                    {
+                                        "description": "So fn from foot-pedal doesn't trigger emojis",
+                                        "identifiers": [
+                                            {
+                                                "is_pointing_device": false
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "description": "2x fn: Emoji inserter",
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "right_command",
+                                            "right_control"
+                                        ]
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_FN_TRIGGERED",
+                                            "value": 0
+                                        }
+                                    },
                                     {
                                         "set_notification_message": {
                                             "id": "fn-leader-notice",
@@ -1014,6 +1063,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1037,6 +1092,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1062,6 +1123,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1085,6 +1152,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1110,6 +1183,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1133,6 +1212,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1158,6 +1243,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1181,6 +1272,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1206,6 +1303,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1229,6 +1332,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1254,11 +1363,24 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_FN_TRIGGERED",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -1275,6 +1397,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1300,6 +1428,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1323,6 +1457,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1348,6 +1488,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1371,6 +1517,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1396,6 +1548,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1419,6 +1577,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1444,6 +1608,12 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -1467,6 +1637,12 @@
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],
@@ -1492,39 +1668,11 @@
                                             "name": "LEADER_FN_TRIGGERED",
                                             "value": 0
                                         }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "2x fn: Emoji inserter",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "LEADER_FN_TRIGGERED",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-
-                                ],
-                                "from": {
-                                    "key_code": "fn"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": [
-                                            "right_command",
-                                            "right_control"
-                                        ]
                                     },
                                     {
-                                        "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
-                                            "value": 0
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
                                         }
                                     }
                                 ],

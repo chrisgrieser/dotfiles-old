@@ -9,7 +9,7 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Shift Utilities](#shift-utilities)
-- [Fn App-Switcher](#fn-app-switcher)
+- [Fn Leader](#fn-leader)
 - [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
@@ -56,33 +56,30 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-utilities.json
 ```
 
-## Fn App-Switcher
-`fn + {letter}` launches/switches to a pre-defined app
-- `fn + c` → `C`alendar → BusyCal
-- `fn + b` → `B`rowser → Brave Browser
-- `fn + o` → `O`bsidian
-- `fn + d` → `D`iscord
-- `fn + s` → `S`lack
-- `fn + r` → `D`rafts
-- `fn + f` → `F`inder (with a default folder)
-- `fn + r` → D`r`afts
-- `fn + e` → `E`ditor → Sublime Text
-- `fn + y`[^1] → `Y`ouTube
-- `fn + z`[^1] → `Z`oom
-- `fn + p` → `P`DF Reader → Highlights
-- `fn + i` → `I`noreader
-- `fn + m` → `M`ail → Mimestream
-- `fn + g` → `G`oogle Docs
-- `fn + w` → Microsoft `W`ord
-- `fn + a` → `A`lfred Preferences
-- `fn + v` → `V`ideo → `V`LC Player
-- `fn + t` → Better`T`ouchTool
-- `fn + k` → `K`arabiner Elements
-- `fn + shift + k` → `K`arabiner EventViewer
-
-Since pressing `fn` interferes with the built-in macOS emoji insertion key, it needs to be disabled (`System Preferences → Keyboard → "Press 🌐 to" → "Do Nothing"`) . 
-
-If you still want to use the `fn` key to open the emoji insertion modal, you can simply activate the second rule which does exactly that when `fn` is pressed alone.
+## Fn Leader
+`fn` activates the leader key. The key following it launches/switches the following apps
+- `c` → `C`alendar → BusyCal
+- `b` → `B`rowser → Brave Browser
+- `o` → `O`bsidian
+- `d` → `D`iscord
+- `s` → `S`lack
+- `r` → `D`rafts
+- `f` → `F`inder (with a default folder)
+- `r` → D`r`afts
+- `e` → `E`ditor → Sublime Text
+- `y`[^1] → `Y`ouTube
+- `z`[^1] → `Z`oom
+- `p` → `P`DF Reader → Highlights
+- `i` → `I`noreader
+- `m` → `M`ail → Mimestream
+- `g` → `G`oogle Docs
+- `w` → Microsoft `W`ord
+- `a` → `A`lfred Preferences
+- `v` → `V`ideo → `V`LC Player
+- `t` → Better`T`ouchTool
+- `k` → `K`arabiner Elements
+- `shift + k` → `K`arabiner EventViewer
+- `fn` (= 2x `fn`) → Emoji Insertion Mosal
 
 ## Miscellaneous
 - **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
