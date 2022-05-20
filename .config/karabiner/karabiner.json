@@ -876,56 +876,6 @@
                         ]
                     },
                     {
-                        "description": "R-⌥ (tap): Focus Window & Hide Cursor",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_option"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_option"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "50%",
-                                                "y": "50%"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 15,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "85%"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Fn Leader: switch/launch app",
                         "manipulators": [
                             {
@@ -1636,6 +1586,125 @@
                                         "set_notification_message": {
                                             "id": "fn-leader-notice",
                                             "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "j/k (Browser): also hides cursor",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "j"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "80%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "80%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-⌥ (tap): Focus Window & Hide Cursor",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_option"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "50%",
+                                                "y": "50%"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 15,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "pointing_button": "button1"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 15,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "80%"
+                                            }
                                         }
                                     }
                                 ],
