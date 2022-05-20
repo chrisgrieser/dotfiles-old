@@ -246,6 +246,7 @@
 	{ "keys": ["ctrl+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 	// Sidebar
 	{ "keys": ["super+1"], "command": "toggle_side_bar" },
+	{ "keys": ["super+0"], "command": "toggle_tabs" },
 
 	// FILE MANAGEMENT
 	{ "keys": ["super+n"], "command": "advanced_new_file_new"},

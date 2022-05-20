@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "⌥+j, ⌥+k: Scroll ↓↑",
+			"description": "⌥+j, ⌥+k: PageUp/PageDown",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -14,8 +14,15 @@
 						"key_code": "j",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": [
-						{"mouse_key": {"vertical_wheel": 200 } }
+					"to": [{"key_code": "page_down" } ],
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$"
+							]
+						}
 					]
 				},
 				{
@@ -24,8 +31,55 @@
 						"key_code": "k",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": [
-						{"mouse_key": {"vertical_wheel": -200 } }
+					"to": [{"key_code": "page_down" } ],
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [ {
+						"key_code": "page_down",
+						"modifiers": "shift"
+					} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [ {
+						"key_code": "page_up",
+						"modifiers": "shift"
+					} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$"
+							]
+						}
 					]
 				}
 			]

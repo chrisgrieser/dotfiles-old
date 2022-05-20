@@ -44,47 +44,6 @@
 					]
 				}
 			]
-		},
-		{
-			"description": "Spacebar Hack (Obsidian/Sublime)",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "spacebar",
-						"modifiers": {"mandatory": ["option"] }
-					},
-					"to": [{ "key_code": "page_up" } ],
-					"conditions": [
-						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^org\\.pqrs\\.Karabiner-EventViewer$",
-								"^com\\.sublimetext\\.4$",
-								"^md\\.obsidian$"
-							]
-						}
-					]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "spacebar",
-						"modifiers": {"mandatory": ["fn"] }
-					},
-					"to": [{ "key_code": "page_down" } ],
-					"conditions": [
-						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^org\\.pqrs\\.Karabiner-EventViewer$",
-								"^com\\.sublimetext\\.4$",
-								"^md\\.obsidian$"
-							]
-						}
-					]
-				}
-			]
 		}
 	]
 }
