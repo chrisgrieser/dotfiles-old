@@ -105,13 +105,11 @@ vmap <Space> "vc
 nmap <S-Space> "_daw
 vmap <S-Space> "vd
 
-" Karabiner: <M-Space> = <Home>
-nmap <Home> yiw
-vmap <Home> "vy
 " Yank Word/Selection
-nmap <A-Space> yiw
-vmap <M-Space> "vy
-nmap  
+" <A-Space> mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
+nmap <S-F12> yiw
+vmap <S-F12> "vy
+
 " Case Switch
 nmap ü ~h
 

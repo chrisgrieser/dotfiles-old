@@ -404,17 +404,16 @@
 						"key_code": "spacebar",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": {
-						"key_code": "F12",
-						"modifiers": ["shift"]
-					},
+					"to": [
+						{
+							"key_code": "f12",
+							"modifiers": "shift"
+						}
+					],
 					"conditions": [
 						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^md\\.obsidian$",
-								"^org\\.pqrs\\.Karabiner-EventViewer$"
-							]
+							"bundle_identifiers": ["^md\\.obsidian$"],
+							"type": "frontmost_application_if"
 						}
 					]
 				}

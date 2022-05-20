@@ -1798,15 +1798,29 @@
                         "description": "Fix Alt-Space (Obsidian): Shift-F12",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md\\.obsidian$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "description": "Fix needed as Obsidian interprets alt-space as non-breaking space, which cannot be mapped. Therefore replaced with Shift-F12, which can be remapped in Obsidian's vimrc.",
                                 "from": {
-                                    "key_code": "spacebar"
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
                                 },
-                                "to": {
-                                    "key_code": "F12",
-                                    "modifiers": [
-                                        "shift"
-                                    ]
-                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": "shift"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
