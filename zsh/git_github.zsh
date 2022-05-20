@@ -1,25 +1,26 @@
 # git add, commit & push
 function acp (){
-	commitMsg="$*"
-	if [[ "$commitMsg" == "" ]] ; then
-		commitMsg="patch"
+	COMMIT_MSG="$*"
+	if [[ "$COMMIT_MSG" == "" ]] ; then
+		COMMIT_MSG="patch"
 	fi
 
 	git add -A
-	git commit -m "$commitMsg"
+	git commit -m "$COMMIT_MSG"
 	git pull
 	git push
 }
 
-# git add & commit
-function ac (){
-	commitMsg="$*"
-	if [[ "$commitMsg" == "" ]] ; then
-		commitMsg="patch"
+function amend () {
+	COMMIT_MSG="$*"
+	if [[ "$COMMIT_MSG" == "" ]] ; then
+		git commit --amend
+	else
+		git commit --amend -m "$COMMIT_MSG"
 	fi
-
-	git add -A
-	git commit -m "$commitMsg"
+	# ⚠️ only when working alone – might lead to conflicts when working
+	# with collaboratos: https://stackoverflow.com/a/255080
+	git push --force
 }
 
 alias amend='git commit --amend'

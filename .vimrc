@@ -97,23 +97,15 @@ nnoremap Ä ~
 
 " transpose characters, consistent with Emacs/Mac
 " transpose characters, consistent with Emacs/Mac
-imap <C-t> <Esc>xpi
-nmap <C-t> xph
+inoremap <C-t> <Esc>xpi
+nnoremap <C-t> xph
 
 """"""""""""""""""""""
 " Text Objects
 """"""""""""""""""""""
 
 " double [] for symmetry with Obsidian's Vim Emulation
-" which requires nmap and therefore cannot use prc as single letters 🙈
-onoremap pp i(
-onoremap vv i[
-onoremap qq i"
-
-" for symmetry with Obsidian's vim, where the `is`
-" text object does not work (and is imitated via `(c)` )
-nnoremap X das
-
+onoremap zz i[
 
 
 """"""""""""""""""""""
@@ -121,34 +113,30 @@ nnoremap X das
 """"""""""""""""""""""
 
 " quick switch to insert mode
-imap jj <Esc>
-rmap jj <Esc>
+inoremap jj <Esc>
 
 " already built in: presss v in visual mode to go back
-vmap J <Esc>
+vnoremap J <Esc>
 
 """"""""""""""""""""""
 " Insert Mode
 """"""""""""""""""""""
 
 " mirroring HL in Normal Mode
-imap <C-l> <Esc>A
-imap <C-h> <Esc>I
+inoremap <C-l> <Esc>A
+inoremap <C-h> <Esc>I
 
 " Kill line
-imap <C-k> <Esc>C
+inoremap <C-k> <Esc>C
 
 " Kill line backwards
-imap <C-j> <Esc>c^
+inoremap <C-j> <Esc>c^
 
 """"""""""""""""""""""
 " Misc
 """"""""""""""""""""""
 " quicker access to help command-ids
-nmap ? :help
-
-" Play Macro: more consistent mapping (and @ not working)
-nmap Q @
+nnoremap ? :help
 
 " Goto Mark: remapping since ` not working
-nmap ö `
+nnoremap ö `
