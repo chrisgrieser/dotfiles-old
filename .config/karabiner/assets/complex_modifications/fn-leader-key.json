@@ -35,6 +35,22 @@
 					]
 				},
 				{
+					"type": "basic",
+					"description": "Fn Leader Cancel",
+					"from": {"key_code": "fn" },
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "LEADER_FN_TRIGGERED",
+							"value": 1
+						}
+					],
+					"to": [
+						{"set_variable": {"name": "LEADER_FN_TRIGGERED", "value": 0}},
+						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+					]
+				},
+				{
 					"description": "2x fn: Emoji inserter",
 					"type": "basic",
 					"from": {"key_code": "fn"},
