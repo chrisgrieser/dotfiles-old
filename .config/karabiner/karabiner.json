@@ -1732,7 +1732,27 @@
                         ]
                     },
                     {
-                        "description": "Mouse-5 (hold): Super Key (⌘⌥⌃) / open URL, (tap): send F16",
+                        "description": "Mouse-6: Look up word under cursor in Dictionary",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button6"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse-5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
                         "manipulators": [
                             {
                                 "from": {
@@ -1752,42 +1772,8 @@
                                         "key_code": "right_command",
                                         "modifiers": [
                                             "control",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Mouse-6 (Logitech MX3): Look up word under cursor in Dictionary",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 45901
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "tab",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "d",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
+                                            "option",
+                                            "fn"
                                         ]
                                     }
                                 ],
@@ -1809,7 +1795,28 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": []
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "vk_none"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "tab"
+                            },
+                            "to": [
+                                {
+                                    "pointing_button": "button6"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,

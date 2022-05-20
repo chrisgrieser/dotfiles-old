@@ -97,7 +97,7 @@
 			]
 		},
 		{
-			"description": "Mouse-5 (hold): Super Key (⌘⌥⌃) / open URL, (tap): send F16",
+			"description": "Mouse-5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -106,7 +106,7 @@
 					"to_if_held_down": [
 						{
 							"key_code": "right_command",
-							"modifiers": ["control", "option"]
+							"modifiers": ["control", "option", "fn"]
 						}
 					],
 					"parameters": {
@@ -117,17 +117,11 @@
 			]
 		},
 		{
-			"description": "Mouse-6 (Logitech MX3): Look up word under cursor in Dictionary",
+			"description": "Mouse-6: Look up word under cursor in Dictionary",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {
-						"key_code": "tab",
-						"modifiers": {"mandatory": ["left_command"] }
-					},
-					"conditions": [
-					    {"identifiers": [{"product_id": 45901 } ], "type": "device_if"}
-					],
+					"from": {"pointing_button": "button6"},
 					"to": [
 						{
 							"key_code": "d",
