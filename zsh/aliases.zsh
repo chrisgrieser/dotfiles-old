@@ -5,12 +5,12 @@ alias .star='open $STARSHIP_CONFIG'
 
 # shortcuts
 alias q='exit'
-alias b='cd - &> /dev/null' # back
+alias zz='z -' # back
 alias .="open ."
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias wd='cd "$WD"' # working directory
+alias ..="z .."
+alias ...="z ../.."
+alias ....="z ../../.."
+alias wd='z "$WD"' # working directory
 
 # utils
 alias notify="osascript -e 'display notification \"\" with title \"Terminal Process finished.\" subtitle \"\" sound name \"\"'"

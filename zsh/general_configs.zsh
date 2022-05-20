@@ -13,7 +13,6 @@ ZSH_HIGHLIGHT_PATTERNS+=('git reset' 'fg=white,bold,bg=red') # `git reset` in re
 ZSH_HIGHLIGHT_PATTERNS+=('§' 'fg=magenta,bold') # § = global alias for grepping
 
 # for fzf-tab
-# shellcheck disable=SC2016
 zstyle ':completion:*:descriptions' format '[%d]'
 # shellcheck disable=SC2016
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
@@ -40,7 +39,7 @@ export KEYTIMEOUT=1
 setopt AUTO_CD
 
 setopt INTERACTIVE_COMMENTS # comments in interactive mode (useful für copypasting)
-setopt NOTIFY # report the status of backgrounds jobs immediately
+# setopt NOTIFY # report the status of backgrounds jobs immediately
 
 # case insensitive path-completion, see https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 

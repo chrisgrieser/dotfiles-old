@@ -9,8 +9,11 @@ if [[ $(uname -p) == "i386" ]]; then
 fi
 
 # NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will
-# wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting!
+# wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting
 source "$ZSH_DOTFILE_LOCATION"/plugins/fzf-tab/fzf-tab.plugin.zsh
+
+# needs to be placed after compinit
+eval "$(zoxide init zsh)"
 
 # `brew --prefix` ensures the right path is inserted on M1 and non-M1 macs
 source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

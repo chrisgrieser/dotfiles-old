@@ -18,7 +18,7 @@ function o (){
 	[[ -z "$SELECTED" ]] && return 130 # abort if no selection
 
 	if [[ -d "$SELECTED" ]] ; then
-		cd "$SELECTED" || return 1
+		z "$SELECTED" || return 1
 	else
 		open "$SELECTED"
 	fi
@@ -28,9 +28,9 @@ function o (){
 function c (){
 	local C_TO_SEARCH=~'/Library/Mobile Documents/com~apple~CloudDocs/'
 	local INPUT="$*"
-	[[ -d "$INPUT" ]] && { cd "$INPUT" ; return }
+	[[ -d "$INPUT" ]] && { z "$INPUT" ; return }
 
-	cd "$C_TO_SEARCH" || return
+	z "$C_TO_SEARCH" || return
 	local SELECTED
 	SELECTED=$(fd --type d --exclude "*.app" | cut -c3- | fzf \
 	           -0 -1 \
@@ -43,19 +43,14 @@ function c (){
 	           )
 	[[ -z "$SELECTED" ]] && return 130
 
-	cd "$C_TO_SEARCH""$SELECTED" || return
+	z "$C_TO_SEARCH""$SELECTED" || return
 	exa
 }
-
-# requires these settings to work, since using built-in zsh
-# stack directory (`man zshoptions` for explanations)
-setopt AUTO_PUSHD
-setopt PUSHD_IGNORE_DUPS
 
 # cd to recent directory
 function r (){
 	local INPUT="$*"
-	[[ -d "$INPUT" ]] && { cd "$INPUT" ; return }
+	[[ -d "$INPUT" ]] && { z "$INPUT" ; return }
 	local STACK
 	STACK=$(dirs -p | sed 's/~\/Library\/Mobile Documents\/com~apple~CloudDocs/ /'\
 	        | sed 's/~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/ /')
@@ -75,6 +70,6 @@ function r (){
 	           | sed 's/ /~\/Library\/Mobile Documents\/com~apple~CloudDocs/'\
 	           | sed 's/ /~\/Library\/Mobile Documents\/iCloud~md~obsidian\/Documents/')
 	RESOLVED="${RESOLVED/#\~/$HOME}"
-	cd "$RESOLVED" || return
+	z "$RESOLVED" || return
 	exa
 }
