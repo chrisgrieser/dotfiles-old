@@ -71,6 +71,10 @@ vnoremap <Down> <Nop>
 " Goto Mark: remapping since ` not working
 nnoremap ö `
 
+" rebuild %, which is missing
+nnoremap % :moveTo to=brackets<CR>
+" ( lorme flfsf fsfslfslfj )
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""

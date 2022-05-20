@@ -37,9 +37,9 @@
 				<key>destinationuid</key>
 				<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
 				<key>modifiers</key>
-				<integer>8388608</integer>
+				<integer>262144</integer>
 				<key>modifiersubtext</key>
-				<string>fn: delete</string>
+				<string>^: delete</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
