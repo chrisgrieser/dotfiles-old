@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>38BF85B6-AAF8-4485-8BA4-7F37F7D20F0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44157F1F-5EB4-448B-AD0A-355970B1A268</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>445E302D-E4C9-4FF3-8165-B5ABE18DEA72</key>
 		<array>
 			<dict>
@@ -325,19 +338,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>49ADD9B0-6E18-4805-B414-EF7863AFD888</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B60B36B8-F57A-41E5-A0D8-CF853413558F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1992,40 +1992,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>name</key>
-				<string>Open with PDF Expert</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>B60B36B8-F57A-41E5-A0D8-CF853413558F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/PDF Expert.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string>/System/Volumes/Data/Applications/Highlights.app</string>
 				<key>sourcefile</key>
@@ -2056,6 +2022,40 @@ end tell</string>
 			<string>70E50297-8CD5-45F1-8CA3-1A3620674706</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.adobe.pdf</string>
+				</array>
+				<key>name</key>
+				<string>Open with Preview</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>F68640F7-9218-47FF-B3DF-FA25D84E566D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Applications/Preview.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2112,40 +2112,6 @@ end tell</string>
 			<string>E32FEE3D-C925-4137-AFF9-22852DFC0BC0</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>name</key>
-				<string>Open with Preview</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>F68640F7-9218-47FF-B3DF-FA25D84E566D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/System/Applications/Preview.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>8F53482B-E24C-4AA4-91A3-ECC8F99534F7</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2209,6 +2175,62 @@ end tell</string>
 			<string>386C2DBE-AFC9-4D13-9F57-05C5E20812D5</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hicknhacksoftware.MacPass</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>38BF85B6-AAF8-4485-8BA4-7F37F7D20F0B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>c</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>44157F1F-5EB4-448B-AD0A-355970B1A268</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2393,7 +2415,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>1840</integer>
+			<integer>1720</integer>
 		</dict>
 		<key>388E830E-3DD5-457F-BC4E-8FA5B10067E5</key>
 		<dict>
@@ -2403,6 +2425,17 @@ end tell</string>
 			<integer>1005</integer>
 			<key>ypos</key>
 			<integer>980</integer>
+		</dict>
+		<key>38BF85B6-AAF8-4485-8BA4-7F37F7D20F0B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Copy Password</string>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>1760</integer>
 		</dict>
 		<key>3A4DA7B0-540F-4152-BAD1-C4AD83E3D6FB</key>
 		<dict>
@@ -2414,6 +2447,15 @@ end tell</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>285</integer>
+		</dict>
+		<key>44157F1F-5EB4-448B-AD0A-355970B1A268</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>1760</integer>
 		</dict>
 		<key>445E302D-E4C9-4FF3-8165-B5ABE18DEA72</key>
 		<dict>
@@ -2489,7 +2531,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>1950</integer>
+			<integer>1830</integer>
 		</dict>
 		<key>55945439-DD06-42EE-8ACA-6343CD88A62C</key>
 		<dict>
@@ -2498,7 +2540,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>2065</integer>
+			<integer>1945</integer>
 		</dict>
 		<key>5A646863-6219-4F8A-AB10-4199E1D2E532</key>
 		<dict>
@@ -2598,7 +2640,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>80</integer>
 			<key>ypos</key>
-			<integer>1610</integer>
+			<integer>1490</integer>
 		</dict>
 		<key>7A877877-7D5C-4D24-B15B-1627A751BFF1</key>
 		<dict>
@@ -2661,7 +2703,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>1720</integer>
+			<integer>1600</integer>
 		</dict>
 		<key>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</key>
 		<dict>
@@ -2670,7 +2712,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>1950</integer>
+			<integer>1830</integer>
 		</dict>
 		<key>9D6EE2D5-BBDF-426C-B74D-64369E11DAFE</key>
 		<dict>
@@ -2758,15 +2800,6 @@ end tell</string>
 			<integer>445</integer>
 			<key>ypos</key>
 			<integer>840</integer>
-		</dict>
-		<key>B60B36B8-F57A-41E5-A0D8-CF853413558F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>80</integer>
-			<key>ypos</key>
-			<integer>1495</integer>
 		</dict>
 		<key>B8DEFF35-37E6-413C-97FE-7E3C08641946</key>
 		<dict>
@@ -2901,7 +2934,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>2065</integer>
+			<integer>1945</integer>
 		</dict>
 		<key>ED89C8C7-286F-497A-A968-210F19BA0548</key>
 		<dict>
@@ -2910,7 +2943,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>1610</integer>
+			<integer>1490</integer>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>
@@ -2935,7 +2968,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>1840</integer>
+			<integer>1720</integer>
 		</dict>
 		<key>F68640F7-9218-47FF-B3DF-FA25D84E566D</key>
 		<dict>
@@ -2944,7 +2977,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>80</integer>
 			<key>ypos</key>
-			<integer>1720</integer>
+			<integer>1600</integer>
 		</dict>
 		<key>F7D19659-2CEC-41FB-9187-419A65F372B9</key>
 		<dict>
@@ -2972,15 +3005,6 @@ end tell</string>
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>840</integer>
-		</dict>
-		<key>FDE650ED-4A32-4C72-9A5A-35CB0B1FC635</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>1495</integer>
 		</dict>
 		<key>FEA94266-3B3A-4BDC-83B7-C5A701B0FEB8</key>
 		<dict>
