@@ -84,8 +84,7 @@
 					"to_if_held_down": [
 						{
 							"key_code": "c",
-							"modifiers": ["command"],
-							"halt": true
+							"modifiers": ["command"]
 						},
 						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
 						{ "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | sed 's/ //g')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"}
@@ -98,7 +97,7 @@
 			]
 		},
 		{
-			"description": "Mouse-5 (hold): Look up word under cursor in Dictionary, (tap): send F16",
+			"description": "Mouse-5 (hold): Super Key (⌘⌥⌃) / open URL, (tap): send F16",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -106,15 +105,35 @@
 					"to_if_alone": [{"key_code": "f16" } ],
 					"to_if_held_down": [
 						{
-							"key_code": "d",
-							"modifiers": ["command", "control"],
-							"halt": true
+							"key_code": "right_command",
+							"modifiers": ["control", "option"]
 						}
 					],
 					"parameters": {
 						"basic.to_if_alone_timeout_milliseconds": 300,
 						"basic.to_if_held_down_threshold_milliseconds": 300
 					}
+				}
+			]
+		},
+		{
+			"description": "Mouse-6 (Logitech MX3): Look up word under cursor in Dictionary",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "tab",
+						"modifiers": {"mandatory": ["left_command"] }
+					},
+					"conditions": [
+					    {"identifiers": [{"product_id": 45901 } ], "type": "device_if"}
+					],
+					"to": [
+						{
+							"key_code": "d",
+							"modifiers": ["command", "control"]
+						}
+					]
 				}
 			]
 		}

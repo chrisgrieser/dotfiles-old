@@ -103,93 +103,6 @@
                         ]
                     },
                     {
-                        "description": "R-click (tap): Open link (when in Browser)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 30
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "M-Click: Quit app",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$",
-                                            "^com\\.hegenberg\\.BetterTouchTool$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$",
-                                            "^com\\.hegenberg\\.BetterTouchTool$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "[]{}@^~: German layout as US layout",
                         "manipulators": [
                             {
@@ -627,36 +540,6 @@
                         ]
                     },
                     {
-                        "description": "Mouse-5 (hold): Look up word under cursor in Dictionary, (tap): send F16",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button5"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f16"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "d",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "R-⇧: search selected text / open URL",
                         "manipulators": [
                             {
@@ -673,42 +556,6 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | sed 's/ //g')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Mouse-4 (hold): search selected text / open URL, (tap): send F13",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f13"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
                                         "key_code": "c",
                                         "modifiers": [
                                             "command"
@@ -914,6 +761,106 @@
                         ]
                     },
                     {
+                        "description": "Hyper + hjklm: ←↓↑→↵ (requires Hyper Key)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn Leader: switch/launch app",
                         "manipulators": [
                             {
@@ -929,6 +876,9 @@
                                     "key_code": "fn"
                                 },
                                 "to": [
+                                    {
+                                        "key_code": "fn"
+                                    },
                                     {
                                         "set_variable": {
                                             "name": "LEADER_FN_TRIGGERED",
@@ -954,7 +904,7 @@
                                 ],
                                 "description": "Fn Leader Cancel",
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "escape"
                                 },
                                 "to": [
                                     {
@@ -1660,99 +1610,185 @@
                         ]
                     },
                     {
-                        "description": "Hyper + hjklm: ←↓↑→↵ (requires Hyper Key)",
+                        "description": "M-Click: Quit app",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.hegenberg\\.BetterTouchTool$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.hegenberg\\.BetterTouchTool$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "R-Click (tap): Open link (when in Browser)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 30
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button3"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "pointing_button": "button2"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse-4 (hold): search selected text / open URL, (tap): send F13",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
+                                    "pointing_button": "button4"
                                 },
-                                "to": [
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
                                     {
-                                        "key_code": "left_arrow"
+                                        "key_code": "f13"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | sed 's/ //g')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse-5 (hold): Super Key (⌘⌥⌃) / open URL, (tap): send F16",
+                        "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
+                                    "pointing_button": "button5"
                                 },
-                                "to": [
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
                                     {
-                                        "key_code": "down_arrow"
+                                        "key_code": "f16"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "right_command",
+                                        "modifiers": [
+                                            "control",
+                                            "option"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse-6 (Logitech MX3): Look up word under cursor in Dictionary",
+                        "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
+                                "conditions": [
                                     {
-                                        "key_code": "up_arrow"
+                                        "identifiers": [
+                                            {
+                                                "product_id": 45901
+                                            }
+                                        ],
+                                        "type": "device_if"
                                     }
                                 ],
-                                "type": "basic"
-                            },
-                            {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "tab",
                                     "modifiers": {
                                         "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
+                                            "left_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
+                                        "key_code": "d",
+                                        "modifiers": [
                                             "command",
                                             "control"
                                         ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"

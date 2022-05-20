@@ -20,6 +20,7 @@
 						}
 					],
 					"to": [
+						{"key_code": "fn" },
 						{
 							"set_variable": {
 								"name": "LEADER_FN_TRIGGERED",
@@ -37,7 +38,7 @@
 				{
 					"type": "basic",
 					"description": "Fn Leader Cancel",
-					"from": {"key_code": "fn" },
+					"from": {"key_code": "escape" },
 					"conditions": [
 						{
 							"type": "variable_if",
