@@ -71,9 +71,9 @@ vnoremap <Down> <Nop>
 " Goto Mark: remapping since ` not working
 nnoremap ö `
 
-" rebuild %, which is missing
-nnoremap % :moveTo to=brackets<CR>
-" ( lorme flfsf fsfslfslfj )
+" rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
+nnoremap % :MoveTo to=brackets<CR>
+
 
 """"""""""""""""""""""
 " < Indentation

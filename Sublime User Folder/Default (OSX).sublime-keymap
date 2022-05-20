@@ -78,6 +78,9 @@
 		]
 	},
 
+	{ "keys": ["super+alt+m"], "command": "move_to", "args": {"to": "brackets"} },
+
+
 	// Window Closing Bugfix, https://github.com/sublimehq/sublime_text/issues/5237#issuecomment-1048857619
 	// fixed with Build 4130
 	{ "keys": ["super+q"],
