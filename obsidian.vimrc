@@ -107,10 +107,9 @@ vmap <S-Space> "vd
 
 " Karabiner: <M-Space> = <PageUp>
 nmap <PageUp> yiw
-" Karabiner: <Fn-Space> = <PageDown>
-nmap <PageDown> viwp
+vmap <PageUp> "vy
 
-" Case Switchs
+" Case Switch
 nmap ü ~h
 
 " Transpose characters, consistent with Emacs/Mac
@@ -227,7 +226,8 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö X Q Z 0
+" Ö X Q Z
 " § ! & ° ´
-" Esc-key zu F17
-" <BS> & arrow-keys
+" rarely used: 0 #
+" <BS> <PageUp>, <Right>, <Left>, <Up>, <Down>
+" Esc-key zu F17 remappen?
