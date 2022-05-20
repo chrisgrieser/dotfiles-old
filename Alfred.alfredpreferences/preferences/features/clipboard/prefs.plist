@@ -9,9 +9,7 @@
 	<key>autoExpandSnippetTriggerPlaySound</key>
 	<false/>
 	<key>autoExpandSnippetsExcludedApps</key>
-	<array>
-		<string>com.runningwithcrayons.Alfred</string>
-	</array>
+	<array/>
 	<key>blacklist</key>
 	<array>
 		<string>Keychain Access</string>
