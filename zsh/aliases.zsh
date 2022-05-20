@@ -11,6 +11,7 @@ alias ..="z .."
 alias ...="z ../.."
 alias ....="z ../../.."
 alias wd='z "$WD"' # working directory
+alias za='zoxide add'
 
 # utils
 alias notify="osascript -e 'display notification \"\" with title \"Terminal Process finished.\" subtitle \"\" sound name \"\"'"

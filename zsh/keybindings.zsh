@@ -35,5 +35,5 @@ zle -N copyBuffer
 
 # https://github.com/zsh-users/zsh-autosuggestions/issues/532#issuecomment-907361899
 # https://github.com/zsh-users/zsh-autosuggestions#key-bindings
-bindkey '^I' autosuggest-accept # tab: auto-completion from zsh-autosuggest
+bindkey '^I' autosuggest-execute # tab: auto-completion from zsh-autosuggest
 bindkey '^[[Z' complete-word   # shift+tab  completion suggestion
