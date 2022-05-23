@@ -116,19 +116,23 @@ vnoremap <M-Space> "vy
 " Case Switch
 nnoremap ü ~h
 
-" Transpose
+" Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
 nnoremap ä xph
+
+" Transpose current & next word
+nnoremap Ä mzdawelp`z
 
 " Adding Blank Line above/below
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
-" Add ,;. to end of line
+" Add ,;.": to end of line
 nnoremap <leader>, mzA,<Esc>`z
 nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
+nnoremap <leader>: mzA:<Esc>`z
 " Remove last character from line
 nnoremap <leader>x mz$"_x`z
 

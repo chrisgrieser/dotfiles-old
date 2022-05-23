@@ -113,25 +113,31 @@ vmap <S-F12> "vy
 " Case Switch
 nmap ü ~h
 
-" Transpose characters (can't use x sends to black hole registry)
+" Transpose current & next char
+" (can't use x sends to black hole registry)
 imap <C-t> <Esc>dlpi
 nmap ä dlph
+
+" Transpose current & next word
+nmap Ä mzdawelp`z
 
 " Adding Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
-" Add ,;. to end of line
-" `&§&` is helper command for addings substitution to command chain,
+" Add ,;.": to end of line
+" `&§&` are helper commands for addings substitution to command chain,
 " `A;<Esc>` does not work as insert mode mappings aren't remembered
 nmap &§&. :.s/$/./
 nmap &§&, :.s/$/,/
 nmap &§&; :.s/$/;/
 nmap &§&" :.s/$/"/
+nmap &§&: :.s/$/:/
 nmap ß. mz&§&.`z
 nmap ß, mz&§&,`z
 nmap ß; mz&§&;`z
 nmap ß" mz&§&"`z
+nmap ß: mz&§&:`z
 " Remove last character from line
 nmap ßx mz$"_x`z
 
