@@ -77,6 +77,7 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `shift + b` → `B`etterTouchTool
 - `shift + p` → `P`assword Manager → MacPass
 - `.`/`:` → Emoji Insertion Modal
+- `,`/ → System Preferences
 
 ## Vim Mode
 - A global Vim Mode for every text field in macOS.

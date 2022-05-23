@@ -196,6 +196,20 @@
 				},
 				{
 					"type": "basic",
+					"from": {"key_code": "comma" },
+					"conditions": [{
+							"type": "variable_if",
+							"name": "LEADER_ACTIVE",
+							"value": 1
+					}],
+					"to": [
+						{"shell_command": "open -a 'System Preferences'"},
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
+						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
 					"from": {"key_code": "o" },
 					"conditions": [{
 							"type": "variable_if",
@@ -380,7 +394,7 @@
 						"value": 1
 					}],
 					"to": [
-						{"shell_command": "open -a 'MacPass'"},
+						{"shell_command": "open -a 'MacPass'; osascript -e 'tell application \\\"MacPass\\\" to activate'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
 						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
 					]
