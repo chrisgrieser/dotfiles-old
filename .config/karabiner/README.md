@@ -8,8 +8,8 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Capslock to Hyper / Esc](#capslock-to-hyper--esc)
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
-- [Shift Utilities](#shift-utilities)
 - [Global Leader Key](#global-leader-key)
+- [Vim Mode](#vim-mode)
 - [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
@@ -26,12 +26,13 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - Modifies `alt + 5/6/8/9/l/n or ^` from the German layout so that it sends `[]{}@~^` the US layout. 
 	- This enables the use of those keys for vim, e.g. for `dt]` or `@`, without needing to switching keyboard layout. 
 	- When sending `~^`, they also stop awaiting another character and for example transforming `^a` into `â`, similar to the [One Stroke \`´ Mod](#miscellaneous).
-- `Hyper + hjkl` is turned to Arrow Keys for global vim-like navigation (requires Capslock to Hyper Key).
+	- Works in Alacritty, Terminal, Sublime & Obsidian.
+- `Hyper + hjklmn` is turned to Arrow Keys/return/backspace for temporary global vim-like navigation (requires Capslock to Hyper Key).
 - Scroll up/down globally via `alt+j/k`.
-- Tap `right-cmd` to send an `enter`.
 - Press `kl` simultaneously to send an `enter`.
-- Pressing `j` in the Browser[^3] hides the cursor. This is useful for vim emulators for browsers, [which cannot hide the cursor by themselves](https://github.com/philc/vimium/issues/3273).
-- Focus window & hide cursor[^2] by tapping `right-alt`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Pressing `j` or `k` in the Browser[^3] hides the cursor. This is useful for vim emulators for browsers, [which cannot hide the cursor by themselves](https://github.com/philc/vimium/issues/3273).
+- Focus window & hide cursor[^2] by tapping `right-cmd`. Useful to focus the frontmost app, after another app's window has been closed, e.g. closing the last finder window; and for vim emulators that cannot properly hide the cursor, like e.g. Vimium.
+- Spacebar Hack (Obsidian/Sublime): transforms `opt + space` to `<Home>`, to be able to assign them as bindings in a .vimrc.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
@@ -46,14 +47,6 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json
-```
-
-## Shift Utilities
-- `shift-backspace` to delete forwards. 
-- Tap `right-shift` alone to search the selected text / open the selected URL.
-
-```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-utilities.json
 ```
 
 ## Global Leader Key
@@ -81,14 +74,21 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `t` → `T`witter → `T`witterific
 - `k` → `K`arabiner Elements
 - `shift + k` → `K`arabiner EventViewer
-- `shift + b` → `B`etterTouchToul
+- `shift + b` → `B`etterTouchTool
 - `shift + p` → `P`assword Manager → MacPass
 - `.`/`:` → Emoji Insertion Modal
 
+## Vim Mode
+- A global Vim Mode for every text field in macOS.
+- Triggered via tapping `left-shift`, canceled via tapping `left-shift` again, or with `i`/`Esc`/`Capslock`.
+- Supported Actions: `hjklHJKLebG` & `xCDi<Esc>` 
+- Non-standard supported action: `<Space>` for `ciw` and `<S-Space>` for `daw`.
+
 ## Miscellaneous
-- **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
-	- Although the same also applies for `^~`, they are not implemented here, since they are solved by the respective [Vim Utilities Mod](#vim-utilities).
-- Spacebar Hack (Obsidian/Sublime) transforms `fn + space` to `<PageUp>` and `opt + space` to `<PageDown>`, to be able to assign them as bindings in a .vimrc.
+- **One Stroke ´^~\` (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
+- `shift-backspace` to delete forwards. 
+- Tap `right-shift` alone to search the selected text / open the selected URL.
+- Minor improvements to speed up [MacPass](https://macpassapp.org/).
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json
