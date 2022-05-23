@@ -143,6 +143,19 @@
 			]
 		},
 		{
+			"description": "Alacritty: Deactivate ⌘Q",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "q",
+						"modifiers": {"mandatory": ["command"] }
+					},
+					"to": [{ "key_code": "vk_none"} ]
+				}
+			]
+		},
+		{
 			"description": "R-⇧: search selected text / open URL",
 			"manipulators": [
 				{
