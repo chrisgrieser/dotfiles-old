@@ -8,7 +8,7 @@ export HOMEBREW_INSTALL_BADGE=✅
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export HOMEBREW_DISPLAY_INSTALL_TIMES=1
 
-local BREWDUMP_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Homebrew & NPM Installs/"
+local BREWDUMP_PATH="$DOTFILE_FOLDER/Homebrew & NPM Installs/"
 
 alias bh='brew home'
 
@@ -90,7 +90,7 @@ function bi (){
 	if [[ $? == 1 ]] ; then
 		local SELECTED=""
 		SELECTED=$( { brew formulae ; brew casks } | fzf \
-		           -0 -1 \
+		           -0\
 		           --query "$TO_INSTALL" \
 		           --preview 'HOMEBREW_COLOR=true brew info {}' \
 		           --bind 'alt-enter:execute(brew home {})+abort' \
@@ -101,11 +101,9 @@ function bi (){
 		[[ $SELECTED == "" ]] && return 130
 
 		local TO_INSTALL="$SELECTED"
-		echo "installing \"TO_INSTALL\""
 	fi
 
 	brew install "$TO_INSTALL" $TYPE # quotes would add empty 2nd arg if empty
-
 	post-install "$TO_INSTALL"
 }
 
@@ -120,7 +118,7 @@ function dump () {
 	DEVICE_NAME=$(scutil --get ComputerName)
 	brew bundle dump --force --file "$BREWDUMP_PATH/Brewfile_$DEVICE_NAME"
 	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
-	echo "Brewfile and NPM-File dumped at \"$BREWDUMP_PATH\""
+	echo "Brewfile & NPM-File dumped at \"$BREWDUMP_PATH\""
 }
 
 function update (){
