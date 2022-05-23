@@ -134,7 +134,7 @@ nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
 " Remove last character from line
-nnoremap <leader>x mz$"_x`z
+nnoremap X mz$"_x`z
 
 """"""""""""""""""""""
 " < Text Objects

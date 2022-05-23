@@ -139,7 +139,7 @@ nmap ß; mz&§&;`z
 nmap ß" mz&§&"`z
 nmap ß: mz&§&:`z
 " Remove last character from line
-nmap ßx mz$"_x`z
+nmap X mz$"_x`z
 
 """"""""""""""""""""""
 " < Text Objects

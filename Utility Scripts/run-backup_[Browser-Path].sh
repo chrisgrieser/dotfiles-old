@@ -35,6 +35,7 @@ bkp ~'/Library/Preferences/' ./Preferences
 bkp ~'/Library/Application Support/Alfred/Workflow Data/com.vdesabou.spotify.mini.player/' ./Spotify-Mini-Player
 bkp ~'/Library/Application Support/BraveSoftware/Brave-Browser/Default/' ./Browser-Default-Folder
 bkp ~'/Library/Fonts/' ./Fonts
+mkdir -p ./Homefolder
 bkp ~'/Games/' ./Homefolder/Games
 bkp ~'/Video/' ./Homefolder/Video
 bkp ~'/RomComs/' ./Homefolder/RomComs
