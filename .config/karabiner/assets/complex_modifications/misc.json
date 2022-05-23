@@ -151,7 +151,13 @@
 						"key_code": "q",
 						"modifiers": {"mandatory": ["command"] }
 					},
-					"to": [{ "key_code": "vk_none"} ]
+					"to": [{ "key_code": "vk_none"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["bin/alacritty$"]
+						}
+					]
 				}
 			]
 		},

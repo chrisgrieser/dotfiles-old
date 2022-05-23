@@ -22,8 +22,7 @@
 							"type": "frontmost_application_unless",
 							"bundle_identifiers": [
 								"^com\\.apple\\.finder$",
-								"^com\\.hegenberg\\.BetterTouchTool$",
-								"^io\\.alacritty$"
+								"^com\\.hegenberg\\.BetterTouchTool$"
 							]
 						}
 					]

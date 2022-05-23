@@ -3132,9 +3132,17 @@
                         ]
                     },
                     {
-                        "description": "Alacritty: Deactivate ⌘+Q",
+                        "description": "Alacritty: Deactivate ⌘Q",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "bin/alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
