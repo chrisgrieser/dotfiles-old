@@ -20,6 +20,7 @@
 					],
 					"conditions": [
 						{"type": "variable_unless", "name": "VIM_MODE", "value": 1 },
+						{"type": "variable_unless", "name": "VIM_MODE", "value": 2 },
 						{"type": "variable_unless", "name": "LEADER_ACTIVE", "value": 1 }
 					]
 				},

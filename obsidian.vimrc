@@ -116,10 +116,10 @@ nmap ü ~h
 " Transpose current & next char
 " (can't use x sends to black hole registry)
 imap <C-t> <Esc>dlpi
-nmap ä dlph
+nmap ä dlp
 
 " Transpose current & next word
-nmap Ä mzdawelp`z
+nmap Ä dawelpb
 
 " Adding Blank Line above/below
 nmap = mzO<Esc>`z

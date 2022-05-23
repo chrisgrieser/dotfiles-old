@@ -118,10 +118,10 @@ nnoremap ü ~h
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
-nnoremap ä xph
+nnoremap ä xp
 
 " Transpose current & next word
-nnoremap Ä mzdawelp`z
+nnoremap Ä dawelpb
 
 " Adding Blank Line above/below
 nnoremap = mzO<Esc>`z

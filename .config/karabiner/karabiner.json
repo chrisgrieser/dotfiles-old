@@ -1016,64 +1016,6 @@
                         ]
                     },
                     {
-                        "description": "Capslock: Hyper/Esc",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "VIM_MODE",
-                                        "type": "variable_unless",
-                                        "value": 1
-                                    },
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_unless",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "caps_lock"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift",
-                                        "modifiers": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_option"
-                                        ]
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "L-⌃ (Non-Apple) / fn (Apple): Leader Trigger",
                         "manipulators": [
                             {
@@ -2454,14 +2396,77 @@
                         ]
                     },
                     {
-                        "description": "Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> ä<Space><S-Space>",
+                        "description": "Capslock: Hyper/Esc",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "name": "VIM_MODE",
-                                        "type": "variable_if",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_unless",
                                         "value": 2
+                                    },
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_shift",
+                                        "modifiers": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_option"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "vk_none"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> äÄ<Space><S-Space>",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_unless",
+                                        "value": 0
                                     }
                                 ],
                                 "description": "Esc: Insert Mode (Exit Vim Mode)",
@@ -2488,8 +2493,8 @@
                                 "conditions": [
                                     {
                                         "name": "VIM_MODE",
-                                        "type": "variable_if",
-                                        "value": 2
+                                        "type": "variable_unless",
+                                        "value": 0
                                     }
                                 ],
                                 "description": "Hyper (Esc): Insert Mode (Exit Vim Mode)",
@@ -3195,7 +3200,7 @@
                                         "type": "input_source_if"
                                     }
                                 ],
-                                "description": "ä (German Keyboard): Transpose",
+                                "description": "ä (German Keyboard): Transpose Chars",
                                 "from": {
                                     "key_code": "quote"
                                 },
@@ -3207,13 +3212,117 @@
                                         ]
                                     },
                                     {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
                                         "key_code": "x",
                                         "modifiers": [
                                             "command"
                                         ]
                                     },
                                     {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
                                         "key_code": "right_arrow"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 2
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "description": "Ä (German Keyboard): Transpose Words",
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "right_arrow"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
                                     },
                                     {
                                         "key_code": "v",
@@ -3222,7 +3331,14 @@
                                         ]
                                     },
                                     {
-                                        "key_code": "left_arrow"
+                                        "hold_down_milliseconds": 10,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
