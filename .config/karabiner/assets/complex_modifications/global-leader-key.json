@@ -39,7 +39,7 @@
 						{
 							"set_notification_message": {
 								"id": "fn-leader-notice",
-								"text": "Leader active"
+								"text": "Δ Leader"
 							}
 						}
 					]
@@ -93,7 +93,7 @@
 						{
 							"set_notification_message": {
 								"id": "fn-leader-notice",
-								"text": "Leader active"
+								"text": "Δ Leader"
 							}
 						}
 					]

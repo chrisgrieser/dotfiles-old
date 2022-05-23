@@ -22,7 +22,7 @@
 					},
 					"to_if_alone": [
 						{"set_variable": {"name": "VIM_MODE", "value": 1 } },
-						{"set_notification_message": {"id": "vim-mode-notice", "text": "Vim Mode"} }
+						{"set_notification_message": {"id": "vim-mode-notice", "text": "▊ Vim Mode"} }
 					]
 				},
 				{
@@ -43,7 +43,7 @@
 			]
 		},
 		{
-			"description": "Vim Mode Actions",
+			"description": "Vim Mode Actions: hjkl HJKL ebGxi <Space><S-Space>",
 			"manipulators": [
 				{
 					"type": "basic",

@@ -95,6 +95,27 @@
 					]
 				}
 			]
+		},
+		{
+			"description": "Quicker MacPass",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "c",
+						"modifiers": {"mandatory": ["command"] }
+					},
+					"to": [{"key_code": "c", "modifiers": ["command", "option"] } ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "u",
+						"modifiers": {"mandatory": ["command"] }
+					},
+					"to": [{"key_code": "c", "modifiers": ["command", "shift"] } ]
+				}
+			]
 		}
 	]
 }
