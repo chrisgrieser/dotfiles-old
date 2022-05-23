@@ -113,9 +113,9 @@ vmap <S-F12> "vy
 " Case Switch
 nmap ü ~h
 
-" Transpose characters, consistent with Emacs/Mac
-imap <C-t> <Esc>xpi
-nmap <C-t> xph
+" Transpose characters (can't use x sends to black hole registry)
+imap <C-t> <Esc>dlpi
+nmap ä dlph
 
 " Adding Blank Line above/below
 nmap = mzO<Esc>`z

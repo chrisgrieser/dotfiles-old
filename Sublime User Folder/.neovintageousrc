@@ -116,9 +116,9 @@ vnoremap <M-Space> "vy
 " Case Switch
 nnoremap ü ~h
 
-" transpose characters, consistent with Emacs/Mac
-" already done built-in in Sublime
-" nnoremap <C-t> xph
+" Transpose
+" insert mode done via Sublime's build in command imap <C-t> xph
+nnoremap ä xph
 
 " Adding Blank Line above/below
 nnoremap = mzO<Esc>`z
