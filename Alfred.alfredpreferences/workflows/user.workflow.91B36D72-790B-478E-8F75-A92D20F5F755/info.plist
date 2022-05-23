@@ -177,6 +177,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4584D693-1AB3-4A78-A985-BD5256898907</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</key>
 		<array>
 			<dict>
@@ -307,6 +320,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8A722688-3EC5-4916-8756-69A85D1F0C06</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4681D85D-478B-484A-95A4-D7540690A8CB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
 		<array>
 			<dict>
@@ -426,6 +452,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0CE4A3B5-1B41-455F-9BAE-0B4E9B00F589</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A722688-3EC5-4916-8756-69A85D1F0C06</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -636,12 +675,12 @@
 				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.sublimetext.4</string>
-					<string>dexterleng.vimac</string>
 					<string>md.obsidian</string>
-					<string>com.runningwithcrayons.Alfred</string>
 					<string>com.iconfactory.Twitterrific5</string>
 					<string>com.apple.finder</string>
+					<string>com.runningwithcrayons.Alfred</string>
+					<string>com.sublimetext.4</string>
+					<string>dexterleng.vimac</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -676,12 +715,12 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>md.obsidian</string>
 					<string>com.agiletortoise.Drafts-OSX</string>
-					<string>com.runningwithcrayons.Alfred-Preferences</string>
 					<string>com.apple.finder</string>
 					<string>com.sublimetext.4</string>
 					<string>com.brave.Browser</string>
+					<string>com.runningwithcrayons.Alfred-Preferences</string>
+					<string>md.obsidian</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -692,6 +731,25 @@
 			<string>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{clipboard:1}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>4681D85D-478B-484A-95A4-D7540690A8CB</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -738,6 +796,69 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>92F03F17-1D04-4164-AEF4-02F8DBEB8C78</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{clipboard:1}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4584D693-1AB3-4A78-A985-BD5256898907</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>0.2</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>8A722688-3EC5-4916-8756-69A85D1F0C06</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2087,6 +2208,28 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1160</integer>
 		</dict>
+		<key>4584D693-1AB3-4A78-A985-BD5256898907</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>paste previous item</string>
+			<key>xpos</key>
+			<integer>715</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>4681D85D-478B-484A-95A4-D7540690A8CB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>restore clipboard history order</string>
+			<key>xpos</key>
+			<integer>1065</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
 		<key>47DDF1B0-93D6-4A9D-9063-BC8CE6AAC343</key>
 		<dict>
 			<key>colorindex</key>
@@ -2205,6 +2348,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>510</integer>
 			<key>ypos</key>
 			<integer>1190</integer>
+		</dict>
+		<key>8A722688-3EC5-4916-8756-69A85D1F0C06</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>1000</integer>
+			<key>ypos</key>
+			<integer>70</integer>
 		</dict>
 		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
 		<dict>
@@ -2332,6 +2484,15 @@ Fenced Code</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>1235</integer>
+		</dict>
+		<key>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>865</integer>
+			<key>ypos</key>
+			<integer>40</integer>
 		</dict>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<dict>
