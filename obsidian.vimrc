@@ -122,13 +122,18 @@ nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
 " Add ,;. to end of line
-nmap ßß, :.s/$/,/
-nmap ßß; :.s/$/;/
+" `&§&` is helper command for addings substitution to command chain,
+" `A;<Esc>` does not work as insert mode mappings aren't remembered
 nmap &§&. :.s/$/./
+nmap &§&, :.s/$/,/
+nmap &§&; :.s/$/;/
+nmap &§&" :.s/$/"/
 nmap ß. mz&§&.`z
+nmap ß, mz&§&,`z
+nmap ß; mz&§&;`z
+nmap ß" mz&§&"`z
 " Remove last character from line
 nmap ßx mz$"_x`z
-
 
 """"""""""""""""""""""
 " < Text Objects

@@ -12,6 +12,3 @@ sleep 0.1
 subl --command "focus_neighboring_group"
 sleep 0.1
 subl --command "move_to_neighboring_group"
-
-osascript -e "tell application \"System Events\" to keystroke space using {command down, option down, shift down, control down}"
-

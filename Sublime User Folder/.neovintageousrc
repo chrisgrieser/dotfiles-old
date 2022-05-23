@@ -116,7 +116,7 @@ vnoremap <M-Space> "vy
 " Case Switch
 nnoremap ü ~h
 
-" Transpose.
+" Transpose
 " insert mode done via Sublime's build in command imap <C-t> xph
 nnoremap ä xph
 
@@ -128,6 +128,7 @@ nnoremap _ mzo<Esc>`z
 nnoremap <leader>, mzA,<Esc>`z
 nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
+nnoremap <leader>" mzA"<Esc>`z
 " Remove last character from line
 nnoremap <leader>x mz$"_x`z
 
