@@ -16,432 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "Capslock: Hyper/Esc",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift",
-                                        "modifiers": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_option"
-                                        ]
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "[]{}@^~: German layout as US layout",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "5",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "open_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "6",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "close_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "open_bracket",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "9",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "non_us_backslash"
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "6",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "conditions": [
-                            {
-                                "input_sources": [
-                                    {
-                                        "language": "^de$"
-                                    }
-                                ],
-                                "type": "input_source_if"
-                            }
-                        ],
-                        "description": "One Stroke `´ (German Layout)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "equal_sign"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "equal_sign"
-                                    },
-                                    {
-                                        "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "equal_sign",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "R-⇧: search selected text / open URL",
                         "manipulators": [
                             {
@@ -544,75 +118,6 @@
                         ]
                     },
                     {
-                        "description": "j/k (Browser): also hides cursor",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "j"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "80%"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "k"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "80%"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "R-⌥ (tap): Focus Window & Hide Cursor",
                         "manipulators": [
                             {
@@ -656,106 +161,6 @@
                                                 "y": "80%"
                                             }
                                         }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hyper + hjklm: ←↓↑→↵ (requires Hyper Key)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "shift",
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
@@ -1073,31 +478,625 @@
                         ]
                     },
                     {
-                        "description": "Fn Leader",
+                        "description": "j/k (Browser): also hides cursor",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
-                                        "type": "variable_unless",
-                                        "value": 1
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
-                                "description": "Fn Leader Main",
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "j"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "80%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "80%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "[]{}@^~: German layout as US layout",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "5",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "open_bracket"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "6",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "close_bracket"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "8",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "9",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "non_us_backslash"
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "6",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "One Stroke ^`´~ (German Layout)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "description": "forward-tick",
+                                "from": {
+                                    "key_code": "equal_sign"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "equal_sign"
+                                    },
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "description": "backtick",
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "equal_sign",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "description": "tilde",
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "n",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$",
+                                            "^com\\.apple\\.Terminal$",
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext\\.4$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "description": "^",
+                                "from": {
+                                    "key_code": "non_us_backslash"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "non_us_backslash"
+                                    },
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "L-⌃ (Non-Apple) / fn (Apple): Leader Trigger",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
+                                "description": "Leader Main",
+                                "from": {
+                                    "key_code": "left_control"
                                 },
                                 "parameters": {
                                     "basic.to_if_alone_timeout_milliseconds": 1200,
                                     "description": "timeout prevent a foot left on the pedal from unintentionally triggering fn all the time."
                                 },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "fn"
+                                        "key_code": "left_control"
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 1
                                         }
                                     },
@@ -1113,19 +1112,36 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_unless"
                                     }
                                 ],
-                                "description": "Fn Leader Cancel",
+                                "description": "2x Leader: F19",
                                 "from": {
-                                    "key_code": "escape"
+                                    "key_code": "left_control"
                                 },
                                 "to": [
                                     {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f19"
+                                    },
+                                    {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1141,7 +1157,305 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "description": "Leader Main",
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "fn"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": "Leader active"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "L-⇧: Vim Mode",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_shift"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": "Vim Mode"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "2x L-⇧: Exit Vim Mode",
+                                "from": {
+                                    "key_code": "left_shift"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + hjklmn: ←↓↑→↵⌫",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift",
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Leader Actions",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Leader Cancel",
+                                "from": {
+                                    "key_code": "escape"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Hyper (Esc): Leader Cancel",
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     },
@@ -1150,20 +1464,11 @@
                                             "^com\\.runningwithcrayons\\.Alfred$"
                                         ],
                                         "type": "frontmost_application_unless"
-                                    },
-                                    {
-                                        "description": "So fn from foot-pedal doesn't trigger emojis",
-                                        "identifiers": [
-                                            {
-                                                "is_pointing_device": false
-                                            }
-                                        ],
-                                        "type": "device_if"
                                     }
                                 ],
-                                "description": "2x fn: Emoji inserter",
+                                "description": "Emoji Inserter",
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "period"
                                 },
                                 "to": [
                                     {
@@ -1175,7 +1480,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1191,7 +1496,53 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.runningwithcrayons\\.Alfred$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "description": "Emoji Inserter",
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "right_command",
+                                            "right_control"
+                                        ]
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1205,7 +1556,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1221,7 +1572,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1235,7 +1586,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1251,7 +1602,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1265,7 +1616,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1281,7 +1632,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1295,7 +1646,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1311,7 +1662,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1325,7 +1676,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1341,7 +1692,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1355,7 +1706,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1371,7 +1722,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1385,7 +1736,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1401,7 +1752,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1415,7 +1766,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1431,7 +1782,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1445,7 +1796,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1461,7 +1812,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1475,7 +1826,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1491,7 +1842,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1505,7 +1856,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1521,7 +1872,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1540,7 +1891,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1556,7 +1907,77 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'BetterTouchTool'"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'MacPass'"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "fn-leader-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1570,7 +1991,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1586,7 +2007,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1600,7 +2021,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1616,7 +2037,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1630,7 +2051,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1646,7 +2067,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1666,7 +2087,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1683,7 +2104,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1697,7 +2118,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1713,7 +2134,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1727,7 +2148,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1743,7 +2164,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1757,7 +2178,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1773,7 +2194,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1787,7 +2208,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1803,7 +2224,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "LEADER_FN_TRIGGERED",
+                                        "name": "LEADER_ACTIVE",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1817,7 +2238,7 @@
                                     },
                                     {
                                         "set_variable": {
-                                            "name": "LEADER_FN_TRIGGERED",
+                                            "name": "LEADER_ACTIVE",
                                             "value": 0
                                         }
                                     },
@@ -1826,6 +2247,559 @@
                                             "id": "fn-leader-notice",
                                             "text": ""
                                         }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Capslock: Hyper/Esc",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_shift",
+                                        "modifiers": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_option"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "vk_none"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Vim Mode Actions",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Esc: Insert Mode (Exit Vim Mode)",
+                                "from": {
+                                    "key_code": "escape"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Hyper (Esc): Insert Mode (Exit Vim Mode)",
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "i: Insert Mode (Exit Vim Mode)",
+                                "from": {
+                                    "key_code": "i"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "x"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Space: ciw",
+                                "from": {
+                                    "key_code": "spacebar"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "VIM_MODE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "vim-mode-notice",
+                                            "text": ""
+                                        }
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "S-Space: daw",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
                                     }
                                 ],
                                 "type": "basic"
@@ -1913,7 +2887,7 @@
                             },
                             "to": [
                                 {
-                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                    "key_code": "left_control"
                                 }
                             ]
                         }
@@ -1978,16 +2952,6 @@
                             "to": [
                                 {
                                     "key_code": "grave_accent_and_tilde"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_control"
-                            },
-                            "to": [
-                                {
-                                    "apple_vendor_top_case_key_code": "keyboard_fn"
                                 }
                             ]
                         }

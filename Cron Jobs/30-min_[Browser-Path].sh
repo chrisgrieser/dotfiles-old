@@ -4,7 +4,7 @@
 # GIT BACKUPS
 # ----------------------------------------------------
 zsh ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/git vault backup.sh"
-zsh ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/git-dotfile-backup.sh"
+zsh ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/git-dotfile-backup.sh"
 
 
 # DOWNLOAD FOLDER BADGE

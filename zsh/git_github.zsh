@@ -42,7 +42,7 @@ alias ghi="open \$(git remote -v | grep git@github.com | grep fetch | head -n1 |
 function clone(){
 	git clone "$*"
 	# shellcheck disable=SC2012
-	cd "$(ls -1 -t | head -n1)" || return
+	z "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
 	if grep -q "obsidian" package.json &> /dev/null ; then
@@ -54,7 +54,7 @@ function clone(){
 function sclone(){
 	git clone --depth=1 "$*"
 	# shellcheck disable=SC2012
-	cd "$(ls -1 -t | head -n1)" || return
+	z "$(ls -1 -t | head -n1)" || return
 
 	# if it's an Obsidian plugin
 	if grep -q "obsidian" package.json &> /dev/null ; then
@@ -70,7 +70,7 @@ function nuke {
 	# go to git repo root
 	r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"
 	LOCAL_REPO=$(pwd)
-	cd ..
+	z ..
 
 	rm -rf "$LOCAL_REPO"
 	echo "Local repo removed."

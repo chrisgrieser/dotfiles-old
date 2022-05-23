@@ -19,36 +19,36 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 # -----------
 
 # Symlink Dotfiles
-SYMLINK_LOC="$DOTFILE_FOLDER"
-
 mv ~/.zshrc ~/.Trash
-ln -s "$SYMLINK_LOC/zsh/.zshrc" ~
+ln -s "$DOTFILE_FOLDER/zsh/.zshrc" ~
 mv ~/.zprofile ~/.Trash
-ln -s "$SYMLINK_LOC/zsh/.zprofile" ~
-ln -s "$SYMLINK_LOC/zsh/.zlogin" ~
+ln -s "$DOTFILE_FOLDER/zsh/.zprofile" ~
+ln -s "$DOTFILE_FOLDER/zsh/.zlogin" ~
 
-ln -s "$SYMLINK_LOC/.searchlink" ~
-ln -s "$SYMLINK_LOC/.shellcheckrc" ~
-ln -s "$SYMLINK_LOC/.stylelintrc.json" ~
-ln -s "$SYMLINK_LOC/.gitconfig" ~
-ln -s "$SYMLINK_LOC/.eslintrc.json" ~
-ln -s "$SYMLINK_LOC/.gitignore_global" ~
-ln -s "$SYMLINK_LOC/pandoc" ~/.pandoc
-ln -s "$SYMLINK_LOC/.markdownlintrc" ~
+ln -s "$DOTFILE_FOLDER/.searchlink" ~
+ln -s "$DOTFILE_FOLDER/.shellcheckrc" ~
+ln -s "$DOTFILE_FOLDER/.stylelintrc.json" ~
+ln -s "$DOTFILE_FOLDER/.gitconfig" ~
+ln -s "$DOTFILE_FOLDER/.eslintrc.json" ~
+ln -s "$DOTFILE_FOLDER/.gitignore_global" ~
+ln -s "$DOTFILE_FOLDER/pandoc" ~/.pandoc
+ln -s "$DOTFILE_FOLDER/.markdownlintrc" ~
 
-ln -s "$SYMLINK_LOC/.vimrc" ~
-ln -s "$SYMLINK_LOC/.pylintrc" ~
-ln -s "$SYMLINK_LOC/.flake8" ~
+ln -s "$DOTFILE_FOLDER/.pylintrc" ~
+ln -s "$DOTFILE_FOLDER/.flake8" ~
+
+ln -s "$DOTFILE_FOLDER/.vimrc" ~
+ln -s "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH/Meta"
 
 # .config
 mv ~/.config ~/.Trash
-ln -s "$SYMLINK_LOC/.config/" ~/.config
+ln -s "$DOTFILE_FOLDER/.config/" ~/.config
 
 # Sublime
 mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
-ln -s "$SYMLINK_LOC/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
+ln -s "$DOTFILE_FOLDER/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
 mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
-ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
+ln -s "$DOTFILE_FOLDER/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
 
 # -------------------
 # only on main device
@@ -56,20 +56,20 @@ ln -s "$SYMLINK_LOC/Sublime Packages/CSS3.sublime-package" ~"/Library/Applicatio
 
 # Dock and Launchpad
 mv ~"/Library/Application Support/Dock" ~/.Trash
-ln -s "$SYMLINK_LOC/Dock and Launchpad" ~"/Library/Application Support/Dock"
+ln -s "$DOTFILE_FOLDER/Dock and Launchpad" ~"/Library/Application Support/Dock"
 
 # Brave
 mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
-ln -s "$SYMLINK_LOC/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+ln -s "$DOTFILE_FOLDER/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
 
 # Folder Actions
 mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
-ln -s "$SYMLINK_LOC/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
+ln -s "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
 
 # VLC
 mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
 mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
-ln -s "$SYMLINK_LOC/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
+ln -s "$DOTFILE_FOLDER/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
 
 # --------------
 # seperate import plist, explanation https://manytricks.com/osticket/kb/faq.php?id=53
@@ -88,7 +88,5 @@ for d in */ ; do
 	mv -v "$d" ~/Library/Preferences/
 done
 
-
-
-
-
+cd "$DOTFILE_FOLDER" || return 1
+defaults import com.knollsoft.Charmstone com.knollsoft.Charmstone.plist

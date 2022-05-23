@@ -78,10 +78,10 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool false
 defaults write com.apple.dock minimize-to-application -bool false
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock static-only -bool true # show only active items in dock
+
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
-# Don’t group windows by application in Mission Control (i.e. use the old Exposé behavior instead)
-defaults write com.apple.dock expose-group-by-app -bool true
 killall Dock
 
 
@@ -124,15 +124,16 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Views
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.finder ShowStatusBar -bool false
-defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowPathbar -bool false
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
+#List view as default
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
-#search always current directory
+# search always current directory
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Expand the following File Info panes:

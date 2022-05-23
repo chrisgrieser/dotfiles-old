@@ -9,8 +9,6 @@
 # demo: https://raw.githubusercontent.com/chrisgrieser/shimmering-obsidian/main/docs/images/terminal-vault-navigation.png
 # --------------------------------------
 
-export VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
-
 function ob (){
 	VAULT_NAME=$(basename "$VAULT_PATH")
 	VAULT_PATH_LENGTH=$(echo "$VAULT_PATH" | wc -c | tr -d " ")

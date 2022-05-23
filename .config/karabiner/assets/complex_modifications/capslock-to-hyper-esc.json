@@ -17,6 +17,10 @@
 							"key_code": "right_shift",
 							"modifiers": ["right_command", "right_control", "right_option"]
 						}
+					],
+					"conditions": [
+						{"type": "variable_unless", "name": "VIM_MODE", "value": 1 },
+						{"type": "variable_unless", "name": "LEADER_ACTIVE", "value": 1 }
 					]
 				},
 				{

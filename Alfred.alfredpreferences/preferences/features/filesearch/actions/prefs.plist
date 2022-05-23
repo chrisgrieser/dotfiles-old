@@ -56,16 +56,18 @@
 	<key>finderSelectionHotkey</key>
 	<dict>
 		<key>key</key>
-		<integer>-1</integer>
+		<integer>0</integer>
 		<key>mod</key>
 		<integer>524288</integer>
 		<key>string</key>
-		<string>double tap</string>
+		<string>A</string>
 	</dict>
 	<key>showWithCtrl</key>
 	<false/>
 	<key>showWithFn</key>
 	<false/>
+	<key>showWithTab</key>
+	<true/>
 	<key>sortByUsage</key>
 	<true/>
 </dict>

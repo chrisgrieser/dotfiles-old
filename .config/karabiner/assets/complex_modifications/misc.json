@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "One Stroke Backtick (German Layout)",
+			"description": "One Stroke ^`´~ (German Layout)",
 			"manipulators": [
 				{
 					"description": "forward-tick",
@@ -40,6 +40,57 @@
 						{
 							"type": "input_source_if",
 							"input_sources": [{ "language": "^de$" } ]
+						}
+					]
+				},
+				{
+					"description": "tilde",
+					"type": "basic",
+					"from": {
+						"key_code": "n",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{ "key_code": "n", "modifiers": ["option"] },
+						{ "key_code": "spacebar" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					]
+				},
+				{
+					"description": "^",
+					"type": "basic",
+					"from": {"key_code": "non_us_backslash" },
+					"to": [
+						{ "key_code": "non_us_backslash" },
+						{ "key_code": "spacebar" }
+					],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
 						}
 					]
 				}

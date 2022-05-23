@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3E966012-774D-42D8-9272-266977BB2023</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>09C0668A-BC23-4377-90E1-7E79EFE6D893</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>47CF9B84-D499-4452-94A5-256DD73BA5FC</key>
 		<array>
 			<dict>
@@ -104,6 +117,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>CDB7E2DC-E7D2-4059-B903-A348C134C523</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>541951C1-0910-4D5E-AA68-54B819DE0940</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E966012-774D-42D8-9272-266977BB2023</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -682,6 +708,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{clipboard:1}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>09C0668A-BC23-4377-90E1-7E79EFE6D893</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -713,6 +758,19 @@
 			<string>3B387ED5-43C9-401C-84B7-FCC3FFCA4DB5</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>.2</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>3E966012-774D-42D8-9272-266977BB2023</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1273,8 +1331,21 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
+		<key>09C0668A-BC23-4377-90E1-7E79EFE6D893</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>note</key>
+			<string>preserve order of the clipboard</string>
+			<key>xpos</key>
+			<integer>855</integer>
+			<key>ypos</key>
+			<integer>515</integer>
+		</dict>
 		<key>0B52DB5A-5BC3-4543-AD4F-E27A72590DD8</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>930</integer>
 			<key>ypos</key>
@@ -1283,7 +1354,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>174B2D25-4A47-4933-A56A-47AE022A0CB8</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1306,7 +1377,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>281241A0-3B16-4FBD-818F-C456ECD96915</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1323,6 +1394,8 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		</dict>
 		<key>2FEB7E51-3B95-4809-98E2-0A3A68E2C984</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>755</integer>
 			<key>ypos</key>
@@ -1342,18 +1415,27 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>3B387ED5-43C9-401C-84B7-FCC3FFCA4DB5</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>note</key>
 			<string>Inline Code</string>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>515</integer>
+		</dict>
+		<key>3E966012-774D-42D8-9272-266977BB2023</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>xpos</key>
+			<integer>785</integer>
+			<key>ypos</key>
+			<integer>545</integer>
 		</dict>
 		<key>47CF9B84-D499-4452-94A5-256DD73BA5FC</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1372,10 +1454,12 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		</dict>
 		<key>541951C1-0910-4D5E-AA68-54B819DE0940</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>xpos</key>
-			<integer>790</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>515</integer>
 		</dict>
 		<key>661DA836-A4F2-4671-80FE-4F378B93EAD0</key>
 		<dict>
@@ -1387,7 +1471,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>829D67EB-99AF-419C-87D9-929F148DD0D9</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1407,7 +1491,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>93E2600C-E242-4C4E-9D5F-A526C0340132</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>note</key>
 			<string>reply</string>
 			<key>xpos</key>
@@ -1418,7 +1502,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>9B076CF4-E7FE-45C2-9E77-DE8BF4717885</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>note</key>
 			<string>Scroll to Bottom (like vim G)</string>
 			<key>xpos</key>
@@ -1429,7 +1513,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>A3165EC5-D1FD-4277-B141-AD7ACC43ADC0</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1470,7 +1554,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>BE304CF0-20B1-46B7-8636-B05A0DCCF473</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1527,7 +1611,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>EB2DD1E4-AA94-4168-BA26-C567ABB9E314</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
@@ -1565,7 +1649,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>FE7519CD-D6C6-4E77-B317-436DF817A5A4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>

@@ -9,7 +9,7 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Shift Utilities](#shift-utilities)
-- [Fn Leader](#fn-leader)
+- [Global Leader Key](#global-leader-key)
 - [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
@@ -56,8 +56,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/shift-utilities.json
 ```
 
-## Fn Leader
-`fn` activates the leader key. The key following it launches/switches the following apps
+## Global Leader Key
+The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-control` on other keyboards (and foot pedals).The key following it launches/switches the following apps:
+- `leader` (= 2x leader) → `F19`
+- `Esc` → Cancel leader key sequence
 - `c` → `C`alendar → BusyCal
 - `b` → `B`rowser → Brave Browser
 - `o` → `O`bsidian
@@ -79,7 +81,9 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - `t` → `T`witter → `T`witterific
 - `k` → `K`arabiner Elements
 - `shift + k` → `K`arabiner EventViewer
-- `fn` (= 2x `fn`) → Emoji Insertion Modal
+- `shift + b` → `B`etterTouchToul
+- `shift + p` → `P`assword Manager → MacPass
+- `.`/`:` → Emoji Insertion Modal
 
 ## Miscellaneous
 - **One Stroke \`´ (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)

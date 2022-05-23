@@ -215,7 +215,7 @@
 			]
 		},
 		{
-			"description": "Hyper + hjklm: ←↓↑→↵ (requires Hyper Key)",
+			"description": "Hyper + hjklmn: ←↓↑→↵⌫",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -256,6 +256,14 @@
 						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
 					},
 					"to": [ {"key_code": "return_or_enter" } ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "n",
+						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
+					},
+					"to": [ {"key_code": "delete_or_backspace" } ]
 				}
 			]
 		},
@@ -268,10 +276,21 @@
 						"key_code": "5",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -287,10 +306,21 @@
 						"key_code": "6",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -306,10 +336,21 @@
 						"key_code": "8",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -325,10 +366,21 @@
 						"key_code": "9",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -344,10 +396,21 @@
 						"key_code": "l",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -360,10 +423,21 @@
 				{
 					"type": "basic",
 					"from": {"key_code": "non_us_backslash"},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
@@ -379,10 +453,21 @@
 						"key_code": "n",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"conditions": [ {
-						"type": "input_source_if",
-						"input_sources": [{ "language": "^de$" } ]
-					} ],
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^io\\.alacritty$",
+								"^com\\.apple\\.Terminal$",
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
 					"to": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
 						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
