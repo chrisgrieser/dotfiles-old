@@ -269,6 +269,23 @@
 				{
 					"type": "basic",
 					"from": {
+						"key_code": "o"
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "right_arrow", "modifiers": ["command"] },
+						{"key_code": "return_or_enter", "modifiers": ["command"] }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
 						"key_code": "g",
 						"modifiers": {"mandatory": ["shift"]}
 					},
