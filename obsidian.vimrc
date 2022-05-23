@@ -121,10 +121,14 @@ nmap ä dlph
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
-" Add , to last line,
-nmap ß, :.s/$/,/
-nmap ß; :.s/$/;/
-nmap ß. :.s/$/./
+" Add ,;. to end of line
+nmap ßß, :.s/$/,/
+nmap ßß; :.s/$/;/
+nmap &§&. :.s/$/./
+nmap ß. mz&§&.`z
+" Remove last character from line
+nmap ßx mz$"_x`z
+
 
 """"""""""""""""""""""
 " < Text Objects

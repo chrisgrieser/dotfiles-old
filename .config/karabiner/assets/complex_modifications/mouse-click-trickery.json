@@ -59,12 +59,13 @@
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
+							"description": "$ left out to match PWAs as well.",
 							"bundle_identifiers": [
-								"^com\\.vivaldi\\.Vivaldi$",
-								"^org\\.chromium\\.Chromium$",
-								"^com\\.google\\.Chrome$",
-								"^com\\.brave\\.Browser$",
-								"^com\\.apple\\.Safari$"
+								"^com\\.vivaldi\\.Vivaldi",
+								"^org\\.chromium\\.Chromium",
+								"^com\\.google\\.Chrome",
+								"^com\\.brave\\.Browser",
+								"^com\\.apple\\.Safari"
 							]
 						}
 					],

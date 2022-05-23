@@ -43,7 +43,7 @@
 			]
 		},
 		{
-			"description": "Vim Mode Actions: hjklHJKLebG xCDi<Esc> <Space><S-Space>",
+			"description": "Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> <Space><S-Space>",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -98,6 +98,60 @@
 						}
 					],
 					"to": [
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"description": "a: Insert Mode (Exit Vim Mode)",
+					"from": {"key_code": "a"},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "i",
+						"modifiers": {"mandatory": ["shift"]}
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "left_arrow", "modifiers": ["command"] },
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "a",
+						"modifiers": {"mandatory": ["shift"]}
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "right_arrow", "modifiers": ["command"] },
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
 						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
 					]
@@ -268,9 +322,7 @@
 				},
 				{
 					"type": "basic",
-					"from": {
-						"key_code": "o"
-					},
+					"from": {"key_code": "o"},
 					"conditions": [
 						{
 							"type": "variable_if",
@@ -280,7 +332,30 @@
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["command"] },
-						{"key_code": "return_or_enter", "modifiers": ["command"] }
+						{"key_code": "return_or_enter"},
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "o",
+						"modifiers": {"mandatory": ["shift"]}
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "left_arrow", "modifiers": ["command"] },
+						{"key_code": "return_or_enter"},
+						{"key_code": "up_arrow"},
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
 					]
 				},
 				{
