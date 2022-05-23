@@ -43,7 +43,7 @@
 			]
 		},
 		{
-			"description": "Vim Mode Actions: hjkl HJKL ebGxi <Space><S-Space>",
+			"description": "Vim Mode Actions: hjklHJKLebG xCDi<Esc> <Space><S-Space>",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -197,6 +197,44 @@
 						}
 					],
 					"to": [{"key_code": "delete_or_backspace"} ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "c",
+						"modifiers": {"mandatory": ["shift"]}
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "right_arrow", "modifiers": ["command", "shift"] },
+						{"key_code": "delete_or_backspace"},
+						{"set_variable": {"name": "VIM_MODE", "value": 0}},
+						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "d",
+						"modifiers": {"mandatory": ["shift"]}
+					},
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "VIM_MODE",
+							"value": 1
+						}
+					],
+					"to": [
+						{"key_code": "right_arrow", "modifiers": ["command", "shift"] },
+						{"key_code": "delete_or_backspace"}
+					]
 				},
 				{
 					"type": "basic",

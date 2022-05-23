@@ -100,7 +100,7 @@
 									"screen": 0
 								}
 							}
-						}
+			}
 					],
 					"conditions": [
 						{
@@ -146,22 +146,6 @@
 			]
 		},
 		{
-			"description": "R-⌘ (tap): ↵",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {"key_code": "right_command"},
-					"to": [{ "key_code": "right_command" } ],
-					"parameters": {
-						"basic.to_if_alone_timeout_milliseconds": 250
-					},
-					"to_if_alone": [
-						{"key_code": "return_or_enter" }
-					]
-				}
-			]
-		},
-		{
 			"description": "k+l (simultaneously): ↵",
 			"manipulators": [
 				{
@@ -179,12 +163,12 @@
 			]
 		},
 		{
-			"description": "R-⌥ (tap): Focus Window & Hide Cursor",
+			"description": "R-⌘ (tap): Focus Window & Hide Cursor",
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "right_option"},
-					"to": [{ "key_code": "right_option" } ],
+					"from": {"key_code": "right_command"},
+					"to": [{ "key_code": "right_command" } ],
 					"parameters": {
 						"basic.to_if_alone_timeout_milliseconds": 250
 					},
