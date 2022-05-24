@@ -143,7 +143,7 @@
 	// Build Selection
 	{ "keys": ["super+shift+r"], "command": "build", "args": {"select": true} },
 	// Lint (using Build System)
-	{ "keys": ["shift+super+alt+ctrl+n"], "command": "build", "args": { "variant": "Lint Autofix" } },
+	{ "keys": ["shift+super+alt+ctrl+f"], "command": "build", "args": { "variant": "Lint Autofix" } },
 	// Executable (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
 
