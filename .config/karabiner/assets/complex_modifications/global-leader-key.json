@@ -1,5 +1,5 @@
 {
-	"title": "Global Leader Key",
+	"title": "Δ Global Leader Key",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/fn-leader-key.json",
@@ -13,10 +13,7 @@
 					"description": "Non-Apple Keyboard",
 					"from": {"key_code": "left_control" },
 					"to": [{"key_code": "left_control" } ],
-					"parameters": {
-						"description": "timeout prevent a foot left on the pedal from unintentionally triggering fn all the time.",
-						"basic.to_if_alone_timeout_milliseconds": 1200
-					},
+					"parameters": { "basic.to_if_alone_timeout_milliseconds": 600 },
 					"conditions": [
 						{
 							"type": "variable_unless",
@@ -30,18 +27,8 @@
 					],
 					"to_if_alone": [
 						{"key_code": "left_control" },
-						{
-							"set_variable": {
-								"name": "LEADER_ACTIVE",
-								"value": 1
-							}
-						},
-						{
-							"set_notification_message": {
-								"id": "leader-notice",
-								"text": "Δ Leader"
-							}
-						}
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 1 } },
+						{"set_notification_message": {"id": "leader-notice", "text": "Δ Leader"} }
 					]
 				},
 				{
@@ -87,20 +74,11 @@
 							"identifiers": [{"vendor_id": 76, "is_keyboard": true } ]
 						}
 					],
+					"parameters": { "basic.to_if_alone_timeout_milliseconds": 600 },
 					"to_if_alone": [
 						{"key_code": "fn" },
-						{
-							"set_variable": {
-								"name": "LEADER_ACTIVE",
-								"value": 1
-							}
-						},
-						{
-							"set_notification_message": {
-								"id": "leader-notice",
-								"text": "Δ Leader"
-							}
-						}
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 1 } },
+						{"set_notification_message": {"id": "leader-notice", "text": "Δ Leader"} }
 					]
 				}
 			]

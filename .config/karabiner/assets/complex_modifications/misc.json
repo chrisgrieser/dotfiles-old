@@ -62,7 +62,6 @@
 						{
 							"type": "frontmost_application_unless",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
 								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
@@ -86,7 +85,6 @@
 						{
 							"type": "frontmost_application_unless",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
 								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"

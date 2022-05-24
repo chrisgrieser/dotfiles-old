@@ -18,9 +18,9 @@
 					"conditions": [
 						{
 							"type": "frontmost_application_unless",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$"
+							"file_paths": [
+								"bin/alacritty$",
+								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
 					]
@@ -35,9 +35,9 @@
 					"conditions": [
 						{
 							"type": "frontmost_application_unless",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$"
+							"file_paths": [
+								"bin/alacritty$",
+								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
 					]
@@ -55,9 +55,9 @@
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$"
+							"file_paths": [
+								"bin/alacritty$",
+								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
 					]
@@ -75,9 +75,9 @@
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$"
+							"file_paths": [
+								"bin/alacritty$",
+								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
 					]
