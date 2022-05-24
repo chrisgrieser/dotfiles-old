@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "L-⌃ (Non-Apple) / fn (Apple): Leader Trigger",
+			"description": "Δ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -38,7 +38,7 @@
 						},
 						{
 							"set_notification_message": {
-								"id": "fn-leader-notice",
+								"id": "leader-notice",
 								"text": "Δ Leader"
 							}
 						}
@@ -58,12 +58,17 @@
 						{
 							"type": "device_unless",
 							"identifiers": [{"vendor_id": 76, "is_keyboard": true } ]
+						},
+						{
+							"type": "device_if",
+							"description": "Prevent footpedal from accidentally triggering twice.",
+							"identifiers": [{"is_pointing_device": false } ]
 						}
 					],
 					"to_if_alone": [
 						{"key_code": "f19" },
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -92,7 +97,7 @@
 						},
 						{
 							"set_notification_message": {
-								"id": "fn-leader-notice",
+								"id": "leader-notice",
 								"text": "Δ Leader"
 							}
 						}
@@ -101,7 +106,7 @@
 			]
 		},
 		{
-			"description": "Leader Actions",
+			"description": "Δ Leader Actions",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -116,7 +121,7 @@
 					],
 					"to": [
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -132,7 +137,7 @@
 					],
 					"to_if_alone": [
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
-						{"set_notification_message": {"id": "vim-mode-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -142,7 +147,7 @@
 					"to": [
 						{"key_code": "spacebar", "modifiers": ["right_command", "right_control"] },
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					],
 					"conditions": [
 						{
@@ -166,7 +171,7 @@
 					"to": [
 						{"key_code": "spacebar", "modifiers": ["right_command", "right_control"] },
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					],
 					"conditions": [
 						{
@@ -191,7 +196,7 @@
 					"to": [
 						{"shell_command": "open -a 'BusyCal'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -205,7 +210,7 @@
 					"to": [
 						{"shell_command": "open -a 'System Preferences'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -219,7 +224,7 @@
 					"to": [
 						{"shell_command": "open -a 'Obsidian'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -233,7 +238,7 @@
 					"to": [
 						{"shell_command": "open -a 'Discord'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -247,7 +252,7 @@
 					"to": [
 						{"shell_command": "open -a 'YouTube'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -261,7 +266,7 @@
 					"to": [
 						{"shell_command": "open -a 'Sublime Text'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -275,7 +280,7 @@
 					"to": [
 						{"shell_command": "open -a 'Drafts'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -289,7 +294,7 @@
 					"to": [
 						{"shell_command": "open -a 'Slack'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -303,7 +308,7 @@
 					"to": [
 						{"shell_command": "open -a 'Mimestream'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -317,7 +322,7 @@
 					"to": [
 						{"shell_command": "open -a 'Brave Browser'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -331,7 +336,7 @@
 					"to": [
 						{"shell_command": "open \"$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/\""},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -345,7 +350,7 @@
 					"to": [
 						{"shell_command": "open -a 'Karabiner-Elements'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -362,7 +367,7 @@
 					"to": [
 						{"shell_command": "open -a 'Karabiner-EventViewer'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -379,7 +384,7 @@
 					"to": [
 						{"shell_command": "open -a 'BetterTouchTool'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -396,7 +401,7 @@
 					"to": [
 						{"shell_command": "open -a 'MacPass'; osascript -e 'tell application \\\"MacPass\\\" to activate'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -410,7 +415,7 @@
 					"to": [
 						{"shell_command": "open -a 'YouTube'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -424,7 +429,7 @@
 					"to": [
 						{"shell_command": "open -a 'Alfred Preferences'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -438,7 +443,7 @@
 					"to": [
 						{"shell_command": "open -a 'Inoreader'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -451,7 +456,7 @@
 					}],
 					"to": [
 						{"shell_command": "open -a 'Twitterrific'"},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} },
+						{"set_notification_message": {"id": "leader-notice", "text": ""} },
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
 						{"key_code": "vk_none", "hold_down_milliseconds": 50 },
 						{"key_code": "down_arrow" }
@@ -468,7 +473,7 @@
 					"to": [
 						{"shell_command": "open -a 'Highlights'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -482,7 +487,7 @@
 					"to": [
 						{"shell_command": "open -a 'Google Docs'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -496,7 +501,7 @@
 					"to": [
 						{"shell_command": "open -a 'Microsoft Word'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -510,7 +515,7 @@
 					"to": [
 						{"shell_command": "open -a 'VLC'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				},
 				{
@@ -524,7 +529,7 @@
 					"to": [
 						{"shell_command": "open -a 'zoom.us'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "fn-leader-notice", "text": ""} }
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
 				}
 			]
