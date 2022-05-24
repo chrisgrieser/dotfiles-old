@@ -109,7 +109,10 @@
 							"bundle_identifiers": ["^com\\.hicknhacksoftware\\.MacPass$" ]
 						}
 					],
-					"to": [{"key_code": "c", "modifiers": ["command", "option"] } ]
+					"to": [
+						{"key_code": "c", "modifiers": ["command", "option"] },
+						{"key_code": "h", "modifiers": ["command"] }
+					]
 				},
 				{
 					"type": "basic",
@@ -123,7 +126,10 @@
 							"bundle_identifiers": ["^com\\.hicknhacksoftware\\.MacPass$" ]
 						}
 					],
-					"to": [{"key_code": "c", "modifiers": ["command", "shift"] } ]
+					"to": [
+						{"key_code": "c", "modifiers": ["command", "shift"] },
+						{"key_code": "h", "modifiers": ["command"] }
+					]
 				}
 			]
 		},

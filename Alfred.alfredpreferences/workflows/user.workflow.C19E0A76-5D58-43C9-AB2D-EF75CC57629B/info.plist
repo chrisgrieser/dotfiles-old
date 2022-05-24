@@ -311,7 +311,7 @@ end tell</string>
 					<string>com.adobe.pdf</string>
 				</array>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.filefilter</string>
