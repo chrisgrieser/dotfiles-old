@@ -30,8 +30,14 @@ case $APP_TO_UPDATE in
 		cp "$CUSTOM_ICON_FOLDER/Transmission 2.icns" '/Transmission.app/Contents/Resources/Transmission.icns'
 		touch "Transmission.app" ;;
    "Alfred Preferences")
-		cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
-		touch 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns' ;;
+		osascript -e "tell application \"Finder\"
+			open information window of (\"Alfred 4.app/Contents/Preferences/Alfred Preferences.app\" as POSIX file as alias)
+			activate
+		end tell
+		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Alfred Prefs.icns\""
+		INFO_WINDOW=1 ;;
+		# cp "$CUSTOM_ICON_FOLDER/Alfred Prefs.icns" 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns'
+		# touch 'Alfred 4.app/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns' ;;
 	"VLC")
 		cp "$CUSTOM_ICON_FOLDER/VLC.icns" 'VLC.app/Contents/Resources/VLC.icns'
 		touch "VLC.app" ;;

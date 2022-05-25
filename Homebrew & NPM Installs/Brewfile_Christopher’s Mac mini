@@ -3,11 +3,11 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "mgmeyers/pdfannots2json"
-brew "blueutil"
 brew "python@3.9"
 brew "exa"
 brew "fd"
 brew "tesseract"
+brew "flake8"
 brew "fortune"
 brew "fzf"
 brew "howdoi"
@@ -15,25 +15,29 @@ brew "node"
 brew "iconsur"
 brew "markdownlint-cli"
 brew "mas"
-brew "moar"
 brew "ocrmypdf"
 brew "pandoc"
+brew "php"
+brew "pylint"
 brew "shellcheck"
 brew "starship"
 brew "tesseract-lang"
 brew "yamllint"
+brew "zoxide"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "mgmeyers/pdfannots2json/pdfannots2json"
 cask "alacritty"
 cask "alfred"
 cask "appcleaner"
+cask "bettertouchtool"
 cask "brave-browser"
 cask "busycal"
 cask "cryptomator"
 cask "discord"
 cask "dozer"
-cask "finicky"
+cask "flameshot"
+cask "grammarly-desktop"
 cask "istat-menus"
 cask "karabiner-elements"
 cask "macpass"
@@ -45,14 +49,11 @@ cask "monitorcontrol"
 cask "obsidian"
 cask "slack"
 cask "sublime-text"
+mas "Charmstone", id: 1563735522
 mas "Color Picker", id: 1545870783
 mas "Drafts", id: 1435957248
 mas "Gifski", id: 1351639930
 mas "Highlights", id: 1498912833
-mas "Keymou", id: 449863619
-mas "Moom", id: 419330170
 mas "Peek", id: 1554235898
-mas "PopClip", id: 445189367
-mas "rcmd", id: 1596283165
 mas "Tiny Temp", id: 1291787042
-mas "Twitterrific", id: 1289378661
+mas "TweetDeck", id: 485812721
