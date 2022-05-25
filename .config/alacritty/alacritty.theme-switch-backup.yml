@@ -1,32 +1,32 @@
 colors:
   primary:
-    background: '0x232627'
-    foreground: '0xfcfcfc'
+    background: '0x262626'
+    foreground: '0xbab5b7'
     dim_foreground: '0xeff0f1'
     bright_foreground: '0xffffff'
     dim_background: '0x31363b'
     bright_background: '0x000000'
   normal:
-    black: '0x232627'
-    red: '0xed1515'
-    green: '0x11d116'
-    yellow: '0xf67400'
-    blue: '0x1d99f3'
-    magenta: '0x9b59b6'
-    cyan: '0x1abc9c'
-    white: '0xfcfcfc'
+    black: '0x262626'
+    red: '0xD08770'
+    green: '0xA3BE8C'
+    yellow: '0xa57562'
+    blue: '0x637A8A'
+    magenta: '0x78758A'
+    cyan: '0x877979'
+    white: '0xa3a5aa'
   bright:
-    black: '0x7f8c8d'
-    yellow: '0xfdbc4b'
-    red: '0xc0392b'
-    green: '0x1cdc9a'
-    magenta: '0x8e44ad'
-    white: '0xffffff'
-    blue: '0x3daee9'
-    cyan: '0x16a085'
+    black: '0x827e80'
+    yellow: '0xa57562'
+    red: '0xD08770'
+    green: '0xA3BE8C'
+    magenta: '0x78758A'
+    white: '0xa3a5aa'
+    blue: '0x637A8A'
+    cyan: '0x877979'
   cursor:
-    text: '0x000b1e'
-    cursor: '0x0abdc6'
+    text: '0x262626'
+    cursor: '0xbab5b7'
   dim:
     black: '0x31363b'
     red: '0x783228'
@@ -139,3 +139,6 @@ key_bindings:
   - key: 20
     mods: Shift
     chars: §
+  - key: W
+    mods: Command
+    chars: "\x04"

@@ -95,7 +95,7 @@
 			]
 		},
 		{
-			"description": "Alacritty: ⌘Q",
+			"description": "Alacritty/Terminal: ⌘Q → ⌃D (Quit on Process End)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -103,7 +103,7 @@
 						"key_code": "q",
 						"modifiers": {"mandatory": ["command"] }
 					},
-					"to": [{ "key_code": "vk_none"} ],
+					"to": [{"key_code": "d", "modifiers": ["control"] } ],
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
