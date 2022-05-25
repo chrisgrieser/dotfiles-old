@@ -97,6 +97,16 @@ case $APP_TO_UPDATE in
 		iconsur set "$PWA_FOLDER/-Twitch.app" ;;
 	"-BunnyFap"|"BunnyFap")
 		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
+	"all PWAs")
+		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
+		touch "$PWA_FOLDER/Google Docs.app"
+		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app"
+		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
+		touch "$PWA_FOLDER/-YouTube.app"
+		iconsur set "$PWA_FOLDER/-Tagesschau.app"
+		iconsur set "$PWA_FOLDER/-Netflix.app"
+		iconsur set "$PWA_FOLDER/-Twitch.app"
+		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
 
    *)
 		NONE_FOUND=1 ;;
