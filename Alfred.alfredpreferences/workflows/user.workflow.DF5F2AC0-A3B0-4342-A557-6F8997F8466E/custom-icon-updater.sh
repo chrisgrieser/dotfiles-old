@@ -92,27 +92,31 @@ case $APP_TO_UPDATE in
 		touch "$PWA_FOLDER/Google Docs.app" ;;
 	"Inoreader")
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app" ;;
-	"-YouTube"|"YouTube")
+
+	"YouTube")
 		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
-		touch "$PWA_FOLDER/-YouTube.app" ;;
-	"-Tagesschau"|"Tagesschau")
-		iconsur set "$PWA_FOLDER/-Tagesschau.app" ;;
-	"-Netflix"|"Netflix")
-		iconsur set "$PWA_FOLDER/-Netflix.app" ;;
-	"-Twitch"|"Twitch")
-		iconsur set "$PWA_FOLDER/-Twitch.app" ;;
-	"-BunnyFap"|"BunnyFap")
-		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
+		touch ~"/Video/YouTube.app" ;;
+	"Tagesschau")
+		iconsur set ~"/Video/Tagesschau.app" ;;
+	"Netflix")
+		iconsur set ~"/Video/Netflix.app" ;;
+	"Twitch")
+		iconsur set ~"/Video/Twitch.app" ;;
+	"BunnyFap")
+		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set ~"/Video/BunnyFap.app" ;;
 	"all PWAs")
+		PWA_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Brave Browser Apps.localized/"
+		CUSTOM_ICON_FOLDER=~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/"
 		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app"
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app"
-		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
-		touch "$PWA_FOLDER/-YouTube.app"
-		iconsur set "$PWA_FOLDER/-Tagesschau.app"
-		iconsur set "$PWA_FOLDER/-Netflix.app"
-		iconsur set "$PWA_FOLDER/-Twitch.app"
-		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set "$PWA_FOLDER/-BunnyFap.app" ;;
+		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" ~"/Video/YouTube.app/Contents/Resources/app.icns"
+		touch ~"/Video/YouTube.app"
+		iconsur set ~"/Video/Netflix.app"
+		iconsur set ~"/Video/Twitch.app"
+		iconsur set ~"/Video/Tagesschau.app"
+		iconsur --input "$CUSTOM_ICON_FOLDER/BunnyFap.png" --scale 1.1 set ~"/Video/BunnyFap.app"
+		;;
 
    *)
 		NONE_FOUND=1 ;;
@@ -126,7 +130,7 @@ if [[ $NONE_FOUND == 0 ]]; then
 		sleep 2.5
 		open -a "$APP_TO_UPDATE"
 	fi
-	echo -n "$APP_TO_UPDATE" # pass for notication
+	echo -n "$APP_TO_UPDATE" # pass for notification
 else
 	echo -n "No icon set up for $APP_TO_UPDATE."
 fi
