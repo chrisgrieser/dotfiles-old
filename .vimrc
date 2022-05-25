@@ -19,7 +19,7 @@ set cursorline
 set tabstop=3
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
-set scrolloff=10
+set scrolloff=7
 
 " Ignore capital letters during search.
 set ignorecase
@@ -35,7 +35,6 @@ set showmatch
 
 " Use highlighting when doing a search.
 set hlsearch
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
