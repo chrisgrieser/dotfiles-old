@@ -151,7 +151,7 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "33E66F48-5B5E-4233-8F6A-4279E836F688",
+  "BTTPresetUUID" : "E8763C21-3ADE-40D9-A86B-0A0EA5D3A03A",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.hegenberg.BetterTouchTool",
@@ -571,10 +571,10 @@
                 "BTTActionShortcutsInputFrom" : 0,
                 "BTTActionShortcutsFolders" : "Beamer"
               },
-              "BTTDelayBeforeTriggering" : 0,
+              "BTTDelayBeforeTriggering" : 0.51738959550857544,
               "BTTEnabled2" : 1,
               "BTTAlternateModifierKeys" : 0,
-              "BTTRepeatDelay" : 0,
+              "BTTRepeatDelay" : 0.51738959550857544,
               "BTTUUID" : "FAACE6DF-E04C-4473-903F-8ED0B601E406",
               "BTTNotesInsteadOfDescription" : 0,
               "BTTEnabled" : 1,
