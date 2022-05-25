@@ -13,7 +13,7 @@ const dotfileFolder = getEnv ("dotfile_folder");
 const workArray = app.doShellScript (
 	'PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ;\
 	cd "' + dotfileFolder + '" ;\
-	fd -H -E "PopClip/*" -E "Alfred.alfredpreferences" -E "FileHistory*.json"'
+	fd -H -E "Alfred.alfredpreferences" -E "FileHistory*.json"'
 ).split("\r");
 /* eslint-enable no-multi-str, quotes */
 

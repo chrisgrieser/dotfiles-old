@@ -125,6 +125,14 @@
       {
         "direct": "D",
         "action": "L_copyurl"
+      },
+      {
+        "direct": "R",
+        "action": "L_open",
+        "moreDes": "Open link in new background tab",
+        "moreTarget": "newback",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
       }
     ],
     "setdragurl": true,

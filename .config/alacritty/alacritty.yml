@@ -16,7 +16,7 @@ colors:
     cyan: '#3399C1'
     white: '#F6E7D5'
   bright:
-    black: '#2C2621'
+    black: '#000000'
     yellow: '#F8D668'
     red: '#FF675C'
     green: '#38D687'
