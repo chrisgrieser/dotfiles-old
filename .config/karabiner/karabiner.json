@@ -1149,161 +1149,6 @@
                         ]
                     },
                     {
-                        "description": "Δ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_unless",
-                                        "value": 1
-                                    },
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_keyboard": true,
-                                                "vendor_id": 76
-                                            }
-                                        ],
-                                        "type": "device_unless"
-                                    }
-                                ],
-                                "description": "Non-Apple Keyboard",
-                                "from": {
-                                    "key_code": "left_control"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 600
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "left_control"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "LEADER_ACTIVE",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "set_notification_message": {
-                                            "id": "leader-notice",
-                                            "text": "Δ Leader"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    },
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_keyboard": true,
-                                                "vendor_id": 76
-                                            }
-                                        ],
-                                        "type": "device_unless"
-                                    },
-                                    {
-                                        "description": "Prevent footpedal from accidentally triggering twice.",
-                                        "identifiers": [
-                                            {
-                                                "is_pointing_device": false
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "description": "2x Leader: F19",
-                                "from": {
-                                    "key_code": "left_control"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f19"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "LEADER_ACTIVE",
-                                            "value": 0
-                                        }
-                                    },
-                                    {
-                                        "set_notification_message": {
-                                            "id": "leader-notice",
-                                            "text": ""
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_unless",
-                                        "value": 1
-                                    },
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_keyboard": true,
-                                                "vendor_id": 76
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "description": "Apple Keyboard",
-                                "from": {
-                                    "key_code": "fn"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 600
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "fn"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "fn"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "LEADER_ACTIVE",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "set_notification_message": {
-                                            "id": "leader-notice",
-                                            "text": "Δ Leader"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Δ Leader Actions",
                         "manipulators": [
                             {
@@ -3555,6 +3400,206 @@
                                         "modifiers": [
                                             "control"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Δ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
+                                "description": "Non-Apple Keyboard",
+                                "from": {
+                                    "key_code": "left_control"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 600
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "left_control"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "leader-notice",
+                                            "text": "Δ Leader"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    },
+                                    {
+                                        "description": "Prevent footpedal from accidentally triggering twice.",
+                                        "identifiers": [
+                                            {
+                                                "is_pointing_device": false
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "description": "2x Leader: F19",
+                                "from": {
+                                    "key_code": "left_control"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f19"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "leader-notice",
+                                            "text": ""
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "description": "Apple Keyboard",
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 600
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "fn"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "leader-notice",
+                                            "text": "Δ Leader"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "vendor_id": 76
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "description": "2x Leader: F19",
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f19"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "LEADER_ACTIVE",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_notification_message": {
+                                            "id": "leader-notice",
+                                            "text": ""
+                                        }
                                     }
                                 ],
                                 "type": "basic"

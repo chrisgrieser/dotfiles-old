@@ -80,6 +80,28 @@
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 1 } },
 						{"set_notification_message": {"id": "leader-notice", "text": "Δ Leader"} }
 					]
+				},
+				{
+					"description": "2x Leader: F19",
+					"type": "basic",
+					"from": {"key_code": "fn"},
+					"to": [{"key_code": "fn" } ],
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "LEADER_ACTIVE",
+							"value": 1
+						},
+						{
+							"type": "device_if",
+							"identifiers": [{"vendor_id": 76, "is_keyboard": true } ]
+						}
+					],
+					"to_if_alone": [
+						{"key_code": "f19" },
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0}},
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
+					]
 				}
 			]
 		},
