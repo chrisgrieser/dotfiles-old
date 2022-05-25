@@ -6,7 +6,6 @@
 zsh ~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/git vault backup.sh"
 zsh ~"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/git-dotfile-backup.sh"
 
-
 # DOWNLOAD FOLDER BADGE
 # ----------------------------------------------------
 export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
