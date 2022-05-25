@@ -28,6 +28,7 @@
 	    "<C-h>": false, // go to BOL
 	    "<C-l>": false, // go to EOL
 	    "<C-s>": false, // Spellcheck toggle
+	    "<C-d>": false, // Duplicate File
 	},
 
 	//-------------------------------------------------

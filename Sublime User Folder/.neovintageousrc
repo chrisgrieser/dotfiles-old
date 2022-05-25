@@ -115,6 +115,8 @@ vnoremap <M-Space> "vy
 
 " Case Switch
 nnoremap ü ~h
+" Titlecase (Abolish Plugin)
+nnoremap Ü crt
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph

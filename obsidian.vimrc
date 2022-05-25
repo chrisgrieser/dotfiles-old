@@ -112,9 +112,12 @@ vmap <S-F12> "vy
 
 " Case Switch
 nmap ü ~h
+" Case Switch Plugin
+exmap caseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
+nmap Ü :caseswitch
 
 " Transpose current & next char
-" (can't use x sends to black hole registry)
+" (can't use x, cause it sends to black hole registry)
 imap <C-t> <Esc>dlpi
 nmap ä dlp
 
