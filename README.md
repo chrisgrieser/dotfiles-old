@@ -10,14 +10,13 @@
 
 <!-- /MarkdownTOC -->
 ## Configurations of Interest
-Most people tell me they find the following configurations most useful:
-- [Sublime keybindings](/Sublime%20User%20Folder/Default%20(OSX).sublime-keymap), e.g. for Vintage Mode (Sublime's Vim Emulator)
+Most people tell me they find the following configurations useful:
 - [.zshrc setup](/zsh/)
 - Pandoc configs & my pointers on [how to use pandoc](/pandoc/#Pandoc)
 - [complex modifications for Karabiner Elements](/.config/karabiner)
 - [starship prompt](/.config/starship/starship.toml)
 - Various Vim Emulation Configs
-	- System wide: [Vim Utilities via Karabiner Elements](/.config/karabiner#vim-utilities)
+	- System wide: [Vim Utilities](/.config/karabiner#vim-utilities) and [Vim Mode](/.config/karabiner#vim-mode) via Karabiner Elements
 	- Browser: [Vimium configs](/Browser%20Extension%20Settings/vimium.vimrc) via [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
 	- Obsidian: [.obsidian.vimrc](obsidian.vimrc) via [Vimrc Support Plugin](https://obsidian.md/plugins?id=obsidian-vimrc-support) 
 	- Sublime: [.neovintageousrc](Sublime%20User%20Folder/.neovintageousrc) via [Neovintageous](https://github.com/NeoVintageous/NeoVintageous)
