@@ -95,6 +95,28 @@
 			]
 		},
 		{
+			"description": "Alacritty: ⌘Q",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "q",
+						"modifiers": {"mandatory": ["command"] }
+					},
+					"to": [{ "key_code": "vk_none"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": [
+								"bin/alacritty$",
+								"/System/Applications/Utilities/Terminal.app"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"description": "Quicker MacPass",
 			"manipulators": [
 				{
@@ -143,25 +165,6 @@
 						"modifiers": {"mandatory": ["shift"] }
 					},
 					"to": [{ "key_code": "delete_forward"} ]
-				}
-			]
-		},
-		{
-			"description": "Alacritty: Deactivate ⌘Q",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "q",
-						"modifiers": {"mandatory": ["command"] }
-					},
-					"to": [{ "key_code": "vk_none"} ],
-					"conditions": [
-						{
-							"type": "frontmost_application_if",
-							"file_paths": ["bin/alacritty$"]
-						}
-					]
 				}
 			]
 		},

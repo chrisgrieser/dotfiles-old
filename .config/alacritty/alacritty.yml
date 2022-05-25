@@ -139,3 +139,9 @@ key_bindings:
   - key: 20
     mods: Shift
     chars: §
+  - key: Q
+    mods: Command
+    chars: "\x04"
+  - key: W
+    mods: Command
+    chars: "\x04"

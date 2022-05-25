@@ -78,7 +78,7 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool false
 defaults write com.apple.dock minimize-to-application -bool false
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock show-process-indicators -bool true
-defaults write com.apple.dock static-only -bool true # show only active items in dock
+# defaults write com.apple.dock static-only -bool true # show only active items in dock
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
