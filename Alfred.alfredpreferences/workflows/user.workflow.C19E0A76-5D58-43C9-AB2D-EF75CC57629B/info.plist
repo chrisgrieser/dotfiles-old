@@ -99,6 +99,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B6E6FDEF-76E5-4F39-AAEF-565057A12258</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D582FB59-D055-4432-A39E-0E230383C335</key>
 		<array>
 			<dict>
@@ -178,65 +191,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "PDF Expert"
-		set frontmost to true
-		click menu item "Remove All Annotations" of menu "Edit" of menu bar 1
-	end tell
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>openwith</key>
 				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>sourcefile</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>D01B02CB-8F25-4ABB-89E9-251EC6E05944</string>
+			<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
 			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>41</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>Ö</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.readdle.PDFExpert-Mac</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>392F62CF-2C01-4724-A7B2-6E96B2A67035</string>
-			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -317,6 +282,69 @@ end tell</string>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
 			<string>B6E6FDEF-76E5-4F39-AAEF-565057A12258</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	tell process "PDF Expert"
+		set frontmost to true
+		click menu item "Remove All Annotations" of menu "Edit" of menu bar 1
+	end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D01B02CB-8F25-4ABB-89E9-251EC6E05944</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>41</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>Ö</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.readdle.PDFExpert-Mac</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>392F62CF-2C01-4724-A7B2-6E96B2A67035</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1080,6 +1108,13 @@ end tell</string>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
+		<key>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>575</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 		<key>A25572A8-A977-4A22-843D-3B1AED7E452C</key>
 		<dict>
 			<key>colorindex</key>
@@ -1094,7 +1129,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>15</integer>
+			<integer>10</integer>
 		</dict>
 		<key>D01B02CB-8F25-4ABB-89E9-251EC6E05944</key>
 		<dict>
