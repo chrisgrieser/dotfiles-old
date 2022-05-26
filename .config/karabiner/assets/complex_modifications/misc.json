@@ -117,6 +117,70 @@
 			]
 		},
 		{
+			"description": "Inoreader: v opens in background, switch jk & np",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "v" },
+					"to": [
+						{"key_code": "v"},
+						{"key_code": "vk_none", "hold_down_milliseconds": 300},
+						{"key_code": "h", "modifiers": ["command"]}
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["Inoreader.app"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "j" },
+					"to": [ {"key_code": "n"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["Inoreader.app"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "k" },
+					"to": [ {"key_code": "p"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["Inoreader.app"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "n" },
+					"to": [ {"key_code": "j"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["Inoreader.app"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "p" },
+					"to": [ {"key_code": "k"} ],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"file_paths": ["Inoreader.app"]
+						}
+					]
+				}
+			]
+		},
+		{
 			"description": "Quicker MacPass",
 			"manipulators": [
 				{

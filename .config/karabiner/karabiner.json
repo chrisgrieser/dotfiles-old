@@ -3605,6 +3605,116 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Inoreader: v opens in background, switch jk & np",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "Inoreader.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "v"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "v"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 300,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "Inoreader.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "n"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "Inoreader.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "p"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "Inoreader.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "n"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "j"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "Inoreader.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "p"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
