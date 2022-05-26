@@ -1,7 +1,7 @@
 {
   "normal": {
     "autocancel": true,
-    "autocancelvalue": 2,
+    "autocancelvalue": "1",
     "cancelcontextmenu": true,
     "capturetype": "jpeg",
     "clickedOptin": true,
@@ -17,8 +17,8 @@
     "newtabposition": "chrome",
     "scroll": false,
     "scrolleffects": true,
-    "scrollgesture": true,
-    "strokegesture": true,
+    "scrollgesture": false,
+    "strokegesture": false,
     "backgroundtab": false
   },
   "gesture": {
