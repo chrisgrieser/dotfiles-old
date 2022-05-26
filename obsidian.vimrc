@@ -152,8 +152,11 @@ nmap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [z]itation [z]yntax
-nmap zz i]
+
+" mnemonic: [R]ectangular Brackets
+nmap R i]
+" mnemonix: [Q]uotation Marks
+nmap Q i"
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -250,9 +253,9 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö X Q Z
+" Ö Z
 " § ! & ° ´
 " rarely used: 0 #
-" <BS>, <Right>, <Left>, <Up>, <Down>, <End>
-" functioniert <Ins>/<Insert> ?
+" Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
+" funktioniert <Ins>/<Insert> ?
 " Esc-key zu F17 remappen?

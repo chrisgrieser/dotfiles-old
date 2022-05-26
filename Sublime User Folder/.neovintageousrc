@@ -144,8 +144,10 @@ nnoremap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [z]itation [z]yntax
-onoremap zz i]
+" mnemonic: [R]ectangular Brackets
+onoremap R i]
+" mnemonix: [Q]uotation Marks
+onoremap Q i"
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -217,9 +219,9 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö X Q Z
+" Ö Z
 " § ! & ° ´
 " rarely used: 0 #
-" <BS> <PageUp>, <Right>, <Left>, <Up>, <Down>
+" Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
+" funktioniert <Ins>/<Insert> ?
 " Esc-key zu F17 remappen?
-
