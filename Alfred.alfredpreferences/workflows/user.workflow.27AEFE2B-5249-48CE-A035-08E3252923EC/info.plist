@@ -447,6 +447,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
+					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
 					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
 				</array>
