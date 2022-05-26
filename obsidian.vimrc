@@ -102,7 +102,7 @@ map U <C-r>
 nmap <Space> "_ciw
 vmap <Space> "vc
 " Delete Word/Selection
-nmap <S-Space> "_daw
+nmap <S-Space> "_daW
 vmap <S-Space> "vd
 
 " Yank Word/Selection
