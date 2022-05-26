@@ -33,7 +33,7 @@ nnoremap + *
 nnoremap - /
 
 " [M]ute search highlights
-nnoremap M :nohlsearch<CR>
+nnoremap <C-m> :nohlsearch<CR>
 
 """"""""""""""""""""""
 " < Nagivation
@@ -68,7 +68,7 @@ vnoremap <Left> <Nop>
 vnoremap <Up> <Nop>
 vnoremap <Down> <Nop>
 
-" Goto Mark: remapping since ` not working
+" Goto Mark
 nnoremap ö `
 
 " rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
@@ -89,6 +89,9 @@ vnoremap <S-Tab> <gv
 " < Editing
 """"""""""""""""""""""
 
+" [M]erge lines
+noremap M J
+
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nnoremap <BS> h"_x
 nnoremap <S-BS> "_x
@@ -107,7 +110,7 @@ nnoremap <CR> A
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
 " Delete Word/Selection
-nnoremap <S-Space> "_daw
+nnoremap <S-Space> "_daW
 vnoremap <S-Space> "vd
 " Yank Word/Selection
 nnoremap <M-Space> yiw

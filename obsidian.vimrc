@@ -35,7 +35,7 @@ nmap + *
 nmap - /
 
 " [M]ute search highlights
-nmap M :nohlsearch
+nmap <C-m> :nohlsearch
 
 """"""""""""""""""""""
 " < Nagivation
@@ -70,18 +70,23 @@ vmap <Left> <Nop>
 vmap <Up> <Nop>
 vmap <Down> <Nop>
 
-" Goto Mark: remapping since ` not working
+" Goto Mark
 nmap ö `
 
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
-" <Tab> as indentation is already implemented
-" in Obsidian
+" Tab as indentation is already implemented in Obsidian
 
 """"""""""""""""""""""
 " < Editing
 """"""""""""""""""""""
+
+" [M]erge lines
+" can't remap to J, cause there is no noremap :/
+exmap mergelines obcommand obsidian-editor-shortcuts:joinLines
+nmap M :mergelines
+vmap M :mergelines
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
@@ -106,7 +111,7 @@ nmap <S-Space> "_daW
 vmap <S-Space> "vd
 
 " Yank Word/Selection
-" <A-Space> mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
+" Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
 nmap <S-F12> yiw
 vmap <S-F12> "vy
 
