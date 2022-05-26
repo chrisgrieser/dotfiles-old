@@ -231,27 +231,6 @@
 					"to": [{ "key_code": "delete_forward"} ]
 				}
 			]
-		},
-		{
-			"description": "R-⇧: search selected text / open URL",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {"key_code": "right_shift"},
-					"to": [{"key_code": "right_shift" } ],
-					"to_if_alone": [
-						{
-							"key_code": "c",
-							"modifiers": ["command"]
-						},
-						{ "key_code": "vk_none", "hold_down_milliseconds": 50 },
-						{ "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | sed 's/ //g')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"}
-						],
-					"parameters": {
-						"basic.to_if_alone_timeout_milliseconds": 250
-					}
-				}
-			]
 		}
 	]
 }

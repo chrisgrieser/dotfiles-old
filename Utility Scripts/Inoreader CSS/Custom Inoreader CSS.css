@@ -26,7 +26,7 @@ body .reader_pane_view_style_0 .article_short_contents {
 
 .article_title_wrapper,
 .article_feed_title {
-	font-family: "Recursive";
+	font-family: "Avenir Next";
 	letter-spacing: -0.2px;
 }
 
@@ -44,7 +44,7 @@ body .reader_pane_view_style_0 .article_short_contents {
 /* opened article */
 .article_expanded .article_content.article_content.article_content {
 	line-height: 1.3;
-	font-family: "Crimson Pro";
+	font-family: "Garamond";
 	max-width: 1000px;
 	font-size: 1.7em;
 }
@@ -90,7 +90,7 @@ body .reader_pane_view_style_0 .article_short_contents {
 .article_expanded .article_sub_title.article_sub_title {
 	margin-bottom: 10px;
 	padding-right: 0;
-	font-family: "Crimson Pro" !important;
+	font-family: "Avenir Next" !important;
 }
 
 /* finish line */
