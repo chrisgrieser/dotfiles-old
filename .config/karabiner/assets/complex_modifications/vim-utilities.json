@@ -146,7 +146,7 @@
 			]
 		},
 		{
-			"description": "k+l (simultaneously): ↵",
+			"description": "k+l / f+j (simultaneously): ↵",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -154,6 +154,18 @@
 						"simultaneous": [
 						    {"key_code": "k"},
 						    {"key_code": "l"}
+						]
+					},
+					"to": [
+						{"key_code": "return_or_enter" }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+						    {"key_code": "f"},
+						    {"key_code": "j"}
 						]
 					},
 					"to": [
@@ -426,7 +438,7 @@
 			"manipulators": [
 				{
 					"type": "basic",
-					"from": {"key_code": "hyphen"},
+					"from": { "key_code": "hyphen" },
 					"conditions": [
 						{
 							"type": "input_source_if",
@@ -444,7 +456,7 @@
 				},
 				{
 					"type": "basic",
-					"from": {"key_code": "equal_sign"},
+					"from": { "key_code": "equal_sign" },
 					"conditions": [
 						{
 							"type": "input_source_if",
@@ -472,7 +484,7 @@
 							"input_sources": [{ "language": "^de$" }]
 						}
 					],
-					"to": [ {"key_code": "equal_sign"} ]
+					"to": [ {"key_code": "hyphen"} ]
 				}
 			]
 		},

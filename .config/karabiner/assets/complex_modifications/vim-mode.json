@@ -1,25 +1,26 @@
 {
-	"title": "Vim Mode",
+	"title": "▊ Vim Mode",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/vim-mode.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "L-⇧ (alone): Vim Mode",
+			"description": "▊ Vim Mode Trigger: L-⇧ (alone)",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {"key_code": "left_shift"},
 					"to": [{"key_code": "left_shift" } ],
 					"conditions": [
-						{"value": 0, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_unless", "name": "VIM_MODE"}
 					],
 					"parameters": {
 						"basic.to_if_alone_timeout_milliseconds": 250
 					},
 					"to_if_alone": [
-						{"set_variable": {"name": "VIM_MODE", "value": 1 } }
+						{"set_variable": {"name": "VIM_MODE", "value": 1 } },
+						{"set_notification_message": {"id": "vim-mode-notice", "text": "▊ Vim Mode"} }
 					]
 				},
 				{
@@ -28,7 +29,7 @@
 					"from": {"key_code": "left_shift"},
 					"to": [{"key_code": "left_shift" } ],
 					"conditions": [
-						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to_if_alone": [
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
@@ -38,7 +39,7 @@
 			]
 		},
 		{
-			"description": "Vim Mode (Highlights App, needs to be further top)",
+			"description": "▊ Vim Mode (Highlights App, needs to be further top)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -121,7 +122,7 @@
 			]
 		},
 		{
-			"description": "Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> äÄ<Space><S-Space>",
+			"description": "▊ Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> äÄ<Space><S-Space>",
 			"manipulators": [
 				{
 					"type": "basic",

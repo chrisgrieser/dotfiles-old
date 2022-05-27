@@ -165,10 +165,8 @@ nnoremap <M-Space> da]
 nnoremap <C-2> ysiw"
 vnoremap <C-2> S"
 
-nnoremap <C-[> ysiw]
-vnoremap <C-[> iwoiwS]
-nnoremap <C-]> ysiw]
-vnoremap <C-]> iwoiwS]
+nnoremap <C-0> ysiw]
+vnoremap <C-0> iwoiwS]
 
 nnoremap <C-8> ysiw)
 vnoremap <C-8> iwoiwS)

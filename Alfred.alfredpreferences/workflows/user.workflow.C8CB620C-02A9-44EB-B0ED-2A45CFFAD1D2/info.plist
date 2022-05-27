@@ -587,7 +587,7 @@
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Sublime User Folder/.neovintageousrc</string>
+				<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Sublime User Folder/.neovintageousrc</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
