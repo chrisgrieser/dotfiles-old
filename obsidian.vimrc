@@ -75,6 +75,10 @@ vmap <Down> <Nop>
 " Goto Mark
 nmap ö `
 
+" goto definiton ~= footnotes
+exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
+nmap gd :gotoFootnoteDefinition
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
@@ -205,6 +209,11 @@ nmap <C-w>v :splitVertical
 exmap splitHorizontal obcommand workspace:split-horizontal
 nmap <C-w>s :splitHorizontal
 
+exmap onlyThisWindow obcommand workspace:close-others
+nmap <C-w>o :onlyThisWindow
+exmap closeThisWindow obcommand workspace:close
+nmap <C-w>q :closeThisWindow
+
 """"""""""""""""""""""
 " < Folding
 """"""""""""""""""""""
@@ -218,13 +227,20 @@ nmap zR :unfoldall
 exmap foldall obcommand editor:fold-all
 nmap zM :foldall
 
+" more folding things available when using the "Creases" plugin
+" https://discord.com/channels/686053708261228577/716028884885307432/979141099878760449
+
 """"""""""""""""""""""
-" < Sneak / Lightspeed
+" < Sneak
 """"""""""""""""""""""
 " emulate vim-sneak
 exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
 nmap s :sneak
 nmap S :sneak
+
+" essentially vimium's f command
+exmap followLink obcommand mrj-jump-to-link:activate-jump-to-link
+nmap ,f :followLink
 
 """"""""""""""""""""""
 " < Sorting
@@ -251,7 +267,7 @@ nmap ? :obcommand
 " - U (as in changes in a line) does not work
 " - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
 " - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
-" - only `map`s supported, no support for nnoremap, inoremap, etc.
+" - only `map` supported, no support for nnoremap, inoremap, etc.
 " - `nnoremap` officially supported, but in practice buggy
 " - gp not implemented
 

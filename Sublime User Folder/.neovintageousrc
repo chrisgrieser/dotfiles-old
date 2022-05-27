@@ -8,7 +8,7 @@ let mapleader=,
 """"""""""""""""""""""
 " yank to system clipboard
 " set via setting: "vintageous_use_sys_clipboard": true,
-" set clipboard=unnamed115
+" set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 noremap <C-y> :reg<CR>
@@ -183,38 +183,21 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < Windows
 """"""""""""""""""""""
-nnoremap <C-w>h
 
-{
+" nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
+
 	"keys": ["super+alt+1"],
 	"command": "set_layout",
 	"args":
-	{
 		"cols": [0.0, 1.0],
 		"rows": [0.0, 1.0],
 		"cells": [[0, 0, 1, 1]]
-	}
-},
-{
-	"keys": ["super+alt+2"],
-	"command": "set_layout",
-	"args":
-	{
-		"cols": [0.0, 0.5, 1.0],
-		"rows": [0.0, 1.0],
-		"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-	}
-},
-{
 	"keys": ["super+alt+shift+2"],
 	"command": "set_layout",
 	"args":
-	{
 		"cols": [0.0, 1.0],
 		"rows": [0.0, 0.5, 1.0],
 		"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
-	}
-},
 
 
 """"""""""""""""""""""
