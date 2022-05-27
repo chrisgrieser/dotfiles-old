@@ -1,7 +1,7 @@
 """"""""""""""""""""""
 " < Leader
 """"""""""""""""""""""
-let mapleader=ß
+let mapleader=,
 
 """"""""""""""""""""""
 " < Clipboard
@@ -54,9 +54,6 @@ nnoremap L $
 vnoremap L $
 nnoremap J 6j
 nnoremap K 6k
-
-" no modifier key on German keyboard
-nnoremap , ;
 
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on

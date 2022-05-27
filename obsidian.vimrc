@@ -1,9 +1,9 @@
 """"""""""""""""""""""
 " < Leader
 """"""""""""""""""""""
-" let mapleader=ß
+" let mapleader=,
 " can't set leaders in Obsidian vim, so the
-" leaderkey is simply used consistently here
+" leader key is simply used consistently here
 
 """"""""""""""""""""""
 " Clipboard
@@ -57,9 +57,6 @@ vmap L $
 nmap J 6j
 nmap K 6k
 
-" no modifier key on German keyboard
-nmap , ;
-
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys
@@ -92,7 +89,6 @@ vmap M :mergelines
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
-nmap <S-BS> "_x
 vmap <BS> "_d
 
 " don't save small deletion in the register
@@ -133,12 +129,12 @@ nmap &§&" :.s/$/"/
 nmap &§&: :.s/$/:/
 " For the Markdown Two-Space Rule
 nmap &§&<Space> :.s/$/  /
-nmap ß. mz&§&.`z
-nmap ß, mz&§&,`z
-nmap ß; mz&§&;`z
-nmap ß" mz&§&"`z
-nmap ß: mz&§&:`z
-nmap ß<Space> mz&§&<Space>`z
+nmap ,. mz&§&.`z
+nmap ,, mz&§&,`z
+nmap ,; mz&§&;`z
+nmap ," mz&§&"`z
+nmap ,: mz&§&:`z
+nmap ,<Space> mz&§&<Space>`z
 
 " Remove last character from line
 nmap X mz$"_x`z
@@ -221,13 +217,13 @@ nmap S :sneak
 " < Sorting
 """"""""""""""""""""""
 " [s]ort [s]election
-vmap ßss :'<,'>sort
+vmap ,ss :'<,'>sort
 
 " [s]ort [g]lobally
-nmap ßsg :sort
+nmap ,sg :sort
 
 " [s]ort [p]aragraph
-nmap ßsp vipßss
+nmap ,sp vipßss
 
 """"""""""""""""""""""
 " < Misc

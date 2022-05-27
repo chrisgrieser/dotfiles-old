@@ -252,68 +252,8 @@
 			]
 		},
 		{
-			"description": "[]{}@^~: German layout as US layout",
+			"description": "{}@^~|: German to US layout",
 			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "5",
-						"modifiers": {"mandatory": ["option"] }
-					},
-					"conditions": [
-						{
-							"type": "input_source_if",
-							"input_sources": [{ "language": "^de$" }]
-						},
-						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
-								"^md\\.obsidian$",
-								"^com\\.sublimetext\\.4$"
-							]
-						}
-					],
-					"to": [
-						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
-						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
-						{ "key_code": "open_bracket" }
-					],
-					"to_after_key_up": [
-						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
-					]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "6",
-						"modifiers": {"mandatory": ["option"] }
-					},
-					"conditions": [
-						{
-							"type": "input_source_if",
-							"input_sources": [{ "language": "^de$" }]
-						},
-						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
-								"^md\\.obsidian$",
-								"^com\\.sublimetext\\.4$"
-							]
-						}
-					],
-					"to": [
-						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
-						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
-						{ "key_code": "close_bracket" }
-					],
-					"to_after_key_up": [
-						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
-					]
-				},
 				{
 					"type": "basic",
 					"from": {
@@ -328,8 +268,6 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
 							]
@@ -358,8 +296,6 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
 							]
@@ -388,8 +324,6 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
 							]
@@ -415,8 +349,6 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
 							]
@@ -445,8 +377,6 @@
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
-								"^io\\.alacritty$",
-								"^com\\.apple\\.Terminal$",
 								"^md\\.obsidian$",
 								"^com\\.sublimetext\\.4$"
 							]
@@ -460,6 +390,89 @@
 					"to_after_key_up": [
 						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
 					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "7",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						},
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"^md\\.obsidian$",
+								"^com\\.sublimetext\\.4$"
+							]
+						}
+					],
+					"to": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
+						{ "key_code": "non_us_pound", "modifiers": ["shift"] }
+					],
+					"to_after_key_up": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+					]
+				}
+			]
+		},
+		{
+			"description": "ß´ → [], ⌥+s → ß (+ German to US Layout)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {"key_code": "hyphen"},
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						}
+					],
+					"to": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
+						{ "key_code": "open_bracket" }
+					],
+					"to_after_key_up": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "equal_sign"},
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						}
+					],
+					"to": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.US$"} },
+						{ "key_code": "vk_none", "hold_down_milliseconds": 20 },
+						{ "key_code": "close_bracket" }
+					],
+					"to_after_key_up": [
+						{ "select_input_source": {"input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "s",
+						"modifiers": {"mandatory": ["option"]}
+					},
+					"conditions": [
+						{
+							"type": "input_source_if",
+							"input_sources": [{ "language": "^de$" }]
+						}
+					],
+					"to": [ {"key_code": "equal_sign"} ]
 				}
 			]
 		},

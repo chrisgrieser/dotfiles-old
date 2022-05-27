@@ -6,15 +6,14 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "2x L-⇧: Vim Mode",
+			"description": "L-⇧ (alone): Vim Mode",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {"key_code": "left_shift"},
 					"to": [{"key_code": "left_shift" } ],
 					"conditions": [
-						{"value": 1, "type": "variable_unless", "name": "VIM_MODE"},
-						{"value": 2, "type": "variable_unless", "name": "VIM_MODE"}
+						{"value": 0, "type": "variable_if", "name": "VIM_MODE"},
 					],
 					"parameters": {
 						"basic.to_if_alone_timeout_milliseconds": 250
@@ -25,28 +24,11 @@
 				},
 				{
 					"type": "basic",
+					"description": "2x L-⇧: Exit Vim Mode",
 					"from": {"key_code": "left_shift"},
 					"to": [{"key_code": "left_shift" } ],
 					"conditions": [
-						{"value": 0, "type": "variable_unless", "name": "VIM_MODE"},
-						{"value": 2, "type": "variable_unless", "name": "VIM_MODE"}
-					],
-					"parameters": {
-						"basic.to_if_alone_timeout_milliseconds": 250
-					},
-					"to_if_alone": [
-						{"set_variable": {"name": "VIM_MODE", "value": 2 } },
-						{"set_notification_message": {"id": "vim-mode-notice", "text": "▊ Vim Mode"} }
-					]
-				},
-				{
-					"type": "basic",
-					"description": "3x L-⇧: Exit Vim Mode",
-					"from": {"key_code": "left_shift"},
-					"to": [{"key_code": "left_shift" } ],
-					"conditions": [
-						{"value": 0, "type": "variable_unless", "name": "VIM_MODE"},
-						{"value": 1, "type": "variable_unless", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
 					],
 					"to_if_alone": [
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
@@ -62,7 +44,7 @@
 					"type": "basic",
 					"from": {"key_code": "j" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": ["^net\\.highlightsapp\\.universal$" ]
@@ -90,7 +72,7 @@
 					"type": "basic",
 					"from": {"key_code": "k" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": ["^net\\.highlightsapp\\.universal$" ]
@@ -121,7 +103,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "down_arrow", "modifiers": ["option"] } ]
 				},
@@ -132,7 +114,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "up_arrow", "modifiers": ["option"] } ]
 				}
@@ -170,7 +152,7 @@
 					"description": "i: Insert Mode (Exit Vim Mode)",
 					"from": {"key_code": "i"},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
@@ -182,7 +164,7 @@
 					"description": "a: Insert Mode (Exit Vim Mode)",
 					"from": {"key_code": "a"},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
@@ -196,7 +178,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "left_arrow", "modifiers": ["command"] },
@@ -211,7 +193,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["command"] },
@@ -223,7 +205,7 @@
 					"type": "basic",
 					"from": {"key_code": "j" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "down_arrow" } ]
 				},
@@ -231,7 +213,7 @@
 					"type": "basic",
 					"from": {"key_code": "k" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "up_arrow" } ]
 				},
@@ -239,7 +221,7 @@
 					"type": "basic",
 					"from": {"key_code": "l" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "right_arrow" } ]
 				},
@@ -247,7 +229,7 @@
 					"type": "basic",
 					"from": {"key_code": "h" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "left_arrow" } ]
 				},
@@ -255,7 +237,7 @@
 					"type": "basic",
 					"from": {"key_code": "e" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "right_arrow", "modifiers": ["option"] } ]
 				},
@@ -263,7 +245,7 @@
 					"type": "basic",
 					"from": {"key_code": "w" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "right_arrow", "modifiers": ["option"] } ]
 				},
@@ -271,7 +253,7 @@
 					"type": "basic",
 					"from": {"key_code": "b" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "left_arrow", "modifiers": ["option"] } ]
 				},
@@ -279,7 +261,7 @@
 					"type": "basic",
 					"from": {"key_code": "x" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "delete_or_backspace"} ]
 				},
@@ -290,7 +272,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["command", "shift"] },
@@ -306,7 +288,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["command", "shift"] },
@@ -320,7 +302,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "left_arrow", "modifiers": ["command"] } ]
 				},
@@ -331,7 +313,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "right_arrow", "modifiers": ["command"] } ]
 				},
@@ -339,7 +321,7 @@
 					"type": "basic",
 					"from": {"key_code": "o"},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["command"] },
@@ -355,7 +337,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "left_arrow", "modifiers": ["command"] },
@@ -372,7 +354,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [{"key_code": "down_arrow", "modifiers": ["command"] } ]
 				},
@@ -383,7 +365,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "down_arrow"},
@@ -401,7 +383,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "up_arrow"},
@@ -417,7 +399,7 @@
 					"description": "Space: ciw",
 					"from": {"key_code": "spacebar" },
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"set_variable": {"name": "VIM_MODE", "value": 0}},
@@ -434,7 +416,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"}
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"}
 					],
 					"to": [
 						{"key_code": "right_arrow", "modifiers": ["option"] },
@@ -447,7 +429,7 @@
 					"description": "ä (German Keyboard): Transpose Chars",
 					"from": {"key_code": "quote"},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
 						{"type": "input_source_if", "input_sources": [{ "language": "^de$" }] }
 					],
 					"to": [
@@ -468,7 +450,7 @@
 						"modifiers": {"mandatory": ["shift"]}
 					},
 					"conditions": [
-						{"value": 2, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 1, "type": "variable_if", "name": "VIM_MODE"},
 						{"type": "input_source_if", "input_sources": [{ "language": "^de$" }] }
 					],
 					"to": [

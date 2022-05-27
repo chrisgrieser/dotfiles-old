@@ -6,25 +6,8 @@
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "One Stroke ^`´~ (German Layout)",
+			"description": "One Stroke ^`~ (German Layout)",
 			"manipulators": [
-				{
-					"description": "forward-tick",
-					"type": "basic",
-					"from": {
-						"key_code": "equal_sign"
-					},
-					"to": [
-						{ "key_code": "equal_sign" },
-						{ "key_code": "spacebar" }
-					],
-					"conditions": [
-						{
-							"type": "input_source_if",
-							"input_sources": [{ "language": "^de$" } ]
-						}
-					]
-				},
 				{
 					"description": "backtick",
 					"type": "basic",
@@ -223,7 +206,7 @@
 			]
 		},
 		{
-			"description": "Quicker MacPass",
+			"description": "MacPass: ⌘+c/u → ⌘⌥+c/⌘⇧+c, then ⌘+h",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -258,19 +241,6 @@
 						{"key_code": "c", "modifiers": ["command", "shift"] },
 						{"key_code": "h", "modifiers": ["command"] }
 					]
-				}
-			]
-		},
-		{
-			"description": "⇧+⌫: ⌦",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "delete_or_backspace",
-						"modifiers": {"mandatory": ["shift"] }
-					},
-					"to": [{ "key_code": "delete_forward"} ]
 				}
 			]
 		}
