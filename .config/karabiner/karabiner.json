@@ -3707,7 +3707,7 @@
                         ]
                     },
                     {
-                        "description": "Twitterific: Scroll Up Properly",
+                        "description": "Twitterrific: Scroll Up Properly",
                         "manipulators": [
                             {
                                 "from": {
@@ -3726,7 +3726,7 @@
                                             "set_mouse_cursor_position": {
                                                 "screen": 0,
                                                 "x": "98%",
-                                                "y": "20%"
+                                                "y": "10%"
                                             }
                                         }
                                     },
@@ -3752,24 +3752,48 @@
                                         ]
                                     },
                                     {
-                                        "hold_down_milliseconds": 200,
+                                        "hold_down_milliseconds": 50,
                                         "key_code": "vk_none"
                                     },
                                     {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "50%",
-                                                "y": "50%"
-                                            }
-                                        }
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
                                     },
                                     {
-                                        "hold_down_milliseconds": 200,
+                                        "hold_down_milliseconds": 100,
                                         "key_code": "vk_none"
                                     },
                                     {
-                                        "pointing_button": "button1"
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "needed to make jk work",
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "semicolon",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
                                     }
                                 ],
                                 "type": "basic"
