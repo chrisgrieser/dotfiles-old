@@ -21,11 +21,6 @@
 	// Wrap
 	{ "keys": ["super+9", "w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
 
-	// Clone View
-	{ "keys": ["super+9", "c"], "command": "clone_file", "args": {"add_to_selection": true} },
-	// Split Vertically
-	{ "keys": ["super+9", "s", "p"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
-
 	// Change Color Scheme
 	{ "keys": ["super+9", "t"], "command": "select_color_scheme" },
 	// Installation / Uninstallation

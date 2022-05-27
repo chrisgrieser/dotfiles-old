@@ -156,6 +156,7 @@
 						    {"key_code": "l"}
 						]
 					},
+					"parameters": { "simultaneous_threshold_milliseconds": 350 },
 					"to": [
 						{"key_code": "return_or_enter" }
 					]
@@ -168,6 +169,7 @@
 						    {"key_code": "j"}
 						]
 					},
+					"parameters": { "simultaneous_threshold_milliseconds": 350 },
 					"to": [
 						{"key_code": "return_or_enter" }
 					]

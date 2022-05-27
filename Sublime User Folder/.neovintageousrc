@@ -183,22 +183,8 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < Windows
 """"""""""""""""""""""
-
-" nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
-
-	"keys": ["super+alt+1"],
-	"command": "set_layout",
-	"args":
-		"cols": [0.0, 1.0],
-		"rows": [0.0, 1.0],
-		"cells": [[0, 0, 1, 1]]
-	"keys": ["super+alt+shift+2"],
-	"command": "set_layout",
-	"args":
-		"cols": [0.0, 1.0],
-		"rows": [0.0, 0.5, 1.0],
-		"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
-
+" [C]lone View (NOT close)
+nnoremap <C-w>c :CloneFile add_to_selection=true<CR>
 
 """"""""""""""""""""""
 " < Sorting

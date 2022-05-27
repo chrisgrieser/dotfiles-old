@@ -4824,7 +4824,7 @@
                         ]
                     },
                     {
-                        "description": "k+l/f+j (simultaneously): ↵",
+                        "description": "k+l / f+j (simultaneously): ↵",
                         "manipulators": [
                             {
                                 "from": {
@@ -4836,6 +4836,9 @@
                                             "key_code": "l"
                                         }
                                     ]
+                                },
+                                "parameters": {
+                                    "simultaneous_threshold_milliseconds": 350
                                 },
                                 "to": [
                                     {
@@ -4854,6 +4857,9 @@
                                             "key_code": "j"
                                         }
                                     ]
+                                },
+                                "parameters": {
+                                    "simultaneous_threshold_milliseconds": 350
                                 },
                                 "to": [
                                     {
