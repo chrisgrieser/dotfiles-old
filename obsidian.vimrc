@@ -131,11 +131,15 @@ nmap &§&, :.s/$/,/
 nmap &§&; :.s/$/;/
 nmap &§&" :.s/$/"/
 nmap &§&: :.s/$/:/
+" For the Markdown Two-Space Rule
+nmap &§&<Space> :.s/$/  /
 nmap ß. mz&§&.`z
 nmap ß, mz&§&,`z
 nmap ß; mz&§&;`z
 nmap ß" mz&§&"`z
 nmap ß: mz&§&:`z
+nmap ß<Space> mz&§&<Space>`z
+
 " Remove last character from line
 nmap X mz$"_x`z
 
@@ -149,7 +153,7 @@ nmap Q ci"
 nmap <Space> "_ciw
 vmap <Space> "vc
 " Delete Word/Selection
-nmap <S-Space> "_daw
+nmap <S-Space> "_daW
 vmap <S-Space> "vd
 
 " Delete Pandoc Citation

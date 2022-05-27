@@ -123,12 +123,14 @@ nnoremap Ä dawelpb
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
-" Add ,;.": to end of line
+" Append ,;.": to end of line
 nnoremap <leader>, mzA,<Esc>`z
 nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
+" For the Markdown Two-Space Rule
+nnoremap <leader><Space> mzA<Space><Space><Esc>`z
 " Remove last character from line
 nnoremap X mz$"_x`z
 
@@ -142,7 +144,7 @@ nnoremap Q ci"
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
 " Delete Word/Selection
-nnoremap <S-Space> "_daw
+nnoremap <S-Space> "_daW
 vnoremap <S-Space> "d
 
 " Delete Array
