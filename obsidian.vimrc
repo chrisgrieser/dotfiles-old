@@ -147,12 +147,12 @@ nmap Q ci"
 nmap <Space> "_ciw
 vmap <Space> "vc
 " Delete Word/Selection
-nmap <S-Space> "_daW
+nmap <S-Space> "_daw
 vmap <S-Space> "vd
 
 " Delete Pandoc Citation
 " Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
-nmap <S-F12> da]"_dh
+nmap <S-F12> da]
 
 """"""""""""""""""""""
 " < Switch Modes

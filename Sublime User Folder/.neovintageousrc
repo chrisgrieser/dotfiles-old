@@ -134,18 +134,18 @@ nnoremap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonix: [Q]uotation Marks
+" mnemonic: [Q]uotation Marks
 nnoremap Q ci"
 
 " Change Word/Selection
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
 " Delete Word/Selection
-nnoremap <S-Space> "_daW
-vnoremap <S-Space> "vd
+nnoremap <S-Space> "_daw
+vnoremap <S-Space> "d
 
 " Delete Array
-nnoremap <M-Space> da]"_dh
+nnoremap <M-Space> da]
 
 """"""""""""""""""""""
 " < Switch Modes
