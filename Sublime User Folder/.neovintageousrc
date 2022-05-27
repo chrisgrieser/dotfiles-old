@@ -125,8 +125,7 @@ nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
-" For the Markdown Two-Space Rule
-nnoremap <leader><Space> mzA<Space><Space><Esc>`z
+
 " Remove last character from line
 nnoremap X mz$"_x`z
 

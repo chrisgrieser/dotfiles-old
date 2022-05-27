@@ -140,20 +140,39 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>👤 Toggle Headless Mode</string>
+				<string>🔎 Search: {query}</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
+			<string>C0261997-8C06-4E90-974E-92FBB6D6CA2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://twitter.com/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5FD4196A-573D-43DB-A151-FB1463C91336</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -197,46 +216,6 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tw</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔎 Search: {query}</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C0261997-8C06-4E90-974E-92FBB6D6CA2D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://twitter.com/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>5FD4196A-573D-43DB-A151-FB1463C91336</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -258,19 +237,21 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>tw</string>
+				<key>subtext</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://twitter.com/settings/muted_keywords</string>
-				<key>utf8</key>
-				<true/>
+				<key>text</key>
+				<string>👤 Toggle Headless Mode</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
+			<string>EA755C6D-7A61-45F9-B471-CBD2C4639D3C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -303,14 +284,14 @@ open -a "Twitterrific"</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>twitterrific://current/post?message={query}</string>
+				<string>https://twitter.com/settings/muted_keywords</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>A0390445-3124-4179-A03B-217403483ADE</string>
+			<string>A07F7BC9-932C-4F62-9B33-A34781D66171</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -318,20 +299,20 @@ open -a "Twitterrific"</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>✍️ New Tweet</string>
+				<string>❓Shortcuts</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E93C6F35-34EC-4FD7-A64E-8348959F7117</string>
+			<string>512210D7-D938-4575-B2B9-3A29F768866D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -362,20 +343,20 @@ open -a "Twitterrific"</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>tw</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>❓Shortcuts</string>
+				<string>✍️ New Tweet</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>512210D7-D938-4575-B2B9-3A29F768866D</string>
+			<string>E93C6F35-34EC-4FD7-A64E-8348959F7117</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -387,14 +368,14 @@ open -a "Twitterrific"</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://twitter.com/notifications</string>
+				<string>twitterrific://current/post?message={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>B6151B85-7052-4FAE-A01B-8963B1B509D2</string>
+			<string>A0390445-3124-4179-A03B-217403483ADE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -422,21 +403,19 @@ open -a "Twitterrific"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>tw followers</string>
-				<key>subtext</key>
+				<key>browser</key>
 				<string></string>
-				<key>text</key>
-				<string>👥 New Followers</string>
-				<key>withspace</key>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://twitter.com/notifications</string>
+				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>13CC1BC1-8472-4BBE-BE5F-D2B8A13443D4</string>
+			<string>B6151B85-7052-4FAE-A01B-8963B1B509D2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -456,6 +435,27 @@ open -a "Twitterrific"</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>E286DBA7-2559-48DF-800B-A66A6523BB93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tw followers</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>👥 New Followers</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>13CC1BC1-8472-4BBE-BE5F-D2B8A13443D4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -534,7 +534,7 @@ open -a "Twitterrific"</string>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>185</integer>
 		</dict>
 		<key>5FD4196A-573D-43DB-A151-FB1463C91336</key>
 		<dict>
@@ -603,7 +603,7 @@ open -a "Twitterrific"</string>
 			<key>xpos</key>
 			<integer>200</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>185</integer>
 		</dict>
 		<key>D24BD568-15C4-4DDD-99AE-F3DFFDD3E0A2</key>
 		<dict>

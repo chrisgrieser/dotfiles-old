@@ -130,15 +130,11 @@ nmap &§&, :.s/$/,/
 nmap &§&; :.s/$/;/
 nmap &§&" :.s/$/"/
 nmap &§&: :.s/$/:/
-" For the Markdown Two-Space Rule
-nmap &§&§ :.s/$/  /
-nmap # :.s/$/  /
 nmap ,. mz&§&.`z
 nmap ,, mz&§&,`z
 nmap ,; mz&§&;`z
 nmap ," mz&§&"`z
 nmap ,: mz&§&:`z
-nmap ,# mz&§&§`z
 
 " Remove last character from line
 nmap X mz$"_x`z
