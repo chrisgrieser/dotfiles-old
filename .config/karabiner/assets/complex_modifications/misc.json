@@ -124,16 +124,43 @@
 					"from": { "key_code": "f3" },
 					"to": [
 						{"shell_command": "osascript -e 'tell application \"Twitterrific\" to activate'" },
-						{"key_code": "tab", "modifiers": ["command"] },
-						{"key_code": "tab", "modifiers": ["command"] },
-						{"key_code": "tab", "modifiers": ["command"] }
-					],
-					"conditions": [
+						{"key_code": "vk_none", "hold_down_milliseconds": 30 },
 						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": ["^com\\.hicknhacksoftware\\.MacPass$" ]
+							"software_function": {
+								"set_mouse_cursor_position": {
+									"x": "98%",
+									"y": "20%",
+									"screen": 0
+								}
+							}
+						},
+						{"pointing_button": "button1"},
+						{"key_code": "k", "modifiers": ["command"] },
+						{"key_code": "j", "modifiers": ["command"] },
+						{"key_code": "1", "modifiers": ["command"] },
+						{"key_code": "vk_none", "hold_down_milliseconds": 40 },
+						{
+							"software_function": {
+								"set_mouse_cursor_position": {
+									"x": "50%",
+									"y": "50%",
+									"screen": 0
+								}
+							}
+						},
+						{"key_code": "vk_none", "hold_down_milliseconds": 30 },
+						{"pointing_button": "button1"},
+						{"key_code": "vk_none", "hold_down_milliseconds": 30 },
+						{
+							"software_function": {
+								"set_mouse_cursor_position": {
+									"x": "100%",
+									"y": "80%",
+									"screen": 0
+								}
+							}
 						}
-					],
+					]
 				}
 			]
 		},

@@ -29,7 +29,10 @@
 	] },
 
 	// Clone View
-	{ "keys": ["super+forward_slash", "s", "p"], "command": "clone_file", "args": {"add_to_selection": true} },
+	{ "keys": ["super+forward_slash", "c"], "command": "clone_file", "args": {"add_to_selection": true} },
+	// Split Vertically
+	{ "keys": ["super+forward_slash", "s", "p"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
+
 	// Change Color Scheme
 	{ "keys": ["super+forward_slash", "t"], "command": "select_color_scheme" },
 	// Installation / Uninstallation
