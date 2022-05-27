@@ -74,7 +74,6 @@ nnoremap ö `
 " rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
 nnoremap % :MoveTo to=brackets<CR>
 
-
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
@@ -103,7 +102,7 @@ nnoremap x "_x
 " Undo/Redo consistently on one key
 noremap U <C-r>
 
-" allows Double Enter to add new line and indent
+" allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
 " Case Switch
@@ -152,7 +151,6 @@ nnoremap <M-Space> da]
 """"""""""""""""""""""
 " implemented via preference 'vintageous_i_escape_jj'
 " inoremap jj <Esc>
-" rnoremap jj <Esc>
 
 """"""""""""""""""""""
 " < Insert Mode

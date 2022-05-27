@@ -117,6 +117,27 @@
 			]
 		},
 		{
+			"description": "Twitterific: Scroll Up Properly",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": { "key_code": "f3" },
+					"to": [
+						{"shell_command": "osascript -e 'tell application \"Twitterrific\" to activate'" },
+						{"key_code": "tab", "modifiers": ["command"] },
+						{"key_code": "tab", "modifiers": ["command"] },
+						{"key_code": "tab", "modifiers": ["command"] }
+					],
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": ["^com\\.hicknhacksoftware\\.MacPass$" ]
+						}
+					],
+				}
+			]
+		},
+		{
 			"description": "Inoreader: v opens in background, switch jk & np",
 			"manipulators": [
 				{

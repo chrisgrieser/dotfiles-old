@@ -221,7 +221,7 @@ vmap ßss :'<,'>sort
 nmap ßsg :sort
 
 " [s]ort [p]aragraph
-nmap ßsp vip:sort
+nmap ßsp vipßss
 
 """"""""""""""""""""""
 " < Misc
