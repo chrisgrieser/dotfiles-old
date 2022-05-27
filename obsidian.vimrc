@@ -97,23 +97,11 @@ vmap <BS> "_d
 " can't use "_x, cause Obsidian doesn't support noremap
 nmap x "_dl
 
-" allows Double Enter to add new line and indent
+" allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
 
 " Undo/Redo consistently on one key
 map U <C-r>
-
-" Change Word/Selection
-nmap <Space> "_ciw
-vmap <Space> "vc
-" Delete Word/Selection
-nmap <S-Space> "_daW
-vmap <S-Space> "vd
-
-" Yank Word/Selection
-" Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
-nmap <S-F12> yiw
-vmap <S-F12> "vy
 
 " Case Switch
 nmap ü ~h
@@ -152,11 +140,19 @@ nmap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
+" mnemonic: [Q]uotation Marks
+nmap Q ci"
 
-" mnemonic: [R]ectangular Brackets
-nmap R i]
-" mnemonix: [Q]uotation Marks
-nmap Q i"
+" Change Word/Selection
+nmap <Space> "_ciw
+vmap <Space> "vc
+" Delete Word/Selection
+nmap <S-Space> "_daW
+vmap <S-Space> "vd
+
+" Delete Pandoc Citation
+" Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
+nmap <S-F12> da]"_dh
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -218,9 +214,6 @@ nmap S :sneak
 """"""""""""""""""""""
 " < Sorting
 """"""""""""""""""""""
-""""""""""""""""""""""
-" < Sorting
-""""""""""""""""""""""
 " [s]ort [s]election
 vmap ßss :'<,'>sort
 
@@ -236,9 +229,6 @@ nmap ßsp vipß
 " help
 nmap ? :obcommand
 
-" not available via vim in Obsidian
-"set relativenumber
-
 """"""""""""""""""""""""
 " < OBSIDIAN LIMITATIONS
 """"""""""""""""""""""""
@@ -253,9 +243,8 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö Z
-" § ! & ° ´
-" rarely used: 0 #
+" Ö § ! & ° ´
+" rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
-" funktioniert <Ins>/<Insert> ?
-" Esc-key zu F17 remappen?
+" maybe <Ins>/<Insert>?
+" remap <Esc> to F17?

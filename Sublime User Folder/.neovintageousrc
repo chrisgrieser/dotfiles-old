@@ -106,16 +106,6 @@ noremap U <C-r>
 " allows Double Enter to add new line and indent
 nnoremap <CR> A
 
-" Change Word/Selection
-nnoremap <Space> "_ciw
-vnoremap <Space> "vc
-" Delete Word/Selection
-nnoremap <S-Space> "_daW
-vnoremap <S-Space> "vd
-" Yank Word/Selection
-nnoremap <M-Space> yiw
-vnoremap <M-Space> "vy
-
 " Case Switch
 nnoremap ü ~h
 " Titlecase (Abolish Plugin)
@@ -144,10 +134,18 @@ nnoremap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [R]ectangular Brackets
-onoremap R i]
 " mnemonix: [Q]uotation Marks
-onoremap Q i"
+nnoremap Q ci"
+
+" Change Word/Selection
+nnoremap <Space> "_ciw
+vnoremap <Space> "vc
+" Delete Word/Selection
+nnoremap <S-Space> "_daW
+vnoremap <S-Space> "vd
+
+" Delete Array
+nnoremap <M-Space> da]"_dh
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -219,9 +217,8 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö Z
-" § ! & ° ´
-" rarely used: 0 #
+" Ö § ! & ° ´
+" rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
-" funktioniert <Ins>/<Insert> ?
-" Esc-key zu F17 remappen?
+" maybe <Ins>/<Insert>?
+" remap <Esc> to F17?
