@@ -25,8 +25,10 @@ nmap P "0p
 " < Search
 """"""""""""""""""""""
 " search w/o having to press enter
-set incsearch
 set ignorecase
+set smartcase
+set incsearch
+set hlsearch
 
 " no modifier key for jumping to next word
 nmap + *

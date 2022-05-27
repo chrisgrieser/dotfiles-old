@@ -23,8 +23,10 @@ nnoremap P "0p
 " < Search
 """"""""""""""""""""""
 " search w/o having to press enter
-set incsearch
 set ignorecase
+set smartcase
+set incsearch
+set hlsearch
 
 " no modfier key for jumping to next word
 nnoremap + *

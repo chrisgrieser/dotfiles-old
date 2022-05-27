@@ -21,9 +21,6 @@ set tabstop=3
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=7
 
-" Ignore capital letters during search.
-set ignorecase
-
 " Show the mode you are on the last line.
 set showmode
 
@@ -33,7 +30,10 @@ set showcmd
 " Show matching words during a search.
 set showmatch
 
-" Use highlighting when doing a search.
+" search options
+set ignorecase
+set smartcase
+set incsearch
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
