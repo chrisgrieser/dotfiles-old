@@ -185,7 +185,7 @@ imap <C-k> <Esc>C
 imap <C-j> <Esc>c^
 
 """"""""""""""""""""""
-" < Tab Switching
+" < Tabs/Window
 """"""""""""""""""""""
 " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
 " requires Cycle Through Panes Plugins https://obsidian.md/plugins?id=cycle-through-panes
@@ -194,14 +194,23 @@ nmap gt :tabnext
 exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
+exmap focusRight obcommand editor:focus-right
+nmap <C-w>l :focusRight
+exmap focusLeft obcommand editor:focus-left
+nmap <C-w>h :focusLeft
+exmap focusTop obcommand editor:focus-top
+nmap <C-w>k :focusTop
+exmap focusBottom obcommand editor:focus-bottom
+nmap <C-w>j :focusBottom
+
+
 """"""""""""""""""""""
-" < Tab Folding
+" < Folding
 """"""""""""""""""""""
 " Emulate Folding https://vimhelp.org/fold.txt.html#fold-commands
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
 nmap zc :togglefold
-nmap za :togglefold
 
 exmap unfoldall obcommand editor:unfold-all
 nmap zR :unfoldall

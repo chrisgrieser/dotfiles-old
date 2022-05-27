@@ -8,7 +8,7 @@ let mapleader=,
 """"""""""""""""""""""
 " yank to system clipboard
 " set via setting: "vintageous_use_sys_clipboard": true,
-" set clipboard=unnamed
+" set clipboard=unnamed115
 
 " show register (i.e., clipboard history)
 noremap <C-y> :reg<CR>
@@ -176,6 +176,13 @@ nnoremap <C-9> ysiw)
 vnoremap <C-9> iwoiwS)
 
 """"""""""""""""""""""
+" < not needed
+""""""""""""""""""""""
+" Tabs, Windows, Folding,
+" and Sneak already built in
+
+
+""""""""""""""""""""""
 " < Sorting
 """"""""""""""""""""""
 " [s]ort [s]election
@@ -201,7 +208,7 @@ noremap ? :help nv<CR>
 """""""""""""""""""""""""""""
 " - Normal `map` (as opposed to noremap) is not supported
 "   any i command 🙈
-" - as opposed to Obsdian, excommands (:help) need to be
+" - as opposed to Obsdian, excommands (e.g. :help) need to be
 "   confirmed/ended with an <CR> when done in the vimrc
 " - macros are not saved to a register
 " - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810

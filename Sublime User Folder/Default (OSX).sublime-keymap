@@ -109,6 +109,18 @@
 	] },
 
 	// imap vv <Esc>v (quick visual mode)
+	{"keys": ["ctrl+y"], "command": "chain",
+		"args": {
+			"commands": [
+				["nv_enter_normal_mode"],
+				["nv_feed_key", {"key": "<C-y>"}],
+				["nv_feed_key", {"key": "i"}],
+			]
+		},
+		"context": [{ "key": "vi_insert_mode_aware" } ]
+	},
+
+	// imap vv <Esc>v (quick visual mode)
 	{"keys": ["v", "v"], "command": "chain",
 		"args": {
 			"commands": [
@@ -116,9 +128,7 @@
 				["nv_feed_key", {"key": "v"}],
 			]
 		},
-		"context": [
-			{ "key": "vi_insert_mode_aware" }
-		]
+		"context": [{ "key": "vi_insert_mode_aware" } ]
 	},
 
 	// imap VV <Esc>V (quick visual line mode)
@@ -129,9 +139,7 @@
 				["nv_feed_key", {"key": "V"}],
 			]
 		},
-		"context": [
-			{ "key": "vi_insert_mode_aware" }
-		]
+		"context": [{ "key": "vi_insert_mode_aware" } ]
 	},
 
 	// Kill line, imap <C-k> <Esc>C
