@@ -19,7 +19,7 @@
 						{
 							"type": "frontmost_application_unless",
 							"file_paths": [
-								"bin/alacritty$",
+								"alacritty$",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
@@ -36,7 +36,7 @@
 						{
 							"type": "frontmost_application_unless",
 							"file_paths": [
-								"bin/alacritty$",
+								"alacritty$",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
@@ -56,7 +56,7 @@
 						{
 							"type": "frontmost_application_if",
 							"file_paths": [
-								"bin/alacritty$",
+								"alacritty$",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
@@ -76,7 +76,7 @@
 						{
 							"type": "frontmost_application_if",
 							"file_paths": [
-								"bin/alacritty$",
+								"alacritty$",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
