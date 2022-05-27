@@ -135,7 +135,7 @@
 	// White space & Control Characters
 	"draw_unicode_white_space": "all", // change to fix white space display for `tree` output
 	"control_character_style": "hex",
-	"draw_white_space": ["selection", "leading_mixed", "isolated_mixed"],
+	"draw_white_space": ["selection", "leading_mixed", "isolated_mixed", "trailing_all"],
 
 	// Cursor
 	"block_caret": false,
