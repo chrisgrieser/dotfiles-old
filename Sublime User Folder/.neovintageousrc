@@ -92,7 +92,6 @@ noremap M J
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nnoremap <BS> h"_x
-nnoremap <S-BS> "_x
 vnoremap <BS> "_d
 
 " don't save small deletion in the register
@@ -166,10 +165,10 @@ nnoremap <M-Space> da]
 nnoremap <C-2> ysiw"
 vnoremap <C-2> S"
 
-nnoremap <C-5> ysiw]
-vnoremap <C-5> iwoiwS]
-nnoremap <C-6> ysiw]
-vnoremap <C-6> iwoiwS]
+nnoremap <C-[> ysiw]
+vnoremap <C-[> iwoiwS]
+nnoremap <C-]> ysiw]
+vnoremap <C-]> iwoiwS]
 
 nnoremap <C-8> ysiw)
 vnoremap <C-8> iwoiwS)
@@ -201,11 +200,9 @@ noremap ? :help nv<CR>
 " < NEOVINTAGEOUS LIMITATIONS
 """""""""""""""""""""""""""""
 " - Normal `map` (as opposed to noremap) is not supported
-" - onoremap seems a little buggy, `onoremap i2 i"` blocks
 "   any i command 🙈
 " - as opposed to Obsdian, excommands (:help) need to be
-"   confirmed with an <CR>
-" - % does not work https://github.com/NeoVintageous/NeoVintageous/issues/825
+"   confirmed/ended with an <CR> when done in the vimrc
 " - macros are not saved to a register
 " - gi does not work https://github.com/NeoVintageous/NeoVintageous/issues/810
 
@@ -216,7 +213,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö § ! & ° ´
+" Ö § ! & °
 " rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
