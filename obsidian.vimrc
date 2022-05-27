@@ -200,6 +200,10 @@ nmap <C-w>k :focusTop
 exmap focusBottom obcommand editor:focus-bottom
 nmap <C-w>j :focusBottom
 
+exmap splitVertical obcommand workspace:split-vertical
+nmap <C-w>v :splitVertical
+exmap splitHorizontal obcommand workspace:split-horizontal
+nmap <C-w>s :splitHorizontal
 
 """"""""""""""""""""""
 " < Folding

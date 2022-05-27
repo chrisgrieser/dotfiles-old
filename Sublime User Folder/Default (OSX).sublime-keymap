@@ -20,13 +20,6 @@
 
 	// Wrap
 	{ "keys": ["super+9", "w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-	{ "keys": ["super+9", "f"], "command": "unfold_all" },
-
-	// LSP: Goto Definition
-	{ "keys": ["super+9", "g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
-		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
-		{"key": "auto_complete_visible", "operator": "equal", "operand": false }
-	] },
 
 	// Clone View
 	{ "keys": ["super+9", "c"], "command": "clone_file", "args": {"add_to_selection": true} },
@@ -173,11 +166,19 @@
 		{ "key": "panel_visible", "operand": false }
 	] },
 
+	//---------------------------------------------------------------------------
+
 	// Intra-File Navigation via goto or table of comments
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 	{ "keys": ["super+k"], "command": "goto_comment", "context": [
 		{ "key": "selector", "operator": "not_equal", "operand": "text.html.markdown" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
+	] },
+
+	// LSP: Goto Definition
+	{ "keys": ["ctrl+g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
+		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
+		{"key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
 
 	// Sublime Linter Navigation
@@ -293,9 +294,6 @@
 		{ "key": "terminus_view" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
-
-	// Focus Neighboring group
-	{ "keys": ["shift+alt+super+ctrl+tab"], "command": "focus_neighboring_group", "args": {"forward": false} },
 
 	// Open URL
 	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },

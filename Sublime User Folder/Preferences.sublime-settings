@@ -19,16 +19,17 @@
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
-	    "<C-p>": false, // copy file path
-	    "<C-n>": false, // copy file name
-	    "<C-j>": false, // kill line
-	    "<C-k>": false, // kill line backwards
-	    "<C-r>": false, // rename file
-	    "<C-t>": false, // transpose → Sublime built-in command
-	    "<C-h>": false, // go to BOL
-	    "<C-l>": false, // go to EOL
-	    "<C-s>": false, // Spellcheck toggle
-	    "<C-d>": false, // Duplicate File
+		"<C-p>": false, // copy file path
+		"<C-n>": false, // copy file name
+		"<C-j>": false, // kill line
+		"<C-k>": false, // kill line backwards
+		"<C-r>": false, // rename file
+		"<C-t>": false, // transpose → Sublime built-in command
+		"<C-h>": false, // go to BOL
+		"<C-l>": false, // go to EOL
+		"<C-s>": false, // Spellcheck toggle
+		"<C-d>": false, // Duplicate File
+		"<C-g>": false, // go to definition
 	},
 
 	//-------------------------------------------------
