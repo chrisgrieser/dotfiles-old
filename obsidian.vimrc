@@ -83,6 +83,10 @@ nmap gd :gotoFootnoteDefinition
 exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
 nmap gs :gotoHeading
 
+" [g]oto [f]file (= Quick Switcher)
+exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
+nmap gf :quickSwitcher
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
@@ -160,9 +164,10 @@ vmap <Space> "vc
 nmap <S-Space> "_daW
 vmap <S-Space> "vd
 
-" Delete Pandoc Citation
+" Replace Word with register content
 " Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
-nmap <S-F12> da]
+nmap <S-F12> viwp
+vmap <S-F12> p
 
 """"""""""""""""""""""
 " < Switch Modes

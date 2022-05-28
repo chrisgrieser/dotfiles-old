@@ -51,8 +51,8 @@ nnoremap H ^
 vnoremap H ^
 nnoremap L $
 vnoremap L $
-nnoremap J 6j
-nnoremap K 6k
+nnoremap J 7j
+nnoremap K 7k
 
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
@@ -77,6 +77,7 @@ nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
 
 " [g]oto [s]ymbol
 nnoremap gs :ShowOverlay overlay=goto text=@<CR>
+nnoremap gS :GotoComment<CR>
 
 """"""""""""""""""""""
 " < Indentation
@@ -148,8 +149,9 @@ vnoremap <Space> "vc
 nnoremap <S-Space> "_daW
 vnoremap <S-Space> "d
 
-" Delete Array
-nnoremap <M-Space> da]
+" Replace Inner Word with register content
+nnoremap <M-Space> viwp
+vnoremap <M-Space> p
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -181,7 +183,14 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < not needed
 """"""""""""""""""""""
-" Tabs, Windows, Folding, and Sneak already built in
+" Tabs, Folding, and Sneak already built in
+
+""""""""""""""""""""""
+" < Windows (Origami)
+""""""""""""""""""""""
+" https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
+nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
+nnoremap <C-w>- :UnzoomPane<CR>
 
 """"""""""""""""""""""
 " < Sorting
