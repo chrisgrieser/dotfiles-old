@@ -83,9 +83,13 @@ nmap gd :gotoFootnoteDefinition
 exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
 nmap gs :gotoHeading
 
-" [g]oto [f]file (= Quick Switcher)
+" [g]oto [f]ile (= Follow Link under cursor)
+exmap followLinkUnderCursor obcommand editor:follow-link
+nmap gf :followLinkUnderCursor
+
+" [g]oto [o]pen file (= Quick Switcher)
 exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
-nmap gf :quickSwitcher
+nmap go :quickSwitcher
 
 """"""""""""""""""""""
 " < Indentation
