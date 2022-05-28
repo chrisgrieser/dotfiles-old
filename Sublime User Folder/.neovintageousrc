@@ -8,7 +8,6 @@ let mapleader=,
 """"""""""""""""""""""
 " yank to system clipboard
 " set via setting: "vintageous_use_sys_clipboard": true,
-" set clipboard=unnamed
 
 " show register (i.e., clipboard history)
 noremap <C-y> :reg<CR>
@@ -108,8 +107,9 @@ nnoremap <CR> A
 
 " Case Switch
 nnoremap ü ~h
-" Titlecase (Abolish Plugin)
-nnoremap Ü crt
+" Titlecase (Abolish Plugin, needs to lowercase first to be able to fix typos
+" properly)
+nnoremap Ü guiwcrt
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
@@ -178,13 +178,7 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < not needed
 """"""""""""""""""""""
-" Tabs, Folding, and Sneak already built in
-
-""""""""""""""""""""""
-" < Windows
-""""""""""""""""""""""
-" [C]lone View (NOT close)
-nnoremap <C-w>c :CloneFile add_to_selection=true<CR>
+" Tabs, Windows, Folding, and Sneak already built in
 
 """"""""""""""""""""""
 " < Sorting

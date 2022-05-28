@@ -213,6 +213,8 @@ exmap onlyThisWindow obcommand workspace:close-others
 nmap <C-w>o :onlyThisWindow
 exmap closeThisWindow obcommand workspace:close
 nmap <C-w>q :closeThisWindow
+exmap closeThisWindow obcommand workspace:close
+nmap <C-w>c :closeThisWindow
 
 """"""""""""""""""""""
 " < Folding
@@ -241,6 +243,13 @@ nmap S :sneak
 " essentially vimium's f command
 exmap followLink obcommand mrj-jump-to-link:activate-jump-to-link
 nmap ,f :followLink
+
+""""""""""""""""""""""
+" < Formatting
+""""""""""""""""""""""
+" Use Semantic Line Breaks for formatting
+exmap sembr obcommand obsidian-sembr:toggle-sem-br
+nmap gq :sembr
 
 """"""""""""""""""""""
 " < Sorting
