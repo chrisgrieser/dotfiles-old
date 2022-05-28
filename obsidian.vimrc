@@ -79,6 +79,10 @@ nmap ö `
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
 nmap gd :gotoFootnoteDefinition
 
+" [g]oto [s]ymbol
+exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
+nmap gs :gotoHeading
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
