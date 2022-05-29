@@ -1,10 +1,11 @@
 function ch () {
-	curl "https://cht.sh/$1"
+	QUERY=$(echo "$*" | tr " " "+")
+	curl -s "https://cht.sh/$QUERY" | "$PAGER"
 }
 
 export HOWDOI_COLORIZE=1
 function h () {
-	howdoi "$*" -c -n 3
+	howdoi "$*" -c -n 4 | "$PAGER"
 }
 
 # if alacritty installed open man page in new alacritty window
@@ -48,6 +49,6 @@ export LESS_TERMCAP_us=$'\E[1;34m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Pager-specific settings
-export LESS='--use-color -M -R --tabs=3 --window=-5 --quit-at-eof -g -i --incsearch --quit-if-one-screen --no-init'
+export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
 export MOAR="--no-linenumbers --render-unprintable=whitespace"
 
