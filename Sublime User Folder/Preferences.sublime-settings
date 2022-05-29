@@ -4,7 +4,7 @@
 	"vintageous_use_sys_clipboard": true, // = set clipboard=unnamed
 
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
-	"highlightedyank_duration": 7000,
+	"highlightedyank_duration": 8000,
 	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
 	"vintageous_exit_when_quiting_last_window": false,
 	"vintageous_reset_mode_when_switching_tabs": false,

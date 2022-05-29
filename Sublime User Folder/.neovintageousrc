@@ -109,8 +109,8 @@ noremap U <C-r>
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
-" Case Switch
-nnoremap Ü ~
+" Case Switch, h to enable vertical case-switching
+nnoremap Ü ~h
 " Capitalcase
 nnoremap ü mzguiw~`z
 
@@ -161,8 +161,8 @@ vnoremap <M-Space> y
 nnoremap R viwP
 vnoremap R P
 
-" `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
-nnoremap S (d)
+" `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
+nnoremap S v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes

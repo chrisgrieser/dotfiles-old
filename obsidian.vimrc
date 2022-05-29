@@ -101,9 +101,9 @@ nmap go :quickSwitcher
 
 " [M]erge lines
 " can't remap to J, cause there is no noremap, also this merge is smarter
-exmap mergelines obcommand obsidian-editor-shortcuts:joinLines
-nmap M :mergelines
-vmap M :mergelines
+exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
+nmap M :mergeLines
+vmap M :mergeLines
 
 " backspace works in normal mode like in insert mode & consistent with <Del>
 nmap <BS> h"_x
@@ -119,8 +119,8 @@ nmap <CR> A
 " Undo/Redo consistently on one key
 map U <C-r>
 
-" Case Switch
-nmap Ü ~
+" Case Switch, h to enable vertical case-switching
+nmap Ü ~h
 " Case Switch Plugin
 exmap caseSwitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap ü :caseSwitch
@@ -187,8 +187,8 @@ vmap <S-F12> y
 nmap R viwP
 vmap R P
 
-" `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
-nmap S (d)
+" `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
+nmap S v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -281,7 +281,7 @@ nmap ,f :followLink
 """"""""""""""""""""""
 " Use Semantic Line Breaks for formatting
 exmap sembr obcommand obsidian-sembr:toggle-sem-br
-nmap gqq :sembr
+nmap gq :sembr
 
 """"""""""""""""""""""
 " < Sorting
