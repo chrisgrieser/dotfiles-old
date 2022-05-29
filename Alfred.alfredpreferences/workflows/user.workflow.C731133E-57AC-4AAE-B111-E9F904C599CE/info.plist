@@ -72,6 +72,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>70235FFB-5E85-4C61-A7CE-B1CCC3E1DD0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>72B78E7D-69B1-4E83-AB9B-26507DE2C33E</key>
 		<array>
 			<dict>
@@ -312,25 +325,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://pypi.org/search/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>361B7617-AA0E-4A82-A7BA-824D533D233D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -346,6 +340,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>E30671DD-C795-4F57-9BD3-9FC4C20DCFDA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://pypi.org/search/?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>361B7617-AA0E-4A82-A7BA-824D533D233D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -372,6 +385,55 @@ brew home "$*"</string>
 			<string>4B2606CD-2C98-4BEB-8E44-4A047BE9B3FA</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>1</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>bh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>build-brew-list.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>&gt; brew home '{query}'</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>70235FFB-5E85-4C61-A7CE-B1CCC3E1DD0B</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -410,6 +472,21 @@ brew home "$*"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>6DB061FF-1A40-4EE0-BEAA-52ADCC3DB108</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>br {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -461,21 +538,6 @@ brew home "$*"</string>
 			<string>CE590292-EEA5-4025-A89B-42AE38188503</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>br {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>A98EAA76-0074-4CAD-9A09-48949FC126DB</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -792,6 +854,17 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
+		<key>70235FFB-5E85-4C61-A7CE-B1CCC3E1DD0B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>install</string>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>72B78E7D-69B1-4E83-AB9B-26507DE2C33E</key>
 		<dict>
 			<key>colorindex</key>
@@ -808,7 +881,7 @@ created by [Chris Grieser](https://chris-grieser.de/)</string>
 			<key>note</key>
 			<string>install</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>

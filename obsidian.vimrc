@@ -165,7 +165,7 @@ nmap gcc :.s/^|$/%%/g
 nmap <Space> "_ciw
 vmap <Space> "vc
 " Delete Word/Selection
-nmap <S-Space> "_daW
+nmap <S-Space> "_daw
 vmap <S-Space> "vd
 
 " Replace Word with register content
