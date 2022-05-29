@@ -151,6 +151,9 @@ vnoremap <S-Space> "d
 nnoremap <M-Space> viwp
 vnoremap <M-Space> p
 
+" `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
+nnoremap S (d)
+
 """"""""""""""""""""""
 " < Switch Modes
 """"""""""""""""""""""
@@ -215,7 +218,7 @@ nnoremap <leader>sp vip:sort<CR>
 " < Misc
 """"""""""""""""""""""
 " help
-noremap ? :help nv<CR>
+noremap <leader>? :help nv<CR>
 
 """""""""""""""""""""""""""""
 " < NEOVINTAGEOUS LIMITATIONS
@@ -234,7 +237,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö § ! & ° Q
+" Ö § ! & ° Q ?
 " rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?

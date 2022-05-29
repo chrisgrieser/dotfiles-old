@@ -173,6 +173,9 @@ vmap <S-Space> "vd
 nmap <S-F12> viwp
 vmap <S-F12> p
 
+" `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
+nmap S (d)
+
 """"""""""""""""""""""
 " < Switch Modes
 """"""""""""""""""""""
@@ -254,7 +257,6 @@ nmap zM :foldall
 " emulate vim-sneak
 exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
 nmap s :sneak
-nmap S :sneak
 
 " essentially vimium's f command
 exmap followLink obcommand mrj-jump-to-link:activate-jump-to-link
@@ -283,7 +285,7 @@ nmap ,sp vip,ss
 " < Misc
 """"""""""""""""""""""
 " help
-nmap ? :obcommand
+nmap ,? :obcommand
 
 """"""""""""""""""""""""
 " < OBSIDIAN LIMITATIONS
@@ -299,7 +301,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö § ! & ° Q
+" Ö § ! & ° Q ?
 " rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?

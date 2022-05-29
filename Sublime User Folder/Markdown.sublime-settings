@@ -18,8 +18,8 @@
 	"mde.list_align_text": false,
 
 	// Markdown specific theme
-	"light_color_scheme": "MarkdownEditor.sublime-color-scheme",
-	"dark_color_scheme": "Packages/User/MarkdownEditor-MonokaiC.tmTheme",
+	"light_color_scheme": "MarkdownEditor-ArcDark.sublime-color-scheme",
+	"dark_color_scheme": "Packages/User/MarkdownEditor-Blackboard.tmTheme",
 
 	"spell_check": true,
 	// turn off spellcheck in URLs, inline code, fenced code, and HTML tags
