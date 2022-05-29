@@ -228,7 +228,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö § ! & °
+" Ö § ! & ° Q
 " rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?

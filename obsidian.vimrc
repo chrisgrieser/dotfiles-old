@@ -2,9 +2,8 @@
 " < Leader
 """"""""""""""""""""""
 " let mapleader=,
-" can't set leaders in Obsidian vim, so the
-" leader key is simply used consistently here
-" however, needs to be unmapped, to not trigger
+" can't set leaders in Obsidian vim, so the " leader key is simply used
+" consistently here " however, needs to be unmapped, to not trigger
 " default behavior: https://github.com/esm7/obsidian-vimrc-support#some-help-with-binding-space-chords-doom-and-spacemacs-fans
 unmap ,
 
@@ -156,7 +155,7 @@ nmap ,: mz&§&:`z
 nmap X mz$"_x`z
 
 " Commentary
-nmap gcc :.s/^|$/%%/
+nmap gcc :.s/^|$/%%/g
 
 """"""""""""""""""""""
 " < Text Objects
@@ -297,7 +296,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < UNUSED KEYS
 """"""""""""""""""""""
-" Ö § ! & °
+" Ö § ! & ° Q
 " rarely used: 0 # R Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?

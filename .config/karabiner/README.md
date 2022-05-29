@@ -75,7 +75,7 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `k` → `K`arabiner Elements
 - `shift + k` → `K`arabiner EventViewer
 - `shift + b` → `B`etterTouchTool
-- `shift + p` → `P`assword Manager → MacPass
+- `x` → Password Manager: `xxx` → MacPass
 - `.`/`:` → Emoji Insertion Modal
 - `,`/ → System Preferences
 
