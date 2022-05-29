@@ -120,10 +120,10 @@ nmap <CR> A
 map U <C-r>
 
 " Case Switch
-nmap ü ~
+nmap Ü ~
 " Case Switch Plugin
-exmap caseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
-nmap Ü :caseswitch
+exmap caseSwitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
+nmap ü :caseSwitch
 " to CapitalCase without the plugin: nmap Ü mzguiw~`zl
 
 " Transpose current & next char
@@ -220,10 +220,10 @@ imap <C-j> <Esc>c^
 """"""""""""""""""""""
 " Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
 " requires Cycle Through Panes Plugins https://obsidian.md/plugins?id=cycle-through-panes
-exmap tabnext obcommand cycle-through-panes:cycle-through-panes
-nmap gt :tabnext
-exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
-nmap gT :tabprev
+exmap tabNext obcommand cycle-through-panes:cycle-through-panes
+nmap gt :tabNext
+exmap tabPrev obcommand cycle-through-panes:cycle-through-panes-reverse
+nmap gT :tabPrev
 
 " https://vimhelp.org/index.txt.html#CTRL-W
 exmap focusRight obcommand editor:focus-right
@@ -240,11 +240,11 @@ nmap <C-w>v :splitVertical
 exmap splitHorizontal obcommand workspace:split-horizontal
 nmap <C-w>s :splitHorizontal
 
-exmap onlyThisWindow obcommand workspace:close-others
-nmap <C-w>o :onlyThisWindow
-exmap closeThisWindow obcommand workspace:close
-nmap <C-w>q :closeThisWindow
-nmap <C-w>c :closeThisWindow
+exmap only obcommand workspace:close-others
+nmap <C-w>o :only
+exmap close obcommand workspace:close
+nmap <C-w>q :close
+nmap <C-w>c :close
 
 nnoremap <C-w><C-w> :tabnext<CR>
 nnoremap <C-w>w :tabnext<CR>

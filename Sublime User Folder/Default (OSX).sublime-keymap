@@ -142,15 +142,9 @@
 	{ "keys": ["shift+super+alt+ctrl+f"], "command": "build", "args": { "variant": "Lint Autofix" } },
 	// Executable (using Build System)
 	{ "keys": ["shift+super+alt+ctrl+x"], "command": "build", "args": { "variant": "Make Executable" } },
-
-	// Build System: Shell
-	{ "keys": ["super+r"], "command": "build", "context": [
-		{"key": "selector", "operator": "equal", "operand": "source.shell"},
-	] },
-	// Build System: Rest
+	// Quick Build
 	{ "keys": ["super+r"], "command": "build", "context": [
 		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
-		{"key": "selector", "operator": "not_equal", "operand": "source.shell"},
 	] },
 
 	// Build System: Console

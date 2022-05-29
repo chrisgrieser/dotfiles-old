@@ -110,9 +110,9 @@ noremap U <C-r>
 nnoremap <CR> A
 
 " Case Switch
-nnoremap ü ~
+nnoremap Ü ~
 " Capitalcase
-nnoremap Ü mzguiw~`z
+nnoremap ü mzguiw~`z
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
