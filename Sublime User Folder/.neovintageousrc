@@ -144,7 +144,7 @@ nnoremap X mz$"_x`z
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
 " Delete Word/Selection
-nnoremap <S-Space> "_daW
+nnoremap <S-Space> "_daw
 vnoremap <S-Space> "d
 
 " Replace Inner Word with register content

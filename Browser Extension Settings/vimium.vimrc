@@ -4,13 +4,15 @@ map we closeTabsOnRight
 map w2 moveTabToNewWindow
 map ww closeOtherTabs
 map u removeTab
-map z restoreTab
+map U restoreTab
 " W = close window
 map W removeTab count=19
 
 " Scrolling Fast
 map J scrollDown count=3
 map K scrollUp count=3
+map gl scrollRight
+map gh scrollLeft
 
 " History
 map h goBack
@@ -43,8 +45,10 @@ map - enterFindMode
 map ö Marks.activateGotoMode swap
 map m Marks.activateCreateMode swap
 
-" Mute Tab
+" Misc
+map <C-m> toggleMuteTab
 map M toggleMuteTab other
+map a passNextKey
 
 " unmap unneeded stuff
 unmap d
