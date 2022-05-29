@@ -121,9 +121,9 @@
 						{"key_code": "k", "modifiers": ["command"] },
 						{"key_code": "j", "modifiers": ["command"] },
 						{"key_code": "1", "modifiers": ["command"] },
-						{"key_code": "vk_none", "hold_down_milliseconds": 50 },
+						{"key_code": "vk_none", "hold_down_milliseconds": 60 },
 						{"key_code": "tab", "modifiers": ["command"] },
-						{"key_code": "vk_none", "hold_down_milliseconds": 100 },
+						{"key_code": "vk_none", "hold_down_milliseconds": 140 },
 						{"key_code": "tab", "modifiers": ["command"] }
 					]
 				},
