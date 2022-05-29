@@ -122,9 +122,13 @@ nnoremap ä xp
 " Transpose current & next word
 nnoremap Ä dawelpb
 
-" Adding Blank Line above/below
+" Add Blank Line above/below
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
+
+" Remove Line above/below
+nnoremap <leader>0 mzk"_dd`z
+nnoremap <leader>- mzj"_dd`z
 
 " Append ,;.": to end of line
 nnoremap <leader>, mzA,<Esc>`z

@@ -133,9 +133,13 @@ nmap ä dlp
 " Transpose current & next word
 nmap Ä dawelpb
 
-" Adding Blank Line above/below
+" Add Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
+
+" Remove Line above/below
+nmap ,0 mzk"_dd`z
+nmap ,- mzj"_dd`z
 
 " Add ,;.": to end of line
 " `&§&` are helper commands for addings substitution to command chain,

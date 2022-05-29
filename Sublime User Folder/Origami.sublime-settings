@@ -1,4 +1,7 @@
 // Settings in here override those in "Origami/Origami.sublime-settings"
 {
-    "auto_close_empty_panes": true,
+	"auto_close_empty_panes": true,
+	"auto_zoom_on_focus": 0.55,
+	"destroy_empty_panes": true,
+	"create_new_pane_if_necessary": false,
 }
