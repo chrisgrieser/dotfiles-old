@@ -208,6 +208,7 @@ nmap gt :tabnext
 exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
+" https://vimhelp.org/index.txt.html#CTRL-W
 exmap focusRight obcommand editor:focus-right
 nmap <C-w>l :focusRight
 exmap focusLeft obcommand editor:focus-left
@@ -226,8 +227,10 @@ exmap onlyThisWindow obcommand workspace:close-others
 nmap <C-w>o :onlyThisWindow
 exmap closeThisWindow obcommand workspace:close
 nmap <C-w>q :closeThisWindow
-exmap closeThisWindow obcommand workspace:close
 nmap <C-w>c :closeThisWindow
+
+nnoremap <C-w><C-w> :tabnext<CR>
+nnoremap <C-w>w :tabnext<CR>
 
 """"""""""""""""""""""
 " < Folding
