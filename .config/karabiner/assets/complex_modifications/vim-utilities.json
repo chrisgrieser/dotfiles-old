@@ -103,6 +103,8 @@
 			}
 					],
 					"conditions": [
+						{"value": 0, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 0, "type": "variable_if", "name": "LEADER_ACTIVE"},
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
@@ -131,6 +133,8 @@
 						}
 					],
 					"conditions": [
+						{"value": 0, "type": "variable_if", "name": "VIM_MODE"},
+						{"value": 0, "type": "variable_if", "name": "LEADER_ACTIVE"},
 						{
 							"type": "frontmost_application_if",
 							"bundle_identifiers": [
