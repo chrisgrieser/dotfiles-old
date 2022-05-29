@@ -145,16 +145,20 @@ nmap &§&, :.s/$/,/
 nmap &§&; :.s/$/;/
 nmap &§&" :.s/$/"/
 nmap &§&: :.s/$/:/
+nmap &§&) :.s/$/)/
+nmap &§&] :.s/$/]/
 nmap ,. mz&§&.`z
 nmap ,, mz&§&,`z
 nmap ,; mz&§&;`z
 nmap ," mz&§&"`z
 nmap ,: mz&§&:`z
+nmap ,) mz&§&)`z
+nmap ,] mz&§&]`z
 
 " Remove last character from line
 nmap X mz$"_x`z
 
-" Commentary
+" Commentary.vim emulation
 nmap gcc :.s/^|$/%%/g
 
 """"""""""""""""""""""
@@ -164,14 +168,19 @@ nmap gcc :.s/^|$/%%/g
 " Change Word/Selection
 nmap <Space> "_ciw
 vmap <Space> "vc
+
 " Delete Word/Selection
 nmap <S-Space> "_daw
 vmap <S-Space> "vd
 
-" Replace Word with register content
+" Yank Word/Selection
 " Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
-nmap <S-F12> viwp
-vmap <S-F12> p
+nmap <S-F12> yiw
+vmap <S-F12> y
+
+" [R]eplace Word with register content
+nmap R viwP
+vmap R P
 
 " `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
 nmap S (d)
@@ -267,7 +276,7 @@ nmap ,f :followLink
 """"""""""""""""""""""
 " Use Semantic Line Breaks for formatting
 exmap sembr obcommand obsidian-sembr:toggle-sem-br
-nmap gq :sembr
+nmap gqq :sembr
 
 """"""""""""""""""""""
 " < Sorting
@@ -288,7 +297,7 @@ nmap ,sp vip,ss
 nmap ,? :obcommand
 
 """"""""""""""""""""""""
-" < OBSIDIAN LIMITATIONS
+" < Obsidian Limitations
 """"""""""""""""""""""""
 " - text object `is` / `as` does not work https://github.com/codemirror/CodeMirror/issues/5454
 " - U (as in changes in a line) does not work
@@ -299,10 +308,10 @@ nmap ,? :obcommand
 " - gp not implemented
 
 """"""""""""""""""""""
-" < UNUSED KEYS
+" < unused keys
 """"""""""""""""""""""
 " Ö § ! & ° Q ?
-" rarely used: 0 # R Z
+" rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

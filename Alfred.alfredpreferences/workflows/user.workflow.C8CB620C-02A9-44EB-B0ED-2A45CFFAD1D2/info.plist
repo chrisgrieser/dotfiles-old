@@ -623,7 +623,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>vim</string>
+				<string>vim codemirror</string>
 				<key>subtext</key>
 				<string>vim.js</string>
 				<key>text</key>

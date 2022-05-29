@@ -132,6 +132,8 @@ nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
+nnoremap <leader>) mzA)<Esc>`z
+nnoremap <leader>] mzA]<Esc>`z
 
 " Remove last character from line
 nnoremap X mz$"_x`z
@@ -143,13 +145,18 @@ nnoremap X mz$"_x`z
 " Change Word/Selection
 nnoremap <Space> "_ciw
 vnoremap <Space> "vc
+
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
 vnoremap <S-Space> "d
 
-" Replace Inner Word with register content
-nnoremap <M-Space> viwp
-vnoremap <M-Space> p
+" Yank Word/Selection (alt+space)
+nnoremap <M-Space> yiw
+vnoremap <M-Space> y
+
+" [R]eplace Word with register content
+nnoremap R viwP
+vnoremap R P
 
 " `das` emulation, https://github.com/codemirror/CodeMirror/issues/5454
 nnoremap S (d)
@@ -221,7 +228,7 @@ nnoremap <leader>sp vip:sort<CR>
 noremap <leader>? :help nv<CR>
 
 """""""""""""""""""""""""""""
-" < NEOVINTAGEOUS LIMITATIONS
+" < Neovintageous Limitations
 """""""""""""""""""""""""""""
 " - Normal `map` (as opposed to noremap) is not supported
 "   any i command 🙈
@@ -235,10 +242,10 @@ noremap <leader>? :help nv<CR>
 "   "context": [{"key": "vi_insert_mode_aware"}]
 
 """"""""""""""""""""""
-" < UNUSED KEYS
+" < unused keys
 """"""""""""""""""""""
 " Ö § ! & ° Q ?
-" rarely used: 0 # R Z
+" rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?
