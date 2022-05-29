@@ -57,7 +57,7 @@
 	// is required to fix it oO)
 	// https://github.com/NeoVintageous/NeoVintageous/issues/822
 	{ "keys": ["escape"], "command": "hide_auto_complete", "context": [
-			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
 	] },
 	{
 		"keys": ["escape"],

@@ -110,10 +110,9 @@ noremap U <C-r>
 nnoremap <CR> A
 
 " Case Switch
-nnoremap ü ~h
-" Titlecase via Abolish Plugin
-" (needs to lowercase first to be able to fix typos properly)
-nnoremap Ü mzguiwcrt`z
+nnoremap ü ~
+" Capitalcase
+nnoremap Ü mzguiw~`z
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
@@ -248,7 +247,7 @@ noremap <leader>? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § ! & ° Q ?
+" Ö § ! & ° Q ? |
 " rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?

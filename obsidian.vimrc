@@ -100,7 +100,7 @@ nmap go :quickSwitcher
 """"""""""""""""""""""
 
 " [M]erge lines
-" can't remap to J, cause there is no noremap :/
+" can't remap to J, cause there is no noremap, also this merge is smarter
 exmap mergelines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergelines
 vmap M :mergelines
@@ -120,10 +120,11 @@ nmap <CR> A
 map U <C-r>
 
 " Case Switch
-nmap ü ~h
+nmap ü ~
 " Case Switch Plugin
 exmap caseswitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap Ü :caseswitch
+" to CapitalCase without the plugin: nmap Ü mzguiw~`zl
 
 " Transpose current & next char
 " (can't use x, cause it sends to black hole registry)
@@ -314,7 +315,7 @@ nmap ,? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § ! & ° Q ?
+" Ö § ! & ° Q ? |
 " rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
