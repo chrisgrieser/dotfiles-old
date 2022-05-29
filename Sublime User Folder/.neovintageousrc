@@ -111,9 +111,9 @@ nnoremap <CR> A
 
 " Case Switch
 nnoremap ü ~h
-" Titlecase (Abolish Plugin, needs to lowercase first to be able to fix typos
-" properly)
-nnoremap Ü guiwcrt
+" Titlecase via Abolish Plugin
+" (needs to lowercase first to be able to fix typos properly)
+nnoremap Ü mzguiwcrt`z
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
@@ -139,8 +139,6 @@ nnoremap X mz$"_x`z
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [Q]uotation Marks
-nnoremap Q ci"
 
 " Change Word/Selection
 nnoremap <Space> "_ciw

@@ -155,11 +155,12 @@ nmap ,: mz&§&:`z
 " Remove last character from line
 nmap X mz$"_x`z
 
+" Commentary
+nmap gcc :.s/^|$/%%/
+
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
-" mnemonic: [Q]uotation Marks
-nmap Q ci"
 
 " Change Word/Selection
 nmap <Space> "_ciw
