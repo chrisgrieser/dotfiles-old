@@ -67,6 +67,10 @@
         "moreCloseurl": "chrome://newtab/",
         "moreClosesel": "chrome",
         "moreCloseopts": "close"
+      },
+      {
+        "direct": "DU",
+        "action": "G_reloadclear"
       }
     ],
     "gestureui": true,
