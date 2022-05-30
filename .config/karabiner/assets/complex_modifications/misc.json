@@ -100,7 +100,7 @@
 			]
 		},
 		{
-			"description": "Ⓜ️🐦 Twitterific: Scroll Up Properly",
+			"description": "Ⓜ️🐦 Twitterific: F3 → Scroll up properly, cmd+ö → activate properly",
 			"manipulators": [
 				{
 					"type": "basic",
