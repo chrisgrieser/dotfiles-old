@@ -1,12 +1,12 @@
 {
-	"title": "Δ Global Leader Key",
+	"title": "▲ Global Leader Key",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/fn-leader-key.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "Δ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
+			"description": "▲ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -106,7 +106,7 @@
 			]
 		},
 		{
-			"description": "Δ Leader Actions",
+			"description": "▲ Leader Actions",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -489,20 +489,6 @@
 				},
 				{
 					"type": "basic",
-					"from": {"key_code": "w" },
-					"conditions": [{
-							"type": "variable_if",
-							"name": "LEADER_ACTIVE",
-							"value": 1
-					}],
-					"to": [
-						{"shell_command": "open -a 'Microsoft Word'"},
-						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
-						{"set_notification_message": {"id": "leader-notice", "text": ""} }
-					]
-				},
-				{
-					"type": "basic",
 					"from": {"key_code": "v" },
 					"conditions": [{
 							"type": "variable_if",
@@ -511,6 +497,20 @@
 					}],
 					"to": [
 						{"shell_command": "open -a 'VLC'"},
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "w" },
+					"conditions": [{
+							"type": "variable_if",
+							"name": "LEADER_ACTIVE",
+							"value": 1
+					}],
+					"to": [
+						{"shell_command": "open -a ''"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
 						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
