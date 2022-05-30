@@ -1,12 +1,12 @@
 {
-	"title": "Vim Utilities",
+	"title": "🛠 Vim Utilities",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/vim-utilities.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "⌥+j, ⌥+k: PageDown/PageUp",
+			"description": "🛠 ⌥+j, ⌥+k: PageDown/PageUp",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -85,7 +85,7 @@
 			]
 		},
 		{
-			"description": "j/k (Browser): also hides cursor",
+			"description": "🛠🌐 j/k (Browser): also hides cursor (for Vimium)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -150,7 +150,7 @@
 			]
 		},
 		{
-			"description": "k+l / f+j (simultaneously): ↵",
+			"description": "🛠 k+l / f+j (simultaneously): ↵",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -181,7 +181,7 @@
 			]
 		},
 		{
-			"description": "R-⌘ (tap): Focus Window & Hide Cursor",
+			"description": "🛠 R-⌘ (tap): Focus Window & Hide Cursor",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -217,60 +217,7 @@
 			]
 		},
 		{
-			"description": "Hyper + hjklmn: ←↓↑→↵⌫",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "h",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "left_arrow" } ]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "j",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "down_arrow" } ]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "k",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "up_arrow" } ]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "l",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "right_arrow" } ]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "m",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "return_or_enter" } ]
-				},
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "n",
-						"modifiers": {"mandatory": ["option", "shift", "command", "control"] }
-					},
-					"to": [ {"key_code": "delete_or_backspace" } ]
-				}
-			]
-		},
-		{
-			"description": "{}@^~|: German to US layout",
+			"description": "🛠 {}@^~|: German to US layout",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -440,7 +387,7 @@
 			]
 		},
 		{
-			"description": "ß´ → [] (+ German to US Layout), s (hold) → ß",
+			"description": "🛠 ß´ → [] (+ German to US Layout), s (hold) → ß",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -497,7 +444,7 @@
 			]
 		},
 		{
-			"description": "R-⇧ (if alone): Backspace",
+			"description": "🛠 R-⇧ (if alone): Backspace",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -511,7 +458,7 @@
 			]
 		},
 		{
-			"description": "Fix Alt-Space (Obsidian): Shift-F12",
+			"description": "🛠🟪 Fix Alt-Space (Obsidian): Shift-F12",
 			"manipulators": [
 				{
 					"type": "basic",

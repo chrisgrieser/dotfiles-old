@@ -1,12 +1,12 @@
 {
-	"title": "Misc",
+	"title": "Ⓜ️ Misc",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/misc.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "One Stroke ^`~ (German Layout)",
+			"description": "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)",
 			"manipulators": [
 				{
 					"description": "backtick",
@@ -78,7 +78,7 @@
 			]
 		},
 		{
-			"description": "Alacritty/Terminal: ⌘Q → ⌃D (Quit on Process End)",
+			"description": "Ⓜ️🧑‍💻 Alacritty/Terminal: ⌘Q → ⌃D (Quit on Process End)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -100,7 +100,7 @@
 			]
 		},
 		{
-			"description": "Twitterific: Scroll Up Properly",
+			"description": "Ⓜ️🐦 Twitterific: Scroll Up Properly",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -129,7 +129,7 @@
 				},
 				{
 					"type": "basic",
-					"description": "needed to make jk work",
+					"description": "cmd+ö → activate (needed to make jk work) (cmd+opt+ö is set as Twitterific activation)",
 					"from": {
 						"key_code": "semicolon",
 						"modifiers": {"mandatory": ["command"]}
@@ -142,7 +142,7 @@
 			]
 		},
 		{
-			"description": "Inoreader: v opens in background, switch jk & np",
+			"description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -206,7 +206,7 @@
 			]
 		},
 		{
-			"description": "MacPass: ⌘+c/u → ⌘⌥+c/⌘⇧+c, then ⌘+h",
+			"description": "Ⓜ️🔑 MacPass: ⌘+c/u → ⌘⌥+c/⌘⇧+c, then ⌘+h",
 			"manipulators": [
 				{
 					"type": "basic",

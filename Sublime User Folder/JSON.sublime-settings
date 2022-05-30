@@ -1,4 +1,6 @@
 {
+	"light_color_scheme": "Night Owl - Light.sublime-color-scheme",
+	"dark_color_scheme": "Night Owl.sublime-color-scheme",
 
 	"draw_white_space": ["selection", "isolated"],
 
@@ -6,6 +8,7 @@
 	[
 		"sublime-settings",
 		"json",
+		"jsonc",
 		"sublime-keymap",
 		"sublime-build",
 	]
