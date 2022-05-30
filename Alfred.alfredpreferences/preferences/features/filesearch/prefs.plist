@@ -6,6 +6,8 @@
 	<false/>
 	<key>ignoreMusic</key>
 	<true/>
+	<key>limit</key>
+	<integer>1</integer>
 	<key>runAppleScripts</key>
 	<false/>
 </dict>

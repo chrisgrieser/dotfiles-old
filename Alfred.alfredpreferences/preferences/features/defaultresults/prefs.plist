@@ -13,7 +13,6 @@
 	<false/>
 	<key>showUserDefined</key>
 	<array>
-		<string>+public.css</string>
 		<string>com.apple.alias-file</string>
 		<string>com.apple.web-internet-location</string>
 	</array>
