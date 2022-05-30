@@ -85,14 +85,17 @@ nmap gd :gotoFootnoteDefinition
 " [g]oto [s]ymbol
 exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
 nmap gs :gotoHeading
+vmap gs :gotoHeading
 
 " [g]oto [f]ile (= Follow Link under cursor)
 exmap followLinkUnderCursor obcommand editor:follow-link
 nmap gf :followLinkUnderCursor
+vmap gf :followLinkUnderCursor
 
 " [g]oto [o]pen file (= Quick Switcher)
 exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
 nmap go :quickSwitcher
+vmap go :quickSwitcher
 
 """"""""""""""""""""""
 " < Indentation
@@ -250,8 +253,9 @@ exmap close obcommand workspace:close
 nmap <C-w>q :close
 nmap <C-w>c :close
 
-nnoremap <C-w><C-w> :tabnext<CR>
-nnoremap <C-w>w :tabnext<CR>
+nmap <C-w><C-w> :tabnext
+nmap <C-w>w :tabnext
+nmap ° :tabnext
 
 """"""""""""""""""""""
 " < Folding
