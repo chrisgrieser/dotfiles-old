@@ -118,15 +118,22 @@
 			]
 		},
 		{
-			"description": "Mouse-6: Look up word under cursor in Dictionary",
+			"description": "Mouse-6 (tap): cmd+tab; (hold): Look up word under cursor in Dictionary",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {"pointing_button": "button6"},
-					"to": [
+					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 350 },
+					"to_if_held_down": [
 						{
 							"key_code": "d",
 							"modifiers": ["command", "control"]
+						}
+					],
+					"to": [
+						{
+							"key_code": "tab",
+							"modifiers": ["command"]
 						}
 					]
 				}

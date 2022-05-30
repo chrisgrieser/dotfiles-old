@@ -51,26 +51,6 @@
                         ]
                     },
                     {
-                        "description": "Mouse-6: Look up word under cursor in Dictionary",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button6"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "d",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Mouse-5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
                         "manipulators": [
                             {
@@ -4628,21 +4608,11 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "vk_none"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "tab"
                             },
                             "to": [
                                 {
-                                    "pointing_button": "button6"
+                                    "key_code": "vk_none"
                                 }
                             ]
                         }
