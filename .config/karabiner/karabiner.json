@@ -4590,6 +4590,26 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Mouse-6: Look up word under cursor in Dictionary",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button6"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -4606,6 +4626,16 @@
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": [
+                                {
+                                    "pointing_button": "button6"
+                                }
+                            ]
+                        },
                         {
                             "from": {
                                 "key_code": "tab"
