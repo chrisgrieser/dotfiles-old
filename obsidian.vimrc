@@ -178,8 +178,11 @@ nmap X mz$"_x`z
 nmap gcc :.s/^|$/%%/g
 
 " turn bolded bullet points to h2
-nmap # :.s/^- \*\*(.*)\*\*$/## $1/
-nmap ,# mz&§&#`z
+" has to be done this complicated way cause vim substitutes called in maps can't
+" properly process spaces
+nmap &§&#a :.s/\*\*//g
+nmap &§&#b :.s/^-/##/
+nmap ,# mz&§&#a&§&#bO<Esc>`z
 
 """"""""""""""""""""""
 " < Text Objects

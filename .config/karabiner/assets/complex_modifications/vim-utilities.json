@@ -487,12 +487,14 @@
 							"input_sources": [{ "language": "^de$" }]
 						}
 					],
-					"to_after_key_up": [ {"key_code": "s"} ],
-					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 250 },
+					"to_if_alone": [ {"key_code": "s"} ],
+					"parameters": {
+						"basic.to_if_alone_timeout_milliseconds": 250,
+						"basic.to_if_held_down_threshold_milliseconds": 250
+					},
 					"to_if_held_down": [
 						{
 							"key_code": "hyphen",
-							"halt": true,
 							"repeat": false
 						}
 					]

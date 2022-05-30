@@ -4277,7 +4277,6 @@
                                     },
                                     {
                                         "hold_down_milliseconds": 35,
-
                                         "key_code": "vk_none"
                                     },
                                     {
@@ -4599,9 +4598,10 @@
                                     "key_code": "s"
                                 },
                                 "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250,
                                     "basic.to_if_held_down_threshold_milliseconds": 250
                                 },
-                                "to_after_key_up": [
+                                "to_if_alone": [
                                     {
                                         "key_code": "s"
                                     }
