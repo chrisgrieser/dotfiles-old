@@ -9,6 +9,5 @@ on run argv
 			key code 126
 			delay 0.05
 		end repeat
-		delay 0.05
 	end tell
 end run

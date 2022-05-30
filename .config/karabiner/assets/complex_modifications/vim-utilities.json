@@ -440,7 +440,7 @@
 			]
 		},
 		{
-			"description": "ß´ → [], ⌥+s → ß (+ German to US Layout)",
+			"description": "ß´ → [] (+ German to US Layout), s (hold) → ß",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -480,17 +480,22 @@
 				},
 				{
 					"type": "basic",
-					"from": {
-						"key_code": "s",
-						"modifiers": {"mandatory": ["option"]}
-					},
+					"from": {"key_code": "s"},
 					"conditions": [
 						{
 							"type": "input_source_if",
 							"input_sources": [{ "language": "^de$" }]
 						}
 					],
-					"to": [ {"key_code": "hyphen"} ]
+					"to_after_key_up": [ {"key_code": "s"} ],
+					"parameters": { "basic.to_if_held_down_threshold_milliseconds": 250 },
+					"to_if_held_down": [
+						{
+							"key_code": "hyphen",
+							"halt": true,
+							"repeat": false
+						}
+					]
 				}
 			]
 		},
