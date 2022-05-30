@@ -327,7 +327,7 @@
 				},
 				{
 					"type": "basic",
-					"from": {"key_code": "f" },
+					"from": {"key_code": "l" },
 					"conditions": [{
 							"type": "variable_if",
 							"name": "LEADER_ACTIVE",
@@ -445,7 +445,7 @@
 				},
 				{
 					"type": "basic",
-					"from": {"key_code": "t" },
+					"from": {"key_code": "semicolon" },
 					"conditions": [{
 							"type": "variable_if",
 							"name": "LEADER_ACTIVE",
@@ -510,7 +510,35 @@
 							"value": 1
 					}],
 					"to": [
-						{"shell_command": "open -a ''"},
+						{"shell_command": "open 'https://web.whatsapp.com/'"},
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "f" },
+					"conditions": [{
+							"type": "variable_if",
+							"name": "LEADER_ACTIVE",
+							"value": 1
+					}],
+					"to": [
+						{"shell_command": "open 'https://www.messenger.com/'"},
+						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
+						{"set_notification_message": {"id": "leader-notice", "text": ""} }
+					]
+				},
+				{
+					"type": "basic",
+					"from": {"key_code": "t" },
+					"conditions": [{
+							"type": "variable_if",
+							"name": "LEADER_ACTIVE",
+							"value": 1
+					}],
+					"to": [
+						{"shell_command": "open 'https://web.telegram.org/z/'"},
 						{"set_variable": {"name": "LEADER_ACTIVE", "value": 0 }},
 						{"set_notification_message": {"id": "leader-notice", "text": ""} }
 					]
