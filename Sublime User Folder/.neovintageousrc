@@ -89,6 +89,10 @@ vnoremap gS :GotoComment<CR>
 nnoremap go :OpenBrowse<CR>
 vnoremap go :OpenBrowse<CR>
 
+" [g]oto next [w]indow (analogous to gt)
+nnoremap gw :FocusNeighboringGroup<CR>
+vnoremap gw :FocusNeighboringGroup<CR>
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
@@ -215,8 +219,6 @@ nnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
 vnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
 nnoremap <C-w>w :FocusNeighboringGroup<CR>
 vnoremap <C-w>w :FocusNeighboringGroup<CR>
-nnoremap ° :FocusNeighboringGroup<CR>
-vnoremap ° :FocusNeighboringGroup<CR>
 
 " These require the Origami Plugin for Sublime
 " https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands

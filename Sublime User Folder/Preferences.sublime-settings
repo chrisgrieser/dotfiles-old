@@ -36,7 +36,7 @@
 	//Theme
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "auto",
-	"light_color_scheme": "Night Owl - Light.sublime-color-scheme",
+	"light_color_scheme": "Mariana.sublime-color-scheme",
 	"dark_color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
 	"adaptive_dividers": true, // adaptive theme only
 	"themed_title_bar": true, // adaptive theme only

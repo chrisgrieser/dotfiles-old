@@ -97,6 +97,10 @@ exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-se
 nmap go :quickSwitcher
 vmap go :quickSwitcher
 
+" [g]oto next [w]indow (in Obsidian essentially the same as gt)
+nmap gw :tabnext
+vmap gw :tabnext
+
 """"""""""""""""""""""
 " < Indentation
 """"""""""""""""""""""
@@ -255,7 +259,6 @@ nmap <C-w>c :close
 
 nmap <C-w><C-w> :tabnext
 nmap <C-w>w :tabnext
-nmap ° :tabnext
 
 """"""""""""""""""""""
 " < Folding
