@@ -1,7 +1,7 @@
 #!/usr/bin/env osascript
 
 # SLEEP TIMER
-tell application "-YouTube" to if it is running then quit
+do shell script "killall \"YouTube\""
 tell application "Brave Browser"
 	if ((count of window) is not 0)
 		if ((count of tab of front window) is not 0)
@@ -22,7 +22,7 @@ end tell
 
 # REMINDERS TO DRAFTS
 # (redundancy with iOS for safety)
-# with shell script as opposed to Applescript, Shortcuts.app isn't activated
+# with shell script as opposed to Applescript, as Shortcuts.app isn't activated
 do shell script "shortcuts run \"Send Reminders due today to Drafts\""
 
 -- HIDE DRAFTS TOOLBAR

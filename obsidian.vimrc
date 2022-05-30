@@ -74,7 +74,11 @@ vmap <Down> <Nop>
 " Goto Mark
 nmap ö `
 
-" goto definiton ~= footnotes
+""""""""""""""""""""""
+" < g commands
+""""""""""""""""""""""
+
+" [g]oto [d]efiniton ~= footnotes
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
 nmap gd :gotoFootnoteDefinition
 
@@ -184,8 +188,8 @@ nmap <S-F12> yiw
 vmap <S-F12> y
 
 " [R]eplace Word with register content
-nmap R viwP
-vmap R P
+nmap R viw"0p
+vmap R "0P
 
 " `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
 nmap S v(o)h

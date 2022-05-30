@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 
-tell application "-YouTube" to if it is running then quit
+do shell script "killall \"YouTube\""
 
 tell application "Brave Browser"
 	if ((count of window) is not 0)

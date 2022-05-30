@@ -72,12 +72,19 @@ nnoremap ö `
 " rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
 nnoremap % :MoveTo to=brackets<CR>
 
+""""""""""""""""""""""
+" < g commands
+""""""""""""""""""""""
+
 " Goto Definition
 nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
 
 " [g]oto [s]ymbol
 nnoremap gs :ShowOverlay overlay=goto text=@<CR>
 nnoremap gS :GotoComment<CR>
+
+" [g]oto [o]pen file (= Quick Switcher)
+nnoremap go :OpenBrowse<CR>
 
 """"""""""""""""""""""
 " < Indentation
@@ -158,10 +165,10 @@ nnoremap <M-Space> yiw
 vnoremap <M-Space> y
 
 " [R]eplace Word with register content
-nnoremap R viwP
-vnoremap R P
+nnoremap R viw"0p
+vnoremap R "0P
 
-" `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
+" `vas` emulation
 nnoremap S v(o)h
 
 """"""""""""""""""""""
