@@ -1,12 +1,12 @@
 {
-	"title": "Mouse Click Trickery",
+	"title": "🐁 Mouse Click Trickery",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json",
 	"homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
 	"rules": [
 		{
-			"description": "M-Click: Quit app",
+			"description": "🐁 3: Quit app",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -49,7 +49,7 @@
 			]
 		},
 		{
-			"description": "R-Click (tap): Open link (when in Browser)",
+			"description": "🐁 R (tap): Open link (when in Browser)",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -76,7 +76,7 @@
 			]
 		},
 		{
-			"description": "Mouse-4 (hold): search selected text / open URL, (tap): send F13",
+			"description": "🐁 4 (hold): search selected text / open URL, (tap): send F13",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -98,7 +98,7 @@
 			]
 		},
 		{
-			"description": "Mouse-5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
+			"description": "🐁 5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -118,7 +118,7 @@
 			]
 		},
 		{
-			"description": "Mouse-6: Look up word under cursor in Dictionary",
+			"description": "🐁 6: Look up word under cursor in Dictionary",
 			"manipulators": [
 				{
 					"type": "basic",

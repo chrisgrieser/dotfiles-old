@@ -1,5 +1,5 @@
 {
-	"title": "Capslock to Hyper/Esc",
+	"title": "⇪ Capslock to Hyper/Esc",
 	"version": "0.1",
 	"maintainers": ["pseudometa"],
 	"import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json",
@@ -19,8 +19,8 @@
 						}
 					],
 					"conditions": [
-						{"type": "variable_if", "name": "VIM_MODE", "value": 0 },
-						{"type": "variable_unless", "name": "LEADER_ACTIVE", "value": 0 }
+						{"type": "variable_unless", "name": "VIM_MODE", "value": 1 },
+						{"type": "variable_unless", "name": "LEADER_ACTIVE", "value": 1 }
 					]
 				},
 				{
