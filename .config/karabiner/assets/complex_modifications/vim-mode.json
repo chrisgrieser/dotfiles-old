@@ -442,11 +442,11 @@
 					],
 					"to": [
 						{"key_code": "left_arrow", "modifiers": ["shift"] },
-						{"key_code": "vk_none", "hold_down_milliseconds": 10 },
+						{"key_code": "vk_none", "hold_down_milliseconds": 35 },
 						{"key_code": "x", "modifiers": ["command"] },
-						{"key_code": "vk_none", "hold_down_milliseconds": 10 },
+						{"key_code": "vk_none", "hold_down_milliseconds": 35 },
 						{"key_code": "right_arrow"},
-						{"key_code": "vk_none", "hold_down_milliseconds": 10 },
+						{"key_code": "vk_none", "hold_down_milliseconds": 35 },
 						{"key_code": "v", "modifiers": ["command"] }
 					]
 				},
