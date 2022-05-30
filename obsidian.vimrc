@@ -174,8 +174,12 @@ nmap ,] mz&§&]`z
 " Remove last character from line
 nmap X mz$"_x`z
 
-" Commentary.vim emulation
+" commentary.vim emulation
 nmap gcc :.s/^|$/%%/g
+
+" turn bolded bullet points to h2
+nmap # :.s/^- \*\*(.*)\*\*$/## $1/
+nmap ,# mz&§&#`z
 
 """"""""""""""""""""""
 " < Text Objects
