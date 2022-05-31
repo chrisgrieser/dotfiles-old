@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 
-do shell script "killall \"YouTube\""
+do shell script "killall \"YouTube\" || true"
 
 tell application "Brave Browser"
 	if ((count of window) is not 0)
