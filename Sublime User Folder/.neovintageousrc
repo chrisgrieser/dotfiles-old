@@ -81,21 +81,18 @@ nnoremap % :MoveTo to=brackets<CR>
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=true<CR>
 nnoremap gD :LspSymbolDefinition side_by_side=false<CR>
-noremap g^ :MdeMagicFootnotes<CR>
+
+noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
 
 " [g]oto [s]ymbol
-nnoremap gs :ShowOverlay overlay=goto text=@<CR>
-vnoremap gs :ShowOverlay overlay=goto text=@<CR>
-nnoremap gS :GotoComment<CR>
-vnoremap gS :GotoComment<CR>
+noremap gs :ShowOverlay overlay=goto text=@<CR>
+noremap gS :GotoComment<CR>
 
 " [g]oto [o]pen file (= Quick Switcher)
-nnoremap go :OpenBrowse<CR>
-vnoremap go :OpenBrowse<CR>
+noremap go :OpenBrowse<CR>
 
 " [g]oto [f]ollow link under cursor
-nnoremap gf :OpenUrlUnderCursor<CR>
-vnoremap gf :OpenUrlUnderCursor<CR>
+noremap gf :OpenUrlUnderCursor<CR>
 nnoremap gF gf
 
 """"""""""""""""""""""
@@ -170,7 +167,7 @@ vnoremap <Space> "vc
 
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
-vnoremap <S-Space> "d
+vnoremap <S-Space> d
 
 " Yank Word/Selection (alt+space)
 nnoremap <M-Space> yiw
