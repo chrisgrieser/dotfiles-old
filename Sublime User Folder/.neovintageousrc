@@ -211,21 +211,22 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " < Windows
 """"""""""""""""""""""
-
+" most <C-w> commands are only unlocked by using the Origami Plugin
 " https://vimhelp.org/index.txt.html#CTRL-W
+
 nnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
 vnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
 nnoremap <C-w>w :FocusNeighboringGroup<CR>
 vnoremap <C-w>w :FocusNeighboringGroup<CR>
 
-" These require the Origami Plugin for Sublime
-" https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
-nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
-nnoremap <C-w>- :UnzoomPane<CR>
-
 " [g]oto next [w]indow (analogous to gt)
 nnoremap gw :FocusNeighboringGroup<CR>
 vnoremap gw :FocusNeighboringGroup<CR>
+
+" using Origami Commands
+" https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
+nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
+nnoremap <C-w>- :UnzoomPane<CR>
 
 """"""""""""""""""""""
 " < Sorting
