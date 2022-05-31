@@ -20,6 +20,7 @@
 							"type": "frontmost_application_unless",
 							"file_paths": [
 								"alacritty$",
+								"Inoreader.app",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
@@ -37,6 +38,7 @@
 							"type": "frontmost_application_unless",
 							"file_paths": [
 								"alacritty$",
+								"Inoreader.app",
 								"/System/Applications/Utilities/Terminal.app"
 							]
 						}
@@ -48,10 +50,7 @@
 						"key_code": "j",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": [ {
-						"key_code": "page_down",
-						"modifiers": "shift"
-					} ],
+					"to": [ {"key_code": "page_down", "modifiers": "shift" } ],
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
@@ -68,10 +67,7 @@
 						"key_code": "k",
 						"modifiers": {"mandatory": ["option"] }
 					},
-					"to": [ {
-						"key_code": "page_up",
-						"modifiers": "shift"
-					} ],
+					"to": [ { "key_code": "page_up", "modifiers": "shift" } ],
 					"conditions": [
 						{
 							"type": "frontmost_application_if",
@@ -81,6 +77,56 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" },
+						{ "key_code": "down_arrow" }
+					],
+					"conditions": [ { "type": "frontmost_application_if", "file_paths": ["Inoreader.app"] } ]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {"mandatory": ["option"] }
+					},
+					"to": [
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" },
+						{ "key_code": "up_arrow" }
+					],
+					"conditions": [{ "type": "frontmost_application_if", "file_paths": ["Inoreader.app"] } ]
 				}
 			]
 		},
@@ -160,7 +206,7 @@
 						    {"key_code": "l"}
 						]
 					},
-					"parameters": { "basic.simultaneous_threshold_milliseconds": 100 },
+					"parameters": { "basic.simultaneous_threshold_milliseconds": 70 },
 					"to": [
 						{"key_code": "delete_or_backspace" }
 					]
@@ -173,7 +219,7 @@
 						    {"key_code": "j"}
 						]
 					},
-					"parameters": { "basic.simultaneous_threshold_milliseconds": 100 },
+					"parameters": { "basic.simultaneous_threshold_milliseconds": 70 },
 					"to": [
 						{"key_code": "return_or_enter" }
 					]

@@ -46,8 +46,7 @@ map ö Marks.activateGotoMode swap
 map m Marks.activateCreateMode swap
 
 " Misc
-map <C-m> toggleMuteTab
-map M toggleMuteTab other
+map M toggleMuteTab
 map a passNextKey
 
 " unmap unneeded stuff

@@ -348,7 +348,7 @@ nmap ,sp vip,ss
 " < Misc
 """"""""""""""""""""""
 " help
-nmap ,? :obcommand
+nmap ? :obcommand
 
 """"""""""""""""""""""""
 " < Obsidian Limitations

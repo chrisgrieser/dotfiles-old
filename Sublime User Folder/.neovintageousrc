@@ -254,7 +254,7 @@ nnoremap <leader>sp vip:sort<CR>
 " < Misc
 """"""""""""""""""""""
 " help
-noremap <leader>? :help nv<CR>
+noremap ? :help nv<CR>
 
 """""""""""""""""""""""""""""
 " < Neovintageous Limitations
