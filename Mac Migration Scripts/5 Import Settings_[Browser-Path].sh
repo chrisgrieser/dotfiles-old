@@ -28,7 +28,7 @@ mv -vR 'Browser-Default-Folder/'* ~"/Library/Application Support/BraveSoftware/B
 cd ~/Desktop/Preferences/ || return
 for f in *.plist ; do
 	[[ -e "$f" ]] || break  # handle the case of no *.plist files
-	basename "$f" .plist
+	f=$(basename "$f" .plist)
 	defaults import "$f" "$f".plist
 done
 
