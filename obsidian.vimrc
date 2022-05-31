@@ -140,6 +140,7 @@ nmap Ü ~h
 exmap caseSwitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap ü :caseSwitch
 " to CapitalCase without the plugin: nmap Ü mzguiw~`zl
+vmap ü :caseSwitch
 
 " Transpose current & next char
 " (can't use x, cause it sends to black hole registry)
