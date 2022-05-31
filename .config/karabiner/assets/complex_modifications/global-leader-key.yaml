@@ -1,11 +1,11 @@
-title: ▲ Global Leader Key
+title: 🔺 Global Leader Key
 version: "0.1"
 maintainers:
   - pseudometa
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/fn-leader-key.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
-  - description: '▲ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)'
+  - description: '🔺 L-⌃ (Non-Apple) / fn (Apple)'
     manipulators:
       - type: basic
         description: Non-Apple Keyboard
@@ -30,7 +30,7 @@ rules:
               value: 1
           - set_notification_message:
               id: leader-notice
-              text: Δ Leader
+              text: 🔺 Leader
       - description: '2x Leader: F19'
         type: basic
         from:
@@ -80,7 +80,7 @@ rules:
               value: 1
           - set_notification_message:
               id: leader-notice
-              text: Δ Leader
+              text: 🔺 Leader
       - description: '2x Leader: F19'
         type: basic
         from:
@@ -154,9 +154,6 @@ rules:
           - type: variable_if
             name: LEADER_ACTIVE
             value: 1
-          - type: frontmost_application_unless
-            bundle_identifiers:
-              - ^com\.runningwithcrayons\.Alfred$
       - description: Emoji Inserter
         type: basic
         from:
@@ -179,9 +176,6 @@ rules:
           - type: variable_if
             name: LEADER_ACTIVE
             value: 1
-          - type: frontmost_application_unless
-            bundle_identifiers:
-              - ^com\.runningwithcrayons\.Alfred$
       - type: basic
         from:
           key_code: c

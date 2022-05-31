@@ -81,6 +81,7 @@ nnoremap % :MoveTo to=brackets<CR>
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=true<CR>
 nnoremap gD :LspSymbolDefinition side_by_side=false<CR>
+noremap g^ :MdeMagicFootnotes<CR>
 
 " [g]oto [s]ymbol
 nnoremap gs :ShowOverlay overlay=goto text=@<CR>

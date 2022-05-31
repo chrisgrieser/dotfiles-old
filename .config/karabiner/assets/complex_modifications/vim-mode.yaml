@@ -531,7 +531,7 @@ rules:
             modifiers:
               - command
       - type: basic
-        description: 'Ä (German Keyboard): Transpose Words'
+        description: 'Ä (German Layout): Transpose Words'
         from:
           key_code: quote
           modifiers:

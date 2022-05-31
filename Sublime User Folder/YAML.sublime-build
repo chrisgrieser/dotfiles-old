@@ -5,7 +5,7 @@
 	"variants": [
 		{
 			"name": "Convert to JSON",
-			"shell_cmd": "",
+			"shell_cmd": "yq -o=json '.' \"$file\" > \"$file_base_name\".json"
 		}
 	]
 }
