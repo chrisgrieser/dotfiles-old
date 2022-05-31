@@ -57,7 +57,9 @@ vmap H ^
 nmap L $
 vmap L $
 nmap J 6j
+vmap J 6j
 nmap K 6k
+vmap K 6k
 
 " Headings
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
@@ -102,10 +104,6 @@ vmap gf :followLinkUnderCursor
 exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
 nmap go :quickSwitcher
 vmap go :quickSwitcher
-
-" [g]oto next [w]indow (in Obsidian essentially the same as gt)
-nmap gw :tabnext
-vmap gw :tabnext
 
 """"""""""""""""""""""
 " < Indentation
@@ -242,12 +240,6 @@ imap <C-j> <Esc>c^
 """"""""""""""""""""""
 " < Tabs/Window
 """"""""""""""""""""""
-" Rebuild gt and gT from vim, https://vimhelp.org/tabpage.txt.html#gt
-" requires Cycle Through Panes Plugins https://obsidian.md/plugins?id=cycle-through-panes
-exmap tabNext obcommand cycle-through-panes:cycle-through-panes
-nmap gt :tabNext
-exmap tabPrev obcommand cycle-through-panes:cycle-through-panes-reverse
-nmap gT :tabPrev
 
 " https://vimhelp.org/index.txt.html#CTRL-W
 exmap focusRight obcommand editor:focus-right
@@ -270,8 +262,20 @@ exmap close obcommand workspace:close
 nmap <C-w>q :close
 nmap <C-w>c :close
 
-nmap <C-w><C-w> :tabnext
-nmap <C-w>w :tabnext
+" Rebuild gt and gT https://vimhelp.org/tabpage.txt.html#gt
+" requires Pane Relief OR Cycle Through Panes
+exmap nextPane obcommand pane-relief:go-next
+nmap gt :nextPane
+exmap prevPane obcommand pane-relief:go-prev
+nmap gT :prevPane
+
+" Original Vim Bindings
+nmap <C-w><C-w> :nextPane
+nmap <C-w>w :nextPane
+
+" [g]oto next [w]indow (in Obsidian essentially the same as gt)
+nmap gw :nextPane
+vmap gw :nextPane
 
 """"""""""""""""""""""
 " < Folding
@@ -280,6 +284,7 @@ nmap <C-w>w :tabnext
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
 nmap zc :togglefold
+nmap za :togglefold
 
 exmap unfoldall obcommand editor:unfold-all
 nmap zR :unfoldall
@@ -288,6 +293,14 @@ nmap zM :foldall
 
 " more folding things available when using the "Creases" plugin
 " https://discord.com/channels/686053708261228577/716028884885307432/979141099878760449
+" exmap foldCurrent obcommand creases:increase-fold-level-at-cursor
+" exmap unfoldCurrent obcommand creases:decrease-fold-level-at-cursor
+" exmap increaseFolding obcommand creases:decrease-fold-level
+" exmap reduceFolding obcommand creases:increase-fold-level
+" nmap zc :foldCurrent
+" nmap zo :unfoldCurrent
+" nmap zm :increaseFolding
+" nmap zr :reduceFolding
 
 """"""""""""""""""""""
 " < Sneak

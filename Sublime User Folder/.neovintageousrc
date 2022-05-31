@@ -52,7 +52,9 @@ vnoremap H ^
 nnoremap L $
 vnoremap L $
 nnoremap J 7j
+vnoremap J 7j
 nnoremap K 7k
+vnoremap K 7k
 
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
@@ -88,10 +90,6 @@ vnoremap gS :GotoComment<CR>
 " [g]oto [o]pen file (= Quick Switcher)
 nnoremap go :OpenBrowse<CR>
 vnoremap go :OpenBrowse<CR>
-
-" [g]oto next [w]indow (analogous to gt)
-nnoremap gw :FocusNeighboringGroup<CR>
-vnoremap gw :FocusNeighboringGroup<CR>
 
 """"""""""""""""""""""
 " < Indentation
@@ -224,6 +222,10 @@ vnoremap <C-w>w :FocusNeighboringGroup<CR>
 " https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
 nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
 nnoremap <C-w>- :UnzoomPane<CR>
+
+" [g]oto next [w]indow (analogous to gt)
+nnoremap gw :FocusNeighboringGroup<CR>
+vnoremap gw :FocusNeighboringGroup<CR>
 
 """"""""""""""""""""""
 " < Sorting
