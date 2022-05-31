@@ -1295,56 +1295,6 @@
                         ]
                     },
                     {
-                        "description": "🐁 5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button5"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250,
-                                    "basic.to_if_held_down_threshold_milliseconds": 250
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f16"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "right_command",
-                                        "modifiers": [
-                                            "control",
-                                            "option",
-                                            "fn"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "🐁 6: Look up word under cursor in Dictionary",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button6"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "d",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "▲ Leader Triggers: L-⌃ (Non-Apple) / fn (Apple)",
                         "manipulators": [
                             {
@@ -3286,53 +3236,6 @@
                         ]
                     },
                     {
-                        "description": "🛠 k+l / f+j (simultaneously): ↵",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "k"
-                                        },
-                                        {
-                                            "key_code": "l"
-                                        }
-                                    ]
-                                },
-                                "parameters": {
-                                    "basic.simultaneous_threshold_milliseconds": 100
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "f"
-                                        },
-                                        {
-                                            "key_code": "j"
-                                        }
-                                    ]
-                                },
-                                "parameters": {
-                                    "basic.simultaneous_threshold_milliseconds": 100
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "🛠 R-⌘ (tap): Focus Window & Hide Cursor",
                         "manipulators": [
                             {
@@ -3809,30 +3712,6 @@
                         ]
                     },
                     {
-                        "description": "🛠 R-⇧ (if alone): Backspace",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 250
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "🛠🟪 Fix Alt-Space (Obsidian): Shift-F12",
                         "manipulators": [
                             {
@@ -3857,6 +3736,101 @@
                                     {
                                         "key_code": "f12",
                                         "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🐁 5 (hold): Look up word under cursor, (tap): send F16",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button5"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250,
+                                    "basic.to_if_held_down_threshold_milliseconds": 250
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f16"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🐁 6: ⌘↹",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button6"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🛠 k+l / f+j (simultaneously): ⌫ / ↵",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "k"
+                                        },
+                                        {
+                                            "key_code": "l"
+                                        }
+                                    ]
+                                },
+                                "parameters": {
+                                    "basic.simultaneous_threshold_milliseconds": 100
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "f"
+                                        },
+                                        {
+                                            "key_code": "j"
+                                        }
+                                    ]
+                                },
+                                "parameters": {
+                                    "basic.simultaneous_threshold_milliseconds": 100
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"

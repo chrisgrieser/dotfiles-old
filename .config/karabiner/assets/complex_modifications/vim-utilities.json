@@ -150,7 +150,7 @@
 			]
 		},
 		{
-			"description": "🛠 k+l / f+j (simultaneously): ↵",
+			"description": "🛠 k+l / f+j (simultaneously): ⌫ / ↵",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -162,7 +162,7 @@
 					},
 					"parameters": { "basic.simultaneous_threshold_milliseconds": 100 },
 					"to": [
-						{"key_code": "return_or_enter" }
+						{"key_code": "delete_or_backspace" }
 					]
 				},
 				{
@@ -440,20 +440,6 @@
 						{"key_code": "delete_or_backspace", "repeat": false },
 						{"key_code": "hyphen", "repeat": false }
 					]
-				}
-			]
-		},
-		{
-			"description": "🛠 R-⇧ (if alone): Backspace",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {"key_code": "right_shift"},
-					"to": [{"key_code": "right_shift" } ],
-					"to_if_alone": [ { "key_code": "delete_or_backspace" } ],
-					"parameters": {
-						"basic.to_if_alone_timeout_milliseconds": 250
-					}
 				}
 			]
 		},

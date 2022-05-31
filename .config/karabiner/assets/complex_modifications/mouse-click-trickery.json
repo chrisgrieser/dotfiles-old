@@ -98,7 +98,7 @@
 			]
 		},
 		{
-			"description": "🐁 5 (hold): Super Key (⌘⌥⌃fn) / open URL, (tap): send F16",
+			"description": "🐁 5 (hold): Look up word under cursor, (tap): send F16",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -106,8 +106,8 @@
 					"to_if_alone": [{"key_code": "f16" } ],
 					"to_if_held_down": [
 						{
-							"key_code": "right_command",
-							"modifiers": ["control", "option", "fn"]
+							"key_code": "d",
+							"modifiers": ["command", "control"]
 						}
 					],
 					"parameters": {
@@ -118,15 +118,15 @@
 			]
 		},
 		{
-			"description": "🐁 6: Look up word under cursor in Dictionary",
+			"description": "🐁 6: ⌘↹",
 			"manipulators": [
 				{
 					"type": "basic",
 					"from": {"pointing_button": "button6"},
 					"to": [
 						{
-							"key_code": "d",
-							"modifiers": ["command", "control"]
+							"key_code": "tab",
+							"modifiers": ["command"]
 						}
 					]
 				}
