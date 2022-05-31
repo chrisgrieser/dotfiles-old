@@ -78,9 +78,9 @@ nnoremap % :MoveTo to=brackets<CR>
 " < g commands
 """"""""""""""""""""""
 
-" Goto Definition
-nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
-nnoremap gD :LspSymbolDefinition side_by_side=true<CR>
+" [g]oto [d]efinition
+nnoremap gd :LspSymbolDefinition side_by_side=true<CR>
+nnoremap gD :LspSymbolDefinition side_by_side=false<CR>
 
 " [g]oto [s]ymbol
 nnoremap gs :ShowOverlay overlay=goto text=@<CR>
@@ -91,6 +91,11 @@ vnoremap gS :GotoComment<CR>
 " [g]oto [o]pen file (= Quick Switcher)
 nnoremap go :OpenBrowse<CR>
 vnoremap go :OpenBrowse<CR>
+
+" [g]oto [f]ollow link under cursor
+nnoremap gf :OpenUrlUnderCursor<CR>
+vnoremap gf :OpenUrlUnderCursor<CR>
+nnoremap gF gf
 
 """"""""""""""""""""""
 " < Indentation

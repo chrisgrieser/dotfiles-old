@@ -26,7 +26,6 @@ nmap P "0p
 """"""""""""""""""""""
 " < Search
 """"""""""""""""""""""
-" search w/o having to press enter
 set ignorecase
 set smartcase
 set incsearch
@@ -35,7 +34,8 @@ set hlsearch
 " no modifier key for jumping to next word
 nmap + *
 
-" quicker find mode (by mirroring American keyboard layout on German keyboard layout)
+" quicker Find Mode
+" (by mirroring American keyboard layout on German keyboard layout)
 nmap - /
 
 " [M]ute search highlights
@@ -61,15 +61,15 @@ vmap J 6j
 nmap K 6k
 vmap K 6k
 
-" Headings
+" Headings instead of paragrpahs for curly braces
+" requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
 nmap { :nextHeading
 nmap } :prevHeading
 
 " Hard Mode: Turn off arrow keys for learning
-" needs a remap, since unmap does not work on
-" builtin keys
+" (needs remap, since unmap does not work on built-in keys)
 nmap <Right> <Nop>
 nmap <Left> <Nop>
 nmap <Up> <Nop>
@@ -229,8 +229,8 @@ rmap jj <Esc>
 """"""""""""""""""""""
 
 " mirroring HL in Normal Mode
-imap LL <Esc>A
 imap HH <Esc>I
+imap LL <Esc>A
 
 " Kill line
 imap <C-k> <Esc>C
@@ -328,7 +328,7 @@ nmap ,f :followLink
 """"""""""""""""""""""
 " < Formatting
 """"""""""""""""""""""
-" Use Semantic Line Breaks for formatting
+" Semantic Line Breaks formatting instead text width, cause it's the 21st century
 exmap sembr obcommand obsidian-sembr:toggle-sem-br
 nmap gq :sembr
 

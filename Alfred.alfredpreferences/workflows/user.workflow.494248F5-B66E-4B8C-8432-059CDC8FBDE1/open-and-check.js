@@ -14,18 +14,18 @@ function run (argv) {
 		return ObjC.unwrap(str);
 	}
 
-	function writeToFile(text, filePath) {
-		const openedFile = app.openForAccess(Path(filePath), { writePermission: true });
-		app.setEof(openedFile, { to: 0 }); // overwrite
-		app.write(text, { to: openedFile, startingAt: app.getEof(openedFile) });
-		app.closeAccess(openedFile);
+	function writeToFile(text, file) {
+		const str = $.NSString.alloc.initWithUTF8String(text);
+		str.writeToFileAtomicallyEncodingError(file, true, $.NSUTF8StringEncoding, null);
 	}
 
 	const url = argv.join("");
 
 	// check item as read
 	const readLaterFile = $.getenv("read_later_file").replace(/^~/, app.pathTo("home folder"));
-	const items = readFile(readLaterFile).trim().split("\n");
+	const items = readFile(readLaterFile)
+		.trim()
+		.split("\n");
 	const listWithoutClicked = items.filter (line => !line.includes (url));
 	const updateClicked = items
 		.filter (line => line.includes (url))[0]
