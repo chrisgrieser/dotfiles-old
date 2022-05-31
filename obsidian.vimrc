@@ -59,6 +59,12 @@ vmap L $
 nmap J 6j
 nmap K 6k
 
+" Headings
+exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
+exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
+nmap { :nextHeading
+nmap } :prevHeading
+
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys
