@@ -335,7 +335,26 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          # Finder with default folder
+          # Activate Finder
+          - shell_command: open -a "Finder"
+          - set_variable:
+              name: LEADER_ACTIVE
+              value: 0
+          - set_notification_message:
+              id: leader-notice
+              text: ""
+      - type: basic
+        from:
+          key_code: l
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - type: variable_if
+            name: LEADER_ACTIVE
+            value: 1
+        to:
+          # Open default Location with Finder
           - shell_command: open "$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
           - set_variable:
               name: LEADER_ACTIVE
@@ -497,7 +516,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          - shell_command: open -a 'Google Docs'
+          - shell_command: open -a 'Docs'
           - set_variable:
               name: LEADER_ACTIVE
               value: 0

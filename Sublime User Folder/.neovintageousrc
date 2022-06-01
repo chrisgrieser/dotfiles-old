@@ -119,7 +119,6 @@ vnoremap <BS> "_d
 
 " don't save small deletion in the register
 nnoremap x "_x
-nnoremap cl "_cl
 
 " Undo/Redo consistently on one key
 noremap U <C-r>

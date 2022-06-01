@@ -37,7 +37,7 @@ mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
 ln -sf "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
 
 # -------------------
-# not on all devices
+# Special Cases
 # -------------------
 # Obsidian vimrcs
 VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
@@ -45,8 +45,9 @@ ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH/Meta"
 ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH/../Development"
 
 # Brave
-mv ~"/Applications/Brave Browser Apps.localized" ~/.Trash
-ln -sf "$DOTFILE_FOLDER/../Brave Browser Apps.localized/" ~"/Applications/Brave Browser Apps.localized"
+BROWSER="Brave Browser"
+mv ~"/Applications/$BROWSER Apps.localized" ~/.Trash
+ln -sf "$DOTFILE_FOLDER/../$BROWSER Apps.localized/" ~"/Applications/$BROWSER Apps.localized"
 
 # VLC
 mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash

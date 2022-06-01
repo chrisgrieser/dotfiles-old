@@ -87,11 +87,16 @@ case $APP_TO_UPDATE in
 		# cp "$CUSTOM_ICON_FOLDER/Mail_fancy.icns" 'Mimestream.app/Contents/Resources/AppIcon.icns'
 		# touch "Mimestream.app" ;;
 
-	"Google Docs"|"Docs")
+	"Docs")
+		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Docs.app/Contents/Resources/app.icns"
+		touch "$PWA_FOLDER/Docs.app" ;;
+	"Google Docs")
 		cp "$CUSTOM_ICON_FOLDER/Google Docs.icns" "$PWA_FOLDER/Google Docs.app/Contents/Resources/app.icns"
 		touch "$PWA_FOLDER/Google Docs.app" ;;
 	"Inoreader")
 		iconsur -k "Unread" set "$PWA_FOLDER/Inoreader.app" ;;
+	"Excalidraw")
+		iconsur -l set "$PWA_FOLDER/Excalidraw.app" ;;
 
 	"YouTube")
 		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
@@ -125,7 +130,6 @@ esac
 if [[ $NONE_FOUND == 0 ]]; then
 	killall "$APP_TO_UPDATE"
 	if [[ $INFO_WINDOW == 0 ]]; then
-		killall "Finder"
 		killall "Dock"
 		sleep 2.5
 		open -a "$APP_TO_UPDATE"
