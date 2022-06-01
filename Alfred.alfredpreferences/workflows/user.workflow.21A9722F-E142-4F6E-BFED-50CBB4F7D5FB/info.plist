@@ -917,35 +917,6 @@ echo "$backup"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>37D098FC-911F-49FA-B9CB-20A143A09B36</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>triggerid</key>
 				<string>backup-alfred-prefs</string>
 			</dict>
@@ -998,13 +969,6 @@ echo "$backup"</string>
 			<integer>675</integer>
 			<key>ypos</key>
 			<integer>435</integer>
-		</dict>
-		<key>37D098FC-911F-49FA-B9CB-20A143A09B36</key>
-		<dict>
-			<key>xpos</key>
-			<integer>265</integer>
-			<key>ypos</key>
-			<integer>880</integer>
 		</dict>
 		<key>411F0C67-7E50-4B01-AF68-F2742465259B</key>
 		<dict>

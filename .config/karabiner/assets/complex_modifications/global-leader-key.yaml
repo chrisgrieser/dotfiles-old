@@ -103,7 +103,7 @@ rules:
           - set_notification_message:
               id: leader-notice
               text: ""
-  - description: ▲ Leader Actions
+  - description: 🔺 Leader Actions
     manipulators:
       - type: basic
         description: Leader Cancel
@@ -229,7 +229,8 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          - shell_command: open -a 'Discord'
+          # Obsidian Discord Server
+          - shell_command: open 'discord://discord.com/channels/686053708261228577/'
           - set_variable:
               name: LEADER_ACTIVE
               value: 0
@@ -334,6 +335,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
+          # Finder with default folder
           - shell_command: open "$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
           - set_variable:
               name: LEADER_ACTIVE
