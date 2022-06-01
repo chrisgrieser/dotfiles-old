@@ -119,6 +119,7 @@ vnoremap <BS> "_d
 
 " don't save small deletion in the register
 nnoremap x "_x
+nnoremap cl "_cl
 
 " Undo/Redo consistently on one key
 noremap U <C-r>
@@ -158,9 +159,9 @@ nnoremap <leader>] mzA]<Esc>`z
 " Remove last character from line
 nnoremap X mz$"_x`z
 
-" CSS: double-[c]lassing class under cursor
-nnoremap <leader>c mzlF.yEEp`z
-nnoremap <leader>C lF.dtr
+" CSS: double/remove [c]lass under cursor
+nnoremap <leader>c mzlEF.yEEp`z
+nnoremap <leader>C lF.d/[.\s]<CR>
 
 """"""""""""""""""""""
 " < Text Objects

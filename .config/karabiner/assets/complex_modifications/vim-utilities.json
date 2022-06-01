@@ -762,6 +762,16 @@
                   "language": "^de$"
                 }
               ]
+            },
+            {
+              "value": 0,
+              "name": "VIM_MODE",
+              "type": "variable_if"
+            },
+            {
+              "value": 0,
+              "name": "LEADER_ACTIVE",
+              "type": "variable_if"
             }
           ],
           "to": [

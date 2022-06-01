@@ -127,6 +127,7 @@ vmap <BS> "_d
 " don't save small deletion in the register
 " can't use "_x, cause Obsidian doesn't support noremap
 nmap x "_dl
+nmap cl "_dli
 
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
