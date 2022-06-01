@@ -8,19 +8,6 @@
 	<string>Development</string>
 	<key>connections</key>
 	<dict>
-		<key>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4C4CA3DF-BB26-4393-84E2-27190A118611</key>
 		<array>
 			<dict>
@@ -201,46 +188,6 @@
 			<string>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>gg</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>GitHub Notifications</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/notifications</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -500,26 +447,6 @@ subl --command toggle_side_bar</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>0C0D2E35-8BE0-4CC9-8DCD-4353B47E9347</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<integer>535</integer>
-			<key>ypos</key>
-			<integer>15</integer>
-		</dict>
-		<key>0DC32D96-8E63-4F76-BA11-9520FCBF1FD8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>GitHub Notifications</string>
-			<key>xpos</key>
-			<integer>375</integer>
-			<key>ypos</key>
-			<integer>15</integer>
-		</dict>
 		<key>0E26657D-87C2-4501-A282-F674945D73C9</key>
 		<dict>
 			<key>colorindex</key>
