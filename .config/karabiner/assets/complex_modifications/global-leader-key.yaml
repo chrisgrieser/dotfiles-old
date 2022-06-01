@@ -335,7 +335,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          # Activate Finder
+          # l: Activate Finder
           - shell_command: open -a "Finder"
           - set_variable:
               name: LEADER_ACTIVE
@@ -354,7 +354,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          # Open default Location with Finder
+          # L: Open default Location with Finder
           - shell_command: open "$HOME/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
           - set_variable:
               name: LEADER_ACTIVE

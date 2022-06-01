@@ -52,13 +52,14 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ## Global Leader Key
 The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-control` on other keyboards (and foot pedals).The key following it launches/switches the following apps:
 - `leader` (= 2x leader) → `F19` (for other automations)
-- `Esc` → Cancel leader key sequence
+- `Esc` → Cancel Leader Key Sequence
 - `c` → `C`alendar → BusyCal
 - `b` → `B`rowser → Brave Browser
 - `o` → `O`bsidian
 - `d` → `D`iscord
 - `s` → `S`lack
-- `l` → Default `L`ocation in Finder
+- `l` → Finder (lol @ mnemonics)
+- `L` → Default `L`ocation in Finder
 - `r` → D`r`afts
 - `e` → `E`ditor → Sublime Text
 - `y`[^1] → `Y`ouTube (PWA)
@@ -75,8 +76,8 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `t` → `T`elegram (in the Browser)
 - `f` → `F`acebook Messenger (in the Browser)
 - `x` → Password Manager: `xxx` → MacPass
-- `⇧ k` → `K`arabiner EventViewer
-- `⇧ b` → `B`etterTouchTool
+- `K` → `K`arabiner EventViewer
+- `B` → `B`etterTouchTool
 - `.`/`:` → Emoji Insertion Modal
 - `,` → System Preferences
 

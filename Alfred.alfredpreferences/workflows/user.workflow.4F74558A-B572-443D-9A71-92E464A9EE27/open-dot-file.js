@@ -21,16 +21,25 @@ workArray.forEach(file => {
 	const fPath = dotfileFolder + file.slice(1);
 	const parts = file.split("/");
 	const name = parts.pop();
+	const ext = name.split(".").pop();
 	let parentFolder = parts.pop();
 	if (parentFolder === ".") parentFolder = "";
+
+	let iconObject = { "type": "icon", "path": fPath }; // by default, use file icon
+	switch (ext) {
+		case "json":
+			// code block
+			break;
+		case "yaml":
+			// code block
+			break;
+	}
+
 	jsonArray.push({
 		"title": name,
 		"subtitle": parentFolder,
 		"match": alfredMatcher (name),
-		"icon": {
-			"type": "fileicon",
-			"path": fPath
-		},
+		"icon": iconObject,
 		"arg": fPath,
 	});
 });
