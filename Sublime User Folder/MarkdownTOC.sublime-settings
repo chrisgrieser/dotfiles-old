@@ -3,4 +3,6 @@
 		"autolink": true,
 		"levels": [2,3],
 	},
+
+	// use <!-- MarkdownTOC levels="2" --> to change levels in text
 }
