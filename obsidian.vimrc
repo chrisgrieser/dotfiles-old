@@ -29,7 +29,6 @@ nmap P "0p
 set ignorecase
 set smartcase
 set incsearch
-set hlsearch
 
 " no modifier key for jumping to next word
 nmap + *
