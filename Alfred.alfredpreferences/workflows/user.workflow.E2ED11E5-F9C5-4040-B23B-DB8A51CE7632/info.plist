@@ -1263,6 +1263,21 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/PreferencePanes/Notifications.prefPane</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>8DC78E24-A4CD-49D8-A3A5-003F8404EA75</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -1280,21 +1295,6 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 			<string>FD0018BF-877B-44BC-8869-23CC3FF21278</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>/System/Library/PreferencePanes/Notifications.prefPane</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>8DC78E24-A4CD-49D8-A3A5-003F8404EA75</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1384,7 +1384,7 @@ tell application "System Preferences"	activate	reveal anchor "startupItemsPref
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "System Preferences"	activate	reveal anchor "Display" of pane id "com.apple.preference.universalaccess"end tell</string>
+				<string>tell application "System Preferences"	activate	reveal anchor "Seeing_Display" of pane id "com.apple.preference.universalaccess"end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
