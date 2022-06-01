@@ -74,6 +74,10 @@ nnoremap ö `
 " rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
 nnoremap % :MoveTo to=brackets<CR>
 
+" Sublime Linter Errors
+nnoremap gl ]l
+nnoremap gL [l
+
 """"""""""""""""""""""
 " < g commands
 """"""""""""""""""""""
@@ -82,7 +86,7 @@ nnoremap % :MoveTo to=brackets<CR>
 nnoremap gd :LspSymbolDefinition side_by_side=true<CR>
 nnoremap gD :LspSymbolDefinition side_by_side=false<CR>
 
-" Markdown: [g]oto footnote [d]efinition
+" Markdown: [g]oto footnote [d]efinition (and back)
 noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
 
 " [g]oto [s]ymbol

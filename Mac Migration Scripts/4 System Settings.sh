@@ -124,9 +124,9 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Views
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 defaults write com.apple.finder ShowStatusBar -bool false
-defaults write com.apple.finder ShowPathbar -bool false
+defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 #List view as default
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"

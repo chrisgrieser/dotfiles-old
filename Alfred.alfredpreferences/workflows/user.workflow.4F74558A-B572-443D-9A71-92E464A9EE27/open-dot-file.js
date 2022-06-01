@@ -21,18 +21,36 @@ workArray.forEach(file => {
 	const fPath = dotfileFolder + file.slice(1);
 	const parts = file.split("/");
 	const name = parts.pop();
-	const ext = name.split(".").pop();
+
+	let ext = name.split(".").pop();
+	if (ext.includes("rc")) ext = "rc"; // rc files
+	else if (ext.startsWith("z")) ext = "zsh"; // zsh dotfiles
+
 	let parentFolder = parts.pop();
 	if (parentFolder === ".") parentFolder = "";
 
-	let iconObject = { "type": "icon", "path": fPath }; // by default, use file icon
+	let iconObject;
 	switch (ext) {
 		case "json":
-			// code block
+			iconObject = { "path": "icons/json.png" };
 			break;
 		case "yaml":
-			// code block
+		case "yml":
+			iconObject = { "path": "icons/yaml.png" };
 			break;
+		case "js":
+			iconObject = { "path": "icons/js.png" };
+			break;
+		case "zsh":
+		case "sh":
+			iconObject = { "path": "icons/shell.png" };
+			break;
+		case "rc":
+			iconObject = { "path": "icons/rc.png" };
+			break;
+		case "": // = folder
+		default:
+			iconObject = { "type": "fileicon", "path": fPath }; // by default, use file icon
 	}
 
 	jsonArray.push({
