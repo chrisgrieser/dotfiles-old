@@ -223,7 +223,6 @@ imap VV <Esc>V
 
 " quick switch to insert mode
 imap jj <Esc>
-rmap jj <Esc>
 
 """"""""""""""""""""""
 " < Insert Mode
