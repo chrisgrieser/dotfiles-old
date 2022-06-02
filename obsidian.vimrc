@@ -72,7 +72,6 @@ nmap <C-k> :prevHeading
 " exmap forward obcommand app:go-forward
 " nmap <C-l> :forward
 
-
 " Hard Mode: Turn off arrow keys for learning
 " (needs remap, since unmap does not work on built-in keys)
 nmap <Right> <Nop>
@@ -92,10 +91,12 @@ nmap ö `
 """"""""""""""""""""""
 
 " [g]oto [d]efiniton ~= footnotes
+" requires Footnotes Shortcut Plugin
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
 nmap gd :gotoFootnoteDefinition
 
 " [g]oto [s]ymbol
+" requires Another Quick Switcher Plugin
 exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
 nmap gs :gotoHeading
 vmap gs :gotoHeading
@@ -119,13 +120,14 @@ vmap go :quickSwitcher
 " < Editing
 """"""""""""""""""""""
 
-" [M]erge lines
-" can't remap to J, cause there is no noremap, also this merge is smarter
+" [M]erge Lines
+" can't remap to J, cause there is no noremap, also the merge from Code Editor
+" Shortcuts plugin is smarter than J
 exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergeLines
 vmap M :mergeLines
 
-" backspace works in normal mode like in insert mode & consistent with <Del>
+" backspace works in normal mode like in insert mode
 nmap <BS> h"_x
 vmap <BS> "_d
 
@@ -141,16 +143,16 @@ nmap <CR> A
 nmap U <C-r>
 vmap U <C-r>
 
-" Case Switch, h to enable vertical case-switching
+" Case Switch, (h to enable vertical navigation afterwards)
 nmap Ü ~h
-" Case Switch Plugin
+" Case Switch via Smarter MD Hotkeys Plugin
 exmap caseSwitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
 nmap ü :caseSwitch
-" to CapitalCase without the plugin: nmap Ü mzguiw~`zl
+" to CapitalCase without the plugin, use: nmap Ü mzlblgueh~`z
 vmap ü :caseSwitch
 
 " Transpose current & next char
-" (can't use x, cause it sends to black hole registry)
+" (can't use x, cause it sends to black hole registry, due to missing noremap)
 imap <C-t> <Esc>dlpi
 nmap ä dlp
 
@@ -209,7 +211,8 @@ nmap <S-Space> "_daw
 vmap <S-Space> "vd
 
 " Yank Word/Selection
-" Alt-Space mapped to <S-F12> due to Obsidian interpreting it as non-breaking space
+" Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
+" interpreting it as non-breaking space
 nmap <S-F12> yiw
 vmap <S-F12> y
 
@@ -334,7 +337,7 @@ nmap ,f :followLink
 """"""""""""""""""""""
 " < Formatting
 """"""""""""""""""""""
-" Semantic Line Breaks formatting instead text width, cause it's the 21st century
+" Semantic Line Breaks formatting instead text-width, cause it's the 21st century
 exmap sembr obcommand obsidian-sembr:toggle-sem-br
 nmap gq :sembr
 
