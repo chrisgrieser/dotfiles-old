@@ -379,6 +379,18 @@
           "to": [
             {
               "key_code": "return_or_enter"
+            },
+            {
+              "set_variable": {
+                "name": "VIM_MODE",
+                "value": 0
+              }
+            },
+            {
+              "set_notification_message": {
+                "id": "vim-mode-notice",
+                "text": ""
+              }
             }
           ]
         }

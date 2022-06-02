@@ -185,6 +185,12 @@ rules:
           basic.simultaneous_threshold_milliseconds: 70
         to:
           - key_code: return_or_enter
+          - set_variable:
+              name: VIM_MODE
+              value: 0
+          - set_notification_message:
+              id: vim-mode-notice
+              text: ""
   - description: "⚒️ R-⌘ (tap): Focus Window & Hide Cursor"
     manipulators:
       - type: basic
