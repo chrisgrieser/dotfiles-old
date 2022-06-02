@@ -12,8 +12,10 @@ const dotfileFolder = getEnv ("dotfile_folder");
 /* eslint-disable no-multi-str, quotes */
 const workArray = app.doShellScript (
 	'PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ;\
-	cd "' + dotfileFolder + '" ;\
-	fd -H -E "Alfred.alfredpreferences" -E "FileHistory*.json"'
+	cd "' + dotfileFolder + '" ; fd -H \
+	-E "Alfred.alfredpreferences" \
+	-E ".config/alacritty/themes/" \
+	-E "FileHistory*.json"'
 ).split("\r");
 /* eslint-enable no-multi-str, quotes */
 

@@ -130,10 +130,10 @@ noremap U <C-r>
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
-" Case Switch, h to enable vertical case-switching
+" Case Switch (added h for vertical navigation)
 nnoremap Ü ~h
-" Capitalcase
-nnoremap ü mzguiw~`z
+" Switch Case of first letter of the word = (toggle between Capital and lower case)
+nnoremap ü mzlblgueh~`z
 
 " Transpose current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
