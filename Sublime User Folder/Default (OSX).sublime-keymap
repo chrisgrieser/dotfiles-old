@@ -93,7 +93,7 @@
 		{ "key": "vi_insert_mode_aware" }
 	] },
 
-	// imap vv <Esc>v (quick visual mode)
+	// inoremap <C-y> :reg<CR>
 	{"keys": ["ctrl+y"], "command": "chain",
 		"args": {
 			"commands": [

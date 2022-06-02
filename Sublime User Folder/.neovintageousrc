@@ -28,7 +28,7 @@ set incsearch
 set hlsearch
 
 " no modfier key for jumping to next word
-nnoremap + *
+noremap + *
 
 " quicker find mode (by mirroring American keyboard layout on German keyboard layout)
 nnoremap - /
@@ -83,8 +83,8 @@ nnoremap gL [l
 """"""""""""""""""""""
 
 " [g]oto [d]efinition
-nnoremap gd :LspSymbolDefinition side_by_side=true<CR>
-nnoremap gD :LspSymbolDefinition side_by_side=false<CR>
+nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
+nnoremap gD :LspSymbolDefinition side_by_side=true<CR>
 
 " Markdown: [g]oto footnote [d]efinition (and back)
 noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
