@@ -5,8 +5,8 @@ function acp (){
 	if [[ $MSG_LENGTH > 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
 		# shellcheck disable=SC1087,SC2154
-		FUNC_NAME="$funcstack[1]"
-		print -z "$FUNC_NAME $COMMIT_MSG"
+		FUNC_NAME="$funcstack[1]" # https://stackoverflow.com/a/62527825
+		print -z "$FUNC_NAME $COMMIT_MSG" # put back into buffer
 		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
@@ -17,13 +17,6 @@ function acp (){
 	git commit -m "$COMMIT_MSG"
 	git pull
 	git push
-}
-
-function blubb () {
-	local COMMIT_MSG="$*"
-	# shellcheck disable=SC1087,SC2154
-	FUNC_NAME="$funcstack[1]"
-	print -z "$FUNC_NAME $COMMIT_MSG"
 }
 
 function amend () {

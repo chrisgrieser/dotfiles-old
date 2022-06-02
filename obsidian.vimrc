@@ -64,8 +64,8 @@ vmap K 6k
 " requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
-nmap { :nextHeading
-nmap } :prevHeading
+nmap <C-j> :nextHeading
+nmap <C-k> :prevHeading
 
 " Hard Mode: Turn off arrow keys for learning
 " (needs remap, since unmap does not work on built-in keys)
