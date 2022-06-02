@@ -132,7 +132,8 @@ nmap cl "_dli
 nmap <CR> A
 
 " Undo/Redo consistently on one key
-map U <C-r>
+nmap U <C-r>
+vmap U <C-r>
 
 " Case Switch, h to enable vertical case-switching
 nmap Ü ~h

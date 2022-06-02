@@ -125,7 +125,8 @@ vnoremap <BS> "_d
 nnoremap x "_x
 
 " Undo/Redo consistently on one key
-noremap U <C-r>
+nnoremap U <C-r>
+vnoremap U <C-r>
 
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
