@@ -59,12 +59,19 @@ vmap J 6j
 nmap K 6k
 vmap K 6k
 
-" Headings instead of paragrpahs for curly braces
-" requires Code Editor Shortcuts plugin
+" Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
 nmap <C-j> :nextHeading
 nmap <C-k> :prevHeading
+
+" Navigating Pane History done via Obsdian Hotkeys, so they also work
+" in Preview Mode
+" exmap back obcommand app:go-back
+" nmap <C-h> :back
+" exmap forward obcommand app:go-forward
+" nmap <C-l> :forward
+
 
 " Hard Mode: Turn off arrow keys for learning
 " (needs remap, since unmap does not work on built-in keys)
