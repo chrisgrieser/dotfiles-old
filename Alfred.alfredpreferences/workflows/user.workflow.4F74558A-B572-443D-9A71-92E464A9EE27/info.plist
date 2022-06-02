@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</string>
+				<string>9AD22EA9-7218-4E8E-B508-601B4250BA47</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -86,25 +86,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open "$*"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>openwith</key>
 				<string></string>
-				<key>type</key>
-				<integer>5</integer>
+				<key>sourcefile</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</string>
+			<string>9AD22EA9-7218-4E8E-B508-601B4250BA47</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -309,6 +301,13 @@ end if</string>
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
+		<key>9AD22EA9-7218-4E8E-B508-601B4250BA47</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 		<key>A8D9189D-9E8C-45D2-987F-D685FFE2CD44</key>
 		<dict>
 			<key>note</key>
@@ -317,15 +316,6 @@ end if</string>
 			<integer>490</integer>
 			<key>ypos</key>
 			<integer>290</integer>
-		</dict>
-		<key>B0BF4BAA-FA09-4484-B9AE-EDBAAE91DBBB</key>
-		<dict>
-			<key>note</key>
-			<string>open and enlarge in Moom</string>
-			<key>xpos</key>
-			<integer>235</integer>
-			<key>ypos</key>
-			<integer>10</integer>
 		</dict>
 		<key>BD16A75F-DC81-47C0-99A3-8A4360CCEA08</key>
 		<dict>
