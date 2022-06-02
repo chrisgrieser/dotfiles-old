@@ -1,6 +1,11 @@
 # git add, commit & push
 function acp (){
-	COMMIT_MSG="$*"
+	local COMMIT_MSG="$*"
+	local MSG_LENGTH=${#COMMIT_MSG}
+	if [[ $MSG_LENGTH > 50 ]]; then
+		echo "Commit Message too long ($MSG_LENGTH chars)."
+		exit 1
+	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
 		COMMIT_MSG="patch"
 	fi
@@ -11,8 +16,20 @@ function acp (){
 	git push
 }
 
+function test (){
+	local COMMIT_MSG="$*"
+	local MSG_LENGTH=${#COMMIT_MSG}
+	if [[ $MSG_LENGTH > 50 ]]; then
+		echo "Commit Message too long ($MSG_LENGTH chars)."
+		return 1
+	fi
+	if [[ "$COMMIT_MSG" == "" ]] ; then
+		echo "patch"
+	fi
+}
+
 function amend () {
-	COMMIT_MSG="$*"
+	local COMMIT_MSG="$*"
 	if [[ "$COMMIT_MSG" == "" ]] ; then
 		git commit --amend
 	else
@@ -24,7 +41,8 @@ function amend () {
 }
 
 alias amend='git commit --amend'
-alias commit="git commit -m"
+alias gc="git commit -m"
+alias ga="git add"
 alias pull="git pull"
 alias push="git push"
 alias ignored="git status --ignored"
@@ -33,7 +51,7 @@ alias checkout='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # go to git root https://stackoverflow.com/a/38843585
-alias root='r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"'
+alias groot='r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"'
 
 # open GitHub repo
 alias gh="open \$(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//' );"
@@ -68,9 +86,10 @@ function nuke {
 	SSH_REMOTE=$(git remote -v | head -n1 | cut -d" " -f1 | cut -d$'	' -f2)
 
 	# go to git repo root
+	# shellcheck disable=SC2164
 	r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && cd "${r%%/.git/*}"
 	LOCAL_REPO=$(pwd)
-	z ..
+	cd ..
 
 	rm -rf "$LOCAL_REPO"
 	echo "Local repo removed."
