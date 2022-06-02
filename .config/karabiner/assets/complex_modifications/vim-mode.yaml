@@ -21,7 +21,7 @@ rules:
               - ^md\.obsidian$
               - ^com\.sublimetext\.4$
         parameters:
-          basic.to_if_alone_timeout_milliseconds: 200
+          basic.to_if_alone_timeout_milliseconds: 150
         to_if_alone:
           - set_variable:
               name: VIM_MODE
