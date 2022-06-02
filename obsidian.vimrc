@@ -233,7 +233,7 @@ imap HH <Esc>I
 imap LL <Esc>A
 
 " Kill line
-imap <C-k> <Esc>C
+imap <C-k> <Esc>lC
 
 " Kill line backwards
 imap <C-j> <Esc>c^
