@@ -273,7 +273,7 @@ nmap <C-w>q :close
 nmap <C-w>c :close
 
 " Original gt and gT https://vimhelp.org/tabpage.txt.html#gt
-" requires Pane Relief
+" requires Pane Relief Plugin
 exmap nextPane obcommand pane-relief:go-next
 exmap prevPane obcommand pane-relief:go-prev
 nmap gt :nextPane
@@ -288,6 +288,7 @@ nmap gw :nextPane
 vmap gw :nextPane
 
 " swap pane position (Original Vim Bindings)
+" requires Pane Relief Plugin
 exmap swapPane obcommand pane-relief:swap-next
 exmap movePaneToFarLeft obcommand pane-relief:put-1st
 exmap movePaneToFarRight obcommand pane-relief:put-last
@@ -326,7 +327,7 @@ nmap zM :foldall
 """"""""""""""""""""""
 " < Sneak
 """"""""""""""""""""""
-" emulate vim-sneak
+" emulate vim-sneak (somewhat)
 exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
 nmap s :sneak
 
