@@ -4,7 +4,8 @@ function acp (){
 	local MSG_LENGTH=${#COMMIT_MSG}
 	if [[ $MSG_LENGTH > 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
-		exit 1
+		print -z "$COMMIT_MSG"
+		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
 		COMMIT_MSG="patch"
@@ -16,27 +17,21 @@ function acp (){
 	git push
 }
 
-function test (){
+function amend () {
 	local COMMIT_MSG="$*"
 	local MSG_LENGTH=${#COMMIT_MSG}
 	if [[ $MSG_LENGTH > 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
+		print -z "$COMMIT_MSG"
 		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
-		echo "patch"
-	fi
-}
-
-function amend () {
-	local COMMIT_MSG="$*"
-	if [[ "$COMMIT_MSG" == "" ]] ; then
-		git commit --amend
+		git commit --amend # edit interactively in $EDITOR
 	else
-		git commit --amend -m "$COMMIT_MSG"
+		git commit --amend -m "$COMMIT_MSG" # direct set new commit message
 	fi
 	# ⚠️ only when working alone – might lead to conflicts when working
-	# with collaboratos: https://stackoverflow.com/a/255080
+	# with collaboraters: https://stackoverflow.com/a/255080
 	git push --force
 }
 

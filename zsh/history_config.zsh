@@ -33,5 +33,5 @@ function hs {
 	           --bind "alt-enter:execute(echo {} | cut -c\"$TO_CUT\"- | pbcopy)+abort" \
 	          )
 	COMMAND=$(echo "$SELECTED" | cut -c"$TO_CUT"-)
-	print -z "$COMMAND"
+	print -z "$COMMAND" # print to buffer
 }
