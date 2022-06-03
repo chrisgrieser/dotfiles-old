@@ -4015,6 +4015,40 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Ⓜ️📧 Mimestream: R-Click opens link in background",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.mimestream\\.Mimestream$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button1"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 30,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },

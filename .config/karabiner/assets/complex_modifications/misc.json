@@ -1,6 +1,6 @@
 {
   "title": "Ⓜ️ Misc",
-  "version": "0.1",
+  "version": "1.1",
   "maintainers": [
     "pseudometa"
   ],
@@ -222,7 +222,7 @@
         },
         {
           "type": "basic",
-          "description": "cmd+ö → activate (needed to make jk work) (cmd+opt+ö is set as Twitterific activation)",
+          "description": "⌘+ö → activate (needed to make jk work) (⌘⌥+ö is set as Twitterific activation)",
           "from": {
             "key_code": "semicolon",
             "modifiers": {
@@ -423,6 +423,40 @@
               "key_code": "h",
               "modifiers": [
                 "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ⓜ️📧 Mimestream: R-Click opens link in background",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button2"
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "key_code": "vk_none",
+              "hold_down_milliseconds": 30
+            },
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.mimestream\\.Mimestream$"
               ]
             }
           ]

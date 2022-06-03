@@ -214,3 +214,19 @@ rules:
           - key_code: h
             modifiers:
               - command
+  - description: "Ⓜ️📧 Mimestream: R-Click opens link in background"
+    manipulators:
+      - type: basic
+        from:
+          pointing_button: button2
+        to:
+          - pointing_button: button1
+          - key_code: vk_none
+            hold_down_milliseconds: 30
+          - key_code: tab
+            modifiers:
+              - command
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^com\.mimestream\.Mimestream$

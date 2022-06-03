@@ -425,8 +425,9 @@ cat &lt;&lt; EOB
    },
    {
       "title":"YAML",
-      "arg":"yml",
-      "uid": "17"
+      "arg":"yaml",
+      "uid": "17",
+	  "match": "yaml yml"
    },
    {
       "title":"plist",

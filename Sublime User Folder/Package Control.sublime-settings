@@ -43,6 +43,7 @@
 		"Smart Duplicate",
 		"SublimeLinter",
 		"SublimeLinter-contrib-markdownlint",
+		"SublimeLinter-contrib-yamllint",
 		"SublimeLinter-eslint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-pylint",
