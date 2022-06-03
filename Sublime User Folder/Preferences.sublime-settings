@@ -27,7 +27,7 @@
 		"<C-r>": false, // rename file
 		"<C-t>": false, // transpose → Sublime built-in command
 		"<C-s>": false, // Spellcheck toggle
-		"<C-d>": false, // Duplicate File
+		"<C-c>": false, // Copy File
 	},
 
 	//-------------------------------------------------

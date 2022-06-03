@@ -15,13 +15,16 @@ noremap <C-y> :reg<CR>
 " Y consistent with D and C to the end of line
 nnoremap Y y$
 
-" always paste what was yanked (y), not what was deleted (d or c)
+" always paste what was yanked, not what was deleted
 nnoremap P "0p
+
+" append to register
+noremap gy "Yy
+noremap gx "Yd
 
 """"""""""""""""""""""
 " < Search
 """"""""""""""""""""""
-" search w/o having to press enter
 set ignorecase
 set smartcase
 set incsearch
@@ -113,34 +116,48 @@ vnoremap <S-Tab> <gv
 " < Editing
 """"""""""""""""""""""
 
-" [M]erge lines
-noremap M J
-
-" backspace works in normal mode like in insert mode & consistent with <Del>
-nnoremap <BS> h"_x
-vnoremap <BS> "_d
+""""""""""""""""""""""
+" < General Editing
+""""""""""""""""""""""
 
 " don't save small deletion in the register
 nnoremap x "_x
 
-" Undo/Redo consistently on one key
+" UNDO consistently on one key
 nnoremap U <C-r>
 vnoremap U <C-r>
 
-" allows Double Enter to add new line and indent bullet points
-nnoremap <CR> A
-
-" Case Switch (added h for vertical navigation)
+" CASE SWITCH (added h for vertical navigation)
 nnoremap Ü ~h
 " Switch Case of first letter of the word = (toggle between Capital and lower case)
 nnoremap ü mzlblgueh~`z
 
-" Transpose current & next char
+" TRANSPOSE current & next char
 " insert mode done via Sublime's build in command imap <C-t> xph
 nnoremap ä xp
 
 " Transpose current & next word
 nnoremap Ä dawelpb
+
+" CSS: double/remove [c]lass under cursor
+nnoremap <leader>c mzlEF.yEEp`z
+nnoremap <leader>C lF.d/[.\s]<CR>
+
+" CSS: Important Switcher
+nnoremap <leader>i :ImportantSwitcher<CR>
+
+""""""""""""""""""""""
+" < Line-Based Editing
+""""""""""""""""""""""
+
+" [M]erge lines
+noremap M J
+
+" [D]uplicate Line
+nnoremap <C-d> yyp
+
+" allows Double Enter to add new line and indent bullet points
+nnoremap <CR> A
 
 " Add Blank Line above/below
 nnoremap = mzO<Esc>`z
@@ -163,13 +180,6 @@ nnoremap <leader>> mzI> <Esc>`z
 
 " Remove last character from line
 nnoremap X mz$"_x`z
-
-" CSS: double/remove [c]lass under cursor
-nnoremap <leader>c mzlEF.yEEp`z
-nnoremap <leader>C lF.d/[.\s]<CR>
-
-" CSS: Important Switcher
-nnoremap <leader>i :ImportantSwitcher<CR>
 
 """"""""""""""""""""""
 " < Text Objects

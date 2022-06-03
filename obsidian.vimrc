@@ -19,8 +19,12 @@ imap <C-y> :reg
 " Y consistent with D and C to the end of line
 nmap Y y$
 
-" paste what was deleted/changed, not what was yanked(gets syntax highlighting of comments, but does work though)
+" always paste what was yanked, not what was deleted
 nmap P "0p
+
+" append to register
+map gy "Yy
+map gx "Yd
 
 """"""""""""""""""""""
 " < Search
@@ -146,11 +150,7 @@ nmap ä dlp
 " Transpose current & next word
 nmap Ä dawelpb
 
-" Duplicate Character
-nmap <C-d> ylp
-" Duplicate Line
-nmap <D-d> yyp
-
+""""""""""""""""""""""
 " < Line-Based Editing
 """"""""""""""""""""""
 
@@ -160,6 +160,9 @@ nmap <D-d> yyp
 exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergeLines
 vmap M :mergeLines
+
+" [D]uplicate Line
+nmap <C-d> yyp
 
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
