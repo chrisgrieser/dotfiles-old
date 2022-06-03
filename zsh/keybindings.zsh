@@ -45,6 +45,7 @@ zle -N copyBuffer
 
 # https://github.com/akavel/up/issues/44
 zle-upify() {
+    # shellcheck disable=SC2001
     buf="$(echo "$BUFFER" | sed 's/[ |]*$//')"
     tmp="$(mktemp)"
     eval "$buf |& up --unsafe-full-throttle -o '$tmp' 2>/dev/null"
