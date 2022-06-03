@@ -128,7 +128,7 @@ rules:
           - key_code: up_arrow
             modifiers:
               - option
-  - description: '▊ Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> äÄ<Space><S-Space>'
+  - description: '▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ<Space><S-Space><A-Space>R'
     manipulators:
       - type: basic
         description: 'Esc: Insert Mode (Exit Vim Mode)'
@@ -310,6 +310,38 @@ rules:
           - key_code: delete_or_backspace
       - type: basic
         from:
+          key_code: u
+        conditions:
+          - value: 1
+            type: variable_if
+            name: VIM_MODE
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - key_code: "y"
+            modifiers:
+              - command
+      - type: basic
+        from:
+          key_code: u
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - value: 1
+            type: variable_if
+            name: VIM_MODE
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - key_code: "y"
+            modifiers:
+              - command
+              - shift
+      - type: basic
+        from:
           key_code: c
           modifiers:
             mandatory:
@@ -483,6 +515,34 @@ rules:
           - key_code: delete_or_backspace
             modifiers:
               - option
+      - type: basic
+        description: 'Alt-Space: yiw'
+        from:
+          key_code: spacebar
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - value: 1
+            type: variable_if
+            name: VIM_MODE
+        to:
+          - set_variable:
+              name: VIM_MODE
+              value: 0
+          - set_notification_message:
+              id: vim-mode-notice
+              text: ""
+          - key_code: right_arrow
+            modifiers:
+              - option
+          - key_code: left_arrow
+            modifiers:
+              - option
+              - shift
+          - key_code: c
+            modifiers:
+              - command
       - type: basic
         description: 'S-Space: daw'
         from:
