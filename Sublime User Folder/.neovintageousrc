@@ -146,11 +146,12 @@ nnoremap Ä dawelpb
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
-" Append ,;.": to end of line
+" Append punctuation to end of line
 nnoremap <leader>, mzA,<Esc>`z
 nnoremap <leader>; mzA;<Esc>`z
 nnoremap <leader>. mzA.<Esc>`z
 nnoremap <leader>" mzA"<Esc>`z
+nnoremap <leader>' mzA'<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
 nnoremap <leader>) mzA)<Esc>`z
 nnoremap <leader>] mzA]<Esc>`z

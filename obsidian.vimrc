@@ -118,30 +118,20 @@ vmap go :quickSwitcher
 " < Editing
 """"""""""""""""""""""
 
-" [M]erge Lines
-" can't remap to J, cause there is no noremap, also the merge from Code Editor
-" Shortcuts plugin is smarter than J
-exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
-nmap M :mergeLines
-vmap M :mergeLines
-
-" backspace works in normal mode like in insert mode
-nmap <BS> h"_x
-vmap <BS> "_d
+""""""""""""""""""""""
+" < General Editing
+""""""""""""""""""""""
 
 " don't save small deletion in the register
 " can't use "_x, cause Obsidian doesn't support noremap
 nmap x "_dl
 nmap cl "_dli
 
-" allows Double Enter to add new line and indent with bullet points
-nmap <CR> A
-
-" Undo/Redo consistently on one key
+" UNDO consistently on one key
 nmap U <C-r>
 vmap U <C-r>
 
-" Case Switch, (h to enable vertical navigation afterwards)
+" CASE SWITCH, (h to enable vertical navigation afterwards)
 nmap Ü ~h
 " Case Switch via Smarter MD Hotkeys Plugin
 exmap caseSwitch obcommand obsidian-smarter-md-hotkeys:smarter-upper-lower
@@ -149,25 +139,43 @@ nmap ü :caseSwitch
 " to CapitalCase without the plugin, use: nmap Ü mzlblgueh~`z
 vmap ü :caseSwitch
 
-" Transpose current & next char
+" TRANSPOSE current & next char
 " (can't use x, cause it sends to black hole registry, due to missing noremap)
 imap <C-t> <Esc>dlpi
 nmap ä dlp
-
 " Transpose current & next word
 nmap Ä dawelpb
+
+" Duplicate Character
+nmap <C-d> ylp
+" Duplicate Line
+nmap <D-d> yyp
+
+" < Line-Based Editing
+""""""""""""""""""""""
+
+" [M]erge Lines
+" can't remap to J, cause there is no noremap, also the merge from Code Editor
+" Shortcuts plugin is smarter than J
+exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
+nmap M :mergeLines
+vmap M :mergeLines
+
+" allows Double Enter to add new line and indent with bullet points
+nmap <CR> A
 
 " Add Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
-" Append ,;.": to end of line
+" Append punctuation to end of line
 " `&§&` are helper commands for addings substitution to command chain,
 " `A;<Esc>` does not work as insert mode mappings aren't remembered
 nmap &§&. :.s/$/./
 nmap &§&, :.s/$/,/
 nmap &§&; :.s/$/;/
 nmap &§&" :.s/$/"/
+nmap &§&' :.s/$/'/
 nmap &§&: :.s/$/:/
 nmap &§&) :.s/$/)/
 nmap &§&] :.s/$/]/
@@ -175,6 +183,7 @@ nmap ,. mz&§&.`z
 nmap ,, mz&§&,`z
 nmap ,; mz&§&;`z
 nmap ," mz&§&"`z
+nmap ,' mz&§&'`z
 nmap ,: mz&§&:`z
 nmap ,) mz&§&)`z
 nmap ,] mz&§&]`z

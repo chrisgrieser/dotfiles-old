@@ -6,12 +6,8 @@ tell application id "com.runningwithcrayons.Alfred"
 	run trigger "BibTeX Library Backup" in workflow "de.chris-grieser.alfred-bibtex-citation-picker"
 end tell
 
--- upload potential changes documentation update
+-- rerun potential changes documentation update
 tell application id "com.runningwithcrayons.Alfred" to run trigger "re-index-doc-search" in workflow "de.chris-grieser.shimmering-obsidian" with argument "no sound"
 
-set homefolder to (POSIX path of (path to home folder as string))
-do shell script "cd " & homefolder & "\"/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Configs/Alfred.alfredpreferences/workflows/user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C\"
-git add -A
-git commit -m 'documentation search update'
-git push"
-
+# LOGGING
+do shell script "echo Biweekly\\ $(date '+%Y-%m-%d %H:%M') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/some.log'"

@@ -9,8 +9,8 @@ function add-cronjob () {
 add-cronjob "*/30 * * * *" '30-min_[Browser-Path].sh'
 add-cronjob "5 3 * * *" 'sleep-timer_[Browser].applescript'
 add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
-add-cronjob "5 21 * * *" daily-evening.applescript
-add-cronjob "5 6 * * 1,4" biweekly.applescript
+add-cronjob "5 21 * * *" 'daily-evening.applescript'
+add-cronjob "5 6 * * 1,4" 'biweekly.applescript'
 
 # prevent mail alerts https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
 # if line below is disabled, a log of cronjobs can be accesssed via `mail`
