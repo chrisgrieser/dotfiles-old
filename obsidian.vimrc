@@ -123,7 +123,7 @@ vmap go :quickSwitcher
 """"""""""""""""""""""
 
 """"""""""""""""""""""
-" < General Editing
+" << General Editing
 """"""""""""""""""""""
 
 " don't save small deletion in the register
@@ -151,7 +151,7 @@ nmap ä dlp
 nmap Ä dawelpb
 
 """"""""""""""""""""""
-" < Line-Based Editing
+" << Line-Based Editing
 """"""""""""""""""""""
 
 " [M]erge Lines
@@ -160,9 +160,6 @@ nmap Ä dawelpb
 exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergeLines
 vmap M :mergeLines
-
-" [D]uplicate Line
-nmap <C-d> yyp
 
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
@@ -230,7 +227,7 @@ vmap <S-Space> "vd
 " Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
 " interpreting it as non-breaking space
 nmap <S-F12> yiw
-vmap <S-F12> y
+vmap <S-F12> "vy
 
 " [R]eplace Word with register content
 nmap R viw"0p

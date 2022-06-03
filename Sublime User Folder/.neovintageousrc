@@ -117,7 +117,7 @@ vnoremap <S-Tab> <gv
 """"""""""""""""""""""
 
 """"""""""""""""""""""
-" < General Editing
+" << General Editing
 """"""""""""""""""""""
 
 " don't save small deletion in the register
@@ -147,14 +147,14 @@ nnoremap <leader>C lF.d/[.\s]<CR>
 nnoremap <leader>i :ImportantSwitcher<CR>
 
 """"""""""""""""""""""
-" < Line-Based Editing
+" << Line-Based Editing
 """"""""""""""""""""""
 
 " [M]erge lines
 noremap M J
 
-" [D]uplicate Line
-nnoremap <C-d> yyp
+" Duplicate Selection
+vnoremap <C-d> y'>p
 
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
@@ -191,11 +191,11 @@ vnoremap <Space> "vc
 
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
-vnoremap <S-Space> d
+vnoremap <S-Space> "vd
 
 " Yank Word/Selection (alt+space)
 nnoremap <M-Space> yiw
-vnoremap <M-Space> y
+vnoremap <M-Space> "vy
 
 " [R]eplace Word with register content
 nnoremap R viw"0p
