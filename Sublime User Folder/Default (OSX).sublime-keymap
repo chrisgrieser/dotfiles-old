@@ -18,9 +18,6 @@
 	// LEADER
 	// cmd+9 (needs to be set as "key": ["super+9"])
 
-	// Wrap
-	{ "keys": ["super+9", "w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-
 	// Change Color Scheme
 	{ "keys": ["super+9", "t"], "command": "select_color_scheme" },
 	// Installation / Uninstallation
@@ -154,25 +151,6 @@
 
 	//---------------------------------------------------------------------------
 
-	// Intra-File Navigation via goto or table of comments
-	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-	{ "keys": ["super+k"], "command": "goto_comment", "context": [
-		{ "key": "selector", "operator": "not_equal", "operand": "text.html.markdown" },
-		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
-	] },
-
-	// LSP: Goto Definition
-	{ "keys": ["ctrl+g"], "command": "lsp_symbol_definition", "args": { "side_by_side": false }, "context": [
-		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "definitionProvider"},
-		{"key": "auto_complete_visible", "operator": "equal", "operand": false }
-	] },
-
-	// Sublime Linter Navigation
-	{ "keys": ["super+e"], "command": "sublime_linter_goto_error", "args": { "direction": "next", "wrap": true }, "context": [
-		{"key": "selector", "operator": "not_equal", "operand": "text.html.markdown"},
-	] },
-	{ "keys": ["super+shift+e"], "command": "sublime_linter_goto_error", "args": { "direction": "previous", "wrap": true } },
-
 	// Lines
 	{ "keys": ["super+d"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
 	{ "keys": ["super+2"], "command": "swap_line_up" },
@@ -186,7 +164,7 @@
 	// Better Duplicate (Plugin)
 	{ "keys": ["super+shift+d"], "command": "duplicate_lines" },
 	// Smart Duplicate (CSS) (Plugin)
-	{ "keys": ["shift+super+alt+ctrl+d"], "command": "smart_duplicate", "context": [
+	{ "keys": ["shift+alt+d"], "command": "smart_duplicate", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.css"},
 	]},
 	// Split Line
@@ -207,6 +185,9 @@
 	// Mouse Keys
 	{ "keys": ["f16"], "command": "close" },
 	{ "keys": ["f13"], "command": "next_view" },
+
+	// Wrap
+	{ "keys": ["super+alt+shift+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
 
    // Disable Accidental Triggering of Saving Modal
    { "keys": ["super+shift+s"], "command": "noop" },
@@ -261,9 +242,6 @@
 
 	// CUSTOM PLUGINS
 	{ "keys": ["ctrl+n"], "command": "copy_filename" },
-	{ "keys": ["super+i"], "command": "important_switcher", "context": [
-		{"key": "selector", "operator": "equal", "operand": "source.css"},
-	] },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
@@ -273,6 +251,7 @@
 			"cwd": "${file_path:${folder}}",
 		}
 	},
+
 	// fix entering of pipe character and @
 	{ "keys": ["alt+7"], "command": "terminus_keypress", "args": {"key": "|"}, "context": [{"key": "terminus_view"}] },
 	{ "keys": ["alt+l"], "command": "terminus_keypress", "args": {"key": "@"}, "context": [{"key": "terminus_view"}] },
@@ -280,9 +259,6 @@
 		{ "key": "terminus_view" },
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
 	] },
-
-	// Open URL
-	{ "keys": ["super+enter"], "command": "open_url_under_cursor" },
 
 	// MARKDOWN
 	{ "keys": ["super+r"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} , "context": [
