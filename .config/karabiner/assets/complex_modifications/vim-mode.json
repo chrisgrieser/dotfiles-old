@@ -277,11 +277,11 @@
       ]
     },
     {
-      "description": "▊ Vim Mode Actions: hjklHJKLebG xCDiIaAoO<Esc> äÄ<Space><S-Space>",
+      "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ<Space><S-Space><A-Space>R",
       "manipulators": [
         {
-          "type": "basic",
           "description": "Esc: Insert Mode (Exit Vim Mode)",
+          "type": "basic",
           "from": {
             "key_code": "escape"
           },
@@ -308,8 +308,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "Hyper (Esc): Insert Mode (Exit Vim Mode)",
+          "type": "basic",
           "from": {
             "key_code": "caps_lock"
           },
@@ -336,8 +336,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "i: Insert Mode (Exit Vim Mode)",
+          "type": "basic",
           "from": {
             "key_code": "i"
           },
@@ -364,8 +364,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "a: Insert Mode (Exit Vim Mode)",
+          "type": "basic",
           "from": {
             "key_code": "a"
           },
@@ -392,6 +392,7 @@
           ]
         },
         {
+          "description": "I",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -430,6 +431,7 @@
           ]
         },
         {
+          "description": "A",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -468,6 +470,7 @@
           ]
         },
         {
+          "description": "J",
           "type": "basic",
           "from": {
             "key_code": "j"
@@ -617,6 +620,70 @@
           "to": [
             {
               "key_code": "delete_or_backspace"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u"
+          },
+          "conditions": [
+            {
+              "value": 1,
+              "type": "variable_if",
+              "name": "VIM_MODE"
+            },
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "^de$"
+                }
+              ]
+            }
+          ],
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "value": 1,
+              "type": "variable_if",
+              "name": "VIM_MODE"
+            },
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "^de$"
+                }
+              ]
+            }
+          ],
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "command",
+                "shift"
+              ]
             }
           ]
         },
@@ -927,8 +994,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "Space: ciw",
+          "type": "basic",
           "from": {
             "key_code": "spacebar"
           },
@@ -967,8 +1034,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "S-Space: daw",
+          "type": "basic",
           "from": {
             "key_code": "spacebar",
             "modifiers": {
@@ -1003,8 +1070,94 @@
           ]
         },
         {
+          "description": "Alt-Space: yiw",
           "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "value": 1,
+              "type": "variable_if",
+              "name": "VIM_MODE"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "option"
+              ]
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "option",
+                "shift"
+              ]
+            },
+            {
+              "key_code": "c",
+              "modifiers": [
+                "command"
+              ]
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        },
+        {
+          "description": "R: viwP",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "value": 1,
+              "type": "variable_if",
+              "name": "VIM_MODE"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "option"
+              ]
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "option",
+                "shift"
+              ]
+            },
+            {
+              "key_code": "v",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        },
+        {
           "description": "ä (German Keyboard): Transpose Chars",
+          "type": "basic",
           "from": {
             "key_code": "quote"
           },
@@ -1060,8 +1213,8 @@
           ]
         },
         {
-          "type": "basic",
           "description": "Ä (German Layout): Transpose Words",
+          "type": "basic",
           "from": {
             "key_code": "quote",
             "modifiers": {

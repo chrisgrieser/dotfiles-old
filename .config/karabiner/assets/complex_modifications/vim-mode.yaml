@@ -130,8 +130,8 @@ rules:
               - option
   - description: '▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ<Space><S-Space><A-Space>R'
     manipulators:
-      - type: basic
-        description: 'Esc: Insert Mode (Exit Vim Mode)'
+      - description: 'Esc: Insert Mode (Exit Vim Mode)'
+        type: basic
         from:
           key_code: escape
         conditions:
@@ -145,8 +145,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
-        description: 'Hyper (Esc): Insert Mode (Exit Vim Mode)'
+      - description: 'Hyper (Esc): Insert Mode (Exit Vim Mode)'
+        type: basic
         from:
           key_code: caps_lock
         conditions:
@@ -160,8 +160,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
-        description: 'i: Insert Mode (Exit Vim Mode)'
+      - description: 'i: Insert Mode (Exit Vim Mode)'
+        type: basic
         from:
           key_code: i
         conditions:
@@ -175,8 +175,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
-        description: 'a: Insert Mode (Exit Vim Mode)'
+      - description: 'a: Insert Mode (Exit Vim Mode)'
+        type: basic
         from:
           key_code: a
         conditions:
@@ -190,7 +190,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
+      - description: I
+        type: basic
         from:
           key_code: i
           modifiers:
@@ -210,7 +211,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
+      - description: "A"
+        type: basic
         from:
           key_code: a
           modifiers:
@@ -230,7 +232,8 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
-      - type: basic
+      - description: J
+        type: basic
         from:
           key_code: j
         conditions:
@@ -494,8 +497,8 @@ rules:
           - key_code: up_arrow
           - key_code: up_arrow
           - key_code: up_arrow
-      - type: basic
-        description: 'Space: ciw'
+      - description: 'Space: ciw'
+        type: basic
         from:
           key_code: spacebar
         conditions:
@@ -515,8 +518,8 @@ rules:
           - key_code: delete_or_backspace
             modifiers:
               - option
-      - type: basic
-        description: 'Alt-Space: yiw'
+      - description: 'S-Space: daw'
+        type: basic
         from:
           key_code: spacebar
           modifiers:
@@ -527,12 +530,25 @@ rules:
             type: variable_if
             name: VIM_MODE
         to:
-          - set_variable:
-              name: VIM_MODE
-              value: 0
-          - set_notification_message:
-              id: vim-mode-notice
-              text: ""
+          - key_code: right_arrow
+            modifiers:
+              - option
+          - key_code: delete_or_backspace
+            modifiers:
+              - option
+          - key_code: delete_or_backspace
+      - description: 'Alt-Space: yiw'
+        type: basic
+        from:
+          key_code: spacebar
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - value: 1
+            type: variable_if
+            name: VIM_MODE
+        to:
           - key_code: right_arrow
             modifiers:
               - option
@@ -543,10 +559,12 @@ rules:
           - key_code: c
             modifiers:
               - command
-      - type: basic
-        description: 'S-Space: daw'
+          - key_code: right_arrow
+          - key_code: left_arrow
+      - description: 'R: viwP'
+        type: basic
         from:
-          key_code: spacebar
+          key_code: r
           modifiers:
             mandatory:
               - shift
@@ -558,12 +576,15 @@ rules:
           - key_code: right_arrow
             modifiers:
               - option
-          - key_code: delete_or_backspace
+          - key_code: left_arrow
             modifiers:
               - option
-          - key_code: delete_or_backspace
-      - type: basic
-        description: 'ä (German Keyboard): Transpose Chars'
+              - shift
+          - key_code: v
+            modifiers:
+              - command
+      - description: 'ä (German Keyboard): Transpose Chars'
+        type: basic
         from:
           key_code: quote
         conditions:
@@ -577,6 +598,7 @@ rules:
           - key_code: left_arrow
             modifiers:
               - shift
+          # seems to need higher delay for some apps like Discord...
           - key_code: vk_none
             hold_down_milliseconds: 35
           - key_code: x
@@ -590,8 +612,8 @@ rules:
           - key_code: v
             modifiers:
               - command
-      - type: basic
-        description: 'Ä (German Layout): Transpose Words'
+      - description: 'Ä (German Layout): Transpose Words'
+        type: basic
         from:
           key_code: quote
           modifiers:
