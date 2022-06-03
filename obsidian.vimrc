@@ -163,10 +163,6 @@ nmap Ä dawelpb
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
-" Remove Line above/below
-nmap ,0 mzk"_dd`z
-nmap ,- mzj"_dd`z
-
 " Add ,;.": to end of line
 " `&§&` are helper commands for addings substitution to command chain,
 " `A;<Esc>` does not work as insert mode mappings aren't remembered
@@ -184,6 +180,12 @@ nmap ," mz&§&"`z
 nmap ,: mz&§&:`z
 nmap ,) mz&§&)`z
 nmap ,] mz&§&]`z
+
+exmap toggleBullet obcommand editor:toggle-bullet-list
+nmap ,- :toggleBullet
+exmap toggleBlockquote obcommand editor:toggle-blockquote
+nmap ,< :toggleBlockquote
+nmap ,> :toggleBlockquote
 
 " Remove last character from line
 nmap X mz$"_x`z
@@ -283,9 +285,11 @@ nmap gT :prevPane
 nmap <C-w><C-w> :nextPane
 nmap <C-w>w :nextPane
 
-" [g]oto next [w]indow (in Obsidian essentially the same as gt)
+" [g]oto next/prev [w]indow (in Obsidian essentially the same as gt)
 nmap gw :nextPane
 vmap gw :nextPane
+nmap gW :prevPane
+vmap gW :prevPane
 
 " swap pane position (Original Vim Bindings)
 " requires Pane Relief Plugin
