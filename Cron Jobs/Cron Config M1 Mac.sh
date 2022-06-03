@@ -13,7 +13,7 @@ add-cronjob "5 21 * * *" daily-evening.applescript
 add-cronjob "5 6 * * 1,4" biweekly.applescript
 
 # prevent mail alerts https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
-# if line above is disabled, a log of cronjobs can be accesssed via `mail`
+# if line below is disabled, a log of cronjobs can be accesssed via `mail`
 # mails can be deleted by removing `/private/var/mail/chrisgrieser`
 # (crontab -l && echo "MAILTO=''") | crontab -
 
