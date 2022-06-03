@@ -46,8 +46,6 @@ nmap <C-m> :nohlsearch
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
-vmap j gj
-vmap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H ^
@@ -163,7 +161,7 @@ nmap Ä dawelpb
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 
-" Add ,;.": to end of line
+" Append ,;.": to end of line
 " `&§&` are helper commands for addings substitution to command chain,
 " `A;<Esc>` does not work as insert mode mappings aren't remembered
 nmap &§&. :.s/$/./
@@ -181,6 +179,7 @@ nmap ,: mz&§&:`z
 nmap ,) mz&§&)`z
 nmap ,] mz&§&]`z
 
+" Prepend MD Syntax
 exmap toggleBullet obcommand editor:toggle-bullet-list
 nmap ,- :toggleBullet
 exmap toggleBlockquote obcommand editor:toggle-blockquote
@@ -223,7 +222,7 @@ nmap R viw"0p
 vmap R "0P
 
 " `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
-nmap S v(o)h
+nmap Q v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -379,7 +378,6 @@ nmap ? :obcommand
 " < unused keys
 """"""""""""""""""""""
 " Ö § ! & ° Q ? |
-" rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

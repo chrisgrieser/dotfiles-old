@@ -43,8 +43,6 @@ nnoremap <C-m> :nohlsearch<CR>
 " Have j and k navigate visual lines rather than logical ones
 nnoremap j gj
 nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nnoremap H ^
@@ -147,10 +145,6 @@ nnoremap Ä dawelpb
 nnoremap = mzO<Esc>`z
 nnoremap _ mzo<Esc>`z
 
-" Remove Line above/below
-nnoremap <leader>0 mzk"_dd`z
-nnoremap <leader>- mzj"_dd`z
-
 " Append ,;.": to end of line
 nnoremap <leader>, mzA,<Esc>`z
 nnoremap <leader>; mzA;<Esc>`z
@@ -160,12 +154,20 @@ nnoremap <leader>: mzA:<Esc>`z
 nnoremap <leader>) mzA)<Esc>`z
 nnoremap <leader>] mzA]<Esc>`z
 
+" Prepend MD Syntax
+nnoremap <leader>- mzI- <Esc>`z
+nnoremap <leader>< mzI> <Esc>`z
+nnoremap <leader>> mzI> <Esc>`z
+
 " Remove last character from line
 nnoremap X mz$"_x`z
 
 " CSS: double/remove [c]lass under cursor
 nnoremap <leader>c mzlEF.yEEp`z
 nnoremap <leader>C lF.d/[.\s]<CR>
+
+" CSS: Important Switcher
+nnoremap <leader>i :ImportantSwitcher<CR>
 
 """"""""""""""""""""""
 " < Text Objects
@@ -188,7 +190,7 @@ nnoremap R viw"0p
 vnoremap R "0P
 
 " `vas` emulation
-nnoremap S v(o)h
+nnoremap Q v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -233,9 +235,11 @@ vnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
 nnoremap <C-w>w :FocusNeighboringGroup<CR>
 vnoremap <C-w>w :FocusNeighboringGroup<CR>
 
-" [g]oto next [w]indow (analogous to gt)
+" [g]oto next/prev [w]indow (analogous to gt)
 nnoremap gw :FocusNeighboringGroup<CR>
 vnoremap gw :FocusNeighboringGroup<CR>
+nnoremap gW :FocusNeighboringGroup forward=false<CR>
+vnoremap gW :FocusNeighboringGroup forward=false<CR>
 
 " using Origami Commands
 " https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
@@ -287,7 +291,6 @@ noremap ? :help nv<CR>
 " < unused keys
 """"""""""""""""""""""
 " Ö § ! & ° Q ? |
-" rarely used: 0 # Z
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?
