@@ -182,9 +182,12 @@ nmap ,] mz&§&]`z
 " Prepend MD Syntax
 exmap toggleBullet obcommand editor:toggle-bullet-list
 nmap ,- :toggleBullet
+vmap ,- :toggleBullet
 exmap toggleBlockquote obcommand editor:toggle-blockquote
 nmap ,< :toggleBlockquote
+vmap ,< :toggleBlockquote
 nmap ,> :toggleBlockquote
+vmap ,> :toggleBlockquote
 
 " Remove last character from line
 nmap X mz$"_x`z
