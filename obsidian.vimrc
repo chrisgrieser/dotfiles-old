@@ -34,7 +34,7 @@ nmap + *
 
 " quicker Find Mode
 " (by mirroring American keyboard layout on German keyboard layout)
-nmap - /
+map - /
 
 " [M]ute search highlights
 nmap <C-m> :nohlsearch
@@ -181,9 +181,9 @@ nmap ,] mz&§&]`z
 
 " Prepend MD Syntax
 exmap toggleBullet obcommand editor:toggle-bullet-list
+exmap toggleBlockquote obcommand editor:toggle-blockquote
 nmap ,- :toggleBullet
 vmap ,- :toggleBullet
-exmap toggleBlockquote obcommand editor:toggle-blockquote
 nmap ,< :toggleBlockquote
 vmap ,< :toggleBlockquote
 nmap ,> :toggleBlockquote

@@ -12,6 +12,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/chrisgrieser/.gitignore_global
+	autocrlf = input
 [pager]
 	branch = false
 [pull]

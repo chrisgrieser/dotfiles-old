@@ -31,7 +31,7 @@ set hlsearch
 noremap + *
 
 " quicker find mode (by mirroring American keyboard layout on German keyboard layout)
-nnoremap - /
+noremap - /
 
 " [M]ute search highlights
 nnoremap <C-m> :nohlsearch<CR>
@@ -89,14 +89,15 @@ noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
 
 " [g]oto [s]ymbol
 noremap gs :ShowOverlay overlay=goto text=@<CR>
-noremap gS :GotoComment<CR>
+
+" [g]oto [r]egion (via comment marks plugin)
+noremap gr :GotoComment<CR>
 
 " [g]oto [o]pen file (= Quick Switcher)
 noremap go :OpenBrowse<CR>
 
 " [g]oto [f]ollow link under cursor
 noremap gf :OpenUrlUnderCursor<CR>
-nnoremap gF gf
 
 """"""""""""""""""""""
 " < Indentation
