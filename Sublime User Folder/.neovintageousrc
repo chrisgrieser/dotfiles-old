@@ -112,6 +112,8 @@ nnoremap <S-Tab> <<
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+noremap ° =
+
 """"""""""""""""""""""
 " < Editing
 """"""""""""""""""""""
@@ -302,7 +304,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § ! & ° Q ? |
+" Ö § ! & ? |
 " Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?
