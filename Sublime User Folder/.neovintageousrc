@@ -183,6 +183,10 @@ nnoremap <leader>> mzI> <Esc>`z
 " Remove last character from line
 nnoremap X mz$"_x`z
 
+" Swap up/down (vim.unimpaired)
+noremap <Up> [e
+noremap <Down> ]e
+
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
@@ -258,7 +262,7 @@ vnoremap gW :FocusNeighboringGroup forward=false<CR>
 " using Origami Commands
 " https://github.com/SublimeText/Origami/blob/master/Origami.sublime-commands
 nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
-nnoremap <C-w>- :UnzoomPane<CR>
+" this is essentially nnoremap <C-w>+ <C-w>_
 
 """"""""""""""""""""""
 " < Formatting
