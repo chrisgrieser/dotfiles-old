@@ -230,3 +230,18 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^com\.mimestream\.Mimestream$
+  - description: "Ⓜ️🟦 Drafts: R-Click opens link (in foreground)"
+    manipulators:
+      - type: basic
+        from:
+          pointing_button: button2
+        to:
+          - pointing_button: button2
+          - key_code: vk_none
+            hold_down_milliseconds: 10
+          - key_code: o
+          - key_code: return_or_enter
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^com\.agiletortoise\.Drafts-OSX$
