@@ -322,7 +322,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § ! & ? |
-" Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
+" Ö § & ? |
+" Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

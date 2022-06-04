@@ -277,7 +277,7 @@
       ]
     },
     {
-      "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ<Space><S-Space><A-Space>R",
+      "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ!<Space><S-Space><A-Space>R",
       "manipulators": [
         {
           "description": "Esc: Insert Mode (Exit Vim Mode)",
@@ -1213,15 +1213,10 @@
           ]
         },
         {
-          "description": "Ä (German Layout): Transpose Words",
+          "description": "Ä (German Keyboard): Transpose Chars backwards",
           "type": "basic",
           "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
+            "key_code": "quote"
           },
           "conditions": [
             {
@@ -1236,6 +1231,60 @@
                   "language": "^de$"
                 }
               ]
+            }
+          ],
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "shift"
+              ]
+            },
+            {
+              "key_code": "vk_none",
+              "hold_down_milliseconds": 35
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "command"
+              ]
+            },
+            {
+              "key_code": "vk_none",
+              "hold_down_milliseconds": 35
+            },
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "vk_none",
+              "hold_down_milliseconds": 35
+            },
+            {
+              "key_code": "v",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "!: Transpose Words",
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "value": 1,
+              "type": "variable_if",
+              "name": "VIM_MODE"
             }
           ],
           "to": [

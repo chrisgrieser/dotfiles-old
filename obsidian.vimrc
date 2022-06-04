@@ -118,6 +118,8 @@ vmap go :quickSwitcher
 """"""""""""""""""""""
 " Tab as indentation is already implemented in Obsidian
 
+"Can't map ° = due to no noremap... :/
+
 """"""""""""""""""""""
 " < Editing
 """"""""""""""""""""""
@@ -143,12 +145,15 @@ nmap ü :caseSwitch
 " to CapitalCase without the plugin, use: nmap Ü mzlblgueh~`z
 vmap ü :caseSwitch
 
-" TRANSPOSE current & next char
+" TRANSPOSE
 " (can't use x, cause it sends to black hole registry, due to missing noremap)
-imap <C-t> <Esc>dlpi
+" current & next char
 nmap ä dlp
-" Transpose current & next word
-nmap Ä dawelpb
+imap <C-t> <Esc>dlpi
+" current & previous char
+nmap Ä dlhhp
+" current & next word
+nmap ! dawelpb
 
 """"""""""""""""""""""
 " << Line-Based Editing
@@ -411,7 +416,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § ! & ° Q ? |
-" Special: <BS>, <Right>, <Left>, <Up>, <Down>, <End>
+" Ö § & ? |
+" Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

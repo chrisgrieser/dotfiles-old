@@ -3129,7 +3129,112 @@
                         ]
                     },
                     {
-                        "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ<Space><S-Space><A-Space>R",
+                        "description": "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌘+L-Click in foreground",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.agiletortoise\\.Drafts-OSX$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button2"
+                                    },
+                                    {
+                                        "key_code": "o"
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 500,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.agiletortoise\\.Drafts-OSX$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    },
+                                    "pointing_button": "button1"
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button2"
+                                    },
+                                    {
+                                        "key_code": "o"
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🐁 4 (hold): search selected text / open URL, (tap): send F13",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button4"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f13"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; SEL=\"${SEL/#\\~/$HOME}\" ; if [[ -f \"$SEL\" ]]; then open -R \"$SEL\" ; elif [[ -d \"$SEL\" ]]; then open \"$SEL\" ; elif [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | tr -d \" \")\" ; elif [[ -n \"$SEL\" ]]; then open \"https://www.google.com/search?q=$SEL\" ; fi"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ!<Space><S-Space><A-Space>R",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -4080,9 +4185,58 @@
                                         "type": "input_source_if"
                                     }
                                 ],
-                                "description": "Ä (German Layout): Transpose Words",
+                                "description": "Ä (German Keyboard): Transpose Chars backwards",
                                 "from": {
-                                    "key_code": "quote",
+                                    "key_code": "quote"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 35,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 35,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "left_arrow"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 35,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "!: Transpose Words",
+                                "from": {
+                                    "key_code": "1",
                                     "modifiers": {
                                         "mandatory": [
                                             "shift"
@@ -4162,111 +4316,6 @@
                                         "modifiers": [
                                             "option"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌘+L-Click in foreground",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.agiletortoise\\.Drafts-OSX$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button2"
-                                    },
-                                    {
-                                        "key_code": "o"
-                                    },
-                                    {
-                                        "key_code": "return_or_enter"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 500,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.agiletortoise\\.Drafts-OSX$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    },
-                                    "pointing_button": "button1"
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button2"
-                                    },
-                                    {
-                                        "key_code": "o"
-                                    },
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "🐁 4 (hold): search selected text / open URL, (tap): send F13",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f13"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "SEL=$(pbpaste) ; SEL=\"${SEL/#\\~/$HOME}\" ; if [[ -f \"$SEL\" ]]; then open -R \"$SEL\" ; elif [[ -d \"$SEL\" ]]; then open \"$SEL\" ; elif [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | tr -d \" \")\" ; elif [[ -n \"$SEL\" ]]; then open \"https://www.google.com/search?q=$SEL\" ; fi"
                                     }
                                 ],
                                 "type": "basic"
