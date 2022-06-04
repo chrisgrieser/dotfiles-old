@@ -152,7 +152,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B4FBB3B0-29EA-40FE-AEA3-514A657232AD</string>
+				<string>003868AF-A80C-42B9-97CA-9F8B16A29EF6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -474,6 +474,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⇥</string>
+				<key>keycode</key>
+				<integer>48</integer>
+				<key>keymod</key>
+				<integer>262144</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>003868AF-A80C-42B9-97CA-9F8B16A29EF6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -526,27 +547,6 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>1C3D78DC-489D-4E04-B780-4B301F7BF529</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>⇥</string>
-				<key>keycode</key>
-				<integer>48</integer>
-				<key>keymod</key>
-				<integer>262144</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>B4FBB3B0-29EA-40FE-AEA3-514A657232AD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -723,27 +723,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>←</string>
-				<key>keycode</key>
-				<integer>123</integer>
-				<key>keymod</key>
-				<integer>12058624</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -775,6 +754,27 @@ end alfred_script</string>
 			<string>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>←</string>
+				<key>keycode</key>
+				<integer>123</integer>
+				<key>keymod</key>
+				<integer>12058624</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -985,6 +985,17 @@ end alfred_script</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>003868AF-A80C-42B9-97CA-9F8B16A29EF6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Cycle through</string>
+			<key>xpos</key>
+			<integer>690</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
 		<key>0FCAB866-B4C8-464B-863F-A299A91B25D1</key>
 		<dict>
 			<key>colorindex</key>
@@ -1172,7 +1183,7 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Cycles Windows</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>685</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
@@ -1221,17 +1232,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>805</integer>
 		</dict>
-		<key>B4FBB3B0-29EA-40FE-AEA3-514A657232AD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Cycle through</string>
-			<key>xpos</key>
-			<integer>695</integer>
-			<key>ypos</key>
-			<integer>290</integer>
-		</dict>
 		<key>CA121D42-D933-4021-AAED-1EB9705B224D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1259,7 +1259,7 @@ end alfred_script</string>
 			<key>note</key>
 			<string>Cycle through</string>
 			<key>xpos</key>
-			<integer>695</integer>
+			<integer>690</integer>
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>

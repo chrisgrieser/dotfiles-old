@@ -623,12 +623,8 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.sublimetext.4</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -673,17 +669,15 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>on run argv	tell application "Drafts" to make new draft with properties {content:argv}
-	return argv
-end run</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>save-to-drafts_[Browser].applescript</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
