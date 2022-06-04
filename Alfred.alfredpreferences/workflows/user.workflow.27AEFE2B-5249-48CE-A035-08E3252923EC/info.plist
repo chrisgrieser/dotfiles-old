@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2B8D7DA4-2146-4F71-8597-E14FC9C4E21C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C71C58FE-597F-47BA-BA2C-0CEEA6E173FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2D16E8C6-DE6C-4485-A253-14235E4A1A94</key>
 		<array>
 			<dict>
@@ -104,6 +117,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>81336F07-6F1D-4BF8-8FC0-6EF0B8886277</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>56A2CDC1-E909-4825-82BA-80AAC51CD73F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0ABBA2D0-AB03-47DC-952B-157EAB6B558B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -179,11 +205,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C71C58FE-597F-47BA-BA2C-0CEEA6E173FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0ABBA2D0-AB03-47DC-952B-157EAB6B558B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F34E5081-7725-4B48-867B-36BC4DFAD990</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>56A2CDC1-E909-4825-82BA-80AAC51CD73F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -447,9 +499,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -697,6 +749,82 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>redirects</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⤵️ Redirects</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2B8D7DA4-2146-4F71-8597-E14FC9C4E21C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>chrome-extension://ocgpenflpmgnfapjedencafcfakcekcd/redirector.html</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C71C58FE-597F-47BA-BA2C-0CEEA6E173FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>adblock</string>
+				<key>subtext</key>
+				<string>User Rules</string>
+				<key>text</key>
+				<string>🚫 Adblock Settings</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F34E5081-7725-4B48-867B-36BC4DFAD990</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>chrome-extension://bgnkhhnnamicmpeenaelnjfhikgbkllg/pages/options.html#user-filter</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>56A2CDC1-E909-4825-82BA-80AAC51CD73F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -760,6 +888,17 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>2B8D7DA4-2146-4F71-8597-E14FC9C4E21C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>manage mouse gestures</string>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>740</integer>
+		</dict>
 		<key>2D16E8C6-DE6C-4485-A253-14235E4A1A94</key>
 		<dict>
 			<key>colorindex</key>
@@ -815,6 +954,15 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>600</integer>
 			<key>ypos</key>
 			<integer>120</integer>
+		</dict>
+		<key>56A2CDC1-E909-4825-82BA-80AAC51CD73F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>910</integer>
 		</dict>
 		<key>6AD9D65A-5CD0-4DB2-860D-03EC5018186B</key>
 		<dict>
@@ -892,6 +1040,15 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>490</integer>
 		</dict>
+		<key>C71C58FE-597F-47BA-BA2C-0CEEA6E173FD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>770</integer>
+		</dict>
 		<key>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</key>
 		<dict>
 			<key>xpos</key>
@@ -909,6 +1066,17 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>F34E5081-7725-4B48-867B-36BC4DFAD990</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>manage mouse gestures</string>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>880</integer>
 		</dict>
 	</dict>
 	<key>version</key>
