@@ -293,41 +293,6 @@
                         ]
                     },
                     {
-                        "description": "🐁 4 (hold): search selected text / open URL, (tap): send F13",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 300
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f13"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 50,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "shell_command": "SEL=$(pbpaste) ; if [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | sed 's/ //g')\" ; else open \"https://www.google.com/search?q=$SEL\" ; fi"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)",
                         "manipulators": [
                             {
@@ -4267,6 +4232,41 @@
                                     },
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🐁 4 (hold): search selected text / open URL, (tap): send F13",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button4"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f13"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "shell_command": "SEL=$(pbpaste) ; SEL=\"${SEL/#\\~/$HOME}\" ; if [[ -f \"$SEL\" ]]; then open -R \"$SEL\" ; elif [[ -d \"$SEL\" ]]; then open \"$SEL\" ; elif [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | tr -d \" \")\" ; elif [[ -n \"$SEL\" ]]; then open \"https://www.google.com/search?q=$SEL\" ; fi"
                                     }
                                 ],
                                 "type": "basic"

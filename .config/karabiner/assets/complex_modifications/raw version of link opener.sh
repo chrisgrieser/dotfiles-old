@@ -1,5 +1,4 @@
 #!/bin/zsh
-SEL=$(pbpaste)
 
 # IF SELECTION IS...
 # file path: reveal it
@@ -8,7 +7,7 @@ SEL=$(pbpaste)
 # some other text: google it
 # empty: do nothing
 
-# if selections contains ~, resolve it
+SEL=$(pbpaste)
 SEL="${SEL/#\~/$HOME}"
 
 if [[ -f "$SEL" ]]; then
@@ -21,3 +20,7 @@ elif [[ "$SEL" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then
 elif [[ -n "$SEL" ]]; then
 	open "https://www.google.com/search?q=$SEL"
 fi
+
+# -----------------------------------
+
+# SEL=$(pbpaste) ; SEL="${SEL/#\~/$HOME}" ; if [[ -f "$SEL" ]]; then open -R "$SEL" ; elif [[ -d "$SEL" ]]; then open "$SEL" ; elif [[ "$SEL" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open "$(echo "$SEL" | tr -d " ")" ; elif [[ -n "$SEL" ]]; then open "https://www.google.com/search?q=$SEL" ; fi
