@@ -29,10 +29,6 @@ map gx "Yd
 """"""""""""""""""""""
 " < Search
 """"""""""""""""""""""
-set ignorecase
-set smartcase
-set incsearch
-
 " no modifier key for jumping to next word
 nmap + *
 
