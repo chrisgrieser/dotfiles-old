@@ -211,6 +211,12 @@ nmap &§&#a :.s/\*\*//g
 nmap &§&#b :.s/^-/##/
 nmap ,# mz&§&#a&§&#bO<Esc>`z
 
+" Swap up/down (vim.unimpaired: [e and ]e)
+exmap swapLineUp obcommand editor:swap-line-up
+exmap swapLineDown obcommand editor:swap-line-down
+map <Up> :swapLineUp
+map <Down> :swapLineDown
+
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""

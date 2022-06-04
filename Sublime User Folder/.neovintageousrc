@@ -173,9 +173,13 @@ nnoremap <leader>" mzA"<Esc>`z
 nnoremap <leader>' mzA'<Esc>`z
 nnoremap <leader>: mzA:<Esc>`z
 nnoremap <leader>) mzA)<Esc>`z
+nnoremap <leader>( mzA(<Esc>`z
 nnoremap <leader>] mzA]<Esc>`z
+nnoremap <leader>[ mzA[<Esc>`z
+nnoremap <leader>{ mzA{<Esc>`z
+nnoremap <leader>} mzA}<Esc>`z
 
-" Prepend MD Syntax
+" Prepend (Markdown Syntax)
 nnoremap <leader>- mzI- <Esc>`z
 nnoremap <leader>< mzI> <Esc>`z
 nnoremap <leader>> mzI> <Esc>`z
