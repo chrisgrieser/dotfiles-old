@@ -134,12 +134,14 @@ nnoremap Ü ~h
 " Switch Case of first letter of the word = (toggle between Capital and lower case)
 nnoremap ü mzlblgueh~`z
 
-" TRANSPOSE current & next char
-" insert mode done via Sublime's build in command imap <C-t> xph
+" TRANSPOSE
+" (insert mode done via Sublime's build in command imap <C-t> xph)
+" current & next char
 nnoremap ä xp
-
-" Transpose current & next word
-nnoremap Ä dawelpb
+" current & previous char
+nnoremap Ä xhhp
+" current & next word
+nnoremap ! dawelpb
 
 " CSS: double/remove [c]lass under cursor
 nnoremap <leader>c mzlEF.yEEp`z
