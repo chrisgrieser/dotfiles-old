@@ -223,11 +223,11 @@ map <Down> :swapLineDown
 
 " Change Word/Selection
 nmap <Space> "_ciw
-vmap <Space> "vc
+vmap <Space> "_c
 
 " Delete Word/Selection
 nmap <S-Space> "_daw
-vmap <S-Space> "vd
+vmap <S-Space> "_d
 
 " Yank Word/Selection
 " Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
@@ -374,6 +374,22 @@ nmap ,sg :sort
 
 " [s]ort [p]aragraph
 nmap ,sp vip,ss
+
+""""""""""""""""""""""
+" < Options
+""""""""""""""""""""""
+
+" shortcuts from vim.unimpaired
+exmap number obcommand obsidian-smarter-md-hotkeys:toggle-line-numbers
+exmap readableLineLength obcommand obsidian-smarter-md-hotkeys:toggle-readable-line-length
+exmap spellcheck obcommand editor:toggle-spellcheck
+
+" [O]ption: line [n]umbers
+map ,on :number
+" [O]ption: [s]pellcheck
+map ,os :spellcheck
+" [O]ption: line [w]rap
+map ,ow :readableLineLength
 
 """"""""""""""""""""""
 " < Misc

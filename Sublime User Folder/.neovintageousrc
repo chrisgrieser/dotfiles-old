@@ -197,11 +197,11 @@ noremap <Down> ]e
 
 " Change Word/Selection
 nnoremap <Space> "_ciw
-vnoremap <Space> "vc
+vnoremap <Space> "_c
 
 " Delete Word/Selection
 nnoremap <S-Space> "_daw
-vnoremap <S-Space> "vd
+vnoremap <S-Space> "_d
 
 " Yank Word/Selection (alt+space)
 nnoremap <M-Space> yiw
@@ -269,10 +269,18 @@ nnoremap <C-w>+ :ZoomPane fraction=0.9<CR>
 " this is essentially nnoremap <C-w>+ <C-w>_
 
 """"""""""""""""""""""
-" < Formatting
+" < Options
 """"""""""""""""""""""
 " textwidth for gq
 set textwidth=80
+
+" Shortcuts from vim.unimpaired
+" [O]ption: line [n]umbers
+noremap <leader>on yon
+" [O]ption: [s]pellcheck
+noremap <leader>os yos
+" [O]ption: line [w]rap
+noremap <leader>ow yow
 
 """"""""""""""""""""""
 " < Sorting
