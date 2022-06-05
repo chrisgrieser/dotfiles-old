@@ -3,44 +3,80 @@
 " disable vi compatibility
 set nocompatible
 
-" Turn syntax highlighting on.
 syntax on
-
-" Do not wrap lines. Allow long lines to extend as far as the line goes.
 set nowrap
-
-" Add numbers to each line on the left-hand side.
 set number
-
-" Highlight cursor line underneath the cursor horizontally.
+set relativenumber
 set cursorline
-
-" Set tab width to 3 columns.
-set tabstop=3
-
-" Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=7
+" vertical ruler
+set colorcolumn=80
+
+set tabstop=3
+set softtabstop=3
+set shiftwidth=3
+set smartindent
+" Gutter for LSP or linters
+" set signcolumn
 
 " Show the mode you are on the last line.
 set showmode
-
 " show partial chord in the last line
 set showcmd
 
-" Show matching words during a search.
-set showmatch
-
 " search options
+set showmatch
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 
+" Trim Whitespace on Save
+autocmd BufWritePre * %s/\s\+$//e
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'mbbill/undotree'
+
+" telescope requirements...
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+" PLUGINS TO ADD
+" unimpaired
+" surround
+" commantary
+" sneak
+" highlightedyank
+"
+
+call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""
+" Basics
+""""""""""""""""""""""
+
+let mapleader=,
+" cmd+s to save (Mac)
+nnoremap <D-s> :write<CR>
 
 """"""""""""""""""""""
 " Clipboard
 """"""""""""""""""""""
+
 " yank to system clipboard
 set clipboard=unnamed
 
@@ -57,11 +93,6 @@ nnoremap P "0p
 """"""""""""""""""""""
 " Search
 """"""""""""""""""""""
-" search w/o having to press enter
-set incsearch
-
-set ignorecase
-
 " no modifier key for jumping to next word
 nnoremap + *
 
@@ -69,7 +100,7 @@ nnoremap + *
 nnoremap - /
 
 " Quickly remove search highlights
-nnoremap _ :nohlsearch<CR>
+nnoremap <C-m> :nohlsearch<CR>
 
 """"""""""""""""""""""
 " Editing
