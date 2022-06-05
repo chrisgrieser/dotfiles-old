@@ -63,9 +63,6 @@ vnoremap J 7j
 nnoremap K 7k
 vnoremap K 7k
 
-nnoremap <C-j> }
-nnoremap <C-k> {
-
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys, "noop" being non-existent command

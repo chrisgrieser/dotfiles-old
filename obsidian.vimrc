@@ -240,7 +240,7 @@ nmap R viw"0p
 vmap R "0P
 
 " [§]entence (`vas` emulation) https://github.com/codemirror/CodeMirror/issues/5454
-nnoremap § v(o)h
+nmap § v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
