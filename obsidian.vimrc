@@ -60,8 +60,8 @@ vmap K 6k
 " Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
-nmap <C-j> :nextHeading
-nmap <C-k> :prevHeading
+nmap zj :nextHeading
+nmap zk :prevHeading
 
 " Navigating Pane History done via Obsdian Hotkeys, so they also work
 " in Preview Mode
