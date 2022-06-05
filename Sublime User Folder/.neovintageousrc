@@ -173,7 +173,7 @@ noremap ° =
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
-" Prepend (Markdown Syntax)
+" Prepend Bullet or Blockquote
 nnoremap <leader>- mzI- <Esc>`z
 nnoremap <leader>< mzI> <Esc>`z
 nnoremap <leader>> mzI> <Esc>`z
@@ -317,7 +317,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Z Q & ? | !
-" Special: <BS>, <Right>, <Left>, <End>
+" Z Q ? !
+" Special: <BS>, <Right>, <Left>, <Down>, <Up>, <End>, <Home>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

@@ -133,8 +133,8 @@ nmap Ö dawelpb
 """"""""""""""""""""""
 
 " [M]erge Lines
-" can't remap to J, cause there is no noremap, also the merge from Code Editor
-" Shortcuts plugin is smarter than J
+" can't remap to J, cause there is no noremap;
+" also the merge from Code Editor Shortcuts plugin is smarter than J
 exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergeLines
 vmap M :mergeLines
@@ -154,6 +154,7 @@ nmap &§&' :.s/$/'/
 nmap &§&: :.s/$/:/
 nmap &§&) :.s/$/)/
 nmap &§&] :.s/$/]/
+nmap &§&} :.s/$/}/
 nmap ,. mz&§&.`z
 nmap ,, mz&§&,`z
 nmap ,; mz&§&;`z
@@ -162,6 +163,7 @@ nmap ,' mz&§&'`z
 nmap ,: mz&§&:`z
 nmap ,) mz&§&)`z
 nmap ,] mz&§&]`z
+nmap ,} mz&§&}`z
 
 " Remove last character from line
 nmap X mz$"_x`z
@@ -179,9 +181,9 @@ nmap ö `
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
 
-" delete Alias
-" (Link Homepage (when using Auto Title Plugin))
-nmap | f|h"_dt]
+" delete Alias part when standing on Wikilink
+" (or Link Homepage when using Auto Title Plugin)
+nmap | t|"_dt]
 
 " append to [y]aml (line 3 = tags)
 nmap ,y 3ggA
@@ -191,7 +193,7 @@ nmap ,y 3ggA
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
 nmap gd :gotoFootnoteDefinition
 
-" Prepend MD Syntax
+" Prepend Bullet or Blockquote
 exmap toggleBullet obcommand editor:toggle-bullet-list
 exmap toggleBlockquote obcommand editor:toggle-blockquote
 nmap ,- :toggleBullet
@@ -412,7 +414,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Z Q & ? | !
-" Special: <BS>, <Right>, <Left>, <End>
+" Z Q ? !
+" Special: <BS>, <Right>, <Left>, <Down>, <Up>, <End>, <Home>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?
