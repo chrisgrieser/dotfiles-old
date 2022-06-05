@@ -37,7 +37,7 @@ rules:
         to:
           - key_code: vk_none
         type: basic
-  - description: ⇪ Hyper + hjklmn → ←↓↑→↵⌫
+  - description: '⇪ Hyper + hjklmnb: ←↓↑→↵⌫⌦'
     manipulators:
       - type: basic
         from:
@@ -105,3 +105,14 @@ rules:
               - control
         to:
           - key_code: delete_or_backspace
+      - type: basic
+        from:
+          key_code: "b"
+          modifiers:
+            mandatory:
+              - option
+              - shift
+              - command
+              - control
+        to:
+          - key_code: delete_forward

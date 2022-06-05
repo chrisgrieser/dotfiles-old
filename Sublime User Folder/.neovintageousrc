@@ -72,9 +72,6 @@ vnoremap <Down> <Nop>
 " Goto Mark
 nnoremap ö `
 
-" rebuild %, which is missing, https://github.com/NeoVintageous/NeoVintageous/issues/825
-nnoremap % :MoveTo to=brackets<CR>
-
 " Sublime Linter Errors
 nnoremap gl ]l
 nnoremap gL [l
