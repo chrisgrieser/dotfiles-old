@@ -63,6 +63,9 @@ vnoremap J 7j
 nnoremap K 7k
 vnoremap K 7k
 
+nnoremap <C-j> }
+nnoremap <C-k> {
+
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys, "noop" being non-existent command
@@ -160,9 +163,6 @@ nnoremap <leader>i :ImportantSwitcher<CR>
 " [M]erge lines
 noremap M J
 
-" Duplicate Selection
-vnoremap <C-d> y'>p
-
 " allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
@@ -191,10 +191,6 @@ nnoremap <leader>> mzI> <Esc>`z
 
 " Remove last character from line
 nnoremap X mz$"_x`z
-
-" Swap up/down (vim.unimpaired)
-noremap <Up> [e
-noremap <Down> ]e
 
 """"""""""""""""""""""
 " < Text Objects
@@ -325,7 +321,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" ! Q & ? |
+" Z Q & ? | !
 " Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

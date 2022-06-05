@@ -9,8 +9,11 @@ set number
 set relativenumber
 set cursorline
 set scrolloff=7
+
 " vertical ruler
 set colorcolumn=80
+" mostly used by `gq`
+set textwidth=80
 
 set tabstop=3
 set softtabstop=3
@@ -42,13 +45,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'mbbill/undotree'
-
-" telescope requirements...
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " PLUGINS TO ADD
 " unimpaired
@@ -56,7 +52,6 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 " commantary
 " sneak
 " highlightedyank
-"
 
 call plug#end()
 
@@ -70,8 +65,16 @@ call plug#end()
 """"""""""""""""""""""
 
 let mapleader=,
-" cmd+s to save (Mac)
+
+" cmd+s to save
 nnoremap <D-s> :write<CR>
+" cmd+a to save all
+nnoremap <D-a> ggvG
+" cmd+w to save&quit
+nnoremap <D-w> ZQ
+" Swap up/down (vim.unimpaired)
+noremap <D-2> [e
+noremap <D-3> ]e
 
 """"""""""""""""""""""
 " Clipboard

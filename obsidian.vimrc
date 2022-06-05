@@ -415,7 +415,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" ! Q & ? |
+" Z Q & ? | !
 " Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

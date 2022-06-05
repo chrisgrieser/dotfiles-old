@@ -125,10 +125,14 @@
 	},
 
 	// Kill line, imap <C-k> <Esc>C
-	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+	{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"},
+		"context": [{ "key": "vi_insert_mode_aware" } ]
+	},
 
 	// Kill line backwards, imap <C-j> <Esc>c^
-	{ "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
+	{ "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"},
+		"context": [{ "key": "vi_insert_mode_aware" } ]
+	},
 
 	//---------------------------------------------------------------------------
 
@@ -266,6 +270,8 @@
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
 		{ "key": "setting.mde.keymap_disable.reference_new_footnote", "operator": "not_equal", "operand": true }
 	] },
+
+	// Markdown Inline Code (w/o selection)
 	{ "keys": ["super+e"], "command": "chain",
 		"args": {
 			"commands": [
@@ -274,8 +280,24 @@
 			]
 		},
 		"context": [
-			{"key": "selector", "operator": "equal", "operand": "text.html.markdown"},
+			// not restricted to markdown `scope`, so it can be used in comments as well
 			{"key": "selection_empty", "operator": "equal", "operand": true},
+		]
+	},
+
+	// Markdown Inline Code (w/ selection)
+	{ "keys": ["super+e"], "command": "chain",
+		"args": {
+			"commands": [
+				{"command": "cut" },
+				{"args": { "characters": "`" }, "command": "insert" },
+				{"command": "paste" },
+				{"args": { "characters": "`" }, "command": "insert" },
+			]
+		},
+		"context": [
+			// not restricted to markdown `scope`, so it can be used in comments as well
+			{"key": "selection_empty", "operator": "equal", "operand": false},
 		]
 	},
 
