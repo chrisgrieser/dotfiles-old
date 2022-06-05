@@ -74,9 +74,16 @@ noremap <Down> <Nop>
 " Goto Mark
 nnoremap ö `
 
-" Sublime Linter Errors
+" Next/Previous Sublime Linter Errors
 nnoremap gl ]l
 nnoremap gL [l
+
+" Next/Previous Spellcheck Errors
+nnoremap gs ]s
+nnoremap gS [s
+" add word to dictionary/undo adding to dictionary
+" nnoremap zg zg
+" nnoremap zug zug
 
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=false<CR>

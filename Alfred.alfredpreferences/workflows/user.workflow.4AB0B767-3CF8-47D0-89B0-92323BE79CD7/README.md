@@ -1,8 +1,8 @@
-# Alfred Cheat.sh  
+# Alfred Cheat.sh
 
 Access your favourite cheat sheets from [cheat.sh](http://cheat.sh) directly from Alfred.  
 
-# Usage  
+# Usage
 The main workflow is accessd throught the keyword `cht`:  
 
 https://user-images.githubusercontent.com/13389074/151710831-2e295aaa-7f27-47bb-9608-cea5411de36c.mp4
