@@ -15,6 +15,7 @@ const workArray = app.doShellScript (
 	cd "' + dotfileFolder + '" ; fd -H \
 	-E "Alfred.alfredpreferences" \
 	-E ".config/alacritty/themes/" \
+	-E ".config/karabiner/assets/complex_modifications/*.json" \
 	-E "FileHistory*.json"'
 ).split("\r");
 /* eslint-enable no-multi-str, quotes */

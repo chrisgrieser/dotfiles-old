@@ -277,7 +277,7 @@
       ]
     },
     {
-      "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ!<Space><S-Space><A-Space>R",
+      "description": "▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄÖ<Space><S-Space><A-Space>R",
       "manipulators": [
         {
           "description": "Esc: Insert Mode (Exit Vim Mode)",
@@ -1270,10 +1270,10 @@
           ]
         },
         {
-          "description": "!: Transpose Words",
+          "description": "Ö: Transpose Words",
           "type": "basic",
           "from": {
-            "key_code": "1",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "shift"
@@ -1285,6 +1285,14 @@
               "value": 1,
               "type": "variable_if",
               "name": "VIM_MODE"
+            },
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "^de$"
+                }
+              ]
             }
           ],
           "to": [

@@ -128,7 +128,7 @@ rules:
           - key_code: up_arrow
             modifiers:
               - option
-  - description: '▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄ!<Space><S-Space><A-Space>R'
+  - description: '▊ Vim Mode Actions: hjklHJKLebG xuCDiIaAoO<Esc> UäÄÖ<Space><S-Space><A-Space>R'
     manipulators:
       - description: 'Esc: Insert Mode (Exit Vim Mode)'
         type: basic
@@ -641,10 +641,10 @@ rules:
           - key_code: v
             modifiers:
               - command
-      - description: '!: Transpose Words'
+      - description: 'Ö: Transpose Words'
         type: basic
         from:
-          key_code: "1"
+          key_code: "semicolon"
           modifiers:
             mandatory:
               - shift
@@ -652,6 +652,9 @@ rules:
           - value: 1
             type: variable_if
             name: VIM_MODE
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
         to:
           - key_code: right_arrow
           - key_code: vk_none
