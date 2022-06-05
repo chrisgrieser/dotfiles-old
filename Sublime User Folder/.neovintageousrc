@@ -141,7 +141,7 @@ nnoremap ä xp
 " current & previous char
 nnoremap Ä xhhp
 " current & next word
-nnoremap ! dawelpb
+nnoremap Ö dawelpb
 
 " CSS: double/remove [c]lass under cursor
 nnoremap <leader>c mzlEF.yEEp`z
@@ -213,8 +213,8 @@ vnoremap <M-Space> "vy
 nnoremap R viw"0p
 vnoremap R "0P
 
-" `vas` emulation
-nnoremap Q v(o)h
+" [§]entence (`vas` emulation)
+nnoremap § v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -322,7 +322,7 @@ noremap ? :help nv<CR>
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § & ? |
+" ! Q & ? |
 " Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

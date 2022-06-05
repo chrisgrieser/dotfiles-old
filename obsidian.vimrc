@@ -149,7 +149,7 @@ imap <C-t> <Esc>dlpi
 " current & previous char
 nmap Ä dlhhp
 " current & next word
-nmap ! dawelpb
+nmap Ö dawelpb
 
 """"""""""""""""""""""
 " << Line-Based Editing
@@ -240,8 +240,8 @@ vmap <S-F12> "vy
 nmap R viw"0p
 vmap R "0P
 
-" `vas` emulation, https://github.com/codemirror/CodeMirror/issues/5454
-nmap Q v(o)h
+" [§]entence (`vas` emulation) https://github.com/codemirror/CodeMirror/issues/5454
+nnoremap § v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes
@@ -412,7 +412,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Ö § & ? |
+" ! Q & ? |
 " Special: <BS>, <Right>, <Left>, <End>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?
