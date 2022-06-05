@@ -284,29 +284,6 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>get-browser-url_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F30AA24D-259D-4D2C-80C9-06B5EA576F7C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
@@ -348,6 +325,29 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 			<string>7EC8C18F-E353-4A93-9F40-FDB4C9531D57</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Brave Browser" to return URL of active tab of front window</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>get-browser-url_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F30AA24D-259D-4D2C-80C9-06B5EA576F7C</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -417,13 +417,15 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>youtube-dl</string>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
+			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
-			<string>AD6B3B47-0FED-4C6D-BAD5-3D5E62636CB8</string>
+			<string>2856DA0F-7623-47F9-9E7C-DA4CC8F0B448</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -451,36 +453,13 @@ youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
+				<key>triggerid</key>
+				<string>youtube-dl</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>2856DA0F-7623-47F9-9E7C-DA4CC8F0B448</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<true/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>🎞 Youtube Link saved</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
+			<string>AD6B3B47-0FED-4C6D-BAD5-3D5E62636CB8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -508,6 +487,27 @@ echo -n "$title"</string>
 			<string>77FF34ED-C1A2-4866-B205-06B792B3975B</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<true/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>🎞 Youtube Link saved</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>4B06046A-148C-4F17-B241-C48299B1D2F1</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -601,6 +601,21 @@ echo -n "$title"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Basso</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -616,21 +631,6 @@ echo -n "$title"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>E1E42FAB-DEA5-479C-90B3-1B2A03B28BBF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Basso</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
