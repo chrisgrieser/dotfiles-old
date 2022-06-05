@@ -280,7 +280,7 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>sf</string>
+				<string>sff</string>
 				<key>subtext</key>
 				<string>Commit Message: '{query}'</string>
 				<key>text</key>
