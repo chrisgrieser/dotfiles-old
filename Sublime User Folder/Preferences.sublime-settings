@@ -8,7 +8,7 @@
 	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
 	"vintageous_exit_when_quiting_last_window": false,
 	"vintageous_reset_mode_when_switching_tabs": false,
-	"vintageous_bell": "view", // "Error" when using invalid vim command
+	"vintageous_bell": "blink", // "Error" when using invalid vim command
 
 	"neovintageous_search_cur_style": "stippled_underline",
 	"neovintageous_search_occ_style": "fill",

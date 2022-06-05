@@ -39,6 +39,10 @@ map - /
 " [M]ute search highlights
 nmap <C-m> :nohlsearch
 
+" Search also centers
+nmap n nzz
+nmap N Nzz
+
 """"""""""""""""""""""
 " < Nagivation
 """"""""""""""""""""""
