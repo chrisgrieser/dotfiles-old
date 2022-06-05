@@ -39,12 +39,6 @@ map - /
 " [M]ute search highlights
 nmap <C-m> :nohlsearch
 
-" Search also centers
-nmap n nzz
-nmap N Nzz
-nmap gn gnzz
-nmap gN gNzz
-
 """"""""""""""""""""""
 " < Nagivation
 """"""""""""""""""""""
@@ -90,8 +84,8 @@ vmap <Down> <Nop>
 " Goto Mark
 nmap ö `
 
-" goto [y]aml
-nmap ! /^tags
+" insert [y]aml (line 3 = tags)
+nmap ,y 3ggA
 
 """"""""""""""""""""""
 " < g commands
