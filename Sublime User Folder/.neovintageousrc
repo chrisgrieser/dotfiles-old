@@ -69,14 +69,10 @@ nnoremap <C-k> {
 " Hard Mode: Turn off arrow keys for learning
 " needs a remap, since unmap does not work on
 " builtin keys, "noop" being non-existent command
-nnoremap <Right> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Up> <Nop>
-vnoremap <Down> <Nop>
+noremap <Right> <Nop>
+noremap <Left> <Nop>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
 
 " Goto Mark
 nnoremap ö `
@@ -85,16 +81,9 @@ nnoremap ö `
 nnoremap gl ]l
 nnoremap gL [l
 
-""""""""""""""""""""""
-" < g commands
-""""""""""""""""""""""
-
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
 nnoremap gD :LspSymbolDefinition side_by_side=true<CR>
-
-" Markdown: [g]oto footnote [d]efinition (and back)
-noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
 
 " [g]oto [s]ymbol
 noremap gs :ShowOverlay overlay=goto text=@<CR>
@@ -107,18 +96,6 @@ noremap go :OpenBrowse<CR>
 
 " [g]oto [f]ollow link under cursor
 noremap gf :OpenUrlUnderCursor<CR>
-
-""""""""""""""""""""""
-" < Indentation
-""""""""""""""""""""""
-
-" Make indention work like in other editors
-nnoremap <Tab> >>
-nnoremap <S-Tab> <<
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
-noremap ° =
 
 """"""""""""""""""""""
 " < Editing
@@ -149,22 +126,12 @@ nnoremap Ä xhhp
 " current & next word
 nnoremap Ö dawelpb
 
-" CSS: double/remove [c]lass under cursor
-nnoremap <leader>c mzlEF.yEEp`z
-nnoremap <leader>C lF.d/[.\s]<CR>
-
-" CSS: Important Switcher
-nnoremap <leader>i :ImportantSwitcher<CR>
-
 """"""""""""""""""""""
 " << Line-Based Editing
 """"""""""""""""""""""
 
 " [M]erge lines
 noremap M J
-
-" allows Double Enter to add new line and indent bullet points
-nnoremap <CR> A
 
 " Add Blank Line above/below
 nnoremap = mzO<Esc>`z
@@ -184,13 +151,42 @@ nnoremap <leader>[ mzA[<Esc>`z
 nnoremap <leader>{ mzA{<Esc>`z
 nnoremap <leader>} mzA}<Esc>`z
 
+" Remove last character from line
+nnoremap X mz$"_x`z
+
+""""""""""""""""""""""
+" << Indentation
+""""""""""""""""""""""
+
+" Make indention work like in other editors
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+noremap ° =
+
+""""""""""""""""""""""
+" << language-specific
+""""""""""""""""""""""
+
+" allows Double Enter to add new line and indent bullet points
+nnoremap <CR> A
+
 " Prepend (Markdown Syntax)
 nnoremap <leader>- mzI- <Esc>`z
 nnoremap <leader>< mzI> <Esc>`z
 nnoremap <leader>> mzI> <Esc>`z
 
-" Remove last character from line
-nnoremap X mz$"_x`z
+" Markdown: [g]oto footnote [d]efinition (and back)
+noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
+
+" CSS: double/remove [c]lass under cursor
+nnoremap <leader>c mzlEF.yEEp`z
+nnoremap <leader>C lF.d/[.\s]<CR>
+
+" CSS: Important Switcher
+nnoremap <leader>i :ImportantSwitcher<CR>
 
 """"""""""""""""""""""
 " < Text Objects

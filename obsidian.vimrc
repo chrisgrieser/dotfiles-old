@@ -60,8 +60,8 @@ vmap K 6k
 " Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
-nmap zj :nextHeading
-nmap zk :prevHeading
+nmap <C-j> :nextHeading
+nmap <C-k> :prevHeading
 
 " Navigating Pane History done via Obsdian Hotkeys, so they also work
 " in Preview Mode
@@ -72,29 +72,10 @@ nmap zk :prevHeading
 
 " Hard Mode: Turn off arrow keys for learning
 " (needs remap, since unmap does not work on built-in keys)
-nmap <Right> <Nop>
-nmap <Left> <Nop>
-nmap <Up> <Nop>
-nmap <Down> <Nop>
-vmap <Right> <Nop>
-vmap <Left> <Nop>
-vmap <Up> <Nop>
-vmap <Down> <Nop>
-
-" Goto Mark
-nmap ö `
-
-" insert [y]aml (line 3 = tags)
-nmap ,y 3ggA
-
-""""""""""""""""""""""
-" < g commands
-""""""""""""""""""""""
-
-" [g]oto [d]efiniton ~= footnotes
-" requires Footnotes Shortcut Plugin
-exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
-nmap gd :gotoFootnoteDefinition
+map <Right> <Nop>
+map <Left> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
 
 " [g]oto [s]ymbol
 " requires Another Quick Switcher Plugin
@@ -111,13 +92,6 @@ vmap gf :followLinkUnderCursor
 exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
 nmap go :quickSwitcher
 vmap go :quickSwitcher
-
-""""""""""""""""""""""
-" < Indentation
-""""""""""""""""""""""
-" Tab as indentation is already implemented in Obsidian
-
-"Can't map ° = due to no noremap... :/
 
 """"""""""""""""""""""
 " < Editing
@@ -165,9 +139,6 @@ exmap mergeLines obcommand obsidian-editor-shortcuts:joinLines
 nmap M :mergeLines
 vmap M :mergeLines
 
-" allows Double Enter to add new line and indent with bullet points
-nmap <CR> A
-
 " Add Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
@@ -192,6 +163,34 @@ nmap ,: mz&§&:`z
 nmap ,) mz&§&)`z
 nmap ,] mz&§&]`z
 
+" Remove last character from line
+nmap X mz$"_x`z
+
+" commentary.vim emulation
+nmap gcc :.s/^|$/%%/g
+
+" Goto Mark
+nmap ö `
+
+""""""""""""""""""""""
+" << Markdown-specific
+""""""""""""""""""""""
+
+" allows Double Enter to add new line and indent with bullet points
+nmap <CR> A
+
+" delete Alias
+" (Link Homepage (when using Auto Title Plugin))
+nmap | f|h"_dt]
+
+" append to [y]aml (line 3 = tags)
+nmap ,y 3ggA
+
+" [g]oto [d]efiniton ~= footnotes
+" requires Footnotes Shortcut Plugin
+exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
+nmap gd :gotoFootnoteDefinition
+
 " Prepend MD Syntax
 exmap toggleBullet obcommand editor:toggle-bullet-list
 exmap toggleBlockquote obcommand editor:toggle-blockquote
@@ -202,24 +201,19 @@ vmap ,< :toggleBlockquote
 nmap ,> :toggleBlockquote
 vmap ,> :toggleBlockquote
 
-" Remove last character from line
-nmap X mz$"_x`z
-
-" commentary.vim emulation
-nmap gcc :.s/^|$/%%/g
-
-" turn bolded bullet points to h2
+" turn bolded bullet points to h2 (##)
 " has to be done this complicated way cause vim substitutes called in maps can't
 " properly process spaces
 nmap &§&#a :.s/\*\*//g
 nmap &§&#b :.s/^-/##/
-nmap ,# mz&§&#a&§&#bO<Esc>`z
+nmap ,## mz&§&#a&§&#bO<Esc>`z
 
-" Swap up/down (vim.unimpaired: [e and ]e)
-exmap swapLineUp obcommand editor:swap-line-up
-exmap swapLineDown obcommand editor:swap-line-down
-map <Up> :swapLineUp
-map <Down> :swapLineDown
+""""""""""""""""""""""
+" << Indentation
+""""""""""""""""""""""
+" Tab as indentation is already implemented in Obsidian
+
+" Can't `map ° =` due to missing noremap... :/
 
 """"""""""""""""""""""
 " < Text Objects
@@ -303,10 +297,12 @@ nmap gt :nextPane
 nmap gT :prevPane
 
 " Cycle Window (Original Vim Bindings)
+" requires Pane Relief Plugin
 nmap <C-w><C-w> :nextPane
 nmap <C-w>w :nextPane
 
 " [g]oto next/prev [w]indow (in Obsidian essentially the same as gt)
+" requires Pane Relief Plugin
 nmap gw :nextPane
 vmap gw :nextPane
 nmap gW :prevPane
@@ -355,6 +351,7 @@ nmap zM :foldall
 " emulate vim-sneak (somewhat)
 exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
 nmap s :sneak
+nmap S :sneak
 
 " essentially vimium's f command
 exmap followLink obcommand mrj-jump-to-link:activate-jump-to-link
@@ -363,7 +360,7 @@ nmap ,f :followLink
 """"""""""""""""""""""
 " < Formatting
 """"""""""""""""""""""
-" Semantic Line Breaks formatting instead text-width, cause it's the 21st century
+" Semantic Line Breaks instead text-width, cause it's the 21st century
 exmap sembr obcommand obsidian-sembr:toggle-sem-br
 nmap gq :sembr
 
