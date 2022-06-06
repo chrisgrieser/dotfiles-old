@@ -43,6 +43,8 @@
 	<true/>
 	<key>snippetKeyword</key>
 	<string>cc</string>
+	<key>snippetKeywordEnabled</key>
+	<false/>
 	<key>snippetMatchFields</key>
 	<integer>1</integer>
 	<key>snippetsAtTop</key>

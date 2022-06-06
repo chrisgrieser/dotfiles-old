@@ -1,0 +1,37 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  - t'!rigger: '!ctrl'
+    replace: ⌃
+    label: Control
+  - trigger: '!forward'
+    replace: ⌦
+    label: Forward Delete
+  - trigger: '!caps'
+    replace: ⇪
+    label: caps lock
+  - trigger: '!cmd'
+    replace: ⌘
+    label: command
+  - trigger: '!down'
+    replace: ↓
+    label: down
+  - trigger: '!left'
+    replace: ←
+    label: left
+  - trigger: '!return'
+    replace: ↵
+    label: return
+  - trigger: '!right'
+    replace: →
+    label: right
+  - trigger: '!shift'
+    replace: ⇧
+    label: shift
+  - trigger: '!tab'
+    replace: ↹
+    label: tab
+  - trigger: '!up'
+    replace: ↑
+    label: up

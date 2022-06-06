@@ -1,0 +1,103 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  - trigger: "§§§"
+    replace: |-
+      if frontmost of application "Finder" then
+      	$|$
+      end if
+    label: Check whether App is frontmost
+  - trigger: "§§§"
+    replace: |-
+      if application "$|$" is running then
+
+      end if
+    label: Check whether app is running
+  - trigger: '!menu'
+    replace: |-
+      tell application "System Events"
+      	tell process "$|$"
+      		set frontmost to true
+      		click menu item "§§§" of menu "File" of menu bar 1
+      	end tell
+      end tell
+    label: Click Menubar Item
+  - trigger: '!submenu'
+    replace: |-
+      tell application "System Events"
+      	tell process "$|$"
+      		set frontmost to true
+      		click menu item "§§§" of menu of menu item "Share" of menu "Edit" of menu bar 1
+      	end tell
+      end tell
+    label: Click Submenu Item of Menubar
+  - trigger: "§§§"
+    replace: |
+      tell application "Brave Browser" to close active tab of front window
+    label: Close Browser Tab
+  - trigger: "§§§"
+    replace: set the clipboard to POSIX file ($|$)
+    label: Copy Image to Clipboard
+  - trigger: "§§§"
+    replace: |-
+      tell application "Drafts"
+          make new draft with properties {content: "$|$", tags: {"blue", "green"}}
+      end tell
+    label: Create new Draft
+  - trigger: "§§§"
+    replace: display notification "subtitle" with title "title$|$" subtitle "subtitle2" sound name "Frog"
+    label: Display Notification
+  - trigger: "§§§"
+    replace: |-
+      tell application "Brave Browser"
+      	set currentTabUrl to URL of active tab of front window
+      end tell
+    label: Get Current Browser Tab
+  - trigger: "§§§"
+    replace: "tell application \"Finder\"\r\tif (count windows) is 0 then\r\t\tactivate\r\t\ttell application \"System Events\" to keystroke \"n\" using {command down}\r\t\tdelay 0.1\r\tend if\r\tset currentDir to target of Finder window 1 as alias\rend tell\rreturn POSIX path of currentDir"
+    label: Get Current Finder Window
+  - trigger: "§§§"
+    replace: "tell application \"Finder\"\r\tif ((count windows) is 0) then return \"no window\"\r\t\r\tset sel to selection\r\tif ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)\r\tif ((count sel) = 1) then return POSIX path of (sel as text)\r\tif ((count sel) = 0) then return POSIX path of (target of window 1 as alias)\rend tell"
+    label: Get Finder selection
+  - trigger: "§§§"
+    replace: tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+    label: Get name of frontmost app
+  - trigger: "§§§"
+    replace: tell application "System Events" to tell process "Drafts" to set visible to false
+    label: Hide App
+  - trigger: '!key'
+    replace: tell application "System Events" to keystroke "$|$" using {command down}
+    label: Keystrokes
+  - trigger: "§§§"
+    replace: tell application "Twitterrific$|$" to if it is not running then activate
+    label: Launch App
+  - trigger: '!quit'
+    replace: tell application "Twitterrific$|$" to if it is running then quit
+    label: Quit App
+  - trigger: "§§§"
+    replace: |-
+      set AppleScript's text item delimiters to ":"
+      set theTextItems to every text item of strWithoutReplacement
+      set AppleScript's text item delimiters to "-"
+      set strWithReplacement to theTextItems as string
+    label: Replace in String
+  - trigger: "§§§"
+    replace: "-- when app name and menu item name are the same, this can be applied to multiple apps\n\nset ServiceName to \"Scrivener: Make New Clipping (Unformatted)\"\r\rtell application \"System Events\"\r\ttell process \"Brave Browser\"\r\t\tset frontmost to true\r\t\tclick menu item ServiceName of menu of menu item \"Services\" of menu \"Brave\" of menu bar 1\r\tend tell\rend tell"
+    label: Run Services
+  - trigger: '!shortcut'
+    replace: tell application "Shortcuts" to run shortcut "$|$"
+    label: Run Shortcut
+  - trigger: "§§§"
+    replace: |
+      repeat until application "Drafts$|$" is running
+        delay 0.5
+      end repeat
+    label: Wait till app is running
+  - trigger: "§§§"
+    replace: |
+      tell application "Brave Browser"
+        repeat until (loading of active tab of front window is false)
+        end repeat
+      end tell
+    label: Wait till tab is loaded

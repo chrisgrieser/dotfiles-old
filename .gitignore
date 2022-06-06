@@ -23,15 +23,9 @@ backup.log
 Home.bttpreset
 
 # Espanso (and Alfred) snippets (may contain sensitive info)
-espanso/match/*.yaml
-espanso/match/*.yml
-!espanso/match/.yamllint.yaml
+espanso/match/private.yml
+espanso/match/private.yaml
 Alfred.alfredpreferences/snippets
-# only allow files explicitly, to avoid accidental pushing of new files
-!espanso/match/base.yml
-!espanso/match/spelling.yml
-!espanso/match/_discord.yml
-!espanso/match/snippets.yml
 
 # too much file size
 # ------------------

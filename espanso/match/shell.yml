@@ -1,0 +1,35 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  - trigger: "§§§"
+    replace: 'osascript -e "tell application \"Drafts\" to make new draft with properties {content: \"$foo\", tags: {\"bar\"}}"'
+    label: Create Draft
+  - trigger: "§§§"
+    replace: |-
+      file_name=$(basename "$input_path")
+      ext="${file_name##*.}"
+      file_without_extension="${file_name%.*}"
+      # when extension is know, e.g. .txt
+      file_name=$(basename "$input_path" .txt)
+      parent_folder=$(dirname "$input_path")
+    label: Extract file name, extension or folder from path
+  - trigger: "§§§"
+    replace: cd "$(dirname "$0")"
+    label: Go to directory of script (location)
+  - trigger: "§§§"
+    replace: qlmanage -p "$filepath"
+    label: Quicklook file
+  - trigger: "§§§"
+    replace: |
+      plutil -extract name.childkey xml1 -o - example.plist | sed -n 4p | cut -d">" -f2 | cut -d"<" -f1
+    label: Read plist value
+  - trigger: "§§§"
+    replace: echo | {command} 2>&1
+    label: Redirect STDERR to STDOUT
+  - trigger: "§§§"
+    replace: |-
+      if [[ "$LONG_STRING" =~ "$SHORTSTRING" ]] ; then
+         echo "short string is part of long string"
+      fi
+    label: String Includes
