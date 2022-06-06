@@ -421,7 +421,8 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          - shell_command: open -a 'MacPass'
+          # for some reason open -a sometimes puts MacPass into the background :/
+          - shell_command: "osascript -e 'tell application \"MacPass\" to activate'"
           - set_variable:
               name: LEADER_ACTIVE
               value: 0

@@ -85,10 +85,11 @@ vmap gs :gotoHeading
 
 " [g]oto [f]ile (= Follow Link under cursor)
 exmap followLinkUnderCursor obcommand editor:follow-link
-exmap followLinkInNewPane obcommand editor:follow-link
+exmap followLinkInNewPane obcommand editor:open-link-in-new-leaf
 nmap gf :followLinkUnderCursor
 vmap gf :followLinkUnderCursor
-
+nmap gF :followLinkInNewPane
+vmap gF :followLinkInNewPane
 
 
 " [g]oto [o]pen file (= Quick Switcher)
