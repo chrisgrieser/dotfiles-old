@@ -328,7 +328,7 @@
 				<key>hotkey</key>
 				<integer>43</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>655360</integer>
 				<key>hotstring</key>
 				<string>,</string>
 				<key>leftcursor</key>
@@ -470,7 +470,7 @@
 				<key>hotkey</key>
 				<integer>43</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>655360</integer>
 				<key>hotstring</key>
 				<string>,</string>
 				<key>leftcursor</key>

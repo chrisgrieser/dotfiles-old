@@ -10,8 +10,8 @@ Sublime User Folder/FileHistory*.json
 Sublime User Folder/AutoFoldCode.sublime-settings
 PopClip/_*
 
-# Double Backups redundant
-.config/karabiner/automatic_backups/
+# Redundant
+.config/karabiner/automatic_backups
 
 # (potentially) sensitive data
 xbar plugins/*vars.json
@@ -25,11 +25,13 @@ Home.bttpreset
 # Espanso (and Alfred) snippets (may contain sensitive info)
 espanso/match/*.yaml
 espanso/match/*.yml
+!espanso/match/.yamllint.yaml
+Alfred.alfredpreferences/snippets
 # only allow files explicitly, to avoid accidental pushing of new files
 !espanso/match/base.yml
 !espanso/match/spelling.yml
 !espanso/match/_discord.yml
-Alfred.alfredpreferences/snippets/
+!espanso/match/snippets.yml
 
 # too much file size
 # ------------------
