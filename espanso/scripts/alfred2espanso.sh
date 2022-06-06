@@ -40,6 +40,7 @@ for file in *.yml; do
 	sed -i '' 's/\\U0001F34F/🐚/g' "$file"
 	sed -i '' 's/\\U0001F4BE/🍏/g' "$file"
 	# rule without explicit trigger, mostly for search bar
+	# (§ does not trigger anything in espanso)
 	sed -i '' 's/"§§§"/"§§§"/g' "$file"
 
 	temp=$(mktemp)
