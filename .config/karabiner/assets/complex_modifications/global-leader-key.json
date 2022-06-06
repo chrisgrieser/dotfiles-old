@@ -820,7 +820,7 @@
           ],
           "to": [
             {
-              "shell_command": "open -a 'MacPass' ; osascript -e 'tell application \"System Events\" to tell process \"MacPass\" to set visible to true'"
+              "shell_command": "open -a 'MacPass' ; osascript -e 'tell application \"System Events\" to tell process \"MacPass\" to set visible to true' ; osascript -e 'tell application \"MacPass\" to activate'"
             },
             {
               "set_variable": {

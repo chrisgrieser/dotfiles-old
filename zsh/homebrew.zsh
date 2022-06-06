@@ -15,6 +15,7 @@ alias bl='brew list'
 
 # -----------------------------------------------------
 
+# Uninstaller for Mac App Store Apps
 function un () {
 	local APP="$*"
 	APP="${(C)APP}" # capitalize input
