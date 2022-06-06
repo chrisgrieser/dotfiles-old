@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
 		<array>
 			<dict>
@@ -125,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<array>
 			<dict>
@@ -146,7 +172,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Hotkey Remapping &amp; Karabiner</string>
+	<string>Hotkey Remapping &amp; Karabiner &amp; Espanso</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -215,27 +241,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>🔁 {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>68ED0A8F-71D2-429A-873D-1EFBAD063883</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -251,6 +256,27 @@ end tell</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>🔁 {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>68ED0A8F-71D2-429A-873D-1EFBAD063883</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -274,6 +300,32 @@ end tell</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	set frontApp to (name of first process where it is frontmost)
+	tell process frontApp to click menu item "Export..." of menu "File" of menu bar 1
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -316,28 +368,23 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	set frontApp to (name of first process where it is frontmost)
-	tell process frontApp to click menu item "Export..." of menu "File" of menu bar 1
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>subtext</key>
 				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>text</key>
+				<string>Karabiner Docs: '{query}'</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>9A4185DB-915F-42C2-ABAE-EFDABF3F07B0</string>
+			<string>86011B84-C2B7-487E-B867-CBB4E5B58673</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -361,27 +408,6 @@ end tell</string>
 			<string>CC783FA2-6152-4E62-A1DB-94389B082D8D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Karabiner Docs: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>86011B84-C2B7-487E-B867-CBB4E5B58673</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -542,52 +568,42 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>toggle-dark-mode</string>
-				<key>passinputasargument</key>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>es</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Espanso Packages: '{query}'</string>
+				<key>withspace</key>
 				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>com.sirshanksalot.dark-mode-toggle</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>CFE58ECE-263C-48B3-ABB2-BC5C0203D1F4</string>
+			<string>E9B91088-19D4-4EF1-A176-80FC6C8D8444</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
+				<key>browser</key>
 				<string></string>
-				<key>hotkey</key>
-				<integer>97</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F6</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://hub.espanso.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>2D8BD2D4-6B99-46DD-8E4C-5659871D19EA</string>
+			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -645,11 +661,108 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>es</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Espanso Docs: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>toggle-dark-mode</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>com.sirshanksalot.dark-mode-toggle</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CFE58ECE-263C-48B3-ABB2-BC5C0203D1F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>97</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F6</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>2D8BD2D4-6B99-46DD-8E4C-5659871D19EA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>146B762A-3BFD-4073-8111-EB3BDFFF45A1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>555</integer>
+			<key>ypos</key>
+			<integer>540</integer>
+		</dict>
 		<key>2D8BD2D4-6B99-46DD-8E4C-5659871D19EA</key>
 		<dict>
 			<key>colorindex</key>
@@ -657,9 +770,9 @@ end tell</string>
 			<key>note</key>
 			<string>🌗</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>665</integer>
 		</dict>
 		<key>386C2DBE-AFC9-4D13-9F57-05C5E20812D5</key>
 		<dict>
@@ -701,6 +814,20 @@ end tell</string>
 			<integer>700</integer>
 			<key>ypos</key>
 			<integer>20</integer>
+		</dict>
+		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>555</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>405</integer>
+			<key>ypos</key>
+			<integer>540</integer>
 		</dict>
 		<key>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</key>
 		<dict>
@@ -770,9 +897,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>550</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>665</integer>
 		</dict>
 		<key>D30F0EEE-401B-4EEA-A5D0-D6B0708D99F1</key>
 		<dict>
@@ -796,6 +923,13 @@ end tell</string>
 			<integer>215</integer>
 			<key>ypos</key>
 			<integer>240</integer>
+		</dict>
+		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
+		<dict>
+			<key>xpos</key>
+			<integer>405</integer>
+			<key>ypos</key>
+			<integer>415</integer>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>

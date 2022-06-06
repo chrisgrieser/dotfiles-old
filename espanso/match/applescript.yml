@@ -55,10 +55,27 @@ matches:
       end tell
     label: Get Current Browser Tab
   - trigger: "§§§"
-    replace: "tell application \"Finder\"\r\tif (count windows) is 0 then\r\t\tactivate\r\t\ttell application \"System Events\" to keystroke \"n\" using {command down}\r\t\tdelay 0.1\r\tend if\r\tset currentDir to target of Finder window 1 as alias\rend tell\rreturn POSIX path of currentDir"
+    replace: |
+      tell application "Finder"
+        if (count windows) is 0 then
+        activate
+        tell application "System Events" to keystroke "n" using {command down}
+        delay 0.1
+        end if
+        set currentDir to target of Finder window 1 as alias
+      end tell
+      return POSIX path of currentDir
     label: Get Current Finder Window
   - trigger: "§§§"
-    replace: "tell application \"Finder\"\r\tif ((count windows) is 0) then return \"no window\"\r\t\r\tset sel to selection\r\tif ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)\r\tif ((count sel) = 1) then return POSIX path of (sel as text)\r\tif ((count sel) = 0) then return POSIX path of (target of window 1 as alias)\rend tell"
+    replace: |
+      tell application "Finder"
+        if ((count windows) is 0) then return "no window"
+
+        set sel to selection
+        if ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)
+        if ((count sel) = 1) then return POSIX path of (sel as text)
+        if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
+      end tell
     label: Get Finder selection
   - trigger: "§§§"
     replace: tell application "System Events" to set frontApp to (name of first process where it is frontmost)
@@ -83,7 +100,14 @@ matches:
       set strWithReplacement to theTextItems as string
     label: Replace in String
   - trigger: "§§§"
-    replace: "-- when app name and menu item name are the same, this can be applied to multiple apps\n\nset ServiceName to \"Scrivener: Make New Clipping (Unformatted)\"\r\rtell application \"System Events\"\r\ttell process \"Brave Browser\"\r\t\tset frontmost to true\r\t\tclick menu item ServiceName of menu of menu item \"Services\" of menu \"Brave\" of menu bar 1\r\tend tell\rend tell"
+    replace: |
+      "-- when app name and menu item name are the same, this can be applied to multiple apps\n\nset ServiceName to "Scrivener: Make New Clipping (Unformatted)"
+      tell application "System Events"
+        tell process "Brave Browser"
+          set frontmost to true
+          click menu item ServiceName of menu of menu item "Services" of menu "Brave" of menu bar 1
+        end tell
+      end tell"
     label: Run Services
   - trigger: '!shortcut'
     replace: tell application "Shortcuts" to run shortcut "$|$"
@@ -101,3 +125,6 @@ matches:
         end repeat
       end tell
     label: Wait till tab is loaded
+  - trigger: "!as"
+    replace: "#!/usr/bin/env zsh"
+    label: AppleScript Shebang

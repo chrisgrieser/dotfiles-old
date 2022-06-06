@@ -1,0 +1,28 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  # MARKDOWN
+  # ",,lang " will create a code block of the respective language and prefill
+  # it with the clipboard content
+  - regex: ",,(?P<lang>\\w*) "
+    replace: "\n```{{lang}}\n{{clipb}}\n```"
+    vars:
+      - name: clipb
+        type: shell
+        params:
+          # non-macs will requite a different command
+          cmd: "pbpaste | tr '\t' '  '"
+          shell: bash
+
+  - trigger: TTT
+    replace: "%% \n- [ ] $|$\n%%\n"
+    label: Commented MD Task
+  - trigger: ttt
+    replace: '- [ ] '
+    label: Markdown Task
+  - trigger: '!references'
+    replace: |
+      ::: {#refs}
+      :::
+    label: Pandoc References

@@ -10,3 +10,4 @@ rules:
   document-start: disable
   # Sublime already takes care of that
   trailing-spaces: disable
+  new-line-at-end-of-file: disable

@@ -33,3 +33,6 @@ matches:
          echo "short string is part of long string"
       fi
     label: String Includes
+  - trigger: "!zsh"
+    replace: "#!/usr/bin/env zsh"
+    label: zsh Shebang

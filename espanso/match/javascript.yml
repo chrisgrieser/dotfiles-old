@@ -84,3 +84,6 @@ matches:
   - trigger: "§§§"
     replace: const todayISO = (new Date()).toISOString().slice(0,10);
     label: today's ISOdate
+  - trigger: "!js"
+    replace: "#!/usr/bin/env osascript -l JavaScript"
+    label: JXA Shebang
