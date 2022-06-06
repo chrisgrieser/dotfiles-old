@@ -858,6 +858,16 @@
                   "language": "^de$"
                 }
               ]
+            },
+            {
+              "type": "variable_if",
+              "name": "LEADER_ACTIVE",
+              "value": 0
+            },
+            {
+              "type": "variable_if",
+              "name": "VIM_MODE",
+              "value": 0
             }
           ],
           "parameters": {

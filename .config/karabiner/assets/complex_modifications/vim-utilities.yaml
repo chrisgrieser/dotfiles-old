@@ -412,6 +412,12 @@ rules:
           - type: input_source_if
             input_sources:
               - language: ^de$
+          - type: variable_if
+            name: LEADER_ACTIVE
+            value: 0
+          - type: variable_if
+            name: VIM_MODE
+            value: 0
         parameters:
           basic.to_if_held_down_threshold_milliseconds: 250
         to:
