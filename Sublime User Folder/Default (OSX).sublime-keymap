@@ -169,6 +169,8 @@
 	{ "keys": ["shift+alt+d"], "command": "smart_duplicate", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.css"},
 	]},
+	// requires override to prevent smart duplicate 🙈
+	{ "keys": ["super+shift+d"], "command": "duplicate_line" },
 	// Split Line
 	{ "keys": ["super+shift+l"], "command": "split_selection_into_lines"},
 

@@ -21,32 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E952E5B7-24DF-45B3-B342-09CE0A06830D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2BE3594A-C02A-4206-A7F1-5EA3A471E49C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AD2F61A3-2897-4864-8EE1-1B8E85514D66</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>98BB46BE-52EE-46AA-AC87-9ED091180E9E</key>
 		<array>
 			<dict>
@@ -65,19 +39,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>8B8645C1-776A-41E4-B093-DF59FEF6D696</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>AD2F61A3-2897-4864-8EE1-1B8E85514D66</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CC185D43-6436-4E8B-A0BB-20C128E75323</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -112,37 +73,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CC185D43-6436-4E8B-A0BB-20C128E75323</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D6190251-1CA6-4563-B6A9-600A8F0DD885</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A4A97FBA-5CBA-4449-9044-CFD69762CA19</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E952E5B7-24DF-45B3-B342-09CE0A06830D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CC185D43-6436-4E8B-A0BB-20C128E75323</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -178,27 +113,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>blue reset</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Module Reset</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>98BB46BE-52EE-46AA-AC87-9ED091180E9E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -218,6 +132,27 @@
 			<string>A9BC46C8-7E66-4A96-9BAB-8A7568787068</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>blue reset</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔄 Module Reset</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>98BB46BE-52EE-46AA-AC87-9ED091180E9E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -444,126 +379,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>!version</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>2BE3594A-C02A-4206-A7F1-5EA3A471E49C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n "macOS "`sw_vers -productVersion`</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>AD2F61A3-2897-4864-8EE1-1B8E85514D66</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>CC185D43-6436-4E8B-A0BB-20C128E75323</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>!resolution</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>osascript -e 'tell application "Finder" to get bounds of window of desktop' | cut -d ' ' -f 3,4</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E952E5B7-24DF-45B3-B342-09CE0A06830D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>dependency https://github.com/toy/blueutil</string>
@@ -577,24 +392,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>375</integer>
-		</dict>
-		<key>1E4FB1E2-8A2C-44C3-A7B0-F5024F626E65</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>610</integer>
-		</dict>
-		<key>2BE3594A-C02A-4206-A7F1-5EA3A471E49C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>490</integer>
 		</dict>
 		<key>8B8645C1-776A-41E4-B093-DF59FEF6D696</key>
 		<dict>
@@ -641,15 +438,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>AD2F61A3-2897-4864-8EE1-1B8E85514D66</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>490</integer>
-		</dict>
 		<key>C129402F-060A-4E14-A919-D21FCE15A4A4</key>
 		<dict>
 			<key>colorindex</key>
@@ -668,24 +456,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>ypos</key>
 			<integer>375</integer>
 		</dict>
-		<key>CC185D43-6436-4E8B-A0BB-20C128E75323</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>380</integer>
-			<key>ypos</key>
-			<integer>575</integer>
-		</dict>
-		<key>CDBD4850-DD1A-4E61-BDE2-DD7C57606801</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>545</integer>
-		</dict>
 		<key>D6190251-1CA6-4563-B6A9-600A8F0DD885</key>
 		<dict>
 			<key>colorindex</key>
@@ -694,15 +464,6 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>145</integer>
-		</dict>
-		<key>E952E5B7-24DF-45B3-B342-09CE0A06830D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>610</integer>
 		</dict>
 		<key>F237B22E-6247-4FA6-899C-A9CA938AFED5</key>
 		<dict>

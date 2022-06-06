@@ -14,7 +14,6 @@ PopClip/_*
 .config/karabiner/automatic_backups/
 
 # (potentially) sensitive data
-Alfred.alfredpreferences/snippets/
 xbar plugins/*vars.json
 pw.md
 pw.txt
@@ -22,6 +21,11 @@ pw.txt
 .zsh_history
 backup.log
 Home.bttpreset
+
+# snippets may contain sensitive data
+Alfred.alfredpreferences/snippets/
+espanso/match/*.yaml
+espanso/match/*.yml
 
 # too much file size
 # ------------------

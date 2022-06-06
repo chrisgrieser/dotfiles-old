@@ -32,9 +32,6 @@ open "/System/Library/CoreServices/Applications/Archive Utility.app"
 cat ~'/Desktop/NPMfile' | xargs npm install -g --force
 npm list -g
 
-# Python / Pip installs
-pip3 install alacritty-colorscheme #requires the python3 version installed by homebrew
-
 # -----------
 # SETTINGS
 # -----------
