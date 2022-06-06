@@ -17,12 +17,10 @@ set height to (Y * 0.95)
 tell application "Finder" to set bounds of Finder window 1 to {topLeftX, topLeftY, _width, height}
 
 -- hide sidebar
-try
-	tell application "System Events"
-		tell process "Finder"
-			set frontmost to true
-			click menu item "Hide Sidebar" of menu "View" of menu bar 1
-			click menu item "as List" of menu "View" of menu bar 1
-		end tell
+tell application "System Events"
+	tell process "Finder"
+		set frontmost to true
+		click menu item "Hide Sidebar" of menu "View" of menu bar 1
+		click menu item "as List" of menu "View" of menu bar 1
 	end tell
-end try
+end tell

@@ -23,17 +23,21 @@ ln -sf "$DOTFILE_FOLDER/.flake8" ~
 ln -sf "$DOTFILE_FOLDER/.vimrc" ~
 
 # .config
-mv ~/.config ~/.Trash
+rm -rf ~/.config ~/.Trash
 ln -sf "$DOTFILE_FOLDER/.config/" ~/.config
 
+# Espanso
+rm -rf ~"/Library/Application Support/espanso" ~/.Trash
+ln -sf "$DOTFILE_FOLDER/espanso/" ~"/Library/Application Support/espanso"
+
 # Sublime
-mv ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
+rm -rf ~"/Library/Application Support/Sublime Text/Packages/User" ~/.Trash
 ln -sf "$DOTFILE_FOLDER/Sublime User Folder/" ~"/Library/Application Support/Sublime Text/Packages/User"
-mv ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
+rm -rf ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package" ~/.Trash
 ln -sf "$DOTFILE_FOLDER/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
 
 # Folder Actions
-mv -f ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
+rm -rf ~"/Library/Workflows/Applications/Folder Actions" ~/.Trash
 ln -sf "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
 
 # -------------------
@@ -46,11 +50,11 @@ ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH/../Development"
 
 # Brave
 BROWSER="Brave Browser"
-mv ~"/Applications/$BROWSER Apps.localized" ~/.Trash
+rm -rf ~"/Applications/$BROWSER Apps.localized" ~/.Trash
 ln -sf "$DOTFILE_FOLDER/../$BROWSER Apps.localized/" ~"/Applications/$BROWSER Apps.localized"
 
 # VLC
-mv -f ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
+rm -rf ~"/Library/Preferences/org.videolan.vlc/vlcrc" ~/.Trash
 mkdir -p ~"/Library/Preferences/org.videolan.vlc/"
 ln -sf "$DOTFILE_FOLDER/vlcrc" ~"/Library/Preferences/org.videolan.vlc/vlcrc"
 

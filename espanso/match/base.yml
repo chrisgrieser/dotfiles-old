@@ -1,0 +1,29 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+
+  # Print the current date
+  - trigger: "!today"
+    replace: "{{todayISO}}"
+    vars:
+      - name: todayISO
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Print the output of a shell command
+  - trigger: "!version"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo -n macOS $(sw_vers -productVersion)"
+  - trigger: "!resolution"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "osascript -e 'tell application \"Finder\" to get bounds of window of desktop' | cut -d ' ' -f 3,4"

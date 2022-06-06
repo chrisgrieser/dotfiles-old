@@ -1,0 +1,3 @@
+matches:
+  - trigger: "roadmap"
+    replace: "ro*dmap [auto-censored]"

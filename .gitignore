@@ -22,10 +22,14 @@ pw.txt
 backup.log
 Home.bttpreset
 
-# snippets may contain sensitive data
-Alfred.alfredpreferences/snippets/
+# Espanso (and Alfred) snippets (may contain sensitive info)
 espanso/match/*.yaml
 espanso/match/*.yml
+# only allow files explicitly, to avoid accidental pushing of new files
+!espanso/match/base.yml
+!espanso/match/spelling.yml
+!espanso/match/_discord.yml
+Alfred.alfredpreferences/snippets/
 
 # too much file size
 # ------------------
