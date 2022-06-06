@@ -258,10 +258,16 @@ vnoremap <C-9> iwoiwS)
 " most <C-w> commands are only unlocked by using the Sublime Origami Plugin
 " https://vimhelp.org/index.txt.html#CTRL-W
 
-nnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
-vnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
-nnoremap <C-w>w :FocusNeighboringGroup<CR>
-vnoremap <C-w>w :FocusNeighboringGroup<CR>
+" nnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
+" vnoremap <C-w><C-w> :FocusNeighboringGroup<CR>
+" nnoremap <C-w>w :FocusNeighboringGroup<CR>
+" vnoremap <C-w>w :FocusNeighboringGroup<CR>
+
+" move buffer instead of copying it when splitting
+nnoremap <C-w>v <C-w>v<C-w>h<C-w>c<C-w>l
+vnoremap <C-w>v <C-w>v<C-w>h<C-w>c<C-w>l
+nnoremap <C-w>s <C-w>s<C-w>k<C-w>c<C-w>j
+vnoremap <C-w>s <C-w>s<C-w>k<C-w>c<C-w>j
 
 " [g]oto next/prev [w]indow (analogous to gt)
 nnoremap gw :FocusNeighboringGroup<CR>
