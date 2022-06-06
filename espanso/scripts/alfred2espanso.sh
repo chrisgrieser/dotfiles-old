@@ -25,7 +25,6 @@ for folder in */; do
 	cd ..
 done
 
-OUTPUT_FOLDER="$WD"
 cd "$OUTPUT_FOLDER" || return 1
 for file in *.yml; do
 	echo "$file"
@@ -37,14 +36,20 @@ for file in *.yml; do
 	sed -i '' 's/name:/label:/g' "$file"
 	sed -i '' 's/  keyword:/- trigger:/g' "$file"
 	sed -i '' 's/{cursor}/\$\|\$/g' "$file"
-	sed -i '' 's/\\U0001F3DD/🍏/g' "$file"
-	sed -i '' 's/\\U0001F34F/🐚/g' "$file"
 	sed -i '' 's/\\U0001F3DD/🏝/g' "$file"
+	sed -i '' 's/\\U0001F34F/🐚/g' "$file"
+	sed -i '' 's/\\U0001F4BE/🍏/g' "$file"
+	# rule without explicit trigger, mostly for search bar
+	sed -i '' 's/"§§§"/"§§§"/g' "$file"
 
 	temp=$(mktemp)
-	mv "$file" "$temp"
+	mv -f "$file" "$temp"
 	printf "# https://espanso.org/docs/\n# ------------------------------------------\n\nmatches:\n" > "$file"
 	cat "$temp" >> "$file"
 
 done
 
+# figuring out how to sort the trigger key up with yq takes too long
+# doing that last bit by hand 🙈
+
+# also, indentation is still missing, but was too lazy to code that
