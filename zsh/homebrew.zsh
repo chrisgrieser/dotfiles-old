@@ -16,7 +16,23 @@ alias bl='brew list'
 # -----------------------------------------------------
 
 function un () {
-	open -a "AppCleaner" "/Applications/$*/"
+	local APP="$*"
+	APP="${(C)APP}" # capitalize input
+	if [[ -e "/Applications/$APP.app" ]]; then
+		open -a "AppCleaner" "/Applications/$APP.app/"
+		return 0
+	fi
+
+	local SELECTED=""
+	local SELECTED=$( mas list | cut -c13- | cut -d"(" -f1 | sed 's/ *$//g' | fzf \
+	           -0 \
+	           --query "$1" \
+	           --height=80% \
+	           --preview-window=right:70% \
+	           )
+	[[ "$SELECTED" == "" ]] && return 130
+	open -a "AppCleaner" "/Applications/$SELECTED.app/"
+	killall "$SELECTED" || true
 }
 
 # helper function for `br` and `bi`
