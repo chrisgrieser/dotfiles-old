@@ -11,8 +11,13 @@ export HOMEBREW_DISPLAY_INSTALL_TIMES=1
 local BREWDUMP_PATH="$DOTFILE_FOLDER/Homebrew & NPM Installs/"
 
 alias bh='brew home'
+alias bl='brew list'
 
 # -----------------------------------------------------
+
+function un () {
+	open -a "AppCleaner" "/Applications/$*/"
+}
 
 # helper function for `br` and `bi`
 function post-install () {

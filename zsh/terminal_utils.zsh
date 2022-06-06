@@ -1,4 +1,5 @@
 # settings (zshrc)
+alias ,="settings"
 function settings () {
 	if [[ $# == 0 ]] ; then
 		SEARCH_FOR="$*"
@@ -20,7 +21,6 @@ function settings () {
 		open "$SELECTED"
 	fi )
 }
-alias ,="settings"
 
 # Move to trash via Finder (allows retrievability)
 # no arg = all files in folder will be deleted
@@ -45,7 +45,7 @@ function del () {
 # Make directory and cd there
 function mkcd () {
 	mkdir -p "$1"
-	cd "$1" || return
+	cd "$1" || return 1
 }
 
 # restart terminal
