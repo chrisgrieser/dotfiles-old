@@ -48,18 +48,6 @@ c_css_location=~'/Library/Application Support/name.abuchen.portfolio.product/wor
 mkdir -p "$c_css_location"
 printf "%s" "{\nfont-size: ""$font_size"";\n}" >> "$c_css_location"/custom.css
 
-# Mimestream as Default Mail Client (don't use newer python versions in this script)
-# https://apple.stackexchange.com/a/351570
-/usr/bin/python2.7 <<EOF
-import LaunchServices;
-result = LaunchServices.LSSetDefaultHandlerForURLScheme(
-    "mailto",
-    "com.mimestream.Mimestream")
-print("Result: %d (%s)" % (
-    result,
-    "Success" if result == 0 else "Error"))
-EOF
-
 # Steam UI https://tp69.blog/2020/02/11/how-to-zoom-the-steam-client/
 steamDataPath=~"/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
 newSkinPath="$steamDataPath""/skins/Bigger UI"
@@ -67,3 +55,5 @@ mkdir -p "$newSkinPath"/resource/styles/
 cp "$steamDataPath"/resource/styles/steam.styles "$newSkinPath"/resource/styles/
 echo ":root { zoom: \"1.5\"; }" > "$newSkinPath"/resource/webkit.css
 
+# Espanso
+espanso service register

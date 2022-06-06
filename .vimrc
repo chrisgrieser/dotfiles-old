@@ -41,19 +41,19 @@ autocmd BufWritePre * %s/\s\+$//e
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/cmp-nvim-lsp'
 
-" PLUGINS TO ADD
-" unimpaired
-" surround
-" commantary
-" sneak
-" highlightedyank
+" " PLUGINS TO ADD
+" " unimpaired
+" " surround
+" " commantary
+" " sneak
+" " highlightedyank
 
-call plug#end()
+" call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -643,7 +643,7 @@ tell application "System Preferences"	activate	reveal pane id "com.apple.prefe
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>--based on https://apple.stackexchange.com/questions/217117/applescript-for-specific-system-preferences-panetell application "System Preferences"	activate	-- get the name of every anchor of pane id "com.apple.preference.security"	reveal anchor "General" of pane id "com.apple.preference.security"end tell</string>
+				<string>--based on https://apple.stackexchange.com/questions/217117/applescript-for-specific-system-preferences-panetell application "System Preferences"	activate	-- get the name of every anchor of pane id "com.apple.preference.security"	reveal anchor "Privacy" of pane id "com.apple.preference.security"end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -689,7 +689,7 @@ tell application "System Preferences"	activate	reveal pane id "com.apple.prefe
 				<key>subtext</key>
 				<string>System Preferences.app</string>
 				<key>text</key>
-				<string>🍏 Grant App Permissions</string>
+				<string>🍏 Grant App Permissions – Accessibility</string>
 				<key>withspace</key>
 				<false/>
 			</dict>

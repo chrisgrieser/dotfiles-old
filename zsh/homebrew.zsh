@@ -165,6 +165,8 @@ function update (){
 }
 
 function report (){
+	print-section "Espanso"
+	espanso status
 	print-section "HOMEBREW"
 	print-section "Taps"
 	brew tap

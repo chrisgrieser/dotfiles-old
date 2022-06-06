@@ -375,13 +375,12 @@ rules:
             input_sources:
               - language: ^de$
           - type: frontmost_application_if
-          - type: frontmost_application_if
-            bundle_identifiers:
-              - ^com.sublimetext.4$
+            file_paths:
+              - alacritty$
               - ^/System/Applications/Utilities/Terminal.app
               - ^/Applications/Obsidian\.app
-              - ^/Applications/Sublime\ Text\.app
-              - ^/Applications/Discord\.apß]ß]ß]gßßßß]]]]tp
+              - ^/Applications/Sublime Text\.app
+              - ^/Applications/Discord\.app
         to:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.US$

@@ -4239,15 +4239,12 @@
                                         "type": "input_source_if"
                                     },
                                     {
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
                                         "file_paths": [
                                             "alacritty$",
                                             "^/System/Applications/Utilities/Terminal.app",
-                                            "^/Applications/Obsidian",
-                                            "Sublime",
-                                            "Discord"
+                                            "^/Applications/Obsidian\\.app",
+                                            "^/Applications/Sublime Text\\.app",
+                                            "^/Applications/Discord\\.app"
                                         ],
                                         "type": "frontmost_application_if"
                                     }

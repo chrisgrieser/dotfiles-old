@@ -776,15 +776,12 @@
               ]
             },
             {
-              "type": "frontmost_application_if"
-            },
-            {
               "type": "frontmost_application_if",
               "file_paths": [
                 "alacritty$",
                 "^/System/Applications/Utilities/Terminal.app",
                 "^/Applications/Obsidian\\.app",
-                "^/Applications/Sublime\\ Text\\.app",
+                "^/Applications/Sublime Text\\.app",
                 "^/Applications/Discord\\.app"
               ]
             }
