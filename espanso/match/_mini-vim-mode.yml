@@ -1,0 +1,9 @@
+matches:
+  - trigger: "LL"
+    replace: ""
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "osascript -e 'tell application \"System Events\" to key code 124 using {command down}'"
+          shell: bash
