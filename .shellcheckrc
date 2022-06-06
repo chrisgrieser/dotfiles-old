@@ -6,12 +6,10 @@
 # (since shellcheck is mostly for bash)
 # -----------------------------------------------------
 
-# 2236: ZSH *can* use < and > for arithmetic comparisons https://zsh.sourceforge.io/Doc/Release/Arithmetic-Evaluation.html
-# 2071: https://scriptingosx.com/2019/08/shellcheck-and-zsh/
 # 1083: zsh accepts without ; at the end of oneline-functions
-# 1072: seems to be bug?
+# 1072: seems to be bug: https://github.com/koalaman/shellcheck/wiki/SC1072
 
-disable=SC2236,SC2071,SC1083,SC1072
+disable=SC1083,SC1072
 
 # -----------------------------------------------------
 # Enable some Optional Rules

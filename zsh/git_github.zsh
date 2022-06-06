@@ -2,11 +2,11 @@
 function acp (){
 	local COMMIT_MSG="$*"
 	local MSG_LENGTH=${#COMMIT_MSG}
-	if [[ $MSG_LENGTH > 50 ]]; then
+	if [[ $MSG_LENGTH -gt 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
 		# shellcheck disable=SC1087,SC2154
 		FUNC_NAME="$funcstack[1]" # https://stackoverflow.com/a/62527825
-		print -z "$FUNC_NAME $COMMIT_MSG" # put back into buffer
+		print -z "$FUNC_NAME \"$COMMIT_MSG\"" # put back into buffer
 		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
@@ -22,9 +22,9 @@ function acp (){
 function amend () {
 	local COMMIT_MSG="$*"
 	local MSG_LENGTH=${#COMMIT_MSG}
-	if [[ $MSG_LENGTH > 50 ]]; then
+	if [[ $MSG_LENGTH -gt 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
-		print -z "$COMMIT_MSG"
+		print -z "\"$COMMIT_MSG\""
 		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
