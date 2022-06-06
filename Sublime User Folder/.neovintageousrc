@@ -168,7 +168,8 @@ nnoremap <S-Tab> <<
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-noremap ° =
+nnoremap ° =
+vnoremap ° =
 
 """"""""""""""""""""""
 " << language-specific

@@ -8,3 +8,5 @@ yaml-files:
 rules:
   line-length: disable
   document-start: disable
+  # Sublime already takes care of that
+  trailing-spaces: disable

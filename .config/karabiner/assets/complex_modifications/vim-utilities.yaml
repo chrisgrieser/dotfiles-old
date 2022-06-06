@@ -374,12 +374,14 @@ rules:
           - type: input_source_if
             input_sources:
               - language: ^de$
-          - value: 0
-            name: VIM_MODE
-            type: variable_if
-          - value: 0
-            name: LEADER_ACTIVE
-            type: variable_if
+          - type: frontmost_application_if
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^com.sublimetext.4$
+              - ^/System/Applications/Utilities/Terminal.app
+              - ^/Applications/Obsidian\.app
+              - ^/Applications/Sublime\ Text\.app
+              - ^/Applications/Discord\.apß]ß]ß]gßßßß]]]]tp
         to:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.US$
