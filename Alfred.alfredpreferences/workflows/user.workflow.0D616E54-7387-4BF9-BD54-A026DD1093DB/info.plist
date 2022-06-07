@@ -1628,7 +1628,7 @@ Recommended Hotkey: ⇧⌘2</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>560</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>

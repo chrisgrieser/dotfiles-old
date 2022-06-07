@@ -1,0 +1,10 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  - trigger: "!py"
+    replace: "#!/usr/bin/env python3\n"
+    label: 🐍 Python Shebang
+  - trigger: "§§§"
+    replace: "from os.path import expanduser\n\nexpanduser(\"~\")"
+    label: Resolve ~

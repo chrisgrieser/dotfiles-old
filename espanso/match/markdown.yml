@@ -9,7 +9,6 @@ matches:
     vars:
       - name: clipboard
         type: clipboard
-
   - trigger: TTT
     replace: "%% \n- [ ] $|$\n%%\n"
     label: Commented MD Task

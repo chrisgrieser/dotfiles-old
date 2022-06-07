@@ -4,7 +4,7 @@
 matches:
   - trigger: "§§§"
     replace: 'osascript -e "tell application \"Drafts\" to make new draft with properties {content: \"$foo\", tags: {\"bar\"}}"'
-    label: Create Draft
+    label: 🐚 Create Draft
   - trigger: "§§§"
     replace: |-
       file_name=$(basename "$input_path")
@@ -13,29 +13,32 @@ matches:
       # when extension is know, e.g. .txt
       file_name=$(basename "$input_path" .txt)
       parent_folder=$(dirname "$input_path")
-    label: Extract file name, extension or folder from path
+    label: 🐚 Extract file name, extension or folder from path
   - trigger: "§§§"
     replace: cd "$(dirname "$0")"
-    label: Go to directory of script (location)
+    label: 🐚 Go to directory of script (location)
   - trigger: "§§§"
     replace: qlmanage -p "$filepath"
-    label: Quicklook file
+    label: 🐚 Quicklook file
   - trigger: "§§§"
     replace: |
       plutil -extract name.childkey xml1 -o - example.plist | sed -n 4p | cut -d">" -f2 | cut -d"<" -f1
-    label: Read plist value
+    label: 🐚 Read plist value
   - trigger: "§§§"
     replace: echo | {command} 2>&1
-    label: Redirect STDERR to STDOUT
+    label: 🐚 Redirect STDERR to STDOUT
   - trigger: "§§§"
     replace: |-
       if [[ "$LONG_STRING" =~ "$SHORTSTRING" ]] ; then
          echo "short string is part of long string"
       fi
-    label: String Includes
+    label: 🐚 String Includes
   - trigger: "!zsh"
-    replace: "#!/usr/bin/env zsh"
-    label: zsh Shebang
+    replace: "#!/usr/bin/env zsh\n"
+    label: 🐚 zsh Shebang
   - trigger: "!path"
     replace: "export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH\n"
-    label: PATH
+    label: 🐚 PATH
+  - trigger: "§§§"
+    replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
+    label: 🐚 String contains other string
