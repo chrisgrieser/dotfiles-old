@@ -150,8 +150,8 @@ vmap M :mergeLines
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
 " these require cursor being on the right end of the selection though...
-vnoremap = <Esc>O<Esc>gv
-vnoremap _ <Esc>o<Esc>gv
+vmap = <Esc>O<Esc>gv
+vmap _ <Esc>o<Esc>gv
 
 " Append punctuation to end of line
 " `&§&` are helper commands for addings substitution to command chain,
