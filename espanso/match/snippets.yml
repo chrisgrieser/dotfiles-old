@@ -9,6 +9,8 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
+  - trigger: "!hr"
+    replace: "------------------------------------------------------------------------------"
   - trigger: "!version"
     replace: "{{output}}"
     vars:
