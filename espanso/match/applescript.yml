@@ -3,19 +3,19 @@
 
 matches:
   - trigger: "§§§"
-    replace: |-
+    replace: |
       if frontmost of application "Finder" then
       	$|$
       end if
     label: 🍏 Check whether App is frontmost
   - trigger: "§§§"
-    replace: |-
+    replace: |
       if application "$|$" is running then
 
       end if
     label: 🍏 Check whether app is running
   - trigger: '!menu'
-    replace: |-
+    replace: |
       tell application "System Events"
       	tell process "$|$"
       		set frontmost to true
@@ -24,7 +24,7 @@ matches:
       end tell
     label: 🍏 Click Menubar Item
   - trigger: '!submenu'
-    replace: |-
+    replace: |
       tell application "System Events"
       	tell process "$|$"
       		set frontmost to true
@@ -40,7 +40,7 @@ matches:
     replace: set the clipboard to POSIX file ($|$)
     label: 🍏 Copy Image to Clipboard
   - trigger: "§§§"
-    replace: |-
+    replace: |
       tell application "Drafts"
           make new draft with properties {content: "$|$", tags: {"blue", "green"}}
       end tell
@@ -49,7 +49,7 @@ matches:
     replace: display notification "subtitle" with title "title$|$" subtitle "subtitle2" sound name "Frog"
     label: 🍏 Display Notification
   - trigger: "§§§"
-    replace: |-
+    replace: |
       tell application "Brave Browser"
       	set currentTabUrl to URL of active tab of front window
       end tell
@@ -93,7 +93,7 @@ matches:
     replace: tell application "Twitterrific$|$" to if it is running then quit
     label: 🍏 Quit App
   - trigger: "§§§"
-    replace: |-
+    replace: |
       set AppleScript's text item delimiters to ":"
       set theTextItems to every text item of strWithoutReplacement
       set AppleScript's text item delimiters to "-"
@@ -126,5 +126,5 @@ matches:
       end tell
     label: 🍏 Wait till tab is loaded
   - trigger: "!as"
-    replace: "#!/usr/bin/env zsh\n"
+    replace: "#!/usr/bin/env osascript\n"
     label: 🍏 AppleScript Shebang
