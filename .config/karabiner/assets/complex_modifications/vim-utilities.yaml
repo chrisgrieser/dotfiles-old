@@ -381,6 +381,7 @@ rules:
               - ^/Applications/Obsidian\.app
               - ^/Applications/Sublime Text\.app
               - ^/Applications/Discord\.app
+              - ^/Applications/Brave Browser\.app
         to:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.US$

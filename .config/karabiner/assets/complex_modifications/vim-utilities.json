@@ -782,7 +782,8 @@
                 "^/System/Applications/Utilities/Terminal.app",
                 "^/Applications/Obsidian\\.app",
                 "^/Applications/Sublime Text\\.app",
-                "^/Applications/Discord\\.app"
+                "^/Applications/Discord\\.app",
+                "^/Applications/Brave Browser\\.app"
               ]
             }
           ],
