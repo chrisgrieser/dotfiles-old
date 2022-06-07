@@ -36,3 +36,6 @@ matches:
   - trigger: "!zsh"
     replace: "#!/usr/bin/env zsh"
     label: zsh Shebang
+  - trigger: "!path"
+    replace: "export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH\n"
+    label: PATH

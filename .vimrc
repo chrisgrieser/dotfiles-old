@@ -19,10 +19,14 @@ set tabstop=3
 set softtabstop=3
 set shiftwidth=3
 set smartindent
+set autoindent
+
 " Gutter for LSP or linters
 " set signcolumn
 
-" Show the mode you are on the last line.
+" show statusline containing current cursor position
+set ruler" Show the mode you are on the last line.
+
 set showmode
 " show partial chord in the last line
 set showcmd
@@ -45,6 +49,8 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Plug 'neovim/nvim-lspconfig'
 " Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'Lokaltog/vim-easymotion'
+" Plug 'airblade/vim-gitgutter'
 
 " " PLUGINS TO ADD
 " " unimpaired

@@ -230,7 +230,7 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^com\.mimestream\.Mimestream$
-  - description: "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌘+L-Click in foreground"
+  - description: "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌥+L-Click in foreground"
     # credits to Stephen Miller aka @ThoughtAsylum https://www.thoughtasylum.com/2022/06/03/drafts-force-open-link-on-mac/
     manipulators:
       - type: basic
@@ -244,7 +244,7 @@ rules:
             hold_down_milliseconds: 500
           - key_code: tab
             modifiers:
-              - command
+              - option
         conditions:
           - type: frontmost_application_if
             bundle_identifiers:

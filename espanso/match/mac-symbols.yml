@@ -2,36 +2,35 @@
 # ------------------------------------------
 
 matches:
-  - t'!rigger: '!ctrl'
+  - trigger: '!ctrl'
     replace: ⌃
-    label: Control
-  - trigger: '!forward'
-    replace: ⌦
-    label: Forward Delete
-  - trigger: '!caps'
-    replace: ⇪
-    label: caps lock
-  - trigger: '!cmd'
-    replace: ⌘
-    label: command
-  - trigger: '!down'
-    replace: ↓
-    label: down
-  - trigger: '!left'
-    replace: ←
-    label: left
-  - trigger: '!return'
-    replace: ↵
-    label: return
-  - trigger: '!right'
-    replace: →
-    label: right
   - trigger: '!shift'
     replace: ⇧
-    label: shift
+  - trigger: '!cmd'
+    replace: ⌘
+  - triggers: ['!alt', "!opt"]
+    replace: ⌥
   - trigger: '!tab'
     replace: ↹
-    label: tab
+  - trigger: '!caps'
+    replace: ⇪
+
+  - trigger: '!esc'
+    replace: ⎋
+  - trigger: '!tab'
+    replace: ↹
+  - trigger: '!return'
+    replace: ↵
+  - trigger: '!delete'
+    replace: ⌦
+  - trigger: '!backspace'
+    replace: ⌫
+
+  - trigger: '!down'
+    replace: ↓
+  - trigger: '!left'
+    replace: ←
+  - trigger: '!right'
+    replace: →
   - trigger: '!up'
     replace: ↑
-    label: up

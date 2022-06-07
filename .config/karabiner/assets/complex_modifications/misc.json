@@ -464,7 +464,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌘+L-Click in foreground",
+      "description": "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌥+L-Click in foreground",
       "manipulators": [
         {
           "type": "basic",
@@ -476,10 +476,6 @@
               "pointing_button": "button2"
             },
             {
-              "key_code": "vk_none",
-              "hold_down_milliseconds": 10
-            },
-            {
               "key_code": "o"
             },
             {
@@ -487,12 +483,12 @@
             },
             {
               "key_code": "vk_none",
-              "hold_down_milliseconds": 200
+              "hold_down_milliseconds": 500
             },
             {
               "key_code": "tab",
               "modifiers": [
-                "command"
+                "option"
               ]
             }
           ],
@@ -518,10 +514,6 @@
           "to": [
             {
               "pointing_button": "button2"
-            },
-            {
-              "key_code": "vk_none",
-              "hold_down_milliseconds": 10
             },
             {
               "key_code": "o"

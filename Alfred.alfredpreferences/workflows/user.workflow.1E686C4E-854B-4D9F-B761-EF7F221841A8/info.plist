@@ -34,6 +34,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
+		<array/>
 		<key>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</key>
 		<array>
 			<dict>
@@ -244,7 +246,7 @@ end tell</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>:karabiner-toggle</string>
+				<string>ke</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -568,46 +570,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>es</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Espanso Packages: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E9B91088-19D4-4EF1-A176-80FC6C8D8444</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://hub.espanso.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
@@ -664,6 +626,25 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://hub.espanso.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -671,33 +652,14 @@ end tell</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Espanso Docs: '{query}'</string>
+				<string>Espanso Packages: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
+			<string>E9B91088-19D4-4EF1-A176-80FC6C8D8444</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -751,6 +713,90 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>es</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Espanso Docs: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>!path</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF8FBA0E-7BB8-46F0-9240-13ACB11C3D74</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>es</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Espanso</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>387E93E5-B099-4784-8538-0CE2E9086D86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -761,7 +807,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>555</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>665</integer>
 		</dict>
 		<key>2D8BD2D4-6B99-46DD-8E4C-5659871D19EA</key>
 		<dict>
@@ -782,6 +828,13 @@ end tell</string>
 			<integer>45</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
+		<dict>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>790</integer>
 		</dict>
 		<key>4DD4C87D-083B-45F5-AA8C-13C22A8384F0</key>
 		<dict>
@@ -820,14 +873,14 @@ end tell</string>
 			<key>xpos</key>
 			<integer>555</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>540</integer>
 		</dict>
 		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>405</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>665</integer>
 		</dict>
 		<key>7CF1A1F5-47F0-4A9B-A533-6A5CDB891462</key>
 		<dict>
@@ -892,6 +945,13 @@ end tell</string>
 			<key>ypos</key>
 			<integer>155</integer>
 		</dict>
+		<key>CF8FBA0E-7BB8-46F0-9240-13ACB11C3D74</key>
+		<dict>
+			<key>xpos</key>
+			<integer>515</integer>
+			<key>ypos</key>
+			<integer>775</integer>
+		</dict>
 		<key>CFE58ECE-263C-48B3-ABB2-BC5C0203D1F4</key>
 		<dict>
 			<key>colorindex</key>
@@ -929,7 +989,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>405</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>540</integer>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>
