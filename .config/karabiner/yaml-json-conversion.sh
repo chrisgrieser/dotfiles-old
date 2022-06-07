@@ -9,7 +9,11 @@ for f in *.json ; do
 	yq -P '.' "$f.json" > "$f.yaml"
 done
 
-# "compile" (convert) file from yaml to json
+# ---------------------------------------------
 function yaml2json () {
 	yq -o=json '.' "$1" > "$(basename "$1" .yaml).json"
+}
+
+function json2yaml () {
+	yq -P '.' "$1" > "$(basename "$1" .json).yaml"
 }

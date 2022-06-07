@@ -42,3 +42,6 @@ matches:
   - trigger: "§§§"
     replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
     label: 🐚 String contains other string
+  - trigger: "!sed"
+    replace: "| sed 's/$|$//g' "
+    label: 🐚 pipe to sed

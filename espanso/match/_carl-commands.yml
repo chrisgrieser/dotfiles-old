@@ -1,0 +1,102 @@
+matches:
+  - trigger: '!carl'
+    replace: debug help
+    label: Debugging Infos
+  - trigger: '!carl'
+    replace: migration help
+    label: Migration (Notion, Roam, Evernote)
+  - trigger: '!carl'
+    replace: get insider build
+    label: How to get the Insider Build
+  - trigger: '!carl'
+    replace: spamming the server
+    label: Report a Spammer to the Mods
+  - trigger: '!carl'
+    replace: new to obsidian
+    label: Welcome Message for new People
+  - trigger: '!carl'
+    replace: format help
+    label: How to format in Markdown
+  - trigger: '!carl'
+    replace: config help
+    label: config help
+  - trigger: '!carl'
+    replace: gtoa
+    label: gtoa insider
+  - trigger: '!carl'
+    replace: alias help
+    label: alias help
+  - trigger: '!carl'
+    replace: mobile help
+    label: mobile help
+  - trigger: '!carl'
+    replace: early bird help
+    label: early bird help sync publish
+  - trigger: '!carl'
+    replace: wysiwyg
+    label: wysiwyg
+  - trigger: '!carl'
+    replace: template help
+    label: template help
+  - trigger: '!carl'
+    replace: wall of toggles
+    label: wall of toggles
+  - trigger: '!carl'
+    replace: get catalyst badge
+    label: get catalyst badge
+  - trigger: '!carl'
+    replace: get roles
+    label: get roles announcement developer
+  - trigger: '!carl'
+    replace: sync help
+    label: sync help
+  - trigger: '!carl'
+    replace: roadmap
+    label: roadmap
+  - trigger: '!carl'
+    replace: linux help
+    label: linux help
+  - trigger: '!carl'
+    replace: publish help
+    label: publish help
+  - trigger: '!carl'
+    replace: check console
+    label: check console
+  - trigger: '!carl'
+    replace: deathau
+    label: deathau
+  - trigger: '!carl'
+    replace: getting started
+    label: getting started
+  - trigger: '!carl'
+    replace: carl
+    label: carl
+  - trigger: '!carl'
+    replace: css help
+    label: css help
+  - trigger: '!carl'
+    replace: sudo rm "one day" buy milk
+    label: sudo rm reminder
+  - trigger: '!carl'
+    replace: all features of obsidian
+    label: 'Meme: All features of Obsidian'
+  - trigger: '!carl'
+    replace: discord tricks
+    label: Discord Tricks
+  - trigger: '!carl'
+    replace: plugin security help
+    label: Plugin Security Info
+  - trigger: '!carl'
+    replace: https://discord.com/channels/686053708261228577/840286264964022302/860627666100551721
+    label: "Get the 'Dev for Hire' role"
+  - trigger: '!carl'
+    replace: '!star stats @username'
+    label: Starboard Statistics for a user
+  - trigger: '!carl'
+    replace: pins help
+    label: Show where the pins are
+
+  # xkcd triggers
+  - triggers: ['!carl', '!xkcd']
+    replace: xkcd automation
+    label: 'xkcd: automation'
