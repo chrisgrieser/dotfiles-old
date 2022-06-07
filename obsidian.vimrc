@@ -149,6 +149,9 @@ vmap M :mergeLines
 " Add Blank Line above/below
 nmap = mzO<Esc>`z
 nmap _ mzo<Esc>`z
+" these require cursor being on the right end of the selection though...
+vnoremap = <Esc>O<Esc>gv
+vnoremap _ <Esc>o<Esc>gv
 
 " Append punctuation to end of line
 " `&§&` are helper commands for addings substitution to command chain,
@@ -262,10 +265,11 @@ imap jj <Esc>
 """"""""""""""""""""""
 " < Insert Mode
 """"""""""""""""""""""
+" mirroring emacs commands available globally on Mac
 
-" mirroring HL in Normal Mode
-imap HH <Esc>I
-imap LL <Esc>A
+" move to BOL/EOL
+imap <C-a> <Esc>I
+imap <C-e> <Esc>A
 
 " Kill line
 imap <C-k> <Esc>lC

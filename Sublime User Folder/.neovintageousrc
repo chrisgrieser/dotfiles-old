@@ -142,9 +142,11 @@ noremap M J
 
 " Add Blank Line above/below
 nnoremap = mzO<Esc>`z
-vnoremap = <Esc>O<Esc>gv
 nnoremap _ mzo<Esc>`z
-vnoremap = <Esc>o<Esc>gv
+" these require cursor being on the right end of the selection though...
+vnoremap = <Esc>O<Esc>gv
+vnoremap _ <Esc>o<Esc>gv
+
 
 " Append punctuation to end of line
 nnoremap <leader>, mzA,<Esc>`z

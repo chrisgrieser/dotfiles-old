@@ -23,3 +23,11 @@ matches:
         type: shell
         params:
           cmd: "osascript -e 'tell application \"Finder\" to get bounds of window of desktop' | cut -d ' ' -f 3,4"
+  # --------------------------------------
+  - trigger: "LL"
+    replace: ""
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "osascript -e 'tell application \"Finder\" to get bounds of window of desktop' | cut -d ' ' -f 3,4"

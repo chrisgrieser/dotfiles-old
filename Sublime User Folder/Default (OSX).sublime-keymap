@@ -134,11 +134,6 @@
 		"context": [{ "key": "vi_insert_mode_aware" } ]
 	},
 
-	// Kill line backwards, imap <C-j> <Esc>c^
-	{ "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"},
-	"context": [{ "key": "vi_insert_mode_aware" } ]
-},
-
 	//---------------------------------------------------------------------------
 
 	// Build System
