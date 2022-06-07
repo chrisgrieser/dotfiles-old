@@ -13,28 +13,29 @@ matches:
         params:
           cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
           shell: bash
-  - trigger: I#d
-    replace: I'd
-  - trigger: Innovaiton
-    replace: Innovation
-  - trigger: Keybaord
-    replace: Keyboard
+
+  - trigger: "I#d"
+    replace: "I'd"
   - trigger: appraoch
     replace: approach
-  - trigger: ' cih'
+  - trigger: cih
     replace: ich
-  - trigger: ' eien'
+    word: true
+  - trigger: eien
     replace: eine
+    word: true
   - trigger: fiels
     replace: files
-  - trigger: ' fo '
-    replace: ' of '
-  - trigger: forshcung
-    replace: forschung
+  - trigger: fo
+    replace: of
+    word: true
+  - trigger: Forshcung
+    replace: Forschung
   - trigger: gnaz
     replace: ganz
   - trigger: innovaiton
     replace: innovation
+    propagate_case: true
   - trigger: keybaord
     replace: keyboard
   - trigger: lcih
@@ -73,3 +74,6 @@ matches:
     replace: technisch
   - trigger: verison
     replace: version
+    propagate_case: true
+  - triggers: [definitly, definetly, definetely, definitely]
+    replace: definitely

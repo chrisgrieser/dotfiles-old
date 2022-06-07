@@ -1,0 +1,11 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+# temporary matches, e.g. as they are only needed for a current writing project
+matches:
+  - trigger: inte
+    replace: interdependent technologies
+    word: true
+  - trigger: inin
+    replace: interdependent innovations
+    word: true

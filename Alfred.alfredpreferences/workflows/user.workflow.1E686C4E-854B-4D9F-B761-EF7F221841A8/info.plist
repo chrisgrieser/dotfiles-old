@@ -8,6 +8,19 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
+		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0068510-5EA9-467B-8CAB-E5A736B52AE8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
 		<array>
 			<dict>
@@ -277,25 +290,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://hub.espanso.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -315,6 +309,25 @@
 			<string>CC783FA2-6152-4E62-A1DB-94389B082D8D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://hub.espanso.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -417,6 +430,50 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ep</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>❗️Restart Espanso</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>toggle-espanso.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F0068510-5EA9-467B-8CAB-E5A736B52AE8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -429,7 +486,18 @@
 			<key>xpos</key>
 			<integer>645</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
+		</dict>
+		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>reload</string>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>435</integer>
 		</dict>
 		<key>2381FD05-8DB5-4B75-9D6A-36329E668C7F</key>
 		<dict>
@@ -478,7 +546,7 @@
 			<key>xpos</key>
 			<integer>645</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>165</integer>
 		</dict>
 		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
 		<dict>
@@ -489,7 +557,7 @@
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
 		<dict>
@@ -549,7 +617,7 @@
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>165</integer>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>
@@ -559,6 +627,15 @@
 			<integer>175</integer>
 			<key>ypos</key>
 			<integer>25</integer>
+		</dict>
+		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>435</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
