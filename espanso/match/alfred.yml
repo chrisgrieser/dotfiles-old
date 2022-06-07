@@ -8,19 +8,15 @@ matches:
 
       const VAR = $.getenv("$|$");
     label: "🏝 GET Env Var"
-  - trigger: "§§§"
-    replace: >
+  - replace: >
       const selected_tag = app.doShellScript ("echo '" + $.getenv("selected_tag")
       + "' | iconv -f UTF-8-MAC -t MACROMAN");
     label: "🏝 GET Environment Variable (Unicode Fix)"
-  - trigger: "§§§"
-    replace: set bibtex_library_path to do shell script "echo " & quoted form of (system attribute "bibtex_library_path") & " | iconv -f UTF-8-MAC -t MACROMAN"
+  - replace: set bibtex_library_path to do shell script "echo " & quoted form of (system attribute "bibtex_library_path") & " | iconv -f UTF-8-MAC -t MACROMAN"
     label: "🐚 GET Environment Variable (Unicode Fix)"
-  - trigger: "§§§"
-    replace: set theBrowser to (system attribute "browser")
+  - replace: set theBrowser to (system attribute "browser")
     label: "🐚 GET Environment Variable"
-  - trigger: "§§§"
-    replace: |-
+  - replace: |-
       var input = argv.join('');
       var arragements = input.split(", ");
 
@@ -36,23 +32,18 @@ matches:
 
       JSON.stringify({ 'items': jsonArray });
     label: "🏝 JSONfy input for Script Filter"
-  - trigger: "§§§"
-    replace: |-
+  - replace: |-
       function run (argv){
       	const input = argv.join('');
       }
     label: "🏝 Join argv"
-  - trigger: "§§§"
-    replace: query="$*"
+  - replace: query="$*"
     label: "🍏 Join argv"
-  - trigger: "§§§"
-    replace: tell application id "com.runningwithcrayons.Alfred" to remove configuration "ObRunning" in workflow (system attribute "alfred_workflow_bundleid")
+  - replace: tell application id "com.runningwithcrayons.Alfred" to remove configuration "ObRunning" in workflow (system attribute "alfred_workflow_bundleid")
     label: "🐚 Remove Environment Variable"
-  - trigger: "§§§"
-    replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
+  - replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
     label: "🍏 SET Environment Variable"
-  - trigger: "§§§"
-    replace: |-
+  - replace: |-
       function setEnvVar (envVar, newValue) {
       	Application("com.runningwithcrayons.Alfred")
       		.setConfiguration(envVar, {
@@ -62,14 +53,12 @@ matches:
       		});
       }
     label: "🏝 SET Environment Variable"
-  - trigger: "§§§"
-    replace: >
+  - replace: >
       tell application id "com.runningwithcrayons.Alfred" to set configuration
       "$|$" to value "foobar" in workflow (system attribute
       "alfred_workflow_bundleid") with exportable
     label: "🐚 SET Environment Variable"
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       ObjC.import('stdlib');
 
       Application('com.runningwithcrayons.Alfred').setConfiguration
@@ -79,8 +68,7 @@ matches:
       		exportable: false}
       	);
     label: "🏝 SET Environment Variable"
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       on run argv
         set AppleScript's text item delimiters to "§§§"
         set input to argv as string

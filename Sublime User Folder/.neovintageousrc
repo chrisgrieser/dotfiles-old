@@ -39,12 +39,6 @@ noremap - /
 " [M]ute search highlights
 nnoremap <C-m> :nohlsearch<CR>
 
-" Search also centers
-nnoremap n nzz
-nnoremap N Nzz
-nnoremap gn gnzz
-nnoremap gN gNzz
-
 """"""""""""""""""""""
 " < Nagivation
 """"""""""""""""""""""

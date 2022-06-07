@@ -2,14 +2,12 @@
 # ------------------------------------------
 
 matches:
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       if frontmost of application "Finder" then
       	$|$
       end if
     label: 🍏 Check whether App is frontmost
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       if application "$|$" is running then
 
       end if
@@ -32,30 +30,24 @@ matches:
       	end tell
       end tell
     label: 🍏 Click Submenu Item of Menubar
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Brave Browser" to close active tab of front window
     label: 🍏 Close Browser Tab
-  - trigger: "§§§"
-    replace: set the clipboard to POSIX file ($|$)
+  - replace: set the clipboard to POSIX file ($|$)
     label: 🍏 Copy Image to Clipboard
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Drafts"
           make new draft with properties {content: "$|$", tags: {"blue", "green"}}
       end tell
     label: 🍏 Create new Draft
-  - trigger: "§§§"
-    replace: display notification "subtitle" with title "title$|$" subtitle "subtitle2" sound name "Frog"
+  - replace: display notification "subtitle" with title "title$|$" subtitle "subtitle2" sound name "Frog"
     label: 🍏 Display Notification
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Brave Browser"
       	set currentTabUrl to URL of active tab of front window
       end tell
     label: 🍏 Get Current Browser Tab
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Finder"
         if (count windows) is 0 then
         activate
@@ -66,8 +58,7 @@ matches:
       end tell
       return POSIX path of currentDir
     label: 🍏 Get Current Finder Window
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Finder"
         if ((count windows) is 0) then return "no window"
 
@@ -77,30 +68,25 @@ matches:
         if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
       end tell
     label: 🍏 Get Finder selection
-  - trigger: "§§§"
-    replace: tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+  - replace: tell application "System Events" to set frontApp to (name of first process where it is frontmost)
     label: 🍏 Get name of frontmost app
-  - trigger: "§§§"
-    replace: tell application "System Events" to tell process "Drafts" to set visible to false
+  - replace: tell application "System Events" to tell process "Drafts" to set visible to false
     label: 🍏 Hide App
   - trigger: '!key'
     replace: tell application "System Events" to keystroke "$|$" using {command down}
     label: 🍏 Keystrokes
-  - trigger: "§§§"
-    replace: tell application "Twitterrific$|$" to if it is not running then activate
+  - replace: tell application "Twitterrific$|$" to if it is not running then activate
     label: 🍏 Launch App
   - trigger: '!quit'
     replace: tell application "Twitterrific$|$" to if it is running then quit
     label: 🍏 Quit App
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       set AppleScript's text item delimiters to ":"
       set theTextItems to every text item of strWithoutReplacement
       set AppleScript's text item delimiters to "-"
       set strWithReplacement to theTextItems as string
     label: 🍏 Replace in String
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       "-- when app name and menu item name are the same, this can be applied to multiple apps\n\nset ServiceName to "Scrivener: Make New Clipping (Unformatted)"
       tell application "System Events"
         tell process "Brave Browser"
@@ -112,14 +98,12 @@ matches:
   - trigger: '!shortcut'
     replace: tell application "Shortcuts" to run shortcut "$|$"
     label: 🍏 Run Shortcut
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       repeat until application "Drafts$|$" is running
         delay 0.5
       end repeat
     label: 🍏 Wait till app is running
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       tell application "Brave Browser"
         repeat until (loading of active tab of front window is false)
         end repeat

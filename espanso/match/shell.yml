@@ -2,32 +2,25 @@
 # ------------------------------------------
 
 matches:
-  - trigger: "§§§"
-    replace: 'osascript -e "tell application \"Drafts\" to make new draft with properties {content: \"$foo\", tags: {\"bar\"}}"'
+  - replace: 'osascript -e "tell application \"Drafts\" to make new draft with properties {content: \"$foo\", tags: {\"bar\"}}"'
     label: 🐚 Create Draft
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       file_name=$(basename "$input_path")
       ext="${file_name##*.}"
       file_without_extension="${file_name%.*}"
       file_name=$(basename "$input_path" .txt) # when extension is know, e.g. .txt
       parent_folder=$(dirname "$input_path")
     label: 🐚 Extract file name, extension or folder from path
-  - trigger: "§§§"
-    replace: cd "$(dirname "$0")"
+  - replace: cd "$(dirname "$0")"
     label: 🐚 Go to directory of script (location)
-  - trigger: "§§§"
-    replace: qlmanage -p "$filepath"
-    label: 🐚 Quicklook file
-  - trigger: "§§§"
-    replace: |
+  - replace: qlmanage -p "$filepath"
+    label: 🐚 Quick Look file
+  - replace: |
       plutil -extract name.childkey xml1 -o - example.plist | sed -n 4p | cut -d">" -f2 | cut -d"<" -f1
     label: 🐚 Read plist value
-  - trigger: "§§§"
-    replace: echo | {command} 2>&1
+  - replace: echo | {command} 2>&1
     label: 🐚 Redirect STDERR to STDOUT
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       if [[ "$LONG_STRING" =~ "$SHORTSTRING" ]] ; then
          echo "short string is part of long string"
       fi
@@ -38,8 +31,7 @@ matches:
   - trigger: "!path"
     replace: "export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH\n"
     label: 🐚 PATH
-  - trigger: "§§§"
-    replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
+  - replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
     label: 🐚 String contains other string
   - trigger: "!sed"
     replace: "| sed 's/$|$//g' "

@@ -2,46 +2,38 @@
 # ------------------------------------------
 
 matches:
-  - trigger: "§§§"
-    replace: |
+  - replace: |
       ObjC.import("stdlib");
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;
       const onlineJSON = (url) => JSON.parse (app.doShellScript("curl -sL \"§§§" + url + "\"§§§"));
-    bel: 🏝 GET online JSON
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 GET online JSON'
+  - replace: |
       const fileExists = Application("Finder").exists(Path(file_path));
-    bel: 🏝 [JXA] Check File Existence
-  - trigger: "§§§"
-    replace: const discordReadyLinks = Application("Discord").frontmost();
-    bel: 🏝 [JXA] Check whether App is frontmost
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Check File Existence'
+  - replace: const discordReadyLinks = Application("Discord").frontmost();
+    label: '🏝 [JXA] Check whether App is frontmost'
+  - replace: |
       const posixPath = (finderWindow) => $.NSURL.alloc.initWithString(finderWindow.target.url()).fileSystemRepresentation;
       posixPath(Application("Finder").finderWindows[0]);
-    bel: 🏝 [JXA] Get Current Finder Window
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Get Current Finder Window'
+  - replace: |
       let finderSelection = "§§§";
       const finderHasSelection = Boolean(Application("Finder").selection()[0]?.url())
       if (finderHasSelection) finderSelection = decodeURI(Application("Finder").selection()[0].url()).slice(7);
-    bel: 🏝 [JXA] Get Finder Selection
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Get Finder Selection'
+  - replace: |
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;
 
       app.doShellScript('ls');
-    bel: 🏝 [JXA] JavaScript ➞ Shell
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] JavaScript ➞ Shell'
+  - replace: |
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;
       app.openLocation(url);
-    bel: 🏝 [JXA] Open Location
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Open Location'
+  - replace: |
       ObjC.import("Foundation");
       function readFile (path, encoding) {
       	if (!encoding) encoding = $.NSUTF8StringEncoding;
@@ -50,22 +42,20 @@ matches:
       	const str = $.NSString.alloc.initWithDataEncoding(data, encoding);
       	return ObjC.unwrap(str);
       }
-    bel: 🏝 [JXA] Read File
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Read File'
+  - replace: |
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;
       app.setTheClipboardTo("[NONE]");
-    bel: 🏝 [JXA] Set clipboard
+    label: '🏝 [JXA] Set clipboard'
   - trigger: '!write'
     replace: |
       function writeToFile(text, file) {
       	const str = $.NSString.alloc.initWithUTF8String(text);
       	str.writeToFileAtomicallyEncodingError(file, true, $.NSUTF8StringEncoding, null);
       }
-    bel: 🏝 [JXA] Write to File
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] Write to File'
+  - replace: |
       function readPlist (key, path){
       	return app.doShellScript(
       		'plutil -extract ' + key
@@ -73,17 +63,15 @@ matches:
       		+ ' | sed -n 4p | cut -d">" -f2 | cut -d"<" -f1')
       		.replaceAll ("&amp;", "&");
       }
-    label: 🏝 [JXA] read plist
-  - trigger: "§§§"
-    replace: |
+    label: '🏝 [JXA] read plist'
+  - replace: |
       function readJSON (json, lineNo){
       	if (json.split("\r") == null) return "§§§";
       	return json.split("\r")[lineNo].split('"')[3];
       }
-    bel: 🏝 readJSONline
-  - trigger: "§§§"
-    replace: const todayISO = (new Date()).toISOString().slice(0,10);
-    label: 🏝 today ISOdate
+    label: '🏝 readJSONline'
+  - replace: const todayISO = (new Date()).toISOString().slice(0,10);
+    label: '🏝 today ISOdate'
   - trigger: "!js"
     replace: "#!/usr/bin/env osascript -l JavaScript\n"
-    bel: 🏝 JXA Shebang
+    label: '🏝 JXA Shebang'
