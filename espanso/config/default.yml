@@ -1,8 +1,10 @@
-# espanso configuration file
-# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+# https://espanso.org/docs/configuration/options/
+# -----------------------------------------------------
+
 
 toggle_key: OFF  # yamllint disable-line rule:truthy
 search_shortcut: ALT+META+SPACE
+search_trigger: "^^^"
 
 show_icon: true
 show_notifications: true

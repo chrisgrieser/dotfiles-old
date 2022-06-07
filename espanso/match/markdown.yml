@@ -8,15 +8,22 @@ matches:
     replace: "\n```{{lang}}\n{{clipboard}}\n```"
     vars:
       - name: clipboard
-        type: clipboard
+        type: shell
+        params:
+          # non-macs will requite a different command
+          cmd: "pbpaste | sed 's/\t/  /g'"
+          shell: bash
+
   - trigger: TTT
     replace: "%% \n- [ ] $|$\n%%\n"
     label: Commented MD Task
+
   - trigger: ttt
     replace: '- [ ] '
     label: Markdown Task
+
   - trigger: '!references'
     replace: |
       ::: {#refs}
       :::
-    label: Pandoc References
+    label: Pandoc Reference List
