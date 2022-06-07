@@ -198,7 +198,7 @@ nnoremap <leader>c mzlEF.yEEp`z
 nnoremap <leader>C lF.d/[.\s]<CR>
 
 " CSS: Important Switcher
-nnoremap <leader>i :ImportantSwitcher<CR>
+noremap <leader>i :ImportantSwitcher<CR>
 
 """"""""""""""""""""""
 " < Text Objects
