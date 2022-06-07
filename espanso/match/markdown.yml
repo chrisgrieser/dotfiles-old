@@ -6,6 +6,7 @@ matches:
   # it with the clipboard content, e.g. `,,js `
   - regex: ",,(?P<lang>\\w*) "
     replace: "\n```{{lang}}\n{{clipboard}}\n```"
+    label: Markdown Codeblock
     vars:
       - name: clipboard
         type: shell

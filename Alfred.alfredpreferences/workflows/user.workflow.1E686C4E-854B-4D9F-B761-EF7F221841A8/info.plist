@@ -126,27 +126,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Karabiner Elements on/off</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -162,6 +141,27 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>68ED0A8F-71D2-429A-873D-1EFBAD063883</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔁 Toggle Karabiner Elements</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -191,21 +191,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ep</string>
-				<key>subtext</key>
-				<string></string>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
 				<key>text</key>
-				<string>Toggle Espanso</string>
-				<key>withspace</key>
-				<true/>
+				<string></string>
+				<key>title</key>
+				<string>🔁 {query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>387E93E5-B099-4784-8538-0CE2E9086D86</string>
+			<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -235,21 +235,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ep</string>
+				<key>subtext</key>
 				<string></string>
-				<key>title</key>
-				<string>🔁 {query}</string>
+				<key>text</key>
+				<string>🔁 Toggle Espanso</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
+			<string>387E93E5-B099-4784-8538-0CE2E9086D86</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -263,7 +263,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Karabiner Docs: '{query}'</string>
+				<string>🔎 Karabiner Docs: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -271,6 +271,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>86011B84-C2B7-487E-B867-CBB4E5B58673</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://hub.espanso.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -300,25 +319,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://hub.espanso.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -326,7 +326,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Espanso Packages: '{query}'</string>
+				<string>⚙️ Espanso Packages: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -347,7 +347,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Espanso Docs: '{query}'</string>
+				<string>🔎 Espanso Docs: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -406,7 +406,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Karabiner Mods: '{query}'</string>
+				<string>⚙️ Karabiner Mods: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>

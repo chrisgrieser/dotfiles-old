@@ -1,7 +1,6 @@
 # https://espanso.org/docs/configuration/options/
 # -----------------------------------------------------
 
-
 toggle_key: OFF  # yamllint disable-line rule:truthy
 search_shortcut: ALT+META+SPACE
 search_trigger: "^^^"
