@@ -23,7 +23,13 @@ const workArray = app.doShellScript (
 workArray.forEach(file => {
 	const fPath = dotfileFolder + file.slice(1);
 	const parts = file.split("/");
-	const name = parts.pop();
+	const isFolder = file.endsWith("/");
+	let name;
+	if (isFolder) {
+		parts.pop();
+		name = parts.pop();
+	}
+	else name = parts.pop();
 
 	let ext = name.split(".").pop();
 	if (ext.includes("rc")) ext = "rc"; // rc files

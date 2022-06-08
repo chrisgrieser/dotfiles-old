@@ -31,16 +31,25 @@ function run () {
 		cd \"" + folderToSearch + "\" ; \
 		fd --absolute-path --hidden --exclude \"/.git/*\"")
 		.split("\r")
-		.map(fpath => {
-			const name = fpath.split("/").pop();
-			const relativeParentFolder = fpath.slice(folderToSearch.length, -(name.length + 1));
+		.map(fPath => {
+			const parts = fPath.split("/");
+			const isFolder = fPath.endsWith("/");
+			let name;
+			if (isFolder) {
+				parts.pop();
+				name = parts.pop();
+			}
+			else name = parts.pop();
+
+
+			const relativeParentFolder = fPath.slice(folderToSearch.length, -(name.length + 1));
 
 			const fIcon = {
 				"type": "fileicon",
-				"path": fpath
+				"path": fPath
 			};
 			// if image, use image content, not file icon
-			if (fpath.endsWith(".png")) delete fIcon.type;
+			if (fPath.endsWith(".png")) delete fIcon.type;
 
 			return {
 				"title": name,
@@ -48,8 +57,8 @@ function run () {
 				"subtitle": relativeParentFolder,
 				"type": "file",
 				"icon": fIcon,
-				"arg": fpath,
-				"uid": fpath,
+				"arg": fPath,
+				"uid": fPath,
 			};
 		});
 
