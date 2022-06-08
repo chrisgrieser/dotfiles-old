@@ -191,7 +191,7 @@ nmap ö `
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
 
-" delete Alias part when standing on Wikilink
+" delete Alias part of next Wikilink
 " (or Link Homepage when using Auto Title Plugin)
 nmap | t|"_dt]
 

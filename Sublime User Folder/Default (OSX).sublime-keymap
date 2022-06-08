@@ -81,15 +81,6 @@
 
 	//---------------------------------------------------------------------------
 
-	// Vim Insert Mode Bindings
-	// imap HH <Esc>I & imap LL <Esc>A
-	{"keys": ["H", "H"], "args": {"to": "bol"}, "command": "move_to", "context": [
-		{ "key": "vi_insert_mode_aware" }
-	] },
-	{"keys": ["L", "L"], "args": {"to": "eol"}, "command": "move_to", "context": [
-		{ "key": "vi_insert_mode_aware" }
-	] },
-
 	// inoremap <C-y> :reg<CR>
 	{"keys": ["ctrl+y"], "command": "chain",
 		"args": {
@@ -133,6 +124,8 @@
 	{ "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"},
 		"context": [{ "key": "vi_insert_mode_aware" } ]
 	},
+
+	// ctrl+a and ctrl+e already seem to work out of the box
 
 	//---------------------------------------------------------------------------
 
