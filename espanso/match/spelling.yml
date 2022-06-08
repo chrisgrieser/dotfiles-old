@@ -77,3 +77,5 @@ matches:
     propagate_case: true
   - triggers: [definitly, definetly, definetely, definitely]
     replace: definitely
+  - trigger: auxilliary
+    replace: auxiliary
