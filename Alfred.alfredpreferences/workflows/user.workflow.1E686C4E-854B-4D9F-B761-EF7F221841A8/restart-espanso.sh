@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-killall "Espanso"
-sleep 1
+killall "espanso" # needs to be lowercase
+sleep 2
 open -a "Espanso"
 echo "Espanso reloaded 🟨"

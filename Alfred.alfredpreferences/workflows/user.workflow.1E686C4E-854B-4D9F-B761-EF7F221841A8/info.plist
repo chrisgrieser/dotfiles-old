@@ -359,7 +359,7 @@
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>🔁 {query}</string>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>

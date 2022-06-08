@@ -1,0 +1,7 @@
+# https://espanso.org/docs/configuration/app-specific-configurations/
+filter_class: "Mimestream"
+
+extra_includes:
+  - "../match/_email.yml"
+
+#

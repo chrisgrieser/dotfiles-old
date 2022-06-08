@@ -2,6 +2,7 @@
 # ------------------------------------------
 
 matches:
+
   # Greetings
   - trigger: '!greet'
     replace: "Dear sir or madam,\n\n"
@@ -29,3 +30,4 @@ matches:
 
       Mit freundlichen Grüßen
       Christopher Grieser
+    label: Mit freundlichen Grüßen
