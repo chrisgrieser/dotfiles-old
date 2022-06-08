@@ -8,6 +8,19 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
+		<key>24D53802-F053-49F4-B779-6BDB1A52ED1F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0D9E13EA-E870-4BEC-85B3-5B7A9047E224</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>35ABB0A1-AF1E-4ED6-A919-795E719E7A3E</key>
 		<array>
 			<dict>
@@ -78,6 +91,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FEB25131-5B73-4417-B3FF-7DCC2B250357</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8381EF4A-4C44-45C9-85EF-267E24F63778</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDDFA7E8-44AC-4634-A419-9C2EE170C373</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -188,6 +214,21 @@
 	<string>PDF Utilities</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -336,21 +377,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -448,21 +474,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/System/Applications/Preview.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>81FB5A92-6950-4467-BD70-412B75FC5D9C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsmulti</key>
 				<integer>1</integer>
 				<key>filetypes</key>
@@ -478,6 +489,50 @@ end tell</string>
 			<string>78265889-4998-4FB4-81C8-4E4A310FBEC3</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Applications/Preview.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>81FB5A92-6950-4467-BD70-412B75FC5D9C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+
+if (frontApp = "PDF Expert) then
+tell application "System Events"
+	tell process "PDF Expert" to click menu item "Day" of menu of menu item "Theme" of menu "View" of menu bar 1
+end tell
+end if</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>pdf-day-view.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FEB25131-5B73-4417-B3FF-7DCC2B250357</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -512,35 +567,6 @@ end tell</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>7F6BF142-13CA-46BC-84CD-BD118A19E4EB</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "System Events" to set frontApp to (name of first process where it is frontmost)
-
-if (frontApp = "PDF Expert) then
-tell application "System Events"
-	tell process "PDF Expert" to click menu item "Day" of menu of menu item "Theme" of menu "View" of menu bar 1
-end tell
-end if</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>pdf-day-view.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FEB25131-5B73-4417-B3FF-7DCC2B250357</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -848,6 +874,27 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>📸 Image</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0D9E13EA-E870-4BEC-85B3-5B7A9047E224</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -879,6 +926,27 @@ end tell</string>
 			<string>F7DCF7C1-239F-45F8-B3A9-DA3F7CCFA161</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>📑 Comment</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>EDDFA7E8-44AC-4634-A419-9C2EE170C373</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -969,6 +1037,15 @@ end tell</string>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>0D9E13EA-E870-4BEC-85B3-5B7A9047E224</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>410</integer>
+			<key>ypos</key>
+			<integer>910</integer>
+		</dict>
 		<key>24D53802-F053-49F4-B779-6BDB1A52ED1F</key>
 		<dict>
 			<key>colorindex</key>
@@ -1168,6 +1245,15 @@ end tell</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>660</integer>
+		</dict>
+		<key>EDDFA7E8-44AC-4634-A419-9C2EE170C373</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>410</integer>
+			<key>ypos</key>
+			<integer>1035</integer>
 		</dict>
 		<key>EFE37DC6-56C2-49F9-8665-76325F648FF8</key>
 		<dict>

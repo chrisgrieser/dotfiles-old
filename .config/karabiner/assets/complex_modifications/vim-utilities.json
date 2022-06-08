@@ -30,8 +30,9 @@
               "type": "frontmost_application_unless",
               "file_paths": [
                 "alacritty$",
+                "/System/Applications/Utilities/Terminal.app",
                 "Inoreader.app",
-                "/System/Applications/Utilities/Terminal.app"
+                "Highlights.app"
               ]
             }
           ]
@@ -56,8 +57,9 @@
               "type": "frontmost_application_unless",
               "file_paths": [
                 "alacritty$",
+                "/System/Applications/Utilities/Terminal.app",
                 "Inoreader.app",
-                "/System/Applications/Utilities/Terminal.app"
+                "Highlights.app"
               ]
             }
           ]
@@ -169,13 +171,35 @@
             },
             {
               "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "file_paths": [
-                "Inoreader.app"
+                "Inoreader.app",
+                "Highlights.app"
               ]
             }
           ]
@@ -235,13 +259,35 @@
             },
             {
               "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "file_paths": [
-                "Inoreader.app"
+                "Inoreader.app",
+                "Highlights.app"
               ]
             }
           ]
