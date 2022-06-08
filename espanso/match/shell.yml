@@ -39,3 +39,8 @@ matches:
   - trigger: "!null"
     replace: "&> /dev/null"
     label: dev/null
+  - trigger: "!resolve"
+    replace: |
+      resolved_path="${file_path/#~/$HOME}"
+
+    label: '🐚 Resolve ~'

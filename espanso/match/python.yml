@@ -5,5 +5,9 @@ matches:
   - trigger: "!py"
     replace: "#!/usr/bin/env python3\n"
     label: 🐍 Python Shebang
-  - replace: "from os.path import expanduser\n\nexpanduser(\"~\")"
-    label: Resolve ~
+  - trigger: "!resolve"
+    replace: |
+      from os.path import expanduser
+
+      expanduser(\"~\")
+    label: 🐍 Resolve ~

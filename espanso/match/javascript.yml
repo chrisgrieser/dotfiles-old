@@ -75,3 +75,8 @@ matches:
   - trigger: "!js"
     replace: "#!/usr/bin/env osascript -l JavaScript\n"
     label: '🏝 JXA Shebang'
+  - trigger: "!resolve"
+    replace: |
+      const vaultPath = $.getenv("vault_path").replace(/^~/, app.pathTo("home folder"));
+
+    label: '🏝 Resolve ~'

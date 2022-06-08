@@ -67,7 +67,7 @@ matches:
         if ((count sel) = 1) then return POSIX path of (sel as text)
         if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
       end tell
-    label: 🍏 Get Finder selection
+    label: 🍏 Get Finder selection / window
   - replace: tell application "System Events" to set frontApp to (name of first process where it is frontmost)
     label: 🍏 Get name of frontmost app
   - replace: tell application "System Events" to tell process "Drafts" to set visible to false
@@ -112,3 +112,21 @@ matches:
   - trigger: "!as"
     replace: "#!/usr/bin/env osascript\n"
     label: 🍏 AppleScript Shebang
+  - trigger: "!resolve"
+    replace: |
+      # resolve ~
+      set unresolved_path to "~/Google Drive/File Hub/tst.sh"
+      set AppleScript's text item delimiters to "~/"
+      set theTextItems to every text item of unresolved_path
+      set AppleScript's text item delimiters to (POSIX path of (path to home folder as string))
+      set resolved_path to theTextItems as string
+    label: 🍏 Resolve ~
+  - replace: |
+      tell application "System Events"
+        tell process "Highlights"
+          if (count of windows) > 0 then
+            set window_name to name of front window
+          end if
+        end tell
+      end tell
+    label: 🍏 Name of front window of a process
