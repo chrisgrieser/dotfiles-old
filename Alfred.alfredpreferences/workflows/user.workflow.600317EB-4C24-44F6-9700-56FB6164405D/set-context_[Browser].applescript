@@ -78,7 +78,6 @@ if (notes contains "obsidian") then
 	tell application "BusyCal" to if it is running then quit
 	tell application "Discord" to if it is running then quit
 	tell application "Slack" to if it is running then quit
-	tell application "Brave Browser" to if it is running then quit
 	tell application "Mimestream" to if it is running then quit
 
 	-- Pause
@@ -103,6 +102,8 @@ if (notes contains "obsidian") then
 			perform action "AXRaise" of (first window whose name is "Zoom")
 		end tell
 	end tell
+
+	tell application "Excalidraw" to activate
 
 	display notification "" with title "👨‍🏫 Seminar Mode ready"
 	delay 0.2

@@ -127,33 +127,6 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>var input = "{query}";
-var zoomURL = input.replace (/https?:\/\/.*\.zoom\.us\/j\/(\w+)\?pwd=(\w+)$/,"zoommtg://zoom.us/join?confno=$1&amp;amp;pwd=$2");
-Zoom = Application("/Applications/zoom.us.app");
-Zoom.includeStandardAdditions = true;
-Zoom.openLocation(zoomURL);</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>--volumeset volume output volume 80--pause spotifytell application id "com.runningwithcrayons.Alfred" to run trigger "pause" in workflow "com.vdesabou.spotify.mini.player" with argument ""--get variablesset slack_url to (system attribute "slack_url")set notes to (system attribute "notes")
@@ -221,6 +194,33 @@ end if-- Seminar Preparationif (slack_url is not "") then
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>var input = "{query}";
+var zoomURL = input.replace (/https?:\/\/.*\.zoom\.us\/j\/(\w+)\?pwd=(\w+)$/,"zoommtg://zoom.us/join?confno=$1&amp;amp;pwd=$2");
+Zoom = Application("/Applications/zoom.us.app");
+Zoom.includeStandardAdditions = true;
+Zoom.openLocation(zoomURL);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -280,23 +280,6 @@ end if-- Seminar Preparationif (slack_url is not "") then
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>delimiter</key>
-				<string>;</string>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{var:split1}</string>
 				<key>passthroughargument</key>
@@ -319,21 +302,17 @@ end if-- Seminar Preparationif (slack_url is not "") then
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>📹 Launching Zoom Meeting</string>
+				<key>delimiter</key>
+				<string>;</string>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
-			<string>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</string>
+			<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -370,6 +349,27 @@ end tell</string>
 			<string>69321844-5FD6-49B4-904B-EA6C9F22AA56</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>📹 Launching Zoom Meeting</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
