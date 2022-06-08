@@ -1,0 +1,31 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  # Greetings
+  - trigger: '!greet'
+    replace: "Dear sir or madam,\n\n"
+  - trigger: '!greet'
+    replace: "Sehr geehrte Damen und Herren,\n\n"
+
+  # Signatures
+  - trigger: vvv
+    replace: |
+      $|$
+
+      Viele Grüße
+      Chris
+    label: Viele Grüße (Vorname)
+  - trigger: vvg
+    replace: |
+      $|$
+
+      Viele Grüße
+      Chris Grieser
+    label: Viele Grüße (voller Name)
+  - trigger: 'mfg'
+    replace: |
+      $|$
+
+      Mit freundlichen Grüßen
+      Christopher Grieser

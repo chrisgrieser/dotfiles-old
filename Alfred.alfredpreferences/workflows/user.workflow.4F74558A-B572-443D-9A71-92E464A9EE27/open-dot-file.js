@@ -61,6 +61,7 @@ workArray.forEach(file => {
 		"subtitle": parentFolder,
 		"match": alfredMatcher (name),
 		"icon": iconObject,
+		"uid": fPath,
 		"arg": fPath,
 	});
 });

@@ -140,13 +140,13 @@
 			<key>config</key>
 			<dict>
 				<key>count</key>
-				<integer>1</integer>
+				<integer>10</integer>
 				<key>keychar</key>
-				<string>⇟</string>
+				<string>↓</string>
 				<key>keycode</key>
-				<integer>121</integer>
+				<integer>125</integer>
 				<key>keymod</key>
-				<integer>8388608</integer>
+				<integer>10485760</integer>
 				<key>overridewithargument</key>
 				<false/>
 			</dict>

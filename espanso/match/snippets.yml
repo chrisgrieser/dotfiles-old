@@ -2,6 +2,8 @@
 # ------------------------------------------
 
 matches:
+  - trigger: '!web'
+    replace: https://chris-grieser.de/
   - trigger: "!today"
     replace: "{{todayISO}}"
     vars:
