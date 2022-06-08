@@ -191,7 +191,7 @@ rules:
             - key_code: k
             - key_code: l
         parameters:
-          basic.simultaneous_threshold_milliseconds: 70
+          basic.simultaneous_threshold_milliseconds: 60
         to:
           - key_code: delete_or_backspace
       - type: basic
@@ -200,7 +200,7 @@ rules:
             - key_code: f
             - key_code: j
         parameters:
-          basic.simultaneous_threshold_milliseconds: 70
+          basic.simultaneous_threshold_milliseconds: 100
         to:
           - key_code: return_or_enter
           - set_variable:

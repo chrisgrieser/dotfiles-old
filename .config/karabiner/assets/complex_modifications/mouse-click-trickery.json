@@ -117,7 +117,7 @@
             },
             {
               "key_code": "vk_none",
-              "hold_down_milliseconds": 50
+              "hold_down_milliseconds": 75
             },
             {
               "shell_command": "SEL=$(pbpaste) ; SEL=\"${SEL/#\\~/$HOME}\" ; if [[ -f \"$SEL\" ]]; then open -R \"$SEL\" ; elif [[ -d \"$SEL\" ]]; then open \"$SEL\" ; elif [[ \"$SEL\" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then open \"$(echo \"$SEL\" | tr -d \" \")\" ; elif [[ -n \"$SEL\" ]]; then open \"https://www.google.com/search?q=$SEL\" ; fi"
