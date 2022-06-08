@@ -73,19 +73,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7B14B66B-A0A2-4A55-BCD5-A61F94D94A3F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7B691482-2058-46B7-865E-8DDE2D156FE0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7F6BF142-13CA-46BC-84CD-BD118A19E4EB</key>
 		<array>
 			<dict>
@@ -117,19 +104,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4BB46A41-E38A-452E-BE45-654A047753E7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B6E6FDEF-76E5-4F39-AAEF-565057A12258</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -214,103 +188,6 @@
 	<string>PDF Utilities</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>anchorfields</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
-				<false/>
-				<key>keyword</key>
-				<string>p</string>
-				<key>limit</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>scopes</key>
-				<array>
-					<string>~/Library/Mobile Documents/com~apple~CloudDocs/PDFs</string>
-				</array>
-				<key>sortmode</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>PDF Search</string>
-				<key>types</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
-			<key>uid</key>
-			<string>B6E6FDEF-76E5-4F39-AAEF-565057A12258</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -436,40 +313,6 @@ end tell</string>
 			<string>D582FB59-D055-4432-A39E-0E230383C335</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>name</key>
-				<string>Open with Highlights</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>7B14B66B-A0A2-4A55-BCD5-A61F94D94A3F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Highlights.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>7B691482-2058-46B7-865E-8DDE2D156FE0</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1120,24 +963,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>285</integer>
 		</dict>
-		<key>7B14B66B-A0A2-4A55-BCD5-A61F94D94A3F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>420</integer>
-			<key>ypos</key>
-			<integer>175</integer>
-		</dict>
-		<key>7B691482-2058-46B7-865E-8DDE2D156FE0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>590</integer>
-			<key>ypos</key>
-			<integer>175</integer>
-		</dict>
 		<key>7F6BF142-13CA-46BC-84CD-BD118A19E4EB</key>
 		<dict>
 			<key>colorindex</key>
@@ -1185,13 +1010,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
-		<key>9DC0D50A-1EB3-439D-8C91-F64A59B618F2</key>
-		<dict>
-			<key>xpos</key>
-			<integer>595</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>A25572A8-A977-4A22-843D-3B1AED7E452C</key>
 		<dict>
 			<key>colorindex</key>
@@ -1200,13 +1018,6 @@ end tell</string>
 			<integer>225</integer>
 			<key>ypos</key>
 			<integer>540</integer>
-		</dict>
-		<key>B6E6FDEF-76E5-4F39-AAEF-565057A12258</key>
-		<dict>
-			<key>xpos</key>
-			<integer>410</integer>
-			<key>ypos</key>
-			<integer>10</integer>
 		</dict>
 		<key>D01B02CB-8F25-4ABB-89E9-251EC6E05944</key>
 		<dict>

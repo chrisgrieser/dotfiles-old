@@ -36,3 +36,6 @@ matches:
   - trigger: "!sed"
     replace: "| sed 's/$|$//g' "
     label: 🐚 pipe to sed
+  - trigger: "!null"
+    replace: "&> /dev/null"
+    label: dev/null
