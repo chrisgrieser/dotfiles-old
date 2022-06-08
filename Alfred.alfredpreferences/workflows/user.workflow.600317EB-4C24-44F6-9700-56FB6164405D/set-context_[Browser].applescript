@@ -105,7 +105,4 @@ if (notes contains "obsidian") then
 
 	tell application "Excalidraw" to activate
 
-	display notification "" with title "👨‍🏫 Seminar Mode ready"
-	delay 0.2
-
 end if
