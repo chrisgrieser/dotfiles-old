@@ -194,6 +194,9 @@ nnoremap <leader>C lF.d/[.\s]<CR>
 " CSS: Important Switcher
 noremap <leader>i :ImportantSwitcher<CR>
 
+" CSS: Fix gcc
+nnoremap gcc :ToggleComment<CR>
+
 """"""""""""""""""""""
 " < Text Objects
 """"""""""""""""""""""
