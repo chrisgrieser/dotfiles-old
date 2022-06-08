@@ -29,7 +29,7 @@ matches:
     replace: "#!/usr/bin/env zsh\n"
     label: 🐚 zsh Shebang
   - trigger: "!path"
-    replace: "export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH\n"
+    replace: "export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH"
     label: 🐚 PATH
   - replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
     label: 🐚 String contains other string
