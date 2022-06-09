@@ -17,7 +17,7 @@ matches:
       tell application "System Events"
       	tell process "$|$"
       		set frontmost to true
-      		click menu item "§§§" of menu "File" of menu bar 1
+      		click menu item "" of menu "File" of menu bar 1
       	end tell
       end tell
     label: 🍏 Click Menubar Item
@@ -26,7 +26,7 @@ matches:
       tell application "System Events"
       	tell process "$|$"
       		set frontmost to true
-      		click menu item "§§§" of menu of menu item "Share" of menu "Edit" of menu bar 1
+      		click menu item "" of menu of menu item "Share" of menu "Edit" of menu bar 1
       	end tell
       end tell
     label: 🍏 Click Submenu Item of Menubar
