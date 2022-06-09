@@ -96,6 +96,42 @@
           ]
         }
       ]
+    },
+    {
+      "description": "🔘 ⌘+M → Merge Lines",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "E",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^md\\.obsidian$",
+                "^com\\.sublimetext"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

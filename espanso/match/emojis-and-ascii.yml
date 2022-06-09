@@ -14,8 +14,12 @@ matches:
     word: true
   - trigger: '!ampel'
     replace: 🔴🟡🟢
+  - trigger: 'mm'
+    replace: 🙈
+    word: true
   - trigger: '!eyes'
     replace: 👁️👄👁️
+
   - triggers: ['!shrug', "!ascii"]
     replace: ¯\_(ツ)_/¯
   - triggers: ['!gimme', "!ascii"]

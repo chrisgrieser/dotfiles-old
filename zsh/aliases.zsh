@@ -39,6 +39,7 @@ alias pip="pip3"
 
 # exa
 alias exall='exa --all --long --git --icons --group-directories-first --sort=modified'
+alias ll='exa --all --long --git --icons --group-directories-first --sort=modified'
 alias exa='exa --all --icons --group-directories-first --sort=modified --ignore-glob=.DS_Store'
 alias exagit='git status --short; echo; exa --long --grid --git --git-ignore --no-user --no-permissions --no-time --no-filesize --ignore-glob=.git'
 alias tree='exa --tree -L2'
