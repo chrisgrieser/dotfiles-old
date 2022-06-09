@@ -3,7 +3,7 @@
 # go to script location (the script should be located in the git repository)
 cd "$(dirname "$0")" || exit
 
-device_name=$(scutil --get ComputerName | cut -d" " -f2-)
+device_name=$(hostname | cut -d"." -f1-)
 details="$(git status --porcelain)"
 filesChanged="$(echo "$details" | wc -l | tr -d ' ')"
 
@@ -11,9 +11,9 @@ if [[ "$filesChanged" == 0 ]] ; then
 	# abort if there haven't been changes
 	exit 0
 elif [[ "$filesChanged" == 1 ]] ; then
-	changeType="$filesChanged"" file"
+	changeType="$filesChanged file"
 else
-	changeType="$filesChanged"" files"
+	changeType="$filesChanged files"
 fi
 
 git add -A

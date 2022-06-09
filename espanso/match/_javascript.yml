@@ -80,3 +80,5 @@ matches:
       const vaultPath = $.getenv("vault_path").replace(/^~/, app.pathTo("home folder"));
 
     label: '🏝 Resolve ~'
+  - trigger: "!hr"
+    replace: "//------------------------------------------------------------------------------"

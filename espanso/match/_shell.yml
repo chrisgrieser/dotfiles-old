@@ -22,7 +22,7 @@ matches:
     label: 🐚 Redirect STDERR to STDOUT
   - replace: |
       if [[ "$LONG_STRING" =~ "$SHORTSTRING" ]] ; then
-         echo "short string is part of long string"
+      	echo "short string is part of long string"
       fi
     label: 🐚 String Includes
   - trigger: "!zsh"
@@ -44,3 +44,5 @@ matches:
       resolved_path="${file_path/#~/$HOME}"
 
     label: '🐚 Resolve ~'
+  - trigger: "!hr"
+    replace: "#-------------------------------------------------------------------------------"

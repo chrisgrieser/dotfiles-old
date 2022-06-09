@@ -21,6 +21,7 @@ function acp (){
 
 function amend () {
 	local COMMIT_MSG="$*"
+	local LAST_COMMIT_MSG=$(git log -1 --pretty=%B | head -n1)
 	local MSG_LENGTH=${#COMMIT_MSG}
 	if [[ $MSG_LENGTH -gt 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
@@ -28,9 +29,11 @@ function amend () {
 		return 1
 	fi
 	if [[ "$COMMIT_MSG" == "" ]] ; then
-		git commit --amend # edit interactively in $EDITOR
+		# prefile last commit message
+		print -z "amend \"$LAST_COMMIT_MSG\""
+		return 0
 	else
-		git commit --amend -m "$COMMIT_MSG" # direct set new commit message
+		git commit --amend -m "$COMMIT_MSG" # directly set new commit message
 	fi
 	# ⚠️ only when working alone – might lead to conflicts when working
 	# with collaboraters: https://stackoverflow.com/a/255080

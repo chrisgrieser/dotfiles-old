@@ -1,0 +1,15 @@
+# https://espanso.org/docs/
+# ------------------------------------------
+
+matches:
+  - trigger: "!hr"
+    replace: |+
+
+      /* ───────────────────────────────────────────────── */
+      /* << $|$
+      ──────────────────────────────────────────────────── */
+
+    label: commented section
+  - trigger: "!!"
+    replace: " {\n"
+    label: Quicker Block
