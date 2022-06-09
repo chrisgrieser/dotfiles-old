@@ -2,7 +2,7 @@
 # ------------------------------------------------------------------------------
 # only activates code snippets when a file of the right language is open
 
-filter_title: \.shell$
+filter_title: .sh$|^\.z|Terminal|Alacritty
 
 extra_includes:
   - "../match/_shell.yml"
