@@ -97,7 +97,7 @@ function bu () {
 	           )
 	[[ "$SELECTED" == "" ]] && return 130
 	brew uninstall --zap "$SELECTED"
-	killall "$SELECTED" || true
+	killall "$SELECTED" &> /dev/null || true
 }
 
 function bi (){
