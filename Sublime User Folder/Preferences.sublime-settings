@@ -106,7 +106,7 @@
 	// Titlebar
 	"show_full_path": false,
 	"show_rel_path": true,
-	"show_project_first": true,
+	"show_project_first": true, // necessary for espanso trigger to wrok correctly
 
 	// Build
 	"show_panel_on_build": false,

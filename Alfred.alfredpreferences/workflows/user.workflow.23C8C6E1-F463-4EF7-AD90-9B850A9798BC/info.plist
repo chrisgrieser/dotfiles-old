@@ -21,9 +21,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
-		<array/>
-		<key>8EFF69B2-7667-4D78-9116-850445A8091A</key>
+		<key>419C3BB1-4F7F-46AE-9685-0D53BFB091B0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -36,6 +34,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Jason Shanks</string>
@@ -50,21 +50,13 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>nightmode</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Dark Mode</string>
-				<key>withspace</key>
-				<false/>
+				<key>triggerid</key>
+				<string>toggle-dark-mode</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>8EFF69B2-7667-4D78-9116-850445A8091A</string>
+			<string>419C3BB1-4F7F-46AE-9685-0D53BFB091B0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -162,27 +154,31 @@ tell application "Brave Browser" to close active tab of front window</string>
 		<key>1A5AE504-2A93-4348-AEF9-66571F7A684B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>3</integer>
 			<key>note</key>
 			<string>🌗</string>
 			<key>xpos</key>
-			<integer>95</integer>
+			<integer>60</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>305</integer>
+		</dict>
+		<key>419C3BB1-4F7F-46AE-9685-0D53BFB091B0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>185</integer>
 		</dict>
 		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
-			<integer>265</integer>
+			<integer>295</integer>
 			<key>ypos</key>
-			<integer>310</integer>
-		</dict>
-		<key>8EFF69B2-7667-4D78-9116-850445A8091A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>95</integer>
-			<key>ypos</key>
-			<integer>255</integer>
+			<integer>220</integer>
 		</dict>
 	</dict>
 	<key>version</key>

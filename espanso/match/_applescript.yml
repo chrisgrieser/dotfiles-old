@@ -115,7 +115,7 @@ matches:
   - trigger: "!resolve"
     replace: |
       # resolve ~
-      set unresolved_path to "~/Google Drive/File Hub/tst.sh"
+      set unresolved_path to "~/Documents"
       set AppleScript's text item delimiters to "~/"
       set theTextItems to every text item of unresolved_path
       set AppleScript's text item delimiters to (POSIX path of (path to home folder as string))
@@ -124,9 +124,7 @@ matches:
   - replace: |
       tell application "System Events"
         tell process "Highlights"
-          if (count of windows) > 0 then
-            set window_name to name of front window
-          end if
+          if (count of windows) > 0 then set window_name to name of front window
         end tell
       end tell
     label: 🍏 Name of front window of a process
