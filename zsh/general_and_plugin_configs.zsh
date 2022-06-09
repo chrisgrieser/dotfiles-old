@@ -17,14 +17,14 @@ ZSH_HIGHLIGHT_STYLES[root]='bg=red' # highlight red when currently root
 
 #-------------------------------------------------------------
 # =~ operator uses PCRE with this option
-set REMATCH_PCRE
-set RE_MATCH_PCRE
+# zsh/pcre does nto seem to be available, without PCRE, no lookbehind
+# for the zsh regex highlighter available :(
+# setopt RE_MATCH_PCRE
+# setopt REMATCH_PCRE
 
-# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/regexp.md
+# # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/regexp.md
 typeset -A ZSH_HIGHLIGHT_REGEXP
-ZSH_HIGHLIGHT_REGEXP+=('(?<=git commit -m .{50}.+' 'fg=white,bold,bg=red')
-
-
+ZSH_HIGHLIGHT_REGEXP+=('^(git commit -m|acp|amend) .{50,}' 'fg=white,bold,bg=red')
 
 
 export BAT_THEME='Sublime Snazzy'

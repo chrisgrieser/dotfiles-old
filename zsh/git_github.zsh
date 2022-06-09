@@ -1,10 +1,3 @@
-
-# mark messages going beyond 50 characters (yes, that's 50x `?`)
-# https://github.com/zsh-users/zsh-syntax-highlighting/issues/876
-# requires ZSH_HIGHLIGHT_PATTERNS settings, desing in `general_and_plugin_configs.zsh`
-
-
-
 # git add, commit & push
 function acp (){
 	local COMMIT_MSG="$*"
