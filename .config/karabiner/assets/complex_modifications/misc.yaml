@@ -106,7 +106,7 @@ rules:
         to:
           - shell_command: osascript -e 'tell application "Twitterrific" to activate'
           - key_code: vk_none
-            hold_down_milliseconds: 30
+            hold_down_milliseconds: 70
           - software_function:
               set_mouse_cursor_position:
                 x: 98%

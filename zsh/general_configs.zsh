@@ -8,7 +8,7 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 typeset -A ZSH_HIGHLIGHT_PATTERNS # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/pattern.md
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf' 'fg=white,bold,bg=red') # `rm -f` in red
-ZSH_HIGHLIGHT_PATTERNS+=('rm -f' 'fg=white,bold,bg=red') # `rm -f` in red
+ZSH_HIGHLIGHT_PATTERNS+=('rm -f' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git reset' 'fg=white,bold,bg=red') # `git reset` in red
 ZSH_HIGHLIGHT_PATTERNS+=('§' 'fg=magenta,bold') # § = global alias for grepping
 

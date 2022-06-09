@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.chris-grieser.basic-universal-actions</string>
+	<string>de.chris-grieser.plain-text-utilities</string>
 	<key>category</key>
 	<string>Tweaks</string>
 	<key>connections</key>
@@ -39,19 +39,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>367EF5DF-53C7-4731-A1DC-185C54069491</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -164,32 +151,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6B37A976-C58C-4AE7-8073-DD35726B087D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BCAE773E-2CD3-4CBF-B877-3F90B0534A11</key>
 		<array>
 			<dict>
@@ -275,8 +236,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</key>
-		<array/>
 		<key>E061C2C7-8263-4964-9AA9-D56F54C5CCD4</key>
 		<array>
 			<dict>
@@ -333,200 +292,13 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>Collection of some simple Universal Actions</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Markdown &amp; Text</string>
+	<string>Plain Text Utilities</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events" 
-	key code 124 using {shift down}
-	delay 0.03
-	keystroke "x" using {command down}
-	delay 0.03
-	key code 123
-	delay 0.03
-	keystroke "v" using {command down}
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6B37A976-C58C-4AE7-8073-DD35726B087D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>md.obsidian</string>
-					<string>com.sublimetext.4</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>38</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>J</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.sublimetext.4</string>
-					<string>dexterleng.vimac</string>
-					<string>com.runningwithcrayons.Alfred</string>
-					<string>com.iconfactory.Twitterrific5</string>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events" 
-	key code 123 using {option down}
-	key code 124 using {option down, shift down}
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>05714A54-FE1E-4037-95AE-84703B8C0A4B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{clipboard:1}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>4681D85D-478B-484A-95A4-D7540690A8CB</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1835008</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser.app.mpnpojknpmmopombnjdcgaaiekajbnjb</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -550,9 +322,9 @@ end tell</string>
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<true/>
+				<false/>
 				<key>clipboardtext</key>
-				<string>{clipboard}</string>
+				<string>{clipboard:1}</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -561,7 +333,7 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</string>
+			<string>4681D85D-478B-484A-95A4-D7540690A8CB</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -851,6 +623,27 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅ Password copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -885,46 +678,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ Password copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>grep: {query}</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E97CFCEF-F6E3-4176-9B8A-11B67D5EAB7D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -955,6 +708,27 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:split2}</string>
+				<key>title</key>
+				<string>{var:split1}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -976,21 +750,19 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
 				<key>text</key>
-				<string>{var:split2}</string>
-				<key>title</key>
-				<string>{var:split1}</string>
+				<string>grep: {query}</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</string>
+			<string>E97CFCEF-F6E3-4176-9B8A-11B67D5EAB7D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1145,28 +917,19 @@ fi</string>
 Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>05714A54-FE1E-4037-95AE-84703B8C0A4B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
 		<key>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>825</integer>
 		</dict>
 		<key>14BC0F4F-86A6-46AB-ADD7-9759E69297F0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>1070</integer>
+			<integer>855</integer>
 		</dict>
 		<key>22CE272A-A695-4C98-8ADF-E1B98667D3B6</key>
 		<dict>
@@ -1175,9 +938,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Markdown Link</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>605</integer>
+			<integer>420</integer>
 		</dict>
 		<key>25A411B2-E80F-403A-B5FD-3687171168EC</key>
 		<dict>
@@ -1186,38 +949,27 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>only URL</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>480</integer>
-		</dict>
-		<key>34F93A18-EE11-46DC-BC0E-8DCD2381C81E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>expand to word</string>
-			<key>xpos</key>
-			<integer>390</integer>
-			<key>ypos</key>
-			<integer>40</integer>
+			<integer>295</integer>
 		</dict>
 		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>180</integer>
 			<key>ypos</key>
-			<integer>565</integer>
+			<integer>380</integer>
 		</dict>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>550</integer>
 		</dict>
 		<key>4584D693-1AB3-4A78-A985-BD5256898907</key>
 		<dict>
@@ -1226,9 +978,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste previous item</string>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>20</integer>
 		</dict>
 		<key>4681D85D-478B-484A-95A4-D7540690A8CB</key>
 		<dict>
@@ -1237,18 +989,18 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>restore clipboard history order</string>
 			<key>xpos</key>
-			<integer>730</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>20</integer>
 		</dict>
 		<key>552199D3-C2F9-43D6-AA52-F1B1AF82DC28</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>680</integer>
 		</dict>
 		<key>5C9F2728-AD97-470C-9DFE-58ADE8D2D388</key>
 		<dict>
@@ -1266,81 +1018,50 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste random password</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>680</integer>
 		</dict>
 		<key>6AD52E8C-2CD9-477B-9C6E-393123615B72</key>
 		<dict>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
-		</dict>
-		<key>6B37A976-C58C-4AE7-8073-DD35726B087D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>200</integer>
-			<key>ypos</key>
-			<integer>30</integer>
+			<integer>825</integer>
 		</dict>
 		<key>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>325</integer>
+			<integer>330</integer>
 			<key>ypos</key>
-			<integer>895</integer>
+			<integer>680</integer>
 		</dict>
 		<key>78208B2A-84BC-4C70-BD07-FC86C3F6DF3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>180</integer>
 			<key>ypos</key>
-			<integer>1070</integer>
+			<integer>855</integer>
 		</dict>
 		<key>8A722688-3EC5-4916-8756-69A85D1F0C06</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>665</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>220</integer>
-		</dict>
-		<key>92D47F78-0A63-40B1-B9FF-4CFFD1E79A76</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>paste as plain text</string>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>190</integer>
-		</dict>
-		<key>A9BA6F7B-019E-4121-91AD-E1DF6CCEB8BE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>transpose</string>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>30</integer>
+			<integer>50</integer>
 		</dict>
 		<key>AB99E030-DB45-4C5F-A64F-4234C0998270</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>285</integer>
+			<integer>280</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>355</integer>
 		</dict>
 		<key>B423A0F0-E461-43B7-BA67-38089CF39848</key>
 		<dict>
@@ -1349,27 +1070,27 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste</string>
 			<key>xpos</key>
-			<integer>505</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>685</integer>
+			<integer>500</integer>
 		</dict>
 		<key>BCAE773E-2CD3-4CBF-B877-3F90B0534A11</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>645</integer>
+			<integer>460</integer>
 		</dict>
 		<key>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>20</integer>
 		</dict>
 		<key>CB80323E-4F47-48B2-9747-9E4135EC73CB</key>
 		<dict>
@@ -1385,45 +1106,36 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>160</integer>
 		</dict>
 		<key>D08CA8F9-2C11-41A6-BDFA-428DB06F4222</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>285</integer>
+			<integer>280</integer>
 			<key>ypos</key>
-			<integer>685</integer>
+			<integer>500</integer>
 		</dict>
 		<key>D3A22411-521B-4DD6-8241-F49796592618</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>345</integer>
-		</dict>
-		<key>DDE8DDC1-A4E2-40C1-8436-15CC2A8EF64E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>xpos</key>
-			<integer>205</integer>
-			<key>ypos</key>
-			<integer>190</integer>
+			<integer>160</integer>
 		</dict>
 		<key>E061C2C7-8263-4964-9AA9-D56F54C5CCD4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>530</integer>
 		</dict>
 		<key>E2F99E8D-87AA-4ABB-985E-5771B7FCD094</key>
 		<dict>
@@ -1437,9 +1149,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>E97CFCEF-F6E3-4176-9B8A-11B67D5EAB7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>260</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>825</integer>
 		</dict>
 		<key>EBAE6D21-C0E3-4E4B-9B5D-2EBA1328914E</key>
 		<dict>
@@ -1453,9 +1165,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>EF402CBD-8784-45BE-9715-E3F97EDABA3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>425</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>825</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

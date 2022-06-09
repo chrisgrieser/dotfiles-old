@@ -249,100 +249,6 @@
                         ]
                     },
                     {
-                        "description": "Ⓜ️🐦 Twitterific: Scroll Up Properly",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f3"
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "osascript -e 'tell application \"Twitterrific\" to activate'"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 30,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "98%",
-                                                "y": "10%"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "key_code": "k",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "j",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 60,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 140,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "cmd+ö → activate (needed to make jk work) (cmd+opt+ö is set as Twitterific activation)",
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "semicolon",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np",
                         "manipulators": [
                             {
@@ -4255,6 +4161,190 @@
                                     },
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ⓜ️🐦 Twitterific: F3 → Scroll up properly, ⌘+ö → activate properly",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "osascript -e 'tell application \"Twitterrific\" to activate'"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 70,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "98%",
+                                                "y": "10%"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "pointing_button": "button1"
+                                    },
+                                    {
+                                        "key_code": "k",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "j",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 60,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 140,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "⌘+ö → activate (needed to make jk work) (⌘⌥+ö is set as Twitterific activation)",
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "semicolon",
+                                        "modifiers": [
+                                            "command",
+                                            "control"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🔘 ⌘+J → Expand Word",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext",
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.iconfactory\\.Twitterrific"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🔘 ⌃+T → Transpose Characters",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md\\.obsidian$",
+                                            "^com\\.sublimetext"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "left_arrow"
+                                    },
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
