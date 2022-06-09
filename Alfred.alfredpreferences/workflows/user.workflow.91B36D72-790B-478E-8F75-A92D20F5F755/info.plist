@@ -358,8 +358,12 @@
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -602,6 +606,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run() {
+
+	const pwlength = parseInt("{query}");
+    var result           = '';
+    const characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    for ( var i = 0; i &lt; pwlength; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+   }
+   return result;
+
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>pw-generate.js</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>552199D3-C2F9-43D6-AA52-F1B1AF82DC28</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -647,40 +685,6 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function run() {
-
-	const pwlength = parseInt("{query}");
-    var result           = '';
-    const characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const charactersLength = characters.length;
-    for ( var i = 0; i &lt; pwlength; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-   }
-   return result;
-
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>pw-generate.js</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>552199D3-C2F9-43D6-AA52-F1B1AF82DC28</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string>result=$(echo "$toSearch" | grep --ignore-case "$*")
@@ -704,27 +708,6 @@ fi</string>
 			<string>EF402CBD-8784-45BE-9715-E3F97EDABA3D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:split2}</string>
-				<key>title</key>
-				<string>{var:split1}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -769,20 +752,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>variables</key>
-				<dict>
-					<key>toSearch</key>
-					<string>{query}</string>
-				</dict>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:split2}</string>
+				<key>title</key>
+				<string>{var:split1}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>78208B2A-84BC-4C70-BD07-FC86C3F6DF3D</string>
+			<string>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -800,6 +784,26 @@ fi</string>
 			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
 			<string>14BC0F4F-86A6-46AB-ADD7-9759E69297F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>toSearch</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>78208B2A-84BC-4C70-BD07-FC86C3F6DF3D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>

@@ -79,3 +79,5 @@ matches:
     replace: definitely
   - trigger: auxilliary
     replace: auxiliary
+  - trigger: highlgiht
+    replace: highlight

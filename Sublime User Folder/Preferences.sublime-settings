@@ -20,7 +20,6 @@
 
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
-		"<C-p>": false, // copy file path
 		"<C-n>": false, // copy file name
 		"<C-r>": false, // rename file
 		"<C-t>": false, // transpose → Sublime built-in command

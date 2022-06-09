@@ -5,13 +5,27 @@ export ZSH_AUTOSUGGEST_HISTORY_IGNORE="?(#c50,)" # ignores long history items
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # zsh syntax highlighting
-export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern regexp root)
 typeset -A ZSH_HIGHLIGHT_PATTERNS # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/pattern.md
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf' 'fg=white,bold,bg=red') # `rm -f` in red
 ZSH_HIGHLIGHT_PATTERNS+=('rm -f' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git reset' 'fg=white,bold,bg=red') # `git reset` in red
 ZSH_HIGHLIGHT_PATTERNS+=('§' 'fg=magenta,bold') # § = global alias for grepping
-# → further git-specific highlights in `git_github.zsh`
+
+# shellcheck disable=SC2034,SC2154
+ZSH_HIGHLIGHT_STYLES[root]='bg=red' # highlight red when currently root
+
+#-------------------------------------------------------------
+# =~ operator uses PCRE with this option
+set REMATCH_PCRE
+set RE_MATCH_PCRE
+
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/regexp.md
+typeset -A ZSH_HIGHLIGHT_REGEXP
+ZSH_HIGHLIGHT_REGEXP+=('(?<=git commit -m .{50}.+' 'fg=white,bold,bg=red')
+
+
+
 
 export BAT_THEME='Sublime Snazzy'
 
