@@ -111,6 +111,9 @@ nnoremap - /
 " Quickly remove search highlights
 nnoremap <C-m> :nohlsearch<CR>
 
+" Goto Mark: remapping since ` not working
+nnoremap ö `
+
 """"""""""""""""""""""
 " Editing
 """"""""""""""""""""""
@@ -129,23 +132,6 @@ nnoremap U <C-r>
 nnoremap <Space> ciw
 nnoremap <S-Space> daw
 vnoremap <Space> c
-
-" Abolish: Titlecase
-nnoremap ä crt
-nnoremap Ä ~
-
-" transpose characters, consistent with Emacs/Mac
-" transpose characters, consistent with Emacs/Mac
-inoremap <C-t> <Esc>xpi
-nnoremap <C-t> xph
-
-""""""""""""""""""""""
-" Text Objects
-""""""""""""""""""""""
-
-" double [] for symmetry with Obsidian's Vim Emulation
-onoremap zz i[
-
 
 """"""""""""""""""""""
 " Switch Modes
@@ -177,5 +163,7 @@ inoremap <C-j> <Esc>c^
 " quicker access to help command-ids
 nnoremap ? :help
 
-" Goto Mark: remapping since ` not working
-nnoremap ö `
+" copy path of current file
+noremap <C-p> "%y
+
+

@@ -231,7 +231,6 @@
 	{ "keys": ["super+backspace"], "command": "delete_current_file" },
 	{ "keys": ["super+l"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}  },
 	{ "keys": ["ctrl+r"], "command": "rename_file"},
-	{ "keys": ["ctrl+p"], "command": "copy_path" },
 	// Open Plugin
 	{ "keys": ["super+o"], "command": "open_browse", "context": [
 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
