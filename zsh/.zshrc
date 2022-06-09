@@ -12,5 +12,5 @@ source "$ZSH_DOTFILE_LOCATION"/git_github.zsh
 source "$ZSH_DOTFILE_LOCATION"/homebrew.zsh
 source "$ZSH_DOTFILE_LOCATION"/npm.zsh
 source "$ZSH_DOTFILE_LOCATION"/keybindings.zsh
-source "$ZSH_DOTFILE_LOCATION"/general_configs.zsh
+source "$ZSH_DOTFILE_LOCATION"/general_and_plugin_configs.zsh
 source "$ZSH_DOTFILE_LOCATION"/../pandoc/pandoc.zsh

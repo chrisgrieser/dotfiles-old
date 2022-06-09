@@ -1006,7 +1006,7 @@ end tell</string>
 			<key>note</key>
 			<string>Free Comment</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>225</integer>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
@@ -1026,7 +1026,7 @@ end tell</string>
 			<key>note</key>
 			<string>Remove all Annotations</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>225</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
