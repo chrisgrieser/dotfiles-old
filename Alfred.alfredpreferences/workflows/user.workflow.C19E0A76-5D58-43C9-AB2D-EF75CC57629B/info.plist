@@ -911,8 +911,10 @@ end tell</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
+			<key>note</key>
+			<string>PDF Expert</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -1034,8 +1036,10 @@ end tell</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
+			<key>note</key>
+			<string>PDF Expert</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>

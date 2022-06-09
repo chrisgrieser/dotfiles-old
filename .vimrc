@@ -41,6 +41,9 @@ set hlsearch
 " Trim Whitespace on Save
 autocmd BufWritePre * %s/\s\+$//e
 
+" Don't show the ~ at the beginning of each line
+highlight EndOfBuffer ctermfg=black ctermbg=black
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
