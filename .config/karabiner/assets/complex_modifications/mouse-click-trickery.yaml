@@ -42,13 +42,12 @@ rules:
           - pointing_button: button3
         conditions:
           - type: frontmost_application_if
-            description: $ left out to match PWAs as well.
             bundle_identifiers:
-              - ^com\.vivaldi\.Vivaldi
-              - ^org\.chromium\.Chromium
-              - ^com\.google\.Chrome
-              - ^com\.brave\.Browser
-              - ^com\.apple\.Safari
+              - ^com\.vivaldi\.Vivaldi$
+              - ^org\.chromium\.Chromium$
+              - ^com\.google\.Chrome$
+              - ^com\.brave\.Browser$
+              - ^com\.apple\.Safari$
         parameters:
           basic.to_if_held_down_threshold_milliseconds: 30
   - description: "🐁 4 (hold): search selected text / open URL, (tap): send F13"

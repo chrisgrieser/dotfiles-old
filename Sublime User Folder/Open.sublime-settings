@@ -6,5 +6,5 @@
     "list_current_dir": true,
 
     // Ignore regex patters
-    "filter_regex": ["\\.DS_Store", "\\.git"]
+    "filter_regex": ["\\.DS_Store", "\\.git", ".*\\.json"]
 }
