@@ -41,9 +41,6 @@ set hlsearch
 " Trim Whitespace on Save
 autocmd BufWritePre * %s/\s\+$//e
 
-" Don't show the ~ at the beginning of each line
-highlight EndOfBuffer ctermfg=black ctermbg=black
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -73,14 +70,14 @@ highlight EndOfBuffer ctermfg=black ctermbg=black
 " Basics
 """"""""""""""""""""""
 
-let mapleader=,
+let mapleader=","
 
 " cmd+s to save
 nnoremap <D-s> :write<CR>
 " cmd+a to save all
 nnoremap <D-a> ggvG
 " cmd+w to save&quit
-nnoremap <D-w> ZQ
+nnoremap <D-w> ZZ
 " Swap up/down (vim.unimpaired)
 noremap <D-2> [e
 noremap <D-3> ]e
