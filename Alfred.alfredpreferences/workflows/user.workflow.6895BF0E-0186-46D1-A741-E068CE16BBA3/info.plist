@@ -23,11 +23,11 @@
 		</array>
 		<key>08216767-CB9A-4FB6-AEDF-AA927704AEB5</key>
 		<array/>
-		<key>0CC82668-35D3-4FAC-8CFA-33D0E6864508</key>
+		<key>0F6DB773-7447-4D7C-900E-59F3E9C69B19</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7AD9C0F1-B82F-469B-B16A-7BBE9168CFAE</string>
+				<string>B46D4F01-F87D-4123-9D22-FB7EDABD729F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -40,7 +40,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7AD9C0F1-B82F-469B-B16A-7BBE9168CFAE</string>
+				<string>90439A10-18CA-44FC-9516-21723CE49144</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3C073A54-0FF5-46B7-A886-7EF36A81668C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F6DB773-7447-4D7C-900E-59F3E9C69B19</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -101,19 +114,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7AD9C0F1-B82F-469B-B16A-7BBE9168CFAE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>90439A10-18CA-44FC-9516-21723CE49144</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>90439A10-18CA-44FC-9516-21723CE49144</key>
 		<array>
 			<dict>
@@ -135,30 +135,9 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Trash Mail</string>
+	<string>Trash Mail &amp; Password Generation</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>mail</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Create Trash Mailadress &amp; Password</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>361EF992-408A-44A7-8928-706BE131B801</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -183,25 +162,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>--loadtell application "Brave Browser"	open location "https://muellmail.com/"	delay 0.2	repeat until (loading of active tab of front window is false)		delay 0.2	end repeat	delay 0.2end tell--check whether homepage or old mailtell application "Brave Browser" to set currentTab to URL of active tab of front window--goes to homepage, if neededif currentTab contains ("@") then	tell application "System Events" to keystroke tab	delay 0.2	tell application "System Events" to keystroke return	delay 0.5end if--create random mailtell application "System Events" to keystroke tabtell application "System Events" to keystroke tabtell application "System Events" to keystroke tabtell application "System Events" to keystroke return--copy mail adressdelay 1tell application "Brave Browser" to set mailTab to URL of active tab of front window--go backtell application "System Events"	tell process "Brave Browser"		set frontmost to true		click menu item "Select Next Tab" of menu "Tab" of menu bar 1	end tellend tell-- return mail adressreturn mailTab</string>
-				<key>scriptargtype</key>
+				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>create-trashmail_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>keyword</key>
+				<string>mail</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Create Trash Mailadress &amp; Password</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>5DEA869F-1D1D-433F-B75A-213565DCD579</string>
+			<string>361EF992-408A-44A7-8928-706BE131B801</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -244,31 +221,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>--loadtell application "Brave Browser"	open location "https://muellmail.com/"	delay 0.2	repeat until (loading of active tab of front window is false)		delay 0.2	end repeat	delay 0.2end tell--check whether homepage or old mailtell application "Brave Browser" to set currentTab to URL of active tab of front window--goes to homepage, if neededif currentTab contains ("@") then	tell application "System Events" to keystroke tab	delay 0.2	tell application "System Events" to keystroke return	delay 0.5end if--create random mailtell application "System Events" to keystroke tabtell application "System Events" to keystroke tabtell application "System Events" to keystroke tabtell application "System Events" to keystroke return--copy mail adressdelay 1tell application "Brave Browser" to set mailTab to URL of active tab of front window--go backtell application "System Events"	tell process "Brave Browser"		set frontmost to true		click menu item "Select Next Tab" of menu "Tab" of menu bar 1	end tellend tell-- return mail adressreturn mailTab</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>create-trashmail_[Browser].applescript</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.random</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>90439A10-18CA-44FC-9516-21723CE49144</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>
-</string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>7888F38A-9726-4D88-AB3B-A0FBC509F7BD</string>
+			<string>5DEA869F-1D1D-433F-B75A-213565DCD579</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -294,10 +263,88 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>7AD9C0F1-B82F-469B-B16A-7BBE9168CFAE</string>
+			<string>7888F38A-9726-4D88-AB3B-A0FBC509F7BD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.random</string>
+			<key>uid</key>
+			<string>90439A10-18CA-44FC-9516-21723CE49144</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run() {
+
+	const pwlength = parseInt("{query}");
+    var result           = '';
+    const characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    for ( var i = 0; i &lt; pwlength; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+   }
+   return result;
+
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>pw-generate.js</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0F6DB773-7447-4D7C-900E-59F3E9C69B19</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅ Password copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B46D4F01-F87D-4123-9D22-FB7EDABD729F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -307,18 +354,18 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>trash</string>
+				<string>pw</string>
 				<key>subtext</key>
-				<string></string>
+				<string>with length: '{query}' (default: 32)</string>
 				<key>text</key>
-				<string>Create Trash Mailadress &amp; Password</string>
+				<string>Random password</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>0CC82668-35D3-4FAC-8CFA-33D0E6864508</string>
+			<string>3C073A54-0FF5-46B7-A886-7EF36A81668C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -334,28 +381,41 @@
 			<key>xpos</key>
 			<integer>690</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>30</integer>
 		</dict>
 		<key>08216767-CB9A-4FB6-AEDF-AA927704AEB5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>70</integer>
-		</dict>
-		<key>0CC82668-35D3-4FAC-8CFA-33D0E6864508</key>
-		<dict>
-			<key>xpos</key>
 			<integer>30</integer>
+		</dict>
+		<key>0F6DB773-7447-4D7C-900E-59F3E9C69B19</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>175</integer>
 		</dict>
 		<key>361EF992-408A-44A7-8928-706BE131B801</key>
 		<dict>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>30</integer>
+		</dict>
+		<key>3C073A54-0FF5-46B7-A886-7EF36A81668C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>paste random password</string>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 		<key>59869625-BFE1-4EFE-BDF5-2C209BA3CC85</key>
 		<dict>
@@ -364,21 +424,21 @@
 			<key>xpos</key>
 			<integer>315</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>30</integer>
 		</dict>
 		<key>5DEA869F-1D1D-433F-B75A-213565DCD579</key>
 		<dict>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>30</integer>
 		</dict>
 		<key>74C53D92-1952-4166-8D9F-7499047E29FF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>635</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>60</integer>
 		</dict>
 		<key>7888F38A-9726-4D88-AB3B-A0FBC509F7BD</key>
 		<dict>
@@ -387,21 +447,23 @@
 			<key>xpos</key>
 			<integer>580</integer>
 			<key>ypos</key>
-			<integer>100</integer>
-		</dict>
-		<key>7AD9C0F1-B82F-469B-B16A-7BBE9168CFAE</key>
-		<dict>
-			<key>xpos</key>
-			<integer>180</integer>
-			<key>ypos</key>
-			<integer>160</integer>
+			<integer>60</integer>
 		</dict>
 		<key>90439A10-18CA-44FC-9516-21723CE49144</key>
 		<dict>
 			<key>xpos</key>
 			<integer>260</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>60</integer>
+		</dict>
+		<key>B46D4F01-F87D-4123-9D22-FB7EDABD729F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

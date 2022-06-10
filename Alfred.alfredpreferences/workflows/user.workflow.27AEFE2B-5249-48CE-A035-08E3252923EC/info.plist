@@ -499,9 +499,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 				<key>relatedApps</key>
 				<array>
 					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
-					<string>org.chromium.Chromium</string>
 					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -1052,7 +1052,7 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<key>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>785</integer>
+			<integer>775</integer>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>

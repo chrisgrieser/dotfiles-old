@@ -210,19 +210,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CC18D270-2F05-4E5F-9699-E89E3F5E4915</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D3A22411-521B-4DD6-8241-F49796592618</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D08CA8F9-2C11-41A6-BDFA-428DB06F4222</key>
 		<array>
 			<dict>
@@ -382,42 +369,6 @@
 			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
 			<string>8A722688-3EC5-4916-8756-69A85D1F0C06</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>searcher</key>
-				<integer>1635216737</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
-			<key>uid</key>
-			<string>D3A22411-521B-4DD6-8241-F49796592618</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Open Adress in Maps</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>CC18D270-2F05-4E5F-9699-E89E3F5E4915</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -924,16 +875,16 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>07C0AFC4-5404-468C-AFC5-5A874E7A18DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>645</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>825</integer>
+			<integer>695</integer>
 		</dict>
 		<key>14BC0F4F-86A6-46AB-ADD7-9759E69297F0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>580</integer>
+			<integer>575</integer>
 			<key>ypos</key>
-			<integer>855</integer>
+			<integer>725</integer>
 		</dict>
 		<key>22CE272A-A695-4C98-8ADF-E1B98667D3B6</key>
 		<dict>
@@ -942,9 +893,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Markdown Link</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>300</integer>
 		</dict>
 		<key>25A411B2-E80F-403A-B5FD-3687171168EC</key>
 		<dict>
@@ -953,27 +904,27 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>only URL</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>295</integer>
+			<integer>165</integer>
 		</dict>
 		<key>367EF5DF-53C7-4731-A1DC-185C54069491</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>250</integer>
 		</dict>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>425</integer>
 		</dict>
 		<key>4584D693-1AB3-4A78-A985-BD5256898907</key>
 		<dict>
@@ -1002,9 +953,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>550</integer>
 		</dict>
 		<key>5C9F2728-AD97-470C-9DFE-58ADE8D2D388</key>
 		<dict>
@@ -1022,32 +973,32 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>paste random password</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>550</integer>
 		</dict>
 		<key>6AD52E8C-2CD9-477B-9C6E-393123615B72</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>825</integer>
+			<integer>695</integer>
 		</dict>
 		<key>6C174E99-2FCB-4AFB-85B7-E900D08FCA96</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>325</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>550</integer>
 		</dict>
 		<key>78208B2A-84BC-4C70-BD07-FC86C3F6DF3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>855</integer>
+			<integer>725</integer>
 		</dict>
 		<key>8A722688-3EC5-4916-8756-69A85D1F0C06</key>
 		<dict>
@@ -1063,29 +1014,29 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>225</integer>
 		</dict>
 		<key>B423A0F0-E461-43B7-BA67-38089CF39848</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>7</integer>
 			<key>note</key>
 			<string>paste</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>370</integer>
 		</dict>
 		<key>BCAE773E-2CD3-4CBF-B877-3F90B0534A11</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>330</integer>
 		</dict>
 		<key>C5DF79E9-E309-4B48-A029-30B3AB0FEF13</key>
 		<dict>
@@ -1105,41 +1056,23 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>1870</integer>
 		</dict>
-		<key>CC18D270-2F05-4E5F-9699-E89E3F5E4915</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>160</integer>
-		</dict>
 		<key>D08CA8F9-2C11-41A6-BDFA-428DB06F4222</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>500</integer>
-		</dict>
-		<key>D3A22411-521B-4DD6-8241-F49796592618</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>195</integer>
-			<key>ypos</key>
-			<integer>160</integer>
+			<integer>370</integer>
 		</dict>
 		<key>E061C2C7-8263-4964-9AA9-D56F54C5CCD4</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>8</integer>
+			<integer>7</integer>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>400</integer>
 		</dict>
 		<key>E2F99E8D-87AA-4ABB-985E-5771B7FCD094</key>
 		<dict>
@@ -1153,9 +1086,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>E97CFCEF-F6E3-4176-9B8A-11B67D5EAB7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>255</integer>
 			<key>ypos</key>
-			<integer>825</integer>
+			<integer>695</integer>
 		</dict>
 		<key>EBAE6D21-C0E3-4E4B-9B5D-2EBA1328914E</key>
 		<dict>
@@ -1169,9 +1102,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>EF402CBD-8784-45BE-9715-E3F97EDABA3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>825</integer>
+			<integer>695</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

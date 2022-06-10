@@ -8,6 +8,19 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
+		<key>21AD0573-CDA8-43CD-A059-EB71B1329054</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>24256D24-B3D1-4584-8AB0-7B5A09ECA572</key>
 		<array>
 			<dict>
@@ -42,7 +55,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Phone</string>
+	<string>Phone &amp; Map</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -106,17 +119,71 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Open Adress in Maps</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>21AD0573-CDA8-43CD-A059-EB71B1329054</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635216737</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>21AD0573-CDA8-43CD-A059-EB71B1329054</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
 		<key>24256D24-B3D1-4584-8AB0-7B5A09ECA572</key>
 		<dict>
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
 			<integer>160</integer>
+		</dict>
+		<key>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>465</integer>
 		</dict>
 		<key>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</key>
 		<dict>
