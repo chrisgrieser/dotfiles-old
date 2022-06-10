@@ -2,7 +2,7 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '!ctrl'
+  - triggers: ['!ctrl', "!control"]
     replace: ⌃
   - trigger: '!shift'
     replace: ⇧
@@ -10,8 +10,6 @@ matches:
     replace: ⌘
   - triggers: ['!alt', "!opt"]
     replace: ⌥
-  - trigger: '!tab'
-    replace: ↹
   - trigger: '!caps'
     replace: ⇪
 

@@ -46,4 +46,4 @@ cp ~"/Library/Application Support/$BROWSER/Default/History" ~"/Library/Applicati
 
 # LOGGING
 # ---------------------------------------------------
-# echo "30-min $(date '+%Y-%m-%d %H:%M')" >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/frequent.log'
+echo "30-min $(date '+%Y-%m-%d %H:%M')" >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/frequent.log'

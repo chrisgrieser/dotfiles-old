@@ -3,7 +3,7 @@
 # go to script location (the script should be located in the git repository)
 cd "$(dirname "$0")" || exit
 
-device_name=$(hostname | cut -d"." -f1-)
+device_name=$(hostname | cut -d"." -f1)
 details="$(git status --porcelain)"
 filesChanged="$(echo "$details" | wc -l | tr -d ' ')"
 
