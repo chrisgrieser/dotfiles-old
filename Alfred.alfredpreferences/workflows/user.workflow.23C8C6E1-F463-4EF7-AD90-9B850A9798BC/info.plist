@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.sirshanksalot.dark-mode-toggle</string>
+	<string>de.chris-grieser.dark-mode-toggle</string>
 	<key>category</key>
 	<string>Tweaks</string>
 	<key>connections</key>
@@ -38,9 +38,9 @@
 		<array/>
 	</dict>
 	<key>createdby</key>
-	<string>Jason Shanks</string>
+	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>Toggles Dark Mode/Light Mode in MacOS 10.10+</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -184,6 +184,6 @@ tell application "Brave Browser" to close active tab of front window</string>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/jasonshanks/alfred-darkmode</string>
+	<string>https://chris-grieser.de/</string>
 </dict>
 </plist>

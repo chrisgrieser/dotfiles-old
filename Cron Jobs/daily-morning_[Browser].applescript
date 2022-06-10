@@ -17,7 +17,7 @@ delay 1
 # SWITCH TO LIGHT MODE
 tell application "System Events"
 	tell appearance preferences
-		if (dark mode is true) then tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "com.sirshanksalot.dark-mode-toggle"
+		if (dark mode is true) then tell application id "com.runningwithcrayons.Alfred" to run trigger "toggle-dark-mode" in workflow "de.chris-grieser.dark-mode-toggle"
 	end tell
 end tell
 

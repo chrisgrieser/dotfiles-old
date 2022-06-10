@@ -1,6 +1,8 @@
 #!/usr/bin/env osascript
 
-# Workaround for Dark Reader not toggling when inactive
+# Workaround for Dark Reader & Highlights not toggling when inactive
+
+#-------------------------------------------------------------------------------
 
 # open tab if there is no tab open to ensure Dark Reader switches as well
 set BrowserWasntRunning to false
@@ -33,3 +35,24 @@ if (BrowserWasntRunning)
 	delay 0.2
 	tell application "Brave Browser" to close active tab of front window
 end if
+
+
+# Make Highlights.app get the same mode as the OS mode (if running)
+tell application "System Events"
+	tell appearance preferences to set isDark to dark mode
+	if (isDark is false) then
+		set targetView to "Default"
+	else
+		set targetView to "Night"
+	end if
+
+	set highlightsRunning to (name of processes) contains "Highlights"
+	if (highlightsRunning is true) then
+		tell process "Highlights"
+			set frontmost to true
+			click menu item targetView of menu of menu item "PDF Appearance" of menu "View" of menu bar 1
+		end tell
+	end if
+end tell
+
+
