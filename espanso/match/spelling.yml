@@ -18,12 +18,15 @@ matches:
     replace: "I'd"
   - trigger: appraoch
     replace: approach
+    propagate_case: true
   - trigger: cih
     replace: ich
     word: true
+    propagate_case: true
   - trigger: eien
     replace: eine
     word: true
+    propagate_case: true
   - trigger: fiels
     replace: files
   - trigger: fo
@@ -38,6 +41,7 @@ matches:
     propagate_case: true
   - trigger: keybaord
     replace: keyboard
+    propagate_case: true
   - trigger: lcih
     replace: lich
   - trigger: liek
@@ -48,6 +52,7 @@ matches:
     replace: much
   - trigger: mrogen
     replace: morgen
+    propagate_case: true
   - trigger: msot
     replace: most
   - trigger: mti
@@ -70,16 +75,20 @@ matches:
     replace: useful
   - trigger: suer
     replace: user
+    propagate_case: true
   - trigger: technsich
     replace: technisch
+    propagate_case: true
   - trigger: verison
     replace: version
     propagate_case: true
   - triggers: [definitly, definetly, definetely, definitely]
     replace: definitely
+    propagate_case: true
   - trigger: auxilliary
     replace: auxiliary
   - trigger: highlgiht
     replace: highlight
+    propagate_case: true
   - trigger: shoudl
     replace: should
