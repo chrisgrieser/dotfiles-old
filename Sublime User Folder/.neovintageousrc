@@ -75,9 +75,9 @@ nnoremap ö `
 nnoremap gl ]l
 nnoremap gL [l
 
-" Next/Previous Spellcheck Errors
-nnoremap gs ]s
-nnoremap gS [s
+" [g]oto [z]pelling Errors
+nnoremap gz ]s
+nnoremap gZ [s
 " add word to dictionary/undo adding to dictionary
 " nnoremap zg zg
 " nnoremap zug zug
