@@ -1,5 +1,5 @@
 # https://espanso.org/docs/configuration/app-specific-configurations/
-filter_exec: "com.hnc.Discord"
+filter_class: "com.hnc.Discord"
 
 extra_includes:
   - "../match/_discord.yml"
