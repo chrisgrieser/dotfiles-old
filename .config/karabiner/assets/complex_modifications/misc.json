@@ -291,45 +291,8 @@
       ]
     },
     {
-      "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np, R-Click opens in background",
+      "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button2"
-          },
-          "to_if_held_down": [
-            {
-              "pointing_button": "button2"
-            }
-          ],
-          "to": [
-            {
-              "pointing_button": "button3"
-            },
-            {
-              "key_code": "vk_none",
-              "hold_down_milliseconds": 300
-            },
-            {
-              "key_code": "h",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "file_paths": [
-                "Inoreader.app"
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 30
-          }
-        },
         {
           "type": "basic",
           "from": {

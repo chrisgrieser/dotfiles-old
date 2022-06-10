@@ -15,6 +15,7 @@ const workArray = app.doShellScript (
 	cd "' + dotfileFolder + '" ; fd -H \
 	-E "Alfred.alfredpreferences" \
 	-E ".config/alacritty/themes/" \
+	-E "zsh/plugins/colorscript.bash" \
 	-E ".config/karabiner/assets/complex_modifications/*.json" \
 	-E "FileHistory*.json"'
 ).split("\r");

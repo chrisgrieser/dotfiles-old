@@ -4241,35 +4241,24 @@
                         ]
                     },
                     {
-                        "description": "🐁 R (tap): Open link (when in Browser)",
+                        "description": "↹ Tab to Meh",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 30
+                                    "key_code": "tab"
                                 },
                                 "to": [
                                     {
-                                        "pointing_button": "button3"
+                                        "key_code": "right_shift",
+                                        "modifiers": [
+                                            "right_control",
+                                            "right_option"
+                                        ]
                                     }
                                 ],
-                                "to_if_held_down": [
+                                "to_if_alone": [
                                     {
-                                        "pointing_button": "button2"
+                                        "key_code": "tab"
                                     }
                                 ],
                                 "type": "basic"
@@ -4277,45 +4266,8 @@
                         ]
                     },
                     {
-                        "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np, R-Click opens in background",
+                        "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np",
                         "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "file_paths": [
-                                            "Inoreader.app"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 30
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 300,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "h",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
                             {
                                 "conditions": [
                                     {
@@ -4424,24 +4376,75 @@
                         ]
                     },
                     {
-                        "description": "↹ Tab to Meh",
+                        "description": "🐁 R (tap): Open link (when in Browser)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$",
+                                            "^org\\.chromium\\.Chromium$",
+                                            "^com\\.google\\.Chrome$",
+                                            "^com\\.brave\\.Browser$",
+                                            "^com\\.apple\\.Safari$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "tab"
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 30
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_shift",
+                                        "pointing_button": "button3"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "pointing_button": "button2"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi.+$",
+                                            "^org\\.chromium\\.Chromium.+$",
+                                            "^com\\.google\\.Chrome.+$",
+                                            "^com\\.brave\\.Browser.+$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button2"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 30
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button3"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 200,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "right_control",
-                                            "right_option"
+                                            "command"
                                         ]
                                     }
                                 ],
-                                "to_if_alone": [
+                                "to_if_held_down": [
                                     {
-                                        "key_code": "tab"
+                                        "pointing_button": "button2"
                                     }
                                 ],
                                 "type": "basic"
