@@ -22,14 +22,14 @@ itemCount=$(ls "$folder" | wc -l)
 itemCount=$((itemCount-1))
 
 # badge
-if [[ $itemCount > 0 ]] && [[ $last_change != "badge" ]] ; then
+if [[ $itemCount -gt 0 ]] && [[ $last_change != "badge" ]] ; then
 	fileicon set "$folder" "$icons_path""Downloads with Badge.icns"
 	echo "badge" > "$cache_location"
 	killall Dock
 fi
 
 # no badge
-if [[ $itemCount == 0 ]] && [[ $last_change == "badge" ]] ; then
+if [[ $itemCount -eq 0 ]] && [[ $last_change == "badge" ]] ; then
 	fileicon set "$folder" "$icons_path""Downloads.icns"
 	echo "" > "$cache_location"
 	killall Dock
@@ -44,3 +44,6 @@ cp ~"/Library/Application Support/$BROWSER/Default/Bookmarks" ~"/Library/Applica
 cp ~"/Library/Application Support/$BROWSER/Local State" ~"/Library/Application Support/Google/Chrome/Local State"
 cp ~"/Library/Application Support/$BROWSER/Default/History" ~"/Library/Application Support/Google/Chrome/Default/History"
 
+# LOGGING
+# ---------------------------------------------------
+# echo "30-min $(date '+%Y-%m-%d %H:%M')" >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/frequent.log'

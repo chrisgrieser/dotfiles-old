@@ -1,4 +1,9 @@
 #!/bin/zsh
+
+# prevent mail alerts https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
+# if line below is disabled, a log of cronjobs can be accesssed via `mail`
+# mails can be deleted by removing `/private/var/mail/chrisgrieser`
+(crontab -l && echo "MAILTO=''") | crontab -
 CRON_JOB_FOLDER="$DOTFILE_FOLDER/Cron Jobs"
 
 echo -n "" | crontab - # to reset
@@ -11,11 +16,6 @@ add-cronjob "5 3 * * *" 'sleep-timer_[Browser].applescript'
 add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
 add-cronjob "5 21 * * *" 'daily-evening.applescript'
 add-cronjob "5 6 * * 1,4" 'biweekly.applescript'
-
-# prevent mail alerts https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
-# if line below is disabled, a log of cronjobs can be accesssed via `mail`
-# mails can be deleted by removing `/private/var/mail/chrisgrieser`
-# (crontab -l && echo "MAILTO=''") | crontab -
 
 echo ""
 crontab -l # check the current cronjobs
