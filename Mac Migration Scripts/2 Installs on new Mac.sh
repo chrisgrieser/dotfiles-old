@@ -14,7 +14,7 @@ open '/System/Applications/App Store.app'
 # -------------
 # INSTALLS
 # -------------
-brew bundle install --verbose --no-lock --file ~'/Desktop/Brewfile'
+brew bundle install --no-quarantine --verbose --no-lock --file ~'/Desktop/Brewfile'
 
 # Uninstall unneeded Mac Default apps
 open -a "Appcleaner" \
@@ -24,9 +24,6 @@ open -a "Appcleaner" \
     "/Applications/Keynote.app" \
     "/Applications/iMovie.app"
 
-# change setting of archive utility
-open "/System/Library/CoreServices/Applications/Archive Utility.app"
-
 # NPM https://stackoverflow.com/a/41199625
 # shellcheck disable=SC2002
 cat ~'/Desktop/NPMfile' | xargs npm install -g --force
@@ -35,6 +32,9 @@ npm list -g
 # -----------
 # SETTINGS
 # -----------
+
+# change setting of archive utility
+open "/System/Library/CoreServices/Applications/Archive Utility.app"
 
 # Twitterific: run headless http://support.iconfactory.com/kb/twitterrific/advanced-settings-using-the-command-line-macos
 defaults write com.iconfactory.Twitterrific5 advancedShowDockIcon -bool NO
