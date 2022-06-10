@@ -83,32 +83,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>68D3F419-AB07-4EC9-8DBB-8232716B457B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2700161D-CDE3-43DA-A39B-F25D6134C16F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>728D99C6-9125-4C59-8310-24D5CACED677</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<array>
 			<dict>
@@ -140,19 +114,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>76E5A56C-0258-48FF-A883-94D79A066C82</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D6530A0C-1F99-4510-8832-C03B4D0FCD03</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>002C8DB4-DE1D-44E3-8B3B-7E9800110985</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -303,86 +264,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://explainshell.com/explain?cmd={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>2700161D-CDE3-43DA-A39B-F25D6134C16F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ch</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Explain Shell Command: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>68D3F419-AB07-4EC9-8DBB-8232716B457B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://grep.app/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ch</string>
-				<key>subtext</key>
-				<string>Search Code</string>
-				<key>text</key>
-				<string>grep.app: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>728D99C6-9125-4C59-8310-24D5CACED677</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -398,6 +279,29 @@
 			<string>2C02AA01-C80E-4781-84EF-8547306C00C6</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n `osascript -e 'id of app "{query}"' `</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -503,29 +407,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n `osascript -e 'id of app "{query}"' `</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -561,35 +442,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>C2852F05-D89A-4B01-A3AD-88076C1A401D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"602f436a4ec62ec04a1247b4ad3c52de8e9aef7b.png","title":"Finder.app","arg":"Finder.app"},{"imagefile":"0b0b8dd2a9006c3067c24203582a7a6d2c0cad2c.png","title":"Alfred Preferences.app","arg":"Alfred Preferences.app"}]</string>
-				<key>keyword</key>
-				<string>appid</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Get the App ID of '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>D6530A0C-1F99-4510-8832-C03B4D0FCD03</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -789,7 +641,7 @@
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>210</integer>
 		</dict>
 		<key>150AD279-99E1-4CB0-9F90-F4395A3A116A</key>
 		<dict>
@@ -800,13 +652,6 @@
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
-		<key>2700161D-CDE3-43DA-A39B-F25D6134C16F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>265</integer>
-			<key>ypos</key>
-			<integer>175</integer>
-		</dict>
 		<key>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</key>
 		<dict>
 			<key>colorindex</key>
@@ -814,9 +659,9 @@
 			<key>note</key>
 			<string>only app name</string>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>475</integer>
+			<integer>210</integer>
 		</dict>
 		<key>2C02AA01-C80E-4781-84EF-8547306C00C6</key>
 		<dict>
@@ -825,7 +670,7 @@
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>435</integer>
+			<integer>130</integer>
 		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>
@@ -834,16 +679,16 @@
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>445</integer>
+			<integer>180</integer>
 		</dict>
 		<key>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>295</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>180</integer>
 		</dict>
 		<key>50F4BA75-EC14-431B-BA50-28DEABC12BBD</key>
 		<dict>
@@ -852,30 +697,7 @@
 			<key>xpos</key>
 			<integer>490</integer>
 			<key>ypos</key>
-			<integer>800</integer>
-		</dict>
-		<key>606E4A4B-AA28-4B09-BCBB-6B8DC50A8740</key>
-		<dict>
-			<key>xpos</key>
-			<integer>265</integer>
-			<key>ypos</key>
-			<integer>315</integer>
-		</dict>
-		<key>68D3F419-AB07-4EC9-8DBB-8232716B457B</key>
-		<dict>
-			<key>note</key>
-			<string>explain shell command</string>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>175</integer>
-		</dict>
-		<key>728D99C6-9125-4C59-8310-24D5CACED677</key>
-		<dict>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>315</integer>
+			<integer>495</integer>
 		</dict>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<dict>
@@ -886,7 +708,7 @@
 			<key>xpos</key>
 			<integer>210</integer>
 			<key>ypos</key>
-			<integer>715</integer>
+			<integer>410</integer>
 		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
@@ -895,7 +717,7 @@
 			<key>xpos</key>
 			<integer>490</integer>
 			<key>ypos</key>
-			<integer>685</integer>
+			<integer>380</integer>
 		</dict>
 		<key>C2852F05-D89A-4B01-A3AD-88076C1A401D</key>
 		<dict>
@@ -904,7 +726,7 @@
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>245</integer>
 		</dict>
 		<key>D582977E-DA6A-46AD-93B6-3FF01EBA96BE</key>
 		<dict>
@@ -913,18 +735,7 @@
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>715</integer>
-		</dict>
-		<key>D6530A0C-1F99-4510-8832-C03B4D0FCD03</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>fix for apps not found via File Filter</string>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>560</integer>
+			<integer>410</integer>
 		</dict>
 		<key>DCA89D5A-1D6F-4495-BD59-CA92D46FE0B7</key>
 		<dict>
@@ -933,7 +744,7 @@
 			<key>xpos</key>
 			<integer>370</integer>
 			<key>ypos</key>
-			<integer>735</integer>
+			<integer>430</integer>
 		</dict>
 		<key>DFA20026-87BD-47FC-988A-0956B5B30EBF</key>
 		<dict>
@@ -942,7 +753,7 @@
 			<key>xpos</key>
 			<integer>660</integer>
 			<key>ypos</key>
-			<integer>685</integer>
+			<integer>380</integer>
 		</dict>
 		<key>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</key>
 		<dict>
