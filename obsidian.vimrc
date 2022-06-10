@@ -70,13 +70,6 @@ nmap <C-k> :prevHeading
 " exmap forward obcommand app:go-forward
 " nmap <C-l> :forward
 
-" Hard Mode: Turn off arrow keys for learning
-" (needs remap, since unmap does not work on built-in keys)
-map <Right> <Nop>
-map <Left> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
-
 " [g]oto [s]ymbol
 " requires Another Quick Switcher Plugin
 exmap gotoHeading obcommand obsidian-another-quick-switcher:header-search-in-file
@@ -283,13 +276,17 @@ imap <C-j> <Esc>c^
 
 " https://vimhelp.org/index.txt.html#CTRL-W
 exmap focusRight obcommand editor:focus-right
-nmap <C-w>l :focusRight
 exmap focusLeft obcommand editor:focus-left
-nmap <C-w>h :focusLeft
 exmap focusTop obcommand editor:focus-top
-nmap <C-w>k :focusTop
 exmap focusBottom obcommand editor:focus-bottom
+nmap <C-w>h :focusLeft
 nmap <C-w>j :focusBottom
+nmap <C-w>k :focusTop
+nmap <C-w>l :focusRight
+map <Left> :focusLeft
+map <Down> :focusBottom
+map <Up> :focusTop
+map <Right> :focusRight
 
 exmap splitVertical obcommand workspace:split-vertical
 nmap <C-w>v :splitVertical

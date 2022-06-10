@@ -7,10 +7,13 @@ matches:
   - trigger: '!yes'
     replace: ✅
   - trigger: '<3'
-    replace: " 💙"
+    replace: 💙
     word: true
   - trigger: '->'
-    replace: "→"
+    replace: →
+    word: true
+  - trigger: '->>'
+    replace: ➡️
     word: true
   - trigger: '!ampel'
     replace: 🔴🟡🟢
