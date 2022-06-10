@@ -5,7 +5,7 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 ## Table of Contents
 <!-- MarkdownTOC -->
 
-- [Caps Lock to Hyper / Esc](#caps-lock-to-hyper--esc)
+- [Caps Lock to Hyper / Esc, Tabs to Meh](#caps-lock-to-hyper--esc-tabs-to-meh)
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Global Leader Key](#global-leader-key)
@@ -14,12 +14,13 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 
 <!-- /MarkdownTOC -->
 
-## Caps Lock to Hyper / Esc
+## Caps Lock to Hyper / Esc, Tabs to Meh
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
+- The tabs key turns into `⌥⇧⌃` (all except `⌘`), the [Meh Key](https://ergodox-ez.com/pages/our-firmware), serving as sixth modifier key.
 
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/hyper-and-meh.json
 ```
 
 ## Vim Utilities

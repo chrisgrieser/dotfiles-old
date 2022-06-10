@@ -81,3 +81,5 @@ matches:
     replace: auxiliary
   - trigger: highlgiht
     replace: highlight
+  - trigger: shoudl
+    replace: should

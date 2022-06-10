@@ -1,8 +1,8 @@
-title: ⇪ Capslock to Hyper/Esc
-version: "0.1"
+title: ⇪↹ Hyper and Meh Key
+version: "1.0"
 maintainers:
   - pseudometa
-import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/capslock-to-hyper-esc.json
+import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/Hyper-and-Meh.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
   - description: ⇪ Capslock → Hyper/Esc
@@ -116,3 +116,15 @@ rules:
               - control
         to:
           - key_code: delete_forward
+  - description: ↹ Tab to Meh
+    manipulators:
+      - type: basic
+        from:
+          key_code: tab
+        to_if_alone:
+          - key_code: tab
+        to:
+          - key_code: right_shift
+            modifiers:
+              - right_control
+              - right_option
