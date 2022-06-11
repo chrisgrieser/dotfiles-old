@@ -331,7 +331,7 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>sf</string>
+				<string>sff</string>
 				<key>subtext</key>
 				<string>Commit Message: '{query}'</string>
 				<key>text</key>
@@ -827,27 +827,6 @@ lineNo="$*"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>copied to the clipboard</string>
-				<key>title</key>
-				<string>✅ SVG converted to Data URI</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>9E30D1B8-EBD0-418C-B6A3-6E326DAA6032</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -867,6 +846,27 @@ lineNo="$*"
 			<string>F3EA6027-C734-4625-9ECD-2FE2DA83829F</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>copied to the clipboard</string>
+				<key>title</key>
+				<string>✅ SVG converted to Data URI</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9E30D1B8-EBD0-418C-B6A3-6E326DAA6032</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
