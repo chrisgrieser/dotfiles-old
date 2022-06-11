@@ -85,3 +85,6 @@ matches:
   - trigger: "rrr"
     replace: ".replace(/.$|$/gm, \"\");"
     word: true
+  - trigger: "!!"
+    replace: " {\n"
+    label: Quicker Block
