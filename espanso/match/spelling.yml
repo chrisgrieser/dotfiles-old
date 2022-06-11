@@ -57,6 +57,7 @@ matches:
     replace: most
   - trigger: mti
     replace: mit
+    word: true
   - trigger: nciht
     replace: nicht
   - trigger: ncoh
