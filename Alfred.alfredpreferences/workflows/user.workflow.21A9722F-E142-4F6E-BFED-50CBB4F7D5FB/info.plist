@@ -116,32 +116,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>85821837-B8CC-4E2F-8D92-FB37B1751D4A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>87D2259B-68B5-40C8-A569-15A2E37F914B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CF914E27-A341-4A6B-A7FF-20CBE3711527</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>8C4DE1F4-CC9B-41F7-A3B6-122F5485EA84</key>
 		<array>
 			<dict>
@@ -181,37 +155,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B018B47C-9CD6-45B3-B5D8-DD61F004909D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CF914E27-A341-4A6B-A7FF-20CBE3711527</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -238,19 +186,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4A6AD1C0-ABCF-4C85-8E12-C4170B8982C5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>EA308BDF-BCED-4117-9030-4669B0788A69</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -337,86 +272,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅ Mac Text Replacement ➞ Alfred Snippets</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>85821837-B8CC-4E2F-8D92-FB37B1751D4A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>shortcuts2alfred.py</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CF914E27-A341-4A6B-A7FF-20CBE3711527</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>import text replacements</string>
-				<key>subtext</key>
-				<string>One-Way-Sync</string>
-				<key>text</key>
-				<string>Mac Text Replacements ➞ Alfred Snippets</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>87D2259B-68B5-40C8-A569-15A2E37F914B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -476,6 +331,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -493,21 +363,6 @@
 			<string>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Caches/com.runningwithcrayons.Alfred</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -570,27 +425,6 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>restart alfred</string>
-				<key>subtext</key>
-				<string>and reveal it in Finder</string>
-				<key>text</key>
-				<string>Force Quit Alfred</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B018B47C-9CD6-45B3-B5D8-DD61F004909D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -623,70 +457,6 @@ tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alf
 			<string>411F0C67-7E50-4B01-AF68-F2742465259B</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>??</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>loading...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>alfred-workflow-folder-search.js</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Alfred Workflow Folders</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>EA308BDF-BCED-4117-9030-4669B0788A69</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -952,15 +722,6 @@ echo "$backup"</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>2EA83ACB-1D43-4465-89A8-1EED23E68EBE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>1005</integer>
-			<key>ypos</key>
-			<integer>30</integer>
-		</dict>
 		<key>33BD77E2-2929-432E-9718-B2FDBAF4EFE5</key>
 		<dict>
 			<key>colorindex</key>
@@ -1049,24 +810,6 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<integer>890</integer>
 		</dict>
-		<key>85821837-B8CC-4E2F-8D92-FB37B1751D4A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>30</integer>
-		</dict>
-		<key>87D2259B-68B5-40C8-A569-15A2E37F914B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>30</integer>
-		</dict>
 		<key>88BE14E8-8C6C-40C6-9497-48E193416293</key>
 		<dict>
 			<key>colorindex</key>
@@ -1112,15 +855,6 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
-		<key>B018B47C-9CD6-45B3-B5D8-DD61F004909D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<integer>15</integer>
-			<key>ypos</key>
-			<integer>385</integer>
-		</dict>
 		<key>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</key>
 		<dict>
 			<key>colorindex</key>
@@ -1128,7 +862,7 @@ echo "$backup"</string>
 			<key>xpos</key>
 			<integer>15</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>310</integer>
 		</dict>
 		<key>BF89C364-F5A2-446D-A3F4-F0EAF2212146</key>
 		<dict>
@@ -1138,18 +872,6 @@ echo "$backup"</string>
 			<integer>205</integer>
 			<key>ypos</key>
 			<integer>180</integer>
-		</dict>
-		<key>CF914E27-A341-4A6B-A7FF-20CBE3711527</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>script by deanishe
-https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
-			<key>xpos</key>
-			<integer>710</integer>
-			<key>ypos</key>
-			<integer>30</integer>
 		</dict>
 		<key>D5D0024E-316C-4A4C-BEA4-7366C58BF580</key>
 		<dict>
@@ -1187,15 +909,6 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<key>ypos</key>
 			<integer>565</integer>
 		</dict>
-		<key>EA308BDF-BCED-4117-9030-4669B0788A69</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>15</integer>
-			<key>ypos</key>
-			<integer>505</integer>
-		</dict>
 		<key>F335D8C8-905A-4192-90B9-033173FEB8AF</key>
 		<dict>
 			<key>colorindex</key>
@@ -1222,15 +935,6 @@ https://www.deanishe.net/snippet/macos-shortcuts-to-alfred-snippets/</string>
 			<integer>380</integer>
 			<key>ypos</key>
 			<integer>770</integer>
-		</dict>
-		<key>FE8AF774-E4D4-43C8-BD75-05FFC0A2C559</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>195</integer>
-			<key>ypos</key>
-			<integer>505</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
