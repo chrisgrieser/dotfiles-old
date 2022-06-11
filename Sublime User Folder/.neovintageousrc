@@ -80,7 +80,7 @@ nnoremap gZ [s
 
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=false<CR>
-nnoremap gD :LspSymbolDefinition side_by_side=true<CR>
+nnoremap gD :LspSymbolReferences side_by_side=false<CR>
 
 " [g]oto [s]ymbol
 noremap gs :ShowOverlay overlay=goto text=@<CR>
