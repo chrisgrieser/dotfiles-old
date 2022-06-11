@@ -176,9 +176,9 @@ tell application "Brave Browser" to close active tab of front window</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>295</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>230</integer>
 		</dict>
 	</dict>
 	<key>version</key>
