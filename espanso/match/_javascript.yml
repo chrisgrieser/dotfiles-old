@@ -85,6 +85,6 @@ matches:
   - trigger: "rrr"
     replace: ".replace(/.$|$/gm, \"\");"
     word: true
-  - trigger: "!!"
+  - regex: " ?!!"  # so this works whether prepended with space or note
     replace: " {\n"
     label: Quicker Block

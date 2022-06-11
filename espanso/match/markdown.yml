@@ -16,7 +16,12 @@ matches:
           shell: bash
 
   - trigger: TTT
-    replace: "%% \n- [ ] $|$\n%%\n"
+    replace: |+
+      %%
+      - [ ]  $|$
+
+      %%
+
     label: Commented MD Task
 
   - trigger: ttt
