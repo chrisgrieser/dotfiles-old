@@ -311,19 +311,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6571DEB8-0637-47AB-9946-98AFF4A9D09A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9439A5E0-4B06-4137-8E67-FC611CE2535C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</key>
 		<array>
 			<dict>
@@ -389,8 +376,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9439A5E0-4B06-4137-8E67-FC611CE2535C</key>
-		<array/>
 		<key>96E55537-7FAD-4324-8A90-3B621BF0AA9F</key>
 		<array>
 			<dict>
@@ -639,46 +624,6 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>C1B66D18-EAA6-4B0F-93A5-4B4907DA35F9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Steam Big Picture</string>
-				<key>triggername</key>
-				<string>Steam Big Picture</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>6571DEB8-0637-47AB-9946-98AFF4A9D09A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>steam://open/bigpicture</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>9439A5E0-4B06-4137-8E67-FC611CE2535C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1938,13 +1883,6 @@ version 1.0:
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
-		<key>6571DEB8-0637-47AB-9946-98AFF4A9D09A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>45</integer>
-		</dict>
 		<key>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</key>
 		<dict>
 			<key>colorindex</key>
@@ -2004,15 +1942,6 @@ version 1.0:
 			<integer>740</integer>
 			<key>ypos</key>
 			<integer>520</integer>
-		</dict>
-		<key>9439A5E0-4B06-4137-8E67-FC611CE2535C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>285</integer>
-			<key>ypos</key>
-			<integer>45</integer>
 		</dict>
 		<key>96E55537-7FAD-4324-8A90-3B621BF0AA9F</key>
 		<dict>

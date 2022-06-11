@@ -34,8 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0E3F0190-A1F5-49C7-ABB2-9B0474BB00ED</key>
-		<array/>
 		<key>48A76299-BBE7-47F5-8EBA-5FD15A3E0AE7</key>
 		<array>
 			<dict>
@@ -49,37 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5D6F296E-62D9-450D-A7F2-9902813A6B92</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0E3F0190-A1F5-49C7-ABB2-9B0474BB00ED</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D3AADCC3-5488-4AEE-AEE1-6CB42879BADA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>864DCE5B-F811-4721-9ABE-FE0FBD044363</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D4D17CE8-DC73-48ED-9BC8-490DAC122157</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5D6F296E-62D9-450D-A7F2-9902813A6B92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -379,76 +351,6 @@ tell application "System Events" to keystroke "{query}"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>st</string>
-				<key>subtext</key>
-				<string>Symbols + Symbol + ...</string>
-				<key>text</key>
-				<string>Asset Correlation: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D4D17CE8-DC73-48ED-9BC8-490DAC122157</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.portfoliovisualizer.com/asset-correlations?&amp;symbols={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>5D6F296E-62D9-450D-A7F2-9902813A6B92</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-
-tell application "Brave Browser" 
-	open location "https://www.google.com/finance/"
-	repeat until (loading of active tab of front window is false)
-	end repeat 
-end tell
-delay 0.1
-repeat 12 times 
-	tell application "System Events" to keystroke tab
-end repeat
-delay 0.2
-tell application "System Events" to keystroke return
-
-
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>0E3F0190-A1F5-49C7-ABB2-9B0474BB00ED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -481,17 +383,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>375</integer>
 		</dict>
-		<key>0E3F0190-A1F5-49C7-ABB2-9B0474BB00ED</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>wait till finished loading in Brave</string>
-			<key>xpos</key>
-			<integer>405</integer>
-			<key>ypos</key>
-			<integer>740</integer>
-		</dict>
 		<key>45912785-30EA-405D-89AB-4B282E711B2B</key>
 		<dict>
 			<key>colorindex</key>
@@ -509,15 +400,6 @@ end alfred_script</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>135</integer>
-		</dict>
-		<key>5D6F296E-62D9-450D-A7F2-9902813A6B92</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>255</integer>
-			<key>ypos</key>
-			<integer>740</integer>
 		</dict>
 		<key>7F911425-515D-419E-819E-DBF9F660F00B</key>
 		<dict>
@@ -554,15 +436,6 @@ end alfred_script</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>255</integer>
-		</dict>
-		<key>D4D17CE8-DC73-48ED-9BC8-490DAC122157</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>740</integer>
 		</dict>
 		<key>DA4BBEBC-D800-4881-B8D9-8A874F532024</key>
 		<dict>

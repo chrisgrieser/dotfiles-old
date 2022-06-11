@@ -8,6 +8,19 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
+		<key>0374B2C9-BC32-4520-B8FC-826A3F26C196</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB66B929-10AD-4715-A5A6-D4B43B43CECC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>08FF165B-3950-4760-9A48-5996704B1C65</key>
 		<array>
 			<dict>
@@ -107,7 +120,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>System Information</string>
+	<string>System Information &amp; Utilities</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -379,11 +392,80 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"	set _app to the name of every process whose frontmost is trueend telldo shell script "pkill  " &amp; (item 1 of _app)
+
+repeat until application named _app is not running 
+	delay 0.5
+end repeat
+delay 0.5
+tell application named _app to activate</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DB66B929-10AD-4715-A5A6-D4B43B43CECC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>15</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>R</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0374B2C9-BC32-4520-B8FC-826A3F26C196</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>dependency https://github.com/toy/blueutil</string>
 	<key>uidata</key>
 	<dict>
+		<key>0374B2C9-BC32-4520-B8FC-826A3F26C196</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>505</integer>
+		</dict>
 		<key>08FF165B-3950-4760-9A48-5996704B1C65</key>
 		<dict>
 			<key>colorindex</key>
@@ -464,6 +546,17 @@ du -sh ~/* | cut -c `echo $(($homef_length + 5))-`,-5</string>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>DB66B929-10AD-4715-A5A6-D4B43B43CECC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>kill &amp; restart</string>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>505</integer>
 		</dict>
 		<key>F237B22E-6247-4FA6-899C-A9CA938AFED5</key>
 		<dict>

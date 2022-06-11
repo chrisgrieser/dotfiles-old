@@ -23,45 +23,6 @@
 		</array>
 		<key>0E71F532-8554-48C0-B7F0-FADA559A831C</key>
 		<array/>
-		<key>1D6E540C-09E1-492F-8486-AB5303F3B39B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>421D24F2-3034-45EA-85A3-77DBDA1C9AB0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>8E300276-EDC0-4AF3-99F8-19FE89DCA0E7</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>030D0D74-FC17-4504-B31D-3417940A7080</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>9A5151BD-E5F8-42DD-914C-33E27117FBA1</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>8FF855AC-E96A-479A-9E3A-23E99960C388</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>847852E7-9693-45D1-AE22-00E088A8B7D2</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2168E700-2687-41C9-9B03-97661BD3AD70</key>
 		<array>
 			<dict>
@@ -121,19 +82,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>421D24F2-3034-45EA-85A3-77DBDA1C9AB0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>870525DC-7F08-4E4B-A9EA-8E9E784BC543</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4ED764B2-0EF6-4208-B794-3E956BD419D6</key>
 		<array>
 			<dict>
@@ -164,7 +112,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1D6E540C-09E1-492F-8486-AB5303F3B39B</string>
+				<string>030D0D74-FC17-4504-B31D-3417940A7080</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -206,19 +154,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>D68403B9-E178-4C01-8C7F-3881A7466449</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8FF855AC-E96A-479A-9E3A-23E99960C388</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>030D0D74-FC17-4504-B31D-3417940A7080</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -328,88 +263,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "Preview" 
-	save the front document
-	set current_file to path of front document
-end tell
-
-return current_file</string>
-				<key>scriptargtype</key>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>15</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>R</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
 				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>421D24F2-3034-45EA-85A3-77DBDA1C9AB0</string>
+			<string>673B6424-8CD7-44F4-95A0-9E3B8759C064</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.apple.Preview</string>
-						<key>outputlabel</key>
-						<string>Preview</string>
-						<key>uid</key>
-						<string>8E300276-EDC0-4AF3-99F8-19FE89DCA0E7</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.apple.Finder</string>
-						<key>outputlabel</key>
-						<string>Finder</string>
-						<key>uid</key>
-						<string>9A5151BD-E5F8-42DD-914C-33E27117FBA1</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:focusedapp}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>com.readdle.PDFExpert-Mac</string>
-						<key>outputlabel</key>
-						<string>PDF Expert</string>
-						<key>uid</key>
-						<string>847852E7-9693-45D1-AE22-00E088A8B7D2</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>--</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>1D6E540C-09E1-492F-8486-AB5303F3B39B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -509,72 +393,6 @@ return current_file</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>15</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>R</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.readdle.PDFExpert-Mac</string>
-					<string>com.apple.Preview</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>673B6424-8CD7-44F4-95A0-9E3B8759C064</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "System Events"
-	tell process "PDF Expert"
-		set frontmost to true
-		click menu item "Show in Finder" of menu "File" of menu bar 1
-	end tell
-end tell
-delay 0.1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8FF855AC-E96A-479A-9E3A-23E99960C388</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -596,25 +414,6 @@ delay 0.1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.adobe.pdf</string>
-				</array>
-				<key>name</key>
-				<string>Include Citekey in Filename</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>4ED764B2-0EF6-4208-B794-3E956BD419D6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -630,6 +429,25 @@ delay 0.1</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>3B606123-349E-431A-B4E6-B6D8C5F4D35B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.adobe.pdf</string>
+				</array>
+				<key>name</key>
+				<string>Include Citekey in Filename</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>4ED764B2-0EF6-4208-B794-3E956BD419D6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -949,15 +767,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
-		<key>1D6E540C-09E1-492F-8486-AB5303F3B39B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>135</integer>
-		</dict>
 		<key>2168E700-2687-41C9-9B03-97661BD3AD70</key>
 		<dict>
 			<key>colorindex</key>
@@ -976,23 +785,14 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>470</integer>
 		</dict>
-		<key>421D24F2-3034-45EA-85A3-77DBDA1C9AB0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>455</integer>
-			<key>ypos</key>
-			<integer>90</integer>
-		</dict>
 		<key>4ED764B2-0EF6-4208-B794-3E956BD419D6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>425</integer>
+			<integer>585</integer>
 		</dict>
 		<key>5A3FDCC7-3964-4CA6-9B34-3DBA927D80FD</key>
 		<dict>
@@ -1014,7 +814,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>210</integer>
 		</dict>
 		<key>769D9FCB-D640-41FC-8076-AC1EA99EB319</key>
 		<dict>
@@ -1055,15 +855,6 @@ CHANGE SCRIPT HERE to a different type of parsing</string>
 			<integer>365</integer>
 			<key>ypos</key>
 			<integer>590</integer>
-		</dict>
-		<key>8FF855AC-E96A-479A-9E3A-23E99960C388</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>290</integer>
-			<key>ypos</key>
-			<integer>275</integer>
 		</dict>
 		<key>A1984774-184F-4A18-8608-093AC1ABA3B4</key>
 		<dict>

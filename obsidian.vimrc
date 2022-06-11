@@ -57,6 +57,10 @@ vmap J 6j
 nmap K 6k
 vmap K 6k
 
+" cause easier to press, lol
+nmap [ (
+nmap ] )
+
 " Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading

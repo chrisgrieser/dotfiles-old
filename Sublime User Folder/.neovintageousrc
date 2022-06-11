@@ -60,6 +60,10 @@ vnoremap J 7j
 nnoremap K 7k
 vnoremap K 7k
 
+" cause easier to press, lol
+nnoremap [ (
+nnoremap ] )
+
 " Goto Mark
 nnoremap ö `
 

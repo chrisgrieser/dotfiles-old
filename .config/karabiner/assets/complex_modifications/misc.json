@@ -508,14 +508,14 @@
       ]
     },
     {
-      "description": "Ⓜ️🟦 Drafts: R-Click opens link in background, ⌥+L-Click in foreground",
+      "description": "Ⓜ️🟦 Drafts: R-Click opens link in background",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "pointing_button": "button2"
           },
-          "to": [
+          "to_if_alone": [
             {
               "pointing_button": "button2"
             },
@@ -532,38 +532,8 @@
             {
               "key_code": "tab",
               "modifiers": [
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.agiletortoise\\.Drafts-OSX$"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button1",
-            "modifiers": {
-              "mandatory": [
                 "command"
               ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button2"
-            },
-            {
-              "key_code": "o"
-            },
-            {
-              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
