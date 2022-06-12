@@ -65,9 +65,10 @@ workArray.forEach(file => {
 
 	jsonArray.push({
 		"title": name,
-		"subtitle": parentFolder,
+		"subtitle": "▸ " + parentFolder,
 		"match": alfredMatcher (name),
 		"icon": iconObject,
+		"type": "file:skipcheck",
 		"uid": fPath,
 		"arg": fPath,
 	});

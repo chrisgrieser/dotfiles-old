@@ -23,6 +23,19 @@
 		</array>
 		<key>304A4BD1-2865-49EE-8F2B-E75BF1E72E55</key>
 		<array/>
+		<key>48DA5080-9765-4B60-BAC6-44BBBA7F83E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F802A1F3-262C-4738-AFF7-DDE34474EE0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>67F611D4-A5E9-451E-AFEE-59046947524A</key>
 		<array>
 			<dict>
@@ -642,6 +655,21 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>F802A1F3-262C-4738-AFF7-DDE34474EE0E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -771,6 +799,13 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>F802A1F3-262C-4738-AFF7-DDE34474EE0E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>700</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

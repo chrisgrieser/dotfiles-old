@@ -1,7 +1,11 @@
 #!/usr/bin/env osascript -l JavaScript
+const numberOfFilesToDisplay = 20;
+//------------------------------------------------------------------------------
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
+const fileExists = (fpath) => Application("Finder").exists(Path(fpath));
+const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 ObjC.import("Foundation");
 function readFile (path, encoding) {
 	if (!encoding) encoding = $.NSUTF8StringEncoding;
@@ -13,18 +17,33 @@ function readFile (path, encoding) {
 
 const sessionFile = "~/Library/Application Support/Sublime Text/Local/Session.sublime_session"
 	.replace(/^~/, app.pathTo("home folder"));
+const recentFilesArr = [];
+JSON.parse(readFile(sessionFile)).windows
+	.forEach(window => {
+		window.file_history.forEach(f => recentFilesArr.push(f));
+	});
 
+//------------------------------------------------------------------------------
 
-const recentFilesArray = JSON.parse(readFile(sessionFile)).windows.file_history;
-
-
-const workArray = recentFilesArray
+const workArray = recentFilesArr
+	.slice(0, numberOfFilesToDisplay)
+	.filter (filePath => fileExists(filePath))
 	.map(filePath => {
-		const name = filePath.split("/").pop();
+		const pathParts = filePath.split("/");
+		const name = pathParts.pop();
+		const parentFolder = pathParts.pop();
+
 		return {
 			"title": name,
-			"subtitle": filePath,
-			"arg": filePath
+			"subtitle": "▸ " + parentFolder,
+			"arg": filePath,
+			"type": "file:skipcheck",
+			"icon": {
+				"type": "fileicon",
+				"path": filePath
+			},
+			"match": alfredMatcher(name),
+			"uid": filePath
 		};
 	});
 
