@@ -42,8 +42,7 @@ const workArray = recentFilesArr
 				"type": "fileicon",
 				"path": filePath
 			},
-			"match": alfredMatcher(name),
-			"uid": filePath
+			"match": alfredMatcher(name)
 		};
 	});
 
