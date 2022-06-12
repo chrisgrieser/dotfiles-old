@@ -198,10 +198,6 @@ nmap ,y 3ggA
 " complete a Markdown task
 nmap ,x mz^lllrx`z
 
-" increase Heading Level
-nmap &§&# :.s/^/#/
-nmap ,# mz&§&#`z
-
 " [g]oto [d]efiniton ~= footnotes
 " requires Footnotes Shortcut Plugin
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote

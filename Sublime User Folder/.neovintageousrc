@@ -184,9 +184,6 @@ nnoremap <leader>- mzI- <Esc>`z
 nnoremap <leader>< mzI> <Esc>`z
 nnoremap <leader>> mzI> <Esc>`z
 
-" Markdown: increase Heading Level
-nnoremap <leader>} mzI#<Esc>`z
-
 " Markdown: [g]oto footnote [d]efinition (and back)
 noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
 
