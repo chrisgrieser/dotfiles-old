@@ -11,3 +11,7 @@ matches:
     replace: interdependent innovations
     word: true
     propagate_case: true
+  - trigger: tein
+    replace: technological interdependence
+    word: true
+    propagate_case: true
