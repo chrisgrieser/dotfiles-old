@@ -25,6 +25,7 @@ nmap P "0p
 " append to register
 map gy "Yy
 map gx "Yd
+map gp "yp
 
 """"""""""""""""""""""
 " < Search
@@ -87,7 +88,6 @@ nmap gf :followLinkUnderCursor
 vmap gf :followLinkUnderCursor
 nmap gF :followLinkInNewPane
 vmap gF :followLinkInNewPane
-
 
 " [g]oto [o]pen file (= Quick Switcher)
 exmap quickSwitcher obcommand obsidian-another-quick-switcher:filename-recent-search
@@ -198,6 +198,10 @@ nmap ,y 3ggA
 " complete a Markdown task
 nmap ,x mz^lllrx`z
 
+" increase Heading Level
+nmap &§&# :.s/^/#/
+nmap ,# mz&§&#`z
+
 " [g]oto [d]efiniton ~= footnotes
 " requires Footnotes Shortcut Plugin
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
@@ -218,7 +222,7 @@ vmap ,> :toggleBlockquote
 " properly process spaces
 nmap &§&#a :.s/\*\*//g
 nmap &§&#b :.s/^-/##/
-nmap ,## mz&§&#a&§&#bO<Esc>`z
+nmap ,+ mz&§&#a&§&#bO<Esc>`z
 
 """"""""""""""""""""""
 " << Indentation

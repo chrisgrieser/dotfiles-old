@@ -21,9 +21,8 @@ nnoremap P "0p
 " append to register
 noremap gy "Yy
 noremap gx "Yd
+noremap gp "yp
 
-" copy path of current file
-noremap <C-p> "%y
 
 """"""""""""""""""""""
 " < Search
@@ -154,6 +153,7 @@ nnoremap <leader>] mzA]<Esc>`z
 nnoremap <leader>[ mzA[<Esc>`z
 nnoremap <leader>{ mzA{<Esc>`z
 nnoremap <leader>} mzA}<Esc>`z
+nnoremap <leader>} mzA}<Esc>`z
 
 " Remove last character from line
 nnoremap X mz$"_x`z
@@ -176,13 +176,16 @@ vnoremap ° =
 " << language-specific
 """"""""""""""""""""""
 
-" allows Double Enter to add new line and indent bullet points
+" Markdown: allows Double Enter to add new line and indent bullet points
 nnoremap <CR> A
 
-" Prepend Bullet or Blockquote
+" Markdown: Prepend Bullet or Blockquote
 nnoremap <leader>- mzI- <Esc>`z
 nnoremap <leader>< mzI> <Esc>`z
 nnoremap <leader>> mzI> <Esc>`z
+
+" Markdown: increase Heading Level
+nnoremap <leader>} mzI#<Esc>`z
 
 " Markdown: [g]oto footnote [d]efinition (and back)
 noremap g<M-d> :MdeMagicFootnotes<CR>h<Esc>
