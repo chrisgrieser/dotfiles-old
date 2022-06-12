@@ -1,5 +1,5 @@
 #!/usr/bin/env osascript -l JavaScript
-const numberOfFilesToDisplay = 20;
+const numberOfFilesToDisplay = 15;
 //------------------------------------------------------------------------------
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
@@ -26,7 +26,7 @@ JSON.parse(readFile(sessionFile)).windows
 //------------------------------------------------------------------------------
 
 const workArray = recentFilesArr
-	.slice(0, numberOfFilesToDisplay)
+	.slice(0, numberOfFilesToDisplay - 1) // to reduce the number of file-existence checks
 	.filter (filePath => fileExists(filePath))
 	.map(filePath => {
 		const pathParts = filePath.split("/");
