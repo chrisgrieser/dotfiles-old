@@ -220,15 +220,6 @@ nmap &§&#a :.s/\*\*//g
 nmap &§&#b :.s/^-/##/
 nmap ,## mz&§&#a&§&#bO<Esc>`z
 
-" Goto Next Pandoc Citation
-nmap g@
-
-" Goto next Visual marker
-nmap g§
-
-advanced-cursors:AC-Next: § Marker -> §
-advanced-cursors:AC-Next: Pandoc Citation -> @
-
 """"""""""""""""""""""
 " << Indentation
 """"""""""""""""""""""
