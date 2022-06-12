@@ -108,7 +108,7 @@ nmap x "_dl
 nmap cl "_dli
 
 " Consistent with Insert Mode Selection
-vmap <BS> d
+vmap <BS> "_d
 
 " UNDO consistently on one key
 nmap U <C-r>
@@ -188,7 +188,7 @@ nmap ö `
 " allows Double Enter to add new line and indent with bullet points
 nmap <CR> A
 
-" delete Alias part of next Wikilink
+" delete alias part of next Wikilink
 " (or Link Homepage when using Auto Title Plugin)
 nmap | t|"_dt]
 
@@ -235,6 +235,8 @@ vmap <Space> "_c
 " Delete Word/Selection
 nmap <S-Space> "_daw
 vmap <S-Space> "_d
+vmap d "_d
+vmap x "_d
 
 " Yank Word/Selection
 " Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
