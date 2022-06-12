@@ -12,7 +12,7 @@ matches:
         type: shell
         params:
           # non-macs will requite a different command
-          cmd: "pbpaste | sed 's/\t/  /g'"
+          cmd: "pbpaste | sed 's/^\t/  /g'"
           shell: bash
 
   - trigger: TTT

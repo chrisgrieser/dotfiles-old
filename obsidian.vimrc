@@ -108,7 +108,7 @@ nmap x "_dl
 nmap cl "_dli
 
 " Consistent with Insert Mode Selection
-vnoremap <BS> d
+vmap <BS> d
 
 " UNDO consistently on one key
 nmap U <C-r>
