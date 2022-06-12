@@ -195,6 +195,9 @@ nmap | t|"_dt]
 " append to [y]aml (line 3 = tags)
 nmap ,y 3ggA
 
+" complete a Markdown task
+nmap ,x mz^lllrx`z
+
 " [g]oto [d]efiniton ~= footnotes
 " requires Footnotes Shortcut Plugin
 exmap gotoFootnoteDefinition obcommand obsidian-footnotes:insert-footnote
