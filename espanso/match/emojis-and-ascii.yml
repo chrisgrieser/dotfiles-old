@@ -19,7 +19,6 @@ matches:
     replace: 🔴🟡🟢
   - trigger: 'mmm'
     replace: 🙈
-    word: true
   - trigger: '!eyes'
     replace: 👁️👄👁️
 
