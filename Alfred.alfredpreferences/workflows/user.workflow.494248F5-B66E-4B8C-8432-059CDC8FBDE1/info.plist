@@ -21,68 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5EBC2E29-E045-417C-B11A-339ADE5E9C72</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6B17FF08-BB20-4818-A652-D7F488DF1B77</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5EC6AB43-8096-4327-A5B7-4A026E2049DE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>758F5922-6421-42AF-A55F-0CCE6A6C3B12</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>EEA22D95-8B8B-4F4C-B088-A0F77C264BD3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6B17FF08-BB20-4818-A652-D7F488DF1B77</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5EC6AB43-8096-4327-A5B7-4A026E2049DE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>758F5922-6421-42AF-A55F-0CCE6A6C3B12</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>877F0442-FBA7-4EDC-8027-D3EF6BA936E5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>76D8EFBB-E5E6-4AB7-B87A-D8F4B640CAF8</key>
 		<array>
 			<dict>
@@ -240,7 +178,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 				<key>hotkey</key>
 				<integer>33</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>1966080</integer>
 				<key>hotstring</key>
 				<string>Ü</string>
 				<key>leftcursor</key>
@@ -298,119 +236,6 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>877F0442-FBA7-4EDC-8027-D3EF6BA936E5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>get-alltabs_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6B17FF08-BB20-4818-A652-D7F488DF1B77</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>33</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>Ü</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>5EBC2E29-E045-417C-B11A-339ADE5E9C72</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>;;</string>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>5EC6AB43-8096-4327-A5B7-4A026E2049DE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:split1}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>758F5922-6421-42AF-A55F-0CCE6A6C3B12</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:split2} URLs</string>
-				<key>title</key>
-				<string>✅ URLs saved</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>EEA22D95-8B8B-4F4C-B088-A0F77C264BD3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -500,7 +325,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>265</integer>
 		</dict>
 		<key>39A74B4A-BAFE-46CF-B1D6-FBEB89F75E62</key>
 		<dict>
@@ -513,26 +338,6 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<key>ypos</key>
 			<integer>120</integer>
 		</dict>
-		<key>5EBC2E29-E045-417C-B11A-339ADE5E9C72</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Add all Tabs to Read Later</string>
-			<key>xpos</key>
-			<integer>75</integer>
-			<key>ypos</key>
-			<integer>265</integer>
-		</dict>
-		<key>5EC6AB43-8096-4327-A5B7-4A026E2049DE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>395</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
 		<key>651E12CB-A815-41F4-AB78-58F5F8D6B131</key>
 		<dict>
 			<key>colorindex</key>
@@ -541,24 +346,6 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<integer>565</integer>
 			<key>ypos</key>
 			<integer>55</integer>
-		</dict>
-		<key>6B17FF08-BB20-4818-A652-D7F488DF1B77</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>245</integer>
-			<key>ypos</key>
-			<integer>265</integer>
-		</dict>
-		<key>758F5922-6421-42AF-A55F-0CCE6A6C3B12</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>495</integer>
-			<key>ypos</key>
-			<integer>295</integer>
 		</dict>
 		<key>76D8EFBB-E5E6-4AB7-B87A-D8F4B640CAF8</key>
 		<dict>
@@ -580,6 +367,8 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 		</dict>
 		<key>877F0442-FBA7-4EDC-8027-D3EF6BA936E5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
 			<integer>565</integer>
 			<key>ypos</key>
@@ -603,16 +392,7 @@ set output to "- [ ] [" &amp; currentTitle &amp; "](" &amp; currentTabUrl &amp; 
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>420</integer>
-		</dict>
-		<key>EEA22D95-8B8B-4F4C-B088-A0F77C264BD3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>565</integer>
-			<key>ypos</key>
-			<integer>375</integer>
+			<integer>265</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
