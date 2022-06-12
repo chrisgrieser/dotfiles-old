@@ -33,7 +33,8 @@ matches:
       app.includeStandardAdditions = true;
       app.openLocation(url);
     label: '🏝 [JXA] Open Location'
-  - replace: |
+  - trigger: "!read"
+    replace: |
       ObjC.import("Foundation");
       function readFile (path, encoding) {
       	if (!encoding) encoding = $.NSUTF8StringEncoding;
@@ -87,3 +88,8 @@ matches:
   - regex: " ?!!"  # so this works whether prepended with space or note
     replace: " {\n"
     label: Quicker Block
+  - trigger: "!app"
+    replace: |
+      const app = Application.currentApplication();
+      app.includeStandardAdditions = true;
+    label: Define App

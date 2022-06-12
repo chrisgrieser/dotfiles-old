@@ -21,6 +21,7 @@
 	// all implemented in "Default (OSX).sublime-keymap"
 	"vintageous_handle_keys": {
 		"<C-n>": false, // copy file name
+		"<C-p>": false, // copy path
 		"<C-r>": false, // rename file
 		"<C-t>": false, // transpose → Sublime built-in command
 		"<C-s>": false, // Spellcheck toggle

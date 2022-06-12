@@ -17,20 +17,18 @@ matches:
   - replace: set theBrowser to (system attribute "browser")
     label: "🎩🍏 GET Environment Variable"
   - replace: |-
-      var input = argv.join('');
-      var arragements = input.split(", ");
+      const workArray = input
+        .split(", ")
+        .map(element => {
+          const name = element;
+          return {
+            "title": name,
+            "subtitle": "$|$",
+            "arg": name
+          };
+        });
 
-      let jsonArray = [];
-      arragements.forEach(element => {
-      	arragements_name = element;
-      	jsonArray.push ({
-      		'title': arragements_name,
-      		'subtitle': "§§§",
-      		'arg': arragements_name
-      	})
-      });
-
-      JSON.stringify({ 'items': jsonArray });
+      JSON.stringify({ "items": workArray });
     label: "🎩🏝 JSONfy input for Script Filter"
   - replace: |-
       function run (argv){

@@ -17,3 +17,6 @@ tell application "Finder"
 	end if
 end tell
 
+# direct return
+filePath
+
