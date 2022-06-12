@@ -1,6 +1,6 @@
 # shellcheck disable=SC2215
 
-function docx () {
+function md2docx () {
 	cd "$(dirname "$*")" || return
 	INPUT_FILE="$(basename "$*")"
 	OUTPUT_FILE="${INPUT_FILE%.*}_CG.docx"
@@ -36,5 +36,6 @@ function docx2md () {
 # ------------------
 
 # Pandoc Completions, https://groups.google.com/g/pandoc-discuss/c/Ot019yRiJFQ/m/VPchuJRkBQAJ
-autoload -U +X bashcompinit && bashcompinit
-eval "$(pandoc --bash-completion)"
+# these won't work with the `eval` from triggering Pandoc via Finder
+# autoload -U +X bashcompinit && bashcompinit
+# eval "$(pandoc --bash-completion)"

@@ -212,6 +212,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4A2BBCFD-F977-4747-A19C-0CA5ABFC48D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>731E347D-BF06-4006-8A64-A505693B5EF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<array>
 			<dict>
@@ -1777,6 +1790,35 @@ open -a "Finder"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>731E347D-BF06-4006-8A64-A505693B5EF9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1821,7 +1863,7 @@ open -a "Finder"</string>
 
 eval "$(cat ~/.pandoc/pandoc.zsh)"
 
-docx "$*"</string>
+md2docx "$*" 2&gt;&amp;1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2385,7 +2427,7 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>635</integer>
 			<key>ypos</key>
 			<integer>1435</integer>
 		</dict>
@@ -2435,6 +2477,13 @@ echo -n "$title"</string>
 			<integer>230</integer>
 			<key>ypos</key>
 			<integer>1260</integer>
+		</dict>
+		<key>731E347D-BF06-4006-8A64-A505693B5EF9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>1435</integer>
 		</dict>
 		<key>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</key>
 		<dict>
@@ -2528,7 +2577,7 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>635</integer>
 			<key>ypos</key>
 			<integer>1570</integer>
 		</dict>
