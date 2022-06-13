@@ -163,7 +163,7 @@
 	{ "keys": ["super+shift+m"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Merge Line Down.sublime-macro"} },
 
 	// Smart Duplicate (CSS) (Plugin)
-	{ "keys": ["shift+alt+d"], "command": "smart_duplicate", "context": [
+	{ "keys": ["shift+alt+ctrl+d"], "command": "smart_duplicate", "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.css"},
 	]},
 	// lineS is the smarter duplication plugin

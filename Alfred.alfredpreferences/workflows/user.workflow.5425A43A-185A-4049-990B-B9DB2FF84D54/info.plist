@@ -566,9 +566,13 @@ zsh build.sh "$*"</string>
 			<key>config</key>
 			<dict>
 				<key>matchmode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>matchstring</key>
 				<string>(.{50}).*</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
 				<key>replacestring</key>
 				<string>$1</string>
 			</dict>
@@ -950,7 +954,7 @@ lineNo="$*"
 			<key>note</key>
 			<string>Open Shimmering Focus at line</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>430</integer>
 		</dict>
