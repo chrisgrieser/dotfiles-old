@@ -50,10 +50,10 @@ nnoremap j gj
 nnoremap k gk
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nnoremap H ^
-vnoremap H ^
-nnoremap L $
-vnoremap L $
+nnoremap H g^
+vnoremap H g^
+nnoremap L g$
+vnoremap L g$
 nnoremap J 7j
 vnoremap J 7j
 nnoremap K 7k

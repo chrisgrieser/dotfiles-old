@@ -48,11 +48,17 @@ nmap <C-m> :nohlsearch
 nmap j gj
 nmap k gk
 
+" g0 and g$ fix by @koala
+exmap endOfVisualLine jsfile mdHelpers.js {goToEnd()}
+exmap startOfVisualLine jsfile mdHelpers.js {goToStart()}
+nmap g0 :startOfVisualLine
+nmap g$ :endOfVisualLine
+
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
-nmap H ^
-vmap H ^
-nmap L $
-vmap L $
+nmap H g0
+vmap H g0
+nmap L g$
+vmap L g$
 nmap J 6j
 vmap J 6j
 nmap K 6k
