@@ -62,11 +62,7 @@ function clone(){
 	# shellcheck disable=SC2012
 	z "$(ls -1 -t | head -n1)" || return
 
-	# if it's an Obsidian plugin
-	if grep -q "obsidian" package.json &> /dev/null ; then
-		npm i
-		open -R "main.ts"
-	fi
+	grep -q "obsidian" package.json &> /dev/null && npm i # if it's an Obsidian plugin
 }
 
 function sclone(){
@@ -74,12 +70,7 @@ function sclone(){
 	# shellcheck disable=SC2012
 	z "$(ls -1 -t | head -n1)" || return
 
-	# if it's an Obsidian plugin
-	if grep -q "obsidian" package.json &> /dev/null ; then
-		npm i
-		open -R "main.ts"
-		npm run dev
-	fi
+	grep -q "obsidian" package.json &> /dev/null && npm i # if it's an Obsidian plugin
 }
 
 function nuke {
