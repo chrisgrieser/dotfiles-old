@@ -71,10 +71,6 @@ nmap g$ :endOfVisualLine
 "     editor.setCursor(editor.offsetToPos(startOfLine.from))
 " }
 
-" gA and gI analog
-nmap A g$a
-nmap I g0i
-
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H g0
 vmap H g0
