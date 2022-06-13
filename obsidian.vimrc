@@ -49,10 +49,31 @@ nmap j gj
 nmap k gk
 
 " g0 and g$ fix by @koala
-exmap endOfVisualLine jsfile mdHelpers.js {goToEnd()}
-exmap startOfVisualLine jsfile mdHelpers.js {goToStart()}
+exmap endOfVisualLine jsfile Meta/mdHelpers.js {goToEnd()}
+exmap startOfVisualLine jsfile Meta/mdHelpers.js {goToStart()}
 nmap g0 :startOfVisualLine
 nmap g$ :endOfVisualLine
+
+" // Save these as "Meta/mdHelpers.js" in your vault
+" function movementHelper() {
+"     const editor = app.workspace.activeLeaf.view.editor
+"     let pos = {from: editor.posToOffset(editor.getCursor('from')), to: editor.posToOffset(editor.getCursor('to')), head: editor.posToOffset(editor.getCursor('head')), anchor: editor.posToOffset(editor.getCursor('anchor')), empty: true}
+"     return pos
+" }
+" function goToEnd() {
+"     const pos = movementHelper()
+"     const endOfLine = editor.cm.moveToLineBoundary(pos, true)
+"     editor.setCursor(editor.offsetToPos(endOfLine.from -1))
+" }
+" function goToStart() {
+"     const pos = movementHelper()
+"     const startOfLine = editor.cm.moveToLineBoundary(pos, false)
+"     editor.setCursor(editor.offsetToPos(startOfLine.from))
+" }
+
+" gA and gI analog
+nmap gA g$a
+nmap gI g0i
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H g0

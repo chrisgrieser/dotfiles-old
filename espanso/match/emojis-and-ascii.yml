@@ -17,7 +17,7 @@ matches:
     word: true
   - trigger: '!ampel'
     replace: 🔴🟡🟢
-  - trigger: ' mmm'
+  - trigger: ' mm'
     replace: ' 🙈'
   - trigger: '!eyes'
     replace: 👁️👄👁️
