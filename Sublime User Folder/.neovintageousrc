@@ -77,9 +77,8 @@ nnoremap gL [l
 " [g]oto [z]pelling Errors
 nnoremap gz ]s
 nnoremap gZ [s
-" add word to dictionary/undo adding to dictionary
+" add word to dictionary/undo adding to dictionary (already built in)
 " nnoremap zg zg
-" nnoremap zug zug
 
 " [g]oto [d]efinition
 nnoremap gd :LspSymbolDefinition side_by_side=false<CR>

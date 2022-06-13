@@ -96,3 +96,6 @@ matches:
   - triggers: ["Bibtex", "bibtex"]
     replace: BibTeX
     word: true
+  - trigger: torwards
+    replace: towards
+    propagate_case: true

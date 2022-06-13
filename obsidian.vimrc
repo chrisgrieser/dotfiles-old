@@ -89,6 +89,14 @@ vmap K 6k
 nmap [ (
 nmap ] )
 
+" Goto Mark
+nmap ö `
+
+" Add to Custom Dictionary
+" (Various complements, not spellcheck dictionary though)
+exmap addToCustomDictionary obcommand various-complements:add-word-custom-dictionary
+nmap zg :addToCustomDictionary
+
 " Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
 exmap prevHeading obcommand obsidian-editor-shortcuts:goToPrevHeading
@@ -204,9 +212,6 @@ nmap X mz$"_x`z
 
 " commentary.vim emulation
 nmap gcc :.s/^|$/%%/g
-
-" Goto Mark
-nmap ö `
 
 """"""""""""""""""""""
 " << Markdown-specific
