@@ -225,7 +225,7 @@ nmap ,y 3ggA
 
 " complete a Markdown task
 exmap toggleTask obcommand editor:toggle-checklist-status
-nmpa ,x :toggleTask
+nmap ,x :toggleTask
 " nmap ,x mz^lllrx`z
 
 " [g]oto [d]efiniton ~= footnotes
