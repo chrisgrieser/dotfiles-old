@@ -206,7 +206,7 @@ nnoremap <Space> "_ciw
 vnoremap <Space> "_c
 
 " Delete Word/Selection
-nnoremap <S-Space> "_daw
+nnoremap <S-Space> "_daW
 vnoremap <S-Space> "_d
 vnoremap d "_d
 vnoremap x "_d
