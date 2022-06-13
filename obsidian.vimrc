@@ -72,8 +72,8 @@ nmap g$ :endOfVisualLine
 " }
 
 " gA and gI analog
-nmap gA g$a
-nmap gI g0i
+nmap A g$a
+nmap I g0i
 
 " HJKL behaves like hjkl, but bigger distance (best used with scroll offset plugin)
 nmap H g0
@@ -265,8 +265,7 @@ vmap <Space> "_c
 " Delete Word/Selection
 nmap <S-Space> "_daw
 vmap <S-Space> "_d
-vmap d "_d
-vmap x "_d
+vmap d "_x
 
 " Yank Word/Selection
 " Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
