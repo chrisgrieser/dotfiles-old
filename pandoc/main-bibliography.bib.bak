@@ -8555,14 +8555,6 @@
 	keywords = {Wissenschaft,Social Media,Soziologie der Bewertung,Wissenschaft und Digitalisierung}
 }
 @article{Dellwing2008,
-	title = {,,{{Geisteskrankheit}}`` Als Hartn{\"a}ckige {{Aushandlungsniederlage}}. {{Die Unausweichlichkeit}} der {{Durchsetzung}} von {{Definitionen}} Sozialer {{Realit{\"a}t}}},
-	author = {Dellwing, Michael},
-	year = 2008,
-	journal = {Soziale Probleme Zeitschrift f{\"u}r soziale Probleme und soziale Kontrolle},
-	volume = 19,
-	number = 2,
-	pages = {150--171},
-	keywords = {abweichendes Verhalten,Devianz,Interaktion,klinische Psychologie,Pragmatismus,Psychologie,Psychotherapie,Sociology of Mental Health,Soziologie psychischer St{\"o}rungen}
 }
 @incollection{DeMare2006,
 	title = {Domesticity in {{Dispute}}: {{A Reconsideration}} of {{Sources}}},
@@ -12620,14 +12612,6 @@
 	keywords = {Ethnomethodologie,Handlungstheorie,Routine,Symbolischer Interaktionismus}
 }
 @article{Garfinkel2000,
-	title = {,,{{Gute}}" Organisatorische {{Gr{\"u}nde}} F{\"u}r ,,schlechte" {{Krankenakten}}},
-	author = {Garfinkel, Harold},
-	year = 2000,
-	journal = {System Familie},
-	volume = 13,
-	number = 3,
-	pages = {111--122},
-	keywords = {Organisation,Methoden,Wissenschaftstheorie,Dokumentanalyse,Medizinsoziologie,Methoden der Organisationsforschung}
 }
 @incollection{Garson1990,
 	title = {{{McDonald}}'s - {{Wir}} Machen Alles F{\"u}r {{Sie}}},
@@ -16174,15 +16158,6 @@
 	keywords = {Quantifizierung,Globalisierung,Statistik}
 }
 @article{Heintz2016,
-	title = {,,{{Wir}} Leben Im {{Zeitalter}} der {{Vergleichung}}.`` {{Perspektiven}} Einer {{Soziologie}} Des {{Vergleichs}}},
-	author = {Heintz, Bettina},
-	year = 2016,
-	journal = {Zeitschrift f{\"u}r Soziologie},
-	volume = 45,
-	number = 5,
-	pages = {305--323},
-	doi = {10.1515/zfsoz-2015-1018},
-	url = {https://www.degruyter.com/view/journals/zfsoz/45/5/article-p305.xml}
 }
 @article{Heintz2018,
 	title = {Von der {{Allmacht}} der {{Zahlen}} und der {{Allgegenwart}} Des {{Bewertens}}},
@@ -19185,7 +19160,7 @@
 }
 @article{KarastiEtAl2010,
 	title = {Infrastructure {{Time}}: {{Long}}-Term {{Matters}} in {{Collaborative Development}}},
-	author = {Karasti, Helena and Baker, Karen S. and Millerand, Florence},
+	author = {Karasti, Helena and Baker, Karen S. and Miller, Florence},
 	year = 2010,
 	journal = {Computer Supported Cooperative Work (CSCW)},
 	volume = 19,
@@ -23739,16 +23714,6 @@
 	url = {http://journals.sagepub.com/doi/10.1177/1461444819899879},
 	keywords = {Facebook,Filterblase}
 }
-@article{LumineauEtAl2020,
-	title = {Blockchain {{Governance}}---{{A New Way}} of {{Organizing Collaborations}}?},
-	author = {Lumineau, Fabrice and Wang, Wenqian and Schilke, Oliver},
-	year = 2020,
-	journal = {Organization Science},
-	publisher = {Informs},
-	doi = {10.1287/orsc.2020.1379},
-	url = {https://pubsonline.informs.org/doi/abs/10.1287/orsc.2020.1379},
-	keywords = {Digitalwirtschaft,Technik \& Innovation,Blockchain,Governance}
-}
 @article{LundinSoderholm1995,
 	title = {A Theory of the Temporary Organization},
 	author = {Lundin, Rolf A. and S{\"o}derholm, Anders},
@@ -24899,16 +24864,6 @@
 	keywords = {Citizenship,Globalisierung,Migration,Mobilit{\"a}t,Staatsb{\"u}rgerschaft,Tourismus,Visa}
 }
 @incollection{Maurer2011,
-	title = {,,Akteure`` in soziologischen Erkl{\"a}rungen},
-	author = {Maurer, Andrea},
-	year = 2011,
-	booktitle = {Akteur -- Individuum -- Subjekt},
-	publisher = {{VS Verlag f{\"u}r Sozialwissenschaften}},
-	pages = {45--66},
-	isbn = {978-3-531-17854-7 978-3-531-93463-1},
-	url = {http://link.springer.com/chapter/10.1007/978-3-531-93463-1\_3},
-	editor = {L{\"u}dtke, Nico and Matsuzaki, Hironori},
-	keywords = {Sozialtheorie,Akteursmodell,Methodologischer Individualismus,Rational Choice,Weber}
 }
 @book{Maurer2017,
 	title = {Handbuch der Wirtschaftssoziologie},
@@ -33131,13 +33086,6 @@
 	keywords = {Dokument-Gattungen,Journalismus,Objektivit{\"a}t,Textsorten}
 }
 @article{Schmiechen2017,
-	title = {,,Fuck you, Silicon Valley``? Go fuck yourself!},
-	author = {Schmiechen, Frank},
-	year = 2017,
-	journal = {Gr{\"u}nderszene Magazin},
-	url = {https://www.gruenderszene.de/allgemein/silicon-valley-erwiderung},
-	entrysubtype = {newspaper},
-	keywords = {Einf{\"u}hrung,Silicon Valley}
 }
 @book{SchmittFuhse2015,
 	title = {Zur Aktualit{\"a}t von Harrison White},
@@ -38551,10 +38499,6 @@
 	title = {Utopien der {{Vergangenheit}}: {{Visionen}} Einer Besseren {{Zukunft}}?},
 	author = {Walter, Tillman},
 	year = 2000,
-	eventtitle = {,,{{Forderung}} Nach der Konkreten {{Utopie}}``},
-	keywords = {Zukunft},
-	type = {Vortrag},
-	venue = {Konstanz}
 }
 @incollection{Walters2012,
 	title = {Governmentality 3.4.7},
@@ -38579,25 +38523,6 @@
 	doi = {10.1007/s10273-016-2020-2},
 	url = {http://link.springer.com/10.1007/s10273-016-2020-2},
 	keywords = {Big Tech,Digitalisierung,Monopol}
-}
-@article{Wang2012,
-	title = {Is There a Canon in the Economic Sociology?},
-	author = {Wang, Dan},
-	year = 2012,
-	journal = {ASA Economic Sociology},
-	volume = 11,
-	number = 2,
-	pages = {1--8},
-	keywords = {Wirtschaft,Einf{\"u}hrung}
-}
-@article{WangEtAl2014,
-	title = {Social Cycling and Conditional Responses in the {{Rock}}-{{Paper}}-{{Scissors}} Game},
-	author = {Wang, Zhijian and Xu, Bin and Zhou, Hai-Jun},
-	year = 2014,
-	journal = {Scientific Reports},
-	volume = 4,
-	doi = {10.1038/srep05830},
-	url = {http://www.nature.com/srep/2014/140725/srep05830/full/srep05830.html}
 }
 @online{Ward2008,
 	title = {What Is a {{Game Engine}}?},
@@ -39545,16 +39470,6 @@
 	keywords = {Musiksoziologie}
 }
 @article{Wiedemann2014,
-	title = {,,Greetings from the Dark Site of the Internet`` -- Anonymous und die Frage nach Widerstand in Zeiten der Informatisierung},
-	author = {Wiedemann, Carolin},
-	year = 2014,
-	journal = {{\"O}sterreichische Zeitschrift f{\"u}r Soziologie},
-	volume = 39,
-	number = {S1},
-	pages = {143--162},
-	doi = {10.1007/s11614-014-0135-5},
-	url = {http://link.springer.com/10.1007/s11614-014-0135-5},
-	keywords = {Anonymous,Digitalisierung,Emotion,Foucault,Gouvernementalit{\"a}t,kollektiver Akteur,Kybernetik,{\"U}berwachung,Wissen {\"u}ber das Netz}
 }
 @inreference{Wikipedia2014,
 	title = {Functional Fixedness},
@@ -39957,15 +39872,6 @@
 	organization = {Wired Business}
 }
 @article{WolbringEtAl2013,
-	title = {,,Links gehen, rechts stehen!`` Ein Feldexperiment zur Durchsetzung informeller Normen auf Rolltreppen},
-	author = {Wolbring, Tobias and Bozoyan, Christiane and Langner, Dominik},
-	year = 2013,
-	journal = {Zeitschrift f{\"u}r Soziologie},
-	volume = 42,
-	number = 3,
-	pages = {239--258},
-	url = {http://www.zfs-online.org/index.php/zfs/article/view/3133},
-	keywords = {abweichendes Verhalten,Devianz,Experiment,Normen,Rolltreppe}
 }
 @incollection{Wolf2006,
 	title = {Egozentrierte {{Netzwerke}}. {{Erhebungsverfahren}} und {{Datenqualit{\"a}t}}},
@@ -40657,4 +40563,25 @@
 	title = {When {URLs} on social networks become invisible},
 	keywords = {Digitalwirtschaft, App-Studies},
 	journal = {First Monday}
+}
+@article{SandersonUzumeri1995,
+	doi = {10.1016/0048-7333(94)00797-b},
+	url = {https://doi.org/10.1016%2F0048-7333%2894%2900797-b},
+	year = 1995,
+	publisher = {Elsevier {BV}},
+	volume = {24},
+	number = {5},
+	pages = {761--782},
+	author = {Susan Sanderson and Mustafa Uzumeri},
+	title = {Managing product families: The case of the Sony Walkman},
+	keywords = {},
+	journal = {Research Policy}
+}
+@article{DrewLaniSeibt2018,
+	title={Configuring the independent developer},
+	author={Drewlani, Tobias and Seibt, David},
+	journal={Journal of Peer Production},
+	number={12},
+	pages={96--114},
+	year=2018
 }
