@@ -13,21 +13,18 @@ matches:
   - trigger: vvv
     replace: |
       $|$
-
       Viele Grüße
       Chris
     label: Viele Grüße (Vorname)
   - trigger: vvg
     replace: |
       $|$
-
       Viele Grüße
       Chris Grieser
     label: Viele Grüße (voller Name)
   - trigger: 'mfg'
     replace: |
       $|$
-
       Mit freundlichen Grüßen
       Christopher Grieser
     label: Mit freundlichen Grüßen
