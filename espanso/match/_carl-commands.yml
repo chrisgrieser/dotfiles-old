@@ -18,7 +18,7 @@ matches:
     replace: get insider build
     label: How to get the Insider Build
   - trigger: '!carl'
-    replace: spamming the server
+    replace: '!report {link-to-msg}'
     label: Report a Spammer to the Mods
   - trigger: '!carl'
     replace: new to obsidian
