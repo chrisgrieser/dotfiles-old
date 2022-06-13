@@ -1,6 +1,6 @@
 {
-  "title": "⇪ Capslock to Hyper/Esc",
-  "version": "0.1",
+  "title": "⇪↹ Hyper and Meh Key",
+  "version": "1.0",
   "maintainers": [
     "pseudometa"
   ],
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "description": "⇪ Hyper + hjklmnb: ←↓↑→↵⌫⌦",
+      "description": "⇪ Hyper + hjklmnbe: ←↓↑→↵⌫⇐⇒",
       "manipulators": [
         {
           "type": "basic",
@@ -197,7 +197,32 @@
           },
           "to": [
             {
-              "key_code": "delete_forward"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "option"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift",
+                "command",
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "option"
+              ]
             }
           ]
         }
