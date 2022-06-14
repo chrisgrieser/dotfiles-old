@@ -10,8 +10,6 @@ alias ..="z .."
 alias ...="z ../.."
 alias ....="z ../../.."
 alias wd='z "$WD"' # working directory
-alias za='zoxide add'
-alias cd='z'
 
 # utils
 alias q='exit'
