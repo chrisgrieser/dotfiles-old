@@ -3,6 +3,8 @@
 
 # temporary matches, e.g. as they are only needed for a current writing project
 matches:
+
+  # InIn Paper
   - trigger: inte
     replace: interdependent technologies
     word: true
@@ -13,5 +15,9 @@ matches:
     propagate_case: true
   - trigger: tein
     replace: technological interdependence
+    word: true
+    propagate_case: true
+  - trigger: cotein
+    replace: constellations of technological interdependence
     word: true
     propagate_case: true
