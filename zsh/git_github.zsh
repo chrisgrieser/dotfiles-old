@@ -21,7 +21,8 @@ function acp (){
 
 function amend () {
 	local COMMIT_MSG="$*"
-	local LAST_COMMIT_MSG=$(git log -1 --pretty=%B | head -n1)
+	local LAST_COMMIT_MSG
+	LAST_COMMIT_MSG=$(git log -1 --pretty=%B | head -n1)
 	local MSG_LENGTH=${#COMMIT_MSG}
 	if [[ $MSG_LENGTH -gt 50 ]]; then
 		echo "Commit Message too long ($MSG_LENGTH chars)."
@@ -100,15 +101,25 @@ function rel(){
 	fi
 }
 
-
+# searches for $1 in the git history of $2
 function gitpast (){
 	query="$1"
 	file_path="$2"
 	file_name="$(basename "$file_path")"
 	cd "$(dirname "$file_path")" || return 1
-	commits=$(git log --pretty=format:%h -S "$query" -- "$file_path")
-	echo "$commits" | while read c ; do
-		git show -s --format=%ci 04cfb3a1 | cut -d" " -f1-2 | tr ":" "-"
-		git show "$c:./$file_name" > "${c}_$file_name"
+
+	commit_list=$(git log --pretty=format:%h -S "$query" -- "$file_path")
+	if [[ -z $commit_list ]] ; then
+		echo "\"$query\" cannot be found in the history of \"$file_name\"."
+		return 1
+	fi
+
+	echo "$commit_list" | while read -r commit ; do
+		commit_date="$(git show -s --format=%ci "$commit" | cut -d" " -f1-2 | tr ":" "-")"
+		new_file="${commit_date}_$file_name"
+		git show "$commit:./$file_name" > "$new_file"
+		echo "$new_file"
+		grep --context=1 "$query" "$new_file"
+		echo "**************************************************"
 	done
 }
