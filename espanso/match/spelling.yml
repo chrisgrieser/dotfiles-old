@@ -5,13 +5,23 @@ matches:
   # https://espanso.org/docs/matches/regex-triggers/#advanced-examples
   # two uppercase letters followed by lowercase letter -> capital-cased
   # => "THe" becomes "The"
-  - regex: "(?P<pre>\\s)(?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])"
+  - regex: "\\r(?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])" # \r as macOS line break
+    replace: "\n{{CapitalCased}}"
+    vars:
+      - name: CapitalCased
+        type: shell
+        params:
+          cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
+          shell: bash
+  # space and \n as separate rules instead of using \b as this reduces
+  # accidental triggering in vim
+  - regex: " (?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])"
     replace: " {{CapitalCased}}"
     vars:
       - name: CapitalCased
         type: shell
         params:
-          cmd: 'echo "$ESPANSO_PRE$ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"'
+          cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
           shell: bash
 
   - trigger: "I#d"
