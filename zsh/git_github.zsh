@@ -41,14 +41,10 @@ function amend () {
 	git push --force
 }
 
-alias amend='git commit --amend'
 alias gc="git commit -m"
 alias ga="git add"
-alias pull="git pull"
-alias push="git push"
 alias ignored="git status --ignored"
 alias status='git status --short'
-alias checkout='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # go to git root https://stackoverflow.com/a/38843585
@@ -102,7 +98,8 @@ function rel(){
 }
 
 # searches for $1 in the git history of $2
-function gitpast (){
+function past (){
+	start_dir="$PWD"
 	query="$1"
 	file_path="$2"
 	file_name="$(basename "$file_path")"
@@ -117,9 +114,10 @@ function gitpast (){
 	echo "$commit_list" | while read -r commit ; do
 		commit_date="$(git show -s --format=%ci "$commit" | cut -d" " -f1-2 | tr ":" "-")"
 		new_file="${commit_date}_$file_name"
-		git show "$commit:./$file_name" > "$new_file"
+		git show "$commit:./$file_name" > "$start_dir/$new_file"
 		echo "$new_file"
 		grep --context=1 "$query" "$new_file"
 		echo "**************************************************"
 	done
+	cd "$start_dir"
 }
