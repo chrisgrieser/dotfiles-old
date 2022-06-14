@@ -83,7 +83,7 @@ matches:
     label: '🏝 Resolve ~'
   - trigger: "!hr"
     replace: "//------------------------------------------------------------------------------"
-  - trigger: "rrr"
+  - trigger: ".rr"
     replace: ".replace(/.$|$/gm, \"\");"
   - regex: " ?!!"  # so this works whether prepended with space or note
     replace: " {\n"
