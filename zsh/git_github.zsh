@@ -101,14 +101,14 @@ function rel(){
 }
 
 
-query="Rammert"
-file_path="_Technological Interdependence in Technology and Innovation Studies.md"
-commit=$(git log --pretty=format:%h -S "$query" -- "$file_path")
-echo "$commit"
-
-query="Rammert"
-file_path="/Users/chrisgrieser/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Writing/Interdependence & Innovation/Drafts/Reviewed/_Technological Interdependence in Technology and Innovation Studies.md"
-commit=$(git log --pretty=format:%h -S "$query" -- "$file_path")
-echo "$commit"
-
-git show "$commit:$file_path"
+function gitpast (){
+	query="$1"
+	file_path="$2"
+	file_name="$(basename "$file_path")"
+	cd "$(dirname "$file_path")" || return 1
+	commits=$(git log --pretty=format:%h -S "$query" -- "$file_path")
+	echo "$commits" | while read c ; do
+		git show -s --format=%ci 04cfb3a1 | cut -d" " -f1-2 | tr ":" "-"
+		git show "$c:./$file_name" > "${c}_$file_name"
+	done
+}
