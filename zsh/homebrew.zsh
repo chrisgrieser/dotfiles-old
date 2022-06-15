@@ -139,7 +139,7 @@ function print-section () {
 function dump () {
 	DEVICE_NAME=$(hostname | cut -d"." -f1)
 	brew bundle dump --force --file "$BREWDUMP_PATH/Brewfile_$DEVICE_NAME"
-	npm list -g --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
+	npm list --location=global --parseable | sed "1d" | sed -E "s/.*\///" > "$BREWDUMP_PATH/NPMfile_$DEVICE_NAME"
 	echo "Brewfile & NPM-File dumped at \"$BREWDUMP_PATH\""
 }
 
@@ -156,7 +156,7 @@ function update (){
 	mas upgrade
 
 	print-section "NPM"
-	npm update -g
+	npm update --location=global
 
 	print-section "DUMP INSTALLS"
 	dump
@@ -183,7 +183,7 @@ function report (){
 	mas list
 
 	print-section "NPM"
-	npm list -g
+	npm list --location=global
 
 	print-section "DUMP INSTALLS"
 	dump
