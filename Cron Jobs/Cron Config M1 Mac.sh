@@ -10,7 +10,7 @@ add-cronjob "*/15 * * * *" '15-min_[Browser-Path].sh'
 add-cronjob "5 3 * * *" 'sleep-timer_[Browser].applescript'
 add-cronjob "5 6 * * *" 'daily-morning_[Browser].applescript'
 add-cronjob "5 21 * * *" 'daily-evening.applescript'
-add-cronjob "10 6 * * 1,4" 'biweekly.applescript'
+add-cronjob "10 6 * * 0,3" 'biweekly.applescript'
 
 echo ""
 crontab -l # check the current cronjobs
