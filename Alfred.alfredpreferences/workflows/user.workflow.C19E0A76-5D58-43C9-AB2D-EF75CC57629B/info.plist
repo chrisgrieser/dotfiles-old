@@ -99,6 +99,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A6945A0F-251F-4EFF-B9B0-3F71BE399933</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>779F2DDF-0F3A-4554-B618-42112ADE236A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C4BC97EE-7AF6-43A0-B84A-7B9249B659C0</key>
 		<array>
 			<dict>
@@ -601,62 +614,6 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>29</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>0</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>net.highlightsapp.universal</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>8761D3DB-84AE-4647-8309-12721F4D1E0B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>2</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1048576</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>4BB46A41-E38A-452E-BE45-654A047753E7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
 				<integer>1179648</integer>
@@ -719,6 +676,62 @@ end tell</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>0D9E13EA-E870-4BEC-85B3-5B7A9047E224</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>29</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>0</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>net.highlightsapp.universal</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8761D3DB-84AE-4647-8309-12721F4D1E0B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>2</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>4BB46A41-E38A-452E-BE45-654A047753E7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -799,6 +812,62 @@ end tell</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>t</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>779F2DDF-0F3A-4554-B618-42112ADE236A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>25</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>9</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>net.highlightsapp.universal</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A6945A0F-251F-4EFF-B9B0-3F71BE399933</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -809,18 +878,18 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>430</integer>
 		</dict>
 		<key>24D53802-F053-49F4-B779-6BDB1A52ED1F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>430</integer>
 		</dict>
 		<key>35ABB0A1-AF1E-4ED6-A919-795E719E7A3E</key>
 		<dict>
@@ -878,6 +947,15 @@ end tell</string>
 			<key>ypos</key>
 			<integer>385</integer>
 		</dict>
+		<key>779F2DDF-0F3A-4554-B618-42112ADE236A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>645</integer>
+		</dict>
 		<key>78265889-4998-4FB4-81C8-4E4A310FBEC3</key>
 		<dict>
 			<key>colorindex</key>
@@ -910,9 +988,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>555</integer>
 		</dict>
 		<key>8761D3DB-84AE-4647-8309-12721F4D1E0B</key>
 		<dict>
@@ -932,6 +1010,15 @@ end tell</string>
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
+		<key>A6945A0F-251F-4EFF-B9B0-3F71BE399933</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>645</integer>
+		</dict>
 		<key>C4BC97EE-7AF6-43A0-B84A-7B9249B659C0</key>
 		<dict>
 			<key>colorindex</key>
@@ -948,9 +1035,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>55</integer>
+			<integer>395</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>430</integer>
 		</dict>
 		<key>EB5E0C6A-B758-4923-8925-D057C2C338B8</key>
 		<dict>
@@ -966,9 +1053,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>555</integer>
 		</dict>
 		<key>EFE37DC6-56C2-49F9-8665-76325F648FF8</key>
 		<dict>
@@ -986,9 +1073,9 @@ end tell</string>
 			<key>note</key>
 			<string>comment</string>
 			<key>xpos</key>
-			<integer>55</integer>
+			<integer>395</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>555</integer>
 		</dict>
 		<key>FAC27072-95C2-4043-9525-80C28D16E3A4</key>
 		<dict>
