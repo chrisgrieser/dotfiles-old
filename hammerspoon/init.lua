@@ -66,12 +66,16 @@ highlightsAppWatcher:start()
 -- Dim brightness when second monitor is attached
 function displayCountWatcher()
 	hs.notify.new({title="Hammerspoon", informativeText="Screen Layout changed"}):send()
-	hs.brightness.set(0)
+	hs.applescript("do shell script \"shortcuts run 'Zero Brightness'\"")
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
 hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
-	hs.alert.show("Hello World!")
-	hs.applescript('tell application "Shortcuts" to run shortcut "Zero Brightness"')
+	-- "hs.brightness.set" does not work when second display is conncted
+	-- "tell application Shortcuts to run..." would leave Shortcuts open
+	-- therefor this workaround
+	-- aScreen = hs.screen.allScreens()
+	screenCount = table.getn{n=1000}
+	hs.alert.show(screenCount)
 end)
