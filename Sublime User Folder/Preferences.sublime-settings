@@ -15,6 +15,7 @@
 	"neovintageous_search_inc_style": "outine",
 	"highlightedyank_style": "fill",
 
+	"line_numbers": false,
 	"relative_line_numbers": true, // = set relativenumber
 	"scroll_context_lines": 12, // = scroll offset
 
@@ -165,7 +166,6 @@
 		"Haskell",
 		"Java",
 		"Lisp",
-		"Lua",
 		"Makefile",
 		"Markdown",
 		"Matlab",

@@ -31,3 +31,18 @@ matches:
       Mit freundlichen Grüßen
       Christopher Grieser
     label: Mit freundlichen Grüßen
+
+  - trigger: '!kr'
+    replace: |
+      $|$
+
+      Kind Regards
+      Chris Grieser
+    label: Kind Regards
+  - trigger: '!best'
+    replace: |
+      $|$
+
+      Best
+      Chris
+    label: Best

@@ -21,37 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0B8FFCC6-8C9B-4DEF-89A3-299B7735ACCE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B8EF00DC-9375-4739-A6B5-7B7054B95659</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>0F024FB6-9D47-4A64-A807-FD42D1F697AA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>BF59A4CC-06C0-46C8-A983-CFD5C0DBF0AA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>11DBDE58-C582-4C38-99BA-10379856F261</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7EB91449-3925-4942-B516-80A92E4819BA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -75,54 +49,6 @@
 		</array>
 		<key>1BB84FD8-A5C0-45D1-93FA-934D88611360</key>
 		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C1B66D18-EAA6-4B0F-93A5-4B4907DA35F9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>0A1C0162-81C4-4DD7-8500-89CC90589E03</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>927D7C39-CDC6-4561-A520-E81129555355</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>EC0B05EC-ED7C-47A7-8B30-1C2238CF6618</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>E9702333-40E7-4A21-969C-2693B1CFA1A6</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>55857667-18E2-42C5-BD99-C22CE687E881</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>6AB9FCE8-873E-44F0-825F-312AB75FB4E2</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>73EA22AF-FBE2-456B-BD49-B7FFF56A8494</string>
@@ -285,37 +211,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>55857667-18E2-42C5-BD99-C22CE687E881</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0B8FFCC6-8C9B-4DEF-89A3-299B7735ACCE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5EB83EDB-2478-4B1E-AAD4-BA993B3B8FDC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7EB91449-3925-4942-B516-80A92E4819BA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B8EF00DC-9375-4739-A6B5-7B7054B95659</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -454,19 +354,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B8EF00DC-9375-4739-A6B5-7B7054B95659</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>11DBDE58-C582-4C38-99BA-10379856F261</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B8EF59E3-EDD8-4DD3-94C8-7F39D5A558E6</key>
 		<array>
 			<dict>
@@ -485,19 +372,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F18A605F-5A47-4E70-9271-304B8C698020</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C1B66D18-EAA6-4B0F-93A5-4B4907DA35F9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B8EF00DC-9375-4739-A6B5-7B7054B95659</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -558,19 +432,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EC0B05EC-ED7C-47A7-8B30-1C2238CF6618</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B8EF00DC-9375-4739-A6B5-7B7054B95659</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>ED6135B3-C7DF-4145-B892-4F3C5BAC1A68</key>
 		<array>
 			<dict>
@@ -611,54 +472,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>steam://open/activateproduct</string>
-				<key>utf8</key>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
-			<string>C1B66D18-EAA6-4B0F-93A5-4B4907DA35F9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>steam://openurl/https://store.steampowered.com/search/?term={var:searchstring}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>B8EF00DC-9375-4739-A6B5-7B7054B95659</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>11DBDE58-C582-4C38-99BA-10379856F261</string>
+			<string>98B412EA-EC82-4B28-B15D-CB8E9A5DE045</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -678,21 +500,6 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>5EB83EDB-2478-4B1E-AAD4-BA993B3B8FDC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>98B412EA-EC82-4B28-B15D-CB8E9A5DE045</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -720,107 +527,68 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># get Steam user ID
+user_id=`sed -n 3p ~/Library/Application\ Support/Steam/config/loginusers.vdf | cut -d '"' -f 2`
+
+# get list of games in library of that user, by scrapping the public profile
+curl "https://steamcommunity.com/profiles/$user_id/games/?tab=all" | grep -o -e 'appid[^\\]*logo' | cut -d '"' -f 2,5 | tr -d '":' | tr -s '\n' ';'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://store.steampowered.com/search/?term={var:searchstring}</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>EC0B05EC-ED7C-47A7-8B30-1C2238CF6618</string>
+			<string>73EA22AF-FBE2-456B-BD49-B7FFF56A8494</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>activate</string>
-						<key>outputlabel</key>
-						<string>activate</string>
-						<key>uid</key>
-						<string>0A1C0162-81C4-4DD7-8500-89CC90589E03</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>store-app</string>
-						<key>outputlabel</key>
-						<string>store-app</string>
-						<key>uid</key>
-						<string>927D7C39-CDC6-4561-A520-E81129555355</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>store-browser</string>
-						<key>outputlabel</key>
-						<string>store-browser</string>
-						<key>uid</key>
-						<string>E9702333-40E7-4A21-969C-2693B1CFA1A6</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>wishlist</string>
-						<key>outputlabel</key>
-						<string>wishlist</string>
-						<key>uid</key>
-						<string>6AB9FCE8-873E-44F0-825F-312AB75FB4E2</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>install</string>
-						<key>outputlabel</key>
-						<string>search steam library</string>
-						<key>uid</key>
-						<string>49DDF83E-D711-4230-828B-95FE19AFC74D</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>search local installs</string>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>input = "{query}";
+var games = input.split(";");
+
+let game_array = []; //array for elements of script filter
+
+games.forEach(element =&gt; { //foreach item in list
+  temp = element.split(","); //split name and id of the game
+  game_id = "Steam ID: " + temp[0];
+  game_name = temp[1];
+  game_array.push ({ // Add to empty array
+    'title': game_name, 
+    'subtitle': game_id, 
+    'arg': element 
+  }) 
+});
+
+JSON.stringify({ 'items': game_array })// Transform it into JSON Alfred understands</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1BB84FD8-A5C0-45D1-93FA-934D88611360</string>
+			<string>7EC0740E-6D07-4BED-9068-D9BED0F9501E</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -900,51 +668,6 @@
 		}
   },
   {
-    "uid": "4",
-    "title": "Validate...",
-    "subtitle": "search installed games for '{query}'",
-    "arg": "validate;{query}",
-    "icon": {
-			"path": "validate.png"
-		}
-  },
-  {
-    "uid": "6",
-    "title": "Activate a Product",
-    "subtitle": "",
-    "arg": "activate",
-    "icon": {
-			"path": "activate.png"
-		}
-  },
-  {
-    "uid": "7",
-    "title": "Store (App)",
-    "subtitle": "search for '{query}'",
-    "arg": "store-app;{query}",
-    "icon": {
-			"path": "Store.png"
-		}
-  },
-  {
-    "uid": "8",
-    "title": "Store (Browser)",
-    "subtitle": "search for '{query}'",
-    "arg": "store-browser;{query}",
-    "icon": {
-			"path": "Store.png"
-		}
-  },
-  {
-    "uid": "9",
-    "title": "Personal Wishlist",
-    "subtitle": "",
-    "arg": "wishlist",
-    "icon": {
-			"path": "Store.png"
-		}
-  },
-  {
     "uid": "10",
     "title": "Install Game from Library...",
     "subtitle": "search public library for '{query}'",
@@ -978,46 +701,32 @@ EOB</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>steam://openurl/https://store.steampowered.com/wishlist/profiles/{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>install</string>
+						<key>outputlabel</key>
+						<string>search steam library</string>
+						<key>uid</key>
+						<string>49DDF83E-D711-4230-828B-95FE19AFC74D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>search local installs</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>0B8FFCC6-8C9B-4DEF-89A3-299B7735ACCE</string>
+			<string>1BB84FD8-A5C0-45D1-93FA-934D88611360</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>sed -n 3p ~/Library/Application\ Support/Steam/config/loginusers.vdf | cut -d '"' -f 2
-
-# extracts the Steam user ID</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>55857667-18E2-42C5-BD99-C22CE687E881</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1158,11 +867,10 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string># get Steam user ID
-user_id=`sed -n 3p ~/Library/Application\ Support/Steam/config/loginusers.vdf | cut -d '"' -f 2`
+				<string># get list of games installed on the local machine
+echo | ( IFS=$'\n'; for D in ~/Library/Application\ Support/Steam $(egrep '^[^"]*"[0-9]+"' ~/Library/Application\ Support/Steam/steamapps/libraryfolders.vdf | cut -d\" -f4); do for F in "$D"/steamapps/appmanifest_*.acf; do printf "%s,%s;" $(grep '"appid"' "$F" | cut -d\" -f4) $(grep '"name"' "$F" | cut -d\" -f4); done; done )
 
-# get list of games in library of that user, by scrapping the public profile
-curl "https://steamcommunity.com/profiles/$user_id/games/?tab=all" | grep -o -e 'appid[^\\]*logo' | cut -d '"' -f 2,5 | tr -d '":' | tr -s '\n' ';'</string>
+# based on https://www.reddit.com/r/wine_gaming/comments/g207h4/steam_appids_and_how_to_get_them_easily_with_bash/fnip538/?context=3</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1173,7 +881,7 @@ curl "https://steamcommunity.com/profiles/$user_id/games/?tab=all" | grep -o -e 
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>73EA22AF-FBE2-456B-BD49-B7FFF56A8494</string>
+			<string>E702FA46-8829-45A0-A1C5-E15ACDA51E2A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1318,45 +1026,6 @@ curl "https://steamcommunity.com/profiles/$user_id/games/?tab=all" | grep -o -e 
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>input = "{query}";
-var games = input.split(";");
-
-let game_array = []; //array for elements of script filter
-
-games.forEach(element =&gt; { //foreach item in list
-  temp = element.split(","); //split name and id of the game
-  game_id = "Steam ID: " + temp[0];
-  game_name = temp[1];
-  game_array.push ({ // Add to empty array
-    'title': game_name, 
-    'subtitle': game_id, 
-    'arg': element 
-  }) 
-});
-
-JSON.stringify({ 'items': game_array })// Transform it into JSON Alfred understands</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7EC0740E-6D07-4BED-9068-D9BED0F9501E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{var:searchstring}</string>
 				<key>passthroughargument</key>
@@ -1412,32 +1081,6 @@ JSON.stringify({ 'items': game_array })// Transform it into JSON Alfred understa
 			<string>8AF4D8D1-A5FB-4E39-B0BB-2DEE3DC8A775</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># get list of games installed on the local machine
-echo | ( IFS=$'\n'; for D in ~/Library/Application\ Support/Steam $(egrep '^[^"]*"[0-9]+"' ~/Library/Application\ Support/Steam/steamapps/libraryfolders.vdf | cut -d\" -f4); do for F in "$D"/steamapps/appmanifest_*.acf; do printf "%s,%s;" $(grep '"appid"' "$F" | cut -d\" -f4) $(grep '"name"' "$F" | cut -d\" -f4); done; done )
-
-# based on https://www.reddit.com/r/wine_gaming/comments/g207h4/steam_appids_and_how_to_get_them_easily_with_bash/fnip538/?context=3</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E702FA46-8829-45A0-A1C5-E15ACDA51E2A</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1759,15 +1402,6 @@ version 1.0:
 			<key>ypos</key>
 			<integer>765</integer>
 		</dict>
-		<key>0B8FFCC6-8C9B-4DEF-89A3-299B7735ACCE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>795</integer>
-			<key>ypos</key>
-			<integer>365</integer>
-		</dict>
 		<key>0F024FB6-9D47-4A64-A807-FD42D1F697AA</key>
 		<dict>
 			<key>colorindex</key>
@@ -1776,15 +1410,6 @@ version 1.0:
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>765</integer>
-		</dict>
-		<key>11DBDE58-C582-4C38-99BA-10379856F261</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>1430</integer>
-			<key>ypos</key>
-			<integer>145</integer>
 		</dict>
 		<key>130F4FF4-2518-4EA9-8490-CF4B5EFD7434</key>
 		<dict>
@@ -1800,9 +1425,9 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>270</integer>
-			<key>ypos</key>
 			<integer>290</integer>
+			<key>ypos</key>
+			<integer>365</integer>
 		</dict>
 		<key>1D93C6F9-3F7A-420C-9925-5E608637E77F</key>
 		<dict>
@@ -1865,15 +1490,6 @@ version 1.0:
 			<key>ypos</key>
 			<integer>795</integer>
 		</dict>
-		<key>55857667-18E2-42C5-BD99-C22CE687E881</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>595</integer>
-			<key>ypos</key>
-			<integer>365</integer>
-		</dict>
 		<key>5EB83EDB-2478-4B1E-AAD4-BA993B3B8FDC</key>
 		<dict>
 			<key>colorindex</key>
@@ -1883,15 +1499,6 @@ version 1.0:
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
-		<key>6B342F8D-8AC5-4F1A-A82D-B904275E1F2E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>595</integer>
-			<key>ypos</key>
-			<integer>130</integer>
-		</dict>
 		<key>73EA22AF-FBE2-456B-BD49-B7FFF56A8494</key>
 		<dict>
 			<key>colorindex</key>
@@ -1899,9 +1506,9 @@ version 1.0:
 			<key>note</key>
 			<string>get games in library</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>480</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>270</integer>
 		</dict>
 		<key>7EB91449-3925-4942-B516-80A92E4819BA</key>
 		<dict>
@@ -1921,9 +1528,9 @@ version 1.0:
 			<key>note</key>
 			<string>jsonfy</string>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>335</integer>
 		</dict>
 		<key>8AF4D8D1-A5FB-4E39-B0BB-2DEE3DC8A775</key>
 		<dict>
@@ -1997,15 +1604,6 @@ version 1.0:
 			<key>ypos</key>
 			<integer>375</integer>
 		</dict>
-		<key>B8EF00DC-9375-4739-A6B5-7B7054B95659</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>835</integer>
-			<key>ypos</key>
-			<integer>145</integer>
-		</dict>
 		<key>B8EF59E3-EDD8-4DD3-94C8-7F39D5A558E6</key>
 		<dict>
 			<key>colorindex</key>
@@ -2023,15 +1621,6 @@ version 1.0:
 			<integer>660</integer>
 			<key>ypos</key>
 			<integer>765</integer>
-		</dict>
-		<key>C1B66D18-EAA6-4B0F-93A5-4B4907DA35F9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>595</integer>
-			<key>ypos</key>
-			<integer>10</integer>
 		</dict>
 		<key>CF214C23-479E-434A-B3AB-DA1806D01BAB</key>
 		<dict>
@@ -2067,18 +1656,9 @@ version 1.0:
 			<key>note</key>
 			<string>get installed games</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>480</integer>
 			<key>ypos</key>
-			<integer>565</integer>
-		</dict>
-		<key>EC0B05EC-ED7C-47A7-8B30-1C2238CF6618</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>xpos</key>
-			<integer>595</integer>
-			<key>ypos</key>
-			<integer>245</integer>
+			<integer>405</integer>
 		</dict>
 		<key>ED6135B3-C7DF-4145-B892-4F3C5BAC1A68</key>
 		<dict>

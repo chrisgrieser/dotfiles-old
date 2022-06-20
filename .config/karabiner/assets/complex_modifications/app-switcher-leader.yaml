@@ -1,4 +1,4 @@
-title: 🔺 Global Leader Key
+title: 🔺 App Switcher
 version: "0.1"
 maintainers:
   - pseudometa
@@ -103,7 +103,7 @@ rules:
           - set_notification_message:
               id: leader-notice
               text: ""
-  - description: 🔺 Leader Actions
+  - description: 🔺 App Switcher Actions
     manipulators:
       - type: basic
         description: Leader Cancel
@@ -229,8 +229,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          # Obsidian Discord Server
-          - shell_command: open 'discord://discord.com/channels/686053708261228577/'
+          - shell_command: open -a 'Discord'
           - set_variable:
               name: LEADER_ACTIVE
               value: 0
@@ -239,13 +238,14 @@ rules:
               text: ""
       - type: basic
         from:
+          # switched y and z due to German Keyboard
           key_code: "y"
         conditions:
           - type: variable_if
             name: LEADER_ACTIVE
             value: 1
         to:
-          - shell_command: open -a 'YouTube'
+          - shell_command: open -a 'zoom.us'
           - set_variable:
               name: LEADER_ACTIVE
               value: 0
@@ -431,6 +431,7 @@ rules:
               text: ""
       - type: basic
         from:
+          # switched y and z due to German Keyboard
           key_code: z
         conditions:
           - type: variable_if

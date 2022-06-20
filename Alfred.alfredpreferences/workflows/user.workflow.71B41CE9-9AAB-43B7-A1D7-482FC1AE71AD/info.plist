@@ -268,19 +268,6 @@
 		</array>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<array/>
-		<key>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B1270767-40DA-4713-9875-7FA8B3FDFAE5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>776880C9-1368-4168-9F97-07307B938A3B</key>
 		<array>
 			<dict>
@@ -1307,6 +1294,19 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>file-hub-cycle</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -1318,19 +1318,6 @@ end alfred_script</string>
 			<string>DC23B294-25E4-4CEA-841A-71546D15BD89</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>file-hub-cycle</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1347,8 +1334,6 @@ end alfred_script</string>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>wd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1380,6 +1365,62 @@ end alfred_script</string>
 			<string>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>80</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F19</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3AA97555-4630-4AB5-A2F3-900B154E50A7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "${default_folder/#\~/$HOME}" || exit 1
+
+echo -n $(ls | wc -l | tr -d " ")</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1440,62 +1481,6 @@ end run</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>49C1CB43-3C55-4085-BBF5-A406476E7309</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>80</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F19</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3AA97555-4630-4AB5-A2F3-900B154E50A7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "${default_folder/#\~/$HOME}" || exit 1
-
-echo -n $(ls | wc -l | tr -d " ")</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1945,64 +1930,6 @@ md2docx "$*" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>resize.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B1270767-40DA-4713-9875-7FA8B3FDFAE5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>49</integer>
-				<key>hotmod</key>
-				<integer>524288</integer>
-				<key>hotstring</key>
-				<string>Space</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>triggerid</key>
 				<string>ff-search</string>
 			</dict>
@@ -2316,9 +2243,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>945</integer>
+			<integer>910</integer>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
@@ -2349,7 +2276,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>945</integer>
+			<integer>910</integer>
 		</dict>
 		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
 		<dict>
@@ -2485,17 +2412,6 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<integer>1435</integer>
 		</dict>
-		<key>74FEAB1D-35C5-48E7-84A7-CA0C8356DB7C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>resize window &amp; hide sidebar</string>
-			<key>xpos</key>
-			<integer>465</integer>
-			<key>ypos</key>
-			<integer>1570</integer>
-		</dict>
 		<key>776880C9-1368-4168-9F97-07307B938A3B</key>
 		<dict>
 			<key>colorindex</key>
@@ -2572,15 +2488,6 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<integer>540</integer>
 		</dict>
-		<key>B1270767-40DA-4713-9875-7FA8B3FDFAE5</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>635</integer>
-			<key>ypos</key>
-			<integer>1570</integer>
-		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
 			<key>colorindex</key>
@@ -2633,9 +2540,9 @@ echo -n "$title"</string>
 		<key>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>820</integer>
+			<integer>785</integer>
 		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
@@ -2653,7 +2560,7 @@ echo -n "$title"</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>1035</integer>
+			<integer>1015</integer>
 		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
@@ -2680,9 +2587,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>350</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>965</integer>
+			<integer>930</integer>
 		</dict>
 		<key>DC23B294-25E4-4CEA-841A-71546D15BD89</key>
 		<dict>

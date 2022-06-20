@@ -39,10 +39,15 @@ fi
 # ---------------------------------------------------
 BROWSER="BraveSoftware/Brave-Browser"
 
-mkdir -p ~'/Library/Application Support/Google/Chrome/Default'
-cp ~"/Library/Application Support/$BROWSER/Default/Bookmarks" ~"/Library/Application Support/Google/Chrome/Default/Bookmarks"
-cp ~"/Library/Application Support/$BROWSER/Local State" ~"/Library/Application Support/Google/Chrome/Local State"
-cp ~"/Library/Application Support/$BROWSER/Default/History" ~"/Library/Application Support/Google/Chrome/Default/History"
+CHROME_FOLDER=~'/Library/Application Support/Google/Chrome'
+TARGET_BOOKMARKS=~"/Library/Application Support/$BROWSER/Default/Bookmarks"
+CHROME_BOOKMARKS="$CHROME_FOLDER/Default/Bookmarks"
+
+[[ ! -d "$CHROME_FOLDER/Default" ]] && mkdir -p "$CHROME_FOLDER/Default"
+if [[ "$TARGET_BOOKMARKS" -nt "$CHROME_BOOKMARKS" ]]; then
+	cp -f "$TARGET_BOOKMARKS" "$CHROME_BOOKMARKS"
+	cp -f ~"/Library/Application Support/$BROWSER/Local State" "$CHROME_FOLDER/Local State"
+fi
 
 # LOGGING
 # ---------------------------------------------------

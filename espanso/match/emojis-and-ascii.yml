@@ -21,6 +21,8 @@ matches:
     replace: ' 🙈'
   - trigger: '!eyes'
     replace: 👁️👄👁️
+  - trigger: '!tm'
+    replace: ™
 
   - triggers: ['!shrug', "!ascii"]
     replace: ¯\_(ツ)_/¯

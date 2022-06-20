@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.chris-grieser.moom-zoom</string>
+	<string>de.chris-grieser.window-management</string>
 	<key>category</key>
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
-		<key>432EB74A-9F76-4DD1-A316-CF3041712A9A</key>
+		<key>045141A6-D092-4512-A84F-C58BE803F8D6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9312BB2F-700A-466B-A2F0-8D540BA24C5D</string>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</key>
+		<key>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C3A574FB-D0D4-49BC-A318-14715CAA6854</string>
+				<string>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,21 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
+		<key>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</string>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -57,11 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>88917A0B-7E84-42A9-905F-670430B81BBF</key>
+		<key>41523074-48F2-4F9F-AE8D-4579B4473808</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7D70D13D-24D9-4581-B67C-635A6479FF76</string>
+				<string>76FE5EBB-4A39-43BD-A839-DBB718B86097</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -70,23 +60,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9312BB2F-700A-466B-A2F0-8D540BA24C5D</key>
+		<key>41B5D139-F003-46BE-875D-23643546D5DA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>51243FFA-EE20-4337-BE38-9A9C9EA2B809</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>69321844-5FD6-49B4-904B-EA6C9F22AA56</string>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -95,13 +73,78 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
+		<key>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>91B9390C-0212-4B09-8C85-F7509AB4EA5E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</key>
 		<array/>
-		<key>E5EE4E15-A7B0-443D-9619-DA51E35492E6</key>
+		<key>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C0303517-B939-4E4D-B44F-FE170767DBB0</string>
+				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -118,279 +161,43 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Zoom &amp; BTT Modes</string>
+	<string>Window Management</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>--volumeset volume output volume 80--pause spotifytell application id "com.runningwithcrayons.Alfred" to run trigger "pause" in workflow "com.vdesabou.spotify.mini.player" with argument ""--get variablesset slack_url to (system attribute "slack_url")set notes to (system attribute "notes")
-set zoom_url to (system attribute "zoom_url")--open Obsidian notesif (notes contains "obsidian") then	tell application "Obsidian"		open location notes		repeat until application "Obsidian" is running			delay 0.2		end repeat		delay 0.1
-		open location "obsidian://advanced-uri?commandid=app%253Atoggle-left-sidebar"	end tellend if-- open Drafts for notetakingif (notes is "drafts") then	tell application "Drafts" to open location "drafts://x-callback-url/runaction?&amp;action=Workspace-Basic%20(note-taking)"	repeat until (application "Drafts" is running)		delay 0.2	end repeat
-	-- wait till Zoom meeting has started
-	set nameList to ""	repeat until nameList contains "Zoom Meeting"		tell application "System Events" to set nameList to name of windows of (processes whose name is "zoom.us")		set nameList to item 1 of nameList		delay 0.2	end repeat
-	delay 0.5
-
-	tell application "Moom" to arrange windows according to snapshot "📝 Drafts + Zoom"
-	display notification "" with title "📝 Note Mode ready"end if
-
--- maximize Zoom when not a special context
-if (notes is "none") then
-
-	-- wait till Zoom meeting has started
-	set nameList to ""	repeat until nameList contains "Zoom Meeting"		tell application "System Events" to set nameList to name of windows of (processes whose name is "zoom.us")		set nameList to item 1 of nameList		delay 0.2	end repeat
-	delay 0.5
-
-	-- maximize Zoom
-	tell application "System Events"
-		tell process "zoom.us" 
-			set frontmost to true
-			click menu item "Zoom" of menu "Window" of menu bar 1
-		end tell
-	end tell
-
-end if-- Seminar Preparationif (slack_url is not "") then
-
-	-- Quit apps	tell application "Twitterrific" to if it is running then quit	tell application "Drafts" to if it is running then quit	tell application "BusyCal" to if it is running then quit
-	tell application "YouTube" to if it is running then quit
-	tell application "BibDesk" to if it is running then quit
-	tell application "Telegram" to if it is running then quit
-	tell application "Mimestream" to if it is running then quit
-	tell application "Discord" to if it is running then quit
-	repeat until (application "Mimestream" is not running)		delay 0.5	end repeat
-
-	-- Moom
-	delay 1
-	tell application "Moom" to arrange windows according to snapshot "👨‍🏫 Seminar"
-
-	-- DND on SOS Slack Workspace
-	tell application "Slack"		tell application "Slack" to open location "https://sosimexil.slack.com/archives/D0107FHT5U4"		delay 0.4		activate	end tell
-	tell application "System Events"		keystroke "/dnd 110 min"		delay 0.3		keystroke return
-		keystroke return	end tell
-	
-	-- post Zoom Link	tell application "Slack"		open location slack_url		delay 0.4		activate	end tell	tell application "System Events"		keystroke "Raum ist offen: "		keystroke zoom_url		delay 0.2		keystroke return	end tell
-	
-	-- notification
-	display notification "" with title "👨‍🏫 Seminar Mode ready"end if</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>set-context_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C3A574FB-D0D4-49BC-A318-14715CAA6854</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>var input = "{query}";
-var zoomURL = input.replace (/https?:\/\/.*\.zoom\.us\/j\/(\w+)\?pwd=(\w+)$/,"zoommtg://zoom.us/join?confno=$1&amp;amp;pwd=$2");
-Zoom = Application("/Applications/zoom.us.app");
-Zoom.includeStandardAdditions = true;
-Zoom.openLocation(zoomURL);</string>
-				<key>scriptargtype</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Sprechstunden Chris","arg":"https:\/\/tu-berlin.zoom.us\/j\/99415959096?pwd=VFFETk91U0E5UDdKSVNzUTBkNWZwdz09;drafts","subtitle":"+ Drafts"},{"title":"Personal Room","arg":"https:\/\/tu-berlin.zoom.us\/j\/7855484257?pwd=cjY5eDhyVEI5Zk9EcnVPMHpJUSs2Zz09;none"},{"title":"🔐 Login","arg":"login"},{"title":"Einführung Technikforschung","arg":"https:\/\/tu-berlin.zoom.us\/j\/65299324579?pwd=NzgwSFNtTUxVa21HS0pKNndvQ3lJUT09;obsidian:\/\/open?vault=Main%20Vault&amp;file=Teaching%2F%F0%9F%93%BC%20Einf%C3%BChrung%20Technikforschung%20(SoSe22)","subtitle":"Seminar"},{"title":"Tech-StartUp","arg":"https:\/\/tu-berlin.zoom.us\/j\/65624610291?pwd=MEt0aWtjcVNGdzQ4NUtwOWxUSlpPQT09;obsidian:\/\/open?vault=Main%20Vault&amp;file=Teaching%2F%F0%9F%9A%80%20Das%20Tech-StartUp%20(SoSe%2022)","subtitle":"Seminar"}]</string>
-				<key>keyword</key>
-				<string>zz</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Join Zoom Meeting</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>432EB74A-9F76-4DD1-A316-CF3041712A9A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string>login</string>
-						<key>outputlabel</key>
-						<string>join meeting</string>
-						<key>uid</key>
-						<string>51243FFA-EE20-4337-BE38-9A9C9EA2B809</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>login</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>9312BB2F-700A-466B-A2F0-8D540BA24C5D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
-				<string>{var:split1}</string>
-				<key>passthroughargument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>pseudo-maximized</string>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>variables</key>
-				<dict>
-					<key>notes</key>
-					<string>{var:split2}</string>
-					<key>zoom_url</key>
-					<string>{var:split1}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7D70D13D-24D9-4581-B67C-635A6479FF76</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>;</string>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>88917A0B-7E84-42A9-905F-670430B81BBF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>focusedappvariablename</key>
 				<string></string>
-				<key>title</key>
-				<string>📹 Launching Zoom Meeting</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
+				<key>hotkey</key>
+				<integer>49</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>Space</string>
+				<key>leftcursor</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "zoom.us" to activate
-delay 1
-tell application "System Events" 
-	keystroke tab
-	keystroke space
-	delay 0.2
-	keystroke tab
-	keystroke tab
-	keystroke tab
-	keystroke tab
-	keystroke space
-end tell</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>login-automation_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>69321844-5FD6-49B4-904B-EA6C9F22AA56</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "BetterTouchTool" to trigger_named "Home Mode"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C0303517-B939-4E4D-B44F-FE170767DBB0</string>
+			<string>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -411,111 +218,643 @@ end tell</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E5EE4E15-A7B0-443D-9619-DA51E35492E6</string>
+			<string>41523074-48F2-4F9F-AE8D-4579B4473808</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "BetterTouchTool" to trigger_named "Home Mode"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>76FE5EBB-4A39-43BD-A839-DBB718B86097</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>centered</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>49</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>Space</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "BetterTouchTool" to trigger_named "Office Mode"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>office</string>
+				<key>subtext</key>
+				<string>BTT</string>
+				<key>text</key>
+				<string>💼 Office Mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>maximized</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>49</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>Space</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>045141A6-D092-4512-A84F-C58BE803F8D6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>-- this line has to appear before functions("on run")
+use framework "AppKit"
+
+on alfred_script(q)
+	tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+	set dimension to q
+
+	set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+	set screenWidth to item 1 of item 2 of item 1 of allFrames
+	set screenHeight to item 2 of item 2 of item 1 of allFrames
+
+	if (dimension is "maximized") then
+		set startX to 0
+		set startY to 0
+		set widePercent to 1
+		set highPercent to 1
+	else if (dimension is "pseudo-maximized") then
+		set startX to 0
+		set startY to 0
+		set widePercent to 0.815
+		set highPercent to 1
+	else if (dimension is "centered") then
+		set startX to 0.2
+		set startY to 0.1
+		set widePercent to 0.6
+		set highPercent to 0.8
+	else if (dimension is "left") then
+		set startX to 0
+		set startY to 0
+		set widePercent to 0.5
+		set highPercent to 1
+	else if (dimension is "right") then
+		set startX to 0.5
+		set startY to 0
+		set widePercent to 0.5
+		set highPercent to 1
+	else if (dimension is "down") then
+		set startX to 0
+		set startY to 0.5
+		set widePercent to 1
+		set highPercent to 0.5
+	else if (dimension is "up") then
+		set startX to 0
+		set startY to 0
+		set widePercent to 1
+		set highPercent to 0.5
+	end if
+
+	set xPosition to (screenWidth * startX)
+	set yPosition to (screenHeight * startY)
+	set wide to (screenWidth * widePercent)
+	set high to (screenHeight * highPercent)
+
+	if ( ¬
+		frontApp is "Finder" or ¬
+		frontApp is "Brave Browser" or ¬
+		frontApp is "Preview" or ¬
+		frontApp is "Safari" or ¬
+		frontApp is "BusyCal" ¬
+	) then
+		# applescript-capable apps work better with this
+		tell application frontApp to set bounds of window 1 to {xPosition, yPosition, xPosition + wide, yPosition + high}
+	else
+		# non-scriptable apps need this
+		tell application "System Events"
+			tell process frontApp
+				tell window 1
+					set position to {xPosition, yPosition}
+					set size to {wide, high}
+				end tell
+			end tell
+		end tell
+	end if
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>right</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>124</integer>
+				<key>hotmod</key>
+				<integer>12451840</integer>
+				<key>hotstring</key>
+				<string>→</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>left</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>123</integer>
+				<key>hotmod</key>
+				<integer>12451840</integer>
+				<key>hotstring</key>
+				<string>←</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>91B9390C-0212-4B09-8C85-F7509AB4EA5E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>down</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>125</integer>
+				<key>hotmod</key>
+				<integer>12451840</integer>
+				<key>hotstring</key>
+				<string>↓</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>41B5D139-F003-46BE-875D-23643546D5DA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>up</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>126</integer>
+				<key>hotmod</key>
+				<integer>12451840</integer>
+				<key>hotstring</key>
+				<string>↑</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>vertical-split</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>-- this line has to appear before functions("on run")
+use framework "AppKit"
+
+on alfred_script(q)
+	tell application "System Events" to set frontApp to (name of first process where it is frontmost)
+
+	tell application frontApp to if ((count windows) is 0) then return
+
+	set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+	set screenWidth to item 1 of item 2 of item 1 of allFrames
+	set screenHeight to item 2 of item 2 of item 1 of allFrames
+
+	set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
+	set hsplit to {{0, 0, screenWidth, 0.5 * screenHeight}, {0, 0.5 * screenHeight, screenWidth, screenHeight} }
+	set typeOfSplit to q
+
+
+	if ( ¬
+		frontApp is "Finder" or ¬
+		frontApp is "Brave Browser" or ¬
+		frontApp is "Vivaldi" or ¬
+		frontApp is "Google Chrome" or ¬
+		frontApp is "Safari" or ¬
+	) then
+		tell application frontApp
+
+			if ((count windows) is 0) then return
+
+			if ((count windows) is 1) then
+				if (frontApp is not "Finder") then
+					make new window
+				else
+					# duplicate current window, if there is only one
+					set currentWindow to target of window 1 as alias
+					make new Finder window to folder currentWindow
+				end if
+			end if
+
+			if (typeOfSplit is "vertical-split")
+				set bounds of window 1 to item 2 of vsplit
+				set bounds of window 2 to item 1 of vsplit
+			else
+				set bounds of window 1 to item 2 of hsplit
+				set bounds of window 2 to item 1 of hsplit
+			end if
+
+		end tell
+	end if
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>horizontal-split</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>3F2A1AEA-A2BF-41BE-80F1-6A6025626C24</key>
+		<key>045141A6-D092-4512-A84F-C58BE803F8D6</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>495</integer>
-			<key>ypos</key>
-			<integer>145</integer>
-		</dict>
-		<key>432EB74A-9F76-4DD1-A316-CF3041712A9A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>note</key>
-			<string>- edit this to add more Zoom-Meetings
-- format: zoomURL;notesURI</string>
+			<integer>4</integer>
 			<key>xpos</key>
 			<integer>35</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>440</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>41523074-48F2-4F9F-AE8D-4579B4473808</key>
+		<dict>
+			<key>xpos</key>
+			<integer>440</integer>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>48C18C9E-A9C3-4B8F-AED2-D2CBC81517B5</key>
+		<key>41B5D139-F003-46BE-875D-23643546D5DA</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>11</integer>
-			<key>note</key>
-			<string>open in Zoom</string>
+			<integer>4</integer>
 			<key>xpos</key>
-			<integer>495</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>69321844-5FD6-49B4-904B-EA6C9F22AA56</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>login script</string>
-			<key>xpos</key>
-			<integer>310</integer>
-			<key>ypos</key>
-			<integer>145</integer>
-		</dict>
-		<key>7D70D13D-24D9-4581-B67C-635A6479FF76</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>405</integer>
-			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>88917A0B-7E84-42A9-905F-670430B81BBF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>345</integer>
-			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>9312BB2F-700A-466B-A2F0-8D540BA24C5D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
 			<integer>35</integer>
-		</dict>
-		<key>C0303517-B939-4E4D-B44F-FE170767DBB0</key>
-		<dict>
-			<key>xpos</key>
-			<integer>215</integer>
 			<key>ypos</key>
-			<integer>350</integer>
+			<integer>600</integer>
 		</dict>
-		<key>C3A574FB-D0D4-49BC-A318-14715CAA6854</key>
+		<key>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>4</integer>
 			<key>note</key>
-			<string>set context</string>
+			<string>split</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>315</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>885</integer>
 		</dict>
-		<key>E5EE4E15-A7B0-443D-9619-DA51E35492E6</key>
+		<key>76FE5EBB-4A39-43BD-A839-DBB718B86097</key>
+		<dict>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>365</integer>
+		</dict>
+		<key>91B9390C-0212-4B09-8C85-F7509AB4EA5E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>485</integer>
+		</dict>
+		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>350</integer>
+			<integer>960</integer>
+		</dict>
+		<key>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>resize</string>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>285</integer>
+		</dict>
+		<key>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>720</integer>
+		</dict>
+		<key>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
+		<key>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>140</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

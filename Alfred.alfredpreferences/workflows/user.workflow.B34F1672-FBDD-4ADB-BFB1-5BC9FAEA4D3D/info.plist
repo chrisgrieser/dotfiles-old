@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3993F079-41AC-4743-9079-38D50670BEFB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2A1BDD0B-9649-4DA9-A016-038C9C89F949</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<array>
 			<dict>
@@ -484,29 +497,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>echo -n `find "{query}" -name '*.sdef'`</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>76E5A56C-0258-48FF-A883-94D79A066C82</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -587,6 +577,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>echo -n `find "{query}" -name '*.sdef'`</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>76E5A56C-0258-48FF-A883-94D79A066C82</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -629,6 +642,58 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>aslint</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Lint &amp; Validate AppleScript</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3993F079-41AC-4743-9079-38D50670BEFB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Script Editor" to activate
+delay 0.3
+tell application "System Events" 
+	keystroke "n" using {command down}
+	delay 0.3
+	keystroke "v" using {command down}
+	delay 0.3
+	keystroke "k" using {command down}
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2A1BDD0B-9649-4DA9-A016-038C9C89F949</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -663,6 +728,13 @@
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
+		<key>2A1BDD0B-9649-4DA9-A016-038C9C89F949</key>
+		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>590</integer>
+		</dict>
 		<key>2C02AA01-C80E-4781-84EF-8547306C00C6</key>
 		<dict>
 			<key>colorindex</key>
@@ -671,6 +743,13 @@
 			<integer>495</integer>
 			<key>ypos</key>
 			<integer>130</integer>
+		</dict>
+		<key>3993F079-41AC-4743-9079-38D50670BEFB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>15</integer>
+			<key>ypos</key>
+			<integer>590</integer>
 		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>

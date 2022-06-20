@@ -2,8 +2,7 @@
 # -----------------------------------------------------
 
 toggle_key: OFF  # yamllint disable-line rule:truthy
-search_shortcut: ALT+META+SPACE
-search_trigger: "^^^"
+search_shortcut: META+ALT+SHIFT+CTRL+X
 
 show_icon: true
 show_notifications: true

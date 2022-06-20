@@ -17,10 +17,12 @@ nnoremap Y y$
 
 " always paste what was yanked, not what was deleted
 nnoremap P "0p
+vnoremap P "0p
 
 " append to register
 noremap gy "Yy
 noremap gx "Yd
+" paste from register
 noremap gp "yp
 
 
@@ -218,9 +220,6 @@ vnoremap <M-Space> "vy
 " [R]eplace Word with register content
 nnoremap R viw"0p
 vnoremap R "0P
-
-" [§]entence (`vas` emulation)
-nnoremap § v(o)h
 
 """"""""""""""""""""""
 " < Switch Modes

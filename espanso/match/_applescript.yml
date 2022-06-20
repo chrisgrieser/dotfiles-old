@@ -2,6 +2,9 @@
 # ------------------------------------------
 
 matches:
+  - trigger: '!continue'
+    replace: "¬"
+    label: 🍏 Continuation Character
   - replace: |
       if frontmost of application "$|$" then
 
@@ -130,3 +133,9 @@ matches:
     label: 🍏 Name of front window of a process
   - trigger: "!hr"
     replace: "#-------------------------------------------------------------------------------"
+  - trigger: "!argv"
+    replace: "set input to item 1 of argv"
+    label: 🍏 argv
+  - trigger: "!argv"
+    replace: "set input to argv as string"
+    label: 🍏 argv

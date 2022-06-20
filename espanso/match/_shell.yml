@@ -38,7 +38,7 @@ matches:
     label: 🐚 pipe to sed
   - trigger: "!null"
     replace: "&> /dev/null"
-    label: dev/null
+    label: 🐚 dev/null
   - trigger: "!resolve"
     replace: |
       resolved_path="${file_path/#~/$HOME}"
@@ -46,3 +46,5 @@ matches:
     label: '🐚 Resolve ~'
   - trigger: "!hr"
     replace: "#-------------------------------------------------------------------------------"
+  - label: "🐚 Number of Displays (on macOS)"
+    replace: "system_profiler SPDisplaysDataType | grep -c resolution"

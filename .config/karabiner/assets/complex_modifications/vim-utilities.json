@@ -310,7 +310,7 @@
               "software_function": {
                 "set_mouse_cursor_position": {
                   "x": "100%",
-                  "y": "80%",
+                  "y": "75%",
                   "screen": 0
                 }
               }
@@ -352,7 +352,7 @@
               "software_function": {
                 "set_mouse_cursor_position": {
                   "x": "100%",
-                  "y": "80%",
+                  "y": "75%",
                   "screen": 0
                 }
               }
@@ -483,7 +483,7 @@
               "software_function": {
                 "set_mouse_cursor_position": {
                   "x": "100%",
-                  "y": "80%",
+                  "y": "75%",
                   "screen": 0
                 }
               }

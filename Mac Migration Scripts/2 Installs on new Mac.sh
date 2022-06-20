@@ -14,6 +14,9 @@ open '/System/Applications/App Store.app'
 # -------------
 # INSTALLS
 # -------------
+
+# shellcheck disable=SC2034
+HOMEBREW_CASK_OPTS="--no-quarantine"
 brew bundle install --no-quarantine --verbose --no-lock --file ~'/Desktop/Brewfile'
 
 # Uninstall unneeded Mac Default apps
@@ -26,8 +29,8 @@ open -a "Appcleaner" \
 
 # NPM https://stackoverflow.com/a/41199625
 # shellcheck disable=SC2002
-cat ~'/Desktop/NPMfile' | xargs npm install -g --force
-npm list -g
+cat ~'/Desktop/NPMfile' | xargs npm install --location=global --force
+npm list --location=global
 
 # -----------
 # SETTINGS

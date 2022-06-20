@@ -5,8 +5,9 @@ matches:
   # https://espanso.org/docs/matches/regex-triggers/#advanced-examples
   # two uppercase letters followed by lowercase letter -> capital-cased
   # => "THe" becomes "The"
-  - regex: "\\r(?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])" # \r as macOS line break
+  - regex: "\\r(?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])"  # \r as macOS line break
     replace: "\n{{CapitalCased}}"
+    label: ""
     vars:
       - name: CapitalCased
         type: shell
@@ -17,12 +18,50 @@ matches:
   # accidental triggering in vim
   - regex: " (?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])"
     replace: " {{CapitalCased}}"
+    label: ""
     vars:
       - name: CapitalCased
         type: shell
         params:
           cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
           shell: bash
+
+  # Did you mean? → https://github.com/hisbaan/didyoumean
+  # append trigger character to a word and it will be replaced with autocorrection
+  # English: $
+  - regex: " (?P<word>\\w+)\\$"
+    replace: " {{dymSuggestion}}"
+    label: ""
+    vars:
+      - name: dymSuggestion
+        type: shell
+        params:
+          cmd: "dym --clean-output -n1 \"$ESPANSO_WORD\""
+  - regex: "\\r(?P<word>\\w+)\\$"
+    replace: "\n{{dymSuggestion}}"
+    label: ""
+    vars:
+      - name: dymSuggestion
+        type: shell
+        params:
+          cmd: "dym --clean-output -n1 \"$ESPANSO_WORD\""
+  # German: &
+  - regex: " (?P<word>\\w+)&"
+    replace: " {{dymSuggestion}}"
+    label: ""
+    vars:
+      - name: dymSuggestion
+        type: shell
+        params:
+          cmd: "dym --clean-output -n1 --lang=de \"$ESPANSO_WORD\""
+  - regex: "\\r(?P<word>\\w+)&"
+    replace: "\n{{dymSuggestion}}"
+    label: ""
+    vars:
+      - name: dymSuggestion
+        type: shell
+        params:
+          cmd: "dym --clean-output -n1 --lang=de \"$ESPANSO_WORD\""
 
   - trigger: "I#d"
     replace: "I'd"
@@ -109,3 +148,9 @@ matches:
   - trigger: torwards
     replace: towards
     propagate_case: true
+  - trigger: english
+    replace: English
+  - trigger: german
+    replace: German
+  - trigger: american
+    replace: American

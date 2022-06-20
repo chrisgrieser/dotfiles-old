@@ -20,5 +20,8 @@ tell application "System Events"
 	tell process "Finder"
 		set frontmost to true
 		click menu item "as List" of menu "View" of menu bar 1
+		try
+			click menu item "Hide Sidebar" of menu "View" of menu bar 1
+		end try
 	end tell
 end tell

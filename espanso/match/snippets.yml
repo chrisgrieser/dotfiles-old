@@ -10,6 +10,13 @@ matches:
       Could you open a bug report at the GitHub repo?
       Reason being that the bug report forms asks for the various +
       information I need to look into it.
+
+  - trigger: "!esp"
+    replace: |
+      - trigger: "$|$"
+        replace: ""
+        label: ""
+    label: 🍏 espanso rule
   - trigger: "!today"
     replace: "{{todayISO}}"
     vars:

@@ -21,10 +21,12 @@ nmap Y y$
 
 " always paste what was yanked, not what was deleted
 nmap P "0p
+" vmap P "0p
 
 " append to register
 map gy "Yy
 map gx "Yd
+" paste from register
 map gp "yp
 
 """"""""""""""""""""""
@@ -280,9 +282,6 @@ vmap <S-F12> "vy
 nmap R viw"0p
 vmap R "0P
 
-" [§]entence (`vas` emulation) https://github.com/codemirror/CodeMirror/issues/5454
-nmap § v(o)h
-
 """"""""""""""""""""""
 " < Switch Modes
 """"""""""""""""""""""
@@ -397,13 +396,11 @@ nmap zM :foldall
 " < Sneak
 """"""""""""""""""""""
 " emulate vim-sneak (somewhat)
-exmap sneak obcommand mrj-jump-to-link:activate-jump-to-anywhere
-nmap s :sneak
-nmap S :sneak
-
-" essentially vimium's f command
-exmap followLink obcommand mrj-jump-to-link:activate-jump-to-link
-nmap ,f :followLink
+" vim sneak
+exmap nextTwoCharMatch jsfile Meta/obsidian-vim-helpers.js {moveToChars(true)}
+exmap prevTwoCharMatch jsfile Meta/obsidian-vim-helpers.js {moveToChars(false)}
+nmap s :nextTwoCharMatch
+nmap S :prevTwoCharMatch
 
 """"""""""""""""""""""
 " < Formatting

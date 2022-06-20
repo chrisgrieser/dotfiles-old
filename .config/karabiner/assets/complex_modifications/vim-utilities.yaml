@@ -143,7 +143,7 @@ rules:
           - software_function:
               set_mouse_cursor_position:
                 x: 100%
-                y: 80%
+                y: 75%
                 screen: 0
         conditions:
           - value: 0
@@ -167,7 +167,7 @@ rules:
           - software_function:
               set_mouse_cursor_position:
                 x: 100%
-                y: 80%
+                y: 75%
                 screen: 0
         conditions:
           - value: 0
@@ -232,7 +232,7 @@ rules:
           - software_function:
               set_mouse_cursor_position:
                 x: 100%
-                y: 80%
+                y: 75%
                 screen: 0
   - description: "⚒️ {}@^~|: German to US layout"
     manipulators:

@@ -47,11 +47,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4F748E27-E0FA-42A5-9B83-B58EF498DC15</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -125,6 +151,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F748E27-E0FA-42A5-9B83-B58EF498DC15</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
 		<array>
 			<dict>
@@ -177,6 +216,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FBFB7B73-93E1-441F-8A4E-357C10069297</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39BC3043-2844-45A6-B14F-718A836E4EAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -185,7 +237,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Karabiner &amp; Espanso</string>
+	<string>Karabiner &amp; Espanso &amp; Hammerspoon</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -279,6 +331,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>❗️Restart Karabiner</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -298,27 +371,6 @@
 			<string>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>❗️Restart Karabiner</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -384,6 +436,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ep</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔁 Toggle Espanso</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>387E93E5-B099-4784-8538-0CE2E9086D86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -407,46 +480,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://hub.espanso.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ep</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔁 Toggle Espanso</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>387E93E5-B099-4784-8538-0CE2E9086D86</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -462,6 +495,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>E9B91088-19D4-4EF1-A176-80FC6C8D8444</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://hub.espanso.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -508,6 +560,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>restart-espanso.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F0068510-5EA9-467B-8CAB-E5A736B52AE8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -523,6 +598,71 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>hs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔎 Hammerspoon Docs: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>search-hammerspoon-docs_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>hs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>❗️Restart Hammerspoon</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E8066503-E298-4023-9E9F-3FBA20E03748</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -545,7 +685,74 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F0068510-5EA9-467B-8CAB-E5A736B52AE8</string>
+			<string>4F748E27-E0FA-42A5-9B83-B58EF498DC15</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>search-hammerspoon-plugins_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>39BC3043-2844-45A6-B14F-718A836E4EAE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>hs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⚙️ Hammerspoon Spoons: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FBFB7B73-93E1-441F-8A4E-357C10069297</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>killall "Karabiner-EventViewer"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -584,29 +791,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>killall "Karabiner-EventViewer"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -621,7 +805,7 @@
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>725</integer>
 		</dict>
 		<key>146B762A-3BFD-4073-8111-EB3BDFFF45A1</key>
 		<dict>
@@ -637,7 +821,7 @@
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>note</key>
-			<string>reload</string>
+			<string>restart</string>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
@@ -650,7 +834,7 @@
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>725</integer>
 		</dict>
 		<key>2381FD05-8DB5-4B75-9D6A-36329E668C7F</key>
 		<dict>
@@ -672,6 +856,24 @@
 			<key>ypos</key>
 			<integer>300</integer>
 		</dict>
+		<key>39BC3043-2844-45A6-B14F-718A836E4EAE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>770</integer>
+			<key>ypos</key>
+			<integer>715</integer>
+		</dict>
+		<key>4F748E27-E0FA-42A5-9B83-B58EF498DC15</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>575</integer>
+		</dict>
 		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
 		<dict>
 			<key>colorindex</key>
@@ -682,6 +884,17 @@
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>25</integer>
+		</dict>
+		<key>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>search docs</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>570</integer>
 		</dict>
 		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
 		<dict>
@@ -763,6 +976,26 @@
 			<key>ypos</key>
 			<integer>165</integer>
 		</dict>
+		<key>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>570</integer>
+		</dict>
+		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>restart</string>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>575</integer>
+		</dict>
 		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
 		<dict>
 			<key>colorindex</key>
@@ -800,6 +1033,17 @@
 			<integer>180</integer>
 			<key>ypos</key>
 			<integer>160</integer>
+		</dict>
+		<key>FBFB7B73-93E1-441F-8A4E-357C10069297</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>search spoons</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>715</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
