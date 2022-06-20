@@ -72,6 +72,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D12DF4C4-EFC9-4491-B5FA-38F978D3C114</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3AC8EDAE-B6DF-4BF1-8060-EADD52ACDA99</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -271,6 +284,40 @@ end if</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>zsh "{query}"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>3AC8EDAE-B6DF-4BF1-8060-EADD52ACDA99</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>public.shell-script</string>
+				</array>
+				<key>name</key>
+				<string>Run Shell Script</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>D12DF4C4-EFC9-4491-B5FA-38F978D3C114</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -284,6 +331,13 @@ end if</string>
 			<integer>25</integer>
 			<key>ypos</key>
 			<integer>290</integer>
+		</dict>
+		<key>3AC8EDAE-B6DF-4BF1-8060-EADD52ACDA99</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>470</integer>
 		</dict>
 		<key>3ADE22C7-10D2-4528-9298-22A616F276B1</key>
 		<dict>
@@ -330,6 +384,13 @@ end if</string>
 			<integer>205</integer>
 			<key>ypos</key>
 			<integer>290</integer>
+		</dict>
+		<key>D12DF4C4-EFC9-4491-B5FA-38F978D3C114</key>
+		<dict>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>470</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

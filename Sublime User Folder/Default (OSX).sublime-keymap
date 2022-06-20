@@ -49,13 +49,6 @@
 
 	// ------------------------------------
 
-	// Bugfix for Neovintageous, can be deleted with their next release
-	{"keys": ["ü"], "command": "nv_feed_key", "args": {"key": "ü"}, "context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["Ü"], "command": "nv_feed_key", "args": {"key": "Ü"}, "context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["ß"], "command": "nv_feed_key", "args": {"key": "ß"}, "context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["°"], "command": "nv_feed_key", "args": {"key": "°"}, "context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["§"], "command": "nv_feed_key", "args": {"key": "§"}, "context": [{"key": "vi_command_mode_aware"}]},
-
 	// to avoid `Esc` leaving insert mode and autocomplete
 	// (weirdly enough, copying this from the default sublime-keymap
 	// is required to fix it oO)
