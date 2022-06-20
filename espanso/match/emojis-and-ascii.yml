@@ -12,6 +12,8 @@ matches:
   - trigger: '->'
     replace: →
     word: true
+  - trigger: '!->'
+    replace: ▸
   - trigger: '->>'
     replace: ➡️
     word: true

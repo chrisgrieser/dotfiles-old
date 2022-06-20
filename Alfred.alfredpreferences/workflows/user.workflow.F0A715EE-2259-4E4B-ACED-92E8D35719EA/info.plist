@@ -814,6 +814,8 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/Sublime Backups/</string>
 		<key>max_number_of_bkps</key>
 		<string>10</string>
+		<key>numberOfFilesToDisplay</key>
+		<string>20</string>
 		<key>working_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
 	</dict>

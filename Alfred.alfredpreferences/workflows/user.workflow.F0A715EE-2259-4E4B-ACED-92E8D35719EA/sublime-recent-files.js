@@ -1,6 +1,9 @@
 #!/usr/bin/env osascript -l JavaScript
-const numberOfFilesToDisplay = 15;
+
+const numberOfFilesToDisplay = Number($.getenv("numberOfFilesToDisplay"));
+
 //------------------------------------------------------------------------------
+ObjC.import("stdlib");
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
