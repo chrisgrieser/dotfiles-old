@@ -729,13 +729,13 @@ end tell</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>QUERY=$(echo "$*" | tr " " "+")
-curl -s "https://cht.sh/$QUERY"</string>
+curl -s "https://cht.sh/$QUERY?T"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
