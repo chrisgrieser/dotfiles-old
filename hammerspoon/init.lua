@@ -1,3 +1,4 @@
+---@diagnostic disable: lowercase-global
 -- https://www.hammerspoon.org/go/
 -------------------------------------
 
@@ -75,7 +76,10 @@ hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
 	-- "hs.brightness.set" does not work when second display is conncted
 	-- "tell application Shortcuts to run..." would leave Shortcuts open
 	-- therefor this workaround
-	-- aScreen = hs.screen.allScreens()
-	screenCount = table.getn{n=1000}
-	hs.alert.show(screenCount)
+	screenName = hs.screen.mainScreen():name()
+	if screenName == "VieSonic PJ" then
+		hs.alert.show(screenName)
+	else
+		hs.alert.show("other")
+	end
 end)

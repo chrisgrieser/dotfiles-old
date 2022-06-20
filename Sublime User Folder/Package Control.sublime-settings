@@ -28,6 +28,7 @@
 		"LSP",
 		"LSP-css",
 		"LSP-json",
+		"LSP-lua",
 		"LSP-pyright",
 		"LSP-typescript",
 		"LSP-yaml",
