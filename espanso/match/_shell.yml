@@ -40,7 +40,7 @@ matches:
     replace: "&> /dev/null"
     label: 🐚 dev/null
   - replace: 'system_profiler SPDisplaysDataType | grep -c "Resolution"'
-    label: 🐚 screencount
+    label: 🐚 Screen count
   - trigger: "!resolve"
     replace: |
       resolved_path="${file_path/#~/$HOME}"

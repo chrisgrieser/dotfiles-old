@@ -64,16 +64,13 @@ end
 highlightsAppWatcher = hs.application.watcher.new(highlightsWatcher)
 highlightsAppWatcher:start()
 
--- Dim brightness when projector is enabled
+-- Dim brightness when projector is connected
 function displayCountWatcher()
-	hs.notify.new({title="Hammerspoon", informativeText="Screen Layout changed"}):send()
-
 	screenName = hs.screen.primaryScreen():name()
 	if screenName == "ViewSonic PJ" then
 		-- "hs.brightness.set" does not work when second display is mirrored
-		-- "tell application Shortcuts to run..." would leave Shortcuts open
-		-- therefore this workaround via the shell cli for shortcuts
-		hs.applescript("do shell script \"shortcuts run 'Zero Brightness'\"")
+		-- therefore using Shortcuts instead
+		hs.shortcuts.run('Zero Brightness')
 	else
 		hs.brightness.set(50)
 	end
@@ -81,6 +78,7 @@ end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
+--------------------------------------------------------------------------------
 
 -- testing ground
 hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
