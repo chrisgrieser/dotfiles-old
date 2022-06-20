@@ -52,3 +52,25 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
 export MOAR="--no-linenumbers --render-unprintable=whitespace"
 
+[38;5;246;03m# fd[39;00m
+[38;5;246;03m# An alternative to `find`.[39;00m
+[38;5;246;03m# Aims to be faster and easier to use than `find`.[39;00m
+[38;5;246;03m# More information: <https://github.com/sharkdp/fd>.[39;00m
+
+[38;5;246;03m# Recursively find files matching the given pattern in the current directory:[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;252mpattern[39m
+
+[38;5;246;03m# Find files that begin with "foo":[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;214m'^foo'[39m
+
+[38;5;246;03m# Find files with a specific extension:[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;252m--extension[39m[38;5;252m [39m[38;5;252mtxt[39m
+
+[38;5;246;03m# Find files in a specific directory:[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;252mpattern[39m[38;5;252m [39m[38;5;252mpath/to/directory[39m
+
+[38;5;246;03m# Include ignored and hidden files in the search:[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;252m--hidden[39m[38;5;252m [39m[38;5;252m--no-ignore[39m[38;5;252m [39m[38;5;252mpattern[39m
+
+[38;5;246;03m# Execute a command on each search result returned:[39;00m
+[38;5;252mfd[39m[38;5;252m [39m[38;5;252mpattern[39m[38;5;252m [39m[38;5;252m--exec[39m[38;5;252m [39m[38;5;31mcommand[39m
