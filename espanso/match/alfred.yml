@@ -17,26 +17,33 @@ matches:
   - replace: set theBrowser to (system attribute "browser")
     label: "🎩🍏 GET Environment Variable"
   - replace: |-
-      const workArray = input
-        .split(", ")
-        .map(element => {
-          const name = element;
-          return {
-            "title": name,
-            "subtitle": "$|$",
-            "arg": name
-          };
-        });
+    	ObjC.import("stdlib");
+    	const app = Application.currentApplication();
+    	app.includeStandardAdditions = true;
+    	const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 
-      JSON.stringify({ "items": workArray });
-    label: "🎩🏝 JSONfy input for Script Filter"
-  - replace: |-
-      function run (argv){
-      	const input = argv.join('');
-      }
-    label: "🎩🏝 Join argv"
-  - replace: query="$*"
-    label: "🎩🐚 Join argv"
+    	// fill in here
+    	const VAR = $.getenv("");
+    	const workArray = [];
+
+    	const jsonArray = workArray.map(item => {
+    		// fill in here
+    		return {
+    			"title": item,
+    			"match": alfredMatcher (item),
+    			"subtitle": item,
+    			"type": "file",
+    			"icon": {
+    				"type": "fileicon",
+    				"path": item
+    			},
+    			"arg": item,
+    			"uid": item,
+    		};
+    	});
+
+      JSON.stringify({ items: jsonArray });
+    label: "🎩🏝 Script Filter"
   - replace: tell application id "com.runningwithcrayons.Alfred" to remove configuration "ObRunning" in workflow (system attribute "alfred_workflow_bundleid")
     label: "🎩🍏 Remove Environment Variable"
   - replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
@@ -66,12 +73,22 @@ matches:
       		exportable: false}
       	);
     label: "🎩🏝 SET Environment Variable"
-  - replace: |
+  - trigger: qqq
+    replace: '{query}'
+    label: "🎩 {query}"
+  - trigger: "!argv"
+    replace: |
       on run argv
         set AppleScript's text item delimiters to ""
         set input to argv as string
       end run
     label: "🎩🍏 join argv"
-  - trigger: qqq
-    replace: '{query}'
-    label: "🎩 {query}"
+  - trigger: "!argv"
+    replace: |-
+      function run (argv){
+      	const input = argv.join('');
+      }
+    label: "🎩🏝 Join argv"
+  - trigger: "!argv"
+    replace: query="$*"
+    label: "🎩🐚 Join argv"
