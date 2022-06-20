@@ -70,3 +70,8 @@ function displayCountWatcher()
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
+
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
+	hs.alert.show("Hello World!")
+	hs.applescript('tell application "Shortcuts" to run shortcut "Zero Brightness"')
+end)
