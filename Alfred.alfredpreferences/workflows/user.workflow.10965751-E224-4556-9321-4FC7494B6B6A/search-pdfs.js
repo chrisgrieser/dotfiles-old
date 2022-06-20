@@ -5,24 +5,29 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 
-// fill in here
-const VAR = $.getenv("");
-const workArray = [];
+const folderToSearch = $.getenv("pdf_folder").replace(/^~/, app.pathTo("home folder"));
 
-const jsonArray = workArray.map(item => {
-	// fill in here
-	return {
-		"title": item,
-		"match": alfredMatcher (item),
-		"subtitle": item,
-		"type": "file",
-		"icon": {
-			"type": "fileicon",
-			"path": item
-		},
-		"arg": item,
-		"uid": item,
-	};
-});
+
+/* eslint-disable no-multi-str */
+const jsonArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \
+	cd '" + folderToSearch + "' ; \
+	fd --type=file --absolute-path")
+	.split("\r")
+	.map(fPath => {
+
+		const parts = fPath.split("/");
+		const name = parts.pop();
+
+		const relativeParentFolder = fPath.slice(folderToSearch.length, -(name.length + 1));
+
+		return {
+			"title": name,
+			"match": alfredMatcher (name),
+			"subtitle": relativeParentFolder,
+			"type": "file:skipcheck",
+			"arg": fPath,
+			"uid": fPath,
+		};
+	});
 
 JSON.stringify({ items: jsonArray });

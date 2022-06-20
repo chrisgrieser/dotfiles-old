@@ -136,6 +136,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>84C07023-C7E9-4DAD-8EF8-0700B1CB05E3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D2FDAAD-9FAB-40CF-80BD-CECE6BC224E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>870525DC-7F08-4E4B-A9EA-8E9E784BC543</key>
 		<array>
 			<dict>
@@ -306,6 +319,21 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>84C07023-C7E9-4DAD-8EF8-0700B1CB05E3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>2D2FDAAD-9FAB-40CF-80BD-CECE6BC224E5</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -825,6 +853,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>595</integer>
 		</dict>
+		<key>2D2FDAAD-9FAB-40CF-80BD-CECE6BC224E5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
 		<key>3B606123-349E-431A-B4E6-B6D8C5F4D35B</key>
 		<dict>
 			<key>colorindex</key>
@@ -884,9 +919,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>84C07023-C7E9-4DAD-8EF8-0700B1CB05E3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>15</integer>
+			<integer>30</integer>
 		</dict>
 		<key>870525DC-7F08-4E4B-A9EA-8E9E784BC543</key>
 		<dict>
@@ -982,10 +1017,13 @@ CHANGE SCRIPT HERE to a different type of parsing</string>
 		<string>65</string>
 		<key>bibtex_library_path</key>
 		<string>~/.pandoc/main-bibliography.bib</string>
+		<key>pdf_folder</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/PDFs/</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>bibtex_library_path</string>
+		<string>pdf_folder</string>
 	</array>
 	<key>version</key>
 	<string></string>
