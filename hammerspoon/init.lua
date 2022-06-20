@@ -31,7 +31,7 @@ finderAppWatcher = hs.application.watcher.new(finderWatcher)
 finderAppWatcher:start()
 
 -- Open OMG Server instead of Friends tab
-function discordWatcher(appName, eventType, appObject)
+function discordWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
 		if (appName == "Discord") then
 			hs.applescript('tell Application "Discord" to open location "discord://discord.com/channels/686053708261228577/700466324840775831"')
@@ -42,7 +42,7 @@ discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
 -- Open Highlights in right Dark/Light Mode
-function highlightsWatcher(appName, eventType, appObject)
+function highlightsWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
 		if (appName == "Highlights") then
 			hs.applescript([[
@@ -67,19 +67,25 @@ highlightsAppWatcher:start()
 -- Dim brightness when second monitor is attached
 function displayCountWatcher()
 	hs.notify.new({title="Hammerspoon", informativeText="Screen Layout changed"}):send()
-	hs.applescript("do shell script \"shortcuts run 'Zero Brightness'\"")
-end
-displayWatcher = hs.screen.watcher.new(displayCountWatcher)
-displayWatcher:start()
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
 	-- "hs.brightness.set" does not work when second display is conncted
 	-- "tell application Shortcuts to run..." would leave Shortcuts open
-	-- therefor this workaround
-	screenName = hs.screen.mainScreen():name()
-	if screenName == "VieSonic PJ" then
+	-- therefore this workaround
+	hs.applescript("do shell script \"shortcuts run 'Zero Brightness'\"")
+	screenName = hs.screen.primaryScreen():name()
+	if screenName == "ViewSonic PJ" then
 		hs.alert.show(screenName)
 	else
 		hs.alert.show("other")
 	end
+end
+displayWatcher = hs.screen.watcher.new(displayCountWatcher)
+displayWatcher:start()
+
+
+-- testing ground
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", function()
+	hs.alert.show(len)
 end)
+
+
