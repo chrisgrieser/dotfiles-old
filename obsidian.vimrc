@@ -51,12 +51,12 @@ nmap j gj
 nmap k gk
 
 " g0 and g$ fix by @koala
-exmap endOfVisualLine jsfile Meta/mdHelpers.js {goToEnd()}
-exmap startOfVisualLine jsfile Meta/mdHelpers.js {goToStart()}
+exmap endOfVisualLine jsfile Meta/obsidian-vim-helpers.js {goToEnd()}
+exmap startOfVisualLine jsfile Meta/obsidian-vim-helpers.js {goToStart()}
 nmap g0 :startOfVisualLine
 nmap g$ :endOfVisualLine
 
-" // Save these as "Meta/mdHelpers.js" in your vault
+" // Save these as "Meta/obsidian-vim-helpers.js" in your vault
 " function movementHelper() {
 "     const editor = app.workspace.activeLeaf.view.editor
 "     let pos = {from: editor.posToOffset(editor.getCursor('from')), to: editor.posToOffset(editor.getCursor('to')), head: editor.posToOffset(editor.getCursor('head')), anchor: editor.posToOffset(editor.getCursor('anchor')), empty: true}

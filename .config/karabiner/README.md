@@ -59,7 +59,7 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `o` → `O`bsidian
 - `d` → `D`iscord
 - `s` → `S`lack
-- `l` → Finder (lol @ mnemonics)
+- `l` → Finder (`l`ocate files) 
 - `L` → Default `L`ocation in Finder
 - `r` → D`r`afts
 - `e` → `E`ditor → Sublime Text
