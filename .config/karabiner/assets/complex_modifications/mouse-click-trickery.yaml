@@ -115,3 +115,12 @@ rules:
           - key_code: tab
             modifiers:
               - command
+  - description: "🐁 6: ⌘↹"
+    manipulators:
+      - type: basic
+        from:
+          pointing_button: button6
+        to:
+          - key_code: tab
+            modifiers:
+              - command
