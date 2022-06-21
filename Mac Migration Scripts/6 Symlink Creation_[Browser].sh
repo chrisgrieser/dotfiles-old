@@ -50,10 +50,12 @@ ln -sf "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folde
 # -------------------
 # Obsidian vimrc
 OBSI_ICLOUD=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/'
-ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Main Vault/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Main Vault/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Development/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Development/Meta"
+
+ln -sf "$DOTFILE_FOLDER/pandoc/README.md" "$OBSI_ICLOUD/Main Vault/Knowledge Base/Pandoc.md"
 
 # Brave
 BROWSER="Brave Browser"
