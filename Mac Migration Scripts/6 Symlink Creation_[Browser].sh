@@ -49,12 +49,11 @@ ln -sf "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folde
 # Special Cases
 # -------------------
 # Obsidian vimrc
-VAULT_PATH=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault'
-VAULT_PATH2=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/Development'
-ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$VAULT_PATH2/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$VAULT_PATH/Meta"
-ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$VAULT_PATH2/Meta"
+OBSI_ICLOUD=~'/Library/Mobile Documents/iCloud~md~obsidian/Documents/'
+ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian.vimrc" "$OBSI_ICLOUD/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Meta"
+ln -sf "$DOTFILE_FOLDER/obsidian-vim-helpers.js" "$OBSI_ICLOUD/Meta"
 
 # Brave
 BROWSER="Brave Browser"
