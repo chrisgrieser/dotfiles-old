@@ -1,11 +1,9 @@
 #!/usr/bin/env osascript -l JavaScript
-
-const numberOfFilesToDisplay = Number($.getenv("numberOfFilesToDisplay"));
-
-//------------------------------------------------------------------------------
 ObjC.import("stdlib");
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
+
+const numberOfFilesToDisplay = Number($.getenv("numberOfFilesToDisplay"));
 
 const fileExists = (fpath) => Application("Finder").exists(Path(fpath));
 const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
