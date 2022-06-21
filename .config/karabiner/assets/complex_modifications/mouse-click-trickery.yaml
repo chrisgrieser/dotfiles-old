@@ -106,7 +106,7 @@ rules:
         parameters:
           basic.to_if_alone_timeout_milliseconds: 250
           basic.to_if_held_down_threshold_milliseconds: 250
-  - description: "🐁 6: ⌘↹"
+  - description: "🐁 6 / 1+2 (simultaneously): ⌘↹"
     manipulators:
       - type: basic
         from:
@@ -115,8 +115,6 @@ rules:
           - key_code: tab
             modifiers:
               - command
-  - description: "🐁 1+2 (simultaneously): ⌘↹"
-    manipulators:
       - type: basic
         to:
           - key_code: tab
@@ -127,4 +125,4 @@ rules:
             - pointing_button: button1
             - pointing_button: button2
         parameters:
-          basic.simultaneous_threshold_milliseconds: 300
+          basic.simultaneous_threshold_milliseconds: 40

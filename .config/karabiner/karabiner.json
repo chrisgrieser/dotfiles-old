@@ -657,25 +657,6 @@
                         ]
                     },
                     {
-                        "description": "🐁 6: ⌘↹",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button6"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "🔺 L-⌃ (Non-Apple) / fn (Apple)",
                         "manipulators": [
                             {
@@ -4447,8 +4428,22 @@
                         ]
                     },
                     {
-                        "description": "🐁 1+2 (simultaneously): ⌘↹",
+                        "description": "🐁 6 / 1+2 (simultaneously): ⌘↹",
                         "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button6"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "simultaneous": [
@@ -4461,7 +4456,7 @@
                                     ]
                                 },
                                 "parameters": {
-                                    "basic.simultaneous_threshold_milliseconds": 300
+                                    "basic.simultaneous_threshold_milliseconds": 40
                                 },
                                 "to": [
                                     {

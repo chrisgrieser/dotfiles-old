@@ -1,6 +1,6 @@
 # Karabiner: Complex Modifications
 
-To install the rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply the open respective URL in your browser.
+To add a rule on your Mac, install [Karabiner Elements](https://karabiner-elements.pqrs.org/), and simply the open respective URL in your browser.
 
 ## Table of Contents
 <!-- MarkdownTOC -->
@@ -8,9 +8,8 @@ To install the rule on your Mac, install [Karabiner Elements](https://karabiner-
 - [Caps Lock to Hyper / Esc, Tabs to Meh](#caps-lock-to-hyper--esc-tabs-to-meh)
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
-- [Global Leader Key](#global-leader-key)
+- [Global Leader Key \(App Launcher\)](#global-leader-key-app-launcher)
 - [Vim Mode](#vim-mode)
-- [Miscellaneous](#miscellaneous)
 
 <!-- /MarkdownTOC -->
 
@@ -43,14 +42,14 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 - Middle click to close an app (`cmd + q`) (except for Finder).
 - Tapping the Right Mouse Button in a browser[^3] to open link in background. Press with any modifier key for a normal right click. Is triggered only when briefly tapping so that mouse gestures aren't affected. (This rule essentially emulates the [Right Click Open Link Chrome Extensions](https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn) extension.)
 - Holding Mouse Button 4 will search for the selected text (or open the url, if a link is selected), tapping will send `F13` (for app-specific automations).
-- Holding Mouse Button 5 will open [Charmstone](https://charmstone.app/), tapping will send `F16` (for app-specific automations).
-- Mouse Button 6 looks up the word under the cursor in the macOS dictionary. Useful to use with this: [Terminology](https://agiletortoise.com/terminology/) 
+- Holding Mouse Button 5 will open the macOS Dictionary for words under the cursor, tapping will send `F16` (for app-specific automations).
+- Mouse Button 6 or pressing the left and right mouse buttons *simultaneously* will send `⌘ ↹`, i.e. switching to the last application.
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/mouse-click-trickery.json
 ```
 
-## Global Leader Key
+## Global Leader Key (App Launcher)
 The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-control` on other keyboards (and foot pedals).The key following it launches/switches the following apps:
 - `leader` (= 2x leader) → `F19` (for other automations)
 - `Esc` → Cancel Leader Key Sequence
@@ -76,27 +75,25 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `w` → `W`hatsApp (in the Browser)
 - `t` → `T`elegram (in the Browser)
 - `f` → `F`acebook Messenger (in the Browser)
-- `x` → Password Manager: `xxx` → MacPass
+- `x` → `xxx` → Password Manager → MacPass
 - `K` → `K`arabiner EventViewer
 - `B` → `B`etterTouchTool
 - `.`/`:` → Emoji Insertion Modal
 - `,` → System Preferences
 
+```text
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/app-switcher-leader.json
+```
+
 ## Vim Mode
 - A global Vim Mode for every text field in macOS.
 - Triggered via tapping `left-shift`, canceled via tapping `left-shift` again, or with `i`/`Esc`/`Caps Lock`.
 - Supported Actions: `hjklHJKLebG` & `xCDi<Esc>` 
-- Non-standard supported action: `<Space>` for `ciw` and `<S-Space>` for `daw`.
-
-## Miscellaneous
-- **One Stroke ´^~\` (German Layout)**: Simply makes those characters appear directly, without awaiting another character like `a`, in which case it gets (mostly wrongly) turned into `àá`. (Note that the way this is done, they aren't received properly by vim anymore.)
-- Minor improvements to various apps.
+- Non-standard supported action: `<Space>` for `ciw` and `<S-Space>` for `daw`, and some more actions customized actions.
 
 ```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/one-stroke-characters.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-mode.json
 ```
-
-The keys and apps in the JSON can be edited however wanted.
 
 [^1]: On non-German keyboards, `y` and `z` are switched, so the key codes are the other way round. `ö` is only found on German Keyboards as such, on US Keyboards it is `;`.
 [^2]: Technically speaking, moves it slightly above to the bottom right (not complete bottom right to avoid triggering the Dock). 
