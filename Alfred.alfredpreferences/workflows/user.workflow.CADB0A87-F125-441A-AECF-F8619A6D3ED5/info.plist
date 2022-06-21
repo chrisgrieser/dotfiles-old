@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>165F125E-400E-41C8-B4A2-92551CBF6F58</string>
+				<string>4A9F45CE-87ED-4A36-8F75-CE82DF2BCE6A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -51,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CA121D42-D933-4021-AAED-1EB9705B224D</string>
+				<string>52A5D72A-8342-43A9-861A-F2CD4DCF6E4B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -211,6 +211,36 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+tell application "Finder"
+	set hideAfter to false
+	if ((count window) is 0) or ((count window) is 1)
+		set hideAfter to true
+	end if
+	close Finder window 1
+end tell
+
+# Hide (to lose focus)
+if (hideAfter is true)
+	tell application "System Events" to tell process "Finder" to set visible to false
+end if
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>52A5D72A-8342-43A9-861A-F2CD4DCF6E4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -267,29 +297,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>close-one-finder-window.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CA121D42-D933-4021-AAED-1EB9705B224D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -325,25 +332,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+tell application "Brave Browser"
+	set isLastTab to false
+	set noWindow to false
+
+	if ((count of window) is 0)
+		set noWindow to true
+	else
+		if ((count of window) is 1)
+			if ((count of tab of front window) is 1)
+				set isLastTab to true
+			end if
+		end if
+		close active tab of front window
+	end if
+end tell
+
+# Hide (to lose focus)
+if (isLastTab is true) or (noWindow is true)
+	tell application "System Events" to tell process "Brave Browser" to set visible to false
+end if
+
+end alfred_script</string>
+				<key>cachescript</key>
 				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>close-one-tab_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
-			<string>165F125E-400E-41C8-B4A2-92551CBF6F58</string>
+			<string>4A9F45CE-87ED-4A36-8F75-CE82DF2BCE6A</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -723,6 +745,27 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>←</string>
+				<key>keycode</key>
+				<integer>123</integer>
+				<key>keymod</key>
+				<integer>12058624</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -754,27 +797,6 @@ end alfred_script</string>
 			<string>9CE3EF69-FC40-47BF-BA48-2AA34565C5CB</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>←</string>
-				<key>keycode</key>
-				<integer>123</integer>
-				<key>keymod</key>
-				<integer>12058624</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>2CE9281F-6438-45A9-8539-37892BA383DF</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1005,17 +1027,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>555</integer>
 		</dict>
-		<key>165F125E-400E-41C8-B4A2-92551CBF6F58</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>close one tab</string>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>155</integer>
-		</dict>
 		<key>1C3D78DC-489D-4E04-B780-4B301F7BF529</key>
 		<dict>
 			<key>colorindex</key>
@@ -1059,7 +1070,7 @@ end alfred_script</string>
 		<key>3B9CC1E6-13AA-4265-879E-8F4C366D3AF2</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>7</integer>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
@@ -1076,6 +1087,17 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>805</integer>
 		</dict>
+		<key>4A9F45CE-87ED-4A36-8F75-CE82DF2BCE6A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>close one tab</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
 		<key>4E37798A-A4CB-4CC4-96E1-5105A6752402</key>
 		<dict>
 			<key>colorindex</key>
@@ -1086,6 +1108,17 @@ end alfred_script</string>
 			<integer>250</integer>
 			<key>ypos</key>
 			<integer>800</integer>
+		</dict>
+		<key>52A5D72A-8342-43A9-861A-F2CD4DCF6E4B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>close one window</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>15</integer>
 		</dict>
 		<key>5D57E096-989E-472D-97A9-4C0D0058DCB3</key>
 		<dict>
@@ -1231,17 +1264,6 @@ end alfred_script</string>
 			<integer>500</integer>
 			<key>ypos</key>
 			<integer>805</integer>
-		</dict>
-		<key>CA121D42-D933-4021-AAED-1EB9705B224D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>close one window</string>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>15</integer>
 		</dict>
 		<key>CD2B80E8-95B4-44F0-AA98-22F2527E6329</key>
 		<dict>
