@@ -115,12 +115,16 @@ rules:
           - key_code: tab
             modifiers:
               - command
-  - description: "🐁 6: ⌘↹"
+  - description: "🐁 1+2 (simultaneously): ⌘↹"
     manipulators:
       - type: basic
-        from:
-          pointing_button: button6
         to:
           - key_code: tab
             modifiers:
               - command
+        from:
+          simultaneous:
+            - pointing_button: button1
+            - pointing_button: button2
+        parameters:
+          basic.simultaneous_threshold_milliseconds: 300
