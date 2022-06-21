@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2D4802D1-DB08-492C-8D46-37AE57634698</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D69744D0-59D4-43A8-B8ED-F169B139B10D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>61F42B93-4EAD-4508-BFC2-4E75AFA0588F</key>
 		<array>
 			<dict>
@@ -872,6 +885,46 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>refresh_library</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>com.vdesabou.spotify.mini.player</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>D69744D0-59D4-43A8-B8ED-F169B139B10D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>refresh</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Refresh Spotify Playlists</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2D4802D1-DB08-492C-8D46-37AE57634698</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -970,6 +1023,15 @@
 			<integer>230</integer>
 			<key>ypos</key>
 			<integer>790</integer>
+		</dict>
+		<key>2D4802D1-DB08-492C-8D46-37AE57634698</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>935</integer>
 		</dict>
 		<key>38642B1F-2C61-4D93-8CD7-BC811CB520F0</key>
 		<dict>
@@ -1126,6 +1188,15 @@
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>660</integer>
+		</dict>
+		<key>D69744D0-59D4-43A8-B8ED-F169B139B10D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>935</integer>
 		</dict>
 		<key>D6EB3AB5-9048-465D-AF65-48C51D047CC0</key>
 		<dict>
