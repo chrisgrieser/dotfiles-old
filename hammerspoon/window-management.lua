@@ -10,6 +10,7 @@ end
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
+	local position
 
 	if (direction == "left") then
 		position = {x=0, y=0, w=0.5, h=1}
@@ -49,7 +50,6 @@ hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
 hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
 hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
-hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
 
 hs.hotkey.bind({"ctrl"}, "Space", function ()
 	if (finderIsFrontmost()) then
@@ -61,15 +61,27 @@ end)
 
 --------------------------------------------------------------------------------
 
-local laptopScreen = "Color LCD"
-local windowLayout = {
-    {"Safari",  nil,          laptopScreen, hs.layout.left50,    nil, nil},
-    {"Mail",    nil,          laptopScreen, hs.layout.right50,   nil, nil},
-    {"iTunes",  "iTunes",     laptopScreen, hs.layout.maximized, nil, nil},
-    {"iTunes",  "MiniPlayer", laptopScreen, nil, nil, hs.geometry.rect(0, -48, 400, 48)},
-}
-hs.layout.apply(windowLayout)
+-- https://www.hammerspoon.org/go/#winlayout
+function homeWindowLayout ()
+	local currentScreen = hs.screen.allScreens()[1]:name()
 
+	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
+	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
+
+	local homeLayout = {
+		{"Twitterrific", nil, currentScreen, toTheSide, nil, nil},
+		{"Brave Browser", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Sublime Text", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Slack", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Discord", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Obsidian", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Drafts", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Mimestream", nil, currentScreen, pseudoMaximized, nil, nil},
+	}
+	hs.layout.apply(homeLayout)
+end
+
+hs.hotkey.bind(Hyperkey, "W", homeWindowLayout)
 
 --------------------------------------------------------------------------------
 
