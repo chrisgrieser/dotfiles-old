@@ -76,8 +76,12 @@ function displayCountWatcher()
 		-- "hs.brightness.set" does not work when second display is mirrored
 		-- therefore using Shortcuts instead
 		hs.shortcuts.run('Zero Brightness')
+		hs.application("Mimestream"):kill()
+		hs.application("Slack"):kill()
+		hs.application("Discord"):kill()
 	else
 		hs.brightness.set(50)
+		homeWindowLayout()
 	end
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)

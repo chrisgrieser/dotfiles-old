@@ -26,6 +26,8 @@ function moveAndResize(direction)
 		position = {x=0, y=0, w=1, h=1}
 	elseif (direction == "centered") then
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
+	elseif (direction == "side") then
+		position = {x=0.815, y=0, w=0.185, h=1}
 	end
 	win:moveToUnit(position)
 
@@ -55,6 +57,7 @@ hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
 hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
 hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
+hs.hotkey.bind(Hyperkey, "S", function () moveAndResize("side") end)
 
 hs.hotkey.bind({"ctrl"}, "Space", function ()
 	if (finderIsFrontmost()) then
@@ -90,29 +93,6 @@ hs.hotkey.bind(Hyperkey, "W", homeWindowLayout)
 
 --------------------------------------------------------------------------------
 
-function vsplit()
-	local win1 = hs.window.focusedWindow()
-	local win2 = hs.window.focusedWindow() -- TODO need to look for the right window
-	local screen = win1:screen()
-	local max = screen:frame()
-
-	-- left side
-	local f1 = win1:frame()
-	f1.x = max.x
-	f1.y = max.y
-	f1.w = max.w / 2
-	f1.h = max.h
-	win1:setFrame(f1)
-
-	-- right side
-	local f2 = win2:frame()
-	f2.x = max.x + (max.w / 2)
-	f2.y = max.y
-	f2.w = max.w / 2
-	f2.h = max.h
-	win2:setFrame(f2)
-end
-
 function finderVerticalSplit ()
 	hs.applescript([[
 		use framework "AppKit"
@@ -137,7 +117,5 @@ end
 hs.hotkey.bind(Hyperkey, "V", function()
 	if (finderIsFrontmost()) then
 		finderVerticalSplit()
-	else
-		-- vsplit()
 	end
 end)
