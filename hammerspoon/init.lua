@@ -3,7 +3,6 @@
 
 require("watchers")
 require("window-management")
-require("testing-ground")
 
 -- auto-reload config when file changes
 function reloadConfig(files)
