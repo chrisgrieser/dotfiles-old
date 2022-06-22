@@ -35,6 +35,7 @@ function moveAndResize(direction)
 	if (win:application():name() == "Drafts") then
 		toggleDraftsSidebars()
 	end
+	hs.timer.delayed.new(0.25, win:moveToUnit(position))
 end
 
 function finderCentered ()

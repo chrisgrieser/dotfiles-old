@@ -30,7 +30,7 @@ function toggleDraftsSidebars()
 	local draftsWindow = hs.window.focusedWindow()
 	local draftsWindowWidth = draftsWindow:size().w
 	local screenWidth = draftsWindow:screen():frame().w
-	if (draftsWindowWidth <= screenWidth / 2) then
+	if (draftsWindowWidth < screenWidth*0.6) then
 		hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
 	else
 		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
@@ -71,16 +71,22 @@ highlightsAppWatcher:start()
 
 -- PROJECTOR: Dim brightness when projector is connected
 function displayCountWatcher()
-	local screenName = hs.screen.primaryScreen():name()
-	if screenName == "ViewSonic PJ" then
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
+
+	if (isProjector) then
 		-- "hs.brightness.set" does not work when second display is mirrored
 		-- therefore using Shortcuts instead
 		hs.shortcuts.run('Zero Brightness')
 		hs.application("Mimestream"):kill()
 		hs.application("Slack"):kill()
 		hs.application("Discord"):kill()
-	else
+		hs.application.open("YouTube")
+	elseif (isIMacAtHome) then
 		hs.brightness.set(50)
+		hs.application.open("Mimestream")
+		hs.application.open("Discord")
+		hs.application.open("Slack")
 		homeWindowLayout()
 	end
 end

@@ -72,12 +72,12 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `v` → `V`ideo → `V`LC Player
 - `ö`[^1] → Twitter (`ö` looks like the Twitterific Logo)
 - `k` → `K`arabiner Elements
+- `K` → `K`arabiner EventViewer
 - `w` → `W`hatsApp (in the Browser)
 - `t` → `T`elegram (in the Browser)
 - `f` → `F`acebook Messenger (in the Browser)
 - `x` → `xxx` → Password Manager → MacPass
-- `K` → `K`arabiner EventViewer
-- `B` → `B`etterTouchTool
+- `h` → `H`ammerspoon Console
 - `.`/`:` → Emoji Insertion Modal
 - `,` → System Preferences
 
