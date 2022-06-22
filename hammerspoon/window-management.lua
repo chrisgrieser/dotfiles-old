@@ -1,6 +1,8 @@
 -- https://www.hammerspoon.org/go/
 -------------------------------------
 
+Hyperkey = {"cmd", "alt", "ctrl", "shift"}
+
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
 	local f = win:frame()
@@ -16,8 +18,10 @@ function moveAndResize(direction)
 	win:setFrame(f)
 end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "U", function () moveAndResize("up") end)
--- hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "down", moveAndResize("down"))
--- hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "right", moveAndResize("right"))
--- hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "left", moveAndResize("left"))
+hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
+hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
+hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
+hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
+hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
+hs.hotkey.bind({"ctrl"}, "Space", function () moveAndResize("pseudo-maximized") end)
 
