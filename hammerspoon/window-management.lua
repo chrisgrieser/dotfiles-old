@@ -35,6 +35,8 @@ function moveAndResize(direction)
 	if (win:application():name() == "Drafts") then
 		toggleDraftsSidebars()
 	end
+
+	-- fix for window sometimes not responding perfectly
 	hs.timer.delayed.new(0.25, win:moveToUnit(position))
 end
 
