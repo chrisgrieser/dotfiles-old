@@ -4,6 +4,11 @@
 require("watchers")
 require("window-management")
 
+--------------------------------------------------------------------------------
+hs.window.animationDuration = 0
+
+--------------------------------------------------------------------------------
+
 -- auto-reload config when file changes
 function reloadConfig(files)
 	doReload = false
