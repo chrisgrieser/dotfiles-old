@@ -63,7 +63,7 @@ end)
 
 -- https://www.hammerspoon.org/go/#winlayout
 function homeWindowLayout ()
-	local currentScreen = hs.screen.primaryScreen:name()
+	local currentScreen = hs.screen.primaryScreen():name()
 
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
