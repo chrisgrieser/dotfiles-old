@@ -35,6 +35,12 @@ function moveAndResize(direction)
 	win:setFrame(f)
 end
 
+function finderCentered ()
+	hs.applescript([[
+
+	]])
+end
+
 hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
 hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
 hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
@@ -44,7 +50,8 @@ hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
 hs.hotkey.bind({"ctrl"}, "Space", function ()
 	local frontapp = hs.application.frontmostApplication():bundleID()
 	if (frontapp == "com.apple.finder") then
-		moveAndResize("centered")
+		-- moveAndResize("centered")
+		finderCentered()
 	else
 		moveAndResize("pseudo-maximized")
 	end
