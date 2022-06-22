@@ -75,6 +75,29 @@ BraveBookmarks = os.getenv("HOME") .. "/Library/Application Support/BraveSoftwar
 bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
 
+-- Download Folder Badge
+function DownloadFolderBadge ()
+	hs.execute([[
+		export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+		folder="$HOME/Video/Downloaded"
+		icons_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/Download Folder"
+		itemCount=$(ls "$folder" | wc -l)
+		itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
+
+		if test $itemCount -gt 0 ; then # using test instead of square brackets cause lua
+			fileicon set "$folder" "$icons_path/with Badge.icns"
+			touch "$folder/yes"
+		else
+			fileicon set "$folder" "$icons_path/without Badge.icns"
+			touch "$folder/no"
+		fi
+		killall Dock
+	]])
+end
+
+-- testing ground
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", DownloadFolderBadge)
+
 -- auto-reload config when a file changes
 function reloadConfig(files)
 	doReload = false
