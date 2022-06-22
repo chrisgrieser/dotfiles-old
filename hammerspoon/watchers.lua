@@ -77,7 +77,6 @@ bookmarkWatcher:start()
 
 -- Download Folder Badge
 function downloadFolderBadge ()
-	downloadFolderWatcher:stop()
 	hs.execute([[
 		export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 		folder="$HOME/Video/Downloaded"
@@ -85,15 +84,22 @@ function downloadFolderBadge ()
 		itemCount=$(ls "$folder" | wc -l)
 		itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
 
+		# cache necessary to rpevent recursion of icon change triggering pathwatcher again
+		cache_location="/Library/Caches/dlFolderLastChange"
+		touch "$cache_location" # to ensure cache existence on new machines
+		last_change=$(cat "$cache_location")
+
 		# using test instead of square brackets cause lua
-		if test $itemCount -gt 0 ; then
+		if test $itemCount -gt 0 && test $last_change != "badge" ; then
 			fileicon set "$folder" "$icons_path/with Badge.icns"
-		else
+			echo "badge" > "$cache_location"
+			killall Dock
+		elif test $itemCount -eq 0 && test $last_change == "badge" ; then
 			fileicon set "$folder" "$icons_path/without Badge.icns"
+			echo "" > "$cache_location"
+			killall Dock
 		fi
-		killall Dock
 	]])
-	downloadFolderWatcher:start()
 end
 downloadFolderWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Video/Downloaded", downloadFolderBadge)
 downloadFolderWatcher:start()
@@ -102,7 +108,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", downloadFolderBadge)
 
 -- auto-reload config when a file changes
 function reloadConfig(files)
-	doReload = false
+	local doReload = false
 	for _,file in pairs(files) do
 		if file:sub(-4) == ".lua" then
 			doReload = true
