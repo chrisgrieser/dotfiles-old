@@ -1,6 +1,12 @@
 -- https://www.hammerspoon.org/go/
 -------------------------------------
 
+function finderIsFrontmost ()
+	local frontapp = hs.application.frontmostApplication():bundleID()
+	return frontapp == "com.apple.finder"
+end
+
+--------------------------------------------------------------------------------
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
@@ -55,10 +61,9 @@ hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
 hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
+
 hs.hotkey.bind({"ctrl"}, "Space", function ()
-	local frontapp = hs.application.frontmostApplication():bundleID()
-	if (frontapp == "com.apple.finder") then
-		-- moveAndResize("centered")
+	if (finderIsFrontmost()) then
 		finderCentered()
 	else
 		moveAndResize("pseudo-maximized")
@@ -113,8 +118,7 @@ end tell
 end
 
 hs.hotkey.bind(Hyperkey, "V", function()
-	local frontapp = hs.application.frontmostApplication():bundleID()
-	if (frontapp == "com.apple.finder") then
+	if (finderIsFrontmost()) then
 		finderVerticalSplit()
 	else
 		-- vsplit()

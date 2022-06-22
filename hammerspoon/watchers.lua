@@ -69,13 +69,11 @@ function bookmarkSync()
 		cp "$HOME/Library/Application Support/$BROWSER/Default/Bookmarks" "$HOME/Library/Application Support/Google/Chrome/Default/Bookmarks"
 		cp "$HOME/Library/Application Support/$BROWSER/Local State" "$HOME/Library/Application Support/Google/Chrome/Local State"
 	]])
-	hs.notify.new({title="Hammerspoon", informativeText="Bookmarks synced"}):send()
+	notify("Bookmarks synced")
 end
 BraveBookmarks = os.getenv("HOME") .. "/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks"
 bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
-
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", bookmarkSync)
 
 -- auto-reload config when a file changes
 function reloadConfig(files)
