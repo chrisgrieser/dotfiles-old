@@ -27,9 +27,17 @@ function moveAndResize(direction)
 	elseif (direction == "pseudo-maximized") then
 		f.w = max.w * 0.815
 	elseif (direction == "centered") then
-		f.w = max.w * 0.815
+		f.x = max.x + (max.w * 0.2)
+		f.y = max.y + (max.h * 0.1)
+		f.w = max.w * 0.6
+		f.h = max.h * 0.8
 	end
 	win:setFrame(f)
+
+	local frontapp = hs.application.frontmostApplication():bundleID()
+	if (frontapp == "com.apple.finder") then
+		win:setFrame(f)
+	end
 end
 
 hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
@@ -51,6 +59,7 @@ end)
 --------------------------------------------------------------------------------
 
 function vsplit()
+
 	local win1 = hs.window.focusedWindow()
 	local win2 = hs.window.focusedWindow() -- TODO need to look for the right window
 	local screen = win1:screen()
