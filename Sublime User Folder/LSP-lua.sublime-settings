@@ -2,5 +2,6 @@
 {
 	"settings": {
 		"Lua.diagnostics.globals": ["hs"], // Hammerspoon
+      "Lua.diagnostics.disable": ["lowercase-global"],
 	}
 }

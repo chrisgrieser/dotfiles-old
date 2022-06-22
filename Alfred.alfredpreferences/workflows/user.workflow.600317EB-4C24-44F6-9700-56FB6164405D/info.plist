@@ -159,7 +159,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Window Management</string>
 	<key>objects</key>
