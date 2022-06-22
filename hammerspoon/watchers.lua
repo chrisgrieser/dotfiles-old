@@ -62,25 +62,28 @@ displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
 -- Brave Bookmarks synced to Chrome Bookmarks (needed for Alfred)
-function bookmarkSync(files)
-	doReload = false
-	for _,file in pairs(files) do
-		if file:sub(-4) == ".lua" then
-			doReload = true
-		end
-	end
-	if doReload then
-		hs.reload()
-	end
-end
+function bookmarkSync()
+	stdout = hs.execute([[
+		BROWSER="BraveSoftware/Brave-Browser"
 
-BROWSER=
+		CHROME_FOLDER=~'/Library/Application Support/Google/Chrome'
+		TARGET_BOOKMARKS=~"/Library/Application Support/$BROWSER/Default/Bookmarks"
+		CHROME_BOOKMARKS=~"/Library/Application Support/Google/Chrome/Default/Bookmarks"
+
+		mkdir -p "$CHROME_FOLDER/Default"
+		cp -f "$TARGET_BOOKMARKS" "$CHROME_BOOKMARKS"
+
+		cp -f ~"/Library/Application Support/$BROWSER/Local State" "$CHROME_FOLDER/Local State"
+	]])
+	hs.notify.new({title="Hammerspoon", informativeText=stdout}):send()
+	hs.notify.new({title="Hammerspoon", informativeText="Bookmarks synced"}):send()
+end
 BraveBookmarks = os.getenv("HOME") .. "/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks"
-bookmarkWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
+bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
 
 
--- auto-reload config when file changes
+-- auto-reload config when a file changes
 function reloadConfig(files)
 	doReload = false
 	for _,file in pairs(files) do
