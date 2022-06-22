@@ -10,6 +10,7 @@ end
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
+	local winApp = win:application():name()
 	local position
 
 	if (direction == "left") then
@@ -29,10 +30,16 @@ function moveAndResize(direction)
 	elseif (direction == "side") then
 		position = {x=0.815, y=0, w=0.185, h=1}
 	end
-	win:moveToUnit(position)
+
+	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
+	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal") then
+		resizingWorkaround(position, winApp)
+	else
+		win:moveToUnit(position)
+	end
 
 	-- if window moved is from Drafts, toggle sidebars
-	if (win:application():name() == "Drafts") then
+	if (winApp == "Drafts") then
 		if (direction == "pseudo-maximized" or direction == "maximized") then
 			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 		else
@@ -40,24 +47,22 @@ function moveAndResize(direction)
 		end
 	end
 
-	-- fix for window sometimes not responding properly
-	hs.timer.delayed.new(0.6, win:moveToUnit(position))
-
 end
 
-function finderCentered ()
+function resizingWorkaround(pos, app_name)
 	hs.applescript([[
 		use framework "AppKit"
 		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
 		set max_x to item 1 of item 2 of item 1 of allFrames
 		set max_y to item 2 of item 2 of item 1 of allFrames
+		]] ..
 
-		set x to 0.2 * max_x
-		set y to 0.1 * max_y
-		set w to 0.6 * max_x
-		set h to 0.8 * max_y
-		tell application "Finder" to set bounds of window 1 to {x, y, x + w, y + h}
-	]])
+		"set x to " .. pos.x .. " * max_x\n" ..
+		"set y to " .. pos.y .. " * max_y\n" ..
+		"set w to " .. pos.w .. " * max_x\n" ..
+		"set h to " .. pos.h .. " * max_y\n" ..
+		'tell application "' .. app_name .. '" to set bounds of front window to {x, y, x + w, y + h}'
+	)
 end
 
 hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
@@ -69,7 +74,7 @@ hs.hotkey.bind(Hyperkey, "S", function () moveAndResize("side") end)
 
 hs.hotkey.bind({"ctrl"}, "Space", function ()
 	if (finderIsFrontmost()) then
-		finderCentered()
+		moveAndResize("centered")
 	else
 		moveAndResize("pseudo-maximized")
 	end
