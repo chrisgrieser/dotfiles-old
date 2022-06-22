@@ -41,8 +41,7 @@ function moveAndResize(direction)
 	end
 
 	-- fix for window sometimes not responding properly
-	hs.timer.delayed.new(0.15, win:moveToUnit(position))
-	hs.timer.delayed.new(0.3, win:moveToUnit(position))
+	hs.timer.delayed.new(0.6, win:moveToUnit(position))
 
 end
 
