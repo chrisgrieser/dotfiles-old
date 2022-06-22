@@ -1,8 +1,10 @@
 -- https://www.hammerspoon.org/go/
 -------------------------------------
 
-require("watchers")
-require("window-management")
+Hyperkey = {"cmd", "alt", "ctrl", "shift"}
+function notify (text)
+	hs.notify.new({title="Hammerspoon", informativeText=text}):send()
+end
 
 --------------------------------------------------------------------------------
 
@@ -10,7 +12,12 @@ hs.window.animationDuration = 0
 
 --------------------------------------------------------------------------------
 
-hs.notify.new({title="Hammerspoon", informativeText="Config reloaded"}):send()
+require("watchers")
+require("window-management")
+
+--------------------------------------------------------------------------------
+
+notify("Config reloaded")
 
 
 

@@ -1,7 +1,6 @@
 -- https://www.hammerspoon.org/go/
 -------------------------------------
 
-Hyperkey = {"cmd", "alt", "ctrl", "shift"}
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()

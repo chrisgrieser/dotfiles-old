@@ -63,25 +63,19 @@ displayWatcher:start()
 
 -- Brave Bookmarks synced to Chrome Bookmarks (needed for Alfred)
 function bookmarkSync()
-	stdout = hs.execute([[
+	hs.execute([[
 		BROWSER="BraveSoftware/Brave-Browser"
-
-		CHROME_FOLDER=~'/Library/Application Support/Google/Chrome'
-		TARGET_BOOKMARKS=~"/Library/Application Support/$BROWSER/Default/Bookmarks"
-		CHROME_BOOKMARKS=~"/Library/Application Support/Google/Chrome/Default/Bookmarks"
-
-		mkdir -p "$CHROME_FOLDER/Default"
-		cp -f "$TARGET_BOOKMARKS" "$CHROME_BOOKMARKS"
-
-		cp -f ~"/Library/Application Support/$BROWSER/Local State" "$CHROME_FOLDER/Local State"
+		mkdir -p "$HOME/Library/Application Support/Google/Chrome/Default"
+		cp "$HOME/Library/Application Support/$BROWSER/Default/Bookmarks" "$HOME/Library/Application Support/Google/Chrome/Default/Bookmarks"
+		cp "$HOME/Library/Application Support/$BROWSER/Local State" "$HOME/Library/Application Support/Google/Chrome/Local State"
 	]])
-	hs.notify.new({title="Hammerspoon", informativeText=stdout}):send()
 	hs.notify.new({title="Hammerspoon", informativeText="Bookmarks synced"}):send()
 end
 BraveBookmarks = os.getenv("HOME") .. "/Library/Application Support/BraveSoftware/Brave-Browser/Default/Bookmarks"
 bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
 
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", bookmarkSync)
 
 -- auto-reload config when a file changes
 function reloadConfig(files)

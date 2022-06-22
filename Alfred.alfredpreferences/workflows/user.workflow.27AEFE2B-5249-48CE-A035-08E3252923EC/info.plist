@@ -8,19 +8,6 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
-		<key>0264536B-A11A-4026-8781-77B94F916844</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2A800803-89AC-47BC-8C84-A45508977347</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>15777E56-7AC1-41E6-99AA-BB38854CDB0A</key>
 		<array>
 			<dict>
@@ -39,19 +26,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6F3C1C68-F012-43DA-97ED-530C7CF22733</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -279,48 +253,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>🔄 Sync complete</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>sync</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Manual Bookmark Sync</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0264536B-A11A-4026-8781-77B94F916844</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -338,31 +270,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cp ~'/Library/Application Support/Vivaldi/Default/Bookmarks' ~'/Library/Application Support/Google/Chrome/Default/Bookmarks'
-cp ~'/Library/Application Support/Vivaldi/Local State' ~'/Library/Application Support/Google/Chrome/Local State'
-cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Application Support/Google/Chrome/Default/History'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>sync-bookmarks_[Browser-Path].sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2A800803-89AC-47BC-8C84-A45508977347</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -413,6 +320,65 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>j</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.vivaldi.Vivaldi</string>
+					<string>com.brave.Browser</string>
+					<string>org.chromium.Chromium</string>
+					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>15777E56-7AC1-41E6-99AA-BB38854CDB0A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -457,61 +423,23 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
+				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>keychar</key>
-				<string>j</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1572864</integer>
-				<key>overridewithargument</key>
-				<false/>
+				<key>keyword</key>
+				<string>extensions</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⚙️ Browser Extensions</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</string>
+			<string>8D2676E8-2C88-4759-9445-2DBC22311D6D</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string>focusedapp</string>
-				<key>hotkey</key>
-				<integer>53</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>⎋</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.vivaldi.Vivaldi</string>
-					<string>com.brave.Browser.app.fmajbmdokmecmpllfhcamihghgoablgg</string>
-					<string>org.chromium.Chromium</string>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>15777E56-7AC1-41E6-99AA-BB38854CDB0A</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -571,105 +499,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query} URLs</string>
-				<key>title</key>
-				<string>✅ URLs copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>get-alltabs_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>46A0180C-0144-4433-8238-86DD95349753</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>alltabs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Copy the Title and URL of ALL tabs</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>extensions</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⚙️ Browser Extensions</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>8D2676E8-2C88-4759-9445-2DBC22311D6D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -746,6 +575,84 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>6AD9D65A-5CD0-4DB2-860D-03EC5018186B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query} URLs</string>
+				<key>title</key>
+				<string>✅ URLs copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>40631024-7C9F-4784-A3E7-1116BD6C894A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>get-alltabs_[Browser].applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>46A0180C-0144-4433-8238-86DD95349753</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>alltabs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Copy the Title and URL of ALL tabs</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BE7EDFB7-052F-45E8-BC4B-5448613EE413</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>BE8B707A-6DA8-4CDD-A5BF-434F69DAC7B4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -830,23 +737,14 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0264536B-A11A-4026-8781-77B94F916844</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>0ABBA2D0-AB03-47DC-952B-157EAB6B558B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>900</integer>
+			<integer>885</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>335</integer>
 		</dict>
 		<key>10C28BFB-0100-4B2F-BAEF-FEA3FC8C44E2</key>
 		<dict>
@@ -864,9 +762,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>Open Console</string>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>135</integer>
 		</dict>
 		<key>1F170814-90DD-485E-A861-757A4FD92606</key>
 		<dict>
@@ -879,15 +777,6 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
-		<key>2A800803-89AC-47BC-8C84-A45508977347</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>775</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>2B8D7DA4-2146-4F71-8597-E14FC9C4E21C</key>
 		<dict>
 			<key>colorindex</key>
@@ -895,27 +784,18 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>manage mouse gestures</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>740</integer>
+			<integer>545</integer>
 		</dict>
 		<key>2D16E8C6-DE6C-4485-A253-14235E4A1A94</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>500</integer>
-		</dict>
-		<key>3A19F452-0D46-4C3A-82CE-A51D22AA14E8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>990</integer>
-			<key>ypos</key>
-			<integer>10</integer>
+			<integer>305</integer>
 		</dict>
 		<key>40631024-7C9F-4784-A3E7-1116BD6C894A</key>
 		<dict>
@@ -951,27 +831,27 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>15</integer>
 		</dict>
 		<key>56A2CDC1-E909-4825-82BA-80AAC51CD73F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>910</integer>
+			<integer>715</integer>
 		</dict>
 		<key>6AD9D65A-5CD0-4DB2-860D-03EC5018186B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>630</integer>
+			<integer>435</integer>
 		</dict>
 		<key>6B0C6024-DB7D-489C-84CA-118D4AD29879</key>
 		<dict>
@@ -980,9 +860,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>manage mouse gestures</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>600</integer>
+			<integer>405</integer>
 		</dict>
 		<key>6F3C1C68-F012-43DA-97ED-530C7CF22733</key>
 		<dict>
@@ -998,9 +878,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>15</integer>
 		</dict>
 		<key>89602BBE-3B63-40C2-9346-F6B2F1CFEF68</key>
 		<dict>
@@ -1018,9 +898,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>manage extensions</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>275</integer>
 		</dict>
 		<key>BE7EDFB7-052F-45E8-BC4B-5448613EE413</key>
 		<dict>
@@ -1045,16 +925,16 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>770</integer>
+			<integer>575</integer>
 		</dict>
 		<key>E3CB06C7-80F4-4569-9646-EC67EEEFB51C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>135</integer>
 		</dict>
 		<key>E51DFA56-3523-4840-8EF6-40FC832EE3BB</key>
 		<dict>
@@ -1074,9 +954,9 @@ cp ~'/Library/Application Support/Vivaldi/Default/History' ~'/Library/Applicatio
 			<key>note</key>
 			<string>manage mouse gestures</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>880</integer>
+			<integer>685</integer>
 		</dict>
 	</dict>
 	<key>version</key>
