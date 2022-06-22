@@ -25,27 +25,6 @@ end
 discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
--- DRAFTS: Sidebar Toggle with Window Position
-function toggleDraftsSidebars()
-	local draftsWindow = hs.window.focusedWindow()
-	local draftsWindowWidth = draftsWindow:size().w
-	local screenWidth = draftsWindow:screen():frame().w
-	if (draftsWindowWidth < screenWidth*0.6) then
-		hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
-	else
-		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-	end
-end
-function draftWatcher(appName, eventType)
-	if (eventType == hs.application.watcher.activated) then
-		if (appName == "Drafts") then
-			toggleDraftsSidebars()
-		end
-	end
-end
-draftsAppWatcher = hs.application.watcher.new(draftWatcher)
-draftsAppWatcher:start()
-
 -- HIGHLIGHTS: Sync Dark & Light Mode
 function highlightsWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
@@ -85,10 +64,6 @@ function displayCountWatcher()
 		hs.application("Mimestream"):kill9()
 	elseif (isIMacAtHome) then
 		hs.brightness.set(50)
-		hs.application.open("Mimestream")
-		hs.application.open("Discord")
-		hs.application.open("Slack")
-		hs.application.open("Drafts")
 		homeWindowLayout()
 	end
 end

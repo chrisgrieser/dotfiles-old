@@ -33,11 +33,17 @@ function moveAndResize(direction)
 
 	-- if window moved is from Drafts, toggle sidebars
 	if (win:application():name() == "Drafts") then
-		toggleDraftsSidebars()
+		if (direction == "pseudo-maximized" or direction == "maximized") then
+			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+		else
+			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
+		end
 	end
 
-	-- fix for window sometimes not responding perfectly
-	hs.timer.delayed.new(0.25, win:moveToUnit(position))
+	-- fix for window sometimes not responding properly
+	hs.timer.delayed.new(0.15, win:moveToUnit(position))
+	hs.timer.delayed.new(0.3, win:moveToUnit(position))
+
 end
 
 function finderCentered ()
@@ -78,6 +84,13 @@ function homeWindowLayout ()
 
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
+
+	hs.application.open("Mimestream")
+	hs.application.open("Discord")
+	hs.application.open("Slack")
+	hs.application.open("Brave Browser")
+	hs.application.open("Obsidian")
+	hs.application.open("Twitterrific")
 
 	local homeLayout = {
 		{"Twitterrific", nil, currentScreen, toTheSide, nil, nil},
