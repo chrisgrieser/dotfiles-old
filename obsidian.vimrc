@@ -46,6 +46,9 @@ nmap <C-m> :nohlsearch
 " < Nagivation
 """"""""""""""""""""""
 
+" Scroll horizontally back
+nmap Q mz0`z
+
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
@@ -457,7 +460,7 @@ nmap ? :obcommand
 """"""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
-" Z Q ? !
+" ? !
 " Special: <BS>, <Right>, <Left>, <Down>, <Up>, <End>, <Home>
 " maybe <Ins>/<Insert>?
 " remap <Esc> to F17?

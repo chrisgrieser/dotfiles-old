@@ -76,7 +76,8 @@ bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
 
 -- Download Folder Badge
-function DownloadFolderBadge ()
+function downloadFolderBadge ()
+	downloadFolderWatcher:stop()
 	hs.execute([[
 		export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 		folder="$HOME/Video/Downloaded"
@@ -84,19 +85,20 @@ function DownloadFolderBadge ()
 		itemCount=$(ls "$folder" | wc -l)
 		itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
 
-		if test $itemCount -gt 0 ; then # using test instead of square brackets cause lua
+		# using test instead of square brackets cause lua
+		if test $itemCount -gt 0 ; then
 			fileicon set "$folder" "$icons_path/with Badge.icns"
-			touch "$folder/yes"
 		else
 			fileicon set "$folder" "$icons_path/without Badge.icns"
-			touch "$folder/no"
 		fi
 		killall Dock
 	]])
+	downloadFolderWatcher:start()
 end
+downloadFolderWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Video/Downloaded", downloadFolderBadge)
+downloadFolderWatcher:start()
 
--- testing ground
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", DownloadFolderBadge)
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "W", downloadFolderBadge)
 
 -- auto-reload config when a file changes
 function reloadConfig(files)
