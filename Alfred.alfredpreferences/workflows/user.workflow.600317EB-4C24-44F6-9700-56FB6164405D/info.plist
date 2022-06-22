@@ -8,37 +8,11 @@
 	<string>Mini-Apps</string>
 	<key>connections</key>
 	<dict>
-		<key>045141A6-D092-4512-A84F-C58BE803F8D6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -60,78 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>41B5D139-F003-46BE-875D-23643546D5DA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>91B9390C-0212-4B09-8C85-F7509AB4EA5E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</key>
-		<array/>
-		<key>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -172,32 +79,33 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>pseudo-maximized</string>
+				<string>vertical-split</string>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>49</integer>
+				<integer>9</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>1966080</integer>
 				<key>hotstring</key>
-				<string>Space</string>
+				<string>V</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>com.apple.finder</string>
+					<string>com.brave.Browser</string>
 				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</string>
+			<string>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -242,379 +150,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>76FE5EBB-4A39-43BD-A839-DBB718B86097</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>centered</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>49</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>Space</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>tell application "BetterTouchTool" to trigger_named "Office Mode"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>office</string>
-				<key>subtext</key>
-				<string>BTT</string>
-				<key>text</key>
-				<string>💼 Office Mode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>maximized</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>49</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>Space</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>045141A6-D092-4512-A84F-C58BE803F8D6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>-- this line has to appear before functions("on run")
-use framework "AppKit"
-
-on alfred_script(q)
-	tell application "System Events" to set frontApp to (name of first process where it is frontmost)
-	set dimension to q
-
-	set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-	set screenWidth to item 1 of item 2 of item 1 of allFrames
-	set screenHeight to item 2 of item 2 of item 1 of allFrames
-
-	if (dimension is "maximized") then
-		set startX to 0
-		set startY to 0
-		set widePercent to 1
-		set highPercent to 1
-	else if (dimension is "pseudo-maximized") then
-		set startX to 0
-		set startY to 0
-		set widePercent to 0.815
-		set highPercent to 1
-	else if (dimension is "centered") then
-		set startX to 0.2
-		set startY to 0.1
-		set widePercent to 0.6
-		set highPercent to 0.8
-	else if (dimension is "left") then
-		set startX to 0
-		set startY to 0
-		set widePercent to 0.5
-		set highPercent to 1
-	else if (dimension is "right") then
-		set startX to 0.5
-		set startY to 0
-		set widePercent to 0.5
-		set highPercent to 1
-	else if (dimension is "down") then
-		set startX to 0
-		set startY to 0.5
-		set widePercent to 1
-		set highPercent to 0.5
-	else if (dimension is "up") then
-		set startX to 0
-		set startY to 0
-		set widePercent to 1
-		set highPercent to 0.5
-	end if
-
-	set xPosition to (screenWidth * startX)
-	set yPosition to (screenHeight * startY)
-	set wide to (screenWidth * widePercent)
-	set high to (screenHeight * highPercent)
-
-	if ( ¬
-		frontApp is "Finder" or ¬
-		frontApp is "Brave Browser" or ¬
-		frontApp is "Preview" or ¬
-		frontApp is "Safari" or ¬
-		frontApp is "BusyCal" ¬
-	) then
-		# applescript-capable apps work better with this
-		tell application frontApp to set bounds of window 1 to {xPosition, yPosition, xPosition + wide, yPosition + high}
-	else
-		# non-scriptable apps need this
-		tell application "System Events"
-			tell process frontApp
-				tell window 1
-					set position to {xPosition, yPosition}
-					set size to {wide, high}
-				end tell
-			end tell
-		end tell
-	end if
-
-end alfred_script</string>
-				<key>cachescript</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>right</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>124</integer>
-				<key>hotmod</key>
-				<integer>12451840</integer>
-				<key>hotstring</key>
-				<string>→</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>left</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>123</integer>
-				<key>hotmod</key>
-				<integer>12451840</integer>
-				<key>hotstring</key>
-				<string>←</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>91B9390C-0212-4B09-8C85-F7509AB4EA5E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>down</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>125</integer>
-				<key>hotmod</key>
-				<integer>12451840</integer>
-				<key>hotstring</key>
-				<string>↓</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>41B5D139-F003-46BE-875D-23643546D5DA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>up</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>126</integer>
-				<key>hotmod</key>
-				<integer>12451840</integer>
-				<key>hotstring</key>
-				<string>↑</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>vertical-split</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -720,35 +255,61 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "BetterTouchTool" to trigger_named "Office Mode"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>office</string>
+				<key>subtext</key>
+				<string>BTT</string>
+				<key>text</key>
+				<string>💼 Office Mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>045141A6-D092-4512-A84F-C58BE803F8D6</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>240</integer>
-		</dict>
 		<key>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</key>
 		<dict>
 			<key>xpos</key>
 			<integer>440</integer>
 			<key>ypos</key>
 			<integer>140</integer>
-		</dict>
-		<key>3FB315AA-35C6-4726-A5D3-D1BFC4E4984D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>10</integer>
 		</dict>
 		<key>41523074-48F2-4F9F-AE8D-4579B4473808</key>
 		<dict>
@@ -757,15 +318,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>41B5D139-F003-46BE-875D-23643546D5DA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>600</integer>
-		</dict>
 		<key>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</key>
 		<dict>
 			<key>colorindex</key>
@@ -773,9 +325,9 @@ end alfred_script</string>
 			<key>note</key>
 			<string>split</string>
 			<key>xpos</key>
-			<integer>315</integer>
+			<integer>255</integer>
 			<key>ypos</key>
-			<integer>885</integer>
+			<integer>65</integer>
 		</dict>
 		<key>76FE5EBB-4A39-43BD-A839-DBB718B86097</key>
 		<dict>
@@ -784,66 +336,19 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
-		<key>7C8F3FEE-9FB4-4528-947F-C5E75B3960C9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>125</integer>
-		</dict>
-		<key>90EA7BEF-E1A2-4544-A232-AF3A4A6C2AA9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>365</integer>
-		</dict>
-		<key>91B9390C-0212-4B09-8C85-F7509AB4EA5E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>485</integer>
-		</dict>
 		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>960</integer>
-		</dict>
-		<key>9DBEDB5C-678B-4FD0-9C08-7D3FDCAE0768</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>resize</string>
-			<key>xpos</key>
-			<integer>340</integer>
-			<key>ypos</key>
-			<integer>285</integer>
-		</dict>
-		<key>9F940FB6-0B0F-4032-9ACE-08B0BB52F4DB</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>35</integer>
-			<key>ypos</key>
-			<integer>720</integer>
+			<integer>135</integer>
 		</dict>
 		<key>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>840</integer>
+			<integer>15</integer>
 		</dict>
 		<key>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</key>
 		<dict>
