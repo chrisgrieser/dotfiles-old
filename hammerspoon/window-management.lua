@@ -10,48 +10,37 @@ end
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
-	local f = win:frame()
-	local screen = win:screen()
-	local max = screen:frame()
-
-	f.x = max.x
-	f.y = max.y
-	f.w = max.w
-	f.h = max.h
 
 	if (direction == "left") then
-		f.w = max.w / 2
+		position = {x=0, y=0, w=0.5, h=1}
 	elseif (direction == "right") then
-		f.w = max.w / 2
-		f.x = max.x + (max.w / 2)
+		position = {x=0.5, y=0, w=0.5, h=1}
 	elseif (direction == "up") then
-		f.h = max.h / 2
+		position = {x=0, y=0, w=1, h=0.5}
 	elseif (direction == "down") then
-		f.h = max.h / 2
-		f.y = max.y + (max.h / 2)
+		position = {x=0, y=0.5, w=1, h=0.5}
 	elseif (direction == "pseudo-maximized") then
-		f.w = max.w * 0.815
+		position = {x=0, y=0, w=0.815, h=1}
+	elseif (direction == "maximized") then
+		position = {x=0, y=0, w=1, h=1}
 	elseif (direction == "centered") then
-		f.x = max.x + (max.w * 0.2)
-		f.y = max.y + (max.h * 0.1)
-		f.w = max.w * 0.6
-		f.h = max.h * 0.8
+		position = {x=0.2, y=0.1, w=0.6, h=0.8}
 	end
-	win:setFrame(f)
+	win:moveToUnit(position)
 end
 
 function finderCentered ()
 	hs.applescript([[
-use framework "AppKit"
-set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-set max_x to item 1 of item 2 of item 1 of allFrames
-set max_y to item 2 of item 2 of item 1 of allFrames
+		use framework "AppKit"
+		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+		set max_x to item 1 of item 2 of item 1 of allFrames
+		set max_y to item 2 of item 2 of item 1 of allFrames
 
-set x to 0.2 * max_x
-set y to 0.1 * max_y
-set w to 0.6 * max_x
-set h to 0.8 * max_y
-tell application "Finder" to set bounds of window 1 to {x, y, x + w, y + h}
+		set x to 0.2 * max_x
+		set y to 0.1 * max_y
+		set w to 0.6 * max_x
+		set h to 0.8 * max_y
+		tell application "Finder" to set bounds of window 1 to {x, y, x + w, y + h}
 	]])
 end
 
@@ -69,6 +58,17 @@ hs.hotkey.bind({"ctrl"}, "Space", function ()
 		moveAndResize("pseudo-maximized")
 	end
 end)
+
+--------------------------------------------------------------------------------
+
+local laptopScreen = "Color LCD"
+local windowLayout = {
+    {"Safari",  nil,          laptopScreen, hs.layout.left50,    nil, nil},
+    {"Mail",    nil,          laptopScreen, hs.layout.right50,   nil, nil},
+    {"iTunes",  "iTunes",     laptopScreen, hs.layout.maximized, nil, nil},
+    {"iTunes",  "MiniPlayer", laptopScreen, nil, nil, hs.geometry.rect(0, -48, 400, 48)},
+}
+hs.layout.apply(windowLayout)
 
 
 --------------------------------------------------------------------------------
@@ -98,22 +98,22 @@ end
 
 function finderVerticalSplit ()
 	hs.applescript([[
-use framework "AppKit"
-set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-set screenWidth to item 1 of item 2 of item 1 of allFrames
-set screenHeight to item 2 of item 2 of item 1 of allFrames
+		use framework "AppKit"
+		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+		set screenWidth to item 1 of item 2 of item 1 of allFrames
+		set screenHeight to item 2 of item 2 of item 1 of allFrames
 
-set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
+		set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
 
-tell application "Finder"
-	if ((count windows) is 0) then return
-	if ((count windows) is 1) then
-		set currentWindow to target of window 1 as alias
-		make new Finder window to folder currentWindow
-	end if
-	set bounds of window 1 to item 2 of vsplit
-	set bounds of window 2 to item 1 of vsplit
-end tell
+		tell application "Finder"
+			if ((count windows) is 0) then return
+			if ((count windows) is 1) then
+				set currentWindow to target of window 1 as alias
+				make new Finder window to folder currentWindow
+			end if
+			set bounds of window 1 to item 2 of vsplit
+			set bounds of window 2 to item 1 of vsplit
+		end tell
 ]])
 end
 
