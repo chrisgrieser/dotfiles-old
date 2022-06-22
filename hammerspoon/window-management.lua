@@ -28,6 +28,11 @@ function moveAndResize(direction)
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
 	end
 	win:moveToUnit(position)
+
+	-- if window moved is from Drafts, toggle sidebars
+	if (win:application():name() == "Drafts") then
+		toggleDraftsSidebars()
+	end
 end
 
 function finderCentered ()

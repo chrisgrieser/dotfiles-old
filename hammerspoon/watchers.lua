@@ -13,7 +13,8 @@ end
 finderAppWatcher = hs.application.watcher.new(finderWatcher)
 finderAppWatcher:start()
 
--- DISCORD: Open OMG Server instead of Friends tab
+-- DISCORD: on launch, open OMG Server instead of friends
+-- (who needs friends if you have Obsidian?)
 function discordWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
 		if (appName == "Discord") then
