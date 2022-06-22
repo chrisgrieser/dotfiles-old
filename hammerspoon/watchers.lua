@@ -78,15 +78,17 @@ function displayCountWatcher()
 		-- "hs.brightness.set" does not work when second display is mirrored
 		-- therefore using Shortcuts instead
 		hs.shortcuts.run('Zero Brightness')
-		hs.application("Mimestream"):kill()
-		hs.application("Slack"):kill()
-		hs.application("Discord"):kill()
 		hs.application.open("YouTube")
+		hs.application("Drafts"):kill9()
+		hs.application("Slack"):kill9()
+		hs.application("Discord"):kill9()
+		hs.application("Mimestream"):kill9()
 	elseif (isIMacAtHome) then
 		hs.brightness.set(50)
 		hs.application.open("Mimestream")
 		hs.application.open("Discord")
 		hs.application.open("Slack")
+		hs.application.open("Drafts")
 		homeWindowLayout()
 	end
 end
