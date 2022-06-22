@@ -1,0 +1,6 @@
+// Settings in here override those in "LSP-lua/LSP-lua.sublime-settings"
+{
+	"settings": {
+		"Lua.diagnostics.globals": ["hs"], // Hammerspoon
+	}
+}
