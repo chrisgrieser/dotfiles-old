@@ -218,7 +218,6 @@ defaults write com.apple.helpviewer DevMode -bool true
 
 # Hot corners
 #-------------------------------------------
-# configured via BBT already, so no need to do it here
 # Possible values:
 #  0: no-op
 #  2: Mission Control

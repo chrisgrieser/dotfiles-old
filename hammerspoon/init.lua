@@ -14,6 +14,7 @@ hs.window.animationDuration = 0
 
 require("watchers")
 require("window-management")
+require("private")
 
 --------------------------------------------------------------------------------
 

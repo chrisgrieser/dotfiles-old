@@ -15,14 +15,12 @@ PopClip/_*
 
 # (potentially) sensitive data
 xbar plugins/*vars.json
-pw.md
-pw.txt
+pw.*
 .ssh/
 .zsh_history
 backup.log
 Home.bttpreset
-
-# Espanso (and Alfred) snippets (may contain sensitive info)
+private.lua
 espanso/match/private.yml
 espanso/match/private.yaml
 Alfred.alfredpreferences/snippets
