@@ -25,15 +25,24 @@ discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
 -- DRAFTS: Sidebar Toggle with Window Position
-function draftSideBars(appName, eventType, appObject)
+function toggleDraftsSidebars()
+	local draftsWindow = hs.window.focusedWindow()
+	local draftsWindowWidth = draftsWindow:size().w
+	local screenWidth = draftsWindow:screen():frame().w
+	if (draftsWindowWidth <= screenWidth / 2) then
+		hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
+	else
+		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+	end
+end
+function draftWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.activated) then
 		if (appName == "Drafts") then
-			draftsWindow = hs.window.find("Drafts")
-			appObject:selectMenuItem({"View", "Hide Draft List"})
+			toggleDraftsSidebars()
 		end
 	end
 end
-draftsAppWatcher = hs.application.watcher.new(draftSideBars)
+draftsAppWatcher = hs.application.watcher.new(draftWatcher)
 draftsAppWatcher:start()
 
 -- HIGHLIGHTS: Sync Dark & Light Mode
