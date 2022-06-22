@@ -34,32 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -71,44 +45,6 @@
 	<string>Window Management</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>vertical-split</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -150,108 +86,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>76FE5EBB-4A39-43BD-A839-DBB718B86097</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>-- this line has to appear before functions("on run")
-use framework "AppKit"
-
-on alfred_script(q)
-	tell application "System Events" to set frontApp to (name of first process where it is frontmost)
-
-	tell application frontApp to if ((count windows) is 0) then return
-
-	set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-	set screenWidth to item 1 of item 2 of item 1 of allFrames
-	set screenHeight to item 2 of item 2 of item 1 of allFrames
-
-	set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
-	set hsplit to {{0, 0, screenWidth, 0.5 * screenHeight}, {0, 0.5 * screenHeight, screenWidth, screenHeight} }
-	set typeOfSplit to q
-
-
-	if ( ¬
-		frontApp is "Finder" or ¬
-		frontApp is "Brave Browser" or ¬
-		frontApp is "Vivaldi" or ¬
-		frontApp is "Google Chrome" or ¬
-		frontApp is "Safari" or ¬
-	) then
-		tell application frontApp
-
-			if ((count windows) is 0) then return
-
-			if ((count windows) is 1) then
-				if (frontApp is not "Finder") then
-					make new window
-				else
-					# duplicate current window, if there is only one
-					set currentWindow to target of window 1 as alias
-					make new Finder window to folder currentWindow
-				end if
-			end if
-
-			if (typeOfSplit is "vertical-split")
-				set bounds of window 1 to item 2 of vsplit
-				set bounds of window 2 to item 1 of vsplit
-			else
-				set bounds of window 1 to item 2 of hsplit
-				set bounds of window 2 to item 1 of hsplit
-			end if
-
-		end tell
-	end if
-
-end alfred_script</string>
-				<key>cachescript</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>horizontal-split</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.finder</string>
-					<string>com.brave.Browser</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -307,55 +141,30 @@ end alfred_script</string>
 		<key>39FC0EDF-3CDE-4C10-A7AA-C67A7307993B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>155</integer>
 		</dict>
 		<key>41523074-48F2-4F9F-AE8D-4579B4473808</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>15</integer>
-		</dict>
-		<key>5C0732D4-E92C-49E0-9BD9-771E65C7E86B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>split</string>
-			<key>xpos</key>
-			<integer>255</integer>
-			<key>ypos</key>
-			<integer>65</integer>
+			<integer>30</integer>
 		</dict>
 		<key>76FE5EBB-4A39-43BD-A839-DBB718B86097</key>
 		<dict>
 			<key>xpos</key>
-			<integer>620</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>15</integer>
-		</dict>
-		<key>9A9AF4E2-ADDF-49E4-874A-33AF9515FBCF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>135</integer>
-		</dict>
-		<key>D8686B8E-EE8E-46B7-B3FC-3251B41CA94F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>15</integer>
+			<integer>30</integer>
 		</dict>
 		<key>E0D5F1C9-F30C-4194-8E36-2F517B4345E6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>620</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>155</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
