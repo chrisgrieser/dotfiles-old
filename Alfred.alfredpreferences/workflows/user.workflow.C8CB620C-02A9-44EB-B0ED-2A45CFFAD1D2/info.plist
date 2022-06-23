@@ -8,19 +8,6 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
-		<key>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>27B379BB-1B88-4D59-9ECE-96DFFF88322F</key>
 		<array>
 			<dict>
@@ -52,19 +39,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>52E4440D-A985-49F4-913B-DB43D6AED740</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>46C449F4-C8D3-488A-B15F-D53153D7FC29</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -419,96 +393,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/philc/vimium/wiki/Tips-and-Tricks</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vimimum</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Vimium Wiki</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>43</integer>
-				<key>hotmod</key>
-				<integer>655360</integer>
-				<key>hotstring</key>
-				<string>,</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>md.obsidian</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>27B379BB-1B88-4D59-9ECE-96DFFF88322F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/obsidian.vimrc</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>87FAFB82-BA4C-4B86-BFB7-42F829F37218</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -559,6 +443,56 @@
 			<string>52E4440D-A985-49F4-913B-DB43D6AED740</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>655360</integer>
+				<key>hotstring</key>
+				<string>,</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>md.obsidian</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>27B379BB-1B88-4D59-9ECE-96DFFF88322F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/Meta/obsidian.vimrc</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>87FAFB82-BA4C-4B86-BFB7-42F829F37218</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -617,62 +551,11 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vim codemirror</string>
-				<key>subtext</key>
-				<string>vim.js</string>
-				<key>text</key>
-				<string>CodeMirror</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>46C449F4-C8D3-488A-B15F-D53153D7FC29</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>3CED399E-5B73-47CD-AC97-99B0CCD321F0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>01CFAD8D-1D52-45A0-B72E-CC9C5FB0C528</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>vimium docs</string>
-			<key>xpos</key>
-			<integer>630</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
 		<key>03A61E61-611A-4555-B4F6-30ED79850890</key>
 		<dict>
 			<key>xpos</key>
@@ -712,27 +595,9 @@
 			<key>note</key>
 			<string>open neovintageous and obsidian vimrc</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>440</integer>
-		</dict>
-		<key>3CED399E-5B73-47CD-AC97-99B0CCD321F0</key>
-		<dict>
-			<key>xpos</key>
-			<integer>230</integer>
-			<key>ypos</key>
-			<integer>725</integer>
-		</dict>
-		<key>46C449F4-C8D3-488A-B15F-D53153D7FC29</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>cheat sheet</string>
-			<key>xpos</key>
-			<integer>45</integer>
-			<key>ypos</key>
-			<integer>725</integer>
+			<integer>290</integer>
 		</dict>
 		<key>49BF37B2-3037-4978-954E-E89973D38B6D</key>
 		<dict>
@@ -757,9 +622,9 @@
 		<key>52E4440D-A985-49F4-913B-DB43D6AED740</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>820</integer>
 			<key>ypos</key>
-			<integer>440</integer>
+			<integer>290</integer>
 		</dict>
 		<key>59880808-66A8-4459-B33C-A5FE98786D2F</key>
 		<dict>
@@ -843,13 +708,6 @@
 			<integer>40</integer>
 			<key>ypos</key>
 			<integer>35</integer>
-		</dict>
-		<key>F1A20EDE-7D84-4613-8C5D-78CDDB5B1A32</key>
-		<dict>
-			<key>xpos</key>
-			<integer>815</integer>
-			<key>ypos</key>
-			<integer>295</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
