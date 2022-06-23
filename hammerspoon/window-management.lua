@@ -1,5 +1,10 @@
 require("utils")
 
+function nextWin ()
+	hs.window.switcher.nextWindow()
+end
+hs.hotkey.bind(Hyperkey, "U", nextWin)
+
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
 	local position

@@ -17,7 +17,7 @@ finderAppWatcher:start()
 function discordWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
 		if (appName == "Discord") then
-			hs.applescript('tell Application "Discord" to open location "discord://discord.com/channels/686053708261228577/700466324840775831"')
+			hs.urlevent.openURL("discord://discord.com/channels/686053708261228577/700466324840775831")
 		end
 	end
 end
@@ -104,33 +104,33 @@ bookmarkWatcher:start()
 function downloadFolderBadge ()
 	-- requires "fileicon" being installed
 	hs.execute([[
-	export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
-	folder="$HOME/Video/Downloaded"
-	icons_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/Download Folder"
-	itemCount=$(ls "$folder" | wc -l)
-	itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
+		export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
+		folder="$HOME/Video/Downloaded"
+		icons_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Custom Icons/Download Folder"
+		itemCount=$(ls "$folder" | wc -l)
+		itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
 
-	# cache necessary to rpevent recursion of icon change triggering pathwatcher again
-	cache_location="/Library/Caches/dlFolderLastChange"
-	if test ! -e "$cache_location" ; then
-		if test $itemCount -gt 0 ; then
-			echo "badge" > "$cache_location"
-		else
-			touch "$cache_location"
+		# cache necessary to rpevent recursion of icon change triggering pathwatcher again
+		cache_location="/Library/Caches/dlFolderLastChange"
+		if test ! -e "$cache_location" ; then
+			if test $itemCount -gt 0 ; then
+				echo "badge" > "$cache_location"
+			else
+				touch "$cache_location"
+			fi
 		fi
-	fi
-	last_change=$(cat "$cache_location")
+		last_change=$(cat "$cache_location")
 
-	# using test instead of square brackets cause lua
-	if test $itemCount -gt 0 && test -z "$last_change" ; then
-		fileicon set "$folder" "$icons_path/with Badge.icns"
-		echo "badge" > "$cache_location"
-		killall Dock
-	elif test $itemCount -eq 0 && test -n "$last_change" ; then
-		fileicon set "$folder" "$icons_path/without Badge.icns"
-		echo "" > "$cache_location"
-		killall Dock
-	fi
+		# using test instead of square brackets cause lua
+		if test $itemCount -gt 0 && test -z "$last_change" ; then
+			fileicon set "$folder" "$icons_path/with Badge.icns"
+			echo "badge" > "$cache_location"
+			killall Dock
+		elif test $itemCount -eq 0 && test -n "$last_change" ; then
+			fileicon set "$folder" "$icons_path/without Badge.icns"
+			echo "" > "$cache_location"
+			killall Dock
+		fi
 	]])
 end
 downloadFolderWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Video/Downloaded", downloadFolderBadge)
