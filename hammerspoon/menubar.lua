@@ -6,7 +6,8 @@ require("utils")
 
 weatherStatusBar = hs.menubar.new()
 function setWeather()
-	weatherStatusBar:setTitle("blub")
+	local _, weather = hs.http.get("https://wttr.in/Berlin?format=1", nil)
+	weatherStatusBar:setTitle(weather)
 end
 setWeather()
 
