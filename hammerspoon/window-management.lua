@@ -138,3 +138,27 @@ hs.hotkey.bind(Hyperkey, "V", function()
 		finderVerticalSplit()
 	end
 end)
+
+--------------------------------------------------------------------------------
+
+-- PROJECTOR: Dim brightness when projector is connected
+function displayCountWatcher()
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
+
+	if (isProjector) then
+		-- "hs.brightness.set" does not work when second display is mirrored
+		-- therefore using Shortcuts instead
+		hs.shortcuts.run('Zero Brightness')
+		hs.application.open("YouTube")
+		hs.application("Drafts"):kill9()
+		hs.application("Slack"):kill9()
+		hs.application("Discord"):kill9()
+		hs.application("Mimestream"):kill9()
+	elseif (isIMacAtHome) then
+		hs.brightness.set(50)
+		homeWindowLayout()
+	end
+end
+displayWatcher = hs.screen.watcher.new(displayCountWatcher)
+displayWatcher:start()

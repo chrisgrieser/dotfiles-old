@@ -12,6 +12,19 @@ end
 finderAppWatcher = hs.application.watcher.new(finderWatcher)
 finderAppWatcher:start()
 
+-- HOT CORNER Use "Quick Note" as Hot Corner Action
+-- to trigger something else instead
+function hotcornerWatcher(appName, eventType)
+	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Notes") then
+			hs.application("Notes"):kill9()
+			hs.shortcuts.run("Keyboard on-screen")
+		end
+	end
+end
+hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
+hotcornerEmulation:start()
+
 -- DISCORD: on launch, open OMG Server instead of friends
 -- (who needs friends if you have Obsidian?)
 function discordWatcher(appName, eventType)
@@ -64,29 +77,7 @@ end
 highlightsAppWatcher = hs.application.watcher.new(highlightsWatcher)
 highlightsAppWatcher:start()
 
--- PROJECTOR: Dim brightness when projector is connected
-function displayCountWatcher()
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
-
-	if (isProjector) then
-		-- "hs.brightness.set" does not work when second display is mirrored
-		-- therefore using Shortcuts instead
-		hs.shortcuts.run('Zero Brightness')
-		hs.application.open("YouTube")
-		hs.application("Drafts"):kill9()
-		hs.application("Slack"):kill9()
-		hs.application("Discord"):kill9()
-		hs.application("Mimestream"):kill9()
-	elseif (isIMacAtHome) then
-		hs.brightness.set(50)
-		homeWindowLayout()
-	end
-end
-displayWatcher = hs.screen.watcher.new(displayCountWatcher)
-displayWatcher:start()
-
--- Brave Bookmarks synced to Chrome Bookmarks (needed for Alfred)
+-- BRAVE Bookmarks synced to Chrome Bookmarks (needed for Alfred)
 function bookmarkSync()
 	hs.execute([[
 		BROWSER="BraveSoftware/Brave-Browser"
