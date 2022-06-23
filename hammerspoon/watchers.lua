@@ -25,18 +25,21 @@ discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
 -- DISCORD: pasteboard fix for URLs
+-- when Discord activites and the clipboard contains an URL
+-- it will be enclosed in <> to avoid annoying previews
 function discordURLFixer(appName, eventType)
-	if (eventType == hs.application.watcher.launching) then
+	if (eventType == hs.application.watcher.activated) then
 		if (appName == "Discord") then
 			local clipb = hs.pasteboard.getContents()
-			local urlPattern = string.match(clipb, '^https?%s*$')
-			local hasURL = urlPattern ~= nil
+			local hasURL = string.match(clipb, '^https?%S+$')
 			if (hasURL) then
-				hs.pasteboard.setContents(hs.pasteboard.getContents())
+				hs.pasteboard.setContents("<" .. hs.pasteboard.getContents() .. ">")
 			end
 		end
 	end
 end
+discordClipboardWatcher = hs.application.watcher.new(discordURLFixer)
+discordClipboardWatcher:start()
 
 -- HIGHLIGHTS: Sync Dark & Light Mode
 function highlightsWatcher(appName, eventType)
