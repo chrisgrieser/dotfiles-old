@@ -70,7 +70,6 @@ hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
 hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
 hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
-hs.hotkey.bind(Hyperkey, "S", function () moveAndResize("side") end)
 
 hs.hotkey.bind({"ctrl"}, "Space", function ()
 	if (finderIsFrontmost()) then
