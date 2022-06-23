@@ -15,10 +15,11 @@ end
 twitterUpdateInterval = 10
 hs.timer.doEvery(twitterUpdateInterval * 60, twitterrificScrollUp)
 
-function twitterificAction (key)
-	hs.eventtap.keyStroke({}, key, 1, hs.application("Twitterrific"))
+function twitterificAction (keystroke)
+	hs.eventtap.keyStroke({}, keystroke, 1, hs.application("Twitterrific"))
 end
 
 hs.hotkey.bind({}, "home", twitterrificScrollUp)
+hs.hotkey.bind({"cmd"}, "home", function() hs.application("Twitterrific"):activate() end)
 hs.hotkey.bind({}, "pagedown", function() twitterificAction("j") end, nil, function() twitterificAction("j") end)
 hs.hotkey.bind({}, "pageup", function() twitterificAction("k") end, nil, function() twitterificAction("k") end)
