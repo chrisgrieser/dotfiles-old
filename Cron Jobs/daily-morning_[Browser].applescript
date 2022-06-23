@@ -1,8 +1,15 @@
 #!/usr/bin/env osascript
 
+# Check with Catch
+# this prevents having the catch icon on all the time
+tell application "Catch"
+	launch
+	delay 7
+	quit
+end tell
+
 # SLEEP TIMER
 do shell script "killall \"YouTube\" || true"
-
 tell application "Brave Browser"
 	if ((count of window) is not 0)
 		if ((count of tab of front window) is not 0)
@@ -25,16 +32,6 @@ end tell
 # (redundancy with iOS for safety)
 # with shell script as opposed to Applescript, as Shortcuts.app isn't activated
 do shell script "shortcuts run \"Send Reminders due today to Drafts\""
-
--- HIDE DRAFTS TOOLBAR
-try
-	tell application "System Events"
-		tell process "Drafts"
-			set frontmost to true
-			click menu item "Hide Toolbar" of menu "View" of menu bar 1
-		end tell
-	end tell
-end try
 
 # BUSYCAL RESTART
 # to ensure menubar icon is there

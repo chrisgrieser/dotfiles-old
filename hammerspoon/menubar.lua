@@ -6,6 +6,10 @@ require("utils")
 
 weatherStatusBar = hs.menubar.new()
 function setWeather()
-	weatherStatusBar:setTitle("blubfb")
+	weatherStatusBar:setTitle("blub")
 end
 setWeather()
+
+
+
+
