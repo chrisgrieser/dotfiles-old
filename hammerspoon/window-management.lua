@@ -1,16 +1,14 @@
 -- https://www.hammerspoon.org/go/
 -------------------------------------
+Hyperkey = {"cmd", "alt", "ctrl", "shift"}
+require("utils")
 
-function finderIsFrontmost ()
-	local frontapp = hs.application.frontmostApplication():bundleID()
-	return frontapp == "com.apple.finder"
-end
+
 
 --------------------------------------------------------------------------------
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
-	local winApp = win:application():name()
 	local position
 
 	if (direction == "left") then
@@ -32,14 +30,10 @@ function moveAndResize(direction)
 	end
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
-	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal") then
-		resizingWorkaround(position, winApp)
-	else
-		win:moveToUnit(position)
-	end
+	resizingWorkaround(win, position)
 
 	-- if window moved is from Drafts, toggle sidebars
-	if (winApp == "Drafts") then
+	if (win:application():name() == "Drafts") then
 		if (direction == "pseudo-maximized" or direction == "maximized") then
 			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 		else
@@ -49,20 +43,25 @@ function moveAndResize(direction)
 
 end
 
-function resizingWorkaround(pos, app_name)
-	hs.applescript([[
-		use framework "AppKit"
-		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-		set max_x to item 1 of item 2 of item 1 of allFrames
-		set max_y to item 2 of item 2 of item 1 of allFrames
-		]] ..
+function resizingWorkaround(win, pos)
+	local winApp = win:application():name()
+	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal") then
+		hs.applescript([[
+			use framework "AppKit"
+			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+			set max_x to item 1 of item 2 of item 1 of allFrames
+			set max_y to item 2 of item 2 of item 1 of allFrames
+			]] ..
 
-		"set x to " .. pos.x .. " * max_x\n" ..
-		"set y to " .. pos.y .. " * max_y\n" ..
-		"set w to " .. pos.w .. " * max_x\n" ..
-		"set h to " .. pos.h .. " * max_y\n" ..
-		'tell application "' .. app_name .. '" to set bounds of front window to {x, y, x + w, y + h}'
-	)
+			"set x to " .. pos.x .. " * max_x\n" ..
+			"set y to " .. pos.y .. " * max_y\n" ..
+			"set w to " .. pos.w .. " * max_x\n" ..
+			"set h to " .. pos.h .. " * max_y\n" ..
+			'tell application "' .. winApp .. '" to set bounds of front window to {x, y, x + w, y + h}'
+		)
+	else
+		win:moveToUnit(pos)
+	end
 end
 
 hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
