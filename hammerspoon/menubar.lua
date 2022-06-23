@@ -3,3 +3,9 @@
 --------------------------------------------------------------------------------
 
 require("utils")
+
+weatherStatusBar = hs.menubar.new()
+function setWeather()
+	weatherStatusBar:setTitle("blubfb")
+end
+setWeather()
