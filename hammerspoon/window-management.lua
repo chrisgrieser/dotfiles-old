@@ -38,7 +38,8 @@ end
 
 function resizingWorkaround(win, pos)
 	local winApp = win:application():name()
-	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal") then
+	-- add Applescript-capable apps you are using to the if-condition below
+	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp = "Safari") then
 		hs.applescript([[
 			use framework "AppKit"
 			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
