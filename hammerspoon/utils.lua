@@ -5,6 +5,6 @@ function notify (text)
 end
 
 function finderIsFrontmost ()
-	local frontapp = hs.application.frontmostApplication():bundleID()
-	return frontapp == "com.apple.finder"
+	local frontapp = hs.application.frontmostApplication():name()
+	return frontapp == "Finder"
 end
