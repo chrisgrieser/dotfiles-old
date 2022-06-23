@@ -2564,100 +2564,6 @@
                         ]
                     },
                     {
-                        "description": "Ⓜ️🐦 Twitterific: F3 → Scroll up properly, ⌘+ö → activate properly",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f3"
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "osascript -e 'tell application \"Twitterrific\" to activate'"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 70,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "98%",
-                                                "y": "10%"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "key_code": "k",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "j",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 60,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 140,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "⌘+ö → activate (needed to make jk work) (⌘⌥+ö is set as Twitterific activation)",
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "semicolon",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "🔘 ⌘+J → Expand Word",
                         "manipulators": [
                             {
@@ -4590,16 +4496,6 @@
                         },
                         {
                             "from": {
-                                "key_code": "end"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f6"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "grave_accent_and_tilde"
                             },
                             "to": [
@@ -4610,41 +4506,11 @@
                         },
                         {
                             "from": {
-                                "key_code": "home"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f5"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "non_us_backslash"
                             },
                             "to": [
                                 {
                                     "key_code": "grave_accent_and_tilde"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "page_down"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "vk_none"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "page_up"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "vk_none"
                                 }
                             ]
                         },

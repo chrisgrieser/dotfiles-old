@@ -177,6 +177,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A2CA2F4B-949B-4449-9F4E-F3BC94025B9C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>38642B1F-2C61-4D93-8CD7-BC811CB520F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A61354DB-E524-4D0E-A28B-8AAC9523262F</key>
 		<array>
 			<dict>
@@ -543,11 +556,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>98</integer>
+				<integer>115</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F7</string>
+				<string>↖</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -558,28 +571,9 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>73BD8961-0B9D-42B7-8B23-EDAEBD6949DF</string>
+			<string>A2CA2F4B-949B-4449-9F4E-F3BC94025B9C</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>previous</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>com.vdesabou.spotify.mini.player</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>1D298F04-C550-4AD1-95C9-88273CDCBBA9</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -633,11 +627,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>100</integer>
+				<integer>98</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F8</string>
+				<string>F7</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -648,7 +642,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>A0FE43DC-98A7-4B5C-A2DA-AEE17890B84F</string>
+			<string>73BD8961-0B9D-42B7-8B23-EDAEBD6949DF</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -656,7 +650,7 @@
 			<key>config</key>
 			<dict>
 				<key>externaltriggerid</key>
-				<string>playpause</string>
+				<string>previous</string>
 				<key>passinputasargument</key>
 				<true/>
 				<key>passvariables</key>
@@ -667,7 +661,7 @@
 			<key>type</key>
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>90D4F965-FAE3-433E-A668-A1406C49F49A</string>
+			<string>1D298F04-C550-4AD1-95C9-88273CDCBBA9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -740,6 +734,96 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
+				<integer>100</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F8</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A0FE43DC-98A7-4B5C-A2DA-AEE17890B84F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>playpause</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>com.vdesabou.spotify.mini.player</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>90D4F965-FAE3-433E-A668-A1406C49F49A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://open.spotify.com/search/{query}/shows</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>28E7073C-2779-46C7-A8E3-007F46FC376A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pod</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Podcast on Spotify: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1D4EED54-9514-43EC-9BC4-7A8A6B03907C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
 				<integer>101</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
@@ -781,19 +865,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://open.spotify.com/search/{query}/shows</string>
-				<key>utf8</key>
+				<key>externaltriggerid</key>
+				<string>refresh_library</string>
+				<key>passinputasargument</key>
 				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>com.vdesabou.spotify.mini.player</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>28E7073C-2779-46C7-A8E3-007F46FC376A</string>
+			<string>D69744D0-59D4-43A8-B8ED-F169B139B10D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -801,20 +885,20 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>keyword</key>
-				<string>pod</string>
+				<string>refresh</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Podcast on Spotify: '{query}'</string>
+				<string>Refresh Spotify Playlists</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>1D4EED54-9514-43EC-9BC4-7A8A6B03907C</string>
+			<string>2D4802D1-DB08-492C-8D46-37AE57634698</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -885,46 +969,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>refresh_library</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>com.vdesabou.spotify.mini.player</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>D69744D0-59D4-43A8-B8ED-F169B139B10D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>refresh</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Refresh Spotify Playlists</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2D4802D1-DB08-492C-8D46-37AE57634698</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -948,7 +992,7 @@
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>835</integer>
 		</dict>
 		<key>14DF7AF2-4381-4FFD-BAD2-E76C91A4FBF2</key>
 		<dict>
@@ -959,7 +1003,7 @@
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>850</integer>
+			<integer>980</integer>
 		</dict>
 		<key>1D298F04-C550-4AD1-95C9-88273CDCBBA9</key>
 		<dict>
@@ -968,7 +1012,7 @@
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>560</integer>
 		</dict>
 		<key>1D4EED54-9514-43EC-9BC4-7A8A6B03907C</key>
 		<dict>
@@ -1004,7 +1048,7 @@
 			<key>xpos</key>
 			<integer>535</integer>
 			<key>ypos</key>
-			<integer>880</integer>
+			<integer>1010</integer>
 		</dict>
 		<key>263DA679-0602-45FE-A0A6-45AEFAB74FDD</key>
 		<dict>
@@ -1087,7 +1131,7 @@
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>835</integer>
 		</dict>
 		<key>73BD8961-0B9D-42B7-8B23-EDAEBD6949DF</key>
 		<dict>
@@ -1098,7 +1142,7 @@
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>560</integer>
 		</dict>
 		<key>76A5622F-175B-4AB2-8D64-41B97D60EEE5</key>
 		<dict>
@@ -1127,7 +1171,7 @@
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>565</integer>
+			<integer>695</integer>
 		</dict>
 		<key>9B1175BD-0707-4517-9567-84A63DE1C1AD</key>
 		<dict>
@@ -1136,7 +1180,7 @@
 			<key>xpos</key>
 			<integer>600</integer>
 			<key>ypos</key>
-			<integer>850</integer>
+			<integer>980</integer>
 		</dict>
 		<key>9B531A14-88BF-44C0-B14F-371CF58903CB</key>
 		<dict>
@@ -1156,7 +1200,18 @@
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
-			<integer>565</integer>
+			<integer>695</integer>
+		</dict>
+		<key>A2CA2F4B-949B-4449-9F4E-F3BC94025B9C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>🔊</string>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>415</integer>
 		</dict>
 		<key>A61354DB-E524-4D0E-A28B-8AAC9523262F</key>
 		<dict>

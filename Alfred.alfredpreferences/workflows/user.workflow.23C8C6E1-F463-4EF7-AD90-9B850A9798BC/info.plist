@@ -36,6 +36,19 @@
 		</array>
 		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
 		<array/>
+		<key>DDB63880-A3F4-4349-9D72-7863515C4FFA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -146,6 +159,37 @@ tell application "Brave Browser" to close active tab of front window</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>119</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>↘</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>DDB63880-A3F4-4349-9D72-7863515C4FFA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A simple one-liner terminal script that toggles Dark Mode on/off if you are using MacOS 10.14 (Mojave) and beyond.</string>
@@ -179,6 +223,17 @@ tell application "Brave Browser" to close active tab of front window</string>
 			<integer>290</integer>
 			<key>ypos</key>
 			<integer>230</integer>
+		</dict>
+		<key>DDB63880-A3F4-4349-9D72-7863515C4FFA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>🌗</string>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>440</integer>
 		</dict>
 	</dict>
 	<key>version</key>
