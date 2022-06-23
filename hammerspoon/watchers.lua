@@ -1,5 +1,4 @@
--- https://www.hammerspoon.org/go/
--------------------------------------
+require("utils")
 
 -- FINDER: Bring all windows forward & hide sidebar when activated
 function finderWatcher(appName, eventType, appObject)

@@ -1,4 +1,5 @@
 -- https://www.hammerspoon.org/go/
+
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
