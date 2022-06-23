@@ -18,6 +18,7 @@ hs.timer.doEvery(weatherUpdateMin * 60, setWeather)
 covidUpdateHours = 12
 covidLocationCode = "BE"
 
+-- German Covid-Numbers by the RKI → https://api.corona-zahlen.org/docs/
 function setCovidBar()
 	covidBar = hs.menubar.new()
 	local _, dataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)

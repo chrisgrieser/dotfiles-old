@@ -10,7 +10,7 @@ require("watchers")
 require("window-management")
 require("private")
 require("menubar")
-
+require("app-specific")
 --------------------------------------------------------------------------------
 
 notify("Config reloaded")
