@@ -1,19 +1,11 @@
 require("utils")
 
-function windowCycle (direction)
-	local frontapp = hs.application.frontmostApplication():name()
+-- ⌥ ↹ – Window Switcher, only for Browser and Finder Windows
+--https://www.hammerspoon.org/docs/hs.window.switcher.html
+windowSwitcher = hs.window.switcher.new{"Finder", "Brave Browser"}
+hs.hotkey.bind({"alt"}, "tab", function() windowSwitcher:next() end)
 
-	currentAppWindowSwitcher = hs.window.switcher.new{frontapp}
-
-	if (direction == "next") then
-		currentAppWindowSwitcher:next()
-	else
-		currentAppWindowSwitcher:previous()
-	end
-end
-
-hs.hotkey.bind({"alt"}, "tab", nil, nil, function() windowCycle("next") end)
-hs.hotkey.bind({"alt", "shift"}, "tab", function() windowCycle("previous") end)
+--------------------------------------------------------------------------------
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
