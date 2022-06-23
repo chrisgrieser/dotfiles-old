@@ -24,6 +24,12 @@ end
 discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
+-- DISCORD: pasteboard fix for URLs
+function discordURLFixer (url)
+	local urlPattern = string.match(url, '^https?%s*$')
+	local hasURL = urlPattern ~= nil
+end
+
 -- HIGHLIGHTS: Sync Dark & Light Mode
 function highlightsWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
