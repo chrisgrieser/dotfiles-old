@@ -752,7 +752,7 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 				<key>keyword</key>
 				<string>ch</string>
 				<key>subtext</key>
-				<string></string>
+				<string>'query' or 'lang/query'</string>
 				<key>text</key>
 				<string>cht.sh: '{query}'</string>
 				<key>withspace</key>

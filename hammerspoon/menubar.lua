@@ -1,7 +1,6 @@
 -- https://www.hammerspoon.org/docs/hs.menubar.html
 -- https://www.hammerspoon.org/go/#simplemenubar
 --------------------------------------------------------------------------------
-
 require("utils")
 
 function setWeather()
@@ -13,5 +12,16 @@ end
 setWeather()
 
 updateIntervall = 15
-intervalSecs = hs.timer.seconds(tostring(updateIntervall) .. "m")
-hs.timer.doEvery(intervalSecs, setWeather)
+hs.timer.doEvery(updateIntervall * 60, setWeather)
+
+--------------------------------------------------------------------------------
+function setCovidBar()
+	covidBar = hs.menubar.new()
+	local _, dataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)
+	local covidNumbers = hs.json.decode(dataJSON)
+	local sevenDayIncidence = covidNumbers.weekIncidence:gsub(".%d", "")
+
+	covidBar:setTitle("🦠" .. sevenDayIncidence)
+end
+setCovidBar()
+
