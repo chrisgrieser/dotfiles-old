@@ -222,19 +222,18 @@ defaults write com.apple.helpviewer DevMode -bool true
 #  0: no-op
 #  2: Mission Control
 #  3: Show application windows
-#  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
 # 10: Put display to sleep
 # 11: Launchpad
 # 12: Notification Center
 # 13: Lock Screen
+# 14: Quick Notes
 
 # Top right → Notification Center
 defaults write com.apple.dock wvous-tr-corner -int 12
 defaults write com.apple.dock wvous-tr-modifier -int 0
-# Bottom right → Start screen saver
+# Bottom right → Quick Notes (Trigger for Hammerspoon)
+defaults write com.apple.dock wvous-br-corner -int 14
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 killall Dock
 

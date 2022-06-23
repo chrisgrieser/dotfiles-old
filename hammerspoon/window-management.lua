@@ -25,8 +25,6 @@ function moveAndResize(direction)
 		position = {x=0, y=0, w=1, h=1}
 	elseif (direction == "centered") then
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
-	elseif (direction == "side") then
-		position = {x=0.815, y=0, w=0.185, h=1}
 	end
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
@@ -72,7 +70,7 @@ hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
 hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
 
 hs.hotkey.bind({"ctrl"}, "Space", function ()
-	if (finderIsFrontmost()) then
+	if (frontapp() == "Finder") then
 		moveAndResize("centered")
 	else
 		moveAndResize("pseudo-maximized")
@@ -134,7 +132,7 @@ function finderVerticalSplit ()
 end
 
 hs.hotkey.bind(Hyperkey, "V", function()
-	if (finderIsFrontmost()) then
+	if (frontapp() == "Finder") then
 		finderVerticalSplit()
 	end
 end)

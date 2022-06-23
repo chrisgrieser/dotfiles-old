@@ -12,7 +12,7 @@ end
 finderAppWatcher = hs.application.watcher.new(finderWatcher)
 finderAppWatcher:start()
 
--- HOT CORNER Use "Quick Note" as Hot Corner Action
+-- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action
 -- to trigger something else instead
 function hotcornerWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.activated) then
