@@ -7,3 +7,5 @@ end
 function frontapp ()
 	return hs.application.frontmostApplication():name()
 end
+
+
