@@ -5,15 +5,14 @@ To add a rule on your Mac, install [Karabiner Elements](https://karabiner-elemen
 ## Table of Contents
 <!-- MarkdownTOC -->
 
-- [Caps Lock to Hyper / Esc, Tabs to Meh](#caps-lock-to-hyper--esc-tabs-to-meh)
+- [Caps Lock to Hyper / Esc & Tabs to Meh](#caps-lock-to-hyper--esc--tabs-to-meh)
 - [Vim Utilities](#vim-utilities)
 - [Mouse Click Trickery](#mouse-click-trickery)
 - [Global Leader Key \(App Launcher\)](#global-leader-key-app-launcher)
-- [Vim Mode](#vim-mode)
 
 <!-- /MarkdownTOC -->
 
-## Caps Lock to Hyper / Esc, Tabs to Meh
+## Caps Lock to Hyper / Esc & Tabs to Meh
 - This rule turns capslock into `⌘⌥⇧⌃`, the so called [Hyper Key](https://holmberg.io/hyper-key/). The Hyper Key can be used as a fifth modifier key.
 - If pressed alone, capslock will become `Esc`, which is convenient for vim users. 
 - The tabs key turns into `⌥⇧⌃` (all except `⌘`), the [Meh Key](https://ergodox-ez.com/pages/our-firmware), serving as sixth modifier key.
@@ -69,30 +68,20 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `m` → `M`ail → Mimestream
 - `g` → `G`oogle Docs (PWA)
 - `a` → `A`lfred Preferences
-- `v` → `V`ideo → `V`LC Player
+- `v` → `V`ideo → IINA
 - `ö`[^1] → Twitter (`ö` looks like the Twitterific Logo)
 - `k` → `K`arabiner Elements
 - `K` → `K`arabiner EventViewer
 - `w` → `W`hatsApp (in the Browser)
 - `t` → `T`elegram (in the Browser)
 - `f` → `F`acebook Messenger (in the Browser)
-- `x` → `xxx` → Password Manager → MacPass
+- `x` → Password Manager → MacPass (`xxxxx` for passwords)
 - `h` → `H`ammerspoon Console
 - `.`/`:` → Emoji Insertion Modal
 - `,` → System Preferences
 
 ```text
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/app-switcher-leader.json
-```
-
-## Vim Mode
-- A global Vim Mode for every text field in macOS.
-- Triggered via tapping `left-shift`, canceled via tapping `left-shift` again, or with `i`/`Esc`/`Caps Lock`.
-- Supported Actions: `hjklHJKLebG` & `xCDi<Esc>` 
-- Non-standard supported action: `<Space>` for `ciw` and `<S-Space>` for `daw`, and some more actions customized actions.
-
-```text
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chrisgrieser/dotfiles/main/.config/karabiner/assets/complex_modifications/vim-mode.json
 ```
 
 [^1]: On non-German keyboards, `y` and `z` are switched, so the key codes are the other way round. `ö` is only found on German Keyboards as such, on US Keyboards it is `;`.
