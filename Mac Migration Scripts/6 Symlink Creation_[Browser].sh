@@ -41,10 +41,6 @@ ln -sf "$DOTFILE_FOLDER/Sublime User Folder/" ~"/Library/Application Support/Sub
 rm -rf ~"/Library/Application Support/Sublime Text/Installed Packages/CSS3.sublime-package"
 ln -sf "$DOTFILE_FOLDER/Sublime Packages/CSS3.sublime-package" ~"/Library/Application Support/Sublime Text/Installed Packages"
 
-# Folder Actions
-rm -rf ~"/Library/Workflows/Applications/Folder Actions"
-ln -sf "$DOTFILE_FOLDER/Folder Actions/" ~"/Library/Workflows/Applications/Folder Actions"
-
 # -------------------
 # Special Cases
 # -------------------
