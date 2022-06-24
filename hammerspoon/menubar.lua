@@ -8,6 +8,7 @@ function systemWakeWatcher (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 		setWeather()
 		setCovidBar()
+		twitterrificScrollUp()
 		notify ("System has woke up.")
 	end
 end
@@ -43,16 +44,13 @@ function setCovidBar()
 	local _, stateDataJSON = hs.http.get("https://api.corona-zahlen.org/states/" .. covidLocationCode, nil)
 	local stateNumbers = hs.json.decode(stateDataJSON)
 	local stateName = stateNumbers.data[covidLocationCode].name
-	local state_7D_incidence = stateNumbers.data[covidLocationCode].weekIncidence
+	local state_7D_incidence = math.floor(stateNumbers.data[covidLocationCode].weekIncidence)
 
-	covidBar:setTitle("🦠 " .. national_7D_incidence .. "/".. state_7D_incidence .." (" .. nationalR ..  ")")
+	covidBar:setTooltip("Germany / "..stateName.." (r)")
+	covidBar:setTitle("🦠 "..national_7D_incidence.." / "..state_7D_incidence.." ("..nationalR..")")
 end
 setCovidBar()
 hs.timer.doEvery(covidUpdateHours * 60 * 60, setCovidBar)
-
--- const stateData = await getOnlineJson("https://api.corona-zahlen.org/states/" + stateID);
--- const state7DInc = stateData.data[stateID].weekIncidence;
--- const stateName = stateData.data[stateID].name
 
 --------------------------------------------------------------------------------
 
