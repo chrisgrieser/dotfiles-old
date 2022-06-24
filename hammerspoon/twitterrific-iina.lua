@@ -25,11 +25,18 @@ function pageupAction ()
 		hs.eventtap.keyStroke({}, "up", 1, hs.application("Twitterrific"))
 	end
 end
+function homeAction ()
+	if isRunning("IINA") then
+		hs.eventtap.keyStroke({}, "Space", 1, hs.application("IINA"))
+	else
+		hs.application("Twitterrific"):activate()
+	end
+end
 
 --------------------------------------------------------------------------------
 
 hs.hotkey.bind({}, "pagedown", pagedownAction, nil, pagedownAction)
 hs.hotkey.bind({}, "pageup", pageupAction, nil, pageupAction)
+hs.hotkey.bind({}, "home", homeAction)
 
 hs.hotkey.bind({"shift"}, "home", twitterrificScrollUp)
-hs.hotkey.bind({}, "home", function() hs.application("Twitterrific"):activate() end)
