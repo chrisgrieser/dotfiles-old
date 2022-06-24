@@ -400,6 +400,7 @@ rules:
               - ^/Applications/Sublime Text\.app
               - ^/Applications/Discord\.app
               - ^/Applications/Brave Browser\.app
+              - ^/Applications/Hammerspoon\.app
         to:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.US$

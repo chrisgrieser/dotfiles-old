@@ -1,4 +1,11 @@
 require("utils")
+--------------------------------------------------------------------------------
+
+hs.loadSpoon("LookupSelection")
+spoon.LookupSelection:bindHotkeys(Hyperkey, "U")
+
+
+--------------------------------------------------------------------------------
 
 -- ⌥ ↹ – Window Switcher, only for Browser and Finder Windows
 --https://www.hammerspoon.org/docs/hs.window.switcher.html
@@ -91,6 +98,34 @@ hs.hotkey.bind({"ctrl"}, "Space", function ()
 end)
 
 --------------------------------------------------------------------------------
+function finderVerticalSplit ()
+	hs.applescript([[
+		use framework "AppKit"
+		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+		set screenWidth to item 1 of item 2 of item 1 of allFrames
+		set screenHeight to item 2 of item 2 of item 1 of allFrames
+
+		set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
+
+		tell application "Finder"
+			if ((count windows) is 0) then return
+			if ((count windows) is 1) then
+				set currentWindow to target of window 1 as alias
+				make new Finder window to folder currentWindow
+			end if
+			set bounds of window 1 to item 2 of vsplit
+			set bounds of window 2 to item 1 of vsplit
+		end tell
+]])
+end
+
+hs.hotkey.bind(Hyperkey, "V", function()
+	if (frontapp() == "Finder") then
+		finderVerticalSplit()
+	end
+end)
+
+--------------------------------------------------------------------------------
 
 -- https://www.hammerspoon.org/go/#winlayout
 function homeWindowLayout ()
@@ -123,35 +158,6 @@ hs.hotkey.bind(Hyperkey, "W", homeWindowLayout)
 
 --------------------------------------------------------------------------------
 
-function finderVerticalSplit ()
-	hs.applescript([[
-		use framework "AppKit"
-		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-		set screenWidth to item 1 of item 2 of item 1 of allFrames
-		set screenHeight to item 2 of item 2 of item 1 of allFrames
-
-		set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
-
-		tell application "Finder"
-			if ((count windows) is 0) then return
-			if ((count windows) is 1) then
-				set currentWindow to target of window 1 as alias
-				make new Finder window to folder currentWindow
-			end if
-			set bounds of window 1 to item 2 of vsplit
-			set bounds of window 2 to item 1 of vsplit
-		end tell
-]])
-end
-
-hs.hotkey.bind(Hyperkey, "V", function()
-	if (frontapp() == "Finder") then
-		finderVerticalSplit()
-	end
-end)
-
---------------------------------------------------------------------------------
-
 -- PROJECTOR: Dim brightness when projector is connected
 function displayCountWatcher()
 	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
@@ -161,6 +167,7 @@ function displayCountWatcher()
 		-- "hs.brightness.set" does not work when second display is mirrored
 		-- therefore using Shortcuts instead
 		hs.shortcuts.run('Zero Brightness')
+
 		hs.application.open("YouTube")
 		hs.application("Drafts"):kill9()
 		hs.application("Slack"):kill9()

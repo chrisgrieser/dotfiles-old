@@ -16,57 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "🐁 3: Quit app",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$",
-                                            "^com\\.hegenberg\\.BetterTouchTool$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$",
-                                            "^com\\.hegenberg\\.BetterTouchTool$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)",
                         "manipulators": [
                             {
@@ -1952,141 +1901,6 @@
                                         "modifiers": [
                                             "option"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "⚒️ ß´ → [] (+ German to US Layout), s (hold) → ß",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    },
-                                    {
-                                        "file_paths": [
-                                            "alacritty$",
-                                            "^/System/Applications/Utilities/Terminal.app",
-                                            "^/Applications/Obsidian\\.app",
-                                            "^/Applications/Sublime Text\\.app",
-                                            "^/Applications/Discord\\.app",
-                                            "^/Applications/Brave Browser\\.app"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "hyphen"
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "open_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "equal_sign"
-                                },
-                                "to": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 20,
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "key_code": "close_bracket"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "^de$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    },
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "VIM_MODE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "s"
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 250
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "s",
-                                        "repeat": false
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "repeat": false
-                                    },
-                                    {
-                                        "key_code": "hyphen",
-                                        "repeat": false
                                     }
                                 ],
                                 "type": "basic"
@@ -4379,6 +4193,195 @@
                                             "id": "leader-notice",
                                             "text": ""
                                         }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "🐁 3: Quit app",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.hegenberg\\.BetterTouchTool$",
+                                            "^org\\.hammerspoon\\.Hammerspoon$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.hegenberg\\.BetterTouchTool$",
+                                            "^org\\.hammerspoon\\.Hammerspoon$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "⚒️ ß´ → [] (+ German to US Layout), s (hold) → ß",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "file_paths": [
+                                            "alacritty$",
+                                            "^/System/Applications/Utilities/Terminal.app",
+                                            "^/Applications/Obsidian\\.app",
+                                            "^/Applications/Sublime Text\\.app",
+                                            "^/Applications/Discord\\.app",
+                                            "^/Applications/Brave Browser\\.app",
+                                            "^/Applications/Hammerspoon\\.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "hyphen"
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "open_bracket"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "equal_sign"
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 20,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "close_bracket"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "^de$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    },
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "s"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "s",
+                                        "repeat": false
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "repeat": false
+                                    },
+                                    {
+                                        "key_code": "hyphen",
+                                        "repeat": false
                                     }
                                 ],
                                 "type": "basic"

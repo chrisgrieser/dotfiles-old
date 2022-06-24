@@ -829,7 +829,8 @@
                 "^/Applications/Obsidian\\.app",
                 "^/Applications/Sublime Text\\.app",
                 "^/Applications/Discord\\.app",
-                "^/Applications/Brave Browser\\.app"
+                "^/Applications/Brave Browser\\.app",
+                "^/Applications/Hammerspoon\\.app"
               ]
             }
           ],

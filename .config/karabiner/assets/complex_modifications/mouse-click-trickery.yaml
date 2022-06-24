@@ -62,6 +62,7 @@ rules:
             bundle_identifiers:
               - ^com\.apple\.finder$
               - ^com\.hegenberg\.BetterTouchTool$
+              - ^org\.hammerspoon\.Hammerspoon$
       - type: basic
         from:
           pointing_button: button3
@@ -74,6 +75,7 @@ rules:
             bundle_identifiers:
               - ^com\.apple\.finder$
               - ^com\.hegenberg\.BetterTouchTool$
+              - ^org\.hammerspoon\.Hammerspoon$
   - description: "🐁 4 (hold): ⇧ for horizontal scroll, (tap): send F13"
     manipulators:
       - type: basic
