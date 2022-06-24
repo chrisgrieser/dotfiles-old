@@ -1,9 +1,13 @@
-function tests (input)
-	notify("test "..input)
+require("utils")
+
+-- https://www.hammerspoon.org/docs/hs.noises.html
+-- scroll down by making a "sss" sound
+function soundscroll (input)
+	hs.eventtap.scrollWheel({0, -5}, {})
 end
 
-mouth = hs.noises.new(tests)
-mouth:start()
+soundListener = hs.noises.new(soundscroll)
+soundListener:start()
 
 
 -- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action

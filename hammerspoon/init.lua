@@ -3,6 +3,8 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
+hs.loadSpoon("RoundedCorners")
+spoon.RoundedCorners:start()
 
 --------------------------------------------------------------------------------
 require("utils")
@@ -13,10 +15,7 @@ require("private")
 require("menubar")
 require("discord")
 require("twitterrific")
---------------------------------------------------------------------------------
-
-hs.loadSpoon("RoundedCorners")
-spoon.RoundedCorners:start()
+require("input-methods")
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")
