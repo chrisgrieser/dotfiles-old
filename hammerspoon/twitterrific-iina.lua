@@ -33,17 +33,21 @@ function homeAction ()
 	end
 end
 
--- IINA: pasteboard fix for URLs
+-- IINA: Full Screen when on other monitor
 function iinaLaunch(appName, eventType, appObject)
-	if (eventType == hs.application.watcher.launching) then
+	if (eventType == hs.application.watcher.launched) then
 		if (appName == "IINA") then
-			appObject:selectMenuItem({"Video", "Enter Full Screen"})
+			local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+			if isProjector then
+				hs.timer.delayed.new(1, function()
+					appObject:selectMenuItem({"Video", "Enter Full Screen"})
+				end):start()
+			end
 		end
 	end
 end
 iinaAppLauncher = hs.application.watcher.new(iinaLaunch)
 iinaAppLauncher:start()
-
 
 
 --------------------------------------------------------------------------------
