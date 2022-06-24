@@ -11,21 +11,6 @@ function twitterrificScrollUp ()
 	hs.application(previousApp):activate()
 end
 
-function iinaPip (appName, eventType, appObject)
-	if (eventType == hs.application.watcher.launched) then
-		if (appName == "IINA") then
-			-- local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
-			-- if not(isIMacAtHome) then return end
-
-			appObject:allWindows()[1]:moveToUnit({0.7, 0.7, 0.3, 0.3})
-		end
-	end
-end
-iinaAppWatcher = hs.application.watcher.new(iinaPip)
-iinaAppWatcher:start()
-
-
-
 function pagedownAction ()
 	if isRunning("IINA") then
 		hs.eventtap.keyStroke({}, "left", 1, hs.application("IINA"))
