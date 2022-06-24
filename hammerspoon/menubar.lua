@@ -8,7 +8,6 @@ function systemWakeWatcher (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 		setWeather()
 		setCovidBar()
-		twitterrificScrollUp()
 		notify ("System has woke up.")
 	end
 end
@@ -46,8 +45,8 @@ function setCovidBar()
 	local stateName = stateNumbers.data[covidLocationCode].name
 	local state_7D_incidence = math.floor(stateNumbers.data[covidLocationCode].weekIncidence)
 
-	covidBar:setTooltip("Germany / "..stateName.." (r)")
-	covidBar:setTitle("🦠 "..national_7D_incidence.." / "..state_7D_incidence.." ("..nationalR..")")
+	covidBar:setTooltip(stateName..": "..state_7D_incidence)
+	covidBar:setTitle("🦠 "..national_7D_incidence.." ("..nationalR..")")
 end
 setCovidBar()
 hs.timer.doEvery(covidUpdateHours * 60 * 60, setCovidBar)
