@@ -33,12 +33,13 @@ function homeAction ()
 	end
 end
 
--- IINA: Full Screen when on other monitor
+-- IINA: Full Screen when on projector
 function iinaLaunch(appName, eventType, appObject)
 	if (eventType == hs.application.watcher.launched) then
 		if (appName == "IINA") then
 			local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 			if isProjector then
+				-- going full screen apparently needs a small delay
 				hs.timer.delayed.new(1, function()
 					appObject:selectMenuItem({"Video", "Enter Full Screen"})
 				end):start()
@@ -48,7 +49,6 @@ function iinaLaunch(appName, eventType, appObject)
 end
 iinaAppLauncher = hs.application.watcher.new(iinaLaunch)
 iinaAppLauncher:start()
-
 
 --------------------------------------------------------------------------------
 

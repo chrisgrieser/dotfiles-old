@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>505B935F-3B3C-49BC-8DA3-77CD1E0BA04A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F2CC4BE-1C49-41D8-BC93-DEF34DEDBF31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>796AC1E3-A5E4-4461-9DB8-025B71D40421</key>
 		<array>
 			<dict>
@@ -309,6 +322,78 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/IINA.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>1F2CC4BE-1C49-41D8-BC93-DEF34DEDBF31</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.microsoft.internet-shortcut</string>
+				</array>
+				<key>name</key>
+				<string>Open with IINA</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>505B935F-3B3C-49BC-8DA3-77CD1E0BA04A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/Pixelmator Pro.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>E25B4258-39D1-42A7-A857-3A0A5C34A78B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.icns</string>
+					<string>com.compuserve.gif</string>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>Open with Pixelmator Pro</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>C0F090F5-22FD-43D8-810F-EC393D46A562</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<true/>
 				<key>onlyshowifquerypopulated</key>
@@ -404,44 +489,6 @@ return "{query}"</string>
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Pixelmator Pro.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>E25B4258-39D1-42A7-A857-3A0A5C34A78B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.apple.icns</string>
-					<string>com.compuserve.gif</string>
-					<string>org.webmproject.webp</string>
-					<string>public.jpeg</string>
-					<string>public.png</string>
-				</array>
-				<key>name</key>
-				<string>Open with Pixelmator Pro</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>C0F090F5-22FD-43D8-810F-EC393D46A562</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
 				<string></string>
@@ -461,7 +508,7 @@ return "{query}"</string>
 		<key>056D6BA2-7779-4380-8986-66A791403D23</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>715</integer>
 			<key>ypos</key>
@@ -472,18 +519,18 @@ return "{query}"</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>385</integer>
 		</dict>
 		<key>0C406653-F247-4FCA-92CB-4CD574370ADC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>510</integer>
 		</dict>
 		<key>1833CB9C-DCC9-4E71-8DF2-082ECEAF1D2B</key>
 		<dict>
@@ -493,6 +540,15 @@ return "{query}"</string>
 			<integer>210</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>1F2CC4BE-1C49-41D8-BC93-DEF34DEDBF31</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>265</integer>
 		</dict>
 		<key>3E14D1C6-DD8A-482A-9341-1516B2609DB3</key>
 		<dict>
@@ -506,16 +562,25 @@ return "{query}"</string>
 		<key>45B4059B-1853-410F-BB24-E77A2A662C4D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>715</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>796AC1E3-A5E4-4461-9DB8-025B71D40421</key>
+		<key>505B935F-3B3C-49BC-8DA3-77CD1E0BA04A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+		<key>796AC1E3-A5E4-4461-9DB8-025B71D40421</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
 			<key>note</key>
 			<string>Export (in Alfred, as multiple Exports Menu items in Pixelmator make Mac OS Keyboard Shortcuts unreliable)</string>
 			<key>xpos</key>
@@ -530,12 +595,12 @@ return "{query}"</string>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>435</integer>
 		</dict>
 		<key>BCAD16ED-A17E-4512-8825-EE0157EDC36A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>535</integer>
 			<key>ypos</key>
@@ -544,11 +609,11 @@ return "{query}"</string>
 		<key>C0F090F5-22FD-43D8-810F-EC393D46A562</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>535</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 		</dict>
 		<key>C2F1411D-9E20-4EB9-82E0-BF23FFA94DCD</key>
 		<dict>
@@ -557,9 +622,9 @@ return "{query}"</string>
 			<key>note</key>
 			<string>copy image to clipboard</string>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>385</integer>
 		</dict>
 		<key>CF41F8B3-36C9-4A59-9336-A70B0FCA980C</key>
 		<dict>
@@ -584,11 +649,11 @@ return "{query}"</string>
 		<key>E25B4258-39D1-42A7-A857-3A0A5C34A78B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>xpos</key>
 			<integer>720</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
