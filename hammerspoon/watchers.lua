@@ -25,8 +25,6 @@ end
 hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
 hotcornerEmulation:start()
 
-
-
 -- HIGHLIGHTS: Sync Dark & Light Mode
 function highlightsWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then

@@ -11,7 +11,6 @@ require("window-management")
 require("splits")
 require("private")
 require("menubar")
-require("zoom")
 require("discord")
 require("twitterrific")
 --------------------------------------------------------------------------------

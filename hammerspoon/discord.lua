@@ -10,7 +10,7 @@ end
 discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
 
--- when Discord activites and the clipboard contains an URL
+-- when Discord activates and the clipboard contains an URL,
 -- it will automatically be enclosed in <> to avoid annoying previews
 function discordURLFixer(appName, eventType)
 	if (eventType == hs.application.watcher.activated) then
@@ -18,7 +18,7 @@ function discordURLFixer(appName, eventType)
 			local clipb = hs.pasteboard.getContents()
 			local hasURL = string.match(clipb, '^https?%S+$')
 			if (hasURL) then
-				hs.pasteboard.setContents("<" .. hs.pasteboard.getContents() .. ">")
+				hs.pasteboard.setContents("<" .. clipb .. ">")
 			end
 		end
 	end
