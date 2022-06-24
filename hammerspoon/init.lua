@@ -13,6 +13,10 @@ require("menubar")
 require("app-specific")
 --------------------------------------------------------------------------------
 
+hs.loadSpoon("RoundedCorners")
+-- spoon.RoundedCorners:start()
+
+--------------------------------------------------------------------------------
 notify("Config reloaded")
 
 
