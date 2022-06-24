@@ -13,14 +13,14 @@ end
 
 function pagedownAction ()
 	if isRunning("IINA") then
-		hs.eventtap.keyStroke({}, "left", 1, hs.application("IINA"))
+		hs.eventtap.keyStroke({}, "right", 1, hs.application("IINA"))
 	else
 		hs.eventtap.keyStroke({}, "down", 1, hs.application("Twitterrific"))
 	end
 end
 function pageupAction ()
 	if isRunning("IINA") then
-		hs.eventtap.keyStroke({}, "right", 1, hs.application("IINA"))
+		hs.eventtap.keyStroke({}, "left", 1, hs.application("IINA"))
 	else
 		hs.eventtap.keyStroke({}, "up", 1, hs.application("Twitterrific"))
 	end
