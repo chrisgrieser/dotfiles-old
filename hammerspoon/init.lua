@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
+hs.window.setFrameCorrectness = true
 
 --------------------------------------------------------------------------------
 require("utils")
@@ -14,7 +15,8 @@ require("app-specific")
 --------------------------------------------------------------------------------
 
 hs.loadSpoon("RoundedCorners")
--- spoon.RoundedCorners:start()
+spoon.RoundedCorners:start()
+-- spoon.RoundedCorners:stop()
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")
