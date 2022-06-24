@@ -3,17 +3,18 @@ require("utils")
 -- https://www.hammerspoon.org/docs/hs.noises.html
 -- scroll down by making a "sss" sound
 function soundscroll ()
-	function abortIfRunning
-	if hs.application("INNA"):isRunning() then return end
-	if hs.application("YouTube"):isRunning() then return end
-	if hs.application("VLC"):isRunning() then return end
-	if hs.application("QuickTime"):isRunning() then return end
+
+	-- to prevent movesounds accidentally triggering scroll
+	if isRunning("IINA") or isRunning("zoom.us") or isRunning("VLC") or isRunning("QuickTime") or isRunning("Netflix") or isRunning("Tagesschau") then
+		return
+	end
+
+	--scrollDown
 	hs.eventtap.scrollWheel({0, -5}, {})
 end
 
 soundListener = hs.noises.new(soundscroll)
 soundListener:start()
-
 
 -- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action
 -- to trigger something else instead
