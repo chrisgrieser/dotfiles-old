@@ -27,9 +27,9 @@ function moveAndResize(direction)
 	local position
 
 	if (direction == "left") then
-		position = {x=0, y=0, w=0.5, h=1}
+		position = hs.layout.left50
 	elseif (direction == "right") then
-		position = {x=0.5, y=0, w=0.5, h=1}
+		position = hs.layout.right50
 	elseif (direction == "up") then
 		position = {x=0, y=0, w=1, h=0.5}
 	elseif (direction == "down") then
@@ -37,7 +37,7 @@ function moveAndResize(direction)
 	elseif (direction == "pseudo-maximized") then
 		position = {x=0, y=0, w=0.815, h=1}
 	elseif (direction == "maximized") then
-		position = {x=0, y=0, w=1, h=1}
+		position = hs.layout.maximized
 	elseif (direction == "centered") then
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
 	end
@@ -58,7 +58,7 @@ end
 
 function resizingWorkaround(win, pos)
 	local winApp = win:application():name()
-	-- add Applescript-capable apps you are using to the if-condition below
+	-- add Applescript-capable apps used to the if-condition below
 	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp == "Safari") then
 		hs.applescript([[
 			use framework "AppKit"
