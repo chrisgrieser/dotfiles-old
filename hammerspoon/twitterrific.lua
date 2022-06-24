@@ -12,9 +12,6 @@ function twitterrificScrollUp ()
 	hs.application(previousApp):activate()
 end
 
-twitterUpdateInterval = 10
-hs.timer.doEvery(twitterUpdateInterval * 60, twitterrificScrollUp)
-
 function twitterificAction (keystroke)
 	hs.eventtap.keyStroke({}, keystroke, 1, hs.application("Twitterrific"))
 end

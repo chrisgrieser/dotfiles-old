@@ -2,7 +2,8 @@ require("utils")
 
 -- https://www.hammerspoon.org/docs/hs.noises.html
 -- scroll down by making a "sss" sound
-function soundscroll (input)
+function soundscroll ()
+	if
 	hs.eventtap.scrollWheel({0, -5}, {})
 end
 
