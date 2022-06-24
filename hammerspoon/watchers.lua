@@ -117,7 +117,7 @@ hotcornerEmulation:start()
 scanFolder = os.getenv("HOME").."/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents/"
 targetFolder = os.getenv("HOME").."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
 function scanFolderMove()
-	hs.execute("mv "..scanFolder.."/* ")
+	hs.execute("mv '"..scanFolder.."'/* '"..targetFolder.."'")
 end
 scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
 scanFolderWatcher:start()
