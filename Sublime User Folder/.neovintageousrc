@@ -111,6 +111,7 @@ noremap gf :OpenUrlUnderCursor<CR>
 
 " don't save small deletion in the register
 nnoremap x "_x
+nnoremap c "_c
 
 " Consistent with Insert Mode Selection
 vnoremap <BS> "_d

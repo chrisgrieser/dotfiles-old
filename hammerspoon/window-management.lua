@@ -2,10 +2,21 @@ require("utils")
 
 -- ⌥ ↹ – Window Switcher, only for Browser and Finder Windows
 --https://www.hammerspoon.org/docs/hs.window.switcher.html
-windowSwitcher = hs.window.switcher.new{"Finder"}
-windowSwitcher = hs.window.switcher.new{"Brave Browser"}
-windowSwitcher = hs.window.switcher.new{"Mimestream"}
-hs.hotkey.bind({"alt"}, "tab", function() windowSwitcher:next() end)
+finderWindowSwitcher = hs.window.switcher.new{"Finder"}
+browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
+mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
+
+function appWindowSwitcher()
+	if (frontapp() == "Finder") then
+		finderWindowSwitcher:next()
+	elseif (frontapp() == "Brave Browser") then
+		browserWindowSwitcher:next()
+	elseif (frontapp() == "Mimestream") then
+		mailWindowSwitcher:next()
+	end
+end
+
+hs.hotkey.bind({"alt"}, "tab", appWindowSwitcher)
 
 --------------------------------------------------------------------------------
 
