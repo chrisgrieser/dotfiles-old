@@ -2,11 +2,25 @@
 -- https://www.hammerspoon.org/go/#simplemenubar
 require("utils")
 --------------------------------------------------------------------------------
-hs.caffeinate.watcher.new(fn)
 
---------------------------------------------------------------------------------
+-- reload all menubars when system wakes from sleep
+function systemWakeWatcher (eventType)
+	if (eventType == hs.caffeinate.watcher.screensDidWake) then
+		setWeather()
+		setCovidBar()
+		notify ("System has woke up.")
+	end
+end
+wakeWatcher = hs.caffeinate.watcher.new(systemWakeWatcher)
+wakeWatcher:start()
+
+-- menubar items config
 weatherUpdateMin = 15
 weatherLocation = "Berlin"
+covidUpdateHours = 12
+covidLocationCode = "BE"
+
+--------------------------------------------------------------------------------
 
 function setWeather()
 	weatherStatusBar = hs.menubar.new()
@@ -18,8 +32,6 @@ setWeather()
 hs.timer.doEvery(weatherUpdateMin * 60, setWeather)
 
 --------------------------------------------------------------------------------
-covidUpdateHours = 12
-covidLocationCode = "BE"
 
 -- German Covid-Numbers by the RKI → https://api.corona-zahlen.org/docs/
 function setCovidBar()
