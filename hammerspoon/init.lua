@@ -13,7 +13,6 @@ require("private")
 require("menubar")
 require("discord")
 require("twitterrific-iina")
-require("input-methods")
 require("vim-mode")
 
 --------------------------------------------------------------------------------

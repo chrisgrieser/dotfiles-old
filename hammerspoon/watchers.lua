@@ -99,3 +99,25 @@ function reloadConfig(files)
 end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
+
+-- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action
+-- to trigger something else instead
+function hotcornerWatcher(appName, eventType)
+	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Notes") then
+			hs.application("Notes"):kill9()
+			hs.shortcuts.run("Keyboard on-screen")
+		end
+	end
+end
+hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
+hotcornerEmulation:start()
+
+-- Move Scans to File Hub
+scanFolder = os.getenv("HOME").."/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents/"
+targetFolder = os.getenv("HOME").."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+function scanFolderMove()
+	hs.execute("mv "..scanFolder.."/* ")
+end
+scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
+scanFolderWatcher:start()

@@ -346,6 +346,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9C6A258E-06E8-493F-8009-194EED03FAFF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<array>
 			<dict>
@@ -363,7 +376,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0323386B-1C83-483E-9C13-88DAD0F48CE9</string>
+				<string>9C6A258E-06E8-493F-8009-194EED03FAFF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -697,6 +710,27 @@ end tell</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>D3516FEC-145A-4291-A427-9C70AF114743</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>9C6A258E-06E8-493F-8009-194EED03FAFF</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2487,6 +2521,15 @@ echo -n "$title"</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>540</integer>
+		</dict>
+		<key>9C6A258E-06E8-493F-8009-194EED03FAFF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>55</integer>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
