@@ -3,8 +3,6 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
-hs.loadSpoon("RoundedCorners")
-spoon.RoundedCorners:start()
 
 --------------------------------------------------------------------------------
 require("utils")
@@ -14,7 +12,7 @@ require("splits")
 require("private")
 require("menubar")
 require("discord")
-require("twitterrific")
+require("twitterrific-iina")
 require("input-methods")
 
 --------------------------------------------------------------------------------

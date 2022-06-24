@@ -1,7 +1,7 @@
 // Settings in here override those in "LSP-lua/LSP-lua.sublime-settings"
 {
 	"settings": {
-		"Lua.diagnostics.globals": ["hs", "spoon", "notify", "frontapp", "Hyperkey"], // Hammerspoon
+		"Lua.diagnostics.globals": ["hs", "spoon", "notify", "isRunning", "frontapp", "Hyperkey"], // Hammerspoon
       "Lua.diagnostics.disable": ["lowercase-global"],
 	}
 }
