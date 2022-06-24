@@ -2,6 +2,9 @@
 -- https://www.hammerspoon.org/go/#simplemenubar
 require("utils")
 --------------------------------------------------------------------------------
+hs.caffeinate.watcher.new(fn)
+
+--------------------------------------------------------------------------------
 weatherUpdateMin = 15
 weatherLocation = "Berlin"
 
