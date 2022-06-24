@@ -2,7 +2,7 @@
 # -----------------------------------------------------
 
 toggle_key: OFF  # yamllint disable-line rule:truthy
-search_shortcut: META+ALT+SHIFT+CTRL+X
+search_shortcut: META+ALT+SPACE
 
 show_icon: false
 show_notifications: true

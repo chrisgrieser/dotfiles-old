@@ -34,22 +34,20 @@ function vsplit (size)
 		f2.w = f2.w + resizeAmount
 		f2.x = f2.x - resizeAmount
 	elseif size == "switch" then
-		f1.w = f1.w - resizeAmount
-		f2.w = f2.w + resizeAmount
-		f2.x = f2.x - resizeAmount
-	else
-		f1.x = 0
-		f1.y = 0
-		f1.w = max.w / 2
-		f1.h = max.h
-		f2.x = max.w / 2
-		f2.y = 0
-		f2.w = max.w / 2
-		f2.h = max.h
+		f1 = hs.layout.right50
+		f2 = hs.layout.left50
+	elseif size == "reset" then
+		f1 = hs.layout.left50
+		f2 = hs.layout.right50
 	end
 
-	win1:setFrame(f1)
-	win2:setFrame(f2)
+	if (size == "increase" or size == "decrease") then
+		win1:setFrame(f1)
+		win2:setFrame(f2)
+	elseif (size == "switch" or size == "reset") then
+		win1:moveToUnit(f1)
+		win2:moveToUnit(f2)
+	end
 end
 
 function finderVsplit ()
@@ -75,12 +73,11 @@ end
 --------------------------------------------------------------------------------
 
 hs.hotkey.bind(Hyperkey, "V", function()
-	if (frontapp() == "Finder") then
-		finderVsplit()
-	else
-		vsplit("reset")
-	end
+	if (frontapp() == "Finder") then	finderVsplit()
+	else vsplit("reset") end
 end)
 
-hs.hotkey.bind(Hyperkey, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
-hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
+hs.hotkey.bind(Hyperkey, "X", function() vsplit("switch") end)
+
+hs.hotkey.bind(Hyperkey, "+", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
+hs.hotkey.bind(Hyperkey, "-", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
