@@ -16,18 +16,6 @@ wakeWatcher:start()
 
 
 --------------------------------------------------------------------------------
-
-obsidianStatusBar = hs.menubar.new()
-function obsidianCurrentFile()
-	local jsonPath = os.getenv("HOME") .. "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/.obsidian/workspace"
-	local filename = hs.json.read(jsonPath).lastOpenFiles[1]
-	filename = filename:sub(0, -4) -- remove extension
-	filename = filename
-	obsidianStatusBar:setTitle(filename)
-end
-obsidianCurrentFile()
-
---------------------------------------------------------------------------------
 weatherUpdateMin = 15
 weatherLocation = "Berlin"
 
@@ -47,17 +35,35 @@ covidLocationCode = "BE"
 -- German Covid-Numbers by the RKI → https://api.corona-zahlen.org/docs/
 covidBar = hs.menubar.new()
 function setCovidBar()
-	local _, dataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)
-	local covidNumbers = hs.json.decode(dataJSON)
-	local sevenDayIncidence = math.floor(covidNumbers.weekIncidence)
-	local r = covidNumbers.r.rValue7Days.value
-	covidBar:setTitle("🦠 " .. sevenDayIncidence .. " (" .. r ..  ")")
+	local _, nationalDataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)
+	local nationalNumbers = hs.json.decode(nationalDataJSON)
+	local national_7D_incidence = math.floor(nationalNumbers.weekIncidence)
+	local nationalR = nationalNumbers.r.rValue7Days.value
+
+	local _, stateDataJSON = hs.http.get("https://api.corona-zahlen.org/states/" .. covidLocationCode, nil)
+	local stateNumbers = hs.json.decode(stateDataJSON)
+	local stateName = stateNumbers.data[covidLocationCode].name
+	local state_7D_incidence = stateNumbers.data[covidLocationCode].weekIncidence
+
+	covidBar:setTitle("🦠 " .. national_7D_incidence .. "/".. state_7D_incidence .." (" .. nationalR ..  ")")
 end
 setCovidBar()
 hs.timer.doEvery(covidUpdateHours * 60 * 60, setCovidBar)
 
--- JS for state numbers
--- const stateID = "BE";
 -- const stateData = await getOnlineJson("https://api.corona-zahlen.org/states/" + stateID);
 -- const state7DInc = stateData.data[stateID].weekIncidence;
 -- const stateName = stateData.data[stateID].name
+
+--------------------------------------------------------------------------------
+
+-- obsidianStatusBar = hs.menubar.new()
+-- obsiWorkspaceJSON = os.getenv("HOME") .. "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/.obsidian/workspace"
+-- function obsidianCurrentFile()
+-- 	local filename = hs.json.read(obsiWorkspaceJSON).lastOpenFiles[1]
+-- 		:sub(0, -4) -- remove extension
+-- 		:gsub(".*/", "") -- remove path
+-- 	obsidianStatusBar:setTitle(filename)
+-- end
+-- obsidianCurrentFile()
+-- obsiWatcher = hs.pathwatcher.new(obsiWorkspaceJSON, obsidianCurrentFile)
+-- obsiWatcher:start()
