@@ -3,7 +3,11 @@ require("utils")
 -- https://www.hammerspoon.org/docs/hs.noises.html
 -- scroll down by making a "sss" sound
 function soundscroll ()
-	if
+	function abortIfRunning
+	if hs.application("INNA"):isRunning() then return end
+	if hs.application("YouTube"):isRunning() then return end
+	if hs.application("VLC"):isRunning() then return end
+	if hs.application("QuickTime"):isRunning() then return end
 	hs.eventtap.scrollWheel({0, -5}, {})
 end
 
