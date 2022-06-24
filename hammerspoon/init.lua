@@ -11,12 +11,13 @@ require("window-management")
 require("splits")
 require("private")
 require("menubar")
-require("misc")
+require("zoom")
+require("discord")
+require("twitterrific")
 --------------------------------------------------------------------------------
 
 hs.loadSpoon("RoundedCorners")
 spoon.RoundedCorners:start()
--- spoon.RoundedCorners:stop()
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")
