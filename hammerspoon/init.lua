@@ -3,15 +3,16 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
-hs.window.setFrameCorrectness = true
+-- hs.window.setFrameCorrectness = true
 
 --------------------------------------------------------------------------------
 require("utils")
 require("watchers")
 require("window-management")
+require("splits")
 require("private")
 require("menubar")
-require("app-specific")
+require("misc")
 --------------------------------------------------------------------------------
 
 hs.loadSpoon("RoundedCorners")

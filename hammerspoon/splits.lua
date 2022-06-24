@@ -7,9 +7,9 @@ function vsplitResize ()
 	local f1 = win1:frame()
 	local f2 = win2:frame()
 
+	f2.x = f2.x + 40
 	f1.w = f1.w + 20
 	f2.w = f2.w - 20
-	f2.x = f2.x + 20
 
 	win1:setFrame(f1)
 	win2:setFrame(f2)
