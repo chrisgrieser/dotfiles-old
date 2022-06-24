@@ -1,21 +1,36 @@
 require("utils")
 
 --------------------------------------------------------------------------------
-function vsplitResize ()
+function vsplitResize (size)
+	local resizeAmount = 25
+
 	local win1 = hs.window.orderedWindows()[1]
 	local win2 = hs.window.orderedWindows()[2]
+
 	local f1 = win1:frame()
 	local f2 = win2:frame()
 
-	f2.x = f2.x + 40
-	f1.w = f1.w + 20
-	f2.w = f2.w - 20
+	if size == "increase" then
+		f1.w = f1.w + resizeAmount
+		f2.w = f2.w - resizeAmount
+		f2.x = f2.x + resizeAmount
+	elseif size == "decrease" then
+		f1.w = f1.w - resizeAmount
+		f2.w = f2.w + resizeAmount
+		f2.x = f2.x - resizeAmount
+	else
+		f1.w = max.w / 2
+		f2.w = max.w / 2
+		f2.x = max.w / 2
+	end
 
 	win1:setFrame(f1)
 	win2:setFrame(f2)
 end
 
-hs.hotkey.bind(Hyperkey, "pagedown", vsplitResize)
+hs.hotkey.bind(Hyperkey, "pageup", function ()vsplitResize("increase") end, nil, function ()vsplitResize("increase") end)
+hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplitResize("decrease") end, nil, function ()vsplitResize("decrease") end)
+hs.hotkey.bind(Hyperkey, "home", function ()vsplitResize("reset") end)
 
 --------------------------------------------------------------------------------
 function finderVerticalSplit ()
