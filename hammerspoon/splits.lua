@@ -12,7 +12,7 @@ function vsplit (size)
 
 	-- ensure it's a correct split
 	if (f1.w + f2.w ~= max.w and size ~= "reset") then
-		notify ("not a correct split")
+		notify ("not a correct vertical split")
 		return
 	end
 
@@ -79,5 +79,5 @@ end)
 
 hs.hotkey.bind(Hyperkey, "X", function() vsplit("switch") end)
 
-hs.hotkey.bind(Hyperkey, "+", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
-hs.hotkey.bind(Hyperkey, "-", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
+hs.hotkey.bind(Hyperkey, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
+hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)

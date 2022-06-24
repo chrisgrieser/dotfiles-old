@@ -10,7 +10,7 @@ matches:
     replace: ⌘
   - triggers: ['!alt', "!opt"]
     replace: ⌥
-  - trigger: '!caps'
+  - triggers: ['!caps', "!hyper"]
     replace: ⇪
 
   - trigger: '!esc'
