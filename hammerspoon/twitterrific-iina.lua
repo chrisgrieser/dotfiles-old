@@ -33,6 +33,19 @@ function homeAction ()
 	end
 end
 
+-- IINA: pasteboard fix for URLs
+function iinaLaunch(appName, eventType, appObject)
+	if (eventType == hs.application.watcher.launching) then
+		if (appName == "IINA") then
+			appObject:selectMenuItem({"Video", "Enter Full Screen"})
+		end
+	end
+end
+iinaAppLauncher = hs.application.watcher.new(iinaLaunch)
+iinaAppLauncher:start()
+
+
+
 --------------------------------------------------------------------------------
 
 hs.hotkey.bind({}, "pagedown", pagedownAction, nil, pagedownAction)
