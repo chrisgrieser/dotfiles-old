@@ -50,3 +50,11 @@ matches:
     replace: "#-------------------------------------------------------------------------------"
   - label: "🐚 Number of Displays (on macOS)"
     replace: "system_profiler SPDisplaysDataType | grep -c resolution"
+
+  - label: "🐚 Check whether process is running"
+    replace: |
+      if pgrep -x "app$|$" > /dev/null; then
+      	echo "Running"
+      else
+      	echo "Not running"
+      fi

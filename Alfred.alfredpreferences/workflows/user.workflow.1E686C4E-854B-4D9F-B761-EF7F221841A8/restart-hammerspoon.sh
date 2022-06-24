@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
-killall "Hammerspoon"
-sleep 1
+if pgrep -x "Hammerspoon" > /dev/null; then
+	killall "Hammerspoon"
+	sleep 1
+fi
+
 open -a "Hammerspoon"
