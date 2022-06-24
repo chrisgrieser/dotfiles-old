@@ -14,16 +14,25 @@ end
 wakeWatcher = hs.caffeinate.watcher.new(systemWakeWatcher)
 wakeWatcher:start()
 
--- menubar items config
-weatherUpdateMin = 15
-weatherLocation = "Berlin"
-covidUpdateHours = 12
-covidLocationCode = "BE"
 
 --------------------------------------------------------------------------------
 
+obsidianStatusBar = hs.menubar.new()
+function obsidianCurrentFile()
+	local jsonPath = os.getenv("HOME") .. "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Main Vault/.obsidian/workspace"
+	local filename = hs.json.read(jsonPath).lastOpenFiles[1]
+	filename = filename:sub(0, -4) -- remove extension
+	filename = filename
+	obsidianStatusBar:setTitle(filename)
+end
+obsidianCurrentFile()
+
+--------------------------------------------------------------------------------
+weatherUpdateMin = 15
+weatherLocation = "Berlin"
+
+weatherStatusBar = hs.menubar.new()
 function setWeather()
-	weatherStatusBar = hs.menubar.new()
 	local _, weather = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=1", nil)
 	weather = weather:gsub("\n", ""):gsub("+", "")
 	weatherStatusBar:setTitle(weather)
@@ -32,10 +41,12 @@ setWeather()
 hs.timer.doEvery(weatherUpdateMin * 60, setWeather)
 
 --------------------------------------------------------------------------------
+covidUpdateHours = 12
+covidLocationCode = "BE"
 
 -- German Covid-Numbers by the RKI → https://api.corona-zahlen.org/docs/
+covidBar = hs.menubar.new()
 function setCovidBar()
-	covidBar = hs.menubar.new()
 	local _, dataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)
 	local covidNumbers = hs.json.decode(dataJSON)
 	local sevenDayIncidence = math.floor(covidNumbers.weekIncidence)
