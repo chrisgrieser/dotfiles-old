@@ -1,14 +1,29 @@
 require("utils")
 
 --------------------------------------------------------------------------------
-function vsplitResize (size)
+function vsplit (size)
 	local resizeAmount = 25
 
 	local win1 = hs.window.orderedWindows()[1]
 	local win2 = hs.window.orderedWindows()[2]
-
 	local f1 = win1:frame()
 	local f2 = win2:frame()
+	local max = win1:screen():frame()
+
+	-- ensure it's a correct split
+	if (f1.w + f2.w ~= max.w and size ~= "reset") then
+		notify ("not a correct split")
+		return
+	end
+
+	-- switch up, to ensure that win1 is the right one
+	if (f1.x > f2.x) then
+		local temp = win1
+		win1 = win2
+		win2 = temp
+		f1 = win1:frame()
+		f2 = win2:frame()
+	end
 
 	if size == "increase" then
 		f1.w = f1.w + resizeAmount
@@ -18,22 +33,26 @@ function vsplitResize (size)
 		f1.w = f1.w - resizeAmount
 		f2.w = f2.w + resizeAmount
 		f2.x = f2.x - resizeAmount
+	elseif size == "switch" then
+		f1.w = f1.w - resizeAmount
+		f2.w = f2.w + resizeAmount
+		f2.x = f2.x - resizeAmount
 	else
+		f1.x = 0
+		f1.y = 0
 		f1.w = max.w / 2
-		f2.w = max.w / 2
+		f1.h = max.h
 		f2.x = max.w / 2
+		f2.y = 0
+		f2.w = max.w / 2
+		f2.h = max.h
 	end
 
 	win1:setFrame(f1)
 	win2:setFrame(f2)
 end
 
-hs.hotkey.bind(Hyperkey, "pageup", function ()vsplitResize("increase") end, nil, function ()vsplitResize("increase") end)
-hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplitResize("decrease") end, nil, function ()vsplitResize("decrease") end)
-hs.hotkey.bind(Hyperkey, "home", function ()vsplitResize("reset") end)
-
---------------------------------------------------------------------------------
-function finderVerticalSplit ()
+function finderVsplit ()
 	hs.applescript([[
 		use framework "AppKit"
 		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
@@ -51,11 +70,17 @@ function finderVerticalSplit ()
 			set bounds of window 1 to item 2 of vsplit
 			set bounds of window 2 to item 1 of vsplit
 		end tell
-]])
+	]])
 end
+--------------------------------------------------------------------------------
 
 hs.hotkey.bind(Hyperkey, "V", function()
 	if (frontapp() == "Finder") then
-		finderVerticalSplit()
+		finderVsplit()
+	else
+		vsplit("reset")
 	end
 end)
+
+hs.hotkey.bind(Hyperkey, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
+hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
