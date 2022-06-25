@@ -8,19 +8,6 @@
 	<string>Development</string>
 	<key>connections</key>
 	<dict>
-		<key>4E666C32-1018-4DCD-B584-FAEF69EA31A9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EDA1CC2F-D2DD-4078-BB4D-CA95878E4044</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B8068536-AE17-4368-AB7E-9AB402E79AAB</key>
 		<array>
 			<dict>
@@ -118,46 +105,6 @@ php -f search.php -- "{query}"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://tympanus.net/codrops/css_reference/</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>EDA1CC2F-D2DD-4078-BB4D-CA95878E4044</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>mdn</string>
-				<key>subtext</key>
-				<string>CSS Reference</string>
-				<key>text</key>
-				<string>Codrops: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4E666C32-1018-4DCD-B584-FAEF69EA31A9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Search MDN, the learning platform for Web technologies and the software that powers the Web, including:
@@ -170,13 +117,6 @@ https://developer.mozilla.org/
 	</string>
 	<key>uidata</key>
 	<dict>
-		<key>4E666C32-1018-4DCD-B584-FAEF69EA31A9</key>
-		<dict>
-			<key>xpos</key>
-			<integer>105</integer>
-			<key>ypos</key>
-			<integer>200</integer>
-		</dict>
 		<key>B8068536-AE17-4368-AB7E-9AB402E79AAB</key>
 		<dict>
 			<key>xpos</key>
@@ -190,13 +130,6 @@ https://developer.mozilla.org/
 			<integer>305</integer>
 			<key>ypos</key>
 			<integer>75</integer>
-		</dict>
-		<key>EDA1CC2F-D2DD-4078-BB4D-CA95878E4044</key>
-		<dict>
-			<key>xpos</key>
-			<integer>305</integer>
-			<key>ypos</key>
-			<integer>200</integer>
 		</dict>
 	</dict>
 	<key>version</key>

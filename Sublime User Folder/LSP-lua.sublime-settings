@@ -6,7 +6,7 @@
 			"hs",
 			"spoon",
 			"notify",
-			"isRunning",
+			"appIsRunning",
 			"runDelayed",
 			"frontapp",
 			"hotkey",

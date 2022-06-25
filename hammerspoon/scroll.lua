@@ -1,5 +1,18 @@
 require("utils")
 
+function scrollDown ()
+	hs.eventtap.scrollWheel({0, -scrollAmount}, {})
+end
+
+function scrollUp ()
+	hs.eventtap.scrollWheel({0, scrollAmount}, {})
+end
+
+hotkey({"alt"}, "J", scrollDown, nil, scrollDown)
+hotkey({"alt"}, "K", scrollUp, nil, scrollUp)
+
+--------------------------------------------------------------------------------
+
 -- config
 quicklookWindow = {w=860, h=860}
 scrollAmount = 10
@@ -17,17 +30,13 @@ function cursorOverQuicklook ()
 	end
 end
 
-function scrollDown ()
-	cursorOverQuicklook()
-	hs.eventtap.scrollWheel({0, -scrollAmount}, {})
-
+function qlmanageAppState (appName, eventType)
+	if appName == "qlmanage" then
+		if (eventType == hs.application.watcher.launching) then
+			-- bla
+		elseif (eventType == hs.application.watcher.launching) then
+		end
+	end
 end
-
-function scrollUp ()
-	cursorOverQuicklook()
-	hs.eventtap.scrollWheel({0, scrollAmount}, {})
-
-end
-
-hotkey({"alt"}, "J", scrollDown, nil, scrollDown)
-hotkey({"alt"}, "K", scrollUp, nil, scrollUp)
+quicklookWatcher = hs.application.watcher.new(qlmanageAppState )
+quicklookWatcher:start()

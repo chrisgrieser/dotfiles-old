@@ -192,16 +192,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -246,23 +236,26 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>⏳Loading...</string>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>QUERY=$(echo "$*" | tr " " "+")
+curl -s "https://cht.sh/$QUERY?T"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>cheat.sh</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+			<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -374,30 +367,6 @@
 			<string>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>QUERY=$(echo "$*" | tr " " "+")
-curl -s "https://cht.sh/$QUERY?T"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>cheat.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -893,15 +862,6 @@ end tell</string>
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
-		<key>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<integer>295</integer>
-			<key>ypos</key>
-			<integer>25</integer>
-		</dict>
 		<key>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</key>
 		<dict>
 			<key>colorindex</key>
@@ -972,9 +932,9 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>85</integer>
 		</dict>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<dict>
