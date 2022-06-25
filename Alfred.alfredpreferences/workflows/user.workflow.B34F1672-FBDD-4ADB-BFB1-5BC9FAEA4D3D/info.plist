@@ -123,6 +123,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<array>
@@ -288,6 +298,72 @@
 			<string>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>QUERY=$(echo "$*" | tr " " "+")
+curl -s "https://cht.sh/$QUERY?T"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>cheat.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ch</string>
+				<key>subtext</key>
+				<string>'query' or 'lang/query'</string>
+				<key>text</key>
+				<string>cht.sh: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>⏳Loading...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -709,51 +785,6 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>QUERY=$(echo "$*" | tr " " "+")
-curl -s "https://cht.sh/$QUERY?T"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>cheat.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ch</string>
-				<key>subtext</key>
-				<string>'query' or 'lang/query'</string>
-				<key>text</key>
-				<string>cht.sh: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -766,7 +797,7 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>420</integer>
 		</dict>
 		<key>150AD279-99E1-4CB0-9F90-F4395A3A116A</key>
 		<dict>
@@ -777,6 +808,13 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
+		<key>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
 		<key>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</key>
 		<dict>
 			<key>colorindex</key>
@@ -786,14 +824,16 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>170</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>420</integer>
 		</dict>
 		<key>2A1BDD0B-9649-4DA9-A016-038C9C89F949</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>780</integer>
 		</dict>
 		<key>2C02AA01-C80E-4781-84EF-8547306C00C6</key>
 		<dict>
@@ -802,14 +842,16 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>335</integer>
 		</dict>
 		<key>3993F079-41AC-4743-9079-38D50670BEFB</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>35</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>780</integer>
 		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>
@@ -818,7 +860,7 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>390</integer>
 		</dict>
 		<key>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</key>
 		<dict>
@@ -827,50 +869,50 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>390</integer>
 		</dict>
 		<key>50F4BA75-EC14-431B-BA50-28DEABC12BBD</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>490</integer>
-			<key>ypos</key>
 			<integer>495</integer>
+			<key>ypos</key>
+			<integer>685</integer>
 		</dict>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>155</integer>
 		</dict>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>5</integer>
 			<key>note</key>
 			<string>find .sdef in Applications Folder</string>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>600</integer>
 		</dict>
 		<key>852FEFE2-6998-4254-985C-75A2E3AEB5B2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>155</integer>
 		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>570</integer>
 		</dict>
 		<key>C2852F05-D89A-4B01-A3AD-88076C1A401D</key>
 		<dict>
@@ -879,34 +921,34 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>455</integer>
 		</dict>
 		<key>D582977E-DA6A-46AD-93B6-3FF01EBA96BE</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>600</integer>
 		</dict>
 		<key>DCA89D5A-1D6F-4495-BD59-CA92D46FE0B7</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>620</integer>
 		</dict>
 		<key>DFA20026-87BD-47FC-988A-0956B5B30EBF</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>570</integer>
 		</dict>
 		<key>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</key>
 		<dict>
