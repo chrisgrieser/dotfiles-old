@@ -4,7 +4,7 @@
 hs.console.titleVisibility("hidden")
 hs.console.toolbar(nil)
 
-hs.console.consoleFont({name = "JetBrainsMonoNL Nerd Font", size = 19})
+hs.console.consoleFont({name = "JetBrainsMonoNL Nerd Font", size = 17})
 
 hs.console.darkMode(false)
 hs.console.outputBackgroundColor{ white = 0.92 }

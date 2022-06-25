@@ -8,6 +8,7 @@ hs.window.animationDuration = 0
 require("utils")
 require("console")
 require("watchers")
+require("system-states")
 require("window-management")
 require("splits")
 require("private")

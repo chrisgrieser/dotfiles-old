@@ -3,27 +3,17 @@
 require("utils")
 --------------------------------------------------------------------------------
 
--- reload all menubars when system wakes from sleep
-function systemWakeWatcher (eventType)
-	if (eventType == hs.caffeinate.watcher.screensDidWake) then
-		setWeather()
-		setCovidBar()
-		homeWindowLayout()
-		hs.shortcuts.run("Send Reminders due today to Drafts")
-		local timeHours = hs.timer.localTime() / 60 / 60
-		if timeHours < 18 and timeHours > 6 then
-			hs.applescript
-
-		end
-	end
+function reloadAllMenubarItems ()
+	setWeather()
+	setCovidBar()
 end
-wakeWatcher = hs.caffeinate.watcher.new(systemWakeWatcher)
-wakeWatcher:start()
 
-
---------------------------------------------------------------------------------
 weatherUpdateMin = 15
 weatherLocation = "Berlin"
+covidUpdateHours = 12
+covidLocationCode = "BE"
+
+--------------------------------------------------------------------------------
 
 weatherStatusBar = hs.menubar.new()
 function setWeather()
@@ -35,8 +25,6 @@ setWeather()
 hs.timer.doEvery(weatherUpdateMin * 60, setWeather)
 
 --------------------------------------------------------------------------------
-covidUpdateHours = 12
-covidLocationCode = "BE"
 
 -- German Covid-Numbers by the RKI → https://api.corona-zahlen.org/docs/
 covidBar = hs.menubar.new()
