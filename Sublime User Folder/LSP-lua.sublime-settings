@@ -10,7 +10,7 @@
 			"runDelayed",
 			"frontapp",
 			"hotkey",
-			"Hyper",
+			"hyper",
 		],
       "Lua.diagnostics.disable": ["lowercase-global"],
 	}
