@@ -12,3 +12,5 @@ function isRunning (app)
 	if hs.application(app):isRunning() then return true end
 	return false
 end
+
+hk = hs.hotkey.bind
