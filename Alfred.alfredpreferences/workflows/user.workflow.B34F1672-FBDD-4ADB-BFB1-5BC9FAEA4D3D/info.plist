@@ -97,18 +97,7 @@
 			</dict>
 		</array>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3FDA48BF-EE4E-4812-A2E0-E099026557A4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<array>
 			<dict>
@@ -733,9 +722,9 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>cheat.sh</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -764,25 +753,6 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>3FDA48BF-EE4E-4812-A2E0-E099026557A4</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -841,15 +811,6 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>ypos</key>
 			<integer>590</integer>
 		</dict>
-		<key>3FDA48BF-EE4E-4812-A2E0-E099026557A4</key>
-		<dict>
-			<key>note</key>
-			<string>paste</string>
-			<key>xpos</key>
-			<integer>375</integer>
-			<key>ypos</key>
-			<integer>755</integer>
-		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>
 			<key>colorindex</key>
@@ -880,9 +841,9 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>730</integer>
 		</dict>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<dict>
@@ -900,7 +861,7 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>755</integer>
+			<integer>730</integer>
 		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
