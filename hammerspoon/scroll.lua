@@ -1,14 +1,16 @@
 require("utils")
 
 function scrollDown ()
-	hs.eventtap.scrollWheel({0, 50})
-	notify("test")
+	for i=1,10 do
+		hs.eventtap.scrollWheel({0, -1}, {})
+	end
 end
 
 function scrollUp ()
-	hs.eventtap.scrollWheel({0, -50})
-	notify("test")
+	for i=1,10 do
+		hs.eventtap.scrollWheel({0, 1}, {})
+	end
 end
 
-hotkey({"alt"}, "J", scrollDown)
-hotkey({"alt"}, "K", scrollUp)
+hotkey({"alt"}, "J", scrollDown, nil, scrollDown)
+hotkey({"alt"}, "K", scrollUp, nil, scrollUp)

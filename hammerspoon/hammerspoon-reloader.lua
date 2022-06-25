@@ -1,7 +1,7 @@
 require("utils")
 
 -- auto-reload Hammerspoon config when a file changes
-reloadDelaySecs = 5
+reloadDelaySecs = 2.5
 function reloadConfig(files)
 	local doReload = false
 	for _,file in pairs(files) do
@@ -10,7 +10,6 @@ function reloadConfig(files)
 		end
 	end
 	if doReload then
-		-- only reload after 5 secs
 		hs.timer.delayed.new(reloadDelaySecs, function ()
 			hs.reload()
 		end):start()
@@ -18,4 +17,3 @@ function reloadConfig(files)
 end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
-
