@@ -30,7 +30,6 @@ end tell
 
 # REMINDERS TO DRAFTS
 # (redundancy with iOS for safety)
-# with shell script as opposed to Applescript, as Shortcuts.app isn't activated
 do shell script "shortcuts run \"Send Reminders due today to Drafts\""
 
 # BUSYCAL RESTART

@@ -6,6 +6,7 @@ hs.window.animationDuration = 0
 
 --------------------------------------------------------------------------------
 require("utils")
+require("console")
 require("watchers")
 require("window-management")
 require("splits")
@@ -14,7 +15,6 @@ require("menubar")
 require("discord")
 require("twitterrific-iina")
 require("vim-mode")
-require("console")
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")

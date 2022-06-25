@@ -9,8 +9,10 @@ function systemWakeWatcher (eventType)
 		setWeather()
 		setCovidBar()
 		homeWindowLayout()
+		hs.shortcuts.run("Send Reminders due today to Drafts")
 		local timeHours = hs.timer.localTime() / 60 / 60
 		if timeHours < 18 and timeHours > 6 then
+			hs.applescript
 
 		end
 	end
