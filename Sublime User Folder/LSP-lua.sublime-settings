@@ -5,7 +5,9 @@
 			 // Hammerspoon
 			"hs",
 			"spoon",
+
 			"notify",
+			"keystroke",
 			"appIsRunning",
 			"runDelayed",
 			"frontapp",
