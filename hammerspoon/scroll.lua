@@ -2,7 +2,14 @@ require("utils")
 
 function cursorOverQuicklook ()
 	if appIsRunning("qlmanage") then
-		hs.mouse.setRelativePosition()
+		local screen = hs.mouse.getCurrentScreen()
+		local quicklookWinW = 860
+		local quicklookWinH = 860
+		local screenCenter = {
+			x = (screen:frame().w - quicklookWinW) / 2 + 50,
+			y = (screen:frame().g - quicklookWinH) / 2 + 20,
+		}
+		hs.mouse.setRelativePosition(screenCenter, screen)
 	end
 end
 
