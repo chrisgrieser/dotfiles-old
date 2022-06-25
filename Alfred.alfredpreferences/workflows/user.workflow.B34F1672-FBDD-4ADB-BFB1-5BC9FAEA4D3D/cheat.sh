@@ -7,9 +7,12 @@ echo "$CHEAT" | pbcopy
 
 # highlighted preview window via Peek
 LANG="sh"
-[[ "$QUERY" =~ "/" ]] && LANG=$(echo "$QUERY" | cut -d"/" -f1)
+if [[ "$QUERY" =~ "/" ]] ; then
+	LANG=$(echo "$QUERY" | cut -d"/" -f1)
+	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
+fi
 # shellcheck disable=SC2154
 [[ ! -d "$alfred_workflow_cache" ]] && mkdir -p "$alfred_workflow_cache"
-CACHE="$alfred_workflow_cache/temp.$LANG"
+CACHE="$alfred_workflow_cache/$QUERY.$LANG"
 echo "$CHEAT" > "$CACHE"
 qlmanage -p "$CACHE"

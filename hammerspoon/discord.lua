@@ -10,14 +10,14 @@ end
 discordAppWatcher = hs.application.watcher.new(discordLaunchWatcher)
 discordAppWatcher:start()
 
+-- Eliminate Discord URL previews
 -- when Discord is focused, enclose URL in clipboard with <>
 discordAppFilter = hs.window.filter.new("Discord")
 discordAppFilter:subscribe(hs.window.filter.windowFocused, function()
 	local clipb = hs.pasteboard.getContents()
-	notify("focused")
 	local hasURL = string.match(clipb, '^https?%S+$')
 	if (hasURL) then
-		hs.pasteboard.setContents("<" .. clipb .. ">")
+		hs.pasteboard.setContents("<"..clipb..">")
 	end
 end)
 -- when Discord is unfocused, removes <> from URL in clipboard
@@ -25,8 +25,7 @@ discordAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
 	local clipb = hs.pasteboard.getContents()
 	local hasEnclosedURL = string.match(clipb, '^<https?%S+>$')
 	if (hasEnclosedURL) then
-		clip = clip:sub(2, -2) -- remove first & last character
-		notify("unfocused"..clipb)
+		clipb = clipb:sub(2, -2) -- remove first & last character
 		hs.pasteboard.setContents(clipb)
 	end
 end)
