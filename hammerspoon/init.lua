@@ -10,6 +10,8 @@ require("hammerspoon-reloader")
 require("utils")
 require("console")
 
+--------------------------------------------------------------------------------
+
 -- Base
 require("scroll")
 require("watchers")
@@ -21,14 +23,15 @@ require("menubar")
 require("discord")
 require("twitterrific-iina")
 
--- Spoons
+--------------------------------------------------------------------------------
 -- https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md
+
+-- Spoons
 require("vim-mode")
 
 hs.loadSpoon("ColorPicker")
 spoon.ColorPicker:start()
-spoon.ColorPicker:bindHotkeys({show = { hyper, "z" } })
-hs.loadSpoon("KSheet")
+hotkey(hyper, "P", function () spoon.ColorPicker.toggleColorSamples("Crayons") end)
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")
