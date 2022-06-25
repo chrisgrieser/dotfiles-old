@@ -15,4 +15,5 @@ fi
 [[ ! -d "$alfred_workflow_cache" ]] && mkdir -p "$alfred_workflow_cache"
 CACHE="$alfred_workflow_cache/$QUERY.$LANG"
 echo "$CHEAT" > "$CACHE"
+killall "qlmanage" # remove existing quicklook previews
 qlmanage -p "$CACHE"

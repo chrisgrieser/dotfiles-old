@@ -801,6 +801,8 @@ end tell</string>
 		</dict>
 		<key>150AD279-99E1-4CB0-9F90-F4395A3A116A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>note</key>
 			<string>custom cheatsheets</string>
 			<key>xpos</key>
@@ -810,6 +812,8 @@ end tell</string>
 		</dict>
 		<key>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
@@ -882,6 +886,8 @@ end tell</string>
 		</dict>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
@@ -900,6 +906,8 @@ end tell</string>
 		</dict>
 		<key>852FEFE2-6998-4254-985C-75A2E3AEB5B2</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
@@ -952,10 +960,12 @@ end tell</string>
 		</dict>
 		<key>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>190</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>

@@ -1,5 +1,5 @@
 function ch () {
-	QUERY=$(echo "$*" | tr " " "+")
+	QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 	curl -s "https://cht.sh/$QUERY" | "$PAGER"
 }
 
@@ -45,5 +45,5 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Pager-specific settings
 export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
-export MOAR="--no-linenumbers --render-unprintable=whitespace"
+# export MOAR="--no-linenumbers --render-unprintable=whitespace"
 
