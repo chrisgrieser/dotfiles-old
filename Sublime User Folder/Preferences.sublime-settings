@@ -6,6 +6,7 @@
 	"vintageous_i_escape_jj": true, // = imap jj <Esc>
 	"highlightedyank_duration": 8000,
 	"vintageous_enable_sneak": true, // disables the default s/S for Substitute
+	"vintageous_sneak_use_ic_scs": 1, // case-sensitivity depends on ignore/smart-case
 	"vintageous_exit_when_quiting_last_window": false,
 	"vintageous_reset_mode_when_switching_tabs": false,
 	"vintageous_bell": "blink", // "Error" when using invalid vim command
@@ -55,6 +56,10 @@
 	"indent_guide_options": ["draw_normal", "solid"],
 	"margin": 0,
 	"rulers": [80],
+
+	// System
+	"native_tabs": "disabled",
+	"hardware_acceleration": "opengl",
 
 	// Editor Behavior
 	"copy_with_empty_selection": true,

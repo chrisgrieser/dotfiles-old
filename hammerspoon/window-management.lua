@@ -7,6 +7,7 @@ require("utils")
 finderWindowSwitcher = hs.window.switcher.new{"Finder"}
 browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
 mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
+sublimeWindowSwitcher = hs.window.switcher.new{"Sublime Text"}
 
 function appWindowSwitcher()
 	if (frontapp() == "Finder") then
@@ -15,6 +16,8 @@ function appWindowSwitcher()
 		browserWindowSwitcher:next()
 	elseif (frontapp() == "Mimestream") then
 		mailWindowSwitcher:next()
+	elseif (frontapp() == "Sublime Text") then
+		sublimeWindowSwitcher:next()
 	end
 end
 
