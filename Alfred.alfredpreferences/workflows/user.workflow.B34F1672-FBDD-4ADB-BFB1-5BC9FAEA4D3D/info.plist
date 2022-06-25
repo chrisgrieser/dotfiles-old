@@ -115,7 +115,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
+				<string>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,9 +123,12 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>9F684AD8-A54B-461A-A897-B3CC1713BCFA</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+				<string>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -185,6 +188,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -196,6 +222,48 @@
 	<string>Docs &amp; Cheatsheets</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cc</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>cheat.sh: '{query}'</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>⏳Loading...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -249,7 +317,7 @@
 				<key>includesystem</key>
 				<false/>
 				<key>keyword</key>
-				<string>cc</string>
+				<string>ch</string>
 				<key>limit</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -300,6 +368,14 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
@@ -326,44 +402,51 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ch</string>
+				<string>cc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>list-cheatsheets.js</string>
 				<key>subtext</key>
-				<string>'query' or 'lang/query'</string>
-				<key>text</key>
-				<string>cht.sh: '{query}'</string>
+				<string></string>
+				<key>title</key>
+				<string>Cheatsheets</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
+			<string>9F684AD8-A54B-461A-A897-B3CC1713BCFA</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>⏳Loading...</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -383,29 +466,6 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<string>2C02AA01-C80E-4781-84EF-8547306C00C6</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n `osascript -e 'id of app "{query}"' `</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -490,21 +550,23 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\/.*\/(.*)\.app</string>
-				<key>regexcaseinsensitive</key>
-				<true/>
-				<key>regexmultiline</key>
+				<key>concurrently</key>
 				<false/>
-				<key>replacestring</key>
-				<string>$1</string>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n `osascript -e 'id of app "{query}"' `</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</string>
+			<string>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -527,6 +589,27 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<string>002C8DB4-DE1D-44E3-8B3B-7E9800110985</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\/.*\/(.*)\.app</string>
+				<key>regexcaseinsensitive</key>
+				<true/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string>$1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -584,6 +667,29 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 			<string>C1D85811-801A-4017-AEB6-6EC5A99F109C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>echo -n `find "{query}" -name '*.sdef'`</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>76E5A56C-0258-48FF-A883-94D79A066C82</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -668,29 +774,6 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>echo -n `find "{query}" -name '*.sdef'`</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>76E5A56C-0258-48FF-A883-94D79A066C82</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -736,27 +819,6 @@ curl -s "https://cht.sh/$QUERY?T"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>aslint</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Lint &amp; Validate AppleScript</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>3993F079-41AC-4743-9079-38D50670BEFB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -785,6 +847,27 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>aslint</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Lint &amp; Validate AppleScript</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3993F079-41AC-4743-9079-38D50670BEFB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -797,27 +880,27 @@ end tell</string>
 			<key>xpos</key>
 			<integer>240</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>380</integer>
 		</dict>
 		<key>150AD279-99E1-4CB0-9F90-F4395A3A116A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>custom cheatsheets</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>90</integer>
 		</dict>
 		<key>1F7FDC9B-71E8-48FB-9CBC-31C9B96B49FE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>295</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>25</integer>
 		</dict>
 		<key>28F9C035-406D-4E1A-BA9C-AF1E1E5556BA</key>
 		<dict>
@@ -828,16 +911,16 @@ end tell</string>
 			<key>xpos</key>
 			<integer>170</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>380</integer>
 		</dict>
 		<key>2A1BDD0B-9649-4DA9-A016-038C9C89F949</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>780</integer>
+			<integer>740</integer>
 		</dict>
 		<key>2C02AA01-C80E-4781-84EF-8547306C00C6</key>
 		<dict>
@@ -846,7 +929,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>295</integer>
 		</dict>
 		<key>3993F079-41AC-4743-9079-38D50670BEFB</key>
 		<dict>
@@ -855,7 +938,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>35</integer>
 			<key>ypos</key>
-			<integer>780</integer>
+			<integer>740</integer>
 		</dict>
 		<key>405F9220-F864-4C8A-9A00-29E258A78E5A</key>
 		<dict>
@@ -864,7 +947,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>350</integer>
 		</dict>
 		<key>4CA2F90B-A1A0-477A-9DEC-7A100D05A12B</key>
 		<dict>
@@ -873,7 +956,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>350</integer>
 		</dict>
 		<key>50F4BA75-EC14-431B-BA50-28DEABC12BBD</key>
 		<dict>
@@ -882,16 +965,16 @@ end tell</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>685</integer>
+			<integer>645</integer>
 		</dict>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>160</integer>
 		</dict>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<dict>
@@ -902,16 +985,29 @@ end tell</string>
 			<key>xpos</key>
 			<integer>215</integer>
 			<key>ypos</key>
-			<integer>600</integer>
+			<integer>560</integer>
 		</dict>
 		<key>852FEFE2-6998-4254-985C-75A2E3AEB5B2</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
+			<key>note</key>
+			<string>search for question</string>
 			<key>xpos</key>
 			<integer>25</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>25</integer>
+		</dict>
+		<key>9F684AD8-A54B-461A-A897-B3CC1713BCFA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>search for cheatsheet</string>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>165</integer>
 		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
@@ -920,7 +1016,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>530</integer>
 		</dict>
 		<key>C2852F05-D89A-4B01-A3AD-88076C1A401D</key>
 		<dict>
@@ -929,7 +1025,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>415</integer>
 		</dict>
 		<key>D582977E-DA6A-46AD-93B6-3FF01EBA96BE</key>
 		<dict>
@@ -938,7 +1034,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>600</integer>
+			<integer>560</integer>
 		</dict>
 		<key>DCA89D5A-1D6F-4495-BD59-CA92D46FE0B7</key>
 		<dict>
@@ -947,7 +1043,7 @@ end tell</string>
 			<key>xpos</key>
 			<integer>375</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>580</integer>
 		</dict>
 		<key>DFA20026-87BD-47FC-988A-0956B5B30EBF</key>
 		<dict>
@@ -956,18 +1052,27 @@ end tell</string>
 			<key>xpos</key>
 			<integer>650</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>530</integer>
+		</dict>
+		<key>EA3DF9A8-C9B9-4A5B-BE23-02A376F9B128</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>195</integer>
+			<key>ypos</key>
+			<integer>115</integer>
 		</dict>
 		<key>FA89C66A-A9E5-4D5A-BD31-C17F3285EE74</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>Quicklook</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>90</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

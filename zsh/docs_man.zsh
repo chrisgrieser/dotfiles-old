@@ -1,4 +1,4 @@
-function ch () {
+function cc () {
 	QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 	CHEAT=$(curl -s "https://cht.sh/$QUERY?q") # https://cht.sh/:help
 	echo "$CHEAT" | pbcopy
