@@ -8,6 +8,7 @@ finderWindowSwitcher = hs.window.switcher.new{"Finder"}
 browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
 mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
 sublimeWindowSwitcher = hs.window.switcher.new{"Sublime Text"}
+obsidianWindowSwitcher = hs.window.switcher.new{"Obsidian"}
 
 function appWindowSwitcher()
 	if (frontapp() == "Finder") then
@@ -18,6 +19,8 @@ function appWindowSwitcher()
 		mailWindowSwitcher:next()
 	elseif (frontapp() == "Sublime Text") then
 		sublimeWindowSwitcher:next()
+	elseif (frontapp() == "Obsidian") then
+		obsidianWindowSwitcher:next()
 	end
 end
 
