@@ -15,11 +15,13 @@ covidLocationCode = "BE"
 
 --------------------------------------------------------------------------------
 
+hotterThanOutside = false
 weatherStatusBar = hs.menubar.new()
 function setWeather()
 	local _, weather = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=1", nil)
 	weather = weather:gsub("\n", ""):gsub("+", "")
 	weatherStatusBar:setTitle(weather)
+	temp =
 end
 setWeather()
 hs.timer.doEvery(weatherUpdateMin * 60, setWeather)

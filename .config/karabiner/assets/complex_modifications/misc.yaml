@@ -77,7 +77,7 @@ rules:
             file_paths:
               - bin/alacritty$
               - /System/Applications/Utilities/Terminal.app
-  - description: "Ⓜ️🖊 Highlights: ⌘+L →  Show PDF in Finder"
+  - description: "Ⓜ️🖊 Highlights: ⌘+L → Show PDF in Finder"
     manipulators:
       - type: basic
         from:
@@ -98,6 +98,35 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^net\.highlightsapp\.universal$
+  - description: "Ⓜ️🏞 YouTube: ⌘+P → Picture-in-Picture Mode"
+    manipulators:
+      - type: basic
+        from:
+          key_code: p
+          modifiers:
+            mandatory:
+              - command
+        to:
+          - software_function:
+              set_mouse_cursor_position:
+                x: 50%
+                y: 50%
+                screen: 0
+          - pointing_button: button2
+          - pointing_button: button2
+          - key_code: vk_none
+            hold_down_milliseconds: 50
+          - key_code: p
+          - key_code: return_or_enter
+          - key_code: vk_none
+            hold_down_milliseconds: 800
+          - key_code: h
+            modifiers:
+              - command
+        conditions:
+          - type: frontmost_application_if
+            file_paths:
+              - YouTube
   - description: "Ⓜ️🔨 Hammerspoon: ⌘Q → Close instead of Quit "
     manipulators:
       - type: basic

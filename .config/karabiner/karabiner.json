@@ -2919,6 +2919,67 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Ⓜ️🏞 YouTube: ⌘+P → Picture-in-Picture Mode",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": [
+                                            "YouTube"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "50%",
+                                                "y": "50%"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "pointing_button": "button2"
+                                    },
+                                    {
+                                        "pointing_button": "button2"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 50,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "p"
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 800,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
