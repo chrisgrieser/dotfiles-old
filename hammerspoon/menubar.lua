@@ -15,13 +15,21 @@ covidLocationCode = "BE"
 
 --------------------------------------------------------------------------------
 
-hotterThanOutside = false
+prevTemp = 0
+roomTemp = 24
 weatherStatusBar = hs.menubar.new()
 function setWeather()
 	local _, weather = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=1", nil)
 	weather = weather:gsub("\n", ""):gsub("+", "")
 	weatherStatusBar:setTitle(weather)
-	temp =
+
+	-- temp notification
+	local temp = tonumber(string.match(weather, "%d+"))
+	if temp < roomTemp and prevTemp >= roomTemp then
+		notify("Open Window")
+	end
+	prevTemp = temp
+
 end
 setWeather()
 hs.timer.doEvery(weatherUpdateMin * 60, setWeather)
