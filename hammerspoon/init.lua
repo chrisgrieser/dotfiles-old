@@ -14,6 +14,7 @@ require("menubar")
 require("discord")
 require("twitterrific-iina")
 require("vim-mode")
+require("console")
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")
