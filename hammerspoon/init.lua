@@ -9,6 +9,7 @@ require("utils")
 require("console")
 require("hammerspoon-reloader")
 
+require("scroll")
 require("watchers")
 require("system-states")
 require("window-management")

@@ -1,4 +1,5 @@
 hyper = {"cmd", "alt", "ctrl", "shift"}
+hotkey = hs.hotkey.bind
 
 function notify (text)
 	hs.notify.new({title="Hammerspoon", informativeText=text}):send()
@@ -16,4 +17,3 @@ function isRunning (app)
 	end
 end
 
-hotkey = hs.hotkey.bind

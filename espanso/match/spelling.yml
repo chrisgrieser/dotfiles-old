@@ -154,3 +154,6 @@ matches:
     replace: German
   - trigger: american
     replace: American
+  - trigger: nto
+    replace: not
+    word: true
