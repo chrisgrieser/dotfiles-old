@@ -9,7 +9,7 @@ function frontapp ()
 	return hs.application.frontmostApplication():name()
 end
 
-function isRunning (app)
+function appIsRunning (app)
 	if hs.application(app):isRunning() then
 		return true
 	else

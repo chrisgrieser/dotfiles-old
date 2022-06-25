@@ -1,3 +1,5 @@
+require("utils")
+
 function twitterrificScrollUp ()
 	-- needs activation, cause sending to app in bg does not work with cmd key
 	local previousApp = hs.application.frontmostApplication():name()
@@ -12,21 +14,21 @@ function twitterrificScrollUp ()
 end
 
 function pagedownAction ()
-	if isRunning("IINA") then
+	if appIsRunning("IINA") then
 		hs.eventtap.keyStroke({}, "right", 1, hs.application("IINA"))
 	else
 		hs.eventtap.keyStroke({}, "down", 1, hs.application("Twitterrific"))
 	end
 end
 function pageupAction ()
-	if isRunning("IINA") then
+	if appIsRunning("IINA") then
 		hs.eventtap.keyStroke({}, "left", 1, hs.application("IINA"))
 	else
 		hs.eventtap.keyStroke({}, "up", 1, hs.application("Twitterrific"))
 	end
 end
 function homeAction ()
-	if isRunning("IINA") then
+	if appIsRunning("IINA") then
 		hs.eventtap.keyStroke({}, "Space", 1, hs.application("IINA"))
 	else
 		hs.application("Twitterrific"):activate()
