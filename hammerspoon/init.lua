@@ -5,9 +5,10 @@
 hs.window.animationDuration = 0
 
 --------------------------------------------------------------------------------
+require("hammerspoon-reloader")
 require("utils")
 require("console")
-require("hammerspoon-reloader")
+require("scroll")
 
 require("watchers")
 require("system-states")

@@ -10,7 +10,8 @@ function frontapp ()
 end
 
 function appIsRunning (app)
-	if hs.application(app):isRunning() then
+	local runs = hs.application.get(app)
+	if runs then
 		return true
 	else
 		return false
