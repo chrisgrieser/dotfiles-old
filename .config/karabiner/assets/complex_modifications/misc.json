@@ -545,49 +545,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "Ⓜ️🟦 Quicklook: Basic Vim Controls",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j"
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.quicklook\\.qlmanage$"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k"
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.quicklook\\.qlmanage$"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }

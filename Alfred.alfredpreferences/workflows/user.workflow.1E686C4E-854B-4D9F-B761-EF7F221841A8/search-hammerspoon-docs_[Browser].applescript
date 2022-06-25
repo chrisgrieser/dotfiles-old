@@ -15,7 +15,9 @@ on run argv
 		keystroke tab
 		delay 0.1
 		keystroke input
-		delay 0.1
+		delay 0.3
 		key code 53
+		delay 0.1
+		keystroke "f" -- vimium f
 	end tell
 end run
