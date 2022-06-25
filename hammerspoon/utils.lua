@@ -10,6 +10,7 @@ function frontapp ()
 end
 
 function appIsRunning (app)
+	-- can't use ":isRunning()", since the application object is nil when it's not running
 	local runs = hs.application.get(app)
 	if runs then
 		return true
