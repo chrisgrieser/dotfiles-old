@@ -35,7 +35,7 @@ vim:setAlertFont("iA Writer Quattro")
 -- To customize the hot key you want, see the mods and key parameters at:
 --   https://www.hammerspoon.org/docs/hs.hotkey.html#bind
 --
-vim:bindHotKeys({ enter = { Hyperkey, 'I' } })
+vim:bindHotKeys({ enter = { hyper, 'I' } })
 
 -- https://github.com/dbalatero/VimMode.spoon#block-cursor-mode
 vim:enableBetaFeature('block_cursor_overlay')

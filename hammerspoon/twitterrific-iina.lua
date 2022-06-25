@@ -52,8 +52,8 @@ iinaAppLauncher:start()
 
 --------------------------------------------------------------------------------
 
-hs.hotkey.bind({}, "pagedown", pagedownAction, nil, pagedownAction)
-hs.hotkey.bind({}, "pageup", pageupAction, nil, pageupAction)
-hs.hotkey.bind({}, "home", homeAction)
+hotkey({}, "pagedown", pagedownAction, nil, pagedownAction)
+hotkey({}, "pageup", pageupAction, nil, pageupAction)
+hotkey({}, "home", homeAction)
 
-hs.hotkey.bind({"shift"}, "home", twitterrificScrollUp)
+hotkey({"shift"}, "home", twitterrificScrollUp)

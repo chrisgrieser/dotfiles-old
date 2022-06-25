@@ -72,12 +72,12 @@ function finderVsplit ()
 end
 --------------------------------------------------------------------------------
 
-hs.hotkey.bind(Hyperkey, "V", function()
+hotkey(hyper, "V", function()
 	if (frontapp() == "Finder") then	finderVsplit()
 	else vsplit("reset") end
 end)
 
-hs.hotkey.bind(Hyperkey, "X", function() vsplit("switch") end)
+hotkey(hyper, "X", function() vsplit("switch") end)
 
-hs.hotkey.bind(Hyperkey, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
-hs.hotkey.bind(Hyperkey, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
+hotkey(hyper, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
+hotkey(hyper, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)

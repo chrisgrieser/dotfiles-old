@@ -13,4 +13,4 @@ function isRunning (app)
 	return false
 end
 
-hk = hs.hotkey.bind
+hotkey = hs.hotkey.bind

@@ -18,7 +18,7 @@ function appWindowSwitcher()
 	end
 end
 
-hs.hotkey.bind({"alt"}, "tab", appWindowSwitcher)
+hotkey({"alt"}, "tab", appWindowSwitcher)
 
 --------------------------------------------------------------------------------
 
@@ -78,13 +78,13 @@ function resizingWorkaround(win, pos)
 	end
 end
 
-hs.hotkey.bind(Hyperkey, "Up", function () moveAndResize("up") end)
-hs.hotkey.bind(Hyperkey, "Down", function () moveAndResize("down") end)
-hs.hotkey.bind(Hyperkey, "Right", function () moveAndResize("right") end)
-hs.hotkey.bind(Hyperkey, "Left", function () moveAndResize("left") end)
-hs.hotkey.bind(Hyperkey, "Space", function () moveAndResize("maximized") end)
+hotkey(hyper, "Up", function () moveAndResize("up") end)
+hotkey(hyper, "Down", function () moveAndResize("down") end)
+hotkey(hyper, "Right", function () moveAndResize("right") end)
+hotkey(hyper, "Left", function () moveAndResize("left") end)
+hotkey(hyper, "Space", function () moveAndResize("maximized") end)
 
-hs.hotkey.bind({"ctrl"}, "Space", function ()
+hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
 		moveAndResize("centered")
 	else
@@ -121,7 +121,7 @@ function homeWindowLayout ()
 	hs.layout.apply(homeLayout)
 end
 
-hs.hotkey.bind(Hyperkey, "W", homeWindowLayout)
+hotkey(hyper, "W", homeWindowLayout)
 
 --------------------------------------------------------------------------------
 

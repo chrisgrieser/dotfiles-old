@@ -132,19 +132,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B22D1105-6F21-496E-8C69-2C80E40BCC54</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>95598639-7E20-497E-9D9B-2B8D64ACFE69</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CD2B80E8-95B4-44F0-AA98-22F2527E6329</key>
 		<array>
 			<dict>
@@ -366,60 +353,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>selection–opener.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>95598639-7E20-497E-9D9B-2B8D64ACFE69</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>101</integer>
-				<key>hotmod</key>
-				<integer>10223616</integer>
-				<key>hotstring</key>
-				<string>F9</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>B22D1105-6F21-496E-8C69-2C80E40BCC54</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -455,27 +388,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>⇥</string>
-				<key>keycode</key>
-				<integer>48</integer>
-				<key>keymod</key>
-				<integer>262144</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>003868AF-A80C-42B9-97CA-9F8B16A29EF6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -507,6 +419,27 @@ end alfred_script</string>
 			<string>9F7321C0-2B4E-45C7-BAC6-FA78E1345869</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⇥</string>
+				<key>keycode</key>
+				<integer>48</integer>
+				<key>keymod</key>
+				<integer>262144</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>003868AF-A80C-42B9-97CA-9F8B16A29EF6</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -953,13 +886,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>425</integer>
 		</dict>
-		<key>95598639-7E20-497E-9D9B-2B8D64ACFE69</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1005</integer>
-			<key>ypos</key>
-			<integer>205</integer>
-		</dict>
 		<key>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</key>
 		<dict>
 			<key>colorindex</key>
@@ -986,13 +912,6 @@ end alfred_script</string>
 			<integer>510</integer>
 			<key>ypos</key>
 			<integer>595</integer>
-		</dict>
-		<key>B22D1105-6F21-496E-8C69-2C80E40BCC54</key>
-		<dict>
-			<key>xpos</key>
-			<integer>840</integer>
-			<key>ypos</key>
-			<integer>205</integer>
 		</dict>
 		<key>CD2B80E8-95B4-44F0-AA98-22F2527E6329</key>
 		<dict>
