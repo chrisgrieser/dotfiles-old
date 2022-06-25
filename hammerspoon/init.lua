@@ -7,6 +7,8 @@ hs.window.animationDuration = 0
 --------------------------------------------------------------------------------
 require("utils")
 require("console")
+require("hammerspoon-reloader")
+
 require("watchers")
 require("system-states")
 require("window-management")
@@ -16,6 +18,7 @@ require("menubar")
 require("discord")
 require("twitterrific-iina")
 require("vim-mode")
+
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")

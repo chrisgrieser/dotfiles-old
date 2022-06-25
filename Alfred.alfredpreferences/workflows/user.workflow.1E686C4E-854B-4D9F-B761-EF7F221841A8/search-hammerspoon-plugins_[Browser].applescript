@@ -15,6 +15,7 @@ on run argv
 		keystroke tab
 		delay 0.1
 		keystroke input
+		delay 0.1
 		key code 53
 	end tell
 end run

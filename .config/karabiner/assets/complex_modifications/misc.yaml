@@ -77,22 +77,6 @@ rules:
             file_paths:
               - bin/alacritty$
               - /System/Applications/Utilities/Terminal.app
-  - description: "Ⓜ️🔨 Hammerspoon: ⌘Q → Close instead of Quit "
-    manipulators:
-      - type: basic
-        from:
-          key_code: q
-          modifiers:
-            mandatory:
-              - command
-        to:
-          - key_code: w
-            modifiers:
-              - command
-        conditions:
-          - type: frontmost_application_if
-            bundle_identifiers:
-              - ^org\.hammerspoon\.Hammerspoon$
   - description: "Ⓜ️🖊 Highlights: ⌘+L →  Show PDF in Finder"
     manipulators:
       - type: basic
@@ -114,6 +98,22 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^net\.highlightsapp\.universal$
+  - description: "Ⓜ️🔨 Hammerspoon: ⌘Q → Close instead of Quit "
+    manipulators:
+      - type: basic
+        from:
+          key_code: q
+          modifiers:
+            mandatory:
+              - command
+        to:
+          - key_code: w
+            modifiers:
+              - command
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^org\.hammerspoon\.Hammerspoon$
   - description: "Ⓜ️📖 Inoreader: v opens in background, switch jk & np"
     manipulators:
       - type: basic
