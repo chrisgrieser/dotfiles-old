@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>de.chris-grieser.cheats</string>
 	<key>category</key>
 	<string>Development</string>
 	<key>connections</key>
