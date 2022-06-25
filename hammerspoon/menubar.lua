@@ -8,7 +8,11 @@ function systemWakeWatcher (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 		setWeather()
 		setCovidBar()
-		notify ("System has woke up.")
+		homeWindowLayout()
+		local timeHours = hs.timer.localTime() / 60 / 60
+		if timeHours < 18 and timeHours > 6 then
+
+		end
 	end
 end
 wakeWatcher = hs.caffeinate.watcher.new(systemWakeWatcher)
