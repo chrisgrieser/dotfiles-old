@@ -1,38 +1,32 @@
 --  on launch, open OMG Server instead of friends
 -- (who needs friends if you have Obsidian?)
-function discordWatcher(appName, eventType)
+function discordLaunchWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.launching) then
 		if (appName == "Discord") then
 			hs.urlevent.openURL("discord://discord.com/channels/686053708261228577/700466324840775831")
 		end
 	end
 end
-discordAppWatcher = hs.application.watcher.new(discordWatcher)
+discordAppWatcher = hs.application.watcher.new(discordLaunchWatcher)
 discordAppWatcher:start()
 
-discordURLFixer.enable_hotkey_matching_for_app = function(app_names, hotkey)
-	app_names = type(app_names) =="table" and app_names or {app_names}
-	local filter = hs.window.filter.new(app_names)
-	filter:subscribe(hs.window.windowFocused, function()
-	                 hotkey:enable()
-	              end)
-	filter:subscribe(hs.window.windowUnfocused, function()
-	                 hotkey:disable()
-	              end)
-end
-
--- when Discord activates and the clipboard contains an URL,
--- it will automatically be enclosed in <> to avoid annoying previews
--- function discordURLFixer(appName, eventType)
--- 	if (eventType == hs.application.watcher.activated) then
--- 		if (appName == "Discord") then
--- 			local clipb = hs.pasteboard.getContents()
--- 			local hasURL = string.match(clipb, '^https?%S+$')
--- 			if (hasURL) then
--- 				hs.pasteboard.setContents("<" .. clipb .. ">")
--- 			end
--- 		end
--- 	end
--- end
--- discordClipboardWatcher = hs.application.watcher.new(discordURLFixer)
--- discordClipboardWatcher:start()
+-- when Discord is focused, enclose URL in clipboard with <>
+discordAppFilter = hs.window.filter.new("Discord")
+discordAppFilter:subscribe(hs.window.filter.windowFocused, function()
+	local clipb = hs.pasteboard.getContents()
+	notify("focused")
+	local hasURL = string.match(clipb, '^https?%S+$')
+	if (hasURL) then
+		hs.pasteboard.setContents("<" .. clipb .. ">")
+	end
+end)
+-- when Discord is unfocused, removes <> from URL in clipboard
+discordAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
+	local clipb = hs.pasteboard.getContents()
+	local hasEnclosedURL = string.match(clipb, '^<https?%S+>$')
+	if (hasEnclosedURL) then
+		clip = clip:sub(2, -2) -- remove first & last character
+		notify("unfocused"..clipb)
+		hs.pasteboard.setContents(clipb)
+	end
+end)
