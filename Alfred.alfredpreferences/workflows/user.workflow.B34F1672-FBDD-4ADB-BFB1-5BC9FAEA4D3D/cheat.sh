@@ -7,7 +7,6 @@ CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 # remove signature
 CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
-# [Stobor] [so/q/979256] [cc by-sa 3.0]
 
 # copy to clipboard
 echo "$CHEAT_CODE_ONLY" | pbcopy
@@ -19,7 +18,7 @@ if [[ "$QUERY" =~ "/" ]] ; then
 fi
 
 CACHE=~"/Library/Caches/$QUERY.$LANG"
-echo "${LANG:u}: $QUERY" > "$CACHE" # header bar
+echo "${LANG:u} -- $QUERY" > "$CACHE" # header bar
 echo "" >> "$CACHE"
 echo "$CHEAT_INFO" >> "$CACHE"
 
@@ -27,11 +26,13 @@ echo "$CHEAT_INFO" >> "$CACHE"
 # PREVIEW VIA BAT
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
+STATUSLINE_COLOR=#5E6F8A
 BAT_SYNTAX_THEME="Nord" # `bat --list-themes` for more themes
 
 alacritty \
 	--config-file="$PREVIEW_CONFIG" \
 	--option="colors.primary.background='$BG_COLOR'" \
+	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
 	--title="Cheat Sheet"\
 	--command bat "$CACHE" \
 		--file-name="$LANG – $QUERY" \

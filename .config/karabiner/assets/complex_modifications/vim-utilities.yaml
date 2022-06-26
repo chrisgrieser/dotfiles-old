@@ -5,7 +5,7 @@ maintainers:
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
-  - description: "⚒️🌐 j/k (Browser): also hides cursor (for Vimium)"
+  - description: "⚒️🌐 j/k (Browser/Alacritty): also hides cursor (for Vimium/less)"
     manipulators:
       - type: basic
         from:
@@ -20,17 +20,11 @@ rules:
         conditions:
           - value: 0
             type: variable_if
-            name: VIM_MODE
-          - value: 0
-            type: variable_if
             name: LEADER_ACTIVE
           - type: frontmost_application_if
-            bundle_identifiers:
-              - ^com\.vivaldi\.Vivaldi$
-              - ^org\.chromium\.Chromium$
-              - ^com\.google\.Chrome$
-              - ^com\.brave\.Browser$
-              - ^com\.apple\.Safari$
+            file_paths:
+              - alacritty$
+              - Brave Browser.app
       - type: basic
         from:
           key_code: k
@@ -44,17 +38,11 @@ rules:
         conditions:
           - value: 0
             type: variable_if
-            name: VIM_MODE
-          - value: 0
-            type: variable_if
             name: LEADER_ACTIVE
           - type: frontmost_application_if
-            bundle_identifiers:
-              - ^com\.vivaldi\.Vivaldi$
-              - ^org\.chromium\.Chromium$
-              - ^com\.google\.Chrome$
-              - ^com\.brave\.Browser$
-              - ^com\.apple\.Safari$
+            file_paths:
+              - alacritty$
+              - Brave Browser.app
   - description: "⚒️ k+l / f+j (simultaneously): ⌫ / ↵"
     manipulators:
       - type: basic
