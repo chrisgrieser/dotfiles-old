@@ -1,8 +1,9 @@
 function cc () {
 	QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
-	CHEAT=$(curl -s "https://cht.sh/$QUERY") # https://cht.sh/:help
-	echo "$CHEAT" | pbcopy
-	echo "$CHEAT" | "$PAGER"
+	CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY") # https://cht.sh/:help
+	CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
+	echo "$CHEAT_INFO" | "$PAGER"
+	echo "$CHEAT_CODE_ONLY" | pbcopy
 }
 
 # if alacritty installed open man page in new alacritty window
@@ -46,7 +47,6 @@ export LESS_TERMCAP_us=$'\E[1;34m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Pager-specific settings
-export LESS='--window=-5 -R --incsearch --no-init'
-# export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
+export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
 # export MOAR="--no-linenumbers --render-unprintable=whitespace"
 

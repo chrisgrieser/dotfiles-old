@@ -2,10 +2,11 @@
 export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
-CHEAT=$(curl -s "https://cht.sh/$QUERY?T") # https://cht.sh/:help
+CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?T") # https://cht.sh/:help
+CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 # copy to clipboard
-echo "$CHEAT" | pbcopy
+echo "$CHEAT_CODE_ONLY" | pbcopy
 
 LANG="sh"
 if [[ "$QUERY" =~ "/" ]] ; then
@@ -14,9 +15,9 @@ if [[ "$QUERY" =~ "/" ]] ; then
 fi
 
 CACHE=~"/Library/Caches/$QUERY.$LANG"
-echo "$CHEAT" > "$CACHE"
+echo "$CHEAT_INFO" > "$CACHE"
 # view in Terminal
-alacritty --command=bat "$CACHE"
+alacritty --command bat --pager="less -R" "$CACHE"
 
 
 #-------------------------------------------------------------------------------
