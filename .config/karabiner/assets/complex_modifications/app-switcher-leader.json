@@ -1070,6 +1070,71 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "non_us_pound"
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "LEADER_ACTIVE",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "shell_command": "open -a 'Color Picker'"
+            },
+            {
+              "set_variable": {
+                "name": "LEADER_ACTIVE",
+                "value": 0
+              }
+            },
+            {
+              "set_notification_message": {
+                "id": "leader-notice",
+                "text": ""
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "LEADER_ACTIVE",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "shell_command": "open -a 'BetterTouchTool'"
+            },
+            {
+              "set_variable": {
+                "name": "LEADER_ACTIVE",
+                "value": 0
+              }
+            },
+            {
+              "set_notification_message": {
+                "id": "leader-notice",
+                "text": ""
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "w"
           },
           "conditions": [

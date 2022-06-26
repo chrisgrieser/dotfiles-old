@@ -1,5 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
+-- pin window on top
+hotkey (hyper, "P", function () bttBridge ("always-on-top") end)
 
 
 --------------------------------------------------------------------------------
@@ -62,6 +64,10 @@ function moveAndResize(direction)
 		else
 			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
 		end
+	end
+
+	if direction == "rightThird" then
+		bttBridge ("always-on-top")
 	end
 end
 
