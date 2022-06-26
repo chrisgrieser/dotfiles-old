@@ -46,6 +46,8 @@ function moveAndResize(direction)
 		position = hs.layout.maximized
 	elseif (direction == "centered") then
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
+	elseif (direction == "rightThird") then
+		position = hs.layout.right30
 	end
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
@@ -79,6 +81,18 @@ function resizingWorkaround(win, pos)
 			"set h to " .. pos.h .. " * max_y\n" ..
 			'tell application "' .. winApp .. '" to set bounds of front window to {x, y, x + w, y + h}'
 		)
+	elseif (winApp == "alacritty") then
+		hs.applescript([[tell application "System Events"
+			]]..
+			'tell process "' .. winApp .. '" to"
+					tell window 1
+						set position to {0, 0}
+						delay 0.3
+						set size to {1920, 1080}
+					end tell
+				end tell
+			end tell
+		]])
 	else
 		win:moveToUnit(pos)
 	end
@@ -89,6 +103,7 @@ hotkey(hyper, "Down", function () moveAndResize("down") end)
 hotkey(hyper, "Right", function () moveAndResize("right") end)
 hotkey(hyper, "Left", function () moveAndResize("left") end)
 hotkey(hyper, "Space", function () moveAndResize("maximized") end)
+hotkey(hyper, "end", function () moveAndResize("rightThird") end)
 
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
