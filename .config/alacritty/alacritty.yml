@@ -54,7 +54,7 @@ font:
   bold_italic:
     family: JetBrainsMonoNL Nerd Font
     style: Bold Italic
-  size: 23
+  size: 24
   use_thin_strokes: true
   draw_bold_text_with_bright_colors: true
   builtin_box_drawing: true
@@ -68,8 +68,8 @@ window:
   position:
     x: 0
   dimensions:
-    columns: 97
-    lines: 70
+    columns: 104
+    lines: 50
   padding:
     x: 6
     'y': 6

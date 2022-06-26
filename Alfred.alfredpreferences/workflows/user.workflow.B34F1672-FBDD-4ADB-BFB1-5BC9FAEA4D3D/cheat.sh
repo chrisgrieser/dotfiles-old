@@ -16,21 +16,22 @@ fi
 
 CACHE=~"/Library/Caches/$QUERY.$LANG"
 echo "$CHEAT_INFO" > "$CACHE"
-# view in Terminal
-alacritty \
-	--option=window.decorations=full \
-	--title="$LANG: $QUERY" \
-	--option="dimen" \
-	--command bat "$CACHE" \
-		--pager="less -R --quit-at-eof" \
-		--language="$LANG" \
-		--style=numbers
+
+# the pager options needs to be set explicitly, as without
+# bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
+# causing alacritty in turn to quit
+# alacritty \
+# 	--option=window.position.x=700 \
+# 	--option=window.position.y=120 \
+# 	--option=window.dimensions.columns=80 \
+# 	--option=window.dimensions.lines=27 \
+# 	--command bat "$CACHE" \
+# 		--pager="less -R" \
+# 		--file-name="$LANG – $QUERY" \
+# 		--language="$LANG" \
+# 		--style=numbers,header
 
 #-------------------------------------------------------------------------------
-# # quicklook preview via Peek
-# # shellcheck disable=SC2154
-# [[ ! -d "$alfred_workflow_cache" ]] && mkdir -p "$alfred_workflow_cache"
-# CACHE="$alfred_workflow_cache/$QUERY.$LANG"
-# echo "$CHEAT" > "$CACHE"
-# killall "qlmanage" # remove existing quicklook previews
-# qlmanage -p "$CACHE"
+# quicklook preview via Peek
+killall "qlmanage" # remove existing quicklook previews
+qlmanage -p "$CACHE"
