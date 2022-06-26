@@ -79,7 +79,7 @@ function resizingWorkaround(win, pos)
 		)
 	else
 		win:moveToUnit(pos)
-		-- has to repeat due to to bug for some apps... :/
+		-- has to repeat due to bug for some apps... :/
 		hs.timer.delayed.new(0.3, function () win:moveToUnit(pos) end):start()
 	end
 end
@@ -133,8 +133,11 @@ function homeWindowLayout ()
 		{"Obsidian", nil, currentScreen, pseudoMaximized, nil, nil},
 		{"Drafts", nil, currentScreen, pseudoMaximized, nil, nil},
 		{"Mimestream", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"alacritty", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Alacritty", nil, currentScreen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
+	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
 end
 
 --------------------------------------------------------------------------------
@@ -169,7 +172,7 @@ function vsplit (mode)
 			f1 = hs.layout.right30
 			f2 = hs.layout.left70
 		end
-	else
+	elseif mode == "split" then
 		if (f1.w == f2.w) then
 			f1 = hs.layout.left70
 			f2 = hs.layout.right30
@@ -227,11 +230,8 @@ end)
 
 hotkey(hyper, "V", function()
 	if (frontapp() == "Finder") then	finderVsplit()
-	else vsplit("50-50") end
+	else vsplit("split") end
 end)
 
-hotkey(hyper, "Y", function () vsplit("70-30") end)
 hotkey(hyper, "X", function() vsplit("switch") end)
-
-hotkey (hyper, "P", function () bttBridge ("always-on-top") end)
 hotkey({"alt"}, "tab", appWindowSwitcher)
