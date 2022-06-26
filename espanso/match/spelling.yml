@@ -157,3 +157,6 @@ matches:
   - trigger: nto
     replace: not
     word: true
+  - trigger: sicne
+    replace: since
+    word: true

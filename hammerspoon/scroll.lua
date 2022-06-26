@@ -1,19 +1,24 @@
 require("utils")
 
-function scrollVertically (distance)
-	hs.eventtap.scrollWheel({0, distance}, {})
-end
-
-scrollAmount = 10
+--------------------------------------------------------------------------------
+-- global pageup/dwon keys
+-- have to be done here, since when send from Karabiner, gets caught by the
+-- pagedown/up listener from Hammerspoon in `twitterific-iina.lua`
 
 function scrollDown ()
-	scrollVertically(-scrollAmount)
+	if frontapp() == "Alacritty" then
+		keystroke ({"shift"}, "pagedown")
+	else
+		keystroke ({}, "pagedown")
+	end
 end
 function scrollUp ()
-	scrollVertically(scrollAmount)
+	if frontapp() == "Alacritty" then
+		keystroke ({"shift"}, "pageup")
+	else
+		keystroke ({}, "pageup")
+	end
 end
---------------------------------------------------------------------------------
--- global scroll hotkeys
 
 hotkey({"alt"}, "J", scrollDown, nil, scrollDown)
 hotkey({"alt"}, "K", scrollUp, nil, scrollUp)
@@ -24,11 +29,17 @@ hotkey({"alt"}, "K", scrollUp, nil, scrollUp)
 -- and enables j/k for scrolling
 
 quicklookWindow = {w=806, h=806} -- dependent on the setting of the Peek-App
-qlscrollDown = hotkey({}, "j", scrollDown, nil, scrollDown)
-qlscrollUp = hotkey({}, "k", scrollUp, nil, scrollUp)
+scrollAmount = 10
+function qlScrollWheelDown ()
+	hs.eventtap.scrollWheel({0, -scrollAmount}, {})
+end
+function qlScrollWheelUp ()
+	hs.eventtap.scrollWheel({0, scrollAmount}, {})
+end
+qlscrollDown = hotkey({}, "j", qlScrollWheelDown, nil, qlScrollWheelDown)
+qlscrollUp = hotkey({}, "k", qlScrollWheelUp, nil, qlScrollWheelUp)
 qlscrollDown:disable()
 qlscrollUp:disable()
-
 function qlmanageAppState (appName, eventType)
 	if appName == "qlmanage" then
 		local screen = hs.mouse.getCurrentScreen()
