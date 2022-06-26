@@ -61,7 +61,6 @@ function moveAndResize(direction)
 			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
 		end
 	end
-
 end
 
 function resizingWorkaround(win, pos)
@@ -104,24 +103,6 @@ function resizingWorkaround(win, pos)
 	end
 end
 
-hotkey(hyper, "Up", function () moveAndResize("up") end)
-hotkey(hyper, "Down", function () moveAndResize("down") end)
-hotkey(hyper, "Right", function () moveAndResize("right") end)
-hotkey(hyper, "Left", function () moveAndResize("left") end)
-hotkey(hyper, "Space", function () moveAndResize("maximized") end)
-hotkey(hyper, "end", function () moveAndResize("rightThird") end)
-
-hotkey({"ctrl"}, "Space", function ()
-	if (frontapp() == "Finder") then
-		moveAndResize("centered")
-	else
-		moveAndResize("pseudo-maximized")
-	end
-end)
-
---------------------------------------------------------------------------------
-
--- https://www.hammerspoon.org/go/#winlayout
 function homeWindowLayout ()
 	local currentScreen = hs.screen.primaryScreen():name()
 
@@ -148,7 +129,22 @@ function homeWindowLayout ()
 	hs.layout.apply(homeLayout)
 end
 
-hotkey(hyper, "W", homeWindowLayout)
+hotkey(hyper, "Up", function () moveAndResize("up") end)
+hotkey(hyper, "Down", function () moveAndResize("down") end)
+hotkey(hyper, "Right", function () moveAndResize("right") end)
+hotkey(hyper, "Left", function () moveAndResize("left") end)
+hotkey(hyper, "Space", function () moveAndResize("maximized") end)
+hotkey(hyper, "end", function () moveAndResize("rightThird") end)
+hotkey(hyper, "home", homeWindowLayout)
+
+hotkey({"ctrl"}, "Space", function ()
+	if (frontapp() == "Finder") then
+		moveAndResize("centered")
+	else
+		moveAndResize("pseudo-maximized")
+	end
+end)
+
 
 --------------------------------------------------------------------------------
 
