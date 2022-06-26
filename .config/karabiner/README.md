@@ -60,10 +60,12 @@ The most bottom-left key is the leader, `fn` on Apple Keyboards and `left-contro
 - `ö`[^1] → Twitter (`ö` looks like the Twitterific Logo)
 - `k` → `K`arabiner Elements
 - `K` → `K`arabiner EventViewer
+- `B` → `B`etterTouchTool
+- `#` → `#` Color Picker (`#` is the prefix for Hex Code)
 - `w` → `W`hatsApp (in the Browser)
 - `t` → `T`elegram (in the Browser)
 - `f` → `F`acebook Messenger (in the Browser)
-- `x` → Password Manager → MacPass (`xxxxx` for passwords)
+- `x` → Password Manager → MacPass (`xxx` for passwords)
 - `h` → `H`ammerspoon Console
 - `.`/`:` → Emoji Insertion Modal
 - `,` → System Preferences

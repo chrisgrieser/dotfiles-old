@@ -137,6 +137,34 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>INPUT="$*"
+if [[ -e "$INPUT"/main.ts ]] ; then
+	open -R "$INPUT"/main.ts
+else
+	open "$INPUT"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>open-and-reveal.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string></string>
@@ -192,30 +220,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>INPUT="$*"
-if [[ -e "$INPUT"/main.ts ]] ; then
-	open -R "$INPUT"/main.ts
-else
-	open "$INPUT"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>open-and-reveal.sh</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>path</key>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.browseinterminal</string>
 			<key>uid</key>
-			<string>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</string>
+			<string>CC7C190D-D205-4F5B-A0DC-2A6D64736EC7</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -231,19 +244,6 @@ fi</string>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>4C4CA3DF-BB26-4393-84E2-27190A118611</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinterminal</string>
-			<key>uid</key>
-			<string>CC7C190D-D205-4F5B-A0DC-2A6D64736EC7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -454,16 +454,16 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open GitHub</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>395</integer>
+			<integer>250</integer>
 		</dict>
 		<key>4C4CA3DF-BB26-4393-84E2-27190A118611</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>25</integer>
 			<key>ypos</key>
 			<integer>165</integer>
 		</dict>
@@ -472,16 +472,16 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>820</integer>
 			<key>ypos</key>
-			<integer>710</integer>
+			<integer>535</integer>
 		</dict>
 		<key>92246A7B-E550-40D1-9840-C2CB0F213DE3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>240</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -490,9 +490,9 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>15</integer>
-			<key>ypos</key>
 			<integer>395</integer>
+			<key>ypos</key>
+			<integer>250</integer>
 		</dict>
 		<key>AD4F6532-1C9C-4A7D-894C-6243DB064568</key>
 		<dict>
@@ -501,9 +501,9 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>open in Sublime</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>975</integer>
+			<integer>800</integer>
 		</dict>
 		<key>C1AFAC2D-5120-4309-BA0A-3BE9C074654D</key>
 		<dict>
@@ -512,9 +512,9 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open GitHub issues</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>395</integer>
 		</dict>
 		<key>C2F2DD6E-652E-4EC6-B5B7-E03FAAB7941B</key>
 		<dict>
@@ -534,18 +534,18 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Copy GitHub URL</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>710</integer>
+			<integer>535</integer>
 		</dict>
 		<key>CC7C190D-D205-4F5B-A0DC-2A6D64736EC7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>135</integer>
 		</dict>
 		<key>D7C32C46-D907-4B0A-AF28-DDB4ABB3186D</key>
 		<dict>
@@ -554,18 +554,18 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open File</string>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>10</integer>
 		</dict>
 		<key>ECE501C0-A31C-4E6F-8447-F1D074D6077F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>850</integer>
+			<integer>675</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

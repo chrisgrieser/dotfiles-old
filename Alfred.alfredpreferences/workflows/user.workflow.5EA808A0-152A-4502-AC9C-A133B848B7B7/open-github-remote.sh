@@ -48,9 +48,9 @@ else
 	if [[ -z "$FILE" ]] ; then
 		URL="$REMOTE_URL/tree/$BRANCH/$SUBFOLDER"
 	else
-		URL="$REMOTE_URL/blob/$BRANCH/$SUBFOLDER/$FILE"
+		URL="$REMOTE_URL/commits/$BRANCH/$SUBFOLDER/$FILE"
 	fi
 fi
 
-# open pseudo-encoded url (to require no dependency)
+# open pseudo-encoded url (to not require a dependency)
 open "$(echo "$URL" | sed -e "s/ /%20/g")"

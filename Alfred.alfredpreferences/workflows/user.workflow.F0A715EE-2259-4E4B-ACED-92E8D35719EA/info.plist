@@ -756,7 +756,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<key>note</key>
 			<string>open via subl CLI</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>65</integer>
 		</dict>
@@ -803,7 +803,7 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 		<key>F802A1F3-262C-4738-AFF7-DDE34474EE0E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
 			<integer>700</integer>
 		</dict>

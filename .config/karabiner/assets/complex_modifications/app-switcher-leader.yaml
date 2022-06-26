@@ -412,16 +412,6 @@ rules:
               text: ""
       - type: basic
         from:
-          key_code: b
-          modifiers:
-            mandatory:
-              - shift
-        conditions:
-          - type: variable_if
-            name: LEADER_ACTIVE
-            value: 1
-      - type: basic
-        from:
           key_code: x
         conditions:
           - type: variable_if
