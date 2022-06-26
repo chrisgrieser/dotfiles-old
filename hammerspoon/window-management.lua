@@ -1,4 +1,6 @@
 require("utils")
+--------------------------------------------------------------------------------
+
 
 --------------------------------------------------------------------------------
 
@@ -170,3 +172,5 @@ function displayCountWatcher()
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
+
+

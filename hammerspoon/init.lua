@@ -29,9 +29,5 @@ require("twitterrific-iina")
 -- Spoons
 require("vim-mode")
 
-hs.loadSpoon("ColorPicker")
-spoon.ColorPicker:start()
-hotkey(hyper, "P", function () spoon.ColorPicker.toggleColorSamples("Crayons") end)
-
 --------------------------------------------------------------------------------
 notify("Config reloaded")

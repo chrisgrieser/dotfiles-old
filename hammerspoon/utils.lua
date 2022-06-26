@@ -20,3 +20,6 @@ function appIsRunning (app)
 	end
 end
 
+function bttBridge (triggerName)
+	hs.applescript('tell application "BetterTouchTool" to trigger_named "'..triggerName..'"')
+end
