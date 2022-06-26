@@ -61,6 +61,8 @@ function moveAndResize(direction)
 end
 
 function resizingWorkaround(win, pos)
+	-- replaces `win:moveToUnit(pos)`
+
 	local winApp = win:application():name()
 	-- add Applescript-capable apps used to the if-condition below
 	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp == "Safari") then
