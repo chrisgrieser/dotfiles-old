@@ -17,8 +17,14 @@ fi
 CACHE=~"/Library/Caches/$QUERY.$LANG"
 echo "$CHEAT_INFO" > "$CACHE"
 # view in Terminal
-alacritty --command bat --pager="less -R" "$CACHE"
-
+alacritty \
+	--option=window.decorations=full \
+	--title="$LANG: $QUERY" \
+	--option="dimen" \
+	--command bat "$CACHE" \
+		--pager="less -R --quit-at-eof" \
+		--language="$LANG" \
+		--style=numbers
 
 #-------------------------------------------------------------------------------
 # # quicklook preview via Peek
