@@ -17,19 +17,6 @@ function reloadConfig(files)
 end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
---------------------------------------------------------------------------------
-
--- while using hammerspoon console, turn ⌘q to ⌘w
-hammerspoonAppFilter = hs.window.filter.new("Hammerspoon")
-quitDefeat = hotkey({"cmd"}, "Q", function () keystroke({"cmd"}, "w", 1, hs.application("Hammerspoon")) end)
-quitDefeat:disable()
-hammerspoonAppFilter:subscribe(hs.window.filter.windowFocused, function()
-	quitDefeat:disable()
-end)
-hammerspoonAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
-	quitDefeat:enable()
-end)
-
 
 --------------------------------------------------------------------------------
 -- CONSOLE

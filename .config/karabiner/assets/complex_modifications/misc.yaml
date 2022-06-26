@@ -252,3 +252,19 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^com\.agiletortoise\.Drafts-OSX$
+  - description: "Ⓜ️🔨 Hammerspoon: ⌘Q → Close instead of Quit "
+    manipulators:
+      - type: basic
+        from:
+          key_code: q
+          modifiers:
+            mandatory:
+              - command
+        to:
+          - key_code: w
+            modifiers:
+              - command
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^org\.hammerspoon\.Hammerspoon$
