@@ -2,7 +2,7 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '^continue'
+  - trigger: '+continue'
     replace: "¬"
     label: 🍏 Continuation Character
   - replace: |
@@ -15,7 +15,7 @@ matches:
 
       end if
     label: 🍏 Check whether app is running
-  - trigger: '^menu'
+  - trigger: '+menu'
     replace: |
       tell application "System Events"
       	tell process "$|$"
@@ -24,7 +24,7 @@ matches:
       	end tell
       end tell
     label: 🍏 Click Menubar Item
-  - trigger: '^submenu'
+  - trigger: '+submenu'
     replace: |
       tell application "System Events"
       	tell process "$|$"
@@ -75,12 +75,12 @@ matches:
     label: 🍏 Get name of frontmost app
   - replace: tell application "System Events" to tell process "Drafts" to set visible to false
     label: 🍏 Hide App
-  - trigger: '^key'
+  - trigger: '+key'
     replace: tell application "System Events" to keystroke "$|$" using {command down}
     label: 🍏 Keystrokes
   - replace: tell application "Twitterrific$|$" to if it is not running then activate
     label: 🍏 Launch App
-  - trigger: '^quit'
+  - trigger: '+quit'
     replace: tell application "Twitterrific$|$" to if it is running then quit
     label: 🍏 Quit App
   - replace: |
@@ -98,7 +98,7 @@ matches:
       	end tell
       end tell"
     label: 🍏 Run Services
-  - trigger: '^shortcut'
+  - trigger: '+shortcut'
     replace: tell application "Shortcuts" to run shortcut "$|$"
     label: 🍏 Run Shortcut
   - replace: |
@@ -112,10 +112,10 @@ matches:
       	end repeat
       end tell
     label: 🍏 Wait till tab is loaded
-  - $trigger: "^as"
+  - $trigger: "+as"
     replace: "#!/usr/bin/env osascript\n"
     label: 🍏 AppleScript Shebang
-  - $trigger: "^resolve"
+  - $trigger: "+resolve"
     replace: |
       # resolve ~
       set unresolved_path to "~/Documents"
@@ -131,5 +131,5 @@ matches:
       	end tell
       end tell
     label: 🍏 Name of front window of a process
-  - $trigger: "^hr"
+  - $trigger: "+hr"
     replace: "#-------------------------------------------------------------------------------"

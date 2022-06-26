@@ -129,6 +129,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D4E8E541-5A1B-449B-ADFE-97C614A4E4B4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E76E7C83-2FA4-46C1-8648-98FC60D72055</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E76E7C83-2FA4-46C1-8648-98FC60D72055</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E187D0D2-F43F-4B2E-9413-82949A8FD689</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -172,6 +198,81 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>D3E2A726-59B9-4BE2-9CF6-986CE14F324C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>l</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>E76E7C83-2FA4-46C1-8648-98FC60D72055</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>open-at-github</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>de.chris-grieser.github</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>E187D0D2-F43F-4B2E-9413-82949A8FD689</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>5</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>G</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D4E8E541-5A1B-449B-ADFE-97C614A4E4B4</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -799,6 +900,33 @@ open -R ./Default\ Package/Default.sublime-commands</string>
 			<integer>20</integer>
 			<key>ypos</key>
 			<integer>15</integer>
+		</dict>
+		<key>D4E8E541-5A1B-449B-ADFE-97C614A4E4B4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Open History (GitHub Workflow)
+
+Lazy implementation, yeah...</string>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>E187D0D2-F43F-4B2E-9413-82949A8FD689</key>
+		<dict>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>E76E7C83-2FA4-46C1-8648-98FC60D72055</key>
+		<dict>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>25</integer>
 		</dict>
 		<key>F802A1F3-262C-4738-AFF7-DDE34474EE0E</key>
 		<dict>

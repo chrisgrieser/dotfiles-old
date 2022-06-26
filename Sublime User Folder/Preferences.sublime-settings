@@ -58,7 +58,7 @@
 	"rulers": [80],
 
 	// System
-	"native_tabs": "preferred",
+	"native_tabs": "system",
 	"hardware_acceleration": "opengl",
 
 	// Editor Behavior

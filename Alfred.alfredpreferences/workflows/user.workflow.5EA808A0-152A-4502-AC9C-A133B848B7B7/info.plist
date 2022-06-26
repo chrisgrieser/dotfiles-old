@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>96CFC640-02E4-4744-A92F-B6468A795B1C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92246A7B-E550-40D1-9840-C2CB0F213DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AC483565-D8EB-4AAD-99AA-229D0C632CE8</key>
 		<array>
 			<dict>
@@ -233,17 +246,13 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Show File in GitHub</string>
+				<key>triggerid</key>
+				<string>open-at-github</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>4C4CA3DF-BB26-4393-84E2-27190A118611</string>
+			<string>96CFC640-02E4-4744-A92F-B6468A795B1C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -320,6 +329,23 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 			<string>0E26657D-87C2-4501-A282-F674945D73C9</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Show File in GitHub</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>4C4CA3DF-BB26-4393-84E2-27190A118611</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -454,7 +480,7 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open GitHub</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>250</integer>
 		</dict>
@@ -463,16 +489,16 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>165</integer>
+			<integer>290</integer>
 		</dict>
 		<key>8D2069C6-2EDB-40CD-854E-38574F301A4B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>650</integer>
 			<key>ypos</key>
 			<integer>535</integer>
 		</dict>
@@ -485,12 +511,19 @@ subl --command toggle_side_bar</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>96CFC640-02E4-4744-A92F-B6468A795B1C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
 		<key>AC483565-D8EB-4AAD-99AA-229D0C632CE8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>225</integer>
 			<key>ypos</key>
 			<integer>250</integer>
 		</dict>
@@ -501,7 +534,7 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>open in Sublime</string>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>490</integer>
 			<key>ypos</key>
 			<integer>800</integer>
 		</dict>
@@ -512,7 +545,7 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open GitHub issues</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>395</integer>
 		</dict>
@@ -534,7 +567,7 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Copy GitHub URL</string>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>490</integer>
 			<key>ypos</key>
 			<integer>535</integer>
 		</dict>
@@ -543,7 +576,7 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
@@ -554,7 +587,7 @@ subl --command toggle_side_bar</string>
 			<key>note</key>
 			<string>Open File</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -563,7 +596,7 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>490</integer>
 			<key>ypos</key>
 			<integer>675</integer>
 		</dict>

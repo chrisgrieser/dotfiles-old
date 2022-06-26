@@ -2,9 +2,9 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '!no'
+  - trigger: '+no'
     replace: ❌
-  - trigger: '!yes'
+  - trigger: '+yes'
     replace: ✅
   - trigger: '<3'
     replace: 💙
@@ -12,18 +12,18 @@ matches:
   - trigger: '->'
     replace: →
     word: true
-  - trigger: '!->'
+  - trigger: '+->'
     replace: ▸
   - trigger: '->>'
     replace: ➡️
     word: true
-  - trigger: '!ampel'
+  - trigger: '+ampel'
     replace: 🔴🟡🟢
   - trigger: ' mm'
     replace: ' 🙈'
-  - trigger: '!eyes'
+  - trigger: '+eyes'
     replace: 👁️👄👁️
-  - trigger: '!tm'
+  - trigger: '+tm'
     replace: ™
 
   - triggers: ['!shrug', "!ascii"]

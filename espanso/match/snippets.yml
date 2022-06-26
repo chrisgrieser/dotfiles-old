@@ -2,43 +2,43 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '^web'
+  - trigger: '+web'
     replace: https://chris-grieser.de/
 
-  - trigger: '!bug'
+  - trigger: '+bug'
     replace: >
       Could you open a bug report at the GitHub repo?
       Reason being that the bug report forms asks for the various &
       information I need to look into the issue.
 
-  - $trigger: "^esp"
+  - $trigger: "+esp"
     replace: |
       - trigger: "$|$"
         replace: ""
         label: ""
     label: 🍏 espanso rule
-  - $trigger: "^today"
+  - $trigger: "+today"
     replace: "{{todayISO}}"
     vars:
       - name: todayISO
         type: date
         params:
           format: "%Y-%m-%d"
-  - $trigger: "^version"
+  - $trigger: "+version"
     replace: "{{version}}"
     vars:
       - name: version
         type: shell
         params:
           cmd: "echo -n macOS $(sw_vers -productVersion)"
-  - $trigger: "^oversion"
+  - $trigger: "+oversion"
     replace: "Obsidian {{version}}"
     vars:
       - name: version
         type: shell
         params:
           cmd: 'ls ~"/Library/Application Support/obsidian/"*".asar" | xargs -I {} basename {} | cut -d"." -f1-3 | cut -d"-" -f2'
-  - $trigger: "^resolution"
+  - $trigger: "+resolution"
     replace: "{{resolution}}"
     vars:
       - name: resolution
