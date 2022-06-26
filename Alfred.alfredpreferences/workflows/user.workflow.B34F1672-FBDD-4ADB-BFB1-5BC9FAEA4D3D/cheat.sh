@@ -5,6 +5,10 @@ QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other s
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?T") # https://cht.sh/:help
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
+# remove signature
+CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
+# [Stobor] [so/q/979256] [cc by-sa 3.0]
+
 # copy to clipboard
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
@@ -35,7 +39,7 @@ alacritty \
 		--theme="$BAT_SYNTAX_THEME" \
 		--decorations=never \
 		--highlight-line=1 \
-		--pager="less -R --long-prompt +Gg --window=-6 --incsearch"
+		--pager="less -R --long-prompt +Gg --window=-6 --incsearch --tilde"
 # the pager options needs to be set explicitly, as without
 # bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
 # causing in turn alacritty to quit before showing anything
