@@ -1,8 +1,4 @@
 require("utils")
---------------------------------------------------------------------------------
--- pin window on top
-hotkey (hyper, "P", function () bttBridge ("always-on-top") end)
-
 
 --------------------------------------------------------------------------------
 
@@ -28,9 +24,8 @@ function appWindowSwitcher()
 	end
 end
 
-hotkey({"alt"}, "tab", appWindowSwitcher)
-
 --------------------------------------------------------------------------------
+-- WINDOW MOVEMENT
 
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
@@ -50,8 +45,6 @@ function moveAndResize(direction)
 		position = hs.layout.maximized
 	elseif (direction == "centered") then
 		position = {x=0.2, y=0.1, w=0.6, h=0.8}
-	elseif (direction == "rightThird") then
-		position = hs.layout.right30
 	end
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
@@ -64,10 +57,6 @@ function moveAndResize(direction)
 		else
 			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
 		end
-	end
-
-	if direction == "rightThird" then
-		bttBridge ("always-on-top")
 	end
 end
 
@@ -88,28 +77,39 @@ function resizingWorkaround(win, pos)
 			"set h to "..pos.h .." * max_y\n" ..
 			'tell application "'..winApp..'" to set bounds of front window to {x, y, x + w, y + h}'
 		)
-	elseif (winApp == "alacritty") then
-		hs.applescript([[
-			use framework "AppKit"
-			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
-			set max_x to item 1 of item 2 of item 1 of allFrames
-			set max_y to item 2 of item 2 of item 1 of allFrames
-			]] ..
-			"set x to "..pos.x .." * max_x\n" ..
-			"set y to "..pos.y .." * max_y\n" ..
-			"set w to "..pos.w .." * max_x\n" ..
-			"set h to "..pos.h .." * max_y\n" ..
-			'tell application "System Events" to tell process "'..winApp..'" to tell window 1\n'
-			..[[
-				set position to {x, y}
-				delay 0.3
-				set size to {w, h}
-			end tell]]
-		)
 	else
 		win:moveToUnit(pos)
+		-- has to repeat due to to bug for some apps... :/
+		hs.timer.delayed.new(0.3, function () win:moveToUnit(pos) end):start()
 	end
 end
+
+
+--------------------------------------------------------------------------------
+-- LAYOUTS
+
+function displayCountWatcher()
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
+
+	if (isProjector) then
+		-- "hs.brightness.set" does not work when second display is mirrored
+		-- therefore using Shortcuts instead
+		hs.shortcuts.run('Zero Brightness')
+
+		hs.application.open("YouTube")
+		hs.application("Drafts"):kill9()
+		hs.application("Slack"):kill9()
+		hs.application("Discord"):kill9()
+		hs.application("Mimestream"):kill9()
+	elseif (isIMacAtHome) then
+		hs.brightness.set(50)
+		homeWindowLayout()
+	end
+end
+displayWatcher = hs.screen.watcher.new(displayCountWatcher)
+displayWatcher:start()
+
 
 function homeWindowLayout ()
 	local currentScreen = hs.screen.primaryScreen():name()
@@ -137,12 +137,84 @@ function homeWindowLayout ()
 	hs.layout.apply(homeLayout)
 end
 
+--------------------------------------------------------------------------------
+-- SPLITS
+
+function vsplit (mode)
+	local win1 = hs.window.orderedWindows()[1]
+	local win2 = hs.window.orderedWindows()[2]
+	local f1 = win1:frame()
+	local f2 = win2:frame()
+	local max = win1:screen():frame()
+
+	-- switch up, to ensure that win1 is the right one
+	if (f1.x > f2.x) then
+		local temp = win1
+		win1 = win2
+		win2 = temp
+		f1 = win1:frame()
+		f2 = win2:frame()
+	end
+
+	-- switch order of windows
+	if mode == "switch" then
+		if (f1.w + f2.w ~= max.w) then
+			notify ("not a correct vertical split")
+			return
+		end
+		if (f1.w == f2.w) then
+			f1 = hs.layout.right50
+			f2 = hs.layout.left50
+		else
+			f1 = hs.layout.right30
+			f2 = hs.layout.left70
+		end
+	else
+		if (f1.w == f2.w) then
+			f1 = hs.layout.left70
+			f2 = hs.layout.right30
+		else
+			f1 = hs.layout.left50
+			f2 = hs.layout.right50
+		end
+	end
+
+	resizingWorkaround(win1, f1)
+	resizingWorkaround(win2, f2)
+
+	hs.timer.delayed.new(0.3, function () resizingWorkaround(win1, f1) end):start()
+	hs.timer.delayed.new(0.3, function () resizingWorkaround(win2, f2) end):start()
+end
+
+function finderVsplit ()
+	hs.applescript([[
+		use framework "AppKit"
+		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+		set screenWidth to item 1 of item 2 of item 1 of allFrames
+		set screenHeight to item 2 of item 2 of item 1 of allFrames
+
+		set vsplit to {{0, 0, 0.5 * screenWidth, screenHeight}, {0.5 * screenWidth, 0, screenWidth, screenHeight} }
+
+		tell application "Finder"
+			if ((count windows) is 0) then return
+			if ((count windows) is 1) then
+				set currentWindow to target of window 1 as alias
+				make new Finder window to folder currentWindow
+			end if
+			set bounds of window 1 to item 2 of vsplit
+			set bounds of window 2 to item 1 of vsplit
+		end tell
+	]])
+end
+
+--------------------------------------------------------------------------------
+-- HOTKEYS
+
 hotkey(hyper, "Up", function () moveAndResize("up") end)
 hotkey(hyper, "Down", function () moveAndResize("down") end)
 hotkey(hyper, "Right", function () moveAndResize("right") end)
 hotkey(hyper, "Left", function () moveAndResize("left") end)
 hotkey(hyper, "Space", function () moveAndResize("maximized") end)
-hotkey(hyper, "end", function () moveAndResize("rightThird") end)
 hotkey(hyper, "home", homeWindowLayout)
 
 hotkey({"ctrl"}, "Space", function ()
@@ -153,30 +225,13 @@ hotkey({"ctrl"}, "Space", function ()
 	end
 end)
 
+hotkey(hyper, "V", function()
+	if (frontapp() == "Finder") then	finderVsplit()
+	else vsplit("50-50") end
+end)
 
---------------------------------------------------------------------------------
+hotkey(hyper, "Y", function () vsplit("70-30") end)
+hotkey(hyper, "X", function() vsplit("switch") end)
 
--- PROJECTOR: Dim brightness when projector is connected
-function displayCountWatcher()
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
-
-	if (isProjector) then
-		-- "hs.brightness.set" does not work when second display is mirrored
-		-- therefore using Shortcuts instead
-		hs.shortcuts.run('Zero Brightness')
-
-		hs.application.open("YouTube")
-		hs.application("Drafts"):kill9()
-		hs.application("Slack"):kill9()
-		hs.application("Discord"):kill9()
-		hs.application("Mimestream"):kill9()
-	elseif (isIMacAtHome) then
-		hs.brightness.set(50)
-		homeWindowLayout()
-	end
-end
-displayWatcher = hs.screen.watcher.new(displayCountWatcher)
-displayWatcher:start()
-
-
+hotkey (hyper, "P", function () bttBridge ("always-on-top") end)
+hotkey({"alt"}, "tab", appWindowSwitcher)

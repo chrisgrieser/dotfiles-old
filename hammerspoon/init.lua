@@ -16,7 +16,6 @@ require("scroll")
 require("menubar")
 require("system-states")
 require("window-management")
-require("splits")
 
 -- app-specific
 require("watchers")
