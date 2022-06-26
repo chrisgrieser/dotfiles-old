@@ -38,9 +38,9 @@ alacritty \
 		--file-name="$LANG – $QUERY" \
 		--language="$LANG" \
 		--theme="$BAT_SYNTAX_THEME" \
-		--decorations=never \
+		--style=snip \
 		--highlight-line=1 \
-		--pager="less -R --long-prompt +Gg --window=-6 --incsearch --tilde"
+		--pager="less -R --long-prompt +Ggk --window=-4 --incsearch --ignore-case --HILITE-UNREAD --tilde"
 # the pager options needs to be set explicitly, as without
 # bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
 # causing in turn alacritty to quit before showing anything

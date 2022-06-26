@@ -1342,95 +1342,6 @@
                         ]
                     },
                     {
-                        "description": "⚒️🌐 j/k (Browser): also hides cursor (for Vimium)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "VIM_MODE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "j"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "75%"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "VIM_MODE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "LEADER_ACTIVE",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vivaldi\\.Vivaldi$",
-                                            "^org\\.chromium\\.Chromium$",
-                                            "^com\\.google\\.Chrome$",
-                                            "^com\\.brave\\.Browser$",
-                                            "^com\\.apple\\.Safari$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "k"
-                                    },
-                                    {
-                                        "software_function": {
-                                            "set_mouse_cursor_position": {
-                                                "screen": 0,
-                                                "x": "100%",
-                                                "y": "75%"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "⚒️ R-⌘ (tap): Focus Window & Hide Cursor",
                         "manipulators": [
                             {
@@ -2861,6 +2772,79 @@
                                         "modifiers": [
                                             "option"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "⚒️🌐 j/k (Browser/Alacritty): also hides cursor (for Vimium/less)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "file_paths": [
+                                            "alacritty$",
+                                            "Brave Browser.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "j"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "75%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "LEADER_ACTIVE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "file_paths": [
+                                            "alacritty$",
+                                            "Brave Browser.app"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "100%",
+                                                "y": "75%"
+                                            }
+                                        }
                                     }
                                 ],
                                 "type": "basic"
