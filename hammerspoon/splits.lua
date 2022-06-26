@@ -1,20 +1,13 @@
 require("utils")
 
 --------------------------------------------------------------------------------
-function vsplit (size)
-	local resizeAmount = 5
-
+function vsplit (mode)
 	local win1 = hs.window.orderedWindows()[1]
 	local win2 = hs.window.orderedWindows()[2]
 	local f1 = win1:frame()
 	local f2 = win2:frame()
 	local max = win1:screen():frame()
-
-	-- ensure it's a correct split
-	if (f1.w + f2.w ~= max.w and size ~= "reset") then
-		notify ("not a correct vertical split")
-		return
-	end
+	local size
 
 	-- switch up, to ensure that win1 is the right one
 	if (f1.x > f2.x) then
@@ -25,21 +18,28 @@ function vsplit (size)
 		f2 = win2:frame()
 	end
 
-	if size == "switch" then
+	-- switch order of windows
+	if mode == "switch" then
+		if (f1.w + f2.w ~= max.w) then
+			notify ("not a correct vertical split")
+			return
+		end
 		f1 = hs.layout.right50
 		f2 = hs.layout.left50
-	elseif size == "reset" then
-		f1 = hs.layout.left50
-		f2 = hs.layout.right50
+	else
+		-- 50-50 -> 70-30
+		if (f1.w == f2.w) then
+			f1 = hs.layout.left70
+			f2 = hs.layout.right30
+		-- 70-30 -> 50-50
+		else
+			f1 = hs.layout.left50
+			f2 = hs.layout.right50
+		end
 	end
 
-	if (size == "increase" or size == "decrease") then
-		win1:setFrame(f1)
-		win2:setFrame(f2)
-	elseif (size == "switch" or size == "reset") then
-		win1:moveToUnit(f1)
-		win2:moveToUnit(f2)
-	end
+	win1:moveToUnit(f1)
+	win2:moveToUnit(f2)
 end
 
 function finderVsplit ()
@@ -66,7 +66,7 @@ end
 
 hotkey(hyper, "V", function()
 	if (frontapp() == "Finder") then	finderVsplit()
-	else vsplit("reset") end
+	else vsplit("50-50") end
 end)
 
 hotkey(hyper, "X", function() vsplit("switch") end)
