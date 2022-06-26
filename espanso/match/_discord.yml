@@ -1,12 +1,7 @@
 matches:
   - trigger: "roadmap"
     replace: "ro*dmap [auto-censored]"
-  - trigger: ",,,"
-    replace: "<{{clipboard}}>"
-    vars:
-      - name: clipboard
-        type: clipboard
-  - trigger: "!update"
+  - $trigger: "^update"
     replace: |
       **Shimmering Focus Update ⟡**
 

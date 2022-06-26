@@ -2,7 +2,7 @@
 # ------------------------------------------
 
 matches:
-  - trigger: "!hr"
+  - $trigger: "^hr"
     replace: |+
 
       /* ───────────────────────────────────────────────── */
@@ -10,6 +10,6 @@ matches:
       ──────────────────────────────────────────────────── */
 
     label: commented section
-  - regex: " ?!!"  # so this works whether prepended with space or note
+  - regex: " ?\\^\\^"  # so this works whether prepended with space or note
     replace: " {\n"
     label: Quicker Block
