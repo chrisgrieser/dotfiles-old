@@ -5,21 +5,21 @@
 hs.window.animationDuration = 0
 
 --------------------------------------------------------------------------------
--- Meta
-require("hammerspoon-reloader")
+-- Hammerspoon itself & Helper Utilities
+require("meta")
 require("utils")
-require("console")
 
 --------------------------------------------------------------------------------
 
 -- Base
 require("scroll")
-require("watchers")
+require("menubar")
 require("system-states")
 require("window-management")
 require("splits")
-require("private")
-require("menubar")
+
+-- app-specific
+require("watchers")
 require("discord")
 require("twitterrific-iina")
 

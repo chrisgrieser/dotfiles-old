@@ -19,10 +19,7 @@ pw.*
 .ssh/
 .zsh_history
 backup.log
-Home.bttpreset
-private.lua
-espanso/match/private.yml
-espanso/match/private.yaml
+espanso/match/private.*
 Alfred.alfredpreferences/snippets
 
 # too much file size
