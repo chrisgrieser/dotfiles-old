@@ -75,24 +75,30 @@ function resizingWorkaround(win, pos)
 			set max_y to item 2 of item 2 of item 1 of allFrames
 			]] ..
 
-			"set x to " .. pos.x .. " * max_x\n" ..
-			"set y to " .. pos.y .. " * max_y\n" ..
-			"set w to " .. pos.w .. " * max_x\n" ..
-			"set h to " .. pos.h .. " * max_y\n" ..
-			'tell application "' .. winApp .. '" to set bounds of front window to {x, y, x + w, y + h}'
+			"set x to "..pos.x .." * max_x\n" ..
+			"set y to "..pos.y .." * max_y\n" ..
+			"set w to "..pos.w .." * max_x\n" ..
+			"set h to "..pos.h .." * max_y\n" ..
+			'tell application "'..winApp..'" to set bounds of front window to {x, y, x + w, y + h}'
 		)
 	elseif (winApp == "alacritty") then
-		hs.applescript([[tell application "System Events"
-			]]..
-			'tell process "' .. winApp .. '" to"
-					tell window 1
-						set position to {0, 0}
-						delay 0.3
-						set size to {1920, 1080}
-					end tell
-				end tell
-			end tell
-		]])
+		hs.applescript([[
+			use framework "AppKit"
+			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
+			set max_x to item 1 of item 2 of item 1 of allFrames
+			set max_y to item 2 of item 2 of item 1 of allFrames
+			]] ..
+			"set x to "..pos.x .." * max_x\n" ..
+			"set y to "..pos.y .." * max_y\n" ..
+			"set w to "..pos.w .." * max_x\n" ..
+			"set h to "..pos.h .." * max_y\n" ..
+			'tell application "System Events" to tell process "'..winApp..'" to tell window 1\n'
+			..[[
+				set position to {x, y}
+				delay 0.3
+				set size to {w, h}
+			end tell]]
+		)
 	else
 		win:moveToUnit(pos)
 	end
