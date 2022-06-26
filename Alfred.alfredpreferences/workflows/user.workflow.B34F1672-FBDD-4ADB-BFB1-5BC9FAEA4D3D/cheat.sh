@@ -17,21 +17,23 @@ fi
 CACHE=~"/Library/Caches/$QUERY.$LANG"
 echo "$CHEAT_INFO" > "$CACHE"
 
+#-------------------------------------------------------------------------------
+# PREVIEW VIA BAT
+PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
+/opt/homebrew/bin/alacritty \
+	--config-file="$PREVIEW_CONFIG" \
+	--title="Cheat Sheet"\
+	--command bat "$CACHE" \
+		--file-name="$LANG – $QUERY" \
+		--language="$LANG" \
+		--style=header \
+		--pager="less -R"
 # the pager options needs to be set explicitly, as without
 # bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
 # causing alacritty in turn to quit
-# alacritty \
-# 	--option=window.position.x=700 \
-# 	--option=window.position.y=120 \
-# 	--option=window.dimensions.columns=80 \
-# 	--option=window.dimensions.lines=27 \
-# 	--command bat "$CACHE" \
-# 		--pager="less -R" \
-# 		--file-name="$LANG – $QUERY" \
-# 		--language="$LANG" \
-# 		--style=numbers,header
 
 #-------------------------------------------------------------------------------
-# quicklook preview via Peek
-killall "qlmanage" # remove existing quicklook previews
-qlmanage -p "$CACHE"
+# QUICKLOOK PREVIEW VIA PEEK
+
+# killall "qlmanage" # remove existing quicklook previews
+# qlmanage -p "$CACHE"

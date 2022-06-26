@@ -1,29 +1,29 @@
 colors:
   primary:
-    background: '0x1c1e26'
-    foreground: '0xe0e0e0'
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
     dim_foreground: '0xdbdbdb'
     bright_foreground: '0xd9d9d9'
     dim_background: '0x202020'
     bright_background: '0x3a3a3a'
   normal:
-    black: '0x16161c'
-    red: '0xe95678'
-    green: '0x29d398'
-    yellow: '0xfab795'
-    blue: '0x26bbd9'
-    magenta: '0xee64ac'
-    cyan: '0x59e1e3'
-    white: '0xd5d8da'
+    black: '0x000000'
+    red: '0xff5555'
+    green: '0x50fa7b'
+    yellow: '0xf1fa8c'
+    blue: '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan: '0x8be9fd'
+    white: '0xbbbbbb'
   bright:
-    black: '0x5b5858'
-    yellow: '0xfbc3a7'
-    red: '0xec6a88'
-    green: '0x3fdaa4'
-    magenta: '0xf075b5'
-    white: '0xd5d8da'
-    blue: '0x3fc4de'
-    cyan: '0x6be4e6'
+    black: '0x555555'
+    yellow: '0xf1fa8c'
+    red: '0xff5555'
+    green: '0x50fa7b'
+    magenta: '0xff79c6'
+    white: '0xffffff'
+    blue: '0xcaa9fa'
+    cyan: '0x8be9fd'
   cursor:
     text: '0x020221'
     cursor: '0xffe8c0'
@@ -54,7 +54,7 @@ font:
   bold_italic:
     family: JetBrainsMonoNL Nerd Font
     style: Bold Italic
-  size: 25
+  size: 24
   use_thin_strokes: true
   draw_bold_text_with_bright_colors: true
   builtin_box_drawing: true
@@ -68,8 +68,8 @@ window:
   position:
     x: 0
   dimensions:
-    columns: 97
-    lines: 70
+    columns: 104
+    lines: 50
   padding:
     x: 6
     'y': 6
