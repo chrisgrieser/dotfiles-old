@@ -33,7 +33,7 @@ alacritty \
 		--language="$LANG" \
 		--theme="$BAT_SYNTAX_THEME" \
 		--style=header \
-		--pager="less -R"
+		--pager="less -R --long-prompt +Gg --window=-6 --incsearch"
 # the pager options needs to be set explicitly, as without
 # bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
 # causing alacritty in turn to quit
