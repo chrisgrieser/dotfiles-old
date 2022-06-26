@@ -10,16 +10,13 @@ echo "$CHEAT" | pbcopy
 LANG="sh"
 if [[ "$QUERY" =~ "/" ]] ; then
 	LANG=$(echo "$QUERY" | cut -d"/" -f1)
-	QUERY=$(echo "$QUERY" | cut -d"/" -f2-)
+	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
 fi
 
 CACHE=~"/Library/Caches/$QUERY.$LANG"
 echo "$CHEAT" > "$CACHE"
 # view in Terminal
-alacritty \
-	--option=window.decorations=full \
-	--title="$LANG: $QUERY" \
-	--command=bat $CACHE
+alacritty --command=bat "$CACHE"
 
 
 #-------------------------------------------------------------------------------

@@ -46,6 +46,6 @@ export LESS_TERMCAP_us=$'\E[1;34m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Pager-specific settings
-export LESS='--window=-5 -R --quit-at-eof --incsearch --quit-if-one-screen --no-init'
+# export LESS='--window=-5 -R --incsearch --no-init'
 # export MOAR="--no-linenumbers --render-unprintable=whitespace"
 
