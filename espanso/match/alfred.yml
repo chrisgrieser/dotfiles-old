@@ -2,7 +2,7 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '!get'
+  - trigger: '^get'
     replace: |
       ObjC.import("stdlib");
 
@@ -77,19 +77,19 @@ matches:
   - trigger: qqq
     replace: '{query}'
     label: "🎩 {query}"
-  - trigger: "!argv"
+  - $trigger: "^argv"
     replace: |
       on run argv
         set AppleScript's text item delimiters to ""
         set input to argv as string
       end run
     label: "🎩🍏 join argv"
-  - trigger: "!argv"
+  - $trigger: "^argv"
     replace: |-
       function run (argv){
       	const input = argv.join('');
       }
     label: "🎩🏝 Join argv"
-  - trigger: "!argv"
+  - $trigger: "^argv"
     replace: query="$*"
     label: "🎩🐚 Join argv"
