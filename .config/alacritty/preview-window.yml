@@ -1,47 +1,3 @@
-colors:
-  # NORD
-  primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
-    dim_foreground: '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background: '0x202020'
-    bright_background: '0x3a3a3a'
-  normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
-  bright:
-    black: '0x4C566A'
-    yellow: '0xEBCB8B'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    magenta: '0xB48EAD'
-    white: '0xECEFF4'
-    blue: '0x81A1C1'
-    cyan: '0x8FBCBB'
-  cursor:
-    text: '0x020221'
-    cursor: '0xffe8c0'
-  dim:
-    black: '0xAAAAAA'
-    red: '0x74423f'
-    green: '0x5e6547'
-    yellow: '0x8b7653'
-    blue: '0x556b79'
-    magenta: '0x6e4962'
-    cyan: '0x5c8482'
-    white: '0x828282'
-  indexed_colors:
-    - index: 16
-      color: '0xF8BD96'
-    - index: 17
-      color: '0xF5E0DC'
 font:
   normal:
     family: JetBrainsMonoNL Nerd Font
@@ -75,7 +31,7 @@ window:
   padding:
     x: 25
     'y': 15
-  opacity: 0.98
+  opacity: 0.99
 live_config_reload: true
 selection:
   save_to_clipboard: true

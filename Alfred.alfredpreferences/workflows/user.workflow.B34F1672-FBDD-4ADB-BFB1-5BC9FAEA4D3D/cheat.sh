@@ -20,12 +20,18 @@ echo "$CHEAT_INFO" > "$CACHE"
 #-------------------------------------------------------------------------------
 # PREVIEW VIA BAT
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
-/opt/homebrew/bin/alacritty \
+BG_COLOR=#303643
+BAT_SYNTAX_THEME="Nord"
+# `bat --list-themes`
+
+alacritty \
 	--config-file="$PREVIEW_CONFIG" \
+	--option="colors.primary.background='$BG_COLOR'" \
 	--title="Cheat Sheet"\
 	--command bat "$CACHE" \
 		--file-name="$LANG – $QUERY" \
 		--language="$LANG" \
+		--theme="$BAT_SYNTAX_THEME" \
 		--style=header \
 		--pager="less -R"
 # the pager options needs to be set explicitly, as without
