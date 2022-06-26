@@ -15,14 +15,15 @@ if [[ "$QUERY" =~ "/" ]] ; then
 fi
 
 CACHE=~"/Library/Caches/$QUERY.$LANG"
-echo "$CHEAT_INFO" > "$CACHE"
+echo "${LANG:u}: $QUERY" > "$CACHE" # header bar
+echo "" >> "$CACHE"
+echo "$CHEAT_INFO" >> "$CACHE"
 
 #-------------------------------------------------------------------------------
 # PREVIEW VIA BAT
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
-BAT_SYNTAX_THEME="Nord"
-# `bat --list-themes`
+BAT_SYNTAX_THEME="Nord" # `bat --list-themes` for more themes
 
 alacritty \
 	--config-file="$PREVIEW_CONFIG" \
@@ -32,14 +33,14 @@ alacritty \
 		--file-name="$LANG – $QUERY" \
 		--language="$LANG" \
 		--theme="$BAT_SYNTAX_THEME" \
-		--style=header \
+		--decorations=never \
+		--highlight-line=1 \
 		--pager="less -R --long-prompt +Gg --window=-6 --incsearch"
 # the pager options needs to be set explicitly, as without
 # bat sets "quit-if-one-screen" as a less option, closing most cheatsheets
-# causing alacritty in turn to quit
+# causing in turn alacritty to quit before showing anything
 
 #-------------------------------------------------------------------------------
-# QUICKLOOK PREVIEW VIA PEEK
-
+# quicklook preview via peek
 # killall "qlmanage" # remove existing quicklook previews
 # qlmanage -p "$CACHE"
