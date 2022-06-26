@@ -1,46 +1,57 @@
 colors:
   primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
-    dim_foreground: '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background: '0x202020'
-    bright_background: '0x3a3a3a'
+    background: '0x1a1b26'
+    foreground: '0xa9b1d6'
+    dim_foreground: '0xe3e3e3'
+    bright_foreground: '0xffffff'
+    dim_background: '0x1f1f1f'
+    bright_background: '0x686868'
   normal:
-    black: '0x000000'
-    red: '0xff5555'
-    green: '0x50fa7b'
-    yellow: '0xf1fa8c'
-    blue: '0xbd93f9'
-    magenta: '0xff79c6'
-    cyan: '0x8be9fd'
-    white: '0xbbbbbb'
+    black: '0x32344a'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan: '0x449dab'
+    white: '0x787c99'
   bright:
-    black: '0x555555'
-    yellow: '0xf1fa8c'
-    red: '0xff5555'
-    green: '0x50fa7b'
-    magenta: '0xff79c6'
-    white: '0xffffff'
-    blue: '0xcaa9fa'
-    cyan: '0x8be9fd'
+    black: '0x444b6a'
+    yellow: '0xff9e64'
+    red: '0xff7a93'
+    green: '0xb9f27c'
+    magenta: '0xbb9af7'
+    white: '0xacb0d0'
+    blue: '0x7da6ff'
+    cyan: '0x0db9d7'
   cursor:
-    text: '0x020221'
-    cursor: '0xffe8c0'
+    text: '0x191622'
+    cursor: '0xf8f8f2'
   dim:
-    black: '0x232323'
-    red: '0x74423f'
-    green: '0x5e6547'
-    yellow: '0x8b7653'
-    blue: '0x556b79'
-    magenta: '0x6e4962'
-    cyan: '0x5c8482'
-    white: '0x828282'
+    black: '0x000000'
+    red: '0xb21818'
+    green: '0x18b218'
+    yellow: '0xb26818'
+    blue: '0x1818b2'
+    magenta: '0xb218b2'
+    cyan: '0x18b2b2'
+    white: '0xb2b2b2'
   indexed_colors:
     - index: 16
       color: '0xF8BD96'
     - index: 17
       color: '0xF5E0DC'
+    - index: 16
+      color: '0xF8BD96'
+    - index: 17
+      color: '0xF5E0DC'
+  search:
+    matches:
+      foreground: '0xb2b2b2'
+      background: '0xb26818'
+    focused_match:
+      foreground: CellBackground
+      background: CellForeground
 font:
   normal:
     family: JetBrainsMonoNL Nerd Font

@@ -2,10 +2,10 @@ colors:
   primary:
     background: '0x282a36'
     foreground: '0xf8f8f2'
-    dim_foreground: '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background: '0x202020'
-    bright_background: '0x3a3a3a'
+    dim_foreground: '0xe3e3e3'
+    bright_foreground: '0xffffff'
+    dim_background: '0x1f1f1f'
+    bright_background: '0x686868'
   normal:
     black: '0x000000'
     red: '0xff5555'
@@ -25,22 +25,33 @@ colors:
     blue: '0xcaa9fa'
     cyan: '0x9aedfe'
   cursor:
-    text: '0x020221'
-    cursor: '0xffe8c0'
+    text: '0x191622'
+    cursor: '0xf8f8f2'
   dim:
-    black: '0x232323'
-    red: '0x74423f'
-    green: '0x5e6547'
-    yellow: '0x8b7653'
-    blue: '0x556b79'
-    magenta: '0x6e4962'
-    cyan: '0x5c8482'
-    white: '0x828282'
+    black: '0x000000'
+    red: '0xb21818'
+    green: '0x18b218'
+    yellow: '0xb26818'
+    blue: '0x1818b2'
+    magenta: '0xb218b2'
+    cyan: '0x18b2b2'
+    white: '0xb2b2b2'
   indexed_colors:
     - index: 16
       color: '0xF8BD96'
     - index: 17
       color: '0xF5E0DC'
+    - index: 16
+      color: '0xF8BD96'
+    - index: 17
+      color: '0xF5E0DC'
+  search:
+    matches:
+      foreground: '0xb2b2b2'
+      background: '0xb26818'
+    focused_match:
+      foreground: CellBackground
+      background: CellForeground
 font:
   normal:
     family: JetBrainsMonoNL Nerd Font
