@@ -42,7 +42,7 @@
 	<key>snipKeywordRestoreClipboard</key>
 	<true/>
 	<key>snippetKeyword</key>
-	<string>cc</string>
+	<string>snippet</string>
 	<key>snippetKeywordEnabled</key>
 	<false/>
 	<key>snippetMatchFields</key>

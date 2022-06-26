@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
+export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
+
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
-CHEAT=$(curl -s "https://cht.sh/$QUERY?Tq") # https://cht.sh/:help
+CHEAT=$(curl -s "https://cht.sh/$QUERY?T") # https://cht.sh/:help
 
 # copy to clipboard
 echo "$CHEAT" | pbcopy
@@ -11,14 +13,14 @@ if [[ "$QUERY" =~ "/" ]] ; then
 	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
 fi
 
+CACHE=~"/Library/Caches/$QUERY.$LANG"
+echo "$CHEAT" > "$CACHE"
 # view in Terminal
 alacritty \
 	--option=window.decorations=full \
 	--title="$LANG: $QUERY" \
-	--command="echo $CHEAT | $PAGER"
+	--command=bat $CACHE
 
-
-alacritty --command man fd
 
 #-------------------------------------------------------------------------------
 # # quicklook preview via Peek

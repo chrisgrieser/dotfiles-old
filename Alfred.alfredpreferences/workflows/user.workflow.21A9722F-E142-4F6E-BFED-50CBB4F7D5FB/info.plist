@@ -372,8 +372,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>display notification "" with title "🛑 Force Quitting Alfred"
-tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alfred"</string>
+				<string>tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alfred"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
