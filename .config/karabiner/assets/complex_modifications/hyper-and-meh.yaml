@@ -20,9 +20,6 @@ rules:
               - right_option
         conditions:
           - type: variable_unless
-            name: VIM_MODE
-            value: 1
-          - type: variable_unless
             name: LEADER_ACTIVE
             value: 1
       - description: Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,
@@ -37,6 +34,47 @@ rules:
         to:
           - key_code: vk_none
         type: basic
+      # capslock + modifier = escape + modifier
+      - type: basic
+        from:
+          key_code: caps_lock
+          modifiers:
+            mandatory:
+              - command
+        to:
+          - key_code: escape
+            modifiers:
+              - command
+      - type: basic
+        from:
+          key_code: caps_lock
+          modifiers:
+            mandatory:
+              - shift
+        to:
+          - key_code: escape
+            modifiers:
+              - shift
+      - type: basic
+        from:
+          key_code: caps_lock
+          modifiers:
+            mandatory:
+              - control
+        to:
+          - key_code: escape
+            modifiers:
+              - control
+      - type: basic
+        from:
+          key_code: caps_lock
+          modifiers:
+            mandatory:
+              - option
+        to:
+          - key_code: escape
+            modifiers:
+              - option
   - description: '⇪ Hyper + hjklmnbe: ←↓↑→↵⌫⇐⇒'
     manipulators:
       - type: basic

@@ -2,7 +2,7 @@ require("utils")
 
 --------------------------------------------------------------------------------
 function vsplit (size)
-	local resizeAmount = 25
+	local resizeAmount = 5
 
 	local win1 = hs.window.orderedWindows()[1]
 	local win2 = hs.window.orderedWindows()[2]
@@ -25,15 +25,7 @@ function vsplit (size)
 		f2 = win2:frame()
 	end
 
-	if size == "increase" then
-		f1.w = f1.w + resizeAmount
-		f2.w = f2.w - resizeAmount
-		f2.x = f2.x + resizeAmount
-	elseif size == "decrease" then
-		f1.w = f1.w - resizeAmount
-		f2.w = f2.w + resizeAmount
-		f2.x = f2.x - resizeAmount
-	elseif size == "switch" then
+	if size == "switch" then
 		f1 = hs.layout.right50
 		f2 = hs.layout.left50
 	elseif size == "reset" then
@@ -78,6 +70,3 @@ hotkey(hyper, "V", function()
 end)
 
 hotkey(hyper, "X", function() vsplit("switch") end)
-
-hotkey(hyper, "pageup", function ()vsplit("increase") end, nil, function ()vsplit("increase") end)
-hotkey(hyper, "pagedown", function ()vsplit("decrease") end, nil, function ()vsplit("decrease") end)
