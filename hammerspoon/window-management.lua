@@ -150,22 +150,29 @@ end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
--- Open windows always on the screen where the mouse is
-function alwaysOpenOnMouseDisplay(_, eventType, appObject)
-	local numberOfScreens = #(hs.screen.allScreens())
-	if numberOfScreens == 1 then return end
-	if (numberOfScreens > 1 and eventType == hs.application.watcher.launched) then
-		local mouseScreen = hs.mouse.getCurrentScreen()
+function moveWindowToMouseScreen(win)
+	local mouseScreen = hs.mouse.getCurrentScreen()
+	local screenOfWindow = win:screen()
+	if (mouseScreen:name() == screenOfWindow:name()) then return end
+	win:moveToScreen(mouseScreen)
+end
 
+-- Open windows always on the screen where the mouse is
+function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
+	local numberOfScreens = #(hs.screen.allScreens())
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+
+	if numberOfScreens == 1 then return end
+
+	if (eventType == hs.application.watcher.launched) then
 		-- delayed, to ensure window has launched properly
 		hs.timer.delayed.new(0.5, function ()
-			local appWin = appObject:focusedWindow()
-			local screenOfWindow = appWin:screen()
-
-			if (mouseScreen:name() == screenOfWindow:name()) then return end
-			appWin:moveToScreen(mouseScreen)
+			local appWindow = appObject:focusedWindow()
+			moveWindowToMouseScreen(appWindow)
 		end):start()
-	elseif () then
+	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector) then
+		local appWindow = appObject:focusedWindow()
+		moveWindowToMouseScreen(appWindow)
 	end
 end
 launchWhileMultiScreenWatcher = hs.application.watcher.new(alwaysOpenOnMouseDisplay)
