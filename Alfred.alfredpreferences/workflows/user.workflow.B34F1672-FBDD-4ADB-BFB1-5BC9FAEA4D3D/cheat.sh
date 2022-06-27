@@ -19,7 +19,8 @@ CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
-CACHE="/tmp/$QUERY"
+CLEAN_QUERY=$(echo "$*" | tr "/" " ")
+CACHE="/tmp/$CLEAN_QUERY" # will be displayed in less prompt line at start
 echo "$CHEAT_INFO" >> "$CACHE"
 
 alacritty \
