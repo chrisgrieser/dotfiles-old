@@ -1,34 +1,36 @@
 # https://espanso.org/docs/
 # ------------------------------------------
 
+# uses ! instead of + as leader key cause things like "alt+tab" are commonly
+# written
 matches:
-  - triggers: ['+ctrl', "+control"]
+  - triggers: ['!ctrl', "!control"]
     replace: ⌃
-  - trigger: '+shift'
+  - trigger: '!shift'
     replace: ⇧
-  - trigger: '+cmd'
+  - trigger: '!cmd'
     replace: ⌘
-  - triggers: ['+alt', "+opt"]
+  - triggers: ['!alt', "!opt"]
     replace: ⌥
-  - triggers: ['+caps', "+hyper"]
+  - triggers: ['!caps', "!hyper"]
     replace: ⇪
 
-  - trigger: '+esc'
+  - trigger: '!esc'
     replace: ⎋
-  - trigger: '+tab'
+  - trigger: '!tab'
     replace: ↹
-  - trigger: '+return'
+  - trigger: '!return'
     replace: ↵
-  - trigger: '+delete'
+  - trigger: '!delete'
     replace: ⌦
-  - trigger: '+backspace'
+  - trigger: '!backspace'
     replace: ⌫
 
-  - trigger: '+down'
+  - trigger: '!down'
     replace: ↓
-  - trigger: '+left'
+  - trigger: '!left'
     replace: ←
-  - trigger: '+right'
+  - trigger: '!right'
     replace: →
-  - trigger: '+up'
+  - trigger: '!up'
     replace: ↑
