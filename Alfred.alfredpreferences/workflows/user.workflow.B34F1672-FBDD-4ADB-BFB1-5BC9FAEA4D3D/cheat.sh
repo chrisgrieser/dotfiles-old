@@ -25,6 +25,11 @@ CLEAN_QUERY=$(echo "$*" | tr "/" " ")
 CACHE="/tmp/$CLEAN_QUERY" # will be displayed in less prompt line at start
 echo "$CHEAT_INFO" > "$CACHE"
 
+# kill previous process, if one is open
+# shellcheck disable=SC2009
+PREV_CHEAT_PROCESS_ID=$(ps x | grep -e "alacritty.*command.*less" | head -n1 | cut -d" " -f1)
+kill "$PREV_CHEAT_PROCESS_ID"
+
 alacritty \
 	--config-file="$PREVIEW_CONFIG" \
 	--option="colors.primary.background='$BG_COLOR'" \

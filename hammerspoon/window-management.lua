@@ -150,26 +150,26 @@ end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
--- if projector, then move all newly created windows to the other display
-function alwaysOpenAtProjectorDisplay(_, eventType, appObject)
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-	if (isProjector and eventType == hs.application.watcher.launched) then
-		local projector = hs.screen.primaryScreen()
+-- Open windows always on the screen where the mouse is
+function alwaysOpenOnMouseDisplay(_, eventType, appObject)
+	local numberOfScreens = #(hs.screen.allScreens())
+	if (numberOfScreens > 1 and eventType == hs.application.watcher.launched) then
+		local mouseScreen = hs.mouse.getCurrentScreen()
 
 		-- delayed, to ensure window has launched properly
-		hs.timer.delayed.new(1, function ()
+		hs.timer.delayed.new(0.5, function ()
 			local appWin = appObject:focusedWindow()
 			local screenOfWindow = appWin:screen()
 
-			if (projector:name() == screenOfWindow:name()) then return end
-			appWin:moveToScreen(projector)
+			if (mouseScreen:name() == screenOfWindow:name()) then return end
+			appWin:moveToScreen(mouseScreen)
 
 		end):start()
 
 	end
 end
-launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
-launchWhileOnProjectorAppWatcher:start()
+launchWhileMultiScreenWatcher = hs.application.watcher.new(alwaysOpenOnMouseDisplay)
+launchWhileMultiScreenWatcher:start()
 
 --------------------------------------------------------------------------------
 -- SPLITS
