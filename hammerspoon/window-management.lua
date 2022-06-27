@@ -143,10 +143,8 @@ function displayCountWatcher()
 
 	if (isProjector) then
 		movieModeLayout()
-		launchWhileOnProjectorAppWatcher:start()
 	elseif (isIMacAtHome) then
 		homeModeLayout()
-		launchWhileOnProjectorAppWatcher:stop()
 	end
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
@@ -154,15 +152,18 @@ displayWatcher:start()
 
 -- if projector, then move all newly created windows to the other display
 function alwaysOpenAtProjectorDisplay(appName, eventType)
-	if (eventType == hs.application.watcher.launched) then
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+	if (isProjector and eventType == hs.application.watcher.launched) then
 		local projector = hs.screen.primaryScreen()
-		local screenOfWindow = appName:focusedWindow():screen()
+		local appWin = hs.application(appName):focusedWindow()
+		local screenOfWindow = appWin:screen()
 
 		if (projector:name() == screenOfWindow:name()) then return end
-		appName:focusedWindow():moveToScreen(projector)
+		appWin:moveToScreen(projector)
 	end
 end
 launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
+launchWhileOnProjectorAppWatcher:start()
 
 --------------------------------------------------------------------------------
 -- SPLITS

@@ -38,4 +38,4 @@ function lc ()
 	print ("Copied: '"..lastcommand.."'")
 end
 
-clear = hs.console.clearConsole
+c = hs.console.clearConsole
