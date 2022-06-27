@@ -14,19 +14,19 @@ REMOVE_SIGNATURE=true
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
-[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
+[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\[cc/d')
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
-# if empty string ()
+# if empty string, copy the full info instead
 if [[ -z "$CHEAT_CODE_ONLY" ]]; then
-	echo "$CHEAT_CODE_ONLY" | pbcopy
-else
-	echo "$CHEAT_INFO" | pbcopy
+	CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?T")
+	[[ $REMOVE_SIGNATURE ]] && CHEAT_CODE_ONLY=$(echo "$CHEAT_CODE_ONLY" | sed '/\[cc/d')
 fi
+echo "$CHEAT_CODE_ONLY" | pbcopy
 
 CLEAN_QUERY=$(echo "$*" | tr "/" " ")
 CACHE="/tmp/$CLEAN_QUERY" # will be displayed in less prompt line at start
-echo "$CHEAT_INFO" >> "$CACHE"
+echo "$CHEAT_INFO" > "$CACHE"
 
 alacritty \
 	--config-file="$PREVIEW_CONFIG" \
