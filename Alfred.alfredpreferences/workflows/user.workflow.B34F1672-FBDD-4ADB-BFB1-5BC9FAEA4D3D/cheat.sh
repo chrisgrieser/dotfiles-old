@@ -1,14 +1,21 @@
 #!/usr/bin/env zsh
 export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
 
+#-------------------------------------------------------------------------------
+# CONFIG
+
+PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
+BG_COLOR=#262733
+STATUSLINE_COLOR=#5E6F8A
+STYLE=paraiso-dark
+
+#-------------------------------------------------------------------------------
+
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
-CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=paraiso-dark") # https://cht.sh/:help
+CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
+CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d') # remove signature
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
-# remove signature
-CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
-
-# copy to clipboard
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
 LANG="sh"
@@ -21,12 +28,6 @@ CACHE=~"/Library/Caches/$QUERY.$LANG"
 echo "${LANG:u} — $QUERY" > "$CACHE" # header bar
 echo "" >> "$CACHE"
 echo "$CHEAT_INFO" >> "$CACHE"
-
-#-------------------------------------------------------------------------------
-# PREVIEW VIA BAT
-PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
-BG_COLOR=#303643
-STATUSLINE_COLOR=#5E6F8A
 
 alacritty \
 	--config-file="$PREVIEW_CONFIG" \
@@ -41,7 +42,3 @@ alacritty \
 		--tilde \
 		-- "$CACHE"
 
-#-------------------------------------------------------------------------------
-# quicklook preview via peek
-# killall "qlmanage" # remove existing quicklook previews
-# qlmanage -p "$CACHE"

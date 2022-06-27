@@ -37,7 +37,7 @@
 
 	//Theme
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "auto",
+	"color_scheme": "Night Owl.sublime-color-scheme",
 	"light_color_scheme": "Packages/Color Scheme - Rainbow/Rainbow (Light).tmTheme",
 	"dark_color_scheme": "Nord.sublime-color-scheme",
 	"adaptive_dividers": true, // adaptive theme only

@@ -106,3 +106,20 @@ function scanFolderMove()
 end
 scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
 scanFolderWatcher:start()
+
+-- Cursor Hiding
+-- when Brave or Alacritty activated, hide cursor
+function finderWatcher(appName, eventType)
+	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Brave Browser" or appName:lower() == "alacritty") then
+			local screen = hs.mouse.getCurrentScreen()
+			local pos = {
+				x = screen:frame().w,
+				y = screen:frame().h * 0.75,
+			}
+			hs.mouse.setRelativePosition(pos, screen)
+		end
+	end
+end
+finderAppWatcher = hs.application.watcher.new(finderWatcher)
+finderAppWatcher:start()

@@ -5,47 +5,6 @@ maintainers:
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
-  - description: "⚒️🌐 j/k (Browser/Alacritty): also hides cursor (for Vimium/less)"
-    manipulators:
-      - type: basic
-        from:
-          key_code: j
-        to:
-          - key_code: j
-            repeat: true
-          - software_function:
-              set_mouse_cursor_position:
-                x: 100%
-                y: 75%
-                screen: 0
-            repeat: true
-        conditions:
-          - value: 0
-            type: variable_if
-            name: LEADER_ACTIVE
-          - type: frontmost_application_if
-            file_paths:
-              - alacritty$
-              - Brave Browser.app
-      - type: basic
-        from:
-          key_code: k
-        to:
-          - key_code: k
-            repeat: true
-          - software_function:
-              set_mouse_cursor_position:
-                x: 100%
-                y: 75%
-                screen: 0
-        conditions:
-          - value: 0
-            type: variable_if
-            name: LEADER_ACTIVE
-          - type: frontmost_application_if
-            file_paths:
-              - alacritty$
-              - Brave Browser.app
   - description: "⚒️ k+l / f+j (simultaneously): ⌫ / ↵"
     manipulators:
       - type: basic
