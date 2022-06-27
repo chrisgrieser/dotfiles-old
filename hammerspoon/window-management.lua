@@ -95,9 +95,7 @@ function displayCountWatcher()
 	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
 
 	if (isProjector) then
-		-- "hs.brightness.set" does not work when second display is mirrored
-		-- therefore using Shortcuts instead
-		hs.shortcuts.run('Zero Brightness')
+		hs.screen.allScreens()[2]:setBrightness(0) -- iMac screen darkened
 
 		hs.application.open("YouTube")
 		hs.application("Drafts"):kill9()
@@ -105,12 +103,8 @@ function displayCountWatcher()
 		hs.application("Discord"):kill9()
 		hs.application("Mimestream"):kill9()
 		hs.application("Obsidian"):kill9()
-
-		hs.applescript('tell application "System Events" to tell desktop 1 to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"')
-		hs.applescript('tell application "System Events" to tell desktop 2 to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"') elseif (isIMacAtHome) then
+	elseif (isIMacAtHome) then
 		homeWindowLayout()
-
-		hs.applescript('tell application "System Events" to tell every desktop to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Space Gray Pro.png"')
 	end
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
@@ -219,12 +213,14 @@ end
 --------------------------------------------------------------------------------
 -- HOTKEYS
 
-hotkey(hyper, "Up", function () moveAndResize("up") end)
-hotkey(hyper, "Down", function () moveAndResize("down") end)
-hotkey(hyper, "Right", function () moveAndResize("right") end)
-hotkey(hyper, "Left", function () moveAndResize("left") end)
-hotkey(hyper, "Space", function () moveAndResize("maximized") end)
+hotkey(hyper, "Up", function() moveAndResize("up") end)
+hotkey(hyper, "Down", function() moveAndResize("down") end)
+hotkey(hyper, "Right", function() moveAndResize("right") end)
+hotkey(hyper, "Left", function() moveAndResize("left") end)
+hotkey(hyper, "Space", function() moveAndResize("maximized") end)
 hotkey(hyper, "home", homeWindowLayout)
+
+hotkey(hyper, "pagedown", function() hs.window:moveOneScreenEast end)
 
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
