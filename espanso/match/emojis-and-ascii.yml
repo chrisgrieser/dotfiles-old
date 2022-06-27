@@ -6,9 +6,6 @@ matches:
     replace: ❌
   - trigger: '+yes'
     replace: ✅
-  - trigger: '<3'
-    replace: 💙
-    word: true
   - trigger: '->'
     replace: →
     word: true
