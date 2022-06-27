@@ -95,28 +95,41 @@ end
 --------------------------------------------------------------------------------
 -- LAYOUTS
 
+function movieModeLayout()
+	local iMacDisplays = hs.screen.allScreens()[2]
+	iMacDisplays:setBrightness(0)
+
+	hs.application.open("YouTube")
+
+	hs.application("Drafts"):kill9()
+	hs.application("Slack"):kill9()
+	hs.application("Discord"):kill9()
+	hs.application("Mimestream"):kill9()
+	hs.application("Obsidian"):kill9()
+end
+
 function displayCountWatcher()
 	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
 
 	if (isProjector) then
-		hs.screen.allScreens()[2]:setBrightness(0) -- iMac screen darkened
-
-		hs.application.open("YouTube")
-		hs.application("Drafts"):kill9()
-		hs.application("Slack"):kill9()
-		hs.application("Discord"):kill9()
-		hs.application("Mimestream"):kill9()
-		hs.application("Obsidian"):kill9()
+		movieModeLayout()
+		launchWhileOnProjectorAppWatcher:start()
 	elseif (isIMacAtHome) then
-		homeWindowLayout()
+		homeModeLayout()
 	end
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
+function alwaysOpenAtProjectorDisplay(appName, eventType)
+	if (eventType == hs.application.watcher.launching) then
+		local projector = hs.screen.primaryScreen()
+	end
+end
+launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
 
-function homeWindowLayout ()
+function homeModeLayout ()
 	local currentScreen = hs.screen.primaryScreen():name()
 
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
@@ -223,7 +236,7 @@ hotkey(hyper, "Down", function() moveAndResize("down") end)
 hotkey(hyper, "Right", function() moveAndResize("right") end)
 hotkey(hyper, "Left", function() moveAndResize("left") end)
 hotkey(hyper, "Space", function() moveAndResize("maximized") end)
-hotkey(hyper, "home", homeWindowLayout)
+hotkey(hyper, "home", homeModeLayout)
 hotkey(hyper, "pagedown", moveToOtherDisplay)
 
 hotkey({"ctrl"}, "Space", function ()
