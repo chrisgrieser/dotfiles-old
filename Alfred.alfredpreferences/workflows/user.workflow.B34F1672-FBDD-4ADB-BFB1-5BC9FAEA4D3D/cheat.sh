@@ -8,7 +8,7 @@ PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#262733
 STATUSLINE_COLOR=#5E6F8A
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
-REMOVE_SIGNATURE=true
+REMOVE_SIGNATURE=false
 
 #-------------------------------------------------------------------------------
 
@@ -17,6 +17,9 @@ CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:hel
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 [[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
+
+## copy link & code only into clipboard history
+echo "https://cht.sh/$QUERY" | pbcopy
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
 LANG="sh"
@@ -25,7 +28,7 @@ if [[ "$QUERY" =~ "/" ]] ; then
 	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
 fi
 
-CACHE=~/.cheat
+CACHE="/tmp/$LANG — $QUERY"
 echo "${LANG:u} — $QUERY" > "$CACHE" # header bar
 echo "" >> "$CACHE"
 echo "$CHEAT_INFO" >> "$CACHE"
@@ -35,7 +38,7 @@ alacritty \
 	--option="colors.primary.background='$BG_COLOR'" \
 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
 	--command less -R \
-		--long-prompt \
+		--long-prompt +jj\
 		--window=-4 \
 		--incsearch \
 		--ignore-case \
@@ -44,3 +47,4 @@ alacritty \
 		-- "$CACHE"
 
 rm "$CACHE"
+
