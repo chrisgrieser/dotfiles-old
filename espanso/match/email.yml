@@ -11,7 +11,7 @@ matches:
 
   # Signatures
   - trigger: vvv
-    replace: |
+    replace: |-
       $|$
 
       Viele Grüße
