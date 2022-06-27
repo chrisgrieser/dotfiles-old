@@ -105,8 +105,12 @@ function displayCountWatcher()
 		hs.application("Discord"):kill9()
 		hs.application("Mimestream"):kill9()
 		hs.application("Obsidian"):kill9()
-	elseif (isIMacAtHome) then
+
+		hs.applescript('tell application "System Events" to tell desktop 1 to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"')
+		hs.applescript('tell application "System Events" to tell desktop 2 to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"') elseif (isIMacAtHome) then
 		homeWindowLayout()
+
+		hs.applescript('tell application "System Events" to tell every desktop to set picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Space Gray Pro.png"')
 	end
 end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
