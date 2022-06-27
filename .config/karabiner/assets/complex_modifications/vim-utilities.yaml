@@ -12,11 +12,13 @@ rules:
           key_code: j
         to:
           - key_code: j
+            repeat: true
           - software_function:
               set_mouse_cursor_position:
                 x: 100%
                 y: 75%
                 screen: 0
+            repeat: true
         conditions:
           - value: 0
             type: variable_if
@@ -30,6 +32,7 @@ rules:
           key_code: k
         to:
           - key_code: k
+            repeat: true
           - software_function:
               set_mouse_cursor_position:
                 x: 100%

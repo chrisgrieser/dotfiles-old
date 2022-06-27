@@ -9,7 +9,7 @@ const alfredMatcher = (str) => str.replace (/[-()_.:]/g, " ") + " " + str + " ";
 const jsonArray = app.doShellScript("curl 'https://cheat.sh/:list'")
 	.split("\r")
 	.filter(l => !l.endsWith(":list") && !l.endsWith("/") && !l.startsWith(":"))
-	.concat([":help", ":intro"])
+	.concat([":help", ":intro", ":styles-demo", ":styles"])
 	.map(item => {
 		return {
 			"title": item,
