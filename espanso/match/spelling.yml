@@ -63,6 +63,8 @@ matches:
         params:
           cmd: "dym --clean-output -n1 --lang=de \"$ESPANSO_WORD\""
 
+  # ----------------------------------------------------------------------------
+
   - trigger: "I#d"
     replace: "I'd"
   - trigger: appraoch
@@ -160,3 +162,5 @@ matches:
   - trigger: sicne
     replace: since
     word: true
+  - trigger: repalce
+    replace: replace
