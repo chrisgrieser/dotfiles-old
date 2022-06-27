@@ -105,7 +105,6 @@ function displayCountWatcher()
 		hs.application("Discord"):kill9()
 		hs.application("Mimestream"):kill9()
 	elseif (isIMacAtHome) then
-		hs.brightness.set(50)
 		homeWindowLayout()
 	end
 end

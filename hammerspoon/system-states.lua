@@ -1,9 +1,14 @@
+require("menubar")
+require("utils")
+require("window-management")
+
 function systemWakeWatcher (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 
 		reloadAllMenubarItems()
 		homeWindowLayout()
 		hs.shortcuts.run("Send Reminders due today to Drafts")
+		-- hs.brightness.set(50)
 
 		-- run darkmode toggle between 6:00 and 18:00
 		local timeHours = hs.timer.localTime() / 60 / 60
