@@ -93,7 +93,7 @@ function moveToOtherDisplay ()
 end
 
 --------------------------------------------------------------------------------
--- LAYOUTS
+-- LAYOUTS & DISPLAYS
 
 function movieModeLayout()
 	local iMacDisplays = hs.screen.allScreens()[2]
@@ -155,11 +155,17 @@ function alwaysOpenAtProjectorDisplay(appName, eventType)
 	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 	if (isProjector and eventType == hs.application.watcher.launched) then
 		local projector = hs.screen.primaryScreen()
-		local appWin = hs.application(appName):focusedWindow()
-		local screenOfWindow = appWin:screen()
 
-		if (projector:name() == screenOfWindow:name()) then return end
-		appWin:moveToScreen(projector)
+		-- delayed, to ensure window has launched properly
+		hs.timer.delayed.new(1, function ()
+			local appWin = hs.application(appName):focusedWindow()
+			local screenOfWindow = appWin:screen()
+
+			if (projector:name() == screenOfWindow:name()) then return end
+			appWin:moveToScreen(projector)
+
+		end):start()
+
 	end
 end
 launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
