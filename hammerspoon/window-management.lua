@@ -151,14 +151,14 @@ displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
 -- if projector, then move all newly created windows to the other display
-function alwaysOpenAtProjectorDisplay(appName, eventType)
+function alwaysOpenAtProjectorDisplay(_, eventType, appObject)
 	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 	if (isProjector and eventType == hs.application.watcher.launched) then
 		local projector = hs.screen.primaryScreen()
 
 		-- delayed, to ensure window has launched properly
 		hs.timer.delayed.new(1, function ()
-			local appWin = hs.application(appName):focusedWindow()
+			local appWin = appObject:focusedWindow()
 			local screenOfWindow = appWin:screen()
 
 			if (projector:name() == screenOfWindow:name()) then return end
