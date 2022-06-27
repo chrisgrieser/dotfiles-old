@@ -17,14 +17,19 @@ font:
     'y': 6
   glyph_offset:
     'y': 3
+cursor:
+  style:
+    shape: Beam
+    blinking: Never
+    unfocused_hollow: true
 window:
   decorations: buttonless
   position:
     x: 750
     'y': 120
   dimensions:
-    columns: 76
-    lines: 29
+    columns: 70
+    lines: 27
   padding:
     x: 25
     'y': 15

@@ -5,8 +5,8 @@ export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
 # CONFIG
 
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
-BG_COLOR=#262733
-STATUSLINE_COLOR=#5E6F8A
+BG_COLOR=#303643
+STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
 REMOVE_SIGNATURE=false
 
@@ -17,16 +17,9 @@ CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:hel
 [[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
-echo "https://cht.sh/$QUERY" | pbcopy
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
-LANG="sh"
-if [[ "$QUERY" =~ "/" ]] ; then
-	LANG=$(echo "$QUERY" | cut -d"/" -f1)
-	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
-fi
-
-CACHE="/tmp/${LANG:u} — $QUERY"
+CACHE="/tmp/$QUERY"
 echo "$CHEAT_INFO" >> "$CACHE"
 
 alacritty \
@@ -34,7 +27,7 @@ alacritty \
 	--option="colors.primary.background='$BG_COLOR'" \
 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
 	--command less -R \
-		--long-prompt\
+		--long-prompt \
 		--window=-4 \
 		--incsearch \
 		--ignore-case \
