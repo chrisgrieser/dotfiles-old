@@ -26,23 +26,24 @@ matches:
 
       // fill in here
       const VAR = $.getenv("");
-      const jsonArray = [];
 
-        .map(item => {
-      	// fill in here
-      	return {
-      		"title": item,
-      		"match": alfredMatcher (item),
-      		"subtitle": item,
-      		"type": "file:skipcheck",
-      		"icon": {
-      			"type": "fileicon",
-      			"path": item
-      		},
-      		"arg": item,
-      		"uid": item,
-      	};
-      });
+      const jsonArray = []; // fill in here
+      	// .filter(f => true)fill in here
+      	.map(item => {
+      		// fill in here
+      		return {
+      			"title": item,
+      			"match": alfredMatcher (item),
+      			"subtitle": item,
+      			"type": "file:skipcheck",
+      			"icon": {
+      				"type": "fileicon",
+      				"path": item
+      			},
+      			"arg": item,
+      			"uid": item,
+      		};
+      	});
 
       JSON.stringify({ items: jsonArray });
 

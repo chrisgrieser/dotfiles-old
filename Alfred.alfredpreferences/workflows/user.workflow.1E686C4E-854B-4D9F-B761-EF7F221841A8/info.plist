@@ -62,19 +62,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
 		<array>
 			<dict>
@@ -210,19 +197,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FBFB7B73-93E1-441F-8A4E-357C10069297</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>39BC3043-2844-45A6-B14F-718A836E4EAE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -580,46 +554,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ep</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔎 Espanso Docs: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -667,43 +601,39 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>hs</string>
+				<string>ep</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>🔎 Hammerspoon Docs: '{query}'</string>
+				<string>🔎 Espanso Docs: '{query}'</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</string>
+			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
+				<key>browser</key>
 				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>search-hammerspoon-docs_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</string>
+			<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -757,7 +687,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string></string>
+				<string>https://www.hammerspoon.org/docs/{query}.html</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -772,7 +702,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -817,50 +747,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>search-hammerspoon-plugins_[Browser].applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>39BC3043-2844-45A6-B14F-718A836E4EAE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>hs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⚙️ Hammerspoon Spoons: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>FBFB7B73-93E1-441F-8A4E-357C10069297</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -884,7 +770,7 @@
 			<key>xpos</key>
 			<integer>170</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>435</integer>
 		</dict>
 		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
 		<dict>
@@ -926,15 +812,6 @@
 			<key>ypos</key>
 			<integer>295</integer>
 		</dict>
-		<key>39BC3043-2844-45A6-B14F-718A836E4EAE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>175</integer>
-			<key>ypos</key>
-			<integer>830</integer>
-		</dict>
 		<key>4F748E27-E0FA-42A5-9B83-B58EF498DC15</key>
 		<dict>
 			<key>colorindex</key>
@@ -942,7 +819,7 @@
 			<key>xpos</key>
 			<integer>480</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>620</integer>
 		</dict>
 		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
 		<dict>
@@ -954,17 +831,6 @@
 			<integer>330</integer>
 			<key>ypos</key>
 			<integer>20</integer>
-		</dict>
-		<key>5F1B727E-72BE-4BEE-87DC-7E979C6A307C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>search docs</string>
-			<key>xpos</key>
-			<integer>20</integer>
-			<key>ypos</key>
-			<integer>560</integer>
 		</dict>
 		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
 		<dict>
@@ -984,7 +850,7 @@
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>435</integer>
 		</dict>
 		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
 		<dict>
@@ -1010,10 +876,14 @@
 		</dict>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>docs</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>700</integer>
+			<integer>620</integer>
 		</dict>
 		<key>CC783FA2-6152-4E62-A1DB-94389B082D8D</key>
 		<dict>
@@ -1055,19 +925,12 @@
 		</dict>
 		<key>E4228D09-E638-47E2-BE09-CF8DEAB4A1DC</key>
 		<dict>
-			<key>xpos</key>
-			<integer>180</integer>
-			<key>ypos</key>
-			<integer>700</integer>
-		</dict>
-		<key>E7EBF04A-81EE-4A28-AFB6-624E4F0A8EF3</key>
-		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>xpos</key>
 			<integer>175</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>620</integer>
 		</dict>
 		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
 		<dict>
@@ -1078,7 +941,7 @@
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>620</integer>
 		</dict>
 		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
 		<dict>
@@ -1117,17 +980,6 @@
 			<integer>480</integer>
 			<key>ypos</key>
 			<integer>155</integer>
-		</dict>
-		<key>FBFB7B73-93E1-441F-8A4E-357C10069297</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>search spoons</string>
-			<key>xpos</key>
-			<integer>15</integer>
-			<key>ypos</key>
-			<integer>830</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
