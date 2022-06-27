@@ -7,15 +7,16 @@ export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#262733
 STATUSLINE_COLOR=#5E6F8A
-STYLE=paraiso-dark
+STYLE=paraiso-dark # https://cheat.sh/:styles-demo
+REMOVE_SIGNATURE=true
 
 #-------------------------------------------------------------------------------
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
-CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d') # remove signature
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
+[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
 LANG="sh"
@@ -24,7 +25,7 @@ if [[ "$QUERY" =~ "/" ]] ; then
 	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
 fi
 
-CACHE=~"/Library/Caches/$QUERY.$LANG"
+CACHE=~/.cheat
 echo "${LANG:u} — $QUERY" > "$CACHE" # header bar
 echo "" >> "$CACHE"
 echo "$CHEAT_INFO" >> "$CACHE"
@@ -34,7 +35,7 @@ alacritty \
 	--option="colors.primary.background='$BG_COLOR'" \
 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
 	--command less -R \
-		--long-prompt +Ggk \
+		--long-prompt \
 		--window=-4 \
 		--incsearch \
 		--ignore-case \
@@ -42,3 +43,4 @@ alacritty \
 		--tilde \
 		-- "$CACHE"
 
+rm "$CACHE"
