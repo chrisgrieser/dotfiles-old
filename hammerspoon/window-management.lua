@@ -108,27 +108,6 @@ function movieModeLayout()
 	hs.application("Obsidian"):kill9()
 end
 
-function displayCountWatcher()
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
-
-	if (isProjector) then
-		movieModeLayout()
-		launchWhileOnProjectorAppWatcher:start()
-	elseif (isIMacAtHome) then
-		homeModeLayout()
-	end
-end
-displayWatcher = hs.screen.watcher.new(displayCountWatcher)
-displayWatcher:start()
-
-function alwaysOpenAtProjectorDisplay(appName, eventType)
-	if (eventType == hs.application.watcher.launching) then
-		local projector = hs.screen.primaryScreen()
-	end
-end
-launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
-
 function homeModeLayout ()
 	local currentScreen = hs.screen.primaryScreen():name()
 
@@ -157,6 +136,33 @@ function homeModeLayout ()
 	hs.layout.apply(homeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
 end
+
+function displayCountWatcher()
+	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
+	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
+
+	if (isProjector) then
+		movieModeLayout()
+		launchWhileOnProjectorAppWatcher:start()
+	elseif (isIMacAtHome) then
+		homeModeLayout()
+		launchWhileOnProjectorAppWatcher:stop()
+	end
+end
+displayWatcher = hs.screen.watcher.new(displayCountWatcher)
+displayWatcher:start()
+
+-- if projector, then move all newly created windows to the other display
+function alwaysOpenAtProjectorDisplay(appName, eventType)
+	if (eventType == hs.application.watcher.launched) then
+		local projector = hs.screen.primaryScreen()
+		local screenOfWindow = appName:focusedWindow():screen()
+
+		if (projector:name() == screenOfWindow:name()) then return end
+		appName:focusedWindow():moveToScreen(projector)
+	end
+end
+launchWhileOnProjectorAppWatcher = hs.application.watcher.new(alwaysOpenAtProjectorDisplay)
 
 --------------------------------------------------------------------------------
 -- SPLITS
@@ -238,6 +244,7 @@ hotkey(hyper, "Left", function() moveAndResize("left") end)
 hotkey(hyper, "Space", function() moveAndResize("maximized") end)
 hotkey(hyper, "home", homeModeLayout)
 hotkey(hyper, "pagedown", moveToOtherDisplay)
+hotkey(hyper, "pageup", moveToOtherDisplay)
 
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
