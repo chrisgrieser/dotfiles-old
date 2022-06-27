@@ -8,39 +8,40 @@ matches:
     replace: "Dear sir or madam,\n\n"
   - trigger: '+greet'
     replace: "Sehr geehrte Damen und Herren,\n\n"
+  - trigger: '+greet'
+    replace: "Sehr geehrte $|$,\n\n"
 
   # Signatures
-  - trigger: vvv
+  - triggers: ["vvv", "+sig"]
     replace: |-
       $|$
 
       Viele Grüße
       Chris
     label: Viele Grüße (Vorname)
-  - trigger: vvg
-    replace: |
+  - triggers: ["vvg", "+sig"]
+    replace: |-
       $|$
 
       Viele Grüße
       Chris Grieser
     label: Viele Grüße (voller Name)
-  - trigger: 'mfg'
-    replace: |
+  - triggers: ["+mfg", "+sig"]
+    replace: |-
       $|$
 
       Mit freundlichen Grüßen
       Christopher Grieser
     label: Mit freundlichen Grüßen
-
-  - trigger: '+kr'
-    replace: |
+  - triggers: ["+kr", "+sig"]
+    replace: |-
       $|$
 
       Kind Regards
       Chris Grieser
     label: Kind Regards
-  - trigger: '+best'
-    replace: |
+  - triggers: ["+best", "+sig"]
+    replace: |-
       $|$
 
       Best
