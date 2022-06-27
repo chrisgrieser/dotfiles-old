@@ -4,7 +4,7 @@ bindkey "^B" copyBuffer
 
 bindkey "^Z" undo
 bindkey "^K" kill-line
-bindkey "^V" yank # pastes content previously removed with 'kill-buffer'
+bindkey "^V" yank # pastes content previously removed with 'kill-line'
 
 # [alt+arrow] - move word forward or backward
 bindkey "^[[1;3C" forward-word

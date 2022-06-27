@@ -31,6 +31,15 @@ function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
 	local position
 
+	-- if window moved is from Drafts, toggle sidebars
+	if (win:application():name() == "Drafts") then
+		if (direction == "pseudo-maximized" or direction == "maximized") then
+			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+		else
+			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
+		end
+	end
+
 	if (direction == "left") then
 		position = hs.layout.left50
 	elseif (direction == "right") then
@@ -49,15 +58,6 @@ function moveAndResize(direction)
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
 	resizingWorkaround(win, position)
-
-	-- if window moved is from Drafts, toggle sidebars
-	if (win:application():name() == "Drafts") then
-		if (direction == "pseudo-maximized" or direction == "maximized") then
-			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-		else
-			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
-		end
-	end
 end
 
 function resizingWorkaround(win, pos)
