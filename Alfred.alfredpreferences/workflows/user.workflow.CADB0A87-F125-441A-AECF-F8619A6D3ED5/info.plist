@@ -70,19 +70,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>852ED9ED-B3B3-40E6-8E57-3ED802DEA11C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7FC42DC1-ECBF-410B-9AB3-C24256DB501F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</key>
 		<array>
 			<dict>
@@ -124,19 +111,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CD2B80E8-95B4-44F0-AA98-22F2527E6329</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -484,120 +458,6 @@ end alfred_script</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.mimestream.Mimestream</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>CD2B80E8-95B4-44F0-AA98-22F2527E6329</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Mimestream"
-			set frontmost to true
-			click menu item "Move to Trash" of menu "Message" of menu bar 1
-		end tell
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "System Events"
-		tell process "Mimestream"
-			set frontmost to true
-			click menu item "Archive" of menu "Message" of menu bar 1
-		end tell
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>7FC42DC1-ECBF-410B-9AB3-C24256DB501F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>106</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F16</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.mimestream.Mimestream</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>852ED9ED-B3B3-40E6-8E57-3ED802DEA11C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>105</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F13</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
@@ -855,37 +715,6 @@ end alfred_script</string>
 			<key>ypos</key>
 			<integer>740</integer>
 		</dict>
-		<key>7D0D0C8D-5457-41A7-AC05-2B9B77DFD853</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>Delete</string>
-			<key>xpos</key>
-			<integer>690</integer>
-			<key>ypos</key>
-			<integer>420</integer>
-		</dict>
-		<key>7FC42DC1-ECBF-410B-9AB3-C24256DB501F</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>Archive</string>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
-		<key>852ED9ED-B3B3-40E6-8E57-3ED802DEA11C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>425</integer>
-		</dict>
 		<key>99986663-D8A9-423B-9FCD-2C6F7D9B04D5</key>
 		<dict>
 			<key>colorindex</key>
@@ -912,15 +741,6 @@ end alfred_script</string>
 			<integer>510</integer>
 			<key>ypos</key>
 			<integer>595</integer>
-		</dict>
-		<key>CD2B80E8-95B4-44F0-AA98-22F2527E6329</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>505</integer>
-			<key>ypos</key>
-			<integer>420</integer>
 		</dict>
 		<key>E27C16A0-4853-4EFD-8BE3-6071AD862B4F</key>
 		<dict>
