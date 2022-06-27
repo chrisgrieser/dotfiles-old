@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+
+# TODO: need to change brwoser across hammerspoon configs as well
+
 cd "$ZSH_DOTFILE_LOCATION/.." || return 1
 
 # replace (insert Browsers here)
