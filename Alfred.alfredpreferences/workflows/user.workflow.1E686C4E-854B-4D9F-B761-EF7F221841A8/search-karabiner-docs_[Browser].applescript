@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 on run argv
-	set input to argv as string
+	set the clipboard to argv as string
 	open location "https://karabiner-elements.pqrs.org/docs/"
 
 	delay 0.2
@@ -16,7 +16,7 @@ on run argv
 		keystroke tab
 		keystroke tab
 		delay 0.1
-		keystroke input
+		keystroke "v" using {command down}
 		delay 0.1
 		keystroke return
 	end tell

@@ -1,7 +1,7 @@
 #!/usr/bin/env osascript
 on run argv
-	set input to argv as string
 	open location "https://www.hammerspoon.org/docs/index.html"
+	set the clipboard to argv as string
 
 	delay 0.2
 	tell application "Brave Browser"
@@ -14,8 +14,10 @@ on run argv
 	tell application "System Events"
 		keystroke tab
 		delay 0.1
-		keystroke input
-		delay 0.3
+		keystroke "v" using {command down}
+		delay 0.2
+		keystroke return
+		delay 0.2
 		key code 53
 		delay 0.1
 		keystroke "f" -- vimium f

@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 on run argv
-	set input to argv as string
+	set the clipboard to argv as string
 	open location "https://www.hammerspoon.org/Spoons/"
 
 	delay 0.2
@@ -14,8 +14,12 @@ on run argv
 	tell application "System Events"
 		keystroke tab
 		delay 0.1
-		keystroke input
-		delay 0.1
+		keystroke "v" using {command down}
+		delay 0.2
+		keystroke return
+		delay 0.2
 		key code 53
+		delay 0.1
+		keystroke "f" -- vimium f
 	end tell
 end run

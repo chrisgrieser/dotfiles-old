@@ -104,6 +104,7 @@ function displayCountWatcher()
 		hs.application("Slack"):kill9()
 		hs.application("Discord"):kill9()
 		hs.application("Mimestream"):kill9()
+		hs.application("Obsidian"):kill9()
 	elseif (isIMacAtHome) then
 		homeWindowLayout()
 	end
