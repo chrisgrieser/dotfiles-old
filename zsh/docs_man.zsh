@@ -36,6 +36,8 @@ alias help='run-help'
 zsh_ver=$(zsh --version | cut -d" " -f2)
 export HELPDIR="/usr/share/zsh/$zsh_ver/help"
 
+export PAGER=less
+
 # colorize less https://wiki.archlinux.org/index.php/Color_output_in_console#less .
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;33m'     # begin blink

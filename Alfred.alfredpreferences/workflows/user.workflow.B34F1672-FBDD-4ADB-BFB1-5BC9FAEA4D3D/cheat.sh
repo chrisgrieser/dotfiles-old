@@ -8,7 +8,7 @@ PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
 STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
-REMOVE_SIGNATURE=false
+REMOVE_SIGNATURE=true
 
 #-------------------------------------------------------------------------------
 
@@ -17,7 +17,12 @@ CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:hel
 [[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
-echo "$CHEAT_CODE_ONLY" | pbcopy
+# if empty string ()
+if [[ -z "$CHEAT_CODE_ONLY" ]]; then
+	echo "$CHEAT_CODE_ONLY" | pbcopy
+else
+	echo "$CHEAT_INFO" | pbcopy
+fi
 
 CLEAN_QUERY=$(echo "$*" | tr "/" " ")
 CACHE="/tmp/$CLEAN_QUERY" # will be displayed in less prompt line at start

@@ -2,7 +2,7 @@ require("utils")
 
 --------------------------------------------------------------------------------
 
--- ⌥ ↹ – Window Switcher, only for Browser and Finder Windows
+-- app-only Window Switchers
 --https://www.hammerspoon.org/docs/hs.window.switcher.html
 finderWindowSwitcher = hs.window.switcher.new{"Finder"}
 browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
@@ -86,6 +86,11 @@ function resizingWorkaround(win, pos)
 	end
 end
 
+function moveToOtherDisplay ()
+	local win = hs.window.focusedWindow()
+	local currentScreen = win:screen()
+	win:moveToScreen(currentScreen:next())
+end
 
 --------------------------------------------------------------------------------
 -- LAYOUTS
@@ -219,8 +224,7 @@ hotkey(hyper, "Right", function() moveAndResize("right") end)
 hotkey(hyper, "Left", function() moveAndResize("left") end)
 hotkey(hyper, "Space", function() moveAndResize("maximized") end)
 hotkey(hyper, "home", homeWindowLayout)
-
-hotkey(hyper, "pagedown", function() hs.window:moveOneScreenEast end)
+hotkey(hyper, "pagedown", moveToOtherDisplay)
 
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
@@ -230,10 +234,13 @@ hotkey({"ctrl"}, "Space", function ()
 	end
 end)
 
+hotkey(hyper, "X", function() vsplit("switch") end)
 hotkey(hyper, "V", function()
-	if (frontapp() == "Finder") then	finderVsplit()
-	else vsplit("split") end
+	if (frontapp() == "Finder") then
+		finderVsplit()
+	else
+		vsplit("split")
+	end
 end)
 
-hotkey(hyper, "X", function() vsplit("switch") end)
 hotkey({"alt"}, "tab", appWindowSwitcher)
