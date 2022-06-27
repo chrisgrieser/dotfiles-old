@@ -59,7 +59,7 @@ function downloadFolderBadge ()
 		itemCount=$(ls "$folder" | wc -l)
 		itemCount=$((itemCount-1)) # reduced by one to account for the "?Icon" file in the folder
 
-		# cache necessary to rpevent recursion of icon change triggering pathwatcher again
+		# cache necessary to prevent recursion of icon change triggering pathwatcher again
 		cache_location="/Library/Caches/dlFolderLastChange"
 		if test ! -e "$cache_location" ; then
 			if test $itemCount -gt 0 ; then
@@ -107,10 +107,11 @@ end
 scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
 scanFolderWatcher:start()
 
--- Cursor Hiding
--- when Brave or Alacritty activated, hide cursor
-function jHidingCursor()
-	hs.eventtap.keyStroke({}, "j", 1, hs.application("Brave Browser"))
+-- CURSOR HIDING
+-- when Alacritty activates, hide cursor
+-- when Brave activates and j or k is pressed for the first time, hide cursor
+function hidingCursor(key)
+	hs.eventtap.keyStroke({}, key)
 	local screen = hs.mouse.getCurrentScreen()
 	local pos = {
 		x = screen:frame().w,
@@ -118,11 +119,13 @@ function jHidingCursor()
 	}
 	hs.mouse.setRelativePosition(pos, screen)
 	notify("active")
+	jHidesCursor:disable() -- so it only works the first time
 end
-jHidesCursor = hotkey({},"j", jHidingCursor, nil, jHidingCursor)
-
+jHidesCursor = hotkey({},"j", function() hidingCursor("j") end)
+kHidesCursor = hotkey({},"k", function() hidingCursor("k") end)
 jHidesCursor:disable()
--- kHidesCursor:disable()
+kHidesCursor:disable()
+
 function jkWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.activated) then
 		if (appName:lower() == "alacritty") then
@@ -134,8 +137,10 @@ function jkWatcher(appName, eventType)
 			hs.mouse.setRelativePosition(pos, screen)
 		elseif (appName == "Brave Browser") then
 			jHidesCursor:enable()
-			notify("switched to brave")
-			-- hs.timer.delayed.new(1, function () jHidesCursor:disable() end):start()
+			kHidesCursor:enable()
+		else
+			jHidesCursor:disable()
+			kHidesCursor:disable()
 		end
 	end
 end
