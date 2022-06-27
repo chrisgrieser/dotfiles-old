@@ -8,19 +8,16 @@ PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
 STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
-REMOVE_SIGNATURE=true
 
 #-------------------------------------------------------------------------------
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
-[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\[cc/d')
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 # if empty string, copy the full info instead
 if [[ -z "$CHEAT_CODE_ONLY" ]]; then
 	CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?T")
-	[[ $REMOVE_SIGNATURE ]] && CHEAT_CODE_ONLY=$(echo "$CHEAT_CODE_ONLY" | sed '/\[cc/d')
 fi
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
