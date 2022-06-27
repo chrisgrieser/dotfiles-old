@@ -16,7 +16,9 @@ matches:
     label: "🎩🍏 GET Environment Variable (Unicode Fix)"
   - replace: set theBrowser to (system attribute "browser")
     label: "🎩🍏 GET Environment Variable"
-  - replace: |
+  - trigger: "+sf"
+    replace: |
+      #!/usr/bin/env osascript -l JavaScript
       ObjC.import("stdlib");
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;
@@ -24,9 +26,9 @@ matches:
 
       // fill in here
       const VAR = $.getenv("");
-      const workArray = [];
+      const jsonArray = [];
 
-      const jsonArray = workArray.map(item => {
+        .map(item => {
       	// fill in here
       	return {
       		"title": item,
