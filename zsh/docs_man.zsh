@@ -36,9 +36,6 @@ alias help='run-help'
 zsh_ver=$(zsh --version | cut -d" " -f2)
 export HELPDIR="/usr/share/zsh/$zsh_ver/help"
 
-# use moar instead of less (moar also uses color options forn LESS below)
-export PAGER=less
-
 # colorize less https://wiki.archlinux.org/index.php/Color_output_in_console#less .
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;33m'     # begin blink
@@ -47,7 +44,5 @@ export LESS_TERMCAP_us=$'\E[1;34m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Pager-specific settings
-# export LESS='-R --incsearch --ignore-case --HILITE-UNREAD --window=-3 --quit-at-eof --quit-if-one-screen --no-init --tilde'
-export LESS=""
-# export MOAR="--no-linenumbers --render-unprintable=whitespace"
+export LESS='-R --incsearch --ignore-case --HILITE-UNREAD --window=-3 --quit-at-eof --quit-if-one-screen --no-init --tilde'
 

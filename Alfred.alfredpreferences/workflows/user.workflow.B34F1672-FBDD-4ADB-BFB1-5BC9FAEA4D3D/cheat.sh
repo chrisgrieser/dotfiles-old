@@ -14,11 +14,9 @@ REMOVE_SIGNATURE=false
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
+[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
-[[ $REMOVE_SIGNATURE ]] && CHEAT_INFO=$(echo "$CHEAT_INFO" | sed '/\] \[cc/d')
-
-## copy link & code only into clipboard history
 echo "https://cht.sh/$QUERY" | pbcopy
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
@@ -28,9 +26,7 @@ if [[ "$QUERY" =~ "/" ]] ; then
 	QUERY=$(echo "$QUERY" | cut -d"/" -f2- | tr "+" " ")
 fi
 
-CACHE="/tmp/$LANG — $QUERY"
-echo "${LANG:u} — $QUERY" > "$CACHE" # header bar
-echo "" >> "$CACHE"
+CACHE="/tmp/${LANG:u} — $QUERY"
 echo "$CHEAT_INFO" >> "$CACHE"
 
 alacritty \
@@ -38,13 +34,11 @@ alacritty \
 	--option="colors.primary.background='$BG_COLOR'" \
 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
 	--command less -R \
-		--long-prompt +jj\
+		--long-prompt\
 		--window=-4 \
 		--incsearch \
 		--ignore-case \
 		--HILITE-UNREAD \
 		--tilde \
 		-- "$CACHE"
-
-rm "$CACHE"
 
