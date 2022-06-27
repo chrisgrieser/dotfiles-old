@@ -118,8 +118,9 @@ function hidingCursor(key)
 		y = screen:frame().h * 0.75,
 	}
 	hs.mouse.setRelativePosition(pos, screen)
-	notify("active")
+	notify("cursor hidden")
 	jHidesCursor:disable() -- so it only works the first time
+	kHidesCursor:disable()
 end
 jHidesCursor = hotkey({},"j", function() hidingCursor("j") end)
 kHidesCursor = hotkey({},"k", function() hidingCursor("k") end)
@@ -128,6 +129,13 @@ kHidesCursor:disable()
 
 function jkWatcher(appName, eventType)
 	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Brave Browser") then
+			jHidesCursor:enable()
+			kHidesCursor:enable()
+		else
+			jHidesCursor:disable()
+			kHidesCursor:disable()
+		end
 		if (appName:lower() == "alacritty") then
 			local screen = hs.mouse.getCurrentScreen()
 			local pos = {
@@ -135,12 +143,6 @@ function jkWatcher(appName, eventType)
 				y = screen:frame().h * 0.75,
 			}
 			hs.mouse.setRelativePosition(pos, screen)
-		elseif (appName == "Brave Browser") then
-			jHidesCursor:enable()
-			kHidesCursor:enable()
-		else
-			jHidesCursor:disable()
-			kHidesCursor:disable()
 		end
 	end
 end
