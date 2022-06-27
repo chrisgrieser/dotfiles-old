@@ -5,31 +5,31 @@ function twitterrificScrollUp ()
 	local previousApp = hs.application.frontmostApplication():name()
 
 	hs.application("Twitterrific"):activate()
-	hs.eventtap.keyStroke({"cmd"}, "k") -- mark all as red
-	hs.eventtap.keyStroke({"cmd"}, "j") -- scroll up
-	hs.eventtap.keyStroke({"cmd"}, "1") -- scroll up failsafe
-	hs.eventtap.keyStroke({}, "down") -- enable j/k movement
+	keystroke({"cmd"}, "k") -- mark all as red
+	keystroke({"cmd"}, "j") -- scroll up
+	keystroke({"cmd"}, "1") -- scroll up failsafe
+	keystroke({}, "down") -- enable j/k movement
 
 	hs.application(previousApp):activate()
 end
 
 function pagedownAction ()
 	if appIsRunning("IINA") then
-		hs.eventtap.keyStroke({}, "right", 1, hs.application("IINA"))
+		keystroke({}, "right", 1, hs.application("IINA"))
 	else
-		hs.eventtap.keyStroke({}, "down", 1, hs.application("Twitterrific"))
+		keystroke({}, "down", 1, hs.application("Twitterrific"))
 	end
 end
 function pageupAction ()
 	if appIsRunning("IINA") then
-		hs.eventtap.keyStroke({}, "left", 1, hs.application("IINA"))
+		keystroke({}, "left", 1, hs.application("IINA"))
 	else
-		hs.eventtap.keyStroke({}, "up", 1, hs.application("Twitterrific"))
+		keystroke({}, "up", 1, hs.application("Twitterrific"))
 	end
 end
 function homeAction ()
 	if appIsRunning("IINA") then
-		hs.eventtap.keyStroke({}, "Space", 1, hs.application("IINA"))
+		keystroke({}, "Space", 1, hs.application("IINA"))
 	else
 		hs.application("Twitterrific"):activate()
 	end

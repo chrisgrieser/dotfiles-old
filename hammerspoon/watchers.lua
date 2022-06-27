@@ -111,7 +111,7 @@ scanFolderWatcher:start()
 -- when Alacritty activates, hide cursor
 -- when Brave activates and j or k is pressed for the first time, hide cursor
 function hidingCursor(key)
-	hs.eventtap.keyStroke({}, key)
+	keystroke({}, key, 1, hs.application("Brave Browser"))
 	local screen = hs.mouse.getCurrentScreen()
 	local pos = {
 		x = screen:frame().w,
@@ -122,8 +122,8 @@ function hidingCursor(key)
 	jHidesCursor:disable() -- so it only works the first time
 	kHidesCursor:disable()
 end
-jHidesCursor = hotkey({},"j", function() hidingCursor("j") end)
-kHidesCursor = hotkey({},"k", function() hidingCursor("k") end)
+jHidesCursor = hotkey({},"j", function() hidingCursor("J") end)
+kHidesCursor = hotkey({},"k", function() hidingCursor("K") end)
 jHidesCursor:disable()
 kHidesCursor:disable()
 
