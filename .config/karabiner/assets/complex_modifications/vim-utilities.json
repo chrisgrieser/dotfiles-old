@@ -429,7 +429,7 @@
       ]
     },
     {
-      "description": "⚒️ ß´ → [] (+ German to US Layout), s (hold) → ß",
+      "description": "⚒️ ß´ → [] (+ German to US Layout), ß (hold) → ß",
       "manipulators": [
         {
           "type": "basic",
@@ -458,18 +458,31 @@
               ]
             }
           ],
-          "to": [
+          "to_if_alone": [
             {
               "select_input_source": {
                 "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-              }
+              },
+              "repeat": false
             },
             {
               "key_code": "vk_none",
-              "hold_down_milliseconds": 20
+              "hold_down_milliseconds": 60,
+              "repeat": false
             },
             {
-              "key_code": "open_bracket"
+              "key_code": "open_bracket",
+              "repeat": false
+            }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 250,
+            "basic.to_if_alone_timeout_milliseconds": 250
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "hyphen",
+              "repeat": false
             }
           ],
           "to_after_key_up": [
@@ -514,51 +527,6 @@
               "select_input_source": {
                 "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
               }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s"
-          },
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            },
-            {
-              "type": "variable_if",
-              "name": "LEADER_ACTIVE",
-              "value": 0
-            },
-            {
-              "type": "variable_if",
-              "name": "VIM_MODE",
-              "value": 0
-            }
-          ],
-          "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 250
-          },
-          "to": [
-            {
-              "key_code": "s",
-              "repeat": false
-            }
-          ],
-          "to_if_held_down": [
-            {
-              "key_code": "delete_or_backspace",
-              "repeat": false
-            },
-            {
-              "key_code": "hyphen",
-              "repeat": false
             }
           ]
         }
