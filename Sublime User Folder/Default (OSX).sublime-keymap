@@ -81,18 +81,6 @@
 
 	//---------------------------------------------------------------------------
 
-	// inoremap <C-y> :reg<CR>
-	{"keys": ["ctrl+y"], "command": "chain",
-		"args": {
-			"commands": [
-				["nv_enter_normal_mode"],
-				["nv_feed_key", {"key": "<C-y>"}],
-				["nv_feed_key", {"key": "i"}],
-			]
-		},
-		"context": [{ "key": "vi_insert_mode_aware" } ]
-	},
-
 	// imap vv <Esc>v (quick visual mode)
 	{"keys": ["v", "v"], "command": "chain",
 		"args": {
@@ -240,6 +228,7 @@
 
 	// CUSTOM PLUGINS
 	{ "keys": ["ctrl+n"], "command": "copy_filename" },
+	{ "keys": ["cmd+i"], "command": "important_switcher" },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory

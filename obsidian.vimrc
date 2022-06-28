@@ -12,16 +12,11 @@ unmap ,
 " yank to system clipboard
 set clipboard=unnamed
 
-" show register (i.e., clipboard history)
-map <C-y> :reg
-imap <C-y> :reg
-
 " Y consistent with D and C to the end of line
 nmap Y y$
 
 " always paste what was yanked, not what was deleted
 nmap P "0p
-" vmap P "0p
 
 " append to register
 map gy "Yy

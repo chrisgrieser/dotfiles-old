@@ -9,10 +9,7 @@ let mapleader=,
 " yank to system clipboard
 " set via setting: "vintageous_use_sys_clipboard": true,
 
-" show register (i.e., clipboard history)
-noremap <C-y> :reg<CR>
-
-" Y consistent with D and C to the end of line
+" Y consistent with D and C to the end of linek
 nnoremap Y y$
 
 " always paste what was yanked, not what was deleted
