@@ -240,8 +240,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://github.com/search?q=alfred-workflow+{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -259,8 +257,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://npms.io/search?q=alfred+workflow+{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -299,8 +295,6 @@
 				<string></string>
 				<key>url</key>
 				<string>http://www.packal.org/workflow-search?query={query}&amp;osx-version=All&amp;items_per_page=50</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -318,8 +312,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://pacmax.org/?s={query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -507,7 +499,7 @@
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>/Applications/Alfred 4.app/Contents/Preferences</string>
+				<string>/Applications/Alfred 5.app/Contents/Preferences</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
@@ -675,6 +667,8 @@ echo "$backup"</string>
 				</array>
 				<key>elselabel</key>
 				<string>yes</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -686,6 +680,8 @@ echo "$backup"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>backup-alfred-prefs</string>
 			</dict>
@@ -726,113 +722,113 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>411F0C67-7E50-4B01-AF68-F2742465259B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>424FC24A-8D2D-4BE5-A394-E934EF993E6F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>365</integer>
+			<real>365</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>48898411-6F12-4ADD-830B-88FED0F66BB0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 		<key>4A3828AC-7DF5-44AE-84CE-3F1B054C7349</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>4A6AD1C0-ABCF-4C85-8E12-C4170B8982C5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>565</integer>
+			<real>565</real>
 		</dict>
 		<key>57787A3F-711D-487E-A402-6DB381439B3A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>755</integer>
+			<real>755</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 		<key>59B65F8F-3EDB-4000-8F90-1C01AF6BC6A5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>5B7DFCDF-718D-4957-985A-AA31D51AEFFC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>630</integer>
+			<real>630</real>
 		</dict>
 		<key>72429B6F-6A52-4E6C-93A4-FD88489A22F2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>890</integer>
+			<real>890</real>
 		</dict>
 		<key>88BE14E8-8C6C-40C6-9497-48E193416293</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>365</integer>
+			<real>365</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>8C4DE1F4-CC9B-41F7-A3B6-122F5485EA84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>160</integer>
+			<real>160</real>
 			<key>ypos</key>
-			<integer>920</integer>
+			<real>920</real>
 		</dict>
 		<key>A77F6073-1BB7-43C2-949B-216A52B8B0CF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<real>185</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>AB2FC894-EB25-4C16-B958-43863871807B</key>
 		<dict>
@@ -841,101 +837,103 @@ echo "$backup"</string>
 			<key>note</key>
 			<string>sound</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>681</real>
 			<key>ypos</key>
-			<integer>790</integer>
+			<real>790</real>
 		</dict>
 		<key>ABF30A35-70D2-41E3-B40B-4A5E783EB7FC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>BC41C6FD-A0A1-48EC-A156-72DC0D9520FF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>BF89C364-F5A2-446D-A3F4-F0EAF2212146</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>205</integer>
+			<real>205</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>D5D0024E-316C-4A4C-BEA4-7366C58BF580</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>195</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>630</integer>
+			<real>630</real>
 		</dict>
 		<key>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>325</integer>
+			<real>325</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>DB75DE0D-5D08-4DC0-8F18-35F4D551A52A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 		<key>DCD9C133-BB06-4C67-9775-B4814A38FF71</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>565</integer>
+			<real>565</real>
 		</dict>
 		<key>F335D8C8-905A-4192-90B9-033173FEB8AF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 		<key>F55D1533-F14F-4A8E-88D1-B4C3F3DACB70</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>FBE773BF-5340-43E6-98F8-22E1C4F01CC5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>backup_destination</key>

@@ -31,7 +31,7 @@ case $APP_TO_UPDATE in
 		touch "Transmission.app" ;;
    "Alfred Preferences")
 		osascript -e "tell application \"Finder\"
-			open information window of (\"Alfred 4.app/Contents/Preferences/Alfred Preferences.app\" as POSIX file as alias)
+			open information window of (\"Alfred 5.app/Contents/Preferences/Alfred Preferences.app\" as POSIX file as alias)
 			activate
 		end tell
 		set the clipboard to POSIX file \"$CUSTOM_ICON_FOLDER/Alfred Prefs.icns\""
