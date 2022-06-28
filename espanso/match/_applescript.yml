@@ -112,10 +112,10 @@ matches:
       	end repeat
       end tell
     label: 🍏 Wait till tab is loaded
-  - $trigger: "+as"
+  - trigger: "+as"
     replace: "#!/usr/bin/env osascript\n"
     label: 🍏 AppleScript Shebang
-  - $trigger: "+resolve"
+  - trigger: "+resolve"
     replace: |
       # resolve ~
       set unresolved_path to "~/Documents"
@@ -131,5 +131,5 @@ matches:
       	end tell
       end tell
     label: 🍏 Name of front window of a process
-  - $trigger: "+hr"
+  - trigger: "+hr"
     replace: "#-------------------------------------------------------------------------------"
