@@ -120,6 +120,7 @@ function homeModeLayout ()
 	hs.application.open("Brave Browser")
 	hs.application.open("Obsidian")
 	hs.application.open("Twitterrific")
+	hs.application.open("Drafts")
 
 	local homeLayout = {
 		{"Twitterrific", nil, currentScreen, toTheSide, nil, nil},
@@ -171,8 +172,10 @@ function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
 			moveWindowToMouseScreen(appWindow)
 		end):start()
 	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector) then
-		local appWindow = appObject:focusedWindow()
-		moveWindowToMouseScreen(appWindow)
+		hs.timer.delayed.new(0.5, function ()
+			local appWindow = appObject:focusedWindow()
+			moveWindowToMouseScreen(appWindow)
+		end):start()
 	end
 end
 launchWhileMultiScreenWatcher = hs.application.watcher.new(alwaysOpenOnMouseDisplay)
