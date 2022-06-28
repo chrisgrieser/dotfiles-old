@@ -24,6 +24,8 @@ try {
 	}
 }
 
+console.log(folderToSearch)
+
 /* eslint-disable no-multi-str */
 const repoArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \
 	cd \"" + folderToSearch + "\" ; \
