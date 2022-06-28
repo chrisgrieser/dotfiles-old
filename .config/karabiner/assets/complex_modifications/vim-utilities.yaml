@@ -205,7 +205,7 @@ rules:
         to_after_key_up:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
-  - description: "⚒️ ß´ → [] (+ German to US Layout), s (hold) → ß"
+  - description: "⚒️ ß´ → [] (+ German to US Layout), ß (hold) → ß"
     manipulators:
       - type: basic
         from:
@@ -226,9 +226,21 @@ rules:
         to:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.US$
+            repeat: false
           - key_code: vk_none
             hold_down_milliseconds: 20
+            repeat: false
           - key_code: open_bracket
+            repeat: false
+        parameters:
+          basic.to_if_held_down_threshold_milliseconds: 250
+        to:
+          - key_code: s
+        to_if_held_down:
+          - key_code: delete_or_backspace
+            repeat: false
+          - key_code: hyphen
+            repeat: false
         to_after_key_up:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$

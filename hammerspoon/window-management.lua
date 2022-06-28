@@ -9,6 +9,7 @@ browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
 mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
 sublimeWindowSwitcher = hs.window.switcher.new{"Sublime Text"}
 obsidianWindowSwitcher = hs.window.switcher.new{"Obsidian"}
+draftsWindowSwitcher = hs.window.switcher.new{"Drafts"}
 
 function appWindowSwitcher()
 	if (frontapp() == "Finder") then
@@ -21,6 +22,8 @@ function appWindowSwitcher()
 		sublimeWindowSwitcher:next()
 	elseif (frontapp() == "Obsidian") then
 		obsidianWindowSwitcher:next()
+	elseif (frontapp() == "Drafts") then
+		draftsWindowSwitcher:next()
 	end
 end
 
@@ -96,8 +99,9 @@ end
 -- LAYOUTS & DISPLAYS
 
 function movieModeLayout()
-	local iMacDisplays = hs.screen.allScreens()[2]
-	iMacDisplays:setBrightness(0)
+	if numberOfScreens() == 1 then return end
+	local iMacDisplay = hs.screen.allScreens()[2]
+	iMacDisplay:setBrightness(0)
 
 	hs.application.open("YouTube")
 
@@ -109,8 +113,9 @@ function movieModeLayout()
 end
 
 function homeModeLayout ()
-	local currentScreen = hs.screen.primaryScreen():name()
+	if numberOfScreens() > 1 then return end
 
+	local screen = hs.screen.primaryScreen():name()
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
 
@@ -123,16 +128,16 @@ function homeModeLayout ()
 	hs.application.open("Drafts")
 
 	local homeLayout = {
-		{"Twitterrific", nil, currentScreen, toTheSide, nil, nil},
-		{"Brave Browser", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Sublime Text", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Slack", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Discord", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Obsidian", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Drafts", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Mimestream", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"alacritty", nil, currentScreen, pseudoMaximized, nil, nil},
-		{"Alacritty", nil, currentScreen, pseudoMaximized, nil, nil},
+		{"Twitterrific", nil, screen, toTheSide, nil, nil},
+		{"Brave Browser", nil, screen, pseudoMaximized, nil, nil},
+		{"Sublime Text", nil, screen, pseudoMaximized, nil, nil},
+		{"Slack", nil, screen, pseudoMaximized, nil, nil},
+		{"Discord", nil, screen, pseudoMaximized, nil, nil},
+		{"Obsidian", nil, screen, pseudoMaximized, nil, nil},
+		{"Drafts", nil, screen, pseudoMaximized, nil, nil},
+		{"Mimestream", nil, screen, pseudoMaximized, nil, nil},
+		{"alacritty", nil, screen, pseudoMaximized, nil, nil},
+		{"Alacritty", nil, screen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
@@ -160,22 +165,20 @@ end
 
 -- Open windows always on the screen where the mouse is
 function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
-	local numberOfScreens = #(hs.screen.allScreens())
 	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-
-	if numberOfScreens == 1 then return end
+	if numberOfScreens() == 1 then return end
 
 	if (eventType == hs.application.watcher.launched) then
 		-- delayed, to ensure window has launched properly
-		hs.timer.delayed.new(0.5, function ()
+		runDelayed(0.5, function ()
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)
-		end):start()
+		end)
 	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector) then
-		hs.timer.delayed.new(0.5, function ()
+		runDelayed(0.5, function ()
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)
-		end):start()
+		end)
 	end
 end
 launchWhileMultiScreenWatcher = hs.application.watcher.new(alwaysOpenOnMouseDisplay)

@@ -2,10 +2,10 @@
 {
 	"settings": {
 		"Lua.diagnostics.globals": [
-			 // Hammerspoon
+			// Hammerspoon Core
 			"hs",
 			"spoon",
-
+			// Hammerspoon utils.lua
 			"notify",
 			"keystroke",
 			"appIsRunning",
@@ -13,6 +13,7 @@
 			"frontapp",
 			"hotkey",
 			"hyper",
+			"numberOfScreens",
 		],
       "Lua.diagnostics.disable": ["lowercase-global"],
 	}
