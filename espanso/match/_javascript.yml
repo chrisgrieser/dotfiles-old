@@ -33,7 +33,7 @@ matches:
       app.includeStandardAdditions = true;
       app.openLocation(url);
     label: '🏝 [JXA] Open Location'
-  - $trigger: "+read"
+  - $trigger: "!read"
     replace: |
       ObjC.import("Foundation");
       function readFile (path, encoding) {
@@ -49,7 +49,7 @@ matches:
       app.includeStandardAdditions = true;
       app.setTheClipboardTo("[NONE]");
     label: '🏝 [JXA] Set clipboard'
-  - trigger: '+write'
+  - trigger: '!write'
     replace: |
       function writeToFile(text, file) {
       	const str = $.NSString.alloc.initWithUTF8String(text);
@@ -73,22 +73,22 @@ matches:
     label: '🏝 readJSONline'
   - replace: const todayISO = (new Date()).toISOString().slice(0,10);
     label: '🏝 today ISOdate'
-  - trigger: "+js"
+  - trigger: "!js"
     replace: "#!/usr/bin/env osascript -l JavaScript\n"
     label: '🏝 JXA Shebang'
-  - trigger: "+resolve"
+  - trigger: "!resolve"
     replace: |
       const vaultPath = $.getenv("vault_path").replace(/^~/, app.pathTo("home folder"));
 
     label: '🏝 Resolve ~'
-  - trigger: "+hr"
+  - trigger: "!hr"
     replace: "//------------------------------------------------------------------------------"
   - trigger: ".rr"
     replace: ".replace(/.$|$/gm, \"\");"
   - regex: " ?!!"  # so this works whether prepended with space or note
     replace: " {\n"
     label: Quicker Block
-  - trigger: "+app"
+  - trigger: "!app"
     replace: |
       const app = Application.currentApplication();
       app.includeStandardAdditions = true;

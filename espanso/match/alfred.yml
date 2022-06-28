@@ -2,7 +2,7 @@
 # ------------------------------------------
 
 matches:
-  - trigger: '+get'
+  - trigger: '!get'
     replace: |
       ObjC.import("stdlib");
 
@@ -16,7 +16,7 @@ matches:
     label: "🎩🍏 GET Environment Variable (Unicode Fix)"
   - replace: set theBrowser to (system attribute "browser")
     label: "🎩🍏 GET Environment Variable"
-  - trigger: "+sf"
+  - trigger: "!sf"
     replace: |
       #!/usr/bin/env osascript -l JavaScript
       ObjC.import("stdlib");
@@ -50,7 +50,7 @@ matches:
     label: "🎩🏝 Script Filter"
   - replace: tell application id "com.runningwithcrayons.Alfred" to remove configuration "ObRunning" in workflow (system attribute "alfred_workflow_bundleid")
     label: "🎩🍏 Remove Environment Variable"
-  - replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '+%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
+  - replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '!%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
     label: "🎩🐚 SET Environment Variable"
   - replace: |-
       function setEnvVar (envVar, newValue) {
@@ -80,19 +80,19 @@ matches:
   - trigger: qqq
     replace: '{query}'
     label: "🎩 {query}"
-  - $trigger: "+argv"
+  - $trigger: "!argv"
     replace: |
       on run argv
         set AppleScript's text item delimiters to ""
         set input to argv as string
       end run
     label: "🎩🍏 join argv"
-  - $trigger: "+argv"
+  - $trigger: "!argv"
     replace: |-
       function run (argv){
       	const input = argv.join('');
       }
     label: "🎩🏝 Join argv"
-  - $trigger: "+argv"
+  - $trigger: "!argv"
     replace: query="$*"
     label: "🎩🐚 Join argv"

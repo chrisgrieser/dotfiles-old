@@ -99,19 +99,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3773AE10-ACE2-4B7C-A99F-DB74EE7BC529</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EC61A880-CA73-4A94-AC7E-F19B8D604465</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<array>
 			<dict>
@@ -354,18 +341,7 @@
 			</dict>
 		</array>
 		<key>F50A3340-1794-4FC0-96A2-E9296E281E07</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3773AE10-ACE2-4B7C-A99F-DB74EE7BC529</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Chris Grieser</string>
@@ -915,46 +891,6 @@ dym --clean-output -n1 $LANG "$1"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>EC61A880-CA73-4A94-AC7E-F19B8D604465</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>3773AE10-ACE2-4B7C-A99F-DB74EE7BC529</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1172,6 +1108,8 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		</dict>
 		<key>34C37AD6-5DE1-4544-906A-60F7721B707D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
@@ -1185,15 +1123,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<integer>175</integer>
 			<key>ypos</key>
 			<integer>250</integer>
-		</dict>
-		<key>3773AE10-ACE2-4B7C-A99F-DB74EE7BC529</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>xpos</key>
-			<integer>425</integer>
-			<key>ypos</key>
-			<integer>705</integer>
 		</dict>
 		<key>3AE6DB0D-BD07-40F6-A1EF-680B99D57C84</key>
 		<dict>
@@ -1258,6 +1187,8 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		</dict>
 		<key>7A0733E8-D2BA-43C0-91A7-0C3A0FE29B54</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
@@ -1275,7 +1206,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>8DABE6A6-9E4F-427B-8DB6-C1AA54BE16A8</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>9</integer>
 			<key>xpos</key>
 			<integer>180</integer>
 			<key>ypos</key>
@@ -1387,17 +1318,6 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<integer>75</integer>
 		</dict>
-		<key>EC61A880-CA73-4A94-AC7E-F19B8D604465</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>6</integer>
-			<key>note</key>
-			<string>paste</string>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>675</integer>
-		</dict>
 		<key>EF402CBD-8784-45BE-9715-E3F97EDABA3D</key>
 		<dict>
 			<key>xpos</key>
@@ -1408,7 +1328,9 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>F50A3340-1794-4FC0-96A2-E9296E281E07</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>6</integer>
+			<integer>9</integer>
+			<key>note</key>
+			<string>did-you-mean-correction for word under cursor</string>
 			<key>xpos</key>
 			<integer>260</integer>
 			<key>ypos</key>

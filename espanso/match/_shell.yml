@@ -25,28 +25,28 @@ matches:
       	echo "short string is part of long string"
       fi
     label: 🐚 String Includes
-  - trigger: "+zsh"
+  - trigger: "!zsh"
     replace: "#!/usr/bin/env zsh\n"
     label: 🐚 zsh Shebang
-  - trigger: "+path"
+  - trigger: "!path"
     replace: "export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH"
     label: 🐚 PATH
   - replace: '[[ "$LONG_STRING" =~ "$SHORT_STRING" ]]'
     label: 🐚 String contains other string
-  - trigger: "+sed"
+  - trigger: "!sed"
     replace: "| sed 's/$|$//g' "
     label: 🐚 pipe to sed
-  - trigger: "+null"
+  - trigger: "!null"
     replace: "&> /dev/null"
     label: 🐚 dev/null
   - replace: 'system_profiler SPDisplaysDataType | grep -c "Resolution"'
     label: 🐚 Screen count
-  - trigger: "+resolve"
+  - trigger: "!resolve"
     replace: |
       resolved_path="${file_path/#~/$HOME}"
 
     label: '🐚 Resolve ~'
-  - trigger: "+hr"
+  - trigger: "!hr"
     replace: "#-------------------------------------------------------------------------------"
   - label: "🐚 Number of Displays (on macOS)"
     replace: "system_profiler SPDisplaysDataType | grep -c resolution"
