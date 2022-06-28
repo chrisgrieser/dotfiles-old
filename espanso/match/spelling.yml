@@ -26,43 +26,6 @@ matches:
           cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
           shell: bash
 
-  # Did you mean? → https://github.com/hisbaan/didyoumean
-  # append trigger character to a word and it will be replaced with autocorrection
-  # English: $
-  - regex: " (?P<word>\\w+)\\$"
-    replace: " {{dymSuggestion}}"
-    label: ""
-    vars:
-      - name: dymSuggestion
-        type: shell
-        params:
-          cmd: "dym --clean-output -n1 \"$ESPANSO_WORD\""
-  - regex: "\\r(?P<word>\\w+)\\$"
-    replace: "\n{{dymSuggestion}}"
-    label: ""
-    vars:
-      - name: dymSuggestion
-        type: shell
-        params:
-          cmd: "dym --clean-output -n1 \"$ESPANSO_WORD\""
-  # German: &
-  - regex: " (?P<word>\\w+)&"
-    replace: " {{dymSuggestion}}"
-    label: ""
-    vars:
-      - name: dymSuggestion
-        type: shell
-        params:
-          cmd: "dym --clean-output -n1 --lang=de \"$ESPANSO_WORD\""
-  - regex: "\\r(?P<word>\\w+)&"
-    replace: "\n{{dymSuggestion}}"
-    label: ""
-    vars:
-      - name: dymSuggestion
-        type: shell
-        params:
-          cmd: "dym --clean-output -n1 --lang=de \"$ESPANSO_WORD\""
-
   # ----------------------------------------------------------------------------
 
   - trigger: "I#d"
