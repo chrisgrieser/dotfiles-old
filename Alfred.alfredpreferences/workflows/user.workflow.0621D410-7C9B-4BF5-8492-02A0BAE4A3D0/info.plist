@@ -548,7 +548,7 @@ echo -n "$title"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>get-browser-url_[Browser].applescript</string>
+				<string>get-youtube-url_[Browser].applescript</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
