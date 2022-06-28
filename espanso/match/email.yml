@@ -4,9 +4,9 @@
 matches:
 
   # Greetings
-  - trigger: '!greet'
+  - triggers: ['!greet', "!sm"]
     replace: "Dear sir or madam,\n\n"
-  - trigger: '!greet'
+  - triggers: ['!greet', "!dh"]
     replace: "Sehr geehrte Damen und Herren,\n\n"
   - trigger: '!greet'
     replace: "Sehr geehrte $|$,\n\n"
