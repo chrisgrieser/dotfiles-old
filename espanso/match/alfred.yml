@@ -2,20 +2,78 @@
 # ------------------------------------------
 
 matches:
+
+  # !get
   - trigger: '!get'
     replace: |
       ObjC.import("stdlib");
 
       const VAR = $.getenv("$|$");
     label: "🎩🏝 GET Env Var"
-  - replace: >
+  - trigger: '!get'
+    replace: >
       const selected_tag = app.doShellScript ("echo '" + $.getenv("selected_tag")
       + "' | iconv -f UTF-8-MAC -t MACROMAN");
     label: "🎩🏝 GET Environment Variable (Unicode Fix)"
-  - replace: set bibtex_library_path to do shell script "echo " & quoted form of (system attribute "bibtex_library_path") & " | iconv -f UTF-8-MAC -t MACROMAN"
+  - trigger: "!get"
+    replace: set bibtex_library_path to do shell script "echo " & quoted form of (system attribute "bibtex_library_path") & " | iconv -f UTF-8-MAC -t MACROMAN"
     label: "🎩🍏 GET Environment Variable (Unicode Fix)"
-  - replace: set theBrowser to (system attribute "browser")
+  - trigger: "!get"
+    replace: set theBrowser to (system attribute "browser")
     label: "🎩🍏 GET Environment Variable"
+
+  # set
+  - trigger: "!set"
+    replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '!%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
+    label: "🎩🐚 SET Environment Variable"
+  - trigger: "!set"
+    replace: |-
+      function setEnvVar (envVar, newValue) {
+        Application("com.runningwithcrayons.Alfred")
+          .setConfiguration(envVar, {
+            toValue: newValue,
+            inWorkflow: $.getenv("alfred_workflow_bundleid"),
+            exportable: true
+          });
+      }
+    label: "🎩🏝 SET Environment Variable (function)"
+  - trigger: "!set"
+    replace: >
+      tell application id "com.runningwithcrayons.Alfred" to set configuration
+      "$|$" to value "foobar" in workflow (system attribute
+      "alfred_workflow_bundleid") with exportable
+    label: "🎩🍏 SET Environment Variable"
+  - trigger: "!set"
+    replace: |
+      ObjC.import('stdlib');
+
+      Application('com.runningwithcrayons.Alfred').setConfiguration
+        ('browser', {
+          toValue: '$|$',
+          inWorkflow: $.getenv('alfred_workflow_bundleid'),
+          exportable: false}
+        );
+    label: "🎩🏝 SET Environment Variable (one time)"
+
+    # argv
+  - trigger: "!argv"
+    replace: |
+      on run argv
+        set AppleScript's text item delimiters to ""
+        set input to argv as string
+      end run
+    label: "🎩🍏 join argv"
+  - trigger: "!argv"
+    replace: |-
+      function run (argv){
+      	const input = argv.join('');
+      }
+    label: "🎩🏝 Join argv"
+  - trigger: "!argv"
+    replace: query="$*"
+    label: "🎩🐚 Join argv"
+
+  # Misc
   - trigger: "!sf"
     replace: |
       #!/usr/bin/env osascript -l JavaScript
@@ -50,49 +108,6 @@ matches:
     label: "🎩🏝 Script Filter"
   - replace: tell application id "com.runningwithcrayons.Alfred" to remove configuration "ObRunning" in workflow (system attribute "alfred_workflow_bundleid")
     label: "🎩🍏 Remove Environment Variable"
-  - replace: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to set configuration "last_backup" to value "'"$(date '!%Y-%m-%d   %H:%M')"'" in workflow (system attribute "alfred_workflow_bundleid") '
-    label: "🎩🐚 SET Environment Variable"
-  - replace: |-
-      function setEnvVar (envVar, newValue) {
-      	Application("com.runningwithcrayons.Alfred")
-      		.setConfiguration(envVar, {
-      			toValue: newValue,
-      			inWorkflow: $.getenv("alfred_workflow_bundleid"),
-      			exportable: true
-      		});
-      }
-    label: "🎩🏝 SET Environment Variable"
-  - replace: >
-      tell application id "com.runningwithcrayons.Alfred" to set configuration
-      "$|$" to value "foobar" in workflow (system attribute
-      "alfred_workflow_bundleid") with exportable
-    label: "🎩🍏 SET Environment Variable"
-  - replace: |
-      ObjC.import('stdlib');
-
-      Application('com.runningwithcrayons.Alfred').setConfiguration
-       	('browser', {
-      		toValue: '$|$',
-      		inWorkflow: $.getenv('alfred_workflow_bundleid'),
-      		exportable: false}
-      	);
-    label: "🎩🏝 SET Environment Variable"
   - trigger: qqq
     replace: '{query}'
     label: "🎩 {query}"
-  - $trigger: "!argv"
-    replace: |
-      on run argv
-        set AppleScript's text item delimiters to ""
-        set input to argv as string
-      end run
-    label: "🎩🍏 join argv"
-  - $trigger: "!argv"
-    replace: |-
-      function run (argv){
-      	const input = argv.join('');
-      }
-    label: "🎩🏝 Join argv"
-  - $trigger: "!argv"
-    replace: query="$*"
-    label: "🎩🐚 Join argv"
