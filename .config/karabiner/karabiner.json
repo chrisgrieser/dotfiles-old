@@ -2690,7 +2690,7 @@
                                         }
                                     },
                                     {
-                                        "hold_down_milliseconds": 60,
+                                        "hold_down_milliseconds": 50,
                                         "key_code": "vk_none",
                                         "repeat": false
                                     },
