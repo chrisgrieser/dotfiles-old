@@ -307,7 +307,7 @@
 				<key>hotkey</key>
 				<integer>99</integer>
 				<key>hotmod</key>
-				<integer>8519680</integer>
+				<integer>8388608</integer>
 				<key>hotstring</key>
 				<string>F3</string>
 				<key>leftcursor</key>
