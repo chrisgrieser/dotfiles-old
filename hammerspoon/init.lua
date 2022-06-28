@@ -12,7 +12,7 @@ require("utils")
 --------------------------------------------------------------------------------
 
 -- Base
-require("scroll")
+require("scroll-and-cursor")
 require("menubar")
 require("system-states")
 require("window-management")

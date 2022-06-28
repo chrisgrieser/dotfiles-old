@@ -49,6 +49,22 @@ BraveBookmarks = os.getenv("HOME") .. "/Library/Application Support/BraveSoftwar
 bookmarkWatcher = hs.pathwatcher.new(BraveBookmarks, bookmarkSync)
 bookmarkWatcher:start()
 
+-- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action
+-- to trigger something else instead
+function hotcornerWatcher(appName, eventType)
+	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Notes") then
+			hs.application("Notes"):kill9()
+			hs.shortcuts.run("Keyboard on-screen")
+		end
+	end
+end
+hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
+hotcornerEmulation:start()
+
+--------------------------------------------------------------------------------
+-- File System Watchers
+
 -- Download Folder Badge
 function downloadFolderBadge ()
 	-- requires "fileicon" being installed
@@ -85,66 +101,21 @@ end
 downloadFolderWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Video/Downloaded", downloadFolderBadge)
 downloadFolderWatcher:start()
 
--- HOT CORNER Use "Quick Note" as Pseudo Hot Corner Action
--- to trigger something else instead
-function hotcornerWatcher(appName, eventType)
-	if (eventType == hs.application.watcher.activated) then
-		if (appName == "Notes") then
-			hs.application("Notes"):kill9()
-			hs.shortcuts.run("Keyboard on-screen")
-		end
-	end
-end
-hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
-hotcornerEmulation:start()
+-- Folder Redirects to File Hub
+home = os.getenv("HOME")
+targetFolder = home.."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
 
--- Move Scans to File Hub
-scanFolder = os.getenv("HOME").."/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents/"
-targetFolder = os.getenv("HOME").."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+scanFolder = home.."/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents/"
 function scanFolderMove()
 	hs.execute("mv '"..scanFolder.."'/* '"..targetFolder.."'")
 end
 scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
 scanFolderWatcher:start()
 
--- CURSOR HIDING
--- when Alacritty activates, hide cursor
--- when Brave activates and j or k is pressed for the first time, hide cursor
-function hidingCursor(key)
-	keystroke({}, key, 1, hs.application("Brave Browser"))
-	local screen = hs.mouse.getCurrentScreen()
-	local pos = {
-		x = screen:frame().w,
-		y = screen:frame().h * 0.75,
-	}
-	hs.mouse.setRelativePosition(pos, screen)
-	notify("cursor hidden")
-	jHidesCursor:disable() -- so it only works the first time
-	kHidesCursor:disable()
+systemDownloadFolder = home.."/Downloads/"
+function systemDlFolderMove()
+	hs.execute("mv '"..systemDownloadFolder.."'/* '"..targetFolder.."'")
 end
-jHidesCursor = hotkey({},"j", function() hidingCursor("J") end)
-kHidesCursor = hotkey({},"k", function() hidingCursor("K") end)
-jHidesCursor:disable()
-kHidesCursor:disable()
+systemDlFolderWatcher = hs.pathwatcher.new(systemDownloadFolder, systemDlFolderMove)
+systemDlFolderWatcher:start()
 
-function jkWatcher(appName, eventType)
-	if (eventType == hs.application.watcher.activated) then
-		if (appName == "Brave Browser") then
-			jHidesCursor:enable()
-			kHidesCursor:enable()
-		else
-			jHidesCursor:disable()
-			kHidesCursor:disable()
-		end
-		if (appName:lower() == "alacritty") then
-			local screen = hs.mouse.getCurrentScreen()
-			local pos = {
-				x = screen:frame().w,
-				y = screen:frame().h * 0.75,
-			}
-			hs.mouse.setRelativePosition(pos, screen)
-		end
-	end
-end
-jk_watcher = hs.application.watcher.new(jkWatcher)
-jk_watcher:start()
