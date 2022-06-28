@@ -140,6 +140,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A253620F-FFA6-4E80-8C60-CE220D4D50DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98959A8A-01E4-411D-93B6-00D953F6B889</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C0DA5B2B-624A-4F09-956B-68158231988A</key>
 		<array>
 			<dict>
@@ -324,8 +337,6 @@ end tell</string>
 				<string></string>
 				<key>url</key>
 				<string></string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -486,8 +497,6 @@ end tell</string>
 
 Viele Grüße
 Chris</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -687,6 +696,62 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>29</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>0</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.mimestream.Mimestream</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A253620F-FFA6-4E80-8C60-CE220D4D50DD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>t</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>98959A8A-01E4-411D-93B6-00D953F6B889</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>label:newsletter has:attachment</string>
 				<key>passthroughargument</key>
@@ -731,8 +796,6 @@ end tell</string>
 				<string></string>
 				<key>url</key>
 				<string>https://mail.google.com/mail/u/0/#snoozed</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -792,8 +855,6 @@ end tell</string>
 				<string></string>
 				<key>url</key>
 				<string>https://mail.google.com/mail/u/0/#settings/filters</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -833,45 +894,45 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>860</integer>
+			<real>860</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>1A2A5FF6-BADA-4BD7-AE6D-765E6891E0A6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<real>190</real>
 			<key>ypos</key>
-			<integer>955</integer>
+			<real>955</real>
 		</dict>
 		<key>436E6838-C21C-4927-B4B9-D7CCB67587DE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>955</integer>
+			<real>955</real>
 		</dict>
 		<key>47528376-3FAB-4282-8213-DC8E45C19F7B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>715</integer>
+			<real>715</real>
 		</dict>
 		<key>4D67ED53-EADE-458A-B761-7F5070BEABA6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>190</integer>
+			<real>190</real>
 			<key>ypos</key>
-			<integer>600</integer>
+			<real>600</real>
 		</dict>
 		<key>50B66C20-4163-4A8A-A8C9-AFC175AEA52D</key>
 		<dict>
@@ -880,18 +941,18 @@ end tell</string>
 			<key>note</key>
 			<string>search query in Mimestream</string>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>450</integer>
+			<real>450</real>
 		</dict>
 		<key>53396461-6F23-4C54-8552-A49A69ED0854</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>930</integer>
+			<real>930</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>5BD7290A-4D3C-4A41-A4D4-668385E514AB</key>
 		<dict>
@@ -900,9 +961,9 @@ end tell</string>
 			<key>note</key>
 			<string>Mail the current Browser Tab</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>15</integer>
+			<real>15</real>
 		</dict>
 		<key>5F4417F9-1E15-4514-8C37-FEBEE68D292A</key>
 		<dict>
@@ -911,27 +972,27 @@ end tell</string>
 			<key>note</key>
 			<string>Mail the current Browser Tab</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>69E45CE7-99B7-48A7-971A-A5DC960D59F1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>600</integer>
+			<real>600</real>
 		</dict>
 		<key>7613AED8-E386-43CC-827A-45FEB206FD74</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>830</integer>
+			<real>830</real>
 		</dict>
 		<key>76796A9D-1159-4E3C-8670-7D341A35351D</key>
 		<dict>
@@ -940,27 +1001,27 @@ end tell</string>
 			<key>note</key>
 			<string>copy Gmail link</string>
 			<key>xpos</key>
-			<integer>550</integer>
+			<real>550</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>8A5B08EE-864A-4668-98C6-D4F8E9A56580</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>720</integer>
+			<real>720</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>919C67AD-F9F2-4691-A835-0E3807CABF9F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<real>395</real>
 			<key>ypos</key>
-			<integer>15</integer>
+			<real>15</real>
 		</dict>
 		<key>95028977-E511-4F96-8A31-8A1EA3939515</key>
 		<dict>
@@ -969,18 +1030,25 @@ end tell</string>
 			<key>note</key>
 			<string>has extra rows below (arrow down to scroll down)</string>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>9577CE61-7D83-4CFB-8A73-725A73FF6DE3</key>
 		<dict>
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>550</integer>
+			<real>550</real>
 			<key>ypos</key>
-			<integer>315</integer>
+			<real>315</real>
+		</dict>
+		<key>98959A8A-01E4-411D-93B6-00D953F6B889</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>460</real>
 		</dict>
 		<key>9BF84B32-0217-4A0F-9F75-E541FFDA268D</key>
 		<dict>
@@ -989,9 +1057,18 @@ end tell</string>
 			<key>note</key>
 			<string>Search Mail</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>315</integer>
+			<real>315</real>
+		</dict>
+		<key>A253620F-FFA6-4E80-8C60-CE220D4D50DD</key>
+		<dict>
+			<key>note</key>
+			<string>toggle sidebar</string>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>460</real>
 		</dict>
 		<key>C0DA5B2B-624A-4F09-956B-68158231988A</key>
 		<dict>
@@ -1000,18 +1077,18 @@ end tell</string>
 			<key>note</key>
 			<string>Newsletter with attachments</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>450</integer>
+			<real>450</real>
 		</dict>
 		<key>C9AE1538-F1F2-4507-B205-4C90E7503DC3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>720</integer>
+			<real>720</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>CE7614ED-D40C-491F-9512-567F3BDB68C0</key>
 		<dict>
@@ -1020,45 +1097,47 @@ end tell</string>
 			<key>note</key>
 			<string>open in Gmail</string>
 			<key>xpos</key>
-			<integer>550</integer>
+			<real>550</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>DA6F5742-B25C-4044-A613-90AFAA7C559F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>200</integer>
+			<real>200</real>
 			<key>ypos</key>
-			<integer>480</integer>
+			<real>480</real>
 		</dict>
 		<key>E076428F-6694-4CAF-B669-ADE646F328F7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>725</integer>
+			<real>725</real>
 			<key>ypos</key>
-			<integer>315</integer>
+			<real>315</real>
 		</dict>
 		<key>F1646853-4BE7-44BE-985F-9282246BAFCA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>45</integer>
+			<real>45</real>
 		</dict>
 		<key>F48BFF3F-8FB4-4AB7-898D-6636EC60112C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>15</integer>
+			<real>15</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>
