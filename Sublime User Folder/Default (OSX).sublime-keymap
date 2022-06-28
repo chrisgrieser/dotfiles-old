@@ -228,7 +228,9 @@
 
 	// CUSTOM PLUGINS
 	{ "keys": ["ctrl+n"], "command": "copy_filename" },
-	{ "keys": ["cmd+i"], "command": "important_switcher" },
+	{ "keys": ["super+i"], "command": "important_switcher", "context": [
+		{ "key": "selector", "operator": "equal", "operand": "source.css" }
+	] },
 
 	// TERMINUS
 	// Terminus: Open a terminal panel at current file directory
