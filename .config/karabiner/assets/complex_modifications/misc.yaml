@@ -1,11 +1,11 @@
 title: Ⓜ️ Misc
-version: "1.1"
+version: "2.1"
 maintainers:
   - pseudometa
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/misc.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
-  - description: "§ → | (+ US Layout)"
+  - description: "Ⓜ️ § → | (+ US Layout); ⌥3 for Paragraph Symbol"
     manipulators:
       - type: basic
         from:
@@ -23,6 +23,23 @@ rules:
           - key_code: vk_none
             hold_down_milliseconds: 20
           - key_code: non_us_pound
+            modifiers:
+              - shift
+        to_after_key_up:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
+      - type: basic
+        from:
+          key_code: "3"
+          modifiers:
+            mandatory:
+              - option
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - key_code: "3"
             modifiers:
               - shift
   - description: "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)"

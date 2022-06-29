@@ -9,11 +9,10 @@ const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 const jsonArray = [];
 const folderToSearch = $.getenv("folderToSearch");
 
-
 /* eslint-disable no-multi-str */
 const repoArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \
 	cd \"" + folderToSearch + "\" ; \
-	fd --max-depth=4 --absolute-path --hidden --exclude \"/.git/*\"")
+	fd --absolute-path --hidden --exclude \"/.git/*\"")
 	.split("\r")
 	.map(fPath => {
 		const parts = fPath.split("/");

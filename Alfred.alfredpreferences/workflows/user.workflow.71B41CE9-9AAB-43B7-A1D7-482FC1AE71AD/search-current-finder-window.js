@@ -22,7 +22,7 @@ else {
 /* eslint-disable no-multi-str */
 const repoArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \
 	cd \"" + folderToSearch + "\" ; \
-	fd --max-depth=4 --absolute-path --hidden --exclude \"/.git/*\"")
+	fd --max-depth=2 --absolute-path --hidden --exclude \"/.git/*\"")
 	.split("\r")
 	.map(fPath => {
 		const parts = fPath.split("/");
