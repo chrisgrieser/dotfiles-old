@@ -6,6 +6,18 @@ function numberOfScreens()
 	return #(hs.screen.allScreens())
 end
 
+function isIMacAtHome ()
+	return hs.screen.primaryScreen():name() == "Built-in Retina Display"
+end
+
+function isProjector()
+	return hs.screen.primaryScreen():name() == "ViewSonic PJ"
+end
+
+function isAtOffice()
+	return hs.screen.primaryScreen():name() == "blubb"
+end
+
 function notify (text)
 	hs.notify.new({title="Hammerspoon", informativeText=text}):send()
 end

@@ -103,19 +103,26 @@ downloadFolderWatcher:start()
 
 -- Folder Redirects to File Hub
 home = os.getenv("HOME")
-targetFolder = home.."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+fileHub = home.."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
 
 scanFolder = home.."/Library/Mobile Documents/iCloud~com~geniussoftware~GeniusScan/Documents/"
 function scanFolderMove()
-	hs.execute("mv '"..scanFolder.."'/* '"..targetFolder.."'")
+	hs.execute("mv '"..scanFolder.."'/* '"..fileHub.."'")
 end
 scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
 scanFolderWatcher:start()
 
 systemDownloadFolder = home.."/Downloads/"
 function systemDlFolderMove()
-	hs.execute("mv '"..systemDownloadFolder.."'/* '"..targetFolder.."'")
+	hs.execute("mv '"..systemDownloadFolder.."'/* '"..fileHub.."'")
 end
 systemDlFolderWatcher = hs.pathwatcher.new(systemDownloadFolder, systemDlFolderMove)
 systemDlFolderWatcher:start()
 
+function autoRemove()
+	hs.execute("mv '"..scanFolder.."'/* '"..fileHub.."'")
+end
+scanFolderWatcher = hs.pathwatcher.new(scanFolder, scanFolderMove)
+scanFolderWatcher:start()
+
+-- Update.Automation.Tasks.alfredworkflow

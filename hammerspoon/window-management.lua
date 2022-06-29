@@ -111,10 +111,11 @@ function movieModeLayout()
 	hs.application("Mimestream"):kill9()
 	hs.application("Obsidian"):kill9()
 end
-function homeModeLayout ()
-	if numberOfScreens() > 1 then return end
 
+function homeModeLayout ()
 	local screen = hs.screen.primaryScreen():name()
+	if screen:name() ~= "Built-in Retina Display" then return end
+
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
 
@@ -143,12 +144,9 @@ function homeModeLayout ()
 end
 
 function displayCountWatcher()
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
-	local isIMacAtHome = hs.screen.primaryScreen():name() == "Built-in Retina Display"
-
-	if (isProjector) then
+	if (isProjector()) then
 		movieModeLayout()
-	elseif (isIMacAtHome) then
+	elseif (isIMacAtHome()) then
 		homeModeLayout()
 	end
 end
@@ -164,7 +162,6 @@ end
 
 -- Open windows always on the screen where the mouse is
 function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
-	local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 	if numberOfScreens() == 1 then return end
 
 	if (eventType == hs.application.watcher.launched) then
@@ -173,7 +170,7 @@ function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)
 		end)
-	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector) then
+	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector()) then
 		runDelayed(0.5, function ()
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)

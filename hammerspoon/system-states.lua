@@ -29,5 +29,7 @@ wakeWatcher:start()
 
 hs.timer.doAt("06:10", "01d", function()
 	systemWake()
+	if not(isIMacAtHome()) then return end
+
 	hs.execute("echo Hammer-Morning\\ $(date '+%Y-%m-%d %H:%M') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/some.log'")
 end, false)
