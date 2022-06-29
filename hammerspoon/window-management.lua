@@ -3,6 +3,7 @@ require("utils")
 -- active window highlight
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
+	if (not isAtOffice()) then return end
 
 	if (eventType == hs.application.watcher.activated) then
 		-- Delete an existing highlight if it exists
@@ -17,7 +18,7 @@ function activeWindowHighlight(appName, eventType)
 		rect = hs.drawing.rectangle(f)
 		rect:setStrokeWidth(10)
 		rect:setFill(false)
-		rect:setStrokeColor(hs.drawing.color.blue)
+		rect:setStrokeColor(hs.drawing.color.green)
 		rect:show()
 
 		rectTimer = runDelayed(3, function()
