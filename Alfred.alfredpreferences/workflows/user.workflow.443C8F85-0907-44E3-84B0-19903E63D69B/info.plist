@@ -1121,6 +1121,8 @@ end tell</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
+			<key>note</key>
+			<string>remove \n</string>
 			<key>xpos</key>
 			<real>330</real>
 			<key>ypos</key>

@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0F419F51-49BF-4371-A05D-1861B445EB9A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
 		<array>
 			<dict>
@@ -371,8 +384,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://ke-complex-modifications.pqrs.org/?q={query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -497,8 +508,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://hub.espanso.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -625,8 +634,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -688,8 +695,6 @@
 				<string></string>
 				<key>url</key>
 				<string>https://www.hammerspoon.org/docs/{query}.html</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -747,11 +752,58 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>org.hammerspoon.Hammerspoon</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔄 Reload Hammerspoon</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0F419F51-49BF-4371-A05D-1861B445EB9A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>00E1C296-297E-4388-8A37-AE4C1500B06A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>760</real>
+		</dict>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<dict>
 			<key>colorindex</key>
@@ -759,18 +811,29 @@
 			<key>note</key>
 			<string>Quit Event Viewer via Hotkey</string>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
+		</dict>
+		<key>0F419F51-49BF-4371-A05D-1861B445EB9A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>reload</string>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>760</real>
 		</dict>
 		<key>146B762A-3BFD-4073-8111-EB3BDFFF45A1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
 		<dict>
@@ -779,27 +842,27 @@
 			<key>note</key>
 			<string>restart</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>430</real>
 		</dict>
 		<key>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>830</integer>
+			<real>830</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>2381FD05-8DB5-4B75-9D6A-36329E668C7F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>210</integer>
+			<real>210</real>
 		</dict>
 		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
 		<dict>
@@ -808,18 +871,18 @@
 			<key>note</key>
 			<string>toggle</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>4F748E27-E0FA-42A5-9B83-B58EF498DC15</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>620</integer>
+			<real>620</real>
 		</dict>
 		<key>5BC37881-96AE-4CD8-9E96-66DD1D350534</key>
 		<dict>
@@ -828,18 +891,18 @@
 			<key>note</key>
 			<string>toggle</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>20</integer>
+			<real>20</real>
 		</dict>
 		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>290</real>
 		</dict>
 		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
 		<dict>
@@ -848,9 +911,9 @@
 			<key>note</key>
 			<string>search docs</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
 		<dict>
@@ -859,9 +922,9 @@
 			<key>note</key>
 			<string>search docs</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>20</integer>
+			<real>20</real>
 		</dict>
 		<key>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</key>
 		<dict>
@@ -870,9 +933,9 @@
 			<key>note</key>
 			<string>reload</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
@@ -881,27 +944,27 @@
 			<key>note</key>
 			<string>docs</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>620</integer>
+			<real>620</real>
 		</dict>
 		<key>CC783FA2-6152-4E62-A1DB-94389B082D8D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>20</integer>
+			<real>20</real>
 		</dict>
 		<key>CF8FBA0E-7BB8-46F0-9240-13ACB11C3D74</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>D30F0EEE-401B-4EEA-A5D0-D6B0708D99F1</key>
 		<dict>
@@ -910,27 +973,27 @@
 			<key>note</key>
 			<string>search mods</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>D3974054-9922-4818-AE19-FABCBBA70011</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>E4228D09-E638-47E2-BE09-CF8DEAB4A1DC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<real>175</real>
 			<key>ypos</key>
-			<integer>620</integer>
+			<real>620</real>
 		</dict>
 		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
 		<dict>
@@ -939,9 +1002,9 @@
 			<key>note</key>
 			<string>restart</string>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>620</integer>
+			<real>620</real>
 		</dict>
 		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
 		<dict>
@@ -950,38 +1013,40 @@
 			<key>note</key>
 			<string>search packages</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>290</real>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>20</integer>
+			<real>20</real>
 		</dict>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>430</real>
 		</dict>
 		<key>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string>https://chris-grieser.de/</string>
 </dict>

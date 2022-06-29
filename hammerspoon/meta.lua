@@ -18,7 +18,7 @@ end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
 
-
+hs.urlevent.bind("hs-reload", function() hs.reload() end)
 
 --------------------------------------------------------------------------------
 -- CONSOLE
