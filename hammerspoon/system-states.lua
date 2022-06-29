@@ -6,13 +6,12 @@ function systemWake (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 
 		reloadAllMenubarItems()
-		homeWindowLayout()
+		homeModeLayout()
 		hs.shortcuts.run("Send Reminders due today to Drafts")
-		-- hs.brightness.set(50)
 
-		-- run darkmode toggle between 6:00 and 18:00
+		-- run darkmode toggle between 6:00 and 19:00
 		local timeHours = hs.timer.localTime() / 60 / 60
-		if timeHours < 18 and timeHours > 6 then
+		if timeHours < 19 and timeHours > 6 then
 			hs.applescript ([[
 				tell application "System Events"
 					tell appearance preferences
