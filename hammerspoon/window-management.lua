@@ -130,7 +130,7 @@ end
 -- LAYOUTS & DISPLAYS
 
 function movieModeLayout()
-	if numberOfScreens() == 1 then return end
+	if not(isProjector()) then return end
 	local iMacDisplay = hs.screen.allScreens()[2]
 	iMacDisplay:setBrightness(0)
 
@@ -178,6 +178,33 @@ function homeModeLayout ()
 	}
 	hs.layout.apply(homeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
+end
+
+function officeModeLayout ()
+	if not(isAtOffice()) then return end
+	local screen1 = hs.screen.allScreens()[1]
+	local screen2 = hs.screen.allScreens()[2]
+
+	local maximized = hs.layout.maximized
+	local top = {x=0, y=0, w=1, h=0.5}
+	local bottom = {x=0, y=0.5, w=1, h=0.5}
+
+	local officeLayout = {
+		{"Tweeten", nil, screen2, top, nil, nil},
+		{"Slack", nil, screen2, bottom, nil, nil},
+		{"Discord", nil, screen2, bottom, nil, nil},
+
+		{"Brave Browser", nil, screen1, maximized, nil, nil},
+		{"Sublime Text", nil, screen1, maximized, nil, nil},
+		{"Obsidian", nil, screen1, maximized, nil, nil},
+		{"Drafts", nil, screen1, maximized, nil, nil},
+		{"Mimestream", nil, screen1, maximized, nil, nil},
+		{"alacritty", nil, screen1, maximized, nil, nil},
+		{"Alacritty", nil, screen1, maximized, nil, nil},
+	}
+
+	hs.layout.apply(officeLayout)
+	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
 end
 
 function displayCountWatcher()
@@ -295,9 +322,16 @@ hotkey(hyper, "Down", function() moveAndResize("down") end)
 hotkey(hyper, "Right", function() moveAndResize("right") end)
 hotkey(hyper, "Left", function() moveAndResize("left") end)
 hotkey(hyper, "Space", function() moveAndResize("maximized") end)
-hotkey(hyper, "home", homeModeLayout)
 hotkey(hyper, "pagedown", moveToOtherDisplay)
 hotkey(hyper, "pageup", moveToOtherDisplay)
+
+hotkey(hyper, "home", function()
+	if isAtOffice() then
+		officeModeLayout()
+	else
+		homeModeLayout()
+	end
+end)
 
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
