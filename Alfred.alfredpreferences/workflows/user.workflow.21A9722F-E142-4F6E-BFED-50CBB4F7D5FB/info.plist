@@ -129,19 +129,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A77F6073-1BB7-43C2-949B-216A52B8B0CF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>AB2FC894-EB25-4C16-B958-43863871807B</key>
 		<array>
 			<dict>
@@ -159,7 +146,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
+				<string>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -377,13 +364,17 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "Alfred Preferences" to quitdo shell script "killall -KILL Alfred"</string>
+				<string>osascript -e 'tell application "Alfred Preferences" to quit'
+
+killall "Alfred Preferences"killall -KILL Alfred
+
+open -R /Applications/Alfred*.app</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -391,19 +382,6 @@
 			<string>D81F901E-8EAB-4D27-B7F2-CB2C26893AEF</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>/Applications/Alfred 4.app</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>A77F6073-1BB7-43C2-949B-216A52B8B0CF</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -897,15 +875,6 @@ echo "$backup"</string>
 			<key>ypos</key>
 			<real>920</real>
 		</dict>
-		<key>A77F6073-1BB7-43C2-949B-216A52B8B0CF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<real>185</real>
-			<key>ypos</key>
-			<real>310</real>
-		</dict>
 		<key>AB2FC894-EB25-4C16-B958-43863871807B</key>
 		<dict>
 			<key>colorindex</key>
@@ -958,7 +927,7 @@ echo "$backup"</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>325</real>
+			<real>195</real>
 			<key>ypos</key>
 			<real>310</real>
 		</dict>
