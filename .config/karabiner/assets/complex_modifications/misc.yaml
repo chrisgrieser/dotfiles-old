@@ -5,6 +5,26 @@ maintainers:
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/misc.json
 homepage: https://github.com/chrisgrieser/dotfiles/karabiner
 rules:
+  - description: "§ → | (+ US Layout)"
+    manipulators:
+      - type: basic
+        from:
+          key_code: "3"
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.US$
+          - key_code: vk_none
+            hold_down_milliseconds: 20
+          - key_code: non_us_pound
+            modifiers:
+              - shift
   - description: "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)"
     manipulators:
       - description: backtick
