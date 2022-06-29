@@ -18,6 +18,7 @@ end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
 
+--hammerspoon://hs-reload for reloading via Alfred
 hs.urlevent.bind("hs-reload", function() hs.reload() end)
 
 --------------------------------------------------------------------------------
