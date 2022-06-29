@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
-hs.window.highlight.ui.overlay=true
+hs.window.highlight.ui.flashDuration=0.3
 
 --------------------------------------------------------------------------------
 -- Hammerspoon itself & Helper Utilities
