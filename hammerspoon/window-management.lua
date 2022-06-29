@@ -200,7 +200,6 @@ function officeModeLayout ()
 		{"Drafts", nil, screen1, maximized, nil, nil},
 		{"Mimestream", nil, screen1, maximized, nil, nil},
 		{"alacritty", nil, screen1, maximized, nil, nil},
-		{"Alacritty", nil, screen1, maximized, nil, nil},
 	}
 
 	hs.layout.apply(officeLayout)

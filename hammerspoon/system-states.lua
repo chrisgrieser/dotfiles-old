@@ -6,7 +6,7 @@ function systemWake (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 
 		reloadAllMenubarItems()
-		homeModeLayout()
+		if isIMacAtHome() then homeModeLayout() end
 		hs.shortcuts.run("Send Reminders due today to Drafts")
 
 		-- run darkmode toggle between 6:00 and 19:00
@@ -26,6 +26,7 @@ end
 wakeWatcher = hs.caffeinate.watcher.new(systemWake)
 wakeWatcher:start()
 
+-- redundancy
 hs.timer.doAt("06:10", "01d", function()
 	systemWake()
 	if not(isIMacAtHome()) then return end

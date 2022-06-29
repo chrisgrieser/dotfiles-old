@@ -305,3 +305,17 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^org\.hammerspoon\.Hammerspoon$
+  - description: "Ⓜ️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9"
+    manipulators:
+      - type: basic
+        from:
+          key_code: "1"
+          modifiers:
+            mandatory:
+              - command
+        to:
+          - key_code: "1"
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^com\.runningwithcrayons\.Alfred$
