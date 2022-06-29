@@ -113,8 +113,7 @@ function movieModeLayout()
 end
 
 function homeModeLayout ()
-	local screen = hs.screen.primaryScreen():name()
-	if screen:name() ~= "Built-in Retina Display" then return end
+	if not(isIMacAtHome()) then return end
 
 	local pseudoMaximized = {x=0, y=0, w=0.815, h=1}
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
@@ -127,6 +126,7 @@ function homeModeLayout ()
 	hs.application.open("Twitterrific")
 	hs.application.open("Drafts")
 
+	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
 		{"Twitterrific", nil, screen, toTheSide, nil, nil},
 		{"Brave Browser", nil, screen, pseudoMaximized, nil, nil},
