@@ -16,6 +16,7 @@ require("scroll-and-cursor")
 require("menubar")
 require("system-states")
 require("window-management")
+require("filesystem-watchers")
 
 -- app-specific
 require("watchers")

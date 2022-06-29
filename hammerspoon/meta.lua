@@ -18,6 +18,8 @@ end
 configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
 configWatcher:start()
 
+
+
 --------------------------------------------------------------------------------
 -- CONSOLE
 -- https://www.hammerspoon.org/docs/hs.console.html#getHistory

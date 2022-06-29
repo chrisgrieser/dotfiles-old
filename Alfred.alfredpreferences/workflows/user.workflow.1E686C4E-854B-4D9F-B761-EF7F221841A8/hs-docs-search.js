@@ -6,10 +6,9 @@ const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 
 const workArray = JSON.parse(app.doShellScript('curl -s "https://api.github.com/repos/Hammerspoon/hammerspoon.github.io/git/trees/master?recursive=1"'))
 	.tree
-	.map(item => item.path)
-	.filter(file => file.startsWith("docs/hs"))
-	.map(item => {
-		const subsite = item.slice(5, -5); // remove "/docs" and ".html"
+	.filter(file => file.path.startsWith("docs/hs"))
+	.map(file => {
+		const subsite = file.path.slice(5, -5); // remove "/docs" and ".html"
 		return {
 			"title": subsite,
 			"match": alfredMatcher (subsite),
