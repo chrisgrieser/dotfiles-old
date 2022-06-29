@@ -3,7 +3,6 @@
 --------------------------------------------------------------------------------
 
 hs.window.animationDuration = 0
-hs.window.highlight.ui.flashDuration=0.3
 
 --------------------------------------------------------------------------------
 -- Hammerspoon itself & Helper Utilities
@@ -22,7 +21,9 @@ require("filesystem-watchers")
 -- app-specific
 require("watchers")
 require("discord")
-require("twitterrific-iina")
+if not(isAtOffice()) then
+	require("twitterrific-iina")
+end
 
 --------------------------------------------------------------------------------
 -- https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md

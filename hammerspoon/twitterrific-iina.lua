@@ -1,5 +1,7 @@
 require("utils")
 
+-- ℹ️ this file only runs when not at the office
+
 function twitterrificScrollUp ()
 	-- needs activation, cause sending to app in bg does not work with cmd key
 	local previousApp = hs.application.frontmostApplication():name()

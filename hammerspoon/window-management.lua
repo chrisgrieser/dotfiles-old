@@ -16,7 +16,7 @@ function activeWindowHighlight(appName, eventType)
 
 		local f = hs.window.focusedWindow():frame()
 		rect = hs.drawing.rectangle(f)
-		rect:setStrokeWidth(10)
+		rect:setStrokeWidth(7)
 		rect:setFill(false)
 		rect:setStrokeColor(hs.drawing.color.green)
 		rect:show()
