@@ -81,7 +81,6 @@ function hidingCursor(key)
 		y = screen:frame().h * 0.75,
 	}
 	hs.mouse.setRelativePosition(pos, screen)
-	notify("cursor hidden")
 	jHidesCursor:disable() -- so it only works the first time
 	kHidesCursor:disable()
 end
