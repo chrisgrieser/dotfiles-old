@@ -1381,7 +1381,7 @@
                                         "software_function": {
                                             "set_mouse_cursor_position": {
                                                 "screen": 0,
-                                                "x": "100%",
+                                                "x": "99%",
                                                 "y": "75%"
                                             }
                                         }

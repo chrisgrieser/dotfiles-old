@@ -53,7 +53,7 @@ rules:
             hold_down_milliseconds: 15
           - software_function:
               set_mouse_cursor_position:
-                x: 100%
+                x: 99%
                 y: 75%
                 screen: 0
   - description: "⚒️ {}@^~|: German to US layout"

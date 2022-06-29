@@ -106,7 +106,7 @@
             {
               "software_function": {
                 "set_mouse_cursor_position": {
-                  "x": "100%",
+                  "x": "99%",
                   "y": "75%",
                   "screen": 0
                 }
