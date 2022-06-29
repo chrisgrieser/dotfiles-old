@@ -15,8 +15,8 @@ end if")
 
 DEVICE_NAME=$(scutil --get ComputerName)
 if [[ "$DEVICE_NAME" =~ "Mac mini" ]] ; then
-	# shorter width of alacritty window
-	nohup alacritty --option=window.dimensions.columns=94 --working-directory="$WD" &
+	# wider width of alacritty window on work computer
+	nohup alacritty --option=window.dimensions.columns=99 --option=window.padding.x=8 --working-directory="$WD" &
 elif [[ "$DEVICE_NAME" =~ "iMac" ]] ; then
 	nohup alacritty --working-directory="$WD" &
 else
