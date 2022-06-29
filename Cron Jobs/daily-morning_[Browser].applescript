@@ -28,10 +28,6 @@ tell application "System Events"
 	end tell
 end tell
 
-# REMINDERS TO DRAFTS
-# (redundancy with iOS for safety)
-do shell script "shortcuts run \"Send Reminders due today to Drafts\""
-
 # BUSYCAL RESTART
 # to ensure menubar icon is there
 tell application "Busycal"

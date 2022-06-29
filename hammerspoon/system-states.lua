@@ -2,7 +2,7 @@ require("menubar")
 require("utils")
 require("window-management")
 
-function systemWakeWatcher (eventType)
+function systemWake (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 
 		reloadAllMenubarItems()
@@ -24,5 +24,10 @@ function systemWakeWatcher (eventType)
 
 	end
 end
-wakeWatcher = hs.caffeinate.watcher.new(systemWakeWatcher)
+wakeWatcher = hs.caffeinate.watcher.new(systemWake)
 wakeWatcher:start()
+
+hs.timer.doAt("06:10", "01d", function()
+	systemWake()
+	hs.execute("echo Hammer-Morning\\ $(date '+%Y-%m-%d %H:%M') >> '/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Cron Jobs/some.log'")
+end, false)
