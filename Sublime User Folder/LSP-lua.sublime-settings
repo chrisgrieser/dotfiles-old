@@ -13,7 +13,10 @@
 			"frontapp",
 			"hotkey",
 			"hyper",
+			"isIMacAtHome",
+			"isIMacAtHome",
 			"numberOfScreens",
+			"isProjector",
 		],
       "Lua.diagnostics.disable": ["lowercase-global"],
 	}

@@ -112,6 +112,8 @@ function movieModeLayout()
 	hs.application("Alfred Preferences"):kill9()
 	hs.application("Sublime Text"):kill9()
 	hs.application("Obsidian"):kill9()
+	hs.application("alacritty"):kill9()
+	hs.application("Alacritty"):kill9()
 end
 
 function homeModeLayout ()
@@ -127,6 +129,8 @@ function homeModeLayout ()
 	hs.application.open("Obsidian")
 	hs.application.open("Twitterrific")
 	hs.application.open("Drafts")
+
+	hs.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
 
 	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
