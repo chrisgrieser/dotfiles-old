@@ -1,9 +1,20 @@
 require("utils")
+--------------------------------------------------------------------------------
+-- active window highlight
+function activeWindowHighlight()
+	f = hs.window.focusedWindow():frame()
+	rect = hs.drawing.rectangle(f)
+	rect:setStrokeWidth(5)
+	rect:setFill(false)
+	rect:setStrokeColor(hs.drawing.color.blue)
+	rect:show()
+end
+
 
 --------------------------------------------------------------------------------
 
 -- app-only Window Switchers
---https://www.hammerspoon.org/docs/hs.window.switcher.html
+-- https://www.hammerspoon.org/docs/hs.window.switcher.html
 finderWindowSwitcher = hs.window.switcher.new{"Finder"}
 browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
 mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
