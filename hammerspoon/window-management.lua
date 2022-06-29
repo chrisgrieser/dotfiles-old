@@ -109,6 +109,8 @@ function movieModeLayout()
 	hs.application("Slack"):kill9()
 	hs.application("Discord"):kill9()
 	hs.application("Mimestream"):kill9()
+	hs.application("Alfred Preferences"):kill9()
+	hs.application("Sublime Text"):kill9()
 	hs.application("Obsidian"):kill9()
 end
 
