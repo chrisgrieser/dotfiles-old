@@ -41,7 +41,7 @@ function bttBridge (triggerName)
 end
 
 function runDelayed (delaySecs, fn)
-	hs.timer.delayed.new(delaySecs, function () fn() end):start()
+	hs.timer.doAfter(delaySecs, function () fn() end)
 end
 
 

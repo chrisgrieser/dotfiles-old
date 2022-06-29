@@ -5,19 +5,30 @@ function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
 
 	if (eventType == hs.application.watcher.activated) then
-		if rect then rect:delete() end
-		f = hs.window.focusedWindow():frame()
+		-- Delete an existing highlight if it exists
+		if rect then
+			rect:delete()
+			if rectTimer then
+				rectTimer:stop()
+			end
+		end
+
+		local f = hs.window.focusedWindow():frame()
 		rect = hs.drawing.rectangle(f)
-		rect:setStrokeWidth(5)
+		rect:setStrokeWidth(10)
 		rect:setFill(false)
 		rect:setStrokeColor(hs.drawing.color.blue)
 		rect:show()
+
+		rectTimer = runDelayed(3, function()
+			rect:delete()
+			rect = nil
+		end)
+
 	end
 end
 appActivationWatcher = hs.application.watcher.new(activeWindowHighlight)
 appActivationWatcher:start()
-windowChangeWatcher = hs.application.watcher.new(activeWindowHighlight)
-windowChangeWatcher:start()
 
 --------------------------------------------------------------------------------
 -- app-only Window Switchers
