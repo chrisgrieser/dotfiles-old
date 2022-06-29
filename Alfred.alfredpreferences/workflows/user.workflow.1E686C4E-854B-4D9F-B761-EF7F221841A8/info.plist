@@ -715,7 +715,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -743,7 +743,7 @@
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>

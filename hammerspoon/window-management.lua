@@ -1,15 +1,21 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
-function activeWindowHighlight()
-	f = hs.window.focusedWindow():frame()
-	rect = hs.drawing.rectangle(f)
-	rect:setStrokeWidth(5)
-	rect:setFill(false)
-	rect:setStrokeColor(hs.drawing.color.blue)
-	rect:show()
-end
+function activeWindowHighlight(_, eventType)
+	if (eventType == hs.application.watcher.activated) then
+		notify("test")
+		-- rect:hide()
+		f = hs.window.focusedWindow():frame()
+		rect = hs.drawing.rectangle(f)
+		rect:setStrokeWidth(5)
+		rect:setFill(false)
+		rect:setStrokeColor(hs.drawing.color.blue)
+		rect:show()
 
+	end
+end
+appActivationWatcher = hs.application.watcher.new(activeWindowHighlight)
+-- appActivationWatcher:start()
 
 --------------------------------------------------------------------------------
 

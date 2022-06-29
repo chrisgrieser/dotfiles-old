@@ -77,7 +77,7 @@ function hidingCursor(key)
 	keystroke({}, key, 1, hs.application("Brave Browser"))
 	local screen = hs.mouse.getCurrentScreen()
 	local pos = {
-		x = screen:frame().w -1,
+		x = screen:frame().w - 1, -- -1 to keep it on the current screen
 		y = screen:frame().h * 0.75,
 	}
 	hs.mouse.setRelativePosition(pos, screen)
@@ -101,7 +101,7 @@ function jkWatcher(appName, eventType)
 		if (appName:lower() == "alacritty") then
 			local screen = hs.mouse.getCurrentScreen()
 			local pos = {
-				x = screen:frame().w -1, -- -1 to keep it on the current screen
+				x = screen:frame().w - 1, -- -1 to keep it on the current screen
 				y = screen:frame().h * 0.75,
 			}
 			hs.mouse.setRelativePosition(pos, screen)
