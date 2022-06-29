@@ -15,7 +15,9 @@ function isProjector()
 end
 
 function isAtOffice()
-	return hs.screen.primaryScreen():name() == "blubb"
+	local screenOne = hs.screen.primaryScreen():name() == "HP E223"
+	local screenTwo = hs.screen.primaryScreen():name() == "Acer CB241HY"
+	return (screenOne or screenTwo)
 end
 
 function notify (text)

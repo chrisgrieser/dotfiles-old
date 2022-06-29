@@ -1,26 +1,28 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
-function activeWindowHighlight(_, eventType)
+function activeWindowHighlight(appName, eventType)
+	if (appName == "Alfred") then return end
+
 	if (eventType == hs.application.watcher.activated) then
-		notify("test")
-		-- rect:hide()
+		if rect then rect:delete() end
 		f = hs.window.focusedWindow():frame()
 		rect = hs.drawing.rectangle(f)
 		rect:setStrokeWidth(5)
 		rect:setFill(false)
 		rect:setStrokeColor(hs.drawing.color.blue)
 		rect:show()
-
 	end
 end
 appActivationWatcher = hs.application.watcher.new(activeWindowHighlight)
--- appActivationWatcher:start()
+appActivationWatcher:start()
+windowChangeWatcher = hs.application.watcher.new(activeWindowHighlight)
+windowChangeWatcher:start()
 
 --------------------------------------------------------------------------------
-
 -- app-only Window Switchers
 -- https://www.hammerspoon.org/docs/hs.window.switcher.html
+
 finderWindowSwitcher = hs.window.switcher.new{"Finder"}
 browserWindowSwitcher = hs.window.switcher.new{"Brave Browser"}
 mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
@@ -288,6 +290,8 @@ hotkey(hyper, "pageup", moveToOtherDisplay)
 hotkey({"ctrl"}, "Space", function ()
 	if (frontapp() == "Finder") then
 		moveAndResize("centered")
+	elseif isAtOffice() then
+		moveAndResize("maximized")
 	else
 		moveAndResize("pseudo-maximized")
 	end
