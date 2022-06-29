@@ -205,6 +205,8 @@ function officeModeLayout ()
 
 	hs.layout.apply(officeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
+
+	hs.application("Discord"):mainWindow():raise()
 end
 
 function displayCountWatcher()
