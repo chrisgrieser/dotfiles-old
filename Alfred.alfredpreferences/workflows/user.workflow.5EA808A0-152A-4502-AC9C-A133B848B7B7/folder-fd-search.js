@@ -7,17 +7,8 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 const alfredMatcher = (str) => str.replace (/[-()_.]/g, " ") + " " + str + " ";
 const jsonArray = [];
+const folderToSearch = $.getenv("folderToSearch");
 
-let folderToSearch;
-
-// Search Finder
-const posixPath = (finderWindow) => $.NSURL.alloc.initWithString(finderWindow.target.url()).fileSystemRepresentation;
-const currentFinderWindow = posixPath(Application("Finder").finderWindows[0]);
-if (currentFinderWindow) folderToSearch = currentFinderWindow;
-else {
-	jsonArray.push({ "title": "No Finder Window available" });
-	JSON.stringify({ items: jsonArray });
-}
 
 /* eslint-disable no-multi-str */
 const repoArray = app.doShellScript ("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; \

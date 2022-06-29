@@ -1328,6 +1328,8 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>file-hub-cycle</string>
 			</dict>
@@ -1540,6 +1542,8 @@ end run</string>
 				</array>
 				<key>elselabel</key>
 				<string>= 0</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -1964,6 +1968,8 @@ md2docx "$*" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>ff-search</string>
 			</dict>
@@ -2196,70 +2202,70 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>455</integer>
+			<real>455</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>0AF282F1-E1F5-47C6-B70B-F25E00EA5015</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>490</integer>
+			<real>490</real>
 			<key>ypos</key>
-			<integer>900</integer>
+			<real>900</real>
 		</dict>
 		<key>10E85A5A-FC6B-43F7-AAAA-1304838DCCBC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
 		</dict>
 		<key>11D8554B-846B-40DD-9CA0-C73F5736472F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<real>815</real>
 			<key>ypos</key>
-			<integer>930</integer>
+			<real>930</real>
 		</dict>
 		<key>1B6838B5-A98F-4E36-B645-F289BA31A5F8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>955</integer>
+			<real>955</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>440</integer>
+			<real>440</real>
 		</dict>
 		<key>24ACE1D3-3C4C-40C3-9B65-87C2DCC745BD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>2F5374A2-FC86-470A-99DD-7948240BF23E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>990</integer>
+			<real>990</real>
 			<key>ypos</key>
-			<integer>715</integer>
+			<real>715</real>
 		</dict>
 		<key>306DC8AE-1BB2-4C1C-A7B2-263D54C4B30F</key>
 		<dict>
@@ -2268,27 +2274,27 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>touch file</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<real>35</real>
 			<key>ypos</key>
-			<integer>1375</integer>
+			<real>1375</real>
 		</dict>
 		<key>3437AEA1-E781-4F91-9F2E-42D89A4ECF6C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>910</integer>
+			<real>910</real>
 		</dict>
 		<key>346BDE9D-5DC3-466F-8DE1-3F9BFC9E6646</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>380</integer>
+			<real>380</real>
 		</dict>
 		<key>394B346C-D913-44B8-B811-71FFE2F6A2C2</key>
 		<dict>
@@ -2297,9 +2303,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>Duplicate</string>
 			<key>xpos</key>
-			<integer>995</integer>
+			<real>995</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>3AA97555-4630-4AB5-A2F3-900B154E50A7</key>
 		<dict>
@@ -2308,36 +2314,36 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>Double Leader Key via Karabiner Elements</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>910</integer>
+			<real>910</real>
 		</dict>
 		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>270</integer>
+			<real>270</real>
 			<key>ypos</key>
-			<integer>1665</integer>
+			<real>1665</real>
 		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<real>605</real>
 			<key>ypos</key>
-			<integer>1775</integer>
+			<real>1775</real>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<real>235</real>
 			<key>ypos</key>
-			<integer>1140</integer>
+			<real>1140</real>
 		</dict>
 		<key>427496A9-50D6-475D-8DB2-E213C9B9B622</key>
 		<dict>
@@ -2346,9 +2352,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1240</integer>
+			<real>1240</real>
 		</dict>
 		<key>46F3C23D-7A2C-4F9D-893D-DE7985DCC184</key>
 		<dict>
@@ -2357,9 +2363,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>Back</string>
 			<key>xpos</key>
-			<integer>995</integer>
+			<real>995</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
 		</dict>
 		<key>47245CFC-B3E9-4FD6-A021-06D0B87D637C</key>
 		<dict>
@@ -2368,9 +2374,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<real>230</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
 		<dict>
@@ -2379,18 +2385,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>delete file</string>
 			<key>xpos</key>
-			<integer>665</integer>
+			<real>665</real>
 			<key>ypos</key>
-			<integer>930</integer>
+			<real>930</real>
 		</dict>
 		<key>4A2BBCFD-F977-4747-A19C-0CA5ABFC48D0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>1435</integer>
+			<real>1435</real>
 		</dict>
 		<key>4AE1D903-0508-4D5B-95C1-BB01F798C829</key>
 		<dict>
@@ -2399,52 +2405,52 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<integer>450</integer>
+			<real>450</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<real>175</real>
 			<key>ypos</key>
-			<integer>1775</integer>
+			<real>1775</real>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>540</integer>
+			<real>540</real>
 		</dict>
 		<key>589D0BC3-B2D3-4FB3-909C-249C10B2E2DD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<real>465</real>
 			<key>ypos</key>
-			<integer>1165</integer>
+			<real>1165</real>
 		</dict>
 		<key>6F942ED8-6136-458F-872F-59F76FFFC41D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<real>230</real>
 			<key>ypos</key>
-			<integer>1260</integer>
+			<real>1260</real>
 		</dict>
 		<key>731E347D-BF06-4006-8A64-A505693B5EF9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<real>825</real>
 			<key>ypos</key>
-			<integer>1435</integer>
+			<real>1435</real>
 		</dict>
 		<key>776880C9-1368-4168-9F97-07307B938A3B</key>
 		<dict>
@@ -2453,27 +2459,27 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>Pandoc Conversion</string>
 			<key>xpos</key>
-			<integer>465</integer>
+			<real>465</real>
 			<key>ypos</key>
-			<integer>1435</integer>
+			<real>1435</real>
 		</dict>
 		<key>7B43FD68-D463-4626-BE13-7D1C65B12ECF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>425</integer>
+			<real>425</real>
 			<key>ypos</key>
-			<integer>930</integer>
+			<real>930</real>
 		</dict>
 		<key>854C7C80-AC64-4A5D-938F-4EC378280457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<real>815</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
@@ -2482,81 +2488,81 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>re-open last tab</string>
 			<key>xpos</key>
-			<integer>990</integer>
+			<real>990</real>
 			<key>ypos</key>
-			<integer>575</integer>
+			<real>575</real>
 		</dict>
 		<key>9536809F-DBBD-4982-90BC-427C6D115A14</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>665</integer>
+			<real>665</real>
 		</dict>
 		<key>96400117-9585-4C38-8250-D27376BAED9A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>575</integer>
+			<real>575</real>
 		</dict>
 		<key>993B0563-52D6-4547-B1D7-97E70FF55DB2</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>540</integer>
+			<real>540</real>
 		</dict>
 		<key>9C6A258E-06E8-493F-8009-194EED03FAFF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>365</integer>
+			<real>365</real>
 			<key>ypos</key>
-			<integer>55</integer>
+			<real>55</real>
 		</dict>
 		<key>B1A3DB54-4F96-4E6E-9CF1-E7721DA58232</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>1745</integer>
+			<real>1745</real>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>380</integer>
+			<real>380</real>
 		</dict>
 		<key>B608F624-BD49-4530-BB67-00CD6692B0C8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>225</integer>
+			<real>225</real>
 			<key>ypos</key>
-			<integer>1505</integer>
+			<real>1505</real>
 		</dict>
 		<key>B67FD88E-1D0B-4D2E-9280-4D6B8C8932DC</key>
 		<dict>
@@ -2565,9 +2571,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>Forward</string>
 			<key>xpos</key>
-			<integer>995</integer>
+			<real>995</real>
 			<key>ypos</key>
-			<integer>305</integer>
+			<real>305</real>
 		</dict>
 		<key>BBEB4750-0817-42C1-BA51-23E6E7A48C0D</key>
 		<dict>
@@ -2576,34 +2582,34 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>return either first selected file or return current window when there is no selection</string>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>BF0AEAE4-89C0-4DFF-8F6D-4C1FE0DE091B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>785</integer>
+			<real>785</real>
 		</dict>
 		<key>C5110F20-5D1C-438B-862D-177C45274CDD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>665</integer>
+			<real>665</real>
 		</dict>
 		<key>C9992321-E495-42F5-8309-4206EE81A1F6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>495</real>
 			<key>ypos</key>
-			<integer>1015</integer>
+			<real>1015</real>
 		</dict>
 		<key>D3516FEC-145A-4291-A427-9C70AF114743</key>
 		<dict>
@@ -2612,45 +2618,45 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>copy path of selected file or current Finder window</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>D9356F02-69F9-43CF-A2F8-5620849DD6CE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>35</integer>
+			<real>35</real>
 			<key>ypos</key>
-			<integer>1505</integer>
+			<real>1505</real>
 		</dict>
 		<key>DAEC3F77-A08F-483F-ADD1-0DBF21738C6B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>355</integer>
+			<real>355</real>
 			<key>ypos</key>
-			<integer>930</integer>
+			<real>930</real>
 		</dict>
 		<key>DC23B294-25E4-4CEA-841A-71546D15BD89</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>665</integer>
+			<real>665</real>
 			<key>ypos</key>
-			<integer>810</integer>
+			<real>810</real>
 		</dict>
 		<key>DD0CEE0C-A408-4870-82D6-3D5E3AF8F457</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>600</integer>
+			<real>600</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>E00804D3-F5B4-4AB0-8139-B95BD4ED379B</key>
 		<dict>
@@ -2659,9 +2665,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>return either first selected file or return current window when there is no selection</string>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>205</integer>
+			<real>205</real>
 		</dict>
 		<key>E0A3B959-9472-4B43-B469-56E20E333E3B</key>
 		<dict>
@@ -2670,9 +2676,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>copy name of selected file or current Finder window</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>205</integer>
+			<real>205</real>
 		</dict>
 		<key>E0B90868-E486-4C4C-B666-8E436F46E856</key>
 		<dict>
@@ -2681,27 +2687,27 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>1295</integer>
+			<real>1295</real>
 		</dict>
 		<key>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>225</integer>
+			<real>225</real>
 			<key>ypos</key>
-			<integer>1375</integer>
+			<real>1375</real>
 		</dict>
 		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>115</integer>
+			<real>115</real>
 			<key>ypos</key>
-			<integer>1635</integer>
+			<real>1635</real>
 		</dict>
 		<key>E31A91CD-6729-4B81-B897-92A757CEE724</key>
 		<dict>
@@ -2710,18 +2716,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>toggle sidebar</string>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>1165</integer>
+			<real>1165</real>
 		</dict>
 		<key>E4E3E773-9062-4B65-9CC9-ED1AB35D0170</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<real>465</real>
 			<key>ypos</key>
-			<integer>1295</integer>
+			<real>1295</real>
 		</dict>
 		<key>E6B01DAF-F764-4A1E-8DE2-A677C01D98D2</key>
 		<dict>
@@ -2730,36 +2736,36 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>up</string>
 			<key>xpos</key>
-			<integer>995</integer>
+			<real>995</real>
 			<key>ypos</key>
-			<integer>440</integer>
+			<real>440</real>
 		</dict>
 		<key>EA84A1D9-5B40-48C6-B910-0E4E2E12B31C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>380</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>1775</integer>
+			<real>1775</real>
 		</dict>
 		<key>F07D2BDA-5358-4B99-9F8C-27361AFE3FF1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>715</integer>
+			<real>715</real>
 		</dict>
 		<key>F2E10C42-D506-4F69-9F43-E0A4E2932EE7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>810</integer>
+			<real>810</real>
 			<key>ypos</key>
-			<integer>305</integer>
+			<real>305</real>
 		</dict>
 		<key>F40B442E-1E32-439E-BD52-FD4575625796</key>
 		<dict>
@@ -2768,9 +2774,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get only name</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<real>370</real>
 			<key>ypos</key>
-			<integer>235</integer>
+			<real>235</real>
 		</dict>
 		<key>F87AADFD-2C80-4344-AF69-0647B7DC0048</key>
 		<dict>
@@ -2779,11 +2785,13 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>restart &amp; reset default window size</string>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>380</integer>
+			<real>380</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>default_folder</key>
