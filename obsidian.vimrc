@@ -41,6 +41,16 @@ nmap <C-m> :nohlsearch
 " < Nagivation
 """"""""""""""""""""""
 
+" Hardcore Mode
+map <Left> :noop
+map <Down> :noop
+map <Up> :noop
+map <Right> :noop
+imap <Left> :noop
+imap <Down> :noop
+imap <Up> :noop
+imap <Right> :noop
+
 " Scroll horizontally back
 nmap Q mz0`z
 
@@ -318,10 +328,6 @@ nmap <C-w>h :focusLeft
 nmap <C-w>j :focusBottom
 nmap <C-w>k :focusTop
 nmap <C-w>l :focusRight
-map <Left> :focusLeft
-map <Down> :focusBottom
-map <Up> :focusTop
-map <Right> :focusRight
 
 exmap splitVertical obcommand workspace:split-vertical
 nmap <C-w>v :splitVertical
