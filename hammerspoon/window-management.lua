@@ -3,7 +3,10 @@ require("utils")
 -- active window highlight
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
-	if (numberOfScreens() == 1 && windowSize > 75) then return end
+	local screenWidth = hs.window.focusedWindow():screen():frame().w
+	local windowWidth = hs.window.focusedWindow():frame().w
+	local windowRelativeWidth = screenWidth / windowWidth
+	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
 	if (eventType == hs.application.watcher.activated) then
 		-- Delete an existing highlight if it exists
