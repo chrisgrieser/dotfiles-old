@@ -125,8 +125,9 @@ end
 
 function moveToOtherDisplay ()
 	local win = hs.window.focusedWindow()
-	local currentScreen = win:screen()
-	win:moveToScreen(currentScreen:next())
+	local targetScreen = win:screen():next()
+	win:moveToScreen(targetScreen)
+	runDelayed(0.3, function() win:moveToScreen(targetScreen) end)
 end
 
 --------------------------------------------------------------------------------

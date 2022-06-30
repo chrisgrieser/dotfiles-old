@@ -55,9 +55,24 @@ iinaAppLauncher = hs.application.watcher.new(iinaLaunch)
 iinaAppLauncher:start()
 
 --------------------------------------------------------------------------------
-
+-- Hotkeys
 hotkey({}, "pagedown", pagedownAction, nil, pagedownAction)
 hotkey({}, "pageup", pageupAction, nil, pageupAction)
 hotkey({}, "home", homeAction)
 
 hotkey({"shift"}, "home", twitterrificScrollUp)
+--------------------------------------------------------------------------------
+--  raise all windows on activation
+function twitterificAppActivated(appName, eventType, appObject)
+	if (eventType == hs.application.watcher.activated) then
+		if (appName == "Twitterrific") then
+			-- this doesn't work in headless mode
+			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
+			notify("ff")
+			appObject:allWindows()[2]:raise()
+		end
+	end
+end
+twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
+twitterificAppWatcher:start()
+
