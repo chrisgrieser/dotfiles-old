@@ -70,7 +70,7 @@ nnoremap [ (
 nnoremap ] )
 
 " Goto Mark
-nnoremap ö `
+nnoremap ä `
 
 " Next/Previous Sublime Linter Errors
 nnoremap gl ]l
@@ -125,11 +125,11 @@ nnoremap ü mzlblgueh~`z
 " TRANSPOSE
 " (insert mode done via Sublime's build in command imap <C-t> xph)
 " current & next char
-nnoremap ä xp
+nnoremap ö xp
 " current & previous char
-nnoremap Ä xhhp
+nnoremap Ö xhhp
 " current & next word
-nnoremap Ö dawelpb
+nnoremap Ä dawelpb
 
 """"""""""""""""""""""
 " << Line-Based Editing

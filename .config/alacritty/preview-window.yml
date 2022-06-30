@@ -27,7 +27,7 @@ window:
   dimensions:
     columns: 70
   padding:
-    x: 25
+    x: 20
     'y': 15
   opacity: 0.99
 live_config_reload: true

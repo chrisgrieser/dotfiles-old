@@ -86,7 +86,7 @@ nmap [ (
 nmap ] )
 
 " Goto Mark
-nmap ö `
+nmap ä `
 
 " Add to Custom Dictionary
 " (Various complements, not spellcheck dictionary though)
@@ -156,12 +156,12 @@ vmap ü :caseSwitch
 " TRANSPOSE
 " (can't use x, cause it sends to black hole registry, due to missing noremap)
 " current & next char
-nmap ä dlp
+nmap ö dlp
 imap <C-t> <Esc>dlpi
 " current & previous char
-nmap Ä dlhhp
+nmap Ö dlhhp
 " current & next word
-nmap Ö dawelpb
+nmap Ä dawelpb
 
 """"""""""""""""""""""
 " << Line-Based Editing
