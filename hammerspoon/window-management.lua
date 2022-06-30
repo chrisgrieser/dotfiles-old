@@ -127,21 +127,6 @@ function resizingWorkaround(win, pos)
 	end
 end
 
-function moveToOtherDisplay ()
-	local win = hs.window.focusedWindow()
-	local max = win:screen():frame()
-	local f = win:frame()
-	local relativeDimensions = hs.geometry{
-		x = f.x / max.x,
-		y = f.y / max.y,
-		w = f.w / max.w,
-		h = f.h / max.h,
-	}
-
-	win:moveToScreen(win:screen():next(), true)
-	runDelayed(0.2, function() resizingWorkaround(win, relativeDimensions) end)
-end
-
 --------------------------------------------------------------------------------
 -- LAYOUTS & DISPLAYS
 
@@ -337,13 +322,11 @@ end
 --------------------------------------------------------------------------------
 -- HOTKEYS
 
-hotkey(hyper, "Up", function() moveAndResize("up") end)
-hotkey(hyper, "Down", function() moveAndResize("down") end)
-hotkey(hyper, "Right", function() moveAndResize("right") end)
-hotkey(hyper, "Left", function() moveAndResize("left") end)
-hotkey(hyper, "Space", function() moveAndResize("maximized") end)
-hotkey(hyper, "pagedown", moveToOtherDisplay)
-hotkey(hyper, "pageup", moveToOtherDisplay)
+-- hotkey(hyper, "Up", function() moveAndResize("up") end)
+-- hotkey(hyper, "Down", function() moveAndResize("down") end)
+-- hotkey(hyper, "Right", function() moveAndResize("right") end)
+-- hotkey(hyper, "Left", function() moveAndResize("left") end)
+-- hotkey(hyper, "Space", function() moveAndResize("maximized") end)
 
 hotkey(hyper, "home", function()
 	if isAtOffice() then
@@ -353,15 +336,15 @@ hotkey(hyper, "home", function()
 	end
 end)
 
-hotkey({"ctrl"}, "Space", function ()
-	if (frontapp() == "Finder") then
-		moveAndResize("centered")
-	elseif isAtOffice() then
-		moveAndResize("maximized")
-	else
-		moveAndResize("pseudo-maximized")
-	end
-end)
+-- hotkey({"ctrl"}, "Space", function ()
+-- 	if (frontapp() == "Finder") then
+-- 		moveAndResize("centered")
+-- 	elseif isAtOffice() then
+-- 		moveAndResize("maximized")
+-- 	else
+-- 		moveAndResize("pseudo-maximized")
+-- 	end
+-- end)
 
 hotkey(hyper, "X", function() vsplit("switch") end)
 hotkey(hyper, "V", function()
