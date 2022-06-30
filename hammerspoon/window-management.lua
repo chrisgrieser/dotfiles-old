@@ -341,6 +341,7 @@ hotkey(hyper, "Right", function() moveAndResize("right") end)
 hotkey(hyper, "Left", function() moveAndResize("left") end)
 hotkey(hyper, "Space", function() moveAndResize("maximized") end)
 hotkey(hyper, "pagedown", function() moveToOtherDisplay() end)
+hotkey(hyper, "pageup", function() moveToOtherDisplay() end)
 
 hotkey(hyper, "home", function()
 	if isAtOffice() then
