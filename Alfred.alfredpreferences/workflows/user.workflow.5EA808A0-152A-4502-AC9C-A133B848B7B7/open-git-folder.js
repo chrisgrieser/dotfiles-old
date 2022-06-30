@@ -41,11 +41,13 @@ const jsonArray = [];
 let pathString = "";
 
 pathsToSearch.forEach(path => { pathString += "\"" + path + "\" " });
-const workArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; fd '\\.git$' --no-ignore --hidden " + pathString)
-	.split("\r");
+const repoArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH ; fd '\\.git$' --no-ignore --hidden " + pathString)
+	.split("\r")
+	.map(i => i.slice(0, -5))
+	.filter(i => !i.endsWith(".spoon/")); // no hammerspoon spoons
 
-workArray.forEach(item => {
-	const localRepoFilePath = item.slice(0, -5);
+
+repoArray.forEach(localRepoFilePath => {
 	let repoName;
 	let iconpath;
 	const isAlfredWorkflow = finderApp.exists(Path(localRepoFilePath + "/info.plist"));
