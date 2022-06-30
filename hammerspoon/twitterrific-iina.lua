@@ -3,10 +3,18 @@ require("utils")
 -- ℹ️ this file only runs when not at the office
 
 function twitterrificScrollUp ()
-	-- needs activation, cause sending to app in bg does not work with cmd key
+	-- needs activation, cause sending to app in background doesn't work w/ cmd
 	local previousApp = hs.application.frontmostApplication():name()
 
-	hs.application("Twitterrific"):activate()
+	local twitterrific = hs.application("Twitterrific")
+	if #(twitterrific.allWindows()) == 1 then
+		twitterrific:activate()
+		keystroke({"cmd"}, "1") -- go to home window
+	else
+		twitterrific:activate()
+		twitterrific:getWindow("@pseudo_meta - Home"):focus()
+	end
+
 	keystroke({"cmd"}, "k") -- mark all as red
 	keystroke({"cmd"}, "j") -- scroll up
 	keystroke({"cmd"}, "1") -- scroll up failsafe
