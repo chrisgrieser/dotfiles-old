@@ -106,7 +106,8 @@ function resizingWorkaround(win, pos)
 
 	local winApp = win:application():name()
 	-- add Applescript-capable apps used to the if-condition below
-	if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp == "Safari") then
+	-- if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp == "Safari") then
+	if (false) then
 		hs.applescript([[
 			use framework "AppKit"
 			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
@@ -249,6 +250,18 @@ end
 launchWhileMultiScreenWatcher = hs.application.watcher.new(alwaysOpenOnMouseDisplay)
 launchWhileMultiScreenWatcher:start()
 
+function moveToOtherDisplay ()
+	local win = hs.window.focusedWindow()
+	local targetScreen = win:screen():next()
+	win:moveToScreen(targetScreen, true)
+
+	-- workaround for ensuring proper resizing
+	runDelayed(0.25, function ()
+		win_ = hs.window.focusedWindow()
+		win_:setFrameInScreenBounds(win_:frame())
+	end)
+end
+
 --------------------------------------------------------------------------------
 -- SPLITS
 
@@ -322,11 +335,12 @@ end
 --------------------------------------------------------------------------------
 -- HOTKEYS
 
--- hotkey(hyper, "Up", function() moveAndResize("up") end)
--- hotkey(hyper, "Down", function() moveAndResize("down") end)
--- hotkey(hyper, "Right", function() moveAndResize("right") end)
--- hotkey(hyper, "Left", function() moveAndResize("left") end)
--- hotkey(hyper, "Space", function() moveAndResize("maximized") end)
+hotkey(hyper, "Up", function() moveAndResize("up") end)
+hotkey(hyper, "Down", function() moveAndResize("down") end)
+hotkey(hyper, "Right", function() moveAndResize("right") end)
+hotkey(hyper, "Left", function() moveAndResize("left") end)
+hotkey(hyper, "Space", function() moveAndResize("maximized") end)
+hotkey(hyper, "pagedown", function() moveToOtherDisplay() end)
 
 hotkey(hyper, "home", function()
 	if isAtOffice() then
@@ -336,15 +350,15 @@ hotkey(hyper, "home", function()
 	end
 end)
 
--- hotkey({"ctrl"}, "Space", function ()
--- 	if (frontapp() == "Finder") then
--- 		moveAndResize("centered")
--- 	elseif isAtOffice() then
--- 		moveAndResize("maximized")
--- 	else
--- 		moveAndResize("pseudo-maximized")
--- 	end
--- end)
+hotkey({"ctrl"}, "Space", function ()
+	if (frontapp() == "Finder") then
+		moveAndResize("centered")
+	elseif isAtOffice() then
+		moveAndResize("maximized")
+	else
+		moveAndResize("pseudo-maximized")
+	end
+end)
 
 hotkey(hyper, "X", function() vsplit("switch") end)
 hotkey(hyper, "V", function()
