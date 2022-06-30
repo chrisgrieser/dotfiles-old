@@ -8,6 +8,15 @@ PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
 STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
+if [[ "$(scutil --get ComputerName)" =~ "Mac mini" ]]; then
+	X=300
+	Y=40
+	LINES=20
+else
+	X=700
+	Y=250
+	LINES=27
+fi
 
 #-------------------------------------------------------------------------------
 
@@ -34,6 +43,8 @@ alacritty \
 	--config-file="$PREVIEW_CONFIG" \
 	--option="colors.primary.background='$BG_COLOR'" \
 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
+	--option="window.position.x=$X" \
+	--option="window.position.y=$Y" \
 	--command less -R \
 		--long-prompt \
 		--window=-4 \
