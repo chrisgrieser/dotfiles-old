@@ -58,6 +58,8 @@ autocmd BufWritePre * %s/\s\+$//e
 " " commantary
 " " sneak
 " " highlightedyank
+" https://github.com/vim-syntastic/syntastic
+" startify
 
 " call plug#end()
 
