@@ -21,9 +21,7 @@ require("filesystem-watchers")
 -- app-specific
 require("watchers")
 require("discord")
-if not(isAtOffice()) then
-	require("twitterrific-iina")
-end
+require("twitterrific-iina")
 
 --------------------------------------------------------------------------------
 -- https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md

@@ -8,19 +8,6 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
-		<key>1A5AE504-2A93-4348-AEF9-66571F7A684B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>419C3BB1-4F7F-46AE-9685-0D53BFB091B0</key>
 		<array>
 			<dict>
@@ -63,6 +50,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>toggle-dark-mode</string>
 			</dict>
@@ -140,37 +129,6 @@ tell application "Brave Browser" to close active tab of front window</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>97</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F6</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>1A5AE504-2A93-4348-AEF9-66571F7A684B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>119</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
@@ -195,34 +153,23 @@ tell application "Brave Browser" to close active tab of front window</string>
 	<string>A simple one-liner terminal script that toggles Dark Mode on/off if you are using MacOS 10.14 (Mojave) and beyond.</string>
 	<key>uidata</key>
 	<dict>
-		<key>1A5AE504-2A93-4348-AEF9-66571F7A684B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>🌗</string>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>305</integer>
-		</dict>
 		<key>419C3BB1-4F7F-46AE-9685-0D53BFB091B0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>185</integer>
+			<real>185</real>
 		</dict>
 		<key>8BC396F3-80B7-4E93-8FE8-0285BD25B53A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>290</integer>
+			<real>290</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>DDB63880-A3F4-4349-9D72-7863515C4FFA</key>
 		<dict>
@@ -231,11 +178,13 @@ tell application "Brave Browser" to close active tab of front window</string>
 			<key>note</key>
 			<string>🌗</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>440</integer>
+			<real>300</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>

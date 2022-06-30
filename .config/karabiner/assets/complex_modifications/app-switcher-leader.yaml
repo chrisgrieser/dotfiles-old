@@ -481,10 +481,7 @@ rules:
             name: LEADER_ACTIVE
             value: 1
         to:
-          - key_code: semicolon
-            modifiers:
-              - command
-              - control
+          - shell_command: open -a 'Twitterific'
           - key_code: down_arrow
           - set_notification_message:
               id: leader-notice

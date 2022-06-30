@@ -936,11 +936,7 @@
           ],
           "to": [
             {
-              "key_code": "semicolon",
-              "modifiers": [
-                "command",
-                "control"
-              ]
+              "shell_command": "open -a 'Twitterific'"
             },
             {
               "key_code": "down_arrow"
