@@ -129,8 +129,17 @@ end
 
 function moveToOtherDisplay ()
 	local win = hs.window.focusedWindow()
-	local targetScreen = win:screen():next()
-	win:moveToScreen(targetScreen)
+	local max = win:screen():frame()
+	local f = win:frame()
+	local relativeDimensions = hs.geometry{
+		x = f.x / max.x,
+		y = f.y / max.y,
+		w = f.w / max.w,
+		h = f.h / max.h,
+	}
+
+	win:moveToScreen(win:screen():next(), true)
+	runDelayed(0.2, function() resizingWorkaround(win, relativeDimensions) end)
 end
 
 --------------------------------------------------------------------------------
