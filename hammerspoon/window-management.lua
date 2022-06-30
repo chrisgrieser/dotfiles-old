@@ -186,11 +186,14 @@ function officeModeLayout ()
 	local screen2 = hs.screen.allScreens()[2]
 
 	local maximized = hs.layout.maximized
-	local top = {x=0, y=0, w=1, h=0.5}
+	-- local top = {x=0, y=0, w=1, h=0.5}
 	local bottom = {x=0, y=0.5, w=1, h=0.5}
+	local topLeft = {x=0, y=0, w=0.5, h=0.5}
+	local topRight = {x=0.5, y=0, w=0.5, h=0.5}
 
 	local officeLayout = {
-		{"Tweeten", nil, screen2, top, nil, nil},
+		{"Twitterrific", "@pseudo_meta - Home", screen2, topLeft, nil, nil},
+		{"Twitterrific", "@pseudo_meta - List: PKM & Obsidian Community", screen2, topRight, nil, nil},
 		{"Slack", nil, screen2, bottom, nil, nil},
 		{"Discord", nil, screen2, bottom, nil, nil},
 
