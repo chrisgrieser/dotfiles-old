@@ -114,6 +114,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B9425FE3-0162-48E5-A208-474EBFA8A309</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<array>
 			<dict>
@@ -219,7 +232,18 @@
 			</dict>
 		</array>
 		<key>F3A5176F-A152-455B-8C51-5C99EABE747E</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9425FE3-0162-48E5-A208-474EBFA8A309</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</key>
 		<array>
 			<dict>
@@ -660,10 +684,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>✅Download complete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>sss</string>
+				<string>hs</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -766,6 +811,31 @@
 			<string>936424AC-32E2-4193-B07C-DDB804AEF807</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>hs_config_folder="${working_directory/#~/$HOME}/hs-repos"
+
+cd "$hs_config_folder"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B9425FE3-0162-48E5-A208-474EBFA8A309</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -954,6 +1024,15 @@
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
+		<key>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>785</real>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
 		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
 		<dict>
 			<key>colorindex</key>
@@ -1004,6 +1083,15 @@
 			<real>330</real>
 			<key>ypos</key>
 			<real>155</real>
+		</dict>
+		<key>B9425FE3-0162-48E5-A208-474EBFA8A309</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>635</real>
+			<key>ypos</key>
+			<real>620</real>
 		</dict>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
@@ -1088,7 +1176,7 @@
 		<key>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>1</integer>
 			<key>note</key>
 			<string>config download</string>
 			<key>xpos</key>
@@ -1107,6 +1195,8 @@
 		</dict>
 		<key>F3A5176F-A152-455B-8C51-5C99EABE747E</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
 			<key>xpos</key>
 			<real>480</real>
 			<key>ypos</key>
@@ -1124,6 +1214,17 @@
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variables</key>
+	<dict>
+		<key>working_directory</key>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub/</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>working_directory</string>
+	</array>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string>https://chris-grieser.de/</string>
 </dict>

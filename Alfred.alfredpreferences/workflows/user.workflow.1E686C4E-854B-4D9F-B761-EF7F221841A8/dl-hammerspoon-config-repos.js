@@ -4,15 +4,14 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 const onlineJSON = (url) => JSON.parse(app.doShellScript("curl -sL '" + url + "'"));
 
-const dlFolder = "/Users/chrisgrieser/Library/Mobile Documents/com~apple~CloudDocs/File Hub/";
-app.doShellScript(`mkdir '${dlFolder}'/hs-repos || true`);
 
-let i = 0;
+const dlFolder = $.getenv("working_directory");
+app.doShellScript(`mkdir '${dlFolder}/hs-repos' || true`);
+
 onlineJSON("https://api.github.com/search/repositories?q=topic:hammerspoon-configuration")
 	.items
 	.forEach (item => {
-		const name = item.full_name + i.toString();
-		i++;
+		const name = item.full_name.replaceAll("/", "-");
 		app.doShellScript(`cd '${dlFolder}'/hs-repos ; git clone --depth=1 '${item.html_url}' ${name}`);
-		console.log(`done: ${name}`);
+		console.log(`done: ${item.full_name}`);
 	});
