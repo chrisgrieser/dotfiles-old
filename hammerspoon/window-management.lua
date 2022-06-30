@@ -195,14 +195,14 @@ function officeModeLayout ()
 
 	local maximized = hs.layout.maximized
 	local bottom = {x=0, y=0.5, w=1, h=0.5}
-	local topLeft = {x=0, y=0, w=0.52, h=0.5}
+	local topLeft = {x=0, y=0, w=0.515, h=0.5}
 	local topRight = {x=0.51, y=0, w=0.49, h=0.5}
 
 	local officeLayout = {
 		{"Twitterrific", "@pseudo_meta - Home", screen2, topLeft, nil, nil},
-		{"Twitterrific", "@pseudo_meta - List: PKM & Obsidian Community", screen2, topRight, nil, nil},
-		{"Slack", nil, screen2, bottom, nil, nil},
+		{"Twitterrific", "@pseudo_meta - List", screen2, topRight, nil, nil},
 		{"Discord", nil, screen2, bottom, nil, nil},
+		{"Slack", nil, screen2, bottom, nil, nil},
 
 		{"Brave Browser", nil, screen1, maximized, nil, nil},
 		{"Sublime Text", nil, screen1, maximized, nil, nil},
@@ -216,7 +216,7 @@ function officeModeLayout ()
 	hs.layout.apply(officeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
 
-	hs.application("Discord"):mainWindow():raise()
+	hs.application("Slack"):mainWindow():raise()
 end
 
 function displayCountWatcher()
