@@ -3,7 +3,7 @@ require("utils")
 -- active window highlight
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
-	if (not isAtOffice()) then return end
+	if (numberOfScreens() == 1 && windowSize > 75) then return end
 
 	if (eventType == hs.application.watcher.activated) then
 		-- Delete an existing highlight if it exists
@@ -188,8 +188,8 @@ function officeModeLayout ()
 	local maximized = hs.layout.maximized
 	-- local top = {x=0, y=0, w=1, h=0.5}
 	local bottom = {x=0, y=0.5, w=1, h=0.5}
-	local topLeft = {x=0, y=0, w=0.5, h=0.5}
-	local topRight = {x=0.5, y=0, w=0.5, h=0.5}
+	local topLeft = {x=0, y=0, w=0.52, h=0.5}
+	local topRight = {x=0.51, y=0, w=0.49, h=0.5}
 
 	local officeLayout = {
 		{"Twitterrific", "@pseudo_meta - Home", screen2, topLeft, nil, nil},

@@ -12,9 +12,17 @@ const workArray = JSON.parse(app.doShellScript('curl -s "https://api.github.com/
 		return {
 			"title": subsite,
 			"match": alfredMatcher (subsite),
-			"arg": subsite,
+			"arg": `https://www.hammerspoon.org/docs/${subsite}.html`,
 			"uid": subsite,
 		};
 	});
+
+// individual pages
+workArray.push({
+	"title": "Getting Started",
+	"match": "getting started examples",
+	"arg": "https://www.hammerspoon.org/go/",
+	"uid": "getting-started",
+})
 
 JSON.stringify({ items: workArray });
