@@ -192,37 +192,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F3A5176F-A152-455B-8C51-5C99EABE747E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F3A5176F-A152-455B-8C51-5C99EABE747E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -671,48 +645,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>✅Download complete</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⬇️ Config Repo Download</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -758,29 +690,6 @@
 			<string>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>dl-hammerspoon-config-repos.js</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F3A5176F-A152-455B-8C51-5C99EABE747E</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -986,15 +895,6 @@
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
-		<key>66A4A1EB-CE3C-435C-BDE7-ED2212D93A05</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<real>630</real>
-			<key>ypos</key>
-			<real>620</real>
-		</dict>
 		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
 		<dict>
 			<key>colorindex</key>
@@ -1126,17 +1026,6 @@
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
-		<key>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>note</key>
-			<string>config download</string>
-			<key>xpos</key>
-			<real>330</real>
-			<key>ypos</key>
-			<real>620</real>
-		</dict>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<dict>
 			<key>colorindex</key>
@@ -1145,15 +1034,6 @@
 			<real>480</real>
 			<key>ypos</key>
 			<real>430</real>
-		</dict>
-		<key>F3A5176F-A152-455B-8C51-5C99EABE747E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<real>480</real>
-			<key>ypos</key>
-			<real>620</real>
 		</dict>
 		<key>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</key>
 		<dict>
