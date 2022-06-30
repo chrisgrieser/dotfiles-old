@@ -1,6 +1,8 @@
 require("utils")
 
 function twitterrificScrollUp ()
+	twitterrificScrolling = true
+
 	-- needs activation, cause sending to app in background doesn't work w/ cmd
 	local previousApp = hs.application.frontmostApplication():name()
 
@@ -24,6 +26,8 @@ function twitterrificScrollUp ()
 	keystroke({}, "down") -- enable j/k movement
 
 	hs.application(previousApp):activate()
+
+	twitterrificScrolling = false
 end
 
 function pagedownAction ()
@@ -75,15 +79,17 @@ hotkey({"shift"}, "home", twitterrificScrollUp)
 --------------------------------------------------------------------------------
 --  raise all windows on activation
 function twitterificAppActivated(appName, eventType, appObject)
+	if twitterrificScrolling then return end
 	if (eventType == hs.application.watcher.activated) then
 		if (appName == "Twitterrific") then
 			-- this doesn't work in headless mode
 			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
-			appObject:getWindow("@pseudo_meta - List: PKM & Obsidian Community"):raise()
+			appObject:getWindow("@pseudo_meta - List"):raise()
 			appObject:getWindow("@pseudo_meta - Home"):focus()
 		end
 	end
 end
 twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
 if isAtOffice() then twitterificAppWatcher:start() end
+twitterrificScrolling = true
 
