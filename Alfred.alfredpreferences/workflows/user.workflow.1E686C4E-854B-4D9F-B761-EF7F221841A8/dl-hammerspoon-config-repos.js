@@ -4,7 +4,6 @@ const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 const onlineJSON = (url) => JSON.parse(app.doShellScript("curl -sL '" + url + "'"));
 
-
 const dlFolder = $.getenv("working_directory");
 app.doShellScript(`mkdir '${dlFolder}/hs-repos' || true`);
 

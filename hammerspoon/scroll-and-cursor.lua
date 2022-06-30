@@ -6,15 +6,14 @@ require("utils")
 -- pagedown/up listener from Hammerspoon in `twitterific-iina.lua`
 
 function scrollDown ()
-	if frontapp() == "alacritty" or frontapp() == "Terminal" then
+	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
 		keystroke ({"shift"}, "pagedown")
-		notify("test")
 	else
 		keystroke ({}, "pagedown")
 	end
 end
 function scrollUp ()
-	if frontapp() == "alacritty" or frontapp() == "Terminal" then
+	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
 		keystroke ({"shift"}, "pageup")
 	else
 		keystroke ({}, "pageup")

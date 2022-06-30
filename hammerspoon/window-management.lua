@@ -193,7 +193,6 @@ function officeModeLayout ()
 	local screen2 = hs.screen.allScreens()[2]
 
 	local maximized = hs.layout.maximized
-	-- local top = {x=0, y=0, w=1, h=0.5}
 	local bottom = {x=0, y=0.5, w=1, h=0.5}
 	local topLeft = {x=0, y=0, w=0.52, h=0.5}
 	local topRight = {x=0.51, y=0, w=0.49, h=0.5}
@@ -210,6 +209,7 @@ function officeModeLayout ()
 		{"Drafts", nil, screen1, maximized, nil, nil},
 		{"Mimestream", nil, screen1, maximized, nil, nil},
 		{"alacritty", nil, screen1, maximized, nil, nil},
+		{"Alacritty", nil, screen1, maximized, nil, nil},
 	}
 
 	hs.layout.apply(officeLayout)
