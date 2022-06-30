@@ -91,6 +91,9 @@ matches:
   - trigger: suer
     replace: user
     propagate_case: true
+  - trigger: Twitterific
+    replace: Twitterrific
+    propagate_case: true
   - trigger: technsich
     replace: technisch
     propagate_case: true

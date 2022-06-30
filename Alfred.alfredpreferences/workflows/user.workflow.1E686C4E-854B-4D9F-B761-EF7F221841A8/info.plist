@@ -633,7 +633,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://www.google.de/search?q=site%3Aespanso.org%2Fdocs+{query}</string>
+				<string>https://www.google.de/search?q=site:espanso.org docs+{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>

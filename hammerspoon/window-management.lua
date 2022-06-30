@@ -1,7 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
-highlightDuration = 2
+highlightDuration = 7
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
 	local screenWidth = hs.window.focusedWindow():screen():frame().w

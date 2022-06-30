@@ -49,10 +49,6 @@ noremap <Left> <noop>
 noremap <Down> <noop>
 noremap <Up> <noop>
 noremap <Right> <noop>
-inoremap <Left> <noop>
-inoremap <Down> <noop>
-inoremap <Up> <noop>
-inoremap <Right> <noop>
 
 " Scroll horizontally back
 nnoremap Q mz0`z

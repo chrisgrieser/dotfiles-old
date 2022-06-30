@@ -46,10 +46,6 @@ map <Left> :noop
 map <Down> :noop
 map <Up> :noop
 map <Right> :noop
-imap <Left> :noop
-imap <Down> :noop
-imap <Up> :noop
-imap <Right> :noop
 
 " Scroll horizontally back
 nmap Q mz0`z
