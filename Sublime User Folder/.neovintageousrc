@@ -44,6 +44,16 @@ nnoremap <C-m> :nohlsearch<CR>
 " < Nagivation
 """"""""""""""""""""""
 
+" Hardcore Mode
+noremap <Left> :noop
+noremap <Down> :noop
+noremap <Up> :noop
+noremap <Right> :noop
+inoremap <Left> :noop
+inoremap <Down> :noop
+inoremap <Up> :noop
+inoremap <Right> :noop
+
 " Scroll horizontally back
 nnoremap Q mz0`z
 
@@ -259,11 +269,6 @@ vnoremap <C-9> iwoiwS)
 """"""""""""""""""""""
 " most <C-w> commands are only unlocked by using the Sublime Origami Plugin
 " https://vimhelp.org/index.txt.html#CTRL-W
-
-noremap <Left> <C-w>h
-noremap <Down> <C-w>j
-noremap <Up> <C-w>k
-noremap <Right> <C-w>l
 
 " move buffer instead of copying it when splitting
 nnoremap <C-w>v <C-w>v<C-w>h<C-w>c<C-w>l
