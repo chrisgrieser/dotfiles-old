@@ -19,8 +19,8 @@ weatherStatusBar = hs.menubar.new()
 function setWeather()
 	local _, weather = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=1", nil)
 	if not (weather) then
-		weatherStatusBar.setTooltip("")
-		weatherStatusBar.setTitle("")
+		weatherStatusBar:setTooltip("")
+		weatherStatusBar:setTitle("")
 	end
 	local _, weatherLong = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=4", nil)
 	weather = weather:gsub("\n", ""):gsub("+", "")

@@ -194,7 +194,8 @@ function officeModeLayout ()
 
 	local officeLayout = {
 		{"Twitterrific", "@pseudo_meta - Home", screen2, topLeft, nil, nil},
-		{"Twitterrific", "@pseudo_meta - List", screen2, topRight, nil, nil},
+		{"Twitterrific", "@pseudo_meta - List: PKM & Obsidian Community", screen2, topRight, nil, nil},
+		{"Twitterrific", "@pseudo_meta - List: Academia", screen2, topRight, nil, nil},
 		{"Discord", nil, screen2, bottom, nil, nil},
 		{"Slack", nil, screen2, bottom, nil, nil},
 
