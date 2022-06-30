@@ -21,6 +21,7 @@ function setWeather()
 	if not (weather) then
 		weatherStatusBar:setTooltip("")
 		weatherStatusBar:setTitle("")
+		return
 	end
 	local _, weatherLong = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=4", nil)
 	weather = weather:gsub("\n", ""):gsub("+", "")
@@ -41,6 +42,7 @@ function setCovidBar()
 	if not (nationalDataJSON) then
 		covidBar.setTooltip("")
 		covidBar.setTitle("")
+		return
 	end
 	local nationalNumbers = hs.json.decode(nationalDataJSON)
 	local national_7D_incidence = math.floor(nationalNumbers.weekIncidence)
