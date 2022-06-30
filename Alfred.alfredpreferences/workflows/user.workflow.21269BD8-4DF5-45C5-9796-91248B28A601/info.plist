@@ -92,7 +92,7 @@
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>keyword</key>
-				<string>2f</string>
+				<string>two</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -227,34 +227,36 @@ Select a 2FA code and do one of the following:
 			<key>note</key>
 			<string>Type</string>
 			<key>xpos</key>
-			<integer>325</integer>
+			<real>325</real>
 			<key>ypos</key>
-			<integer>190</integer>
+			<real>190</real>
 		</dict>
 		<key>3E71F597-EA2F-4B39-B8E4-69A3D625872E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>335</integer>
+			<real>335</real>
 		</dict>
 		<key>7B86D057-DA8E-4302-AF17-83B889B48EE2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>90</integer>
+			<real>90</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>F66B4E67-AAD4-4597-9902-E084CCFAE32F</key>
 		<dict>
 			<key>note</key>
 			<string>Method 1: AppleScript paste to simulate keystrokes</string>
 			<key>xpos</key>
-			<integer>325</integer>
+			<real>325</real>
 			<key>ypos</key>
-			<integer>335</integer>
+			<real>335</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>look_back_minutes</key>
