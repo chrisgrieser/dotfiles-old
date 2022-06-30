@@ -68,11 +68,10 @@ function twitterificAppActivated(appName, eventType, appObject)
 		if (appName == "Twitterrific") then
 			-- this doesn't work in headless mode
 			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
-			notify("ff")
 			appObject:allWindows()[2]:raise()
 		end
 	end
 end
 twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
-twitterificAppWatcher:start()
+if isAtOffice() then twitterificAppWatcher:start() end
 
