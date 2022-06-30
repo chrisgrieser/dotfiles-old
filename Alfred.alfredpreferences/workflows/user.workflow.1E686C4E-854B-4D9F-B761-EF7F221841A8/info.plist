@@ -192,6 +192,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C73B14F7-191C-417A-B42B-4D0460BB4359</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<array>
 			<dict>
@@ -646,6 +659,74 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C73B14F7-191C-417A-B42B-4D0460BB4359</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>⬇️ Config Repo Download</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
@@ -946,6 +1027,13 @@
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
+		<key>C73B14F7-191C-417A-B42B-4D0460BB4359</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>615</real>
+		</dict>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
 			<key>colorindex</key>
@@ -1025,6 +1113,17 @@
 			<real>480</real>
 			<key>ypos</key>
 			<real>20</real>
+		</dict>
+		<key>EE0E7D6E-E4E1-4994-B47F-EDA62709E61C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>config download</string>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>620</real>
 		</dict>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<dict>

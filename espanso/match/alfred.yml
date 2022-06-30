@@ -85,8 +85,8 @@ matches:
       // fill in here
       const VAR = $.getenv("");
 
-      const jsonArray = []; // fill in here
-      	// .filter(f => true)fill in here
+      const jsonArray = [] // fill in here
+      	// .filter(f => true)
       	.map(item => {
       		// fill in here
       		return {
