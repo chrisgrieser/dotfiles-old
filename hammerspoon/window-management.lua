@@ -1,6 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
+highlightDuration = 2
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then return end
 	local screenWidth = hs.window.focusedWindow():screen():frame().w
@@ -24,7 +25,7 @@ function activeWindowHighlight(appName, eventType)
 		rect:setStrokeColor(hs.drawing.color.green)
 		rect:show()
 
-		rectTimer = runDelayed(3, function()
+		rectTimer = runDelayed(highlightDuration, function()
 			rect:delete()
 			rect = nil
 		end)
