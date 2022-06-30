@@ -75,32 +75,34 @@ hotkey({}, "pagedown", pagedownAction, nil, pagedownAction)
 hotkey({}, "pageup", pageupAction, nil, pageupAction)
 hotkey({}, "home", homeAction)
 
-	hotkey({"shift"}, "home", twitterrificScrollUp)
-	--------------------------------------------------------------------------------
-	-- raise all windows on activation,
-	-- open both windows on launch
-	function twitterificAppActivated(appName, eventType, appObject)
-		if twitterrificScrolling then return end
-		if (appName == "Twitterrific") then
-			if (eventType == hs.application.watcher.launching) then
-				runDelayed(1, function ()
-					twitterrific = hs.application("Twitterrific")
-					-- has to be done via keystroke, since headless
-					keystroke({"cmd"}, "T", twitterrific)
-					keystroke({"cmd"}, "5", twitterrific)
-					keystroke({}, "down", twitterrific)
-					keystroke({}, "return", twitterrific)
-				end)
+hotkey({"shift"}, "home", twitterrificScrollUp)
+--------------------------------------------------------------------------------
+-- raise all windows on activation,
+-- open both windows on launch
+-- (only active in office though)
+function twitterificAppActivated(appName, eventType, appObject)
+	if twitterrificScrolling then return end
+	if (appName == "Twitterrific") then
+		if (eventType == hs.application.watcher.launching) then
+			runDelayed(1, function ()
+				twitterrific = hs.application("Twitterrific")
+				if #(twitterrific:allWindows()) > 1 then return end
+				-- has to be done via keystroke, since headless
+				keystroke({"cmd"}, "T", twitterrific)
+				keystroke({"cmd"}, "5", twitterrific)
+				keystroke({}, "down", twitterrific)
+				keystroke({}, "return", twitterrific)
+			end)
 
-			elseif (eventType == hs.application.watcher.activated) then
-				-- this doesn't work in headless mode
-				-- appObject:selectMenuItem({"Window", "Bring All to Front"})
-				appObject:getWindow("@pseudo_meta - List"):raise()
-				appObject:getWindow("@pseudo_meta - Home"):focus()
-			end
+		elseif (eventType == hs.application.watcher.activated) then
+			-- this doesn't work in headless mode
+			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
+			appObject:getWindow("@pseudo_meta - List"):raise()
+			appObject:getWindow("@pseudo_meta - Home"):focus()
 		end
 	end
-	twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
-	-- if isAtOffice() then twitterificAppWatcher:start() end
-	twitterrificScrolling = false
+end
+twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
+if isAtOffice() then twitterificAppWatcher:start() end
+twitterrificScrolling = false
 
