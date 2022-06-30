@@ -430,11 +430,11 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>gg</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Max repos: {var:maxReposNumber}</string>
 				<key>text</key>
 				<string>⬇️ Repo Downloader</string>
 				<key>withspace</key>
@@ -480,7 +480,7 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dl-hammerspoon-config-repos.js</string>
+				<string>github-topic-search.js</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
