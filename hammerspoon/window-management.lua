@@ -187,6 +187,14 @@ function officeModeLayout ()
 	local screen1 = hs.screen.allScreens()[1]
 	local screen2 = hs.screen.allScreens()[2]
 
+	hs.application.open("Mimestream")
+	hs.application.open("Discord")
+	hs.application.open("Slack")
+	hs.application.open("Brave Browser")
+	hs.application.open("Obsidian")
+	hs.application.open("Twitterrific")
+	hs.application.open("Drafts")
+
 	local maximized = hs.layout.maximized
 	local bottom = {x=0, y=0.5, w=1, h=0.5}
 	local topLeft = {x=0, y=0, w=0.515, h=0.5}
@@ -194,7 +202,7 @@ function officeModeLayout ()
 
 	local officeLayout = {
 		{"Twitterrific", "@pseudo_meta - Home", screen2, topLeft, nil, nil},
-		{"Twitterrific", "@pseudo_meta - List: PKM & Obsidian Community", screen2, topRight, nil, nil},
+		{"Twitterrific", "@pseudo_meta - List: _PKM & Obsidian Community", screen2, topRight, nil, nil},
 		{"Twitterrific", "@pseudo_meta - List: Academia", screen2, topRight, nil, nil},
 		{"Discord", nil, screen2, bottom, nil, nil},
 		{"Slack", nil, screen2, bottom, nil, nil},
