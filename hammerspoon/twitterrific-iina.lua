@@ -1,18 +1,21 @@
 require("utils")
 
--- ℹ️ this file only runs when not at the office
-
 function twitterrificScrollUp ()
 	-- needs activation, cause sending to app in background doesn't work w/ cmd
 	local previousApp = hs.application.frontmostApplication():name()
 
 	local twitterrific = hs.application("Twitterrific")
-	if #(twitterrific.allWindows()) == 1 then
-		twitterrific:activate()
+	twitterrific:activate()
+	if #(twitterrific:allWindows()) == 1 then
 		keystroke({"cmd"}, "1") -- go to home window
 	else
-		twitterrific:activate()
-		twitterrific:getWindow("@pseudo_meta - Home"):focus()
+		local homeWindow = twitterrific:getWindow("@pseudo_meta - Home")
+		if homeWindow then
+			homeWindow:focus()
+		else
+			twitterrific.allWindows()[1]:focus()
+			keystroke({"cmd"}, "1") -- go to home window
+		end
 	end
 
 	keystroke({"cmd"}, "k") -- mark all as red
@@ -76,7 +79,8 @@ function twitterificAppActivated(appName, eventType, appObject)
 		if (appName == "Twitterrific") then
 			-- this doesn't work in headless mode
 			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
-			appObject:allWindows()[2]:raise()
+			appObject:getWindow("@pseudo_meta - List: PKM & Obsidian Community"):raise()
+			appObject:getWindow("@pseudo_meta - Home"):focus()
 		end
 	end
 end

@@ -44,6 +44,7 @@ mailWindowSwitcher = hs.window.switcher.new{"Mimestream"}
 sublimeWindowSwitcher = hs.window.switcher.new{"Sublime Text"}
 obsidianWindowSwitcher = hs.window.switcher.new{"Obsidian"}
 draftsWindowSwitcher = hs.window.switcher.new{"Drafts"}
+twitterrificWindowSwitcher = hs.window.switcher.new{"Twitterrific"}
 
 function appWindowSwitcher()
 	if (frontapp() == "Finder") then
@@ -58,6 +59,8 @@ function appWindowSwitcher()
 		obsidianWindowSwitcher:next()
 	elseif (frontapp() == "Drafts") then
 		draftsWindowSwitcher:next()
+	elseif (frontapp() == "Twitterrific") then
+		twitterrificWindowSwitcher:next()
 	end
 end
 
