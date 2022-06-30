@@ -1,11 +1,20 @@
 require("utils")
 
--- FINDER: Bring all windows forward & hide sidebar when activated
+-- FINDER: when activated
+-- - Bring all windows forward
+-- - hide sidebar
+-- - enlarge window if it's too small
 function finderWatcher(appName, eventType, appObject)
 	if (eventType == hs.application.watcher.activated) then
 		if (appName == "Finder") then
 			appObject:selectMenuItem({"Window", "Bring All to Front"})
 			appObject:selectMenuItem({"View", "Hide Sidebar"})
+			local finderWin = appObject:focusedWindow()
+			local win_h = finderWin:frame().h
+			local max_h = finderWin:screen():frame().h
+			if (win_h / max_h) < 0.7 then
+				moveAndResize("centered")
+			end
 		end
 	end
 end

@@ -9,10 +9,10 @@
         "color" : "#00D5FFFF"
       },
       "shortcut" : {
-        "size" : 21,
+        "size" : 23,
         "colorSelected" : "#DB290CFF",
         "font" : "System",
-        "color" : "#75B293FF"
+        "color" : "#7EA6C1FF"
       },
       "backgroundSelected" : "#FFBB00FF",
       "text" : {
@@ -42,9 +42,9 @@
     },
     "window" : {
       "color" : "#454545FF",
-      "paddingHorizontal" : 10,
-      "width" : 884,
-      "borderPadding" : 4,
+      "paddingHorizontal" : 11,
+      "width" : 986,
+      "borderPadding" : 6,
       "borderColor" : "#4141417F",
       "blur" : 0,
       "roundness" : 11,
@@ -57,7 +57,7 @@
     },
     "scrollbar" : {
       "color" : "#407077AF",
-      "thickness" : 15
+      "thickness" : 32
     },
     "name" : "Fire & Ice (smaller)"
   }

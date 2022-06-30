@@ -1,9 +1,9 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
-highlightDuration = 7
+highlightDuration = 2
 function activeWindowHighlight(appName, eventType)
-	if (appName == "Alfred") then return end
+	if (appName == "Alfred") then return end -- for Alfred's compatibility mode
 	local screenWidth = hs.window.focusedWindow():screen():frame().w
 	local windowWidth = hs.window.focusedWindow():frame().w
 	local windowRelativeWidth = screenWidth / windowWidth
