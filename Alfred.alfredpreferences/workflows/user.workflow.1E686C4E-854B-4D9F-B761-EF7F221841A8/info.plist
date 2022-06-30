@@ -668,7 +668,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>loading...</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -676,7 +676,7 @@
 				<key>scriptfile</key>
 				<string>hs-docs-search.js</string>
 				<key>subtext</key>
-				<string>loading...</string>
+				<string></string>
 				<key>title</key>
 				<string>Hammerspoon Docs Search...</string>
 				<key>type</key>

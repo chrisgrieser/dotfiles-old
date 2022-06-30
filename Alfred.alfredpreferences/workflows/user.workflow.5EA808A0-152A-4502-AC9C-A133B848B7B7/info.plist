@@ -51,6 +51,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>17EA82AA-E281-483E-9B42-DCEF8CCB61A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>4E05F542-9EEE-41E9-86B1-B4F1C201A764</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -404,6 +414,27 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>⏳ Download starting...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>17EA82AA-E281-483E-9B42-DCEF8CCB61A1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -660,7 +691,7 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>330</real>
+			<real>375</real>
 			<key>ypos</key>
 			<real>430</real>
 		</dict>
@@ -684,6 +715,15 @@ subl --command toggle_side_bar</string>
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
+		<key>17EA82AA-E281-483E-9B42-DCEF8CCB61A1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>225</real>
+			<key>ypos</key>
+			<real>315</real>
+		</dict>
 		<key>4C4CA3DF-BB26-4393-84E2-27190A118611</key>
 		<dict>
 			<key>colorindex</key>
@@ -698,7 +738,7 @@ subl --command toggle_side_bar</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>180</real>
+			<real>225</real>
 			<key>ypos</key>
 			<real>430</real>
 		</dict>
@@ -836,6 +876,8 @@ subl --command toggle_side_bar</string>
 	<array/>
 	<key>variables</key>
 	<dict>
+		<key>maxReposNumber</key>
+		<string>100</string>
 		<key>working_folder</key>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/File Hub</string>
 	</dict>
