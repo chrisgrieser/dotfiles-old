@@ -19,16 +19,6 @@ function activeWindowHighlight(appName, eventType)
 	local windowRelativeWidth = screenWidth / windowWidth
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
-	local highlightColor
-	local strokeWidth
-	if isDarkMode() then
-		highlightColor = darkModeStrokeWidth
-		strokeWidth = darkModeStrokeWidth
-	else
-		highlightColor = lightModeColor
-		strokeWidth = lightModeStrokeWidth
-	end
-
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
 		if rect then
@@ -40,6 +30,16 @@ function activeWindowHighlight(appName, eventType)
 
 		local appWin = hs.window.focusedWindow()
 		if not(appWin) then return end
+
+		local highlightColor
+		local strokeWidth
+		if isDarkMode() then
+			highlightColor = darkModeColor
+			strokeWidth = darkModeStrokeWidth
+		else
+			highlightColor = lightModeColor
+			strokeWidth = lightModeStrokeWidth
+		end
 
 		rect = hs.drawing.rectangle(appWin:frame())
 		rect:setStrokeWidth(strokeWidth)
