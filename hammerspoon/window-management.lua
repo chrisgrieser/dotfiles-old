@@ -7,8 +7,8 @@ require("utils")
 highlightDuration = 2
 lightModeColor = hs.drawing.color.green
 darkModeColor = hs.drawing.color.green
-lightModeStrokeWidth = 7
-darkModeStrokeWidth = 14
+lightModeStrokeWidth = 11
+darkModeStrokeWidth = 7
 
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
