@@ -1,8 +1,15 @@
 require("utils")
 --------------------------------------------------------------------------------
--- active window highlight
+-- ACTIVE WINDOW HIGHLIGHT
 -- essentially a hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
+
+-- config
 highlightDuration = 2
+lightModeColor = hs.drawing.color.osx_yellow
+darkModeColor = hs.drawing.color.green
+lightModeStrokeWidth = 7
+darkModeStrokeWidth = 10
+
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
 	local screenWidth = hs.window.focusedWindow():screen():frame().w
@@ -13,11 +20,11 @@ function activeWindowHighlight(appName, eventType)
 	local highlightColor
 	local strokeWidth
 	if isDarkMode() then
-		highlightColor = hs.drawing.color.green
-		strokeWidth = 7
+		highlightColor = darkModeStrokeWidth
+		strokeWidth = darkModeStrokeWidth
 	else
-		highlightColor = hs.drawing.color.osx_yellow
-		strokeWidth = 12
+		highlightColor = lightModeColor
+		strokeWidth = lightModeStrokeWidth
 	end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
