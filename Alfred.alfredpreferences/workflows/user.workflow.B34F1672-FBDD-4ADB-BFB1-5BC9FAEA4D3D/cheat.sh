@@ -8,15 +8,15 @@ PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
 STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
-# if [[ "$(scutil --get ComputerName)" =~ "Mac mini" ]]; then
-# 	X=250
-# 	Y=40
-# 	LINES=22
-# else
-# 	X=700
-# 	Y=250
-# 	LINES=27
-# fi
+if [[ "$(scutil --get ComputerName)" =~ "Mac mini" ]]; then
+	X=250
+	Y=40
+	LINES=22
+else
+	X=700
+	Y=250
+	LINES=27
+fi
 
 #-------------------------------------------------------------------------------
 
@@ -39,20 +39,19 @@ echo "$CHEAT_INFO" > "$CACHE"
 PREV_CHEAT_PROCESS_ID=$(ps x | grep -e "alacritty.*command.*less" | head -n1 | cut -d" " -f1)
 kill "$PREV_CHEAT_PROCESS_ID"
 
-# alacritty \
-# 	--config-file="$PREVIEW_CONFIG" \
-# 	--option="colors.primary.background='$BG_COLOR'" \
-# 	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
-# 	--option="window.position.x=$X" \
-# 	--option="window.position.y=$Y" \
-# 	--option="window.dimensions.lines=$LINES" \
-# 	--command less -R \
-# 		--long-prompt \
-# 		--window=-4 \
-# 		--incsearch \
-# 		--ignore-case \
-# 		--HILITE-UNREAD \
-# 		--tilde \
-# 		-- "$CACHE"
-alacritty --command less -R -- "$CACHE"
+alacritty \
+	--config-file="$PREVIEW_CONFIG" \
+	--option="colors.primary.background='$BG_COLOR'" \
+	--option="colors.primary.foreground='$STATUSLINE_COLOR'" \
+	--option="window.position.x=$X" \
+	--option="window.position.y=$Y" \
+	--option="window.dimensions.lines=$LINES" \
+	--command less -R \
+		--long-prompt \
+		--window=-4 \
+		--incsearch \
+		--ignore-case \
+		--HILITE-UNREAD \
+		--tilde \
+		-- "$CACHE"
 

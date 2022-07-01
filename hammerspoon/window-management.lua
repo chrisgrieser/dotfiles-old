@@ -1,7 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- ACTIVE WINDOW HIGHLIGHT
--- essentially a hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
+-- => a hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
 
 -- config
 highlightDuration = 2
@@ -202,6 +202,16 @@ function homeModeLayout ()
 	}
 	hs.layout.apply(homeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
+
+	-- if Slack has unread message, raise the window
+	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
+	local slackUnreadMsg = slackWindowTitle:match("%*")
+	if (slackUnreadMsg) then
+		hs.application("Slack"):mainWindow():raise()
+	else
+		hs.application("Discord"):mainWindow():raise()
+	end
+
 end
 
 function officeModeLayout ()
@@ -242,13 +252,15 @@ function officeModeLayout ()
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
 	hs.timer.delayed.new(0.6, function () hs.layout.apply(officeLayout) end):start()
 
+	-- if Slack has unread message, raise the window
 	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
-	local slackUnreadMsg = slackWindowTitle.includes
+	local slackUnreadMsg = slackWindowTitle:match("%*")
 	if (slackUnreadMsg) then
 		hs.application("Slack"):mainWindow():raise()
 	else
 		hs.application("Discord"):mainWindow():raise()
 	end
+
 end
 
 function displayCountWatcher()

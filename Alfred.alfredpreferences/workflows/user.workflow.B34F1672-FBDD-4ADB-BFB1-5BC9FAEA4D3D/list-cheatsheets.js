@@ -3,7 +3,7 @@
 ObjC.import("stdlib");
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
-const alfredMatcher = (str) => str.replace (/[-()_.:]/g, " ") + " " + str + " ";
+const alfredMatcher = (str) => str.replace (/[-()/_.:]/g, " ") + " " + str + " ";
 
 // fill in here
 const jsonArray = app.doShellScript("curl 'https://cheat.sh/:list'")
