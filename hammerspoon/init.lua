@@ -33,7 +33,7 @@ require("vim-mode")
 hs.loadSpoon("ColorPicker")
 spoon.ColorPicker:start()
 hotkey(hyper, "P", function () spoon.ColorPicker.toggleColorSamples("Crayons") end)
-spoon.ColorPicker:bindHotkeys({show={hyper, "U"}})
+-- spoon.ColorPicker:bindHotkeys({show={hyper, "U"}})
 
 --------------------------------------------------------------------------------
 notify("Config reloaded")

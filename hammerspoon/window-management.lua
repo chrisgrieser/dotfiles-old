@@ -11,10 +11,13 @@ function activeWindowHighlight(appName, eventType)
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
 	local highlightColor
+	local strokeWidth
 	if isDarkMode() then
 		highlightColor = hs.drawing.color.green
+		strokeWidth = 7
 	else
-		highlightColor = hs.drawing.color.asHSB( {hue=0.3, saturation=1, brightness=1} )
+		highlightColor = hs.drawing.color.osx_yellow
+		strokeWidth = 12
 	end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
@@ -30,7 +33,7 @@ function activeWindowHighlight(appName, eventType)
 		if not(appWin) then return end
 
 		rect = hs.drawing.rectangle(appWin:frame())
-		rect:setStrokeWidth(7)
+		rect:setStrokeWidth(strokeWidth)
 		rect:setFill(false)
 		rect:setStrokeColor(highlightColor)
 		rect:show()
