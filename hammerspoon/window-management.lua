@@ -3,13 +3,13 @@ require("utils")
 -- active window highlight
 highlightDuration = 2
 function activeWindowHighlight(appName, eventType)
-	if (appName == "Alfred") then return end -- for Alfred's compatibility mode
+	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
 	local screenWidth = hs.window.focusedWindow():screen():frame().w
 	local windowWidth = hs.window.focusedWindow():frame().w
 	local windowRelativeWidth = screenWidth / windowWidth
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
-	if (eventType == hs.application.watcher.activated) then
+	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
 		if rect then
 			rect:delete()
@@ -18,8 +18,10 @@ function activeWindowHighlight(appName, eventType)
 			end
 		end
 
-		local f = hs.window.focusedWindow():frame()
-		rect = hs.drawing.rectangle(f)
+		local appWin = hs.window.focusedWindow()
+		if not(appWin) then return end
+
+		rect = hs.drawing.rectangle(appWin:frame())
 		rect:setStrokeWidth(7)
 		rect:setFill(false)
 		rect:setStrokeColor(hs.drawing.color.green)
