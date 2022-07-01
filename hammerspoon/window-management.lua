@@ -5,15 +5,17 @@ require("utils")
 
 -- config
 highlightDuration = 2
-lightModeColor = hs.drawing.color.osx_yellow
+lightModeColor = hs.drawing.color.green
 darkModeColor = hs.drawing.color.green
 lightModeStrokeWidth = 7
-darkModeStrokeWidth = 12
+darkModeStrokeWidth = 14
 
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
-	local screenWidth = hs.window.focusedWindow():screen():frame().w
-	local windowWidth = hs.window.focusedWindow():frame().w
+	local win = hs.window.focusedWindow()
+	if not (win) then return end
+	local screenWidth = win:screen():frame().w
+	local windowWidth = win:frame().w
 	local windowRelativeWidth = screenWidth / windowWidth
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
@@ -238,6 +240,7 @@ function officeModeLayout ()
 
 	hs.layout.apply(officeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
+	hs.timer.delayed.new(0.5, function () hs.layout.apply(officeLayout) end):start()
 
 	hs.application("Slack"):mainWindow():raise()
 end
