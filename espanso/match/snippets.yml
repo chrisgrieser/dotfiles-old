@@ -16,13 +16,30 @@ matches:
       - trigger: "$|$"
         replace: ""
     label: 🍏 espanso rule
-  - trigger: "!today"
+
+  - trigger: "!iso"
     replace: "{{todayISO}}"
     vars:
       - name: todayISO
         type: date
         params:
           format: "%Y-%m-%d"
+  - trigger: "!today"
+    replace: "{{today}}"
+    vars:
+      - name: today
+        type: date
+        params:
+          format: "%d.%m.%Y"
+  - trigger: "!la"
+    replace: ", last accessed: {{today}}"
+    label: Last Accessed
+    vars:
+      - name: today
+        type: date
+        params:
+          format: "%d.%m.%Y"
+
   - trigger: "!version"
     replace: "{{version}}"
     vars:
