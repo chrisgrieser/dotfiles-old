@@ -14,6 +14,7 @@
 			"hotkey",
 			"hyper",
 			"isIMacAtHome",
+			"isDarkMode",
 			"isAtOffice",
 			"isProjector",
 			"numberOfScreens",

@@ -20,6 +20,11 @@ function isAtOffice()
 	return (screenOne or screenTwo)
 end
 
+function isDarkMode()
+	local _, isDark = hs.applescript('tell application "System Events" to return dark mode of appearance preferences')
+	return isDark
+end
+
 function notify (text)
 	hs.notify.new({title="Hammerspoon", informativeText=text}):send()
 end

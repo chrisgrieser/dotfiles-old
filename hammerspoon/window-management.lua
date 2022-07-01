@@ -1,6 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- active window highlight
+-- essentially a hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
 highlightDuration = 2
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
@@ -8,6 +9,13 @@ function activeWindowHighlight(appName, eventType)
 	local windowWidth = hs.window.focusedWindow():frame().w
 	local windowRelativeWidth = screenWidth / windowWidth
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
+
+	local highlightColor
+	if isDarkMode() then
+		highlightColor = hs.drawing.color.green
+	else
+		highlightColor = hs.drawing.color.asHSB()
+	end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
@@ -24,7 +32,7 @@ function activeWindowHighlight(appName, eventType)
 		rect = hs.drawing.rectangle(appWin:frame())
 		rect:setStrokeWidth(7)
 		rect:setFill(false)
-		rect:setStrokeColor(hs.drawing.color.green)
+		rect:setStrokeColor(highlightColor)
 		rect:show()
 
 		rectTimer = runDelayed(highlightDuration, function()
@@ -110,7 +118,7 @@ function resizingWorkaround(win, pos)
 	-- add Applescript-capable apps used to the if-condition below
 	-- if (winApp == "Finder" or winApp == "Brave Browser" or winApp == "BusyCal" or winApp == "Safari") then
 	if (false) then
-		hs.applescript([[
+		hs.osascript.applescript([[
 			use framework "AppKit"
 			set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
 			set max_x to item 1 of item 2 of item 1 of allFrames
@@ -165,7 +173,7 @@ function homeModeLayout ()
 	hs.application.open("Twitterrific")
 	hs.application.open("Drafts")
 
-	hs.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
+	hs.osascript.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
 
 	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
@@ -323,7 +331,7 @@ function vsplit (mode)
 end
 
 function finderVsplit ()
-	hs.applescript([[
+	hs.osascript.applescript([[
 		use framework "AppKit"
 		set allFrames to (current application's NSScreen's screens()'s valueForKey:"frame") as list
 		set screenWidth to item 1 of item 2 of item 1 of allFrames
