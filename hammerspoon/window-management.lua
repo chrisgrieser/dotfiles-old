@@ -240,9 +240,15 @@ function officeModeLayout ()
 
 	hs.layout.apply(officeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
-	hs.timer.delayed.new(0.5, function () hs.layout.apply(officeLayout) end):start()
+	hs.timer.delayed.new(0.6, function () hs.layout.apply(officeLayout) end):start()
 
-	hs.application("Slack"):mainWindow():raise()
+	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
+	local slackUnreadMsg = slackWindowTitle.includes
+	if (slackUnreadMsg) then
+		hs.application("Slack"):mainWindow():raise()
+	else
+		hs.application("Discord"):mainWindow():raise()
+	end
 end
 
 function displayCountWatcher()
