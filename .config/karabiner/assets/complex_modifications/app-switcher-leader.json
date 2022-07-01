@@ -1,6 +1,6 @@
 {
   "title": "🔺 App Switcher",
-  "version": "0.1",
+  "version": "2.3",
   "maintainers": [
     "pseudometa"
   ],
@@ -845,7 +845,7 @@
           ],
           "to": [
             {
-              "shell_command": "open -a 'YouTube'"
+              "shell_command": "open -a 'YouTube' || open 'https://www.youtube.com/'"
             },
             {
               "set_variable": {
@@ -905,7 +905,7 @@
           ],
           "to": [
             {
-              "shell_command": "open -a 'Inoreader'"
+              "shell_command": "open -a 'Inoreader' || open 'https://www.inoreader.com/'"
             },
             {
               "set_variable": {
@@ -999,7 +999,7 @@
           ],
           "to": [
             {
-              "shell_command": "open -a 'Docs'"
+              "shell_command": "open -a 'Docs' || open 'https://docs.google.com/'"
             },
             {
               "set_variable": {
