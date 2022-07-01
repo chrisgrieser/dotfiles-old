@@ -49,7 +49,7 @@ style = "fg:yellow bg:black" # terminus different
 [custom.folder_number]
 command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
 when = "exit 0"
-symbol = " "
+symbol = " "
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black" # terminus different
 

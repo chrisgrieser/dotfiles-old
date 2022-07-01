@@ -51,7 +51,7 @@ style = "fg:yellow bg:black bold" # terminus different
 [custom.folder_number]
 command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
 when = "true"
-symbol = " "
+symbol = " "
 description = "Number of folders in the current working directory"
 format = '[$symbol$output]($style) '
 style = "fg:yellow bg:black bold" # terminus different

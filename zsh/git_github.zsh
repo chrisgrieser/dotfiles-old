@@ -116,7 +116,7 @@ function past (){
 		new_file="${commit_date}_$file_name"
 		git show "$commit:./$file_name" > "$start_dir/$new_file"
 		echo "$new_file"
-		grep --context=1 "$query" "$new_file"
+		grep -i --context=1 "$query" "$new_file"
 		echo "**************************************************"
 	done
 	cd "$start_dir"
