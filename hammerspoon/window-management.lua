@@ -8,7 +8,7 @@ highlightDuration = 2
 lightModeColor = hs.drawing.color.osx_yellow
 darkModeColor = hs.drawing.color.green
 lightModeStrokeWidth = 7
-darkModeStrokeWidth = 10
+darkModeStrokeWidth = 12
 
 function activeWindowHighlight(appName, eventType)
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
