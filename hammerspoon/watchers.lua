@@ -12,8 +12,11 @@ function finderWatcher(appName, eventType, appObject)
 			local finderWin = appObject:focusedWindow()
 			local win_h = finderWin:frame().h
 			local max_h = finderWin:screen():frame().h
+			local max_w = finderWin:screen():frame().w
+			local target_w = 0.6 * max_w
+			local target_h = 0.8 * max_h
 			if (win_h / max_h) < 0.7 then
-				moveAndResize("centered")
+				finderWin:setSize({w = target_w, h = target_h})
 			end
 		end
 	end

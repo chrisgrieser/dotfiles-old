@@ -19,7 +19,6 @@ weatherStatusBar = hs.menubar.new()
 function setWeather()
 	local _, weather = hs.http.get("https://wttr.in/" .. weatherLocation .. "?format=1", nil)
 	if not (weather) then
-		weatherStatusBar:setTooltip("")
 		weatherStatusBar:setTitle("")
 		return
 	end
@@ -40,7 +39,6 @@ covidBar = hs.menubar.new()
 function setCovidBar()
 	local _, nationalDataJSON = hs.http.get("https://api.corona-zahlen.org/germany", nil)
 	if not (nationalDataJSON) then
-		covidBar.setTooltip("")
 		covidBar.setTitle("")
 		return
 	end
