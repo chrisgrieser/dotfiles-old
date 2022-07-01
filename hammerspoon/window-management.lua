@@ -14,7 +14,7 @@ function activeWindowHighlight(appName, eventType)
 	if isDarkMode() then
 		highlightColor = hs.drawing.color.green
 	else
-		highlightColor = hs.drawing.color.asHSB()
+		highlightColor = hs.drawing.color.asHSB( {hue=0.3, saturation=1, brightness=1} )
 	end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
