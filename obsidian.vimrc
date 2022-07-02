@@ -10,7 +10,8 @@ unmap ,
 " Clipboard
 """"""""""""""""""""""
 " yank to system clipboard
-set clipboard=unnamed
+" disabled due to koala's PR
+" set clipboard=unnamed
 
 " Y consistent with D and C to the end of line
 nmap Y y$
