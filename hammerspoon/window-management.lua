@@ -1,7 +1,7 @@
 require("utils")
 --------------------------------------------------------------------------------
 -- ACTIVE WINDOW HIGHLIGHT
--- => a hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
+-- => hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
 
 -- config
 highlightDuration = 2
@@ -16,7 +16,7 @@ function activeWindowHighlight(appName, eventType)
 	if not (win) then return end
 	local screenWidth = win:screen():frame().w
 	local windowWidth = win:frame().w
-	local windowRelativeWidth = screenWidth / windowWidth
+	local windowRelativeWidth = windowWidth / screenWidth
 	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
@@ -201,7 +201,7 @@ function homeModeLayout ()
 		{"Alacritty", nil, screen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
-	hs.timer.delayed.new(0.3, function () hs.layout.apply(homeLayout) end):start()
+	runDelayed(0.3, function () hs.layout.apply(homeLayout) end)
 
 	-- if Slack has unread message, raise the window
 	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
@@ -209,7 +209,7 @@ function homeModeLayout ()
 	if (slackUnreadMsg) then
 		hs.application("Slack"):mainWindow():raise()
 	else
-		hs.application("Discord"):mainWindow():raise()
+		hs.application("Drafts"):mainWindow():raise()
 	end
 
 end
@@ -273,14 +273,13 @@ end
 displayWatcher = hs.screen.watcher.new(displayCountWatcher)
 displayWatcher:start()
 
+-- Open windows always on the screen where the mouse is
 function moveWindowToMouseScreen(win)
 	local mouseScreen = hs.mouse.getCurrentScreen()
 	local screenOfWindow = win:screen()
 	if (mouseScreen:name() == screenOfWindow:name()) then return end
 	win:moveToScreen(mouseScreen)
 end
-
--- Open windows always on the screen where the mouse is
 function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
 	if numberOfScreens() == 1 then return end
 
