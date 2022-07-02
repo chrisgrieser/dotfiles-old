@@ -4,7 +4,7 @@ require("utils")
 -- => hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
 
 -- config
-highlightDuration = 2
+highlightDuration = 1.5
 lightModeColor = hs.drawing.color.green
 darkModeColor = hs.drawing.color.green
 lightModeStrokeWidth = 13
