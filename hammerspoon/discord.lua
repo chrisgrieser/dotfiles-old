@@ -1,9 +1,18 @@
+require("utils")
+
 --  on launch, open OMG Server instead of friends
 -- (who needs friends if you have Obsidian?)
 function discordLaunchWatcher(appName, eventType)
-	if (eventType == hs.application.watcher.launching) then
-		if (appName == "Discord") then
+	if (appName == "Discord") then
+		if (eventType == hs.application.watcher.launching) then
 			hs.urlevent.openURL("discord://discord.com/channels/686053708261228577/700466324840775831")
+		elseif eventType == hs.application.watcher.activated then
+			local clipb = hs.pasteboard.getContents()
+			if not clipb then return end
+			local hasURL = string.match(clipb, '^https?%S+$')
+			if (hasURL) then
+				hs.pasteboard.setContents("<"..clipb..">")
+			end
 		end
 	end
 end
@@ -19,7 +28,7 @@ discordAppFilter:subscribe(hs.window.filter.windowFocused, function()
 	local hasURL = string.match(clipb, '^https?%S+$')
 	if (hasURL) then
 		hs.pasteboard.setContents("<"..clipb..">")
-
+	end
 end)
 -- when Discord is unfocused, removes <> from URL in clipboard
 discordAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
@@ -30,3 +39,17 @@ discordAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
 		hs.pasteboard.setContents(clipb)
 	end
 end)
+
+-- Auto-Reconnect Discord RP when activating Obsidian
+function obsiDiscordRPreconnect(appName, eventType)
+	local activated = eventType == hs.application.watcher.activated
+	local isObsi = appName == "Obsidian"
+	local discordRunning = appIsRunning("Discord")
+
+	if isObsi and activated and discordRunning then
+		hs.urlevent.openURL("obsidian://advanced-uri?vault=Main%20Vault&commandid=obsidian-discordrpc%253Areconnect-discord")
+	end
+end
+obsiAppWatcher = hs.application.watcher.new(obsiDiscordRPreconnect)
+obsiAppWatcher:start()
+

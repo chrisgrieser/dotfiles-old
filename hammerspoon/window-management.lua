@@ -17,7 +17,7 @@ function activeWindowHighlight(appName, eventType)
 	local screenWidth = win:screen():frame().w
 	local windowWidth = win:frame().w
 	local windowRelativeWidth = windowWidth / screenWidth
-	if (not(isAtOffice()) and windowRelativeWidth > 0.8) then return end
+	if (not(isAtOffice()) and windowRelativeWidth > 0.6) then return end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
