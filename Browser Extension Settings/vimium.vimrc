@@ -42,7 +42,7 @@ map - enterFindMode
 
 " Global Marks
 " https://github.com/philc/vimium/wiki/Tips-and-Tricks#swapping-global-and-local-marks
-map ö Marks.activateGotoMode swap
+map ä Marks.activateGotoMode swap
 map m Marks.activateCreateMode swap
 
 " Misc

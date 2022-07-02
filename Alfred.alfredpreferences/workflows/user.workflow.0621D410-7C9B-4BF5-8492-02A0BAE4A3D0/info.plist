@@ -607,6 +607,21 @@ echo -n "$title"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Basso</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -622,21 +637,6 @@ echo -n "$title"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>E1E42FAB-DEA5-479C-90B3-1B2A03B28BBF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Basso</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>802A4E01-7BC2-4D33-AE03-CA4171F5CEE7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -706,7 +706,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>380</real>
+			<real>430</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
