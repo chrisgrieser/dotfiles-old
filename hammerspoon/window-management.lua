@@ -7,7 +7,7 @@ require("utils")
 highlightDuration = 1.5
 lightModeColor = hs.drawing.color.green
 darkModeColor = hs.drawing.color.green
-lightModeStrokeWidth = 13
+lightModeStrokeWidth = 12
 darkModeStrokeWidth = 7
 
 function activeWindowHighlight(appName, eventType)
@@ -17,7 +17,7 @@ function activeWindowHighlight(appName, eventType)
 	local screenWidth = win:screen():frame().w
 	local windowWidth = win:frame().w
 	local windowRelativeWidth = windowWidth / screenWidth
-	if (numberOfScreens() == 1 and windowRelativeWidth > 0.75) then return end
+	if (not(isAtOffice()) and windowRelativeWidth > 0.8) then return end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists

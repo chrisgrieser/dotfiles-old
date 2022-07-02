@@ -19,7 +19,7 @@ discordAppFilter:subscribe(hs.window.filter.windowFocused, function()
 	local hasURL = string.match(clipb, '^https?%S+$')
 	if (hasURL) then
 		hs.pasteboard.setContents("<"..clipb..">")
-	end
+
 end)
 -- when Discord is unfocused, removes <> from URL in clipboard
 discordAppFilter:subscribe(hs.window.filter.windowUnfocused, function()
