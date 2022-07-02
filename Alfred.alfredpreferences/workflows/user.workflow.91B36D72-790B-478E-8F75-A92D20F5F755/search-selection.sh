@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# Config
-MAILAPP=Mimestream
-
 # IF SELECTION IS...
 # file path: reveal it
 # directory path: open it
@@ -18,13 +15,11 @@ if [[ -f "$SEL" ]]; then
 	open -R "$SEL"
 elif [[ -d "$SEL" ]]; then
 	open "$SEL"
-elif [[ "$SEL" =~ ^[[:space:]]*http.*[[:space:]]*$ ]]; then
-	# [[:space:]] ensures leading/trailing space does not prevent triggering
+elif [[ "$SEL" =~ ^http.* ]]; then
 	URL=$(echo "$SEL" | tr -d " ")
 	open "$URL"
 elif [[ "$SEL" =~ "@" ]]; then
-	MAIL=$(echo "$SEL" | tr -d " ")
-	open -a "$MAILAPP" "mailto:$MAIL"
+	open "mailto:$SEL"
 elif [[ -n "$SEL" ]]; then
 	open "https://www.google.com/search?q=$SEL"
 fi

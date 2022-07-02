@@ -5,9 +5,9 @@ require("utils")
 
 -- config
 highlightDuration = 1.5
-lightModeColor = hs.drawing.color.green
+lightModeColor = hs.drawing.color.osx_yellow
 darkModeColor = hs.drawing.color.green
-lightModeStrokeWidth = 12
+lightModeStrokeWidth = 10
 darkModeStrokeWidth = 7
 
 function activeWindowHighlight(appName, eventType)
@@ -17,7 +17,7 @@ function activeWindowHighlight(appName, eventType)
 	local screenWidth = win:screen():frame().w
 	local windowWidth = win:frame().w
 	local windowRelativeWidth = windowWidth / screenWidth
-	if (not(isAtOffice()) and windowRelativeWidth > 0.6) then return end
+	if (not(isAtOffice()) and windowRelativeWidth > 0.51) then return end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
@@ -41,11 +41,16 @@ function activeWindowHighlight(appName, eventType)
 			strokeWidth = lightModeStrokeWidth
 		end
 
-		rect = hs.drawing.rectangle(appWin:frame())
-		rect:setStrokeWidth(strokeWidth)
-		rect:setFill(false)
-		rect:setStrokeColor(highlightColor)
-		rect:show()
+		local delayDuration = 0
+		-- to account for finder window resizing
+		if appName == "Finder" then delayDuration = 0.1 end
+		runDelayed(delayDuration, function()
+			rect = hs.drawing.rectangle(appWin:frame())
+			rect:setStrokeWidth(strokeWidth)
+			rect:setFill(false)
+			rect:setStrokeColor(highlightColor)
+			rect:show()
+		end)
 
 		rectTimer = runDelayed(highlightDuration, function()
 			rect:delete()

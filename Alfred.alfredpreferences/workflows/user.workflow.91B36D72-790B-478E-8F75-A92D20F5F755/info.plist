@@ -8,6 +8,32 @@
 	<string>Tweaks</string>
 	<key>connections</key>
 	<dict>
+		<key>0769F5D3-9CFB-441D-9839-67F6638A6005</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0AA6C5E4-0DF6-46F6-A6E2-FE26E5883E88</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0AA6C5E4-0DF6-46F6-A6E2-FE26E5883E88</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DA15D57-CE01-48A2-92B9-DECCAAB1EAA2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>14BC0F4F-86A6-46AB-ADD7-9759E69297F0</key>
 		<array>
 			<dict>
@@ -1062,15 +1088,15 @@ dym --clean-output -n1 $LANG "$1"</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>search-selection.sh</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -1096,12 +1122,31 @@ dym --clean-output -n1 $LANG "$1"</string>
 			<key>config</key>
 			<dict>
 				<key>availableviaurlhandler</key>
-				<false/>
+				<true/>
+				<key>triggerid</key>
+				<string>search-selection</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>0769F5D3-9CFB-441D-9839-67F6638A6005</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>0AA6C5E4-0DF6-46F6-A6E2-FE26E5883E88</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1148,6 +1193,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<real>635</real>
 			<key>ypos</key>
 			<real>545</real>
+		</dict>
+		<key>0AA6C5E4-0DF6-46F6-A6E2-FE26E5883E88</key>
+		<dict>
+			<key>note</key>
+			<string>get clipboard</string>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>1115</real>
 		</dict>
 		<key>14BC0F4F-86A6-46AB-ADD7-9759E69297F0</key>
 		<dict>
@@ -1311,7 +1365,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 		<key>9DA15D57-CE01-48A2-92B9-DECCAAB1EAA2</key>
 		<dict>
 			<key>xpos</key>
-			<real>185</real>
+			<real>200</real>
 			<key>ypos</key>
 			<real>980</real>
 		</dict>
