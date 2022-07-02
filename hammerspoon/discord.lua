@@ -15,6 +15,7 @@ discordAppWatcher:start()
 discordAppFilter = hs.window.filter.new("Discord")
 discordAppFilter:subscribe(hs.window.filter.windowFocused, function()
 	local clipb = hs.pasteboard.getContents()
+	if not clipb then return end
 	local hasURL = string.match(clipb, '^https?%S+$')
 	if (hasURL) then
 		hs.pasteboard.setContents("<"..clipb..">")

@@ -288,16 +288,6 @@ nmap R viw"0p
 vmap R "0P
 
 """"""""""""""""""""""
-" < Switch Modes
-""""""""""""""""""""""
-" Enter Visual from Insert Mode
-imap vv <Esc>v
-imap VV <Esc>V
-
-" quick switch to insert mode
-imap jj <Esc>
-
-""""""""""""""""""""""
 " < Insert Mode
 """"""""""""""""""""""
 " mirroring emacs commands available globally on Mac
@@ -404,13 +394,6 @@ nmap s :nextTwoCharMatch
 nmap S :prevTwoCharMatch
 
 """"""""""""""""""""""
-" < Formatting
-""""""""""""""""""""""
-" Semantic Line Breaks instead text-width, cause it's the 21st century
-exmap sembr obcommand obsidian-sembr:toggle-sem-br
-nmap gq :sembr
-
-""""""""""""""""""""""
 " < Sorting
 """"""""""""""""""""""
 " [s]ort [s]election
@@ -439,26 +422,6 @@ map ,os :spellcheck
 map ,ow :readableLineLength
 
 """"""""""""""""""""""
-" < Misc
-""""""""""""""""""""""
-" help
-nmap ? :obcommand
-
-""""""""""""""""""""""""
-" < Obsidian Limitations
-""""""""""""""""""""""""
-" - text object `is` / `as` does not work https://github.com/codemirror/CodeMirror/issues/5454
-" - U (as in changes in a line) does not work
-" - https://github.com/codemirror/CodeMirror/blob/master/keymap/vim.js
-" - g0 and g$ do no work (even though listed in CodeMirror's vim.js)
-" - only `map` supported, no support for nnoremap, inoremap, etc.
-" - `nnoremap` officially supported, but in practice buggy
-" - gp not implemented
-
-""""""""""""""""""""""
 " < unused keys
 """"""""""""""""""""""
 " ? !
-" Special: <BS>, <Right>, <Left>, <Down>, <Up>, <End>, <Home>
-" maybe <Ins>/<Insert>?
-" remap <Esc> to F17?
