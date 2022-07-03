@@ -681,8 +681,6 @@ end alfred_script</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
-			<key>note</key>
-			<string>Mouse 4 (TOP)</string>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>

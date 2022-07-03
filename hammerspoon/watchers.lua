@@ -77,4 +77,3 @@ function hotcornerWatcher(appName, eventType)
 end
 hotcornerEmulation = hs.application.watcher.new(hotcornerWatcher)
 hotcornerEmulation:start()
-

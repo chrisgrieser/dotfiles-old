@@ -234,6 +234,22 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^org\.hammerspoon\.Hammerspoon$
+  - description: "Ⓜ️❌ Brave/Finder: ⌘W → f16 (better window closing)"
+    manipulators:
+      - type: basic
+        from:
+          key_code: w
+          modifiers:
+            mandatory:
+              - command
+        to:
+          # set up as better closing in Alfred
+          - key_code: f16
+        conditions:
+          - type: frontmost_application_if
+            bundle_identifiers:
+              - ^com\.brave\.Browser$
+              - ^com\.apple\.finder$
   - description: "Ⓜ️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9"
     manipulators:
       - type: basic
