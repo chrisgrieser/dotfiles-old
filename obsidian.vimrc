@@ -42,12 +42,6 @@ nmap <C-m> :nohlsearch
 " < Nagivation
 """"""""""""""""""""""
 
-" Hardcore Mode
-map <Left> :noop
-map <Down> :noop
-map <Up> :noop
-map <Right> :noop
-
 " Scroll horizontally back
 nmap Q mz0`z
 
