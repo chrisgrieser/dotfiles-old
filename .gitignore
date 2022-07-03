@@ -9,6 +9,7 @@
 Sublime User Folder/FileHistory*.json
 Sublime User Folder/AutoFoldCode.sublime-settings
 PopClip/_*
+Cron Jobs/frequent.log
 
 # Redundant
 .config/karabiner/automatic_backups
@@ -22,13 +23,6 @@ backup.log
 espanso/match/private.*
 Alfred.alfredpreferences/snippets
 
-# too much file size
-# ------------------
-# Spotify Workflow
-user.workflow.DB6F724C-BEEA-413D-83F1-BB782F5801E5
-# Package Control Search Workflow
-user.workflow.B3DD5817-6E6D-4B43-B94D-E4DE0B8E597B
-
 # Git Repos (already backed up)
 # -----------------------------
 # Shimmering Obsidian
@@ -37,6 +31,18 @@ user.workflow.D02FCDA1-EA32-4486-B5A6-09B42C44677C
 user.workflow.765354AA-49F0-4CB1-8DB0-EA4BE2DB09F8
 # Citation Picker
 user.workflow.41B90DCD-A99E-4943-A19A-E91859557FB0
+
+# too much file size
+# ------------------
+# Spotify Workflow
+user.workflow.DB6F724C-BEEA-413D-83F1-BB782F5801E5
+# Package Control Search Workflow
+user.workflow.B3DD5817-6E6D-4B43-B94D-E4DE0B8E597B
+
+# in case of accidental saving of such files in the repo
+*.mp4
+*.tiff
+*.part
 
 # safety net to prevent sensitive data being accidentally moved
 *.kdb

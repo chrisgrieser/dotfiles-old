@@ -11,7 +11,6 @@ const finderApp = Application("Finder");
 // ---------------------------------------------
 
 const pathsToSearch = [
-	$.getenv("working_folder").replace("~", home),
 	home + "/Library/Mobile Documents/iCloud~md~obsidian/Documents/Development",
 	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dokumente/Code",
 	home + "/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles" // folder also includes Alfred Preferences folder, which is therefore omitted here
@@ -70,8 +69,7 @@ repoArray.forEach(localRepoFilePath => {
 		const readme = readFile(localRepoFilePath + "/README.md");
 		if (readme) {
 			repoName = readme
-				.split("\n")
-				.filter(line => line.startsWith("# "))[0]
+				.split("\n")[0]
 				.slice(2);
 		}
 		else repoName = localRepoFilePath;

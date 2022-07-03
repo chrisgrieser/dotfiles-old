@@ -4,7 +4,7 @@ require("utils")
 -- => hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
 
 -- config
-highlightDuration = 1.5
+highlightDuration = 1.25
 lightModeColor = hs.drawing.color.osx_yellow
 darkModeColor = hs.drawing.color.green
 lightModeStrokeWidth = 10
@@ -17,7 +17,7 @@ function activeWindowHighlight(appName, eventType)
 	local screenWidth = win:screen():frame().w
 	local windowWidth = win:frame().w
 	local windowRelativeWidth = windowWidth / screenWidth
-	if (not(isAtOffice()) and windowRelativeWidth > 0.51) then return end
+	if (not(isAtOffice()) and windowRelativeWidth > 0.8) then return end
 
 	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
 		-- Delete an existing highlight if it exists
@@ -95,18 +95,19 @@ end
 --------------------------------------------------------------------------------
 -- WINDOW MOVEMENT
 
+function toggleDraftsSidebar (draftsWin)
+	local drafts_w = draftsWin:frame().w
+	local screen_w = draftsWin:screen():frame().w
+	if (drafts_w / screen_w > 0.5) then
+		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+	else
+		hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
+	end
+end
+
 function moveAndResize(direction)
 	local win = hs.window.focusedWindow()
 	local position
-
-	-- if window moved is from Drafts, toggle sidebars
-	if (win:application():name() == "Drafts") then
-		if (direction == "pseudo-maximized" or direction == "maximized") then
-			hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-		else
-			hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
-		end
-	end
 
 	if (direction == "left") then
 		position = hs.layout.left50
@@ -126,6 +127,10 @@ function moveAndResize(direction)
 
 	-- workaround for https://github.com/Hammerspoon/hammerspoon/issues/2316
 	resizingWorkaround(win, position)
+
+	if win:application():name() == "Drafts" then
+		runDelayed(0.1, function () toggleDraftsSidebar(win)	end)
+	end
 end
 
 function resizingWorkaround(win, pos)
@@ -190,8 +195,6 @@ function homeModeLayout ()
 	hs.application.open("Twitterrific")
 	hs.application.open("Drafts")
 
-	hs.osascript.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
-
 	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
 		{"Twitterrific", nil, screen, toTheSide, nil, nil},
@@ -216,6 +219,9 @@ function homeModeLayout ()
 	else
 		hs.application("Drafts"):mainWindow():raise()
 	end
+
+	hs.osascript.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
+	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 
 end
 
@@ -266,6 +272,8 @@ function officeModeLayout ()
 		hs.application("Discord"):mainWindow():raise()
 	end
 
+	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+
 end
 
 function displayCountWatcher()
@@ -294,7 +302,7 @@ function alwaysOpenOnMouseDisplay(appName, eventType, appObject)
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)
 		end)
-	elseif (appName == "Brave Browser" and hs.application.watcher.activated and isProjector()) then
+	elseif ((appName == "Brave Browser" or appName == "Finder") and hs.application.watcher.activated and isProjector()) then
 		runDelayed(0.5, function ()
 			local appWindow = appObject:focusedWindow()
 			moveWindowToMouseScreen(appWindow)
@@ -361,8 +369,11 @@ function vsplit (mode)
 	resizingWorkaround(win1, f1)
 	resizingWorkaround(win2, f2)
 
-	hs.timer.delayed.new(0.3, function () resizingWorkaround(win1, f1) end):start()
-	hs.timer.delayed.new(0.3, function () resizingWorkaround(win2, f2) end):start()
+	if win1:application():name() == "Drafts" then
+		runDelayed(0.1, function () toggleDraftsSidebar(win1)	end)
+	elseif win2:application():name() == "Drafts" then
+		runDelayed(0.1, function () toggleDraftsSidebar(win2)	end)
+	end
 end
 
 function finderVsplit ()

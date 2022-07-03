@@ -9,7 +9,11 @@ function finderWatcher(appName, eventType, appObject)
 		if (appName == "Finder") then
 			appObject:selectMenuItem({"Window", "Bring All to Front"})
 			appObject:selectMenuItem({"View", "Hide Sidebar"})
+
 			local finderWin = appObject:focusedWindow()
+			local isInfoWindow = finderWin:title():match(" Info$")
+			if isInfoWindow then return end
+
 			local win_h = finderWin:frame().h
 			local max_h = finderWin:screen():frame().h
 			local max_w = finderWin:screen():frame().w

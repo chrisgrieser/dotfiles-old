@@ -287,16 +287,18 @@
 				<key>script</key>
 				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
+download_location="~/RomComs/-new"
 download_location="${download_location/#~/$HOME}"
 cd "$download_location"
+echo "$PWD"
 
-youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
+# youtube-dl --format $output_format "$*" 2&gt;&amp;1</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>youtube-dl-trigger.sh</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -668,7 +670,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>820</real>
+			<real>970</real>
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
@@ -735,7 +737,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>575</real>
+			<real>620</real>
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
@@ -800,7 +802,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>680</real>
+			<real>830</real>
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
@@ -818,7 +820,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>685</real>
+			<real>835</real>
 			<key>ypos</key>
 			<real>35</real>
 		</dict>
@@ -838,7 +840,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>825</real>
+			<real>975</real>
 			<key>ypos</key>
 			<real>35</real>
 		</dict>

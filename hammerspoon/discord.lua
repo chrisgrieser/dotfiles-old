@@ -3,9 +3,12 @@ require("utils")
 function discordWatcher(appName, eventType)
 	if appName ~= "Discord" then return end
 
-	--  on launch, open OMG Server instead of friends
-	-- (who needs friends if you have Obsidian?)
+	-- on launch, open OMG Server instead of friends (who needs friends if you have Obsidian?)
+	-- and reconnect Obsidian's Discord Rich Presence (Obsidian launch already covered by RP Plugin)
 	if eventType == hs.application.watcher.launching then
+		if appIsRunning("Obsidian") then
+			hs.urlevent.openURL("obsidian://advanced-uri?vault=Main%20Vault&commandid=obsidian-discordrpc%253Areconnect-discord")
+		end
 		hs.urlevent.openURL("discord://discord.com/channels/686053708261228577/700466324840775831")
 
 	-- when Discord is focused, enclose URL in clipboard with <>
@@ -29,17 +32,4 @@ function discordWatcher(appName, eventType)
 end
 discordAppWatcher = hs.application.watcher.new(discordWatcher)
 discordAppWatcher:start()
-
--- Auto-Reconnect Discord RP when activating Obsidian
-function obsiDiscordRPreconnect(appName, eventType)
-	local activated = eventType == hs.application.watcher.activated
-	local isObsi = appName == "Obsidian"
-	local discordRunning = appIsRunning("Discord")
-
-	if isObsi and activated and discordRunning then
-		hs.urlevent.openURL("obsidian://advanced-uri?vault=Main%20Vault&commandid=obsidian-discordrpc%253Areconnect-discord")
-	end
-end
-obsiAppWatcher = hs.application.watcher.new(obsiDiscordRPreconnect)
-obsiAppWatcher:start()
 

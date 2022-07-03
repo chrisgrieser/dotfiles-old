@@ -135,19 +135,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D9356F02-69F9-43CF-A2F8-5620849DD6CE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<array>
 			<dict>
@@ -490,19 +477,6 @@
 		</array>
 		<key>E201FA64-F088-49FF-8FD1-DCFB806FCF6E</key>
 		<array/>
-		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E4E3E773-9062-4B65-9CC9-ED1AB35D0170</key>
 		<array>
 			<dict>
@@ -1968,41 +1942,6 @@ md2docx "$*" 2&gt;&amp;1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>ff-search</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>E2CB7938-3449-4EED-B355-AB542CF379C3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>folder_to_search</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -2236,9 +2175,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>955</real>
+			<real>950</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>228D9B7B-E0CD-45DA-8942-23DBC58C1432</key>
 		<dict>
@@ -2318,23 +2257,14 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<real>910</real>
 		</dict>
-		<key>3CBD464E-FA6B-4762-AE5C-0F87EA0C49B7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>270</real>
-			<key>ypos</key>
-			<real>1665</real>
-		</dict>
 		<key>3E922297-5355-42B7-A605-9FE61B8F7795</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>605</real>
+			<real>600</real>
 			<key>ypos</key>
-			<real>1775</real>
+			<real>1675</real>
 		</dict>
 		<key>4256AED4-8786-426C-BBAA-BD79229EE458</key>
 		<dict>
@@ -2374,9 +2304,9 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get title of URL</string>
 			<key>xpos</key>
-			<real>230</real>
+			<real>225</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>49C1CB43-3C55-4085-BBF5-A406476E7309</key>
 		<dict>
@@ -2405,18 +2335,18 @@ echo -n "$title"</string>
 			<key>note</key>
 			<string>get Finder Window</string>
 			<key>xpos</key>
-			<real>450</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>4B4F74D9-0F04-44F9-B1F5-1F7DFCF57B2C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>175</real>
+			<real>170</real>
 			<key>ypos</key>
-			<real>1775</real>
+			<real>1675</real>
 		</dict>
 		<key>56CD69F0-DA3F-4EF1-809F-78543F4459A1</key>
 		<dict>
@@ -2477,9 +2407,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>815</real>
+			<real>810</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>93B85973-AE73-4B7F-A698-D19A0E332914</key>
 		<dict>
@@ -2497,9 +2427,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>40</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>95E5B67E-7350-4876-B7DF-90F25BC4A121</key>
 		<dict>
@@ -2542,9 +2472,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>675</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1645</real>
 		</dict>
 		<key>B54963C8-650A-4E42-A841-A1A744BE7D2A</key>
 		<dict>
@@ -2700,15 +2630,6 @@ echo -n "$title"</string>
 			<key>ypos</key>
 			<real>1375</real>
 		</dict>
-		<key>E2CB7938-3449-4EED-B355-AB542CF379C3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>115</real>
-			<key>ypos</key>
-			<real>1635</real>
-		</dict>
 		<key>E31A91CD-6729-4B81-B897-92A757CEE724</key>
 		<dict>
 			<key>colorindex</key>
@@ -2745,9 +2666,9 @@ echo -n "$title"</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>380</real>
+			<real>375</real>
 			<key>ypos</key>
-			<real>1775</real>
+			<real>1675</real>
 		</dict>
 		<key>F07D2BDA-5358-4B99-9F8C-27361AFE3FF1</key>
 		<dict>

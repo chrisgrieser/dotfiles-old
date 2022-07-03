@@ -59,7 +59,7 @@ function iinaLaunch(appName, eventType, appObject)
 			local isProjector = hs.screen.primaryScreen():name() == "ViewSonic PJ"
 			if isProjector then
 				-- going full screen apparently needs a small delay
-				hs.timer.delayed.new(1, function()
+				hs.timer.delayed.new(0.8, function()
 					appObject:selectMenuItem({"Video", "Enter Full Screen"})
 				end):start()
 			end
@@ -87,7 +87,7 @@ function twitterificAppActivated(appName, eventType, appObject)
 			runDelayed(1, function ()
 				twitterrific = hs.application("Twitterrific")
 				if #(twitterrific:allWindows()) > 1 then return end
-				-- has to be done via keystroke, since headless
+				-- switch to list view has (to be done via keystroke, since headless)
 				keystroke({"cmd"}, "T", twitterrific)
 				keystroke({"cmd"}, "5", twitterrific)
 				keystroke({}, "down", twitterrific)
@@ -95,8 +95,6 @@ function twitterificAppActivated(appName, eventType, appObject)
 			end)
 
 		elseif (eventType == hs.application.watcher.activated) then
-			-- this doesn't work in headless mode
-			-- appObject:selectMenuItem({"Window", "Bring All to Front"})
 			appObject:getWindow("@pseudo_meta - List"):raise()
 			appObject:getWindow("@pseudo_meta - Home"):focus()
 		end

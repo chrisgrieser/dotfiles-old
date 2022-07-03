@@ -43,7 +43,7 @@ matches:
     label: 🐚 Screen count
   - trigger: "!resolve"
     replace: |
-      resolved_path="${file_path/#~/$HOME}"
+      resolved_path="${file_path/#\~/$HOME}"
 
     label: '🐚 Resolve ~'
   - trigger: "!hr"
