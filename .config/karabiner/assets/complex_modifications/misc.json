@@ -476,36 +476,6 @@
       ]
     },
     {
-      "description": "Ⓜ️❌ Brave/Finder: ⌘W → f16 (better window closing)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f16"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.brave\\.Browser$",
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Ⓜ️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9",
       "manipulators": [
         {
@@ -918,6 +888,36 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.runningwithcrayons\\.Alfred$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ⓜ️❌ Brave/Finder: ⌘W → f16 (better window closing)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f16"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.brave\\.Browser$",
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
