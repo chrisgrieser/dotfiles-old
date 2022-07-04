@@ -89,11 +89,10 @@ nmap ] )
 " Goto Mark
 nmap ä `
 
-" Add to Custom Dictionary
-" (Various complements, not spellcheck dictionary though)
-exmap addToCustomDictionary obcommand various-complements:add-word-custom-dictionary
-vmap zg :addToCustomDictionary
-nmap zg :addToCustomDictionary
+" Add to Dictionary (not directly accessible, only via Context Menu)
+exmap contextMenu obcommand editor:context-menu
+nmap zg :contextMenu
+vmap zg :contextMenu
 
 " Navigate headings, requires Code Editor Shortcuts plugin
 exmap nextHeading obcommand obsidian-editor-shortcuts:goToNextHeading
