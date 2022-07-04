@@ -11,7 +11,10 @@ lightModeStrokeWidth = 10
 darkModeStrokeWidth = 7
 
 function activeWindowHighlight(appName, eventType)
-	if (appName == "Alfred" or appName == "IINA") then	return end -- for Alfred's compatibility mode
+	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
+	if (appName == "IINA") then return end
+	if appName == "Twitterrific" and not(isAtOffice()) then return end
+
 	local win = hs.window.focusedWindow()
 	if not (win) then return end
 	local screenWidth = win:screen():frame().w
