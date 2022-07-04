@@ -151,6 +151,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>785760DF-833B-4AFA-BA0C-B3EA6ACFF877</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>31AD87CE-006D-42DB-962F-F774BCD3F558</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7ED0C4FA-8B63-41FB-A3E8-1B028DF21B0A</key>
 		<array>
 			<dict>
@@ -1070,6 +1083,70 @@ end tell</string>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>3</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>14</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>E</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>785760DF-833B-4AFA-BA0C-B3EA6ACFF877</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	keystroke tab
+	delay 0.1
+	key code 126
+	delay 0.05
+	keystroke "+"
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>31AD87CE-006D-42DB-962F-F774BCD3F558</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>4</string>
 				<key>focusedappvariable</key>
@@ -1209,7 +1286,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>595</real>
+			<real>685</real>
 			<key>ypos</key>
 			<real>740</real>
 		</dict>
@@ -1238,7 +1315,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>reply directly above</string>
 			<key>xpos</key>
-			<real>410</real>
+			<real>500</real>
 			<key>ypos</key>
 			<real>890</real>
 		</dict>
@@ -1270,6 +1347,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<real>285</real>
 			<key>ypos</key>
 			<real>1015</real>
+		</dict>
+		<key>31AD87CE-006D-42DB-962F-F774BCD3F558</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>685</real>
+			<key>ypos</key>
+			<real>1025</real>
 		</dict>
 		<key>37395496-78FC-403F-9082-9A707DCD9ABF</key>
 		<dict>
@@ -1327,7 +1413,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>595</real>
+			<real>685</real>
 			<key>ypos</key>
 			<real>890</real>
 		</dict>
@@ -1351,12 +1437,23 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
+		<key>785760DF-833B-4AFA-BA0C-B3EA6ACFF877</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Emoji</string>
+			<key>xpos</key>
+			<real>500</real>
+			<key>ypos</key>
+			<real>1025</real>
+		</dict>
 		<key>7ED0C4FA-8B63-41FB-A3E8-1B028DF21B0A</key>
 		<dict>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>1135</real>
+			<real>1170</real>
 		</dict>
 		<key>84BE295A-8ECF-4EF4-A2E3-350807F5C5EF</key>
 		<dict>
@@ -1396,7 +1493,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>note</key>
 			<string>Scroll to Bottom (like vim G)</string>
 			<key>xpos</key>
-			<real>410</real>
+			<real>500</real>
 			<key>ypos</key>
 			<real>740</real>
 		</dict>
@@ -1510,7 +1607,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>xpos</key>
 			<real>440</real>
 			<key>ypos</key>
-			<real>1135</real>
+			<real>1170</real>
 		</dict>
 		<key>FE7519CD-D6C6-4E77-B317-436DF817A5A4</key>
 		<dict>

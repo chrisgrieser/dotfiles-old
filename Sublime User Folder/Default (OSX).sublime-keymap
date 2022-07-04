@@ -23,9 +23,6 @@
 	{ "keys": ["shift+control+alt+i"], "command": "install_package" },
 	{ "keys": ["shift+control+alt+u"], "command": "remove_package" },
 
-	// Reload vimrc
-	{ "keys": ["shift+control+alt+r"], "command": "neovintageous", "args": { "action": "reload_rc_file" } },
-
 	// Wrap
 	{ "keys": ["alt+shift+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
 
