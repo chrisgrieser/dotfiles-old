@@ -1,5 +1,5 @@
 title: "⚒️ Vim Utilities"
-version: "0.9"
+version: "1.2"
 maintainers:
   - pseudometa
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/vim-utilities.json
@@ -31,6 +31,31 @@ rules:
           - set_notification_message:
               id: vim-mode-notice
               text: ""
+  - description: "⚒️ R-⌘ (tap): Focus Window & Hide Cursor"
+    manipulators:
+      - type: basic
+        from:
+          key_code: right_command
+        to:
+          - key_code: right_command
+        parameters:
+          basic.to_if_alone_timeout_milliseconds: 250
+        to_if_alone:
+          - software_function:
+              set_mouse_cursor_position:
+                x: 50%
+                y: 50%
+                screen: 0
+          - key_code: vk_none
+            hold_down_milliseconds: 15
+          - pointing_button: button1
+          - key_code: vk_none
+            hold_down_milliseconds: 15
+          - software_function:
+              set_mouse_cursor_position:
+                x: 99%
+                y: 75%
+                screen: 0
   - description: "⚒️ {}@^~|: German to US layout"
     manipulators:
       - type: basic

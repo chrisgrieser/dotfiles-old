@@ -3195,6 +3195,56 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "⚒️ R-⌘ (tap): Focus Window & Hide Cursor",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_command"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 250
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "50%",
+                                                "y": "50%"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 15,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "pointing_button": "button1"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 15,
+                                        "key_code": "vk_none"
+                                    },
+                                    {
+                                        "software_function": {
+                                            "set_mouse_cursor_position": {
+                                                "screen": 0,
+                                                "x": "99%",
+                                                "y": "75%"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
