@@ -1,36 +1,26 @@
 #!/bin/zsh
 
 # get path of current Finder Selection/Window
-if [[ -z "$*" ]] ; then
-	FINDER_SEL=$(osascript -e 'tell application "Finder"
-		if ((count windows) is 0) then return "no window"
+FINDER_SEL=$(osascript -e 'tell application "Finder"
+	if ((count windows) is 0) then return "no window"
 
-		set sel to selection
-		if ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)
-		if ((count sel) = 1) then return POSIX path of (sel as text)
-		if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
-	end tell')
-else
-	FINDER_SEL="$*"
-fi
+	set sel to selection
+	if ((count sel) > 1) then return POSIX path of ((item 1 of sel) as text)
+	if ((count sel) = 1) then return POSIX path of (sel as text)
+	if ((count sel) = 0) then return POSIX path of (target of window 1 as alias)
+end tell')
 
 [[ "$FINDER_SEL" == "no window" ]] && exit 1 # no finder window
+[[ -d "$FINDER_SEL" ]] && exit 1 # folder selected
+
+FOLDER=$(dirname "$FINDER_SEL")
+FILE=$(basename "$FINDER_SEL")
+
+cd "$FOLDER" || exit 1
 [[ $(git rev-parse --git-dir) ]] || exit 1 # not a git directory
-
-if [[ -d "$FINDER_SEL" ]] ; then
-	FOLDER="$FINDER_SEL"
-	FILE=""
-elif [[ -f "$FINDER_SEL" ]] ; then
-	FOLDER=$(dirname "$FINDER_SEL")
-	FILE=$(basename "$FINDER_SEL")
-else
-	exit 1 # no regular file selected
-fi
-
-cd "$FOLDER" || return
 # go to to git root https://stackoverflow.com/a/38843585
 # shellcheck disable=SC2164
-r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && ROOTF="${r%%/.git/*}" &&
+r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && ROOTF="${r%%/.git/*}"
 BRANCH=$(git branch --show-current)
 REMOTE_URL="$(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/https:\/\//' -e 's/\.git//')"
 
