@@ -6,6 +6,9 @@ function systemWake (eventType)
 	if (eventType == hs.caffeinate.watcher.screensDidWake) then
 
 		reloadAllMenubarItems()
+		if appIsRunning("Obsidian") and appIsRunning("Discord") then
+			hs.urlevent.openURL("obsidian://advanced-uri?vault=Main%20Vault&commandid=obsidian-discordrpc%253Areconnect-discord")
+		end
 		if isIMacAtHome() then homeModeLayout() end
 		hs.shortcuts.run("Send Reminders due today to Drafts")
 
