@@ -92,6 +92,7 @@ nmap ä `
 " Add to Custom Dictionary
 " (Various complements, not spellcheck dictionary though)
 exmap addToCustomDictionary obcommand various-complements:add-word-custom-dictionary
+vmap zg :addToCustomDictionary
 nmap zg :addToCustomDictionary
 
 " Navigate headings, requires Code Editor Shortcuts plugin
