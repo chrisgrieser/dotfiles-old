@@ -11,7 +11,7 @@ unmap ,
 """"""""""""""""""""""
 " yank to system clipboard
 " disabled due to koala's PR
-" set clipboard=unnamed
+set clipboard=unnamed
 
 " Y consistent with D and C to the end of line
 nmap Y y$
