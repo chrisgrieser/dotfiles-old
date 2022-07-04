@@ -220,7 +220,6 @@ function homeModeLayout ()
 		hs.application("Drafts"):mainWindow():raise()
 	end
 
-	hs.osascript.applescript('tell application id "com.runningwithcrayons.Alfred" to run trigger "play" in workflow "com.vdesabou.spotify.mini.player"')
 	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 
 end
