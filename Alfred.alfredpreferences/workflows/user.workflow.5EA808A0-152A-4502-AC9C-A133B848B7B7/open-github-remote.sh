@@ -11,14 +11,22 @@ FINDER_SEL=$(osascript -e 'tell application "Finder"
 end tell')
 
 [[ "$FINDER_SEL" == "no window" ]] && exit 1 # no finder window
-[[ -d "$FINDER_SEL" ]] && exit 1 # folder selected
 
 FOLDER=$(dirname "$FINDER_SEL")
 FILE=$(basename "$FINDER_SEL")
 
+if [[ -d "$FINDER_SEL" ]] ; then
+	FOLDER="$FINDER_SEL"
+	FILE=""
+elif [[ -f "$FINDER_SEL" ]] ; then
+	FOLDER=$(dirname "$FINDER_SEL")
+	FILE=$(basename "$FINDER_SEL")
+else
+	exit 1 # no regular file selected
+fi
+
 cd "$FOLDER" || exit 1
 [[ $(git rev-parse --git-dir) ]] || exit 1 # not a git directory
-# go to to git root https://stackoverflow.com/a/38843585
 # shellcheck disable=SC2164
 r=$(git rev-parse --git-dir) && r=$(cd "$r" && pwd)/ && ROOTF="${r%%/.git/*}"
 BRANCH=$(git branch --show-current)

@@ -462,11 +462,11 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>9</integer>
 				<key>hotmod</key>
 				<integer>917504</integer>
 				<key>hotstring</key>
-				<string>A</string>
+				<string>V</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -522,7 +522,7 @@ open $(git remote -v | grep git@github.com | grep fetch | head -n1 | cut -f2 | c
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>open-github-remote.sh</string>
+				<string>open-all-versions.sh</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
