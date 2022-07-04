@@ -129,7 +129,7 @@ function moveAndResize(direction)
 	resizingWorkaround(win, position)
 
 	if win:application():name() == "Drafts" then
-		runDelayed(0.1, function () toggleDraftsSidebar(win)	end)
+		runDelayed(0.2, function () toggleDraftsSidebar(win)	end)
 	end
 end
 
@@ -369,9 +369,9 @@ function vsplit (mode)
 	resizingWorkaround(win2, f2)
 
 	if win1:application():name() == "Drafts" then
-		runDelayed(0.1, function () toggleDraftsSidebar(win1)	end)
+		runDelayed(0.2, function () toggleDraftsSidebar(win1)	end)
 	elseif win2:application():name() == "Drafts" then
-		runDelayed(0.1, function () toggleDraftsSidebar(win2)	end)
+		runDelayed(0.2, function () toggleDraftsSidebar(win2)	end)
 	end
 end
 

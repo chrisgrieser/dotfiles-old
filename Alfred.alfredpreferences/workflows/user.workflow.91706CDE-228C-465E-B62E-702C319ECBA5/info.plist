@@ -8,6 +8,19 @@
 	<string>Searches</string>
 	<key>connections</key>
 	<dict>
+		<key>0EFC644A-AFF6-4DB3-9E69-56A80E0EE729</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B740A50-11C9-4D6A-857F-20B13A1CA1EE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3E14D1C6-DD8A-482A-9341-1516B2609DB3</key>
 		<array>
 			<dict>
@@ -192,21 +205,6 @@
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Gifski.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>1833CB9C-DCC9-4E71-8DF2-082ECEAF1D2B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
 				<string>/System/Volumes/Data/Applications/Pixelmator Pro.app</string>
 				<key>sourcefile</key>
 				<string></string>
@@ -215,6 +213,21 @@
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
 			<string>45B4059B-1853-410F-BB24-E77A2A662C4D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/System/Volumes/Data/Applications/Gifski.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>1833CB9C-DCC9-4E71-8DF2-082ECEAF1D2B</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -500,6 +513,69 @@ return "{query}"</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.colliderli.iina</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0EFC644A-AFF6-4DB3-9E69-56A80E0EE729</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	tell process "IINA"
+		set frontmost to true
+		click menu item "Save Current Playlist…" of menu "File" of menu bar 1
+	end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1B740A50-11C9-4D6A-857F-20B13A1CA1EE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -510,72 +586,90 @@ return "{query}"</string>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>05EAE0AB-840D-44C9-B67B-2FF4B19D16D2</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<real>375</real>
 			<key>ypos</key>
-			<integer>385</integer>
+			<real>385</real>
 		</dict>
 		<key>0C406653-F247-4FCA-92CB-4CD574370ADC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>215</integer>
+			<real>215</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
+		</dict>
+		<key>0EFC644A-AFF6-4DB3-9E69-56A80E0EE729</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>650</real>
 		</dict>
 		<key>1833CB9C-DCC9-4E71-8DF2-082ECEAF1D2B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>1B740A50-11C9-4D6A-857F-20B13A1CA1EE</key>
+		<dict>
+			<key>colorindex</key>
 			<integer>10</integer>
+			<key>xpos</key>
+			<real>205</real>
+			<key>ypos</key>
+			<real>650</real>
 		</dict>
 		<key>1F2CC4BE-1C49-41D8-BC93-DEF34DEDBF31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>215</integer>
+			<real>215</real>
 			<key>ypos</key>
-			<integer>265</integer>
+			<real>265</real>
 		</dict>
 		<key>3E14D1C6-DD8A-482A-9341-1516B2609DB3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>45B4059B-1853-410F-BB24-E77A2A662C4D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>505B935F-3B3C-49BC-8DA3-77CD1E0BA04A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>265</integer>
+			<real>265</real>
 		</dict>
 		<key>796AC1E3-A5E4-4461-9DB8-025B71D40421</key>
 		<dict>
@@ -584,36 +678,36 @@ return "{query}"</string>
 			<key>note</key>
 			<string>Export (in Alfred, as multiple Exports Menu items in Pixelmator make Mac OS Keyboard Shortcuts unreliable)</string>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>A7692C8B-A314-4D01-ACB4-17A50F69D883</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>BCAD16ED-A17E-4512-8825-EE0157EDC36A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>C0F090F5-22FD-43D8-810F-EC393D46A562</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>350</integer>
+			<real>350</real>
 		</dict>
 		<key>C2F1411D-9E20-4EB9-82E0-BF23FFA94DCD</key>
 		<dict>
@@ -622,9 +716,9 @@ return "{query}"</string>
 			<key>note</key>
 			<string>copy image to clipboard</string>
 			<key>xpos</key>
-			<integer>215</integer>
+			<real>215</real>
 			<key>ypos</key>
-			<integer>385</integer>
+			<real>385</real>
 		</dict>
 		<key>CF41F8B3-36C9-4A59-9336-A70B0FCA980C</key>
 		<dict>
@@ -633,29 +727,31 @@ return "{query}"</string>
 			<key>note</key>
 			<string>convert movie to gif</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>D33D3AB5-4E2F-4E08-A2D3-A63A1B3768ED</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>E25B4258-39D1-42A7-A857-3A0A5C34A78B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<integer>720</integer>
+			<real>720</real>
 			<key>ypos</key>
-			<integer>350</integer>
+			<real>350</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>folder_to_search</key>
