@@ -22,6 +22,7 @@ pw.*
 backup.log
 espanso/match/private.*
 Alfred.alfredpreferences/snippets
+Private.bttpreset
 
 # Git Repos (already backed up)
 # -----------------------------
