@@ -214,20 +214,19 @@ function homeModeLayout ()
 	hs.layout.apply(homeLayout)
 	runDelayed(0.3, function ()
 		hs.layout.apply(homeLayout)
+
+		twitterrificScrollUp()
+		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+
+		local slackWindowTitle = hs.application("Slack"):mainWindow():title()
+		local slackUnreadMsg = slackWindowTitle:match("%*")
+		if (slackUnreadMsg) then
+			hs.application("Slack"):mainWindow():focus()
+		else
+			hs.application("Drafts"):mainWindow():focus()
+		end
 	end)
 
-	-- if Slack has unread message, raise the window
-	twitterrificScrollUp()
-
-	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
-	local slackUnreadMsg = slackWindowTitle:match("%*")
-	if (slackUnreadMsg) then
-		hs.application("Slack"):mainWindow():focus()
-	else
-		hs.application("Drafts"):mainWindow():focus()
-	end
-
-	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 end
 
 function officeModeLayout ()
@@ -265,19 +264,18 @@ function officeModeLayout ()
 
 	hs.layout.apply(officeLayout)
 	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
-	hs.timer.delayed.new(0.6, function () hs.layout.apply(officeLayout) end):start()
+	hs.timer.delayed.new(0.6, function ()
+		hs.layout.apply(officeLayout)
+		local slackWindowTitle = hs.application("Slack"):mainWindow():title()
+		local slackUnreadMsg = slackWindowTitle:match("%*")
+		if (slackUnreadMsg) then
+			hs.application("Slack"):mainWindow():raise()
+		else
+			hs.application("Discord"):mainWindow():raise()
+		end
 
-	-- if Slack has unread message, raise the window
-	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
-	local slackUnreadMsg = slackWindowTitle:match("%*")
-	if (slackUnreadMsg) then
-		hs.application("Slack"):mainWindow():raise()
-	else
-		hs.application("Discord"):mainWindow():raise()
-	end
-
-	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-
+		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+	end):start()
 end
 
 function displayCountWatcher()
