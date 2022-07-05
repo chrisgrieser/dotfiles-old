@@ -270,7 +270,6 @@ vmap <Space> "_c
 " Delete Word/Selection
 nmap <S-Space> "_daW
 vmap <S-Space> "_d
-vmap d "_x
 
 " Yank Word/Selection
 " Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
