@@ -70,13 +70,6 @@ iinaAppLauncher = hs.application.watcher.new(iinaLaunch)
 iinaAppLauncher:start()
 
 --------------------------------------------------------------------------------
--- Hotkeys
-hotkey({}, "pagedown", pagedownAction, nil, pagedownAction)
-hotkey({}, "pageup", pageupAction, nil, pageupAction)
-hotkey({}, "home", homeAction)
-
-hotkey({"shift"}, "home", twitterrificScrollUp)
---------------------------------------------------------------------------------
 -- raise all windows on activation,
 -- open both windows on launch
 -- (only active in office though)
@@ -104,3 +97,11 @@ twitterificAppWatcher = hs.application.watcher.new(twitterificAppActivated)
 if isAtOffice() then twitterificAppWatcher:start() end
 twitterrificScrolling = false
 
+
+--------------------------------------------------------------------------------
+-- Hotkeys
+hotkey({}, "pagedown", pagedownAction, nil, pagedownAction)
+hotkey({}, "pageup", pageupAction, nil, pageupAction)
+hotkey({}, "home", twitterrificScrollUp)
+
+hotkey({"shift"}, "home", homeAction)
