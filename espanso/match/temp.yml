@@ -18,6 +18,10 @@ matches:
     word: true
     propagate_case: true
   - trigger: cotein
+    replace: "constellation of technological interdependence "
+    word: true
+    propagate_case: true
+  - trigger: coteins
     replace: "constellations of technological interdependence "
     word: true
     propagate_case: true
