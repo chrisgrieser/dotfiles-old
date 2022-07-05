@@ -218,13 +218,12 @@ function homeModeLayout ()
 	local slackWindowTitle = hs.application("Slack"):mainWindow():title()
 	local slackUnreadMsg = slackWindowTitle:match("%*")
 	if (slackUnreadMsg) then
-		hs.application("Slack"):mainWindow():raise()
+		hs.application("Slack"):mainWindow():focus()
 	else
-		hs.application("Drafts"):mainWindow():raise()
+		hs.application("Drafts"):mainWindow():focus()
 	end
 
 	hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-
 end
 
 function officeModeLayout ()
