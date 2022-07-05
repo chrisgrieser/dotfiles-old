@@ -41,6 +41,15 @@ function appIsRunning (app)
 	else return false	end
 end
 
+function openIfNotRunning (app)
+	local runs = hs.application.get(app)
+	if runs then
+		return
+	else
+		hs.application.open(app)
+	end
+end
+
 function bttBridge (triggerName)
 	hs.applescript('tell application "BetterTouchTool" to trigger_named "'..triggerName..'"')
 end

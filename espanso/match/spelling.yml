@@ -25,6 +25,15 @@ matches:
         params:
           cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
           shell: bash
+  - regex: '"(?P<one>[A-Z])(?P<two>[A-Z])(?P<three>[a-z])'
+    replace: '"{{CapitalCased}}'
+    label: ""
+    vars:
+      - name: CapitalCased
+        type: shell
+        params:
+          cmd: "echo $ESPANSO_ONE$(echo $ESPANSO_TWO | tr [A-Z] [a-z])$ESPANSO_THREE"
+          shell: bash
 
   # ----------------------------------------------------------------------------
 
