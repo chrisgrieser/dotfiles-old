@@ -41,6 +41,7 @@ nmap <C-m> :nohlsearch
 """"""""""""""""""""""
 " < Nagivation
 """"""""""""""""""""""
+imap jj <Esc>
 
 " Scroll horizontally back
 nmap Q mz0`z
