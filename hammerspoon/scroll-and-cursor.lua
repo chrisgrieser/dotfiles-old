@@ -8,6 +8,16 @@ require("utils")
 function scrollDown ()
 	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
 		keystroke ({"shift"}, "pagedown")
+	elseif frontapp() == "Highlights" then
+		-- has to be done via applescript, as repeated keystrokes
+		-- via Hammerspoon have a slight lag
+		hs.osascript.applescript([[
+			tell application "System Events"
+				repeat 10 times
+					key code 125
+				end repeat
+			end tell
+		]])
 	else
 		keystroke ({}, "pagedown")
 	end
