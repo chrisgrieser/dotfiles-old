@@ -22,10 +22,9 @@ number-sections: true
 
 # Academic
 citeproc: true
-metadata-files: # = fallback values
+metadata-files:  # = fallback values
   - academic.yaml  # (must be array)
 bibliography: ${USERDATA}/main-bibliography.bib
-
 
 # INFO: needs to be installed
 # filters: # must be array
