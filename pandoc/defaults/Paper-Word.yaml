@@ -8,7 +8,7 @@ reference-doc: ${USERDATA}/reference-docs/academic-paper.docx
 # General
 verbosity: WARNING
 fail-if-warnings: true
-table-of-contents: false
+table-of-contents: true
 toc-depth: 3
 resource-path:  # must be array
   - .
@@ -26,8 +26,8 @@ metadata-files: # must be array
   - academic.yaml
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
-  link-citations: true
-  link-bibliography: true
+  link-citations: false
+  link-bibliography: false
 
 # INFO: needs to be installed!
 # filters: # must be array
