@@ -27,7 +27,7 @@
 	{ "keys": ["alt+shift+ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
 
 	// LSP Variable Rename
-	{"command": "lsp_symbol_rename", "keys": ["shift+control+alt+v"], "context": [
+	{"command": "lsp_symbol_rename", "keys": ["shift+control+alt+r"], "context": [
 		{"key": "lsp.session_with_capability", "operator": "equal", "operand": "renameProvider"}
 	] },
 

@@ -5,16 +5,29 @@ require("utils")
 -- have to be done here, since when send from Karabiner, gets caught by the
 -- pagedown/up listener from Hammerspoon in `twitterific-iina.lua`
 
-function scrollDown ()
-	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
-		keystroke ({"shift"}, "pagedown")
-	elseif frontapp() == "Highlights" then
+function highlightsAppScroll (amount)
 		-- has to be done via applescript, as repeated keystrokes
 		-- via Hammerspoon have a slight lag
 		local prevMousePos = hs.mouse.absolutePosition()
 
-		hs.mouse.setRelativePosition({x=0.5, y=0.5})
+		-- center mouse on Highlights window
+		local highlightsWin = hs.application("Highlights"):mainWindow():frame()
+		local pos = {
+			x = highlightsWin.x + highlightsWin.w * 0.5,
+			y = highlightsWin.y + highlightsWin.h * 0.5,
+		}
+		hs.mouse.setRelativePosition(pos)
+
+		hs.eventtap.scrollWheel({0, amount}, {})
+		-- restore previous mouse position
 		hs.mouse.absolutePosition(prevMousePos)
+end
+
+function scrollDown ()
+	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
+		keystroke ({"shift"}, "pagedown")
+	elseif frontapp() == "Highlights" then
+		highlightsAppScroll(-13)
 	else
 		keystroke ({}, "pagedown")
 	end
@@ -22,6 +35,8 @@ end
 function scrollUp ()
 	if frontapp():lower() == "alacritty" or frontapp() == "Terminal" then
 		keystroke ({"shift"}, "pageup")
+	elseif frontapp() == "Highlights" then
+		highlightsAppScroll(13)
 	else
 		keystroke ({}, "pageup")
 	end
