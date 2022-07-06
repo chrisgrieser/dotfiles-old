@@ -11,13 +11,10 @@ function scrollDown ()
 	elseif frontapp() == "Highlights" then
 		-- has to be done via applescript, as repeated keystrokes
 		-- via Hammerspoon have a slight lag
-		hs.osascript.applescript([[
-			tell application "System Events"
-				repeat 10 times
-					key code 125
-				end repeat
-			end tell
-		]])
+		local prevMousePos = hs.mouse.absolutePosition()
+
+		hs.mouse.setRelativePosition({x=0.5, y=0.5})
+		hs.mouse.absolutePosition(prevMousePos)
 	else
 		keystroke ({}, "pagedown")
 	end
