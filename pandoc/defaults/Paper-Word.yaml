@@ -22,13 +22,13 @@ number-sections: true
 
 # Academic
 citeproc: true
-metadata-files: # must be array
-  - academic.yaml
+metadata-files: # = fallback values
+  - academic.yaml  # (must be array)
 bibliography: ${USERDATA}/main-bibliography.bib
 metadata:
   link-citations: false
   link-bibliography: false
 
-# INFO: needs to be installed!
+# INFO: needs to be installed
 # filters: # must be array
 #   - pandoc-crossref
