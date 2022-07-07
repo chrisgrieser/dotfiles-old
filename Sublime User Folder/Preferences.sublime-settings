@@ -558,6 +558,7 @@
 		"\n-",
 		"Hammerspoon",
 		"lua",
+		"Toggler",
 	],
 
 	"neovintageous_build_version": 11100,
