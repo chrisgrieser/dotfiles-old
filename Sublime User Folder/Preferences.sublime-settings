@@ -556,6 +556,8 @@
 		"callouts",
 		"copypaste",
 		"\n-",
+		"Hammerspoon",
+		"lua",
 	],
 
 	"neovintageous_build_version": 11100,
