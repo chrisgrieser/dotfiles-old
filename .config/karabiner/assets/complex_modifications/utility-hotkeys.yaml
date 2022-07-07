@@ -69,3 +69,95 @@ rules:
             bundle_identifiers:
               - ^md\.obsidian$
               - ^com\.sublimetext
+              - description: "§ → | (+ US Layout); ⌥3 for Paragraph Symbol"
+                manipulators:
+                  - type: basic
+                    from:
+                      key_code: "3"
+                      modifiers:
+                        mandatory:
+                          - shift
+                    conditions:
+                      - type: input_source_if
+                        input_sources:
+                          - language: ^de$
+                    to:
+                      - select_input_source:
+                          input_source_id: ^com\.apple\.keylayout\.US$
+                      - key_code: vk_none
+                        hold_down_milliseconds: 20
+                      - key_code: non_us_pound
+                        modifiers:
+                          - shift
+                    to_after_key_up:
+                      - select_input_source:
+                          input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
+                  - type: basic
+                    from:
+                      key_code: "3"
+                      modifiers:
+                        mandatory:
+                          - option
+                    conditions:
+                      - type: input_source_if
+                        input_sources:
+                          - language: ^de$
+                    to:
+                      - key_code: "3"
+                        modifiers:
+                          - shift
+  - description: "🔘1️⃣ One Stroke ^`~ (German Layout)"
+    manipulators:
+      - description: backtick
+        type: basic
+        from:
+          key_code: equal_sign
+          modifiers:
+            mandatory:
+              - shift
+        to:
+          - key_code: equal_sign
+            modifiers:
+              - shift
+          - key_code: spacebar
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+      - description: tilde
+        type: basic
+        from:
+          key_code: "n"
+          modifiers:
+            mandatory:
+              - option
+        to:
+          - key_code: "n"
+            modifiers:
+              - option
+          - key_code: spacebar
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+          - type: frontmost_application_unless
+            bundle_identifiers:
+              - ^com\.apple\.Terminal$
+              - ^md\.obsidian$
+              - ^com\.sublimetext\.4$
+      - description: ^
+        type: basic
+        from:
+          key_code: non_us_backslash
+        to:
+          - key_code: non_us_backslash
+          - key_code: spacebar
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+          - type: frontmost_application_unless
+            bundle_identifiers:
+              - ^com\.apple\.Terminal$
+              - ^md\.obsidian$
+              - ^com\.sublimetext\.4$

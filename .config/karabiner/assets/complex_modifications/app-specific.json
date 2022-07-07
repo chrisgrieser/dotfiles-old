@@ -1,205 +1,14 @@
 {
-  "title": "Ⓜ️ Misc",
+  "title": "🅰️ App-Specific",
   "version": "2.1",
   "maintainers": [
     "pseudometa"
   ],
-  "import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/misc.json",
+  "import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/app-specific.json",
   "homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
   "rules": [
     {
-      "description": "Ⓜ️ § → | (+ US Layout); ⌥3 for Paragraph Symbol",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "3",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
-          },
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            }
-          ],
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-              }
-            },
-            {
-              "key_code": "vk_none",
-              "hold_down_milliseconds": 20
-            },
-            {
-              "key_code": "non_us_pound",
-              "modifiers": [
-                "shift"
-              ]
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.keylayout\\.ABC-QWERTZ$"
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "3",
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ]
-            }
-          },
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            }
-          ],
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Ⓜ️1️⃣ One Stroke ^`~ (German Layout)",
-      "manipulators": [
-        {
-          "description": "backtick",
-          "type": "basic",
-          "from": {
-            "key_code": "equal_sign",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "shift"
-              ]
-            },
-            {
-              "key_code": "spacebar"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "description": "tilde",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "option"
-              ]
-            },
-            {
-              "key_code": "spacebar"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            },
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Terminal$",
-                "^md\\.obsidian$",
-                "^com\\.sublimetext\\.4$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "^",
-          "type": "basic",
-          "from": {
-            "key_code": "non_us_backslash"
-          },
-          "to": [
-            {
-              "key_code": "non_us_backslash"
-            },
-            {
-              "key_code": "spacebar"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "^de$"
-                }
-              ]
-            },
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Terminal$",
-                "^md\\.obsidian$",
-                "^com\\.sublimetext\\.4$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Ⓜ️🧑‍💻 Alacritty/Terminal: ⌘Q → ⌃D (Quit on Process End)",
+      "description": "🅰️🧑‍💻 Alacritty/Terminal: ⌘Q → ⌃D (Quit on Process End)",
       "manipulators": [
         {
           "type": "basic",
@@ -232,7 +41,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🖊 Highlights: ⌘+L → Show PDF in Finder",
+      "description": "🅰️🖊 Highlights: ⌘+L → Show PDF in Finder",
       "manipulators": [
         {
           "type": "basic",
@@ -276,7 +85,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🏞 YouTube: ⌘+P → Picture-in-Picture Mode",
+      "description": "🅰️🏞 YouTube: ⌘+P → Picture-in-Picture Mode",
       "manipulators": [
         {
           "type": "basic",
@@ -337,7 +146,7 @@
       ]
     },
     {
-      "description": "Ⓜ️📖 Inoreader: v opens in background, switch jk & np",
+      "description": "🅰️📖 Inoreader: v opens in background, switch jk & np",
       "manipulators": [
         {
           "type": "basic",
@@ -447,7 +256,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🔑 MacPass: ⌘+c/u → ⌘⌥+c/⌘⇧+c, then ⌘+h",
+      "description": "🅰️🔑 MacPass: ⌘+c/u → ⌘⌥+c/⌘⇧+c, then ⌘+h",
       "manipulators": [
         {
           "type": "basic",
@@ -520,7 +329,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🔨 Hammerspoon: ⌘Q → Close instead of Quit ",
+      "description": "🅰️🔨 Hammerspoon: ⌘Q → Close instead of Quit ",
       "manipulators": [
         {
           "type": "basic",
@@ -552,7 +361,7 @@
       ]
     },
     {
-      "description": "Ⓜ️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9",
+      "description": "🅰️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9",
       "manipulators": [
         {
           "type": "basic",
@@ -971,7 +780,7 @@
       ]
     },
     {
-      "description": "Ⓜ️❌ Brave/Finder: ⌘W → f16 (better window closing)",
+      "description": "🅰️❌ Brave/Finder: ⌘W → f16 (better window closing)",
       "manipulators": [
         {
           "type": "basic",
