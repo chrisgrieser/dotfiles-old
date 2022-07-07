@@ -1,5 +1,4 @@
 title: 🔘 Utility Shortcuts
-version: "0.1"
 maintainers:
   - pseudometa
 import-url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/utility-hotkeys.json
@@ -69,43 +68,78 @@ rules:
             bundle_identifiers:
               - ^md\.obsidian$
               - ^com\.sublimetext
-              - description: "§ → | (+ US Layout); ⌥3 for Paragraph Symbol"
-                manipulators:
-                  - type: basic
-                    from:
-                      key_code: "3"
-                      modifiers:
-                        mandatory:
-                          - shift
-                    conditions:
-                      - type: input_source_if
-                        input_sources:
-                          - language: ^de$
-                    to:
-                      - select_input_source:
-                          input_source_id: ^com\.apple\.keylayout\.US$
-                      - key_code: vk_none
-                        hold_down_milliseconds: 20
-                      - key_code: non_us_pound
-                        modifiers:
-                          - shift
-                    to_after_key_up:
-                      - select_input_source:
-                          input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
-                  - type: basic
-                    from:
-                      key_code: "3"
-                      modifiers:
-                        mandatory:
-                          - option
-                    conditions:
-                      - type: input_source_if
-                        input_sources:
-                          - language: ^de$
-                    to:
-                      - key_code: "3"
-                        modifiers:
-                          - shift
+  - description: "🔘 § → | (+ US Layout); ⌥3 for Paragraph Symbol"
+    manipulators:
+      - type: basic
+        from:
+          key_code: "3"
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.US$
+          - key_code: vk_none
+            hold_down_milliseconds: 20
+          - key_code: non_us_pound
+            modifiers:
+              - shift
+        to_after_key_up:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
+      - type: basic
+        from:
+          key_code: "3"
+          modifiers:
+            mandatory:
+              - option
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - key_code: "3"
+            modifiers:
+              - shift
+  - description: "🔘 ° → \\ (+ US Layout); ⌥^ for ° Symbol"
+    manipulators:
+      - type: basic
+        from:
+          key_code: non_us_backslash
+          modifiers:
+            mandatory:
+              - shift
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.US$
+          - key_code: vk_none
+            hold_down_milliseconds: 20
+          - key_code: non_us_pound
+        to_after_key_up:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
+      - type: basic
+        from:
+          key_code: "3"
+          modifiers:
+            mandatory:
+              - option
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - key_code: "3"
+            modifiers:
+              - shift
   - description: "🔘1️⃣ One Stroke ^`~ (German Layout)"
     manipulators:
       - description: backtick
@@ -124,6 +158,11 @@ rules:
           - type: input_source_if
             input_sources:
               - language: ^de$
+          - type: frontmost_application_unless
+            bundle_identifiers:
+              - ^com\.apple\.Terminal$
+              - ^md\.obsidian$
+              - ^com\.sublimetext\.4$
       - description: tilde
         type: basic
         from:
@@ -161,3 +200,55 @@ rules:
               - ^com\.apple\.Terminal$
               - ^md\.obsidian$
               - ^com\.sublimetext\.4$
+  - description: "🔘 ß´ → [] (+ German to US Layout), ß (hold) → ß"
+    manipulators:
+      - type: basic
+        from:
+          key_code: hyphen
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+          - type: frontmost_application_if
+            file_paths:
+              - alacritty$
+              - ^/System/Applications/Utilities/Terminal.app
+              - ^/Applications/Obsidian\.app
+              - ^/Applications/Sublime Text\.app
+              - ^/Applications/Discord\.app
+              - ^/Applications/Brave Browser\.app
+              - ^/Applications/Hammerspoon\.app
+        to_if_alone:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.US$
+            repeat: false
+          - key_code: vk_none
+            hold_down_milliseconds: 60
+            repeat: false
+          - key_code: open_bracket
+            repeat: false
+        parameters:
+          basic.to_if_held_down_threshold_milliseconds: 250
+          basic.to_if_alone_timeout_milliseconds: 250
+        to_if_held_down:
+          - key_code: hyphen
+            repeat: false
+        to_after_key_up:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
+      - type: basic
+        from:
+          key_code: equal_sign
+        conditions:
+          - type: input_source_if
+            input_sources:
+              - language: ^de$
+        to:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.US$
+          - key_code: vk_none
+            hold_down_milliseconds: 20
+          - key_code: close_bracket
+        to_after_key_up:
+          - select_input_source:
+              input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$

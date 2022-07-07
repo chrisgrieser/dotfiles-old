@@ -390,7 +390,8 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "Drafts" to make new draft with properties {content: "{query}", tags: {"OCR"}}</string>
+				<string>tell application "Drafts" to make new draft with properties {content: "{query}", tags: {"OCR"}}
+return {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
