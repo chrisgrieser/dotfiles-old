@@ -800,9 +800,9 @@
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>180</real>
+			<real>490</real>
 			<key>ypos</key>
-			<real>900</real>
+			<real>765</real>
 		</dict>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<dict>
@@ -822,9 +822,9 @@
 			<key>note</key>
 			<string>reload</string>
 			<key>xpos</key>
-			<real>30</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>900</real>
+			<real>765</real>
 		</dict>
 		<key>146B762A-3BFD-4073-8111-EB3BDFFF45A1</key>
 		<dict>

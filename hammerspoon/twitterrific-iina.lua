@@ -5,9 +5,18 @@ function twitterrificScrollUp ()
 
 	-- needs activation, cause sending to app in background doesn't work w/ cmd
 	local previousApp = hs.application.frontmostApplication():name()
-
 	local twitterrific = hs.application("Twitterrific")
 	twitterrific:activate()
+
+	local prevMousePos = hs.mouse.absolutePosition()
+	local twitterrificWin = hs.application("Twitterrific"):mainWindow():frame()
+	local pos = {
+		x = twitterrificWin.x + twitterrificWin.w * 0.5,
+		y = twitterrificWin.y + 100,
+	}
+	hs.eventtap.leftClick(pos)
+	hs.mouse.absolutePosition(prevMousePos) -- restore mouse position
+
 	if #(twitterrific:allWindows()) == 1 then
 		keystroke({"cmd"}, "1") -- go to home window
 	else
@@ -23,7 +32,7 @@ function twitterrificScrollUp ()
 	keystroke({"cmd"}, "k") -- mark all as red
 	keystroke({"cmd"}, "j") -- scroll up
 	keystroke({"cmd"}, "1") -- scroll up failsafe
-	keystroke({}, "down") -- enable j/k movement
+	-- keystroke({}, "down") -- enable j/k movement
 
 	hs.application(previousApp):activate()
 
