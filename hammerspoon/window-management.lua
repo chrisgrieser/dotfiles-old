@@ -1,4 +1,6 @@
 require("utils")
+require("twitterrific-iina")
+
 --------------------------------------------------------------------------------
 -- ACTIVE WINDOW HIGHLIGHT
 -- => hammerspoon implementation of limelight https://github.com/koekeishiya/limelight
@@ -101,10 +103,21 @@ end
 function toggleDraftsSidebar (draftsWin)
 	local drafts_w = draftsWin:frame().w
 	local screen_w = draftsWin:screen():frame().w
-	if (drafts_w / screen_w > 0.5) then
+	if (drafts_w / screen_w > 0.6) then
 		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
 	else
 		hs.application("Drafts"):selectMenuItem({"View", "Hide Draft List"})
+	end
+end
+
+function toggleObsidianSidebar (obsiWin)
+	-- requires Obsidian Sidebar Toggler Plugin https://github.com/chrisgrieser/obsidian-sidebar-toggler
+	local obsi_width = obsiWin:frame().w
+	local screen_width = obsiWin:screen():frame().w
+	if (obsi_width / screen_width > 0.6) then
+		hs.urlevent.openURL("obsidian://sidebar?side=left&show=false")
+	else
+		hs.urlevent.openURL("obsidian://sidebar?side=left&show=true")
 	end
 end
 
@@ -133,6 +146,9 @@ function moveAndResize(direction)
 
 	if win:application():name() == "Drafts" then
 		runDelayed(0.2, function () toggleDraftsSidebar(win)	end)
+	end
+	if win:application():name() == "Obsidian" then
+		runDelayed(0.2, function () toggleObsidianSidebar(win)	end)
 	end
 end
 
@@ -376,6 +392,13 @@ function vsplit (mode)
 	elseif win2:application():name() == "Drafts" then
 		runDelayed(0.2, function () toggleDraftsSidebar(win2)	end)
 	end
+
+	if win1:application():name() == "Obsidian" then
+		runDelayed(0.2, function () toggleObsidianSidebar(win1) end)
+	elseif win2:application():name() == "Obsidian" then
+		runDelayed(0.2, function () toggleObsidianSidebar(win2) end)
+	end
+
 end
 
 function finderVsplit ()

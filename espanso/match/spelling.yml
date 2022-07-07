@@ -89,8 +89,8 @@ matches:
   - trigger: suer
     replace: user
     propagate_case: true
-  - trigger: Twitterific
-    replace: Twitterrific
+  - trigger: twitterific
+    replace: twitterrific
     propagate_case: true
   - trigger: technsich
     replace: technisch
