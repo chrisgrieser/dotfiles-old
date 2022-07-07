@@ -1487,7 +1487,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>note</key>
-			<string>did-you-mean-correction for word under cursor</string>
+			<string>aspell auto-correction</string>
 			<key>xpos</key>
 			<real>235</real>
 			<key>ypos</key>

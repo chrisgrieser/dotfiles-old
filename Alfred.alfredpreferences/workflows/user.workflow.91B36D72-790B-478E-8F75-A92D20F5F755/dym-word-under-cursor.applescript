@@ -16,7 +16,7 @@ on run argv
 	delay 0.05
 
 	set theFixedWord to do shell script "export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
-	dym --clean-output -n1 " & langArg & " \"" & theWord & "\""
+	echo '" & theWord & "' | aspell pipe " & langArg & " | sed -n 2p | cut -d, -f1 | cut -d: -f2 | cut -c2-"
 
 	set the clipboard to theFixedWord
 	delay 0.05
