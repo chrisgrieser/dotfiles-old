@@ -50,7 +50,7 @@
 			<key>keyword</key>
 			<string>#</string>
 			<key>text</key>
-			<string>Color Hexa</string>
+			<string>Color Hexa: '{query}'</string>
 			<key>url</key>
 			<string>https://www.colorhexa.com/{query}</string>
 		</dict>

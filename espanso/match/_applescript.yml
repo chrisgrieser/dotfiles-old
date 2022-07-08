@@ -77,7 +77,10 @@ matches:
     label: 🍏 Hide App
   - trigger: '!key'
     replace: tell application "System Events" to keystroke "$|$" using {command down}
-    label: 🍏 Keystrokes
+    label: 🍏 Keystroke
+  - trigger: '!click'
+    replace: tell application "System Events" to click at {123$|$, 456}
+    label: 🍏 Mouse Click
   - replace: tell application "Twitterrific$|$" to if it is not running then activate
     label: 🍏 Launch App
   - trigger: '!quit'
