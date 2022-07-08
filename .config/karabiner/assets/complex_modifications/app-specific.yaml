@@ -174,25 +174,6 @@ rules:
           - type: frontmost_application_if
             bundle_identifiers:
               - ^org\.hammerspoon\.Hammerspoon$
-  - description: "🅰️👁‍🗨 Discord: ⌘K → Search Channels"
-    # Karabiner stops the recursion (⌘k->⌘k) that would occur in other apps like
-    # Alfred. This seems to be an undocumented, built-in feature of Karabiner.
-    manipulators:
-      - type: basic
-        from:
-          key_code: k
-          modifiers:
-            mandatory:
-              - command
-        to:
-          - key_code: k
-            modifiers:
-              - command
-          - key_code: non_us_pound
-        conditions:
-          - type: frontmost_application_if
-            bundle_identifiers:
-              - ^com\.hnc\.Discord$
   - description: "🅰️🎩 Alfred: 1-9 → ⌘1-9, ⌘1-9 → 1-9"
     manipulators:
       - type: basic
