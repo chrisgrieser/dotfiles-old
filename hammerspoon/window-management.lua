@@ -13,9 +13,19 @@ lightModeStrokeWidth = 10
 darkModeStrokeWidth = 7
 
 function activeWindowHighlight(appName, eventType)
+	-- Delete an existing highlight if it exists
+	if (eventType ~= hs.application.watcher.activated or eventType ~= hs.application.watcher.launched) then return end
+
+	if rect then
+		rect:delete()
+		if rectTimer then
+			rectTimer:stop()
+		end
+	end
+
+	-- guard clauses
 	if (appName == "Alfred") then	return end -- for Alfred's compatibility mode
 	if (appName == "IINA") then return end
-
 	local win = hs.window.focusedWindow()
 	if not (win) then return end
 	local screenWidth = win:screen():frame().w
@@ -23,48 +33,34 @@ function activeWindowHighlight(appName, eventType)
 	local windowRelativeWidth = windowWidth / screenWidth
 	if (not(isAtOffice()) and windowRelativeWidth > 0.8) then return end
 
-	if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
-		-- Delete an existing highlight if it exists
-		if rect then
-			rect:delete()
-			if rectTimer then
-				rectTimer:stop()
-			end
-		end
-
-		local appWin = hs.window.focusedWindow()
-		if not(appWin) then return end
-
-		local highlightColor
-		local strokeWidth
-		if isDarkMode() then
-			highlightColor = darkModeColor
-			strokeWidth = darkModeStrokeWidth
-		else
-			highlightColor = lightModeColor
-			strokeWidth = lightModeStrokeWidth
-		end
-
-		local delayDuration = 0
-		-- to account for finder window resizing
-		if appName == "Finder" then delayDuration = 0.1 end
-		runDelayed(delayDuration, function()
-			rect = hs.drawing.rectangle(appWin:frame())
-			rect:setStrokeWidth(strokeWidth)
-			rect:setFill(false)
-			rect:setStrokeColor(highlightColor)
-			rect:show()
-		end)
-
-		rectTimer = runDelayed(highlightDuration, function()
-			rect:delete()
-			rect = nil
-		end)
-
+	local highlightColor
+	local strokeWidth
+	if isDarkMode() then
+		highlightColor = darkModeColor
+		strokeWidth = darkModeStrokeWidth
+	else
+		highlightColor = lightModeColor
+		strokeWidth = lightModeStrokeWidth
 	end
+
+	local delayDuration = 0
+	-- to account for finder window resizing
+	if appName == "Finder" then delayDuration = 0.1 end
+	runDelayed(delayDuration, function()
+		rect = hs.drawing.rectangle(win:frame())
+		rect:setStrokeWidth(strokeWidth)
+		rect:setFill(false)
+		rect:setStrokeColor(highlightColor)
+		rect:show()
+	end)
+
+	rectTimer = runDelayed(highlightDuration, function()
+		rect:delete()
+		rect = nil
+	end)
 end
 appActivationWatcher = hs.application.watcher.new(activeWindowHighlight)
-if isAtOffice() then appActivationWatcher:start() end
+appActivationWatcher:start()
 
 --------------------------------------------------------------------------------
 -- app-only Window Switchers
@@ -191,13 +187,13 @@ function movieModeLayout()
 
 	openIfNotRunning("YouTube")
 
+	hs.application("Obsidian"):kill9()
 	hs.application("Drafts"):kill9()
 	hs.application("Slack"):kill9()
 	hs.application("Discord"):kill9()
 	hs.application("Mimestream"):kill9()
 	hs.application("Alfred Preferences"):kill9()
 	hs.application("Sublime Text"):kill9()
-	hs.application("Obsidian"):kill9()
 	hs.application("alacritty"):kill9()
 	hs.application("Alacritty"):kill9()
 end
