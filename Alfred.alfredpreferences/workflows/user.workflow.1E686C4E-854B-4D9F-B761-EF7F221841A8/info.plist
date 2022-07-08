@@ -88,19 +88,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CC783FA2-6152-4E62-A1DB-94389B082D8D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</key>
 		<array>
 			<dict>
@@ -140,37 +127,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D30F0EEE-401B-4EEA-A5D0-D6B0708D99F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D3974054-9922-4818-AE19-FABCBBA70011</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>4F748E27-E0FA-42A5-9B83-B58EF498DC15</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -197,6 +158,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F6ED9B13-8573-48B0-AE15-1717CFBE61C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3ADD88AD-97C0-461E-8E11-82570C8A25B2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -232,21 +206,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
+				<key>browser</key>
 				<string></string>
-				<key>text</key>
-				<string>🔎 Karabiner Docs: '{query}'</string>
-				<key>withspace</key>
-				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://karabiner-elements.pqrs.org/docs/json/{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>86011B84-C2B7-487E-B867-CBB4E5B58673</string>
+			<string>3ADD88AD-97C0-461E-8E11-82570C8A25B2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -274,25 +244,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>search-karabiner-docs_[Browser].applescript</string>
+				<string>karabiner-docs-search.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Hammerspoon Docs Search...</string>
 				<key>type</key>
 				<integer>8</integer>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>CC783FA2-6152-4E62-A1DB-94389B082D8D</string>
+			<string>F6ED9B13-8573-48B0-AE15-1717CFBE61C6</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -378,23 +374,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://ke-complex-modifications.pqrs.org/?q={query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D3974054-9922-4818-AE19-FABCBBA70011</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -439,27 +418,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⚙️ Karabiner Mods: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D30F0EEE-401B-4EEA-A5D0-D6B0708D99F1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -475,44 +433,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ep</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>⚙️ Espanso Packages: '{query}'</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E9B91088-19D4-4EF1-A176-80FC6C8D8444</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://hub.espanso.org/search?q={query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -875,6 +795,15 @@
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
+		<key>3ADD88AD-97C0-461E-8E11-82570C8A25B2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>170</real>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
 		<key>4F748E27-E0FA-42A5-9B83-B58EF498DC15</key>
 		<dict>
 			<key>colorindex</key>
@@ -895,15 +824,6 @@
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
-		<key>6D07D1B7-BB81-41A2-94C8-091AEF0A42FD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<real>170</real>
-			<key>ypos</key>
-			<real>290</real>
-		</dict>
 		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
 		<dict>
 			<key>colorindex</key>
@@ -914,17 +834,6 @@
 			<real>30</real>
 			<key>ypos</key>
 			<real>435</real>
-		</dict>
-		<key>86011B84-C2B7-487E-B867-CBB4E5B58673</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>search docs</string>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>20</real>
 		</dict>
 		<key>936424AC-32E2-4193-B07C-DDB804AEF807</key>
 		<dict>
@@ -957,15 +866,6 @@
 			<key>ypos</key>
 			<real>620</real>
 		</dict>
-		<key>CC783FA2-6152-4E62-A1DB-94389B082D8D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<real>170</real>
-			<key>ypos</key>
-			<real>20</real>
-		</dict>
 		<key>CF8FBA0E-7BB8-46F0-9240-13ACB11C3D74</key>
 		<dict>
 			<key>colorindex</key>
@@ -974,26 +874,6 @@
 			<real>480</real>
 			<key>ypos</key>
 			<real>295</real>
-		</dict>
-		<key>D30F0EEE-401B-4EEA-A5D0-D6B0708D99F1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>search mods</string>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>155</real>
-		</dict>
-		<key>D3974054-9922-4818-AE19-FABCBBA70011</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<real>170</real>
-			<key>ypos</key>
-			<real>155</real>
 		</dict>
 		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
 		<dict>
@@ -1005,17 +885,6 @@
 			<real>30</real>
 			<key>ypos</key>
 			<real>760</real>
-		</dict>
-		<key>E9B91088-19D4-4EF1-A176-80FC6C8D8444</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>search packages</string>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>290</real>
 		</dict>
 		<key>ED992F1D-9648-4955-A762-E25E23243BE9</key>
 		<dict>
@@ -1034,6 +903,17 @@
 			<real>480</real>
 			<key>ypos</key>
 			<real>430</real>
+		</dict>
+		<key>F6ED9B13-8573-48B0-AE15-1717CFBE61C6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>docs</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>20</real>
 		</dict>
 		<key>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</key>
 		<dict>
