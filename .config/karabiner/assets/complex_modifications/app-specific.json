@@ -1,10 +1,5 @@
 {
   "title": "🅰️ App-Specific",
-  "version": "2.1",
-  "maintainers": [
-    "pseudometa"
-  ],
-  "import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/app-specific.json",
   "homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
   "rules": [
     {
@@ -329,7 +324,7 @@
       ]
     },
     {
-      "description": "🅰️🔨 Hammerspoon: ⌘Q → Close instead of Quit ",
+      "description": "🅰️🔨 Hammerspoon: ⌘Q → Close instead of Quit",
       "manipulators": [
         {
           "type": "basic",
@@ -354,6 +349,41 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^org\\.hammerspoon\\.Hammerspoon$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "🅰️👁‍🗨 Discord: ⌘K → Search Channels",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "command"
+              ]
+            },
+            {
+              "key_code": "non_us_pound"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.hnc\\.Discord$"
               ]
             }
           ]
