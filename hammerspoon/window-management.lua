@@ -77,6 +77,7 @@ sublimeWindowSwitcher = hs.window.switcher.new{"Sublime Text"}
 obsidianWindowSwitcher = hs.window.switcher.new{"Obsidian"}
 draftsWindowSwitcher = hs.window.switcher.new{"Drafts"}
 twitterrificWindowSwitcher = hs.window.switcher.new{"Twitterrific"}
+wordWindowSwitcher = hs.window.switcher.new{"Microsoft Word"}
 
 function appWindowSwitcher()
 	if (frontapp() == "Finder") then
@@ -93,6 +94,8 @@ function appWindowSwitcher()
 		draftsWindowSwitcher:next()
 	elseif (frontapp() == "Twitterrific") then
 		twitterrificWindowSwitcher:next()
+	elseif (frontapp() == "Microsoft Word") then
+		wordWindowSwitcher:next()
 	end
 end
 
