@@ -25,6 +25,19 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -38,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
+				<string>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -48,23 +61,12 @@
 			</dict>
 		</array>
 		<key>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3F77BBDE-271E-4412-9573-A3FE089601F1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>CC945B71-5B86-4BF9-A9F5-92FC20B741DE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
+				<string>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -108,29 +110,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>call.applescript</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -152,6 +131,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>tel://{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>click-call.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>name</key>
 				<string>Call with Facetime</string>
 			</dict>
@@ -161,35 +180,6 @@
 			<string>87DDE91E-4618-4D20-BD9E-034A83E944AC</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>3F77BBDE-271E-4412-9573-A3FE089601F1</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -248,12 +238,12 @@
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
-		<key>3F77BBDE-271E-4412-9573-A3FE089601F1</key>
+		<key>49D0A48F-2A39-4133-8D0C-DAD9F6F7EDFB</key>
 		<dict>
 			<key>xpos</key>
-			<real>470</real>
+			<real>255</real>
 			<key>ypos</key>
-			<real>405</real>
+			<real>275</real>
 		</dict>
 		<key>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</key>
 		<dict>
@@ -274,9 +264,9 @@
 		<key>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</key>
 		<dict>
 			<key>xpos</key>
-			<real>275</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>235</real>
+			<real>275</real>
 		</dict>
 		<key>CC945B71-5B86-4BF9-A9F5-92FC20B741DE</key>
 		<dict>
