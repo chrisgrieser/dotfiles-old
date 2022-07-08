@@ -43,6 +43,17 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>4C12690F-BFA8-4D29-A137-C9A7C80EC3ED</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>#</string>
+			<key>text</key>
+			<string>Color Hexa</string>
+			<key>url</key>
+			<string>https://www.colorhexa.com/{query}</string>
+		</dict>
 		<key>5E85686A-D841-453C-9974-E22F5241FA40</key>
 		<dict>
 			<key>enabled</key>
