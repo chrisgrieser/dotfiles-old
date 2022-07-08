@@ -271,12 +271,6 @@ vmap <Space> "_c
 nmap <S-Space> "_daw
 vmap <S-Space> "_d
 
-" Yank Word/Selection
-" Alt-Space mapped to <S-F12> via Karabiner Elements due to Obsidian
-" interpreting it as non-breaking space
-nmap <S-F12> yiw
-vmap <S-F12> "vy
-
 " [R]eplace Word with register content
 nmap R viw"0p
 vmap R "0P

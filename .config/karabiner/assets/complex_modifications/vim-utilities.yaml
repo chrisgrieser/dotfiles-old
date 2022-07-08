@@ -201,19 +201,3 @@ rules:
         to_after_key_up:
           - select_input_source:
               input_source_id: ^com\.apple\.keylayout\.ABC-QWERTZ$
-  - description: "⚒️🟪 Fix Alt-Space (Obsidian): Shift-F12"
-    manipulators:
-      - type: basic
-        description: Fix needed as Obsidian interprets alt-space as non-breaking space, which cannot be mapped. Therefore replaced with Shift-F12, which can be remapped in Obsidian's vimrc.
-        from:
-          key_code: spacebar
-          modifiers:
-            mandatory:
-              - option
-        to:
-          - key_code: f12
-            modifiers: shift
-        conditions:
-          - bundle_identifiers:
-              - ^md\.obsidian$
-            type: frontmost_application_if

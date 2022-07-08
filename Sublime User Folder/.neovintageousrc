@@ -207,10 +207,6 @@ vnoremap <S-Space> "_d
 vnoremap d "_d
 vnoremap x "_d
 
-" Yank Word/Selection (alt+space)
-nnoremap <M-Space> yiw
-vnoremap <M-Space> "vy
-
 " [R]eplace Word with register content
 nnoremap R viw"0p
 vnoremap R "0P
