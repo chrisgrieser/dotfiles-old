@@ -268,7 +268,7 @@ nmap <Space> "_ciw
 vmap <Space> "_c
 
 " Delete Word/Selection
-nmap <S-Space> "_daW
+nmap <S-Space> "_daw
 vmap <S-Space> "_d
 
 " Yank Word/Selection
