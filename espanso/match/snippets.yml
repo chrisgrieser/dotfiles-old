@@ -15,7 +15,7 @@ matches:
     replace: |
       - trigger: "$|$"
         replace: ""
-    label: 🍏 espanso rule
+    label: espanso rule
 
   - trigger: "!iso"
     replace: "{{todayISO}}"

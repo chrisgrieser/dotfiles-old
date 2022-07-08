@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F77BBDE-271E-4412-9573-A3FE089601F1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CC945B71-5B86-4BF9-A9F5-92FC20B741DE</key>
 		<array>
 			<dict>
@@ -95,19 +108,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>tel://{query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>call.applescript</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>CBF67FB8-3C72-4DCF-BC2C-9E395750DCE1</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -146,6 +165,50 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>3F77BBDE-271E-4412-9573-A3FE089601F1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635216737</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -161,21 +224,6 @@
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>21AD0573-CDA8-43CD-A059-EB71B1329054</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>searcher</key>
-				<integer>1635216737</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
-			<key>uid</key>
-			<string>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -199,6 +247,13 @@
 			<real>55</real>
 			<key>ypos</key>
 			<real>160</real>
+		</dict>
+		<key>3F77BBDE-271E-4412-9573-A3FE089601F1</key>
+		<dict>
+			<key>xpos</key>
+			<real>470</real>
+			<key>ypos</key>
+			<real>405</real>
 		</dict>
 		<key>766F9E1B-6979-4A81-A85D-9C7FE8EFCA8F</key>
 		<dict>
