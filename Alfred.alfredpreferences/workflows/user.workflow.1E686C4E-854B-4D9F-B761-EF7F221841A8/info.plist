@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>20AA6DBE-F597-47FF-B059-314D7D83B612</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
 		<array>
 			<dict>
@@ -67,19 +80,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>146B762A-3BFD-4073-8111-EB3BDFFF45A1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -527,23 +527,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>ep</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>espanso-docs-search.js</string>
 				<key>subtext</key>
 				<string></string>
-				<key>text</key>
-				<string>🔎 Espanso Docs: '{query}'</string>
+				<key>title</key>
+				<string>Espanso Docs Search...</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</string>
+			<string>20AA6DBE-F597-47FF-B059-314D7D83B612</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -553,7 +581,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://www.google.de/search?q=site:espanso.org docs+{query}</string>
+				<string>https://espanso.org/docs/{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -751,7 +779,7 @@
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<real>170</real>
+			<real>180</real>
 			<key>ypos</key>
 			<real>435</real>
 		</dict>
@@ -774,6 +802,17 @@
 			<real>830</real>
 			<key>ypos</key>
 			<real>25</real>
+		</dict>
+		<key>20AA6DBE-F597-47FF-B059-314D7D83B612</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>docs</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>435</real>
 		</dict>
 		<key>2381FD05-8DB5-4B75-9D6A-36329E668C7F</key>
 		<dict>
@@ -824,21 +863,10 @@
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
-		<key>713E0303-8E4E-445D-AEE9-3FFA9B5C87CF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>search docs</string>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>435</real>
-		</dict>
 		<key>936424AC-32E2-4193-B07C-DDB804AEF807</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
@@ -858,7 +886,7 @@
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>note</key>
 			<string>docs</string>
 			<key>xpos</key>
