@@ -7,9 +7,8 @@ BACKUP_DEST="${INPUT/#\~/$HOME}"/Backup_"$DEVICE_NAME"
 mkdir -p "$BACKUP_DEST"
 cd "$BACKUP_DEST" || exit 1
 
-# Log (on Device)
-LOG_LOCATION="$(dirname "$0")"/backup.log
-echo "" >> "$LOG_LOCATION"
+# Log (on the Mac)
+LOG_LOCATION="$(dirname "$0")/backup.log"
 echo -n "Backup: $(date '+%Y-%m-%d %H:%M'), $INPUT -- " >> "$LOG_LOCATION"
 
 # Brew Dumps
