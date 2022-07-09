@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1949AD43-9714-415D-A3EA-6D5BBEDEE319</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A128FEAD-70FC-48A6-B61E-6BC1790D6497</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2E4AAD86-345B-497C-89A3-36585534A83C</key>
 		<array>
 			<dict>
@@ -654,40 +667,58 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>koala</string>
-				<key>subtext</key>
-				<string>Discord</string>
-				<key>text</key>
-				<string>Koala</string>
-				<key>withspace</key>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↓</string>
+				<key>keycode</key>
+				<integer>125</integer>
+				<key>keymod</key>
+				<integer>12189696</integer>
+				<key>overridewithargument</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
 			<key>uid</key>
-			<string>5B6F3E7A-52DE-4FE3-94DA-8EA6CC4CE065</string>
+			<string>A128FEAD-70FC-48A6-B61E-6BC1790D6497</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>discord://discord.com/channels/@me/894696437676408833</string>
+				<key>hotkey</key>
+				<integer>32</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>U</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>B3E3CDBB-9E02-4E5E-B03F-4E2C1C6B8B1B</string>
+			<string>1949AD43-9714-415D-A3EA-6D5BBEDEE319</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -785,6 +816,44 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>koala</string>
+				<key>subtext</key>
+				<string>Discord</string>
+				<key>text</key>
+				<string>Koala</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B6F3E7A-52DE-4FE3-94DA-8EA6CC4CE065</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>discord://discord.com/channels/@me/894696437676408833</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B3E3CDBB-9E02-4E5E-B03F-4E2C1C6B8B1B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
@@ -859,9 +928,20 @@ end tell</string>
 			<key>note</key>
 			<string>next channel</string>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>745</real>
+		</dict>
+		<key>1949AD43-9714-415D-A3EA-6D5BBEDEE319</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Next Unread</string>
+			<key>xpos</key>
+			<real>490</real>
+			<key>ypos</key>
+			<real>590</real>
 		</dict>
 		<key>297933F2-17E5-496D-B5E6-0906D07389B1</key>
 		<dict>
@@ -897,23 +977,25 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>390</real>
 		</dict>
 		<key>5B6F3E7A-52DE-4FE3-94DA-8EA6CC4CE065</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
-			<real>265</real>
+			<real>480</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>860</real>
 		</dict>
 		<key>613721AC-5C03-421A-A4B5-63C252B4DDB7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>610</real>
 		</dict>
@@ -935,7 +1017,7 @@ end tell</string>
 			<key>xpos</key>
 			<real>395</real>
 			<key>ypos</key>
-			<real>5</real>
+			<real>15</real>
 		</dict>
 		<key>6F1D9DD0-071F-4ACF-984C-D928B34BCE50</key>
 		<dict>
@@ -964,14 +1046,23 @@ end tell</string>
 			<key>xpos</key>
 			<real>185</real>
 			<key>ypos</key>
-			<real>5</real>
+			<real>15</real>
 		</dict>
 		<key>8EE28E67-F095-4737-8E9B-DB59F462D2AD</key>
 		<dict>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>870</real>
+		</dict>
+		<key>A128FEAD-70FC-48A6-B61E-6BC1790D6497</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>590</real>
 		</dict>
 		<key>A2EF8883-F34D-4551-AD50-9FD1398F1F71</key>
 		<dict>
@@ -980,7 +1071,7 @@ end tell</string>
 			<key>note</key>
 			<string>reply</string>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>150</real>
 		</dict>
@@ -993,10 +1084,12 @@ end tell</string>
 		</dict>
 		<key>B3E3CDBB-9E02-4E5E-B03F-4E2C1C6B8B1B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
-			<real>425</real>
+			<real>640</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>860</real>
 		</dict>
 		<key>B8E5E578-6542-461A-94E7-BF3D31AC98DE</key>
 		<dict>
@@ -1005,16 +1098,16 @@ end tell</string>
 			<key>note</key>
 			<string>Inline Code</string>
 			<key>xpos</key>
-			<real>20</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>5</real>
+			<real>15</real>
 		</dict>
 		<key>BB098767-0FF5-49E5-A083-C1D585261C2E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>280</real>
 		</dict>
@@ -1023,7 +1116,7 @@ end tell</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>15</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>500</real>
 		</dict>
