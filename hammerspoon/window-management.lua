@@ -203,7 +203,6 @@ function movieModeLayout()
 		hs.application("Slack"):kill9()
 		hs.application("Discord"):kill9()
 		hs.application("Mimestream"):kill9()
-		hs.application("Alfred Preferences"):kill9()
 	end)
 end
 
@@ -221,7 +220,16 @@ function homeModeLayout ()
 	openIfNotRunning("Twitterrific")
 	openIfNotRunning("Drafts")
 
-	hs.brightness.set(50)
+	hs.application("YouTube"):kill9()
+	hs.application("Netflix"):kill9()
+	hs.application("Finder"):allWindows()
+	for k, v in pairs(arr) do
+		print(k, v[1], v[2], v[3])
+	end
+
+
+
+	hs.brightness.set(60)
 
 	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
@@ -237,7 +245,7 @@ function homeModeLayout ()
 		{"Alacritty", nil, screen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
-	runDelayed(0.3, function ()
+	runDelayed(2, function ()
 		hs.layout.apply(homeLayout)
 
 		twitterrificScrollUp()
