@@ -196,6 +196,15 @@ function movieModeLayout()
 	hs.application("Sublime Text"):kill9()
 	hs.application("alacritty"):kill9()
 	hs.application("Alacritty"):kill9()
+
+	runDelayed(0.7, function ()
+		hs.application("Obsidian"):kill9()
+		hs.application("Drafts"):kill9()
+		hs.application("Slack"):kill9()
+		hs.application("Discord"):kill9()
+		hs.application("Mimestream"):kill9()
+		hs.application("Alfred Preferences"):kill9()
+	end)
 end
 
 function homeModeLayout ()
@@ -211,6 +220,8 @@ function homeModeLayout ()
 	openIfNotRunning("Obsidian")
 	openIfNotRunning("Twitterrific")
 	openIfNotRunning("Drafts")
+
+	hs.brightness.set(50)
 
 	local screen = hs.screen.primaryScreen():name()
 	local homeLayout = {
