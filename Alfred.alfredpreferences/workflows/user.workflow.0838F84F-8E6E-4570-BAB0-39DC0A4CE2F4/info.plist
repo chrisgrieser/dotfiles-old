@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>09DDD26D-B1EE-4229-9127-9549026EC681</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>308F2794-803F-4EE7-BDA2-BC8027FF6BF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>174B2D25-4A47-4933-A56A-47AE022A0CB8</key>
 		<array>
 			<dict>
@@ -91,6 +104,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>09C0668A-BC23-4377-90E1-7E79EFE6D893</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>49DCE240-9D6F-4528-A21A-A8C0EE09B975</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2A9A7A4-91BE-40BB-BEEA-5201CD3E44D3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1252,6 +1278,118 @@ end tell</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↓</string>
+				<key>keycode</key>
+				<integer>125</integer>
+				<key>keymod</key>
+				<integer>11141120</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>308F2794-803F-4EE7-BDA2-BC8027FF6BF9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>38</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>J</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>09DDD26D-B1EE-4229-9127-9549026EC681</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↑</string>
+				<key>keycode</key>
+				<integer>126</integer>
+				<key>keymod</key>
+				<integer>11141120</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>D2A9A7A4-91BE-40BB-BEEA-5201CD3E44D3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>40</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>K</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.Discord</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>49DCE240-9D6F-4528-A21A-A8C0EE09B975</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>use Telegram Web Z
@@ -1280,6 +1418,15 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<real>410</real>
 			<key>ypos</key>
 			<real>590</real>
+		</dict>
+		<key>09DDD26D-B1EE-4229-9127-9549026EC681</key>
+		<dict>
+			<key>note</key>
+			<string>next channel</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>1330</real>
 		</dict>
 		<key>0B52DB5A-5BC3-4543-AD4F-E27A72590DD8</key>
 		<dict>
@@ -1348,6 +1495,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<key>ypos</key>
 			<real>1015</real>
 		</dict>
+		<key>308F2794-803F-4EE7-BDA2-BC8027FF6BF9</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>1330</real>
+		</dict>
 		<key>31AD87CE-006D-42DB-962F-F774BCD3F558</key>
 		<dict>
 			<key>colorindex</key>
@@ -1387,6 +1541,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<real>345</real>
 			<key>ypos</key>
 			<real>620</real>
+		</dict>
+		<key>49DCE240-9D6F-4528-A21A-A8C0EE09B975</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>1455</real>
 		</dict>
 		<key>4D704BE9-61E0-4285-9B8B-7C5AF433BD23</key>
 		<dict>
@@ -1550,6 +1711,13 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<real>805</real>
 			<key>ypos</key>
 			<real>400</real>
+		</dict>
+		<key>D2A9A7A4-91BE-40BB-BEEA-5201CD3E44D3</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>1455</real>
 		</dict>
 		<key>E8CC14AC-2115-4AD9-9732-73890756EFEE</key>
 		<dict>
