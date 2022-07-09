@@ -6,13 +6,27 @@ require("utils")
 function reloadAllMenubarItems ()
 	setWeather()
 	setCovidBar()
+	setFileHubCountMenuBar()
 end
 
 weatherUpdateMin = 15
 weatherLocation = "Berlin"
 covidUpdateHours = 12
 covidLocationCode = "BE"
+fileHubLocation = os.getenv("HOME").."/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
 
+--------------------------------------------------------------------------------
+fileHubCountMenuBar = hs.menubar.new()
+function setFileHubCountMenuBar()
+	local numberOfFiles, success = hs.execute('ls "'..fileHubLocation..'" | wc -l | tr -d " "')
+
+	if numberOfFiles == 0 or not(success) then
+		fileHubCountMenuBar:setTitle("")
+		return
+	end
+
+	fileHubCountMenuBar:setTitle(numberOfFiles)
+end
 --------------------------------------------------------------------------------
 
 weatherStatusBar = hs.menubar.new()
