@@ -32,7 +32,7 @@ function twitterrificScrollUp ()
 	keystroke({"cmd"}, "k") -- mark all as red
 	keystroke({"cmd"}, "j") -- scroll up
 	keystroke({"cmd"}, "1") -- scroll up failsafe
-	-- keystroke({}, "down") -- enable j/k movement
+	keystroke({}, "down") -- enable j/k movement
 
 	hs.application(previousApp):activate()
 
