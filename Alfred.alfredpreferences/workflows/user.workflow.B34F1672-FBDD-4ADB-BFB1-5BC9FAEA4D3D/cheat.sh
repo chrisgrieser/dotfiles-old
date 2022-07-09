@@ -22,7 +22,7 @@ fi
 
 QUERY=$(echo "$*" | sed 's/ /\//' | tr " " "+") # first space → /, all other spaces "+" for url
 CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:help
-CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
+CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ" | sed 's/  /\t/g' )
 
 # if empty string, copy the full info instead
 if [[ -z "$CHEAT_CODE_ONLY" ]]; then

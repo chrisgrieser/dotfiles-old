@@ -222,12 +222,13 @@ function homeModeLayout ()
 
 	hs.application("YouTube"):kill9()
 	hs.application("Netflix"):kill9()
-	hs.application("Finder"):allWindows()
-	for k, v in pairs(arr) do
-		print(k, v[1], v[2], v[3])
+
+	finderWins = hs.application("Finder"):allWindows()
+	for i=1,#finderWins do
+		if finderWins[i]:title() == "RomComs" then
+			finderWins[i]:close()
+		end
 	end
-
-
 
 	hs.brightness.set(60)
 
