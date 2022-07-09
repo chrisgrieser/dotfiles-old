@@ -98,5 +98,5 @@ matches:
     label: 'Meme: All Features of Obsidian'
 
   - triggers: ['!carl', '!xkcd']
-    replace: xkcd automation
+    replace: sudo xkcd automation
     label: 'xkcd: automation'
