@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2E50C012-CD2A-4F6D-9917-D253A7665662</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D027D517-46F7-4C53-B46F-F82A85E0B7AD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3B9CC1E6-13AA-4265-879E-8F4C366D3AF2</key>
 		<array>
 			<dict>
@@ -552,12 +565,12 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>📒 Free Comments</string>
+				<string>🖊 Highlights</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
+			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -573,12 +586,74 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>🖊 Highlights</string>
+				<string>📒 Free Comments</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
+			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>106</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F16</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.brave.Browser.app.agimnkijcaahngcdmfeangaknmldooml</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>2E50C012-CD2A-4F6D-9917-D253A7665662</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+tell application "System Events"
+	tell process "YouTube"
+		set frontmost to true
+		click menu item "Exit Full Screen" of menu "View" of menu bar 1
+	end tell
+end tell
+
+-- i.e. goes back to YouTube Start Page
+tell application "YouTube" to open location ""
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>D027D517-46F7-4C53-B46F-F82A85E0B7AD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -617,6 +692,15 @@ end alfred_script</string>
 			<real>60</real>
 			<key>ypos</key>
 			<real>290</real>
+		</dict>
+		<key>2E50C012-CD2A-4F6D-9917-D253A7665662</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>715</real>
 		</dict>
 		<key>3B9CC1E6-13AA-4265-879E-8F4C366D3AF2</key>
 		<dict>
@@ -733,6 +817,17 @@ end alfred_script</string>
 			<real>420</real>
 			<key>ypos</key>
 			<real>440</real>
+		</dict>
+		<key>D027D517-46F7-4C53-B46F-F82A85E0B7AD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>close one tab</string>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>715</real>
 		</dict>
 		<key>E27C16A0-4853-4EFD-8BE3-6071AD862B4F</key>
 		<dict>
