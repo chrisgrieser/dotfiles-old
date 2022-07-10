@@ -1,7 +1,8 @@
 require("utils")
 
--- `hammerspoon://hs-reload` for reloading via Sublime Build System
+-- `hammerspoon://hs-reload` for reloading via Sublime Build System or Karabiner
 hs.urlevent.bind("hs-reload", function()
+	print("Reloading Config...")
 	hs.reload()
 end)
 
