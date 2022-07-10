@@ -99,7 +99,7 @@ case $APP_TO_UPDATE in
 		iconsur -l set "$PWA_FOLDER/Excalidraw.app" ;;
 
 	"YouTube")
-		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" "$PWA_FOLDER/-YouTube.app/Contents/Resources/app.icns"
+		cp "$CUSTOM_ICON_FOLDER/YouTube.icns" ~"/Video/YouTube.app/Contents/Resources/app.icns"
 		touch ~"/Video/YouTube.app" ;;
 	"Tagesschau")
 		iconsur set ~"/Video/Tagesschau.app" ;;

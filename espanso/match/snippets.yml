@@ -5,6 +5,9 @@ matches:
   - trigger: '!web'
     replace: https://chris-grieser.de/
 
+  - trigger: '!wd'
+    replace: '~/Library/Mobile Documents/com~apple~CloudDocs/File Hub/'
+
   - trigger: '!bug'
     replace: >
       Could you open a bug report at the GitHub repo?

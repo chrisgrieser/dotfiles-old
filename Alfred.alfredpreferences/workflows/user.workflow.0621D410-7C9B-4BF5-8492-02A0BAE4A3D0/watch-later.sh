@@ -8,6 +8,9 @@ TITLE=$(curl -s "$URL" | grep -o "<title>[^<]*" | cut -d'>' -f2- | tr "/:" "--" 
 IMAGE_URL="https://img.youtube.com/vi/$YOUTUBE_ID/0.jpg"
 BOOKMARK_PATH="${youtube_link_folder/#\~/$HOME}/$TITLE.url"
 
+# for devices without dedicated video
+[[ -e BOOKMARK_PATH ]] || BOOKMARK_PATH=~"/Library/Mobile Documents/com~apple~CloudDocs/File Hub/"
+
 echo "[InternetShortcut]\nURL=$URL\nIconIndex=0" > "$BOOKMARK_PATH"
 curl -sL "$IMAGE_URL" > temp.jpg
 fileicon -q set "$BOOKMARK_PATH" temp.jpg
