@@ -20,9 +20,9 @@ pw.*
 .ssh/
 .zsh_history
 backup.log
-espanso/match/private.*
 Alfred.alfredpreferences/snippets
-Private.bttpreset
+private.*
+Private.*
 
 # Git Repos (already backed up)
 # -----------------------------

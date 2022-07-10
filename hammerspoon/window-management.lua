@@ -1,5 +1,6 @@
 require("utils")
 require("twitterrific-iina")
+require("private")
 
 --------------------------------------------------------------------------------
 -- ACTIVE WINDOW HIGHLIGHT
