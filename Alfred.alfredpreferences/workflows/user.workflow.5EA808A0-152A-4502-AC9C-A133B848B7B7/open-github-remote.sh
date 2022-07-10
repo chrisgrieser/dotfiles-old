@@ -47,7 +47,7 @@ else
 		URL="$REMOTE_URL/tree/$BRANCH/$SUBFOLDER"
 	else
 		# use "blob" instead of "commits" for file view
-		URL="$REMOTE_URL/commits/$BRANCH/$SUBFOLDER/$FILE"
+		URL="$REMOTE_URL/blob/$BRANCH/$SUBFOLDER/$FILE"
 	fi
 fi
 
