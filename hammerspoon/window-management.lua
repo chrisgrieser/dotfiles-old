@@ -214,7 +214,7 @@ function homeModeLayout ()
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
 
 	openIfNotRunning("Mimestream")
-	openIfNotRunning("Discord")
+	-- openIfNotRunning("Discord")
 	openIfNotRunning("Slack")
 	openIfNotRunning("Brave Browser")
 	openIfNotRunning("Obsidian")
@@ -223,13 +223,7 @@ function homeModeLayout ()
 
 	hs.application("YouTube"):kill9()
 	hs.application("Netflix"):kill9()
-
-	finderWins = hs.application("Finder"):allWindows()
-	for i=1,#finderWins do
-		if finderWins[i]:title() == "RomComs" then
-			finderWins[i]:close()
-		end
-	end
+	closeFinderWindows()
 
 	hs.brightness.set(60)
 
@@ -247,7 +241,7 @@ function homeModeLayout ()
 		{"Alacritty", nil, screen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
-	runDelayed(2, function ()
+	runDelayed(0.5, function ()
 		hs.layout.apply(homeLayout)
 
 		twitterrificScrollUp()
@@ -260,6 +254,10 @@ function homeModeLayout ()
 		else
 			hs.application("Drafts"):mainWindow():focus()
 		end
+		notify("hidden")
+	end)
+	runDelayed(4, function ()
+		hs.application("Discord"):hide()
 	end)
 
 end
