@@ -47,14 +47,18 @@ function setCovidBar()
 	local nationalNumbers = hs.json.decode(nationalDataJSON)
 	local national_7D_incidence = math.floor(nationalNumbers.weekIncidence)
 	local nationalR = nationalNumbers.r.rValue7Days.value
+	covidBar:setTitle("🦠 "..national_7D_incidence.." ("..nationalR..")")
 
 	local _, stateDataJSON = hs.http.get("https://api.corona-zahlen.org/states/" .. covidLocationCode, nil)
+	if not (stateDataJSON) then
+		covidBar:setTooltip("not available")
+		return
+	end
 	local stateNumbers = hs.json.decode(stateDataJSON)
 	local stateName = stateNumbers.data[covidLocationCode].name
 	local state_7D_incidence = math.floor(stateNumbers.data[covidLocationCode].weekIncidence)
-
 	covidBar:setTooltip(stateName..": "..state_7D_incidence)
-	covidBar:setTitle("🦠 "..national_7D_incidence.." ("..nationalR..")")
+
 end
 setCovidBar()
 hs.timer.doEvery(covidUpdateHours * 60 * 60, setCovidBar)
@@ -73,7 +77,7 @@ function setFileHubCountMenuBar()
 end
 setFileHubCountMenuBar()
 
--- refresh menubar every time the file changes
+-- update menubar every time the folder changes
 fileHubMenuBarWatcher = hs.pathwatcher.new(fileHubLocation, setFileHubCountMenuBar)
 fileHubMenuBarWatcher:start()
 

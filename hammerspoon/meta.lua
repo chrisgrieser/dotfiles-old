@@ -1,7 +1,9 @@
 require("utils")
 
--- `hammerspoon://hs-reload` for reloading via Alfred
-hs.urlevent.bind("hs-reload", function() hs.reload() end)
+-- `hammerspoon://hs-reload` for reloading via Sublime Build System
+hs.urlevent.bind("hs-reload", function()
+	hs.reload()
+end)
 
 --------------------------------------------------------------------------------
 -- CONSOLE

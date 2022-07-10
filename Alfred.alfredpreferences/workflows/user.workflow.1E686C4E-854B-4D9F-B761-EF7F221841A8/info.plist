@@ -8,37 +8,11 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
-		<key>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>0F419F51-49BF-4371-A05D-1861B445EB9A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -505,44 +479,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string>org.hammerspoon.Hammerspoon</string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hs</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔄 Reload Hammerspoon</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0F419F51-49BF-4371-A05D-1861B445EB9A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -581,41 +517,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>4</integer>
-				<key>hotmod</key>
-				<integer>917504</integer>
-				<key>hotstring</key>
-				<string>H</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.sublimetext.4</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -966,22 +867,6 @@
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
-		<key>00E1C296-297E-4388-8A37-AE4C1500B06A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<real>680</real>
-			<key>ypos</key>
-			<real>290</real>
-		</dict>
-		<key>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</key>
-		<dict>
-			<key>xpos</key>
-			<real>530</real>
-			<key>ypos</key>
-			<real>420</real>
-		</dict>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1001,17 +886,6 @@
 			<real>855</real>
 			<key>ypos</key>
 			<real>595</real>
-		</dict>
-		<key>0F419F51-49BF-4371-A05D-1861B445EB9A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>reload</string>
-			<key>xpos</key>
-			<real>530</real>
-			<key>ypos</key>
-			<real>290</real>
 		</dict>
 		<key>146B762A-3BFD-4073-8111-EB3BDFFF45A1</key>
 		<dict>
