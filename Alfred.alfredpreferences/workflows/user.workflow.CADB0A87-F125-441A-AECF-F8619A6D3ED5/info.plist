@@ -565,12 +565,12 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>📒 Free Comments</string>
+				<string>🖊 Highlights</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
+			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -586,12 +586,12 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>🖊 Highlights</string>
+				<string>📒 Free Comments</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
+			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -645,12 +645,12 @@ tell application "System Events"
 	end tell
 end tell
 
--- i.e. goes back to YouTube Start Page
-tell application "YouTube" to open location ""
+-- i.e. goes back to YouTube Start Page (via Vimium)
+tell application "System Events" to keystroke "gU"
 
 end alfred_script</string>
 				<key>cachescript</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.applescript</string>
@@ -825,7 +825,7 @@ end alfred_script</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>note</key>
-			<string>close one tab</string>
+			<string>go to start page</string>
 			<key>xpos</key>
 			<real>245</real>
 			<key>ypos</key>
