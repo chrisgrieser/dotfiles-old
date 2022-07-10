@@ -16,6 +16,7 @@
 			"isIMacAtHome",
 			"isDarkMode",
 			"openIfNotRunning",
+			"killIfRunning",
 			"isAtOffice",
 			"isProjector",
 			"numberOfScreens",

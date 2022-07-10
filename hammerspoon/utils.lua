@@ -33,21 +33,30 @@ function frontapp ()
 	return hs.application.frontmostApplication():name()
 end
 
-function appIsRunning (app)
+function appIsRunning (appName)
 	-- can't use ":isRunning()", since the application object is nil when it
 	-- wasn't wasn't running before
-	local runs = hs.application.get(app)
+	local runs = hs.application.get(appName)
 	if runs then return true
 	else return false	end
 end
 
-function openIfNotRunning (app)
-	local runs = hs.application.get(app)
+function openIfNotRunning (appName)
+	local runs = hs.application.get(appName)
 	if runs then
 		return
 	else
-		hs.application.open(app)
+		hs.application.open(appName)
 	end
+end
+
+function killIfRunning (appName)
+	local runs = hs.application.get(appName)
+	if runs then runs:kill() end
+	hs.timer.doAfter(1, function ()
+		runs = hs.application.get(appName)
+		if runs then runs:kill9() end
+	end)
 end
 
 function bttBridge (triggerName)

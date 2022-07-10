@@ -188,23 +188,16 @@ function movieModeLayout()
 
 	openIfNotRunning("YouTube")
 
-	hs.application("Obsidian"):kill9()
-	hs.application("Drafts"):kill9()
-	hs.application("Slack"):kill9()
-	hs.application("Discord"):kill9()
-	hs.application("Mimestream"):kill9()
-	hs.application("Alfred Preferences"):kill9()
-	hs.application("Sublime Text"):kill9()
-	hs.application("alacritty"):kill9()
-	hs.application("Alacritty"):kill9()
+	killIfRunning("Obsidian")
+	killIfRunning("Drafts")
+	killIfRunning("Slack")
+	killIfRunning("Discord")
+	killIfRunning("Mimestream")
+	killIfRunning("Alfred Preferences")
+	killIfRunning("Sublime Text")
+	killIfRunning("alacritty")
+	killIfRunning("Alacritty")
 
-	runDelayed(0.7, function ()
-		hs.application("Obsidian"):kill9()
-		hs.application("Drafts"):kill9()
-		hs.application("Slack"):kill9()
-		hs.application("Discord"):kill9()
-		hs.application("Mimestream"):kill9()
-	end)
 end
 
 function homeModeLayout ()
@@ -214,15 +207,15 @@ function homeModeLayout ()
 	local toTheSide = {x=0.815, y=0, w=0.185, h=1}
 
 	openIfNotRunning("Mimestream")
-	-- openIfNotRunning("Discord")
+	openIfNotRunning("Discord")
 	openIfNotRunning("Slack")
 	openIfNotRunning("Brave Browser")
 	openIfNotRunning("Obsidian")
 	openIfNotRunning("Twitterrific")
 	openIfNotRunning("Drafts")
 
-	hs.application("YouTube"):kill9()
-	hs.application("Netflix"):kill9()
+	killIfRunning("YouTube")
+	killIfRunning("Netflix")
 	closeFinderWindows()
 
 	hs.brightness.set(60)
@@ -241,12 +234,15 @@ function homeModeLayout ()
 		{"Alacritty", nil, screen, pseudoMaximized, nil, nil},
 	}
 	hs.layout.apply(homeLayout)
+
 	runDelayed(0.5, function ()
 		hs.layout.apply(homeLayout)
 
 		twitterrificScrollUp()
 		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+	end)
 
+	runDelayed(3, function ()
 		local slackWindowTitle = hs.application("Slack"):mainWindow():title()
 		local slackUnreadMsg = slackWindowTitle:match("%*")
 		if (slackUnreadMsg) then
@@ -254,10 +250,6 @@ function homeModeLayout ()
 		else
 			hs.application("Drafts"):mainWindow():focus()
 		end
-		notify("hidden")
-	end)
-	runDelayed(4, function ()
-		hs.application("Discord"):hide()
 	end)
 
 end
