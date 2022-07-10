@@ -243,6 +243,7 @@ function homeModeLayout ()
 	end)
 
 	runDelayed(3, function ()
+		-- delay necessary due to things triggered by Discord launch (see discord.lua)
 		local slackWindowTitle = hs.application("Slack"):mainWindow():title()
 		local slackUnreadMsg = slackWindowTitle:match("%*")
 		if (slackUnreadMsg) then
@@ -288,9 +289,16 @@ function officeModeLayout ()
 	}
 
 	hs.layout.apply(officeLayout)
-	hs.timer.delayed.new(0.3, function () hs.layout.apply(officeLayout) end):start()
-	hs.timer.delayed.new(0.6, function ()
+	runDelayed(0.3, function ()
 		hs.layout.apply(officeLayout)
+	end)
+	runDelayed(0.6, function ()
+		hs.layout.apply(officeLayout)
+		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
+	end)
+
+	runDelayed(3, function ()
+		-- delay necessary due to things triggered by Discord launch (see discord.lua)
 		local slackWindowTitle = hs.application("Slack"):mainWindow():title()
 		local slackUnreadMsg = slackWindowTitle:match("%*")
 		if (slackUnreadMsg) then
@@ -298,9 +306,8 @@ function officeModeLayout ()
 		else
 			hs.application("Discord"):mainWindow():raise()
 		end
+	end)
 
-		hs.application("Drafts"):selectMenuItem({"View", "Show Draft List"})
-	end):start()
 end
 
 function displayCountWatcher()
