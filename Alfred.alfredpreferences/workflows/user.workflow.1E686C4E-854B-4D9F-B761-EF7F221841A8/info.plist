@@ -8,6 +8,19 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
+		<key>06F3A05C-624E-44E1-88BA-E97EC7C60DFE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F83C33F7-02A4-4163-9240-0219CD2B7144</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<array>
 			<dict>
@@ -80,19 +93,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F83C33F7-02A4-4163-9240-0219CD2B7144</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -764,37 +764,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>40</integer>
-				<key>hotmod</key>
-				<integer>917504</integer>
-				<key>hotstring</key>
-				<string>K</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.sublimetext.4</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
+				<key>availableviaurlhandler</key>
+				<true/>
+				<key>triggerid</key>
+				<string>rebuild-karabiner-config</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</string>
+			<string>06F3A05C-624E-44E1-88BA-E97EC7C60DFE</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -867,6 +847,13 @@
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>06F3A05C-624E-44E1-88BA-E97EC7C60DFE</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>760</real>
+		</dict>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<dict>
 			<key>colorindex</key>
@@ -986,13 +973,6 @@
 			<real>30</real>
 			<key>ypos</key>
 			<real>315</real>
-		</dict>
-		<key>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</key>
-		<dict>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>735</real>
 		</dict>
 		<key>936424AC-32E2-4193-B07C-DDB804AEF807</key>
 		<dict>

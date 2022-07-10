@@ -25,4 +25,7 @@ function lc ()
 	print ("Copied: '"..lastcommand.."'")
 end
 
-c = hs.console.clearConsole
+-- `hammerspoon://clear-console` for Karabiner Elements
+hs.urlevent.bind("clear-console", function()
+	hs.console.clearConsole()
+end)

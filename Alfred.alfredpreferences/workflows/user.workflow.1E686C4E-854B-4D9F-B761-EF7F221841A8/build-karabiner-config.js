@@ -36,5 +36,5 @@ complexRules.profiles[0].complex_modifications.rules = customRules;
 writeToFile(JSON.stringify(complexRules), karabinerJSON);
 const lintStatus = app.doShellScript(`"/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" --lint-complex-modifications "${karabinerJSON}"`).trim();
 
-if (lintStatus === "ok") "✅ build successful";
-else "🛑 Error";
+if (lintStatus === "ok") "✅ Karabiner Config Build";
+else "🛑 Karabiner Build Error";
