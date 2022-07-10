@@ -31,6 +31,7 @@ app.doShellScript(`ls "${customRulesJSONlocation}" | grep ".json"`)
 
 const complexRules = JSON.parse(readFile(karabinerJSON));
 
+// INFO: the rules are added to the *first* profile in the profile list from Karabiner.
 complexRules.profiles[0].complex_modifications.rules = customRules;
 
 writeToFile(JSON.stringify(complexRules), karabinerJSON);

@@ -45,6 +45,7 @@
 		"Smart Duplicate",
 		"Status Bar JsonPath",
 		"SublimeLinter",
+		"SublimeLinter-annotations",
 		"SublimeLinter-contrib-markdownlint",
 		"SublimeLinter-contrib-yamllint",
 		"SublimeLinter-eslint",
