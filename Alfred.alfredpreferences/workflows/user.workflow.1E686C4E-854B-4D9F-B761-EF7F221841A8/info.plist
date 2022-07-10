@@ -8,6 +8,19 @@
 	<string>App-Enhance</string>
 	<key>connections</key>
 	<dict>
+		<key>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00E1C296-297E-4388-8A37-AE4C1500B06A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<array>
 			<dict>
@@ -114,6 +127,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9D930052-357B-496C-BF72-A006260DBE9D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</key>
 		<array>
 			<dict>
@@ -209,7 +235,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2381FD05-8DB5-4B75-9D6A-36329E668C7F</string>
+				<string>9D930052-357B-496C-BF72-A006260DBE9D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -421,44 +447,58 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>🔁 Toggle Karabiner Elements</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string></string>
+				<string>killall "Karabiner-EventViewer"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>toggle-karabiner.sh</string>
+				<string></string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+			<string>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>12</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>Q</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>org.pqrs.Karabiner-EventViewer</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -503,6 +543,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🔁 Toggle Karabiner Elements</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5BC37881-96AE-4CD8-9E96-66DD1D350534</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -512,14 +573,49 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>build-karabiner-config.js</string>
+				<string>toggle-karabiner.sh</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F83C33F7-02A4-4163-9240-0219CD2B7144</string>
+			<string>ED992F1D-9648-4955-A762-E25E23243BE9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>4</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>H</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -533,16 +629,39 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>🏗 Build Config JSON</string>
+				<string>❗️Restart Karabiner</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>2163D1C9-C7FB-4650-9C33-9A7D73314C2E</string>
+			<string>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>restart-karabiner.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -612,41 +731,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>40</integer>
-				<key>hotmod</key>
-				<integer>917504</integer>
-				<key>hotstring</key>
-				<string>K</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.sublimetext.4</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -668,23 +752,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>ke</string>
-				<key>subtext</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string></string>
-				<key>text</key>
-				<string>❗️Restart Karabiner</string>
-				<key>withspace</key>
-				<true/>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>build-karabiner-config.js</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</string>
+			<string>9D930052-357B-496C-BF72-A006260DBE9D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -698,16 +784,37 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>restart-karabiner.sh</string>
+				<string>yaml2json.sh</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</string>
+			<string>F83C33F7-02A4-4163-9240-0219CD2B7144</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ke</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>🏗 Build Config JSON</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2163D1C9-C7FB-4650-9C33-9A7D73314C2E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -752,6 +859,41 @@
 			<string>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>40</integer>
+				<key>hotmod</key>
+				<integer>917504</integer>
+				<key>hotstring</key>
+				<string>K</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.sublimetext.4</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -819,64 +961,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>killall "Karabiner-EventViewer"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>12</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>Q</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>org.pqrs.Karabiner-EventViewer</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Created by [Chris Grieser](https://chris-grieser.de/).</string>
@@ -891,6 +975,13 @@
 			<key>ypos</key>
 			<real>290</real>
 		</dict>
+		<key>0778D4B1-82A3-4AD0-8269-824D05DF4CD3</key>
+		<dict>
+			<key>xpos</key>
+			<real>530</real>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
 		<key>0E76B185-230E-4B1E-9EA6-5D7073AD8E0D</key>
 		<dict>
 			<key>colorindex</key>
@@ -900,7 +991,7 @@
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>710</real>
+			<real>160</real>
 		</dict>
 		<key>0E91D870-C8B9-49BA-B676-8E4DE6AF892F</key>
 		<dict>
@@ -909,7 +1000,7 @@
 			<key>xpos</key>
 			<real>855</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>595</real>
 		</dict>
 		<key>0F419F51-49BF-4371-A05D-1861B445EB9A</key>
 		<dict>
@@ -929,7 +1020,7 @@
 			<key>xpos</key>
 			<real>685</real>
 			<key>ypos</key>
-			<real>700</real>
+			<real>795</real>
 		</dict>
 		<key>16D38DFC-CFE4-4CC7-8A25-EA604410CD5A</key>
 		<dict>
@@ -940,7 +1031,7 @@
 			<key>xpos</key>
 			<real>530</real>
 			<key>ypos</key>
-			<real>580</real>
+			<real>675</real>
 		</dict>
 		<key>17F2357F-62B8-4268-9F9C-4CB273D1BA1E</key>
 		<dict>
@@ -949,7 +1040,7 @@
 			<key>xpos</key>
 			<real>185</real>
 			<key>ypos</key>
-			<real>710</real>
+			<real>160</real>
 		</dict>
 		<key>20AA6DBE-F597-47FF-B059-314D7D83B612</key>
 		<dict>
@@ -960,7 +1051,7 @@
 			<key>xpos</key>
 			<real>535</real>
 			<key>ypos</key>
-			<real>700</real>
+			<real>795</real>
 		</dict>
 		<key>2163D1C9-C7FB-4650-9C33-9A7D73314C2E</key>
 		<dict>
@@ -971,7 +1062,7 @@
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>315</real>
+			<real>600</real>
 		</dict>
 		<key>2381FD05-8DB5-4B75-9D6A-36329E668C7F</key>
 		<dict>
@@ -980,7 +1071,7 @@
 			<key>xpos</key>
 			<real>365</real>
 			<key>ypos</key>
-			<real>315</real>
+			<real>455</real>
 		</dict>
 		<key>387E93E5-B099-4784-8538-0CE2E9086D86</key>
 		<dict>
@@ -991,7 +1082,7 @@
 			<key>xpos</key>
 			<real>530</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>540</real>
 		</dict>
 		<key>3ADD88AD-97C0-461E-8E11-82570C8A25B2</key>
 		<dict>
@@ -1020,14 +1111,14 @@
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>170</real>
+			<real>315</real>
 		</dict>
 		<key>5EBA1279-FCE3-4B5B-8576-DFAF56D6D770</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>450</real>
+			<real>735</real>
 		</dict>
 		<key>936424AC-32E2-4193-B07C-DDB804AEF807</key>
 		<dict>
@@ -1038,6 +1129,17 @@
 			<key>ypos</key>
 			<real>15</real>
 		</dict>
+		<key>9D930052-357B-496C-BF72-A006260DBE9D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>build config json</string>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>600</real>
+		</dict>
 		<key>A5F2281D-49DC-4AFC-AECD-B972E7CF8A4E</key>
 		<dict>
 			<key>colorindex</key>
@@ -1047,7 +1149,7 @@
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>565</real>
+			<real>455</real>
 		</dict>
 		<key>C7ED6E37-4843-4FF9-AC29-6A764A9ADB67</key>
 		<dict>
@@ -1067,7 +1169,7 @@
 			<key>xpos</key>
 			<real>680</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>540</real>
 		</dict>
 		<key>E8066503-E298-4023-9E9F-3FBA20E03748</key>
 		<dict>
@@ -1087,7 +1189,7 @@
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>170</real>
+			<real>315</real>
 		</dict>
 		<key>F0068510-5EA9-467B-8CAB-E5A736B52AE8</key>
 		<dict>
@@ -1096,7 +1198,7 @@
 			<key>xpos</key>
 			<real>680</real>
 			<key>ypos</key>
-			<real>580</real>
+			<real>675</real>
 		</dict>
 		<key>F6ED9B13-8573-48B0-AE15-1717CFBE61C6</key>
 		<dict>
@@ -1113,10 +1215,12 @@
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
+			<key>note</key>
+			<string>yamls 2 json</string>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>315</real>
+			<real>600</real>
 		</dict>
 		<key>FB5EF1DE-1F91-43D6-BCE1-E29E2026FC7D</key>
 		<dict>
@@ -1125,7 +1229,7 @@
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>565</real>
+			<real>455</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

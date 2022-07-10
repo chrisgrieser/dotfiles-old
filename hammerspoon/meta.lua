@@ -1,23 +1,5 @@
 require("utils")
 
--- auto-reload Hammerspoon config when a file changes
-reloadDelaySecs = 2
-function reloadConfig(files)
-	local doReload = false
-	for _,file in pairs(files) do
-		if file:sub(-4) == ".lua" then
-			doReload = true
-		end
-	end
-	if doReload then
-		hs.timer.delayed.new(reloadDelaySecs, function ()
-			hs.reload()
-		end):start()
-	end
-end
-configWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
-configWatcher:start()
-
 -- `hammerspoon://hs-reload` for reloading via Alfred
 hs.urlevent.bind("hs-reload", function() hs.reload() end)
 

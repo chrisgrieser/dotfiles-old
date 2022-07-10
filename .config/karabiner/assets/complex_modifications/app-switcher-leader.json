@@ -1,10 +1,5 @@
 {
   "title": "🔺 App Switcher",
-  "version": "2.3",
-  "maintainers": [
-    "pseudometa"
-  ],
-  "import-url": "karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/chrisgrieser/dotfiles/blob/main/.config/karabiner/assets/complex_modifications/fn-leader-key.json",
   "homepage": "https://github.com/chrisgrieser/dotfiles/karabiner",
   "rules": [
     {
