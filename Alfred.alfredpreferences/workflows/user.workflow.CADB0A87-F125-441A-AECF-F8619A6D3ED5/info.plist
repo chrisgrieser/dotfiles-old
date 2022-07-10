@@ -565,12 +565,12 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>🖊 Highlights</string>
+				<string>📒 Free Comments</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
+			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -586,12 +586,12 @@ end alfred_script</string>
 				<key>text</key>
 				<string></string>
 				<key>title</key>
-				<string>📒 Free Comments</string>
+				<string>🖊 Highlights</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>7716F21D-3E2C-47B8-A227-B515E15D2F06</string>
+			<string>76C990C7-4659-4A82-B7ED-BD56E990D605</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -639,7 +639,9 @@ end alfred_script</string>
 tell application "System Events"
 	tell process "YouTube"
 		set frontmost to true
-		click menu item "Exit Full Screen" of menu "View" of menu bar 1
+			try
+				click menu item "Exit Full Screen" of menu "View" of menu bar 1
+			end try
 	end tell
 end tell
 
