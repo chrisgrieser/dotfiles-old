@@ -45,7 +45,7 @@
 
 	// Font & Spacing
 	"ui_scale": 1.7,
-	"font_size": 13,
+	"font_size": 12,
 	"font_face": "Input",
 	"font_options": ["no_liga", "no_italic", "no_bold"],
 
@@ -112,7 +112,7 @@
 	// Titlebar
 	"show_full_path": false,
 	"show_rel_path": true,
-	"show_project_first": true, // necessary for espanso trigger to work correctly
+	"show_project_first": true, // necessary for espanso trigger to wrok correctly
 
 	// Build
 	"show_panel_on_build": false,
@@ -557,9 +557,6 @@
 		"copypaste",
 		"\n-",
 		"Hammerspoon",
-		"lua",
-		"Toggler",
-		"Infos",
 	],
 
 	"neovintageous_build_version": 11100,

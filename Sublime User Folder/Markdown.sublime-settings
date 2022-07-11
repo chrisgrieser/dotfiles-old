@@ -1,6 +1,6 @@
 // These settings override both User and Default settings for the Markdown syntax
 {
-	//Markdown Editing
+	// Markdown Editing
 	"mde.italic_marker_asterisk": true, // * for italics
 	"mde.bold_marker_asterisk": false, //  __ for bold
 	"mde.list_indent_auto_switch_bullet": false,
@@ -12,5 +12,5 @@
 
 	"spell_check": true,
 	// turn off spellcheck in URLs, inline code, fenced code, and HTML tags
-	"spelling_selector": "-(markup.underline.link, markup.raw.inline, markup.raw.code-fence, meta.tag)",
+	"spelling_selector": "-(markup.underline.link, markup.raw.inline, markup.raw.code-fence, meta.code-fence.definition, meta.tag)",
 }
