@@ -23,12 +23,6 @@ workArray.push({
 	"match": "getting started examples",
 	"arg": "https://www.hammerspoon.org/go/",
 	"uid": "getting-started",
-});
-workArray.push({
-	"title": "Hammerspoon Keymaps",
-	"match": "keymaps keycode hotkey",
-	"arg": "https://www.hammerspoon.org/docs/hs.keycodes.html#map",
-	"uid": "keymaps",
-});
+})
 
 JSON.stringify({ items: workArray });

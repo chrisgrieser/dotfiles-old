@@ -9,6 +9,8 @@ sudo plutil -insert Exclusions.0 -string '/Applications/Cisco' "$SPOTLIGHT_CONFI
 sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/Alfred.alfredpreferences/workflows/' "$SPOTLIGHT_CONFIG"
 sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Backups/' "$SPOTLIGHT_CONFIG"
 sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Dotfolder/Dotfiles/hammerspoon/Spoons/' "$SPOTLIGHT_CONFIG"
+sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/.Trash/' "$SPOTLIGHT_CONFIG"
+sudo plutil -insert Exclusions.0 -string ~'/Library/Mobile Documents/com~apple~CloudDocs/Academia/PhD Data/' "$SPOTLIGHT_CONFIG"
 
 sudo launchctl stop com.apple.metadata.mds
 sudo launchctl start com.apple.metadata.mds

@@ -43,17 +43,6 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
-		<key>4C12690F-BFA8-4D29-A137-C9A7C80EC3ED</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>#</string>
-			<key>text</key>
-			<string>Color Hexa: '{query}'</string>
-			<key>url</key>
-			<string>https://www.colorhexa.com/{query}</string>
-		</dict>
 		<key>5E85686A-D841-453C-9974-E22F5241FA40</key>
 		<dict>
 			<key>enabled</key>
@@ -74,9 +63,11 @@
 			<key>keyword</key>
 			<string>st</string>
 			<key>text</key>
-			<string>🅰️ Steam (App)</string>
+			<string>Steam (App)</string>
 			<key>url</key>
 			<string>steam://openurl/https://store.steampowered.com/search/?term={query}</string>
+			<key>utf8</key>
+			<true/>
 		</dict>
 		<key>627B0197-448D-44B9-A7D0-937AF6872376</key>
 		<dict>
@@ -241,9 +232,11 @@
 			<key>keyword</key>
 			<string>st</string>
 			<key>text</key>
-			<string>🌐 Steam (Browser)</string>
+			<string>Steam (Browser)</string>
 			<key>url</key>
 			<string>https://store.steampowered.com/search/?term={query}</string>
+			<key>utf8</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>

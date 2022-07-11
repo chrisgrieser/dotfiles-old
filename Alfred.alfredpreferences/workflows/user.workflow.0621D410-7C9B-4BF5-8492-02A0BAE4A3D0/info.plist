@@ -234,7 +234,7 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string></string>
+	<string>Download Youtube Videos and Youtube Captions</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -287,18 +287,16 @@
 				<key>script</key>
 				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/:$PATH
 
-download_location="~/RomComs/-new"
 download_location="${download_location/#~/$HOME}"
 cd "$download_location"
-echo "$PWD"
 
-# youtube-dl --format $output_format "$*" 2&gt;&amp;1</string>
+youtube-dl --format $output_format "{query}" 2&gt;&amp;1</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
-				<string>youtube-dl-trigger.sh</string>
+				<string></string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -670,7 +668,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>890</real>
+			<real>820</real>
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
@@ -708,7 +706,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>430</real>
+			<real>380</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -737,7 +735,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>620</real>
+			<real>575</real>
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
@@ -802,7 +800,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>750</real>
+			<real>680</real>
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
@@ -820,7 +818,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>755</real>
+			<real>685</real>
 			<key>ypos</key>
 			<real>35</real>
 		</dict>
@@ -840,7 +838,7 @@ https://ytdl-org.github.io/youtube-dl/supportedsites.html</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<real>895</real>
+			<real>825</real>
 			<key>ypos</key>
 			<real>35</real>
 		</dict>

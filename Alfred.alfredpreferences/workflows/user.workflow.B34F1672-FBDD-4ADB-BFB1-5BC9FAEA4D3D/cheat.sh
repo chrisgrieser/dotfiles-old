@@ -3,12 +3,11 @@ export PATH=/usr/local/lib:/usr/local/bin:/opt/homebrew/bin/:$PATH
 
 #-------------------------------------------------------------------------------
 # CONFIG
+
 PREVIEW_CONFIG=~/.config/alacritty/preview-window.yml
 BG_COLOR=#303643
 STATUSLINE_COLOR=#859DC5
 STYLE=paraiso-dark # https://cheat.sh/:styles-demo
-
-# dependent on the device, use different sizes of the window
 if [[ "$(scutil --get ComputerName)" =~ "Mac mini" ]]; then
 	X=250
 	Y=40
@@ -26,7 +25,9 @@ CHEAT_INFO=$(curl -s "https://cht.sh/$QUERY?style=$STYLE") # https://cht.sh/:hel
 CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?TQ")
 
 # if empty string, copy the full info instead
-[[ -z "$CHEAT_CODE_ONLY" ]] && CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?T")
+if [[ -z "$CHEAT_CODE_ONLY" ]]; then
+	CHEAT_CODE_ONLY=$(curl -s "https://cht.sh/$QUERY?T")
+fi
 echo "$CHEAT_CODE_ONLY" | pbcopy
 
 CLEAN_QUERY=$(echo "$*" | tr "/" " ")
@@ -48,3 +49,4 @@ alacritty \
 		--HILITE-UNREAD \
 		--tilde \
 		-- "$CACHE"
+

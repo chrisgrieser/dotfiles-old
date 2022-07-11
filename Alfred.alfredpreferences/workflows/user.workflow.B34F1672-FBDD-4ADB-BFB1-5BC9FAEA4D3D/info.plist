@@ -97,7 +97,18 @@
 			</dict>
 		</array>
 		<key>5320A9D6-5BED-4AC3-B729-7E0FCA44A54B</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B10287C7-6013-4ED0-AF11-53B2EA6DBBEB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>76E5A56C-0258-48FF-A883-94D79A066C82</key>
 		<array>
 			<dict>
@@ -232,6 +243,35 @@
 			<string>852FEFE2-6998-4254-985C-75A2E3AEB5B2</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>B10287C7-6013-4ED0-AF11-53B2EA6DBBEB</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -970,6 +1010,13 @@ end tell</string>
 			<real>30</real>
 			<key>ypos</key>
 			<real>165</real>
+		</dict>
+		<key>B10287C7-6013-4ED0-AF11-53B2EA6DBBEB</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>85</real>
 		</dict>
 		<key>C1D85811-801A-4017-AEB6-6EC5A99F109C</key>
 		<dict>
