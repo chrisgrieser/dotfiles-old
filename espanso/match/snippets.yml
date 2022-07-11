@@ -4,6 +4,8 @@
 matches:
   - trigger: '!web'
     replace: https://chris-grieser.de/
+  - trigger: "!name"
+    replace: "Christopher Grieser"
 
   - trigger: '!wd'
     replace: '~/Library/Mobile Documents/com~apple~CloudDocs/File Hub/'

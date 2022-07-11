@@ -216,6 +216,7 @@ function homeModeLayout ()
 
 	killIfRunning("YouTube")
 	killIfRunning("Netflix")
+	killIfRunning("IINA")
 	closeFinderWindows()
 
 	hs.brightness.set(60)
