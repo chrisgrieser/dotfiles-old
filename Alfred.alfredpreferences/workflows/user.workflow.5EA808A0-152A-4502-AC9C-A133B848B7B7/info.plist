@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4DF059C9-76D2-40CA-B612-DA40279869C1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>78077732-42EB-4967-885E-DF4366FAB695</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4E05F542-9EEE-41E9-86B1-B4F1C201A764</key>
 		<array>
 			<dict>
@@ -126,7 +113,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4DF059C9-76D2-40CA-B612-DA40279869C1</string>
+				<string>78077732-42EB-4967-885E-DF4366FAB695</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
@@ -348,25 +335,6 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>78077732-42EB-4967-885E-DF4366FAB695</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>;</string>
-				<key>outputas</key>
-				<integer>0</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>4DF059C9-76D2-40CA-B612-DA40279869C1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -785,15 +753,6 @@ subl --command toggle_side_bar</string>
 			<real>30</real>
 			<key>ypos</key>
 			<real>290</real>
-		</dict>
-		<key>4DF059C9-76D2-40CA-B612-DA40279869C1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<real>835</real>
-			<key>ypos</key>
-			<real>145</real>
 		</dict>
 		<key>4E05F542-9EEE-41E9-86B1-B4F1C201A764</key>
 		<dict>

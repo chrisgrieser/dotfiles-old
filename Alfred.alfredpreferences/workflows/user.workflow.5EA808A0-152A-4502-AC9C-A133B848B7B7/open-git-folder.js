@@ -50,6 +50,7 @@ const repoArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/b
 repoArray.forEach(localRepoFilePath => {
 	let repoName;
 	let iconpath;
+	const repoID = localRepoFilePath.split("/").pop();
 	const isAlfredWorkflow = finderApp.exists(Path(localRepoFilePath + "/info.plist"));
 	const isObsiPlugin = finderApp.exists(Path(localRepoFilePath + "/manifest.json"));
 
@@ -82,6 +83,9 @@ repoArray.forEach(localRepoFilePath => {
 		"match": alfredMatcher (repoName),
 		"icon": { "path": iconpath },
 		"arg": localRepoFilePath,
+		"mods": {
+			"shift": { "arg": "chrisgrieser/" + repoID }
+		},
 		"uid": localRepoFilePath,
 	});
 });

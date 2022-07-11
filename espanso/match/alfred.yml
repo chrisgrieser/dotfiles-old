@@ -114,3 +114,12 @@ matches:
   - trigger: qqq
     replace: '{query}'
     label: "🎩 {query}"
+  - trigger: "!mods"
+    replace: |
+      "mods": {
+      	"cmd": { "arg": "foo" },
+      	"alt": {
+      		"arg": "bar",
+      		"subtitle": "⌥: Copy Link"
+      	},
+      }
