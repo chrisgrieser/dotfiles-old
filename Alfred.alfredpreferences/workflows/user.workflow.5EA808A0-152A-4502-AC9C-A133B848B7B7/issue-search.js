@@ -10,14 +10,14 @@ function alfredMatcher (str) {
 }
 
 const jsonArray = [];
-const repo = $.getenv("repo");
+const repoID = $.getenv("repoID");
 
 // get plugin issues
 const issueAPIURL =
-	"https://api.github.com/repos/" + repo
+	"https://api.github.com/repos/" + repoID
 	+ "/issues?state=all"
 	+ "&per_page=100"; // GitHub API only returns 100 results https://stackoverflow.com/questions/30656761/github-search-api-only-return-30-results
-
+console.log (issueAPIURL);
 const issueJSON =
 	JSON.parse(app.doShellScript("curl -s \"" + issueAPIURL + "\""))
 		.sort(function (x, y) { // sort open issues on top

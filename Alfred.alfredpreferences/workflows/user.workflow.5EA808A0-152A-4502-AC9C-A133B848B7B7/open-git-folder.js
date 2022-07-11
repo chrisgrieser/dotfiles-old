@@ -37,6 +37,8 @@ function readFile (path, encoding) {
 	return ObjC.unwrap(str);
 }
 
+// ---------------------------------------------
+
 const jsonArray = [];
 let pathString = "";
 
@@ -50,7 +52,8 @@ const repoArray = app.doShellScript("export PATH=/usr/local/bin/:/opt/homebrew/b
 repoArray.forEach(localRepoFilePath => {
 	let repoName;
 	let iconpath;
-	const repoID = localRepoFilePath.split("/").pop();
+	const repoID = app.doShellScript(`cd ${localRepoFilePath} && git remote -v | head -n1`)
+		.replace(/.*:(.*\/.*)\.git.*/, "$1");
 	const isAlfredWorkflow = finderApp.exists(Path(localRepoFilePath + "/info.plist"));
 	const isObsiPlugin = finderApp.exists(Path(localRepoFilePath + "/manifest.json"));
 
@@ -84,7 +87,7 @@ repoArray.forEach(localRepoFilePath => {
 		"icon": { "path": iconpath },
 		"arg": localRepoFilePath,
 		"mods": {
-			"shift": { "arg": "chrisgrieser/" + repoID }
+			"shift": { "arg": repoID }
 		},
 		"uid": localRepoFilePath,
 	});
